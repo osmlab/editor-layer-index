@@ -55,6 +55,8 @@ for imagery in imageries:
 
     max_zoom = None
     min_zoom = None
+    bbox = None
+    rings = None
 
     max_zoom_node = imagery.getElementsByTagName('max-zoom')
     if max_zoom_node:
@@ -70,12 +72,31 @@ for imagery in imageries:
         min_lon = bounds_node[0].getAttribute('min-lon')
         max_lat = bounds_node[0].getAttribute('max-lat')
         max_lon = bounds_node[0].getAttribute('max-lon')
+        bbox = dict(min_lat=min_lat, min_lon=min_lon, max_lat=max_lat, max_lon=max_lon)
 
-        shape_nodes = bounds_node.getElementsByTagName('shape')
+        rings = []
+        shape_nodes = bounds_node[0].getElementsByTagName('shape')
         for shape_node in shape_nodes:
+            ring = []
 
+            point_nodes = shape_node.getElementsByTagName('point')
+            for point in point_nodes:
+                lat = float(point.getAttribute('lat'))
+                lon = float(point.getAttribute('lon'))
+                ring.append((lon, lat))
 
-    if any((max_zoom, min_zoom)):
-        entry['extent'] = dict(max_zoom=max_zoom, min_zoom=min_zoom)
+            rings.append(ring)
+
+    if any((max_zoom, min_zoom, bbox, rings)):
+        entry['extent'] = dict()
+
+        if max_zoom:
+            entry['extent']['max_zoom'] = max_zoom
+        if min_zoom:
+            entry['extent']['min_zoom'] = min_zoom
+        if bbox:
+            entry['extent']['bbox'] = bbox
+        if rings:
+            entry['extent']['polygon'] = rings
 
     print json.dumps(entry)
