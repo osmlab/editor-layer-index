@@ -5,27 +5,53 @@
 <style>
 
 body {
-  width:800px;
+  width:900px;
   margin:0 auto;
   font: normal 12px/20px 'Helvetica Neue', sans-serif;
   color:#333;
 }
 
-#map, #table {
+#map, #table, #info {
     float:left;
 }
 
+label {
+    display:block;
+}
+
+input {
+    font:inherit;
+}
+
+#table {
+    width: 250px;
+}
+
+span.type {
+    color:#aaa;
+    margin-left:5px;
+  font: normal 10px/20px 'Helvetica Neue', sans-serif;
+}
+
+#info {
+    width: 330px;
+    padding:0 10px;
+}
+
 #wrap {
-    height:400px;
+    height:300px;
     overflow:auto;
-    padding:20px;
+    padding:0 20px;
+    border-right:1px solid #ccc;
 }
 
 a {
+    border-bottom:1px solid #eee;
+    text-decoration:none;
     color:#888;
 }
 
-a:hover {
+a:hover, a.active {
     color:darkred;
 }
 
@@ -72,17 +98,20 @@ a:hover {
 <div id='table'>
     <div id='wrap'></div>
 </div>
+<div id='info'>
+    <label for='url'>url</label><input id='url' />
+</div>
 <script src="js/d3.v3.min.js"></script>
 <script src="js/d3.geo.projection.v0.min.js"></script>
 <script src="js/topojson.v0.min.js"></script>
 <script>
 
-var width = 400,
-    height = 400;
+var width = 300,
+    height = 300;
 
 var projection = d3.geo.orthographic()
-    .translate([200, 200])
-    .scale(200)
+    .translate([150, 150])
+    .scale(150)
     .clipAngle(90);
 
 var path = d3.geo.path()
@@ -130,19 +159,40 @@ d3.json("lib/world-110m.json", function(error, world) {
         .data(imagery.features)
         .enter()
         .append('div');
-      divs.append('a')
+      var info = d3.select('#info');
+      var imagery_links = divs.append('a')
         .text(function(d) {
             return d.properties.name;
         })
+        .attr('href', '#')
         .on('mouseover', function(d, i) {
+            d3.event.preventDefault();
             var centroid = d3.geo.centroid(d);
             projection.rotate([-centroid[0], -centroid[1]]);
+            imagery_links
+                .classed('active', function(d2, i2) {
+                    return i2 == i;
+                });
             imagery_paths
                 .classed('active', function(d2, i2) {
                     return i2 == i;
                 });
             update();
+            info.datum(d);
+            doInfo();
         });
+      imagery_links.append('span')
+        .classed('type', true)
+        .text(function(d) {
+            return d.properties.type;
+        });
+
+      function doInfo() {
+          info.select('#url').property('value', function(d) {
+              return d.properties.url;
+          });
+      }
+
   });
 });
 </script>
