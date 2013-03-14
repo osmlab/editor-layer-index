@@ -89,12 +89,12 @@ for imagery in imageries:
                     lat = float(point.getAttribute('lat'))
                     lon = float(point.getAttribute('lon'))
                     ring.append((lon, lat))
-
+                ring.append(ring[0])
                 rings.append(ring)
             entry['geometry'] = {
-                    "type": "Polygon",
-                    "coordinates": rings
-                    }
+                "type": "Polygon",
+                "coordinates": rings
+            }
         collection['features'].append(entry)
 
     # if any((max_zoom, min_zoom, bbox, rings)):

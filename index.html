@@ -5,14 +5,28 @@
 <style>
 
 body {
-  width:960px;
+  width:800px;
   margin:0 auto;
-  font: normal 14px/20px 'Helvetica Neue', sans-serif;
+  font: normal 12px/20px 'Helvetica Neue', sans-serif;
   color:#333;
 }
 
-h1 {
-  text-align:center;
+#map, #table {
+    float:left;
+}
+
+#wrap {
+    height:400px;
+    overflow:auto;
+    padding:20px;
+}
+
+a {
+    color:#888;
+}
+
+a:hover {
+    color:darkred;
 }
 
 .background {
@@ -26,15 +40,14 @@ h1 {
 }
 
 .imagery {
-    stroke-width:1px;
-    stroke:#f00;
+    stroke-width:0.5px;
+    stroke:lightblue;
     fill:none;
 }
 
-.graticule {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
+.imagery.active {
+    stroke:darkred;
+    stroke-width:2px;
 }
 
 .graticule :nth-child(2n) {
@@ -43,7 +56,7 @@ h1 {
 
 .land {
   fill: #eee;
-  stroke: #aaa;
+  stroke: #ddd;
 }
 
 .boundary {
@@ -55,22 +68,29 @@ h1 {
 </head>
 <body>
 <h1>OSM Imagery Index</h1>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
-<script src="http://d3js.org/topojson.v0.min.js"></script>
+<div id='map'></div>
+<div id='table'>
+    <div id='wrap'></div>
+</div>
+<script src="js/d3.v3.min.js"></script>
+<script src="js/d3.geo.projection.v0.min.js"></script>
+<script src="js/topojson.v0.min.js"></script>
 <script>
 
-var width = 960,
-    height = 500;
+var width = 400,
+    height = 400;
 
-var projection = d3.geo.wagner6();
+var projection = d3.geo.orthographic()
+    .translate([200, 200])
+    .scale(200)
+    .clipAngle(90);
 
 var path = d3.geo.path()
     .projection(projection);
 
 var graticule = d3.geo.graticule();
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
 
@@ -79,36 +99,50 @@ svg.append("path")
     .attr("class", "background")
     .attr("d", path);
 
-svg.append("g")
-    .attr("class", "graticule")
-  .selectAll("path")
-    .data(graticule.lines)
-  .enter().append("path")
-    .attr("d", path);
-
 svg.append("path")
     .datum(graticule.outline)
     .attr("class", "foreground")
     .attr("d", path);
 
-d3.json("world-110m.json", function(error, world) {
+d3.json("lib/world-110m.json", function(error, world) {
   svg.insert("path", ".graticule")
       .datum(topojson.object(world, world.objects.land))
-      .attr("class", "land")
-      .attr("d", path);
+      .attr("class", "land");
 
   svg.insert("path", ".graticule")
       .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a.id !== b.id; }))
-      .attr("class", "boundary")
-      .attr("d", path);
+      .attr("class", "boundary");
   d3.json("imagery.geojson", function(error, imagery) {
-      svg.selectAll("path.imagery")
+      var imagery_paths = svg.selectAll("path.imagery")
           .data(imagery.features)
           .enter()
           .append('path')
-          .attr("class", "imagery")
-          .attr("d", path);
+          .attr("class", "imagery");
+      function update() {
+          svg.selectAll("path.graticule").attr("d", path);
+          svg.selectAll("path.boundary").attr("d", path);
+          svg.selectAll("path.land").attr("d", path);
+          svg.selectAll("path.imagery").attr("d", path);
+      }
+      update();
+      var divs = d3.select('#wrap')
+        .selectAll('div')
+        .data(imagery.features)
+        .enter()
+        .append('div');
+      divs.append('a')
+        .text(function(d) {
+            return d.properties.name;
+        })
+        .on('mouseover', function(d, i) {
+            var centroid = d3.geo.centroid(d);
+            projection.rotate([-centroid[0], -centroid[1]]);
+            imagery_paths
+                .classed('active', function(d2, i2) {
+                    return i2 == i;
+                });
+            update();
+        });
   });
 });
-
 </script>
