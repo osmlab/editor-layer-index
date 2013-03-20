@@ -56,7 +56,7 @@ a:hover, a.active {
 }
 
 .background {
-  fill: #aaa;
+  fill: #73b6e6;
 }
 
 .foreground {
@@ -81,7 +81,7 @@ a:hover, a.active {
 }
 
 .land {
-  fill: #eee;
+  fill: #e8e0d8;
   stroke: #ddd;
 }
 
@@ -109,10 +109,9 @@ a:hover, a.active {
 var width = 300,
     height = 300;
 
-var projection = d3.geo.orthographic()
+var projection = d3.geo.miller()
     .translate([150, 150])
-    .scale(150)
-    .clipAngle(90);
+    .scale(50);
 
 var path = d3.geo.path()
     .projection(projection);
@@ -148,11 +147,21 @@ d3.json("lib/world-110m.json", function(error, world) {
           .append('path')
           .attr("class", "imagery");
       function update() {
+          if (d3.event && d3.event.translate) {
+            projection
+                .translate(d3.event.translate)
+                .scale(d3.event.scale);
+          }
           svg.selectAll("path.graticule").attr("d", path);
           svg.selectAll("path.boundary").attr("d", path);
+          svg.selectAll("path.foreground").attr("d", path);
+          svg.selectAll("path.background").attr("d", path);
           svg.selectAll("path.land").attr("d", path);
           svg.selectAll("path.imagery").attr("d", path);
       }
+      var zoom = d3.behavior.zoom()
+        .on('zoom', update);
+      svg.call(zoom);
       update();
       var divs = d3.select('#wrap')
         .selectAll('div')
@@ -168,7 +177,22 @@ d3.json("lib/world-110m.json", function(error, world) {
         .on('mouseover', function(d, i) {
             d3.event.preventDefault();
             var centroid = d3.geo.centroid(d);
-            projection.rotate([-centroid[0], -centroid[1]]);
+
+            projection
+                .scale(1)
+                .translate([0, 0]);
+
+            var b = path.bounds(d),
+                s = .55 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height),
+                t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+
+            projection
+                  .scale(s)
+                  .translate(t);
+            zoom
+                  .translate(projection.translate())
+                  .scale(projection.scale())
+
             imagery_links
                 .classed('active', function(d2, i2) {
                     return i2 == i;
@@ -177,6 +201,7 @@ d3.json("lib/world-110m.json", function(error, world) {
                 .classed('active', function(d2, i2) {
                     return i2 == i;
                 });
+
             update();
             info.datum(d);
             doInfo();
