@@ -1,0 +1,14 @@
+{
+    "attribution": {
+        "url": "http://openstreetmap.org/", 
+        "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA", 
+        "required": true
+    }, 
+    "name": "MapQuest OSM", 
+    "url": "http://otile{switch:1,2,3,4}.mqcdn.com/tiles/1.0.0/osm/{zoom}/{x}/{y}.png", 
+    "extent": {
+        "max_zoom": "18"
+    }, 
+    "type": "tms", 
+    "icon": "http://o.aolcdn.com/os/mapquest/marketing/MQ_Icon/Tiny/MQ_Icon_Tiny.png"
+}

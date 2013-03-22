@@ -1,9 +1,15 @@
-import json, sys
+import json, sys, string
 from xml.dom.minidom import parse
 
 dom = parse(sys.argv[1])
 
 imageries = dom.getElementsByTagName('entry')
+
+def strfn(filename):
+    valid_chars = "-_()%s%s" % (string.ascii_letters, string.digits)
+    return ''.join(c for c in filename if c in valid_chars)
+
+entries = []
 
 for imagery in imageries:
     entry = {}
@@ -99,4 +105,4 @@ for imagery in imageries:
         if rings:
             entry['extent']['polygon'] = rings
 
-    print json.dumps(entry, indent=4)
+    open('%s/%s.json' % (sys.argv[2], strfn(entry['name'])), 'w+').write(json.dumps(entry, indent=4))

@@ -1,0 +1,33 @@
+{
+    "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-bmo-2010&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+    "type": "wms", 
+    "name": "G\u00e9obretagne - Brest 2010 - 10 cm", 
+    "extent": {
+        "bbox": {
+            "min_lon": "-4.6644843", 
+            "max_lon": "-4.2994767", 
+            "min_lat": "48.3054370", 
+            "max_lat": "48.4882181"
+        }, 
+        "polygon": [
+            [
+                [
+                    -4.6644843, 
+                    48.4661566
+                ], 
+                [
+                    -4.6405232, 
+                    48.305437
+                ], 
+                [
+                    -4.2994767, 
+                    48.3273912
+                ], 
+                [
+                    -4.3218404, 
+                    48.4882181
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "attribution": {
+        "url": "http://data.wien.gv.at/", 
+        "text": "Stadt Wien", 
+        "required": false
+    }, 
+    "name": "Vienna: Beschriftungen (annotations)", 
+    "url": "http://www.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png", 
+    "extent": {
+        "max_zoom": "19", 
+        "bbox": {
+            "min_lon": "16.17", 
+            "max_lon": "16.58", 
+            "min_lat": "48.10", 
+            "max_lat": "48.33"
+        }
+    }, 
+    "type": "tms", 
+    "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
+}
