@@ -1,7 +1,7 @@
-import json
+import json, sys, util
 from xml.dom.minidom import parse
 
-dom = parse('josm-imagery.xml')
+dom = parse(sys.argv[1])
 
 imageries = dom.getElementsByTagName('entry')
 
@@ -20,12 +20,8 @@ for imagery in imageries:
     entry['properties']['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
     entry['properties']['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
 
-    projs_node = imagery.getElementsByTagName('projections')
-    if projs_node:
-        entry['properties']['available_projections'] = []
-        for proj_node in projs_node[0].getElementsByTagName('code'):
-            code = proj_node.childNodes[0].nodeValue
-            entry['properties']['available_projections'].append(code)
+    projs = util.getprojs(imagery)
+    if projs: entry['properties']['available_projections'] = projs
 
     attr_text = None
     attr_required = None

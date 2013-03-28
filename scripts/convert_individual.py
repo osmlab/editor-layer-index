@@ -1,4 +1,4 @@
-import json, sys, string
+import json, sys, string, util
 from xml.dom.minidom import parse
 
 dom = parse(sys.argv[1])
@@ -18,12 +18,8 @@ for imagery in imageries:
     entry['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
     entry['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
 
-    projs_node = imagery.getElementsByTagName('projections')
-    if projs_node:
-        entry['available_projections'] = []
-        for proj_node in projs_node[0].getElementsByTagName('code'):
-            code = proj_node.childNodes[0].nodeValue
-            entry['available_projections'].append(code)
+    projs = util.getprojs(imagery)
+    if projs: entry['available_projections'] = projs
 
     attr_text = None
     attr_required = None
@@ -72,26 +68,7 @@ for imagery in imageries:
     if min_zoom_node:
         min_zoom = min_zoom_node[0].childNodes[0].nodeValue
 
-    bounds_node = imagery.getElementsByTagName('bounds')
-    if bounds_node:
-        min_lat = bounds_node[0].getAttribute('min-lat')
-        min_lon = bounds_node[0].getAttribute('min-lon')
-        max_lat = bounds_node[0].getAttribute('max-lat')
-        max_lon = bounds_node[0].getAttribute('max-lon')
-        bbox = dict(min_lat=min_lat, min_lon=min_lon, max_lat=max_lat, max_lon=max_lon)
-
-        rings = []
-        shape_nodes = bounds_node[0].getElementsByTagName('shape')
-        for shape_node in shape_nodes:
-            ring = []
-
-            point_nodes = shape_node.getElementsByTagName('point')
-            for point in point_nodes:
-                lat = float(point.getAttribute('lat'))
-                lon = float(point.getAttribute('lon'))
-                ring.append((lon, lat))
-
-            rings.append(ring)
+    (bbox, rings) = util.getrings(imagery)
 
     if any((max_zoom, min_zoom, bbox, rings)):
         entry['extent'] = dict()
