@@ -8,6 +8,11 @@ def getprojs(elem):
             o.append(code)
         return o
 
+def textelem(elem, y):
+    e = elem.getElementsByTagName(y)
+    if e: return e[0].childNodes[0].nodeValue
+    else: return None
+
 def getrings(elem):
     bounds_node = elem.getElementsByTagName('bounds')
     if bounds_node:

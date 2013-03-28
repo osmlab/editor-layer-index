@@ -6,11 +6,14 @@ dom = parse(sys.argv[1])
 imageries = dom.getElementsByTagName('entry')
 
 for imagery in imageries:
-    entry = {}
 
-    entry['name'] = imagery.getElementsByTagName('name')[0].childNodes[0].nodeValue
-    entry['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
-    entry['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
+    entry = {
+        'name': util.textelem(imagery, 'name'),
+        'type': util.textelem(imagery, 'type'),
+        'url': util.textelem(imagery, 'url'),
+        'description': util.textelem(imagery, 'description'),
+        'icon': util.textelem(imagery, 'icon')
+    }
 
     projs_node = imagery.getElementsByTagName('projections')
     if projs_node:
@@ -44,15 +47,6 @@ for imagery in imageries:
     if default is not None:
         entry['default'] = default
 
-    icon = None
-
-    icon_node = imagery.getElementsByTagName('icon')
-    if icon_node:
-        icon = icon_node[0].childNodes[0].nodeValue
-
-    if icon_node:
-        entry['icon'] = icon
-
     max_zoom = None
     min_zoom = None
     bbox = None
@@ -69,8 +63,7 @@ for imagery in imageries:
     (bbox, rings) = util.getrings(imagery)
 
     if any((max_zoom, min_zoom, bbox, rings)):
-        entry['extent'] = dict()
-
+        entry['extent'] = {}
         if max_zoom:
             entry['extent']['max_zoom'] = max_zoom
         if min_zoom:

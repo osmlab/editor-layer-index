@@ -8,4 +8,4 @@ imagery.geojson: imagery.xml
 	python scripts/convert_geojson.py imagery.xml > imagery.geojson
 
 imagery.json: imagery.xml
-	python scripts/convert_josm_index.py imagery.xml > imagery.json
+	python scripts/convert.py imagery.xml > imagery.json

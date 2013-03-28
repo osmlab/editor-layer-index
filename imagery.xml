@@ -29,6 +29,7 @@
 
     <entry>
         <name>Bing Sat</name>
+        <description>Satellite imagery.</description>
         <type>bing</type>
         <default>true</default>
         <!-- url is used as identifier, so put something here -->
@@ -39,6 +40,7 @@
 
     <entry>
         <name>MapBox Satellite</name>
+        <description>Satellite imagery.</description>
         <default>true</default>
         <type>tms</type>
         <url>http://{switch:a,b,c}.tiles.mapbox.com/v3/openstreetmap.map-4wvf9l0l/{zoom}/{x}/{y}.png</url>
@@ -48,6 +50,7 @@
 
     <entry>
         <name>MapQuest Open Aerial</name>
+        <description>Satellite imagery.</description>
         <type>tms</type>
         <default>true</default>
         <url>http://oatile{switch:1,2,3,4}.mqcdn.com/tiles/1.0.0/sat/{zoom}/{x}/{y}.png</url>
@@ -55,7 +58,8 @@
     </entry>
 
     <entry>
-        <name>OpenStreetMap (Mapnik)</name>
+        <name>OpenStreetMap</name>
+        <description>The default OpenStreetMap layer.</description>
         <type>tms</type>
         <default>true</default>
         <url>http://tile.openstreetmap.org/{zoom}/{x}/{y}.png</url>
@@ -66,7 +70,7 @@
     </entry>
 
     <entry>
-        <name>OpenStreetMap (Mapnik Black &amp; White)</name>
+        <name>OpenStreetMap Black &amp; White</name>
         <type>tms</type>
         <default>true</default>
         <url>http://{switch:a,b,c}.www.toolserver.org/tiles/bw-mapnik/{zoom}/{x}/{y}.png</url>
@@ -2047,6 +2051,7 @@
     </entry>
     <entry>
         <name>OSM US TIGER 2012 Roads Overlay</name>
+        <description>Public domain road data from the US Government.</description>
         <type>tms</type>
         <url><![CDATA[http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png]]></url>
         <min-zoom>16</min-zoom>
