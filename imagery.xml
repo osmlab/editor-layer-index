@@ -189,7 +189,8 @@
     </entry>
 
     <entry>
-        <name>OpenPT Map (overlay)</name>
+        <name>OpenPT Map</name>
+        <overlay>true</overlay>
         <type>tms</type>
         <url>http://openptmap.de/tiles/{zoom}/{x}/{y}.png</url>
         <min-zoom>5</min-zoom>
@@ -2050,7 +2051,8 @@
         <country-code>US</country-code>
     </entry>
     <entry>
-        <name>OSM US TIGER 2012 Roads Overlay</name>
+        <name>OSM US TIGER 2012 Roads</name>
+        <overlay>true</overlay>
         <description>Public domain road data from the US Government.</description>
         <type>tms</type>
         <url><![CDATA[http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png]]></url>

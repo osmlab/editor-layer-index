@@ -11,9 +11,12 @@ for imagery in imageries:
         'name': util.textelem(imagery, 'name'),
         'type': util.textelem(imagery, 'type'),
         'url': util.textelem(imagery, 'url'),
+        'overlay': util.textelem(imagery, 'overlay'),
         'description': util.textelem(imagery, 'description'),
         'icon': util.textelem(imagery, 'icon')
     }
+
+    entry = dict(filter(lambda x: x[1], entry.items()))
 
     projs_node = imagery.getElementsByTagName('projections')
     if projs_node:
