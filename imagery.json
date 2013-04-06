@@ -51828,6 +51828,39 @@
     }
 }
 {
+    "url": "http://pnorman.dev.openstreetmap.org/imagery/orb32536/{zoom}/{x}/{y}.png", 
+    "type": "tms", 
+    "name": "Orbview 32536 (Disputed Asian Islands)", 
+    "extent": {
+        "bbox": {
+            "min_lon": "131.8019383", 
+            "max_lon": "131.9462171", 
+            "min_lat": "37.1357370", 
+            "max_lat": "37.3233324"
+        }, 
+        "polygon": [
+            [
+                [
+                    131.8896884, 
+                    37.3233324
+                ], 
+                [
+                    131.8019383, 
+                    37.3048378
+                ], 
+                [
+                    131.857606, 
+                    37.135737
+                ], 
+                [
+                    131.9462171, 
+                    37.1554941
+                ]
+            ]
+        ]
+    }
+}
+{
     "url": "http://tiger-osm.mapquest.com/tiles/1.0.0/tiger/{zoom}/{x}/{y}.png", 
     "type": "tms", 
     "name": "OSM - Tiger Edited Map", 
