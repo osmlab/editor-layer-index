@@ -1,7 +1,7 @@
 ## Contributing
 
-The 'source' document for this project is `imagery.xml`. To add or remove
-a new imagery source, modify this file.
+The 'source' documents for this project are the .json files in `sources`. To add
+a new imagery source, add a new file to this directory.
 
-After you've made a modification, run `make` to generate `imagery.json` and
-`imagery.geojson`. Generating these files requires Python.
+After you've made a modification, run `make` to generate `imagery.xml`, `imagery.json`,
+and `imagery.geojson`. Generating these files requires Python.
