@@ -1,11 +1,17 @@
-all: imagery.geojson imagery.json
+ALL = imagery.geojson imagery.json imagery.xml
+
+all: $(ALL)
 
 clean:
-	rm imagery.geojson
-	rm imagery.json
+	rm $(ALL)
+
+SOURCES = $(shell find sources -type f -name '*.json')
+
+imagery.xml: $(SOURCES)
+	python scripts/convert_xml.py $(SOURCES)
+
+imagery.json: $(SOURCES)
+	python scripts/concat.py $(SOURCES) > imagery.json
 
 imagery.geojson: imagery.xml
 	python scripts/convert_geojson.py imagery.xml > imagery.geojson
-
-imagery.json: imagery.xml
-	python scripts/convert.py imagery.xml > imagery.json
