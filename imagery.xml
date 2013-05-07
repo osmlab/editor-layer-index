@@ -6323,6 +6323,14 @@
     </bounds>
   </entry>
   <entry>
+    <name>Lithuania - ORT10LT</name>
+    <type>tms</type>
+    <url>http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg</url>
+    <min-zoom>4</min-zoom>
+    <max-zoom>18</max-zoom>
+    <bounds max-lat="56.45" max-lon="26.85" min-lat="53.88" min-lon="21" />
+  </entry>
+  <entry>
     <name>Lodi - Italy</name>
     <type>wms</type>
     <url>http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=Terraitaly%20Ortofoto%202007&amp;STYLES=%2C%2C&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
