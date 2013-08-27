@@ -141,7 +141,7 @@
     <url>http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg</url>
     <min-zoom>1</min-zoom>
     <max-zoom>22</max-zoom>
-    <bounds max-lat="-22.1186426" max-lon="32.8999860" min-lat="-34.8379056" min-lon="16.4491046">
+    <bounds max-lat="-22.1186426" max-lon="32.899986" min-lat="-34.8379056" min-lon="16.4491046">
       <shape>
         <point lat="-32.7983384" lon="17.8396817" />
         <point lat="-32.6972835" lon="17.8893509" />
@@ -593,7 +593,7 @@
       <code>EPSG:4258</code>
       <code>EPSG:4326</code>
     </projections>
-    <bounds max-lat="50.5684620" max-lon="13.8446447" min-lat="47.2620819" min-lon="8.9567442">
+    <bounds max-lat="50.568462" max-lon="13.8446447" min-lat="47.2620819" min-lon="8.9567442">
       <shape>
         <point lat="50.568462" lon="10.1235886" />
         <point lat="50.5507804" lon="10.1428576" />
@@ -1050,7 +1050,7 @@
     <name>Catastro Spain</name>
     <type>wms</type>
     <url>http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Catastro&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
-    <bounds max-lat="43.8098190" max-lon="4.3987393" min-lat="27.6302571" min-lon="-18.1661033">
+    <bounds max-lat="43.809819" max-lon="4.3987393" min-lat="27.6302571" min-lon="-18.1661033">
       <shape>
         <point lat="28.4460601" lon="-17.8846298" />
         <point lat="28.5225529" lon="-17.8939535" />
@@ -2158,7 +2158,7 @@
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=le_puy&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2010</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG</attribution-url>
-    <bounds max-lat="45.1451352" max-lon="4.0629870" min-lat="44.8667805" min-lon="3.6153692">
+    <bounds max-lat="45.1451352" max-lon="4.062987" min-lat="44.8667805" min-lon="3.6153692">
       <shape>
         <point lat="45.1451352" lon="3.6552884" />
         <point lat="45.1448719" lon="3.7030954" />
@@ -2368,7 +2368,7 @@
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=moulins&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2009</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG</attribution-url>
-    <bounds max-lat="46.7270773" max-lon="3.5831121" min-lat="46.3754920" min-lon="3.1145179">
+    <bounds max-lat="46.7270773" max-lon="3.5831121" min-lat="46.375492" min-lon="3.1145179">
       <shape>
         <point lat="46.6530818" lon="3.1145179" />
         <point lat="46.6530395" lon="3.1341023" />
@@ -2523,7 +2523,7 @@
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=vichy&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2009</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG</attribution-url>
-    <bounds max-lat="46.2602715" max-lon="3.5692400" min-lat="45.9971478" min-lon="3.2494124">
+    <bounds max-lat="46.2602715" max-lon="3.56924" min-lat="45.9971478" min-lon="3.2494124">
       <shape>
         <point lat="46.2602715" lon="3.4354791" />
         <point lat="46.2601068" lon="3.4640297" />
@@ -3829,7 +3829,7 @@
     <attribution-text mandatory="true">Fugro Aerial Mapping</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Fugro</attribution-url>
     <max-zoom>19</max-zoom>
-    <bounds max-lat="57.8228945" max-lon="15.3099250" min-lat="54.4681655" min-lon="8.0185123">
+    <bounds max-lat="57.8228945" max-lon="15.309925" min-lat="54.4681655" min-lon="8.0185123">
       <shape>
         <point lat="54.9551655" lon="8.3743941" />
         <point lat="55.4042149" lon="8.3683809" />
@@ -4218,7 +4218,7 @@
     <name>G&#233;obretagne - Brest 2010 - 10 cm</name>
     <type>wms</type>
     <url>http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho-bmo-2010&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
-    <bounds max-lat="48.4882181" max-lon="-4.2994767" min-lat="48.3054370" min-lon="-4.6644843">
+    <bounds max-lat="48.4882181" max-lon="-4.2994767" min-lat="48.305437" min-lon="-4.6644843">
       <shape>
         <point lat="48.4661566" lon="-4.6644843" />
         <point lat="48.305437" lon="-4.6405232" />
@@ -5095,7 +5095,7 @@
     </projections>
     <attribution-text>Stadt Graz &#8211; data.graz.gv.at</attribution-text>
     <icon>http://gis.graz.at/g/graz-logo.gif</icon>
-    <bounds max-lat="47.143749958186" max-lon="15.5442161820906" min-lat="47.0072927285598" min-lon="15.3444649457389" />
+    <bounds max-lat="47.1437499582" max-lon="15.5442161821" min-lat="47.0072927286" min-lon="15.3444649457" />
   </entry>
   <entry>
     <name>Hamburg (40 cm)</name>
@@ -5369,7 +5369,7 @@
     <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
     <min-zoom>5</min-zoom>
     <max-zoom>16</max-zoom>
-    <bounds max-lat="55.6205288" max-lon="-5.0649187" min-lat="51.1991221" min-lon="-11.0353180">
+    <bounds max-lat="55.6205288" max-lon="-5.0649187" min-lat="51.1991221" min-lon="-11.035318">
       <shape>
         <point lat="53.8627976" lon="-5.842956" />
         <point lat="53.7633541" lon="-5.8341575" />
@@ -6338,7 +6338,7 @@
       <code>EPSG:32632</code>
       <code>EPSG:4326</code>
     </projections>
-    <bounds max-lat="45.5002702" max-lon="9.9169405" min-lat="45.0477711" min-lon="9.2480360">
+    <bounds max-lat="45.5002702" max-lon="9.9169405" min-lat="45.0477711" min-lon="9.248036">
       <shape>
         <point lat="45.5001183" lon="9.5004111" />
         <point lat="45.5002702" lon="9.4150755" />
@@ -6667,7 +6667,7 @@
     <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
     <min-zoom>5</min-zoom>
     <max-zoom>16</max-zoom>
-    <bounds max-lat="58.7036341" max-lon="1.8345714" min-lat="49.8159968" min-lon="-6.4667600">
+    <bounds max-lat="58.7036341" max-lon="1.8345714" min-lat="49.8159968" min-lon="-6.46676">
       <shape>
         <point lat="54.6796556" lon="-4.7157244" />
         <point lat="54.6800268" lon="-4.6850662" />
@@ -7166,7 +7166,7 @@
     <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
     <min-zoom>5</min-zoom>
     <max-zoom>16</max-zoom>
-    <bounds max-lat="60.8943762" max-lon="-0.6354670" min-lat="54.6297227" min-lon="-7.7901222">
+    <bounds max-lat="60.8943762" max-lon="-0.635467" min-lat="54.6297227" min-lon="-7.7901222">
       <shape>
         <point lat="54.8018593" lon="-5.2112173" />
         <point lat="54.8026508" lon="-5.0642752" />
@@ -8063,7 +8063,7 @@
     <type>wms</type>
     <url>http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;SRS={proj}&amp;LAYERS=pnoa&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">PNOA</attribution-text>
-    <bounds max-lat="43.8098190" max-lon="4.3987393" min-lat="27.6302571" min-lon="-18.1661033">
+    <bounds max-lat="43.809819" max-lon="4.3987393" min-lat="27.6302571" min-lon="-18.1661033">
       <shape>
         <point lat="28.4460601" lon="-17.8846298" />
         <point lat="28.5225529" lon="-17.8939535" />
@@ -8688,7 +8688,7 @@
     <type>wms</type>
     <url>http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ORTOFOTOS&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">SIGPAC</attribution-text>
-    <bounds max-lat="43.8098190" max-lon="4.3987393" min-lat="27.6302571" min-lon="-18.1661033">
+    <bounds max-lat="43.809819" max-lon="4.3987393" min-lat="27.6302571" min-lon="-18.1661033">
       <shape>
         <point lat="28.4460601" lon="-17.8846298" />
         <point lat="28.5225529" lon="-17.8939535" />
@@ -9484,7 +9484,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
     </projections>
-    <bounds max-lat="52.538020" max-lon="52.538020" min-lat="50.310813" min-lon="5.881575">
+    <bounds max-lat="52.53802" max-lon="52.53802" min-lat="50.310813" min-lon="5.881575">
       <shape>
         <point lat="51.826511" lon="5.927293" />
         <point lat="51.662494" lon="6.012007" />
@@ -10343,7 +10343,7 @@
     <url>http://tms.mapspot.ge/tms/2/nonstandard/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Orthophoto Tour(s) Plus 2008</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
-    <bounds max-lat="47.4881952" max-lon="0.7749700" min-lat="47.3369074" min-lon="0.4541016">
+    <bounds max-lat="47.4881952" max-lon="0.77497" min-lat="47.3369074" min-lon="0.4541016">
       <shape>
         <point lat="47.465264" lon="0.5457462" />
         <point lat="47.4608163" lon="0.54585" />
@@ -10458,7 +10458,7 @@
     <attribution-text mandatory="true">Danish municipalities</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Vejmidte</attribution-url>
     <max-zoom>20</max-zoom>
-    <bounds max-lat="57.8228945" max-lon="15.3099250" min-lat="54.4681655" min-lon="8.0185123">
+    <bounds max-lat="57.8228945" max-lon="15.309925" min-lat="54.4681655" min-lon="8.0185123">
       <shape>
         <point lat="54.9551655" lon="8.3743941" />
         <point lat="55.4042149" lon="8.3683809" />
@@ -10629,7 +10629,7 @@
     <attribution-url>http://data.wien.gv.at/</attribution-url>
     <icon>http://www.wien.gv.at/layout-a/logo/wappen-klein.gif</icon>
     <max-zoom>19</max-zoom>
-    <bounds max-lat="48.33" max-lon="16.58" min-lat="48.10" min-lon="16.17" />
+    <bounds max-lat="48.33" max-lon="16.58" min-lat="48.1" min-lon="16.17" />
   </entry>
   <entry>
     <name>Vienna: Mehrzweckkarte (general purpose)</name>
@@ -10639,7 +10639,7 @@
     <attribution-url>http://data.wien.gv.at/</attribution-url>
     <icon>http://www.wien.gv.at/layout-a/logo/wappen-klein.gif</icon>
     <max-zoom>19</max-zoom>
-    <bounds max-lat="48.33" max-lon="16.58" min-lat="48.10" min-lon="16.17" />
+    <bounds max-lat="48.33" max-lon="16.58" min-lat="48.1" min-lon="16.17" />
   </entry>
   <entry>
     <name>Vienna: Orthofoto (aerial image)</name>
@@ -10649,7 +10649,7 @@
     <attribution-url>http://data.wien.gv.at/</attribution-url>
     <icon>http://www.wien.gv.at/layout-a/logo/wappen-klein.gif</icon>
     <max-zoom>19</max-zoom>
-    <bounds max-lat="48.33" max-lon="16.58" min-lat="48.10" min-lon="16.17" />
+    <bounds max-lat="48.33" max-lon="16.58" min-lat="48.1" min-lon="16.17" />
   </entry>
   <entry>
     <name>British Columbia Mosaic</name>
@@ -10659,7 +10659,7 @@
     <attribution-url>http://imagery.paulnorman.ca/tiles/about.html</attribution-url>
     <min-zoom>9</min-zoom>
     <max-zoom>20</max-zoom>
-    <bounds max-lat="50.4256959" max-lon="-121.3462885" min-lat="48.9954007" min-lon="-123.4407170">
+    <bounds max-lat="50.4256959" max-lon="-121.3462885" min-lat="48.9954007" min-lon="-123.440717">
       <shape>
         <point lat="49.3272567" lon="-123.3176032" />
         <point lat="49.3268222" lon="-123.4405258" />
@@ -10926,7 +10926,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
     </projections>
-    <bounds max-lat="85.0462500" max-lon="-42.5336600" min-lat="41.6377000" min-lon="-141.7761000">
+    <bounds max-lat="85.04625" max-lon="-42.53366" min-lat="41.6377" min-lon="-141.7761">
       <shape>
         <point lat="60.2442" lon="-141.0678" />
         <point lat="60.10331" lon="-139.3842" />
@@ -11186,7 +11186,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
     </projections>
-    <bounds max-lat="85.0462500" max-lon="-42.5336600" min-lat="41.6377000" min-lon="-141.7761000">
+    <bounds max-lat="85.04625" max-lon="-42.53366" min-lat="41.6377" min-lon="-141.7761">
       <shape>
         <point lat="60.2442" lon="-141.0678" />
         <point lat="60.10331" lon="-139.3842" />
@@ -11446,7 +11446,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
     </projections>
-    <bounds max-lat="85.0462500" max-lon="-42.5336600" min-lat="41.6377000" min-lon="-141.7761000">
+    <bounds max-lat="85.04625" max-lon="-42.53366" min-lat="41.6377" min-lon="-141.7761">
       <shape>
         <point lat="60.2442" lon="-141.0678" />
         <point lat="60.10331" lon="-139.3842" />
@@ -12436,666 +12436,13 @@
     </bounds>
   </entry>
   <entry>
-    <name>OSM - Tiger Edited Map</name>
-    <type>tms</type>
-    <url>http://tiger-osm.mapquest.com/tiles/1.0.0/tiger/{zoom}/{x}/{y}.png</url>
-    <max-zoom>18</max-zoom>
-    <bounds max-lat="71.4627700" max-lon="-66.8652299" min-lat="18.7023100" min-lon="-179.7539000">
-      <shape>
-        <point lat="30.14173" lon="-88.08494" />
-        <point lat="29.45501" lon="-88.40129" />
-        <point lat="29.13411" lon="-88.91638" />
-        <point lat="28.82877" lon="-89.38456" />
-        <point lat="29.13962" lon="-89.53975" />
-        <point lat="29.23409" lon="-89.79243" />
-        <point lat="28.95723" lon="-90.329" />
-        <point lat="29.22239" lon="-90.43093" />
-        <point lat="28.98036" lon="-90.60289" />
-        <point lat="28.94789" lon="-90.9158" />
-        <point lat="29.51196" lon="-91.63726" />
-        <point lat="29.3846" lon="-91.86265" />
-        <point lat="29.68549" lon="-93.25194" />
-        <point lat="29.36045" lon="-94.60357" />
-        <point lat="27.80896" lon="-96.94543" />
-        <point lat="27.12912" lon="-97.2835" />
-        <point lat="25.93647" lon="-97.04533" />
-        <point lat="25.9519007" lon="-97.1013703" />
-        <point lat="25.9446169" lon="-97.2510135" />
-        <point lat="25.925447" lon="-97.2953522" />
-        <point lat="25.9074245" lon="-97.3558916" />
-        <point lat="25.8663841" lon="-97.3507756" />
-        <point lat="25.8272483" lon="-97.3823243" />
-        <point lat="25.8460505" lon="-97.4522431" />
-        <point lat="25.8698367" lon="-97.4816601" />
-        <point lat="25.8809608" lon="-97.5238672" />
-        <point lat="25.9319651" lon="-97.5899489" />
-        <point lat="26.0162847" lon="-97.6619993" />
-        <point lat="26.0224146" lon="-97.7732724" />
-        <point lat="26.0419518" lon="-97.8252852" />
-        <point lat="26.0503786" lon="-98.0179881" />
-        <point lat="26.0342905" lon="-98.0401574" />
-        <point lat="26.0327582" lon="-98.0725588" />
-        <point lat="26.0465483" lon="-98.1949166" />
-        <point lat="26.0990122" lon="-98.3202587" />
-        <point lat="26.1441813" lon="-98.3479704" />
-        <point lat="26.178238" lon="-98.4541275" />
-        <point lat="26.2398208" lon="-98.6033444" />
-        <point lat="26.2314076" lon="-98.6638838" />
-        <point lat="26.27729" lon="-98.7380659" />
-        <point lat="26.3541023" lon="-98.825038" />
-        <point lat="26.3464615" lon="-98.896662" />
-        <point lat="26.396881" lon="-99.0339415" />
-        <point lat="26.3919165" lon="-99.0885123" />
-        <point lat="26.4339177" lon="-99.12134" />
-        <point lat="26.4736139" lon="-99.0974653" />
-        <point lat="26.5171113" lon="-99.1311456" />
-        <point lat="26.5346582" lon="-99.1729264" />
-        <point lat="26.6162542" lon="-99.1857164" />
-        <point lat="26.673413" lon="-99.2117227" />
-        <point lat="26.7210235" lon="-99.2155597" />
-        <point lat="26.7434887" lon="-99.2471084" />
-        <point lat="26.8534661" lon="-99.2863312" />
-        <point lat="26.862214" lon="-99.3187325" />
-        <point lat="26.8781868" lon="-99.3340805" />
-        <point lat="26.908985" lon="-99.3302435" />
-        <point lat="26.9283722" lon="-99.3848143" />
-        <point lat="27.018042" lon="-99.452175" />
-        <point lat="27.240766" lon="-99.47136" />
-        <point lat="27.3112469" lon="-99.5425578" />
-        <point lat="27.3703254" lon="-99.5071721" />
-        <point lat="27.4876314" lon="-99.4922504" />
-        <point lat="27.490657" lon="-99.5280624" />
-        <point lat="27.4974643" lon="-99.5395734" />
-        <point lat="27.5662699" lon="-99.5203884" />
-        <point lat="27.5942335" lon="-99.5881755" />
-        <point lat="27.6312554" lon="-99.6653419" />
-        <point lat="27.6607129" lon="-99.7233233" />
-        <point lat="27.7954361" lon="-99.8823458" />
-        <point lat="27.9657707" lon="-99.9492802" />
-        <point lat="27.9909966" lon="-100.0068353" />
-        <point lat="28.1384686" lon="-100.0895441" />
-        <point lat="28.1869546" lon="-100.2157389" />
-        <point lat="28.2233985" lon="-100.2246919" />
-        <point lat="28.2418037" lon="-100.2771309" />
-        <point lat="28.3914501" lon="-100.3544229" />
-        <point lat="28.5011874" lon="-100.3821575" />
-        <point lat="28.6594955" lon="-100.5051546" />
-        <point lat="28.7419963" lon="-100.5220366" />
-        <point lat="28.7626113" lon="-100.5455507" />
-        <point lat="28.8154518" lon="-100.5594181" />
-        <point lat="28.8270731" lon="-100.5865498" />
-        <point lat="28.9395213" lon="-100.6619157" />
-        <point lat="29.0839938" lon="-100.6800035" />
-        <point lat="29.1677372" lon="-100.7800894" />
-        <point lat="29.2450997" lon="-100.816265" />
-        <point lat="29.2908581" lon="-100.9079099" />
-        <point lat="29.3691784" lon="-101.0224661" />
-        <point lat="29.4511137" lon="-101.0737149" />
-        <point lat="29.4715871" lon="-101.1563159" />
-        <point lat="29.5098982" lon="-101.1840505" />
-        <point lat="29.5151452" lon="-101.2564018" />
-        <point lat="29.5890983" lon="-101.3221208" />
-        <point lat="29.6436107" lon="-101.3305618" />
-        <point lat="29.6451827" lon="-101.3745755" />
-        <point lat="29.7452183" lon="-101.428236" />
-        <point lat="29.7499295" lon="-101.6470985" />
-        <point lat="29.7823788" lon="-101.8635493" />
-        <point lat="29.7797623" lon="-102.0950733" />
-        <point lat="29.8577044" lon="-102.3338324" />
-        <point lat="29.7583045" lon="-102.3844783" />
-        <point lat="29.7734825" lon="-102.4996374" />
-        <point lat="29.7373657" lon="-102.5448569" />
-        <point lat="29.7284653" lon="-102.6684569" />
-        <point lat="29.6719035" lon="-102.6871477" />
-        <point lat="29.4537387" lon="-102.8155711" />
-        <point lat="29.3985987" lon="-102.8077331" />
-        <point lat="29.3502609" lon="-102.8384824" />
-        <point lat="29.3423776" lon="-102.8722463" />
-        <point lat="29.2629848" lon="-102.8903341" />
-        <point lat="29.2403649" lon="-102.8535556" />
-        <point lat="29.1993208" lon="-102.8806873" />
-        <point lat="29.1614194" lon="-102.981979" />
-        <point lat="28.9627349" lon="-103.1242698" />
-        <point lat="28.97012" lon="-103.3015304" />
-        <point lat="29.0576453" lon="-103.4842173" />
-        <point lat="29.134564" lon="-103.5457158" />
-        <point lat="29.1656313" lon="-103.6976534" />
-        <point lat="29.2161614" lon="-103.7886954" />
-        <point lat="29.2535166" lon="-103.8073862" />
-        <point lat="29.2940131" lon="-103.9997199" />
-        <point lat="29.3901938" lon="-104.180598" />
-        <point lat="29.4757863" lon="-104.2354644" />
-        <point lat="29.5361303" lon="-104.3928283" />
-        <point lat="29.6388944" lon="-104.5333104" />
-        <point lat="29.7745292" lon="-104.585765" />
-        <point lat="29.9172969" lon="-104.6906743" />
-        <point lat="30.049423" lon="-104.7172031" />
-        <point lat="30.183979" lon="-104.6991153" />
-        <point lat="30.3922299" lon="-104.8685378" />
-        <point lat="30.5849866" lon="-104.92461" />
-        <point lat="30.7996607" lon="-105.3585963" />
-        <point lat="31.3503058" lon="-105.998097" />
-        <point lat="31.4332817" lon="-106.1993266" />
-        <point lat="31.6670971" lon="-106.3615403" />
-        <point lat="31.7460899" lon="-106.4483618" />
-        <point lat="31.737886" lon="-106.4978019" />
-        <point lat="31.7799234" lon="-106.537595" />
-        <point lat="31.7840236" lon="-108.2125264" />
-        <point lat="31.3329461" lon="-108.2101147" />
-        <point lat="31.3339761" lon="-111.0752241" />
-        <point lat="32.4936597" lon="-114.8230188" />
-        <point lat="32.6278138" lon="-114.8194012" />
-        <point lat="32.7211965" lon="-114.7193153" />
-        <point lat="32.5273265" lon="-117.2304218" />
-        <point lat="32.62011" lon="-118.2656" />
-        <point lat="33.01972" lon="-119.4507" />
-        <point lat="33.67698" lon="-120.5119" />
-        <point lat="34.30236" lon="-120.6426" />
-        <point lat="37.12139" lon="-122.4438" />
-        <point lat="37.76136" lon="-122.5901" />
-        <point lat="37.92952" lon="-123.0625" />
-        <point lat="38.38307" lon="-123.1738" />
-        <point lat="38.89112" lon="-123.7947" />
-        <point lat="39.66973" lon="-123.864" />
-        <point lat="40.20055" lon="-124.4077" />
-        <point lat="40.4358" lon="-124.4762" />
-        <point lat="40.85868" lon="-124.2346" />
-        <point lat="41.42859" lon="-124.1411" />
-        <point lat="42.85946" lon="-124.6242" />
-        <point lat="43.7559" lon="-124.2455" />
-        <point lat="46.04889" lon="-124.0101" />
-        <point lat="47.18963" lon="-124.2786" />
-        <point lat="47.95094" lon="-124.7449" />
-        <point lat="48.42969" lon="-124.8097" />
-        <point lat="48.49998" lon="-124.6387" />
-        <point lat="48.28749" lon="-124.0003" />
-        <point lat="48.20752" lon="-122.9181" />
-        <point lat="48.31639" lon="-122.8284" />
-        <point lat="48.40612" lon="-123.1869" />
-        <point lat="48.60422" lon="-123.2776" />
-        <point lat="48.79906" lon="-123.1619" />
-        <point lat="49.002212" lon="-123.1677526" />
-        <point lat="48.9976856" lon="-121.7370673" />
-        <point lat="49.0012978" lon="-121.2792678" />
-        <point lat="48.9999846" lon="-95.1550459" />
-        <point lat="49.3853152" lon="-95.1544711" />
-        <point lat="49.3709873" lon="-94.957314" />
-        <point lat="49.3218877" lon="-94.8156261" />
-        <point lat="48.8737433" lon="-94.6821435" />
-        <point lat="48.7114045" lon="-94.3061171" />
-        <point lat="48.632574" lon="-93.8439713" />
-        <point lat="48.6449699" lon="-93.2104392" />
-        <point lat="48.631447" lon="-92.9537863" />
-        <point lat="48.5428955" lon="-92.6306252" />
-        <point lat="48.4502301" lon="-92.5069884" />
-        <point lat="48.3562622" lon="-92.2648308" />
-        <point lat="48.3698586" lon="-92.143752" />
-        <point lat="48.3613613" lon="-92.0542219" />
-        <point lat="48.2036201" lon="-91.7148602" />
-        <point lat="48.0710372" lon="-91.4505332" />
-        <point lat="48.2490632" lon="-90.8869199" />
-        <point lat="48.246792" lon="-90.8451392" />
-        <point lat="48.1655305" lon="-90.7752205" />
-        <point lat="48.125136" lon="-90.5560849" />
-        <point lat="48.1154593" lon="-90.1382777" />
-        <point lat="48.0208739" lon="-89.6087711" />
-        <point lat="48.0168816" lon="-89.4851343" />
-        <point lat="47.9752285" lon="-89.3418862" />
-        <point lat="48.2479276" lon="-88.6751001" />
-        <point lat="48.3058103" lon="-88.3706977" />
-        <point lat="48.16559" lon="-87.9985739" />
-        <point lat="46.8914224" lon="-84.8618555" />
-        <point lat="46.4631904" lon="-84.5566005" />
-        <point lat="46.5064201" lon="-84.4285914" />
-        <point lat="46.5445847" lon="-84.1982732" />
-        <point lat="46.5346313" lon="-84.1271278" />
-        <point lat="46.1182839" lon="-83.828076" />
-        <point lat="46.1249704" lon="-83.6508155" />
-        <point lat="46.1065805" lon="-83.5615822" />
-        <point lat="46.000301" lon="-83.4301441" />
-        <point lat="45.8241144" lon="-83.5929345" />
-        <point lat="45.3388359" lon="-82.522136" />
-        <point lat="43.5852227" lon="-82.1090067" />
-        <point lat="42.9671673" lon="-82.4128819" />
-        <point lat="42.6025541" lon="-82.49488" />
-        <point lat="42.3710587" lon="-82.8301932" />
-        <point lat="42.3067712" lon="-83.0604134" />
-        <point lat="42.2348427" lon="-83.1243635" />
-        <point lat="42.129958" lon="-83.1158368" />
-        <point lat="42.0407325" lon="-83.1490909" />
-        <point lat="41.8619052" lon="-83.0723508" />
-        <point lat="41.6749343" lon="-82.6784183" />
-        <point lat="41.6749343" lon="-82.3953327" />
-        <point lat="42.2112863" lon="-81.2411678" />
-        <point lat="42.3967867" lon="-80.0666659" />
-        <point lat="42.828084" lon="-78.9367806" />
-        <point lat="42.9054768" lon="-78.9082058" />
-        <point lat="42.9295177" lon="-78.9086321" />
-        <point lat="42.9560454" lon="-78.9333595" />
-        <point lat="42.9572935" lon="-78.9632029" />
-        <point lat="42.9685251" lon="-78.9781245" />
-        <point lat="42.9850568" lon="-79.0186263" />
-        <point lat="43.0156131" lon="-79.0275793" />
-        <point lat="43.055189" lon="-79.0054099" />
-        <point lat="43.0645339" lon="-79.0156419" />
-        <point lat="43.0776144" lon="-79.0787393" />
-        <point lat="43.1031444" lon="-79.0612596" />
-        <point lat="43.1190175" lon="-79.0727707" />
-        <point lat="43.1407973" lon="-79.0510276" />
-        <point lat="43.1607035" lon="-79.0535856" />
-        <point lat="43.1778053" lon="-79.0599806" />
-        <point lat="43.199875" lon="-79.057849" />
-        <point lat="43.2175871" lon="-79.0621123" />
-        <point lat="43.2492697" lon="-79.064244" />
-        <point lat="43.4507816" lon="-79.2040815" />
-        <point lat="43.6353977" lon="-78.6887893" />
-        <point lat="43.6365933" lon="-76.8021616" />
-        <point lat="44.0951877" lon="-76.4491572" />
-        <point lat="44.2042125" lon="-76.3124941" />
-        <point lat="44.2905919" lon="-76.164174" />
-        <point lat="44.3552931" lon="-76.0001779" />
-        <point lat="44.3751206" lon="-75.9181798" />
-        <point lat="44.4302572" lon="-75.8385934" />
-        <point lat="44.4819006" lon="-75.816888" />
-        <point lat="44.6099509" lon="-75.6553036" />
-        <point lat="44.8472554" lon="-75.3285171" />
-        <point lat="44.9890003" lon="-74.9800253" />
-        <point lat="45.0273648" lon="-74.808794" />
-        <point lat="45.008612" lon="-74.693032" />
-        <point lat="44.997528" lon="-74.1564269" />
-        <point lat="45.0282171" lon="-72.6274039" />
-        <point lat="45.013727" lon="-72.5490233" />
-        <point lat="45.0192678" lon="-71.5222385" />
-        <point lat="45.061871" lon="-71.5162093" />
-        <point lat="45.1282686" lon="-71.4498873" />
-        <point lat="45.2107323" lon="-71.4221527" />
-        <point lat="45.241307" lon="-71.4667693" />
-        <point lat="45.2565882" lon="-71.3883887" />
-        <point lat="45.3185197" lon="-71.2883028" />
-        <point lat="45.2650759" lon="-71.2195692" />
-        <point lat="45.2582858" lon="-71.1460121" />
-        <point lat="45.3558157" lon="-71.0869252" />
-        <point lat="45.348189" lon="-70.9410169" />
-        <point lat="45.2633785" lon="-70.8807241" />
-        <point lat="45.315128" lon="-70.8336958" />
-        <point lat="45.3905466" lon="-70.8445485" />
-        <point lat="45.4489481" lon="-70.7842558" />
-        <point lat="45.3956274" lon="-70.6540236" />
-        <point lat="45.4912302" lon="-70.7324041" />
-        <point lat="45.5824514" lon="-70.6974343" />
-        <point lat="45.686162" lon="-70.5503201" />
-        <point lat="45.7274242" lon="-70.4140586" />
-        <point lat="45.7922032" lon="-70.4393815" />
-        <point lat="45.8619456" lon="-70.3465308" />
-        <point lat="45.8930075" lon="-70.2741795" />
-        <point lat="45.9441797" lon="-70.2729737" />
-        <point lat="45.9617854" lon="-70.328443" />
-        <point lat="46.1091183" lon="-70.311561" />
-        <point lat="46.1450548" lon="-70.2572976" />
-        <point lat="46.1959941" lon="-70.3007083" />
-        <point lat="46.3368748" lon="-70.2211219" />
-        <point lat="46.4200656" lon="-70.1017424" />
-        <point lat="46.418403" lon="-70.0667726" />
-        <point lat="46.6961775" lon="-70.0016565" />
-        <point lat="47.4590491" lon="-69.2238806" />
-        <point lat="47.4386627" lon="-69.0393849" />
-        <point lat="47.3929685" lon="-69.0128561" />
-        <point lat="47.3652062" lon="-69.0417966" />
-        <point lat="47.2572847" lon="-69.0357673" />
-        <point lat="47.1942287" lon="-68.8995058" />
-        <point lat="47.2335451" lon="-68.7994199" />
-        <point lat="47.2482813" lon="-68.6306003" />
-        <point lat="47.301461" lon="-68.5932189" />
-        <point lat="47.3104554" lon="-68.4207817" />
-        <point lat="47.3701065" lon="-68.3749593" />
-        <point lat="47.3627559" lon="-68.2085514" />
-        <point lat="47.2891935" lon="-68.0831426" />
-        <point lat="47.1975062" lon="-67.9312049" />
-        <point lat="47.1294569" lon="-67.8745298" />
-        <point lat="47.1073016" lon="-67.8697064" />
-        <point lat="47.0719982" lon="-67.7804732" />
-        <point lat="45.9433412" lon="-67.7744439" />
-        <point lat="45.924052" lon="-67.7358566" />
-        <point lat="45.8846141" lon="-67.7720322" />
-        <point lat="45.8728612" lon="-67.7961493" />
-        <point lat="45.8191022" lon="-67.7334449" />
-        <point lat="45.7989291" lon="-67.7852966" />
-        <point lat="45.7560372" lon="-67.7913259" />
-        <point lat="45.728266" lon="-67.7611795" />
-        <point lat="45.6423403" lon="-67.6683287" />
-        <point lat="45.5976406" lon="-67.5405082" />
-        <point lat="45.6136691" lon="-67.4983033" />
-        <point lat="45.5976406" lon="-67.4126877" />
-        <point lat="45.496302" lon="-67.4042467" />
-        <point lat="45.4760123" lon="-67.4874506" />
-        <point lat="45.3668302" lon="-67.4078643" />
-        <point lat="45.2769567" lon="-67.4657453" />
-        <point lat="45.1367755" lon="-67.3475715" />
-        <point lat="45.2064845" lon="-67.2921023" />
-        <point lat="45.16739" lon="-67.1305178" />
-        <point lat="44.9100591" lon="-66.9532572" />
-        <point lat="44.790374" lon="-66.8652299" />
-        <point lat="44.2841178" lon="-67.0774602" />
-        <point lat="43.7718564" lon="-67.9454511" />
-        <point lat="43.5448455" lon="-68.8185827" />
-        <point lat="43.3269245" lon="-69.838356" />
-        <point lat="42.3971064" lon="-70.1663483" />
-        <point lat="42.1114963" lon="-69.5007168" />
-        <point lat="40.9961999" lon="-69.5537744" />
-        <point lat="41.0325947" lon="-71.0924443" />
-        <point lat="40.4111508" lon="-72.9735767" />
-        <point lat="40.3229505" lon="-73.6392082" />
-        <point lat="39.6429192" lon="-73.7935575" />
-        <point lat="38.89298" lon="-74.75888" />
-        <point lat="38.33415" lon="-74.96074" />
-        <point lat="37.01313" lon="-75.8878" />
-        <point lat="35.76485" lon="-75.38874" />
-        <point lat="35.19245" lon="-75.43163" />
-        <point lat="34.90563" lon="-76.10577" />
-        <point lat="34.49582" lon="-76.48834" />
-        <point lat="34.55696" lon="-77.14015" />
-        <point lat="34.26227" lon="-77.64277" />
-        <point lat="33.75515" lon="-77.92915" />
-        <point lat="33.79927" lon="-78.42073" />
-        <point lat="33.6462" lon="-78.77332" />
-        <point lat="32.93096" lon="-79.29548" />
-        <point lat="32.37925" lon="-80.33093" />
-        <point lat="31.68144" lon="-81.02662" />
-        <point lat="31.0867" lon="-81.30259" />
-        <point lat="30.54435" lon="-81.34716" />
-        <point lat="29.59883" lon="-81.06772" />
-        <point lat="28.55866" lon="-80.45832" />
-        <point lat="28.14062" lon="-80.47736" />
-        <point lat="26.7899" lon="-79.93338" />
-        <point lat="25.45094" lon="-80.0891" />
-        <point lat="24.87788" lon="-80.50127" />
-        <point lat="24.62634" lon="-80.98809" />
-        <point lat="24.05562" lon="-82.96141" />
-        <point lat="24.7741373" lon="-83.0267287" />
-        <point lat="24.70339" lon="-82.48232" />
-        <point lat="25.04719" lon="-81.16439" />
-        <point lat="25.74144" lon="-81.41615" />
-        <point lat="25.7643" lon="-81.75062" />
-        <point lat="26.3572" lon="-81.94871" />
-        <point lat="26.39829" lon="-82.25908" />
-        <point lat="27.39285" lon="-82.77711" />
-        <point lat="27.55832" lon="-82.71534" />
-        <point lat="27.83774" lon="-82.95202" />
-        <point lat="28.86732" lon="-82.75816" />
-        <point lat="29.82529" lon="-83.72844" />
-        <point lat="29.99971" lon="-84.23859" />
-        <point lat="29.80863" lon="-84.29488" />
-        <point lat="29.4941" lon="-85.06062" />
-        <point lat="29.60386" lon="-85.42712" />
-        <point lat="29.88211" lon="-85.50566" />
-        <point lat="30.02857" lon="-85.70719" />
-        <point lat="30.35822" lon="-86.43408" />
-      </shape>
-      <shape>
-        <point lat="63.73581" lon="-171.8296" />
-        <point lat="63.83328" lon="-171.8264" />
-        <point lat="63.89218" lon="-171.7295" />
-        <point lat="63.86135" lon="-171.5809" />
-        <point lat="63.79643" lon="-171.5311" />
-        <point lat="63.73282" lon="-171.5273" />
-        <point lat="63.70656" lon="-171.46" />
-        <point lat="63.73344" lon="-171.3159" />
-        <point lat="63.6712" lon="-170.9253" />
-        <point lat="63.74828" lon="-170.7415" />
-        <point lat="63.80096" lon="-170.5074" />
-        <point lat="63.79393" lon="-170.2934" />
-        <point lat="63.70802" lon="-170.0505" />
-        <point lat="63.60404" lon="-169.9537" />
-        <point lat="63.57125" lon="-169.8853" />
-        <point lat="63.51753" lon="-169.5708" />
-        <point lat="63.44846" lon="-169.4803" />
-        <point lat="63.4359" lon="-168.9565" />
-        <point lat="63.39615" lon="-168.6743" />
-        <point lat="63.3354" lon="-168.6115" />
-        <point lat="63.26641" lon="-168.6038" />
-        <point lat="63.16231" lon="-168.6422" />
-        <point lat="63.07024" lon="-168.7768" />
-        <point lat="63.05418" lon="-168.8901" />
-        <point lat="63.10119" lon="-169.1672" />
-        <point lat="63.09033" lon="-169.2875" />
-        <point lat="62.99106" lon="-169.4855" />
-        <point lat="62.91856" lon="-169.5156" />
-        <point lat="62.86308" lon="-169.5883" />
-        <point lat="62.84516" lon="-169.6853" />
-        <point lat="62.88812" lon="-169.8166" />
-        <point lat="62.95162" lon="-169.8514" />
-        <point lat="63.03582" lon="-169.8549" />
-        <point lat="63.02427" lon="-169.918" />
-        <point lat="63.09004" lon="-170.0931" />
-        <point lat="63.09925" lon="-170.2852" />
-        <point lat="63.20856" lon="-170.4278" />
-        <point lat="63.26938" lon="-170.5894" />
-        <point lat="63.33769" lon="-170.9202" />
-        <point lat="63.33209" lon="-171.0971" />
-        <point lat="63.30131" lon="-171.2192" />
-        <point lat="63.24232" lon="-171.3044" />
-        <point lat="63.21446" lon="-171.4511" />
-        <point lat="63.28508" lon="-171.7686" />
-        <point lat="63.35636" lon="-171.8836" />
-        <point lat="63.49651" lon="-171.9501" />
-        <point lat="63.62437" lon="-171.9279" />
-        <point lat="63.71048" lon="-171.8749" />
-      </shape>
-      <shape>
-        <point lat="66.48638" lon="-165.5394" />
-        <point lat="66.70462" lon="-163.8345" />
-        <point lat="66.60284" lon="-163.5316" />
-        <point lat="66.35661" lon="-163.7814" />
-        <point lat="66.17738" lon="-163.6964" />
-        <point lat="66.11776" lon="-161.8766" />
-        <point lat="66.30389" lon="-161.6652" />
-        <point lat="66.19014" lon="-161.9638" />
-        <point lat="66.46455" lon="-161.9799" />
-        <point lat="66.65555" lon="-162.5583" />
-        <point lat="66.95414" lon="-162.7602" />
-        <point lat="67.02732" lon="-163.7865" />
-        <point lat="67.51886" lon="-164.1659" />
-        <point lat="68.27915" lon="-166.8975" />
-        <point lat="68.43752" lon="-166.8776" />
-        <point lat="68.62207" lon="-166.3173" />
-        <point lat="68.96362" lon="-166.279" />
-        <point lat="69.08866" lon="-164.0178" />
-        <point lat="69.3947" lon="-163.3301" />
-        <point lat="69.82819" lon="-163.0696" />
-        <point lat="70.40151" lon="-161.9755" />
-        <point lat="70.43365" lon="-160.9213" />
-        <point lat="70.98042" lon="-159.1923" />
-        <point lat="70.95417" lon="-157.9014" />
-        <point lat="71.46277" lon="-156.6139" />
-        <point lat="71.27014" lon="-155.571" />
-        <point lat="71.08941" lon="-155.4416" />
-        <point lat="71.19386" lon="-154.8061" />
-        <point lat="70.87834" lon="-154.186" />
-        <point lat="70.95957" lon="-152.3589" />
-        <point lat="70.84293" lon="-152.1203" />
-        <point lat="70.69531" lon="-152.2356" />
-        <point lat="70.50034" lon="-151.2745" />
-        <point lat="70.59065" lon="-149.169" />
-        <point lat="70.07135" lon="-144.9468" />
-        <point lat="70.21756" lon="-143.2683" />
-        <point lat="69.74033" lon="-140.9829" />
-        <point lat="60.3036174" lon="-141.014387" />
-        <point lat="60.29352" lon="-139.9914" />
-        <point lat="60.44683" lon="-139.0357" />
-        <point lat="60.12317" lon="-139.0587" />
-        <point lat="59.32694" lon="-137.544" />
-        <point lat="59.0495" lon="-137.3932" />
-        <point lat="59.26476" lon="-136.6211" />
-        <point lat="59.69878" lon="-136.3719" />
-        <point lat="59.88964" lon="-135.4256" />
-        <point lat="59.62847" lon="-134.9352" />
-        <point lat="59.37421" lon="-134.9035" />
-        <point lat="58.52579" lon="-133.3554" />
-        <point lat="57.10909" lon="-131.9588" />
-        <point lat="56.6974" lon="-131.7496" />
-        <point lat="56.20455" lon="-130.0384" />
-        <point lat="55.24147" lon="-129.899" />
-        <point lat="54.6667" lon="-130.6556" />
-        <point lat="54.70939" lon="-130.967" />
-        <point lat="55.09272" lon="-131.1522" />
-        <point lat="54.8517" lon="-131.109" />
-        <point lat="54.7561" lon="-131.3443" />
-        <point lat="55.11828" lon="-131.8833" />
-        <point lat="54.60115" lon="-131.9591" />
-        <point lat="54.6257" lon="-132.3348" />
-        <point lat="54.85224" lon="-132.4671" />
-        <point lat="54.57848" lon="-132.6318" />
-        <point lat="54.58695" lon="-132.846" />
-        <point lat="55.09577" lon="-133.3136" />
-        <point lat="55.24092" lon="-133.7619" />
-        <point lat="55.77766" lon="-133.7775" />
-        <point lat="55.80795" lon="-134.4054" />
-        <point lat="56.92954" lon="-134.4624" />
-        <point lat="56.92888" lon="-134.5896" />
-        <point lat="56.11022" lon="-134.5687" />
-        <point lat="56.27573" lon="-134.9544" />
-        <point lat="56.76575" lon="-135.4457" />
-        <point lat="57.05619" lon="-135.4689" />
-        <point lat="56.92294" lon="-135.9137" />
-        <point lat="57.33953" lon="-135.9432" />
-        <point lat="57.86229" lon="-136.6158" />
-        <point lat="58.11628" lon="-136.6275" />
-        <point lat="58.93842" lon="-138.2413" />
-        <point lat="59.4132" lon="-139.7669" />
-        <point lat="59.7976" lon="-139.6928" />
-        <point lat="59.59821" lon="-140.4092" />
-        <point lat="59.89065" lon="-141.4933" />
-        <point lat="59.98919" lon="-144.1096" />
-        <point lat="59.70787" lon="-144.5981" />
-        <point lat="59.87659" lon="-144.6767" />
-        <point lat="60.09564" lon="-144.3052" />
-        <point lat="60.07252" lon="-144.4497" />
-        <point lat="60.42044" lon="-145.9284" />
-        <point lat="60.14117" lon="-146.5755" />
-        <point lat="60.23921" lon="-146.8464" />
-        <point lat="59.67746" lon="-147.8398" />
-        <point lat="59.90588" lon="-148.3386" />
-        <point lat="59.7683" lon="-149.288" />
-        <point lat="59.9276" lon="-149.3946" />
-        <point lat="59.63788" lon="-149.4643" />
-        <point lat="59.60916" lon="-149.8739" />
-        <point lat="59.32266" lon="-150.2909" />
-        <point lat="57.4515" lon="-151.96" />
-        <point lat="56.32239" lon="-153.8699" />
-        <point lat="55.60588" lon="-155.7139" />
-        <point lat="56.52302" lon="-157.7363" />
-        <point lat="56.35832" lon="-158.1412" />
-        <point lat="56.1736" lon="-158.0405" />
-        <point lat="55.72885" lon="-158.6986" />
-        <point lat="55.77907" lon="-159.3312" />
-        <point lat="55.34115" lon="-159.4887" />
-        <point lat="54.96234" lon="-159.1144" />
-        <point lat="54.79127" lon="-159.2108" />
-        <point lat="55.08458" lon="-159.7555" />
-        <point lat="54.78098" lon="-160.2647" />
-        <point lat="55.01967" lon="-160.8328" />
-        <point lat="54.28515" lon="-162.1816" />
-        <point lat="54.25171" lon="-162.7106" />
-        <point lat="51.89932" lon="-171.9068" />
-        <point lat="50.85879" lon="-179.358" />
-        <point lat="51.80696" lon="-179.7539" />
-        <point lat="53.16404" lon="-171.7688" />
-        <point lat="55.45745" lon="-163.4391" />
-        <point lat="55.98924" lon="-161.805" />
-        <point lat="55.95369" lon="-160.6681" />
-        <point lat="56.46551" lon="-160.2339" />
-        <point lat="56.87917" lon="-158.7936" />
-        <point lat="57.29377" lon="-158.5117" />
-        <point lat="57.64793" lon="-157.8068" />
-        <point lat="58.43192" lon="-157.6413" />
-        <point lat="58.73817" lon="-157.2565" />
-        <point lat="58.50652" lon="-158.1936" />
-        <point lat="58.78914" lon="-158.6609" />
-        <point lat="58.45269" lon="-158.6123" />
-        <point lat="58.29623" lon="-158.8859" />
-        <point lat="58.84123" lon="-159.684" />
-        <point lat="58.67072" lon="-159.9236" />
-        <point lat="58.94599" lon="-160.4187" />
-        <point lat="58.46158" lon="-160.9175" />
-        <point lat="58.4811" lon="-161.1533" />
-        <point lat="58.69388" lon="-161.2041" />
-        <point lat="58.52115" lon="-162.0971" />
-        <point lat="58.66513" lon="-162.2703" />
-        <point lat="58.78413" lon="-161.8563" />
-        <point lat="59.23405" lon="-162.1261" />
-        <point lat="59.529" lon="-161.8854" />
-        <point lat="60.03405" lon="-162.3318" />
-        <point lat="59.74828" lon="-163.1554" />
-        <point lat="59.72497" lon="-164.0779" />
-        <point lat="60.47214" lon="-165.4891" />
-        <point lat="60.62218" lon="-165.4996" />
-        <point lat="60.81654" lon="-165.1295" />
-        <point lat="61.41815" lon="-166.1891" />
-        <point lat="61.73154" lon="-166.2621" />
-        <point lat="61.93595" lon="-165.8395" />
-        <point lat="62.17902" lon="-165.7792" />
-        <point lat="62.51502" lon="-165.3268" />
-        <point lat="62.63347" lon="-164.93" />
-        <point lat="62.87694" lon="-164.969" />
-        <point lat="63.22366" lon="-164.6312" />
-        <point lat="63.36016" lon="-164.1399" />
-        <point lat="63.1561" lon="-163.0914" />
-        <point lat="63.43953" lon="-162.5316" />
-        <point lat="63.52572" lon="-162.7924" />
-        <point lat="63.71682" lon="-162.6737" />
-        <point lat="63.55109" lon="-161.5656" />
-        <point lat="63.80505" lon="-160.8655" />
-        <point lat="64.32021" lon="-161.2707" />
-        <point lat="64.35435" lon="-161.6331" />
-        <point lat="64.60346" lon="-161.4993" />
-        <point lat="64.68602" lon="-160.8978" />
-        <point lat="64.82232" lon="-161.1872" />
-        <point lat="64.61543" lon="-162.0931" />
-        <point lat="64.23903" lon="-162.7663" />
-        <point lat="64.4389" lon="-162.9586" />
-        <point lat="64.30794" lon="-163.1854" />
-        <point lat="64.4889" lon="-163.8225" />
-        <point lat="64.34541" lon="-165.0499" />
-        <point lat="64.54605" lon="-166.4104" />
-        <point lat="64.84893" lon="-166.5612" />
-        <point lat="65.0973" lon="-167.0277" />
-        <point lat="65.28453" lon="-167.0323" />
-        <point lat="65.61988" lon="-168.2267" />
-        <point lat="65.84354" lon="-167.9709" />
-        <point lat="65.97281" lon="-167.0721" />
-        <point lat="66.30579" lon="-166.3394" />
-        <point lat="66.21616" lon="-165.9857" />
-      </shape>
-      <shape>
-        <point lat="56.13026" lon="-169.761" />
-        <point lat="60.69522" lon="-173.3909" />
-        <point lat="60.5648" lon="-166.1702" />
-        <point lat="60.37974" lon="-165.6288" />
-        <point lat="59.98611" lon="-165.4408" />
-        <point lat="59.82348" lon="-165.5298" />
-        <point lat="59.65537" lon="-166.1182" />
-      </shape>
-      <shape>
-        <point lat="25.86335" lon="-174.4593" />
-        <point lat="26.50077" lon="-174.0117" />
-        <point lat="25.58371" lon="-167.7706" />
-        <point lat="21.49698" lon="-156.4811" />
-        <point lat="20.73127" lon="-155.4557" />
-        <point lat="20.09724" lon="-154.995" />
-        <point lat="19.45274" lon="-154.5163" />
-        <point lat="18.70231" lon="-155.581" />
-        <point lat="22.9945" lon="-164.5586" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>OSM US TIGER 2012 Roads Overlay</name>
+    <name>TIGER 2012 Roads Overlay</name>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png</url>
     <icon>data:image/png;base64,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</icon>
     <min-zoom>16</min-zoom>
     <max-zoom>19</max-zoom>
-    <bounds max-lat="71.5633329" max-lon="-66.9452845" min-lat="18.7586966" min-lon="-178.0000970">
+    <bounds max-lat="71.5633329" max-lon="-66.9452845" min-lat="18.7586966" min-lon="-178.000097">
       <shape>
         <point lat="48.4130148" lon="-124.7617886" />
         <point lat="45.90245" lon="-124.6059492" />
@@ -13224,7 +12571,7 @@
     <url>http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg</url>
     <min-zoom>12</min-zoom>
     <max-zoom>20</max-zoom>
-    <bounds max-lat="49.4425264" max-lon="-66.9311098" min-lat="24.4962940" min-lon="-124.8185282">
+    <bounds max-lat="49.4425264" max-lon="-66.9311098" min-lat="24.496294" min-lon="-124.8185282">
       <shape>
         <point lat="48.7529029" lon="-123.2549305" />
         <point lat="48.5592263" lon="-123.2549305" />
@@ -14275,10 +13622,10 @@
     </bounds>
   </entry>
   <entry>
-    <name>USGS Scanned Topographic Maps</name>
+    <name>USGS Topographic Maps</name>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png</url>
-    <bounds max-lat="71.9983391" max-lon="-65.9892568" min-lat="18.9023432" min-lon="-178.0000970">
+    <bounds max-lat="71.9983391" max-lon="-65.9892568" min-lat="18.9023432" min-lon="-178.000097">
       <shape>
         <point lat="48.9962416" lon="-125.990173" />
         <point lat="47.9948396" lon="-125.989419" />
@@ -14478,7 +13825,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Bing Sat</name>
+    <name>Bing aerial imagery</name>
     <type>bing</type>
     <url>http://www.bing.com/maps/</url>
     <default>true</default>
@@ -14515,12 +13862,19 @@
     </projections>
   </entry>
   <entry>
+    <name>Locator Overlay</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.tiles.mapbox.com/v3/openstreetmap.map-btyhiati/{zoom}/{x}/{y}.png</url>
+    <default>true</default>
+    <max-zoom>16</max-zoom>
+  </entry>
+  <entry>
     <name>MapBox Satellite</name>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v3/openstreetmap.map-4wvf9l0l/{zoom}/{x}/{y}.png</url>
     <default>true</default>
     <icon>data:image/png;base64,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YmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuMS4yIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iPgogICAgICAgICA8ZXhpZjpQaXhlbFlEaW1lbnNpb24+NzE8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+NjA8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6Q29tcHJlc3Npb24+NTwvdGlmZjpDb21wcmVzc2lvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+NzI8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFjb3JuIHZlcnNpb24gMy41PC94bXA6Q3JlYXRvclRvb2w+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgqb9JbbAAAGd0lEQVRIDX1We4xVRxn/zZzXfd9l9+7efcCy9LqsYFtAAVHTFaQtrba1plltDKVRUfoHxeCDBE0FTI3+gTXWxkRNUVpNWtbExDSUlhQW2kKjDZWHCyzs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</icon>
-    <max-zoom>17</max-zoom>
+    <max-zoom>16</max-zoom>
   </entry>
   <entry>
     <name>MapQuest Open Aerial</name>

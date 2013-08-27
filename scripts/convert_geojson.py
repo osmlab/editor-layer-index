@@ -62,18 +62,18 @@ for imagery in imageries:
     if bounds_node:
         shape_nodes = bounds_node[0].getElementsByTagName('shape')
         if not len(shape_nodes):
-            min_lat = bounds_node[0].getAttribute('min-lat')
-            min_lon = bounds_node[0].getAttribute('min-lon')
-            max_lat = bounds_node[0].getAttribute('max-lat')
-            max_lon = bounds_node[0].getAttribute('max-lon')
+            min_lat = float(bounds_node[0].getAttribute('min-lat'))
+            min_lon = float(bounds_node[0].getAttribute('min-lon'))
+            max_lat = float(bounds_node[0].getAttribute('max-lat'))
+            max_lon = float(bounds_node[0].getAttribute('max-lon'))
             entry['geometry'] = {
                     "type": "Polygon",
                     "coordinates": [[
-                        [min_lon, min_lon],
-                        [min_lon, max_lon],
-                        [max_lon, max_lon],
-                        [max_lon, min_lon],
-                        [min_lon, min_lon]]]
+                        [min_lon, min_lat],
+                        [min_lon, max_lat],
+                        [max_lon, max_lat],
+                        [max_lon, min_lat],
+                        [min_lon, min_lat]]]
                     }
         else:
             rings = []
