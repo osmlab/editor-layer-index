@@ -1,0 +1,11 @@
+{
+    "name": "Locator Overlay",
+    "url": "http://{switch:a,b,c}.tiles.mapbox.com/v3/openstreetmap.map-btyhiati/{zoom}/{x}/{y}.png",
+    "description": "Shows major features to help orient you.",
+    "overlay": true,
+    "default": true,
+    "extent": {
+        "max_zoom": "16"
+    },
+    "type": "tms"
+}
