@@ -1,11 +1,13 @@
 ALL = imagery.geojson imagery.json imagery.xml
+SOURCES = $(shell find sources -type f -name '*.json')
 
 all: $(ALL)
 
+check:
+	@python scripts/check.py $(SOURCES)
+
 clean:
 	rm $(ALL)
-
-SOURCES = $(shell find sources -type f -name '*.json')
 
 imagery.xml: $(SOURCES)
 	python scripts/convert_xml.py $(SOURCES)
