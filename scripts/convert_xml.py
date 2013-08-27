@@ -48,20 +48,20 @@ for file in sys.argv[1:]:
 
         if 'min_zoom' in extent:
             min_zoom = ET.SubElement(entry, "min-zoom")
-            min_zoom.text = extent['min_zoom']
+            min_zoom.text = str(extent['min_zoom'])
 
         if 'max_zoom' in extent:
             max_zoom = ET.SubElement(entry, "max-zoom")
-            max_zoom.text = extent['max_zoom']
+            max_zoom.text = str(extent['max_zoom'])
 
         if 'bbox' in extent or 'polygon' in extent:
             bounds = ET.SubElement(entry, "bounds")
 
             if 'bbox' in extent:
-                bounds.set('min-lat', extent['bbox']['min_lat'])
-                bounds.set('min-lon', extent['bbox']['min_lon'])
-                bounds.set('max-lat', extent['bbox']['max_lat'])
-                bounds.set('max-lon', extent['bbox']['max_lon'])
+                bounds.set('min-lat', str(extent['bbox']['min_lat']))
+                bounds.set('min-lon', str(extent['bbox']['min_lon']))
+                bounds.set('max-lat', str(extent['bbox']['max_lat']))
+                bounds.set('max-lon', str(extent['bbox']['max_lon']))
 
             if 'polygon' in extent:
                 for ring in extent['polygon']:
