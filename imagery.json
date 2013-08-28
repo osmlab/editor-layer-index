@@ -28979,7 +28979,8 @@
                 "min_lat": 49.8, 
                 "max_lon": 1.9
             }
-        }
+        }, 
+        "overlay": true
     }, 
     {
         "url": "http://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png", 
@@ -51766,6 +51767,11 @@
         ]
     }, 
     {
+        "attribution": {
+            "url": "http://www.mapbox.com/about/maps/", 
+            "text": "Terms & Feedback", 
+            "required": true
+        }, 
         "name": "Locator Overlay", 
         "overlay": true, 
         "url": "http://{switch:a,b,c}.tiles.mapbox.com/v3/openstreetmap.map-btyhiati/{zoom}/{x}/{y}.png", 
@@ -51777,6 +51783,11 @@
         "description": "Shows major features to help orient you."
     }, 
     {
+        "attribution": {
+            "url": "http://www.mapbox.com/about/maps/", 
+            "text": "Terms & Feedback", 
+            "required": true
+        }, 
         "name": "MapBox Satellite", 
         "url": "http://{switch:a,b,c}.tiles.mapbox.com/v3/openstreetmap.map-4wvf9l0l/{zoom}/{x}/{y}.png", 
         "default": true, 
