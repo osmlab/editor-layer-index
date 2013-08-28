@@ -1,7 +1,8 @@
 {
     "url": "http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png", 
     "type": "tms", 
-    "name": "OS OpenData Locator", 
+    "name": "OS OpenData Locator",
+    "overlay": true,
     "extent": {
         "bbox": {
             "min_lon": -9,
