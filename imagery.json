@@ -54149,6 +54149,21 @@
         }
     }, 
     {
+        "attribution": {
+            "url": "http://www.openstreetmap.org/copyright", 
+            "text": "\u00a9 OpenStreetMap contributors", 
+            "required": "true"
+        }, 
+        "name": "OpenStreetMap GPS traces", 
+        "overlay": true, 
+        "url": "http://noquiklos.openstreetmap.org/gps-lines/tile/{zoom}/{x}/{y}.png", 
+        "extent": {
+            "min_zoom": 0, 
+            "max_zoom": 20
+        }, 
+        "type": "tms"
+    }, 
+    {
         "name": "Bing aerial imagery", 
         "url": "http://www.bing.com/maps/", 
         "default": true, 

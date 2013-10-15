@@ -1,0 +1,15 @@
+{
+    "name": "OpenStreetMap GPS traces",
+    "type": "tms",
+    "url": "http://noquiklos.openstreetmap.org/gps-lines/tile/{zoom}/{x}/{y}.png",
+    "extent": {
+        "min_zoom": 0,
+        "max_zoom": 20
+    },
+    "attribution": {
+        "url": "http://www.openstreetmap.org/copyright",
+        "text": "© OpenStreetMap contributors",
+        "required": "true"
+    },
+    "overlay": true
+}
