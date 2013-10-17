@@ -14472,6 +14472,15 @@
     <max-zoom>17</max-zoom>
   </entry>
   <entry>
+    <name>OpenStreetMap GPS traces</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors</attribution-text>
+    <attribution-url>http://www.openstreetmap.org/copyright</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>20</max-zoom>
+  </entry>
+  <entry>
     <name>Bing aerial imagery</name>
     <type>bing</type>
     <url>http://www.bing.com/maps/</url>

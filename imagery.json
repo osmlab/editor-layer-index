@@ -54149,6 +54149,22 @@
         }
     }, 
     {
+        "attribution": {
+            "url": "http://www.openstreetmap.org/copyright", 
+            "text": "\u00a9 OpenStreetMap contributors", 
+            "required": "true"
+        }, 
+        "name": "OpenStreetMap GPS traces", 
+        "overlay": true, 
+        "url": "http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png", 
+        "extent": {
+            "min_zoom": 0, 
+            "max_zoom": 20
+        }, 
+        "type": "tms", 
+        "description": "Public GPS traces uploaded to OpenStreetMap."
+    }, 
+    {
         "name": "Bing aerial imagery", 
         "url": "http://www.bing.com/maps/", 
         "default": true, 
