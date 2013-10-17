@@ -2,7 +2,7 @@
     "name": "OpenStreetMap GPS traces",
     "description": "Public GPS traces uploaded to OpenStreetMap.",
     "type": "tms",
-    "url": "http://{switch:a,b,c}.gps-tile.openstreetmap.org/gps-lines/tile/{zoom}/{x}/{y}.png",
+    "url": "http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png",
     "extent": {
         "min_zoom": 0,
         "max_zoom": 20
