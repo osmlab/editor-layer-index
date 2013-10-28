@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/strathaven.html",
+        "text": "National Library of Scotland - Strathaven 1858",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Strathaven 1858 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_strathaven.jpg",
+    "date": "1858",
+    "url": "http://geo.nls.uk/maps/towns/strathaven/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.06954357,
+            "max_lon": -4.05878199,
+            "min_lat": 55.67242091,
+            "max_lat": 55.6800715
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.06914872,
+                     55.67242091
+                  ],
+                  [
+                     -4.06954357,
+                     55.67989707
+                  ],
+                  [
+                     -4.05917487,
+                     55.6800715
+                  ],
+                  [
+                     -4.05878199,
+                     55.67259529
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

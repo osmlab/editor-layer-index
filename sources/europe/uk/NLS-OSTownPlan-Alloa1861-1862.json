@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/alloa.html",
+        "text": "National Library of Scotland - Alloa 1861-1862",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Alloa 1861-1862 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_alloa.jpg",
+    "date": "1861-1862",
+    "url": "http://geo.nls.uk/maps/towns/alloa/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.81274448,
+            "max_lon": -3.77939631,
+            "min_lat": 56.09864363,
+            "max_lat": 56.12216898
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.81166061,
+                     56.09864363
+                  ],
+                  [
+                     -3.81274448,
+                     56.12169929
+                  ],
+                  [
+                     -3.7804609,
+                     56.12216898
+                  ],
+                  [
+                     -3.77939631,
+                     56.09911292
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

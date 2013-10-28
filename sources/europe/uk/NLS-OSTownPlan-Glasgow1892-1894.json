@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/glasgow_2.html",
+        "text": "National Library of Scotland - Glasgow 1892-1894",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Glasgow 1892-1894 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_glasgow_2.jpg",
+    "date": "1892-1894",
+    "url": "http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.35157646,
+            "max_lon": -4.17321842,
+            "min_lat": 55.81456228,
+            "max_lat": 55.9012587
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.3465357,
+                     55.81456228
+                  ],
+                  [
+                     -4.35157646,
+                     55.89806268
+                  ],
+                  [
+                     -4.17788765,
+                     55.9012587
+                  ],
+                  [
+                     -4.17321842,
+                     55.81774834
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

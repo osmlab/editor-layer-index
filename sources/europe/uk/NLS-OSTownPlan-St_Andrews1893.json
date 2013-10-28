@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/st-andrews_2.html",
+        "text": "National Library of Scotland - St Andrews 1893",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, St Andrews 1893 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_st-andrews_2.jpg",
+    "date": "1893",
+    "url": "http://geo.nls.uk/maps/towns/standrews1893/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.81609919,
+            "max_lon": -2.77326775,
+            "min_lat": 56.31861733,
+            "max_lat": 56.34903619
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.81545583,
+                     56.31861733
+                  ],
+                  [
+                     -2.81609919,
+                     56.3487653
+                  ],
+                  [
+                     -2.77387785,
+                     56.34903619
+                  ],
+                  [
+                     -2.77326775,
+                     56.31888792
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

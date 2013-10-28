@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/lanark.html",
+        "text": "National Library of Scotland - Lanark 1858",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Lanark 1858 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_lanark.jpg",
+    "date": "1858",
+    "url": "http://geo.nls.uk/maps/towns/lanark/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.78710605,
+            "max_lon": -3.76565645,
+            "min_lat": 55.66308804,
+            "max_lat": 55.67830935
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.78642584,
+                     55.66308804
+                  ],
+                  [
+                     -3.78710605,
+                     55.67800854
+                  ],
+                  [
+                     -3.76632876,
+                     55.67830935
+                  ],
+                  [
+                     -3.76565645,
+                     55.66338868
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/dumfries_2.html",
+        "text": "National Library of Scotland - Dumfries 1893",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Dumfries 1893 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_dumfries_2.jpg",
+    "date": "1893",
+    "url": "http://geo.nls.uk/maps/towns/dumfries1893/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.63330662,
+            "max_lon": -3.58112132,
+            "min_lat": 55.04150111,
+            "max_lat": 55.07940411
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.63179081,
+                     55.04150111
+                  ],
+                  [
+                     -3.63330662,
+                     55.07873429
+                  ],
+                  [
+                     -3.58259012,
+                     55.07940411
+                  ],
+                  [
+                     -3.58112132,
+                     55.04217001
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

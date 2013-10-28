@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/galashiels.html",
+        "text": "National Library of Scotland - Galashiels 1858",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Galashiels 1858 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_galashiels.jpg",
+    "date": "1858",
+    "url": "http://geo.nls.uk/maps/towns/galashiels/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.82981273,
+            "max_lon": -2.78835674,
+            "min_lat": 55.59586303,
+            "max_lat": 55.62580992
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.82918609,
+                     55.59586303
+                  ],
+                  [
+                     -2.82981273,
+                     55.62554026
+                  ],
+                  [
+                     -2.78895254,
+                     55.62580992
+                  ],
+                  [
+                     -2.78835674,
+                     55.59613239
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

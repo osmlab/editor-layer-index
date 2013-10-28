@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/arbroath.html",
+        "text": "National Library of Scotland - Arbroath 1858",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Arbroath 1858 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_arbroath.jpg",
+    "date": "1858",
+    "url": "http://geo.nls.uk/maps/towns/arbroath/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.60764981,
+            "max_lon": -2.564536,
+            "min_lat": 56.53995105,
+            "max_lat": 56.57042549
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.60716469,
+                     56.53995105
+                  ],
+                  [
+                     -2.60764981,
+                     56.57022426
+                  ],
+                  [
+                     -2.56498708,
+                     56.57042549
+                  ],
+                  [
+                     -2.564536,
+                     56.54015206
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

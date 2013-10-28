@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/selkirk.html",
+        "text": "National Library of Scotland - Selkirk 1865",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Selkirk 1865 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_selkirk.jpg",
+    "date": "1865",
+    "url": "http://geo.nls.uk/maps/towns/selkirk/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.86063259,
+            "max_lon": -2.81941615,
+            "min_lat": 55.53499576,
+            "max_lat": 55.56487574
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.85998582,
+                     55.53499576
+                  ],
+                  [
+                     -2.86063259,
+                     55.56459732
+                  ],
+                  [
+                     -2.82003242,
+                     55.56487574
+                  ],
+                  [
+                     -2.81941615,
+                     55.53527387
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

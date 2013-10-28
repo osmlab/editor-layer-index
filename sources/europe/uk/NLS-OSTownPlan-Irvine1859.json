@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/irvine.html",
+        "text": "National Library of Scotland - Irvine 1859",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Irvine 1859 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_irvine.jpg",
+    "date": "1859",
+    "url": "http://geo.nls.uk/maps/towns/irvine/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.67643252,
+            "max_lon": -4.65435844,
+            "min_lat": 55.60649957,
+            "max_lat": 55.62204812
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.67540402,
+                     55.60649957
+                  ],
+                  [
+                     -4.67643252,
+                     55.62159024
+                  ],
+                  [
+                     -4.65537888,
+                     55.62204812
+                  ],
+                  [
+                     -4.65435844,
+                     55.60695719
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

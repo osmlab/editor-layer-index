@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/dalkeith_2.html",
+        "text": "National Library of Scotland - Dalkeith 1893",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Dalkeith 1893 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_dalkeith_2.jpg",
+    "date": "1893",
+    "url": "http://geo.nls.uk/maps/towns/dalkeith1893/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.08658588,
+            "max_lon": -3.04308639,
+            "min_lat": 55.87936087,
+            "max_lat": 55.90063074
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.08600192,
+                     55.87936087
+                  ],
+                  [
+                     -3.08658588,
+                     55.90025926
+                  ],
+                  [
+                     -3.0436473,
+                     55.90063074
+                  ],
+                  [
+                     -3.04308639,
+                     55.87973206
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}
