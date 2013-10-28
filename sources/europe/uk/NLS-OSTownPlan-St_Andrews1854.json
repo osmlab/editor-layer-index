@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/standrews1854/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/st-andrews_1.html",
+        "text": "National Library of Scotland - St Andrews 1854",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, St Andrews 1854 (NLS)",
+    "description": "Detailed town plan of St Andrews 1854, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1854",
+    "end_date": "1855",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.81405804,
+            "max_lon": -2.77183819,
+            "min_lat": 56.32097352,
+            "max_lat": 56.35088865
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.81342686,
+                     56.32097352
+                  ],
+                  [
+                     -2.81405804,
+                     56.3506222
+                  ],
+                  [
+                     -2.77243712,
+                     56.35088865
+                  ],
+                  [
+                     -2.77183819,
+                     56.32123967
+                  ]
+               ]
+            ]
+    }      
+}

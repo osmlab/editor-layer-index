@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/stranraer1893/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/stranraer_2.html",
+        "text": "National Library of Scotland - Stranraer 1893",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, Stranraer 1893 (NLS)",
+    "description": "Detailed town plan of Stranraer 1893, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1893",
+    "end_date": "1894",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -5.04511026,
+            "max_lon": -5.0131333,
+            "min_lat": 54.89773858,
+            "max_lat": 54.91077389
+        },
+            "polygon" :[
+               [
+                  [
+                     -5.04418424,
+                     54.89773858
+                  ],
+                  [
+                     -5.04511026,
+                     54.90999885
+                  ],
+                  [
+                     -5.0140499,
+                     54.91077389
+                  ],
+                  [
+                     -5.0131333,
+                     54.89851327
+                  ]
+               ]
+            ]
+    }      
+}

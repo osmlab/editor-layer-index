@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/falkirk.html",
+        "text": "National Library of Scotland - Falkirk 1858-1859",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, Falkirk 1858-1859 (NLS)",
+    "description": "Detailed town plan of Falkirk 1858-1859, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1858",
+    "end_date": "1860",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.79697783,
+            "max_lon": -3.76539679,
+            "min_lat": 55.99343101,
+            "max_lat": 56.01764348
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.79587441,
+                     55.99343101
+                  ],
+                  [
+                     -3.79697783,
+                     56.01720281
+                  ],
+                  [
+                     -3.76648151,
+                     56.01764348
+                  ],
+                  [
+                     -3.76539679,
+                     55.99387129
+                  ]
+               ]
+            ]
+    }      
+}

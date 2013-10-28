@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/aberdeen/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/aberdeen.html",
+        "text": "National Library of Scotland - Aberdeen 1866-1867",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, Aberdeen 1866-1867 (NLS)",
+    "description": "Detailed town plan of Aberdeen 1866-1867, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1866",
+    "end_date": "1868",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.14064752,
+            "max_lon": -2.04493842,
+            "min_lat": 57.11218789,
+            "max_lat": 57.17901252
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.14039404,
+                     57.11218789
+                  ],
+                  [
+                     -2.14064752,
+                     57.17894161
+                  ],
+                  [
+                     -2.04501987,
+                     57.17901252
+                  ],
+                  [
+                     -2.04493842,
+                     57.11225862
+                  ]
+               ]
+            ]
+    }      
+}

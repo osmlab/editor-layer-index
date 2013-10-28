@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/wigtown1894/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/wigtown_2.html",
+        "text": "National Library of Scotland - Wigtown 1894",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, Wigtown 1894 (NLS)",
+    "description": "Detailed town plan of Wigtown 1894, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1894",
+    "end_date": "1895",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.45325423,
+            "max_lon": -4.43166549,
+            "min_lat": 54.85721131,
+            "max_lat": 54.87278416
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.45233361,
+                     54.85721131
+                  ],
+                  [
+                     -4.45325423,
+                     54.87236807
+                  ],
+                  [
+                     -4.43257837,
+                     54.87278416
+                  ],
+                  [
+                     -4.43166549,
+                     54.85762716
+                  ]
+               ]
+            ]
+    }      
+}

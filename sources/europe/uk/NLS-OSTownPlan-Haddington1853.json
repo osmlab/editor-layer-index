@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/haddington1853/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/haddington_1.html",
+        "text": "National Library of Scotland - Haddington 1853",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, Haddington 1853 (NLS)",
+    "description": "Detailed town plan of Haddington 1853, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1853",
+    "end_date": "1854",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.78888196,
+            "max_lon": -2.76642588,
+            "min_lat": 55.9451862,
+            "max_lat": 55.9613817
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.78855542,
+                     55.9451862
+                  ],
+                  [
+                     -2.78888196,
+                     55.96124194
+                  ],
+                  [
+                     -2.76674325,
+                     55.9613817
+                  ],
+                  [
+                     -2.76642588,
+                     55.94532587
+                  ]
+               ]
+            ]
+    }      
+}

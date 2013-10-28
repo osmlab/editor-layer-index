@@ -1,0 +1,44 @@
+{
+    "url": "http://geo.nls.uk/maps/towns/dunfermline1854/{zoom}/{x}/{-y}.png",
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/dunfermline_1.html",
+        "text": "National Library of Scotland - Dunfermline 1854",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OS Town Plans, Dunfermline 1854 (NLS)",
+    "description": "Detailed town plan of Dunfermline 1854, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1854",
+    "end_date": "1855",
+    "extent": {
+        "min_zoom": 13,
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.49116489,
+            "max_lon": -3.44305323,
+            "min_lat": 56.0605979,
+            "max_lat": 56.07955208
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.49045481,
+                     56.0605979
+                  ],
+                  [
+                     -3.49116489,
+                     56.07898822
+                  ],
+                  [
+                     -3.44374075,
+                     56.07955208
+                  ],
+                  [
+                     -3.44305323,
+                     56.06116138
+                  ]
+               ]
+            ]
+    }      
+}
