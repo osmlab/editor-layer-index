@@ -5,29 +5,8 @@
         "text": "geoimage.at",
         "required": true
     }, 
-    "available_projections": [
-        "EPSG:3857", 
-        "EPSG:900913", 
-        "EPSG:31287", 
-        "EPSG:3034", 
-        "EPSG:3035", 
-        "EPSG:3044", 
-        "EPSG:3045", 
-        "EPSG:31254", 
-        "EPSG:31255", 
-        "EPSG:31256", 
-        "EPSG:31257", 
-        "EPSG:31258", 
-        "EPSG:31259", 
-        "EPSG:32632", 
-        "EPSG:32633", 
-        "EPSG:3416", 
-        "EPSG:4258", 
-        "EPSG:4326", 
-        "CRS:84"
-    ], 
-    "type": "wms", 
-    "url": "http://gis.lebensministerium.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+    "type": "tms", 
+    "url": "http://geoimage.openstreetmap.at/4d80de696cd562a63ce463a58a61488d/{zoom}/{x}/{y}.jpg", 
     "extent": {
         "bbox": {
             "min_lon": 9.5406306,
