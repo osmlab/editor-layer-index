@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/peebles.html",
+        "text": "National Library of Scotland - Peebles 1856",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Peebles 1856 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_peebles.jpg",
+    "date": "1856",
+    "url": "http://geo.nls.uk/maps/towns/peebles/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.20990288,
+            "max_lon": -3.17829135,
+            "min_lat": 55.63635834,
+            "max_lat": 55.65903935
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.20921287,
+                     55.63635834
+                  ],
+                  [
+                     -3.20990288,
+                     55.65873817
+                  ],
+                  [
+                     -3.17896372,
+                     55.65903935
+                  ],
+                  [
+                     -3.17829135,
+                     55.63665927
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

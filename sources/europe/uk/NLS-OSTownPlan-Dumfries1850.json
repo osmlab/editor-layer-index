@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/dumfries_1.html",
+        "text": "National Library of Scotland - Dumfries 1850",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Dumfries 1850 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_dumfries_1.jpg",
+    "date": "1850",
+    "url": "http://geo.nls.uk/maps/towns/dumfries1850/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.64116352,
+            "max_lon": -3.57642118,
+            "min_lat": 55.03715991,
+            "max_lat": 55.08402202
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.63928076,
+                     55.03715991
+                  ],
+                  [
+                     -3.64116352,
+                     55.08319002
+                  ],
+                  [
+                     -3.57823183,
+                     55.08402202
+                  ],
+                  [
+                     -3.57642118,
+                     55.0379905
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/nairn.html",
+        "text": "National Library of Scotland - Nairn 1867-1868",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Nairn 1867-1868 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_nairn.jpg",
+    "date": "1867-1868",
+    "url": "http://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.88509905,
+            "max_lon": -3.85856057,
+            "min_lat": 57.57899149,
+            "max_lat": 57.59406441
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.88433907,
+                     57.57899149
+                  ],
+                  [
+                     -3.88509905,
+                     57.5936822
+                  ],
+                  [
+                     -3.85931017,
+                     57.59406441
+                  ],
+                  [
+                     -3.85856057,
+                     57.57937348
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

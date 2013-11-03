@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/berwick.html",
+        "text": "National Library of Scotland - Berwick-upon-Tweed 1852",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Berwick-upon-Tweed 1852 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_berwick.jpg",
+    "date": "1852",
+    "url": "http://geo.nls.uk/maps/towns/berwick/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.02118763,
+            "max_lon": -1.98976956,
+            "min_lat": 55.75577627,
+            "max_lat": 55.77904265
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.02117487,
+                     55.75577627
+                  ],
+                  [
+                     -2.02118763,
+                     55.77904118
+                  ],
+                  [
+                     -1.98976956,
+                     55.77904265
+                  ],
+                  [
+                     -1.9897755,
+                     55.75577774
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/hawick.html",
+        "text": "National Library of Scotland - Hawick 1857-1858",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Hawick 1857-1858 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_hawick.jpg",
+    "date": "1857-1858",
+    "url": "http://geo.nls.uk/maps/towns/hawick/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.80176329,
+            "max_lon": -2.77043917,
+            "min_lat": 55.4102516,
+            "max_lat": 55.43324489
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.80130149,
+                     55.4102516
+                  ],
+                  [
+                     -2.80176329,
+                     55.43304638
+                  ],
+                  [
+                     -2.7708832,
+                     55.43324489
+                  ],
+                  [
+                     -2.77043917,
+                     55.41044995
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

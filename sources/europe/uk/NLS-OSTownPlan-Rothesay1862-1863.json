@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/rothesay.html",
+        "text": "National Library of Scotland - Rothesay 1862-1863",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Rothesay 1862-1863 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_rothesay.jpg",
+    "date": "1862-1863",
+    "url": "http://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -5.06569719,
+            "max_lon": -5.04294127,
+            "min_lat": 55.82864114,
+            "max_lat": 55.84439519
+        },
+            "polygon" :[
+               [
+                  [
+                     -5.06449893,
+                     55.82864114
+                  ],
+                  [
+                     -5.06569719,
+                     55.84385927
+                  ],
+                  [
+                     -5.04413114,
+                     55.84439519
+                  ],
+                  [
+                     -5.04294127,
+                     55.82917676
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

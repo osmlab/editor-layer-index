@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/hamilton.html",
+        "text": "National Library of Scotland - Hamilton 1858",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Hamilton 1858 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_hamilton.jpg",
+    "date": "1858",
+    "url": "http://geo.nls.uk/maps/towns/hamilton/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.06924047,
+            "max_lon": -4.01481949,
+            "min_lat": 55.74877265,
+            "max_lat": 55.78785698
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.06721642,
+                     55.74877265
+                  ],
+                  [
+                     -4.06924047,
+                     55.78698508
+                  ],
+                  [
+                     -4.01679233,
+                     55.78785698
+                  ],
+                  [
+                     -4.01481949,
+                     55.74964331
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

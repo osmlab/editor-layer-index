@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/maybole.html",
+        "text": "National Library of Scotland - Mayole 1856-1857",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Mayole 1856-1857 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_maybole.jpg",
+    "date": "1856-1857",
+    "url": "http://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.6918884,
+            "max_lon": -4.6698799,
+            "min_lat": 55.34340178,
+            "max_lat": 55.35895813
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.69086378,
+                     55.34340178
+                  ],
+                  [
+                     -4.6918884,
+                     55.35849731
+                  ],
+                  [
+                     -4.67089656,
+                     55.35895813
+                  ],
+                  [
+                     -4.6698799,
+                     55.34386234
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

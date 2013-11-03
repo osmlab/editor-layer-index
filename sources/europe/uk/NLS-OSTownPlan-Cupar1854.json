@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/cupar_1.html",
+        "text": "National Library of Scotland - Cupar 1854",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Cupar 1854 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_cupar_1.jpg",
+    "date": "1854",
+    "url": "http://geo.nls.uk/maps/towns/cupar1854/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -3.04890965,
+            "max_lon": -2.98381041,
+            "min_lat": 56.28653177,
+            "max_lat": 56.33271677
+        },
+            "polygon" :[
+               [
+                  [
+                     -3.04765872,
+                     56.28653177
+                  ],
+                  [
+                     -3.04890965,
+                     56.332192
+                  ],
+                  [
+                     -2.98498515,
+                     56.33271677
+                  ],
+                  [
+                     -2.98381041,
+                     56.28705563
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

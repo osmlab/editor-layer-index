@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/girvan.html",
+        "text": "National Library of Scotland - Girvan 1857",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Girvan 1857 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_girvan.jpg",
+    "date": "1857",
+    "url": "http://geo.nls.uk/maps/towns/girvan/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -4.87587895,
+            "max_lon": -4.84285519,
+            "min_lat": 55.22679729,
+            "max_lat": 55.25019598
+        },
+            "polygon" :[
+               [
+                  [
+                     -4.87424251,
+                     55.22679729
+                  ],
+                  [
+                     -4.87587895,
+                     55.24945946
+                  ],
+                  [
+                     -4.84447382,
+                     55.25019598
+                  ],
+                  [
+                     -4.84285519,
+                     55.22753318
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

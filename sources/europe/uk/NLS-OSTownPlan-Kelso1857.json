@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/kelso.html",
+        "text": "National Library of Scotland - Kelso 1857",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Kelso 1857 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_kelso.jpg",
+    "date": "1857",
+    "url": "http://geo.nls.uk/maps/towns/kelso/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.44949757,
+            "max_lon": -2.41878581,
+            "min_lat": 55.58390848,
+            "max_lat": 55.60606617
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.44924544,
+                     55.58390848
+                  ],
+                  [
+                     -2.44949757,
+                     55.6059582
+                  ],
+                  [
+                     -2.41902085,
+                     55.60606617
+                  ],
+                  [
+                     -2.41878581,
+                     55.58401636
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

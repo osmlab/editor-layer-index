@@ -1,0 +1,44 @@
+{
+    "attribution": {
+        "url": "http://maps.nls.uk/townplans/brechin.html",
+        "text": "National Library of Scotland - Brechin 1862",
+        "required": true,
+        "GLAM-url": "http://geo.nls.uk/maps/",
+        "GLAM-text": "National Library of Scotland Historic Maps"
+    },
+    "name": "OS Town Plans, Brechin 1862 (NLS)",
+    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_brechin.jpg",
+    "date": "1862",
+    "url": "http://geo.nls.uk/maps/towns/brechin/{zoom}/{x}/{-y}.png",
+    "extent": {
+        "max_zoom": 20,
+        "bbox": {
+            "min_lon": -2.67521172,
+            "max_lon": -2.64280695,
+            "min_lat": 56.71456775,
+            "max_lat": 56.73756872
+        },
+            "polygon" :[
+               [
+                  [
+                     -2.67480248,
+                     56.71456775
+                  ],
+                  [
+                     -2.67521172,
+                     56.73739937
+                  ],
+                  [
+                     -2.64319679,
+                     56.73756872
+                  ],
+                  [
+                     -2.64280695,
+                     56.71473694
+                  ]
+               ]
+            ]
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}
