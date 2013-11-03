@@ -28,6 +28,14 @@
             "description": "Whether this is a good default imagery for its area",
             "type": "boolean"
         },
+        "start_date": {
+            "description": "The age of the oldest imagery in the source, as an RFC3339 date or leading portion of one",
+            "type": "string"
+        },
+        "end_date": {
+            "description": "The age of the newest imagery in the source, as an RFC3339 date or leading portion of one",
+            "type": "string"
+        },
         "overlay": {
             "description": "'true' if tiles are transparent and can be overlaid on another source",
             "type": "boolean"
