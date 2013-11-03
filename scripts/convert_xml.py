@@ -57,19 +57,20 @@ for file in sys.argv[1:]:
         if 'bbox' in extent or 'polygon' in extent:
             bounds = ET.SubElement(entry, "bounds")
 
+            # Rounding to the nearest ~10cm
             if 'bbox' in extent:
-                bounds.set('min-lat', str(extent['bbox']['min_lat']))
-                bounds.set('min-lon', str(extent['bbox']['min_lon']))
-                bounds.set('max-lat', str(extent['bbox']['max_lat']))
-                bounds.set('max-lon', str(extent['bbox']['max_lon']))
+                bounds.set('min-lat', str(round(extent['bbox']['min_lat'],6)))
+                bounds.set('min-lon', str(round(extent['bbox']['min_lon'],6)))
+                bounds.set('max-lat', str(round(extent['bbox']['max_lat'],6)))
+                bounds.set('max-lon', str(round(extent['bbox']['max_lon'],6)))
 
             if 'polygon' in extent:
                 for ring in extent['polygon']:
                     shape = ET.SubElement(bounds, "shape")
                     for p in ring:
                         point = ET.SubElement(shape, "point")
-                        point.set('lon', str(p[0]))
-                        point.set('lat', str(p[1]))
+                        point.set('lon', str(round(p[0],6)))
+                        point.set('lat', str(round(p[1],6)))
 
 util.indent(root)
 
