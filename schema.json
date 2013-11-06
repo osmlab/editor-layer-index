@@ -16,6 +16,10 @@
             "description": "A URL template for imagery tiles",
             "type": "string"
         },
+        "license_url": {
+            "description": "A URL for the license or permissions for the imagery",
+            "type": "string"
+        },
         "id": {
             "description": "A unique identifier for the source; used in imagery_used changeset tag",
             "type": "string"
