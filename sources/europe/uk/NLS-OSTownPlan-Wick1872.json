@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/wick.html",
         "text": "National Library of Scotland - Wick 1872",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Wick 1872 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_wick.jpg",
-    "date": "1872",
-    "url": "http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Wick 1872, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1872",
+    "end_date": "1873",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -3.11588837,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

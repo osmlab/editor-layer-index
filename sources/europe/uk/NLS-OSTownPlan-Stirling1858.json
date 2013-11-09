@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/stirling.html",
         "text": "National Library of Scotland - Stirling 1858",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Stirling 1858 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_stirling.jpg",
-    "date": "1858",
-    "url": "http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Stirling 1858, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1858",
+    "end_date": "1859",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -3.95882978,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

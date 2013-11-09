@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/musselburgh1853/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/musselburgh_1.html",
         "text": "National Library of Scotland - Musselburgh 1853",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Musselburgh 1853 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_musselburgh_1.jpg",
-    "date": "1853",
-    "url": "http://geo.nls.uk/maps/towns/musselburgh1853/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Musselburgh 1853, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1853",
+    "end_date": "1854",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -3.07954151,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

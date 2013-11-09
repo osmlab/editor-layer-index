@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/ayr.html",
         "text": "National Library of Scotland - Ayr 1855",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Ayr 1855 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_ayr.jpg",
-    "date": "1855",
-    "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Ayr 1855, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1855",
+    "end_date": "1856",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -4.67080057,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/kirkcudbright1850/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/kirkcudbright_1.html",
         "text": "National Library of Scotland - Kirkcudbright 1850",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Kirkcudbright 1850 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_kirkcudbright_1.jpg",
-    "date": "1850",
-    "url": "http://geo.nls.uk/maps/towns/kirkcudbright1850/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Kirkcudbright 1850, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1850",
+    "end_date": "1851",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -4.0623081,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

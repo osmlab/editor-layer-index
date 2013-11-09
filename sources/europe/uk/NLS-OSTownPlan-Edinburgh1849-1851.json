@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/edinburgh1056_1.html",
         "text": "National Library of Scotland - Edinburgh 1849-1851",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_edinburgh1056_1.jpg",
-    "date": "1849-1851",
-    "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Edinburgh 1849-1851, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1849",
+    "end_date": "1852",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -3.23836397,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

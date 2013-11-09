@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/perth.html",
         "text": "National Library of Scotland - Perth 1860",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Perth 1860 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_perth.jpg",
-    "date": "1860",
-    "url": "http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Perth 1860, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1860",
+    "end_date": "1861",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -3.45416664,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }

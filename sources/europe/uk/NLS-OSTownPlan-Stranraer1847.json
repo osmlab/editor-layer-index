@@ -1,16 +1,18 @@
 {
+    "url": "http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png",
     "attribution": {
         "url": "http://maps.nls.uk/townplans/stranraer_1.html",
         "text": "National Library of Scotland - Stranraer 1847",
-        "required": true,
-        "GLAM-url": "http://geo.nls.uk/maps/",
-        "GLAM-text": "National Library of Scotland Historic Maps"
+        "required": true
     },
+    "type": "tms",
     "name": "OS Town Plans, Stranraer 1847 (NLS)",
-    "preview": "http://geo.nls.uk/maps/omo_ostowns/ost_stranraer_1.jpg",
-    "date": "1847",
-    "url": "http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png",
+    "description": "Detailed town plan of Stranraer 1847, courtesy of National Library of Scotland.",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png",
+    "start_date": "1847",
+    "end_date": "1848",
     "extent": {
+        "min_zoom": 13,
         "max_zoom": 20,
         "bbox": {
             "min_lon": -5.0508954,
@@ -38,7 +40,5 @@
                   ]
                ]
             ]
-    },      
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }      
 }
