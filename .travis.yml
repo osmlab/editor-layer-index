@@ -1,3 +1,5 @@
 language: python
 install: pip install jsonschema
 script: make check
+branches:
+  except: []
