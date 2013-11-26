@@ -51730,10 +51730,9 @@
         "name": "Kelowna 2012"
     }, 
     {
-        "description": "High quality aerial imagery taken for the City of Kelowna", 
+        "name": "Kelowna Roads overlay", 
         "overlay": true, 
         "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png", 
-        "default": true, 
         "license_url": "http://opendatacommons.org/licenses/pddl/summary/", 
         "extent": {
             "min_zoom": 9, 
@@ -52130,8 +52129,7 @@
             ]
         }, 
         "type": "tms", 
-        "id": "kelowna_roads", 
-        "name": "Kelowna Roads overlay"
+        "id": "kelowna_roads"
     }, 
     {
         "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}", 
