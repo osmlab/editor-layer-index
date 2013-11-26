@@ -16,10 +16,10 @@ def textelem(elem, y):
 def getrings(elem):
     bounds_node = elem.getElementsByTagName('bounds')
     if bounds_node:
-        min_lat = bounds_node[0].getAttribute('min-lat')
-        min_lon = bounds_node[0].getAttribute('min-lon')
-        max_lat = bounds_node[0].getAttribute('max-lat')
-        max_lon = bounds_node[0].getAttribute('max-lon')
+        min_lat = float(bounds_node[0].getAttribute('min-lat'))
+        min_lon = float(bounds_node[0].getAttribute('min-lon'))
+        max_lat = float(bounds_node[0].getAttribute('max-lat'))
+        max_lon = float(bounds_node[0].getAttribute('max-lon'))
         bbox = dict(min_lat=min_lat, min_lon=min_lon, max_lat=max_lat, max_lon=max_lon)
         rings = []
         shape_nodes = bounds_node[0].getElementsByTagName('shape')
