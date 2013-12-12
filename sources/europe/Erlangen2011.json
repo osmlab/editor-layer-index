@@ -1,0 +1,19 @@
+{
+    "url": "https://secure.erlangen.de/arcgiser/services/Luftbilder2011/MapServer/WmsServer?FORMAT=image/bmp&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Erlangen_ratio10_5cm_gk4.jp2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+    "type": "wms", 
+    "name": "Erlangen Luftbild (2011 5,0 cm)",
+    "license_url": "http://erlangen.maps.arcgis.com/home/item.html?id=f834ddb433a148c9b325e9075ad0df80",
+    "extent": {
+        "bbox": {
+            "min_lon": 10.909347,
+            "max_lon": 11.077808,
+            "min_lat": 49.529292,
+            "max_lat": 49.652110
+        }
+    }, 
+    "available_projections": [
+        "EPSG:4326", 
+        "EPSG:31494"
+    ]
+}
+

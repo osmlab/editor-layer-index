@@ -3022,6 +3022,16 @@
     <bounds max-lat="49.65197" max-lon="11.060541" min-lat="49.529259" min-lon="10.905885" />
   </entry>
   <entry>
+    <name>Erlangen Luftbild (2011 5,0 cm)</name>
+    <type>wms</type>
+    <url>https://secure.erlangen.de/arcgiser/services/Luftbilder2011/MapServer/WmsServer?FORMAT=image/bmp&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Erlangen_ratio10_5cm_gk4.jp2&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:4326</code>
+      <code>EPSG:31494</code>
+    </projections>
+    <bounds max-lat="49.65211" max-lon="11.077808" min-lat="49.529292" min-lon="10.909347" />
+  </entry>
+  <entry>
     <name>Estonia Basemap (Maaamet)</name>
     <type>wms</type>
     <url>http://xgis.maaamet.ee/wms-pub/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=pohi_vr2&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
