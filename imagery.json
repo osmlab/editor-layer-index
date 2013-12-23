@@ -25604,6 +25604,7 @@
                 "max_lon": 1.9
             }
         }, 
+        "country_code": "GB", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -27527,6 +27528,7 @@
                 ]
             ]
         }, 
+        "country_code": "GB", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -28578,6 +28580,7 @@
                 ]
             ]
         }, 
+        "country_code": "GB", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -30217,6 +30220,7 @@
                 ]
             ]
         }, 
+        "country_code": "GB", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -30732,8 +30736,6 @@
     }, 
     {
         "url": "http://ooc.openstreetmap.org/npe/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
-        "name": "OS New Popular Edition historic", 
         "extent": {
             "bbox": {
                 "min_lon": -5.8, 
@@ -30741,12 +30743,15 @@
                 "min_lat": 49.8, 
                 "max_lon": 1.9
             }
-        }
+        }, 
+        "type": "tms", 
+        "name": "OS New Popular Edition historic", 
+        "country_code": "GB"
     }, 
     {
-        "url": "http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "name": "OS OpenData Locator", 
+        "overlay": true, 
+        "url": "http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png", 
         "extent": {
             "bbox": {
                 "min_lon": -9, 
@@ -30755,12 +30760,11 @@
                 "max_lon": 1.9
             }
         }, 
-        "overlay": true
+        "country_code": "GB", 
+        "type": "tms"
     }, 
     {
         "url": "http://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
-        "name": "OS OpenData StreetView", 
         "extent": {
             "min_zoom": 1, 
             "max_zoom": 18, 
@@ -31818,12 +31822,13 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "tms", 
+        "name": "OS OpenData StreetView", 
+        "country_code": "GB"
     }, 
     {
         "url": "http://ooc.openstreetmap.org/npescotland/tiles/{zoom}/{x}/{y}.jpg", 
-        "type": "tms", 
-        "name": "OS Scottish Popular historic", 
         "extent": {
             "min_zoom": 6, 
             "max_zoom": 15, 
@@ -31833,7 +31838,10 @@
                 "min_lat": 54.5, 
                 "max_lon": -1.1
             }
-        }
+        }, 
+        "type": "tms", 
+        "name": "OS Scottish Popular historic", 
+        "country_code": "GB"
     }, 
     {
         "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_06.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2006.33,OI.ORTOIMMAGINI.2006.32&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -41486,15 +41494,6 @@
         }
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/aberdeen.html", 
-            "text": "National Library of Scotland - Aberdeen 1866-1867", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Aberdeen 1866-1867 (NLS)", 
-        "end_date": "1868", 
-        "url": "http://geo.nls.uk/maps/towns/aberdeen/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Aberdeen 1866-1867, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41525,20 +41524,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/aberdeen.html", 
+            "text": "National Library of Scotland - Aberdeen 1866-1867", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Aberdeen 1866-1867 (NLS)", 
+        "end_date": "1868", 
+        "url": "http://geo.nls.uk/maps/towns/aberdeen/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Aberdeen 1866-1867, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1866", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/airdrie.html", 
-            "text": "National Library of Scotland - Airdrie 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Airdrie 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/airdrie/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Airdrie 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41569,20 +41569,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/airdrie.html", 
+            "text": "National Library of Scotland - Airdrie 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Airdrie 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/airdrie/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Airdrie 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/alexandria.html", 
-            "text": "National Library of Scotland - Alexandria 1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Alexandria 1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/alexandria/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Alexandria 1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41613,20 +41614,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/alexandria.html", 
+            "text": "National Library of Scotland - Alexandria 1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Alexandria 1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/alexandria/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Alexandria 1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1859", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/alloa.html", 
-            "text": "National Library of Scotland - Alloa 1861-1862", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Alloa 1861-1862 (NLS)", 
-        "end_date": "1863", 
-        "url": "http://geo.nls.uk/maps/towns/alloa/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Alloa 1861-1862, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41657,20 +41659,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/alloa.html", 
+            "text": "National Library of Scotland - Alloa 1861-1862", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Alloa 1861-1862 (NLS)", 
+        "end_date": "1863", 
+        "url": "http://geo.nls.uk/maps/towns/alloa/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Alloa 1861-1862, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1861", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/annan.html", 
-            "text": "National Library of Scotland - Annan 1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Annan 1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/annan/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Annan 1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41701,20 +41704,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/annan.html", 
+            "text": "National Library of Scotland - Annan 1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Annan 1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/annan/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Annan 1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1859", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/arbroath.html", 
-            "text": "National Library of Scotland - Arbroath 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Arbroath 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/arbroath/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Arbroath 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41745,20 +41749,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/arbroath.html", 
+            "text": "National Library of Scotland - Arbroath 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Arbroath 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/arbroath/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Arbroath 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/ayr.html", 
-            "text": "National Library of Scotland - Ayr 1855", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Ayr 1855 (NLS)", 
-        "end_date": "1856", 
-        "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Ayr 1855, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41789,20 +41794,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/ayr.html", 
+            "text": "National Library of Scotland - Ayr 1855", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Ayr 1855 (NLS)", 
+        "end_date": "1856", 
+        "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Ayr 1855, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1855", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/berwick.html", 
-            "text": "National Library of Scotland - Berwick-upon-Tweed 1852", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Berwick-upon-Tweed 1852 (NLS)", 
-        "end_date": "1853", 
-        "url": "http://geo.nls.uk/maps/towns/berwick/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Berwick-upon-Tweed 1852, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41833,20 +41839,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/berwick.html", 
+            "text": "National Library of Scotland - Berwick-upon-Tweed 1852", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Berwick-upon-Tweed 1852 (NLS)", 
+        "end_date": "1853", 
+        "url": "http://geo.nls.uk/maps/towns/berwick/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Berwick-upon-Tweed 1852, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1852", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/brechin.html", 
-            "text": "National Library of Scotland - Brechin 1862", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Brechin 1862 (NLS)", 
-        "end_date": "1863", 
-        "url": "http://geo.nls.uk/maps/towns/brechin/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Brechin 1862, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41877,20 +41884,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/brechin.html", 
+            "text": "National Library of Scotland - Brechin 1862", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Brechin 1862 (NLS)", 
+        "end_date": "1863", 
+        "url": "http://geo.nls.uk/maps/towns/brechin/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Brechin 1862, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1862", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/burntisland.html", 
-            "text": "National Library of Scotland - Burntisland 1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Burntisland 1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/burntisland/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Burntisland 1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41921,20 +41929,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/burntisland.html", 
+            "text": "National Library of Scotland - Burntisland 1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Burntisland 1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/burntisland/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Burntisland 1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1894", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/campbelton.html", 
-            "text": "National Library of Scotland - Campbelton 1865", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Campbelton 1865 (NLS)", 
-        "end_date": "1866", 
-        "url": "http://geo.nls.uk/maps/towns/campbeltown/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Campbelton 1865, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -41965,20 +41974,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/campbelton.html", 
+            "text": "National Library of Scotland - Campbelton 1865", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Campbelton 1865 (NLS)", 
+        "end_date": "1866", 
+        "url": "http://geo.nls.uk/maps/towns/campbeltown/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Campbelton 1865, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1865", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/coatbridge.html", 
-            "text": "National Library of Scotland - Coatbridge 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Coatbridge 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/coatbridge/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Coatbridge 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42009,20 +42019,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/coatbridge.html", 
+            "text": "National Library of Scotland - Coatbridge 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Coatbridge 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/coatbridge/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Coatbridge 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/cupar_1.html", 
-            "text": "National Library of Scotland - Cupar 1854", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Cupar 1854 (NLS)", 
-        "end_date": "1855", 
-        "url": "http://geo.nls.uk/maps/towns/cupar1854/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Cupar 1854, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42053,20 +42064,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/cupar_1.html", 
+            "text": "National Library of Scotland - Cupar 1854", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Cupar 1854 (NLS)", 
+        "end_date": "1855", 
+        "url": "http://geo.nls.uk/maps/towns/cupar1854/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Cupar 1854, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1854", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/cupar_2.html", 
-            "text": "National Library of Scotland - Cupar 1893-1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Cupar 1893-1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/cupar1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Cupar 1893-1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42097,20 +42109,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/cupar_2.html", 
+            "text": "National Library of Scotland - Cupar 1893-1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Cupar 1893-1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/cupar1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Cupar 1893-1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dalkeith_1.html", 
-            "text": "National Library of Scotland - Dalkeith 1852", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dalkeith 1852 (NLS)", 
-        "end_date": "1853", 
-        "url": "http://geo.nls.uk/maps/towns/dalkeith1852/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dalkeith 1852, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42141,20 +42154,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dalkeith_1.html", 
+            "text": "National Library of Scotland - Dalkeith 1852", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dalkeith 1852 (NLS)", 
+        "end_date": "1853", 
+        "url": "http://geo.nls.uk/maps/towns/dalkeith1852/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dalkeith 1852, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1852", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dalkeith_2.html", 
-            "text": "National Library of Scotland - Dalkeith 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dalkeith 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/dalkeith1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dalkeith 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42185,20 +42199,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dalkeith_2.html", 
+            "text": "National Library of Scotland - Dalkeith 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dalkeith 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/dalkeith1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dalkeith 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dumbarton.html", 
-            "text": "National Library of Scotland - Dumbarton 1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dumbarton 1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/dumbarton/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dumbarton 1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42229,20 +42244,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dumbarton.html", 
+            "text": "National Library of Scotland - Dumbarton 1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dumbarton 1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/dumbarton/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dumbarton 1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1859", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dumfries_1.html", 
-            "text": "National Library of Scotland - Dumfries 1850", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dumfries 1850 (NLS)", 
-        "end_date": "1851", 
-        "url": "http://geo.nls.uk/maps/towns/dumfries1850/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dumfries 1850, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42273,20 +42289,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dumfries_1.html", 
+            "text": "National Library of Scotland - Dumfries 1850", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dumfries 1850 (NLS)", 
+        "end_date": "1851", 
+        "url": "http://geo.nls.uk/maps/towns/dumfries1850/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dumfries 1850, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1850", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dumfries_2.html", 
-            "text": "National Library of Scotland - Dumfries 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dumfries 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/dumfries1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dumfries 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42317,20 +42334,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dumfries_2.html", 
+            "text": "National Library of Scotland - Dumfries 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dumfries 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/dumfries1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dumfries 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dundee_1.html", 
-            "text": "National Library of Scotland - Dundee 1857-1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dundee 1857-1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/dundee1857/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dundee 1857-1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42361,20 +42379,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dundee_1.html", 
+            "text": "National Library of Scotland - Dundee 1857-1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dundee 1857-1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/dundee1857/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dundee 1857-1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dundee_2.html", 
-            "text": "National Library of Scotland - Dundee 1870-1872", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dundee 1870-1872 (NLS)", 
-        "end_date": "1873", 
-        "url": "http://geo.nls.uk/maps/towns/dundee1870/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dundee 1870-1872, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42405,20 +42424,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dundee_2.html", 
+            "text": "National Library of Scotland - Dundee 1870-1872", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dundee 1870-1872 (NLS)", 
+        "end_date": "1873", 
+        "url": "http://geo.nls.uk/maps/towns/dundee1870/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dundee 1870-1872, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1870", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dunfermline_1.html", 
-            "text": "National Library of Scotland - Dunfermline 1854", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dunfermline 1854 (NLS)", 
-        "end_date": "1855", 
-        "url": "http://geo.nls.uk/maps/towns/dunfermline1854/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dunfermline 1854, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42449,20 +42469,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dunfermline_1.html", 
+            "text": "National Library of Scotland - Dunfermline 1854", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dunfermline 1854 (NLS)", 
+        "end_date": "1855", 
+        "url": "http://geo.nls.uk/maps/towns/dunfermline1854/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dunfermline 1854, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1854", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dunfermline_2.html", 
-            "text": "National Library of Scotland - Dunfermline 1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Dunfermline 1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/dunfermline1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Dunfermline 1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42493,20 +42514,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dunfermline_2.html", 
+            "text": "National Library of Scotland - Dunfermline 1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Dunfermline 1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/dunfermline1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Dunfermline 1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1894", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/edinburgh1056_1.html", 
-            "text": "National Library of Scotland - Edinburgh 1849-1851", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)", 
-        "end_date": "1852", 
-        "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Edinburgh 1849-1851, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42537,20 +42559,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/edinburgh1056_1.html", 
+            "text": "National Library of Scotland - Edinburgh 1849-1851", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)", 
+        "end_date": "1852", 
+        "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Edinburgh 1849-1851, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1849", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/edinburgh1056_2.html", 
-            "text": "National Library of Scotland - Edinburgh 1876-1877", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Edinburgh 1876-1877 (NLS)", 
-        "end_date": "1878", 
-        "url": "http://geo.nls.uk/maps/towns/edinburgh1876/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Edinburgh 1876-1877, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42581,20 +42604,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/edinburgh1056_2.html", 
+            "text": "National Library of Scotland - Edinburgh 1876-1877", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Edinburgh 1876-1877 (NLS)", 
+        "end_date": "1878", 
+        "url": "http://geo.nls.uk/maps/towns/edinburgh1876/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Edinburgh 1876-1877, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1876", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/edinburgh500.html", 
-            "text": "National Library of Scotland - Edinburgh 1893-1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/edinburgh1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Edinburgh 1893-1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42625,20 +42649,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/edinburgh500.html", 
+            "text": "National Library of Scotland - Edinburgh 1893-1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/edinburgh1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Edinburgh 1893-1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/elgin.html", 
-            "text": "National Library of Scotland - Elgin 1868", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Elgin 1868 (NLS)", 
-        "end_date": "1869", 
-        "url": "http://geo.nls.uk/maps/towns/elgin/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Elgin 1868, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42669,20 +42694,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/elgin.html", 
+            "text": "National Library of Scotland - Elgin 1868", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Elgin 1868 (NLS)", 
+        "end_date": "1869", 
+        "url": "http://geo.nls.uk/maps/towns/elgin/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Elgin 1868, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1868", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/falkirk.html", 
-            "text": "National Library of Scotland - Falkirk 1858-1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Falkirk 1858-1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Falkirk 1858-1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42713,20 +42739,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/falkirk.html", 
+            "text": "National Library of Scotland - Falkirk 1858-1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Falkirk 1858-1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Falkirk 1858-1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/forfar.html", 
-            "text": "National Library of Scotland - Forfar 1860-1861", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Forfar 1860-1861 (NLS)", 
-        "end_date": "1862", 
-        "url": "http://geo.nls.uk/maps/towns/forfar/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Forfar 1860-1861, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42757,20 +42784,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/forfar.html", 
+            "text": "National Library of Scotland - Forfar 1860-1861", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Forfar 1860-1861 (NLS)", 
+        "end_date": "1862", 
+        "url": "http://geo.nls.uk/maps/towns/forfar/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Forfar 1860-1861, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1860", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/forres.html", 
-            "text": "National Library of Scotland - Forres 1868", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Forres 1868 (NLS)", 
-        "end_date": "1869", 
-        "url": "http://geo.nls.uk/maps/towns/forres/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Forres 1868, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42801,20 +42829,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/forres.html", 
+            "text": "National Library of Scotland - Forres 1868", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Forres 1868 (NLS)", 
+        "end_date": "1869", 
+        "url": "http://geo.nls.uk/maps/towns/forres/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Forres 1868, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1868", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/galashiels.html", 
-            "text": "National Library of Scotland - Galashiels 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Galashiels 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/galashiels/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Galashiels 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42845,20 +42874,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/galashiels.html", 
+            "text": "National Library of Scotland - Galashiels 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Galashiels 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/galashiels/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Galashiels 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/girvan.html", 
-            "text": "National Library of Scotland - Girvan 1857", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Girvan 1857 (NLS)", 
-        "end_date": "1858", 
-        "url": "http://geo.nls.uk/maps/towns/girvan/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Girvan 1857, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42889,20 +42919,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/girvan.html", 
+            "text": "National Library of Scotland - Girvan 1857", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Girvan 1857 (NLS)", 
+        "end_date": "1858", 
+        "url": "http://geo.nls.uk/maps/towns/girvan/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Girvan 1857, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/glasgow_1.html", 
-            "text": "National Library of Scotland - Glasgow 1857-1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Glasgow 1857-1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/glasgow1857/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Glasgow 1857-1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42933,20 +42964,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/glasgow_1.html", 
+            "text": "National Library of Scotland - Glasgow 1857-1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Glasgow 1857-1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/glasgow1857/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Glasgow 1857-1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/glasgow_2.html", 
-            "text": "National Library of Scotland - Glasgow 1892-1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Glasgow 1892-1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Glasgow 1892-1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -42977,20 +43009,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/glasgow_2.html", 
+            "text": "National Library of Scotland - Glasgow 1892-1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Glasgow 1892-1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Glasgow 1892-1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1892", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/greenock.html", 
-            "text": "National Library of Scotland - Greenock 1857", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Greenock 1857 (NLS)", 
-        "end_date": "1858", 
-        "url": "http://geo.nls.uk/maps/towns/greenock/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Greenock 1857, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43021,20 +43054,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/greenock.html", 
+            "text": "National Library of Scotland - Greenock 1857", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Greenock 1857 (NLS)", 
+        "end_date": "1858", 
+        "url": "http://geo.nls.uk/maps/towns/greenock/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Greenock 1857, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/haddington_1.html", 
-            "text": "National Library of Scotland - Haddington 1853", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Haddington 1853 (NLS)", 
-        "end_date": "1854", 
-        "url": "http://geo.nls.uk/maps/towns/haddington1853/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Haddington 1853, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43065,20 +43099,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/haddington_1.html", 
+            "text": "National Library of Scotland - Haddington 1853", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Haddington 1853 (NLS)", 
+        "end_date": "1854", 
+        "url": "http://geo.nls.uk/maps/towns/haddington1853/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Haddington 1853, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1853", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/haddington_2.html", 
-            "text": "National Library of Scotland - Haddington 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Haddington 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/haddington1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Haddington 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43109,20 +43144,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/haddington_2.html", 
+            "text": "National Library of Scotland - Haddington 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Haddington 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/haddington1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Haddington 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/hamilton.html", 
-            "text": "National Library of Scotland - Hamilton 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Hamilton 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/hamilton/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Hamilton 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43153,20 +43189,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/hamilton.html", 
+            "text": "National Library of Scotland - Hamilton 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Hamilton 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/hamilton/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Hamilton 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/hawick.html", 
-            "text": "National Library of Scotland - Hawick 1857-1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Hawick 1857-1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/hawick/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Hawick 1857-1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43197,20 +43234,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/hawick.html", 
+            "text": "National Library of Scotland - Hawick 1857-1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Hawick 1857-1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/hawick/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Hawick 1857-1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/inverness.html", 
-            "text": "National Library of Scotland - Inverness 1867-1868", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Inverness 1867-1868 (NLS)", 
-        "end_date": "1869", 
-        "url": "http://geo.nls.uk/maps/towns/inverness/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Inverness 1867-1868, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43241,20 +43279,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/inverness.html", 
+            "text": "National Library of Scotland - Inverness 1867-1868", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Inverness 1867-1868 (NLS)", 
+        "end_date": "1869", 
+        "url": "http://geo.nls.uk/maps/towns/inverness/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Inverness 1867-1868, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1867", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/irvine.html", 
-            "text": "National Library of Scotland - Irvine 1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Irvine 1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/irvine/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Irvine 1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43285,20 +43324,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/irvine.html", 
+            "text": "National Library of Scotland - Irvine 1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Irvine 1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/irvine/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Irvine 1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1859", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/jedburgh.html", 
-            "text": "National Library of Scotland - Jedburgh 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Jedburgh 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/jedburgh/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Jedburgh 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43329,20 +43369,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/jedburgh.html", 
+            "text": "National Library of Scotland - Jedburgh 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Jedburgh 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/jedburgh/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Jedburgh 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kelso.html", 
-            "text": "National Library of Scotland - Kelso 1857", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kelso 1857 (NLS)", 
-        "end_date": "1858", 
-        "url": "http://geo.nls.uk/maps/towns/kelso/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kelso 1857, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43373,20 +43414,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kelso.html", 
+            "text": "National Library of Scotland - Kelso 1857", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kelso 1857 (NLS)", 
+        "end_date": "1858", 
+        "url": "http://geo.nls.uk/maps/towns/kelso/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kelso 1857, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kilmarnock.html", 
-            "text": "National Library of Scotland - Kilmarnock 1857-1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kilmarnock 1857-1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/kilmarnock/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kilmarnock 1857-1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43417,20 +43459,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kilmarnock.html", 
+            "text": "National Library of Scotland - Kilmarnock 1857-1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kilmarnock 1857-1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/kilmarnock/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kilmarnock 1857-1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1857", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirkcaldy_1.html", 
-            "text": "National Library of Scotland - Kirkcaldy 1855", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kirkcaldy 1855 (NLS)", 
-        "end_date": "1856", 
-        "url": "http://geo.nls.uk/maps/towns/kirkcaldy1855/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kirkcaldy 1855, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43461,20 +43504,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkcaldy_1.html", 
+            "text": "National Library of Scotland - Kirkcaldy 1855", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kirkcaldy 1855 (NLS)", 
+        "end_date": "1856", 
+        "url": "http://geo.nls.uk/maps/towns/kirkcaldy1855/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kirkcaldy 1855, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1855", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirkcaldy_2.html", 
-            "text": "National Library of Scotland - Kirkcaldy 1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kirkcaldy 1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/kirkcaldy1894/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kirkcaldy 1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43505,20 +43549,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkcaldy_2.html", 
+            "text": "National Library of Scotland - Kirkcaldy 1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kirkcaldy 1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/kirkcaldy1894/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kirkcaldy 1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1894", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirkcudbright_1.html", 
-            "text": "National Library of Scotland - Kirkcudbright 1850", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kirkcudbright 1850 (NLS)", 
-        "end_date": "1851", 
-        "url": "http://geo.nls.uk/maps/towns/kirkcudbright1850/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kirkcudbright 1850, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43549,20 +43594,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkcudbright_1.html", 
+            "text": "National Library of Scotland - Kirkcudbright 1850", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kirkcudbright 1850 (NLS)", 
+        "end_date": "1851", 
+        "url": "http://geo.nls.uk/maps/towns/kirkcudbright1850/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kirkcudbright 1850, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1850", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirkcudbright_2.html", 
-            "text": "National Library of Scotland - Kirkcudbright 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kirkcudbright 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/kirkcudbright1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kirkcudbright 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43593,20 +43639,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkcudbright_2.html", 
+            "text": "National Library of Scotland - Kirkcudbright 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kirkcudbright 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/kirkcudbright1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kirkcudbright 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirkintilloch.html", 
-            "text": "National Library of Scotland - Kirkintilloch 1859", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kirkintilloch 1859 (NLS)", 
-        "end_date": "1860", 
-        "url": "http://geo.nls.uk/maps/towns/kirkintilloch/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kirkintilloch 1859, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43637,20 +43684,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkintilloch.html", 
+            "text": "National Library of Scotland - Kirkintilloch 1859", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kirkintilloch 1859 (NLS)", 
+        "end_date": "1860", 
+        "url": "http://geo.nls.uk/maps/towns/kirkintilloch/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kirkintilloch 1859, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1859", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirriemuir.html", 
-            "text": "National Library of Scotland - Kirriemuir 1861", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Kirriemuir 1861 (NLS)", 
-        "end_date": "1862", 
-        "url": "http://geo.nls.uk/maps/towns/kirriemuir/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Kirriemuir 1861, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43681,20 +43729,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirriemuir.html", 
+            "text": "National Library of Scotland - Kirriemuir 1861", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Kirriemuir 1861 (NLS)", 
+        "end_date": "1862", 
+        "url": "http://geo.nls.uk/maps/towns/kirriemuir/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Kirriemuir 1861, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1861", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/lanark.html", 
-            "text": "National Library of Scotland - Lanark 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Lanark 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/lanark/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Lanark 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43725,20 +43774,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/lanark.html", 
+            "text": "National Library of Scotland - Lanark 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Lanark 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/lanark/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Lanark 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/linlithgow.html", 
-            "text": "National Library of Scotland - Linlithgow 1856", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Linlithgow 1856 (NLS)", 
-        "end_date": "1857", 
-        "url": "http://geo.nls.uk/maps/towns/linlithgow/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Linlithgow 1856, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43769,20 +43819,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/linlithgow.html", 
+            "text": "National Library of Scotland - Linlithgow 1856", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Linlithgow 1856 (NLS)", 
+        "end_date": "1857", 
+        "url": "http://geo.nls.uk/maps/towns/linlithgow/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Linlithgow 1856, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1856", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/maybole.html", 
-            "text": "National Library of Scotland - Mayole 1856-1857", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Mayole 1856-1857 (NLS)", 
-        "end_date": "1858", 
-        "url": "http://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Mayole 1856-1857, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43813,20 +43864,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/maybole.html", 
+            "text": "National Library of Scotland - Mayole 1856-1857", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Mayole 1856-1857 (NLS)", 
+        "end_date": "1858", 
+        "url": "http://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Mayole 1856-1857, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1856", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/montrose.html", 
-            "text": "National Library of Scotland - Montrose 1861-1862", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Montrose 1861-1862 (NLS)", 
-        "end_date": "1863", 
-        "url": "http://geo.nls.uk/maps/towns/montrose/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Montrose 1861-1862, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43857,20 +43909,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/montrose.html", 
+            "text": "National Library of Scotland - Montrose 1861-1862", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Montrose 1861-1862 (NLS)", 
+        "end_date": "1863", 
+        "url": "http://geo.nls.uk/maps/towns/montrose/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Montrose 1861-1862, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1861", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/musselburgh_1.html", 
-            "text": "National Library of Scotland - Musselburgh 1853", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Musselburgh 1853 (NLS)", 
-        "end_date": "1854", 
-        "url": "http://geo.nls.uk/maps/towns/musselburgh1853/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Musselburgh 1853, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43901,20 +43954,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/musselburgh_1.html", 
+            "text": "National Library of Scotland - Musselburgh 1853", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Musselburgh 1853 (NLS)", 
+        "end_date": "1854", 
+        "url": "http://geo.nls.uk/maps/towns/musselburgh1853/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Musselburgh 1853, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1853", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/musselburgh_2.html", 
-            "text": "National Library of Scotland - Musselburgh 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Musselburgh 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/musselburgh1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Musselburgh 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43945,20 +43999,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/musselburgh_2.html", 
+            "text": "National Library of Scotland - Musselburgh 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Musselburgh 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/musselburgh1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Musselburgh 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/nairn.html", 
-            "text": "National Library of Scotland - Nairn 1867-1868", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Nairn 1867-1868 (NLS)", 
-        "end_date": "1869", 
-        "url": "http://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Nairn 1867-1868, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -43989,20 +44044,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/nairn.html", 
+            "text": "National Library of Scotland - Nairn 1867-1868", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Nairn 1867-1868 (NLS)", 
+        "end_date": "1869", 
+        "url": "http://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Nairn 1867-1868, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1867", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/oban.html", 
-            "text": "National Library of Scotland - Oban 1867-1868", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Oban 1867-1868 (NLS)", 
-        "end_date": "1869", 
-        "url": "http://geo.nls.uk/maps/towns/oban/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Oban 1867-1868, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44033,20 +44089,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/oban.html", 
+            "text": "National Library of Scotland - Oban 1867-1868", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Oban 1867-1868 (NLS)", 
+        "end_date": "1869", 
+        "url": "http://geo.nls.uk/maps/towns/oban/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Oban 1867-1868, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1867", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/peebles.html", 
-            "text": "National Library of Scotland - Peebles 1856", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Peebles 1856 (NLS)", 
-        "end_date": "1857", 
-        "url": "http://geo.nls.uk/maps/towns/peebles/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Peebles 1856, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44077,20 +44134,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/peebles.html", 
+            "text": "National Library of Scotland - Peebles 1856", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Peebles 1856 (NLS)", 
+        "end_date": "1857", 
+        "url": "http://geo.nls.uk/maps/towns/peebles/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Peebles 1856, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1856", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/perth.html", 
-            "text": "National Library of Scotland - Perth 1860", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Perth 1860 (NLS)", 
-        "end_date": "1861", 
-        "url": "http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Perth 1860, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44121,20 +44179,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/perth.html", 
+            "text": "National Library of Scotland - Perth 1860", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Perth 1860 (NLS)", 
+        "end_date": "1861", 
+        "url": "http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Perth 1860, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1860", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/peterhead", 
-            "text": "National Library of Scotland - Peterhead 1868", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Peterhead 1868 (NLS)", 
-        "end_date": "1869", 
-        "url": "http://geo.nls.uk/maps/towns/peterhead/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Peterhead 1868, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44165,20 +44224,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/peterhead", 
+            "text": "National Library of Scotland - Peterhead 1868", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Peterhead 1868 (NLS)", 
+        "end_date": "1869", 
+        "url": "http://geo.nls.uk/maps/towns/peterhead/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Peterhead 1868, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1868", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/port-glasgow.html", 
-            "text": "National Library of Scotland - Port Glasgow 1856-1857", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Port Glasgow 1856-1857 (NLS)", 
-        "end_date": "1858", 
-        "url": "http://geo.nls.uk/maps/towns/portglasgow/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Port Glasgow 1856-1857, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44209,20 +44269,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/port-glasgow.html", 
+            "text": "National Library of Scotland - Port Glasgow 1856-1857", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Port Glasgow 1856-1857 (NLS)", 
+        "end_date": "1858", 
+        "url": "http://geo.nls.uk/maps/towns/portglasgow/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Port Glasgow 1856-1857, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1856", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/portobello.html", 
-            "text": "National Library of Scotland - Portobello 1893-1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Portobello 1893-1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/portobello/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Portobello 1893-1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44253,20 +44314,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/portobello.html", 
+            "text": "National Library of Scotland - Portobello 1893-1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Portobello 1893-1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/portobello/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Portobello 1893-1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/rothesay.html", 
-            "text": "National Library of Scotland - Rothesay 1862-1863", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Rothesay 1862-1863 (NLS)", 
-        "end_date": "1864", 
-        "url": "http://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Rothesay 1862-1863, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44297,20 +44359,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/rothesay.html", 
+            "text": "National Library of Scotland - Rothesay 1862-1863", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Rothesay 1862-1863 (NLS)", 
+        "end_date": "1864", 
+        "url": "http://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Rothesay 1862-1863, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1862", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/selkirk.html", 
-            "text": "National Library of Scotland - Selkirk 1865", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Selkirk 1865 (NLS)", 
-        "end_date": "1866", 
-        "url": "http://geo.nls.uk/maps/towns/selkirk/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Selkirk 1865, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44341,20 +44404,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/selkirk.html", 
+            "text": "National Library of Scotland - Selkirk 1865", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Selkirk 1865 (NLS)", 
+        "end_date": "1866", 
+        "url": "http://geo.nls.uk/maps/towns/selkirk/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Selkirk 1865, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1865", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/st-andrews_1.html", 
-            "text": "National Library of Scotland - St Andrews 1854", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, St Andrews 1854 (NLS)", 
-        "end_date": "1855", 
-        "url": "http://geo.nls.uk/maps/towns/standrews1854/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of St Andrews 1854, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44385,20 +44449,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/st-andrews_1.html", 
+            "text": "National Library of Scotland - St Andrews 1854", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, St Andrews 1854 (NLS)", 
+        "end_date": "1855", 
+        "url": "http://geo.nls.uk/maps/towns/standrews1854/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of St Andrews 1854, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1854", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/st-andrews_2.html", 
-            "text": "National Library of Scotland - St Andrews 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, St Andrews 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/standrews1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of St Andrews 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44429,20 +44494,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/st-andrews_2.html", 
+            "text": "National Library of Scotland - St Andrews 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, St Andrews 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/standrews1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of St Andrews 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/stirling.html", 
-            "text": "National Library of Scotland - Stirling 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Stirling 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Stirling 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44473,20 +44539,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stirling.html", 
+            "text": "National Library of Scotland - Stirling 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Stirling 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Stirling 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/stonehaven.html", 
-            "text": "National Library of Scotland - Stonehaven 1864", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Stonehaven 1864 (NLS)", 
-        "end_date": "1865", 
-        "url": "http://geo.nls.uk/maps/towns/stonehaven/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Stonehaven 1864, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44517,20 +44584,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stonehaven.html", 
+            "text": "National Library of Scotland - Stonehaven 1864", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Stonehaven 1864 (NLS)", 
+        "end_date": "1865", 
+        "url": "http://geo.nls.uk/maps/towns/stonehaven/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Stonehaven 1864, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1864", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/stranraer_1.html", 
-            "text": "National Library of Scotland - Stranraer 1847", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Stranraer 1847 (NLS)", 
-        "end_date": "1848", 
-        "url": "http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Stranraer 1847, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44561,20 +44629,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stranraer_1.html", 
+            "text": "National Library of Scotland - Stranraer 1847", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Stranraer 1847 (NLS)", 
+        "end_date": "1848", 
+        "url": "http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Stranraer 1847, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1847", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/stranraer_1a.html", 
-            "text": "National Library of Scotland - Stranraer 1863-1877", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Stranraer 1863-1877 (NLS)", 
-        "end_date": "1878", 
-        "url": "http://geo.nls.uk/maps/towns/stranraer1867/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Stranraer 1863-1877, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44605,20 +44674,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stranraer_1a.html", 
+            "text": "National Library of Scotland - Stranraer 1863-1877", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Stranraer 1863-1877 (NLS)", 
+        "end_date": "1878", 
+        "url": "http://geo.nls.uk/maps/towns/stranraer1867/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Stranraer 1863-1877, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1863", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/stranraer_2.html", 
-            "text": "National Library of Scotland - Stranraer 1893", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Stranraer 1893 (NLS)", 
-        "end_date": "1894", 
-        "url": "http://geo.nls.uk/maps/towns/stranraer1893/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Stranraer 1893, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44649,20 +44719,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stranraer_2.html", 
+            "text": "National Library of Scotland - Stranraer 1893", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Stranraer 1893 (NLS)", 
+        "end_date": "1894", 
+        "url": "http://geo.nls.uk/maps/towns/stranraer1893/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Stranraer 1893, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1893", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/strathaven.html", 
-            "text": "National Library of Scotland - Strathaven 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Strathaven 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/strathaven/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Strathaven 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44693,20 +44764,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/strathaven.html", 
+            "text": "National Library of Scotland - Strathaven 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Strathaven 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/strathaven/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Strathaven 1858, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/wick.html", 
-            "text": "National Library of Scotland - Wick 1872", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Wick 1872 (NLS)", 
-        "end_date": "1873", 
-        "url": "http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Wick 1872, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44737,20 +44809,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/wick.html", 
+            "text": "National Library of Scotland - Wick 1872", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Wick 1872 (NLS)", 
+        "end_date": "1873", 
+        "url": "http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Wick 1872, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1872", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/wigtown_1.html", 
-            "text": "National Library of Scotland - Wigtown 1848", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Wigtown 1848 (NLS)", 
-        "end_date": "1849", 
-        "url": "http://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Wigtown 1848, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44781,20 +44854,21 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/wigtown_1.html", 
+            "text": "National Library of Scotland - Wigtown 1848", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Wigtown 1848 (NLS)", 
+        "end_date": "1849", 
+        "url": "http://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Wigtown 1848, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1848", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/wigtown_2.html", 
-            "text": "National Library of Scotland - Wigtown 1894", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Wigtown 1894 (NLS)", 
-        "end_date": "1895", 
-        "url": "http://geo.nls.uk/maps/towns/wigtown1894/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Wigtown 1894, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -44825,6 +44899,16 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/wigtown_2.html", 
+            "text": "National Library of Scotland - Wigtown 1894", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Wigtown 1894 (NLS)", 
+        "end_date": "1895", 
+        "url": "http://geo.nls.uk/maps/towns/wigtown1894/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Wigtown 1894, courtesy of National Library of Scotland.", 
+        "country_code": "GB", 
         "type": "tms", 
         "start_date": "1894", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
