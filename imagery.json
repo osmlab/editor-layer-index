@@ -478,8 +478,6 @@
     }, 
     {
         "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg", 
-        "type": "tms", 
-        "name": "South Africa CD:NGI Aerial", 
         "extent": {
             "min_zoom": 1, 
             "max_zoom": 22, 
@@ -1673,7 +1671,10 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "tms", 
+        "name": "South Africa CD:NGI Aerial", 
+        "country_code": "ZA"
     }, 
     {
         "url": "http://{switch:a,b,c,d}.tile.osm-tools.org/osm_then/{zoom}/{x}/{y}.png", 
@@ -1696,8 +1697,6 @@
     }, 
     {
         "url": "http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
-        "name": "Pangasin\u00e1n/Bulacan (Phillipines HiRes)", 
         "extent": {
             "min_zoom": 12, 
             "max_zoom": 19, 
@@ -1769,7 +1768,10 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "tms", 
+        "name": "Pangasin\u00e1n/Bulacan (Phillipines HiRes)", 
+        "country_code": "PH"
     }, 
     {
         "url": "IRS", 
@@ -1792,13 +1794,12 @@
         "name": "ScanEx SPOT"
     }, 
     {
-        "url": "http://agri.openstreetmap.org/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "attribution": {
             "text": "AGRI", 
             "required": false
         }, 
         "name": "AGRI black-and-white 2.5m", 
+        "url": "http://agri.openstreetmap.org/{zoom}/{x}/{y}.png", 
         "extent": {
             "bbox": {
                 "min_lon": 112.28778, 
@@ -2026,7 +2027,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "AU", 
+        "type": "tms"
     }, 
     {
         "url": "http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=piekraste&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}", 
@@ -45042,14 +45045,6 @@
         "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
     }, 
     {
-        "attribution": {
-            "url": "http://imagery.paulnorman.ca/tiles/about.html", 
-            "text": "Copyright Province of British Columbia, City of Surrey", 
-            "required": false
-        }, 
-        "name": "British Columbia Mosaic", 
-        "end_date": "2013-06", 
-        "url": "http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png", 
         "extent": {
             "min_zoom": 9, 
             "max_zoom": 20, 
@@ -46080,13 +46075,25 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://imagery.paulnorman.ca/tiles/about.html", 
+            "text": "Copyright Province of British Columbia, City of Surrey", 
+            "required": false
+        }, 
+        "name": "British Columbia Mosaic", 
+        "end_date": "2013-06", 
+        "url": "http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png", 
+        "country_code": "CA", 
         "type": "tms", 
         "start_date": "2009"
     }, 
     {
-        "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj(EPSG:4326)}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}", 
-        "type": "wms", 
         "name": "Canvec", 
+        "available_projections": [
+            "EPSG:4326", 
+            "EPSG:900913"
+        ], 
+        "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj(EPSG:4326)}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -141.7761, 
@@ -47087,15 +47094,16 @@
                 ]
             ]
         }, 
-        "available_projections": [
-            "EPSG:4326", 
-            "EPSG:900913"
-        ]
+        "country_code": "CA", 
+        "type": "wms"
     }, 
     {
-        "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nhn:hydrography,nhn:network&WIDTH={width}&height={height}&BBOX={bbox}", 
-        "type": "wms", 
         "name": "Geobase Hydrography", 
+        "available_projections": [
+            "EPSG:4326", 
+            "EPSG:900913"
+        ], 
+        "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nhn:hydrography,nhn:network&WIDTH={width}&height={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -141.7761, 
@@ -48096,15 +48104,16 @@
                 ]
             ]
         }, 
-        "available_projections": [
-            "EPSG:4326", 
-            "EPSG:900913"
-        ]
+        "country_code": "CA", 
+        "type": "wms"
     }, 
     {
-        "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}", 
-        "type": "wms", 
         "name": "Geobase Roads", 
+        "available_projections": [
+            "EPSG:4326", 
+            "EPSG:900913"
+        ], 
+        "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -141.7761, 
@@ -49105,15 +49114,11 @@
                 ]
             ]
         }, 
-        "available_projections": [
-            "EPSG:4326", 
-            "EPSG:900913"
-        ]
+        "country_code": "CA", 
+        "type": "wms"
     }, 
     {
         "url": "http://wms.openstreetmap.fr/tms/1.0.0/iomhaiti/{zoom}/{x}/{y}", 
-        "type": "tms", 
-        "name": "Imagerie Drone (Haiti)", 
         "extent": {
             "bbox": {
                 "min_lon": -72.6235278, 
@@ -51487,418 +51492,418 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "tms", 
+        "name": "Imagerie Drone (Haiti)", 
+        "country_code": "HT"
     }, 
     {
+        "extent": {
+            "min_zoom": 9, 
+            "max_zoom": 20, 
+            "bbox": {
+                "min_lon": -119.6011924, 
+                "max_lat": 50.0326418, 
+                "min_lat": 49.7714941, 
+                "max_lon": -119.3095139
+            }, 
+            "polygon": [
+                [
+                    [
+                        -119.5867318, 
+                        49.7928087
+                    ], 
+                    [
+                        -119.5465655, 
+                        49.7928097
+                    ], 
+                    [
+                        -119.5465661, 
+                        49.8013837
+                    ], 
+                    [
+                        -119.5343374, 
+                        49.8013841
+                    ], 
+                    [
+                        -119.5343376, 
+                        49.8047321
+                    ], 
+                    [
+                        -119.5296211, 
+                        49.8047322
+                    ], 
+                    [
+                        -119.5296216, 
+                        49.8119555
+                    ], 
+                    [
+                        -119.5104463, 
+                        49.811956
+                    ], 
+                    [
+                        -119.5115683, 
+                        49.8744325
+                    ], 
+                    [
+                        -119.5108946, 
+                        49.8744904
+                    ], 
+                    [
+                        -119.5114111, 
+                        49.8843312
+                    ], 
+                    [
+                        -119.5114115, 
+                        49.9221763
+                    ], 
+                    [
+                        -119.49386, 
+                        49.9223477
+                    ], 
+                    [
+                        -119.4940505, 
+                        49.9313031
+                    ], 
+                    [
+                        -119.4803936, 
+                        49.9317529
+                    ], 
+                    [
+                        -119.4804572, 
+                        49.9407474
+                    ], 
+                    [
+                        -119.4666732, 
+                        49.9409927
+                    ], 
+                    [
+                        -119.4692775, 
+                        49.9913717
+                    ], 
+                    [
+                        -119.4551337, 
+                        49.9916078
+                    ], 
+                    [
+                        -119.4556736, 
+                        50.0121242
+                    ], 
+                    [
+                        -119.4416673, 
+                        50.0123895
+                    ], 
+                    [
+                        -119.4417308, 
+                        50.0136345
+                    ], 
+                    [
+                        -119.4221492, 
+                        50.0140377
+                    ], 
+                    [
+                        -119.4221042, 
+                        50.0119306
+                    ], 
+                    [
+                        -119.4121303, 
+                        50.012165
+                    ], 
+                    [
+                        -119.4126082, 
+                        50.0216913
+                    ], 
+                    [
+                        -119.4123387, 
+                        50.0216913
+                    ], 
+                    [
+                        -119.4124772, 
+                        50.0250773
+                    ], 
+                    [
+                        -119.4120917, 
+                        50.0250821
+                    ], 
+                    [
+                        -119.4121954, 
+                        50.0270769
+                    ], 
+                    [
+                        -119.4126083, 
+                        50.0270718
+                    ], 
+                    [
+                        -119.4128328, 
+                        50.0321946
+                    ], 
+                    [
+                        -119.3936313, 
+                        50.0326418
+                    ], 
+                    [
+                        -119.393529, 
+                        50.0307781
+                    ], 
+                    [
+                        -119.3795727, 
+                        50.0310116
+                    ], 
+                    [
+                        -119.3795377, 
+                        50.0287584
+                    ], 
+                    [
+                        -119.3735764, 
+                        50.0288621
+                    ], 
+                    [
+                        -119.371544, 
+                        49.9793618
+                    ], 
+                    [
+                        -119.3573506, 
+                        49.9793618
+                    ], 
+                    [
+                        -119.3548353, 
+                        49.9256081
+                    ], 
+                    [
+                        -119.3268079, 
+                        49.9257238
+                    ], 
+                    [
+                        -119.3256573, 
+                        49.8804068
+                    ], 
+                    [
+                        -119.3138893, 
+                        49.8806528
+                    ], 
+                    [
+                        -119.3137097, 
+                        49.8771651
+                    ], 
+                    [
+                        -119.3132156, 
+                        49.877223
+                    ], 
+                    [
+                        -119.3131482, 
+                        49.8749652
+                    ], 
+                    [
+                        -119.312452, 
+                        49.8749073
+                    ], 
+                    [
+                        -119.3122275, 
+                        49.87236
+                    ], 
+                    [
+                        -119.3117558, 
+                        49.872331
+                    ], 
+                    [
+                        -119.3115986, 
+                        49.8696098
+                    ], 
+                    [
+                        -119.3112169, 
+                        49.8694217
+                    ], 
+                    [
+                        -119.3109199, 
+                        49.8632417
+                    ], 
+                    [
+                        -119.3103721, 
+                        49.8632724
+                    ], 
+                    [
+                        -119.3095139, 
+                        49.8512388
+                    ], 
+                    [
+                        -119.3106368, 
+                        49.8512316
+                    ], 
+                    [
+                        -119.3103859, 
+                        49.8462564
+                    ], 
+                    [
+                        -119.3245344, 
+                        49.8459957
+                    ], 
+                    [
+                        -119.3246018, 
+                        49.8450689
+                    ], 
+                    [
+                        -119.3367018, 
+                        49.844875
+                    ], 
+                    [
+                        -119.3367467, 
+                        49.8435136
+                    ], 
+                    [
+                        -119.337937, 
+                        49.8434702
+                    ], 
+                    [
+                        -119.3378023, 
+                        49.8382055
+                    ], 
+                    [
+                        -119.3383637, 
+                        49.8381041
+                    ], 
+                    [
+                        -119.3383749, 
+                        49.8351202
+                    ], 
+                    [
+                        -119.3390936, 
+                        49.8351058
+                    ], 
+                    [
+                        -119.3388016, 
+                        49.8321217
+                    ], 
+                    [
+                        -119.3391497, 
+                        49.8320565
+                    ], 
+                    [
+                        -119.3391722, 
+                        49.8293331
+                    ], 
+                    [
+                        -119.3394641, 
+                        49.8293331
+                    ], 
+                    [
+                        -119.3395879, 
+                        49.8267878
+                    ], 
+                    [
+                        -119.3500053, 
+                        49.8265829
+                    ], 
+                    [
+                        -119.3493701, 
+                        49.8180588
+                    ], 
+                    [
+                        -119.4046964, 
+                        49.8163785
+                    ], 
+                    [
+                        -119.4045694, 
+                        49.8099022
+                    ], 
+                    [
+                        -119.4101592, 
+                        49.8099022
+                    ], 
+                    [
+                        -119.4102862, 
+                        49.8072787
+                    ], 
+                    [
+                        -119.4319467, 
+                        49.8069098
+                    ], 
+                    [
+                        -119.4322643, 
+                        49.7907965
+                    ], 
+                    [
+                        -119.4459847, 
+                        49.7905504
+                    ], 
+                    [
+                        -119.445286, 
+                        49.7820201
+                    ], 
+                    [
+                        -119.4967376, 
+                        49.7811587
+                    ], 
+                    [
+                        -119.4966105, 
+                        49.7784927
+                    ], 
+                    [
+                        -119.5418371, 
+                        49.7775082
+                    ], 
+                    [
+                        -119.5415892, 
+                        49.7718277
+                    ], 
+                    [
+                        -119.5560296, 
+                        49.7714941
+                    ], 
+                    [
+                        -119.5561194, 
+                        49.7718422
+                    ], 
+                    [
+                        -119.5715704, 
+                        49.7715086
+                    ], 
+                    [
+                        -119.5716153, 
+                        49.7717262
+                    ], 
+                    [
+                        -119.5819235, 
+                        49.7714941
+                    ], 
+                    [
+                        -119.5820133, 
+                        49.7717697
+                    ], 
+                    [
+                        -119.5922991, 
+                        49.7715231
+                    ], 
+                    [
+                        -119.592344, 
+                        49.7718132
+                    ], 
+                    [
+                        -119.6003839, 
+                        49.7715957
+                    ], 
+                    [
+                        -119.6011924, 
+                        49.7839081
+                    ], 
+                    [
+                        -119.5864365, 
+                        49.7843863
+                    ]
+                ]
+            ]
+        }, 
         "description": "High quality aerial imagery taken for the City of Kelowna", 
         "end_date": "2012-05-14", 
         "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna2012/{zoom}/{x}/{y}.png", 
         "start_date": "2012-05-13", 
         "default": true, 
         "license_url": "http://opendatacommons.org/licenses/pddl/summary/", 
-        "extent": {
-            "min_zoom": 9, 
-            "max_zoom": 20, 
-            "bbox": {
-                "min_lon": -119.6011924, 
-                "max_lat": 50.0326418, 
-                "min_lat": 49.7714941, 
-                "max_lon": -119.3095139
-            }, 
-            "polygon": [
-                [
-                    [
-                        -119.5867318, 
-                        49.7928087
-                    ], 
-                    [
-                        -119.5465655, 
-                        49.7928097
-                    ], 
-                    [
-                        -119.5465661, 
-                        49.8013837
-                    ], 
-                    [
-                        -119.5343374, 
-                        49.8013841
-                    ], 
-                    [
-                        -119.5343376, 
-                        49.8047321
-                    ], 
-                    [
-                        -119.5296211, 
-                        49.8047322
-                    ], 
-                    [
-                        -119.5296216, 
-                        49.8119555
-                    ], 
-                    [
-                        -119.5104463, 
-                        49.811956
-                    ], 
-                    [
-                        -119.5115683, 
-                        49.8744325
-                    ], 
-                    [
-                        -119.5108946, 
-                        49.8744904
-                    ], 
-                    [
-                        -119.5114111, 
-                        49.8843312
-                    ], 
-                    [
-                        -119.5114115, 
-                        49.9221763
-                    ], 
-                    [
-                        -119.49386, 
-                        49.9223477
-                    ], 
-                    [
-                        -119.4940505, 
-                        49.9313031
-                    ], 
-                    [
-                        -119.4803936, 
-                        49.9317529
-                    ], 
-                    [
-                        -119.4804572, 
-                        49.9407474
-                    ], 
-                    [
-                        -119.4666732, 
-                        49.9409927
-                    ], 
-                    [
-                        -119.4692775, 
-                        49.9913717
-                    ], 
-                    [
-                        -119.4551337, 
-                        49.9916078
-                    ], 
-                    [
-                        -119.4556736, 
-                        50.0121242
-                    ], 
-                    [
-                        -119.4416673, 
-                        50.0123895
-                    ], 
-                    [
-                        -119.4417308, 
-                        50.0136345
-                    ], 
-                    [
-                        -119.4221492, 
-                        50.0140377
-                    ], 
-                    [
-                        -119.4221042, 
-                        50.0119306
-                    ], 
-                    [
-                        -119.4121303, 
-                        50.012165
-                    ], 
-                    [
-                        -119.4126082, 
-                        50.0216913
-                    ], 
-                    [
-                        -119.4123387, 
-                        50.0216913
-                    ], 
-                    [
-                        -119.4124772, 
-                        50.0250773
-                    ], 
-                    [
-                        -119.4120917, 
-                        50.0250821
-                    ], 
-                    [
-                        -119.4121954, 
-                        50.0270769
-                    ], 
-                    [
-                        -119.4126083, 
-                        50.0270718
-                    ], 
-                    [
-                        -119.4128328, 
-                        50.0321946
-                    ], 
-                    [
-                        -119.3936313, 
-                        50.0326418
-                    ], 
-                    [
-                        -119.393529, 
-                        50.0307781
-                    ], 
-                    [
-                        -119.3795727, 
-                        50.0310116
-                    ], 
-                    [
-                        -119.3795377, 
-                        50.0287584
-                    ], 
-                    [
-                        -119.3735764, 
-                        50.0288621
-                    ], 
-                    [
-                        -119.371544, 
-                        49.9793618
-                    ], 
-                    [
-                        -119.3573506, 
-                        49.9793618
-                    ], 
-                    [
-                        -119.3548353, 
-                        49.9256081
-                    ], 
-                    [
-                        -119.3268079, 
-                        49.9257238
-                    ], 
-                    [
-                        -119.3256573, 
-                        49.8804068
-                    ], 
-                    [
-                        -119.3138893, 
-                        49.8806528
-                    ], 
-                    [
-                        -119.3137097, 
-                        49.8771651
-                    ], 
-                    [
-                        -119.3132156, 
-                        49.877223
-                    ], 
-                    [
-                        -119.3131482, 
-                        49.8749652
-                    ], 
-                    [
-                        -119.312452, 
-                        49.8749073
-                    ], 
-                    [
-                        -119.3122275, 
-                        49.87236
-                    ], 
-                    [
-                        -119.3117558, 
-                        49.872331
-                    ], 
-                    [
-                        -119.3115986, 
-                        49.8696098
-                    ], 
-                    [
-                        -119.3112169, 
-                        49.8694217
-                    ], 
-                    [
-                        -119.3109199, 
-                        49.8632417
-                    ], 
-                    [
-                        -119.3103721, 
-                        49.8632724
-                    ], 
-                    [
-                        -119.3095139, 
-                        49.8512388
-                    ], 
-                    [
-                        -119.3106368, 
-                        49.8512316
-                    ], 
-                    [
-                        -119.3103859, 
-                        49.8462564
-                    ], 
-                    [
-                        -119.3245344, 
-                        49.8459957
-                    ], 
-                    [
-                        -119.3246018, 
-                        49.8450689
-                    ], 
-                    [
-                        -119.3367018, 
-                        49.844875
-                    ], 
-                    [
-                        -119.3367467, 
-                        49.8435136
-                    ], 
-                    [
-                        -119.337937, 
-                        49.8434702
-                    ], 
-                    [
-                        -119.3378023, 
-                        49.8382055
-                    ], 
-                    [
-                        -119.3383637, 
-                        49.8381041
-                    ], 
-                    [
-                        -119.3383749, 
-                        49.8351202
-                    ], 
-                    [
-                        -119.3390936, 
-                        49.8351058
-                    ], 
-                    [
-                        -119.3388016, 
-                        49.8321217
-                    ], 
-                    [
-                        -119.3391497, 
-                        49.8320565
-                    ], 
-                    [
-                        -119.3391722, 
-                        49.8293331
-                    ], 
-                    [
-                        -119.3394641, 
-                        49.8293331
-                    ], 
-                    [
-                        -119.3395879, 
-                        49.8267878
-                    ], 
-                    [
-                        -119.3500053, 
-                        49.8265829
-                    ], 
-                    [
-                        -119.3493701, 
-                        49.8180588
-                    ], 
-                    [
-                        -119.4046964, 
-                        49.8163785
-                    ], 
-                    [
-                        -119.4045694, 
-                        49.8099022
-                    ], 
-                    [
-                        -119.4101592, 
-                        49.8099022
-                    ], 
-                    [
-                        -119.4102862, 
-                        49.8072787
-                    ], 
-                    [
-                        -119.4319467, 
-                        49.8069098
-                    ], 
-                    [
-                        -119.4322643, 
-                        49.7907965
-                    ], 
-                    [
-                        -119.4459847, 
-                        49.7905504
-                    ], 
-                    [
-                        -119.445286, 
-                        49.7820201
-                    ], 
-                    [
-                        -119.4967376, 
-                        49.7811587
-                    ], 
-                    [
-                        -119.4966105, 
-                        49.7784927
-                    ], 
-                    [
-                        -119.5418371, 
-                        49.7775082
-                    ], 
-                    [
-                        -119.5415892, 
-                        49.7718277
-                    ], 
-                    [
-                        -119.5560296, 
-                        49.7714941
-                    ], 
-                    [
-                        -119.5561194, 
-                        49.7718422
-                    ], 
-                    [
-                        -119.5715704, 
-                        49.7715086
-                    ], 
-                    [
-                        -119.5716153, 
-                        49.7717262
-                    ], 
-                    [
-                        -119.5819235, 
-                        49.7714941
-                    ], 
-                    [
-                        -119.5820133, 
-                        49.7717697
-                    ], 
-                    [
-                        -119.5922991, 
-                        49.7715231
-                    ], 
-                    [
-                        -119.592344, 
-                        49.7718132
-                    ], 
-                    [
-                        -119.6003839, 
-                        49.7715957
-                    ], 
-                    [
-                        -119.6011924, 
-                        49.7839081
-                    ], 
-                    [
-                        -119.5864365, 
-                        49.7843863
-                    ]
-                ]
-            ]
-        }, 
+        "country_code": "CA", 
         "type": "tms", 
         "id": "kelowna_2012", 
         "name": "Kelowna 2012"
     }, 
     {
-        "name": "Kelowna Roads overlay", 
-        "overlay": true, 
-        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png", 
-        "license_url": "http://opendatacommons.org/licenses/pddl/summary/", 
         "extent": {
             "min_zoom": 9, 
             "max_zoom": 20, 
@@ -52293,17 +52298,15 @@
                 ]
             ]
         }, 
+        "name": "Kelowna Roads overlay", 
+        "overlay": true, 
+        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png", 
+        "license_url": "http://opendatacommons.org/licenses/pddl/summary/", 
+        "country_code": "CA", 
         "type": "tms", 
         "id": "kelowna_roads"
     }, 
     {
-        "name": "Latest southwest British Columbia Landsat", 
-        "end_date": "2013-9-12", 
-        "overlay": false, 
-        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_047026/{zoom}/{x}/{y}.png", 
-        "start_date": "2013-9-12", 
-        "default": false, 
-        "license_url": "Public Domain", 
         "extent": {
             "min_zoom": 5, 
             "max_zoom": 13, 
@@ -52366,14 +52369,42 @@
                 ]
             ]
         }, 
+        "name": "Latest southwest British Columbia Landsat", 
+        "end_date": "2013-09-12", 
+        "overlay": false, 
+        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_047026/{zoom}/{x}/{y}.png", 
+        "start_date": "2013-09-12", 
+        "default": false, 
+        "license_url": "Public Domain", 
+        "country_code": "CA", 
         "type": "tms", 
         "id": "landsat_047026", 
         "description": "Recent lower-resolution landwsat imagery for southwest British Columbia"
     }, 
     {
-        "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}", 
-        "type": "wms", 
         "name": "MSR Maps Topo", 
+        "available_projections": [
+            "EPSG:26904", 
+            "EPSG:26905", 
+            "EPSG:26906", 
+            "EPSG:26907", 
+            "EPSG:26908", 
+            "EPSG:26909", 
+            "EPSG:26910", 
+            "EPSG:26911", 
+            "EPSG:26913", 
+            "EPSG:26914", 
+            "EPSG:26915", 
+            "EPSG:26916", 
+            "EPSG:26917", 
+            "EPSG:26918", 
+            "EPSG:26919", 
+            "EPSG:26920", 
+            "EPSG:4326", 
+            "USDA:ALBERS-US", 
+            "USDA:ALBERS-AK"
+        ], 
+        "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -168.0028034, 
@@ -53216,6 +53247,11 @@
                 ]
             ]
         }, 
+        "country_code": "US", 
+        "type": "wms"
+    }, 
+    {
+        "name": "MSR Maps Urban", 
         "available_projections": [
             "EPSG:26904", 
             "EPSG:26905", 
@@ -53236,12 +53272,8 @@
             "EPSG:4326", 
             "USDA:ALBERS-US", 
             "USDA:ALBERS-AK"
-        ]
-    }, 
-    {
+        ], 
         "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=urbanarea&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}", 
-        "type": "wms", 
-        "name": "MSR Maps Urban", 
         "extent": {
             "bbox": {
                 "min_lon": -123.143332, 
@@ -54856,27 +54888,8 @@
                 ]
             ]
         }, 
-        "available_projections": [
-            "EPSG:26904", 
-            "EPSG:26905", 
-            "EPSG:26906", 
-            "EPSG:26907", 
-            "EPSG:26908", 
-            "EPSG:26909", 
-            "EPSG:26910", 
-            "EPSG:26911", 
-            "EPSG:26913", 
-            "EPSG:26914", 
-            "EPSG:26915", 
-            "EPSG:26916", 
-            "EPSG:26917", 
-            "EPSG:26918", 
-            "EPSG:26919", 
-            "EPSG:26920", 
-            "EPSG:4326", 
-            "USDA:ALBERS-US", 
-            "USDA:ALBERS-AK"
-        ]
+        "country_code": "US", 
+        "type": "wms"
     }, 
     {
         "name": "TIGER 2012 Roads Overlay", 
@@ -55356,13 +55369,11 @@
                 ]
             ]
         }, 
+        "country_code": "US", 
         "type": "tms", 
         "icon": "data:image/png;base64,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"
     }, 
     {
-        "description": "At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap", 
-        "overlay": true, 
-        "url": "http://{switch:a,b,c}.tiles.mapbox.com/v3/enf.ho204tap,enf.ho20a3n1,enf.game1617/{zoom}/{x}/{y}.png", 
         "extent": {
             "min_zoom": 0, 
             "max_zoom": 22, 
@@ -55837,14 +55848,16 @@
                 ]
             ]
         }, 
+        "description": "At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap", 
+        "overlay": true, 
+        "url": "http://{switch:a,b,c}.tiles.mapbox.com/v3/enf.ho204tap,enf.ho20a3n1,enf.game1617/{zoom}/{x}/{y}.png", 
+        "country_code": "US", 
         "icon": "data:image/png;base64,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", 
         "type": "tms", 
         "name": "New & Misaligned TIGER Roads"
     }, 
     {
         "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg", 
-        "type": "tms", 
-        "name": "USGS Large Scale Imagery", 
         "extent": {
             "min_zoom": 12, 
             "max_zoom": 20, 
@@ -60002,12 +60015,13 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "tms", 
+        "name": "USGS Large Scale Imagery", 
+        "country_code": "US"
     }, 
     {
         "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
-        "name": "USGS Topographic Maps", 
         "extent": {
             "bbox": {
                 "min_lon": -178.000097, 
@@ -60765,7 +60779,10 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "tms", 
+        "name": "USGS Topographic Maps", 
+        "country_code": "US"
     }, 
     {
         "name": "Bing aerial imagery", 
