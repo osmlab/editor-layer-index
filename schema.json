@@ -28,6 +28,11 @@
             "description": "A short English-language description of the source",
             "type": "string"
         },
+        "country_code": {
+            "description": "The ISO 3166-1 alpha-2 two letter country code in upper case",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
         "default": {
             "description": "Whether this is a good default imagery for its area",
             "type": "boolean"
