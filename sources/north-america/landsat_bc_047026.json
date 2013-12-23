@@ -1,0 +1,74 @@
+{
+    "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_047026/{zoom}/{x}/{y}.png", 
+    "type": "tms", 
+    "name": "Latest southwest British Columbia Landsat",
+    "license_url": "Public Domain",
+    "id": "landsat_047026",
+    "default": false,
+    "description": "Recent lower-resolution landwsat imagery for southwest British Columbia",
+    "start_date": "2013-9-12",
+    "end_date": "2013-9-12",
+    "overlay": false,
+    "extent": {
+        "min_zoom": 5, 
+        "max_zoom": 13, 
+        "bbox": {
+            "min_lon": -124.4128889, 
+            "max_lon": -121.2015461, 
+            "min_lat": 47.7820648, 
+            "max_lat": 49.9335836
+        }, 
+        "polygon": [
+            [
+                [
+                    -121.9355512, 
+                    47.7820648
+                ], 
+                [
+                    -121.5720582, 
+                    48.6410125
+                ], 
+                [
+                    -121.2015461, 
+                    49.4846247
+                ], 
+                [
+                    -121.8375516, 
+                    49.6023246
+                ], 
+                [
+                    -122.4767046, 
+                    49.7161735
+                ], 
+                [
+                    -123.118912, 
+                    49.8268824
+                ], 
+                [
+                    -123.760228, 
+                    49.9335836
+                ], 
+                [
+                    -124.0887706, 
+                    49.0870469
+                ], 
+                [
+                    -124.4128889, 
+                    48.2252567
+                ], 
+                [
+                    -123.792772, 
+                    48.1197334
+                ], 
+                [
+                    -123.1727942, 
+                    48.0109592
+                ], 
+                [
+                    -122.553553, 
+                    47.8982299
+                ]
+            ]
+        ]
+    }
+}
