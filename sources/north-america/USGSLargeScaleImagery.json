@@ -1,7 +1,8 @@
 {
     "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg", 
     "type": "tms", 
-    "name": "USGS Large Scale Imagery", 
+    "name": "USGS Large Scale Imagery",
+    "country_code": "US",
     "extent": {
         "min_zoom": 12,
         "max_zoom": 20,

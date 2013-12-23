@@ -2,7 +2,8 @@
     "url": "http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png", 
     "type": "tms", 
     "name": "TIGER 2012 Roads Overlay", 
-	"overlay": true, 
+    "overlay": true,
+    "country_code": "US",
     "extent": {
         "min_zoom": 16,
         "max_zoom": 19,
