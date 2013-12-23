@@ -43,6 +43,10 @@ for file in sys.argv[1:]:
         icon = ET.SubElement(entry, "icon")
         icon.text = source['icon']
 
+    if 'country_code' in source:
+        country_code = ET.SubElement(entry, "country-code")
+        country_code.text = source['country_code']
+
     if 'extent' in source:
         extent = source['extent']
 
