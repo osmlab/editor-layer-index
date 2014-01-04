@@ -17034,6 +17034,22 @@
     </bounds>
   </entry>
   <entry>
+    <name>Landsat 233055</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png</url>
+    <country-code>VE</country-code>
+    <min-zoom>5</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="8.277867" max-lon="-60.476261" min-lat="6.1765" min-lon="-62.532255">
+      <shape>
+        <point lat="6.1765" lon="-60.855001" />
+        <point lat="7.918829" lon="-60.476261" />
+        <point lat="8.277867" lon="-62.161689" />
+        <point lat="6.537549" lon="-62.532255" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Bing aerial imagery</name>
     <type>bing</type>
     <url>http://www.bing.com/maps/</url>

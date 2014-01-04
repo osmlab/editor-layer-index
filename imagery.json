@@ -61369,6 +61369,49 @@
         "country_code": "US"
     }, 
     {
+        "extent": {
+            "min_zoom": 5, 
+            "max_zoom": 13, 
+            "bbox": {
+                "min_lon": -62.5322549, 
+                "max_lat": 8.2778675, 
+                "min_lat": 6.1765004, 
+                "max_lon": -60.4762612
+            }, 
+            "polygon": [
+                [
+                    [
+                        -60.8550011, 
+                        6.1765004
+                    ], 
+                    [
+                        -60.4762612, 
+                        7.9188291
+                    ], 
+                    [
+                        -62.161689, 
+                        8.2778675
+                    ], 
+                    [
+                        -62.5322549, 
+                        6.5375488
+                    ]
+                ]
+            ]
+        }, 
+        "name": "Landsat 233055", 
+        "end_date": "2013-09-03", 
+        "overlay": false, 
+        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png", 
+        "start_date": "2013-09-03", 
+        "default": false, 
+        "license_url": "Public Domain", 
+        "country_code": "VE", 
+        "type": "tms", 
+        "id": "landsat_233055", 
+        "description": "Recent Landsat imagery"
+    }, 
+    {
         "name": "Bing aerial imagery", 
         "url": "http://www.bing.com/maps/", 
         "default": true, 

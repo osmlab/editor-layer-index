@@ -61892,6 +61892,41 @@
                 "type": "tms", 
                 "name": "USGS Topographic Maps"
             }
+        }, 
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            -60.855001, 
+                            6.1765
+                        ], 
+                        [
+                            -60.476261, 
+                            7.918829
+                        ], 
+                        [
+                            -62.161689, 
+                            8.277867
+                        ], 
+                        [
+                            -62.532255, 
+                            6.537549
+                        ], 
+                        [
+                            -60.855001, 
+                            6.1765
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png", 
+                "type": "tms", 
+                "name": "Landsat 233055"
+            }
         }
     ]
 }
