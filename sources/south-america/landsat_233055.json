@@ -1,0 +1,43 @@
+{
+    "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png", 
+    "type": "tms", 
+    "name": "Landsat 233055",
+    "license_url": "Public Domain",
+    "id": "landsat_233055",
+    "default": false,
+    "description": "Recent Landsat imagery",
+    "start_date": "2013-09-03",
+    "end_date": "2013-09-03",
+    "overlay": false,
+    "country_code": "VE",
+    "extent": {
+        "min_zoom": 5,
+        "max_zoom": 13,
+        "bbox": {
+            "min_lon": -62.5322549,
+            "max_lon": -60.4762612,
+            "min_lat": 6.1765004,
+            "max_lat": 8.2778675
+        },
+        "polygon": [
+            [
+                [
+                    -60.8550011,
+                    6.1765004
+                ],
+                [
+                    -60.4762612,
+                    7.9188291
+                ],
+                [
+                    -62.161689,
+                    8.2778675
+                ],
+                [
+                    -62.5322549,
+                    6.5375488
+                ]
+            ]
+        ]
+    }
+}
