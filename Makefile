@@ -1,4 +1,4 @@
-ALL = imagery.geojson imagery.json imagery.xml
+ALL = imagery.geojson imagery.json imagery_tms.json imagery.xml 
 SOURCES = $(shell find sources -type f -name '*.json' | sort)
 
 all: $(ALL)
@@ -14,6 +14,9 @@ imagery.xml: $(SOURCES)
 
 imagery.json: $(SOURCES)
 	python scripts/concat.py $(SOURCES) > imagery.json
+
+imagery_tms.json: $(SOURCES)
+	python scripts/concat_tms.py $(SOURCES) > imagery_tms.json
 
 imagery.geojson: imagery.xml
 	python scripts/convert_geojson.py imagery.xml > imagery.geojson
