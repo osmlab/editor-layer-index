@@ -53195,12 +53195,11 @@
         "description": "High quality aerial imagery taken for the City of Kelowna", 
         "end_date": "2012-05-14", 
         "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna2012/{zoom}/{x}/{y}.png", 
-        "start_date": "2012-05-13", 
-        "default": true, 
+        "id": "kelowna_2012", 
         "license_url": "http://opendatacommons.org/licenses/pddl/summary/", 
         "country_code": "CA", 
         "type": "tms", 
-        "id": "kelowna_2012", 
+        "start_date": "2012-05-13", 
         "name": "Kelowna 2012"
     }, 
     {
@@ -53669,17 +53668,16 @@
                 ]
             ]
         }, 
-        "name": "Latest southwest British Columbia Landsat", 
+        "description": "Recent lower-resolution landsat imagery for southwest British Columbia", 
         "end_date": "2013-09-12", 
         "overlay": false, 
         "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_047026/{zoom}/{x}/{y}.png", 
         "start_date": "2013-09-12", 
-        "default": false, 
         "license_url": "Public Domain", 
         "country_code": "CA", 
         "type": "tms", 
         "id": "landsat_047026", 
-        "description": "Recent lower-resolution landwsat imagery for southwest British Columbia"
+        "name": "Latest southwest British Columbia Landsat"
     }, 
     {
         "name": "MSR Maps Topo", 
@@ -62115,17 +62113,16 @@
                 ]
             ]
         }, 
-        "name": "Landsat 233055", 
+        "description": "Recent Landsat imagery", 
         "end_date": "2013-09-03", 
         "overlay": false, 
         "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png", 
         "start_date": "2013-09-03", 
-        "default": false, 
         "license_url": "Public Domain", 
         "country_code": "VE", 
         "type": "tms", 
         "id": "landsat_233055", 
-        "description": "Recent Landsat imagery"
+        "name": "Landsat 233055"
     }, 
     {
         "name": "Bing aerial imagery", 
