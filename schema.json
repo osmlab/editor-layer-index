@@ -37,6 +37,10 @@
             "description": "Whether this imagery should be shown in the default world-wide menu",
             "type": "boolean"
         },
+        "best": {
+            "description": "Whether this imagery is the best source for the region",
+            "type": "boolean"
+        },
         "start_date": {
             "description": "The age of the oldest imagery or data in the source, as an RFC3339 date or leading portion of one",
             "type": "string",
