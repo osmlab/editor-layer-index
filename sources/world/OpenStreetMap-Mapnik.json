@@ -6,7 +6,7 @@
         "required": true
     }, 
     "name": "OpenStreetMap (Mapnik)", 
-    "url": "http://tile.openstreetmap.org/{zoom}/{x}/{y}.png", 
+    "url": "http://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png", 
     "default": true, 
     "extent": {
         "max_zoom": 19
