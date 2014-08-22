@@ -477,7 +477,6 @@
         }
     }, 
     {
-        "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg", 
         "extent": {
             "min_zoom": 1, 
             "max_zoom": 22, 
@@ -1672,9 +1671,11 @@
                 ]
             ]
         }, 
+        "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg", 
+        "country_code": "ZA", 
         "type": "tms", 
-        "name": "South Africa CD:NGI Aerial", 
-        "country_code": "ZA"
+        "best": true, 
+        "name": "South Africa CD:NGI Aerial"
     }, 
     {
         "url": "http://{switch:a,b,c,d}.tile.osm-tools.org/osm_then/{zoom}/{x}/{y}.png", 
@@ -29587,6 +29588,7 @@
             ]
         }, 
         "type": "tms", 
+        "best": true, 
         "icon": "http://i.imgur.com/aFlvMpM.png"
     }, 
     {
