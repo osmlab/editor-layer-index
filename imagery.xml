@@ -17467,7 +17467,7 @@
   <entry>
     <name>OpenStreetMap (Mapnik)</name>
     <type>tms</type>
-    <url>http://tile.openstreetmap.org/{zoom}/{x}/{y}.png</url>
+    <url>http://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://openstreetmap.org/</attribution-url>
     <default>true</default>
