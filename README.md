@@ -20,7 +20,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for help on how to contribute.
 
 ## Using this index
 
-If you are using iD or Potlatch 2, you are already using this index!
+If you are using iD, Potlatch 2 or Vespucci, you are already using this index!
 
 For JOSM you can add `http://osmlab.github.io/editor-imagery-index/imagery.xml` 
 to the preference key `imagery.layers.sites` in advanced preferences. You probably
