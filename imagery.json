@@ -32616,6 +32616,24 @@
         }
     }, 
     {
+        "attribution": {
+            "text": "Stadt Z\u00fcrich Luftbild 2011", 
+            "required": false
+        }, 
+        "name": "Stadt Z\u00fcrich Luftbild 2011", 
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+        "extent": {
+            "bbox": {
+                "min_lon": 8.4441, 
+                "max_lat": 47.4411, 
+                "min_lat": 47.3141, 
+                "max_lon": 8.6284
+            }
+        }, 
+        "type": "tms", 
+        "best": true
+    }, 
+    {
         "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png", 
         "type": "tms", 
         "attribution": {
