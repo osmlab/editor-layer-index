@@ -1,6 +1,7 @@
 {
     "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
     "type": "wms", 
+    "available_projections": "EPSG:4326",
     "country_code":"EE",
     "name": "Estonia Basemap (Maaamet)", 
     "attribution": {
@@ -12,8 +13,8 @@
         "bbox": {
             "min_lon": 21.6940073,
             "max_lon": 28.2110546,
-            "min_lat": 57.5088466,
-            "max_lat": 59.7134564
+            "min_lat": 57.5025466,
+            "max_lat": 59.8274564
         }, 
         "polygon": [
             [
