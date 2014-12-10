@@ -1,0 +1,19 @@
+{
+    "url": "http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+    "attribution": {
+        "text": "Orthofoto WMS Solothurn",
+        "required": false
+    }, 
+    "type": "tms",
+    "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)",
+    "extent": {
+        "min_zoom": 12,
+        "max_zoom": 19,
+        "bbox": {
+            "min_lon": 7.08,
+            "max_lon": 8.04,
+            "min_lat": 47.03,
+            "max_lat": 47.54
+        }
+    }
+}

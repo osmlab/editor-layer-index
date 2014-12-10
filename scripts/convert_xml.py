@@ -5,6 +5,7 @@ root = ET.Element("imagery")
 
 for file in sys.argv[1:]:
     source = json.load(open(file))
+
     entry = ET.SubElement(root, "entry")
 
     name = ET.SubElement(entry, "name")
