@@ -2033,6 +2033,92 @@
         "type": "tms"
     }, 
     {
+        "attribution": {
+            "text": "vicmap", 
+            "required": true
+        }, 
+        "name": "VicMap (Victorian Government)", 
+        "url": "http://whoots.mapwarper.net/tms/$z/$x/$y/WEB_MERCATOR/http://api.maps.vic.gov.au/geowebcacheWM/service/wms?VERSION=1.1.1&TILED=true", 
+        "extent": {
+            "bbox": {
+                "min_lon": 140.9, 
+                "max_lat": -39.3, 
+                "min_lat": -34, 
+                "max_lon": 150
+            }, 
+            "polygon": [
+                [
+                    [
+                        140.9, 
+                        -34.0
+                    ], 
+                    [
+                        142.05322265625, 
+                        -34.107256396631186
+                    ], 
+                    [
+                        143.38256835937497, 
+                        -34.678393740116476
+                    ], 
+                    [
+                        144.66796875, 
+                        -35.82672127366603
+                    ], 
+                    [
+                        145.579833984375, 
+                        -35.728677044851686
+                    ], 
+                    [
+                        148.095703125, 
+                        -35.924644531440975
+                    ], 
+                    [
+                        148.370361328125, 
+                        -36.870832155646305
+                    ], 
+                    [
+                        149.974365234375, 
+                        -37.5184402388786
+                    ], 
+                    [
+                        149.600830078125, 
+                        -37.935533061836416
+                    ], 
+                    [
+                        148.128662109375, 
+                        -38.169114135560854
+                    ], 
+                    [
+                        146.348876953125, 
+                        -39.283293868938486
+                    ], 
+                    [
+                        144.68994140625, 
+                        -38.62545397209084
+                    ], 
+                    [
+                        143.492431640625, 
+                        -39.010647509940824
+                    ], 
+                    [
+                        142.086181640625, 
+                        -38.59970036588819
+                    ], 
+                    [
+                        140.9, 
+                        -38.436379603
+                    ], 
+                    [
+                        140.9, 
+                        -34.0
+                    ]
+                ]
+            ]
+        }, 
+        "country_code": "AU", 
+        "type": "tms"
+    }, 
+    {
         "url": "http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=piekraste&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}", 
         "type": "wms", 
         "attribution": {

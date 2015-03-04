@@ -559,6 +559,33 @@
     </bounds>
   </entry>
   <entry>
+    <name>VicMap (Victorian Government)</name>
+    <type>tms</type>
+    <url>http://whoots.mapwarper.net/tms/$z/$x/$y/WEB_MERCATOR/http://api.maps.vic.gov.au/geowebcacheWM/service/wms?VERSION=1.1.1&amp;TILED=true</url>
+    <attribution-text mandatory="true">vicmap</attribution-text>
+    <country-code>AU</country-code>
+    <bounds max-lat="-39.3" max-lon="150.0" min-lat="-34.0" min-lon="140.9">
+      <shape>
+        <point lat="-34.0" lon="140.9" />
+        <point lat="-34.107256" lon="142.053223" />
+        <point lat="-34.678394" lon="143.382568" />
+        <point lat="-35.826721" lon="144.667969" />
+        <point lat="-35.728677" lon="145.579834" />
+        <point lat="-35.924645" lon="148.095703" />
+        <point lat="-36.870832" lon="148.370361" />
+        <point lat="-37.51844" lon="149.974365" />
+        <point lat="-37.935533" lon="149.60083" />
+        <point lat="-38.169114" lon="148.128662" />
+        <point lat="-39.283294" lon="146.348877" />
+        <point lat="-38.625454" lon="144.689941" />
+        <point lat="-39.010648" lon="143.492432" />
+        <point lat="-38.5997" lon="142.086182" />
+        <point lat="-38.43638" lon="140.9" />
+        <point lat="-34.0" lon="140.9" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>20cm ortho - Coastline</name>
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=piekraste&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
