@@ -34810,15 +34810,14 @@
         ]
     }, 
     {
-        "url": "http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "attribution": {
             "url": "http://www.geo.u-szeged.hu", 
             "text": "SZTE TFGT - University of Szeged", 
-            "required": true, 
-            "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k"
+            "required": true
         }, 
         "name": "Szeged ortophoto 2011", 
+        "url": "http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png", 
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k", 
         "extent": {
             "min_zoom": 10, 
             "max_zoom": 22, 
@@ -34828,7 +34827,8 @@
                 "min_lat": 46.226038352, 
                 "max_lon": 20.1989636982
             }
-        }
+        }, 
+        "type": "tms"
     }, 
     {
         "attribution": {
