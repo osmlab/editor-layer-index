@@ -1,0 +1,19 @@
+{
+    "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_orthofoto.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+    "attribution": {
+        "text": "Orthofoto WMS Solothurn",
+        "required": false
+    }, 
+    "type": "wms", 
+    "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)",
+    "extent": {
+        "min_zoom": 12,
+        "max_zoom": 19,
+        "bbox": {
+            "min_lon": 7.08,
+            "max_lon": 8.04,
+            "min_lat": 47.03,
+            "max_lat": 47.54
+        }
+    }
+}
