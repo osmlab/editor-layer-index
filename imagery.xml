@@ -2203,6 +2203,7 @@
     <type>wms</type>
     <url>http://sitn.ne.ch/ogc-sitn-open/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>orthophotos2006sitn50cm</attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Canton du Jura 50cm (RCJU 1998)</name>
@@ -3273,6 +3274,7 @@
     <url>http://{switch:a,b,c}.tile.openstreetmap.dk/fugro2005/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Fugro Aerial Mapping</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Fugro</attribution-url>
+    <country-code>DK</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="57.822894" max-lon="15.309925" min-lat="54.468165" min-lon="8.018512">
       <shape>
@@ -5434,6 +5436,7 @@
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
     <attribution-url>http://geo.nls.uk/maps/</attribution-url>
     <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
+    <country-code>IE</country-code>
     <min-zoom>5</min-zoom>
     <max-zoom>13</max-zoom>
     <bounds max-lat="55.453076" max-lon="-5.361476" min-lat="51.309108" min-lon="-10.670238">
@@ -6112,6 +6115,7 @@
     <url>http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Permisssion by UGKK</attribution-text>
     <attribution-url>http://wiki.freemap.sk/KatasterPortal</attribution-url>
+    <country-code>SK</country-code>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
       <shape>
         <point lat="49.25529" lon="19.83682" />
@@ -6918,6 +6922,7 @@
     <projections>
       <code>EPSG:4326</code>
     </projections>
+    <country-code>IT</country-code>
   </entry>
   <entry>
     <name>PCN 2008 - IT Lazio+Umbria</name>
@@ -6926,12 +6931,14 @@
     <projections>
       <code>EPSG:4326</code>
     </projections>
+    <country-code>IT</country-code>
   </entry>
   <entry>
     <name>PNOA Spain</name>
     <type>wms</type>
     <url>http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;SRS={proj}&amp;LAYERS=pnoa&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">PNOA</attribution-text>
+    <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
       <shape>
         <point lat="28.44606" lon="-17.88463" />
@@ -8333,6 +8340,7 @@
     <attribution-text mandatory="true">EEA GMES Urban Atlas</attribution-text>
     <attribution-url>http://www.eea.europa.eu/data-and-maps/data/urban-atlas</attribution-url>
     <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
+    <country-code>SK</country-code>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
       <shape>
         <point lat="49.25529" lon="19.83682" />
@@ -8460,6 +8468,7 @@
       <code>EPSG:2056</code>
       <code>EPSG:21781</code>
     </projections>
+    <country-code>IT</country-code>
     <bounds max-lat="47.098175" max-lon="12.482758" min-lat="46.213553" min-lon="10.373383" />
   </entry>
   <entry>
@@ -8537,6 +8546,7 @@
       <code>EPSG:2056</code>
       <code>EPSG:21781</code>
     </projections>
+    <country-code>IT</country-code>
     <bounds max-lat="47.098175" max-lon="12.482758" min-lat="46.213553" min-lon="10.373383" />
   </entry>
   <entry>
@@ -8559,6 +8569,7 @@
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Uster Vermessung Orthophoto 2008</attribution-text>
+    <country-code>CH</country-code>
     <bounds max-lat="47.39" max-lon="8.77" min-lat="47.31" min-lon="8.6" />
   </entry>
   <entry>
@@ -9171,6 +9182,7 @@
     <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
+    <country-code>FR</country-code>
     <max-zoom>22</max-zoom>
     <bounds max-lat="43.731223" max-lon="1.581086" min-lat="43.510254" min-lon="1.191998">
       <shape>
@@ -9263,6 +9275,7 @@
     <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
+    <country-code>FR</country-code>
     <max-zoom>22</max-zoom>
     <bounds max-lat="43.781576" max-lon="1.638415" min-lat="43.509466" min-lon="1.113507">
       <shape>
@@ -9329,6 +9342,7 @@
     <url>http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">Orthophoto Tour(s) Plus 2008</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
+    <country-code>FR</country-code>
     <max-zoom>20</max-zoom>
     <bounds max-lat="47.491144" max-lon="0.820196" min-lat="47.259462" min-lon="0.386434">
       <shape>
@@ -9487,6 +9501,7 @@
     <url>http://tms.mapspot.ge/tms/2/nonstandard/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Orthophoto Tour(s) Plus 2008</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
+    <country-code>FR</country-code>
     <bounds max-lat="47.488195" max-lon="0.77497" min-lat="47.336907" min-lon="0.454102">
       <shape>
         <point lat="47.465264" lon="0.545746" />
@@ -9772,6 +9787,7 @@
     <attribution-text>Stadt Wien</attribution-text>
     <attribution-url>http://data.wien.gv.at/</attribution-url>
     <icon>http://www.wien.gv.at/layout-a/logo/wappen-klein.gif</icon>
+    <country-code>AT</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="48.33" max-lon="16.58" min-lat="48.1" min-lon="16.17" />
   </entry>

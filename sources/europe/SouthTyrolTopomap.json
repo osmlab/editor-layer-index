@@ -3,6 +3,7 @@
     "name": "South Tyrol Topomap",
     "type": "wms",
     "url": "http://sdi.provinz.bz.it/geoserver/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=WMTS_TOPOMAP_APB-PAB&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "IT",
     "available_projections": [
         "EPSG:4326",
         "EPSG:900913",

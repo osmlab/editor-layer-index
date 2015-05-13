@@ -8315,7 +8315,8 @@
             "text": "orthophotos2006sitn50cm", 
             "required": false
         }, 
-        "name": "Canton de Neuch\u00e2tel 50cm (SITN 2006)"
+        "name": "Canton de Neuch\u00e2tel 50cm (SITN 2006)", 
+        "country_code": "CH"
     }, 
     {
         "url": "http://sitn.ne.ch/ogc-sitj-ortho/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho1998&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -12217,14 +12218,13 @@
         "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png"
     }, 
     {
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/fugro2005/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "attribution": {
             "url": "http://wiki.openstreetmap.org/wiki/Fugro", 
             "text": "Fugro Aerial Mapping", 
             "required": true
         }, 
         "name": "Fugro (Denmark)", 
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/fugro2005/{zoom}/{x}/{y}.png", 
         "extent": {
             "max_zoom": 19, 
             "bbox": {
@@ -12845,7 +12845,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "DK", 
+        "type": "tms"
     }, 
     {
         "url": "http://mapproxy.gpweb.dk/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
@@ -20510,6 +20512,7 @@
                 ]
             ]
         }, 
+        "country_code": "IE", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -22771,14 +22774,13 @@
         }
     }, 
     {
-        "url": "http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg", 
-        "type": "tms", 
         "attribution": {
             "url": "http://wiki.freemap.sk/KatasterPortal", 
             "text": "Permisssion by UGKK", 
             "required": true
         }, 
         "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2011-05)", 
+        "url": "http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg", 
         "extent": {
             "bbox": {
                 "min_lon": 16.7988747, 
@@ -22974,7 +22976,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "SK", 
+        "type": "tms"
     }, 
     {
         "url": "http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg", 
@@ -25704,6 +25708,7 @@
         "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_06.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2006.33,OI.ORTOIMMAGINI.2006.32&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "type": "wms", 
         "name": "PCN 2006 - Italy", 
+        "country_code": "IT", 
         "available_projections": [
             "EPSG:4326"
         ]
@@ -25712,18 +25717,18 @@
         "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_08.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2008.33&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "type": "wms", 
         "name": "PCN 2008 - IT Lazio+Umbria", 
+        "country_code": "IT", 
         "available_projections": [
             "EPSG:4326"
         ]
     }, 
     {
-        "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "text": "PNOA", 
             "required": true
         }, 
         "name": "PNOA Spain", 
+        "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -18.1661033, 
@@ -28063,7 +28068,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "ES", 
+        "type": "wms"
     }, 
     {
         "attribution": {
@@ -31257,6 +31264,7 @@
                 ]
             ]
         }, 
+        "country_code": "SK", 
         "type": "tms", 
         "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
     }, 
@@ -31275,6 +31283,14 @@
         }
     }, 
     {
+        "extent": {
+            "bbox": {
+                "min_lon": 10.373383, 
+                "max_lat": 47.098175, 
+                "min_lat": 46.213553, 
+                "max_lon": 12.482758
+            }
+        }, 
         "name": "South Tyrol Orthofoto 2011", 
         "available_projections": [
             "EPSG:4326", 
@@ -31342,14 +31358,7 @@
             "EPSG:21781"
         ], 
         "url": "http://sdi.provinz.bz.it/geoserver/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=WMTS_OF2011_APB-PAB&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "extent": {
-            "bbox": {
-                "min_lon": 10.373383, 
-                "max_lat": 47.098175, 
-                "min_lat": 46.213553, 
-                "max_lon": 12.482758
-            }
-        }, 
+        "country_code": "IT", 
         "type": "wms", 
         "id": "sdi.provinz.bz.it-WMTS_OF2011_APB-PAB"
     }, 
@@ -31368,6 +31377,14 @@
         "name": "South Tyrol Orthofoto 2011"
     }, 
     {
+        "extent": {
+            "bbox": {
+                "min_lon": 10.373383, 
+                "max_lat": 47.098175, 
+                "min_lat": 46.213553, 
+                "max_lon": 12.482758
+            }
+        }, 
         "name": "South Tyrol Topomap", 
         "available_projections": [
             "EPSG:4326", 
@@ -31435,14 +31452,7 @@
             "EPSG:21781"
         ], 
         "url": "http://sdi.provinz.bz.it/geoserver/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=WMTS_TOPOMAP_APB-PAB&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "extent": {
-            "bbox": {
-                "min_lon": 10.373383, 
-                "max_lat": 47.098175, 
-                "min_lat": 46.213553, 
-                "max_lon": 12.482758
-            }
-        }, 
+        "country_code": "IT", 
         "type": "wms", 
         "id": "sdi.provinz.bz.it-WMTS_TOPOMAP_APB-PAB"
     }, 
@@ -31473,13 +31483,12 @@
         ]
     }, 
     {
-        "url": "http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
-        "type": "tms", 
         "attribution": {
             "text": "Stadt Uster Vermessung Orthophoto 2008", 
             "required": false
         }, 
         "name": "Stadt Uster Orthophoto 2008 10cm", 
+        "url": "http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
         "extent": {
             "bbox": {
                 "min_lon": 8.6, 
@@ -31487,7 +31496,9 @@
                 "min_lat": 47.31, 
                 "max_lon": 8.77
             }
-        }
+        }, 
+        "country_code": "CH", 
+        "type": "tms"
     }, 
     {
         "attribution": {
@@ -33710,14 +33721,13 @@
         "icon": "http://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
     }, 
     {
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}", 
-        "type": "tms", 
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData", 
             "text": "ToulouseMetropole", 
             "required": true
         }, 
         "name": "Toulouse - Orthophotoplan 2007", 
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}", 
         "extent": {
             "max_zoom": 22, 
             "bbox": {
@@ -34050,17 +34060,18 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "FR", 
+        "type": "tms"
     }, 
     {
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}", 
-        "type": "tms", 
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData", 
             "text": "ToulouseMetropole", 
             "required": true
         }, 
         "name": "Toulouse - Orthophotoplan 2011", 
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}", 
         "extent": {
             "max_zoom": 22, 
             "bbox": {
@@ -34289,17 +34300,11 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "FR", 
+        "type": "tms"
     }, 
     {
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}", 
-        "type": "tms", 
-        "attribution": {
-            "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
-            "text": "Orthophoto Tour(s) Plus 2008", 
-            "required": true
-        }, 
-        "name": "Tours - Orthophotos 2008-2010", 
         "extent": {
             "max_zoom": 20, 
             "bbox": {
@@ -34896,17 +34901,20 @@
                     ]
                 ]
             ]
-        }
-    }, 
-    {
-        "url": "http://tms.mapspot.ge/tms/2/nonstandard/{zoom}/{x}/{y}.jpeg", 
-        "type": "tms", 
+        }, 
         "attribution": {
             "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
             "text": "Orthophoto Tour(s) Plus 2008", 
             "required": true
         }, 
-        "name": "Tours - Orthophotos 2008", 
+        "name": "Tours - Orthophotos 2008-2010", 
+        "end_date": "2011", 
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}", 
+        "country_code": "FR", 
+        "type": "tms", 
+        "start_date": "2008"
+    }, 
+    {
         "extent": {
             "bbox": {
                 "min_lon": 0.4541016, 
@@ -35310,7 +35318,18 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
+            "text": "Orthophoto Tour(s) Plus 2008", 
+            "required": true
+        }, 
+        "name": "Tours - Orthophotos 2008", 
+        "end_date": "2009", 
+        "url": "http://tms.mapspot.ge/tms/2/nonstandard/{zoom}/{x}/{y}.jpeg", 
+        "country_code": "FR", 
+        "type": "tms", 
+        "start_date": "2008"
     }, 
     {
         "url": "http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&VERSION=1.1.1&service=WMS&REQUEST=GetMap&LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}", 
@@ -35965,6 +35984,7 @@
                 "max_lon": 16.58
             }
         }, 
+        "country_code": "AT", 
         "type": "tms", 
         "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
     }, 
