@@ -31514,7 +31514,15 @@
             "text": "Stadt Z\u00fcrich Open Government Data", 
             "required": false
         }, 
-        "name": "Stadtplan Z\u00fcrich"
+        "name": "Stadtplan Z\u00fcrich", 
+        "extent": {
+            "bbox": {
+                "min_lon": 8.4482, 
+                "max_lat": 47.4339, 
+                "min_lat": 47.321, 
+                "max_lon": 8.6248
+            }
+        }
     }, 
     {
         "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png", 
