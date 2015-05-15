@@ -1105,12 +1105,14 @@
     <type>wms</type>
     <url>http://geo.fr.ch/wms/orthophoto_2005_fribourg.php?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Orthophoto_2005&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthophoto 2005, Etat de Fribourg </attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Canton de G&#233;n&#232;ve 5cm (SITG 2011)</name>
     <type>wms</type>
     <url>http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthophotos du SITG 2011</attribution-text>
+    <country-code>CH</country-code>
     <bounds max-lat="46.319634" max-lon="6.311779" min-lat="46.129325" min-lon="5.956025">
       <shape>
         <point lat="46.140923" lon="6.126755" />
@@ -1243,12 +1245,14 @@
     <type>wms</type>
     <url>http://sitn.ne.ch/ogc-sitn-open/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>orthophotos2006sitn50cm</attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Canton du Jura 50cm (RCJU 1998)</name>
     <type>wms</type>
     <url>http://sitn.ne.ch/ogc-sitj-ortho/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho1998&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthophotos 1998 RCJU 50cm </attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Catastro Spain</name>
@@ -6012,6 +6016,7 @@
     <type>tms</type>
     <url>http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png</url>
     <attribution-text>AGIS OF2011</attribution-text>
+    <country-code>CH</country-code>
     <min-zoom>14</min-zoom>
     <max-zoom>19</max-zoom>
     <bounds max-lat="47.63" max-lon="8.5" min-lat="47.12" min-lon="7.7" />
@@ -6021,6 +6026,7 @@
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <attribution-text>AGIS OF2014</attribution-text>
+    <country-code>CH</country-code>
     <min-zoom>8</min-zoom>
     <max-zoom>19</max-zoom>
     <bounds max-lat="47.63" max-lon="8.5" min-lat="47.12" min-lon="7.7" />
@@ -6030,6 +6036,7 @@
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
+    <country-code>CH</country-code>
     <min-zoom>12</min-zoom>
     <max-zoom>19</max-zoom>
     <bounds max-lat="47.54" max-lon="8.04" min-lat="47.03" min-lon="7.08" />
@@ -6039,6 +6046,7 @@
     <type>wms</type>
     <url>http://www.sogis1.so.ch/cgi-bin/sogis/sogis_orthofoto.wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Orthofoto_SO&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
+    <country-code>CH</country-code>
     <min-zoom>12</min-zoom>
     <max-zoom>19</max-zoom>
     <bounds max-lat="47.54" max-lon="8.04" min-lat="47.03" min-lon="7.08" />
@@ -6048,6 +6056,7 @@
     <type>wms</type>
     <url>http://www.sogis1.so.ch/cgi-bin/sogis/sogis_ortho.wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Orthofoto11_CIR&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Katastr&#225;lna mapa Slovenska (KaPor, 2010-04)</name>
@@ -8553,12 +8562,14 @@
       <code>EPSG:21781</code>
     </projections>
     <attribution-text>Orthophoto 2008, Vermessungsamt Stadt Bern </attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Stadtplan Z&#252;rich</name>
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Open Government Data</attribution-text>
+    <country-code>CH</country-code>
     <bounds max-lat="47.4339" max-lon="8.6248" min-lat="47.321" min-lon="8.4482" />
   </entry>
   <entry>
@@ -8566,6 +8577,7 @@
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Uster Vermessung Orthophoto 2008</attribution-text>
+    <country-code>CH</country-code>
     <bounds max-lat="47.39" max-lon="8.77" min-lat="47.31" min-lon="8.6" />
   </entry>
   <entry>
@@ -8573,6 +8585,7 @@
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Luftbild 2011</attribution-text>
+    <country-code>CH</country-code>
     <bounds max-lat="47.4411" max-lon="8.6284" min-lat="47.3141" min-lon="8.4441" />
   </entry>
   <entry>
@@ -9595,6 +9608,7 @@
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Open Government Data</attribution-text>
+    <country-code>CH</country-code>
     <max-zoom>21</max-zoom>
     <bounds max-lat="47.4339" max-lon="8.6248" min-lat="47.321" min-lon="8.4482" />
   </entry>
