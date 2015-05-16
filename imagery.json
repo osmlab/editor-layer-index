@@ -7797,16 +7797,16 @@
             "text": "Orthophoto 2005, Etat de Fribourg ", 
             "required": false
         }, 
-        "name": "Canton de Fribourg 50cm (2005)"
+        "name": "Canton de Fribourg 50cm (2005)", 
+        "country_code": "CH"
     }, 
     {
-        "url": "http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "text": "Orthophotos du SITG 2011", 
             "required": false
         }, 
         "name": "Canton de G\u00e9n\u00e8ve 5cm (SITG 2011)", 
+        "url": "http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": 5.956025, 
@@ -8306,7 +8306,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "CH", 
+        "type": "wms"
     }, 
     {
         "url": "http://sitn.ne.ch/ogc-sitn-open/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -8325,7 +8327,8 @@
             "text": "Orthophotos 1998 RCJU 50cm ", 
             "required": false
         }, 
-        "name": "Canton du Jura 50cm (RCJU 1998)"
+        "name": "Canton du Jura 50cm (RCJU 1998)", 
+        "country_code": "CH"
     }, 
     {
         "url": "http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -22482,13 +22485,12 @@
         "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
     }, 
     {
-        "url": "http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "attribution": {
             "text": "AGIS OF2011", 
             "required": false
         }, 
         "name": "Kanton Aargau 25cm (AGIS 2011)", 
+        "url": "http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png", 
         "extent": {
             "min_zoom": 14, 
             "max_zoom": 19, 
@@ -22498,15 +22500,11 @@
                 "min_lat": 47.12, 
                 "max_lon": 8.5
             }
-        }
+        }, 
+        "country_code": "CH", 
+        "type": "tms"
     }, 
     {
-        "attribution": {
-            "text": "AGIS OF2014", 
-            "required": false
-        }, 
-        "name": "Kanton Aargau 25cm (AGIS 2014)", 
-        "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
         "extent": {
             "min_zoom": 8, 
             "max_zoom": 19, 
@@ -22517,17 +22515,23 @@
                 "max_lon": 8.5
             }
         }, 
+        "attribution": {
+            "text": "AGIS OF2014", 
+            "required": false
+        }, 
+        "name": "Kanton Aargau 25cm (AGIS 2014)", 
+        "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+        "country_code": "CH", 
         "type": "tms", 
         "best": true
     }, 
     {
-        "url": "http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
-        "type": "tms", 
         "attribution": {
             "text": "Orthofoto WMS Solothurn", 
             "required": false
         }, 
         "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)", 
+        "url": "http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
         "extent": {
             "min_zoom": 12, 
             "max_zoom": 19, 
@@ -22537,16 +22541,17 @@
                 "min_lat": 47.03, 
                 "max_lon": 8.04
             }
-        }
+        }, 
+        "country_code": "CH", 
+        "type": "tms"
     }, 
     {
-        "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_orthofoto.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "text": "Orthofoto WMS Solothurn", 
             "required": false
         }, 
         "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)", 
+        "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_orthofoto.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "min_zoom": 12, 
             "max_zoom": 19, 
@@ -22556,7 +22561,9 @@
                 "min_lat": 47.03, 
                 "max_lon": 8.04
             }
-        }
+        }, 
+        "country_code": "CH", 
+        "type": "wms"
     }, 
     {
         "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_ortho.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Orthofoto11_CIR&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -22565,7 +22572,8 @@
             "text": "Orthofoto WMS Solothurn", 
             "required": false
         }, 
-        "name": "Kanton Solothurn Infrarot 12.5cm (SOGIS 2011)"
+        "name": "Kanton Solothurn Infrarot 12.5cm (SOGIS 2011)", 
+        "country_code": "CH"
     }, 
     {
         "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg", 
@@ -31471,8 +31479,6 @@
         "name": "South Tyrol Topomap"
     }, 
     {
-        "url": "http://map.bern.ch/arcgis/services/Orthofoto_2008/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0,1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "text": "Orthophoto 2008, Vermessungsamt Stadt Bern ", 
             "required": false
@@ -31480,7 +31486,10 @@
         "name": "Stadt Bern 10cm/25cm (2008)", 
         "available_projections": [
             "EPSG:21781"
-        ]
+        ], 
+        "url": "http://map.bern.ch/arcgis/services/Orthofoto_2008/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0,1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "country_code": "CH", 
+        "type": "wms"
     }, 
     {
         "attribution": {
@@ -31501,12 +31510,6 @@
         "type": "tms"
     }, 
     {
-        "attribution": {
-            "text": "Stadt Z\u00fcrich Luftbild 2011", 
-            "required": false
-        }, 
-        "name": "Stadt Z\u00fcrich Luftbild 2011", 
-        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
         "extent": {
             "bbox": {
                 "min_lon": 8.4441, 
@@ -31515,17 +31518,23 @@
                 "max_lon": 8.6284
             }
         }, 
+        "attribution": {
+            "text": "Stadt Z\u00fcrich Luftbild 2011", 
+            "required": false
+        }, 
+        "name": "Stadt Z\u00fcrich Luftbild 2011", 
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+        "country_code": "CH", 
         "type": "tms", 
         "best": true
     }, 
     {
-        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
-        "type": "tms", 
         "attribution": {
             "text": "Stadt Z\u00fcrich Open Government Data", 
             "required": false
         }, 
         "name": "Stadtplan Z\u00fcrich", 
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
         "extent": {
             "bbox": {
                 "min_lon": 8.4482, 
@@ -31533,7 +31542,9 @@
                 "min_lat": 47.321, 
                 "max_lon": 8.6248
             }
-        }
+        }, 
+        "country_code": "CH", 
+        "type": "tms"
     }, 
     {
         "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png", 
@@ -35335,6 +35346,25 @@
         "url": "http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&VERSION=1.1.1&service=WMS&REQUEST=GetMap&LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}", 
         "type": "wms", 
         "name": "USSR - Latvia"
+    }, 
+    {
+        "attribution": {
+            "text": "Stadt Z\u00fcrich Open Government Data", 
+            "required": false
+        }, 
+        "name": "\u00dcbersichtsplan Z\u00fcrich", 
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
+        "extent": {
+            "max_zoom": 21, 
+            "bbox": {
+                "min_lon": 8.4482, 
+                "max_lat": 47.4339, 
+                "min_lat": 47.321, 
+                "max_lon": 8.6248
+            }
+        }, 
+        "country_code": "CH", 
+        "type": "tms"
     }, 
     {
         "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png", 
