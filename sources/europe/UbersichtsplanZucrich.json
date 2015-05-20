@@ -1,13 +1,14 @@
 {
-    "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
+    "url": "http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
     "attribution": {
         "text": "Stadt Z\u00fcrich Open Government Data",
         "required": false
     }, 
     "type": "tms", 
-    "name": "Stadtplan Z\u00fcrich",
+    "name": "Übersichtsplan Z\u00fcrich",
     "country_code": "CH",
     "extent": {
+        "max_zoom": 21,
         "bbox": {
             "min_lon": 8.4482,
             "max_lon": 8.6248,
