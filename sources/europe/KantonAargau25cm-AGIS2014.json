@@ -1,14 +1,15 @@
 {
-    "url": "http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png", 
+    "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
     "attribution": {
-        "text": "AGIS OF2011",
+        "text": "AGIS OF2014",
         "required": false
     }, 
     "type": "tms", 
-    "name": "Kanton Aargau 25cm (AGIS 2011)", 
+    "name": "Kanton Aargau 25cm (AGIS 2014)", 
     "country_code": "CH",
+    "best": true,
     "extent": {
-        "min_zoom": 14,
+        "min_zoom": 8,
         "max_zoom": 19,
         "bbox": {
             "min_lon": 7.7,
