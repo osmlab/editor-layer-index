@@ -1,0 +1,67 @@
+{
+    "url": "http://sjcgis.org/arcgis/rest/services/Basemaps/General_Basemap_WM/MapServer/tile/{zoom}/{y}/{x}",
+    "type": "tms",
+    "name": "Vector Streetmap for San Juan County WA",
+    "overlay": false,
+    "description": "Public domain street and address data from the San Juan County, WA. Updated at least quarterly.",
+    "country_code": "US",
+    "best": true,
+    "extent": {
+        "min_zoom": 0,
+        "max_zoom": 19,
+        "bbox": {
+            "min_lon": -124.0554571,
+            "max_lon": -121.7184313,
+            "min_lat": 47.2732239,
+            "max_lat": 49.6102497
+        },
+        "polygon": [
+            [
+                [
+                        -123.274024,
+                    48.692975
+                ],
+                [
+                        -123.007726,
+                    48.767256
+                ],
+                [
+                        -123.007619,
+                    48.831577
+                ],
+                [
+                        -122.783495,
+                    48.758416
+                ],
+                [
+                        -122.693402,
+                    48.658522
+                ],
+                [
+                        -122.767451,
+                    48.603606
+                ],
+                [
+                        -122.744842,
+                    48.387083
+                ],
+                [
+                        -123.248221,
+                    48.283531
+                ],
+                [
+                        -123.114524,
+                    48.422614
+                ],
+                [
+                        -123.219035,
+                    48.548575
+                ],
+                [
+                        -123.274024,
+                    48.692975
+                ]
+            ]
+        ]
+    }
+}
