@@ -1,0 +1,20 @@
+{
+    "attribution": {
+        "url": "http://geo.nls.uk/maps/",
+        "text": "National Library of Scotland Historic Maps",
+        "required": true
+    },
+    "name": "NLS - OS 25-inch (Scotland), 1892-1905",
+    "url": "http://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png",
+    "extent": {
+        "max_zoom": 18,
+        "bbox": {
+            "min_lon": -9.25,
+            "max_lon": 0.22,
+            "min_lat": 54.43,
+            "max_lat": 61.12
+        }
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}

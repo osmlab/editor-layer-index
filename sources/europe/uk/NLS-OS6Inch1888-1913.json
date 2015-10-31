@@ -1,0 +1,20 @@
+{
+    "attribution": {
+        "url": "http://geo.nls.uk/maps/",
+        "text": "National Library of Scotland Historic Maps",
+        "required": true
+    },
+    "name": "NLS - OS 6-inch County Series, 1888-1913",
+    "url": "http://geo.nls.uk/mapdata3/os/6_inch_gb_1900/{zoom}/{x}/{y}.png",
+    "extent": {
+        "max_zoom": 17,
+        "bbox": {
+            "min_lon": -9.0,
+            "max_lon": 1.9,
+            "min_lat": 49.8,
+            "max_lat": 61.1
+        }
+    },      
+    "type": "tms",
+    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+}
