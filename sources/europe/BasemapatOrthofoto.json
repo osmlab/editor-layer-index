@@ -1,12 +1,15 @@
 {
-    "id": "geoimage.at", 
-    "name": "Geoimage.at MaxRes", 
+    "id": "basemap.at orthofoto", 
+    "name": "basemap.at Orthofoto", 
     "attribution": {
-        "text": "geoimage.at",
+        "text": "basemap.at",
         "required": true
     }, 
     "type": "tms", 
-    "url": "http://geoimage.openstreetmap.at/4d80de696cd562a63ce463a58a61488d/{zoom}/{x}/{y}.jpg", 
+    "url": "http://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.png",
+    "license_url": "http://creativecommons.org/licenses/by/3.0/at/deed.de",
+    "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery.",
+    "icon": "http://basemap.at/images/basemap_logo_klein.jpg",
     "extent": {
         "bbox": {
             "min_lon": 9.5406306,
