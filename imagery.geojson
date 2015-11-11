@@ -47938,6 +47938,46 @@
                 "coordinates": [
                     [
                         [
+                            -9.25, 
+                            54.43
+                        ], 
+                        [
+                            -9.25, 
+                            61.12
+                        ], 
+                        [
+                            0.22, 
+                            61.12
+                        ], 
+                        [
+                            0.22, 
+                            54.43
+                        ], 
+                        [
+                            -9.25, 
+                            54.43
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png", 
+                "attribution": {
+                    "url": "http://geo.nls.uk/maps/", 
+                    "text": "National Library of Scotland Historic Maps", 
+                    "required": true
+                }, 
+                "type": "tms", 
+                "name": "NLS - OS 25-inch (Scotland), 1892-1905"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
                             -5.211217, 
                             54.801859
                         ], 
@@ -49596,6 +49636,86 @@
                 "coordinates": [
                     [
                         [
+                            -9.0, 
+                            49.8
+                        ], 
+                        [
+                            -9.0, 
+                            61.1
+                        ], 
+                        [
+                            1.9, 
+                            61.1
+                        ], 
+                        [
+                            1.9, 
+                            49.8
+                        ], 
+                        [
+                            -9.0, 
+                            49.8
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://geo.nls.uk/mapdata3/os/6_inch_gb_1900/{zoom}/{x}/{y}.png", 
+                "attribution": {
+                    "url": "http://geo.nls.uk/maps/", 
+                    "text": "National Library of Scotland Historic Maps", 
+                    "required": true
+                }, 
+                "type": "tms", 
+                "name": "NLS - OS 6-inch County Series, 1888-1913"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            -7.8, 
+                            54.62
+                        ], 
+                        [
+                            -7.8, 
+                            60.9
+                        ], 
+                        [
+                            -0.63, 
+                            60.9
+                        ], 
+                        [
+                            -0.63, 
+                            54.62
+                        ], 
+                        [
+                            -7.8, 
+                            54.62
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png", 
+                "attribution": {
+                    "url": "http://geo.nls.uk/maps/", 
+                    "text": "National Library of Scotland Historic Maps", 
+                    "required": true
+                }, 
+                "type": "tms", 
+                "name": "NLS - OS 6-inch Scotland, 1842-82"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
                             -2.140394, 
                             57.112188
                         ], 
@@ -50540,7 +50660,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png", 
+                "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{y}.png", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/edinburgh1056_1.html", 
                     "text": "National Library of Scotland - Edinburgh 1849-1851", 
@@ -51908,6 +52028,46 @@
                 }, 
                 "type": "tms", 
                 "name": "OS Town Plans, Oban 1867-1868 (NLS)"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Polygon", 
+                "coordinates": [
+                    [
+                        [
+                            -4.451449, 
+                            55.854483
+                        ], 
+                        [
+                            -4.403685, 
+                            55.85421
+                        ], 
+                        [
+                            -4.403714, 
+                            55.830652
+                        ], 
+                        [
+                            -4.45145, 
+                            55.830925
+                        ], 
+                        [
+                            -4.451449, 
+                            55.854483
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png", 
+                "attribution": {
+                    "url": "http://maps.nls.uk/townplans/paisley.html", 
+                    "text": "National Library of Scotland - Paisley 1858", 
+                    "required": true
+                }, 
+                "type": "tms", 
+                "name": "OS Town Plans, Paisley 1858 (NLS)"
             }
         }, 
         {

@@ -47165,6 +47165,26 @@
             "text": "National Library of Scotland Historic Maps", 
             "required": true
         }, 
+        "name": "NLS - OS 25-inch (Scotland), 1892-1905", 
+        "url": "http://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png", 
+        "extent": {
+            "max_zoom": 18, 
+            "bbox": {
+                "min_lon": -9.25, 
+                "max_lat": 61.12, 
+                "min_lat": 54.43, 
+                "max_lon": 0.22
+            }
+        }, 
+        "type": "tms", 
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }, 
+    {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/", 
+            "text": "National Library of Scotland Historic Maps", 
+            "required": true
+        }, 
         "name": "NLS - OS 6-inch Scotland 1842-82", 
         "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png", 
         "extent": {
@@ -48800,6 +48820,46 @@
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/", 
+            "text": "National Library of Scotland Historic Maps", 
+            "required": true
+        }, 
+        "name": "NLS - OS 6-inch County Series, 1888-1913", 
+        "url": "http://geo.nls.uk/mapdata3/os/6_inch_gb_1900/{zoom}/{x}/{y}.png", 
+        "extent": {
+            "max_zoom": 17, 
+            "bbox": {
+                "min_lon": -9.0, 
+                "max_lat": 61.1, 
+                "min_lat": 49.8, 
+                "max_lon": 1.9
+            }
+        }, 
+        "type": "tms", 
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }, 
+    {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/", 
+            "text": "National Library of Scotland Historic Maps", 
+            "required": true
+        }, 
+        "name": "NLS - OS 6-inch Scotland, 1842-82", 
+        "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png", 
+        "extent": {
+            "max_zoom": 16, 
+            "bbox": {
+                "min_lon": -7.8, 
+                "max_lat": 60.9, 
+                "min_lat": 54.62, 
+                "max_lon": -0.63
+            }
+        }, 
+        "type": "tms", 
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }, 
+    {
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -49872,7 +49932,7 @@
         }, 
         "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)", 
         "end_date": "1852", 
-        "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png", 
+        "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{y}.png", 
         "description": "Detailed town plan of Edinburgh 1849-1851, courtesy of National Library of Scotland.", 
         "country_code": "GB", 
         "type": "tms", 
@@ -51407,6 +51467,50 @@
         "country_code": "GB", 
         "type": "tms", 
         "start_date": "1867", 
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }, 
+    {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/paisley.html", 
+            "text": "National Library of Scotland - Paisley 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Paisley 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png", 
+        "description": "Detailed town plan of Paisley 1858, courtesy of National Library of Scotland.", 
+        "extent": {
+            "min_zoom": 13, 
+            "max_zoom": 20, 
+            "bbox": {
+                "min_lon": -4.4514497, 
+                "max_lat": 55.85448259, 
+                "min_lat": 55.83065193, 
+                "max_lon": -4.4036847
+            }, 
+            "polygon": [
+                [
+                    [
+                        -4.45144945, 
+                        55.85448259
+                    ], 
+                    [
+                        -4.4036847, 
+                        55.85420972
+                    ], 
+                    [
+                        -4.40371385, 
+                        55.83065193
+                    ], 
+                    [
+                        -4.4514497, 
+                        55.83092507
+                    ]
+                ]
+            ]
+        }, 
+        "type": "tms", 
+        "start_date": "1858", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {

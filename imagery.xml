@@ -12733,6 +12733,16 @@
     </bounds>
   </entry>
   <entry>
+    <name>NLS - OS 25-inch (Scotland), 1892-1905</name>
+    <type>tms</type>
+    <url>http://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
+    <attribution-url>http://geo.nls.uk/maps/</attribution-url>
+    <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
+    <max-zoom>18</max-zoom>
+    <bounds max-lat="61.12" max-lon="0.22" min-lat="54.43" min-lon="-9.25" />
+  </entry>
+  <entry>
     <name>NLS - OS 6-inch Scotland 1842-82</name>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png</url>
@@ -13157,6 +13167,26 @@
         <point lat="59.504137" lon="-1.711219" />
       </shape>
     </bounds>
+  </entry>
+  <entry>
+    <name>NLS - OS 6-inch County Series, 1888-1913</name>
+    <type>tms</type>
+    <url>http://geo.nls.uk/mapdata3/os/6_inch_gb_1900/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
+    <attribution-url>http://geo.nls.uk/maps/</attribution-url>
+    <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
+    <max-zoom>17</max-zoom>
+    <bounds max-lat="61.1" max-lon="1.9" min-lat="49.8" min-lon="-9.0" />
+  </entry>
+  <entry>
+    <name>NLS - OS 6-inch Scotland, 1842-82</name>
+    <type>tms</type>
+    <url>http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png</url>
+    <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
+    <attribution-url>http://geo.nls.uk/maps/</attribution-url>
+    <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
+    <max-zoom>16</max-zoom>
+    <bounds max-lat="60.9" max-lon="-0.63" min-lat="54.62" min-lon="-7.8" />
   </entry>
   <entry>
     <name>OS Town Plans, Aberdeen 1866-1867 (NLS)</name>
@@ -13598,7 +13628,7 @@
   <entry>
     <name>OS Town Plans, Edinburgh 1849-1851 (NLS)</name>
     <type>tms</type>
-    <url>http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{-y}.png</url>
+    <url>http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Edinburgh 1849-1851</attribution-text>
     <attribution-url>http://maps.nls.uk/townplans/edinburgh1056_1.html</attribution-url>
     <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
@@ -14257,6 +14287,24 @@
         <point lat="56.42219" lon="-5.498366" />
         <point lat="56.423439" lon="-5.45384" />
         <point lat="56.392052" lon="-5.450995" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>OS Town Plans, Paisley 1858 (NLS)</name>
+    <type>tms</type>
+    <url>http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png</url>
+    <attribution-text mandatory="true">National Library of Scotland - Paisley 1858</attribution-text>
+    <attribution-url>http://maps.nls.uk/townplans/paisley.html</attribution-url>
+    <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
+    <min-zoom>13</min-zoom>
+    <max-zoom>20</max-zoom>
+    <bounds max-lat="55.854483" max-lon="-4.403685" min-lat="55.830652" min-lon="-4.45145">
+      <shape>
+        <point lat="55.854483" lon="-4.451449" />
+        <point lat="55.85421" lon="-4.403685" />
+        <point lat="55.830652" lon="-4.403714" />
+        <point lat="55.830925" lon="-4.45145" />
       </shape>
     </bounds>
   </entry>
