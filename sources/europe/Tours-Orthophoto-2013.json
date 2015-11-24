@@ -1,0 +1,22 @@
+{
+    "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}", 
+    "attribution": {
+        "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
+        "text": "Orthophoto Tour(s)plus 2013", 
+        "required": true
+    }, 
+    "type": "tms", 
+    "name": "Tours - Orthophotos 2013", 
+    "start_date": "2008",
+    "end_date": "2013",
+    "country_code": "FR",
+    "extent": {
+        "max_zoom": 22,
+        "bbox": {
+            "min_lon": 0.3864341,
+            "max_lon": 0.8201963,
+            "min_lat": 47.2594616,
+            "max_lat": 47.4911439
+        },
+    }
+}
