@@ -585,6 +585,91 @@
     <bounds max-lat="61.1" max-lon="1.9" min-lat="49.8" min-lon="-9.0" />
   </entry>
   <entry>
+    <name>Belgium AGIV Orthophoto Flanders</name>
+    <type>tms</type>
+    <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=omwrgbmrvl&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <attribution-text mandatory="true">Orthophoto Flanders most recent (c) AGIV</attribution-text>
+    <min-zoom>0</min-zoom>
+    <max-zoom>21</max-zoom>
+    <bounds max-lat="51.51" max-lon="5.94" min-lat="50.64" min-lon="2.52">
+      <shape>
+        <point lat="51.101724" lon="2.522393" />
+        <point lat="51.341177" lon="3.126061" />
+        <point lat="51.38246" lon="3.174929" />
+        <point lat="51.387842" lon="3.376152" />
+        <point lat="51.330401" lon="3.410647" />
+        <point lat="51.285476" lon="3.402024" />
+        <point lat="51.2567" lon="3.491136" />
+        <point lat="51.303451" lon="3.482513" />
+        <point lat="51.323216" lon="3.577375" />
+        <point lat="51.272889" lon="3.813093" />
+        <point lat="51.236907" lon="3.821716" />
+        <point lat="51.236907" lon="3.930952" />
+        <point lat="51.274687" lon="4.05456" />
+        <point lat="51.35195" lon="4.201165" />
+        <point lat="51.380665" lon="4.169544" />
+        <point lat="51.395017" lon="4.342021" />
+        <point lat="51.464914" lon="4.365018" />
+        <point lat="51.500717" lon="4.537494" />
+        <point lat="51.479238" lon="4.571989" />
+        <point lat="51.448793" lon="4.560491" />
+        <point lat="51.450585" lon="4.638105" />
+        <point lat="51.523974" lon="4.750215" />
+        <point lat="51.507874" lon="4.836453" />
+        <point lat="51.498927" lon="5.080795" />
+        <point lat="51.447002" lon="5.135413" />
+        <point lat="51.391429" lon="5.106667" />
+        <point lat="51.317826" lon="5.26477" />
+        <point lat="51.287274" lon="5.26477" />
+        <point lat="51.292667" lon="5.408501" />
+        <point lat="51.325012" lon="5.486115" />
+        <point lat="51.283678" lon="5.580977" />
+        <point lat="51.235107" lon="5.583852" />
+        <point lat="51.204499" lon="5.767827" />
+        <point lat="51.161253" lon="5.877062" />
+        <point lat="50.802925" lon="5.704585" />
+        <point lat="50.786572" lon="5.905808" />
+        <point lat="50.73202" lon="5.937429" />
+        <point lat="50.701078" lon="5.902933" />
+        <point lat="50.693795" lon="5.81382" />
+        <point lat="50.761122" lon="5.615472" />
+        <point lat="50.712001" lon="5.500488" />
+        <point lat="50.702899" lon="5.204403" />
+        <point lat="50.675582" lon="5.164159" />
+        <point lat="50.701078" lon="5.037676" />
+        <point lat="50.750211" lon="4.988808" />
+        <point lat="50.726561" lon="4.916942" />
+        <point lat="50.766577" lon="4.79046" />
+        <point lat="50.770213" lon="4.681225" />
+        <point lat="50.735658" lon="4.669726" />
+        <point lat="50.679225" lon="4.287403" />
+        <point lat="50.677403" lon="3.910829" />
+        <point lat="50.75203" lon="3.718231" />
+        <point lat="50.712001" lon="3.654989" />
+        <point lat="50.710181" lon="3.534256" />
+        <point lat="50.741116" lon="3.514133" />
+        <point lat="50.743845" lon="3.456641" />
+        <point lat="50.695616" lon="3.373277" />
+        <point lat="50.70745" lon="3.310036" />
+        <point lat="50.736568" lon="3.289914" />
+        <point lat="50.742935" lon="3.164868" />
+        <point lat="50.772031" lon="3.13181" />
+        <point lat="50.760213" lon="3.080067" />
+        <point lat="50.739297" lon="2.874533" />
+        <point lat="50.711091" lon="2.896092" />
+        <point lat="50.695616" lon="2.874533" />
+        <point lat="50.702899" lon="2.796918" />
+        <point lat="50.8002" lon="2.699182" />
+        <point lat="50.797475" lon="2.62013" />
+        <point lat="50.858303" lon="2.569824" />
+        <point lat="50.923581" lon="2.56695" />
+        <point lat="50.949848" lon="2.602882" />
+        <point lat="50.996006" lon="2.549702" />
+        <point lat="51.101724" lon="2.522393" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>basemap.at</name>
     <type>tms</type>
     <url>http://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png</url>
