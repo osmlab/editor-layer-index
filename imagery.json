@@ -2391,7 +2391,8 @@
                 ]
             ]
         }, 
-        "type": "tms"
+        "type": "tms", 
+        "best": true
     }, 
     {
         "attribution": {
@@ -42735,6 +42736,29 @@
         }, 
         "country_code": "FR", 
         "type": "tms"
+    }, 
+    {
+        "extent": {
+            "max_zoom": 22, 
+            "bbox": {
+                "min_lon": 0.427093505859375, 
+                "max_lat": 47.50096732311069, 
+                "min_lat": 47.26199018174824, 
+                "max_lon": 0.814361572265625
+            }
+        }, 
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
+            "text": "Orthophoto Tour(s)plus 2013", 
+            "required": true
+        }, 
+        "name": "Tours - Orthophotos 2013", 
+        "end_date": "2013", 
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}", 
+        "license_url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
+        "country_code": "FR", 
+        "type": "tms", 
+        "start_date": "2013"
     }, 
     {
         "extent": {
