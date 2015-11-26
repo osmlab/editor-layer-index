@@ -10,10 +10,10 @@ clean:
 	rm $(ALL)
 
 imagery.xml: $(SOURCES)
-	python scripts/convert_xml.py $(SOURCES)
+	python2 scripts/convert_xml.py $(SOURCES)
 
 imagery.json: $(SOURCES)
-	python scripts/concat.py $(SOURCES) > imagery.json
+	python2 scripts/concat.py $(SOURCES) > imagery.json
 
 imagery.geojson: imagery.xml
-	python scripts/convert_geojson.py imagery.xml > imagery.geojson
+	python2 scripts/convert_geojson.py imagery.xml > imagery.geojson
