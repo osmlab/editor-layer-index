@@ -675,6 +675,7 @@
     <url>http://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png</url>
     <attribution-text mandatory="true">basemap.at</attribution-text>
     <icon>http://basemap.at/images/basemap_logo_klein.jpg</icon>
+    <country-code>AT</country-code>
     <bounds max-lat="49.012661" max-lon="17.173974" min-lat="46.378527" min-lon="9.540631">
       <shape>
         <point lat="46.99293" lon="16.507328" />
@@ -876,6 +877,7 @@
     <url>http://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg</url>
     <attribution-text mandatory="true">basemap.at</attribution-text>
     <icon>http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png</icon>
+    <country-code>AT</country-code>
     <bounds max-lat="49.012661" max-lon="17.173974" min-lat="46.378527" min-lon="9.540631">
       <shape>
         <point lat="46.99293" lon="16.507328" />
@@ -11644,116 +11646,6 @@
         <point lat="47.315472" lon="0.762375" />
         <point lat="47.319994" lon="0.762231" />
         <point lat="47.320155" lon="0.775491" />
-        <point lat="47.338822" lon="0.77497" />
-        <point lat="47.351628" lon="0.774579" />
-        <point lat="47.35159" lon="0.768036" />
-        <point lat="47.36053" lon="0.767589" />
-        <point lat="47.360624" lon="0.774244" />
-        <point lat="47.392127" lon="0.773347" />
-        <point lat="47.39202" lon="0.766743" />
-        <point lat="47.401084" lon="0.766441" />
-        <point lat="47.401111" lon="0.773065" />
-        <point lat="47.41013" lon="0.772887" />
-        <point lat="47.410023" lon="0.766185" />
-        <point lat="47.414504" lon="0.766027" />
-        <point lat="47.414304" lon="0.752761" />
-        <point lat="47.409809" lon="0.752979" />
-        <point lat="47.409702" lon="0.746237" />
-        <point lat="47.423221" lon="0.745942" />
-        <point lat="47.423145" lon="0.739232" />
-        <point lat="47.436612" lon="0.738869" />
-        <point lat="47.436517" lon="0.732327" />
-        <point lat="47.441056" lon="0.732187" />
-        <point lat="47.44098" lon="0.725505" />
-        <point lat="47.445348" lon="0.725421" />
-        <point lat="47.44548" lon="0.731879" />
-        <point lat="47.450113" lon="0.731851" />
-        <point lat="47.450226" lon="0.73845" />
-        <point lat="47.454631" lon="0.73831" />
-        <point lat="47.454744" lon="0.744936" />
-        <point lat="47.477199" lon="0.744321" />
-        <point lat="47.476972" lon="0.731069" />
-        <point lat="47.481544" lon="0.730901" />
-        <point lat="47.481261" lon="0.71762" />
-        <point lat="47.476839" lon="0.717788" />
-        <point lat="47.476499" lon="0.69777" />
-        <point lat="47.471983" lon="0.69805" />
-        <point lat="47.471888" lon="0.691451" />
-        <point lat="47.463024" lon="0.691731" />
-        <point lat="47.46293" lon="0.685105" />
-        <point lat="47.467352" lon="0.684937" />
-        <point lat="47.467334" lon="0.678255" />
-        <point lat="47.476216" lon="0.677975" />
-        <point lat="47.476159" lon="0.671405" />
-        <point lat="47.488195" lon="0.671042" />
-        <point lat="47.487969" lon="0.657733" />
-        <point lat="47.48504" lon="0.657817" />
-        <point lat="47.484832" lon="0.651191" />
-        <point lat="47.475857" lon="0.651471" />
-        <point lat="47.475724" lon="0.644817" />
-        <point lat="47.471265" lon="0.644928" />
-        <point lat="47.470754" lon="0.611798" />
-        <point lat="47.466313" lon="0.611881" />
-        <point lat="47.466124" lon="0.605283" />
-        <point lat="47.461663" lon="0.605423" />
-        <point lat="47.46155" lon="0.598881" />
-        <point lat="47.457089" lon="0.599021" />
-        <point lat="47.456692" lon="0.572488" />
-        <point lat="47.465651" lon="0.57218" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>Tours - Orthophotos 2008</name>
-    <type>tms</type>
-    <url>http://tms.mapspot.ge/tms/2/nonstandard/{zoom}/{x}/{y}.jpeg</url>
-    <attribution-text mandatory="true">Orthophoto Tour(s) Plus 2008</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
-    <country-code>FR</country-code>
-    <bounds max-lat="47.488195" max-lon="0.77497" min-lat="47.336907" min-lon="0.454102">
-      <shape>
-        <point lat="47.465264" lon="0.545746" />
-        <point lat="47.460816" lon="0.54585" />
-        <point lat="47.460698" lon="0.539219" />
-        <point lat="47.456243" lon="0.539348" />
-        <point lat="47.4561" lon="0.532796" />
-        <point lat="47.451565" lon="0.532901" />
-        <point lat="47.451401" lon="0.52619" />
-        <point lat="47.442488" lon="0.526585" />
-        <point lat="47.442074" lon="0.500094" />
-        <point lat="47.437584" lon="0.500236" />
-        <point lat="47.437432" lon="0.493601" />
-        <point lat="47.432929" lon="0.4937" />
-        <point lat="47.432459" lon="0.460614" />
-        <point lat="47.427983" lon="0.460725" />
-        <point lat="47.427813" lon="0.454102" />
-        <point lat="47.405392" lon="0.454932" />
-        <point lat="47.405448" lon="0.461543" />
-        <point lat="47.396492" lon="0.46191" />
-        <point lat="47.3966" lon="0.468435" />
-        <point lat="47.378642" lon="0.469132" />
-        <point lat="47.378761" lon="0.475712" />
-        <point lat="47.365202" lon="0.476212" />
-        <point lat="47.36535" lon="0.48283" />
-        <point lat="47.351857" lon="0.483222" />
-        <point lat="47.352259" lon="0.509793" />
-        <point lat="47.356771" lon="0.509569" />
-        <point lat="47.356978" lon="0.52277" />
-        <point lat="47.361487" lon="0.522643" />
-        <point lat="47.361888" lon="0.549072" />
-        <point lat="47.366331" lon="0.548909" />
-        <point lat="47.366498" lon="0.555516" />
-        <point lat="47.357552" lon="0.55591" />
-        <point lat="47.358407" lon="0.615279" />
-        <point lat="47.362893" lon="0.615296" />
-        <point lat="47.363094" lon="0.628509" />
-        <point lat="47.353987" lon="0.628826" />
-        <point lat="47.353882" lon="0.615501" />
-        <point lat="47.349342" lon="0.615768" />
-        <point lat="47.349299" lon="0.609096" />
-        <point lat="47.340296" lon="0.609474" />
-        <point lat="47.340445" lon="0.616048" />
-        <point lat="47.336907" lon="0.616083" />
         <point lat="47.338822" lon="0.77497" />
         <point lat="47.351628" lon="0.774579" />
         <point lat="47.35159" lon="0.768036" />
