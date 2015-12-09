@@ -452,6 +452,40 @@
     <bounds max-lat="23.4" max-lon="109.6" min-lat="5.6" min-lon="97.3" />
   </entry>
   <entry>
+    <name>Japan GSI ortho Imagery</name>
+    <type>tms</type>
+    <url>http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg</url>
+    <country-code>JP</country-code>
+    <min-zoom>12</min-zoom>
+    <max-zoom>19</max-zoom>
+    <bounds max-lat="24.59" max-lon="146.78" min-lat="30.68" min-lon="126.39">
+      <shape>
+        <point lat="44.649116" lon="141.855469" />
+        <point lat="43.969098" lon="140.229492" />
+        <point lat="41.804078" lon="138.955078" />
+        <point lat="40.178873" lon="139.482422" />
+        <point lat="38.307181" lon="138.867188" />
+        <point lat="37.195331" lon="136.318359" />
+        <point lat="35.137879" lon="132.143555" />
+        <point lat="33.358062" lon="128.935547" />
+        <point lat="32.472695" lon="129.506836" />
+        <point lat="31.690782" lon="129.770508" />
+        <point lat="30.902225" lon="130.209961" />
+        <point lat="30.789037" lon="131.220703" />
+        <point lat="32.324276" lon="131.660156" />
+        <point lat="32.879587" lon="132.714844" />
+        <point lat="33.174342" lon="133.769531" />
+        <point lat="33.870416" lon="136.757813" />
+        <point lat="35.065973" lon="139.306641" />
+        <point lat="35.173808" lon="140.888672" />
+        <point lat="36.5626" lon="141.152344" />
+        <point lat="39.943436" lon="142.119141" />
+        <point lat="42.682435" lon="141.767578" />
+        <point lat="44.649116" lon="141.855469" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Pangasin&#225;n/Bulacan (Phillipines HiRes)</name>
     <type>tms</type>
     <url>http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png</url>
