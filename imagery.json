@@ -1697,7 +1697,9 @@
         }
     }, 
     {
+        "name": "Japan GSI ortho Imagery", 
         "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg", 
+        "license_url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html", 
         "extent": {
             "min_zoom": 12, 
             "max_zoom": 19, 
@@ -1800,9 +1802,8 @@
                 ]
             ]
         }, 
-        "type": "tms", 
-        "name": "Japan GSI ortho Imagery", 
-        "country_code": "JA"
+        "country_code": "JP", 
+        "type": "tms"
     }, 
     {
         "url": "http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png", 
