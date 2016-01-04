@@ -48108,7 +48108,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg", 
+                "url": "http://sdi.provincia.bz.it/geoserver/gwc/service/tms/1.0.0/WMTS_TOPOMAP_APB-PAB@GoogleMapsCompatible@png8/{z}/{x}/{-y}.png", 
                 "type": "tms", 
                 "name": "South Tyrol Topomap"
             }
