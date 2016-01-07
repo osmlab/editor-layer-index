@@ -5,6 +5,11 @@
     "url": "http://sdi.provincia.bz.it/geoserver/gwc/service/tms/1.0.0/WMTS_TOPOMAP_APB-PAB@GoogleMapsCompatible@png8/{z}/{x}/{-y}.png",
     "description": "Topographical basemap of South Tyrol",
     "country_code": "IT",
+    "attribution": {
+      "url": "http://geoservices.buergernetz.bz.it/geokatalog/",
+      "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano",
+      "required": true
+    },
     "extent": {
         "max_zoom": 20,
         "bbox": {
