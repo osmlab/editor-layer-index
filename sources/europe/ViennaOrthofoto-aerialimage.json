@@ -1,11 +1,11 @@
 {
     "attribution": {
-        "url": "http://data.wien.gv.at/", 
-        "text": "Stadt Wien", 
+        "url": "http://data.wien.gv.at/",
+        "text": "Stadt Wien",
         "required": false
-    }, 
-    "name": "Vienna: Orthofoto (aerial image)", 
-    "url": "http://www.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg", 
+    },
+    "name": "Vienna: Orthofoto (aerial image)",
+    "url": "http://www.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg",
     "extent": {
         "max_zoom": 19,
         "bbox": {
@@ -14,7 +14,7 @@
             "min_lat": 48.10,
             "max_lat": 48.33
         }
-    }, 
-    "type": "tms", 
+    },
+    "type": "tms",
     "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
 }
