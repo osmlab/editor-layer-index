@@ -2384,6 +2384,7 @@
     <name>Catastro Spain</name>
     <type>wms</type>
     <url>http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Catastro&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
       <shape>
         <point lat="28.44606" lon="-17.88463" />
@@ -3964,6 +3965,7 @@
       <code>EPSG:3035</code>
       <code>EPSG:2065</code>
     </projections>
+    <country-code>CZ</country-code>
     <bounds max-lat="51.067174" max-lon="18.87646" min-lat="48.561027" min-lon="12.098813">
       <shape>
         <point lat="49.017739" lon="15.006368" />
@@ -5499,6 +5501,7 @@
     <url>http://t{switch:1,2,3,4}.freemap.sk/A/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <icon>http://www.freemap.sk/index.php?c=core.download&amp;filename=/JOSM/freemap.png</icon>
+    <country-code>SK</country-code>
     <min-zoom>8</min-zoom>
     <max-zoom>16</max-zoom>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
@@ -5558,6 +5561,7 @@
     <url>http://t{switch:1,2,3,4}.freemap.sk/C/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <icon>http://www.freemap.sk/index.php?c=core.download&amp;filename=/JOSM/freemap.png</icon>
+    <country-code>SK</country-code>
     <min-zoom>8</min-zoom>
     <max-zoom>16</max-zoom>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
@@ -5617,6 +5621,7 @@
     <url>http://t{switch:1,2,3,4}.freemap.sk/T/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <icon>http://www.freemap.sk/index.php?c=core.download&amp;filename=/JOSM/freemap.png</icon>
+    <country-code>SK</country-code>
     <min-zoom>8</min-zoom>
     <max-zoom>16</max-zoom>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
@@ -5676,6 +5681,7 @@
     <url>http://t{switch:1,2,3,4}.freemap.sk/K/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <icon>http://www.freemap.sk/index.php?c=core.download&amp;filename=/JOSM/freemap.png</icon>
+    <country-code>SK</country-code>
     <min-zoom>8</min-zoom>
     <max-zoom>16</max-zoom>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
@@ -7203,6 +7209,7 @@
       <code>EPSG:21781</code>
     </projections>
     <attribution-text>Orthophoto Yverdon 2007 / HEIG-VD</attribution-text>
+    <country-code>CH</country-code>
   </entry>
   <entry>
     <name>F&#214;MI ortofot&#243; 2000</name>
@@ -7796,6 +7803,7 @@
     <type>wms</type>
     <url>http://ideib.caib.es/pub_ideib/public/IMATGES_AERIES/MapServer/WMSServer?VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=8&amp;STYLES=default&amp;FORMAT=image/png&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">ideib.cat</attribution-text>
+    <country-code>ES</country-code>
     <bounds max-lat="40.127633" max-lon="4.399477" min-lat="38.623768" min-lon="1.144666">
       <shape>
         <point lat="38.624805" lon="1.648928" />
@@ -8491,6 +8499,7 @@
     <type>wms</type>
     <url>http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;LAYERS=Ortofoto_CyL&amp;SRS={proj}&amp;FORMAT=image/jpeg&amp;STYLES=Default&amp;TRANSPARENT=TRUE&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">ITACyL</attribution-text>
+    <country-code>ES</country-code>
     <bounds max-lat="43.252223" max-lon="-1.768655" min-lat="40.081552" min-lon="-7.108109">
       <shape>
         <point lat="41.438344" lon="-1.935799" />
@@ -10519,6 +10528,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:32633</code>
     </projections>
+    <country-code>IT</country-code>
   </entry>
   <entry>
     <name>SIGPAC Spain</name>
@@ -11134,6 +11144,7 @@
     <attribution-text mandatory="true">EEA Corine 2006</attribution-text>
     <attribution-url>http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1</attribution-url>
     <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
+    <country-code>SK</country-code>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
       <shape>
         <point lat="49.25529" lon="19.83682" />
@@ -11248,6 +11259,7 @@
     <name>Slovakia Historic Maps</name>
     <type>tms</type>
     <url>http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png</url>
+    <country-code>SK</country-code>
     <max-zoom>12</max-zoom>
     <bounds max-lat="49.503032" max-lon="22.838832" min-lat="47.492724" min-lon="16.819695" />
   </entry>
@@ -12821,6 +12833,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:31467</code>
     </projections>
+    <country-code>DE</country-code>
     <bounds max-lat="48.8822" max-lon="9.3254" min-lat="48.6666" min-lon="9.0275" />
   </entry>
   <entry>
@@ -16816,6 +16829,7 @@
     <name>USSR - Latvia</name>
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;service=WMS&amp;REQUEST=GetMap&amp;LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
+    <country-code>LV</country-code>
   </entry>
   <entry>
     <name>Vejmidte (Denmark)</name>
