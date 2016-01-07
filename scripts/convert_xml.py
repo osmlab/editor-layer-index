@@ -4,7 +4,7 @@ import xml.etree.cElementTree as ET
 root = ET.Element("imagery")
 
 for file in sys.argv[1:]:
-    source = json.load(open(file))
+    source = json.load(open(file, 'rb'))
     entry = ET.SubElement(root, "entry")
 
     name = ET.SubElement(entry, "name")
@@ -79,4 +79,5 @@ for file in sys.argv[1:]:
 util.indent(root)
 
 tree = ET.ElementTree(root)
-tree.write("imagery.xml")
+with open("imagery.xml", 'wb') as f:
+    tree.write(f)
