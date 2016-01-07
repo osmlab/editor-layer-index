@@ -519,6 +519,7 @@
     <url>IRS</url>
     <attribution-text mandatory="true">IRS</attribution-text>
     <attribution-url>http://irs.gis-lab.info/</attribution-url>
+    <country-code>RU</country-code>
   </entry>
   <entry>
     <name>ScanEx SPOT</name>
@@ -526,6 +527,7 @@
     <url>SPOT</url>
     <attribution-text mandatory="true">IRS</attribution-text>
     <attribution-url>http://irs.gis-lab.info/</attribution-url>
+    <country-code>RU</country-code>
   </entry>
   <entry>
     <name>AGRI black-and-white 2.5m</name>
@@ -1218,6 +1220,7 @@
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=piekraste&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <attribution-text>Piekrastes ortofoto, 2007, &#169; Latvijas vides aizsardz&#299;bas fonds</attribution-text>
+    <country-code>LV</country-code>
   </entry>
   <entry>
     <name>2u</name>
@@ -1232,11 +1235,13 @@
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortobildes&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <attribution-text>Ortofoto 1:10000, 2007.-2008. gads, &#169; Latvijas &#290;eotelpisk&#257;s inform&#257;cijas a&#291;ent&#363;ra</attribution-text>
+    <country-code>LV</country-code>
   </entry>
   <entry>
     <name>7th Series (OS7)</name>
     <type>tms</type>
     <url>http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg</url>
+    <country-code>GB</country-code>
     <bounds max-lat="61.1" max-lon="1.9" min-lat="49.8" min-lon="-9.0" />
   </entry>
   <entry>
@@ -1655,6 +1660,7 @@
       <code>EPSG:4258</code>
       <code>EPSG:4326</code>
     </projections>
+    <country-code>DE</country-code>
     <bounds max-lat="50.568462" max-lon="13.844645" min-lat="47.262082" min-lon="8.956744">
       <shape>
         <point lat="50.568462" lon="10.123589" />
@@ -4490,6 +4496,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:31494</code>
     </projections>
+    <country-code>DE</country-code>
     <bounds max-lat="49.65197" max-lon="11.060541" min-lat="49.529259" min-lon="10.905885" />
   </entry>
   <entry>
@@ -4500,6 +4507,7 @@
       <code>EPSG:4326</code>
       <code>EPSG:31494</code>
     </projections>
+    <country-code>DE</country-code>
     <bounds max-lat="49.65211" max-lon="11.077808" min-lat="49.529292" min-lon="10.909347" />
   </entry>
   <entry>
@@ -5912,6 +5920,7 @@
     <url>http://mapproxy.gpweb.dk/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Geodatastyrelsen og Danske Kommuner</attribution-text>
     <attribution-url>http://download.kortforsyningen.dk/content/vilkaar-og-betingelser</attribution-url>
+    <country-code>DK</country-code>
     <max-zoom>21</max-zoom>
     <bounds max-lat="57.822894" max-lon="15.309925" min-lat="54.468165" min-lon="8.018512">
       <shape>
@@ -6103,6 +6112,7 @@
     </projections>
     <attribution-text mandatory="true">geoimage.at</attribution-text>
     <icon>http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png</icon>
+    <country-code>AT</country-code>
     <bounds max-lat="49.012661" max-lon="17.173974" min-lat="46.378527" min-lon="9.540631">
       <shape>
         <point lat="46.99293" lon="16.507328" />
@@ -6302,6 +6312,7 @@
     <name>G&#233;obretagne - Brest 2010 - 10 cm</name>
     <type>wms</type>
     <url>http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho-bmo-2010&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country-code>FR</country-code>
     <bounds max-lat="48.488218" max-lon="-4.299477" min-lat="48.305437" min-lon="-4.664484">
       <shape>
         <point lat="48.466157" lon="-4.664484" />
@@ -6315,6 +6326,7 @@
     <name>G&#233;obretagne - Morbihan 2010</name>
     <type>wms</type>
     <url>http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho-megalis-56&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country-code>FR</country-code>
     <bounds max-lat="48.226397" max-lon="-2.014517" min-lat="47.265731" min-lon="-3.755484">
       <shape>
         <point lat="47.4317" lon="-3.05493" />
@@ -6999,6 +7011,7 @@
     <url>http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Sentiers_littoraux&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho littorale 2000</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
+    <country-code>FR</country-code>
   </entry>
   <entry>
     <name>G&#233;olittoral V2 - Orthophotos 2010-2012</name>
@@ -7006,6 +7019,7 @@
     <url>http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortholittorale&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho Littorale V2 - MEDDE</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
+    <country-code>FR</country-code>
     <bounds max-lat="43.841949" max-lon="7.605516" min-lat="42.400154" min-lon="2.906249">
       <shape>
         <point lat="42.40072" lon="3.147694" />
@@ -7179,6 +7193,7 @@
     </projections>
     <attribution-text>Stadt Graz &#8211; data.graz.gv.at</attribution-text>
     <icon>http://gis.graz.at/g/graz-logo.gif</icon>
+    <country-code>AT</country-code>
     <bounds max-lat="47.14375" max-lon="15.544216" min-lat="47.007293" min-lon="15.344465" />
   </entry>
   <entry>
@@ -7973,6 +7988,7 @@
     <attribution-text mandatory="true">Glucksman Map Library, Trinity College Dublin</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_Ireland#Trinity_College_Dublin</attribution-url>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAB3RJTUUH3gQOFR0YB1KT3QAAAAlwSFlzAAAewQAAHsEBw2lUUwAAAARnQU1BAACxjwv8YQUAAAS/SURBVHjandN7TFNXHAfwzrn/lm3ZHy7LYrJkybK5zMw9fCEoPjbeChoHTtBVRF7l1ZZSaG8flCtvsFVpoZZHC5Y6jDM+UScDaxF5lIfSAaMIlVKBS8EZN4d+d9voZpbMFX/JN7nnnvM7n5xzcxmM5wrPlX1yFmP2adgmXKHc78bsU+j9ZRT3HzzE+D0n7tjuYdo5h38X47/q+UWD1nE0tw/gktEC66gdN/tG0Dc4hnEHhdG7DujOdqGHxi4ae2AZti8ccJXZYoOxawRPnjzGwcpmzM8//ntOe86MickZTEw7ka+99nJAZ/8YWjqs7ufc6ibM/fbQ/fzHo0eoOduJ8UkKljt2nLhk9hj4/Wlm6VA9A2NUa/ew6wNQE1OzVGvPEGUZvkvZHVNUo2mA6ugfpvoGrNT8/Dz1tMfd/yJgKZ13h6zjzFbzvbwO8wDZaR4kzeZbZG/fIHnTbCOvdzrI9h472dnVT97oociO23NkW+9M3pDVsc/V69rjRYA7Su11/dvbfkRJvDeOcMORuj8CpelLkJO6BVs4vQhj3QD5fTQS2PXYndQAblw2yrUt9c/6/xeoqzulK+VEoCTtawgSM5HCr0Nsmg48ngJhYiukonNIybeg8MQEFIZBFBWIoa4z1XoMaOrbtbHci2BtW4RachnOlO/GZW0SjuZEY2eWGYVEFfYJ+kDo/4ThdDPExadQcbxb5zmgb6/xYZlAxPtDmByFS2U+EHM5yBOyEZZ8HkzeZaQmyxFZROGkgUQIMQSNvkPrMXBM31YdFqNDJK8ZHE4FYgSt2Jl0GpKUGAhFjTiQ2QJDgRBGdSTIvEJ8IXDSQJvngEbfWrWacGJDzn1sJ34FkSqFQbgWTcUrcLWIATlnBzYSE8hOOIBQzk9YK56jgRs1CzlBVXD6bcijCYSwTYjhXUFD7nrUlHyFc6pPUCL4BpskUwhn6iGPSMYG3igN3KxeCKDZyulGddReBKV3YbNkGidkIWhQLMeFiuUoE3ths8iOfXFnoQ5nwTt9xHVFVZ5f0XGjxks0A++sIWyNqYM0TYp6qS9+UHxOn+BjqMQfwF8wgg2x5+ErccCboKA5bloAUGc8tk40i2CmGuGhgQhjX0MZwUY5uRJVuX6QcpPhm2TErlBfBLAa4S2epYHrlZ5fke4K6SVyIjRejz1REfhO2Ab2wavgZJ8EU9gEUek1MDMvIIa5DUFpzVhHzECtbRR4DJRrDP5f8h04ILwAmTQLAkEWCgsLIJVIIcwS4uhRBSQSCfi8FGzP6sbKjLsoV+tWewwolUfe+pR1y7GD1YDd4cGIi4uFgM/HulWr4LdpI5ITE5EQH49dOwMRmtmND/ebLMoy+WueA2VyBmO9opSTcx6HimWQHypGBicF+6MjwdzzLSQEH6UlBSjKFyNS1AnGMm6Csuwww2NApVK6hkv2JMptmTkGiPNqEcc+jFiuGsy0SrD4lciQ1kJW3ICAqJIWeu1ilUq1EEDlHr/6vr/XxozBuQD6jw6UUXRm6DgRQCeQfIA1iaZ+BuP191xrXwpw1RtL16zwSfi5PVg2hZAcyp0gqQOr9548TU+/82zdywGvLH429eZnO8rPBNMbB4ps+MhPpvyna9ELgb8ASvKZeuq+E9sAAAAASUVORK5CYII=</icon>
+    <country-code>IE</country-code>
     <max-zoom>18</max-zoom>
     <bounds max-lat="55.46" max-lon="-5.37" min-lat="51.32" min-lon="-10.71" />
   </entry>
@@ -7983,6 +7999,7 @@
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
     <attribution-url>http://geo.nls.uk/maps/</attribution-url>
     <icon>http://nls.tileserver.com/nls70-nq8.png</icon>
+    <country-code>IE</country-code>
     <min-zoom>5</min-zoom>
     <max-zoom>15</max-zoom>
     <bounds max-lat="55.387495" max-lon="-5.361828" min-lat="51.41479" min-lon="-10.50059">
@@ -8051,6 +8068,7 @@
     <attribution-text mandatory="true">EEA Corine 2006</attribution-text>
     <attribution-url>http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1</attribution-url>
     <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
+    <country-code>IE</country-code>
     <min-zoom>5</min-zoom>
     <max-zoom>16</max-zoom>
     <bounds max-lat="55.620529" max-lon="-5.064919" min-lat="51.199122" min-lon="-11.035318">
@@ -8103,6 +8121,7 @@
     <attribution-text mandatory="true">EEA GMES Urban Atlas</attribution-text>
     <attribution-url>http://www.eea.europa.eu/data-and-maps/data/urban-atlas</attribution-url>
     <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
+    <country-code>IE</country-code>
     <min-zoom>5</min-zoom>
     <max-zoom>17</max-zoom>
     <bounds max-lat="55.46" max-lon="-5.37" min-lat="51.32" min-lon="-10.71">
@@ -8919,6 +8938,7 @@
     <url>http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Permisssion by UGKK</attribution-text>
     <attribution-url>http://wiki.freemap.sk/KatasterPortal</attribution-url>
+    <country-code>SK</country-code>
     <bounds max-lat="49.637583" max-lon="22.58841" min-lat="47.714525" min-lon="16.798875">
       <shape>
         <point lat="49.25529" lon="19.83682" />
@@ -9088,6 +9108,7 @@
       <code>EPSG:32632</code>
       <code>EPSG:4326</code>
     </projections>
+    <country-code>IT</country-code>
     <bounds max-lat="45.50027" max-lon="9.916941" min-lat="45.047771" min-lon="9.248036">
       <shape>
         <point lat="45.500118" lon="9.500411" />
@@ -10535,6 +10556,7 @@
     <type>wms</type>
     <url>http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ORTOFOTOS&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">SIGPAC</attribution-text>
+    <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
       <shape>
         <point lat="28.44606" lon="-17.88463" />
@@ -12744,6 +12766,7 @@
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Stevns Kommune</attribution-text>
+    <country-code>DK</country-code>
     <max-zoom>20</max-zoom>
     <bounds max-lat="55.436467" max-lon="12.470741" min-lat="55.234027" min-lon="12.091394">
       <shape>
@@ -16837,6 +16860,7 @@
     <url>http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Danish municipalities</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/Vejmidte</attribution-url>
+    <country-code>DK</country-code>
     <max-zoom>20</max-zoom>
     <bounds max-lat="57.822894" max-lon="15.309925" min-lat="54.468165" min-lon="8.018512">
       <shape>
@@ -17019,6 +17043,7 @@
     <attribution-text>Stadt Wien</attribution-text>
     <attribution-url>http://data.wien.gv.at/</attribution-url>
     <icon>http://www.wien.gv.at/layout-a/logo/wappen-klein.gif</icon>
+    <country-code>AT</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="48.33" max-lon="16.58" min-lat="48.1" min-lon="16.17" />
   </entry>
@@ -17029,6 +17054,7 @@
     <attribution-text>Stadt Wien</attribution-text>
     <attribution-url>http://data.wien.gv.at/</attribution-url>
     <icon>http://www.wien.gv.at/layout-a/logo/wappen-klein.gif</icon>
+    <country-code>AT</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="48.33" max-lon="16.58" min-lat="48.1" min-lon="16.17" />
   </entry>
