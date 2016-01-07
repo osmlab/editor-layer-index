@@ -1891,7 +1891,8 @@
             "text": "IRS", 
             "required": true
         }, 
-        "name": "ScanEx IRS"
+        "name": "ScanEx IRS", 
+        "country_code": "RU"
     }, 
     {
         "url": "SPOT", 
@@ -1901,7 +1902,8 @@
             "text": "IRS", 
             "required": true
         }, 
-        "name": "ScanEx SPOT"
+        "name": "ScanEx SPOT", 
+        "country_code": "RU"
     }, 
     {
         "attribution": {
@@ -4317,7 +4319,8 @@
             "text": "Piekrastes ortofoto, 2007, \u00a9 Latvijas vides aizsardz\u012bbas fonds", 
             "required": false
         }, 
-        "name": "20cm ortho - Coastline"
+        "name": "20cm ortho - Coastline", 
+        "country_code": "LV"
     }, 
     {
         "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/2u/{zoom}/{x}/{y}.png", 
@@ -4339,12 +4342,11 @@
             "text": "Ortofoto 1:10000, 2007.-2008. gads, \u00a9 Latvijas \u0122eotelpisk\u0101s inform\u0101cijas a\u0123ent\u016bra", 
             "required": false
         }, 
-        "name": "50cm ortho - Latvia"
+        "name": "50cm ortho - Latvia", 
+        "country_code": "LV"
     }, 
     {
         "url": "http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg", 
-        "type": "tms", 
-        "name": "7th Series (OS7)", 
         "extent": {
             "bbox": {
                 "min_lon": -9, 
@@ -4352,7 +4354,10 @@
                 "min_lat": 49.8, 
                 "max_lon": 1.9
             }
-        }
+        }, 
+        "type": "tms", 
+        "name": "7th Series (OS7)", 
+        "country_code": "GB"
     }, 
     {
         "extent": {
@@ -5928,9 +5933,16 @@
         "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery."
     }, 
     {
-        "url": "http://geodaten.bayern.de/ogc/ogc_dop200_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=adv_dop200c&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "name": "Bavaria (2 m)", 
+        "available_projections": [
+            "EPSG:31467", 
+            "EPSG:31468", 
+            "EPSG:25832", 
+            "EPSG:25833", 
+            "EPSG:4258", 
+            "EPSG:4326"
+        ], 
+        "url": "http://geodaten.bayern.de/ogc/ogc_dop200_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=adv_dop200c&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": 8.9567442, 
@@ -7135,14 +7147,8 @@
                 ]
             ]
         }, 
-        "available_projections": [
-            "EPSG:31467", 
-            "EPSG:31468", 
-            "EPSG:25832", 
-            "EPSG:25833", 
-            "EPSG:4258", 
-            "EPSG:4326"
-        ]
+        "country_code": "DE", 
+        "type": "wms"
     }, 
     {
         "attribution": {
@@ -16767,6 +16773,7 @@
                 "max_lon": 11.060541
             }
         }, 
+        "country_code": "DE", 
         "type": "wms"
     }, 
     {
@@ -16785,6 +16792,7 @@
                 "max_lon": 11.077808
             }
         }, 
+        "country_code": "DE", 
         "type": "wms"
     }, 
     {
@@ -22022,14 +22030,13 @@
         "type": "tms"
     }, 
     {
-        "url": "http://mapproxy.gpweb.dk/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
-        "type": "tms", 
         "attribution": {
             "url": "http://download.kortforsyningen.dk/content/vilkaar-og-betingelser", 
             "text": "Geodatastyrelsen og Danske Kommuner", 
             "required": true
         }, 
         "name": "Geodatastyrelsen (Denmark)", 
+        "url": "http://mapproxy.gpweb.dk/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
         "extent": {
             "max_zoom": 21, 
             "bbox": {
@@ -22650,36 +22657,11 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "DK", 
+        "type": "tms"
     }, 
     {
-        "attribution": {
-            "text": "geoimage.at", 
-            "required": true
-        }, 
-        "name": "Geoimage.at MaxRes", 
-        "available_projections": [
-            "EPSG:3857", 
-            "EPSG:900913", 
-            "EPSG:31287", 
-            "EPSG:3034", 
-            "EPSG:3035", 
-            "EPSG:3044", 
-            "EPSG:3045", 
-            "EPSG:31254", 
-            "EPSG:31255", 
-            "EPSG:31256", 
-            "EPSG:31257", 
-            "EPSG:31258", 
-            "EPSG:31259", 
-            "EPSG:32632", 
-            "EPSG:32633", 
-            "EPSG:3416", 
-            "EPSG:4258", 
-            "EPSG:4326", 
-            "CRS:84"
-        ], 
-        "url": "http://gis.lebensministerium.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": 9.5406306, 
@@ -23452,14 +23434,40 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "text": "geoimage.at", 
+            "required": true
+        }, 
+        "name": "Geoimage.at MaxRes", 
+        "available_projections": [
+            "EPSG:3857", 
+            "EPSG:900913", 
+            "EPSG:31287", 
+            "EPSG:3034", 
+            "EPSG:3035", 
+            "EPSG:3044", 
+            "EPSG:3045", 
+            "EPSG:31254", 
+            "EPSG:31255", 
+            "EPSG:31256", 
+            "EPSG:31257", 
+            "EPSG:31258", 
+            "EPSG:31259", 
+            "EPSG:32632", 
+            "EPSG:32633", 
+            "EPSG:3416", 
+            "EPSG:4258", 
+            "EPSG:4326", 
+            "CRS:84"
+        ], 
+        "url": "http://gis.lebensministerium.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "country_code": "AT", 
         "type": "wms", 
         "id": "geoimage.at", 
         "icon": "http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png"
     }, 
     {
         "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-bmo-2010&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
-        "name": "G\u00e9obretagne - Brest 2010 - 10 cm", 
         "extent": {
             "bbox": {
                 "min_lon": -4.6644843, 
@@ -23487,12 +23495,13 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "wms", 
+        "name": "G\u00e9obretagne - Brest 2010 - 10 cm", 
+        "country_code": "FR"
     }, 
     {
         "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-megalis-56&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
-        "name": "G\u00e9obretagne - Morbihan 2010", 
         "extent": {
             "bbox": {
                 "min_lon": -3.7554844, 
@@ -25214,7 +25223,10 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "type": "wms", 
+        "name": "G\u00e9obretagne - Morbihan 2010", 
+        "country_code": "FR"
     }, 
     {
         "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -26142,17 +26154,17 @@
             "text": "Ortho littorale 2000", 
             "required": true
         }, 
-        "name": "G\u00e9olittoral - Sentiers"
+        "name": "G\u00e9olittoral - Sentiers", 
+        "country_code": "FR"
     }, 
     {
-        "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral", 
             "text": "Ortho Littorale V2 - MEDDE", 
             "required": true
         }, 
         "name": "G\u00e9olittoral V2 - Orthophotos 2010-2012", 
+        "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": 2.9062494, 
@@ -26786,7 +26798,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "FR", 
+        "type": "wms"
     }, 
     {
         "attribution": {
@@ -26808,6 +26822,7 @@
                 "max_lon": 15.5442161820906
             }
         }, 
+        "country_code": "AT", 
         "type": "wms", 
         "icon": "http://gis.graz.at/g/graz-logo.gif"
     }, 
@@ -29782,6 +29797,7 @@
                 "max_lon": -5.37
             }
         }, 
+        "country_code": "IE", 
         "type": "tms", 
         "id": "GSGS3906", 
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAB3RJTUUH3gQOFR0YB1KT3QAAAAlwSFlzAAAewQAAHsEBw2lUUwAAAARnQU1BAACxjwv8YQUAAAS/SURBVHjandN7TFNXHAfwzrn/lm3ZHy7LYrJkybK5zMw9fCEoPjbeChoHTtBVRF7l1ZZSaG8flCtvsFVpoZZHC5Y6jDM+UScDaxF5lIfSAaMIlVKBS8EZN4d+d9voZpbMFX/JN7nnnvM7n5xzcxmM5wrPlX1yFmP2adgmXKHc78bsU+j9ZRT3HzzE+D0n7tjuYdo5h38X47/q+UWD1nE0tw/gktEC66gdN/tG0Dc4hnEHhdG7DujOdqGHxi4ae2AZti8ccJXZYoOxawRPnjzGwcpmzM8//ntOe86MickZTEw7ka+99nJAZ/8YWjqs7ufc6ibM/fbQ/fzHo0eoOduJ8UkKljt2nLhk9hj4/Wlm6VA9A2NUa/ew6wNQE1OzVGvPEGUZvkvZHVNUo2mA6ugfpvoGrNT8/Dz1tMfd/yJgKZ13h6zjzFbzvbwO8wDZaR4kzeZbZG/fIHnTbCOvdzrI9h472dnVT97oociO23NkW+9M3pDVsc/V69rjRYA7Su11/dvbfkRJvDeOcMORuj8CpelLkJO6BVs4vQhj3QD5fTQS2PXYndQAblw2yrUt9c/6/xeoqzulK+VEoCTtawgSM5HCr0Nsmg48ngJhYiukonNIybeg8MQEFIZBFBWIoa4z1XoMaOrbtbHci2BtW4RachnOlO/GZW0SjuZEY2eWGYVEFfYJ+kDo/4ThdDPExadQcbxb5zmgb6/xYZlAxPtDmByFS2U+EHM5yBOyEZZ8HkzeZaQmyxFZROGkgUQIMQSNvkPrMXBM31YdFqNDJK8ZHE4FYgSt2Jl0GpKUGAhFjTiQ2QJDgRBGdSTIvEJ8IXDSQJvngEbfWrWacGJDzn1sJ34FkSqFQbgWTcUrcLWIATlnBzYSE8hOOIBQzk9YK56jgRs1CzlBVXD6bcijCYSwTYjhXUFD7nrUlHyFc6pPUCL4BpskUwhn6iGPSMYG3igN3KxeCKDZyulGddReBKV3YbNkGidkIWhQLMeFiuUoE3ths8iOfXFnoQ5nwTt9xHVFVZ5f0XGjxks0A++sIWyNqYM0TYp6qS9+UHxOn+BjqMQfwF8wgg2x5+ErccCboKA5bloAUGc8tk40i2CmGuGhgQhjX0MZwUY5uRJVuX6QcpPhm2TErlBfBLAa4S2epYHrlZ5fke4K6SVyIjRejz1REfhO2Ab2wavgZJ8EU9gEUek1MDMvIIa5DUFpzVhHzECtbRR4DJRrDP5f8h04ILwAmTQLAkEWCgsLIJVIIcwS4uhRBSQSCfi8FGzP6sbKjLsoV+tWewwolUfe+pR1y7GD1YDd4cGIi4uFgM/HulWr4LdpI5ITE5EQH49dOwMRmtmND/ebLMoy+WueA2VyBmO9opSTcx6HimWQHypGBicF+6MjwdzzLSQEH6UlBSjKFyNS1AnGMm6Csuwww2NApVK6hkv2JMptmTkGiPNqEcc+jFiuGsy0SrD4lciQ1kJW3ICAqJIWeu1ilUq1EEDlHr/6vr/XxozBuQD6jw6UUXRm6DgRQCeQfIA1iaZ+BuP191xrXwpw1RtL16zwSfi5PVg2hZAcyp0gqQOr9548TU+/82zdywGvLH429eZnO8rPBNMbB4ps+MhPpvyna9ELgb8ASvKZeuq+E9sAAAAASUVORK5CYII="
@@ -30024,6 +30040,7 @@
                 ]
             ]
         }, 
+        "country_code": "IE", 
         "type": "tms", 
         "id": "GSGS4136", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
@@ -30202,6 +30219,7 @@
                 ]
             ]
         }, 
+        "country_code": "IE", 
         "type": "tms", 
         "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
     }, 
@@ -31727,6 +31745,7 @@
                 ]
             ]
         }, 
+        "country_code": "IE", 
         "type": "tms", 
         "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
     }, 
@@ -33288,14 +33307,13 @@
         "country_code": "CH"
     }, 
     {
-        "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg", 
-        "type": "tms", 
         "attribution": {
             "url": "http://wiki.freemap.sk/KatasterPortal", 
             "text": "Permisssion by UGKK", 
             "required": true
         }, 
         "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)", 
+        "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg", 
         "extent": {
             "bbox": {
                 "min_lon": 16.7988747, 
@@ -33491,7 +33509,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "SK", 
+        "type": "tms"
     }, 
     {
         "attribution": {
@@ -33881,9 +33901,12 @@
         }
     }, 
     {
-        "url": "http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Terraitaly%20Ortofoto%202007&STYLES=%2C%2C&FORMAT=image/png&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "name": "Lodi - Italy", 
+        "available_projections": [
+            "EPSG:32632", 
+            "EPSG:4326"
+        ], 
+        "url": "http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Terraitaly%20Ortofoto%202007&STYLES=%2C%2C&FORMAT=image/png&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": 9.248036, 
@@ -33984,10 +34007,8 @@
                 ]
             ]
         }, 
-        "available_projections": [
-            "EPSG:32632", 
-            "EPSG:4326"
-        ]
+        "country_code": "IT", 
+        "type": "wms"
     }, 
     {
         "url": "http://www.cartografia.regione.lombardia.it/ArcGIS93/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -39226,13 +39247,12 @@
         ]
     }, 
     {
-        "url": "http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ORTOFOTOS&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "text": "SIGPAC", 
             "required": true
         }, 
         "name": "SIGPAC Spain", 
+        "url": "http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ORTOFOTOS&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -18.1661033, 
@@ -41572,7 +41592,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "ES", 
+        "type": "wms"
     }, 
     {
         "attribution": {
@@ -47767,13 +47789,12 @@
         "best": true
     }, 
     {
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "attribution": {
             "text": "Stevns Kommune", 
             "required": true
         }, 
         "name": "Stevns (Denmark)", 
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png", 
         "extent": {
             "max_zoom": 20, 
             "bbox": {
@@ -47906,7 +47927,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "DK", 
+        "type": "tms"
     }, 
     {
         "url": "http://tools.geofabrik.de/osmi/view/strassennrw/wxs?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&FORMAT=image/png&SRS={proj}&STYLES=&LAYERS=unzugeordnete_strassen,kreisstrassen_ast,kreisstrassen,landesstrassen_ast,landesstrassen,bundesstrassen_ast,bundesstrassen,autobahnen_ast,autobahnen,endpunkte&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
@@ -60955,14 +60978,13 @@
         "country_code": "LV"
     }, 
     {
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png", 
-        "type": "tms", 
         "attribution": {
             "url": "http://wiki.openstreetmap.org/wiki/Vejmidte", 
             "text": "Danish municipalities", 
             "required": true
         }, 
         "name": "Vejmidte (Denmark)", 
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png", 
         "extent": {
             "max_zoom": 20, 
             "bbox": {
@@ -61583,7 +61605,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "DK", 
+        "type": "tms"
     }, 
     {
         "attribution": {
@@ -61607,6 +61631,15 @@
         "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
     }, 
     {
+        "extent": {
+            "max_zoom": 19, 
+            "bbox": {
+                "min_lon": 16.17, 
+                "max_lat": 48.33, 
+                "min_lat": 48.1, 
+                "max_lon": 16.58
+            }
+        }, 
         "attribution": {
             "url": "http://data.wien.gv.at/", 
             "text": "Stadt Wien", 
@@ -61614,6 +61647,11 @@
         }, 
         "name": "Vienna: Mehrzweckkarte (general purpose)", 
         "url": "http://www.wien.gv.at/wmts/fmzk/pastell/google3857/{zoom}/{y}/{x}.jpeg", 
+        "country_code": "AT", 
+        "type": "tms", 
+        "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
+    }, 
+    {
         "extent": {
             "max_zoom": 19, 
             "bbox": {
@@ -61623,10 +61661,6 @@
                 "max_lon": 16.58
             }
         }, 
-        "type": "tms", 
-        "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
-    }, 
-    {
         "attribution": {
             "url": "http://data.wien.gv.at/", 
             "text": "Stadt Wien", 
@@ -61634,15 +61668,7 @@
         }, 
         "name": "Vienna: Orthofoto (aerial image)", 
         "url": "http://www.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg", 
-        "extent": {
-            "max_zoom": 19, 
-            "bbox": {
-                "min_lon": 16.17, 
-                "max_lat": 48.33, 
-                "min_lat": 48.1, 
-                "max_lon": 16.58
-            }
-        }, 
+        "country_code": "AT", 
         "type": "tms", 
         "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
     }, 
