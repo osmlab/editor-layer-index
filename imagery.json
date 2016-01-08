@@ -1,12 +1,11 @@
 [
     {
-        "url": "http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "type": "wms", 
         "attribution": {
             "text": "GRAFCAN OrtoExpress Urbana 2009", 
             "required": true
         }, 
         "name": "GRAFCAN - Canary Islands", 
+        "url": "http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -18.1779014, 
@@ -474,7 +473,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "ES", 
+        "type": "wms"
     }, 
     {
         "extent": {
@@ -2302,6 +2303,7 @@
                 ]
             ]
         }, 
+        "country_code": "AU", 
         "type": "wms"
     }, 
     {
@@ -2482,6 +2484,7 @@
                 ]
             ]
         }, 
+        "country_code": "AU", 
         "type": "wms"
     }, 
     {
@@ -2662,6 +2665,7 @@
                 ]
             ]
         }, 
+        "country_code": "AU", 
         "type": "wms"
     }, 
     {
@@ -2842,6 +2846,7 @@
                 ]
             ]
         }, 
+        "country_code": "AU", 
         "type": "wms"
     }, 
     {
@@ -3022,6 +3027,7 @@
                 ]
             ]
         }, 
+        "country_code": "AU", 
         "type": "wms"
     }, 
     {
@@ -3202,17 +3208,17 @@
                 ]
             ]
         }, 
+        "country_code": "AU", 
         "type": "wms"
     }, 
     {
-        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}", 
-        "type": "tms", 
         "attribution": {
             "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
             "text": "\u00a9 Land and Property Information 2015", 
             "required": true
         }, 
         "name": "LPI NSW Base Map", 
+        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}", 
         "extent": {
             "max_zoom": 19, 
             "bbox": {
@@ -3329,17 +3335,18 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "AU", 
+        "type": "tms"
     }, 
     {
-        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}", 
-        "type": "tms", 
         "attribution": {
             "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
             "text": "\u00a9 Land and Property Information 2015", 
             "required": true
         }, 
         "name": "LPI NSW Imagery", 
+        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}", 
         "extent": {
             "max_zoom": 21, 
             "bbox": {
@@ -3692,17 +3699,18 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "AU", 
+        "type": "tms"
     }, 
     {
-        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}", 
-        "type": "tms", 
         "attribution": {
             "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
             "text": "\u00a9 Land and Property Information 2015", 
             "required": true
         }, 
         "name": "LPI NSW Topographic Map", 
+        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}", 
         "extent": {
             "max_zoom": 16, 
             "bbox": {
@@ -4291,7 +4299,9 @@
                     ]
                 ]
             ]
-        }
+        }, 
+        "country_code": "AU", 
+        "type": "tms"
     }, 
     {
         "url": "http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=piekraste&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}", 
@@ -53637,6 +53647,7 @@
                 "max_lon": 0.22
             }
         }, 
+        "country_code": "GB", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -53657,6 +53668,7 @@
                 "max_lon": 1.9
             }
         }, 
+        "country_code": "GB", 
         "type": "tms", 
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
@@ -57911,15 +57923,6 @@
         "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }, 
     {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/paisley.html", 
-            "text": "National Library of Scotland - Paisley 1858", 
-            "required": true
-        }, 
-        "name": "OS Town Plans, Paisley 1858 (NLS)", 
-        "end_date": "1859", 
-        "url": "http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png", 
-        "description": "Detailed town plan of Paisley 1858, courtesy of National Library of Scotland.", 
         "extent": {
             "min_zoom": 13, 
             "max_zoom": 20, 
@@ -57950,9 +57953,19 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/paisley.html", 
+            "text": "National Library of Scotland - Paisley 1858", 
+            "required": true
+        }, 
+        "name": "OS Town Plans, Paisley 1858 (NLS)", 
+        "end_date": "1859", 
+        "url": "http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png", 
+        "country_code": "GB", 
+        "icon": "http://nls.tileserver.com/nls70-nq8.png", 
         "type": "tms", 
         "start_date": "1858", 
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+        "description": "Detailed town plan of Paisley 1858, courtesy of National Library of Scotland."
     }, 
     {
         "extent": {
