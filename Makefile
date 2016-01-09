@@ -1,5 +1,5 @@
 ALL = imagery.geojson imagery.json imagery.xml
-SOURCES = $(shell find sources -type f -name '*.json' | sort)
+SOURCES = $(shell find sources -type f -name '*.json' | LC_ALL="en_US.UTF-8" sort)
 
 all: $(ALL)
 
