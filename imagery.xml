@@ -4482,6 +4482,28 @@
     </bounds>
   </entry>
   <entry>
+    <name>Danube flood ortophoto 2013</name>
+    <type>tms</type>
+    <url>http://e.tile.openstreetmap.hu/dunai-arviz-2013/{zoom}/{x}/{y}.jpg</url>
+    <attribution-text mandatory="true">Fot&#243;t&#233;rk&#233;p.hu</attribution-text>
+    <attribution-url>http://fototerkep.hu/</attribution-url>
+    <min-zoom>10</min-zoom>
+    <max-zoom>20</max-zoom>
+    <bounds max-lat="47.695983" max-lon="19.094621" min-lat="47.572092" min-lon="19.057788">
+      <shape>
+        <point lat="47.695972" lon="19.077315" />
+        <point lat="47.695983" lon="19.077988" />
+        <point lat="47.694456" lon="19.094621" />
+        <point lat="47.595874" lon="19.08056" />
+        <point lat="47.589091" lon="19.074338" />
+        <point lat="47.588828" lon="19.07952" />
+        <point lat="47.572411" lon="19.07717" />
+        <point lat="47.572092" lon="19.057788" />
+        <point lat="47.695972" lon="19.077315" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Erlangen Luftbild (2013 6,25 cm)</name>
     <type>wms</type>
     <url>https://secure.erlangen.de/arcgiser/services/Luftbilder2013/MapServer/WmsServer?FORMAT=image/bmp&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Erlangen_ratio5_6.25cm.jp2&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
@@ -12680,10 +12702,66 @@
     <type>tms</type>
     <url>http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">SZTE TFGT - University of Szeged</attribution-text>
-    <attribution-url>http://www.geo.u-szeged.hu</attribution-url>
+    <attribution-url>http://www.geo.u-szeged.hu/</attribution-url>
     <min-zoom>10</min-zoom>
     <max-zoom>22</max-zoom>
-    <bounds max-lat="46.279149" max-lon="20.198964" min-lat="46.226038" min-lon="20.110339" />
+    <bounds max-lat="46.278458" max-lon="20.194798" min-lat="46.228114" min-lon="20.111187">
+      <shape>
+        <point lat="46.228114" lon="20.145991" />
+        <point lat="46.229043" lon="20.133226" />
+        <point lat="46.229869" lon="20.125837" />
+        <point lat="46.230989" lon="20.122329" />
+        <point lat="46.231754" lon="20.120848" />
+        <point lat="46.233513" lon="20.118971" />
+        <point lat="46.241364" lon="20.113124" />
+        <point lat="46.2433" lon="20.112029" />
+        <point lat="46.245" lon="20.111573" />
+        <point lat="46.247092" lon="20.111187" />
+        <point lat="46.248773" lon="20.111294" />
+        <point lat="46.250969" lon="20.111595" />
+        <point lat="46.252805" lon="20.112217" />
+        <point lat="46.254268" lon="20.112995" />
+        <point lat="46.255355" lon="20.113542" />
+        <point lat="46.256798" lon="20.11477" />
+        <point lat="46.276853" lon="20.135225" />
+        <point lat="46.277505" lon="20.136639" />
+        <point lat="46.27803" lon="20.137894" />
+        <point lat="46.278351" lon="20.139393" />
+        <point lat="46.278458" lon="20.140882" />
+        <point lat="46.278159" lon="20.161149" />
+        <point lat="46.278158" lon="20.162109" />
+        <point lat="46.277702" lon="20.163589" />
+        <point lat="46.276148" lon="20.166178" />
+        <point lat="46.273857" lon="20.168779" />
+        <point lat="46.271441" lon="20.169611" />
+        <point lat="46.270446" lon="20.16959" />
+        <point lat="46.270442" lon="20.170087" />
+        <point lat="46.26433" lon="20.17399" />
+        <point lat="46.258288" lon="20.176618" />
+        <point lat="46.25492" lon="20.194798" />
+        <point lat="46.244808" lon="20.185872" />
+        <point lat="46.245312" lon="20.184659" />
+        <point lat="46.238311" lon="20.178037" />
+        <point lat="46.23771" lon="20.178177" />
+        <point lat="46.237096" lon="20.179526" />
+        <point lat="46.230024" lon="20.172567" />
+        <point lat="46.23504" lon="20.169835" />
+        <point lat="46.236295" lon="20.16877" />
+        <point lat="46.237848" lon="20.167026" />
+        <point lat="46.238734" lon="20.165943" />
+        <point lat="46.238999" lon="20.165441" />
+        <point lat="46.238999" lon="20.165484" />
+        <point lat="46.240138" lon="20.163518" />
+        <point lat="46.2412" lon="20.160205" />
+        <point lat="46.241531" lon="20.159268" />
+        <point lat="46.241575" lon="20.159268" />
+        <point lat="46.24185" lon="20.15835" />
+        <point lat="46.242287" lon="20.154947" />
+        <point lat="46.235154" lon="20.15108" />
+        <point lat="46.232459" lon="20.14938" />
+        <point lat="46.228114" lon="20.145991" />
+      </shape>
+    </bounds>
   </entry>
   <entry>
     <name>Tiris: DGM (Terrain model)</name>
