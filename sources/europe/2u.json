@@ -1,0 +1,13 @@
+{
+    "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/2u/{zoom}/{x}/{y}.png",
+    "attribution": {
+        "url": "http://openstreetmap.org/",
+        "text": "Tiles \u00a9 sly, data \u00a9 OpenStreetMap contributors, ODBL",
+        "required": true
+    },
+    "type": "tms",
+    "name": "2u",
+    "extent": {
+        "max_zoom": 19
+    }
+}

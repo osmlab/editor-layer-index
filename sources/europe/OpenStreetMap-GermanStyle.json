@@ -1,0 +1,13 @@
+{
+    "url": "http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png",
+    "attribution": {
+        "url": "http://openstreetmap.org/",
+        "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+        "required": false
+    },
+    "type": "tms",
+    "name": "OpenStreetMap (German Style)",
+    "extent": {
+        "max_zoom": 18
+    }
+}

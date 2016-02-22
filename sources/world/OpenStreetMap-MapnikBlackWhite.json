@@ -1,0 +1,15 @@
+{
+    "attribution": {
+        "url": "http://openstreetmap.org/",
+        "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+        "required": true
+    },
+    "name": "OpenStreetMap (Standard Black & White)",
+    "url": "http://{switch:a,b,c}.www.toolserver.org/tiles/bw-mapnik/{zoom}/{x}/{y}.png",
+    "default": true,
+    "extent": {
+        "max_zoom": 18
+    },
+    "type": "tms",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAADJElEQVR4Xo2SS2hcZRSAv/+//70zkzszeU+okVqaaGLjI0akTRGl3ehGdCEiutO6c6PgwoWCSMUXdRFaCurGTRGVUtqNraKmTDA1KtIQzat3TKczSW0mznTuzNznL1zoxo1+q3PgwPnOA8cufVU647y+PnYps6Wq9lbfxvTiqdnzs+/PH7re/bY6nV7tqT5UmanOkUDJcN5w9BW9phcuXDtW/bqy7ejfdVH/qhd0cfXsO9998VN5Xq/qTffaAwACnGl9VvcHePSiaOMidSzWdb+wsRG0CLmhc8E9r/YcbyNgqZA6w4E6ETksoI3gIofIYCCT3KPD39z49OkjIGHf9aikyWFyE4EgzwoHyJFBoQmxsAmQyH1TAyABrMDCJIvCI2Ibk24kYGCTIwXksbD3P3sYDCjtMV8xhsACJHXK5BjCRBMQ0CbAxUdpQ27Xrp5XYI7oEYgQ+IBHjKBDkOiZSJqESGLSZMYOWrJEPK67NDEtIhpoTAQxMRDSpE4H0AgUSkhkaPmTAaGGJiYWWSxCOmgU0CaEpI9Bmmj1+0AthnvXMwRCEBPSh4ekSh8dBNBFAChSZESD8i9LsXxKr/wRNWWy/XTi2sO3rBGjk2lMUqSTLa3+eHJuzJIwX/bLApOYiE4y/F18xNUkInG3iFjxi5/vVJSU6FMld9NHYLCDxqPKEoqPuUQjubLLNgtsmIcnXB1HCso1qyYJiMmzwSdY9PIww2zRhUEOjYsgJ8zhXtnyFXzT218IscizzHHcROsxdhPzFzdxsBDkGYjW13bcQqhgdCS+s0MWhxPUCTCZIotAspeYCgoPqZve5SKtZSQ0RrwhmyvMUMFF8TjTFPBJ4REyiEaAiN2jP6BBzqjOhMEi7+HQIstzyada9BFqQ9u4eFpphe+wCaAMM9q1HB41POGzixe4H7d18cJAauJgd75JiIkpDOq1y1+SAAa3vXvkrcZ4PFZ7bf3k7Itvsp9hbufBl14+fe7nP8/NfXDi0ee5l25uUUTc8eFnT/42esx+gmEMbiGxGUyO/G+mcnseue+ZycmpDP+PAneb4+lRA2D3f9T+A2BEVdbaZSWbAAAAAElFTkSuQmCC"
+}

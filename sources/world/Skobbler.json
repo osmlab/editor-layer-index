@@ -1,0 +1,15 @@
+{
+    "attribution": {
+        "url": "http://maps.skobbler.com",
+        "text": "\u00a9 Tiles: skobbler Map data: OpenStreetMap contributors, CC-BY-SA",
+        "required": true
+    },
+    "name": "Skobbler",
+    "url": "http://tiles{switch:1,2,3,4}.skobbler.net/osm_tiles2/{zoom}/{x}/{y}.png",
+    "extent": {
+        "min_zoom": 1,
+        "max_zoom": 18
+    },
+    "type": "tms",
+    "icon": "http://www.skobbler.com/images/skobbler_logo_josm.png"
+}

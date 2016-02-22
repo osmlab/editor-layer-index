@@ -1,0 +1,21 @@
+{
+    "url": "http://tools.geofabrik.de/osmi/tiles/boundaries/{zoom}/{x}/{y}.png",
+    "type": "tms",
+    "overlay": true,
+    "attribution": {
+        "url": "http://tools.geofabrik.de/osmi/",
+        "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+        "required": true
+    },
+    "extent": {
+        "min_zoom": 0,
+        "max_zoom": 18,
+        "bbox": {
+            "min_lon": -24.9,
+            "max_lat": 71.45,
+            "min_lat": 35.15,
+            "max_lon": 41.75
+        }
+    },
+    "name": "OSM Inspector: Boundaries (EU)"
+}
