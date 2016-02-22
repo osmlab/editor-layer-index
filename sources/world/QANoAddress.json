@@ -1,0 +1,15 @@
+{
+    "url": "http://tile3.poole.ch/noaddress/{zoom}/{x}/{y}.png",
+    "type": "tms",
+    "overlay": true,
+    "attribution": {
+        "url": "http://qa.poole.ch/",
+        "text": "Simon Poole, Data \u00a9OpenStreetMap contributors",
+        "required": true
+    },
+    "extent": {
+        "min_zoom": 0,
+        "max_zoom": 18
+    },
+    "name": "QA No Address"
+}

@@ -444,6 +444,15 @@
     </bounds>
   </entry>
   <entry>
+    <name>Cambodia, Laos, Thailand, Vietnam bilingual</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c,d}.tile.osm-tools.org/osm_then/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; osm-tools.org &amp; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://www.osm-tools.org/</attribution-url>
+    <max-zoom>19</max-zoom>
+    <bounds max-lat="23.4" max-lon="109.6" min-lat="5.6" min-lon="97.3" />
+  </entry>
+  <entry>
     <name>Japan GSI ortho Imagery</name>
     <type>tms</type>
     <url>http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg</url>
@@ -1222,6 +1231,14 @@
     <url>http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=piekraste&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <attribution-text>Piekrastes ortofoto, 2007, &#169; Latvijas vides aizsardz&#299;bas fonds</attribution-text>
     <country-code>LV</country-code>
+  </entry>
+  <entry>
+    <name>2u</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.layers.openstreetmap.fr/2u/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">Tiles &#169; sly, data &#169; OpenStreetMap contributors, ODBL</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>19</max-zoom>
   </entry>
   <entry>
     <name>50cm ortho - Latvia</name>
@@ -9614,6 +9631,181 @@
         <point lat="50.17631" lon="5.961753" />
       </shape>
     </bounds>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Addresses (EU)</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+    <bounds max-lat="71.45" max-lon="41.75" min-lat="35.15" min-lon="-24.9" />
+  </entry>
+  <entry>
+    <name>OSM Inspector: Boundaries (EU)</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/boundaries/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+    <bounds max-lat="71.45" max-lon="41.75" min-lat="35.15" min-lon="-24.9" />
+  </entry>
+  <entry>
+    <name>OSM Inspector: Routing (EU)</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+    <bounds max-lat="71.45" max-lon="41.75" min-lat="35.15" min-lon="-24.9" />
+  </entry>
+  <entry>
+    <name>OpenPT Map (overlay)</name>
+    <type>tms</type>
+    <url>http://openptmap.de/tiles/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <min-zoom>5</min-zoom>
+    <max-zoom>16</max-zoom>
+    <bounds max-lat="55.095236" max-lon="17.20171" min-lat="45.795325" min-lon="5.88008">
+      <shape>
+        <point lat="53.665658" lon="6.490107" />
+        <point lat="53.984826" lon="8.566535" />
+        <point lat="54.709715" lon="8.133946" />
+        <point lat="55.095236" lon="8.317796" />
+        <point lat="54.778383" lon="10.188744" />
+        <point lat="54.477884" lon="10.632148" />
+        <point lat="54.62215" lon="11.270216" />
+        <point lat="54.370924" lon="11.681176" />
+        <point lat="54.38982" lon="12.027247" />
+        <point lat="54.853162" lon="13.325014" />
+        <point lat="54.697217" lon="13.919825" />
+        <point lat="54.130827" lon="14.211822" />
+        <point lat="53.266506" lon="14.493005" />
+        <point lat="52.876649" lon="14.157749" />
+        <point lat="52.581937" lon="14.752558" />
+        <point lat="51.017154" lon="15.09863" />
+        <point lat="50.839928" lon="14.936409" />
+        <point lat="50.792098" lon="14.730929" />
+        <point lat="50.880886" lon="14.438931" />
+        <point lat="50.393904" lon="12.957314" />
+        <point lat="50.393904" lon="12.51391" />
+        <point lat="50.117324" lon="12.30843" />
+        <point lat="49.908834" lon="12.611242" />
+        <point lat="49.734401" lon="12.394948" />
+        <point lat="49.404763" lon="12.773463" />
+        <point lat="48.603104" lon="14.146934" />
+        <point lat="48.653139" lon="14.676855" />
+        <point lat="49.04455" lon="15.066185" />
+        <point lat="48.745931" lon="16.26662" />
+        <point lat="48.874129" lon="16.493729" />
+        <point lat="48.717397" lon="16.904689" />
+        <point lat="48.531538" lon="16.937133" />
+        <point lat="48.382316" lon="16.838469" />
+        <point lat="48.010204" lon="17.20171" />
+        <point lat="47.69976" lon="17.121415" />
+        <point lat="47.658571" lon="16.777292" />
+        <point lat="47.74606" lon="16.609054" />
+        <point lat="47.663721" lon="16.410228" />
+        <point lat="47.614771" lon="16.735233" />
+        <point lat="47.358974" lon="16.555524" />
+        <point lat="46.976854" lon="16.479053" />
+        <point lat="46.809629" lon="16.035517" />
+        <point lat="46.636633" lon="16.050811" />
+        <point lat="46.631382" lon="14.957266" />
+        <point lat="46.389287" lon="14.574908" />
+        <point lat="46.689115" lon="12.395466" />
+        <point lat="47.055061" lon="12.150756" />
+        <point lat="46.914206" lon="11.118389" />
+        <point lat="46.77298" lon="11.03427" />
+        <point lat="46.846254" lon="10.483674" />
+        <point lat="46.547297" lon="10.460732" />
+        <point lat="46.573588" lon="10.101316" />
+        <point lat="46.183187" lon="10.200729" />
+        <point lat="46.362907" lon="9.894842" />
+        <point lat="46.288976" lon="9.596603" />
+        <point lat="46.505206" lon="9.298363" />
+        <point lat="46.257261" lon="9.283069" />
+        <point lat="45.795325" lon="9.053654" />
+        <point lat="46.246685" lon="8.426586" />
+        <point lat="46.473616" lon="8.44188" />
+        <point lat="45.928461" lon="7.87599" />
+        <point lat="45.864596" lon="7.095979" />
+        <point lat="46.162004" lon="6.774798" />
+        <point lat="46.405108" lon="6.820681" />
+        <point lat="46.457814" lon="6.545383" />
+        <point lat="46.384012" lon="6.331262" />
+        <point lat="46.246685" lon="6.384793" />
+        <point lat="46.087802" lon="5.895374" />
+        <point lat="46.368184" lon="6.117142" />
+        <point lat="46.599866" lon="6.0942" />
+        <point lat="46.778217" lon="6.438323" />
+        <point lat="46.929875" lon="6.430676" />
+        <point lat="47.346022" lon="7.080685" />
+        <point lat="47.371923" lon="6.843623" />
+        <point lat="47.501237" lon="6.996566" />
+        <point lat="47.506403" lon="7.180098" />
+        <point lat="47.439206" lon="7.233628" />
+        <point lat="47.480568" lon="7.455396" />
+        <point lat="48.645735" lon="7.784224" />
+        <point lat="49.02827" lon="8.197171" />
+        <point lat="49.038297" lon="7.600692" />
+        <point lat="49.163468" lon="7.447749" />
+        <point lat="49.103426" lon="7.203039" />
+        <point lat="49.163468" lon="6.667738" />
+        <point lat="49.333193" lon="6.637149" />
+        <point lat="49.457619" lon="6.354204" />
+        <point lat="49.804337" lon="6.545383" />
+        <point lat="49.873384" lon="6.247144" />
+        <point lat="50.153488" lon="6.078906" />
+        <point lat="50.368593" lon="6.361851" />
+        <point lat="50.703963" lon="6.086553" />
+        <point lat="51.051375" lon="5.88008" />
+        <point lat="51.161808" lon="6.124789" />
+        <point lat="51.491527" lon="6.193613" />
+        <point lat="51.75265" lon="5.964198" />
+        <point lat="51.889729" lon="6.025376" />
+        <point lat="51.866124" lon="6.453617" />
+        <point lat="51.955755" lon="6.843623" />
+        <point lat="52.049911" lon="6.690679" />
+        <point lat="52.22826" lon="7.004213" />
+        <point lat="52.452525" lon="7.019507" />
+        <point lat="52.466503" lon="6.698326" />
+        <point lat="52.652463" lon="6.690679" />
+        <point lat="52.638543" lon="7.034802" />
+        <point lat="52.833015" lon="7.073038" />
+        <point lat="52.985206" lon="7.218334" />
+        <point lat="53.342809" lon="7.195392" />
+        <point lat="53.32911" lon="7.004213" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (German Language)</name>
+    <type>tms</type>
+    <url>http://toolserver.org/tiles/osm-locale-de/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (German Style)</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png</url>
+    <attribution-text>&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (Sorbian Language)</name>
+    <type>tms</type>
+    <url>http://toolserver.org/tiles/osm-locale-hsb/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>17</max-zoom>
   </entry>
   <entry>
     <name>PCN 2006 - Italy</name>
@@ -21947,6 +22139,14 @@
     <max-zoom>22</max-zoom>
   </entry>
   <entry>
+    <name>Hike &amp; Bike</name>
+    <type>tms</type>
+    <url>http://toolserver.org/tiles/hikebike/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
     <name>Landsat</name>
     <type>wms</type>
     <url>http://irs.gis-lab.info/?layers=landsat&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
@@ -21968,6 +22168,15 @@
     </projections>
   </entry>
   <entry>
+    <name>Locator Overlay</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
+    <attribution-text mandatory="true">Terms &amp; Feedback</attribution-text>
+    <attribution-url>http://www.mapbox.com/about/maps/</attribution-url>
+    <default>true</default>
+    <max-zoom>16</max-zoom>
+  </entry>
+  <entry>
     <name>Mapbox Satellite</name>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
@@ -21978,6 +22187,70 @@
     <max-zoom>19</max-zoom>
   </entry>
   <entry>
+    <name>OSM Inspector: Geometry</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Highways</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/highways/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Multipolygon</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/multipolygon/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Places</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/places/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Tagging</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/tagging/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Redaction Bot</name>
+    <type>wms</type>
+    <url>http://tools.geofabrik.de/osmi/views/redactionbot/wxs?LAYERS=overview,bot_point_cleared,bot_point_superseded,bot_point_modified,bot_line_modified_cp,bot_point_deleted,bot_line_deleted_cp,bot_line_cleared,bot_line_superseded,bot_line_modified,bot_line_deleted&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;STYLES=&amp;EXCEPTIONS=application/vnd.ogc.se_inimage&amp;SRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}</url>
+    <projections>
+      <code>EPSG:4326</code>
+      <code>EPSG:900913</code>
+    </projections>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+  </entry>
+  <entry>
+    <name>OpenCycleMap</name>
+    <type>tms</type>
+    <url>http://tile.opencyclemap.org/cycle/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
     <name>OpenStreetMap GPS traces</name>
     <type>tms</type>
     <url>http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png</url>
@@ -21985,5 +22258,89 @@
     <attribution-url>http://www.openstreetmap.org/copyright</attribution-url>
     <min-zoom>0</min-zoom>
     <max-zoom>20</max-zoom>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (Standard)</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <default>true</default>
+    <icon>data:image/png;base64,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</icon>
+    <max-zoom>19</max-zoom>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (Standard Black &amp; White)</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.www.toolserver.org/tiles/bw-mapnik/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <default>true</default>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAADJElEQVR4Xo2SS2hcZRSAv/+//70zkzszeU+okVqaaGLjI0akTRGl3ehGdCEiutO6c6PgwoWCSMUXdRFaCurGTRGVUtqNraKmTDA1KtIQzat3TKczSW0mznTuzNznL1zoxo1+q3PgwPnOA8cufVU647y+PnYps6Wq9lbfxvTiqdnzs+/PH7re/bY6nV7tqT5UmanOkUDJcN5w9BW9phcuXDtW/bqy7ejfdVH/qhd0cfXsO9998VN5Xq/qTffaAwACnGl9VvcHePSiaOMidSzWdb+wsRG0CLmhc8E9r/YcbyNgqZA6w4E6ETksoI3gIofIYCCT3KPD39z49OkjIGHf9aikyWFyE4EgzwoHyJFBoQmxsAmQyH1TAyABrMDCJIvCI2Ibk24kYGCTIwXksbD3P3sYDCjtMV8xhsACJHXK5BjCRBMQ0CbAxUdpQ27Xrp5XYI7oEYgQ+IBHjKBDkOiZSJqESGLSZMYOWrJEPK67NDEtIhpoTAQxMRDSpE4H0AgUSkhkaPmTAaGGJiYWWSxCOmgU0CaEpI9Bmmj1+0AthnvXMwRCEBPSh4ekSh8dBNBFAChSZESD8i9LsXxKr/wRNWWy/XTi2sO3rBGjk2lMUqSTLa3+eHJuzJIwX/bLApOYiE4y/F18xNUkInG3iFjxi5/vVJSU6FMld9NHYLCDxqPKEoqPuUQjubLLNgtsmIcnXB1HCso1qyYJiMmzwSdY9PIww2zRhUEOjYsgJ8zhXtnyFXzT218IscizzHHcROsxdhPzFzdxsBDkGYjW13bcQqhgdCS+s0MWhxPUCTCZIotAspeYCgoPqZve5SKtZSQ0RrwhmyvMUMFF8TjTFPBJ4REyiEaAiN2jP6BBzqjOhMEi7+HQIstzyada9BFqQ9u4eFpphe+wCaAMM9q1HB41POGzixe4H7d18cJAauJgd75JiIkpDOq1y1+SAAa3vXvkrcZ4PFZ7bf3k7Itvsp9hbufBl14+fe7nP8/NfXDi0ee5l25uUUTc8eFnT/42esx+gmEMbiGxGUyO/G+mcnseue+ZycmpDP+PAneb4+lRA2D3f9T+A2BEVdbaZSWbAAAAAElFTkSuQmCC</icon>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>QA No Address</name>
+    <type>tms</type>
+    <url>http://tile3.poole.ch/noaddress/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">Simon Poole, Data &#169;OpenStreetMap contributors</attribution-text>
+    <attribution-url>http://qa.poole.ch/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>Skobbler</name>
+    <type>tms</type>
+    <url>http://tiles{switch:1,2,3,4}.skobbler.net/osm_tiles2/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Tiles: skobbler Map data: OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://maps.skobbler.com</attribution-url>
+    <icon>http://www.skobbler.com/images/skobbler_logo_josm.png</icon>
+    <min-zoom>1</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>Waymarked Trails: Cycling</name>
+    <type>tms</type>
+    <url>http://tile.waymarkedtrails.org/cycling/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
+    <attribution-url>http://cycling.waymarkedtrails.org/en/help/legal</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
+    <name>Waymarked Trails: Hiking</name>
+    <type>tms</type>
+    <url>http://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
+    <attribution-url>http://hiking.waymarkedtrails.org/en/help/legal</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
+    <name>Waymarked Trails: MTB</name>
+    <type>tms</type>
+    <url>http://tile.waymarkedtrails.org/mtb/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
+    <attribution-url>http://mtb.waymarkedtrails.org/en/help/legal</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
+    <name>Waymarked Trails: Skating</name>
+    <type>tms</type>
+    <url>http://tile.waymarkedtrails.org/skating/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
+    <attribution-url>http://skating.waymarkedtrails.org/en/help/legal</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
+    <name>Waymarked Trails: Winter Sports</name>
+    <type>tms</type>
+    <url>http://tile.waymarkedtrails.org/slopemap/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
+    <attribution-url>http://slopemap.waymarkedtrails.org/en/help/legal</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>17</max-zoom>
   </entry>
 </imagery>

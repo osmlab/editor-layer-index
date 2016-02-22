@@ -1,0 +1,14 @@
+{
+    "url": "http://tools.geofabrik.de/osmi/views/redactionbot/wxs?LAYERS=overview,bot_point_cleared,bot_point_superseded,bot_point_modified,bot_line_modified_cp,bot_point_deleted,bot_line_deleted_cp,bot_line_cleared,bot_line_superseded,bot_line_modified,bot_line_deleted&FORMAT=image/png&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
+    "attribution": {
+        "url": "http://tools.geofabrik.de/osmi/",
+        "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+        "required": true
+    },
+    "type": "wms",
+    "name": "OSM Inspector: Redaction Bot",
+    "available_projections": [
+        "EPSG:4326",
+        "EPSG:900913"
+    ]
+}

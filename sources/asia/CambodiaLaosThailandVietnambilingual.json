@@ -1,0 +1,19 @@
+{
+    "url": "http://{switch:a,b,c,d}.tile.osm-tools.org/osm_then/{zoom}/{x}/{y}.png",
+    "attribution": {
+        "url": "http://www.osm-tools.org/",
+        "text": "\u00a9 osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
+        "required": true
+    },
+    "type": "tms",
+    "name": "Cambodia, Laos, Thailand, Vietnam bilingual",
+    "extent": {
+        "max_zoom": 19,
+        "bbox": {
+            "min_lon": 97.3,
+            "max_lon": 109.6,
+            "min_lat": 5.6,
+            "max_lat": 23.4
+        }
+    }
+}
