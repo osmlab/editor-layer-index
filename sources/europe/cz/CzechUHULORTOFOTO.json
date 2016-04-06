@@ -1,0 +1,15 @@
+{
+    "url": "http://geoportal2.uhul.cz/cgi-bin/oprl.asp?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Ortofoto_cb&STYLES=default&FORMAT=image/jpeg&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "type": "wms",
+    "name": "Czech UHUL:ORTOFOTO",
+    "country_code": "CZ",
+    "available_projections": [
+        "EPSG:2065",
+        "EPSG:4326",
+        "EPSG:28403",
+        "EPSG:28404",
+        "EPSG:32633",
+        "EPSG:32634",
+        "EPSG:102067"
+    ]
+}
