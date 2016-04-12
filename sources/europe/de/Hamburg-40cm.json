@@ -1,0 +1,11 @@
+{
+    "url": "http://gateway.hamburg.de/OGCFassade/HH_WMS_DOP40.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "type": "wms",
+    "name": "Hamburg (40 cm)",
+    "country_code": "DE",
+    "available_projections": [
+        "EPSG:31467",
+        "EPSG:25832",
+        "EPSG:4326"
+    ]
+}
