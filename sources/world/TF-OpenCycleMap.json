@@ -1,0 +1,13 @@
+{
+    "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png",
+    "attribution": {
+        "url": "http://www.thunderforest.com/terms/",
+        "text": "Maps \u00a9 Thunderforest, Data \u00a9 OpenStreetMap contributors",
+        "required": true
+    },
+    "type": "tms",
+    "name": "Thunderforest OpenCycleMap",
+    "extent": {
+        "max_zoom": 22
+    }
+}
