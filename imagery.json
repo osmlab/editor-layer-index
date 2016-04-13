@@ -87828,6 +87828,19 @@
         "icon": "http://www.skobbler.com/images/skobbler_logo_josm.png"
     }, 
     {
+        "url": "https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png", 
+        "type": "tms", 
+        "attribution": {
+            "url": "http://www.thunderforest.com/terms/", 
+            "text": "Maps \u00a9 Thunderforest, Data \u00a9 OpenStreetMap contributors", 
+            "required": true
+        }, 
+        "name": "Thunderforest Landscape", 
+        "extent": {
+            "max_zoom": 22
+        }
+    }, 
+    {
         "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png", 
         "type": "tms", 
         "attribution": {

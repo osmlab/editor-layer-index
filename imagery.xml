@@ -24088,6 +24088,14 @@
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
+    <name>Thunderforest Landscape</name>
+    <type>tms</type>
+    <url>https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">Maps &#169; Thunderforest, Data &#169; OpenStreetMap contributors</attribution-text>
+    <attribution-url>http://www.thunderforest.com/terms/</attribution-url>
+    <max-zoom>22</max-zoom>
+  </entry>
+  <entry>
     <name>Thunderforest OpenCycleMap</name>
     <type>tms</type>
     <url>https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png</url>
