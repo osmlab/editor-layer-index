@@ -23555,6 +23555,29 @@
     </bounds>
   </entry>
   <entry>
+    <name>2013 aerial imagery for San Juan County WA</name>
+    <type>tms</type>
+    <url>http://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}</url>
+    <country-code>US</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>19</max-zoom>
+    <bounds max-lat="49.61025" max-lon="-121.718431" min-lat="47.273224" min-lon="-124.055457">
+      <shape>
+        <point lat="48.692975" lon="-123.274024" />
+        <point lat="48.767256" lon="-123.007726" />
+        <point lat="48.831577" lon="-123.007619" />
+        <point lat="48.758416" lon="-122.783495" />
+        <point lat="48.658522" lon="-122.693402" />
+        <point lat="48.603606" lon="-122.767451" />
+        <point lat="48.387083" lon="-122.744842" />
+        <point lat="48.283531" lon="-123.248221" />
+        <point lat="48.422614" lon="-123.114524" />
+        <point lat="48.548575" lon="-123.219035" />
+        <point lat="48.692975" lon="-123.274024" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Vector Streetmap for San Juan County WA</name>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/General_Basemap_WM/MapServer/tile/{zoom}/{y}/{x}</url>
