@@ -14320,13 +14320,6 @@
         "type": "wms"
     }, 
     {
-        "attribution": {
-            "url": "http://download.kortforsyningen.dk/content/vilkaar-og-betingelser", 
-            "text": "Geodatastyrelsen og Danske Kommuner", 
-            "required": true
-        }, 
-        "name": "Geodatastyrelsen (Denmark)", 
-        "url": "http://mapproxy.gpweb.dk/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
         "extent": {
             "max_zoom": 21, 
             "bbox": {
@@ -14948,8 +14941,16 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "url": "http://download.kortforsyningen.dk/content/vilkaar-og-betingelser", 
+            "text": "Geodatastyrelsen og Danske Kommuner", 
+            "required": true
+        }, 
+        "name": "Geodatastyrelsen (Denmark)", 
+        "url": "http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
         "country_code": "DK", 
-        "type": "tms"
+        "type": "tms", 
+        "best": true
     }, 
     {
         "attribution": {
@@ -23527,12 +23528,6 @@
         "type": "wms"
     }, 
     {
-        "attribution": {
-            "text": "PNOA", 
-            "required": true
-        }, 
-        "name": "PNOA Spain", 
-        "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "extent": {
             "bbox": {
                 "min_lon": -18.1661033, 
@@ -25873,8 +25868,15 @@
                 ]
             ]
         }, 
+        "attribution": {
+            "text": "PNOA", 
+            "required": true
+        }, 
+        "name": "PNOA Spain", 
+        "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "country_code": "ES", 
-        "type": "wms"
+        "type": "wms", 
+        "best": true
     }, 
     {
         "attribution": {
