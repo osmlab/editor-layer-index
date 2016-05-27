@@ -24,7 +24,19 @@ d3.json("imagery.geojson", function(error, imagery) {
                 fillOpacity: 0.1
             }
         }
-    }).addTo(map)
+    })
+    .on('click', function(e) {
+        var matches = leafletPip.pointInLayer(e.latlng, imageryLayer, false);
+        if (!matches.length) return;
+        map.openPopup(
+            '<h3>Available layers at this location:</h3>'+
+            matches.map(function(match) {
+                return match.feature.properties.name;
+            }).join('<br>'),
+            e.latlng
+        );
+    })
+    .addTo(map)
 
     var testLayer = L.geoJson(/* dummy */).addTo(map)
 
