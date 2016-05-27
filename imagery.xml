@@ -3,6 +3,7 @@
     <name>South Africa CD:NGI Aerial</name>
     <type>tms</type>
     <url>http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg</url>
+    <best />
     <country-code>ZA</country-code>
     <min-zoom>1</min-zoom>
     <max-zoom>22</max-zoom>
@@ -1522,6 +1523,7 @@
     <name>basemap.at Orthofoto</name>
     <type>tms</type>
     <url>http://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg</url>
+    <best />
     <attribution-text mandatory="true">basemap.at</attribution-text>
     <icon>http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png</icon>
     <country-code>AT</country-code>
@@ -2480,6 +2482,7 @@
     <name>Belgium AGIV Orthophoto Flanders</name>
     <type>tms</type>
     <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=omwrgbmrvl&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <best />
     <attribution-text mandatory="true">Orthophoto Flanders most recent (c) AGIV</attribution-text>
     <country-code>BE</country-code>
     <min-zoom>0</min-zoom>
@@ -2740,6 +2743,7 @@
     <name>Kanton Aargau 25cm (AGIS 2014)</name>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <best />
     <attribution-text>AGIS OF2014</attribution-text>
     <country-code>CH</country-code>
     <min-zoom>8</min-zoom>
@@ -2939,6 +2943,7 @@
     <name>Kanton Z&#252;rich 2015  10cm</name>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <best />
     <attribution-text>Kanton Z&#252;rich OF 2015</attribution-text>
     <country-code>CH</country-code>
     <min-zoom>8</min-zoom>
@@ -4012,6 +4017,7 @@
     <name>Geodatastyrelsen (Denmark)</name>
     <type>tms</type>
     <url>http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg</url>
+    <best />
     <attribution-text mandatory="true">Geodatastyrelsen og Danske Kommuner</attribution-text>
     <attribution-url>http://download.kortforsyningen.dk/content/vilkaar-og-betingelser</attribution-url>
     <country-code>DK</country-code>
@@ -6434,6 +6440,7 @@
     <name>PNOA Spain</name>
     <type>wms</type>
     <url>http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;SRS={proj}&amp;LAYERS=pnoa&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <best />
     <attribution-text mandatory="true">PNOA</attribution-text>
     <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
@@ -13306,6 +13313,7 @@
     <name>Interspect ortofot&#243; 2014</name>
     <type>tms</type>
     <url>http://geoserver.infobex.hu/Budapest2014/IST/{zoom}/{x}/{y}.jpg</url>
+    <best />
     <attribution-text mandatory="true">Interspect Kft.</attribution-text>
     <attribution-url>http://interspect.hu/</attribution-url>
     <icon>http://wiki.openstreetmap.org/w/images/c/cf/Hu_Interspect.png</icon>
@@ -16810,6 +16818,7 @@
     <name>South Tyrol Orthofoto 2014</name>
     <type>tms</type>
     <url>http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=P_BZ_OF_2014_EPSG3857&amp;STYLE=default&amp;TILEMATRIXSET=GoogleMapsCompatible&amp;TILEMATRIX=GoogleMapsCompatible%3A{zoom}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg</url>
+    <best />
     <attribution-text mandatory="true">&#169; Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0</attribution-text>
     <attribution-url>http://geoservices.buergernetz.bz.it/geokatalog/</attribution-url>
     <country-code>IT</country-code>
@@ -18123,6 +18132,7 @@
     <name>Luxembourg Geoportail Ortho 2010</name>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
+    <best />
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
@@ -18363,6 +18373,7 @@
     <name>Luxembourg Geoportail Ortho 2013</name>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
+    <best />
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
@@ -18863,6 +18874,7 @@
     <name>Geoportal.gov.pl (Orthophotomap)</name>
     <type>tms</type>
     <url>http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}</url>
+    <best />
     <attribution-text mandatory="true">Copyright &#169; G&#322;&#243;wny Urz&#261;d Geodezji i Kartografii.</attribution-text>
     <icon>http://i.imgur.com/aFlvMpM.png</icon>
     <country-code>PL</country-code>
@@ -24431,6 +24443,7 @@
     <name>2013 aerial imagery for San Juan County WA</name>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}</url>
+    <best />
     <country-code>US</country-code>
     <min-zoom>0</min-zoom>
     <max-zoom>19</max-zoom>
@@ -24454,6 +24467,7 @@
     <name>Vector Streetmap for San Juan County WA</name>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/General_Basemap_WM/MapServer/tile/{zoom}/{y}/{x}</url>
+    <best />
     <country-code>US</country-code>
     <min-zoom>0</min-zoom>
     <max-zoom>19</max-zoom>

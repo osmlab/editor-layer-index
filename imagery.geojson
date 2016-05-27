@@ -1196,8 +1196,10 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg", 
+                "country-code": "ZA", 
                 "type": "tms", 
-                "name": "South Africa CD:NGI Aerial"
+                "name": "South Africa CD:NGI Aerial", 
+                "best": true
             }
         }, 
         {
@@ -1343,6 +1345,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg", 
+                "country-code": "JP", 
                 "type": "tms", 
                 "name": "Japan GSI ortho Imagery"
             }
@@ -1424,6 +1427,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png", 
+                "country-code": "PH", 
                 "type": "tms", 
                 "name": "Pangasin\u00e1n/Bulacan (Phillipines HiRes)"
             }
@@ -1659,13 +1663,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://agri.openstreetmap.org/{zoom}/{x}/{y}.png", 
+                "country-code": "AU", 
+                "type": "tms", 
+                "name": "AGRI black-and-white 2.5m", 
                 "attribution": {
                     "url": null, 
                     "text": "AGRI", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "AGRI black-and-white 2.5m"
+                }
             }
         }, 
         {
@@ -1840,17 +1845,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=County&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "country-code": "AU", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "LPI NSW Administrative Boundaries County", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=County&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "type": "wms"
             }
         }, 
         {
@@ -2025,17 +2031,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=LocalGovernmentArea&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "country-code": "AU", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "LPI NSW Administrative Boundaries LGA", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=LocalGovernmentArea&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "type": "wms"
             }
         }, 
         {
@@ -2210,17 +2217,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=NPWSReserve&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "country-code": "AU", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "LPI NSW Administrative Boundaries NPWS Reserve", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=NPWSReserve&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "type": "wms"
             }
         }, 
         {
@@ -2395,17 +2403,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=Parish&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "country-code": "AU", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "LPI NSW Administrative Boundaries Parish", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=Parish&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "type": "wms"
             }
         }, 
         {
@@ -2580,17 +2589,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=StateForest&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "country-code": "AU", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "LPI NSW Administrative Boundaries State Forest", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=StateForest&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "type": "wms"
             }
         }, 
         {
@@ -2765,17 +2775,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=Suburb&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "country-code": "AU", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "LPI NSW Administrative Boundaries Suburb", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=Suburb&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE", 
+                "type": "wms"
             }
         }, 
         {
@@ -2897,13 +2908,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}", 
+                "country-code": "AU", 
+                "type": "tms", 
+                "name": "LPI NSW Base Map", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "LPI NSW Base Map"
+                }
             }
         }, 
         {
@@ -3261,13 +3273,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}", 
+                "country-code": "AU", 
+                "type": "tms", 
+                "name": "LPI NSW Imagery", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "LPI NSW Imagery"
+                }
             }
         }, 
         {
@@ -3861,13 +3874,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}", 
+                "country-code": "AU", 
+                "type": "tms", 
+                "name": "LPI NSW Topographic Map", 
                 "attribution": {
                     "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services", 
                     "text": "\u00a9 Land and Property Information 2015", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "LPI NSW Topographic Map"
+                }
             }
         }, 
         {
@@ -5372,13 +5386,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png", 
+                "country-code": "AT", 
+                "type": "tms", 
+                "name": "basemap.at", 
                 "attribution": {
                     "url": null, 
                     "text": "basemap.at", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "basemap.at"
+                }
             }
         }, 
         {
@@ -6155,14 +6170,16 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "country-code": "AT", 
+                "attribution": {
+                    "url": null, 
+                    "text": "basemap.at", 
+                    "required": true
+                }, 
+                "name": "basemap.at Orthofoto", 
                 "url": "http://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg", 
-                "attribution": {
-                    "url": null, 
-                    "text": "basemap.at", 
-                    "required": true
-                }, 
                 "type": "tms", 
-                "name": "basemap.at Orthofoto"
+                "best": true
             }
         }, 
         {
@@ -6939,13 +6956,12 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://gis.lebensministerium.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "AT", 
                 "attribution": {
                     "url": null, 
                     "text": "geoimage.at", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "Geoimage.at MaxRes", 
                 "available_projections": [
                     "EPSG:3857", 
@@ -6967,7 +6983,9 @@
                     "EPSG:4258", 
                     "EPSG:4326", 
                     "CRS:84"
-                ]
+                ], 
+                "url": "http://gis.lebensministerium.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -7000,19 +7018,20 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://geodaten1.graz.at/ArcGIS_Graz/services/Extern/BASISKARTE_WMS/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "AT", 
                 "attribution": {
                     "url": null, 
                     "text": "Stadt Graz \u2013 data.graz.gv.at", 
                     "required": false
                 }, 
-                "type": "wms", 
                 "name": "Graz: Basiskarte (base map)", 
                 "available_projections": [
                     "EPSG:4326", 
                     "EPSG:3857", 
                     "CRS:84"
-                ]
+                ], 
+                "url": "http://geodaten1.graz.at/ArcGIS_Graz/services/Extern/BASISKARTE_WMS/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -7935,18 +7954,19 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "AT", 
                 "attribution": {
                     "url": null, 
                     "text": "tiris.tirol.gv.at", 
                     "required": false
                 }, 
-                "type": "wms", 
                 "name": "Tiris: DGM (Terrain model)", 
                 "available_projections": [
                     "EPSG:4326", 
                     "EPSG:31254"
-                ]
+                ], 
+                "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -8869,18 +8889,19 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "AT", 
                 "attribution": {
                     "url": null, 
                     "text": "tiris.tirol.gv.at", 
                     "required": false
                 }, 
-                "type": "wms", 
                 "name": "Tiris: DOM (Surface model)", 
                 "available_projections": [
                     "EPSG:4326", 
                     "EPSG:31254"
-                ]
+                ], 
+                "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -8914,13 +8935,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png", 
+                "country-code": "AT", 
+                "type": "tms", 
+                "name": "Vienna: Beschriftungen (annotations)", 
                 "attribution": {
                     "url": "http://data.wien.gv.at/", 
                     "text": "Stadt Wien", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Vienna: Beschriftungen (annotations)"
+                }
             }
         }, 
         {
@@ -8954,13 +8976,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.wien.gv.at/wmts/fmzk/pastell/google3857/{zoom}/{y}/{x}.jpeg", 
+                "country-code": "AT", 
+                "type": "tms", 
+                "name": "Vienna: Mehrzweckkarte (general purpose)", 
                 "attribution": {
                     "url": "http://data.wien.gv.at/", 
                     "text": "Stadt Wien", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Vienna: Mehrzweckkarte (general purpose)"
+                }
             }
         }, 
         {
@@ -8994,13 +9017,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg", 
+                "country-code": "AT", 
+                "type": "tms", 
+                "name": "Vienna: Orthofoto (aerial image)", 
                 "attribution": {
                     "url": "http://data.wien.gv.at/", 
                     "text": "Stadt Wien", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Vienna: Orthofoto (aerial image)"
+                }
             }
         }, 
         {
@@ -9309,14 +9333,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=omwrgbmrvl&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}", 
+                "country-code": "BE", 
                 "attribution": {
                     "url": null, 
                     "text": "Orthophoto Flanders most recent (c) AGIV", 
                     "required": true
                 }, 
+                "name": "Belgium AGIV Orthophoto Flanders", 
+                "url": "http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=omwrgbmrvl&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}", 
                 "type": "tms", 
-                "name": "Belgium AGIV Orthophoto Flanders"
+                "best": true
             }
         }, 
         {
@@ -9822,13 +9848,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "CH", 
+                "type": "wms", 
+                "name": "Canton de G\u00e9n\u00e8ve 5cm (SITG 2011)", 
                 "attribution": {
                     "url": null, 
                     "text": "Orthophotos du SITG 2011", 
                     "required": false
-                }, 
-                "type": "wms", 
-                "name": "Canton de G\u00e9n\u00e8ve 5cm (SITG 2011)"
+                }
             }
         }, 
         {
@@ -9862,13 +9889,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png", 
+                "country-code": "CH", 
+                "type": "tms", 
+                "name": "Kanton Aargau 25cm (AGIS 2011)", 
                 "attribution": {
                     "url": null, 
                     "text": "AGIS OF2011", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Kanton Aargau 25cm (AGIS 2011)"
+                }
             }
         }, 
         {
@@ -10521,14 +10549,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
                 "attribution": {
                     "url": null, 
                     "text": "AGIS OF2014", 
                     "required": false
                 }, 
+                "name": "Kanton Aargau 25cm (AGIS 2014)", 
+                "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
                 "type": "tms", 
-                "name": "Kanton Aargau 25cm (AGIS 2014)"
+                "best": true
             }
         }, 
         {
@@ -10562,13 +10592,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
+                "type": "tms", 
+                "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)", 
                 "attribution": {
                     "url": null, 
                     "text": "Orthofoto WMS Solothurn", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)"
+                }
             }
         }, 
         {
@@ -10602,13 +10633,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_orthofoto.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "CH", 
+                "type": "wms", 
+                "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)", 
                 "attribution": {
                     "url": null, 
                     "text": "Orthofoto WMS Solothurn", 
                     "required": false
-                }, 
-                "type": "wms", 
-                "name": "Kanton Solothurn 25cm (SOGIS 2011-2014)"
+                }
             }
         }, 
         {
@@ -11057,14 +11089,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
                 "attribution": {
                     "url": null, 
                     "text": "Kanton Z\u00fcrich OF 2015", 
                     "required": false
                 }, 
+                "name": "Kanton Z\u00fcrich 2015  10cm", 
+                "url": "http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
                 "type": "tms", 
-                "name": "Kanton Z\u00fcrich 2015  10cm"
+                "best": true
             }
         }, 
         {
@@ -11098,13 +11132,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
+                "type": "tms", 
+                "name": "Stadt Uster Orthophoto 2008 10cm", 
                 "attribution": {
                     "url": null, 
                     "text": "Stadt Uster Vermessung Orthophoto 2008", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Stadt Uster Orthophoto 2008 10cm"
+                }
             }
         }, 
         {
@@ -11138,13 +11173,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
+                "type": "tms", 
+                "name": "Stadt Z\u00fcrich Luftbild 2011", 
                 "attribution": {
                     "url": null, 
                     "text": "Stadt Z\u00fcrich Luftbild 2011", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Stadt Z\u00fcrich Luftbild 2011"
+                }
             }
         }, 
         {
@@ -11178,13 +11214,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
+                "type": "tms", 
+                "name": "Stadtplan Z\u00fcrich", 
                 "attribution": {
                     "url": null, 
                     "text": "Stadt Z\u00fcrich Open Government Data", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Stadtplan Z\u00fcrich"
+                }
             }
         }, 
         {
@@ -11218,13 +11255,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw", 
+                "country-code": "CH", 
+                "type": "tms", 
+                "name": "\u00dcbersichtsplan Z\u00fcrich", 
                 "attribution": {
                     "url": null, 
                     "text": "Stadt Z\u00fcrich Open Government Data", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "\u00dcbersichtsplan Z\u00fcrich"
+                }
             }
         }, 
         {
@@ -11874,6 +11912,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.cuzk.cz/wms.asp?service=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&FORMAT=image/png&transparent=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "CZ", 
                 "type": "wms", 
                 "name": "Czech CUZK:KM", 
                 "available_projections": [
@@ -12539,6 +12578,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_cuzk.php/{zoom}/{x}/{y}.png", 
+                "country-code": "CZ", 
                 "type": "tms", 
                 "name": "Czech CUZK:KM tiles proxy"
             }
@@ -13190,13 +13230,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_uhul.php/{zoom}/{x}/{y}.jpg", 
+                "country-code": "CZ", 
+                "type": "tms", 
+                "name": "Czech \u00daHUL:ORTOFOTO tiles proxy", 
                 "attribution": {
                     "url": null, 
                     "text": "Ortofoto public domain \u00daHUL, year 2000", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Czech \u00daHUL:ORTOFOTO tiles proxy"
+                }
             }
         }, 
         {
@@ -14406,6 +14447,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geodaten.bayern.de/ogc/ogc_dop200_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=adv_dop200c&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "DE", 
                 "type": "wms", 
                 "name": "Bavaria (2 m)", 
                 "available_projections": [
@@ -14449,6 +14491,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "https://secure.erlangen.de/arcgiser/services/Luftbilder2013/MapServer/WmsServer?FORMAT=image/bmp&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Erlangen_ratio5_6.25cm.jp2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "DE", 
                 "type": "wms", 
                 "name": "Erlangen Luftbild (2013 6,25 cm)", 
                 "available_projections": [
@@ -14488,6 +14531,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "https://secure.erlangen.de/arcgiser/services/Luftbilder2011/MapServer/WmsServer?FORMAT=image/bmp&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Erlangen_ratio10_5cm_gk4.jp2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "DE", 
                 "type": "wms", 
                 "name": "Erlangen Luftbild (2011 5,0 cm)", 
                 "available_projections": [
@@ -14527,6 +14571,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://gis3.stuttgart.de/wss/service/wms_Luftbilder2011_jpg_internet/guest?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&Layers=0,1,2,3,4,5,6,7,8&STYLES=default,default,default,default,default,default,default,default,default&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "DE", 
                 "type": "wms", 
                 "name": "Stuttgart (Luftbild)", 
                 "available_projections": [
@@ -15173,14 +15218,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "DK", 
                 "attribution": {
                     "url": "http://download.kortforsyningen.dk/content/vilkaar-og-betingelser", 
                     "text": "Geodatastyrelsen og Danske Kommuner", 
                     "required": true
                 }, 
+                "name": "Geodatastyrelsen (Denmark)", 
+                "url": "http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg", 
                 "type": "tms", 
-                "name": "Geodatastyrelsen (Denmark)"
+                "best": true
             }
         }, 
         {
@@ -15318,13 +15365,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png", 
+                "country-code": "DK", 
+                "type": "tms", 
+                "name": "Stevns (Denmark)", 
                 "attribution": {
                     "url": null, 
                     "text": "Stevns Kommune", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Stevns (Denmark)"
+                }
             }
         }, 
         {
@@ -15966,13 +16014,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png", 
+                "country-code": "DK", 
+                "type": "tms", 
+                "name": "Vejmidte (Denmark)", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/Vejmidte", 
                     "text": "Danish municipalities", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Vejmidte (Denmark)"
+                }
             }
         }, 
         {
@@ -19015,17 +19064,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "EE", 
                 "attribution": {
                     "url": null, 
                     "text": "Maa-Ameti p\u00f5hikaart", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "Estonia Basemap (Maaamet)", 
                 "available_projections": [
                     "EPSG:4326"
-                ]
+                ], 
+                "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -19058,17 +19108,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=cir_ngr&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "EE", 
                 "attribution": {
                     "url": null, 
                     "text": "Maa-Ameti metsanduslik ortofoto", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "Estonia Forestry (Maaamet)", 
                 "available_projections": [
                     "EPSG:4326"
-                ]
+                ], 
+                "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=cir_ngr&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -19101,17 +19152,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=reljeef&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "EE", 
                 "attribution": {
                     "url": null, 
                     "text": "Maa-Ameti reljeefikaart", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "Estonia Hillshading (Maaamet)", 
                 "available_projections": [
                     "EPSG:4326"
-                ]
+                ], 
+                "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=reljeef&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -19144,17 +19196,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "EE", 
                 "attribution": {
                     "url": null, 
                     "text": "Maa-Ameti ortofoto ", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "Estonia Ortho (Maaamet)", 
                 "available_projections": [
                     "EPSG:4326"
-                ]
+                ], 
+                "url": "http://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -21540,6 +21593,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "ES", 
                 "type": "wms", 
                 "name": "Catastro Spain"
             }
@@ -22047,13 +22101,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "ES", 
+                "type": "wms", 
+                "name": "GRAFCAN - Canary Islands", 
                 "attribution": {
                     "url": null, 
                     "text": "GRAFCAN OrtoExpress Urbana 2009", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "GRAFCAN - Canary Islands"
+                }
             }
         }, 
         {
@@ -22481,13 +22536,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ideib.caib.es/pub_ideib/public/IMATGES_AERIES/MapServer/WMSServer?VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=8&STYLES=default&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "ES", 
+                "type": "wms", 
+                "name": "IDEIB - Balearic Islands", 
                 "attribution": {
                     "url": null, 
                     "text": "ideib.cat", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "IDEIB - Balearic Islands"
+                }
             }
         }, 
         {
@@ -23949,13 +24005,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "ES", 
+                "type": "wms", 
+                "name": "ITACyL - Castile and Le\u00f3n", 
                 "attribution": {
                     "url": null, 
                     "text": "ITACyL", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "ITACyL - Castile and Le\u00f3n"
+                }
             }
         }, 
         {
@@ -26340,14 +26397,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "ES", 
                 "attribution": {
                     "url": null, 
                     "text": "PNOA", 
                     "required": true
                 }, 
+                "name": "PNOA Spain", 
+                "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
                 "type": "wms", 
-                "name": "PNOA Spain"
+                "best": true
             }
         }, 
         {
@@ -28733,13 +28792,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ORTOFOTOS&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "ES", 
+                "type": "wms", 
+                "name": "SIGPAC Spain", 
                 "attribution": {
                     "url": null, 
                     "text": "SIGPAC", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "SIGPAC Spain"
+                }
             }
         }, 
         {
@@ -30688,20 +30748,21 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=auvergne&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
                     "text": "Orthophotographie CRAIG/TopoGEODIS 2009-2010", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "CRAIG - Auvergne 2009/2010 - 30 cm", 
                 "available_projections": [
                     "EPSG:2154", 
                     "EPSG:4326", 
                     "EPSG:900913", 
                     "EPSG:4171"
-                ]
+                ], 
+                "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=auvergne&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -31199,13 +31260,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=le_puy&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
+                "type": "wms", 
+                "name": "CRAIG - Le Puy 2010 - 15 cm", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
                     "text": "Orthophotographie CRAIG/TopoGEODIS 2010", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "CRAIG - Le Puy 2010 - 15 cm"
+                }
             }
         }, 
         {
@@ -31495,13 +31557,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=montlucon&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
+                "type": "wms", 
+                "name": "CRAIG - Montlu\u00e7on 2009 - 15 cm", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
                     "text": "Orthophotographie CRAIG/TopoGEODIS 2009", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "CRAIG - Montlu\u00e7on 2009 - 15 cm"
+                }
             }
         }, 
         {
@@ -32095,13 +32158,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=moulins&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
+                "type": "wms", 
+                "name": "CRAIG - Moulins 2009 - 15 cm", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
                     "text": "Orthophotographie CRAIG/TopoGEODIS 2009", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "CRAIG - Moulins 2009 - 15 cm"
+                }
             }
         }, 
         {
@@ -32455,13 +32519,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=vichy&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
+                "type": "wms", 
+                "name": "CRAIG - Vichy 2009 - 15 cm", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
                     "text": "Orthophotographie CRAIG/TopoGEODIS 2009", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "CRAIG - Vichy 2009 - 15 cm"
+                }
             }
         }, 
         {
@@ -32793,13 +32858,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "FR-BAN", 
                 "attribution": {
                     "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)", 
                     "text": "Tiles \u00a9 cquest@Openstreetmap France, data \u00a9 OpenStreetMap contributors, ODBL", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "FR-BAN"
+                }
             }
         }, 
         {
@@ -33131,13 +33197,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{z}/{x}/{y}.png", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "FR-Cadastre", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation", 
                     "text": "cadastre-dgi-fr source : Direction G\u00e9n\u00e9rale des Imp\u00f4ts - Cadastre. Mise \u00e0 jour : 2015", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "FR-Cadastre"
+                }
             }
         }, 
         {
@@ -33171,6 +33238,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-bmo-2010&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
                 "type": "wms", 
                 "name": "G\u00e9obretagne - Brest 2010 - 10 cm"
             }
@@ -34912,6 +34980,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-megalis-56&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
                 "type": "wms", 
                 "name": "G\u00e9obretagne - Morbihan 2010"
             }
@@ -35843,13 +35912,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
+                "type": "wms", 
+                "name": "G\u00e9olittoral - Orthophotos 2000", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral", 
                     "text": "Ortho littorale 2000", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "G\u00e9olittoral - Orthophotos 2000"
+                }
             }
         }, 
         {
@@ -36493,13 +36563,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "FR", 
+                "type": "wms", 
+                "name": "G\u00e9olittoral V2 - Orthophotos 2010-2012", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral", 
                     "text": "Ortho Littorale V2 - MEDDE", 
                     "required": true
-                }, 
-                "type": "wms", 
-                "name": "G\u00e9olittoral V2 - Orthophotos 2010-2012"
+                }
             }
         }, 
         {
@@ -36837,13 +36908,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "Toulouse - Orthophotoplan 2007", 
                 "attribution": {
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData", 
                     "text": "ToulouseMetropole", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Toulouse - Orthophotoplan 2007"
+                }
             }
         }, 
         {
@@ -37077,13 +37149,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "Toulouse - Orthophotoplan 2011", 
                 "attribution": {
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData", 
                     "text": "ToulouseMetropole", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Toulouse - Orthophotoplan 2011"
+                }
             }
         }, 
         {
@@ -37317,13 +37390,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "Toulouse - Orthophotoplan 2013", 
                 "attribution": {
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData", 
                     "text": "ToulouseMetropole", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Toulouse - Orthophotoplan 2013"
+                }
             }
         }, 
         {
@@ -37557,13 +37631,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "Toulouse - Orthophotoplan 2015", 
                 "attribution": {
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData", 
                     "text": "ToulouseMetropole", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Toulouse - Orthophotoplan 2015"
+                }
             }
         }, 
         {
@@ -37597,13 +37672,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "Tours - Orthophotos 2013", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
                     "text": "Orthophoto Tour(s)plus 2013", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Tours - Orthophotos 2013"
+                }
             }
         }, 
         {
@@ -38205,13 +38281,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}", 
+                "country-code": "FR", 
+                "type": "tms", 
+                "name": "Tours - Orthophotos 2008-2010", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto", 
                     "text": "Orthophoto Tour(s) Plus 2008", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Tours - Orthophotos 2008-2010"
+                }
             }
         }, 
         {
@@ -38245,6 +38322,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "7th Series (OS7)"
             }
@@ -38280,13 +38358,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/mapdata2/bartholomew/great_britain/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "NLS - Bartholomew Half Inch, 1897-1907", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "NLS - Bartholomew Half Inch, 1897-1907"
+                }
             }
         }, 
         {
@@ -39374,13 +39453,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/mapdata2/os/seventh/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "NLS - OS 1-inch 7th Series 1955-61", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "NLS - OS 1-inch 7th Series 1955-61"
+                }
             }
         }, 
         {
@@ -41324,13 +41404,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/mapdata2/os/25000/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "NLS - OS 1:25k 1st Series 1937-61", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "NLS - OS 1:25k 1st Series 1937-61"
+                }
             }
         }, 
         {
@@ -41364,13 +41445,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "NLS - OS 25-inch (Scotland), 1892-1905", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "NLS - OS 25-inch (Scotland), 1892-1905"
+                }
             }
         }, 
         {
@@ -41404,13 +41486,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/mapdata3/os/6_inch_gb_1900/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "NLS - OS 6-inch County Series, 1888-1913", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "NLS - OS 6-inch County Series, 1888-1913"
+                }
             }
         }, 
         {
@@ -43062,13 +43145,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "NLS - OS 6-inch Scotland 1842-82", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "NLS - OS 6-inch Scotland 1842-82"
+                }
             }
         }, 
         {
@@ -43102,13 +43186,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/aberdeen/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Aberdeen 1866-1867 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/aberdeen.html", 
                     "text": "National Library of Scotland - Aberdeen 1866-1867", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Aberdeen 1866-1867 (NLS)"
+                }
             }
         }, 
         {
@@ -43142,13 +43227,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/airdrie/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Airdrie 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/airdrie.html", 
                     "text": "National Library of Scotland - Airdrie 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Airdrie 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -43182,13 +43268,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/alexandria/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Alexandria 1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/alexandria.html", 
                     "text": "National Library of Scotland - Alexandria 1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Alexandria 1859 (NLS)"
+                }
             }
         }, 
         {
@@ -43222,13 +43309,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/alloa/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Alloa 1861-1862 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/alloa.html", 
                     "text": "National Library of Scotland - Alloa 1861-1862", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Alloa 1861-1862 (NLS)"
+                }
             }
         }, 
         {
@@ -43262,13 +43350,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/annan/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Annan 1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/annan.html", 
                     "text": "National Library of Scotland - Annan 1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Annan 1859 (NLS)"
+                }
             }
         }, 
         {
@@ -43302,13 +43391,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/arbroath/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Arbroath 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/arbroath.html", 
                     "text": "National Library of Scotland - Arbroath 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Arbroath 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -43342,13 +43432,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Ayr 1855 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/ayr.html", 
                     "text": "National Library of Scotland - Ayr 1855", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Ayr 1855 (NLS)"
+                }
             }
         }, 
         {
@@ -43382,13 +43473,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/berwick/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Berwick-upon-Tweed 1852 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/berwick.html", 
                     "text": "National Library of Scotland - Berwick-upon-Tweed 1852", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Berwick-upon-Tweed 1852 (NLS)"
+                }
             }
         }, 
         {
@@ -43422,13 +43514,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/brechin/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Brechin 1862 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/brechin.html", 
                     "text": "National Library of Scotland - Brechin 1862", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Brechin 1862 (NLS)"
+                }
             }
         }, 
         {
@@ -43462,13 +43555,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/burntisland/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Burntisland 1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/burntisland.html", 
                     "text": "National Library of Scotland - Burntisland 1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Burntisland 1894 (NLS)"
+                }
             }
         }, 
         {
@@ -43502,13 +43596,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/campbeltown/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Campbelton 1865 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/campbelton.html", 
                     "text": "National Library of Scotland - Campbelton 1865", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Campbelton 1865 (NLS)"
+                }
             }
         }, 
         {
@@ -43542,13 +43637,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/coatbridge/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Coatbridge 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/coatbridge.html", 
                     "text": "National Library of Scotland - Coatbridge 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Coatbridge 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -43582,13 +43678,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/cupar1854/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Cupar 1854 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/cupar_1.html", 
                     "text": "National Library of Scotland - Cupar 1854", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Cupar 1854 (NLS)"
+                }
             }
         }, 
         {
@@ -43622,13 +43719,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/cupar1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Cupar 1893-1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/cupar_2.html", 
                     "text": "National Library of Scotland - Cupar 1893-1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Cupar 1893-1894 (NLS)"
+                }
             }
         }, 
         {
@@ -43662,13 +43760,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dalkeith1852/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dalkeith 1852 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dalkeith_1.html", 
                     "text": "National Library of Scotland - Dalkeith 1852", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dalkeith 1852 (NLS)"
+                }
             }
         }, 
         {
@@ -43702,13 +43801,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dalkeith1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dalkeith 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dalkeith_2.html", 
                     "text": "National Library of Scotland - Dalkeith 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dalkeith 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -43742,13 +43842,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dumbarton/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dumbarton 1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dumbarton.html", 
                     "text": "National Library of Scotland - Dumbarton 1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dumbarton 1859 (NLS)"
+                }
             }
         }, 
         {
@@ -43782,13 +43883,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dumfries1850/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dumfries 1850 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dumfries_1.html", 
                     "text": "National Library of Scotland - Dumfries 1850", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dumfries 1850 (NLS)"
+                }
             }
         }, 
         {
@@ -43822,13 +43924,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dumfries1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dumfries 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dumfries_2.html", 
                     "text": "National Library of Scotland - Dumfries 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dumfries 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -43862,13 +43965,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dundee1857/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dundee 1857-1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dundee_1.html", 
                     "text": "National Library of Scotland - Dundee 1857-1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dundee 1857-1858 (NLS)"
+                }
             }
         }, 
         {
@@ -43902,13 +44006,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dundee1870/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dundee 1870-1872 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dundee_2.html", 
                     "text": "National Library of Scotland - Dundee 1870-1872", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dundee 1870-1872 (NLS)"
+                }
             }
         }, 
         {
@@ -43942,13 +44047,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dunfermline1854/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dunfermline 1854 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dunfermline_1.html", 
                     "text": "National Library of Scotland - Dunfermline 1854", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dunfermline 1854 (NLS)"
+                }
             }
         }, 
         {
@@ -43982,13 +44088,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/dunfermline1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Dunfermline 1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/dunfermline_2.html", 
                     "text": "National Library of Scotland - Dunfermline 1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Dunfermline 1894 (NLS)"
+                }
             }
         }, 
         {
@@ -44022,13 +44129,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/edinburgh1056_1.html", 
                     "text": "National Library of Scotland - Edinburgh 1849-1851", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)"
+                }
             }
         }, 
         {
@@ -44062,13 +44170,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/edinburgh1876/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Edinburgh 1876-1877 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/edinburgh1056_2.html", 
                     "text": "National Library of Scotland - Edinburgh 1876-1877", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Edinburgh 1876-1877 (NLS)"
+                }
             }
         }, 
         {
@@ -44102,13 +44211,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/edinburgh1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/edinburgh500.html", 
                     "text": "National Library of Scotland - Edinburgh 1893-1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)"
+                }
             }
         }, 
         {
@@ -44142,13 +44252,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/elgin/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Elgin 1868 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/elgin.html", 
                     "text": "National Library of Scotland - Elgin 1868", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Elgin 1868 (NLS)"
+                }
             }
         }, 
         {
@@ -44182,13 +44293,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Falkirk 1858-1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/falkirk.html", 
                     "text": "National Library of Scotland - Falkirk 1858-1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Falkirk 1858-1859 (NLS)"
+                }
             }
         }, 
         {
@@ -44222,13 +44334,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/forfar/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Forfar 1860-1861 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/forfar.html", 
                     "text": "National Library of Scotland - Forfar 1860-1861", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Forfar 1860-1861 (NLS)"
+                }
             }
         }, 
         {
@@ -44262,13 +44375,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/forres/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Forres 1868 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/forres.html", 
                     "text": "National Library of Scotland - Forres 1868", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Forres 1868 (NLS)"
+                }
             }
         }, 
         {
@@ -44302,13 +44416,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/galashiels/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Galashiels 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/galashiels.html", 
                     "text": "National Library of Scotland - Galashiels 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Galashiels 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -44342,13 +44457,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/girvan/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Girvan 1857 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/girvan.html", 
                     "text": "National Library of Scotland - Girvan 1857", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Girvan 1857 (NLS)"
+                }
             }
         }, 
         {
@@ -44382,13 +44498,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/glasgow1857/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Glasgow 1857-1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/glasgow_1.html", 
                     "text": "National Library of Scotland - Glasgow 1857-1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Glasgow 1857-1858 (NLS)"
+                }
             }
         }, 
         {
@@ -44422,13 +44539,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Glasgow 1892-1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/glasgow_2.html", 
                     "text": "National Library of Scotland - Glasgow 1892-1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Glasgow 1892-1894 (NLS)"
+                }
             }
         }, 
         {
@@ -44462,13 +44580,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/greenock/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Greenock 1857 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/greenock.html", 
                     "text": "National Library of Scotland - Greenock 1857", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Greenock 1857 (NLS)"
+                }
             }
         }, 
         {
@@ -44502,13 +44621,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/haddington1853/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Haddington 1853 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/haddington_1.html", 
                     "text": "National Library of Scotland - Haddington 1853", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Haddington 1853 (NLS)"
+                }
             }
         }, 
         {
@@ -44542,13 +44662,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/haddington1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Haddington 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/haddington_2.html", 
                     "text": "National Library of Scotland - Haddington 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Haddington 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -44582,13 +44703,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/hamilton/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Hamilton 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/hamilton.html", 
                     "text": "National Library of Scotland - Hamilton 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Hamilton 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -44622,13 +44744,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/hawick/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Hawick 1857-1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/hawick.html", 
                     "text": "National Library of Scotland - Hawick 1857-1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Hawick 1857-1858 (NLS)"
+                }
             }
         }, 
         {
@@ -44662,13 +44785,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/inverness/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Inverness 1867-1868 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/inverness.html", 
                     "text": "National Library of Scotland - Inverness 1867-1868", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Inverness 1867-1868 (NLS)"
+                }
             }
         }, 
         {
@@ -44702,13 +44826,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/irvine/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Irvine 1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/irvine.html", 
                     "text": "National Library of Scotland - Irvine 1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Irvine 1859 (NLS)"
+                }
             }
         }, 
         {
@@ -44742,13 +44867,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/jedburgh/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Jedburgh 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/jedburgh.html", 
                     "text": "National Library of Scotland - Jedburgh 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Jedburgh 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -44782,13 +44908,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kelso/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kelso 1857 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kelso.html", 
                     "text": "National Library of Scotland - Kelso 1857", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kelso 1857 (NLS)"
+                }
             }
         }, 
         {
@@ -44822,13 +44949,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kilmarnock/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kilmarnock 1857-1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kilmarnock.html", 
                     "text": "National Library of Scotland - Kilmarnock 1857-1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kilmarnock 1857-1859 (NLS)"
+                }
             }
         }, 
         {
@@ -44862,13 +44990,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kirkcaldy1855/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kirkcaldy 1855 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kirkcaldy_1.html", 
                     "text": "National Library of Scotland - Kirkcaldy 1855", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kirkcaldy 1855 (NLS)"
+                }
             }
         }, 
         {
@@ -44902,13 +45031,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kirkcaldy1894/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kirkcaldy 1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kirkcaldy_2.html", 
                     "text": "National Library of Scotland - Kirkcaldy 1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kirkcaldy 1894 (NLS)"
+                }
             }
         }, 
         {
@@ -44942,13 +45072,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kirkcudbright1850/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kirkcudbright 1850 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kirkcudbright_1.html", 
                     "text": "National Library of Scotland - Kirkcudbright 1850", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kirkcudbright 1850 (NLS)"
+                }
             }
         }, 
         {
@@ -44982,13 +45113,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kirkcudbright1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kirkcudbright 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kirkcudbright_2.html", 
                     "text": "National Library of Scotland - Kirkcudbright 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kirkcudbright 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -45022,13 +45154,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kirkintilloch/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kirkintilloch 1859 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kirkintilloch.html", 
                     "text": "National Library of Scotland - Kirkintilloch 1859", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kirkintilloch 1859 (NLS)"
+                }
             }
         }, 
         {
@@ -45062,13 +45195,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/kirriemuir/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Kirriemuir 1861 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/kirriemuir.html", 
                     "text": "National Library of Scotland - Kirriemuir 1861", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Kirriemuir 1861 (NLS)"
+                }
             }
         }, 
         {
@@ -45102,13 +45236,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/lanark/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Lanark 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/lanark.html", 
                     "text": "National Library of Scotland - Lanark 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Lanark 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -45142,13 +45277,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/linlithgow/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Linlithgow 1856 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/linlithgow.html", 
                     "text": "National Library of Scotland - Linlithgow 1856", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Linlithgow 1856 (NLS)"
+                }
             }
         }, 
         {
@@ -45182,13 +45318,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Mayole 1856-1857 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/maybole.html", 
                     "text": "National Library of Scotland - Mayole 1856-1857", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Mayole 1856-1857 (NLS)"
+                }
             }
         }, 
         {
@@ -45222,13 +45359,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/montrose/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Montrose 1861-1862 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/montrose.html", 
                     "text": "National Library of Scotland - Montrose 1861-1862", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Montrose 1861-1862 (NLS)"
+                }
             }
         }, 
         {
@@ -45262,13 +45400,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/musselburgh1853/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Musselburgh 1853 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/musselburgh_1.html", 
                     "text": "National Library of Scotland - Musselburgh 1853", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Musselburgh 1853 (NLS)"
+                }
             }
         }, 
         {
@@ -45302,13 +45441,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/musselburgh1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Musselburgh 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/musselburgh_2.html", 
                     "text": "National Library of Scotland - Musselburgh 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Musselburgh 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -45342,13 +45482,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Nairn 1867-1868 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/nairn.html", 
                     "text": "National Library of Scotland - Nairn 1867-1868", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Nairn 1867-1868 (NLS)"
+                }
             }
         }, 
         {
@@ -45382,13 +45523,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/oban/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Oban 1867-1868 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/oban.html", 
                     "text": "National Library of Scotland - Oban 1867-1868", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Oban 1867-1868 (NLS)"
+                }
             }
         }, 
         {
@@ -45422,13 +45564,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Paisley 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/paisley.html", 
                     "text": "National Library of Scotland - Paisley 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Paisley 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -45462,13 +45605,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/peebles/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Peebles 1856 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/peebles.html", 
                     "text": "National Library of Scotland - Peebles 1856", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Peebles 1856 (NLS)"
+                }
             }
         }, 
         {
@@ -45502,13 +45646,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Perth 1860 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/perth.html", 
                     "text": "National Library of Scotland - Perth 1860", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Perth 1860 (NLS)"
+                }
             }
         }, 
         {
@@ -45542,13 +45687,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/peterhead/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Peterhead 1868 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/peterhead", 
                     "text": "National Library of Scotland - Peterhead 1868", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Peterhead 1868 (NLS)"
+                }
             }
         }, 
         {
@@ -45582,13 +45728,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/portglasgow/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Port Glasgow 1856-1857 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/port-glasgow.html", 
                     "text": "National Library of Scotland - Port Glasgow 1856-1857", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Port Glasgow 1856-1857 (NLS)"
+                }
             }
         }, 
         {
@@ -45622,13 +45769,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/portobello/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Portobello 1893-1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/portobello.html", 
                     "text": "National Library of Scotland - Portobello 1893-1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Portobello 1893-1894 (NLS)"
+                }
             }
         }, 
         {
@@ -45662,13 +45810,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Rothesay 1862-1863 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/rothesay.html", 
                     "text": "National Library of Scotland - Rothesay 1862-1863", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Rothesay 1862-1863 (NLS)"
+                }
             }
         }, 
         {
@@ -45702,13 +45851,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/selkirk/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Selkirk 1865 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/selkirk.html", 
                     "text": "National Library of Scotland - Selkirk 1865", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Selkirk 1865 (NLS)"
+                }
             }
         }, 
         {
@@ -45742,13 +45892,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/standrews1854/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, St Andrews 1854 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/st-andrews_1.html", 
                     "text": "National Library of Scotland - St Andrews 1854", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, St Andrews 1854 (NLS)"
+                }
             }
         }, 
         {
@@ -45782,13 +45933,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/standrews1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, St Andrews 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/st-andrews_2.html", 
                     "text": "National Library of Scotland - St Andrews 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, St Andrews 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -45822,13 +45974,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Stirling 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/stirling.html", 
                     "text": "National Library of Scotland - Stirling 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Stirling 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -45862,13 +46015,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/stonehaven/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Stonehaven 1864 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/stonehaven.html", 
                     "text": "National Library of Scotland - Stonehaven 1864", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Stonehaven 1864 (NLS)"
+                }
             }
         }, 
         {
@@ -45902,13 +46056,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Stranraer 1847 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/stranraer_1.html", 
                     "text": "National Library of Scotland - Stranraer 1847", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Stranraer 1847 (NLS)"
+                }
             }
         }, 
         {
@@ -45942,13 +46097,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/stranraer1867/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Stranraer 1863-1877 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/stranraer_1a.html", 
                     "text": "National Library of Scotland - Stranraer 1863-1877", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Stranraer 1863-1877 (NLS)"
+                }
             }
         }, 
         {
@@ -45982,13 +46138,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/stranraer1893/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Stranraer 1893 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/stranraer_2.html", 
                     "text": "National Library of Scotland - Stranraer 1893", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Stranraer 1893 (NLS)"
+                }
             }
         }, 
         {
@@ -46022,13 +46179,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/strathaven/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Strathaven 1858 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/strathaven.html", 
                     "text": "National Library of Scotland - Strathaven 1858", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Strathaven 1858 (NLS)"
+                }
             }
         }, 
         {
@@ -46062,13 +46220,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Wick 1872 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/wick.html", 
                     "text": "National Library of Scotland - Wick 1872", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Wick 1872 (NLS)"
+                }
             }
         }, 
         {
@@ -46102,13 +46261,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Wigtown 1848 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/wigtown_1.html", 
                     "text": "National Library of Scotland - Wigtown 1848", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Wigtown 1848 (NLS)"
+                }
             }
         }, 
         {
@@ -46142,13 +46302,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/towns/wigtown1894/{zoom}/{x}/{-y}.png", 
+                "country-code": "GB", 
+                "type": "tms", 
+                "name": "OS Town Plans, Wigtown 1894 (NLS)", 
                 "attribution": {
                     "url": "http://maps.nls.uk/townplans/wigtown_2.html", 
                     "text": "National Library of Scotland - Wigtown 1894", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "OS Town Plans, Wigtown 1894 (NLS)"
+                }
             }
         }, 
         {
@@ -46182,6 +46343,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ooc.openstreetmap.org/os1/{zoom}/{x}/{y}.jpg", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "OS 1:25k historic (OSM)"
             }
@@ -46217,6 +46379,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ooc.openstreetmap.org/npe/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "OS New Popular Edition historic"
             }
@@ -46252,6 +46415,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "OS OpenData Locator"
             }
@@ -47355,6 +47519,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "OS OpenData StreetView"
             }
@@ -47390,6 +47555,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ooc.openstreetmap.org/npescotland/tiles/{zoom}/{x}/{y}.jpg", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "OS Scottish Popular historic"
             }
@@ -47881,6 +48047,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://gravitystorm.dev.openstreetmap.org/surrey/{zoom}/{x}/{y}.png", 
+                "country-code": "GB", 
                 "type": "tms", 
                 "name": "Surrey Air Survey"
             }
@@ -48571,14 +48738,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://geoserver.infobex.hu/Budapest2014/IST/{zoom}/{x}/{y}.jpg", 
+                "country-code": "HU", 
                 "attribution": {
                     "url": "http://interspect.hu/", 
                     "text": "Interspect Kft.", 
                     "required": true
                 }, 
+                "name": "Interspect ortofot\u00f3 2014", 
+                "url": "http://geoserver.infobex.hu/Budapest2014/IST/{zoom}/{x}/{y}.jpg", 
                 "type": "tms", 
-                "name": "Interspect ortofot\u00f3 2014"
+                "best": true
             }
         }, 
         {
@@ -49591,17 +49760,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://turistautak.openstreetmap.hu/kolesar/wms/Budapest-XII/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofot%C3%B3%202013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "HU", 
                 "attribution": {
                     "url": "http://www.hegyvidek.hu/", 
                     "text": "Budapest XII. ker\u00fclet \u00f6nkorm\u00e1nyzata", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "Budapest district XII ortophoto 2013", 
                 "available_projections": [
                     "EPSG:23700"
-                ]
+                ], 
+                "url": "http://turistautak.openstreetmap.hu/kolesar/wms/Budapest-XII/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofot%C3%B3%202013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -49655,13 +49825,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://e.tile.openstreetmap.hu/dunai-arviz-2013/{zoom}/{x}/{y}.jpg", 
+                "country-code": "HU", 
+                "type": "tms", 
+                "name": "Danube flood ortophoto 2013", 
                 "attribution": {
                     "url": "http://fototerkep.hu/", 
                     "text": "Fot\u00f3t\u00e9rk\u00e9p.hu", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Danube flood ortophoto 2013"
+                }
             }
         }, 
         {
@@ -51971,13 +52142,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://e.tile.openstreetmap.hu/ortofoto2000/{zoom}/{x}/{y}.jpg", 
+                "country-code": "HU", 
+                "type": "tms", 
+                "name": "F\u00d6MI ortofot\u00f3 2000", 
                 "attribution": {
                     "url": "http://www.fomi.hu/", 
                     "text": "F\u00f6ldm\u00e9r\u00e9si \u00e9s T\u00e1v\u00e9rz\u00e9kel\u00e9si Int\u00e9zet", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "F\u00d6MI ortofot\u00f3 2000"
+                }
             }
         }, 
         {
@@ -54287,13 +54459,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://e.tile.openstreetmap.hu/ortofoto2005/{zoom}/{x}/{y}.jpg", 
+                "country-code": "HU", 
+                "type": "tms", 
+                "name": "F\u00d6MI ortofot\u00f3 2005", 
                 "attribution": {
                     "url": "http://www.fomi.hu/", 
                     "text": "F\u00f6ldm\u00e9r\u00e9si \u00e9s T\u00e1v\u00e9rz\u00e9kel\u00e9si Int\u00e9zet", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "F\u00d6MI ortofot\u00f3 2005"
+                }
             }
         }, 
         {
@@ -54523,13 +54696,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png", 
+                "country-code": "HU", 
+                "type": "tms", 
+                "name": "Szeged ortophoto 2011", 
                 "attribution": {
                     "url": "http://www.geo.u-szeged.hu/", 
                     "text": "SZTE TFGT - University of Szeged", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Szeged ortophoto 2011"
+                }
             }
         }, 
         {
@@ -55154,20 +55328,21 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "HU", 
                 "attribution": {
                     "url": "http://www.torokbalint.hu/", 
                     "text": "T\u00f6r\u00f6kb\u00e1lint", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "T\u00f6r\u00f6kb\u00e1lint ortophoto 2013", 
                 "available_projections": [
                     "EPSG:4326", 
                     "EPSG:900913", 
                     "EPSG:23700", 
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -55337,13 +55512,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/ireland/bartholomew/{zoom}/{x}/{-y}.png", 
+                "country-code": "IE", 
+                "type": "tms", 
+                "name": "Ireland Bartholomew Quarter-Inch 1940", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Ireland Bartholomew Quarter-Inch 1940"
+                }
             }
         }, 
         {
@@ -55377,13 +55553,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png", 
+                "country-code": "IE", 
+                "type": "tms", 
+                "name": "Ireland British War Office 1:25k GSGS 3906", 
                 "attribution": {
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_Ireland#Trinity_College_Dublin", 
                     "text": "Glucksman Map Library, Trinity College Dublin", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Ireland British War Office 1:25k GSGS 3906"
+                }
             }
         }, 
         {
@@ -55617,13 +55794,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png", 
+                "country-code": "IE", 
+                "type": "tms", 
+                "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136", 
                 "attribution": {
                     "url": "http://geo.nls.uk/maps/", 
                     "text": "National Library of Scotland Historic Maps", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136"
+                }
             }
         }, 
         {
@@ -55793,13 +55971,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://a.tile.openstreetmap.ie/tiles/corine/{zoom}/{x}/{y}.png", 
+                "country-code": "IE", 
+                "type": "tms", 
+                "name": "Ireland EEA CORINE 2006", 
                 "attribution": {
                     "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1", 
                     "text": "EEA Corine 2006", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Ireland EEA CORINE 2006"
+                }
             }
         }, 
         {
@@ -57341,13 +57520,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://a.tile.openstreetmap.ie/tiles/urbanatlas/{zoom}/{x}/{y}.png", 
+                "country-code": "IE", 
+                "type": "tms", 
+                "name": "Ireland EEA GMES Urban Atlas", 
                 "attribution": {
                     "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas", 
                     "text": "EEA GMES Urban Atlas", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Ireland EEA GMES Urban Atlas"
+                }
             }
         }, 
         {
@@ -57453,6 +57633,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Terraitaly%20Ortofoto%202007&STYLES=%2C%2C&FORMAT=image/png&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "IT", 
                 "type": "wms", 
                 "name": "Lodi - Italy", 
                 "available_projections": [
@@ -59352,13 +59533,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_OF_2011_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg", 
+                "country-code": "IT", 
+                "type": "tms", 
+                "name": "South Tyrol Orthofoto 2011", 
                 "attribution": {
                     "url": "http://geoservices.buergernetz.bz.it/geokatalog/", 
                     "text": "\u00a9 Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "South Tyrol Orthofoto 2011"
+                }
             }
         }, 
         {
@@ -61251,17 +61433,18 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=P_BZ_OF_2011_EPSG3857,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "country-code": "IT", 
                 "attribution": {
                     "url": "http://geoservices.buergernetz.bz.it/geokatalog/", 
                     "text": "\u00a9 Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0", 
                     "required": true
                 }, 
-                "type": "wms", 
                 "name": "South Tyrol Orthofoto 2011 (highres)", 
                 "available_projections": [
                     "EPSG:3857"
-                ]
+                ], 
+                "url": "http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=P_BZ_OF_2011_EPSG3857,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+                "type": "wms"
             }
         }, 
         {
@@ -62416,14 +62599,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_OF_2014_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg", 
+                "country-code": "IT", 
                 "attribution": {
                     "url": "http://geoservices.buergernetz.bz.it/geokatalog/", 
                     "text": "\u00a9 Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0", 
                     "required": true
                 }, 
+                "name": "South Tyrol Orthofoto 2014", 
+                "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_OF_2014_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg", 
                 "type": "tms", 
-                "name": "South Tyrol Orthofoto 2014"
+                "best": true
             }
         }, 
         {
@@ -64317,13 +64502,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg", 
+                "country-code": "IT", 
+                "type": "tms", 
+                "name": "South Tyrol Topomap", 
                 "attribution": {
                     "url": "http://geoservices.buergernetz.bz.it/geokatalog/", 
                     "text": "\u00a9 Autonomen Provinz Bozen/Provincia Autonoma di Bolzano", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "South Tyrol Topomap"
+                }
             }
         }, 
         {
@@ -64497,13 +64683,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg", 
+                "country-code": "LT", 
+                "type": "tms", 
+                "name": "Lithuania - N\u017dT ORT10LT", 
                 "attribution": {
                     "url": "http://www.geoportal.lt", 
                     "text": "N\u017dT ORT10LT", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Lithuania - N\u017dT ORT10LT"
+                }
             }
         }, 
         {
@@ -65425,13 +65612,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/basemap/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "LU", 
+                "type": "tms", 
+                "name": "Luxembourg Geoportail Basemap", 
                 "attribution": {
                     "url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts/", 
                     "text": "Administration du Cadastre et de la Topographie", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Luxembourg Geoportail Basemap"
+                }
             }
         }, 
         {
@@ -66353,13 +66541,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/cadastre/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "LU", 
+                "type": "tms", 
+                "name": "Luxembourg Geoportail Cadastre", 
                 "attribution": {
                     "url": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts/", 
                     "text": "Administration du Cadastre et de la Topographie", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Luxembourg Geoportail Cadastre"
+                }
             }
         }, 
         {
@@ -67280,14 +67469,16 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "country-code": "LU", 
+                "attribution": {
+                    "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts", 
+                    "text": "Administration du Cadastre et de la Topographie", 
+                    "required": false
+                }, 
+                "name": "Luxembourg Geoportail Ortho 2010", 
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg", 
-                "attribution": {
-                    "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts", 
-                    "text": "Administration du Cadastre et de la Topographie", 
-                    "required": false
-                }, 
                 "type": "tms", 
-                "name": "Luxembourg Geoportail Ortho 2010"
+                "best": true
             }
         }, 
         {
@@ -68208,14 +68399,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "LU", 
                 "attribution": {
                     "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts", 
                     "text": "Administration du Cadastre et de la Topographie", 
                     "required": false
                 }, 
+                "name": "Luxembourg Geoportail Ortho 2013", 
+                "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg", 
                 "type": "tms", 
-                "name": "Luxembourg Geoportail Ortho 2013"
+                "best": true
             }
         }, 
         {
@@ -69137,13 +69330,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/topo/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "LU", 
+                "type": "tms", 
+                "name": "Luxembourg Geoportail Topographical Map", 
                 "attribution": {
                     "url": "https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts/", 
                     "text": "Administration du Cadastre et de la Topographie", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "Luxembourg Geoportail Topographical Map"
+                }
             }
         }, 
         {
@@ -69544,14 +69738,16 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}", 
+                "country-code": "PL", 
                 "attribution": {
                     "url": null, 
                     "text": "Copyright \u00a9 G\u0142\u00f3wny Urz\u0105d Geodezji i Kartografii.", 
                     "required": true
                 }, 
+                "name": "Geoportal.gov.pl (Orthophotomap)", 
+                "url": "http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}", 
                 "type": "tms", 
-                "name": "Geoportal.gov.pl (Orthophotomap)"
+                "best": true
             }
         }, 
         {
@@ -69753,13 +69949,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://t{switch:1,2,3,4}.freemap.sk/A/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Freemap.sk Car", 
                 "attribution": {
                     "url": null, 
                     "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Freemap.sk Car"
+                }
             }
         }, 
         {
@@ -69961,13 +70158,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://t{switch:1,2,3,4}.freemap.sk/C/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Freemap.sk Cyclo", 
                 "attribution": {
                     "url": null, 
                     "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Freemap.sk Cyclo"
+                }
             }
         }, 
         {
@@ -70169,13 +70367,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://t{switch:1,2,3,4}.freemap.sk/T/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Freemap.sk Hiking", 
                 "attribution": {
                     "url": null, 
                     "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Freemap.sk Hiking"
+                }
             }
         }, 
         {
@@ -70377,13 +70576,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://t{switch:1,2,3,4}.freemap.sk/K/{zoom}/{x}/{y}.jpeg", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Freemap.sk Ski", 
                 "attribution": {
                     "url": null, 
                     "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Freemap.sk Ski"
+                }
             }
         }, 
         {
@@ -70585,13 +70785,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)", 
                 "attribution": {
                     "url": "http://wiki.freemap.sk/KatasterPortal", 
                     "text": "Permisssion by UGKK", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)"
+                }
             }
         }, 
         {
@@ -70793,13 +70994,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2011-05)", 
                 "attribution": {
                     "url": "http://wiki.freemap.sk/KatasterPortal", 
                     "text": "Permisssion by UGKK", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2011-05)"
+                }
             }
         }, 
         {
@@ -71001,13 +71203,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Slovakia EEA CORINE 2006", 
                 "attribution": {
                     "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1", 
                     "text": "EEA Corine 2006", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Slovakia EEA CORINE 2006"
+                }
             }
         }, 
         {
@@ -71209,13 +71412,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png", 
+                "country-code": "SK", 
+                "type": "tms", 
+                "name": "Slovakia EEA GMES Urban Atlas", 
                 "attribution": {
                     "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas", 
                     "text": "EEA GMES Urban Atlas", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Slovakia EEA GMES Urban Atlas"
+                }
             }
         }, 
         {
@@ -71249,6 +71453,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png", 
+                "country-code": "SK", 
                 "type": "tms", 
                 "name": "Slovakia Historic Maps"
             }
@@ -73244,13 +73449,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png", 
+                "country-code": "CA", 
+                "type": "tms", 
+                "name": "British Columbia Mosaic", 
                 "attribution": {
                     "url": "http://imagery.paulnorman.ca/tiles/about.html", 
                     "text": "Copyright Province of British Columbia, City of Surrey", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "British Columbia Mosaic"
+                }
             }
         }, 
         {
@@ -74256,6 +74462,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj(EPSG:4326)}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}", 
+                "country-code": "CA", 
                 "type": "wms", 
                 "name": "Canvec", 
                 "available_projections": [
@@ -75267,6 +75474,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nhn:hydrography,nhn:network&WIDTH={width}&height={height}&BBOX={bbox}", 
+                "country-code": "CA", 
                 "type": "wms", 
                 "name": "Geobase Hydrography", 
                 "available_projections": [
@@ -76278,6 +76486,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}", 
+                "country-code": "CA", 
                 "type": "wms", 
                 "name": "Geobase Roads", 
                 "available_projections": [
@@ -76681,6 +76890,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna2012/{zoom}/{x}/{y}.png", 
+                "country-code": "CA", 
                 "type": "tms", 
                 "name": "Kelowna 2012"
             }
@@ -77080,6 +77290,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png", 
+                "country-code": "CA", 
                 "type": "tms", 
                 "name": "Kelowna Roads overlay"
             }
@@ -77147,6 +77358,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_047026/{zoom}/{x}/{y}.png", 
+                "country-code": "CA", 
                 "type": "tms", 
                 "name": "Latest southwest British Columbia Landsat"
             }
@@ -79580,6 +79792,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/iomhaiti/{zoom}/{x}/{y}", 
+                "country-code": "HT", 
                 "type": "tms", 
                 "name": "Imagerie Drone (Haiti)"
             }
@@ -80449,6 +80662,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}", 
+                "country-code": "US", 
                 "type": "wms", 
                 "name": "MSR Maps Topo", 
                 "available_projections": [
@@ -82255,6 +82469,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=urbanarea&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}", 
+                "country-code": "US", 
                 "type": "wms", 
                 "name": "MSR Maps Urban", 
                 "available_projections": [
@@ -82631,13 +82846,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg", 
+                "country-code": "US", 
+                "type": "tms", 
+                "name": "Stamen Terrain", 
                 "attribution": {
                     "url": "http://maps.stamen.com/#terrain", 
                     "text": "Map tiles by Stamen Design, under CC BY 3.0", 
                     "required": true
-                }, 
-                "type": "tms", 
-                "name": "Stamen Terrain"
+                }
             }
         }, 
         {
@@ -83123,6 +83339,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png", 
+                "country-code": "US", 
                 "type": "tms", 
                 "name": "TIGER 2012 Roads Overlay"
             }
@@ -83610,6 +83827,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tiles.mapbox.com/v4/enf.e0b8291e/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q", 
+                "country-code": "US", 
                 "type": "tms", 
                 "name": "New & Misaligned TIGER Roads"
             }
@@ -84097,6 +84315,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://osm.cycle.travel/forest/{zoom}/{x}/{y}.png", 
+                "country-code": "US", 
                 "type": "tms", 
                 "name": "U.S. Forest Service roads"
             }
@@ -88284,6 +88503,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg", 
+                "country-code": "US", 
                 "type": "tms", 
                 "name": "USGS Large Scale Imagery"
             }
@@ -89069,6 +89289,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png", 
+                "country-code": "US", 
                 "type": "tms", 
                 "name": "USGS Topographic Maps"
             }
@@ -89272,13 +89493,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer", 
+                "country-code": "US", 
+                "type": "tms", 
+                "name": "MD 2014 6 Inch Aerial Imagery", 
                 "attribution": {
                     "url": "http://imap.maryland.gov/Pages/imagery-products.aspx", 
                     "text": "DoIT, MD iMap, MDP", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "MD 2014 6 Inch Aerial Imagery"
+                }
             }
         }, 
         {
@@ -89768,13 +89990,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015", 
+                "country-code": "US", 
+                "type": "tms", 
+                "name": "NJ 2015 Aerial Imagery (Infrared)", 
                 "attribution": {
                     "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={E30775F2-6370-4525-8E68-C371ED29BBB3}", 
                     "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "NJ 2015 Aerial Imagery (Infrared)"
+                }
             }
         }, 
         {
@@ -90264,13 +90487,14 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015", 
+                "country-code": "US", 
+                "type": "tms", 
+                "name": "NJ 2015 Aerial Imagery (Natural Color)", 
                 "attribution": {
                     "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={CDC67AB8-ADA1-4B4B-9087-67A82CB9151C}", 
                     "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)", 
                     "required": false
-                }, 
-                "type": "tms", 
-                "name": "NJ 2015 Aerial Imagery (Natural Color)"
+                }
             }
         }, 
         {
@@ -90332,8 +90556,10 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}", 
+                "country-code": "US", 
                 "type": "tms", 
-                "name": "2013 aerial imagery for San Juan County WA"
+                "name": "2013 aerial imagery for San Juan County WA", 
+                "best": true
             }
         }, 
         {
@@ -90395,8 +90621,10 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://sjcgis.org/arcgis/rest/services/Basemaps/General_Basemap_WM/MapServer/tile/{zoom}/{y}/{x}", 
+                "country-code": "US", 
                 "type": "tms", 
-                "name": "Vector Streetmap for San Juan County WA"
+                "name": "Vector Streetmap for San Juan County WA", 
+                "best": true
             }
         }, 
         {
@@ -91038,6 +91266,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.i00mo1kj/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw", 
+                "country-code": "BR", 
                 "type": "tms", 
                 "name": "IBGE Mapa de Setores Rurais"
             }
@@ -91681,6 +91910,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.hgda0m6h/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw", 
+                "country-code": "BR", 
                 "type": "tms", 
                 "name": "IBGE Mapa de Setores Urbanos"
             }
@@ -91716,6 +91946,7 @@
             "type": "Feature", 
             "properties": {
                 "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png", 
+                "country-code": "VE", 
                 "type": "tms", 
                 "name": "Landsat 233055"
             }

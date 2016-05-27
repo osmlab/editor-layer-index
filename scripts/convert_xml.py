@@ -16,6 +16,10 @@ for file in sys.argv[1:]:
     url = ET.SubElement(entry, "url")
     url.text = source['url']
 
+    if 'best' in source and source['best'] == True:
+        #entry.set('best', 'true')
+        best = ET.SubElement(entry, "best")
+
     if 'available_projections' in source:
         projections = ET.SubElement(entry, "projections")
         for projection in source['available_projections']:

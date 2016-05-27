@@ -19,6 +19,10 @@ for imagery in imageries:
     entry['properties']['name'] = imagery.getElementsByTagName('name')[0].childNodes[0].nodeValue
     entry['properties']['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
     entry['properties']['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
+    if imagery.getElementsByTagName('country-code'):
+        entry['properties']['country-code'] = imagery.getElementsByTagName('country-code')[0].childNodes[0].nodeValue
+    if imagery.getElementsByTagName('best'):
+        entry['properties']['best'] = True
 
     projs = util.getprojs(imagery)
     if projs: entry['properties']['available_projections'] = projs

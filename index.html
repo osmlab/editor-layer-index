@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <head>
-<title>OSM Editor Imagery Index</title>
+<title>OSM Editor Layer Index</title>
 <meta charset="utf-8">
 <link href='site/style.css' rel='stylesheet' type='text/css' />
+<link href='site/libs/leaflet/leaflet.css' rel='stylesheet' type='text/css' />
 </head>
 <body>
-<h1>OSM Imagery Index</h1>
-<p>Traceable imagery sources intended for use in <a href='http://openstreetmap.org/'>OpenStreetMap</a>.
+<h1>OSM Editor Layer Index</h1>
+<p>Traceable imagery and other layer sources intended for use in <a href='http://openstreetmap.org/'>OpenStreetMap</a>.
 This is an <a href='https://github.com/osmlab/editor-layer-index'>open source project on GitHub that you can
     improve.</a></p>
+
 <div id='map'></div>
 <div id='table'>
     <div id='wrap'></div>
 </div>
-<script src="site/js/d3.v3.min.js"></script>
-<script src="site/js/d3.geo.projection.v0.min.js"></script>
-<script src="site/js/topojson.v0.min.js"></script>
+
+<script src="site/libs/leaflet/leaflet.js"></script>
+<script src="site/libs/d3.v3.min.js"></script>
 <script src='site/site.js'></script>

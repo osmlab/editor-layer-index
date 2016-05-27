@@ -3,6 +3,7 @@ body {
     padding:20px;
     font: normal 15px/25px 'Helvetica Neue', sans-serif;
     color:#333;
+    margin-right:50%;
 }
 
 h1 {
@@ -23,14 +24,20 @@ a {
     font-weight:bold;
 }
 
-a:hover, a.active {
+a.active {
     color:darkred;
 }
 
 #map {
     position:fixed;
-    top:10px;
-    right:10px;
+    top:0;
+    right:0;
+    bottom:0;
+    width:50%;
+}
+
+div.best {
+    border: 1px solid gold;
 }
 
 .meta {
@@ -40,7 +47,6 @@ a:hover, a.active {
 
 .meta span {
     font: normal 10px/20px monospace;
-    max-width:50%;
     overflow: hidden;
     white-space:nowrap;
     display:block;
@@ -54,41 +60,4 @@ span.type {
     color:#aaa;
     margin-left:5px;
     font: normal 10px/20px 'Helvetica Neue', sans-serif;
-}
-
-
-
-.background {
-    fill: #73b6e6;
-}
-
-.foreground {
-    fill: none;
-    stroke: #333;
-    stroke-width: 1.5px;
-}
-
-.imagery {
-    stroke-width:0.5px;
-    stroke:lightblue;
-    fill:none;
-}
-
-.imagery.active {
-    stroke:darkred;
-    stroke-width:2px;
-}
-
-.graticule :nth-child(2n) {
-    stroke-dasharray: 2,2;
-}
-
-.land {
-    fill: #e8e0d8;
-    stroke: #ddd;
-}
-
-.boundary {
-    fill: none;
-    stroke: #a5967e;
 }
