@@ -1,0 +1,14 @@
+{
+    "url": "http://openptmap.de/tiles/{zoom}/{x}/{y}.png",
+    "attribution": {
+        "url": "http://openstreetmap.org/",
+        "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+        "required": true
+    },
+    "type": "tms",
+    "name": "OpenPT Map (overlay)",
+    "extent": {
+        "min_zoom": 4,
+        "max_zoom": 17
+    }
+}
