@@ -90,9 +90,9 @@ for imagery in imageries:
                     lon = float(point.getAttribute('lon'))
                     ring.append((lon, lat))
                 ring.append(ring[0])
-                rings.append(ring)
+                rings.append([ring])
             entry['geometry'] = {
-                "type": "Polygon",
+                "type": "MultiPolygon",
                 "coordinates": rings
             }
         collection['features'].append(entry)
