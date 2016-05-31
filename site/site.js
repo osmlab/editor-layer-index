@@ -1,10 +1,23 @@
-var map = L.map('map').fitBounds([[-90,-180],[90,180]]);
+var map = L.map('map').fitWorld();
 
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	 attribution: '&copy; <a href="www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
 }).addTo(map);
 
 d3.json("imagery.geojson", function(error, imagery) {
+	d3.json("imagery.json", function(error, imageryjson) {
+		imagery.features = imagery.features.concat(
+				imageryjson.filter(function(i) {
+						return !i.extent || !(i.extent.polygon || i.extent.bbox);
+				}).map(function(i) {
+						i['country-code'] = i.country_code;
+						return {
+								properties: i,
+								geometry: null
+						};
+				})
+		);
+
     imagery.features = imagery.features.sort(function(a,b) {
         // sort by country code, then alphabetically
         if (a.properties['country-code'] === b.properties['country-code']) {
@@ -60,10 +73,13 @@ d3.json("imagery.geojson", function(error, imagery) {
       })
       .on('click', function(d, i) {
           d3.event.preventDefault();
-          var centroid = d3.geo.centroid(d);
-          var bounds = d3.geo.bounds(d);
 
-          map.flyToBounds([bounds[0].reverse(), bounds[1].reverse()], {duration:1.0});
+          var bounds = d3.geo.bounds(d);
+					if (d.geometry === null) {
+							map.fitWorld({animate: true});
+					} else {
+          		map.flyToBounds([bounds[0].reverse(), bounds[1].reverse()], {duration:1.0});
+					}
 
           imageryLayer.eachLayer(function(layer) {
               if (layer.feature === d) {
@@ -136,4 +152,5 @@ d3.json("imagery.geojson", function(error, imagery) {
       .text(function(d) {
           return 'url: ' + d.properties.url;
       });
+	});
 });
