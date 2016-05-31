@@ -51,7 +51,7 @@ d3.json("imagery.geojson", function(error, imagery) {
 
     var imagery_links = divs.append('a')
       .text(function(d) {
-          return (d.properties['country-code'] || 'worldwide') + ' / ' + d.properties.name + (d.properties.best ? '*' : '');
+          return (d.properties['country-code'] || 'world') + ' / ' + d.properties.name + (d.properties.best ? '*' : '');
       })
       .attr('href', '#')
       .attr('title', function(d) {
