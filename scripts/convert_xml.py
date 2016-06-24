@@ -3,8 +3,12 @@ import xml.etree.cElementTree as ET
 
 root = ET.Element("imagery")
 
+sources = []
 for file in sys.argv[1:]:
-    source = json.load(open(file, 'rb'))
+    with open(file, 'rb') as f:
+        sources.append(json.load(f))
+
+for source in sorted(sources, key=lambda s: s.get('name')):
     entry = ET.SubElement(root, "entry")
 
     name = ET.SubElement(entry, "name")
