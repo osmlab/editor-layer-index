@@ -34,7 +34,8 @@ d3.json("imagery.geojson", function(error, imagery) {
             return {
                 weight: 1,
                 color: feature.properties.best ? 'gold' : 'gray',
-                fillOpacity: 0.1
+                fillOpacity: 0.1,
+                fillRule: 'nonzero'
             }
         }
     })
