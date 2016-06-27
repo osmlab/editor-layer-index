@@ -23093,7 +23093,7 @@
   <entry>
     <name>USGS Large Scale Imagery</name>
     <type>tms</type>
-    <url>https://basemap.nationalmap.gov/ArcGIS/rest/services/USGSImageryOnly/MapServer/tile/{zoom}/{y}/{x}</url>
+    <url>http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg</url>
     <country-code>US</country-code>
     <min-zoom>12</min-zoom>
     <max-zoom>20</max-zoom>
@@ -24358,200 +24358,6 @@
     <country-code>LV</country-code>
   </entry>
   <entry>
-    <name>Ukraine - Orthophotomaps 2012</name>
-    <type>tms</type>
-    <url>http://212.26.144.110/tile2/orto_10000/{zoom}/{x}/{-y}.jpg</url>
-    <max-zoom>16</max-zoom>
-    <bounds max-lat="52.393366" max-lon="40.205076" min-lat="44.370779" min-lon="22.11332">
-      <shape>
-        <point lat="51.654911" lon="23.619304" />
-        <point lat="51.640471" lon="24.098028" />
-        <point lat="51.893529" lon="24.39723" />
-        <point lat="51.959132" lon="25.191778" />
-        <point lat="51.922242" lon="26.122629" />
-        <point lat="51.809334" lon="26.498294" />
-        <point lat="51.770263" lon="27.090049" />
-        <point lat="51.626027" lon="27.628613" />
-        <point lat="51.590929" lon="28.024225" />
-        <point lat="51.681716" lon="28.280209" />
-        <point lat="51.580601" lon="28.376618" />
-        <point lat="51.568204" lon="28.825422" />
-        <point lat="51.642534" lon="29.191113" />
-        <point lat="51.439904" lon="29.417177" />
-        <point lat="51.512376" lon="29.673161" />
-        <point lat="51.475119" lon="29.822762" />
-        <point lat="51.508238" lon="30.218374" />
-        <point lat="51.307087" lon="30.544172" />
-        <point lat="51.385994" lon="30.637257" />
-        <point lat="51.636345" lon="30.514251" />
-        <point lat="52.090052" lon="30.983001" />
-        <point lat="52.079838" lon="31.282203" />
-        <point lat="52.134967" lon="31.48832" />
-        <point lat="52.055314" lon="32.109996" />
-        <point lat="52.11864" lon="32.312789" />
-        <point lat="52.324336" lon="32.439118" />
-        <point lat="52.28368" lon="32.93114" />
-        <point lat="52.393366" lon="33.296831" />
-        <point lat="52.352773" lon="33.755608" />
-        <point lat="51.780548" lon="34.357336" />
-        <point lat="51.764091" lon="34.14457" />
-        <point lat="51.679654" lon="34.058134" />
-        <point lat="51.470978" lon="34.221033" />
-        <point lat="51.300852" lon="34.250953" />
-        <point lat="51.190556" lon="34.719703" />
-        <point lat="51.211387" lon="35.111991" />
-        <point lat="51.086261" lon="35.181804" />
-        <point lat="51.034025" lon="35.387921" />
-        <point lat="50.628777" lon="35.407868" />
-        <point lat="50.385633" lon="35.620634" />
-        <point lat="50.451299" lon="36.069437" />
-        <point lat="50.411063" lon="36.215714" />
-        <point lat="50.288025" lon="36.312124" />
-        <point lat="50.326243" lon="36.471698" />
-        <point lat="50.251901" lon="36.591379" />
-        <point lat="50.459766" lon="37.465714" />
-        <point lat="50.11353" lon="37.734996" />
-        <point lat="49.938397" lon="38.057469" />
-        <point lat="49.95765" lon="38.193773" />
-        <point lat="50.075141" lon="38.190448" />
-        <point lat="50.081541" lon="38.350023" />
-        <point lat="49.989721" lon="38.416512" />
-        <point lat="49.974757" lon="38.738985" />
-        <point lat="49.833439" lon="39.008267" />
-        <point lat="49.899867" lon="39.14457" />
-        <point lat="49.781948" lon="39.277549" />
-        <point lat="49.745442" lon="39.540182" />
-        <point lat="49.584058" lon="39.799491" />
-        <point lat="49.601298" lon="40.188453" />
-        <point lat="49.504244" lon="40.058799" />
-        <point lat="49.246663" lon="40.205076" />
-        <point lat="49.061849" lon="39.932469" />
-        <point lat="49.016083" lon="39.716379" />
-        <point lat="48.854476" lon="40.088719" />
-        <point lat="48.78443" lon="39.796166" />
-        <point lat="48.652829" lon="39.693108" />
-        <point lat="48.569304" lon="39.862656" />
-        <point lat="48.313478" lon="39.99231" />
-        <point lat="47.922866" lon="39.832735" />
-        <point lat="47.831444" lon="39.742975" />
-        <point lat="47.811354" lon="39.576751" />
-        <point lat="47.851526" lon="38.865315" />
-        <point lat="47.686177" lon="38.775554" />
-        <point lat="47.601063" lon="38.383267" />
-        <point lat="47.527036" lon="38.30348" />
-        <point lat="47.238912" lon="38.300156" />
-        <point lat="47.055769" lon="38.133932" />
-        <point lat="47.05124" lon="37.545501" />
-        <point lat="46.876541" lon="37.312789" />
-        <point lat="46.926513" lon="37.20973" />
-        <point lat="46.831072" lon="36.960395" />
-        <point lat="46.616849" lon="36.744304" />
-        <point lat="46.771904" lon="36.724358" />
-        <point lat="46.724066" lon="36.445102" />
-        <point lat="46.472798" lon="36.106007" />
-        <point lat="46.660218" lon="36.205741" />
-        <point lat="46.644244" lon="35.923161" />
-        <point lat="46.399483" lon="35.43114" />
-        <point lat="45.971385" lon="35.102017" />
-        <point lat="45.751446" lon="35.045501" />
-        <point lat="45.329997" lon="35.474358" />
-        <point lat="45.532967" lon="35.859996" />
-        <point lat="45.43274" lon="35.996299" />
-        <point lat="45.518992" lon="36.11598" />
-        <point lat="45.4514" lon="36.664517" />
-        <point lat="45.341682" lon="36.654544" />
-        <point lat="45.313635" lon="36.504943" />
-        <point lat="45.241115" lon="36.475023" />
-        <point lat="45.048842" lon="36.48832" />
-        <point lat="44.98539" lon="35.810129" />
-        <point lat="45.112223" lon="35.507602" />
-        <point lat="44.933637" lon="35.427815" />
-        <point lat="44.763937" lon="35.121964" />
-        <point lat="44.756855" lon="34.676485" />
-        <point lat="44.370779" lon="33.984996" />
-        <point lat="44.385036" lon="33.689118" />
-        <point lat="44.506078" lon="33.383267" />
-        <point lat="44.589002" lon="33.350023" />
-        <point lat="44.931284" lon="33.552815" />
-        <point lat="45.126298" lon="33.42981" />
-        <point lat="45.142714" lon="33.193773" />
-        <point lat="45.339345" lon="32.831406" />
-        <point lat="45.308959" lon="32.605342" />
-        <point lat="45.3557" lon="32.445767" />
-        <point lat="45.470054" lon="32.508932" />
-        <point lat="45.681811" lon="32.877948" />
-        <point lat="45.906651" lon="33.579411" />
-        <point lat="46.026811" lon="33.589384" />
-        <point lat="46.07065" lon="33.256937" />
-        <point lat="45.971385" lon="33.024225" />
-        <point lat="46.195056" lon="31.611326" />
-        <point lat="46.614565" lon="31.275554" />
-        <point lat="46.568874" lon="30.876618" />
-        <point lat="45.987556" lon="30.434464" />
-        <point lat="45.551594" lon="29.696432" />
-        <point lat="45.46306" lon="29.792842" />
-        <point lat="45.159126" lon="29.73965" />
-        <point lat="45.414073" lon="29.473693" />
-        <point lat="45.383727" lon="29.18114" />
-        <point lat="45.220043" lon="28.748959" />
-        <point lat="45.234092" lon="28.566113" />
-        <point lat="45.329997" lon="28.290182" />
-        <point lat="45.491033" lon="28.233666" />
-        <point lat="45.567887" lon="28.316778" />
-        <point lat="45.542281" lon="28.483001" />
-        <point lat="45.737526" lon="28.473028" />
-        <point lat="46.031427" lon="28.951751" />
-        <point lat="46.181247" lon="29.02489" />
-        <point lat="46.495689" lon="28.931804" />
-        <point lat="46.57116" lon="29.187788" />
-        <point lat="46.454478" lon="29.593374" />
-        <point lat="46.465929" lon="29.819437" />
-        <point lat="46.687591" lon="29.955741" />
-        <point lat="46.819698" lon="29.8959" />
-        <point lat="46.969633" lon="29.560129" />
-        <point lat="47.299819" lon="29.546831" />
-        <point lat="47.502338" lon="29.147895" />
-        <point lat="47.77562" lon="29.231007" />
-        <point lat="47.934003" lon="29.171166" />
-        <point lat="47.994107" lon="28.86864" />
-        <point lat="48.165129" lon="28.635927" />
-        <point lat="48.06525" lon="28.443108" />
-        <point lat="48.171781" lon="28.36332" />
-        <point lat="48.154041" lon="28.256937" />
-        <point lat="48.434935" lon="27.734996" />
-        <point lat="48.452578" lon="27.555475" />
-        <point lat="48.348841" lon="26.923826" />
-        <point lat="48.171781" lon="26.365315" />
-        <point lat="47.97408" lon="26.119304" />
-        <point lat="47.916182" lon="25.384597" />
-        <point lat="47.704078" lon="24.915847" />
-        <point lat="47.942912" lon="24.520235" />
-        <point lat="47.900582" lon="24.184464" />
-        <point lat="48.005229" lon="23.582735" />
-        <point lat="47.969629" lon="23.436459" />
-        <point lat="48.105225" lon="23.153879" />
-        <point lat="47.987432" lon="23.070767" />
-        <point lat="47.958498" lon="22.858001" />
-        <point lat="48.098565" lon="22.768241" />
-        <point lat="48.103005" lon="22.585395" />
-        <point lat="48.216103" lon="22.515581" />
-        <point lat="48.4217" lon="22.11332" />
-        <point lat="49.066205" lon="22.498959" />
-        <point lat="49.111925" lon="22.588719" />
-        <point lat="49.040061" lon="22.877948" />
-        <point lat="49.181513" lon="22.721698" />
-        <point lat="49.646523" lon="22.718374" />
-        <point lat="50.105002" lon="23.24364" />
-        <point lat="50.497846" lon="24.044836" />
-        <point lat="50.687787" lon="24.058134" />
-        <point lat="50.813989" lon="23.945102" />
-        <point lat="50.853882" lon="24.101352" />
-        <point lat="51.294616" lon="23.629278" />
-        <point lat="51.654911" lon="23.619304" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
     <name>Vector Streetmap for San Juan County WA</name>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/General_Basemap_WM/MapServer/tile/{zoom}/{y}/{x}</url>
@@ -25230,111 +25036,145 @@
     </bounds>
   </entry>
   <entry>
-    <name>imagico.de OSM images for mapping</name>
+    <name>imagico.de OSM images for mapping: Alaska Range</name>
     <type>tms</type>
-    <url>http://imagico.de/map/osmim_tiles.php?z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC80700162014211LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
     <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>US</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
+    <bounds max-lat="63.546455" max-lon="-148.994366" min-lat="62.303642" min-lon="-152.708729" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Bakun Reservoir</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81190582014075LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>ID</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="3.070767" max-lon="114.765167" min-lat="2.027075" min-lon="113.534475" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Batam</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81250592016107LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>ID</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="1.451163" max-lon="104.91011" min-lat="0.0" min-lon="104.001374" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Bouvet Island</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81800982013291LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-54.375392" max-lon="3.463913" min-lat="-54.470517" min-lon="3.246529" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Clerke Rocks</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC82050982015344LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GS</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-54.720974" max-lon="-34.125201" min-lat="-55.296885" min-lon="-35.195993" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Cotonou</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="7.114272" max-lon="2.549419" min-lat="6.257762" min-lon="1.83975" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Eastern Devon Island coast</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC80360072014245LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>CA</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>11</max-zoom>
+    <bounds max-lat="75.890303" max-lon="-79.148583" min-lat="74.389499" min-lon="-84.347987" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Eastern Iceland</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC82160152013239LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>IS</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
+    <bounds max-lat="64.815728" max-lon="-13.043538" min-lat="64.208855" min-lon="-15.168054" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: El Altar</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>EC</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="-1.608106" max-lon="-78.335581" min-lat="-1.805081" min-lon="-78.531998" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Elephant Island/Clarence Island</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R009_S61_20160109&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-60.839816" max-lon="-53.723458" min-lat="-61.634697" min-lon="-56.134761" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Fogo, Cape Verde</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>CV</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="15.092494" max-lon="-24.267062" min-lat="14.74813" min-lon="-24.758782" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Greenland mosaic</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=greenland&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
     <bounds>
-      <shape>
-        <point lat="81.393403" lon="-89.831528" />
-        <point lat="83.704508" lon="-89.831528" />
-        <point lat="83.704508" lon="-17.966306" />
-        <point lat="81.393403" lon="-17.966306" />
-        <point lat="81.393403" lon="-89.831528" />
-      </shape>
-      <shape>
-        <point lat="-54.470517" lon="3.246529" />
-        <point lat="-54.375392" lon="3.246529" />
-        <point lat="-54.375392" lon="3.463913" />
-        <point lat="-54.470517" lon="3.463913" />
-        <point lat="-54.470517" lon="3.246529" />
-      </shape>
-      <shape>
-        <point lat="-53.203366" lon="73.227904" />
-        <point lat="-52.949439" lon="73.227904" />
-        <point lat="-52.949439" lon="73.789881" />
-        <point lat="-53.203366" lon="73.789881" />
-        <point lat="-53.203366" lon="73.227904" />
-      </shape>
-      <shape>
-        <point lat="74.389499" lon="-84.347987" />
-        <point lat="75.890303" lon="-84.347987" />
-        <point lat="75.890303" lon="-79.148583" />
-        <point lat="74.389499" lon="-79.148583" />
-        <point lat="74.389499" lon="-84.347987" />
-      </shape>
-      <shape>
-        <point lat="0.206873" lon="29.766297" />
-        <point lat="0.509176" lon="29.766297" />
-        <point lat="0.509176" lon="30.034668" />
-        <point lat="0.206873" lon="30.034668" />
-        <point lat="0.206873" lon="29.766297" />
-      </shape>
-      <shape>
-        <point lat="-2.800568" lon="150.388534" />
-        <point lat="-2.383396" lon="150.388534" />
-        <point lat="-2.383396" lon="150.833478" />
-        <point lat="-2.800568" lon="150.833478" />
-        <point lat="-2.800568" lon="150.388534" />
-      </shape>
-      <shape>
-        <point lat="-55.559461" lon="-72.265207" />
-        <point lat="-54.17889" lon="-72.265207" />
-        <point lat="-54.17889" lon="-69.491029" />
-        <point lat="-55.559461" lon="-69.491029" />
-        <point lat="-55.559461" lon="-72.265207" />
-      </shape>
-      <shape>
-        <point lat="34.968807" lon="73.930917" />
-        <point lat="37.098569" lon="73.930917" />
-        <point lat="37.098569" lon="76.527003" />
-        <point lat="34.968807" lon="76.527003" />
-        <point lat="34.968807" lon="73.930917" />
-      </shape>
-      <shape>
-        <point lat="-3.595498" lon="120.843824" />
-        <point lat="-2.514682" lon="120.843824" />
-        <point lat="-2.514682" lon="122.626181" />
-        <point lat="-3.595498" lon="122.626181" />
-        <point lat="-3.595498" lon="120.843824" />
-      </shape>
-      <shape>
-        <point lat="-11.789241" lon="153.061381" />
-        <point lat="-11.072293" lon="153.061381" />
-        <point lat="-11.072293" lon="154.411998" />
-        <point lat="-11.789241" lon="154.411998" />
-        <point lat="-11.789241" lon="153.061381" />
-      </shape>
-      <shape>
-        <point lat="22.362619" lon="67.862312" />
-        <point lat="24.886931" lon="67.862312" />
-        <point lat="24.886931" lon="71.490014" />
-        <point lat="22.362619" lon="71.490014" />
-        <point lat="22.362619" lon="67.862312" />
-      </shape>
-      <shape>
-        <point lat="62.303642" lon="-152.708729" />
-        <point lat="63.546455" lon="-152.708729" />
-        <point lat="63.546455" lon="-148.994366" />
-        <point lat="62.303642" lon="-148.994366" />
-        <point lat="62.303642" lon="-152.708729" />
-      </shape>
-      <shape>
-        <point lat="53.280219" lon="7.63568" />
-        <point lat="55.502458" lon="7.63568" />
-        <point lat="55.502458" lon="9.207732" />
-        <point lat="53.280219" lon="9.207732" />
-        <point lat="53.280219" lon="7.63568" />
-      </shape>
-      <shape>
-        <point lat="53.280219" lon="7.63568" />
-        <point lat="55.502458" lon="7.63568" />
-        <point lat="55.502458" lon="9.207732" />
-        <point lat="53.280219" lon="9.207732" />
-        <point lat="53.280219" lon="7.63568" />
-      </shape>
       <shape>
         <point lat="59.788846" lon="-43.335169" />
         <point lat="59.723922" lon="-43.594064" />
@@ -25481,6 +25321,328 @@
         <point lat="59.788846" lon="-43.335169" />
       </shape>
     </bounds>
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Heard Island coast</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>AU</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-52.87549" max-lon="74.088553" min-lat="-53.27055" min-lon="73.068965" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Isla Londonderry</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC82280982013259LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>CL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
+    <bounds max-lat="-54.17889" max-lon="-69.491029" min-lat="-55.559461" min-lon="-72.265207" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Leskov Island ASTER</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00311162013112731_20150618142416_109190&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GS</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-56.624975" max-lon="-27.969612" min-lat="-56.721108" min-lon="-28.210747" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Leskov Island Landsat</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81991002015286LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GS</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-56.600753" max-lon="-27.969046" min-lat="-56.73477" min-lon="-28.227761" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: May 2013 off-nadir Landsat</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=ls_polar&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>10</max-zoom>
+    <bounds max-lat="83.704508" max-lon="-17.966306" min-lat="81.393403" min-lon="-89.831528" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: New Ireland</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC80940622015159LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>PG</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="-2.383396" max-lon="150.833478" min-lat="-2.800568" min-lon="150.388534" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Northern Ellesmere Island</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=nellesmere_ast&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>CA</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>10</max-zoom>
+    <bounds max-lat="83.09584" max-lon="-65.658385" min-lat="82.459769" min-lon="-83.031363" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Northern German west coast tidalflats</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00vis&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>DE</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
+    <bounds max-lat="55.502458" max-lon="9.207732" min-lat="53.280219" min-lon="7.63568" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Northern German west coast tidalflats (infrared)</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00ir&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>DE</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
+    <bounds max-lat="55.502458" max-lon="9.207732" min-lat="53.280219" min-lon="7.63568" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Northern Greenland ASTER</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>10</max-zoom>
+    <bounds max-lat="83.73214" max-lon="-21.184233" min-lat="82.489799" min-lon="-52.492218" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Northwest Heard Island</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=EO1A1350972013086110KF&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>AU</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-52.949439" max-lon="73.789881" min-lat="-53.203366" min-lon="73.227904" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Panama Canal</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R111_N09_20160604T154554&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>PA</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="9.414807" max-lon="-79.468563" min-lat="8.848948" min-lon="-80.016536" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Pensacola Mountains</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <min-zoom>0</min-zoom>
+    <max-zoom>10</max-zoom>
+    <bounds max-lat="-82.299688" max-lon="-44.513553" min-lat="-84.125282" min-lon="-60.615378" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Prokletije Mountains</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R136_N41_20150831T093006&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>AL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="43.09603" max-lon="20.637895" min-lat="42.153162" min-lon="19.084259" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Qasigiannguit</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=DMS_1142622_03746_20110415_17533956&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>15</max-zoom>
+    <bounds max-lat="68.853026" max-lon="-51.14037" min-lat="68.799726" min-lon="-51.243335" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Rann of Kutch</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81510432015030LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>IN</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>12</max-zoom>
+    <bounds max-lat="24.886931" max-lon="71.490014" min-lat="22.362619" min-lon="67.862312" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Rila and Pirin Mountains</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R093_N41_20150828T092005&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>BY</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="42.299837" max-lon="23.994001" min-lat="41.584894" min-lon="22.99238" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Rwenzori Mountains</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81730602015040LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>UG</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="0.509176" max-lon="30.034668" min-lat="0.206873" min-lon="29.766297" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Scott Island</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC80611072014036LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GS</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-67.325245" max-lon="-179.824754" min-lat="-67.426345" min-lon="-180.0" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Shag Rocks</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC82100972015347LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GS</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-53.445862" max-lon="-41.655778" min-lat="-53.720505" min-lon="-42.146258" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Southeastern Sulawesi</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>ID</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-2.514682" max-lon="122.626181" min-lat="-3.595498" min-lon="120.843824" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Southern Transantarctic Mountains</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <min-zoom>0</min-zoom>
+    <max-zoom>10</max-zoom>
+    <bounds max-lat="-82.58487" max-lon="177.005571" min-lat="-84.501005" min-lon="154.508576" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Thule Air Base</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=DMS_1142636_160xx_20110507_1822xxxx&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>GL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>15</max-zoom>
+    <bounds max-lat="76.551757" max-lon="-68.507401" min-lat="76.511326" min-lon="-68.939769" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Vanatinai</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>PG</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-11.072293" max-lon="154.411998" min-lat="-11.789241" min-lon="153.061381" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Volc&#225;n Calbuco</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>CL</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="-41.045275" max-lon="-71.875158" min-lat="-41.517439" min-lon="-72.866961" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Western Karakoram</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=LC81490352013282LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>PK</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>13</max-zoom>
+    <bounds max-lat="37.098569" max-lon="76.527003" min-lat="34.968807" min-lon="73.930917" />
+  </entry>
+  <entry>
+    <name>imagico.de OSM images for mapping: Willkanuta Mountains and Quelccaya Ice Cap</name>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R039_S15_20160510T145731&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>PE</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="-13.710293" max-lon="-70.556377" min-lat="-14.497883" min-lon="-71.180706" />
   </entry>
   <entry>
     <name>&#220;bersichtsplan Z&#252;rich</name>
