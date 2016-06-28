@@ -84015,7 +84015,7 @@
         "country_code": "US"
     },
     {
-        "url": "https://basemap.nationalmap.gov/ArcGIS/rest/services/USGSImageryOnly/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg",
         "extent": {
             "min_zoom": 12,
             "max_zoom": 20,
@@ -88949,760 +88949,6 @@
         "country_code": "LV"
     },
     {
-        "url": "http://212.26.144.110/tile2/orto_10000/{zoom}/{x}/{-y}.jpg",
-        "type": "tms",
-        "name": "Ukraine - Orthophotomaps 2012",
-        "extent": {
-            "max_zoom": "16",
-            "bbox": {
-                "min_lon": 22.1133204,
-                "max_lat": 52.3933664,
-                "min_lat": 44.3707787,
-                "max_lon": 40.2050757
-            },
-            "polygon": [
-                [
-                    [
-                        23.6193045,
-                        51.6549111
-                    ],
-                    [
-                        24.0980279,
-                        51.6404714
-                    ],
-                    [
-                        24.39723,
-                        51.8935287
-                    ],
-                    [
-                        25.1917779,
-                        51.9591323
-                    ],
-                    [
-                        26.1226289,
-                        51.9222421
-                    ],
-                    [
-                        26.4982938,
-                        51.8093339
-                    ],
-                    [
-                        27.0900491,
-                        51.7702633
-                    ],
-                    [
-                        27.628613,
-                        51.6260271
-                    ],
-                    [
-                        28.0242247,
-                        51.5909289
-                    ],
-                    [
-                        28.2802087,
-                        51.6817155
-                    ],
-                    [
-                        28.3766183,
-                        51.5806007
-                    ],
-                    [
-                        28.8254215,
-                        51.5682038
-                    ],
-                    [
-                        29.191113,
-                        51.6425345
-                    ],
-                    [
-                        29.4171768,
-                        51.4399045
-                    ],
-                    [
-                        29.6731608,
-                        51.5123759
-                    ],
-                    [
-                        29.8227619,
-                        51.4751193
-                    ],
-                    [
-                        30.2183736,
-                        51.5082378
-                    ],
-                    [
-                        30.5441715,
-                        51.3070874
-                    ],
-                    [
-                        30.6372566,
-                        51.385994
-                    ],
-                    [
-                        30.5142513,
-                        51.6363449
-                    ],
-                    [
-                        30.9830013,
-                        52.090052
-                    ],
-                    [
-                        31.2822034,
-                        52.0798377
-                    ],
-                    [
-                        31.4883204,
-                        52.1349672
-                    ],
-                    [
-                        32.1099959,
-                        52.0553139
-                    ],
-                    [
-                        32.3127885,
-                        52.1186396
-                    ],
-                    [
-                        32.4391183,
-                        52.3243362
-                    ],
-                    [
-                        32.9311396,
-                        52.2836799
-                    ],
-                    [
-                        33.296831,
-                        52.3933664
-                    ],
-                    [
-                        33.7556076,
-                        52.3527735
-                    ],
-                    [
-                        34.3573364,
-                        51.7805483
-                    ],
-                    [
-                        34.1445704,
-                        51.7640912
-                    ],
-                    [
-                        34.0581342,
-                        51.6796542
-                    ],
-                    [
-                        34.2210332,
-                        51.4709778
-                    ],
-                    [
-                        34.2509534,
-                        51.3008521
-                    ],
-                    [
-                        34.7197034,
-                        51.1905562
-                    ],
-                    [
-                        35.1119906,
-                        51.211387
-                    ],
-                    [
-                        35.1818045,
-                        51.0862608
-                    ],
-                    [
-                        35.3879215,
-                        51.0340248
-                    ],
-                    [
-                        35.4078683,
-                        50.6287766
-                    ],
-                    [
-                        35.6206342,
-                        50.3856329
-                    ],
-                    [
-                        36.0694374,
-                        50.4512993
-                    ],
-                    [
-                        36.215714,
-                        50.4110629
-                    ],
-                    [
-                        36.3121236,
-                        50.2880247
-                    ],
-                    [
-                        36.4716981,
-                        50.3262431
-                    ],
-                    [
-                        36.5913789,
-                        50.2519013
-                    ],
-                    [
-                        37.465714,
-                        50.4597657
-                    ],
-                    [
-                        37.7349959,
-                        50.1135298
-                    ],
-                    [
-                        38.0574693,
-                        49.9383967
-                    ],
-                    [
-                        38.1937725,
-                        49.9576498
-                    ],
-                    [
-                        38.1904481,
-                        50.0751406
-                    ],
-                    [
-                        38.3500225,
-                        50.081541
-                    ],
-                    [
-                        38.4165119,
-                        49.9897213
-                    ],
-                    [
-                        38.7389853,
-                        49.9747573
-                    ],
-                    [
-                        39.0082672,
-                        49.8334391
-                    ],
-                    [
-                        39.1445704,
-                        49.8998674
-                    ],
-                    [
-                        39.2775491,
-                        49.781948
-                    ],
-                    [
-                        39.5401821,
-                        49.745442
-                    ],
-                    [
-                        39.7994906,
-                        49.5840578
-                    ],
-                    [
-                        40.1884534,
-                        49.6012976
-                    ],
-                    [
-                        40.0587991,
-                        49.5042444
-                    ],
-                    [
-                        40.2050757,
-                        49.2466626
-                    ],
-                    [
-                        39.9324693,
-                        49.0618488
-                    ],
-                    [
-                        39.7163789,
-                        49.0160826
-                    ],
-                    [
-                        40.0887193,
-                        48.8544757
-                    ],
-                    [
-                        39.7961662,
-                        48.7844295
-                    ],
-                    [
-                        39.6931076,
-                        48.6528291
-                    ],
-                    [
-                        39.8626555,
-                        48.569304
-                    ],
-                    [
-                        39.9923098,
-                        48.3134778
-                    ],
-                    [
-                        39.8327353,
-                        47.9228655
-                    ],
-                    [
-                        39.7429747,
-                        47.8314439
-                    ],
-                    [
-                        39.5767513,
-                        47.8113542
-                    ],
-                    [
-                        38.8653151,
-                        47.8515259
-                    ],
-                    [
-                        38.7755545,
-                        47.6861766
-                    ],
-                    [
-                        38.3832672,
-                        47.6010632
-                    ],
-                    [
-                        38.30348,
-                        47.5270364
-                    ],
-                    [
-                        38.3001555,
-                        47.2389121
-                    ],
-                    [
-                        38.1339321,
-                        47.0557695
-                    ],
-                    [
-                        37.5455013,
-                        47.0512395
-                    ],
-                    [
-                        37.3127885,
-                        46.8765411
-                    ],
-                    [
-                        37.20973,
-                        46.9265131
-                    ],
-                    [
-                        36.9603949,
-                        46.8310715
-                    ],
-                    [
-                        36.7443045,
-                        46.6168488
-                    ],
-                    [
-                        36.7243576,
-                        46.7719035
-                    ],
-                    [
-                        36.4451023,
-                        46.7240665
-                    ],
-                    [
-                        36.1060066,
-                        46.4727978
-                    ],
-                    [
-                        36.2057406,
-                        46.6602178
-                    ],
-                    [
-                        35.9231608,
-                        46.6442438
-                    ],
-                    [
-                        35.4311396,
-                        46.3994827
-                    ],
-                    [
-                        35.1020172,
-                        45.9713849
-                    ],
-                    [
-                        35.0455013,
-                        45.7514464
-                    ],
-                    [
-                        35.4743576,
-                        45.3299972
-                    ],
-                    [
-                        35.8599959,
-                        45.5329665
-                    ],
-                    [
-                        35.9962991,
-                        45.4327396
-                    ],
-                    [
-                        36.11598,
-                        45.5189921
-                    ],
-                    [
-                        36.6645172,
-                        45.4514
-                    ],
-                    [
-                        36.6545438,
-                        45.3416819
-                    ],
-                    [
-                        36.5049428,
-                        45.3136346
-                    ],
-                    [
-                        36.4750225,
-                        45.2411149
-                    ],
-                    [
-                        36.4883204,
-                        45.0488417
-                    ],
-                    [
-                        35.8101289,
-                        44.9853903
-                    ],
-                    [
-                        35.5076023,
-                        45.1122228
-                    ],
-                    [
-                        35.4278151,
-                        44.9336372
-                    ],
-                    [
-                        35.121964,
-                        44.763937
-                    ],
-                    [
-                        34.6764853,
-                        44.7568553
-                    ],
-                    [
-                        33.9849959,
-                        44.3707787
-                    ],
-                    [
-                        33.6891183,
-                        44.3850355
-                    ],
-                    [
-                        33.3832672,
-                        44.5060784
-                    ],
-                    [
-                        33.3500225,
-                        44.5890019
-                    ],
-                    [
-                        33.5528151,
-                        44.9312837
-                    ],
-                    [
-                        33.4298098,
-                        45.1262979
-                    ],
-                    [
-                        33.1937725,
-                        45.1427145
-                    ],
-                    [
-                        32.8314055,
-                        45.3393451
-                    ],
-                    [
-                        32.6053417,
-                        45.3089587
-                    ],
-                    [
-                        32.4457672,
-                        45.3557003
-                    ],
-                    [
-                        32.5089321,
-                        45.4700542
-                    ],
-                    [
-                        32.8779481,
-                        45.6818113
-                    ],
-                    [
-                        33.5794108,
-                        45.9066514
-                    ],
-                    [
-                        33.5893842,
-                        46.0268107
-                    ],
-                    [
-                        33.2569374,
-                        46.0706501
-                    ],
-                    [
-                        33.0242247,
-                        45.9713849
-                    ],
-                    [
-                        31.6113257,
-                        46.1950562
-                    ],
-                    [
-                        31.2755545,
-                        46.6145653
-                    ],
-                    [
-                        30.8766183,
-                        46.5688743
-                    ],
-                    [
-                        30.434464,
-                        45.9875565
-                    ],
-                    [
-                        29.6964321,
-                        45.5515937
-                    ],
-                    [
-                        29.7928417,
-                        45.4630596
-                    ],
-                    [
-                        29.7396502,
-                        45.1591264
-                    ],
-                    [
-                        29.4736928,
-                        45.414073
-                    ],
-                    [
-                        29.1811396,
-                        45.3837267
-                    ],
-                    [
-                        28.7489587,
-                        45.2200434
-                    ],
-                    [
-                        28.566113,
-                        45.2340919
-                    ],
-                    [
-                        28.2901821,
-                        45.3299972
-                    ],
-                    [
-                        28.2336662,
-                        45.4910328
-                    ],
-                    [
-                        28.3167779,
-                        45.5678875
-                    ],
-                    [
-                        28.4830013,
-                        45.5422809
-                    ],
-                    [
-                        28.4730279,
-                        45.7375263
-                    ],
-                    [
-                        28.9517513,
-                        46.031427
-                    ],
-                    [
-                        29.0248896,
-                        46.1812471
-                    ],
-                    [
-                        28.9318045,
-                        46.4956886
-                    ],
-                    [
-                        29.1877885,
-                        46.5711598
-                    ],
-                    [
-                        29.5933736,
-                        46.4544783
-                    ],
-                    [
-                        29.8194374,
-                        46.4659287
-                    ],
-                    [
-                        29.9557406,
-                        46.6875908
-                    ],
-                    [
-                        29.8959002,
-                        46.8196981
-                    ],
-                    [
-                        29.5601289,
-                        46.9696333
-                    ],
-                    [
-                        29.546831,
-                        47.2998194
-                    ],
-                    [
-                        29.1478949,
-                        47.5023376
-                    ],
-                    [
-                        29.2310066,
-                        47.7756199
-                    ],
-                    [
-                        29.1711662,
-                        47.9340034
-                    ],
-                    [
-                        28.8686396,
-                        47.9941068
-                    ],
-                    [
-                        28.6359268,
-                        48.1651289
-                    ],
-                    [
-                        28.4431076,
-                        48.06525
-                    ],
-                    [
-                        28.3633204,
-                        48.1717806
-                    ],
-                    [
-                        28.2569374,
-                        48.1540408
-                    ],
-                    [
-                        27.7349959,
-                        48.4349353
-                    ],
-                    [
-                        27.5554747,
-                        48.4525778
-                    ],
-                    [
-                        26.9238257,
-                        48.3488408
-                    ],
-                    [
-                        26.3653151,
-                        48.1717806
-                    ],
-                    [
-                        26.1193045,
-                        47.9740801
-                    ],
-                    [
-                        25.384597,
-                        47.9161816
-                    ],
-                    [
-                        24.915847,
-                        47.7040776
-                    ],
-                    [
-                        24.5202353,
-                        47.9429121
-                    ],
-                    [
-                        24.184464,
-                        47.9005824
-                    ],
-                    [
-                        23.5827353,
-                        48.0052294
-                    ],
-                    [
-                        23.4364587,
-                        47.9696287
-                    ],
-                    [
-                        23.1538789,
-                        48.1052248
-                    ],
-                    [
-                        23.0707672,
-                        47.9874321
-                    ],
-                    [
-                        22.8580013,
-                        47.9584985
-                    ],
-                    [
-                        22.7682406,
-                        48.0985645
-                    ],
-                    [
-                        22.5853949,
-                        48.1030048
-                    ],
-                    [
-                        22.515581,
-                        48.2161031
-                    ],
-                    [
-                        22.1133204,
-                        48.4216995
-                    ],
-                    [
-                        22.4989587,
-                        49.0662052
-                    ],
-                    [
-                        22.5887193,
-                        49.1119253
-                    ],
-                    [
-                        22.8779481,
-                        49.0400606
-                    ],
-                    [
-                        22.7216981,
-                        49.1815129
-                    ],
-                    [
-                        22.7183736,
-                        49.6465232
-                    ],
-                    [
-                        23.2436396,
-                        50.1050015
-                    ],
-                    [
-                        24.0448364,
-                        50.497846
-                    ],
-                    [
-                        24.0581342,
-                        50.6877873
-                    ],
-                    [
-                        23.9451023,
-                        50.8139894
-                    ],
-                    [
-                        24.1013523,
-                        50.8538824
-                    ],
-                    [
-                        23.6292779,
-                        51.294616
-                    ],
-                    [
-                        23.6193045,
-                        51.6549111
-                    ]
-                ]
-            ]
-        }
-    },
-    {
         "extent": {
             "min_zoom": 0,
             "max_zoom": 19,
@@ -92113,325 +91359,295 @@
         "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery."
     },
     {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "bbox": {
+                "min_lon": -152.708729431479,
+                "max_lat": 63.5464553885127,
+                "min_lat": 62.3036424122946,
+                "max_lon": -148.994366411548
+            }
+        },
         "attribution": {
             "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "description": "various imagery from all around the world where other image sources are insufficient",
-        "end_date": "2016",
-        "url": "http://imagico.de/map/osmim_tiles.php?z={zoom}&x={x}&y={-y}",
-        "start_date": "2013",
+        "description": "LC80700162014211LGN00, 2014-07-31 channels 234 (true color), Recent summer image of the Alaska Range for mapping natural features",
+        "end_date": "2014-07-31",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80700162014211LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2014-07-31",
+        "country_code": "US",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC80700162014211LGN00",
+        "name": "imagico.de OSM images for mapping: Alaska Range"
+    },
+    {
         "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 113.53447549873,
+                "max_lat": 3.07076712442006,
+                "min_lat": 2.02707458823865,
+                "max_lon": 114.765167437974
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81190582014075LGN00/LC81180582015183LGN00, 2014-03-16, channels 234 (true color), Missing in older pre-2011 images",
+        "end_date": "2014-03-16",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81190582014075LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2014-03-16",
+        "country_code": "ID",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81190582014075LGN00",
+        "name": "imagico.de OSM images for mapping: Bakun Reservoir"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 104.001374040597,
+                "max_lat": 1.45116299803241,
+                "min_lat": 0,
+                "max_lon": 104.910109782012
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81250592016107LGN00, LC81250602015184LGN00, LC81240602014174LGN00, 2014-2016, channels 234 (true color), Missing Islands in OSM",
+        "end_date": "2016",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81250592016107LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013",
+        "country_code": "ID",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81250592016107LGN00",
+        "name": "imagico.de OSM images for mapping: Batam"
+    },
+    {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81800982013291LGN00, 2013-10-18, channels 234 (true color), For more accurate coastline and glacier mapping",
+        "end_date": "2013-10-18",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81800982013291LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-10-18",
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 3.24652940311363,
+                "max_lat": -54.3753916879791,
+                "min_lat": -54.4705168479877,
+                "max_lon": 3.46391271871771
+            }
+        },
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81800982013291LGN00",
+        "best": true,
+        "name": "imagico.de OSM images for mapping: Bouvet Island"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -35.1959928318028,
+                "max_lat": -54.7209735214882,
+                "min_lat": -55.2968852515402,
+                "max_lon": -34.1252010131324
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC82050982015344LGN00, 2015-12-10, channels 234 (true color), Missing in other image sources",
+        "end_date": "2015-12-10",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82050982015344LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-12-10",
+        "country_code": "GS",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC82050982015344LGN00",
+        "name": "imagico.de OSM images for mapping: Clerke Rocks"
+    },
+    {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20151222T164644_R022_V20151221T103009_20151221T103009, 2015-12-21, channels 234 (true color), Patchy and partly cloudy coverage in usual sources",
+        "end_date": "2015-12-21",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-12-21",
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": 1.83974970187678,
+                "max_lat": 7.1142717924319,
+                "min_lat": 6.25776229826032,
+                "max_lon": 2.5494187763312
+            }
+        },
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R022_N06_20151221T103009",
+        "name": "imagico.de OSM images for mapping: Cotonou"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 11,
+            "bbox": {
+                "min_lon": -84.3479873388655,
+                "max_lat": 75.8903032392084,
+                "min_lat": 74.3894989734754,
+                "max_lon": -79.1485833901459
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC80360072014245LGN00/LC80380062014243LGN00, 2014-09-02, channel 654 (false color IR), Coastline mostly mapped meanwhile",
+        "end_date": "2014-09-02",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80360072014245LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2014-09-02",
+        "country_code": "CA",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC80360072014245LGN00",
+        "name": "imagico.de OSM images for mapping: Eastern Devon Island coast"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "bbox": {
+                "min_lon": -15.1680535723581,
+                "max_lat": 64.8157280042209,
+                "min_lat": 64.2088554380107,
+                "max_lon": -13.0435379254154
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC82160152013239LGN00, 2013-08-27, channels 234 (true color), Missing islets and inaccurate coast",
+        "end_date": "2013-08-27",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82160152013239LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-08-27",
+        "country_code": "IS",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC82160152013239LGN00",
+        "name": "imagico.de OSM images for mapping: Eastern Iceland"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": -78.531997745432,
+                "max_lat": -1.60810556500124,
+                "min_lat": -1.8050814821624,
+                "max_lon": -78.3355811085593
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "AST_L1T_00302052007154424_20150518041444_91492, 2012-02-05, channels 12x (true color with estimated blue), 2007 ASTER image offering better glacier coverage than common sources",
+        "end_date": "2012-02-05",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&z={zoom}&x={x}&y={-y}",
+        "start_date": "2012-02-05",
+        "country_code": "EC",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-AST_L1T_00302052007154424_20150518041444_91492",
+        "name": "imagico.de OSM images for mapping: El Altar"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -56.1347609072749,
+                "max_lat": -60.8398161307814,
+                "min_lat": -61.634696838288,
+                "max_lon": -53.723458105877
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160109T225906_R009_V20160109T130043_20160109T130043, 2016-01-09, channels 234 (true color), Fairly clear up-to-date image for updating glacier edges",
+        "end_date": "2016-01-09",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R009_S61_20160109&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-01-09",
+        "country_code": "AQ",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R009_S61_20160109",
+        "name": "imagico.de OSM images for mapping: Elephant Island/Clarence Island"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": -24.7587819559676,
+                "max_lat": 15.0924935449651,
+                "min_lat": 14.7481298855965,
+                "max_lon": -24.2670621357462
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC82100502015347LGN00, 2015-12-13, channels 234 (true color), Image from after the 2014/2015 eruption",
+        "end_date": "2015-12-13",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-12-13",
+        "country_code": "CV",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC82100502015347LGN00",
+        "name": "imagico.de OSM images for mapping: Fogo, Cape Verde"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
             "polygon": [
-                [
-                    [
-                        -89.8315284119521,
-                        81.3934028410464
-                    ],
-                    [
-                        -89.8315284119521,
-                        83.7045077508689
-                    ],
-                    [
-                        -17.9663056823904,
-                        83.7045077508689
-                    ],
-                    [
-                        -17.9663056823904,
-                        81.3934028410464
-                    ],
-                    [
-                        -89.8315284119521,
-                        81.3934028410464
-                    ]
-                ],
-                [
-                    [
-                        3.24652940311363,
-                        -54.4705168479877
-                    ],
-                    [
-                        3.24652940311363,
-                        -54.3753916879791
-                    ],
-                    [
-                        3.46391271871771,
-                        -54.3753916879791
-                    ],
-                    [
-                        3.46391271871771,
-                        -54.4705168479877
-                    ],
-                    [
-                        3.24652940311363,
-                        -54.4705168479877
-                    ]
-                ],
-                [
-                    [
-                        73.2279041335011,
-                        -53.2033655831056
-                    ],
-                    [
-                        73.2279041335011,
-                        -52.9494391381048
-                    ],
-                    [
-                        73.7898811920934,
-                        -52.9494391381048
-                    ],
-                    [
-                        73.7898811920934,
-                        -53.2033655831056
-                    ],
-                    [
-                        73.2279041335011,
-                        -53.2033655831056
-                    ]
-                ],
-                [
-                    [
-                        -84.3479873388655,
-                        74.3894989734754
-                    ],
-                    [
-                        -84.3479873388655,
-                        75.8903032392084
-                    ],
-                    [
-                        -79.1485833901459,
-                        75.8903032392084
-                    ],
-                    [
-                        -79.1485833901459,
-                        74.3894989734754
-                    ],
-                    [
-                        -84.3479873388655,
-                        74.3894989734754
-                    ]
-                ],
-                [
-                    [
-                        29.7662967768464,
-                        0.20687257729646
-                    ],
-                    [
-                        29.7662967768464,
-                        0.509176367154027
-                    ],
-                    [
-                        30.0346684679771,
-                        0.509176367154027
-                    ],
-                    [
-                        30.0346684679771,
-                        0.20687257729646
-                    ],
-                    [
-                        29.7662967768464,
-                        0.20687257729646
-                    ]
-                ],
-                [
-                    [
-                        150.388533766196,
-                        -2.80056783608088
-                    ],
-                    [
-                        150.388533766196,
-                        -2.38339617820643
-                    ],
-                    [
-                        150.833478309574,
-                        -2.38339617820643
-                    ],
-                    [
-                        150.833478309574,
-                        -2.80056783608088
-                    ],
-                    [
-                        150.388533766196,
-                        -2.80056783608088
-                    ]
-                ],
-                [
-                    [
-                        -72.2652065929688,
-                        -55.5594608405404
-                    ],
-                    [
-                        -72.2652065929688,
-                        -54.178890106312
-                    ],
-                    [
-                        -69.4910293325508,
-                        -54.178890106312
-                    ],
-                    [
-                        -69.4910293325508,
-                        -55.5594608405404
-                    ],
-                    [
-                        -72.2652065929688,
-                        -55.5594608405404
-                    ]
-                ],
-                [
-                    [
-                        73.9309166917002,
-                        34.9688073863467
-                    ],
-                    [
-                        73.9309166917002,
-                        37.0985693236903
-                    ],
-                    [
-                        76.5270029470414,
-                        37.0985693236903
-                    ],
-                    [
-                        76.5270029470414,
-                        34.9688073863467
-                    ],
-                    [
-                        73.9309166917002,
-                        34.9688073863467
-                    ]
-                ],
-                [
-                    [
-                        120.843824420484,
-                        -3.59549835456283
-                    ],
-                    [
-                        120.843824420484,
-                        -2.51468168634705
-                    ],
-                    [
-                        122.626180758858,
-                        -2.51468168634705
-                    ],
-                    [
-                        122.626180758858,
-                        -3.59549835456283
-                    ],
-                    [
-                        120.843824420484,
-                        -3.59549835456283
-                    ]
-                ],
-                [
-                    [
-                        153.061381062565,
-                        -11.7892410342423
-                    ],
-                    [
-                        153.061381062565,
-                        -11.0722925205757
-                    ],
-                    [
-                        154.411998092239,
-                        -11.0722925205757
-                    ],
-                    [
-                        154.411998092239,
-                        -11.7892410342423
-                    ],
-                    [
-                        153.061381062565,
-                        -11.7892410342423
-                    ]
-                ],
-                [
-                    [
-                        67.8623118572194,
-                        22.3626187997331
-                    ],
-                    [
-                        67.8623118572194,
-                        24.8869308169273
-                    ],
-                    [
-                        71.4900144016907,
-                        24.8869308169273
-                    ],
-                    [
-                        71.4900144016907,
-                        22.3626187997331
-                    ],
-                    [
-                        67.8623118572194,
-                        22.3626187997331
-                    ]
-                ],
-                [
-                    [
-                        -152.708729431479,
-                        62.3036424122946
-                    ],
-                    [
-                        -152.708729431479,
-                        63.5464553885127
-                    ],
-                    [
-                        -148.994366411548,
-                        63.5464553885127
-                    ],
-                    [
-                        -148.994366411548,
-                        62.3036424122946
-                    ],
-                    [
-                        -152.708729431479,
-                        62.3036424122946
-                    ]
-                ],
-                [
-                    [
-                        7.63567991501593,
-                        53.2802190281286
-                    ],
-                    [
-                        7.63567991501593,
-                        55.502457780526
-                    ],
-                    [
-                        9.20773166222509,
-                        55.502457780526
-                    ],
-                    [
-                        9.20773166222509,
-                        53.2802190281286
-                    ],
-                    [
-                        7.63567991501593,
-                        53.2802190281286
-                    ]
-                ],
-                [
-                    [
-                        7.63567991501593,
-                        53.2802190281286
-                    ],
-                    [
-                        7.63567991501593,
-                        55.502457780526
-                    ],
-                    [
-                        9.20773166222509,
-                        55.502457780526
-                    ],
-                    [
-                        9.20773166222509,
-                        53.2802190281286
-                    ],
-                    [
-                        7.63567991501593,
-                        53.2802190281286
-                    ]
-                ],
                 [
                     [
                         -43.335169388775576,
@@ -93008,10 +92224,722 @@
                 ]
             ]
         },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "mostly Landsat 8 2013-2015 channels 234 (true color), Landsat mosaic of Greenland",
+        "end_date": "2016",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=greenland&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013",
+        "country_code": "GL",
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
         "type": "tms",
-        "id": "osmim-imagicode",
-        "name": "imagico.de OSM images for mapping"
+        "id": "osmim-imagicode-greenland",
+        "name": "imagico.de OSM images for mapping: Greenland mosaic"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 73.0689652102818,
+                "max_lat": -52.8754896362687,
+                "min_lat": -53.2705500548086,
+                "max_lon": 74.0885530577575
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160412T212111_R047_V20160411T044330_20160411T044330, 2016-04-12, channels 234 (true color), Recent image of Heard island with interior mostly cloud covered but mostly well visible coast",
+        "end_date": "2016-04-12",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-04-12",
+        "country_code": "AU",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R047_S54_20160411T044330",
+        "name": "imagico.de OSM images for mapping: Heard Island coast"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "bbox": {
+                "min_lon": -72.2652065929688,
+                "max_lat": -54.178890106312,
+                "min_lat": -55.5594608405404,
+                "max_lon": -69.4910293325508
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC82280982013259LGN00, 2013-09-16, channel 654 (false color IR), A lot of very coarse coastlines could be improved here, much snow cover though so no use for glacier mapping",
+        "end_date": "2013-09-16",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82280982013259LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-09-16",
+        "country_code": "CL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC82280982013259LGN00",
+        "name": "imagico.de OSM images for mapping: Isla Londonderry"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -28.2107470814065,
+                "max_lat": -56.6249750430891,
+                "min_lat": -56.721108415345,
+                "max_lon": -27.9696123096903
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "AST_L1T_00311162013112731_20150618142416_109190, 2013-11-16, channels 12x (true color with estimated blue), Missing in other image sources",
+        "end_date": "2013-11-16",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00311162013112731_20150618142416_109190&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-11-16",
+        "country_code": "GS",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-AST_L1T_00311162013112731_20150618142416_109190",
+        "name": "imagico.de OSM images for mapping: Leskov Island ASTER"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -28.2277611728877,
+                "max_lat": -56.6007525373185,
+                "min_lat": -56.7347696464053,
+                "max_lon": -27.9690463710613
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81991002015286LGN00, 2015-10-13, channels 234 (true color), Missing in other image sources",
+        "end_date": "2015-10-13",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81991002015286LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-10-13",
+        "country_code": "GS",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81991002015286LGN00",
+        "name": "imagico.de OSM images for mapping: Leskov Island Landsat"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "bbox": {
+                "min_lon": -89.8315284119521,
+                "max_lat": 83.7045077508689,
+                "min_lat": 81.3934028410464,
+                "max_lon": -17.9663056823904
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC80372442013137LGN01-LC80530012013137LGN01, 2013-05-17, channels 234 (true color), Only available image north of the regular Landsat limit, mostly with seasonal snow cover so difficult to interpret",
+        "end_date": "2013-05-17",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=ls_polar&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-05-17",
+        "country_code": "GL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-ls_polar",
+        "name": "imagico.de OSM images for mapping: May 2013 off-nadir Landsat"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": 150.388533766196,
+                "max_lat": -2.38339617820643,
+                "min_lat": -2.80056783608088,
+                "max_lon": 150.833478309574
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC80940622015159LGN00, 2015-06-08, channels 234 (true color), Many missing islands in OSM (mostly mapped meanwhile)",
+        "end_date": "2015-06-08",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80940622015159LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-06-08",
+        "country_code": "PG",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC80940622015159LGN00",
+        "name": "imagico.de OSM images for mapping: New Ireland"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "bbox": {
+                "min_lon": -83.0313625595429,
+                "max_lat": 83.0958397705009,
+                "min_lat": 82.4597689567848,
+                "max_lon": -65.6583851391606
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "ASTER L1T, 2012-07-09/2012-07-15, channels 12x (true color with estimated blue), Assembled from July 2012 ASTER imagery",
+        "end_date": "2012-07-09",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=nellesmere_ast&z={zoom}&x={x}&y={-y}",
+        "start_date": "2012-07-09",
+        "country_code": "CA",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-nellesmere_ast",
+        "name": "imagico.de OSM images for mapping: Northern Ellesmere Island"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "bbox": {
+                "min_lon": 7.63567991501593,
+                "max_lat": 55.502457780526,
+                "min_lat": 53.2802190281286,
+                "max_lon": 9.20773166222509
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81960222015233LGN00, 2015-08-21 channels 134 (true color), Up-to-date low tide imagery of the coast for updating mapping of tidalflats and shoals",
+        "end_date": "2015-08-21",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00vis&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-08-21",
+        "country_code": "DE",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81960222015233LGN00vis",
+        "name": "imagico.de OSM images for mapping: Northern German west coast tidalflats"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "bbox": {
+                "min_lon": 7.63567991501593,
+                "max_lat": 55.502457780526,
+                "min_lat": 53.2802190281286,
+                "max_lon": 9.20773166222509
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81960222015233LGN00, 2015-08-21 channel 654 (false color IR), Up-to-date low tide imagery of the coast for updating mapping of tidalflats and shoals",
+        "end_date": "2015-08-21",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00ir&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-08-21",
+        "country_code": "DE",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81960222015233LGN00ir",
+        "name": "imagico.de OSM images for mapping: Northern German west coast tidalflats (infrared)"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "bbox": {
+                "min_lon": -52.49221819431,
+                "max_lat": 83.7321400994933,
+                "min_lat": 82.4897991404581,
+                "max_lon": -21.1842327268577
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "ASTER L1T, 2005-06-21 to 2012-08-13, channels 12x (true color with estimated blue), Assembled from mostly 2012 ASTER imagery, some 2005 images mainly in the northeast",
+        "end_date": "2012-08-13",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&z={zoom}&x={x}&y={-y}",
+        "start_date": "2012-08-13",
+        "country_code": "GL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-ngreenland_ast",
+        "name": "imagico.de OSM images for mapping: Northern Greenland ASTER"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 73.2279041335011,
+                "max_lat": -52.9494391381048,
+                "min_lat": -53.2033655831056,
+                "max_lon": 73.7898811920934
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "EO1A1350972013086110KF, 2013-03-13, channels 973 (false color IR), Glaciers of Northwest Heard Island (mapped meanwhile)",
+        "end_date": "2013-03-13",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=EO1A1350972013086110KF&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-03-13",
+        "country_code": "AU",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-EO1A1350972013086110KF",
+        "name": "imagico.de OSM images for mapping: Northwest Heard Island"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": -80.0165356176622,
+                "max_lat": 9.41480707574399,
+                "min_lat": 8.84894832639322,
+                "max_lon": -79.4685632943493
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160607T121312_R111_V20160604T154554_20160604T154554, 2016-06-07, channels 234 (true color), Images of the new locks (but partly cloudy)",
+        "end_date": "2016-06-07",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R111_N09_20160604T154554&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-06-07",
+        "country_code": "PA",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R111_N09_20160604T154554",
+        "name": "imagico.de OSM images for mapping: Panama Canal"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "bbox": {
+                "min_lon": -60.6153778814062,
+                "max_lat": -82.299687854391,
+                "min_lat": -84.1252820431153,
+                "max_lon": -44.5135525206644
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81511242016033LGN00/LC81511232016033LGN00, 2016-02-02, channels 234 (true color), Outside regular Landsat coverage and therefore not in LIMA and Bing/Mapbox",
+        "end_date": "2016-02-02",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-02-02",
+        "country_code": "AQ",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81511242016033LGN00",
+        "name": "imagico.de OSM images for mapping: Pensacola Mountains"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": 19.0842590534772,
+                "max_lat": 43.0960297809089,
+                "min_lat": 42.1531616550022,
+                "max_lon": 20.6378953373619
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160316T034950_R136_V20150831T093006_20150831T093006, 2015-08-31, channels 234 (true color), Late summer imagery where usual sources are severely limited by clouds and snow",
+        "end_date": "2015-08-31",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R136_N41_20150831T093006&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-08-31",
+        "country_code": "AL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R136_N41_20150831T093006",
+        "name": "imagico.de OSM images for mapping: Prokletije Mountains"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 15,
+            "bbox": {
+                "min_lon": -51.2433353705628,
+                "max_lat": 68.8530261295114,
+                "min_lat": 68.7997259148871,
+                "max_lon": -51.140370472697
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "DMS_1142622_03746_20110415_17533956, 2011-04-15, true color, Icebridge DMS image of the settlement - alignment might be poor",
+        "end_date": "2011-04-15",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=DMS_1142622_03746_20110415_17533956&z={zoom}&x={x}&y={-y}",
+        "start_date": "2011-04-15",
+        "country_code": "GL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-DMS_1142622_03746_20110415_17533956",
+        "name": "imagico.de OSM images for mapping: Qasigiannguit"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "bbox": {
+                "min_lon": 67.8623118572194,
+                "max_lat": 24.8869308169273,
+                "min_lat": 22.3626187997331,
+                "max_lon": 71.4900144016907
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "various Landsat early 2015, channel 654 (false color IR), Land/water distinction difficult to properly map based on Bing/Mapbox images",
+        "end_date": "2016",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81510432015030LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013",
+        "country_code": "IN",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81510432015030LGN00",
+        "name": "imagico.de OSM images for mapping: Rann of Kutch"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": 22.9923796970391,
+                "max_lat": 42.2998374736026,
+                "min_lat": 41.5848941590232,
+                "max_lon": 23.9940012388324
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160412T121341_R093_V20150828T092005_20150828T092005, 2015-08-28, channels 234 (true color), Late summer imagery where usual sources are severely limited by clouds and snow",
+        "end_date": "2015-08-28",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R093_N41_20150828T092005&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-08-28",
+        "country_code": "BY",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R093_N41_20150828T092005",
+        "name": "imagico.de OSM images for mapping: Rila and Pirin Mountains"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 29.7662967768464,
+                "max_lat": 0.509176367154027,
+                "min_lat": 0.20687257729646,
+                "max_lon": 30.0346684679771
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81730602015040LGN00, 2015-02-09, channel 654 (false color IR), Recent image of most of the remaining Rwenzori Mountains glaciers",
+        "end_date": "2015-02-09",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81730602015040LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-02-09",
+        "country_code": "UG",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81730602015040LGN00",
+        "name": "imagico.de OSM images for mapping: Rwenzori Mountains"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -180,
+                "max_lat": -67.3252448474477,
+                "min_lat": -67.4263452022474,
+                "max_lon": -179.824753575046
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC80611072014036LGN00, 2014-02-05, channels 234 (true color), Missing in other image sources",
+        "end_date": "2014-02-05",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80611072014036LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2014-02-05",
+        "country_code": "GS",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC80611072014036LGN00",
+        "name": "imagico.de OSM images for mapping: Scott Island"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -42.1462581850356,
+                "max_lat": -53.4458622334244,
+                "min_lat": -53.7205050698923,
+                "max_lon": -41.6557780399063
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC82100972015347LGN00, 2015-12-13, channels 234 (true color), Missing in other image sources",
+        "end_date": "2015-12-13",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82100972015347LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2015-12-13",
+        "country_code": "GS",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC82100972015347LGN00",
+        "name": "imagico.de OSM images for mapping: Shag Rocks"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 120.843824420484,
+                "max_lat": -2.51468168634705,
+                "min_lat": -3.59549835456283,
+                "max_lon": 122.626180758858
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81130622013270LGN00, 2013-09-27, channels 234 (true color), Missing islands and coarse coastline due to cloud cover in Bing, lakes could also use additional detail",
+        "end_date": "2013-09-27",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-09-27",
+        "country_code": "ID",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81130622013270LGN00",
+        "name": "imagico.de OSM images for mapping: Southeastern Sulawesi"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "bbox": {
+                "min_lon": 154.508575968435,
+                "max_lat": -82.5848702651189,
+                "min_lat": -84.5010049969839,
+                "max_lon": 177.005570718893
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC80281222016035LGN00/LC80281212016035LGN00, 2016-02-04, channels 234 (true color), Outside regular Landsat coverage and therefore not in LIMA and Bing/Mapbox",
+        "end_date": "2016-02-04",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-02-04",
+        "country_code": "AQ",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC80281222016035LGN00",
+        "name": "imagico.de OSM images for mapping: Southern Transantarctic Mountains"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 15,
+            "bbox": {
+                "min_lon": -68.9397691752981,
+                "max_lat": 76.5517569988038,
+                "min_lat": 76.5113260720978,
+                "max_lon": -68.5074010458985
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "DMS_1142636_16001_20110507_18221638-DMS_1142636_16076_20110507_18224996, 2011-05-07, true color, Icebridge DMS image - alignment might be poor",
+        "end_date": "2011-05-07",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=DMS_1142636_160xx_20110507_1822xxxx&z={zoom}&x={x}&y={-y}",
+        "start_date": "2011-05-07",
+        "country_code": "GL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-DMS_1142636_160xx_20110507_1822xxxx",
+        "name": "imagico.de OSM images for mapping: Thule Air Base"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 153.061381062565,
+                "max_lat": -11.0722925205757,
+                "min_lat": -11.7892410342423,
+                "max_lon": 154.411998092239
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC80910682014358LGN00, 2014-12-24, channels 234 (true color), Coarse coastline due to cloud cover in Bing/Mapbox",
+        "end_date": "2014-12-24",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2014-12-24",
+        "country_code": "PG",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC80910682014358LGN00",
+        "name": "imagico.de OSM images for mapping: Vanatinai"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": -72.8669610523419,
+                "max_lat": -41.045274923011,
+                "min_lat": -41.5174389446875,
+                "max_lon": -71.8751580966041
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC82330892016031LGN00, 2016-01-31, channels 234 (true color), Image from after the 2015 eruption",
+        "end_date": "2016-01-31",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-01-31",
+        "country_code": "CL",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC82330892016031LGN00",
+        "name": "imagico.de OSM images for mapping: Volc\u00e1n Calbuco"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 13,
+            "bbox": {
+                "min_lon": 73.9309166917002,
+                "max_lat": 37.0985693236903,
+                "min_lat": 34.9688073863467,
+                "max_lon": 76.5270029470414
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "LC81490352013282LGN00, 2013-10-09, channels 234 (true color), Represents approximately minimum snow cover so can be well used for glacier mapping",
+        "end_date": "2013-10-09",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81490352013282LGN00&z={zoom}&x={x}&y={-y}",
+        "start_date": "2013-10-09",
+        "country_code": "PK",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-LC81490352013282LGN00",
+        "name": "imagico.de OSM images for mapping: Western Karakoram"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 14,
+            "bbox": {
+                "min_lon": -71.1807064830626,
+                "max_lat": -13.7102928800508,
+                "min_lat": -14.4978825528812,
+                "max_lon": -70.5563773605996
+            }
+        },
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160511T025410_R039_V20160510T145731_20160510T150701, 2016-05-10, channels 234 (true color), Poor and outdated imagery in other sources",
+        "end_date": "2016-05-10",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R039_S15_20160510T145731&z={zoom}&x={x}&y={-y}",
+        "start_date": "2016-05-10",
+        "country_code": "PE",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "type": "tms",
+        "id": "osmim-imagicode-S2A_R039_S15_20160510T145731",
+        "name": "imagico.de OSM images for mapping: Willkanuta Mountains and Quelccaya Ice Cap"
     },
     {
         "attribution": {
