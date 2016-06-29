@@ -7,7 +7,7 @@ for file in sys.argv[1:]:
         entries.append(json.load(f))
 
 print json.dumps(
-    sorted(entries, key=lambda e: e.get('name')),
+    entries,
     indent=4,
     separators=(',', ': ')
 )

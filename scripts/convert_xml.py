@@ -8,7 +8,7 @@ for file in sys.argv[1:]:
     with open(file, 'rb') as f:
         sources.append(json.load(f))
 
-for source in sorted(sources, key=lambda s: s.get('name')):
+for source in sources:
     entry = ET.SubElement(root, "entry")
 
     name = ET.SubElement(entry, "name")
