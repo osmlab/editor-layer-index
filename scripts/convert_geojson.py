@@ -109,4 +109,8 @@ for imagery in imageries:
     #     if rings:
     #         entry['extent']['polygon'] = rings
 
-print json.dumps(collection, indent=4)
+print json.dumps(
+    collection,
+    indent=4,
+    separators=(',', ': ')
+)
