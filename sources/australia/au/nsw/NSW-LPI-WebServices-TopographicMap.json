@@ -1,12 +1,13 @@
 {
     "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
     "attribution": {
-        "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-        "text": "\u00a9 Land and Property Information 2015",
+        "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+        "text": "\u00a9 Land and Property Information 2016",
         "required": true
     },
     "type": "tms",
     "name": "LPI NSW Topographic Map",
+    "id": "NSW LPI Topographic Map",
     "country_code": "AU",
     "extent": {
         "max_zoom": 16,

@@ -2311,8 +2311,8 @@
             "properties": {
                 "country-code": "AU",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 },
                 "name": "LPI NSW Administrative Boundaries County",
@@ -2501,8 +2501,8 @@
             "properties": {
                 "country-code": "AU",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 },
                 "name": "LPI NSW Administrative Boundaries LGA",
@@ -2691,8 +2691,8 @@
             "properties": {
                 "country-code": "AU",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 },
                 "name": "LPI NSW Administrative Boundaries NPWS Reserve",
@@ -2881,8 +2881,8 @@
             "properties": {
                 "country-code": "AU",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 },
                 "name": "LPI NSW Administrative Boundaries Parish",
@@ -3071,8 +3071,8 @@
             "properties": {
                 "country-code": "AU",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 },
                 "name": "LPI NSW Administrative Boundaries State Forest",
@@ -3261,8 +3261,8 @@
             "properties": {
                 "country-code": "AU",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 },
                 "name": "LPI NSW Administrative Boundaries Suburb",
@@ -3398,8 +3398,8 @@
                 "type": "tms",
                 "name": "LPI NSW Base Map",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 }
             }
@@ -3760,15 +3760,16 @@
             },
             "type": "Feature",
             "properties": {
-                "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}",
                 "country-code": "AU",
-                "type": "tms",
-                "name": "LPI NSW Imagery",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
-                }
+                },
+                "name": "LPI NSW Imagery",
+                "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+                "type": "tms",
+                "best": true
             }
         },
         {
@@ -4368,8 +4369,8 @@
                 "type": "tms",
                 "name": "LPI NSW Topographic Map",
                 "attribution": {
-                    "url": "http://www.lpi.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-                    "text": "\u00a9 Land and Property Information 2015",
+                    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+                    "text": "\u00a9 Land and Property Information 2016",
                     "required": true
                 }
             }
