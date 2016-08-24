@@ -4244,270 +4244,6 @@
         "name": "imagico.de OSM images for mapping: New Ireland"
     },
     {
-        "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/2u/{zoom}/{x}/{y}.png",
-        "type": "tms",
-        "attribution": {
-            "url": "http://openstreetmap.org/",
-            "text": "Tiles \u00a9 sly, data \u00a9 OpenStreetMap contributors, ODBL",
-            "required": true
-        },
-        "name": "2u",
-        "extent": {
-            "max_zoom": 19
-        }
-    },
-    {
-        "attribution": {
-            "url": "http://tools.geofabrik.de/osmi/",
-            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-            "required": true
-        },
-        "name": "OSM Inspector: Addresses (EU)",
-        "overlay": true,
-        "url": "http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png",
-        "extent": {
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "bbox": {
-                "min_lon": -24.9,
-                "max_lon": 41.75,
-                "min_lat": 35.15,
-                "max_lat": 71.45
-            }
-        },
-        "type": "tms"
-    },
-    {
-        "attribution": {
-            "url": "http://tools.geofabrik.de/osmi/",
-            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-            "required": true
-        },
-        "name": "OSM Inspector: Boundaries (EU)",
-        "overlay": true,
-        "url": "http://tools.geofabrik.de/osmi/tiles/boundaries/{zoom}/{x}/{y}.png",
-        "extent": {
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "bbox": {
-                "min_lon": -24.9,
-                "max_lon": 41.75,
-                "min_lat": 35.15,
-                "max_lat": 71.45
-            }
-        },
-        "type": "tms"
-    },
-    {
-        "attribution": {
-            "url": "http://tools.geofabrik.de/osmi/",
-            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-            "required": true
-        },
-        "name": "OSM Inspector: Routing (EU)",
-        "overlay": true,
-        "url": "http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png",
-        "extent": {
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "bbox": {
-                "min_lon": -24.9,
-                "max_lon": 41.75,
-                "min_lat": 35.15,
-                "max_lat": 71.45
-            }
-        },
-        "type": "tms"
-    },
-    {
-        "url": "http://toolserver.org/tiles/osm-locale-de/{zoom}/{x}/{y}.png",
-        "type": "tms",
-        "attribution": {
-            "url": "http://openstreetmap.org/",
-            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
-            "required": true
-        },
-        "name": "OpenStreetMap (German Language)",
-        "extent": {
-            "max_zoom": 17
-        }
-    },
-    {
-        "url": "http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png",
-        "type": "tms",
-        "attribution": {
-            "url": "http://openstreetmap.org/",
-            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
-            "required": false
-        },
-        "name": "OpenStreetMap (German Style)",
-        "extent": {
-            "max_zoom": 18
-        }
-    },
-    {
-        "url": "http://toolserver.org/tiles/osm-locale-hsb/{zoom}/{x}/{y}.png",
-        "type": "tms",
-        "attribution": {
-            "url": "http://openstreetmap.org/",
-            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
-            "required": true
-        },
-        "name": "OpenStreetMap (Sorbian Language)",
-        "extent": {
-            "max_zoom": 17
-        }
-    },
-    {
-        "url": "http://tools.geofabrik.de/osmi/view/strassennrw/wxs?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&FORMAT=image/png&SRS={proj}&STYLES=&LAYERS=unzugeordnete_strassen,kreisstrassen_ast,kreisstrassen,landesstrassen_ast,landesstrassen,bundesstrassen_ast,bundesstrassen,autobahnen_ast,autobahnen,endpunkte&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "type": "wms",
-        "name": "Streets NRW Geofabrik.de",
-        "extent": {
-            "bbox": {
-                "min_lon": 5.881575,
-                "max_lat": 52.53802,
-                "min_lat": 50.310813,
-                "max_lon": 52.53802
-            },
-            "polygon": [
-                [
-                    [
-                        5.927293,
-                        51.826511
-                    ],
-                    [
-                        6.012007,
-                        51.662494
-                    ],
-                    [
-                        6.198579,
-                        51.513156
-                    ],
-                    [
-                        6.196562,
-                        51.37445
-                    ],
-                    [
-                        6.072517,
-                        51.23848
-                    ],
-                    [
-                        6.0389,
-                        51.101051
-                    ],
-                    [
-                        5.881574,
-                        51.020765
-                    ],
-                    [
-                        6.01873,
-                        50.718666
-                    ],
-                    [
-                        6.206983,
-                        50.499359
-                    ],
-                    [
-                        6.319935,
-                        50.378604
-                    ],
-                    [
-                        6.39927,
-                        50.310813
-                    ],
-                    [
-                        6.724678,
-                        50.324551
-                    ],
-                    [
-                        7.212791,
-                        50.510477
-                    ],
-                    [
-                        7.55837,
-                        50.545524
-                    ],
-                    [
-                        7.801754,
-                        50.882687
-                    ],
-                    [
-                        8.05724,
-                        50.682043
-                    ],
-                    [
-                        8.301968,
-                        50.653919
-                    ],
-                    [
-                        8.771256,
-                        51.164336
-                    ],
-                    [
-                        8.738984,
-                        51.348632
-                    ],
-                    [
-                        9.021363,
-                        51.389766
-                    ],
-                    [
-                        9.310466,
-                        51.300736
-                    ],
-                    [
-                        9.307776,
-                        51.522988
-                    ],
-                    [
-                        9.487961,
-                        51.641638
-                    ],
-                    [
-                        9.478549,
-                        51.874687
-                    ],
-                    [
-                        9.154485,
-                        52.499563
-                    ],
-                    [
-                        8.636789,
-                        52.53802
-                    ],
-                    [
-                        7.546268,
-                        52.473361
-                    ],
-                    [
-                        7.017815,
-                        52.336362
-                    ],
-                    [
-                        6.87797,
-                        52.183276
-                    ],
-                    [
-                        6.332037,
-                        51.901245
-                    ],
-                    [
-                        6.067138,
-                        51.921153
-                    ],
-                    [
-                        5.927293,
-                        51.826511
-                    ]
-                ]
-            ]
-        },
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:900913"
-        ]
-    },
-    {
         "extent": {
             "min_zoom": 0,
             "max_zoom": 14,
@@ -95142,6 +94878,21 @@
             "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
+        "name": "OSM Inspector: Addresses",
+        "overlay": true,
+        "url": "http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png",
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 18
+        },
+        "type": "tms"
+    },
+    {
+        "attribution": {
+            "url": "http://tools.geofabrik.de/osmi/",
+            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+            "required": true
+        },
         "name": "OSM Inspector: Geometry",
         "overlay": true,
         "url": "http://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png",
@@ -95202,6 +94953,21 @@
             "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
+        "name": "OSM Inspector: Routing",
+        "overlay": true,
+        "url": "http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png",
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 18
+        },
+        "type": "tms"
+    },
+    {
+        "attribution": {
+            "url": "http://tools.geofabrik.de/osmi/",
+            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+            "required": true
+        },
         "name": "OSM Inspector: Tagging",
         "overlay": true,
         "url": "http://tools.geofabrik.de/osmi/tiles/tagging/{zoom}/{x}/{y}.png",
@@ -95226,18 +94992,19 @@
         ]
     },
     {
-        "url": "http://openptmap.de/tiles/{zoom}/{x}/{y}.png",
-        "type": "tms",
         "attribution": {
             "url": "http://openstreetmap.org/",
             "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
         "name": "OpenPT Map (overlay)",
+        "overlay": true,
+        "url": "http://openptmap.de/tiles/{zoom}/{x}/{y}.png",
         "extent": {
             "min_zoom": 4,
             "max_zoom": 17
-        }
+        },
+        "type": "tms"
     },
     {
         "attribution": {
@@ -95255,6 +95022,19 @@
         },
         "type": "tms",
         "description": "Public GPS traces uploaded to OpenStreetMap."
+    },
+    {
+        "url": "http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png",
+        "type": "tms",
+        "attribution": {
+            "url": "http://openstreetmap.org/",
+            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+            "required": false
+        },
+        "name": "OpenStreetMap (German Style)",
+        "extent": {
+            "max_zoom": 18
+        }
     },
     {
         "attribution": {

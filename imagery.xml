@@ -1270,113 +1270,6 @@
     <bounds max-lat="-2.383396" max-lon="150.833478" min-lat="-2.800568" min-lon="150.388534" />
   </entry>
   <entry>
-    <name>2u</name>
-    <type>tms</type>
-    <url>http://{switch:a,b,c}.layers.openstreetmap.fr/2u/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">Tiles &#169; sly, data &#169; OpenStreetMap contributors, ODBL</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
-    <max-zoom>19</max-zoom>
-  </entry>
-  <entry>
-    <name>OSM Inspector: Addresses (EU)</name>
-    <type>tms</type>
-    <url>http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
-    <min-zoom>0</min-zoom>
-    <max-zoom>18</max-zoom>
-    <bounds max-lat="71.45" max-lon="41.75" min-lat="35.15" min-lon="-24.9" />
-  </entry>
-  <entry>
-    <name>OSM Inspector: Boundaries (EU)</name>
-    <type>tms</type>
-    <url>http://tools.geofabrik.de/osmi/tiles/boundaries/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
-    <min-zoom>0</min-zoom>
-    <max-zoom>18</max-zoom>
-    <bounds max-lat="71.45" max-lon="41.75" min-lat="35.15" min-lon="-24.9" />
-  </entry>
-  <entry>
-    <name>OSM Inspector: Routing (EU)</name>
-    <type>tms</type>
-    <url>http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
-    <min-zoom>0</min-zoom>
-    <max-zoom>18</max-zoom>
-    <bounds max-lat="71.45" max-lon="41.75" min-lat="35.15" min-lon="-24.9" />
-  </entry>
-  <entry>
-    <name>OpenStreetMap (German Language)</name>
-    <type>tms</type>
-    <url>http://toolserver.org/tiles/osm-locale-de/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
-    <max-zoom>17</max-zoom>
-  </entry>
-  <entry>
-    <name>OpenStreetMap (German Style)</name>
-    <type>tms</type>
-    <url>http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png</url>
-    <attribution-text>&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
-    <max-zoom>18</max-zoom>
-  </entry>
-  <entry>
-    <name>OpenStreetMap (Sorbian Language)</name>
-    <type>tms</type>
-    <url>http://toolserver.org/tiles/osm-locale-hsb/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
-    <max-zoom>17</max-zoom>
-  </entry>
-  <entry>
-    <name>Streets NRW Geofabrik.de</name>
-    <type>wms</type>
-    <url>http://tools.geofabrik.de/osmi/view/strassennrw/wxs?REQUEST=GetMap&amp;SERVICE=wms&amp;VERSION=1.1.1&amp;FORMAT=image/png&amp;SRS={proj}&amp;STYLES=&amp;LAYERS=unzugeordnete_strassen,kreisstrassen_ast,kreisstrassen,landesstrassen_ast,landesstrassen,bundesstrassen_ast,bundesstrassen,autobahnen_ast,autobahnen,endpunkte&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
-    <projections>
-      <code>EPSG:4326</code>
-      <code>EPSG:900913</code>
-    </projections>
-    <bounds max-lat="52.53802" max-lon="52.53802" min-lat="50.310813" min-lon="5.881575">
-      <shape>
-        <point lat="51.826511" lon="5.927293" />
-        <point lat="51.662494" lon="6.012007" />
-        <point lat="51.513156" lon="6.198579" />
-        <point lat="51.37445" lon="6.196562" />
-        <point lat="51.23848" lon="6.072517" />
-        <point lat="51.101051" lon="6.0389" />
-        <point lat="51.020765" lon="5.881574" />
-        <point lat="50.718666" lon="6.01873" />
-        <point lat="50.499359" lon="6.206983" />
-        <point lat="50.378604" lon="6.319935" />
-        <point lat="50.310813" lon="6.39927" />
-        <point lat="50.324551" lon="6.724678" />
-        <point lat="50.510477" lon="7.212791" />
-        <point lat="50.545524" lon="7.55837" />
-        <point lat="50.882687" lon="7.801754" />
-        <point lat="50.682043" lon="8.05724" />
-        <point lat="50.653919" lon="8.301968" />
-        <point lat="51.164336" lon="8.771256" />
-        <point lat="51.348632" lon="8.738984" />
-        <point lat="51.389766" lon="9.021363" />
-        <point lat="51.300736" lon="9.310466" />
-        <point lat="51.522988" lon="9.307776" />
-        <point lat="51.641638" lon="9.487961" />
-        <point lat="51.874687" lon="9.478549" />
-        <point lat="52.499563" lon="9.154485" />
-        <point lat="52.53802" lon="8.636789" />
-        <point lat="52.473361" lon="7.546268" />
-        <point lat="52.336362" lon="7.017815" />
-        <point lat="52.183276" lon="6.87797" />
-        <point lat="51.901245" lon="6.332037" />
-        <point lat="51.921153" lon="6.067138" />
-        <point lat="51.826511" lon="5.927293" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
     <name>imagico.de OSM images for mapping: Prokletije Mountains</name>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R136_N41_20150831T093006&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
@@ -26117,6 +26010,15 @@
     <max-zoom>19</max-zoom>
   </entry>
   <entry>
+    <name>OSM Inspector: Addresses</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
     <name>OSM Inspector: Geometry</name>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png</url>
@@ -26147,6 +26049,15 @@
     <name>OSM Inspector: Places</name>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/places/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <min-zoom>0</min-zoom>
+    <max-zoom>18</max-zoom>
+  </entry>
+  <entry>
+    <name>OSM Inspector: Routing</name>
+    <type>tms</type>
+    <url>http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
     <min-zoom>0</min-zoom>
@@ -26189,6 +26100,14 @@
     <attribution-url>http://www.openstreetmap.org/copyright</attribution-url>
     <min-zoom>0</min-zoom>
     <max-zoom>20</max-zoom>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (German Style)</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png</url>
+    <attribution-text>&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>18</max-zoom>
   </entry>
   <entry>
     <name>OpenStreetMap (Standard)</name>
