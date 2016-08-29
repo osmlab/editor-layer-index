@@ -1,0 +1,21 @@
+{
+    "url": "http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw",
+    "attribution": {
+        "text": "Kanton Basel-Stadt OF 2015",
+        "required": true
+    },
+    "type": "tms",
+    "name": "Kanton Basel-Stadt 2015",
+    "country_code": "CH",
+    "best": false,
+    "extent": {
+        "min_zoom": 8,
+        "max_zoom": 21,
+        "bbox": {
+            "min_lon": 7.4920,
+            "max_lon": 7.7840,
+            "min_lat": 47.4817,
+            "max_lat": 47.6342
+        }
+    }
+}
