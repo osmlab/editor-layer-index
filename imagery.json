@@ -15213,6 +15213,8 @@
     {
         "url": "http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{z}/{x}/{y}.png?origin=nw",
         "extent": {
+            "min_zoom": 0,
+            "max_zoom": 18,
             "bbox": {
                 "min_lon": 8.9567442,
                 "max_lat": 50.568462,
