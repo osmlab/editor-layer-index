@@ -10172,6 +10172,27 @@
     },
     {
         "extent": {
+            "min_zoom": 8,
+            "max_zoom": 21,
+            "bbox": {
+                "min_lon": 7.492,
+                "max_lat": 47.6342,
+                "min_lat": 47.4817,
+                "max_lon": 7.784
+            }
+        },
+        "attribution": {
+            "text": "Kanton Basel-Stadt OF 2015",
+            "required": true
+        },
+        "name": "Kanton Basel-Stadt 2015",
+        "url": "http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw",
+        "country_code": "CH",
+        "type": "tms",
+        "best": false
+    },
+    {
+        "extent": {
             "min_zoom": 12,
             "max_zoom": 19,
             "bbox": {
@@ -93206,6 +93227,48 @@
         "type": "tms",
         "best": true,
         "name": "Vector Streetmap for San Juan County WA"
+    },
+    {
+        "extent": {
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "bbox": {
+                "min_lon": -16.0508,
+                "max_lat": -47.5695,
+                "min_lat": -48.2444,
+                "max_lon": -15.5005
+            },
+            "polygon": [
+                [
+                    [
+                        -48.2444,
+                        -16.0508
+                    ],
+                    [
+                        -48.2444,
+                        -15.5005
+                    ],
+                    [
+                        -47.5695,
+                        -15.5005
+                    ],
+                    [
+                        -47.5695,
+                        -16.0508
+                    ],
+                    [
+                        -48.2444,
+                        -16.0508
+                    ]
+                ]
+            ]
+        },
+        "name": "IBGE Distrito Federal + Mapbox Satellite",
+        "url": "https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
+        "license_url": "http://www.mapbox.com/about/maps/",
+        "country_code": "BR",
+        "type": "tms",
+        "description": "Addresses data from IBGE on top of Mapbox Satellite imagery"
     },
     {
         "name": "IBGE Mapa de Setores Rurais",

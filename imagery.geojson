@@ -10593,6 +10593,47 @@
         },
         {
             "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            7.492,
+                            47.4817
+                        ],
+                        [
+                            7.492,
+                            47.6342
+                        ],
+                        [
+                            7.784,
+                            47.6342
+                        ],
+                        [
+                            7.784,
+                            47.4817
+                        ],
+                        [
+                            7.492,
+                            47.4817
+                        ]
+                    ]
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "url": "http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw",
+                "country-code": "CH",
+                "type": "tms",
+                "name": "Kanton Basel-Stadt 2015",
+                "attribution": {
+                    "url": null,
+                    "text": "Kanton Basel-Stadt OF 2015",
+                    "required": true
+                }
+            }
+        },
+        {
+            "geometry": {
                 "type": "MultiPolygon",
                 "coordinates": [
                     [
@@ -95266,6 +95307,48 @@
                 "type": "tms",
                 "name": "Vector Streetmap for San Juan County WA",
                 "best": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -48.2444,
+                                -16.0508
+                            ],
+                            [
+                                -48.2444,
+                                -15.5005
+                            ],
+                            [
+                                -47.5695,
+                                -15.5005
+                            ],
+                            [
+                                -47.5695,
+                                -16.0508
+                            ],
+                            [
+                                -48.2444,
+                                -16.0508
+                            ],
+                            [
+                                -48.2444,
+                                -16.0508
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "url": "https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
+                "country-code": "BR",
+                "type": "tms",
+                "name": "IBGE Distrito Federal + Mapbox Satellite"
             }
         },
         {
