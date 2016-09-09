@@ -2889,6 +2889,16 @@
     </bounds>
   </entry>
   <entry>
+    <name>Kanton Basel-Stadt 2015</name>
+    <type>tms</type>
+    <url>http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <attribution-text mandatory="true">Kanton Basel-Stadt OF 2015</attribution-text>
+    <country-code>CH</country-code>
+    <min-zoom>8</min-zoom>
+    <max-zoom>21</max-zoom>
+    <bounds max-lat="47.6342" max-lon="7.784" min-lat="47.4817" min-lon="7.492" />
+  </entry>
+  <entry>
     <name>Kanton Solothurn 25cm (SOGIS 2014-2015)</name>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
@@ -25482,6 +25492,23 @@
         <point lat="48.422614" lon="-123.114524" />
         <point lat="48.548575" lon="-123.219035" />
         <point lat="48.692975" lon="-123.274024" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>IBGE Distrito Federal</name>
+    <type>tms</type>
+    <url>https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g</url>
+    <country-code>BR</country-code>
+    <min-zoom>0</min-zoom>
+    <max-zoom>19</max-zoom>
+    <bounds max-lat="-47.5695" max-lon="-15.5005" min-lat="-48.2444" min-lon="-16.0508">
+      <shape>
+        <point lat="-16.0508" lon="-48.2444" />
+        <point lat="-15.5005" lon="-48.2444" />
+        <point lat="-15.5005" lon="-47.5695" />
+        <point lat="-16.0508" lon="-47.5695" />
+        <point lat="-16.0508" lon="-48.2444" />
       </shape>
     </bounds>
   </entry>
