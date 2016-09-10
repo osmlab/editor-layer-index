@@ -4601,6 +4601,70 @@
     <bounds max-lat="49.65211" max-lon="11.077808" min-lat="49.529292" min-lon="10.909347" />
   </entry>
   <entry>
+    <name>Erlangen Luftbild (2016 5,0 cm)</name>
+    <type>wms</type>
+    <url>https://secure.erlangen.de/arcgiser/services/Luftbild2016/MapServer/WmsServer?FORMAT=image/bmp&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:4326</code>
+      <code>EPSG:31494</code>
+    </projections>
+    <country-code>DE</country-code>
+    <bounds max-lat="49.65197" max-lon="11.060541" min-lat="49.529259" min-lon="10.905885">
+      <shape>
+        <point lat="49.537646" lon="10.97664" />
+        <point lat="49.533916" lon="10.991013" />
+        <point lat="49.538346" lon="10.993888" />
+        <point lat="49.532545" lon="11.027844" />
+        <point lat="49.534615" lon="11.034604" />
+        <point lat="49.537588" lon="11.034065" />
+        <point lat="49.543213" lon="11.043183" />
+        <point lat="49.553035" lon="11.035569" />
+        <point lat="49.558425" lon="11.038399" />
+        <point lat="49.569291" lon="11.035076" />
+        <point lat="49.586591" lon="11.037905" />
+        <point lat="49.590201" lon="11.047966" />
+        <point lat="49.593695" lon="11.049224" />
+        <point lat="49.595209" lon="11.057489" />
+        <point lat="49.599052" lon="11.056231" />
+        <point lat="49.600304" lon="11.051268" />
+        <point lat="49.609036" lon="11.053513" />
+        <point lat="49.613809" lon="11.043093" />
+        <point lat="49.618232" lon="11.040757" />
+        <point lat="49.61735" lon="11.028496" />
+        <point lat="49.61896" lon="11.019288" />
+        <point lat="49.613722" lon="11.0152" />
+        <point lat="49.614479" lon="11.005813" />
+        <point lat="49.619309" lon="11.00639" />
+        <point lat="49.622103" lon="11.000827" />
+        <point lat="49.616515" lon="10.985601" />
+        <point lat="49.617534" lon="10.978369" />
+        <point lat="49.624954" lon="10.973698" />
+        <point lat="49.625565" lon="10.965389" />
+        <point lat="49.628562" lon="10.960628" />
+        <point lat="49.631762" lon="10.963817" />
+        <point lat="49.6379" lon="10.954744" />
+        <point lat="49.636998" lon="10.948366" />
+        <point lat="49.643775" lon="10.941853" />
+        <point lat="49.648371" lon="10.9273" />
+        <point lat="49.639631" lon="10.92063" />
+        <point lat="49.637726" lon="10.911355" />
+        <point lat="49.605049" lon="10.924291" />
+        <point lat="49.580038" lon="10.922045" />
+        <point lat="49.570078" lon="10.912209" />
+        <point lat="49.561805" lon="10.914409" />
+        <point lat="49.558425" lon="10.923527" />
+        <point lat="49.559765" lon="10.927121" />
+        <point lat="49.55892" lon="10.933454" />
+        <point lat="49.544671" lon="10.930714" />
+        <point lat="49.532254" lon="10.930669" />
+        <point lat="49.533245" lon="10.940595" />
+        <point lat="49.530214" lon="10.954878" />
+        <point lat="49.531263" lon="10.971991" />
+        <point lat="49.537646" lon="10.97664" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Hamburg (40 cm)</name>
     <type>wms</type>
     <url>http://gateway.hamburg.de/OGCFassade/HH_WMS_DOP40.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
