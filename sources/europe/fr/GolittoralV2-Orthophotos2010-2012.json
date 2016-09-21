@@ -1,21 +1,7 @@
 {
-    "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
-        "text": "Ortho Littorale V2 - MEDDE",
-        "required": true
-    },
-    "type": "wms",
-    "name": "G\u00e9olittoral V2 - Orthophotos 2010-2012",
-    "country_code": "FR",
-    "extent": {
-        "bbox": {
-            "min_lon": 2.9062494,
-            "max_lon": 7.6055156,
-            "min_lat": 42.4001543,
-            "max_lat": 43.8419488
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     3.1476937,
@@ -592,6 +578,10 @@
                 [
                     3.0908647,
                     42.5008187
+                ],
+                [
+                    3.1476937,
+                    42.4007197
                 ]
             ],
             [
@@ -638,8 +628,24 @@
                 [
                     6.3517753,
                     42.9990494
+                ],
+                [
+                    6.3594494,
+                    43.0232125
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+            "text": "Ortho Littorale V2 - MEDDE",
+            "required": true
+        },
+        "type": "wms",
+        "name": "G\u00e9olittoral V2 - Orthophotos 2010-2012",
+        "country_code": "FR"
     }
 }

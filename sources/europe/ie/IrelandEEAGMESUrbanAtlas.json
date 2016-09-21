@@ -1,22 +1,7 @@
 {
-    "attribution": {
-        "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas",
-        "text": "EEA GMES Urban Atlas",
-        "required": true
-    },
-    "name": "Ireland EEA GMES Urban Atlas",
-    "url": "http://a.tile.openstreetmap.ie/tiles/urbanatlas/{zoom}/{x}/{y}.png",
-    "country_code": "IE",
-    "extent": {
-        "min_zoom": 5,
-        "max_zoom": 17,
-        "bbox": {
-            "min_lon": -10.71,
-            "max_lon": -5.37,
-            "min_lat": 51.32,
-            "max_lat": 55.46
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -9.2759602,
@@ -229,6 +214,10 @@
                 [
                     -9.2601152,
                     52.7616711
+                ],
+                [
+                    -9.2759602,
+                    52.7993666
                 ]
             ],
             [
@@ -1521,6 +1510,19 @@
             ]
         ]
     },
-    "type": "tms",
-    "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas",
+            "text": "EEA GMES Urban Atlas",
+            "required": true
+        },
+        "name": "Ireland EEA GMES Urban Atlas",
+        "url": "http://a.tile.openstreetmap.ie/tiles/urbanatlas/{zoom}/{x}/{y}.png",
+        "max_zoom": 17,
+        "min_zoom": 5,
+        "country_code": "IE",
+        "type": "tms",
+        "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    }
 }

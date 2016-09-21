@@ -1,21 +1,7 @@
 {
-    "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg",
-    "attribution": {
-        "url": "http://wiki.freemap.sk/KatasterPortal",
-        "text": "Permisssion by UGKK",
-        "required": true
-    },
-    "type": "tms",
-    "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)",
-    "country_code": "SK",
-    "extent": {
-        "bbox": {
-            "min_lon": 16.7988747,
-            "max_lon": 22.5884098,
-            "min_lat": 47.7145247,
-            "max_lat": 49.6375827
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     19.83682,
@@ -203,5 +189,17 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg",
+        "attribution": {
+            "url": "http://wiki.freemap.sk/KatasterPortal",
+            "text": "Permisssion by UGKK",
+            "required": true
+        },
+        "type": "tms",
+        "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)",
+        "country_code": "SK"
     }
 }

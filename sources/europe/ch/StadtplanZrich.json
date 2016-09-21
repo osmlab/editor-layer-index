@@ -1,18 +1,40 @@
 {
-    "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-    "attribution": {
-        "text": "Stadt Z\u00fcrich Open Government Data",
-        "required": false
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.4482,
+                    47.321
+                ],
+                [
+                    8.4482,
+                    47.4339
+                ],
+                [
+                    8.6248,
+                    47.4339
+                ],
+                [
+                    8.6248,
+                    47.321
+                ],
+                [
+                    8.4482,
+                    47.321
+                ]
+            ]
+        ]
     },
-    "type": "tms",
-    "name": "Stadtplan Z\u00fcrich",
-    "country_code": "CH",
-    "extent": {
-        "bbox": {
-            "min_lon": 8.4482,
-            "max_lon": 8.6248,
-            "min_lat": 47.3210,
-            "max_lat": 47.4339
-        }
+    "type": "Feature",
+    "properties": {
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "attribution": {
+            "text": "Stadt Z\u00fcrich Open Government Data",
+            "required": false
+        },
+        "type": "tms",
+        "name": "Stadtplan Z\u00fcrich",
+        "country_code": "CH"
     }
 }

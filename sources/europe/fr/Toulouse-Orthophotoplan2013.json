@@ -1,23 +1,7 @@
 {
-    "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}",
-    "attribution": {
-        "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
-        "text": "ToulouseMetropole",
-        "required": true
-    },
-    "type": "tms",
-    "name": "Toulouse - Orthophotoplan 2013",
-    "license_url": "http://opendatacommons.org/licenses/odbl/",
-    "country_code": "FR",
-    "extent": {
-        "max_zoom": 22,
-        "bbox": {
-            "min_lon": 1.1135067,
-            "max_lon": 1.6384146,
-            "min_lat": 43.5094658,
-            "max_lat": 43.7815757
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     1.1135067,
@@ -234,8 +218,26 @@
                 [
                     1.1149055,
                     43.6417629
+                ],
+                [
+                    1.1135067,
+                    43.6867566
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
+            "text": "ToulouseMetropole",
+            "required": true
+        },
+        "name": "Toulouse - Orthophotoplan 2013",
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}",
+        "max_zoom": 22,
+        "license_url": "http://opendatacommons.org/licenses/odbl/",
+        "country_code": "FR",
+        "type": "tms"
     }
 }

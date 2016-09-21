@@ -1,20 +1,7 @@
 {
-    "url": "http://gravitystorm.dev.openstreetmap.org/surrey/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "name": "Surrey Air Survey",
-    "start_date": "2007",
-    "end_date": "2009",
-    "country_code": "GB",
-    "extent": {
-        "min_zoom": 8,
-        "max_zoom": 19,
-        "bbox": {
-            "min_lon": -0.8529549,
-            "max_lon": 0.0640602,
-            "min_lat": 51.0707547,
-            "max_lat": 51.4760881
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -0.752478,
@@ -487,8 +474,23 @@
                 [
                     -0.7296581,
                     51.0744919
+                ],
+                [
+                    -0.752478,
+                    51.0821941
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "name": "Surrey Air Survey",
+        "end_date": "2009",
+        "url": "http://gravitystorm.dev.openstreetmap.org/surrey/{zoom}/{x}/{y}.png",
+        "max_zoom": 19,
+        "min_zoom": 8,
+        "country_code": "GB",
+        "type": "tms",
+        "start_date": "2007"
     }
 }

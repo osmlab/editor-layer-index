@@ -1,22 +1,7 @@
 {
-    "attribution": {
-        "url": "http://geo.nls.uk/maps/",
-        "text": "National Library of Scotland Historic Maps",
-        "required": true
-    },
-    "name": "NLS - OS 1:25k 1st Series 1937-61",
-    "url": "http://geo.nls.uk/mapdata2/os/25000/{zoom}/{x}/{-y}.png",
-    "country_code": "GB",
-    "extent": {
-        "min_zoom": 5,
-        "max_zoom": 16,
-        "bbox": {
-            "min_lon": -6.4667600,
-            "max_lon": 1.8345714,
-            "min_lat": 49.8159968,
-            "max_lat": 58.7036341
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -4.7157244,
@@ -33,6 +18,10 @@
                 [
                     -4.7148782,
                     54.6615818
+                ],
+                [
+                    -4.7157244,
+                    54.6796556
                 ]
             ],
             [
@@ -115,6 +104,10 @@
                 [
                     -3.7158389,
                     58.4270836
+                ],
+                [
+                    -3.7085748,
+                    58.3371151
                 ]
             ],
             [
@@ -141,6 +134,10 @@
                 [
                     -6.4504159,
                     49.8159968
+                ],
+                [
+                    -6.46676,
+                    49.9943621
                 ]
             ],
             [
@@ -1843,6 +1840,10 @@
                 [
                     -5.6468717,
                     50.2209953
+                ],
+                [
+                    -5.6453263,
+                    50.2029809
                 ]
             ],
             [
@@ -1861,6 +1862,10 @@
                 [
                     -5.1322161,
                     55.2446343
+                ],
+                [
+                    -5.1336607,
+                    55.2630226
                 ]
             ],
             [
@@ -1879,6 +1884,10 @@
                 [
                     -5.6277517,
                     55.3302345
+                ],
+                [
+                    -5.6431878,
+                    55.5095745
                 ]
             ],
             [
@@ -1897,6 +1906,10 @@
                 [
                     -4.7174993,
                     51.1280545
+                ],
+                [
+                    -4.7213517,
+                    51.2180246
                 ]
             ],
             [
@@ -1915,10 +1928,27 @@
                 [
                     -5.1755648,
                     55.6138137
+                ],
+                [
+                    -5.1608796,
+                    55.4153626
                 ]
             ]
         ]
     },
-    "type": "tms",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/",
+            "text": "National Library of Scotland Historic Maps",
+            "required": true
+        },
+        "name": "NLS - OS 1:25k 1st Series 1937-61",
+        "url": "http://geo.nls.uk/mapdata2/os/25000/{zoom}/{x}/{-y}.png",
+        "max_zoom": 16,
+        "min_zoom": 5,
+        "country_code": "GB",
+        "type": "tms",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    }
 }

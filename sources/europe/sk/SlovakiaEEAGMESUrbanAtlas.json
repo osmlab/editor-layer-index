@@ -1,20 +1,7 @@
 {
-    "attribution": {
-        "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas",
-        "text": "EEA GMES Urban Atlas",
-        "required": true
-    },
-    "name": "Slovakia EEA GMES Urban Atlas",
-    "url": "http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png",
-    "country_code": "SK",
-    "extent": {
-        "bbox": {
-            "min_lon": 16.7988747,
-            "max_lon": 22.5884098,
-            "min_lat": 47.7145247,
-            "max_lat": 49.6375827
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     19.83682,
@@ -203,6 +190,17 @@
             ]
         ]
     },
-    "type": "tms",
-    "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas",
+            "text": "EEA GMES Urban Atlas",
+            "required": true
+        },
+        "name": "Slovakia EEA GMES Urban Atlas",
+        "url": "http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png",
+        "country_code": "SK",
+        "type": "tms",
+        "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    }
 }

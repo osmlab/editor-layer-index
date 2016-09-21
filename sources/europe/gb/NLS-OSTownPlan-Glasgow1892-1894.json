@@ -1,45 +1,47 @@
 {
-    "url": "http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png",
-    "attribution": {
-        "url": "http://maps.nls.uk/townplans/glasgow_2.html",
-        "text": "National Library of Scotland - Glasgow 1892-1894",
-        "required": true
-    },
-    "type": "tms",
-    "name": "OS Town Plans, Glasgow 1892-1894 (NLS)",
-    "description": "Detailed town plan of Glasgow 1892-1894, courtesy of National Library of Scotland.",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png",
-    "start_date": "1892",
-    "end_date": "1895",
-    "country_code": "GB",
-    "extent": {
-        "min_zoom": 13,
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": -4.35157646,
-            "max_lon": -4.17321842,
-            "min_lat": 55.81456228,
-            "max_lat": 55.9012587
-        },
-            "polygon" :[
-               [
-                  [
-                     -4.3465357,
-                     55.81456228
-                  ],
-                  [
-                     -4.35157646,
-                     55.89806268
-                  ],
-                  [
-                     -4.17788765,
-                     55.9012587
-                  ],
-                  [
-                     -4.17321842,
-                     55.81774834
-                  ]
-               ]
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.3465357,
+                    55.81456228
+                ],
+                [
+                    -4.35157646,
+                    55.89806268
+                ],
+                [
+                    -4.17788765,
+                    55.9012587
+                ],
+                [
+                    -4.17321842,
+                    55.81774834
+                ],
+                [
+                    -4.3465357,
+                    55.81456228
+                ]
             ]
+        ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/glasgow_2.html",
+            "text": "National Library of Scotland - Glasgow 1892-1894",
+            "required": true
+        },
+        "name": "OS Town Plans, Glasgow 1892-1894 (NLS)",
+        "end_date": "1895",
+        "url": "http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1892",
+        "description": "Detailed town plan of Glasgow 1892-1894, courtesy of National Library of Scotland."
     }
 }

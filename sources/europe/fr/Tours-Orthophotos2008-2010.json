@@ -1,24 +1,7 @@
 {
-    "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}",
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
-        "text": "Orthophoto Tour(s) Plus 2008",
-        "required": true
-    },
-    "type": "tms",
-    "name": "Tours - Orthophotos 2008-2010",
-    "start_date": "2008",
-    "end_date": "2011",
-    "country_code": "FR",
-    "extent": {
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": 0.3864341,
-            "max_lon": 0.8201963,
-            "min_lat": 47.2594616,
-            "max_lat": 47.4911439
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     0.5457462,
@@ -603,8 +586,27 @@
                 [
                     0.5721805,
                     47.4656513
+                ],
+                [
+                    0.5457462,
+                    47.465264
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
+            "text": "Orthophoto Tour(s) Plus 2008",
+            "required": true
+        },
+        "name": "Tours - Orthophotos 2008-2010",
+        "end_date": "2011",
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}",
+        "max_zoom": 20,
+        "country_code": "FR",
+        "type": "tms",
+        "start_date": "2008"
     }
 }

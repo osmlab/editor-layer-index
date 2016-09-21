@@ -1,45 +1,47 @@
 {
-    "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png",
-    "attribution": {
-        "url": "http://maps.nls.uk/townplans/ayr.html",
-        "text": "National Library of Scotland - Ayr 1855",
-        "required": true
-    },
-    "type": "tms",
-    "name": "OS Town Plans, Ayr 1855 (NLS)",
-    "description": "Detailed town plan of Ayr 1855, courtesy of National Library of Scotland.",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png",
-    "start_date": "1855",
-    "end_date": "1856",
-    "country_code": "GB",
-    "extent": {
-        "min_zoom": 13,
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": -4.67080057,
-            "max_lon": -4.60305426,
-            "min_lat": 55.43748864,
-            "max_lat": 55.48503484
-        },
-            "polygon" :[
-               [
-                  [
-                     -4.66768105,
-                     55.43748864
-                  ],
-                  [
-                     -4.67080057,
-                     55.48363961
-                  ],
-                  [
-                     -4.60609844,
-                     55.48503484
-                  ],
-                  [
-                     -4.60305426,
-                     55.43888149
-                  ]
-               ]
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.66768105,
+                    55.43748864
+                ],
+                [
+                    -4.67080057,
+                    55.48363961
+                ],
+                [
+                    -4.60609844,
+                    55.48503484
+                ],
+                [
+                    -4.60305426,
+                    55.43888149
+                ],
+                [
+                    -4.66768105,
+                    55.43748864
+                ]
             ]
+        ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/ayr.html",
+            "text": "National Library of Scotland - Ayr 1855",
+            "required": true
+        },
+        "name": "OS Town Plans, Ayr 1855 (NLS)",
+        "end_date": "1856",
+        "url": "http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1855",
+        "description": "Detailed town plan of Ayr 1855, courtesy of National Library of Scotland."
     }
 }

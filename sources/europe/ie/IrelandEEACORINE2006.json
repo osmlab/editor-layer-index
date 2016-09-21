@@ -1,22 +1,7 @@
 {
-    "attribution": {
-        "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1",
-        "text": "EEA Corine 2006",
-        "required": true
-    },
-    "name": "Ireland EEA CORINE 2006",
-    "url": "http://a.tile.openstreetmap.ie/tiles/corine/{zoom}/{x}/{y}.png",
-    "country_code": "IE",
-    "extent": {
-        "min_zoom": 5,
-        "max_zoom": 16,
-        "bbox": {
-            "min_lon": -11.0353180,
-            "max_lon": -5.0649187,
-            "min_lat": 51.1991221,
-            "max_lat": 55.6205288
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -5.842956,
@@ -169,10 +154,27 @@
                 [
                     -5.2572284,
                     54.1582424
+                ],
+                [
+                    -5.842956,
+                    53.8627976
                 ]
             ]
         ]
     },
-    "type": "tms",
-    "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1",
+            "text": "EEA Corine 2006",
+            "required": true
+        },
+        "name": "Ireland EEA CORINE 2006",
+        "url": "http://a.tile.openstreetmap.ie/tiles/corine/{zoom}/{x}/{y}.png",
+        "max_zoom": 16,
+        "min_zoom": 5,
+        "country_code": "IE",
+        "type": "tms",
+        "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    }
 }

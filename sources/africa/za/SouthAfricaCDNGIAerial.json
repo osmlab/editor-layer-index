@@ -1,19 +1,7 @@
 {
-    "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg",
-    "type": "tms",
-    "name": "South Africa CD:NGI Aerial",
-    "best": true,
-    "country_code": "ZA",
-    "extent": {
-        "min_zoom": 1,
-        "max_zoom": 22,
-        "bbox": {
-            "min_lon": 16.4491046,
-            "max_lon": 32.8999860,
-            "min_lat": -34.8379056,
-            "max_lat": -22.1186426
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     17.8396817,
@@ -1194,8 +1182,22 @@
                 [
                     17.8396817,
                     -32.8507302
+                ],
+                [
+                    17.8396817,
+                    -32.7983384
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "name": "South Africa CD:NGI Aerial",
+        "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 22,
+        "min_zoom": 1,
+        "country_code": "ZA",
+        "type": "tms",
+        "best": true
     }
 }

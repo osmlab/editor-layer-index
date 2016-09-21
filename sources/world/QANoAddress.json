@@ -1,15 +1,16 @@
 {
-    "url": "http://tile3.poole.ch/noaddress/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "overlay": true,
-    "attribution": {
-        "url": "http://qa.poole.ch/",
-        "text": "Simon Poole, Data \u00a9OpenStreetMap contributors",
-        "required": true
-    },
-    "extent": {
-        "min_zoom": 0,
-        "max_zoom": 18
-    },
-    "name": "QA No Address"
+    "geometry": null,
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://qa.poole.ch/",
+            "text": "Simon Poole, Data \u00a9OpenStreetMap contributors",
+            "required": true
+        },
+        "name": "QA No Address",
+        "overlay": true,
+        "url": "http://tile3.poole.ch/noaddress/{zoom}/{x}/{y}.png",
+        "max_zoom": 18,
+        "type": "tms"
+    }
 }

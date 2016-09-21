@@ -1,45 +1,47 @@
 {
-    "url": "http://geo.nls.uk/maps/towns/coatbridge/{zoom}/{x}/{-y}.png",
-    "attribution": {
-        "url": "http://maps.nls.uk/townplans/coatbridge.html",
-        "text": "National Library of Scotland - Coatbridge 1858",
-        "required": true
-    },
-    "type": "tms",
-    "name": "OS Town Plans, Coatbridge 1858 (NLS)",
-    "description": "Detailed town plan of Coatbridge 1858, courtesy of National Library of Scotland.",
-    "icon": "http://nls.tileserver.com/nls70-nq8.png",
-    "start_date": "1858",
-    "end_date": "1859",
-    "country_code": "GB",
-    "extent": {
-        "min_zoom": 13,
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": -4.05157062,
-            "max_lon": -4.01834651,
-            "min_lat": 55.84648689,
-            "max_lat": 55.87000186
-        },
-            "polygon" :[
-               [
-                  [
-                     -4.05035921,
-                     55.84648689
-                  ],
-                  [
-                     -4.05157062,
-                     55.86947193
-                  ],
-                  [
-                     -4.01953905,
-                     55.87000186
-                  ],
-                  [
-                     -4.01834651,
-                     55.84701638
-                  ]
-               ]
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.05035921,
+                    55.84648689
+                ],
+                [
+                    -4.05157062,
+                    55.86947193
+                ],
+                [
+                    -4.01953905,
+                    55.87000186
+                ],
+                [
+                    -4.01834651,
+                    55.84701638
+                ],
+                [
+                    -4.05035921,
+                    55.84648689
+                ]
             ]
+        ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/coatbridge.html",
+            "text": "National Library of Scotland - Coatbridge 1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Coatbridge 1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/coatbridge/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1858",
+        "description": "Detailed town plan of Coatbridge 1858, courtesy of National Library of Scotland."
     }
 }

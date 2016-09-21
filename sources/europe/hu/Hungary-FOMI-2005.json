@@ -1,29 +1,7 @@
 {
-    "attribution": {
-        "url": "http://www.fomi.hu/",
-        "text": "Földmérési és Távérzékelési Intézet",
-        "required": true
-    },
-    "name": "FÖMI ortofotó 2005",
-    "description": "Hungary",
-    "type": "tms",
-    "url": "http://e.tile.openstreetmap.hu/ortofoto2005/{zoom}/{x}/{y}.jpg",
-    "license_url": "http://e.tile.openstreetmap.hu/ortofoto2005/license.txt",
-    "country_code": "HU",
-    "start_date": "2005",
-    "end_date": "2005",
-    "overlay": false,
-    "best": false,
-    "extent": {
-        "min_zoom": 0,
-        "max_zoom": 17,
-        "bbox": {
-            "min_lon": 16.1139147,
-            "max_lon": 22.8974350,
-            "min_lat": 45.7371280,
-            "max_lat": 48.5851040
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     16.1139147,
@@ -2319,5 +2297,22 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.fomi.hu/",
+            "text": "F\u00f6ldm\u00e9r\u00e9si \u00e9s T\u00e1v\u00e9rz\u00e9kel\u00e9si Int\u00e9zet",
+            "required": true
+        },
+        "name": "F\u00d6MI ortofot\u00f3 2005",
+        "end_date": "2005",
+        "url": "http://e.tile.openstreetmap.hu/ortofoto2005/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 17,
+        "license_url": "http://e.tile.openstreetmap.hu/ortofoto2005/license.txt",
+        "country_code": "HU",
+        "type": "tms",
+        "start_date": "2005",
+        "description": "Hungary"
     }
 }

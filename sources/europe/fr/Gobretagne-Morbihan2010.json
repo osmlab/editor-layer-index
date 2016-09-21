@@ -1,16 +1,7 @@
 {
-    "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-megalis-56&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "type": "wms",
-    "name": "G\u00e9obretagne - Morbihan 2010",
-    "country_code": "FR",
-    "extent": {
-        "bbox": {
-            "min_lon": -3.7554844,
-            "max_lon": -2.0145168,
-            "min_lat": 47.2657307,
-            "max_lat": 48.2263974
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -3.0549296,
@@ -155,6 +146,10 @@
                 [
                     -3.0519301,
                     47.4050893
+                ],
+                [
+                    -3.0549296,
+                    47.4316995
                 ]
             ],
             [
@@ -301,6 +296,10 @@
                 [
                     -3.2755604,
                     47.3836561
+                ],
+                [
+                    -3.276227,
+                    47.4021569
                 ]
             ],
             [
@@ -1647,6 +1646,10 @@
                 [
                     -3.5472752,
                     48.2006434
+                ],
+                [
+                    -3.6020671,
+                    48.1970306
                 ]
             ],
             [
@@ -1721,8 +1724,19 @@
                 [
                     -3.5217721,
                     47.6600785
+                ],
+                [
+                    -3.5229504,
+                    47.6684903
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-megalis-56&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "type": "wms",
+        "name": "G\u00e9obretagne - Morbihan 2010",
+        "country_code": "FR"
     }
 }

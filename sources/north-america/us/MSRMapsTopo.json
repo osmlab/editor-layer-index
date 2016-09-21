@@ -1,16 +1,7 @@
 {
-    "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}",
-    "type": "wms",
-    "name": "MSR Maps Topo",
-    "country_code": "US",
-    "extent": {
-        "bbox": {
-            "min_lon": -168.0028034,
-            "max_lon": -65.9996832,
-            "min_lat": 18.8669253,
-            "max_lat": 72.0476525
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -126.0034945,
@@ -403,6 +394,10 @@
                 [
                     -96.0025075,
                     49.0568813
+                ],
+                [
+                    -126.0034945,
+                    49.0565499
                 ]
             ],
             [
@@ -437,6 +432,10 @@
                 [
                     -157.4930745,
                     20.9624325
+                ],
+                [
+                    -157.4831292,
+                    21.9790546
                 ]
             ],
             [
@@ -463,6 +462,10 @@
                 [
                     -155.911246,
                     21.547541
+                ],
+                [
+                    -156.0122149,
+                    21.5469444
                 ]
             ],
             [
@@ -773,6 +776,10 @@
                 [
                     -162.6703867,
                     69.999946
+                ],
+                [
+                    -165.0145842,
+                    70.0022546
                 ]
             ],
             [
@@ -823,6 +830,10 @@
                 [
                     -163.9982619,
                     54.0000486
+                ],
+                [
+                    -164.0008229,
+                    54.9971825
                 ]
             ],
             [
@@ -841,29 +852,40 @@
                 [
                     -161.9991499,
                     55.0001229
+                ],
+                [
+                    -162.0005371,
+                    53.9996987
                 ]
             ]
         ]
     },
-    "available_projections": [
-        "EPSG:26904",
-        "EPSG:26905",
-        "EPSG:26906",
-        "EPSG:26907",
-        "EPSG:26908",
-        "EPSG:26909",
-        "EPSG:26910",
-        "EPSG:26911",
-        "EPSG:26913",
-        "EPSG:26914",
-        "EPSG:26915",
-        "EPSG:26916",
-        "EPSG:26917",
-        "EPSG:26918",
-        "EPSG:26919",
-        "EPSG:26920",
-        "EPSG:4326",
-        "USDA:ALBERS-US",
-        "USDA:ALBERS-AK"
-    ]
+    "type": "Feature",
+    "properties": {
+        "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}",
+        "type": "wms",
+        "name": "MSR Maps Topo",
+        "country_code": "US",
+        "available_projections": [
+            "EPSG:26904",
+            "EPSG:26905",
+            "EPSG:26906",
+            "EPSG:26907",
+            "EPSG:26908",
+            "EPSG:26909",
+            "EPSG:26910",
+            "EPSG:26911",
+            "EPSG:26913",
+            "EPSG:26914",
+            "EPSG:26915",
+            "EPSG:26916",
+            "EPSG:26917",
+            "EPSG:26918",
+            "EPSG:26919",
+            "EPSG:26920",
+            "EPSG:4326",
+            "USDA:ALBERS-US",
+            "USDA:ALBERS-AK"
+        ]
+    }
 }

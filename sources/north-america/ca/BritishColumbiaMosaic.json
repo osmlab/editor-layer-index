@@ -1,25 +1,7 @@
 {
-    "url": "http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png",
-    "attribution": {
-        "url": "http://imagery.paulnorman.ca/tiles/about.html",
-        "text": "Copyright Province of British Columbia, City of Surrey",
-        "required": false
-    },
-    "type": "tms",
-    "name": "British Columbia Mosaic",
-    "start_date": "2009",
-    "end_date": "2013-06",
-    "country_code": "CA",
-    "extent": {
-        "min_zoom": 9,
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": -123.4407170,
-            "max_lon": -121.3462885,
-            "min_lat": 48.9954007,
-            "max_lat": 50.4256959
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -123.3176032,
@@ -1036,8 +1018,28 @@
                 [
                     -123.3179861,
                     49.3254065
+                ],
+                [
+                    -123.3176032,
+                    49.3272567
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://imagery.paulnorman.ca/tiles/about.html",
+            "text": "Copyright Province of British Columbia, City of Surrey",
+            "required": false
+        },
+        "name": "British Columbia Mosaic",
+        "end_date": "2013-06",
+        "url": "http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "min_zoom": 9,
+        "country_code": "CA",
+        "type": "tms",
+        "start_date": "2009"
     }
 }
