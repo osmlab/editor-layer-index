@@ -9,29 +9,30 @@ for file in sys.argv[1:]:
         sources.append(json.load(f))
 
 for source in sources:
+    props = source['properties']
     entry = ET.SubElement(root, "entry")
 
     name = ET.SubElement(entry, "name")
-    name.text = source['name']
+    name.text = props['name']
 
     type = ET.SubElement(entry, "type")
-    type.text = source['type']
+    type.text = props['type']
 
     url = ET.SubElement(entry, "url")
-    url.text = source['url']
+    url.text = props['url']
 
-    if 'best' in source and source['best'] == True:
+    if props.get('best') == True:
         #entry.set('best', 'true')
         best = ET.SubElement(entry, "best")
 
-    if 'available_projections' in source:
+    if 'available_projections' in props:
         projections = ET.SubElement(entry, "projections")
-        for projection in source['available_projections']:
+        for projection in props['available_projections']:
             code = ET.SubElement(projections, "code")
             code.text = projection
 
-    if 'attribution' in source:
-        attribution = source['attribution']
+    if 'attribution' in props:
+        attribution = props['attribution']
 
         if attribution.get('text'):
             text = ET.SubElement(entry, "attribution-text")
@@ -47,42 +48,32 @@ for source in sources:
         default = ET.SubElement(entry, "default")
         default.text = 'true'
 
-    if 'icon' in source:
+    if 'icon' in props:
         icon = ET.SubElement(entry, "icon")
-        icon.text = source['icon']
+        icon.text = props['icon']
 
-    if 'country_code' in source:
+    if 'country_code' in props:
         country_code = ET.SubElement(entry, "country-code")
-        country_code.text = source['country_code']
+        country_code.text = props['country_code']
 
-    if 'extent' in source:
-        extent = source['extent']
+    if 'min_zoom' in props:
+        min_zoom = ET.SubElement(entry, "min-zoom")
+        min_zoom.text = str(props['min_zoom'])
 
-        if 'min_zoom' in extent:
-            min_zoom = ET.SubElement(entry, "min-zoom")
-            min_zoom.text = str(extent['min_zoom'])
+    if 'max_zoom' in props:
+        max_zoom = ET.SubElement(entry, "max-zoom")
+        max_zoom.text = str(props['max_zoom'])
 
-        if 'max_zoom' in extent:
-            max_zoom = ET.SubElement(entry, "max-zoom")
-            max_zoom.text = str(extent['max_zoom'])
+    geometry = source.get('geometry')
+    if geometry:
+        bounds = ET.SubElement(entry, "bounds")
 
-        if 'bbox' in extent or 'polygon' in extent:
-            bounds = ET.SubElement(entry, "bounds")
-
-            # Rounding to the nearest ~10cm
-            if 'bbox' in extent:
-                bounds.set('min-lat', str(round(extent['bbox']['min_lat'],6)))
-                bounds.set('min-lon', str(round(extent['bbox']['min_lon'],6)))
-                bounds.set('max-lat', str(round(extent['bbox']['max_lat'],6)))
-                bounds.set('max-lon', str(round(extent['bbox']['max_lon'],6)))
-
-            if 'polygon' in extent:
-                for ring in extent['polygon']:
-                    shape = ET.SubElement(bounds, "shape")
-                    for p in ring:
-                        point = ET.SubElement(shape, "point")
-                        point.set('lon', str(round(p[0],6)))
-                        point.set('lat', str(round(p[1],6)))
+        for ring in geometry['coordinates']:
+            shape = ET.SubElement(bounds, "shape")
+            for p in ring:
+                point = ET.SubElement(shape, "point")
+                point.set('lon', str(round(p[0],6)))
+                point.set('lat', str(round(p[1],6)))
 
 util.indent(root)
 

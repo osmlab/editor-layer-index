@@ -15,5 +15,5 @@ imagery.xml: $(SOURCES)
 imagery.json: $(SOURCES)
 	python scripts/concat.py $(SOURCES) > imagery.json
 
-imagery.geojson: imagery.xml
-	python scripts/convert_geojson.py imagery.xml > imagery.geojson
+imagery.geojson: $(SOURCES)
+	python scripts/convert_geojson.py $(SOURCES) > imagery.geojson
