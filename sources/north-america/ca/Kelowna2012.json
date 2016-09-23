@@ -1,23 +1,7 @@
 {
-    "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna2012/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "name": "Kelowna 2012",
-    "id": "kelowna_2012",
-    "description": "High quality aerial imagery taken for the City of Kelowna",
-    "start_date": "2012-05-13",
-    "end_date": "2012-05-14",
-    "license_url": "http://opendatacommons.org/licenses/pddl/summary/",
-    "country_code": "CA",
-    "extent": {
-        "min_zoom": 9,
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": -119.6011924,
-            "max_lon": -119.3095139,
-            "min_lat": 49.7714941,
-            "max_lat": 50.0326418
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -119.5867318,
@@ -398,8 +382,26 @@
                 [
                     -119.5864365,
                     49.7843863
+                ],
+                [
+                    -119.5867318,
+                    49.7928087
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "description": "High quality aerial imagery taken for the City of Kelowna",
+        "end_date": "2012-05-14",
+        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna2012/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "start_date": "2012-05-13",
+        "min_zoom": 9,
+        "license_url": "http://opendatacommons.org/licenses/pddl/summary/",
+        "country_code": "CA",
+        "type": "tms",
+        "id": "kelowna_2012",
+        "name": "Kelowna 2012"
     }
 }

@@ -1,24 +1,7 @@
 {
-    "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "type": "wms",
-    "available_projections": [
-		"EPSG:4326"
-	],
-    "country_code":"EE",
-    "name": "Estonia Basemap (Maaamet)",
-    "attribution": {
-        "text": "Maa-Ameti põhikaart",
-        "required": true
-     },
-    "license_url":"http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
-    "extent": {
-        "bbox": {
-            "min_lon": 21.6940073,
-            "max_lon": 28.2110546,
-            "min_lat": 57.5025466,
-            "max_lat": 59.8274564
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     22.3536433,
@@ -2859,6 +2842,10 @@
                 [
                     22.3602323,
                     58.7191599
+                ],
+                [
+                    22.3536433,
+                    58.8538478
                 ]
             ],
             [
@@ -2877,6 +2864,10 @@
                 [
                     23.4729257,
                     59.3119388
+                ],
+                [
+                    23.4741459,
+                    59.2672589
                 ]
             ],
             [
@@ -2895,6 +2886,10 @@
                 [
                     24.1700216,
                     58.1458756
+                ],
+                [
+                    24.1701436,
+                    58.1907961
                 ]
             ],
             [
@@ -2937,6 +2932,10 @@
                 [
                     23.9147573,
                     58.1909891
+                ],
+                [
+                    24.0848522,
+                    58.1909248
                 ]
             ],
             [
@@ -2955,6 +2954,10 @@
                 [
                     24.6201552,
                     59.6258049
+                ],
+                [
+                    24.6185366,
+                    59.5361187
                 ]
             ],
             [
@@ -2973,6 +2976,10 @@
                 [
                     26.4073159,
                     59.8299428
+                ],
+                [
+                    26.4040316,
+                    59.7851966
                 ]
             ],
             [
@@ -2991,6 +2998,10 @@
                 [
                     26.5716589,
                     59.6471923
+                ],
+                [
+                    26.4830816,
+                    59.6490028
                 ]
             ],
             [
@@ -3017,8 +3028,27 @@
                 [
                     23.1584517,
                     57.8288513
+                ],
+                [
+                    23.1594369,
+                    57.784083
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Maa-Ameti p\u00f5hikaart",
+            "required": true
+        },
+        "name": "Estonia Basemap (Maaamet)",
+        "available_projections": [
+            "EPSG:4326"
+        ],
+        "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
+        "country_code": "EE",
+        "type": "wms"
     }
 }

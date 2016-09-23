@@ -1,21 +1,7 @@
 {
-    "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=le_puy&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
-        "text": "Orthophotographie CRAIG/TopoGEODIS 2010",
-        "required": true
-    },
-    "type": "wms",
-    "name": "CRAIG - Le Puy 2010 - 15 cm",
-    "country_code": "FR",
-    "extent": {
-        "bbox": {
-            "min_lon": 3.6153692,
-            "max_lon": 4.0629870,
-            "min_lat": 44.8667805,
-            "max_lat": 45.1451352
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     3.6552884,
@@ -496,8 +482,24 @@
                 [
                     3.6550627,
                     45.1247439
+                ],
+                [
+                    3.6552884,
+                    45.1451352
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=le_puy&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+            "text": "Orthophotographie CRAIG/TopoGEODIS 2010",
+            "required": true
+        },
+        "type": "wms",
+        "name": "CRAIG - Le Puy 2010 - 15 cm",
+        "country_code": "FR"
     }
 }

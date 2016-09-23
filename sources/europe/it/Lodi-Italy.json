@@ -1,16 +1,7 @@
 {
-    "url": "http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Terraitaly%20Ortofoto%202007&STYLES=%2C%2C&FORMAT=image/png&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "type": "wms",
-    "name": "Lodi - Italy",
-    "country_code": "IT",
-    "extent": {
-        "bbox": {
-            "min_lon": 9.2480360,
-            "max_lon": 9.9169405,
-            "min_lat": 45.0477711,
-            "max_lat": 45.5002702
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     9.5004111,
@@ -99,12 +90,23 @@
                 [
                     9.5000477,
                     45.3997038
+                ],
+                [
+                    9.5004111,
+                    45.5001183
                 ]
             ]
         ]
     },
-    "available_projections": [
-        "EPSG:32632",
-        "EPSG:4326"
-    ]
+    "type": "Feature",
+    "properties": {
+        "url": "http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Terraitaly%20Ortofoto%202007&STYLES=%2C%2C&FORMAT=image/png&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "type": "wms",
+        "name": "Lodi - Italy",
+        "country_code": "IT",
+        "available_projections": [
+            "EPSG:32632",
+            "EPSG:4326"
+        ]
+    }
 }

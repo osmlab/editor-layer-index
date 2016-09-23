@@ -1,27 +1,7 @@
 {
-    "name": "Luxembourg Geoportail Basemap",
-    "type": "tms",
-    "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/basemap/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png",
-    "license_url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts/",
-    "id": "lu.geoportail.opendata.basemap",
-    "country_code": "LU",
-    "start_date": "2013-07-19",
-    "end_date": "2010-07-20",
-    "attribution": {
-        "text": "Administration du Cadastre et de la Topographie",
-        "url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts/",
-        "required": false
-    },
-    "icon": "https://www.geoportail.lu/static/img/lion.png",
-    "extent": {
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": 5.7357006,
-            "max_lon": 6.5309951,
-            "min_lat": 49.4478539,
-            "max_lat": 50.1827712
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     5.961753,
@@ -929,5 +909,23 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts/",
+            "text": "Administration du Cadastre et de la Topographie",
+            "required": false
+        },
+        "name": "Luxembourg Geoportail Basemap",
+        "end_date": "2010-07-20",
+        "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/basemap/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "start_date": "2013-07-19",
+        "license_url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts/",
+        "country_code": "LU",
+        "type": "tms",
+        "id": "lu.geoportail.opendata.basemap",
+        "icon": "https://www.geoportail.lu/static/img/lion.png"
     }
 }

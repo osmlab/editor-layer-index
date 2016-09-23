@@ -1,24 +1,7 @@
 {
-    "url": "http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png",
-    "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
-    "attribution": {
-        "url": "http://www.geo.u-szeged.hu/",
-        "text": "SZTE TFGT - University of Szeged",
-        "required": true
-    },
-    "type": "tms",
-    "name": "Szeged ortophoto 2011",
-    "country_code": "HU",
-    "extent": {
-        "min_zoom": 10,
-        "max_zoom": 22,
-        "bbox": {
-            "min_lon": 20.1111871,
-            "max_lon": 20.1947983,
-            "min_lat": 46.2281144,
-            "max_lat": 46.2784583
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     20.1459914,
@@ -234,5 +217,20 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.geo.u-szeged.hu/",
+            "text": "SZTE TFGT - University of Szeged",
+            "required": true
+        },
+        "name": "Szeged ortophoto 2011",
+        "url": "http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png",
+        "max_zoom": 22,
+        "min_zoom": 10,
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
+        "country_code": "HU",
+        "type": "tms"
     }
 }

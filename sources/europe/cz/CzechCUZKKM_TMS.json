@@ -1,20 +1,7 @@
 {
-    "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_cuzk.php/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "name": "Czech CUZK:KM tiles proxy",
-    "country_code": "CZ",
-    "overlay": true,
-    "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-    "extent": {
-        "min_zoom": 13,
-        "max_zoom": 18,
-        "bbox": {
-            "min_lon": 12.0988126,
-            "max_lon": 18.8764598,
-            "min_lat": 48.5610269,
-            "max_lat": 51.0671736
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     15.0063684,
@@ -647,8 +634,23 @@
                 [
                     14.9864195,
                     48.7652539
+                ],
+                [
+                    15.0063684,
+                    49.0177392
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "name": "Czech CUZK:KM tiles proxy",
+        "overlay": true,
+        "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_cuzk.php/{zoom}/{x}/{y}.png",
+        "max_zoom": 18,
+        "min_zoom": 13,
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
+        "country_code": "CZ",
+        "type": "tms"
     }
 }

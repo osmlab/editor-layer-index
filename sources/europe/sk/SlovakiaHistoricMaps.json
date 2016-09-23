@@ -1,15 +1,37 @@
 {
-    "url": "http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "name": "Slovakia Historic Maps",
-    "country_code": "SK",
-    "extent": {
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    16.8196949,
+                    47.4927236
+                ],
+                [
+                    16.8196949,
+                    49.5030322
+                ],
+                [
+                    22.8388318,
+                    49.5030322
+                ],
+                [
+                    22.8388318,
+                    47.4927236
+                ],
+                [
+                    16.8196949,
+                    47.4927236
+                ]
+            ]
+        ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
         "max_zoom": 12,
-        "bbox": {
-            "min_lon": 16.8196949,
-            "max_lon": 22.8388318,
-            "min_lat": 47.4927236,
-            "max_lat": 49.5030322
-        }
+        "type": "tms",
+        "name": "Slovakia Historic Maps",
+        "country_code": "SK"
     }
 }

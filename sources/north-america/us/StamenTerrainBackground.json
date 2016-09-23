@@ -1,23 +1,7 @@
 {
-    "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg",
-    "type": "tms",
-    "name": "Stamen Terrain",
-    "country_code": "US",
-    "attribution": {
-        "url": "http://maps.stamen.com/#terrain",
-        "text": "Map tiles by Stamen Design, under CC BY 3.0",
-        "required": true
-    },
-    "extent": {
-        "min_zoom": 4,
-        "max_zoom": 18,
-        "bbox": {
-            "min_lon": -134.999,
-            "max_lon": -56.249,
-            "min_lat": 11.178,
-            "max_lat": 55.777
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -125.990173,
@@ -354,8 +338,26 @@
                 [
                     -96.0131199,
                     49.0060547
+                ],
+                [
+                    -125.990173,
+                    48.9962416
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.stamen.com/#terrain",
+            "text": "Map tiles by Stamen Design, under CC BY 3.0",
+            "required": true
+        },
+        "name": "Stamen Terrain",
+        "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg",
+        "max_zoom": 18,
+        "min_zoom": 4,
+        "country_code": "US",
+        "type": "tms"
     }
 }

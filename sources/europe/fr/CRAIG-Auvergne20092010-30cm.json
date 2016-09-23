@@ -1,26 +1,7 @@
 {
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
-        "text": "Orthophotographie CRAIG/TopoGEODIS 2009-2010",
-        "required": true
-    },
-    "name": "CRAIG - Auvergne 2009/2010 - 30 cm",
-    "country_code": "FR",
-    "available_projections": [
-        "EPSG:2154",
-        "EPSG:4326",
-        "EPSG:900913",
-        "EPSG:4171"
-    ],
-    "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=auvergne&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "extent": {
-        "bbox": {
-            "min_lon": 2.0457406,
-            "max_lon": 4.5065524,
-            "min_lat": 44.6037819,
-            "max_lat": 46.8219593
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     2.9401192,
@@ -1953,9 +1934,30 @@
                 [
                     2.9400972,
                     44.6473136
+                ],
+                [
+                    2.9401192,
+                    44.6338837
                 ]
             ]
         ]
     },
-    "type": "wms"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+            "text": "Orthophotographie CRAIG/TopoGEODIS 2009-2010",
+            "required": true
+        },
+        "name": "CRAIG - Auvergne 2009/2010 - 30 cm",
+        "available_projections": [
+            "EPSG:2154",
+            "EPSG:4326",
+            "EPSG:900913",
+            "EPSG:4171"
+        ],
+        "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=auvergne&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "FR",
+        "type": "wms"
+    }
 }

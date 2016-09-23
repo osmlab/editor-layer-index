@@ -1,18 +1,7 @@
 {
-    "url": "http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "name": "Pangasin\u00e1n/Bulacan (Phillipines HiRes)",
-    "country_code": "PH",
-    "extent": {
-        "min_zoom": 12,
-        "max_zoom": 19,
-        "bbox": {
-            "min_lon": 120.33659,
-            "max_lon": 121.2699,
-            "min_lat": 14.7025,
-            "max_lat": 16.21853
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     120.336593,
@@ -71,8 +60,21 @@
                 [
                     120.695,
                     14.8423
+                ],
+                [
+                    120.8268,
+                    15.3658
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "name": "Pangasin\u00e1n/Bulacan (Phillipines HiRes)",
+        "url": "http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png",
+        "max_zoom": 19,
+        "min_zoom": 12,
+        "country_code": "PH",
+        "type": "tms"
     }
 }

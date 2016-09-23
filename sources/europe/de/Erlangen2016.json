@@ -1,20 +1,10 @@
 {
-    "url": "https://secure.erlangen.de/arcgiser/services/Luftbild2016/MapServer/WmsServer?FORMAT=image/bmp&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "type": "wms",
-    "name": "Erlangen Luftbild (2016 5,0 cm)",
-    "country_code": "DE",
-    "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=abab0a0c8a4c483290878068fe667a3a",
-    "extent": {
-        "bbox": {
-            "min_lon": 10.905885,
-            "max_lon": 11.060541,
-            "min_lat": 49.529259,
-            "max_lat": 49.651970
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
-                    10.976640,
+                    10.97664,
                     49.537646
                 ],
                 [
@@ -30,11 +20,11 @@
                     49.532545
                 ],
                 [
-                    11.0346040,
+                    11.034604,
                     49.5346153
                 ],
                 [
-                    11.0340650,
+                    11.034065,
                     49.537588
                 ],
                 [
@@ -70,7 +60,7 @@
                     49.595209
                 ],
                 [
-                    11.0562310,
+                    11.056231,
                     49.5990522
                 ],
                 [
@@ -98,11 +88,11 @@
                     49.6189603
                 ],
                 [
-                    11.015200,
+                    11.0152,
                     49.613722
                 ],
                 [
-                    11.0058130,
+                    11.005813,
                     49.6144788
                 ],
                 [
@@ -111,7 +101,7 @@
                 ],
                 [
                     11.0008274,
-                    49.6221030
+                    49.622103
                 ],
                 [
                     10.9856009,
@@ -139,19 +129,19 @@
                 ],
                 [
                     10.9547438,
-                    49.63790
+                    49.6379
                 ],
                 [
                     10.9483658,
                     49.636998
                 ],
                 [
-                    10.9418530,
+                    10.941853,
                     49.643775
                 ],
                 [
                     10.9273003,
-                    49.6483710
+                    49.648371
                 ],
                 [
                     10.9206303,
@@ -187,14 +177,14 @@
                 ],
                 [
                     10.9334537,
-                    49.558920
+                    49.55892
                 ],
                 [
                     10.9307139,
-                    49.5446710
+                    49.544671
                 ],
                 [
-                    10.9306690,
+                    10.930669,
                     49.5322541
                 ],
                 [
@@ -210,16 +200,24 @@
                     49.531263
                 ],
                 [
-                    10.976640,
+                    10.97664,
                     49.537646
                 ]
             ]
         ]
     },
-    "start_date": "2016-03-18",
-    "end_date": "2016-03-18",
-    "available_projections": [
-        "EPSG:4326",
-        "EPSG:31494"
-    ]
+    "type": "Feature",
+    "properties": {
+        "name": "Erlangen Luftbild (2016 5,0 cm)",
+        "end_date": "2016-03-18",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:31494"
+        ],
+        "url": "https://secure.erlangen.de/arcgiser/services/Luftbild2016/MapServer/WmsServer?FORMAT=image/bmp&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=abab0a0c8a4c483290878068fe667a3a",
+        "country_code": "DE",
+        "type": "wms",
+        "start_date": "2016-03-18"
+    }
 }

@@ -1,21 +1,7 @@
 {
-    "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=montlucon&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
-        "text": "Orthophotographie CRAIG/TopoGEODIS 2009",
-        "required": true
-    },
-    "type": "wms",
-    "name": "CRAIG - Montlu\u00e7on 2009 - 15 cm",
-    "country_code": "FR",
-    "extent": {
-        "bbox": {
-            "min_lon": 2.4025264,
-            "max_lon": 2.6657948,
-            "min_lat": 46.2267271,
-            "max_lat": 46.4228994
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     2.5187264,
@@ -288,8 +274,24 @@
                 [
                     2.5187847,
                     46.4087659
+                ],
+                [
+                    2.5187264,
+                    46.4153078
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=montlucon&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+            "text": "Orthophotographie CRAIG/TopoGEODIS 2009",
+            "required": true
+        },
+        "type": "wms",
+        "name": "CRAIG - Montlu\u00e7on 2009 - 15 cm",
+        "country_code": "FR"
     }
 }

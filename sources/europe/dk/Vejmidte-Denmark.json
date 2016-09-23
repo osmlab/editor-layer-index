@@ -1,22 +1,7 @@
 {
-    "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png",
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/Vejmidte",
-        "text": "Danish municipalities",
-        "required": true
-    },
-    "type": "tms",
-    "name": "Vejmidte (Denmark)",
-    "country_code": "DK",
-    "extent": {
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": 8.0185123,
-            "max_lon": 15.3099250,
-            "min_lat": 54.4681655,
-            "max_lat": 57.8228945
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     8.3743941,
@@ -513,6 +498,10 @@
                 [
                     8.531432,
                     54.95516
+                ],
+                [
+                    8.3743941,
+                    54.9551655
                 ]
             ],
             [
@@ -531,6 +520,10 @@
                 [
                     11.4459621,
                     56.6401087
+                ],
+                [
+                    11.4577738,
+                    56.819554
                 ]
             ],
             [
@@ -557,6 +550,10 @@
                 [
                     10.8290599,
                     57.3695272
+                ],
+                [
+                    11.3274736,
+                    57.3612962
                 ]
             ],
             [
@@ -575,6 +572,10 @@
                 [
                     11.7456428,
                     56.2743186
+                ],
+                [
+                    11.5843266,
+                    56.2777928
                 ]
             ],
             [
@@ -625,8 +626,25 @@
                 [
                     14.6317464,
                     55.0062496
+                ],
+                [
+                    14.6825922,
+                    55.3639405
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/Vejmidte",
+            "text": "Danish municipalities",
+            "required": true
+        },
+        "name": "Vejmidte (Denmark)",
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "country_code": "DK",
+        "type": "tms"
     }
 }

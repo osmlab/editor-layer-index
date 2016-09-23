@@ -1,21 +1,7 @@
 {
-    "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
-        "text": "Ortho littorale 2000",
-        "required": true
-    },
-    "type": "wms",
-    "name": "G\u00e9olittoral - Orthophotos 2000",
-    "country_code": "FR",
-    "extent": {
-        "bbox": {
-            "min_lon": -5.1986731,
-            "max_lon": 2.6068264,
-            "min_lat": 43.3035717,
-            "max_lat": 51.1214375
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -1.939663,
@@ -32,6 +18,10 @@
                 [
                     -1.6972613,
                     48.8617305
+                ],
+                [
+                    -1.939663,
+                    48.8634633
                 ]
             ],
             [
@@ -50,6 +40,10 @@
                 [
                     -3.0243638,
                     47.4456259
+                ],
+                [
+                    -3.06018,
+                    47.4054194
                 ]
             ],
             [
@@ -84,6 +78,10 @@
                 [
                     -3.0063687,
                     47.3085541
+                ],
+                [
+                    -3.2648203,
+                    47.4295047
                 ]
             ],
             [
@@ -110,6 +108,10 @@
                 [
                     -2.4165505,
                     46.7371145
+                ],
+                [
+                    -2.4123238,
+                    46.6924223
                 ]
             ],
             [
@@ -912,8 +914,24 @@
                 [
                     -1.0176087,
                     46.3591735
+                ],
+                [
+                    -1.0796243,
+                    46.1095893
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+            "text": "Ortho littorale 2000",
+            "required": true
+        },
+        "type": "wms",
+        "name": "G\u00e9olittoral - Orthophotos 2000",
+        "country_code": "FR"
     }
 }

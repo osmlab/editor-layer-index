@@ -1,23 +1,7 @@
 {
-    "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_uhul.php/{zoom}/{x}/{y}.jpg",
-    "type": "tms",
-    "name": "Czech ÚHUL:ORTOFOTO tiles proxy",
-    "country_code": "CZ",
-    "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-    "attribution": {
-        "text": "Ortofoto public domain ÚHUL, year 2000",
-        "required": false
-    },
-    "extent": {
-        "min_zoom": 13,
-        "max_zoom": 18,
-        "bbox": {
-            "min_lon": 12.0988126,
-            "max_lon": 18.8764598,
-            "min_lat": 48.5610269,
-            "max_lat": 51.0671736
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     15.0063684,
@@ -650,8 +634,26 @@
                 [
                     14.9864195,
                     48.7652539
+                ],
+                [
+                    15.0063684,
+                    49.0177392
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Ortofoto public domain \u00daHUL, year 2000",
+            "required": false
+        },
+        "name": "Czech \u00daHUL:ORTOFOTO tiles proxy",
+        "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_uhul.php/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 18,
+        "min_zoom": 13,
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
+        "country_code": "CZ",
+        "type": "tms"
     }
 }

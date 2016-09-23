@@ -1,23 +1,7 @@
 {
-    "attribution": {
-        "text": "tiris.tirol.gv.at",
-        "required": false
-    },
-    "name": "Tiris: DOM (Surface model)",
-    "country_code": "AT",
-    "available_projections": [
-        "EPSG:4326",
-        "EPSG:31254"
-    ],
-    "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "extent": {
-        "bbox": {
-            "min_lon": 10.0922445,
-            "max_lon": 12.9797402,
-            "min_lat": 46.6487342,
-            "max_lat": 47.7538216
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     10.4399766,
@@ -698,6 +682,10 @@
                 [
                     10.4130773,
                     47.5714324
+                ],
+                [
+                    10.4399766,
+                    47.5976781
                 ]
             ],
             [
@@ -920,10 +908,28 @@
                 [
                     12.4191451,
                     47.1437691
+                ],
+                [
+                    12.401896,
+                    47.1601916
                 ]
             ]
         ]
     },
-    "type": "wms",
-    "icon": "http://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "tiris.tirol.gv.at",
+            "required": false
+        },
+        "name": "Tiris: DOM (Surface model)",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:31254"
+        ],
+        "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "AT",
+        "type": "wms",
+        "icon": "http://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
+    }
 }

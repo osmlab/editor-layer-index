@@ -1,24 +1,7 @@
 {
-    "url": "http://e.tile.openstreetmap.hu/dunai-arviz-2013/{zoom}/{x}/{y}.jpg",
-    "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
-    "attribution": {
-        "url": "http://fototerkep.hu/",
-        "text": "Fotótérkép.hu",
-        "required": true
-    },
-    "type": "tms",
-    "name": "Danube flood ortophoto 2013",
-    "country_code": "HU",
-    "extent": {
-        "min_zoom": 10,
-        "max_zoom": 20,
-        "bbox": {
-            "min_lon": 19.0577884,
-            "max_lon": 19.0946205,
-            "min_lat": 47.5720924,
-            "max_lat": 47.6959835
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     19.0773152,
@@ -58,5 +41,20 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://fototerkep.hu/",
+            "text": "Fot\u00f3t\u00e9rk\u00e9p.hu",
+            "required": true
+        },
+        "name": "Danube flood ortophoto 2013",
+        "url": "http://e.tile.openstreetmap.hu/dunai-arviz-2013/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 20,
+        "min_zoom": 10,
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
+        "country_code": "HU",
+        "type": "tms"
     }
 }

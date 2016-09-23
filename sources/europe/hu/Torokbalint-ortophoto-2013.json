@@ -1,28 +1,7 @@
 {
-    "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
-    "attribution": {
-        "url": "http://www.torokbalint.hu/",
-        "text": "Törökbálint",
-        "required": true
-    },
-    "type": "wms",
-    "name": "Törökbálint ortophoto 2013",
-    "country_code": "HU",
-    "available_projections": [
-        "EPSG:4326",
-        "EPSG:900913",
-        "EPSG:23700",
-        "EPSG:3857"
-    ],
-    "extent": {
-        "bbox": {
-            "min_lon": 18.8519503,
-            "max_lon": 18.9701003,
-            "min_lat": 47.4084901,
-            "max_lat": 47.4703763
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     18.9173064,
@@ -634,5 +613,24 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.torokbalint.hu/",
+            "text": "T\u00f6r\u00f6kb\u00e1lint",
+            "required": true
+        },
+        "name": "T\u00f6r\u00f6kb\u00e1lint ortophoto 2013",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:900913",
+            "EPSG:23700",
+            "EPSG:3857"
+        ],
+        "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
+        "country_code": "HU",
+        "type": "wms"
     }
 }

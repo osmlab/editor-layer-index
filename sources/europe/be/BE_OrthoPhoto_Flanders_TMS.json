@@ -1,24 +1,7 @@
 {
-    "url": "http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=omwrgbmrvl&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
-    "type": "tms",
-    "name": "Belgium AGIV Orthophoto Flanders",
-    "country_code": "BE",
-    "best": true,
-    "license_url": "https://download.agiv.be/Producten/Detail?id=595&title=Orthofotomozaiek_middenschalig_winteropnamen_kleur_meest_recent_Vlaanderen_2015_03",
-    "attribution": {
-        "text": "Orthophoto Flanders most recent (c) AGIV",
-        "required": true
-    },
-    "extent": {
-        "min_zoom": 0,
-        "max_zoom": 21,
-        "bbox": {
-            "min_lon": 2.52,
-            "max_lon": 5.94,
-            "min_lat": 50.64,
-            "max_lat": 51.51
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     2.522393220658428,
@@ -314,5 +297,19 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Orthophoto Flanders most recent (c) AGIV",
+            "required": true
+        },
+        "name": "Belgium AGIV Orthophoto Flanders",
+        "url": "http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=omwrgbmrvl&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
+        "max_zoom": 21,
+        "license_url": "https://download.agiv.be/Producten/Detail?id=595&title=Orthofotomozaiek_middenschalig_winteropnamen_kleur_meest_recent_Vlaanderen_2015_03",
+        "country_code": "BE",
+        "type": "tms",
+        "best": true
     }
 }

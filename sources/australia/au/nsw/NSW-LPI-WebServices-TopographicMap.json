@@ -1,23 +1,7 @@
 {
-    "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
-    "attribution": {
-        "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-        "text": "\u00a9 Land and Property Information 2016",
-        "required": true
-    },
-    "type": "tms",
-    "name": "LPI NSW Topographic Map",
-    "id": "NSW LPI Topographic Map",
-    "country_code": "AU",
-    "extent": {
-        "max_zoom": 16,
-        "bbox": {
-            "min_lon": 140.9965216,
-            "max_lon": 153.7497955,
-            "min_lat": -37.5080043,
-            "max_lat": -28.1249689
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     140.9988422,
@@ -597,5 +581,19 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+            "text": "\u00a9 Land and Property Information 2016",
+            "required": true
+        },
+        "name": "LPI NSW Topographic Map",
+        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 16,
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW LPI Topographic Map"
     }
 }

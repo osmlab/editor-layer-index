@@ -1,20 +1,7 @@
 {
-    "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "text": "ITACyL",
-        "required": true
-    },
-    "type": "wms",
-    "name": "ITACyL - Castile and Le\u00f3n",
-    "country_code": "ES",
-    "extent": {
-        "bbox": {
-            "min_lon": -7.1081086,
-            "max_lon": -1.7686552,
-            "min_lat": 40.0815518,
-            "max_lat": 43.2522234
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -1.9357991,
@@ -1459,8 +1446,23 @@
                 [
                     -1.9377021,
                     41.5605541
+                ],
+                [
+                    -1.9357991,
+                    41.4383441
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "ITACyL",
+            "required": true
+        },
+        "type": "wms",
+        "name": "ITACyL - Castile and Le\u00f3n",
+        "country_code": "ES"
     }
 }

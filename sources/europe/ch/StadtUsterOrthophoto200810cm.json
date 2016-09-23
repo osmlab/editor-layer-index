@@ -1,18 +1,40 @@
 {
-    "url": "http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-    "attribution": {
-        "text": "Stadt Uster Vermessung Orthophoto 2008",
-        "required": false
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.6,
+                    47.31
+                ],
+                [
+                    8.6,
+                    47.39
+                ],
+                [
+                    8.77,
+                    47.39
+                ],
+                [
+                    8.77,
+                    47.31
+                ],
+                [
+                    8.6,
+                    47.31
+                ]
+            ]
+        ]
     },
-    "type": "tms",
-    "name": "Stadt Uster Orthophoto 2008 10cm",
-    "country_code": "CH",
-    "extent": {
-        "bbox": {
-            "min_lon": 8.6,
-            "max_lon": 8.77,
-            "min_lat": 47.31,
-            "max_lat": 47.39
-        }
+    "type": "Feature",
+    "properties": {
+        "url": "http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "attribution": {
+            "text": "Stadt Uster Vermessung Orthophoto 2008",
+            "required": false
+        },
+        "type": "tms",
+        "name": "Stadt Uster Orthophoto 2008 10cm",
+        "country_code": "CH"
     }
 }

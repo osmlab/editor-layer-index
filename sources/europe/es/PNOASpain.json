@@ -1,21 +1,7 @@
 {
-    "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "text": "PNOA",
-        "required": true
-    },
-    "type": "wms",
-    "name": "PNOA Spain",
-    "country_code": "ES",
-    "best": true,
-    "extent": {
-        "bbox": {
-            "min_lon": -18.1661033,
-            "max_lon": 4.3987393,
-            "min_lat": 27.6302571,
-            "max_lat": 43.8098190
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -17.8846298,
@@ -2347,5 +2333,17 @@
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "PNOA",
+            "required": true
+        },
+        "name": "PNOA Spain",
+        "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "ES",
+        "type": "wms",
+        "best": true
     }
 }

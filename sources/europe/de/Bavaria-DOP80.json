@@ -1,18 +1,7 @@
 {
-    "url": "http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{z}/{x}/{y}.png?origin=nw",
-    "type": "tms",
-    "name": "Bavaria DOP 80cm",
-    "country_code": "DE",
-    "extent": {
-        "min_zoom": 0,
-        "max_zoom": 18,
-        "bbox": {
-            "min_lon": 8.9567442,
-            "max_lon": 13.8446447,
-            "min_lat": 47.2620819,
-            "max_lat": 50.5684620
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     10.1235886,
@@ -1205,8 +1194,20 @@
                 [
                     10.0379486,
                     50.5111504
+                ],
+                [
+                    10.1235886,
+                    50.568462
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{z}/{x}/{y}.png?origin=nw",
+        "max_zoom": 18,
+        "type": "tms",
+        "name": "Bavaria DOP 80cm",
+        "country_code": "DE"
     }
 }

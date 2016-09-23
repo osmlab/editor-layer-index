@@ -1,18 +1,7 @@
 {
-    "url": "http://osm.cycle.travel/forest/{zoom}/{x}/{y}.png",
-    "type": "tms",
-    "name": "U.S. Forest Service roads",
-    "country_code": "US",
-    "extent": {
-        "min_zoom": 0,
-        "max_zoom": 19,
-        "bbox": {
-            "min_lon": -178.0000970,
-            "max_lon": -66.9452845,
-            "min_lat": 18.7586966,
-            "max_lat": 71.5633329
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     -124.7617886,
@@ -285,6 +274,10 @@
                 [
                     -123.2275233,
                     48.1849927
+                ],
+                [
+                    -124.7617886,
+                    48.4130148
                 ]
             ],
             [
@@ -327,6 +320,10 @@
                 [
                     -159.0093692,
                     22.5070181
+                ],
+                [
+                    -160.5787616,
+                    22.5062947
                 ]
             ],
             [
@@ -473,8 +470,20 @@
                 [
                     -164.9717003,
                     68.994689
+                ],
+                [
+                    -167.1571546,
+                    68.721974
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://osm.cycle.travel/forest/{zoom}/{x}/{y}.png",
+        "max_zoom": 19,
+        "type": "tms",
+        "name": "U.S. Forest Service roads",
+        "country_code": "US"
     }
 }

@@ -1,20 +1,7 @@
 {
-    "url": "http://ideib.caib.es/pub_ideib/public/IMATGES_AERIES/MapServer/WMSServer?VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=8&STYLES=default&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "attribution": {
-        "text": "ideib.cat",
-        "required": true
-    },
-    "type": "wms",
-    "name": "IDEIB - Balearic Islands",
-    "country_code": "ES",
-    "extent": {
-        "bbox": {
-            "min_lon": 1.1446656,
-            "max_lon": 4.3994771,
-            "min_lat": 38.6237676,
-            "max_lat": 40.1276332
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     1.6489275,
@@ -119,6 +106,10 @@
                 [
                     1.3122637,
                     38.6237676
+                ],
+                [
+                    1.6489275,
+                    38.624805
                 ]
             ],
             [
@@ -217,6 +208,10 @@
                 [
                     3.8121209,
                     40.0435129
+                ],
+                [
+                    3.8127693,
+                    40.0856962
                 ]
             ],
             [
@@ -395,6 +390,10 @@
                 [
                     2.979168,
                     39.2498017
+                ],
+                [
+                    3.1482712,
+                    39.2497788
                 ]
             ],
             [
@@ -413,8 +412,23 @@
                 [
                     2.8957783,
                     39.083165
+                ],
+                [
+                    2.9816461,
+                    39.08322
                 ]
             ]
         ]
+    },
+    "type": "Feature",
+    "properties": {
+        "url": "http://ideib.caib.es/pub_ideib/public/IMATGES_AERIES/MapServer/WMSServer?VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=8&STYLES=default&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "ideib.cat",
+            "required": true
+        },
+        "type": "wms",
+        "name": "IDEIB - Balearic Islands",
+        "country_code": "ES"
     }
 }

@@ -1,21 +1,7 @@
 {
-    "attribution": {
-        "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.",
-        "required": true
-    },
-    "name": "Freemap.sk Ski",
-    "url": "http://t{switch:1,2,3,4}.freemap.sk/K/{zoom}/{x}/{y}.jpeg",
-    "country_code": "SK",
-    "extent": {
-        "min_zoom": 8,
-        "max_zoom": 16,
-        "bbox": {
-            "min_lon": 16.7988747,
-            "max_lon": 22.5884098,
-            "min_lat": 47.7145247,
-            "max_lat": 49.6375827
-        },
-        "polygon": [
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     19.83682,
@@ -204,6 +190,18 @@
             ]
         ]
     },
-    "type": "tms",
-    "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png"
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.",
+            "required": true
+        },
+        "name": "Freemap.sk Ski",
+        "url": "http://t{switch:1,2,3,4}.freemap.sk/K/{zoom}/{x}/{y}.jpeg",
+        "max_zoom": 16,
+        "min_zoom": 8,
+        "country_code": "SK",
+        "type": "tms",
+        "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png"
+    }
 }

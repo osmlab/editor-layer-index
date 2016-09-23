@@ -1,16 +1,38 @@
 {
-    "url": "http://ooc.openstreetmap.org/npescotland/tiles/{zoom}/{x}/{y}.jpg",
-    "type": "tms",
-    "name": "OS Scottish Popular historic",
-    "country_code": "GB",
-    "extent": {
-        "min_zoom": 6,
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -7.8,
+                    54.5
+                ],
+                [
+                    -7.8,
+                    61.1
+                ],
+                [
+                    -1.1,
+                    61.1
+                ],
+                [
+                    -1.1,
+                    54.5
+                ],
+                [
+                    -7.8,
+                    54.5
+                ]
+            ]
+        ]
+    },
+    "type": "Feature",
+    "properties": {
+        "name": "OS Scottish Popular historic",
+        "url": "http://ooc.openstreetmap.org/npescotland/tiles/{zoom}/{x}/{y}.jpg",
         "max_zoom": 15,
-        "bbox": {
-            "min_lon": -7.8,
-            "max_lon": -1.1,
-            "min_lat": 54.5,
-            "max_lat": 61.1
-        }
+        "min_zoom": 6,
+        "country_code": "GB",
+        "type": "tms"
     }
 }
