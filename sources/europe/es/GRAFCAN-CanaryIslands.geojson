@@ -1,4 +1,15 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "GRAFCAN OrtoExpress Urbana 2009",
+            "required": true
+        },
+        "type": "wms",
+        "name": "GRAFCAN - Canary Islands",
+        "country_code": "ES"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -461,16 +472,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "attribution": {
-            "text": "GRAFCAN OrtoExpress Urbana 2009",
-            "required": true
-        },
-        "type": "wms",
-        "name": "GRAFCAN - Canary Islands",
-        "country_code": "ES"
     }
 }

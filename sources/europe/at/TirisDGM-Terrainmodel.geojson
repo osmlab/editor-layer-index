@@ -1,4 +1,20 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "tiris.tirol.gv.at",
+            "required": false
+        },
+        "name": "Tiris: DGM (Terrain model)",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:31254"
+        ],
+        "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "AT",
+        "type": "wms",
+        "icon": "http://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -915,21 +931,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "tiris.tirol.gv.at",
-            "required": false
-        },
-        "name": "Tiris: DGM (Terrain model)",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:31254"
-        ],
-        "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "country_code": "AT",
-        "type": "wms",
-        "icon": "http://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
     }
 }

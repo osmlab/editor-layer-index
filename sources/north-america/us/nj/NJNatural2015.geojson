@@ -1,4 +1,20 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={CDC67AB8-ADA1-4B4B-9087-67A82CB9151C}",
+            "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)",
+            "required": false
+        },
+        "name": "NJ 2015 Aerial Imagery (Natural Color)",
+        "end_date": "2015-05-03",
+        "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015",
+        "max_zoom": 20,
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2015-03-29",
+        "description": "Digital orthophotography of New Jersey, Natural Color, 1 foot resolution"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -477,21 +493,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={CDC67AB8-ADA1-4B4B-9087-67A82CB9151C}",
-            "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)",
-            "required": false
-        },
-        "name": "NJ 2015 Aerial Imagery (Natural Color)",
-        "end_date": "2015-05-03",
-        "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015",
-        "max_zoom": 20,
-        "country_code": "US",
-        "type": "tms",
-        "start_date": "2015-03-29",
-        "description": "Digital orthophotography of New Jersey, Natural Color, 1 foot resolution"
     }
 }

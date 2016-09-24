@@ -1,4 +1,15 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "Orthophotos du SITG 2011",
+            "required": false
+        },
+        "type": "wms",
+        "name": "Canton de Génève 5cm (SITG 2011)",
+        "country_code": "CH"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -493,16 +504,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "attribution": {
-            "text": "Orthophotos du SITG 2011",
-            "required": false
-        },
-        "type": "wms",
-        "name": "Canton de G\u00e9n\u00e8ve 5cm (SITG 2011)",
-        "country_code": "CH"
     }
 }

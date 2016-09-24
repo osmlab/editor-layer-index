@@ -1,4 +1,11 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/iomhaiti/{zoom}/{x}/{y}",
+        "type": "tms",
+        "name": "Imagerie Drone (Haiti)",
+        "country_code": "HT"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2423,12 +2430,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/iomhaiti/{zoom}/{x}/{y}",
-        "type": "tms",
-        "name": "Imagerie Drone (Haiti)",
-        "country_code": "HT"
     }
 }

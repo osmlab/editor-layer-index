@@ -1,4 +1,16 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Stadt Zürich Open Government Data",
+            "required": false
+        },
+        "name": "Übersichtsplan Zürich",
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "max_zoom": 21,
+        "country_code": "CH",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,17 +37,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "Stadt Z\u00fcrich Open Government Data",
-            "required": false
-        },
-        "name": "\u00dcbersichtsplan Z\u00fcrich",
-        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-        "max_zoom": 21,
-        "country_code": "CH",
-        "type": "tms"
     }
 }

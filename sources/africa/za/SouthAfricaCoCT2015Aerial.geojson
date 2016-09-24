@@ -1,4 +1,22 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.capetown.gov.za",
+            "text": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
+            "required": true
+        },
+        "name": "City of Cape Town 2015 Aerial",
+        "end_date": "2016",
+        "url": "http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "country_code": "ZA",
+        "type": "tms",
+        "start_date": "2015",
+        "best": true,
+        "description": "OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -793,23 +811,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "https://www.capetown.gov.za",
-            "text": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
-            "required": true
-        },
-        "name": "City of Cape Town 2015 Aerial",
-        "end_date": "2016",
-        "url": "http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg",
-        "max_zoom": 21,
-        "min_zoom": 1,
-        "country_code": "ZA",
-        "type": "tms",
-        "start_date": "2015",
-        "best": true,
-        "description": "OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance"
     }
 }

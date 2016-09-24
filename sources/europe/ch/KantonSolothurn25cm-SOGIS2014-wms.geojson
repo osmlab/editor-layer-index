@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Orthofoto WMS Solothurn",
+            "required": false
+        },
+        "name": "Kanton Solothurn 25cm (SOGIS 2014-2015)",
+        "url": "http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 19,
+        "min_zoom": 12,
+        "country_code": "CH",
+        "type": "wms",
+        "best": true
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -619,19 +633,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "Orthofoto WMS Solothurn",
-            "required": false
-        },
-        "name": "Kanton Solothurn 25cm (SOGIS 2014-2015)",
-        "url": "http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "max_zoom": 19,
-        "min_zoom": 12,
-        "country_code": "CH",
-        "type": "wms",
-        "best": true
     }
 }

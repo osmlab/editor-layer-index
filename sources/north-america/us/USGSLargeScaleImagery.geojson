@@ -1,4 +1,13 @@
 {
+    "type": "Feature",
+    "properties": {
+        "name": "USGS Large Scale Imagery",
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "country_code": "US",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -4177,14 +4186,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "name": "USGS Large Scale Imagery",
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg",
-        "max_zoom": 20,
-        "min_zoom": 12,
-        "country_code": "US",
-        "type": "tms"
     }
 }

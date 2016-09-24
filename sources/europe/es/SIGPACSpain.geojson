@@ -1,4 +1,15 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ORTOFOTOS&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "SIGPAC",
+            "required": true
+        },
+        "type": "wms",
+        "name": "SIGPAC Spain",
+        "country_code": "ES"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2333,16 +2344,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ORTOFOTOS&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "attribution": {
-            "text": "SIGPAC",
-            "required": true
-        },
-        "type": "wms",
-        "name": "SIGPAC Spain",
-        "country_code": "ES"
     }
 }

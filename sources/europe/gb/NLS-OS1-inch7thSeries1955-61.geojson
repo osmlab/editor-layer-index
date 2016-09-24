@@ -1,4 +1,19 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/",
+            "text": "National Library of Scotland Historic Maps",
+            "required": true
+        },
+        "name": "NLS - OS 1-inch 7th Series 1955-61",
+        "url": "http://geo.nls.uk/mapdata2/os/seventh/{zoom}/{x}/{-y}.png",
+        "max_zoom": 16,
+        "min_zoom": 5,
+        "country_code": "GB",
+        "type": "tms",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1079,20 +1094,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://geo.nls.uk/maps/",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "NLS - OS 1-inch 7th Series 1955-61",
-        "url": "http://geo.nls.uk/mapdata2/os/seventh/{zoom}/{x}/{-y}.png",
-        "max_zoom": 16,
-        "min_zoom": 5,
-        "country_code": "GB",
-        "type": "tms",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }
 }

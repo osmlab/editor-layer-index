@@ -1,4 +1,20 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/",
+            "text": "National Library of Scotland Historic Maps",
+            "required": true
+        },
+        "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136",
+        "url": "http://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png",
+        "max_zoom": 15,
+        "min_zoom": 5,
+        "country_code": "IE",
+        "type": "tms",
+        "id": "GSGS4136",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -225,21 +241,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://geo.nls.uk/maps/",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136",
-        "url": "http://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png",
-        "max_zoom": 15,
-        "min_zoom": 5,
-        "country_code": "IE",
-        "type": "tms",
-        "id": "GSGS4136",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }
 }

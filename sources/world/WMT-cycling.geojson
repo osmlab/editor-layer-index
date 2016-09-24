@@ -1,10 +1,9 @@
 {
-    "geometry": null,
     "type": "Feature",
     "properties": {
         "attribution": {
             "url": "http://cycling.waymarkedtrails.org/en/help/legal",
-            "text": "\u00a9 Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
+            "text": "© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
             "required": true
         },
         "name": "Waymarked Trails: Cycling",
@@ -12,5 +11,6 @@
         "url": "http://tile.waymarkedtrails.org/cycling/{zoom}/{x}/{y}.png",
         "max_zoom": 17,
         "type": "tms"
-    }
+    },
+    "geometry": null
 }

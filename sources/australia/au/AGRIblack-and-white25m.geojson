@@ -1,4 +1,15 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://agri.openstreetmap.org/{zoom}/{x}/{y}.png",
+        "attribution": {
+            "text": "AGRI",
+            "required": false
+        },
+        "type": "tms",
+        "name": "AGRI black-and-white 2.5m",
+        "country_code": "AU"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -221,16 +232,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://agri.openstreetmap.org/{zoom}/{x}/{y}.png",
-        "attribution": {
-            "text": "AGRI",
-            "required": false
-        },
-        "type": "tms",
-        "name": "AGRI black-and-white 2.5m",
-        "country_code": "AU"
     }
 }

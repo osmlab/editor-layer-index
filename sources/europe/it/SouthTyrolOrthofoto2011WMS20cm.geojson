@@ -1,4 +1,21 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://geoservices.buergernetz.bz.it/geokatalog/",
+            "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0",
+            "required": true
+        },
+        "description": "Orthophoto of South Tyrol from 2011 with up to 20cm resolution (larger valleys)",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "url": "http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=P_BZ_OF_2011_EPSG3857,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "IT",
+        "type": "wms",
+        "id": "South-Tyrol-Orthofoto2011",
+        "name": "South Tyrol Orthofoto 2011 (highres)"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1881,22 +1898,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://geoservices.buergernetz.bz.it/geokatalog/",
-            "text": "\u00a9 Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0",
-            "required": true
-        },
-        "description": "Orthophoto of South Tyrol from 2011 with up to 20cm resolution (larger valleys)",
-        "available_projections": [
-            "EPSG:3857"
-        ],
-        "url": "http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=P_BZ_OF_2011_EPSG3857,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "country_code": "IT",
-        "type": "wms",
-        "id": "South-Tyrol-Orthofoto2011",
-        "name": "South Tyrol Orthofoto 2011 (highres)"
     }
 }

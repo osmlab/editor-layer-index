@@ -1,4 +1,20 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://imap.maryland.gov/Pages/imagery-products.aspx",
+            "text": "DoIT, MD iMap, MDP",
+            "required": false
+        },
+        "name": "MD 2014 6 Inch Aerial Imagery",
+        "end_date": "2014",
+        "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer",
+        "max_zoom": 20,
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2013",
+        "description": "Six Inch resolution aerial imagery for the State of Maryland"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -189,21 +205,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://imap.maryland.gov/Pages/imagery-products.aspx",
-            "text": "DoIT, MD iMap, MDP",
-            "required": false
-        },
-        "name": "MD 2014 6 Inch Aerial Imagery",
-        "end_date": "2014",
-        "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer",
-        "max_zoom": 20,
-        "country_code": "US",
-        "type": "tms",
-        "start_date": "2013",
-        "description": "Six Inch resolution aerial imagery for the State of Maryland"
     }
 }

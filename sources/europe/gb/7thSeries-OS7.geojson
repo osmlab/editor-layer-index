@@ -1,4 +1,11 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg",
+        "type": "tms",
+        "name": "7th Series (OS7)",
+        "country_code": "GB"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,12 +32,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg",
-        "type": "tms",
-        "name": "7th Series (OS7)",
-        "country_code": "GB"
     }
 }

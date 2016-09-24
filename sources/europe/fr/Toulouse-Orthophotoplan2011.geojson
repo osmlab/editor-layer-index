@@ -1,4 +1,17 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
+            "text": "ToulouseMetropole",
+            "required": true
+        },
+        "name": "Toulouse - Orthophotoplan 2011",
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}",
+        "max_zoom": 22,
+        "country_code": "FR",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -225,18 +238,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
-            "text": "ToulouseMetropole",
-            "required": true
-        },
-        "name": "Toulouse - Orthophotoplan 2011",
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}",
-        "max_zoom": 22,
-        "country_code": "FR",
-        "type": "tms"
     }
 }

@@ -1,5 +1,4 @@
 {
-    "geometry": null,
     "type": "Feature",
     "properties": {
         "url": "http://geoportal2.uhul.cz/cgi-bin/oprl.asp?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Ortofoto_cb&STYLES=default&FORMAT=image/jpeg&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -15,5 +14,6 @@
             "EPSG:32634",
             "EPSG:102067"
         ]
-    }
+    },
+    "geometry": null
 }

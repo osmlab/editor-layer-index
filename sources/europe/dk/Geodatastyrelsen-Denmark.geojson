@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://download.kortforsyningen.dk/content/vilkaar-og-betingelser",
+            "text": "Geodatastyrelsen og Danske Kommuner",
+            "required": true
+        },
+        "name": "Geodatastyrelsen (Denmark)",
+        "url": "http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg",
+        "max_zoom": 21,
+        "country_code": "DK",
+        "type": "tms",
+        "best": true
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -633,19 +647,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://download.kortforsyningen.dk/content/vilkaar-og-betingelser",
-            "text": "Geodatastyrelsen og Danske Kommuner",
-            "required": true
-        },
-        "name": "Geodatastyrelsen (Denmark)",
-        "url": "http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg",
-        "max_zoom": 21,
-        "country_code": "DK",
-        "type": "tms",
-        "best": true
     }
 }

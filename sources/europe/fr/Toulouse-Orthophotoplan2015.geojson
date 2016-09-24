@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
+            "text": "ToulouseMetropole",
+            "required": true
+        },
+        "name": "Toulouse - Orthophotoplan 2015",
+        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}",
+        "max_zoom": 22,
+        "license_url": "http://opendatacommons.org/licenses/odbl/",
+        "country_code": "FR",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -225,19 +239,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
-            "text": "ToulouseMetropole",
-            "required": true
-        },
-        "name": "Toulouse - Orthophotoplan 2015",
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}",
-        "max_zoom": 22,
-        "license_url": "http://opendatacommons.org/licenses/odbl/",
-        "country_code": "FR",
-        "type": "tms"
     }
 }

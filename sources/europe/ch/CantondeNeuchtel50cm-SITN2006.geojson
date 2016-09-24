@@ -1,5 +1,4 @@
 {
-    "geometry": null,
     "type": "Feature",
     "properties": {
         "url": "http://sitn.ne.ch/ogc-sitn-open/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -8,7 +7,8 @@
             "required": false
         },
         "type": "wms",
-        "name": "Canton de Neuch\u00e2tel 50cm (SITN 2006)",
+        "name": "Canton de Neuchâtel 50cm (SITN 2006)",
         "country_code": "CH"
-    }
+    },
+    "geometry": null
 }

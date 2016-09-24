@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.",
+            "required": true
+        },
+        "name": "Freemap.sk Car",
+        "url": "http://t{switch:1,2,3,4}.freemap.sk/A/{zoom}/{x}/{y}.jpeg",
+        "max_zoom": 16,
+        "min_zoom": 8,
+        "country_code": "SK",
+        "type": "tms",
+        "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -189,19 +203,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "Copyright \u00a92007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.",
-            "required": true
-        },
-        "name": "Freemap.sk Car",
-        "url": "http://t{switch:1,2,3,4}.freemap.sk/A/{zoom}/{x}/{y}.jpeg",
-        "max_zoom": 16,
-        "min_zoom": 8,
-        "country_code": "SK",
-        "type": "tms",
-        "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png"
     }
 }

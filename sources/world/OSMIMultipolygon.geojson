@@ -1,10 +1,9 @@
 {
-    "geometry": null,
     "type": "Feature",
     "properties": {
         "attribution": {
             "url": "http://tools.geofabrik.de/osmi/",
-            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+            "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
         "name": "OSM Inspector: Multipolygon",
@@ -12,5 +11,6 @@
         "url": "http://tools.geofabrik.de/osmi/tiles/multipolygon/{zoom}/{x}/{y}.png",
         "max_zoom": 18,
         "type": "tms"
-    }
+    },
+    "geometry": null
 }

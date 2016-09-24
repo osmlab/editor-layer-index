@@ -1,4 +1,20 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={E30775F2-6370-4525-8E68-C371ED29BBB3}",
+            "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)",
+            "required": false
+        },
+        "name": "NJ 2015 Aerial Imagery (Infrared)",
+        "end_date": "2015-05-03",
+        "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015",
+        "max_zoom": 20,
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2015-03-29",
+        "description": "Digital orthophotography of New Jersey, Near Infrared, 1 foot resolution"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -477,21 +493,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={E30775F2-6370-4525-8E68-C371ED29BBB3}",
-            "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)",
-            "required": false
-        },
-        "name": "NJ 2015 Aerial Imagery (Infrared)",
-        "end_date": "2015-05-03",
-        "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015",
-        "max_zoom": 20,
-        "country_code": "US",
-        "type": "tms",
-        "start_date": "2015-03-29",
-        "description": "Digital orthophotography of New Jersey, Near Infrared, 1 foot resolution"
     }
 }

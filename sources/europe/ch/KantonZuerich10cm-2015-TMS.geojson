@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Kanton Zürich OF 2015",
+            "required": false
+        },
+        "name": "Kanton Zürich 2015  10cm",
+        "url": "http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw",
+        "max_zoom": 21,
+        "min_zoom": 8,
+        "country_code": "CH",
+        "type": "tms",
+        "best": true
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -437,19 +451,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "Kanton Z\u00fcrich OF 2015",
-            "required": false
-        },
-        "name": "Kanton Z\u00fcrich 2015  10cm",
-        "url": "http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw",
-        "max_zoom": 21,
-        "min_zoom": 8,
-        "country_code": "CH",
-        "type": "tms",
-        "best": true
     }
 }

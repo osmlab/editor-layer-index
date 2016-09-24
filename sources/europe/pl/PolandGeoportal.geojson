@@ -1,4 +1,19 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Copyright © Główny Urząd Geodezji i Kartografii.",
+            "required": true
+        },
+        "name": "Geoportal.gov.pl (Orthophotomap)",
+        "url": "http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}",
+        "max_zoom": 24,
+        "min_zoom": 6,
+        "country_code": "PL",
+        "type": "tms",
+        "best": true,
+        "icon": "http://i.imgur.com/aFlvMpM.png"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -393,20 +408,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "Copyright \u00a9 G\u0142\u00f3wny Urz\u0105d Geodezji i Kartografii.",
-            "required": true
-        },
-        "name": "Geoportal.gov.pl (Orthophotomap)",
-        "url": "http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}",
-        "max_zoom": 24,
-        "min_zoom": 6,
-        "country_code": "PL",
-        "type": "tms",
-        "best": true,
-        "icon": "http://i.imgur.com/aFlvMpM.png"
     }
 }

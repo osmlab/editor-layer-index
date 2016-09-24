@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.geoportal.lt",
+            "text": "NŽT ORT10LT",
+            "required": true
+        },
+        "name": "Lithuania - NŽT ORT10LT",
+        "url": "http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg",
+        "max_zoom": 18,
+        "min_zoom": 4,
+        "country_code": "LT",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -165,19 +179,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://www.geoportal.lt",
-            "text": "N\u017dT ORT10LT",
-            "required": true
-        },
-        "name": "Lithuania - N\u017dT ORT10LT",
-        "url": "http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg",
-        "max_zoom": 18,
-        "min_zoom": 4,
-        "country_code": "LT",
-        "type": "tms"
     }
 }

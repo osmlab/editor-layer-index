@@ -1,4 +1,22 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dundee_1.html",
+            "text": "National Library of Scotland - Dundee 1857-1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Dundee 1857-1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/dundee1857/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1857",
+        "description": "Detailed town plan of Dundee 1857-1858, courtesy of National Library of Scotland."
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,23 +43,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/dundee_1.html",
-            "text": "National Library of Scotland - Dundee 1857-1858",
-            "required": true
-        },
-        "name": "OS Town Plans, Dundee 1857-1858 (NLS)",
-        "end_date": "1859",
-        "url": "http://geo.nls.uk/maps/towns/dundee1857/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1857",
-        "description": "Detailed town plan of Dundee 1857-1858, courtesy of National Library of Scotland."
     }
 }

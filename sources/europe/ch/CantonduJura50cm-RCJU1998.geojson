@@ -1,5 +1,4 @@
 {
-    "geometry": null,
     "type": "Feature",
     "properties": {
         "url": "http://sitn.ne.ch/ogc-sitj-ortho/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho1998&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -10,5 +9,6 @@
         "type": "wms",
         "name": "Canton du Jura 50cm (RCJU 1998)",
         "country_code": "CH"
-    }
+    },
+    "geometry": null
 }

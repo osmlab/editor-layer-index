@@ -1,4 +1,20 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.hegyvidek.hu/",
+            "text": "Budapest XII. kerület önkormányzata",
+            "required": true
+        },
+        "name": "Budapest district XII ortophoto 2013",
+        "available_projections": [
+            "EPSG:23700"
+        ],
+        "url": "http://turistautak.openstreetmap.hu/kolesar/wms/Budapest-XII/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofot%C3%B3%202013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
+        "country_code": "HU",
+        "type": "wms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1001,21 +1017,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://www.hegyvidek.hu/",
-            "text": "Budapest XII. ker\u00fclet \u00f6nkorm\u00e1nyzata",
-            "required": true
-        },
-        "name": "Budapest district XII ortophoto 2013",
-        "available_projections": [
-            "EPSG:23700"
-        ],
-        "url": "http://turistautak.openstreetmap.hu/kolesar/wms/Budapest-XII/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofot%C3%B3%202013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
-        "country_code": "HU",
-        "type": "wms"
     }
 }

@@ -1,4 +1,19 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "basemap.at",
+            "required": true
+        },
+        "description": "Basemap of Austria, based on goverment data.",
+        "url": "http://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png",
+        "license_url": "http://creativecommons.org/licenses/by/3.0/at/deed.de",
+        "country_code": "AT",
+        "icon": "http://basemap.at/images/basemap_logo_klein.jpg",
+        "type": "tms",
+        "id": "basemap.at",
+        "name": "basemap.at"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -769,20 +784,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "basemap.at",
-            "required": true
-        },
-        "description": "Basemap of Austria, based on goverment data.",
-        "url": "http://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png",
-        "license_url": "http://creativecommons.org/licenses/by/3.0/at/deed.de",
-        "country_code": "AT",
-        "icon": "http://basemap.at/images/basemap_logo_klein.jpg",
-        "type": "tms",
-        "id": "basemap.at",
-        "name": "basemap.at"
     }
 }

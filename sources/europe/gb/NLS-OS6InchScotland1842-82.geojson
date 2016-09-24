@@ -1,4 +1,19 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/",
+            "text": "National Library of Scotland Historic Maps",
+            "required": true
+        },
+        "name": "NLS - OS 6-inch Scotland 1842-82",
+        "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png",
+        "max_zoom": 16,
+        "min_zoom": 5,
+        "country_code": "GB",
+        "type": "tms",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1643,20 +1658,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://geo.nls.uk/maps/",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "NLS - OS 6-inch Scotland 1842-82",
-        "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png",
-        "max_zoom": 16,
-        "min_zoom": 5,
-        "country_code": "GB",
-        "type": "tms",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
     }
 }

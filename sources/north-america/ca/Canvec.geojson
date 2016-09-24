@@ -1,4 +1,15 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj(EPSG:4326)}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}",
+        "type": "wms",
+        "name": "Canvec",
+        "country_code": "CA",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:900913"
+        ]
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -996,17 +1007,6 @@
                     60.2442
                 ]
             ]
-        ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj(EPSG:4326)}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}",
-        "type": "wms",
-        "name": "Canvec",
-        "country_code": "CA",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:900913"
         ]
     }
 }

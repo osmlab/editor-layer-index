@@ -1,4 +1,15 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "ITACyL",
+            "required": true
+        },
+        "type": "wms",
+        "name": "ITACyL - Castile and León",
+        "country_code": "ES"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1453,16 +1464,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "attribution": {
-            "text": "ITACyL",
-            "required": true
-        },
-        "type": "wms",
-        "name": "ITACyL - Castile and Le\u00f3n",
-        "country_code": "ES"
     }
 }

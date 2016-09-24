@@ -1,4 +1,14 @@
 {
+    "type": "Feature",
+    "properties": {
+        "name": "Japan GSI ortho Imagery",
+        "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg",
+        "max_zoom": 19,
+        "min_zoom": 12,
+        "license_url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+        "country_code": "JP",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -93,15 +103,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "name": "Japan GSI ortho Imagery",
-        "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg",
-        "max_zoom": 19,
-        "min_zoom": 12,
-        "license_url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
-        "country_code": "JP",
-        "type": "tms"
     }
 }

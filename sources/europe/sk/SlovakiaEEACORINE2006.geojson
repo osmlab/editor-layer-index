@@ -1,4 +1,17 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1",
+            "text": "EEA Corine 2006",
+            "required": true
+        },
+        "name": "Slovakia EEA CORINE 2006",
+        "url": "http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png",
+        "country_code": "SK",
+        "type": "tms",
+        "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -189,18 +202,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1",
-            "text": "EEA Corine 2006",
-            "required": true
-        },
-        "name": "Slovakia EEA CORINE 2006",
-        "url": "http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png",
-        "country_code": "SK",
-        "type": "tms",
-        "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png"
     }
 }

@@ -1,10 +1,9 @@
 {
-    "geometry": null,
     "type": "Feature",
     "properties": {
         "attribution": {
             "url": "http://maps.skobbler.com",
-            "text": "\u00a9 Tiles: skobbler Map data: OpenStreetMap contributors, CC-BY-SA",
+            "text": "© Tiles: skobbler Map data: OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
         "name": "Skobbler",
@@ -13,5 +12,6 @@
         "min_zoom": 1,
         "type": "tms",
         "icon": "http://www.skobbler.com/images/skobbler_logo_josm.png"
-    }
+    },
+    "geometry": null
 }

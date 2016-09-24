@@ -1,4 +1,12 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png",
+        "type": "tms",
+        "name": "OS OpenData Locator",
+        "country_code": "GB",
+        "overlay": true
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,13 +33,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png",
-        "type": "tms",
-        "name": "OS OpenData Locator",
-        "country_code": "GB",
-        "overlay": true
     }
 }

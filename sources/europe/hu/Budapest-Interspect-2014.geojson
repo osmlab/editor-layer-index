@@ -1,4 +1,24 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://interspect.hu/",
+            "text": "Interspect Kft.",
+            "required": true
+        },
+        "name": "Interspect ortofotó 2014",
+        "end_date": "2014-03-21",
+        "url": "http://geoserver.infobex.hu/Budapest2014/IST/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 21,
+        "min_zoom": 10,
+        "license_url": "http://geoserver.infobex.hu/Budapest2014/IST/license.txt",
+        "country_code": "HU",
+        "icon": "http://wiki.openstreetmap.org/w/images/c/cf/Hu_Interspect.png",
+        "type": "tms",
+        "start_date": "2014-03-21",
+        "best": true,
+        "description": "Four districts of Budapest: III, XIII, XIV, XV"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -677,25 +697,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://interspect.hu/",
-            "text": "Interspect Kft.",
-            "required": true
-        },
-        "name": "Interspect ortofot\u00f3 2014",
-        "end_date": "2014-03-21",
-        "url": "http://geoserver.infobex.hu/Budapest2014/IST/{zoom}/{x}/{y}.jpg",
-        "max_zoom": 21,
-        "min_zoom": 10,
-        "license_url": "http://geoserver.infobex.hu/Budapest2014/IST/license.txt",
-        "country_code": "HU",
-        "icon": "http://wiki.openstreetmap.org/w/images/c/cf/Hu_Interspect.png",
-        "type": "tms",
-        "start_date": "2014-03-21",
-        "best": true,
-        "description": "Four districts of Budapest: III, XIII, XIV, XV"
     }
 }

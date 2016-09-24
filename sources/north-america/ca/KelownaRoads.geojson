@@ -1,4 +1,16 @@
 {
+    "type": "Feature",
+    "properties": {
+        "name": "Kelowna Roads overlay",
+        "overlay": true,
+        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "min_zoom": 9,
+        "license_url": "http://opendatacommons.org/licenses/pddl/summary/",
+        "country_code": "CA",
+        "type": "tms",
+        "id": "kelowna_roads"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -389,17 +401,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "name": "Kelowna Roads overlay",
-        "overlay": true,
-        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png",
-        "max_zoom": 20,
-        "min_zoom": 9,
-        "license_url": "http://opendatacommons.org/licenses/pddl/summary/",
-        "country_code": "CA",
-        "type": "tms",
-        "id": "kelowna_roads"
     }
 }

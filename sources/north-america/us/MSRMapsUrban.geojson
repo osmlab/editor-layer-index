@@ -1,4 +1,32 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=urbanarea&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}",
+        "type": "wms",
+        "name": "MSR Maps Urban",
+        "country_code": "US",
+        "available_projections": [
+            "EPSG:26904",
+            "EPSG:26905",
+            "EPSG:26906",
+            "EPSG:26907",
+            "EPSG:26908",
+            "EPSG:26909",
+            "EPSG:26910",
+            "EPSG:26911",
+            "EPSG:26913",
+            "EPSG:26914",
+            "EPSG:26915",
+            "EPSG:26916",
+            "EPSG:26917",
+            "EPSG:26918",
+            "EPSG:26919",
+            "EPSG:26920",
+            "EPSG:4326",
+            "USDA:ALBERS-US",
+            "USDA:ALBERS-AK"
+        ]
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1606,34 +1634,6 @@
                     35.386428
                 ]
             ]
-        ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=urbanarea&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}",
-        "type": "wms",
-        "name": "MSR Maps Urban",
-        "country_code": "US",
-        "available_projections": [
-            "EPSG:26904",
-            "EPSG:26905",
-            "EPSG:26906",
-            "EPSG:26907",
-            "EPSG:26908",
-            "EPSG:26909",
-            "EPSG:26910",
-            "EPSG:26911",
-            "EPSG:26913",
-            "EPSG:26914",
-            "EPSG:26915",
-            "EPSG:26916",
-            "EPSG:26917",
-            "EPSG:26918",
-            "EPSG:26919",
-            "EPSG:26920",
-            "EPSG:4326",
-            "USDA:ALBERS-US",
-            "USDA:ALBERS-AK"
         ]
     }
 }

@@ -1,4 +1,21 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)",
+            "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL",
+            "required": true
+        },
+        "description": "French address registry or Base Adresses Nationale",
+        "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "http://www.opendatacommons.org/licenses/odbl/1.0/",
+        "country_code": "FR",
+        "type": "tms",
+        "id": "FR-BAN",
+        "name": "FR-BAN"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -315,22 +332,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)",
-            "text": "Tiles \u00a9 cquest@Openstreetmap France, data \u00a9 OpenStreetMap contributors, ODBL",
-            "required": true
-        },
-        "description": "French address registry or Base Adresses Nationale",
-        "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png",
-        "max_zoom": 20,
-        "min_zoom": 12,
-        "license_url": "http://www.opendatacommons.org/licenses/odbl/1.0/",
-        "country_code": "FR",
-        "type": "tms",
-        "id": "FR-BAN",
-        "name": "FR-BAN"
     }
 }

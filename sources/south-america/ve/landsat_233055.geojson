@@ -1,4 +1,18 @@
 {
+    "type": "Feature",
+    "properties": {
+        "description": "Recent Landsat imagery",
+        "end_date": "2013-09-03",
+        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png",
+        "max_zoom": 14,
+        "start_date": "2013-09-03",
+        "min_zoom": 5,
+        "license_url": "Public Domain",
+        "country_code": "VE",
+        "type": "tms",
+        "id": "landsat_233055",
+        "name": "Landsat 233055"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,19 +39,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "description": "Recent Landsat imagery",
-        "end_date": "2013-09-03",
-        "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png",
-        "max_zoom": 14,
-        "start_date": "2013-09-03",
-        "min_zoom": 5,
-        "license_url": "Public Domain",
-        "country_code": "VE",
-        "type": "tms",
-        "id": "landsat_233055",
-        "name": "Landsat 233055"
     }
 }

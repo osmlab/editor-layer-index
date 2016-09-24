@@ -1,4 +1,12 @@
 {
+    "type": "Feature",
+    "properties": {
+        "url": "http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
+        "max_zoom": 12,
+        "type": "tms",
+        "name": "Slovakia Historic Maps",
+        "country_code": "SK"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -25,13 +33,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "url": "http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-        "max_zoom": 12,
-        "type": "tms",
-        "name": "Slovakia Historic Maps",
-        "country_code": "SK"
     }
 }

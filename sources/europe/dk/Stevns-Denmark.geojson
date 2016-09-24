@@ -1,4 +1,16 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Stevns Kommune",
+            "required": true
+        },
+        "name": "Stevns (Denmark)",
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "country_code": "DK",
+        "type": "tms"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -129,17 +141,5 @@
                 ]
             ]
         ]
-    },
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "text": "Stevns Kommune",
-            "required": true
-        },
-        "name": "Stevns (Denmark)",
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png",
-        "max_zoom": 20,
-        "country_code": "DK",
-        "type": "tms"
     }
 }
