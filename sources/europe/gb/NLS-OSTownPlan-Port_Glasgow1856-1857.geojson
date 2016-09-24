@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/port-glasgow.html",
+            "text": "National Library of Scotland - Port Glasgow 1856-1857",
+            "required": true
+        },
+        "name": "OS Town Plans, Port Glasgow 1856-1857 (NLS)",
+        "end_date": "1858",
+        "url": "http://geo.nls.uk/maps/towns/portglasgow/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1856",
+        "description": "Detailed town plan of Port Glasgow 1856-1857, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.70063209,
+                    55.91995983
+                ],
+                [
+                    -4.70222026,
+                    55.9427679
+                ],
+                [
+                    -4.67084958,
+                    55.94345237
+                ],
+                [
+                    -4.6692798,
+                    55.92064372
+                ],
+                [
+                    -4.70063209,
+                    55.91995983
+                ]
+            ]
+        ]
+    }
+}

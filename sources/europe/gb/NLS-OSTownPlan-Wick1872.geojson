@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/wick.html",
+            "text": "National Library of Scotland - Wick 1872",
+            "required": true
+        },
+        "name": "OS Town Plans, Wick 1872 (NLS)",
+        "end_date": "1873",
+        "url": "http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1872",
+        "description": "Detailed town plan of Wick 1872, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.11470001,
+                    58.41344839
+                ],
+                [
+                    -3.11588837,
+                    58.45101446
+                ],
+                [
+                    -3.05949843,
+                    58.45149284
+                ],
+                [
+                    -3.05837008,
+                    58.41392606
+                ],
+                [
+                    -3.11470001,
+                    58.41344839
+                ]
+            ]
+        ]
+    }
+}

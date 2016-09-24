@@ -1,0 +1,17 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Orthophoto 2008, Vermessungsamt Stadt Bern ",
+            "required": false
+        },
+        "name": "Stadt Bern 10cm/25cm (2008)",
+        "available_projections": [
+            "EPSG:21781"
+        ],
+        "url": "http://map.bern.ch/arcgis/services/Orthofoto_2008/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0,1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "CH",
+        "type": "wms"
+    },
+    "geometry": null
+}

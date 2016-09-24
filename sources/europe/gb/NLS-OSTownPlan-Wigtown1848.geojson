@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/wigtown_1.html",
+            "text": "National Library of Scotland - Wigtown 1848",
+            "required": true
+        },
+        "name": "OS Town Plans, Wigtown 1848 (NLS)",
+        "end_date": "1849",
+        "url": "http://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1848",
+        "description": "Detailed town plan of Wigtown 1848, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.45235587,
+                    54.8572296
+                ],
+                [
+                    -4.45327284,
+                    54.87232603
+                ],
+                [
+                    -4.43254469,
+                    54.87274317
+                ],
+                [
+                    -4.43163545,
+                    54.85764651
+                ],
+                [
+                    -4.45235587,
+                    54.8572296
+                ]
+            ]
+        ]
+    }
+}

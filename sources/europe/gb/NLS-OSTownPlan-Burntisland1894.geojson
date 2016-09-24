@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/burntisland.html",
+            "text": "National Library of Scotland - Burntisland 1894",
+            "required": true
+        },
+        "name": "OS Town Plans, Burntisland 1894 (NLS)",
+        "end_date": "1895",
+        "url": "http://geo.nls.uk/maps/towns/burntisland/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1894",
+        "description": "Detailed town plan of Burntisland 1894, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.24879624,
+                    56.04240046
+                ],
+                [
+                    -3.2495182,
+                    56.06472996
+                ],
+                [
+                    -3.21830572,
+                    56.06504207
+                ],
+                [
+                    -3.21760179,
+                    56.0427123
+                ],
+                [
+                    -3.24879624,
+                    56.04240046
+                ]
+            ]
+        ]
+    }
+}

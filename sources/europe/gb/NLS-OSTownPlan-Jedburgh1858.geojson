@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/jedburgh.html",
+            "text": "National Library of Scotland - Jedburgh 1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Jedburgh 1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/jedburgh/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1858",
+        "description": "Detailed town plan of Jedburgh 1858, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -2.56332521,
+                    55.47105448
+                ],
+                [
+                    -2.56355503,
+                    55.48715562
+                ],
+                [
+                    -2.54168193,
+                    55.48725438
+                ],
+                [
+                    -2.54146103,
+                    55.47115318
+                ],
+                [
+                    -2.56332521,
+                    55.47105448
+                ]
+            ]
+        ]
+    }
+}

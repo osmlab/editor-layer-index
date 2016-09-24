@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/edinburgh500.html",
+            "text": "National Library of Scotland - Edinburgh 1893-1894",
+            "required": true
+        },
+        "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)",
+        "end_date": "1895",
+        "url": "http://geo.nls.uk/maps/towns/edinburgh1893/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1893",
+        "description": "Detailed town plan of Edinburgh 1893-1894, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.26111081,
+                    55.89555387
+                ],
+                [
+                    -3.26450423,
+                    55.9997912
+                ],
+                [
+                    -3.11970824,
+                    56.00119128
+                ],
+                [
+                    -3.1167031,
+                    55.89694851
+                ],
+                [
+                    -3.26111081,
+                    55.89555387
+                ]
+            ]
+        ]
+    }
+}

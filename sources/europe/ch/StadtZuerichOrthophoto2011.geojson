@@ -1,0 +1,40 @@
+{
+    "type": "Feature",
+    "properties": {
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw",
+        "attribution": {
+            "text": "Stadt Zürich Luftbild 2011",
+            "required": false
+        },
+        "type": "tms",
+        "name": "Stadt Zürich Luftbild 2011",
+        "country_code": "CH"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.4441,
+                    47.3141
+                ],
+                [
+                    8.4441,
+                    47.4411
+                ],
+                [
+                    8.6284,
+                    47.4411
+                ],
+                [
+                    8.6284,
+                    47.3141
+                ],
+                [
+                    8.4441,
+                    47.3141
+                ]
+            ]
+        ]
+    }
+}

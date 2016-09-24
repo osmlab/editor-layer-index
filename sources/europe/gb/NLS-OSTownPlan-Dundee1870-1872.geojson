@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dundee_2.html",
+            "text": "National Library of Scotland - Dundee 1870-1872",
+            "required": true
+        },
+        "name": "OS Town Plans, Dundee 1870-1872 (NLS)",
+        "end_date": "1873",
+        "url": "http://geo.nls.uk/maps/towns/dundee1870/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1870",
+        "description": "Detailed town plan of Dundee 1870-1872, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.03399945,
+                    56.448497
+                ],
+                [
+                    -3.03497463,
+                    56.48435238
+                ],
+                [
+                    -2.92352705,
+                    56.48523137
+                ],
+                [
+                    -2.92265681,
+                    56.4493748
+                ],
+                [
+                    -3.03399945,
+                    56.448497
+                ]
+            ]
+        ]
+    }
+}

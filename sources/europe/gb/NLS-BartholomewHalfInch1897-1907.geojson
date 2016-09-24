@@ -1,0 +1,43 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://geo.nls.uk/maps/",
+            "text": "National Library of Scotland Historic Maps",
+            "required": true
+        },
+        "name": "NLS - Bartholomew Half Inch, 1897-1907",
+        "url": "http://geo.nls.uk/mapdata2/bartholomew/great_britain/{zoom}/{x}/{-y}.png",
+        "max_zoom": 15,
+        "country_code": "GB",
+        "type": "tms",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -9,
+                    49.8
+                ],
+                [
+                    -9,
+                    61.1
+                ],
+                [
+                    1.9,
+                    61.1
+                ],
+                [
+                    1.9,
+                    49.8
+                ],
+                [
+                    -9,
+                    49.8
+                ]
+            ]
+        ]
+    }
+}

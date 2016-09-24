@@ -1,0 +1,18 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://www.openstreetmap.org/copyright",
+            "text": "© OpenStreetMap contributors",
+            "html": "<span style='display: inline-block; padding: 0 8px; background-color: rgba(0,0,0,0.5);'><span style='color: #eee;'>GPS Direction:</span> <span style='font-size: 15px; padding-left: 2px; font-weight: bold;'> <span style='color: #0ee;'>&larr;</span> <span style='color: #96f;'>&darr;</span> <span style='color: #6e0;'>&uarr;</span> <span style='color: #f63;'>&rarr;</span> </span></span> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>.",
+            "required": true
+        },
+        "name": "OpenStreetMap GPS traces",
+        "overlay": true,
+        "url": "http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png",
+        "max_zoom": 20,
+        "type": "tms",
+        "description": "Public GPS traces uploaded to OpenStreetMap."
+    },
+    "geometry": null
+}

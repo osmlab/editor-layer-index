@@ -1,0 +1,40 @@
+{
+    "type": "Feature",
+    "properties": {
+        "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "attribution": {
+            "text": "Stadt Zürich Open Government Data",
+            "required": false
+        },
+        "type": "tms",
+        "name": "Stadtplan Zürich",
+        "country_code": "CH"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.4482,
+                    47.321
+                ],
+                [
+                    8.4482,
+                    47.4339
+                ],
+                [
+                    8.6248,
+                    47.4339
+                ],
+                [
+                    8.6248,
+                    47.321
+                ],
+                [
+                    8.4482,
+                    47.321
+                ]
+            ]
+        ]
+    }
+}

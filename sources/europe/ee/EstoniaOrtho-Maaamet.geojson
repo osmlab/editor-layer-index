@@ -1,0 +1,44 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Maa-Ameti ortofoto ",
+            "required": true
+        },
+        "name": "Estonia Ortho (Maaamet)",
+        "available_projections": [
+            "EPSG:4326"
+        ],
+        "url": "http://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
+        "country_code": "EE",
+        "type": "wms"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    21.6940073,
+                    57.5025466
+                ],
+                [
+                    21.6940073,
+                    59.8274564
+                ],
+                [
+                    28.2110546,
+                    59.8274564
+                ],
+                [
+                    28.2110546,
+                    57.5025466
+                ],
+                [
+                    21.6940073,
+                    57.5025466
+                ]
+            ]
+        ]
+    }
+}

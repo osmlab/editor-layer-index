@@ -1,0 +1,38 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "OS 1:25k historic (OSM)",
+        "url": "http://ooc.openstreetmap.org/os1/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "country_code": "GB",
+        "type": "tms"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -9,
+                    49.8
+                ],
+                [
+                    -9,
+                    61.1
+                ],
+                [
+                    1.9,
+                    61.1
+                ],
+                [
+                    1.9,
+                    49.8
+                ],
+                [
+                    -9,
+                    49.8
+                ]
+            ]
+        ]
+    }
+}

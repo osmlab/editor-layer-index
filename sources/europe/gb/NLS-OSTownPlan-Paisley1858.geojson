@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/paisley.html",
+            "text": "National Library of Scotland - Paisley 1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Paisley 1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1858",
+        "description": "Detailed town plan of Paisley 1858, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.45144945,
+                    55.85448259
+                ],
+                [
+                    -4.4036847,
+                    55.85420972
+                ],
+                [
+                    -4.40371385,
+                    55.83065193
+                ],
+                [
+                    -4.4514497,
+                    55.83092507
+                ],
+                [
+                    -4.45144945,
+                    55.85448259
+                ]
+            ]
+        ]
+    }
+}

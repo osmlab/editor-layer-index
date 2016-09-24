@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkintilloch.html",
+            "text": "National Library of Scotland - Kirkintilloch 1859",
+            "required": true
+        },
+        "name": "OS Town Plans, Kirkintilloch 1859 (NLS)",
+        "end_date": "1860",
+        "url": "http://geo.nls.uk/maps/towns/kirkintilloch/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1859",
+        "description": "Detailed town plan of Kirkintilloch 1859, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.16664222,
+                    55.93124287
+                ],
+                [
+                    -4.16748402,
+                    55.94631265
+                ],
+                [
+                    -4.14637318,
+                    55.94668235
+                ],
+                [
+                    -4.14553956,
+                    55.93161237
+                ],
+                [
+                    -4.16664222,
+                    55.93124287
+                ]
+            ]
+        ]
+    }
+}

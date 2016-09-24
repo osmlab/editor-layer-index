@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/cupar_2.html",
+            "text": "National Library of Scotland - Cupar 1893-1894",
+            "required": true
+        },
+        "name": "OS Town Plans, Cupar 1893-1894 (NLS)",
+        "end_date": "1895",
+        "url": "http://geo.nls.uk/maps/towns/cupar1893/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1893",
+        "description": "Detailed town plan of Cupar 1893-1894, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.0327697,
+                    56.30243657
+                ],
+                [
+                    -3.03338443,
+                    56.32520139
+                ],
+                [
+                    -3.00146629,
+                    56.32546356
+                ],
+                [
+                    -3.00087054,
+                    56.30269852
+                ],
+                [
+                    -3.0327697,
+                    56.30243657
+                ]
+            ]
+        ]
+    }
+}

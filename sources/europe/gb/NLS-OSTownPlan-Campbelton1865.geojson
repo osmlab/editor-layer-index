@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/campbelton.html",
+            "text": "National Library of Scotland - Campbelton 1865",
+            "required": true
+        },
+        "name": "OS Town Plans, Campbelton 1865 (NLS)",
+        "end_date": "1866",
+        "url": "http://geo.nls.uk/maps/towns/campbeltown/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1865",
+        "description": "Detailed town plan of Campbelton 1865, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -5.62345307,
+                    55.40255998
+                ],
+                [
+                    -5.62631353,
+                    55.43375303
+                ],
+                [
+                    -5.58276654,
+                    55.43503753
+                ],
+                [
+                    -5.57994024,
+                    55.40384299
+                ],
+                [
+                    -5.62345307,
+                    55.40255998
+                ]
+            ]
+        ]
+    }
+}

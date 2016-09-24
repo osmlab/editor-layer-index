@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/oban.html",
+            "text": "National Library of Scotland - Oban 1867-1868",
+            "required": true
+        },
+        "name": "OS Town Plans, Oban 1867-1868 (NLS)",
+        "end_date": "1869",
+        "url": "http://geo.nls.uk/maps/towns/oban/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1867",
+        "description": "Detailed town plan of Oban 1867-1868, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -5.49548449,
+                    56.39080407
+                ],
+                [
+                    -5.49836627,
+                    56.42219039
+                ],
+                [
+                    -5.45383984,
+                    56.42343933
+                ],
+                [
+                    -5.45099456,
+                    56.39205153
+                ],
+                [
+                    -5.49548449,
+                    56.39080407
+                ]
+            ]
+        ]
+    }
+}

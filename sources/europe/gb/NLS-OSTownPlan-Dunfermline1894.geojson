@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dunfermline_2.html",
+            "text": "National Library of Scotland - Dunfermline 1894",
+            "required": true
+        },
+        "name": "OS Town Plans, Dunfermline 1894 (NLS)",
+        "end_date": "1895",
+        "url": "http://geo.nls.uk/maps/towns/dunfermline1893/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1894",
+        "description": "Detailed town plan of Dunfermline 1894, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.48284159,
+                    56.05198219
+                ],
+                [
+                    -3.48399434,
+                    56.08198924
+                ],
+                [
+                    -3.44209721,
+                    56.08248587
+                ],
+                [
+                    -3.44097697,
+                    56.05247826
+                ],
+                [
+                    -3.48284159,
+                    56.05198219
+                ]
+            ]
+        ]
+    }
+}

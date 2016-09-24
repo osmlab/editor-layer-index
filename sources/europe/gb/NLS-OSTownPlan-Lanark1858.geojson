@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/lanark.html",
+            "text": "National Library of Scotland - Lanark 1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Lanark 1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/lanark/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1858",
+        "description": "Detailed town plan of Lanark 1858, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.78642584,
+                    55.66308804
+                ],
+                [
+                    -3.78710605,
+                    55.67800854
+                ],
+                [
+                    -3.76632876,
+                    55.67830935
+                ],
+                [
+                    -3.76565645,
+                    55.66338868
+                ],
+                [
+                    -3.78642584,
+                    55.66308804
+                ]
+            ]
+        ]
+    }
+}

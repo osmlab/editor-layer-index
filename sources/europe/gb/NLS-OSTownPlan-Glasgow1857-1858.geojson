@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/glasgow_1.html",
+            "text": "National Library of Scotland - Glasgow 1857-1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Glasgow 1857-1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/glasgow1857/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1857",
+        "description": "Detailed town plan of Glasgow 1857-1858, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.31575491,
+                    55.82072009
+                ],
+                [
+                    -4.319683,
+                    55.88667625
+                ],
+                [
+                    -4.1771319,
+                    55.88928081
+                ],
+                [
+                    -4.1734447,
+                    55.82331825
+                ],
+                [
+                    -4.31575491,
+                    55.82072009
+                ]
+            ]
+        ]
+    }
+}

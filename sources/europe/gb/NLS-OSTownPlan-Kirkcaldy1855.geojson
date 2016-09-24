@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kirkcaldy_1.html",
+            "text": "National Library of Scotland - Kirkcaldy 1855",
+            "required": true
+        },
+        "name": "OS Town Plans, Kirkcaldy 1855 (NLS)",
+        "end_date": "1856",
+        "url": "http://geo.nls.uk/maps/towns/kirkcaldy1855/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1855",
+        "description": "Detailed town plan of Kirkcaldy 1855, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.17455285,
+                    56.09518942
+                ],
+                [
+                    -3.17554995,
+                    56.12790251
+                ],
+                [
+                    -3.12991402,
+                    56.12832843
+                ],
+                [
+                    -3.12895559,
+                    56.09561481
+                ],
+                [
+                    -3.17455285,
+                    56.09518942
+                ]
+            ]
+        ]
+    }
+}

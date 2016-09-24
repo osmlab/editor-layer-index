@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/haddington_2.html",
+            "text": "National Library of Scotland - Haddington 1893",
+            "required": true
+        },
+        "name": "OS Town Plans, Haddington 1893 (NLS)",
+        "end_date": "1894",
+        "url": "http://geo.nls.uk/maps/towns/haddington1893/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1893",
+        "description": "Detailed town plan of Haddington 1893, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -2.80152293,
+                    55.93428734
+                ],
+                [
+                    -2.80214693,
+                    55.96447189
+                ],
+                [
+                    -2.76038069,
+                    55.9647367
+                ],
+                [
+                    -2.75978916,
+                    55.93455185
+                ],
+                [
+                    -2.80152293,
+                    55.93428734
+                ]
+            ]
+        ]
+    }
+}

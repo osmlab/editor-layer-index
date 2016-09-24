@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/edinburgh1056_2.html",
+            "text": "National Library of Scotland - Edinburgh 1876-1877",
+            "required": true
+        },
+        "name": "OS Town Plans, Edinburgh 1876-1877 (NLS)",
+        "end_date": "1878",
+        "url": "http://geo.nls.uk/maps/towns/edinburgh1876/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1876",
+        "description": "Detailed town plan of Edinburgh 1876-1877, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.24740498,
+                    55.92116518
+                ],
+                [
+                    -3.24989581,
+                    55.99850896
+                ],
+                [
+                    -3.13061127,
+                    55.99966059
+                ],
+                [
+                    -3.12835798,
+                    55.92231348
+                ],
+                [
+                    -3.24740498,
+                    55.92116518
+                ]
+            ]
+        ]
+    }
+}

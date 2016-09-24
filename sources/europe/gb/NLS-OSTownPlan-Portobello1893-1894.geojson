@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/portobello.html",
+            "text": "National Library of Scotland - Portobello 1893-1894",
+            "required": true
+        },
+        "name": "OS Town Plans, Portobello 1893-1894 (NLS)",
+        "end_date": "1895",
+        "url": "http://geo.nls.uk/maps/towns/portobello/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1893",
+        "description": "Detailed town plan of Portobello 1893-1894, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.12437919,
+                    55.93846889
+                ],
+                [
+                    -3.1250234,
+                    55.96068605
+                ],
+                [
+                    -3.09394827,
+                    55.96096586
+                ],
+                [
+                    -3.09332184,
+                    55.93874847
+                ],
+                [
+                    -3.12437919,
+                    55.93846889
+                ]
+            ]
+        ]
+    }
+}

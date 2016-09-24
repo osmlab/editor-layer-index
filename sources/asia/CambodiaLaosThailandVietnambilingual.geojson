@@ -1,0 +1,41 @@
+{
+    "type": "Feature",
+    "properties": {
+        "url": "http://{switch:a,b,c,d}.tile.osm-tools.org/osm_then/{zoom}/{x}/{y}.png",
+        "attribution": {
+            "url": "http://www.osm-tools.org/",
+            "text": "© osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
+            "required": true
+        },
+        "max_zoom": 19,
+        "type": "tms",
+        "name": "Cambodia, Laos, Thailand, Vietnam bilingual"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    97.3,
+                    5.6
+                ],
+                [
+                    97.3,
+                    23.4
+                ],
+                [
+                    109.6,
+                    23.4
+                ],
+                [
+                    109.6,
+                    5.6
+                ],
+                [
+                    97.3,
+                    5.6
+                ]
+            ]
+        ]
+    }
+}

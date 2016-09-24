@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/girvan.html",
+            "text": "National Library of Scotland - Girvan 1857",
+            "required": true
+        },
+        "name": "OS Town Plans, Girvan 1857 (NLS)",
+        "end_date": "1858",
+        "url": "http://geo.nls.uk/maps/towns/girvan/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1857",
+        "description": "Detailed town plan of Girvan 1857, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.87424251,
+                    55.22679729
+                ],
+                [
+                    -4.87587895,
+                    55.24945946
+                ],
+                [
+                    -4.84447382,
+                    55.25019598
+                ],
+                [
+                    -4.84285519,
+                    55.22753318
+                ],
+                [
+                    -4.87424251,
+                    55.22679729
+                ]
+            ]
+        ]
+    }
+}

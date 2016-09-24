@@ -1,0 +1,36 @@
+{
+    "type": "Feature",
+    "properties": {
+        "url": "http://ooc.openstreetmap.org/npe/{zoom}/{x}/{y}.png",
+        "type": "tms",
+        "name": "OS New Popular Edition historic",
+        "country_code": "GB"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -5.8,
+                    49.8
+                ],
+                [
+                    -5.8,
+                    55.8
+                ],
+                [
+                    1.9,
+                    55.8
+                ],
+                [
+                    1.9,
+                    49.8
+                ],
+                [
+                    -5.8,
+                    49.8
+                ]
+            ]
+        ]
+    }
+}

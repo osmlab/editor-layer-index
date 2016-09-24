@@ -1,0 +1,44 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Maa-Ameti metsanduslik ortofoto",
+            "required": true
+        },
+        "name": "Estonia Forestry (Maaamet)",
+        "available_projections": [
+            "EPSG:4326"
+        ],
+        "url": "http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=cir_ngr&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
+        "country_code": "EE",
+        "type": "wms"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    21.6940073,
+                    57.5025466
+                ],
+                [
+                    21.6940073,
+                    59.8274564
+                ],
+                [
+                    28.2110546,
+                    59.8274564
+                ],
+                [
+                    28.2110546,
+                    57.5025466
+                ],
+                [
+                    21.6940073,
+                    57.5025466
+                ]
+            ]
+        ]
+    }
+}

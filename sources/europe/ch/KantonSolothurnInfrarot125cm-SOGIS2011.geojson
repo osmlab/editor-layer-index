@@ -1,0 +1,14 @@
+{
+    "type": "Feature",
+    "properties": {
+        "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_ortho.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Orthofoto11_CIR&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "attribution": {
+            "text": "Orthofoto WMS Solothurn",
+            "required": false
+        },
+        "type": "wms",
+        "name": "Kanton Solothurn Infrarot 12.5cm (SOGIS 2011)",
+        "country_code": "CH"
+    },
+    "geometry": null
+}

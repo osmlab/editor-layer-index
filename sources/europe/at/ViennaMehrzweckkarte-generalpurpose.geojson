@@ -1,0 +1,43 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://data.wien.gv.at/",
+            "text": "Stadt Wien",
+            "required": false
+        },
+        "name": "Vienna: Mehrzweckkarte (general purpose)",
+        "url": "http://www.wien.gv.at/wmts/fmzk/pastell/google3857/{zoom}/{y}/{x}.jpeg",
+        "max_zoom": 19,
+        "country_code": "AT",
+        "type": "tms",
+        "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    16.17,
+                    48.1
+                ],
+                [
+                    16.17,
+                    48.33
+                ],
+                [
+                    16.58,
+                    48.33
+                ],
+                [
+                    16.58,
+                    48.1
+                ],
+                [
+                    16.17,
+                    48.1
+                ]
+            ]
+        ]
+    }
+}

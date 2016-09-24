@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dumfries_2.html",
+            "text": "National Library of Scotland - Dumfries 1893",
+            "required": true
+        },
+        "name": "OS Town Plans, Dumfries 1893 (NLS)",
+        "end_date": "1894",
+        "url": "http://geo.nls.uk/maps/towns/dumfries1893/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1893",
+        "description": "Detailed town plan of Dumfries 1893, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.63179081,
+                    55.04150111
+                ],
+                [
+                    -3.63330662,
+                    55.07873429
+                ],
+                [
+                    -3.58259012,
+                    55.07940411
+                ],
+                [
+                    -3.58112132,
+                    55.04217001
+                ],
+                [
+                    -3.63179081,
+                    55.04150111
+                ]
+            ]
+        ]
+    }
+}

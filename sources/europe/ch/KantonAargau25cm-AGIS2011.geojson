@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "AGIS OF2011",
+            "required": false
+        },
+        "name": "Kanton Aargau 25cm (AGIS 2011)",
+        "url": "http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png",
+        "max_zoom": 19,
+        "min_zoom": 14,
+        "country_code": "CH",
+        "type": "tms"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    7.7,
+                    47.12
+                ],
+                [
+                    7.7,
+                    47.63
+                ],
+                [
+                    8.5,
+                    47.63
+                ],
+                [
+                    8.5,
+                    47.12
+                ],
+                [
+                    7.7,
+                    47.12
+                ]
+            ]
+        ]
+    }
+}

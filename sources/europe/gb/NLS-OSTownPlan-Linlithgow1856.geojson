@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/linlithgow.html",
+            "text": "National Library of Scotland - Linlithgow 1856",
+            "required": true
+        },
+        "name": "OS Town Plans, Linlithgow 1856 (NLS)",
+        "end_date": "1857",
+        "url": "http://geo.nls.uk/maps/towns/linlithgow/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1856",
+        "description": "Detailed town plan of Linlithgow 1856, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.61908334,
+                    55.95549561
+                ],
+                [
+                    -3.62033259,
+                    55.98538615
+                ],
+                [
+                    -3.57838447,
+                    55.98593047
+                ],
+                [
+                    -3.57716753,
+                    55.95603932
+                ],
+                [
+                    -3.61908334,
+                    55.95549561
+                ]
+            ]
+        ]
+    }
+}

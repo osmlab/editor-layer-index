@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/alexandria.html",
+            "text": "National Library of Scotland - Alexandria 1859",
+            "required": true
+        },
+        "name": "OS Town Plans, Alexandria 1859 (NLS)",
+        "end_date": "1860",
+        "url": "http://geo.nls.uk/maps/towns/alexandria/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1859",
+        "description": "Detailed town plan of Alexandria 1859, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.58973571,
+                    55.97536707
+                ],
+                [
+                    -4.59104461,
+                    55.99493153
+                ],
+                [
+                    -4.55985072,
+                    55.99558348
+                ],
+                [
+                    -4.55855754,
+                    55.97601855
+                ],
+                [
+                    -4.58973571,
+                    55.97536707
+                ]
+            ]
+        ]
+    }
+}

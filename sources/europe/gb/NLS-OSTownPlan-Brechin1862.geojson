@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/brechin.html",
+            "text": "National Library of Scotland - Brechin 1862",
+            "required": true
+        },
+        "name": "OS Town Plans, Brechin 1862 (NLS)",
+        "end_date": "1863",
+        "url": "http://geo.nls.uk/maps/towns/brechin/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1862",
+        "description": "Detailed town plan of Brechin 1862, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -2.67480248,
+                    56.71456775
+                ],
+                [
+                    -2.67521172,
+                    56.73739937
+                ],
+                [
+                    -2.64319679,
+                    56.73756872
+                ],
+                [
+                    -2.64280695,
+                    56.71473694
+                ],
+                [
+                    -2.67480248,
+                    56.71456775
+                ]
+            ]
+        ]
+    }
+}

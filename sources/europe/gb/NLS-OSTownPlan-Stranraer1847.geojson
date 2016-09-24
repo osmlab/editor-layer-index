@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stranraer_1.html",
+            "text": "National Library of Scotland - Stranraer 1847",
+            "required": true
+        },
+        "name": "OS Town Plans, Stranraer 1847 (NLS)",
+        "end_date": "1848",
+        "url": "http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1847",
+        "description": "Detailed town plan of Stranraer 1847, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -5.04859743,
+                    54.8822997
+                ],
+                [
+                    -5.0508954,
+                    54.91268061
+                ],
+                [
+                    -5.0095373,
+                    54.91371278
+                ],
+                [
+                    -5.00727037,
+                    54.88333071
+                ],
+                [
+                    -5.04859743,
+                    54.8822997
+                ]
+            ]
+        ]
+    }
+}

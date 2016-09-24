@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/st-andrews_2.html",
+            "text": "National Library of Scotland - St Andrews 1893",
+            "required": true
+        },
+        "name": "OS Town Plans, St Andrews 1893 (NLS)",
+        "end_date": "1894",
+        "url": "http://geo.nls.uk/maps/towns/standrews1893/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1893",
+        "description": "Detailed town plan of St Andrews 1893, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -2.81545583,
+                    56.31861733
+                ],
+                [
+                    -2.81609919,
+                    56.3487653
+                ],
+                [
+                    -2.77387785,
+                    56.34903619
+                ],
+                [
+                    -2.77326775,
+                    56.31888792
+                ],
+                [
+                    -2.81545583,
+                    56.31861733
+                ]
+            ]
+        ]
+    }
+}

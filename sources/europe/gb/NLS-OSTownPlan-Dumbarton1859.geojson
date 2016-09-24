@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/dumbarton.html",
+            "text": "National Library of Scotland - Dumbarton 1859",
+            "required": true
+        },
+        "name": "OS Town Plans, Dumbarton 1859 (NLS)",
+        "end_date": "1860",
+        "url": "http://geo.nls.uk/maps/towns/dumbarton/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1859",
+        "description": "Detailed town plan of Dumbarton 1859, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.58559982,
+                    55.92742578
+                ],
+                [
+                    -4.58714245,
+                    55.95056014
+                ],
+                [
+                    -4.55463269,
+                    55.95123882
+                ],
+                [
+                    -4.55310939,
+                    55.92810387
+                ],
+                [
+                    -4.58559982,
+                    55.92742578
+                ]
+            ]
+        ]
+    }
+}

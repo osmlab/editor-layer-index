@@ -1,0 +1,46 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Stadt Graz – data.graz.gv.at",
+            "required": false
+        },
+        "name": "Graz: Basiskarte (base map)",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:3857",
+            "CRS:84"
+        ],
+        "url": "http://geodaten1.graz.at/ArcGIS_Graz/services/Extern/BASISKARTE_WMS/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "AT",
+        "type": "wms",
+        "icon": "http://gis.graz.at/g/graz-logo.gif"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    15.3444649457389,
+                    47.0072927285598
+                ],
+                [
+                    15.3444649457389,
+                    47.143749958186
+                ],
+                [
+                    15.5442161820906,
+                    47.143749958186
+                ],
+                [
+                    15.5442161820906,
+                    47.0072927285598
+                ],
+                [
+                    15.3444649457389,
+                    47.0072927285598
+                ]
+            ]
+        ]
+    }
+}

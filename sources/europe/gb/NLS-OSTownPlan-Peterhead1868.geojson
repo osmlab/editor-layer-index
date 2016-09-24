@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/peterhead",
+            "text": "National Library of Scotland - Peterhead 1868",
+            "required": true
+        },
+        "name": "OS Town Plans, Peterhead 1868 (NLS)",
+        "end_date": "1869",
+        "url": "http://geo.nls.uk/maps/towns/peterhead/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1868",
+        "description": "Detailed town plan of Peterhead 1868, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -1.80513747,
+                    57.48046916
+                ],
+                [
+                    -1.80494005,
+                    57.51755411
+                ],
+                [
+                    -1.75135366,
+                    57.51746003
+                ],
+                [
+                    -1.75160539,
+                    57.48037522
+                ],
+                [
+                    -1.80513747,
+                    57.48046916
+                ]
+            ]
+        ]
+    }
+}

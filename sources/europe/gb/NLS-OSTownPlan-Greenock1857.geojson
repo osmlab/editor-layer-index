@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/greenock.html",
+            "text": "National Library of Scotland - Greenock 1857",
+            "required": true
+        },
+        "name": "OS Town Plans, Greenock 1857 (NLS)",
+        "end_date": "1858",
+        "url": "http://geo.nls.uk/maps/towns/greenock/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1857",
+        "description": "Detailed town plan of Greenock 1857, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.78108857,
+                    55.92617865
+                ],
+                [
+                    -4.78382957,
+                    55.96437481
+                ],
+                [
+                    -4.7302257,
+                    55.96557475
+                ],
+                [
+                    -4.72753731,
+                    55.92737687
+                ],
+                [
+                    -4.78108857,
+                    55.92617865
+                ]
+            ]
+        ]
+    }
+}

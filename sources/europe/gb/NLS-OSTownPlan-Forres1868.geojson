@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/forres.html",
+            "text": "National Library of Scotland - Forres 1868",
+            "required": true
+        },
+        "name": "OS Town Plans, Forres 1868 (NLS)",
+        "end_date": "1869",
+        "url": "http://geo.nls.uk/maps/towns/forres/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1868",
+        "description": "Detailed town plan of Forres 1868, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.63516795,
+                    57.58887872
+                ],
+                [
+                    -3.63647637,
+                    57.618002
+                ],
+                [
+                    -3.57751453,
+                    57.61875171
+                ],
+                [
+                    -3.5762532,
+                    57.58962759
+                ],
+                [
+                    -3.63516795,
+                    57.58887872
+                ]
+            ]
+        ]
+    }
+}

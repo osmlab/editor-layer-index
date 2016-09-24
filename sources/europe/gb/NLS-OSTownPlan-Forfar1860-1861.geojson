@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/forfar.html",
+            "text": "National Library of Scotland - Forfar 1860-1861",
+            "required": true
+        },
+        "name": "OS Town Plans, Forfar 1860-1861 (NLS)",
+        "end_date": "1862",
+        "url": "http://geo.nls.uk/maps/towns/forfar/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1860",
+        "description": "Detailed town plan of Forfar 1860-1861, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -2.90326183,
+                    56.6289471
+                ],
+                [
+                    -2.90378797,
+                    56.65095013
+                ],
+                [
+                    -2.87228457,
+                    56.65117489
+                ],
+                [
+                    -2.87177676,
+                    56.62917168
+                ],
+                [
+                    -2.90326183,
+                    56.6289471
+                ]
+            ]
+        ]
+    }
+}

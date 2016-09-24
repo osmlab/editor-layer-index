@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/stirling.html",
+            "text": "National Library of Scotland - Stirling 1858",
+            "required": true
+        },
+        "name": "OS Town Plans, Stirling 1858 (NLS)",
+        "end_date": "1859",
+        "url": "http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1858",
+        "description": "Detailed town plan of Stirling 1858, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -3.95768489,
+                    56.10754239
+                ],
+                [
+                    -3.95882978,
+                    56.13007142
+                ],
+                [
+                    -3.92711024,
+                    56.13057046
+                ],
+                [
+                    -3.92598386,
+                    56.10804101
+                ],
+                [
+                    -3.95768489,
+                    56.10754239
+                ]
+            ]
+        ]
+    }
+}

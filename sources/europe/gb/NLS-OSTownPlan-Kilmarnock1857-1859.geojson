@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "http://maps.nls.uk/townplans/kilmarnock.html",
+            "text": "National Library of Scotland - Kilmarnock 1857-1859",
+            "required": true
+        },
+        "name": "OS Town Plans, Kilmarnock 1857-1859 (NLS)",
+        "end_date": "1860",
+        "url": "http://geo.nls.uk/maps/towns/kilmarnock/{zoom}/{x}/{-y}.png",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "country_code": "GB",
+        "icon": "http://nls.tileserver.com/nls70-nq8.png",
+        "type": "tms",
+        "start_date": "1857",
+        "description": "Detailed town plan of Kilmarnock 1857-1859, courtesy of National Library of Scotland."
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -4.51746876,
+                    55.58950933
+                ],
+                [
+                    -4.5194347,
+                    55.62017114
+                ],
+                [
+                    -4.47675652,
+                    55.62104083
+                ],
+                [
+                    -4.4748238,
+                    55.59037802
+                ],
+                [
+                    -4.51746876,
+                    55.58950933
+                ]
+            ]
+        ]
+    }
+}

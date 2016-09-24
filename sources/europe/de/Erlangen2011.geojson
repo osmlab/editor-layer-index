@@ -1,0 +1,41 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "Erlangen Luftbild (2011 5,0 cm)",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:31494"
+        ],
+        "url": "https://secure.erlangen.de/arcgiser/services/Luftbilder2011/MapServer/WmsServer?FORMAT=image/bmp&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Erlangen_ratio10_5cm_gk4.jp2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "http://erlangen.maps.arcgis.com/home/item.html?id=f834ddb433a148c9b325e9075ad0df80",
+        "country_code": "DE",
+        "type": "wms"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    10.909347,
+                    49.529292
+                ],
+                [
+                    10.909347,
+                    49.65211
+                ],
+                [
+                    11.077808,
+                    49.65211
+                ],
+                [
+                    11.077808,
+                    49.529292
+                ],
+                [
+                    10.909347,
+                    49.529292
+                ]
+            ]
+        ]
+    }
+}
