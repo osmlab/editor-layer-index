@@ -11,43 +11,17 @@
   * `pip install jsonschema`
 
 ### Adding new sources
-The 'source' documents for this project are the .json files in `sources`. To add
+The 'source' documents for this project are the .geojson files in `sources`. To add
 a new imagery source, add a new file to this directory.
 
-Each source must minimally have `name`, `type`, and `url` properties.
+Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, and `url` properties. To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
 
 See [schema.json](schema.json) for the full list of available properties.
 
 
 ##### Imagery Extent
 
-Local (i.e. not worldwide) sources should define an appropriate extent.
-
-```js
-"extent": {
-    "min_zoom": 0,
-    "max_zoom": 22,
-    "bbox": {
-        "min_lon": -178.0000970,
-        "max_lon": -66.9452845,
-        "min_lat": 18.7586966,
-        "max_lat": 71.5633329
-    },
-    "polygon": [
-        [
-            [lon, lat], [lon, lat], [lon, lat], ...
-        ], [
-            [lon, lat], [lon, lat], [lon, lat], ...
-        ]
-    ]
-}
-```
-
-The extent `polygon` property should contain an array of test polygons that,
-combined, form the valid bounding area for this imagery. In other words, the
-imagery source is considered valid within *any* of the test polygons.
-
-Polygons can be created by using a tool like http://geojson.io/
+Local (i.e. not worldwide) sources should define an appropriate extent as the geometry for the GeoJSON feature. Polygons and bounding boxes can be created by using a tool like http://geojson.io/
 
 
 ##### Imagery Dates
