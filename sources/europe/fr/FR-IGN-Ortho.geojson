@@ -2,20 +2,19 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "http://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
-            "text": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2015",
+            "url": "http://openstreetmap.fr/bdortho",
+            "text": "BDOrtho IGN",
             "required": true
         },
-        "description": "French land registry",
-        "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{z}/{x}/{y}.png",
-        "min_zoom": 12,
-	"max_zoom": 20,
-        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
+        "description": "French IGN aeral imagery",
+        "url": "http://proxy-ign.openstreetmap.fr/bdortho/{zoom}/{x}/{y}.jpg",
+        "min_zoom": 6,
+	"max_zoom": 19,
+        "license_url": "http://openstreetmap.fr/bdortho",
         "country_code": "FR",
-        "icon": "http://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
         "type": "tms",
-        "id": "FR-Cadastre",
-        "name": "FR-Cadastre"
+        "id": "bdortho",
+        "name": "BDOrtho IGN"
     },
     "geometry": {
         "type": "Polygon",
