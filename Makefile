@@ -16,4 +16,4 @@ imagery.json: $(SOURCES)
 	python scripts/concat.py $(SOURCES) > imagery.json
 
 imagery.geojson: $(SOURCES)
-	python scripts/convert_geojson.py $(SOURCES) > imagery.geojson
+	python scripts/concat_geojson.py $(SOURCES) > imagery.geojson
