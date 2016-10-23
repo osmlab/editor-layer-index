@@ -13,7 +13,7 @@ imagery.xml: $(SOURCES)
 	python scripts/convert_xml.py $(SOURCES)
 
 imagery.json: $(SOURCES)
-	python scripts/concat.py $(SOURCES) > imagery.json
+	python scripts/convert_geojson_to_legacyjson.py $(SOURCES) > imagery.json
 
 imagery.geojson: $(SOURCES)
-	python scripts/convert_geojson.py $(SOURCES) > imagery.geojson
+	python scripts/concat_geojson.py $(SOURCES) > imagery.geojson
