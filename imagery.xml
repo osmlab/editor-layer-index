@@ -9950,6 +9950,100 @@
     <icon>http://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png</icon>
     <country-code>FR</country-code>
     <min-zoom>12</min-zoom>
+    <max-zoom>20</max-zoom>
+    <bounds>
+      <shape>
+        <point lat="49.089189" lon="8.324785" />
+        <point lat="49.616737" lon="6.156688" />
+        <point lat="50.212615" lon="4.866671" />
+        <point lat="51.176167" lon="2.493706" />
+        <point lat="50.932468" lon="1.312153" />
+        <point lat="50.187749" lon="1.265998" />
+        <point lat="49.825859" lon="0.112137" />
+        <point lat="49.431234" lon="-0.349407" />
+        <point lat="49.485234" lon="-1.023262" />
+        <point lat="49.790116" lon="-1.327882" />
+        <point lat="49.790116" lon="-2.103277" />
+        <point lat="48.742066" lon="-1.62327" />
+        <point lat="48.972851" lon="-3.100213" />
+        <point lat="48.681156" lon="-5.112546" />
+        <point lat="48.436778" lon="-5.35255" />
+        <point lat="47.719496" lon="-4.598419" />
+        <point lat="47.023278" lon="-2.555398" />
+        <point lat="46.663882" lon="-2.473808" />
+        <point lat="46.105572" lon="-1.667695" />
+        <point lat="45.514113" lon="-1.334807" />
+        <point lat="44.1627" lon="-1.49146" />
+        <point lat="43.370815" lon="-1.994057" />
+        <point lat="42.736475" lon="-0.956228" />
+        <point lat="42.284189" lon="2.202949" />
+        <point lat="42.544413" lon="3.23425" />
+        <point lat="43.114054" lon="3.240777" />
+        <point lat="43.328096" lon="4.043626" />
+        <point lat="42.808345" lon="6.43259" />
+        <point lat="43.59341" lon="7.627072" />
+        <point lat="44.172064" lon="7.816362" />
+        <point lat="44.41967" lon="7.039622" />
+        <point lat="45.495814" lon="7.268075" />
+        <point lat="46.214078" lon="7.124476" />
+        <point lat="46.771283" lon="6.563135" />
+        <point lat="47.59128" lon="7.657149" />
+        <point lat="47.594181" lon="7.652784" />
+        <point lat="47.577674" lon="7.62247" />
+        <point lat="47.578221" lon="7.60473" />
+        <point lat="47.590153" lon="7.587705" />
+        <point lat="47.65161" lon="7.521558" />
+        <point lat="47.70235" lon="7.503992" />
+        <point lat="47.77685" lon="7.520958" />
+        <point lat="47.84839" lon="7.557124" />
+        <point lat="47.879205" lon="7.549463" />
+        <point lat="47.93028" lon="7.574615" />
+        <point lat="47.96804" lon="7.613179" />
+        <point lat="47.9871" lon="7.611904" />
+        <point lat="48.038362" lon="7.56124" />
+        <point lat="48.1258" lon="7.574915" />
+        <point lat="48.15977" lon="7.595338" />
+        <point lat="48.19717" lon="7.633047" />
+        <point lat="48.22473" lon="7.662748" />
+        <point lat="48.30305" lon="7.684659" />
+        <point lat="48.49158" lon="7.763463" />
+        <point lat="48.512598" lon="7.80046" />
+        <point lat="48.5878" lon="7.799582" />
+        <point lat="48.64439" lon="7.834088" />
+        <point lat="48.68899" lon="7.912107" />
+        <point lat="48.757159" lon="7.96723" />
+        <point lat="48.78879" lon="8.020692" />
+        <point lat="48.7956" lon="8.043024" />
+        <point lat="48.813055" lon="8.086466" />
+        <point lat="48.897824" lon="8.136442" />
+        <point lat="48.96021" lon="8.197059" />
+        <point lat="48.9949" lon="8.281613" />
+        <point lat="49.025966" lon="8.299672" />
+        <point lat="49.059964" lon="8.312427" />
+        <point lat="49.089189" lon="8.324785" />
+      </shape>
+      <shape>
+        <point lat="43.13451" lon="9.360962" />
+        <point lat="42.48439" lon="8.439317" />
+        <point lat="41.817537" lon="8.483627" />
+        <point lat="41.376828" lon="8.846968" />
+        <point lat="41.313624" lon="9.205877" />
+        <point lat="41.546178" lon="9.48946" />
+        <point lat="42.199456" lon="9.635682" />
+        <point lat="42.901254" lon="9.604665" />
+        <point lat="43.13451" lon="9.360962" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>BDOrtho IGN</name>
+    <type>tms</type>
+    <url>http://proxy-ign.openstreetmap.fr/bdortho/{zoom}/{x}/{y}.jpg</url>
+    <attribution-text mandatory="true">BDOrtho IGN</attribution-text>
+    <attribution-url>http://openstreetmap.fr/bdortho</attribution-url>
+    <country-code>FR</country-code>
+    <min-zoom>6</min-zoom>
+    <max-zoom>19</max-zoom>
     <bounds>
       <shape>
         <point lat="49.089189" lon="8.324785" />
@@ -27099,6 +27193,14 @@
     <attribution-url>http://openstreetmap.org/</attribution-url>
     <min-zoom>4</min-zoom>
     <max-zoom>17</max-zoom>
+  </entry>
+  <entry>
+    <name>OpenStreetMap (French Style)</name>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.tile.openstreetmap.fr/osmfr/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
+    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <max-zoom>20</max-zoom>
   </entry>
   <entry>
     <name>OpenStreetMap GPS traces</name>
