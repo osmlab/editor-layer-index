@@ -1,0 +1,16 @@
+{
+    "type": "Feature",
+    "properties": {
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.fr/osmfr/{zoom}/{x}/{y}.png",
+        "attribution": {
+            "url": "http://openstreetmap.org/",
+            "text": "© OpenStreetMap contributors, CC-BY-SA",
+            "required": true
+        },
+        "max_zoom": 20,
+        "type": "tms",
+        "name": "OpenStreetMap (French Style)",
+        "id": "osmfr"
+    },
+    "geometry": null
+}

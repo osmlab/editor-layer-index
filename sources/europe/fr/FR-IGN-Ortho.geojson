@@ -2,20 +2,19 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)",
-            "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL",
+            "url": "http://openstreetmap.fr/bdortho",
+            "text": "BDOrtho IGN",
             "required": true
         },
-        "description": "French address registry or Base Adresses Nationale",
-        "url": "http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png",
-        "max_zoom": 20,
-        "min_zoom": 12,
-        "overlay": true,
-        "license_url": "http://www.opendatacommons.org/licenses/odbl/1.0/",
+        "description": "French IGN aeral imagery",
+        "url": "http://proxy-ign.openstreetmap.fr/bdortho/{zoom}/{x}/{y}.jpg",
+        "min_zoom": 6,
+        "max_zoom": 19,
+        "license_url": "http://openstreetmap.fr/bdortho",
         "country_code": "FR",
         "type": "tms",
-        "id": "FR-BAN",
-        "name": "FR-BAN"
+        "id": "bdortho",
+        "name": "BDOrtho IGN"
     },
     "geometry": {
         "type": "Polygon",
