@@ -3767,14 +3767,209 @@
     </bounds>
   </entry>
   <entry>
-    <name>Stadt Bern 10cm/25cm (2008)</name>
+    <name>Stadt Bern 10cm (2016)</name>
+    <type>tms</type>
+    <url>http://mapproxy.osm.ch:8080/tiles/bern2016/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <best />
+    <attribution-text mandatory="true">Orthophoto 2016, Vermessungsamt Stadt Bern </attribution-text>
+    <country-code>CH</country-code>
+    <min-zoom>8</min-zoom>
+    <max-zoom>21</max-zoom>
+    <bounds>
+      <shape>
+        <point lat="46.923756" lon="7.294314" />
+        <point lat="46.927472" lon="7.298267" />
+        <point lat="46.930949" lon="7.306159" />
+        <point lat="46.936234" lon="7.304334" />
+        <point lat="46.940371" lon="7.30686" />
+        <point lat="46.943277" lon="7.324643" />
+        <point lat="46.946409" lon="7.328453" />
+        <point lat="46.94608" lon="7.341405" />
+        <point lat="46.947371" lon="7.343845" />
+        <point lat="46.948794" lon="7.343455" />
+        <point lat="46.948548" lon="7.351357" />
+        <point lat="46.950213" lon="7.350563" />
+        <point lat="46.951927" lon="7.35309" />
+        <point lat="46.951177" lon="7.358203" />
+        <point lat="46.956624" lon="7.368503" />
+        <point lat="46.960734" lon="7.37151" />
+        <point lat="46.959835" lon="7.37503" />
+        <point lat="46.961469" lon="7.378511" />
+        <point lat="46.965474" lon="7.380623" />
+        <point lat="46.966301" lon="7.38321" />
+        <point lat="46.966927" lon="7.3938" />
+        <point lat="46.969178" lon="7.400053" />
+        <point lat="46.968686" lon="7.408292" />
+        <point lat="46.973804" lon="7.428171" />
+        <point lat="46.972689" lon="7.432705" />
+        <point lat="46.968435" lon="7.43536" />
+        <point lat="46.96843" lon="7.437852" />
+        <point lat="46.976787" lon="7.441247" />
+        <point lat="46.974794" lon="7.445689" />
+        <point lat="46.975639" lon="7.448384" />
+        <point lat="46.979013" lon="7.447701" />
+        <point lat="46.978068" lon="7.444047" />
+        <point lat="46.979822" lon="7.441274" />
+        <point lat="46.990153" lon="7.450673" />
+        <point lat="46.98968" lon="7.452211" />
+        <point lat="46.977818" lon="7.454649" />
+        <point lat="46.975826" lon="7.468038" />
+        <point lat="46.969998" lon="7.470792" />
+        <point lat="46.967412" lon="7.470191" />
+        <point lat="46.971182" lon="7.478162" />
+        <point lat="46.970157" lon="7.484524" />
+        <point lat="46.967902" lon="7.486128" />
+        <point lat="46.964683" lon="7.485794" />
+        <point lat="46.962904" lon="7.478471" />
+        <point lat="46.960677" lon="7.480287" />
+        <point lat="46.958784" lon="7.47893" />
+        <point lat="46.956602" lon="7.479779" />
+        <point lat="46.954459" lon="7.477013" />
+        <point lat="46.949994" lon="7.48405" />
+        <point lat="46.945198" lon="7.483392" />
+        <point lat="46.939617" lon="7.495556" />
+        <point lat="46.937659" lon="7.493512" />
+        <point lat="46.938762" lon="7.490804" />
+        <point lat="46.936867" lon="7.4895" />
+        <point lat="46.93695" lon="7.476667" />
+        <point lat="46.936249" lon="7.478109" />
+        <point lat="46.933919" lon="7.474699" />
+        <point lat="46.93299" lon="7.475354" />
+        <point lat="46.929243" lon="7.469105" />
+        <point lat="46.925504" lon="7.470768" />
+        <point lat="46.934836" lon="7.458567" />
+        <point lat="46.93043" lon="7.447637" />
+        <point lat="46.934967" lon="7.435418" />
+        <point lat="46.933124" lon="7.433802" />
+        <point lat="46.930742" lon="7.43764" />
+        <point lat="46.936818" lon="7.414694" />
+        <point lat="46.931568" lon="7.413844" />
+        <point lat="46.930382" lon="7.40708" />
+        <point lat="46.92563" lon="7.408065" />
+        <point lat="46.924199" lon="7.402127" />
+        <point lat="46.921193" lon="7.401484" />
+        <point lat="46.930451" lon="7.387574" />
+        <point lat="46.927282" lon="7.382313" />
+        <point lat="46.929893" lon="7.380019" />
+        <point lat="46.932409" lon="7.380869" />
+        <point lat="46.931431" lon="7.374867" />
+        <point lat="46.93271" lon="7.37489" />
+        <point lat="46.932393" lon="7.368066" />
+        <point lat="46.930426" lon="7.368306" />
+        <point lat="46.928588" lon="7.360407" />
+        <point lat="46.927202" lon="7.360559" />
+        <point lat="46.924536" lon="7.338783" />
+        <point lat="46.919668" lon="7.339368" />
+        <point lat="46.919033" lon="7.327457" />
+        <point lat="46.923597" lon="7.326918" />
+        <point lat="46.925189" lon="7.324374" />
+        <point lat="46.922286" lon="7.308226" />
+        <point lat="46.923756" lon="7.294314" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>Stadt Bern 10cm (2016)</name>
     <type>wms</type>
-    <url>http://map.bern.ch/arcgis/services/Orthofoto_2008/MapServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=0,1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <url>http://map.bern.ch/wms/OpenData/proxy.php?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <best />
     <projections>
       <code>EPSG:21781</code>
     </projections>
-    <attribution-text>Orthophoto 2008, Vermessungsamt Stadt Bern </attribution-text>
+    <attribution-text mandatory="true">Orthophoto 2016, Vermessungsamt Stadt Bern </attribution-text>
     <country-code>CH</country-code>
+    <bounds>
+      <shape>
+        <point lat="46.923756" lon="7.294314" />
+        <point lat="46.927472" lon="7.298267" />
+        <point lat="46.930949" lon="7.306159" />
+        <point lat="46.936234" lon="7.304334" />
+        <point lat="46.940371" lon="7.30686" />
+        <point lat="46.943277" lon="7.324643" />
+        <point lat="46.946409" lon="7.328453" />
+        <point lat="46.94608" lon="7.341405" />
+        <point lat="46.947371" lon="7.343845" />
+        <point lat="46.948794" lon="7.343455" />
+        <point lat="46.948548" lon="7.351357" />
+        <point lat="46.950213" lon="7.350563" />
+        <point lat="46.951927" lon="7.35309" />
+        <point lat="46.951177" lon="7.358203" />
+        <point lat="46.956624" lon="7.368503" />
+        <point lat="46.960734" lon="7.37151" />
+        <point lat="46.959835" lon="7.37503" />
+        <point lat="46.961469" lon="7.378511" />
+        <point lat="46.965474" lon="7.380623" />
+        <point lat="46.966301" lon="7.38321" />
+        <point lat="46.966927" lon="7.3938" />
+        <point lat="46.969178" lon="7.400053" />
+        <point lat="46.968686" lon="7.408292" />
+        <point lat="46.973804" lon="7.428171" />
+        <point lat="46.972689" lon="7.432705" />
+        <point lat="46.968435" lon="7.43536" />
+        <point lat="46.96843" lon="7.437852" />
+        <point lat="46.976787" lon="7.441247" />
+        <point lat="46.974794" lon="7.445689" />
+        <point lat="46.975639" lon="7.448384" />
+        <point lat="46.979013" lon="7.447701" />
+        <point lat="46.978068" lon="7.444047" />
+        <point lat="46.979822" lon="7.441274" />
+        <point lat="46.990153" lon="7.450673" />
+        <point lat="46.98968" lon="7.452211" />
+        <point lat="46.977818" lon="7.454649" />
+        <point lat="46.975826" lon="7.468038" />
+        <point lat="46.969998" lon="7.470792" />
+        <point lat="46.967412" lon="7.470191" />
+        <point lat="46.971182" lon="7.478162" />
+        <point lat="46.970157" lon="7.484524" />
+        <point lat="46.967902" lon="7.486128" />
+        <point lat="46.964683" lon="7.485794" />
+        <point lat="46.962904" lon="7.478471" />
+        <point lat="46.960677" lon="7.480287" />
+        <point lat="46.958784" lon="7.47893" />
+        <point lat="46.956602" lon="7.479779" />
+        <point lat="46.954459" lon="7.477013" />
+        <point lat="46.949994" lon="7.48405" />
+        <point lat="46.945198" lon="7.483392" />
+        <point lat="46.939617" lon="7.495556" />
+        <point lat="46.937659" lon="7.493512" />
+        <point lat="46.938762" lon="7.490804" />
+        <point lat="46.936867" lon="7.4895" />
+        <point lat="46.93695" lon="7.476667" />
+        <point lat="46.936249" lon="7.478109" />
+        <point lat="46.933919" lon="7.474699" />
+        <point lat="46.93299" lon="7.475354" />
+        <point lat="46.929243" lon="7.469105" />
+        <point lat="46.925504" lon="7.470768" />
+        <point lat="46.934836" lon="7.458567" />
+        <point lat="46.93043" lon="7.447637" />
+        <point lat="46.934967" lon="7.435418" />
+        <point lat="46.933124" lon="7.433802" />
+        <point lat="46.930742" lon="7.43764" />
+        <point lat="46.936818" lon="7.414694" />
+        <point lat="46.931568" lon="7.413844" />
+        <point lat="46.930382" lon="7.40708" />
+        <point lat="46.92563" lon="7.408065" />
+        <point lat="46.924199" lon="7.402127" />
+        <point lat="46.921193" lon="7.401484" />
+        <point lat="46.930451" lon="7.387574" />
+        <point lat="46.927282" lon="7.382313" />
+        <point lat="46.929893" lon="7.380019" />
+        <point lat="46.932409" lon="7.380869" />
+        <point lat="46.931431" lon="7.374867" />
+        <point lat="46.93271" lon="7.37489" />
+        <point lat="46.932393" lon="7.368066" />
+        <point lat="46.930426" lon="7.368306" />
+        <point lat="46.928588" lon="7.360407" />
+        <point lat="46.927202" lon="7.360559" />
+        <point lat="46.924536" lon="7.338783" />
+        <point lat="46.919668" lon="7.339368" />
+        <point lat="46.919033" lon="7.327457" />
+        <point lat="46.923597" lon="7.326918" />
+        <point lat="46.925189" lon="7.324374" />
+        <point lat="46.922286" lon="7.308226" />
+        <point lat="46.923756" lon="7.294314" />
+      </shape>
+    </bounds>
   </entry>
   <entry>
     <name>Stadt Uster Orthophoto 2008 10cm</name>
