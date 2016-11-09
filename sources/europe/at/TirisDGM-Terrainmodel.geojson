@@ -7,13 +7,31 @@
         },
         "name": "Tiris: DGM (Terrain model)",
         "available_projections": [
+            "EPSG:3035",
+            "EPSG:3044",
+            "EPSG:3045",
+            "EPSG:3857",
+            "EPSG:4258",
             "EPSG:4326",
-            "EPSG:31254"
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:31254",
+            "EPSG:31255",
+            "EPSG:31256",
+            "EPSG:31257",
+            "EPSG:31258",
+            "EPSG:31259",
+            "EPSG:31287",
+            "EPSG:31297",
+            "EPSG:32632",
+            "EPSG:32633",
+            "EPSG:102100"
         ],
-        "url": "http://gis.tirol.gv.at/wms/hillshades_wms_tirol?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&Styles=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image Schummerung_Gelaendemodell&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol/",
         "country_code": "AT",
         "type": "wms",
-        "icon": "http://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
+        "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
     },
     "geometry": {
         "type": "Polygon",
