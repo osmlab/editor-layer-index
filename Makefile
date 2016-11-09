@@ -1,19 +1,20 @@
 ALL = imagery.geojson imagery.json imagery.xml
 SOURCES = $(shell find sources -type f -name '*.geojson' | LC_ALL="C" sort)
+PYTHON = python
 
 all: $(ALL)
 
 check:
-	@python scripts/check.py $(SOURCES)
+	@$(PYTHON) scripts/check.py $(SOURCES)
 
 clean:
 	rm $(ALL)
 
 imagery.xml: $(SOURCES)
-	python scripts/convert_xml.py $(SOURCES)
+	@$(PYTHON) scripts/convert_xml.py $(SOURCES)
 
 imagery.json: $(SOURCES)
-	python scripts/convert_geojson_to_legacyjson.py $(SOURCES) > imagery.json
+	@$(PYTHON) scripts/convert_geojson_to_legacyjson.py $(SOURCES) > imagery.json
 
 imagery.geojson: $(SOURCES)
-	python scripts/concat_geojson.py $(SOURCES) > imagery.geojson
+	@$(PYTHON) scripts/concat_geojson.py $(SOURCES) > imagery.geojson
