@@ -1,4 +1,4 @@
-import json, sys
+import json, sys, io
 
 def convert_json_source(source):
     converted = {}
@@ -29,11 +29,11 @@ def convert_json_source(source):
 
 features = []
 for file in sys.argv[1:]:
-    with open(file, 'rb') as f:
+    with io.open(file, 'r') as f:
         features.append(convert_json_source(json.load(f)))
 
-print json.dumps(
+print(json.dumps(
     features,
     indent=4,
     separators=(',', ': ')
-)
+))
