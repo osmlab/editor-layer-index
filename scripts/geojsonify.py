@@ -1,3 +1,4 @@
+#!env python2
 """
 This script was used to convert the old-style layer source file JSON to GeoJSON
 files. It's kept around for posterity and is no longer used regularly.

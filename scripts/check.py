@@ -1,3 +1,4 @@
+#!env python2
 import json, sys
 from jsonschema import validate, ValidationError
 

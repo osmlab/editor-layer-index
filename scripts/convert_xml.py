@@ -1,3 +1,4 @@
+#!env python2
 import json, sys, string, util
 import xml.etree.cElementTree as ET
 

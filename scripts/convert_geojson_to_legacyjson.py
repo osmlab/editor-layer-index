@@ -1,3 +1,4 @@
+#!env python2
 import json, sys
 
 def convert_json_source(source):
