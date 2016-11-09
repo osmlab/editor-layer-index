@@ -35,5 +35,6 @@ for file in sys.argv[1:]:
 print(json.dumps(
     features,
     indent=4,
+    sort_keys=True,
     separators=(',', ': ')
 ))

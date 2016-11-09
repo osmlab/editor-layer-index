@@ -14,5 +14,6 @@ collection = {
 print(json.dumps(
     collection,
     indent=4,
+    sort_keys=True,
     separators=(',', ': ')
 ))
