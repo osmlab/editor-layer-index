@@ -4,9 +4,11 @@
 * Command line development tools (`make`, `git`) for your platform
   * Ubuntu: `sudo apt-get install build-essential git`
   * Mac OS X: Install Xcode and run `xcode-select --install` from a command line
+  * Arch Linux: `sudo pacman -S make git`
 * Python and Pip
   * Ubuntu: `sudo apt-get install python-pip python-dev`
   * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`, then `brew linkapps python`
+  * Arch Linux: `sudo pacman -S python2 python2-jsonschema`
 * `jsonschema` package (for running `make check`)
   * `pip install jsonschema`
 
