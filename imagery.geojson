@@ -99037,11 +99037,11 @@
             "geometry": null,
             "type": "Feature",
             "properties": {
-                "url": "http://toolserver.org/tiles/hikebike/{zoom}/{x}/{y}.png",
+                "url": "http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png",
                 "max_zoom": 18,
                 "attribution": {
-                    "url": "http://openstreetmap.org/",
-                    "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "text": "\u00a9 OpenStreetMap contributors",
                     "required": true
                 },
                 "name": "Hike & Bike",
@@ -99219,24 +99219,6 @@
                 "url": "http://tools.geofabrik.de/osmi/tiles/tagging/{zoom}/{x}/{y}.png",
                 "max_zoom": 18,
                 "type": "tms"
-            }
-        },
-        {
-            "geometry": null,
-            "type": "Feature",
-            "properties": {
-                "url": "http://tools.geofabrik.de/osmi/views/redactionbot/wxs?LAYERS=overview,bot_point_cleared,bot_point_superseded,bot_point_modified,bot_line_modified_cp,bot_point_deleted,bot_line_deleted_cp,bot_line_cleared,bot_line_superseded,bot_line_modified,bot_line_deleted&FORMAT=image/png&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
-                "type": "wms",
-                "attribution": {
-                    "url": "http://tools.geofabrik.de/osmi/",
-                    "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-                    "required": true
-                },
-                "name": "OSM Inspector: Redaction Bot",
-                "available_projections": [
-                    "EPSG:4326",
-                    "EPSG:900913"
-                ]
             }
         },
         {

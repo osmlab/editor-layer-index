@@ -97898,10 +97898,10 @@
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAdVBMVEX/phX/04r/////6cX/zXz/7Mz/vFD/u0z/1I7/tT3/yXH/uEX/v1f/rCT/2pz/vlP/qRz/4a//yG3/xmn//Pj/9eb/+/T/897/t0H/wl7/sTL//vv/+O3/2Jn/7dD/+vH/9+n/3KT/tDr/9OL/8Nf/26D/ynSCVQVOAAAAkklEQVR4Xq3R1w7DIBQD0NiQne69d///E3tvBYVU6UsVPyEdCYycIOlOv5AB004Aaf6DCpLtF4yxp8tkFMGCkiEkKyGz9qCxrkxuhLIAeaijMvAwi/vMycJDuyi5/AVUaPwTPik5UdCDiWCjtd5Q70TK+KKD26M+6o+tdGxwIlmFPeyZn1yuraFKFOnt/sCz/81f+9UEaf1lPCAAAAAASUVORK5CYII="
     },
     {
-        "url": "http://toolserver.org/tiles/hikebike/{zoom}/{x}/{y}.png",
+        "url": "http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png",
         "attribution": {
-            "url": "http://openstreetmap.org/",
-            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+            "url": "https://www.openstreetmap.org/copyright",
+            "text": "\u00a9 OpenStreetMap contributors",
             "required": true
         },
         "type": "tms",
@@ -98060,20 +98060,6 @@
             "max_zoom": 18
         },
         "type": "tms"
-    },
-    {
-        "url": "http://tools.geofabrik.de/osmi/views/redactionbot/wxs?LAYERS=overview,bot_point_cleared,bot_point_superseded,bot_point_modified,bot_line_modified_cp,bot_point_deleted,bot_line_deleted_cp,bot_line_cleared,bot_line_superseded,bot_line_modified,bot_line_deleted&FORMAT=image/png&TRANSPARENT=true&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
-        "attribution": {
-            "url": "http://tools.geofabrik.de/osmi/",
-            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-            "required": true
-        },
-        "type": "wms",
-        "name": "OSM Inspector: Redaction Bot",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:900913"
-        ]
     },
     {
         "attribution": {

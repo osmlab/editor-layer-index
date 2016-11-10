@@ -27269,9 +27269,9 @@
   <entry>
     <name>Hike &amp; Bike</name>
     <type>tms</type>
-    <url>http://toolserver.org/tiles/hikebike/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <url>http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">&#169; OpenStreetMap contributors</attribution-text>
+    <attribution-url>https://www.openstreetmap.org/copyright</attribution-url>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -27367,17 +27367,6 @@
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
     <max-zoom>18</max-zoom>
-  </entry>
-  <entry>
-    <name>OSM Inspector: Redaction Bot</name>
-    <type>wms</type>
-    <url>http://tools.geofabrik.de/osmi/views/redactionbot/wxs?LAYERS=overview,bot_point_cleared,bot_point_superseded,bot_point_modified,bot_line_modified_cp,bot_point_deleted,bot_line_deleted_cp,bot_line_cleared,bot_line_superseded,bot_line_modified,bot_line_deleted&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;STYLES=&amp;EXCEPTIONS=application/vnd.ogc.se_inimage&amp;SRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}</url>
-    <projections>
-      <code>EPSG:4326</code>
-      <code>EPSG:900913</code>
-    </projections>
-    <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
   </entry>
   <entry>
     <name>OpenPT Map (overlay)</name>
