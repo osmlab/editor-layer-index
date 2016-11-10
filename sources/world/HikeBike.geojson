@@ -1,10 +1,10 @@
 {
     "type": "Feature",
     "properties": {
-        "url": "http://toolserver.org/tiles/hikebike/{zoom}/{x}/{y}.png",
+        "url": "http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png",
         "attribution": {
-            "url": "http://openstreetmap.org/",
-            "text": "© OpenStreetMap contributors, CC-BY-SA",
+            "url": "https://www.openstreetmap.org/copyright",
+            "text": "© OpenStreetMap contributors",
             "required": true
         },
         "max_zoom": 18,
