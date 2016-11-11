@@ -1,0 +1,43 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Maa-Ameti ortofoto ",
+            "required": true
+        },
+        "name": "Estonia Ortho (Maaamet)",
+        "url": "http://kaart.maakaart.ee/orto/{zoom}/{x}/{y}.jpeg",
+        "id": "maaamet.ee-orto",
+        "min_zoom": 14,
+        "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
+        "country_code": "EE",
+        "type": "tms"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    21.6940073,
+                    57.5025466
+                ],
+                [
+                    21.6940073,
+                    59.8274564
+                ],
+                [
+                    28.2110546,
+                    59.8274564
+                ],
+                [
+                    28.2110546,
+                    57.5025466
+                ],
+                [
+                    21.6940073,
+                    57.5025466
+                ]
+            ]
+        ]
+    }
+}
