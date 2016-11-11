@@ -1,3 +1,4 @@
+#!env python2
 import json, sys, string, util
 from xml.dom.minidom import parse
 
