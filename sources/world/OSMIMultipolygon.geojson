@@ -6,10 +6,11 @@
             "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
-        "name": "OSM Inspector: Multipolygon",
+        "name": "OSM Inspector: Area",
         "overlay": true,
-        "url": "http://tools.geofabrik.de/osmi/tiles/multipolygon/{zoom}/{x}/{y}.png",
-        "max_zoom": 18,
+        "url": "http://tools.geofabrik.de/osmi/tiles/area/{zoom}/{x}/{y}.png",
+        "min_zoom": 8,
+        "max_zoom": 19,
         "type": "tms"
     },
     "geometry": null
