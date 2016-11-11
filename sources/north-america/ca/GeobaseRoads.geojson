@@ -1,7 +1,8 @@
 {
     "type": "Feature",
     "properties": {
-        "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}",
+        "id": "Geobase_Roads",
+        "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS={proj}&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}",
         "type": "wms",
         "name": "Geobase Roads",
         "country_code": "CA",
