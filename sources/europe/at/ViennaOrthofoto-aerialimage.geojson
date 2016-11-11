@@ -2,16 +2,17 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "http://data.wien.gv.at/",
+            "url": "https://data.wien.gv.at/",
             "text": "Stadt Wien",
             "required": false
         },
         "name": "Vienna: Orthofoto (aerial image)",
-        "url": "http://www.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg",
+        "url": "https://maps.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg",
+        "min_zoom": 10,
         "max_zoom": 19,
         "country_code": "AT",
         "type": "tms",
-        "icon": "http://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
+        "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
     },
     "geometry": {
         "type": "Polygon",
