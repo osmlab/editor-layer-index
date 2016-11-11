@@ -2,6 +2,7 @@
     "type": "Feature",
     "properties": {
         "url": "http://geodaten.bayern.de/ogc/ogc_dop200_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=adv_dop200c&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 18,
         "type": "wms",
         "name": "Bavaria (2 m)",
         "country_code": "DE",
