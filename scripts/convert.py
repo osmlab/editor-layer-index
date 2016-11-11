@@ -77,4 +77,4 @@ for imagery in imageries:
         if rings:
             entry['extent']['polygon'] = rings
 
-    print json.dumps(entry, indent=4)
+    print json.dumps(entry, indent=4, sort_keys=True)

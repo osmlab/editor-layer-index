@@ -1,13 +1,12 @@
-#!env python2
-import json, sys
+import json, sys, io
 from jsonschema import validate, ValidationError
 
-schema = json.load(open('schema.json', 'rb'))
+schema = json.load(io.open('schema.json', encoding='utf-8'))
 
 for file in sys.argv[1:]:
-    source = json.load(open(file, 'rb'))
+    source = json.load(io.open(file, encoding='utf-8'))
     try:
         validate(source, schema)
     except ValidationError as e:
-        print file
+        print(file)
         raise

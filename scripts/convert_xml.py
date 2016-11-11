@@ -1,12 +1,11 @@
-#!env python2
-import json, sys, string, util
+import json, sys, string, util, io
 import xml.etree.cElementTree as ET
 
 root = ET.Element("imagery")
 
 sources = []
 for file in sys.argv[1:]:
-    with open(file, 'rb') as f:
+    with io.open(file, 'r') as f:
         sources.append(json.load(f))
 
 for source in sources:
@@ -79,5 +78,5 @@ for source in sources:
 util.indent(root)
 
 tree = ET.ElementTree(root)
-with open("imagery.xml", 'wb') as f:
+with io.open("imagery.xml", mode='wb') as f:
     tree.write(f)
