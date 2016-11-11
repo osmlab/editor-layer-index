@@ -1,6 +1,12 @@
 #!env python2
 import json, sys, string, util
 from xml.dom.minidom import parse
+from collections import OrderedDict
+
+if len(sys.argv) != 2:
+    print("Usage: %s [JOSM XML file] [target directory]"  % __file__)
+    print("Converts JOSM imagery XML file into individual source files for editor-layer-index.")
+    exit(1)
 
 dom = parse(sys.argv[1])
 
@@ -13,14 +19,24 @@ def strfn(filename):
 entries = []
 
 for imagery in imageries:
-    entry = {}
+    entry = OrderedDict()
+    entry['type'] = 'Feature'
 
-    entry['name'] = imagery.getElementsByTagName('name')[0].childNodes[0].nodeValue
-    entry['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
-    entry['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
+    properties = entry['properties'] = OrderedDict()
+    id_node = imagery.getElementsByTagName('id')
+    if id_node:
+        properties['id'] = id_node[0].childNodes[0].nodeValue
+    properties['name'] = imagery.getElementsByTagName('name')[0].childNodes[0].nodeValue
+    properties['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
+    properties['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
+
+
+    country_code_node = imagery.getElementsByTagName('country-code')
+    if country_code_node:
+        properties['country_code'] = country_code_node[0].childNodes[0].nodeValue
 
     projs = util.getprojs(imagery)
-    if projs: entry['available_projections'] = projs
+    if projs: properties['available_projections'] = projs
 
     attr_text = None
     attr_required = None
@@ -36,7 +52,7 @@ for imagery in imageries:
         attr_url = attr_url_node[0].childNodes[0].nodeValue
 
     if any((attr_text, attr_required, attr_url)):
-        entry['attribution'] = dict(text=attr_text, url=attr_url, required=attr_required)
+        properties['attribution'] = dict(text=attr_text, url=attr_url, required=attr_required)
 
     default = None
 
@@ -45,7 +61,7 @@ for imagery in imageries:
         default = bool(is_default_node[0].childNodes[0].nodeValue)
 
     if default is not None:
-        entry['default'] = default
+        properties['default'] = default
 
     icon = None
 
@@ -54,33 +70,21 @@ for imagery in imageries:
         icon = icon_node[0].childNodes[0].nodeValue
 
     if icon_node:
-        entry['icon'] = icon
-
-    max_zoom = None
-    min_zoom = None
-    bbox = None
-    rings = None
+        properties['icon'] = icon
 
     max_zoom_node = imagery.getElementsByTagName('max-zoom')
     if max_zoom_node:
-        max_zoom = max_zoom_node[0].childNodes[0].nodeValue
+        properties['max_zoom'] = max_zoom_node[0].childNodes[0].nodeValue
 
     min_zoom_node = imagery.getElementsByTagName('min-zoom')
     if min_zoom_node:
-        min_zoom = min_zoom_node[0].childNodes[0].nodeValue
+        properties['min_zoom'] = min_zoom_node[0].childNodes[0].nodeValue
 
     (bbox, rings) = util.getrings(imagery)
 
-    if any((max_zoom, min_zoom, bbox, rings)):
-        entry['extent'] = dict()
+    if rings:
+        entry['geometry'] = {}
+        entry['geometry']['type'] = 'Polygon'
+        entry['geometry']['coordinates'] = rings
 
-        if max_zoom:
-            entry['extent']['max_zoom'] = max_zoom
-        if min_zoom:
-            entry['extent']['min_zoom'] = min_zoom
-        if bbox:
-            entry['extent']['bbox'] = bbox
-        if rings:
-            entry['extent']['polygon'] = rings
-
-    open('%s/%s.json' % (sys.argv[2], strfn(entry['name'])), 'w+').write(json.dumps(entry, indent=4))
+    open('%s/%s.geojson' % (sys.argv[2], strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4))
