@@ -5,8 +5,8 @@
             "text": "tiris.tirol.gv.at",
             "required": false
         },
-        "name": "Tiris: DOM (Surface model)",
-        "available_projections": ["EPSG:3034",
+        "name": "Tiris: contour lines",
+        "available_projections": [
             "EPSG:3035",
             "EPSG:3044",
             "EPSG:3045",
@@ -27,7 +27,8 @@
             "EPSG:32633",
             "EPSG:102100"
         ],
-        "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image Schummerung_Oberflaechenmodell&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "min_zoom": 15,
+        "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Hoehenschichtlinien 20m&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol/",
         "country_code": "AT",
         "type": "wms",
