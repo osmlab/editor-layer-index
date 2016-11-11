@@ -6,10 +6,10 @@
             "required": true
         },
         "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery.",
-        "url": "http://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg",
+        "url": "https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg",
         "license_url": "http://creativecommons.org/licenses/by/3.0/at/deed.de",
         "country_code": "AT",
-        "icon": "http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png",
+        "icon": "http://www.geoimage.at/resources/geoimage/resources/img/logo_200.png",
         "type": "tms",
         "id": "basemap.at orthofoto",
         "best": true,
