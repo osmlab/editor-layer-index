@@ -1649,9 +1649,9 @@
   <entry>
     <name>basemap.at</name>
     <type>tms</type>
-    <url>http://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png</url>
+    <url>https://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png</url>
     <attribution-text mandatory="true">basemap.at</attribution-text>
-    <icon>http://basemap.at/images/basemap_logo_klein.jpg</icon>
+    <icon>https://basemap.at/images/basemap_logo_klein.jpg</icon>
     <country-code>AT</country-code>
     <bounds>
       <shape>
@@ -1852,10 +1852,10 @@
   <entry>
     <name>basemap.at Orthofoto</name>
     <type>tms</type>
-    <url>http://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg</url>
+    <url>https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg</url>
     <best />
     <attribution-text mandatory="true">basemap.at</attribution-text>
-    <icon>http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png</icon>
+    <icon>http://www.geoimage.at/resources/geoimage/resources/img/logo_200.png</icon>
     <country-code>AT</country-code>
     <bounds>
       <shape>
@@ -27259,6 +27259,43 @@
     </bounds>
   </entry>
   <entry>
+    <name>Texas Orthophoto</name>
+    <type>tms</type>
+    <url>https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=texas&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=0to20&amp;tileMatrix=0to20:{z}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <attribution-url>https://tnris.org/maps-and-data/online-mapping-services/</attribution-url>
+    <country-code>US</country-code>
+    <max-zoom>20</max-zoom>
+    <bounds>
+      <shape>
+        <point lat="34.560183" lon="-99.998544" />
+        <point lat="33.992575" lon="-95.556545" />
+        <point lat="33.610393" lon="-93.89679" />
+        <point lat="32.041031" lon="-93.984681" />
+        <point lat="31.025053" lon="-93.416138" />
+        <point lat="29.572683" lon="-93.745315" />
+        <point lat="28.231585" lon="-96.504921" />
+        <point lat="26.954675" lon="-97.369421" />
+        <point lat="25.805302" lon="-97.04867" />
+        <point lat="26.325592" lon="-99.073418" />
+        <point lat="29.025319" lon="-100.765992" />
+        <point lat="29.843389" lon="-102.331544" />
+        <point lat="28.881121" lon="-103.133546" />
+        <point lat="29.288315" lon="-104.288787" />
+        <point lat="29.948158" lon="-104.726978" />
+        <point lat="30.235352" lon="-104.726968" />
+        <point lat="31.784566" lon="-106.534501" />
+        <point lat="31.784573" lon="-106.75767" />
+        <point lat="32.043855" lon="-106.757661" />
+        <point lat="32.043852" lon="-106.618484" />
+        <point lat="32.043757" lon="-103.119495" />
+        <point lat="36.500458" lon="-103.095443" />
+        <point lat="36.542686" lon="-103.057981" />
+        <point lat="36.542222" lon="-100.000421" />
+        <point lat="34.560183" lon="-99.998544" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>2013 aerial imagery for San Juan County WA</name>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}</url>
@@ -27939,12 +27976,13 @@
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
-    <name>OSM Inspector: Multipolygon</name>
+    <name>OSM Inspector: Area</name>
     <type>tms</type>
-    <url>http://tools.geofabrik.de/osmi/tiles/multipolygon/{zoom}/{x}/{y}.png</url>
+    <url>http://tools.geofabrik.de/osmi/tiles/area/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
-    <max-zoom>18</max-zoom>
+    <min-zoom>8</min-zoom>
+    <max-zoom>19</max-zoom>
   </entry>
   <entry>
     <name>OSM Inspector: Places</name>
