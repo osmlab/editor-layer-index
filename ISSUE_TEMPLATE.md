@@ -1,19 +1,19 @@
-When **requesting the addition of an imagery layer**, please provide the following information. **Otherwise**, delete the text and type you issue.
+When **requesting the addition of an imagery layer**, please provide the following information. Otherwise, delete the text and type your issue.
 
 ## URL of the imagery
-:question:
+(required)
 
-## Desired name
-:question:
+## Two letter country code
+(required)
+
+## Desired layer name
+(required)
 
 ## License
-:question:
+(required)
 
-## Is the license [compatible with OSM](https://wiki.openstreetmap.org/wiki/Import/ODbL_Compatibility)?
-:question:
-
-## [Two letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
-:question:
+## Is the license compatible with OSM?
+(required)
 
 ## Attribution (text, URL, required?)
 (optional)
@@ -22,4 +22,4 @@ When **requesting the addition of an imagery layer**, please provide the followi
 (optional)
 
 ## Boundary polygon
-(If possible, provide a boundary polygon, e.g., as OSM file.)
+(if possible, provide a boundary polygon, e.g. as a GeoJSON or OSM file.)
