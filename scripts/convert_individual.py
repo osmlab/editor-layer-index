@@ -1,9 +1,9 @@
 #!env python2
-import json, sys, string, util
+import json, sys, string, util, os
 from xml.dom.minidom import parse
 from collections import OrderedDict
 
-if len(sys.argv) != 2:
+if len(sys.argv) != 3:
     print("Usage: %s [JOSM XML file] [target directory]"  % __file__)
     print("Converts JOSM imagery XML file into individual source files for editor-layer-index.")
     exit(1)
@@ -87,4 +87,9 @@ for imagery in imageries:
         entry['geometry']['type'] = 'Polygon'
         entry['geometry']['coordinates'] = rings
 
-    open('%s/%s.geojson' % (sys.argv[2], strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4))
+    dir = os.path.join(sys.argv[2], properties['country_code']) if 'country_code' in properties else sys.argv[2]
+    try:
+        os.mkdir(dir)
+    except OSError:
+        pass
+    open('%s/%s.geojson' % (dir, strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4))
