@@ -66,14 +66,22 @@ for source in sources:
 
     geometry = source.get('geometry')
     if geometry:
+        def coord_str(coord):
+            return str(round(coord, 6))
         bounds = ET.SubElement(entry, "bounds")
+        lons = [p[0] for ring in geometry['coordinates'] for p in ring]
+        lats = [p[1] for ring in geometry['coordinates'] for p in ring]
+        bounds.set('min-lon', coord_str(min(lons)))
+        bounds.set('min-lat', coord_str(min(lats)))
+        bounds.set('max-lon', coord_str(max(lons)))
+        bounds.set('max-lat', coord_str(max(lats)))
 
         for ring in geometry['coordinates']:
             shape = ET.SubElement(bounds, "shape")
             for p in ring:
                 point = ET.SubElement(shape, "point")
-                point.set('lon', str(round(p[0],6)))
-                point.set('lat', str(round(p[1],6)))
+                point.set('lon', coord_str(p[0]))
+                point.set('lat', coord_str(p[1]))
 
 util.indent(root)
 
