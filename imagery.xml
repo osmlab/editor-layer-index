@@ -28914,6 +28914,27 @@
     </bounds>
   </entry>
   <entry>
+    <name>Philadelphia 2015 Imagery</name>
+    <type>wms</type>
+    <url>http://maps.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2015/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:2272</code>
+      <code>EPSG:3857</code>
+      <code>EPSG:4326</code>
+    </projections>
+    <attribution-url>http://www.pasda.psu.edu/</attribution-url>
+    <country-code>US</country-code>
+    <bounds>
+      <shape>
+        <point lat="39.816622" lon="-75.322705" />
+        <point lat="39.816622" lon="-74.950747" />
+        <point lat="40.147492" lon="-74.950747" />
+        <point lat="40.147492" lon="-75.322705" />
+        <point lat="39.816622" lon="-75.322705" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Texas Orthophoto</name>
     <type>tms</type>
     <url>https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=texas&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=0to20&amp;tileMatrix=0to20:{z}&amp;tileRow={y}&amp;tileCol={x}</url>

@@ -105250,6 +105250,51 @@
                 "coordinates": [
                     [
                         [
+                            -75.322705,
+                            39.816622
+                        ],
+                        [
+                            -74.950747,
+                            39.816622
+                        ],
+                        [
+                            -74.950747,
+                            40.147492
+                        ],
+                        [
+                            -75.322705,
+                            40.147492
+                        ],
+                        [
+                            -75.322705,
+                            39.816622
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "attribution": {
+                    "url": "http://www.pasda.psu.edu/"
+                },
+                "available_projections": [
+                    "EPSG:2272",
+                    "EPSG:3857",
+                    "EPSG:4326"
+                ],
+                "country_code": "US",
+                "id": "Philadelphia2015Imagery",
+                "name": "Philadelphia 2015 Imagery",
+                "type": "wms",
+                "url": "http://maps.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2015/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
                             -99.9985439,
                             34.5601834
                         ],
