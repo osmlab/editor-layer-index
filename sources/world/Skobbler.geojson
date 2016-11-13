@@ -3,11 +3,11 @@
     "properties": {
         "attribution": {
             "url": "http://maps.skobbler.com",
-            "text": "© Tiles: skobbler Map data: OpenStreetMap contributors, CC-BY-SA",
+            "text": "© Tiles: skobbler Map data: OpenStreetMap contributors",
             "required": true
         },
-        "name": "Skobbler",
-        "url": "http://tiles{switch:1,2,3,4}.skobbler.net/osm_tiles2/{zoom}/{x}/{y}.png",
+        "name": "skobbler",
+        "url": "http://tiles{switch:1,2,3,4}-4001b3692e229e3215c9b7a73e528198.skobblermaps.com/TileService/tiles/2.0/00021210101/0/{zoom}/{x}/{y}.png",
         "max_zoom": 18,
         "min_zoom": 1,
         "type": "tms",
