@@ -559,12 +559,60 @@
                 "type": "Polygon"
             },
             "properties": {
+                "best": true,
                 "country_code": "BJ",
                 "id": "Benin_cotonou_pleiade_2016",
                 "license_url": "http://taches.francophonelibre.org/project/6",
                 "name": "Benin: Cotonou Pleiade 2016",
                 "type": "tms",
                 "url": "http://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Benin:cotonou_pleiade_2016&STYLE=&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            1.83974970187678,
+                            6.25776229826032
+                        ],
+                        [
+                            1.83974970187678,
+                            7.1142717924319
+                        ],
+                        [
+                            2.5494187763312,
+                            7.1142717924319
+                        ],
+                        [
+                            2.5494187763312,
+                            6.25776229826032
+                        ],
+                        [
+                            1.83974970187678,
+                            6.25776229826032
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "attribution": {
+                    "required": true,
+                    "text": "imagico.de OSM images for mapping",
+                    "url": "http://maps.imagico.de/#osmim"
+                },
+                "country_code": "BJ",
+                "description": "S2A_OPER_PRD_MSIL1C_PDMC_20151222T164644_R022_V20151221T103009_20151221T103009, 2015-12-21, channels 234 (true color), Patchy and partly cloudy coverage in usual sources",
+                "end_date": "2015-12-21",
+                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+                "id": "osmim-imagicode-S2A_R022_N06_20151221T103009",
+                "max_zoom": 14,
+                "name": "imagico.de OSM images for mapping: Cotonou",
+                "start_date": "2015-12-21",
+                "type": "tms",
+                "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={zoom}&x={x}&y={-y}"
             },
             "type": "Feature"
         },
@@ -612,52 +660,6 @@
                 "start_date": "2015-12-13",
                 "type": "tms",
                 "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&z={zoom}&x={x}&y={-y}"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            1.83974970187678,
-                            6.25776229826032
-                        ],
-                        [
-                            1.83974970187678,
-                            7.1142717924319
-                        ],
-                        [
-                            2.5494187763312,
-                            7.1142717924319
-                        ],
-                        [
-                            2.5494187763312,
-                            6.25776229826032
-                        ],
-                        [
-                            1.83974970187678,
-                            6.25776229826032
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "imagico.de OSM images for mapping",
-                    "url": "http://maps.imagico.de/#osmim"
-                },
-                "description": "S2A_OPER_PRD_MSIL1C_PDMC_20151222T164644_R022_V20151221T103009_20151221T103009, 2015-12-21, channels 234 (true color), Patchy and partly cloudy coverage in usual sources",
-                "end_date": "2015-12-21",
-                "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
-                "id": "osmim-imagicode-S2A_R022_N06_20151221T103009",
-                "max_zoom": 14,
-                "name": "imagico.de OSM images for mapping: Cotonou",
-                "start_date": "2015-12-21",
-                "type": "tms",
-                "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={zoom}&x={x}&y={-y}"
             },
             "type": "Feature"
         },
@@ -1903,6 +1905,7 @@
             "properties": {
                 "best": true,
                 "country_code": "ZA",
+                "id": "South_Africa-CD_NGI-Aerial",
                 "max_zoom": 22,
                 "min_zoom": 1,
                 "name": "South Africa CD:NGI Aerial",
@@ -2713,10 +2716,826 @@
                     "text": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
                     "url": "https://www.capetown.gov.za"
                 },
+                "country_code": "ZA",
+                "description": "OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 12cm ground sample distance",
+                "end_date": "2016",
+                "id": "South_Africa-CapeTown-Aerial-2013",
+                "max_zoom": 21,
+                "min_zoom": 1,
+                "name": "City of Cape Town 2013 Aerial",
+                "start_date": "2013",
+                "type": "tms",
+                "url": "http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            18.4486565,
+                            -33.893623
+                        ],
+                        [
+                            18.4485868,
+                            -33.902644
+                        ],
+                        [
+                            18.4702,
+                            -33.9027665
+                        ],
+                        [
+                            18.4813902,
+                            -33.8472383
+                        ],
+                        [
+                            18.4492466,
+                            -33.801069
+                        ],
+                        [
+                            18.4281537,
+                            -33.7356408
+                        ],
+                        [
+                            18.43914,
+                            -33.7177232
+                        ],
+                        [
+                            18.4071895,
+                            -33.6589917
+                        ],
+                        [
+                            18.3322379,
+                            -33.5775191
+                        ],
+                        [
+                            18.3324525,
+                            -33.5504487
+                        ],
+                        [
+                            18.353996,
+                            -33.5505918
+                        ],
+                        [
+                            18.3542535,
+                            -33.5236025
+                        ],
+                        [
+                            18.3652398,
+                            -33.5236561
+                        ],
+                        [
+                            18.3650252,
+                            -33.5148009
+                        ],
+                        [
+                            18.3760115,
+                            -33.5147652
+                        ],
+                        [
+                            18.3760545,
+                            -33.5058017
+                        ],
+                        [
+                            18.4296557,
+                            -33.5059449
+                        ],
+                        [
+                            18.4296986,
+                            -33.4878541
+                        ],
+                        [
+                            18.4404919,
+                            -33.4878899
+                        ],
+                        [
+                            18.4405991,
+                            -33.4698849
+                        ],
+                        [
+                            18.4943721,
+                            -33.4700997
+                        ],
+                        [
+                            18.4943292,
+                            -33.4791564
+                        ],
+                        [
+                            18.5158297,
+                            -33.4791743
+                        ],
+                        [
+                            18.5157439,
+                            -33.4881941
+                        ],
+                        [
+                            18.5264727,
+                            -33.4883015
+                        ],
+                        [
+                            18.5263225,
+                            -33.5243538
+                        ],
+                        [
+                            18.5479304,
+                            -33.5244253
+                        ],
+                        [
+                            18.5479519,
+                            -33.5153913
+                        ],
+                        [
+                            18.5693666,
+                            -33.5154987
+                        ],
+                        [
+                            18.5693666,
+                            -33.524479
+                        ],
+                        [
+                            18.5801169,
+                            -33.5245327
+                        ],
+                        [
+                            18.580074,
+                            -33.5425978
+                        ],
+                        [
+                            18.5907814,
+                            -33.5425978
+                        ],
+                        [
+                            18.5907385,
+                            -33.5606413
+                        ],
+                        [
+                            18.5799453,
+                            -33.5605341
+                        ],
+                        [
+                            18.5798809,
+                            -33.569617
+                        ],
+                        [
+                            18.5906956,
+                            -33.569617
+                        ],
+                        [
+                            18.5906526,
+                            -33.5786811
+                        ],
+                        [
+                            18.6230108,
+                            -33.5787347
+                        ],
+                        [
+                            18.622925,
+                            -33.5877264
+                        ],
+                        [
+                            18.6659691,
+                            -33.5878872
+                        ],
+                        [
+                            18.6659262,
+                            -33.614928
+                        ],
+                        [
+                            18.6767194,
+                            -33.6149726
+                        ],
+                        [
+                            18.6765772,
+                            -33.6510279
+                        ],
+                        [
+                            18.687298,
+                            -33.6510167
+                        ],
+                        [
+                            18.6873409,
+                            -33.6600365
+                        ],
+                        [
+                            18.6980697,
+                            -33.6600901
+                        ],
+                        [
+                            18.6980697,
+                            -33.6690733
+                        ],
+                        [
+                            18.7520358,
+                            -33.6692519
+                        ],
+                        [
+                            18.7520787,
+                            -33.6421924
+                        ],
+                        [
+                            18.7736437,
+                            -33.642246
+                        ],
+                        [
+                            18.773708,
+                            -33.6331886
+                        ],
+                        [
+                            18.8274595,
+                            -33.6332958
+                        ],
+                        [
+                            18.8275239,
+                            -33.6603044
+                        ],
+                        [
+                            18.8166663,
+                            -33.6602866
+                        ],
+                        [
+                            18.8166019,
+                            -33.6783233
+                        ],
+                        [
+                            18.8058087,
+                            -33.6783055
+                        ],
+                        [
+                            18.8058087,
+                            -33.7053892
+                        ],
+                        [
+                            18.8273951,
+                            -33.7054428
+                        ],
+                        [
+                            18.8273308,
+                            -33.7234701
+                        ],
+                        [
+                            18.838124,
+                            -33.7234344
+                        ],
+                        [
+                            18.8380381,
+                            -33.7413865
+                        ],
+                        [
+                            18.8165161,
+                            -33.7413687
+                        ],
+                        [
+                            18.8163659,
+                            -33.7955057
+                        ],
+                        [
+                            18.8055941,
+                            -33.7955057
+                        ],
+                        [
+                            18.8055083,
+                            -33.8135675
+                        ],
+                        [
+                            18.794758,
+                            -33.8135497
+                        ],
+                        [
+                            18.7947151,
+                            -33.8315364
+                        ],
+                        [
+                            18.7731072,
+                            -33.8315186
+                        ],
+                        [
+                            18.7731287,
+                            -33.8405194
+                        ],
+                        [
+                            18.7623569,
+                            -33.8405194
+                        ],
+                        [
+                            18.7622711,
+                            -33.903588
+                        ],
+                        [
+                            18.7514564,
+                            -33.9035167
+                        ],
+                        [
+                            18.7510809,
+                            -33.9847823
+                        ],
+                        [
+                            18.7619063,
+                            -33.9848001
+                        ],
+                        [
+                            18.7617776,
+                            -34.0298785
+                        ],
+                        [
+                            18.772603,
+                            -34.0298963
+                        ],
+                        [
+                            18.7725815,
+                            -34.0389073
+                        ],
+                        [
+                            18.7940338,
+                            -34.0389406
+                        ],
+                        [
+                            18.7938756,
+                            -34.0406987
+                        ],
+                        [
+                            18.7984461,
+                            -34.0411855
+                        ],
+                        [
+                            18.8032445,
+                            -34.0411788
+                        ],
+                        [
+                            18.8034055,
+                            -34.0389206
+                        ],
+                        [
+                            18.8159367,
+                            -34.038974
+                        ],
+                        [
+                            18.8163444,
+                            -34.0299318
+                        ],
+                        [
+                            18.8379845,
+                            -34.0316479
+                        ],
+                        [
+                            18.8380006,
+                            -34.030003
+                        ],
+                        [
+                            18.8484183,
+                            -34.0300074
+                        ],
+                        [
+                            18.8484666,
+                            -34.0218491
+                        ],
+                        [
+                            18.859925,
+                            -34.0234675
+                        ],
+                        [
+                            18.8598606,
+                            -34.0210132
+                        ],
+                        [
+                            18.868272,
+                            -34.0220803
+                        ],
+                        [
+                            18.8681862,
+                            -34.0211733
+                        ],
+                        [
+                            18.8854596,
+                            -34.0234319
+                        ],
+                        [
+                            18.8851806,
+                            -34.0213156
+                        ],
+                        [
+                            18.9025184,
+                            -34.021031
+                        ],
+                        [
+                            18.9025828,
+                            -34.0119958
+                        ],
+                        [
+                            18.9134189,
+                            -34.0119958
+                        ],
+                        [
+                            18.9134833,
+                            -33.9939582
+                        ],
+                        [
+                            18.9458844,
+                            -33.9940294
+                        ],
+                        [
+                            18.9458629,
+                            -34.003102
+                        ],
+                        [
+                            18.9674279,
+                            -34.0029953
+                        ],
+                        [
+                            18.9674708,
+                            -34.0120848
+                        ],
+                        [
+                            18.9782211,
+                            -34.0120848
+                        ],
+                        [
+                            18.9783284,
+                            -34.0211377
+                        ],
+                        [
+                            18.9891431,
+                            -34.0211377
+                        ],
+                        [
+                            18.9891645,
+                            -34.039134
+                        ],
+                        [
+                            19.0000167,
+                            -34.0391251
+                        ],
+                        [
+                            19.0000221,
+                            -34.0571798
+                        ],
+                        [
+                            19.0108368,
+                            -34.0572509
+                        ],
+                        [
+                            19.0107939,
+                            -34.0841436
+                        ],
+                        [
+                            19.0000007,
+                            -34.0841258
+                        ],
+                        [
+                            19.0000221,
+                            -34.0931977
+                        ],
+                        [
+                            18.9891538,
+                            -34.0931711
+                        ],
+                        [
+                            18.9891753,
+                            -34.1021976
+                        ],
+                        [
+                            18.9783177,
+                            -34.1021798
+                        ],
+                        [
+                            18.9783177,
+                            -34.111232
+                        ],
+                        [
+                            18.967503,
+                            -34.1112143
+                        ],
+                        [
+                            18.9674923,
+                            -34.1292536
+                        ],
+                        [
+                            18.9566025,
+                            -34.1292358
+                        ],
+                        [
+                            18.9565596,
+                            -34.1382408
+                        ],
+                        [
+                            18.9674172,
+                            -34.1383118
+                        ],
+                        [
+                            18.9674172,
+                            -34.1473157
+                        ],
+                        [
+                            18.9891753,
+                            -34.147298
+                        ],
+                        [
+                            18.9891753,
+                            -34.165303
+                        ],
+                        [
+                            18.9782748,
+                            -34.1652852
+                        ],
+                        [
+                            18.9783177,
+                            -34.1742863
+                        ],
+                        [
+                            18.9674172,
+                            -34.1742685
+                        ],
+                        [
+                            18.9674601,
+                            -34.1833042
+                        ],
+                        [
+                            18.9565596,
+                            -34.1833219
+                        ],
+                        [
+                            18.9565596,
+                            -34.1923565
+                        ],
+                        [
+                            18.9457449,
+                            -34.192321
+                        ],
+                        [
+                            18.945702,
+                            -34.2013192
+                        ],
+                        [
+                            18.9348659,
+                            -34.2013725
+                        ],
+                        [
+                            18.9348873,
+                            -34.2193305
+                        ],
+                        [
+                            18.9023575,
+                            -34.2193482
+                        ],
+                        [
+                            18.9017567,
+                            -34.2362557
+                        ],
+                        [
+                            18.8878414,
+                            -34.2373467
+                        ],
+                        [
+                            18.8894185,
+                            -34.2554123
+                        ],
+                        [
+                            18.8805887,
+                            -34.2553414
+                        ],
+                        [
+                            18.8792744,
+                            -34.2644348
+                        ],
+                        [
+                            18.8696882,
+                            -34.2644126
+                        ],
+                        [
+                            18.8697097,
+                            -34.2734386
+                        ],
+                        [
+                            18.8371369,
+                            -34.2734208
+                        ],
+                        [
+                            18.8371155,
+                            -34.2643771
+                        ],
+                        [
+                            18.848016,
+                            -34.2644037
+                        ],
+                        [
+                            18.8480267,
+                            -34.237391
+                        ],
+                        [
+                            18.8154861,
+                            -34.210281
+                        ],
+                        [
+                            18.8156471,
+                            -34.1741265
+                        ],
+                        [
+                            18.8548824,
+                            -34.1562743
+                        ],
+                        [
+                            18.7617561,
+                            -34.0840547
+                        ],
+                        [
+                            18.6533734,
+                            -34.077479
+                        ],
+                        [
+                            18.4797433,
+                            -34.1101217
+                        ],
+                        [
+                            18.4463713,
+                            -34.1342269
+                        ],
+                        [
+                            18.4444508,
+                            -34.1640868
+                        ],
+                        [
+                            18.4359965,
+                            -34.1640513
+                        ],
+                        [
+                            18.435975,
+                            -34.1820172
+                        ],
+                        [
+                            18.4468111,
+                            -34.182106
+                        ],
+                        [
+                            18.4467253,
+                            -34.1911052
+                        ],
+                        [
+                            18.4659299,
+                            -34.1912117
+                        ],
+                        [
+                            18.4866151,
+                            -34.2453911
+                        ],
+                        [
+                            18.4788904,
+                            -34.2543659
+                        ],
+                        [
+                            18.4860036,
+                            -34.2543748
+                        ],
+                        [
+                            18.4677109,
+                            -34.2994116
+                        ],
+                        [
+                            18.4892222,
+                            -34.3445792
+                        ],
+                        [
+                            18.500112,
+                            -34.3445837
+                        ],
+                        [
+                            18.4999189,
+                            -34.3626174
+                        ],
+                        [
+                            18.467432,
+                            -34.3625111
+                        ],
+                        [
+                            18.4673676,
+                            -34.3534947
+                        ],
+                        [
+                            18.3916005,
+                            -34.3170651
+                        ],
+                        [
+                            18.3917722,
+                            -34.2900161
+                        ],
+                        [
+                            18.3701643,
+                            -34.2808678
+                        ],
+                        [
+                            18.370682,
+                            -34.2178866
+                        ],
+                        [
+                            18.3492324,
+                            -34.1816178
+                        ],
+                        [
+                            18.3274743,
+                            -34.1814936
+                        ],
+                        [
+                            18.3276674,
+                            -34.1634565
+                        ],
+                        [
+                            18.3118746,
+                            -34.1543832
+                        ],
+                        [
+                            18.3114025,
+                            -34.1435331
+                        ],
+                        [
+                            18.3236656,
+                            -34.1346886
+                        ],
+                        [
+                            18.3499297,
+                            -34.1042053
+                        ],
+                        [
+                            18.3393189,
+                            -34.0882843
+                        ],
+                        [
+                            18.3612487,
+                            -34.0597219
+                        ],
+                        [
+                            18.3550474,
+                            -34.0553843
+                        ],
+                        [
+                            18.3427522,
+                            -34.064326
+                        ],
+                        [
+                            18.3199963,
+                            -34.0644326
+                        ],
+                        [
+                            18.296071,
+                            -34.045126
+                        ],
+                        [
+                            18.3068213,
+                            -34.0252637
+                        ],
+                        [
+                            18.3287725,
+                            -34.0191992
+                        ],
+                        [
+                            18.3289227,
+                            -34.001252
+                        ],
+                        [
+                            18.3397374,
+                            -34.0012698
+                        ],
+                        [
+                            18.3398017,
+                            -33.9866282
+                        ],
+                        [
+                            18.3628687,
+                            -33.9735145
+                        ],
+                        [
+                            18.3638129,
+                            -33.9292474
+                        ],
+                        [
+                            18.3726212,
+                            -33.9292741
+                        ],
+                        [
+                            18.3728358,
+                            -33.917763
+                        ],
+                        [
+                            18.3977267,
+                            -33.8933469
+                        ],
+                        [
+                            18.4486565,
+                            -33.893623
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "attribution": {
+                    "required": true,
+                    "text": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
+                    "url": "https://www.capetown.gov.za"
+                },
                 "best": true,
                 "country_code": "ZA",
                 "description": "OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance",
                 "end_date": "2016",
+                "id": "South_Africa-CapeTown-Aerial",
                 "max_zoom": 21,
                 "min_zoom": 1,
                 "name": "City of Cape Town 2015 Aerial",
@@ -3025,6 +3844,7 @@
                     "text": "\u00a9 osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://www.osm-tools.org/"
                 },
+                "id": "osm-cambodia_laos_thailand_vietnam-bilingual",
                 "max_zoom": 19,
                 "name": "Cambodia, Laos, Thailand, Vietnam, Myanmar bilingual",
                 "type": "tms",
@@ -3318,6 +4138,7 @@
             },
             "properties": {
                 "country_code": "JP",
+                "id": "gsi.go.jp",
                 "license_url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
                 "max_zoom": 19,
                 "min_zoom": 12,
@@ -3399,6 +4220,7 @@
             },
             "properties": {
                 "country_code": "PH",
+                "id": "Pangasinan_Bulacan_HiRes",
                 "max_zoom": 19,
                 "min_zoom": 12,
                 "name": "Pangasin\u00e1n/Bulacan (Phillipines HiRes)",
@@ -3463,6 +4285,7 @@
                     "url": "http://irs.gis-lab.info/"
                 },
                 "country_code": "RU",
+                "id": "ScanEx-IRS",
                 "name": "ScanEx IRS",
                 "type": "scanex",
                 "url": "IRS"
@@ -3478,6 +4301,7 @@
                     "url": "http://irs.gis-lab.info/"
                 },
                 "country_code": "RU",
+                "id": "ScanEx-SPOT",
                 "name": "ScanEx SPOT",
                 "type": "scanex",
                 "url": "SPOT"
@@ -3714,6 +4538,7 @@
                     "text": "AGRI"
                 },
                 "country_code": "AU",
+                "id": "AGRI-black_and_white-2.5m",
                 "name": "AGRI black-and-white 2.5m",
                 "type": "tms",
                 "url": "http://agri.openstreetmap.org/{zoom}/{x}/{y}.png"
@@ -3892,6 +4717,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "AU",
+                "id": "LPI_NSW_Administrative_Boundaries_County",
                 "max_zoom": 21,
                 "name": "LPI NSW Administrative Boundaries County",
                 "overlay": true,
@@ -4072,6 +4898,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "AU",
+                "id": "LPI_NSW_Administrative_Boundaries_LGA",
                 "max_zoom": 21,
                 "name": "LPI NSW Administrative Boundaries LGA",
                 "overlay": true,
@@ -4252,6 +5079,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "AU",
+                "id": "LPI_NSW_Administrative_Boundaries_NPWS_Reserve",
                 "max_zoom": 21,
                 "name": "LPI NSW Administrative Boundaries NPWS Reserve",
                 "overlay": true,
@@ -4432,6 +5260,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "AU",
+                "id": "LPI_NSW_Administrative_Boundaries_Parish",
                 "max_zoom": 21,
                 "name": "LPI NSW Administrative Boundaries Parish",
                 "overlay": true,
@@ -4612,6 +5441,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "AU",
+                "id": "LPI_NSW_Administrative_Boundaries_StateForest",
                 "max_zoom": 21,
                 "name": "LPI NSW Administrative Boundaries State Forest",
                 "overlay": true,
@@ -4792,6 +5622,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "AU",
+                "id": "LPI_NSW_Administrative_Boundaries_Suburb",
                 "max_zoom": 21,
                 "name": "LPI NSW Administrative Boundaries Suburb",
                 "overlay": true,
@@ -4919,7 +5750,7 @@
                     "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services"
                 },
                 "country_code": "AU",
-                "id": "NSW LPI Base Map",
+                "id": "NSW_LPI_BaseMap",
                 "max_zoom": 19,
                 "name": "LPI NSW Base Map",
                 "type": "tms",
@@ -5283,7 +6114,7 @@
                 },
                 "best": true,
                 "country_code": "AU",
-                "id": "NSW LPI Imagery",
+                "id": "NSW_LPI_Imagery",
                 "max_zoom": 21,
                 "name": "LPI NSW Imagery",
                 "type": "tms",
@@ -5882,7 +6713,7 @@
                     "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services"
                 },
                 "country_code": "AU",
-                "id": "NSW LPI Topographic Map",
+                "id": "NSW_LPI_TopographicMap",
                 "max_zoom": 16,
                 "name": "LPI NSW Topographic Map",
                 "type": "tms",
@@ -7694,7 +8525,7 @@
                 "country_code": "AT",
                 "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery.",
                 "icon": "http://www.geoimage.at/resources/geoimage/resources/img/logo_200.png",
-                "id": "basemap.at orthofoto",
+                "id": "basemap.at-orthofoto",
                 "license_url": "http://creativecommons.org/licenses/by/3.0/at/deed.de",
                 "name": "basemap.at Orthofoto",
                 "type": "tms",
@@ -8549,6 +9380,7 @@
                 ],
                 "country_code": "AT",
                 "icon": "http://gis.graz.at/g/graz-logo.gif",
+                "id": "graz.at-basemap",
                 "name": "Graz: Basiskarte (base map)",
                 "type": "wms",
                 "url": "http://geodaten1.graz.at/ArcGIS_Graz/services/Extern/BASISKARTE_WMS/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -9501,6 +10333,7 @@
                 ],
                 "country_code": "AT",
                 "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+                "id": "tirol.gv.at-contourlines",
                 "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol/",
                 "min_zoom": 15,
                 "name": "Tiris: contour lines",
@@ -10455,6 +11288,7 @@
                 ],
                 "country_code": "AT",
                 "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+                "id": "tirol.gv.at-DGM",
                 "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol/",
                 "name": "Tiris: DGM (Terrain model)",
                 "type": "wms",
@@ -11409,6 +12243,7 @@
                 ],
                 "country_code": "AT",
                 "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+                "id": "tirol.gv.at-DOM",
                 "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol/",
                 "name": "Tiris: DOM (Surface model)",
                 "type": "wms",
@@ -11452,6 +12287,7 @@
                 },
                 "country_code": "AT",
                 "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+                "id": "wien.gv.at-labels",
                 "max_zoom": 19,
                 "min_zoom": 12,
                 "name": "Vienna: Beschriftungen (annotations)",
@@ -11496,6 +12332,7 @@
                 },
                 "country_code": "AT",
                 "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+                "id": "wien.gv.at-gp",
                 "max_zoom": 19,
                 "min_zoom": 10,
                 "name": "Vienna: Mehrzweckkarte (general purpose)",
@@ -11540,6 +12377,7 @@
                 },
                 "country_code": "AT",
                 "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+                "id": "wien.gv.at-aerial_image",
                 "max_zoom": 19,
                 "min_zoom": 10,
                 "name": "Vienna: Orthofoto (aerial image)",
@@ -14488,6 +15326,7 @@
                 },
                 "best": true,
                 "country_code": "BE",
+                "id": "AGIV",
                 "license_url": "https://download.agiv.be/Producten/Detail?id=595&title=Orthofotomozaiek_middenschalig_winteropnamen_kleur_meest_recent_Vlaanderen_2015_03",
                 "max_zoom": 21,
                 "name": "Belgium AGIV Orthophoto Flanders",
@@ -14551,6 +15390,7 @@
                     "text": "Orthophoto 2005, Etat de Fribourg "
                 },
                 "country_code": "CH",
+                "id": "Fribourg-2005",
                 "name": "Canton de Fribourg 50cm (2005)",
                 "type": "wms",
                 "url": "http://geo.fr.ch/wms/orthophoto_2005_fribourg.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Orthophoto_2005&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -15059,6 +15899,7 @@
                     "text": "Orthophotos du SITG 2011"
                 },
                 "country_code": "CH",
+                "id": "Geneve-SITG-2011",
                 "name": "Canton de G\u00e9n\u00e8ve 5cm (SITG 2011)",
                 "type": "wms",
                 "url": "http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -15073,6 +15914,7 @@
                     "text": "orthophotos2006sitn50cm"
                 },
                 "country_code": "CH",
+                "id": "Neuchatel-SITN-2006",
                 "name": "Canton de Neuch\u00e2tel 50cm (SITN 2006)",
                 "type": "wms",
                 "url": "http://sitn.ne.ch/ogc-sitn-open/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -15087,6 +15929,7 @@
                     "text": "Orthophotos 1998 RCJU 50cm "
                 },
                 "country_code": "CH",
+                "id": "Jura-RCJU-1998",
                 "name": "Canton du Jura 50cm (RCJU 1998)",
                 "type": "wms",
                 "url": "http://sitn.ne.ch/ogc-sitj-ortho/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho1998&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -15104,6 +15947,7 @@
                     "EPSG:21781"
                 ],
                 "country_code": "CH",
+                "id": "Yverdon_les_Bains-HEIG_VD-2007",
                 "name": "HEIG-VD / Orthophoto Yverdon-les-Bains 25cm (2007)",
                 "type": "wms",
                 "url": "http://ogc.heig-vd.ch/mapserver/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=orthophoto_yverdon&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -15144,6 +15988,7 @@
                     "text": "AGIS OF2011"
                 },
                 "country_code": "CH",
+                "id": "Aargau-AGIS-2011",
                 "max_zoom": 19,
                 "min_zoom": 14,
                 "name": "Kanton Aargau 25cm (AGIS 2011)",
@@ -15803,6 +16648,7 @@
                 },
                 "best": true,
                 "country_code": "CH",
+                "id": "Aargau-AGIS-2014",
                 "max_zoom": 19,
                 "min_zoom": 8,
                 "name": "Kanton Aargau 25cm (AGIS 2014)",
@@ -15845,6 +16691,7 @@
                     "text": "Kanton Basel-Stadt OF 2015"
                 },
                 "country_code": "CH",
+                "id": "KTBASELSTADT2015",
                 "max_zoom": 21,
                 "min_zoom": 8,
                 "name": "Kanton Basel-Stadt 2015",
@@ -16482,6 +17329,7 @@
                 },
                 "best": true,
                 "country_code": "CH",
+                "id": "Solothurn-sogis2014-tms",
                 "max_zoom": 19,
                 "min_zoom": 12,
                 "name": "Kanton Solothurn 25cm (SOGIS 2014-2015)",
@@ -17119,6 +17967,7 @@
                 },
                 "best": true,
                 "country_code": "CH",
+                "id": "Solothurn-sogis2014-wms",
                 "max_zoom": 19,
                 "min_zoom": 12,
                 "name": "Kanton Solothurn 25cm (SOGIS 2014-2015)",
@@ -17135,9 +17984,10 @@
                     "text": "Orthofoto WMS Solothurn"
                 },
                 "country_code": "CH",
-                "name": "Kanton Solothurn Infrarot 12.5cm (SOGIS 2011)",
+                "id": "Solothurn-infrared-SOGIS",
+                "name": "Kanton Solothurn Infrarot 12.5cm (SOGIS 2014)",
                 "type": "wms",
-                "url": "http://www.sogis1.so.ch/cgi-bin/sogis/sogis_ortho.wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Orthofoto11_CIR&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+                "url": "http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_CIR_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
             },
             "type": "Feature"
         },
@@ -17588,6 +18438,7 @@
                 },
                 "best": true,
                 "country_code": "CH",
+                "id": "KTZUERICH2015",
                 "max_zoom": 21,
                 "min_zoom": 8,
                 "name": "Kanton Z\u00fcrich 2015  10cm",
@@ -17963,6 +18814,7 @@
                 },
                 "best": true,
                 "country_code": "CH",
+                "id": "Bern-bern2016-tms",
                 "max_zoom": 21,
                 "min_zoom": 8,
                 "name": "Stadt Bern 10cm (2016)",
@@ -18341,6 +19193,7 @@
                 ],
                 "best": true,
                 "country_code": "CH",
+                "id": "Bern-bern2016-wms",
                 "name": "Stadt Bern 10cm (2016)",
                 "type": "wms",
                 "url": "http://map.bern.ch/wms/OpenData/proxy.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -18381,6 +19234,7 @@
                     "text": "Stadt Uster Vermessung Orthophoto 2008"
                 },
                 "country_code": "CH",
+                "id": "Uster-2008",
                 "name": "Stadt Uster Orthophoto 2008 10cm",
                 "type": "tms",
                 "url": "http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
@@ -18421,6 +19275,7 @@
                     "text": "Stadt Z\u00fcrich Luftbild 2011"
                 },
                 "country_code": "CH",
+                "id": "Zuerich-zh_luftbild2011-tms",
                 "name": "Stadt Z\u00fcrich Luftbild 2011",
                 "type": "tms",
                 "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw"
@@ -18461,6 +19316,7 @@
                     "text": "Stadt Z\u00fcrich Open Government Data"
                 },
                 "country_code": "CH",
+                "id": "Zuerich-city_map",
                 "name": "Stadtplan Z\u00fcrich",
                 "type": "tms",
                 "url": "http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
@@ -18501,6 +19357,7 @@
                     "text": "Stadt Z\u00fcrich Open Government Data"
                 },
                 "country_code": "CH",
+                "id": "Zuerich-zh_uebersichtsplan-tms",
                 "max_zoom": 21,
                 "name": "\u00dcbersichtsplan Z\u00fcrich",
                 "type": "tms",
@@ -19168,6 +20025,7 @@
                     "EPSG:2065"
                 ],
                 "country_code": "CZ",
+                "id": "Czech_CUZK-KM",
                 "name": "Czech CUZK:KM",
                 "type": "wms",
                 "url": "http://wms.cuzk.cz/wms.asp?service=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&FORMAT=image/png&transparent=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -19820,6 +20678,7 @@
             },
             "properties": {
                 "country_code": "CZ",
+                "id": "Czech_CUZK-KM-tms",
                 "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
                 "max_zoom": 18,
                 "min_zoom": 13,
@@ -21137,684 +21996,6 @@
             "type": "Feature"
         },
         {
-            "geometry": null,
-            "properties": {
-                "available_projections": [
-                    "EPSG:2065",
-                    "EPSG:4326",
-                    "EPSG:28403",
-                    "EPSG:28404",
-                    "EPSG:32633",
-                    "EPSG:32634",
-                    "EPSG:102067"
-                ],
-                "country_code": "CZ",
-                "name": "Czech UHUL:ORTOFOTO",
-                "type": "wms",
-                "url": "http://geoportal2.uhul.cz/cgi-bin/oprl.asp?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Ortofoto_cb&STYLES=default&FORMAT=image/jpeg&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            15.0063684,
-                            49.0177392
-                        ],
-                        [
-                            15.1559854,
-                            49.0013828
-                        ],
-                        [
-                            15.190896,
-                            48.9424551
-                        ],
-                        [
-                            15.3105895,
-                            48.9882938
-                        ],
-                        [
-                            15.4053469,
-                            48.9752013
-                        ],
-                        [
-                            15.5400022,
-                            48.9162426
-                        ],
-                        [
-                            15.7145553,
-                            48.8670572
-                        ],
-                        [
-                            15.8342488,
-                            48.880178
-                        ],
-                        [
-                            15.968904,
-                            48.8178233
-                        ],
-                        [
-                            16.0885976,
-                            48.7455261
-                        ],
-                        [
-                            16.3978059,
-                            48.7455261
-                        ],
-                        [
-                            16.4875761,
-                            48.8145394
-                        ],
-                        [
-                            16.6721036,
-                            48.7784014
-                        ],
-                        [
-                            16.6820781,
-                            48.7356594
-                        ],
-                        [
-                            16.9015163,
-                            48.7126294
-                        ],
-                        [
-                            16.9464014,
-                            48.6237005
-                        ],
-                        [
-                            17.1159672,
-                            48.8375227
-                        ],
-                        [
-                            17.2107246,
-                            48.880178
-                        ],
-                        [
-                            17.4052266,
-                            48.8178233
-                        ],
-                        [
-                            17.4800351,
-                            48.8539329
-                        ],
-                        [
-                            17.5299074,
-                            48.8178233
-                        ],
-                        [
-                            17.7044605,
-                            48.8670572
-                        ],
-                        [
-                            17.8141796,
-                            48.9359033
-                        ],
-                        [
-                            17.8840008,
-                            48.9359033
-                        ],
-                        [
-                            17.9438476,
-                            49.0210099
-                        ],
-                        [
-                            18.0635412,
-                            49.0340903
-                        ],
-                        [
-                            18.1184007,
-                            49.0994409
-                        ],
-                        [
-                            18.1981964,
-                            49.3047337
-                        ],
-                        [
-                            18.3877112,
-                            49.3339917
-                        ],
-                        [
-                            18.577226,
-                            49.5091747
-                        ],
-                        [
-                            18.7567663,
-                            49.4994587
-                        ],
-                        [
-                            18.8465365,
-                            49.5253637
-                        ],
-                        [
-                            18.8764598,
-                            49.5706645
-                        ],
-                        [
-                            18.7966641,
-                            49.693412
-                        ],
-                        [
-                            18.64206,
-                            49.7095399
-                        ],
-                        [
-                            18.5872004,
-                            49.8351543
-                        ],
-                        [
-                            18.6121366,
-                            49.8833809
-                        ],
-                        [
-                            18.5622643,
-                            49.9347695
-                        ],
-                        [
-                            18.512392,
-                            49.9058702
-                        ],
-                        [
-                            18.362775,
-                            49.9540261
-                        ],
-                        [
-                            18.3278644,
-                            49.9219275
-                        ],
-                        [
-                            18.2630304,
-                            49.9732751
-                        ],
-                        [
-                            18.1184007,
-                            50.0053395
-                        ],
-                        [
-                            18.0635412,
-                            50.075806
-                        ],
-                        [
-                            17.9139242,
-                            49.9796897
-                        ],
-                        [
-                            17.779269,
-                            50.0309757
-                        ],
-                        [
-                            17.714435,
-                            50.1237921
-                        ],
-                        [
-                            17.6047159,
-                            50.1653411
-                        ],
-                        [
-                            17.7593201,
-                            50.21962
-                        ],
-                        [
-                            17.7343839,
-                            50.3439092
-                        ],
-                        [
-                            17.6396265,
-                            50.2802117
-                        ],
-                        [
-                            17.3802905,
-                            50.2802117
-                        ],
-                        [
-                            17.3503671,
-                            50.3439092
-                        ],
-                        [
-                            17.2805459,
-                            50.3375433
-                        ],
-                        [
-                            17.1857885,
-                            50.4075214
-                        ],
-                        [
-                            16.9015163,
-                            50.4615247
-                        ],
-                        [
-                            16.8666057,
-                            50.4138779
-                        ],
-                        [
-                            16.9663503,
-                            50.3184404
-                        ],
-                        [
-                            17.0361715,
-                            50.2323826
-                        ],
-                        [
-                            16.8366823,
-                            50.21962
-                        ],
-                        [
-                            16.7120015,
-                            50.1046034
-                        ],
-                        [
-                            16.5823335,
-                            50.1589513
-                        ],
-                        [
-                            16.5623846,
-                            50.2387626
-                        ],
-                        [
-                            16.4327166,
-                            50.3375433
-                        ],
-                        [
-                            16.3529209,
-                            50.3916263
-                        ],
-                        [
-                            16.2781124,
-                            50.3916263
-                        ],
-                        [
-                            16.2082911,
-                            50.4456477
-                        ],
-                        [
-                            16.3978059,
-                            50.5344899
-                        ],
-                        [
-                            16.4476782,
-                            50.5978464
-                        ],
-                        [
-                            16.3529209,
-                            50.670601
-                        ],
-                        [
-                            16.2382145,
-                            50.6769221
-                        ],
-                        [
-                            16.2182656,
-                            50.6326561
-                        ],
-                        [
-                            16.1284954,
-                            50.6832425
-                        ],
-                        [
-                            16.0486997,
-                            50.6073425
-                        ],
-                        [
-                            15.988853,
-                            50.7021983
-                        ],
-                        [
-                            15.8741467,
-                            50.6832425
-                        ],
-                        [
-                            15.8292616,
-                            50.7653291
-                        ],
-                        [
-                            15.729517,
-                            50.743243
-                        ],
-                        [
-                            15.450232,
-                            50.8157725
-                        ],
-                        [
-                            15.3903852,
-                            50.7747914
-                        ],
-                        [
-                            15.3804108,
-                            50.8598659
-                        ],
-                        [
-                            15.2956278,
-                            50.8850434
-                        ],
-                        [
-                            15.2956278,
-                            50.9887568
-                        ],
-                        [
-                            15.1709471,
-                            51.0201394
-                        ],
-                        [
-                            14.9914067,
-                            51.0013124
-                        ],
-                        [
-                            15.0063684,
-                            50.8881896
-                        ],
-                        [
-                            14.8417898,
-                            50.8756034
-                        ],
-                        [
-                            14.7969047,
-                            50.8252246
-                        ],
-                        [
-                            14.6323261,
-                            50.8567177
-                        ],
-                        [
-                            14.6622495,
-                            50.9353576
-                        ],
-                        [
-                            14.5724793,
-                            50.9227841
-                        ],
-                        [
-                            14.6123772,
-                            50.9856174
-                        ],
-                        [
-                            14.4976708,
-                            51.0483657
-                        ],
-                        [
-                            14.4178751,
-                            51.0232765
-                        ],
-                        [
-                            14.3081561,
-                            51.0671736
-                        ],
-                        [
-                            14.2532965,
-                            51.0044508
-                        ],
-                        [
-                            14.4029134,
-                            50.9322145
-                        ],
-                        [
-                            14.3729901,
-                            50.897627
-                        ],
-                        [
-                            14.2433221,
-                            50.9070625
-                        ],
-                        [
-                            14.2084114,
-                            50.844123
-                        ],
-                        [
-                            14.0338583,
-                            50.8126214
-                        ],
-                        [
-                            13.9789988,
-                            50.8252246
-                        ],
-                        [
-                            13.9041903,
-                            50.7968626
-                        ],
-                        [
-                            13.8742669,
-                            50.740087
-                        ],
-                        [
-                            13.5351352,
-                            50.7243038
-                        ],
-                        [
-                            13.530148,
-                            50.6579561
-                        ],
-                        [
-                            13.4703012,
-                            50.6136722
-                        ],
-                        [
-                            13.3905055,
-                            50.664279
-                        ],
-                        [
-                            13.3256715,
-                            50.5883483
-                        ],
-                        [
-                            13.250863,
-                            50.6105074
-                        ],
-                        [
-                            13.1960035,
-                            50.5059517
-                        ],
-                        [
-                            13.0513738,
-                            50.5218084
-                        ],
-                        [
-                            12.9665909,
-                            50.4106997
-                        ],
-                        [
-                            12.8269484,
-                            50.4710483
-                        ],
-                        [
-                            12.7022676,
-                            50.4138779
-                        ],
-                        [
-                            12.5077656,
-                            50.401164
-                        ],
-                        [
-                            12.343187,
-                            50.2547088
-                        ],
-                        [
-                            12.323238,
-                            50.1845054
-                        ],
-                        [
-                            12.2484296,
-                            50.2738373
-                        ],
-                        [
-                            12.1736211,
-                            50.3311765
-                        ],
-                        [
-                            12.0988126,
-                            50.33436
-                        ],
-                        [
-                            12.1187616,
-                            50.25152
-                        ],
-                        [
-                            12.2234934,
-                            50.1653411
-                        ],
-                        [
-                            12.2035445,
-                            50.1237921
-                        ],
-                        [
-                            12.5027784,
-                            49.9732751
-                        ],
-                        [
-                            12.4778422,
-                            49.9379795
-                        ],
-                        [
-                            12.5476634,
-                            49.9155052
-                        ],
-                        [
-                            12.4678677,
-                            49.8029766
-                        ],
-                        [
-                            12.408021,
-                            49.7611134
-                        ],
-                        [
-                            12.4828294,
-                            49.6869593
-                        ],
-                        [
-                            12.5327017,
-                            49.6869593
-                        ],
-                        [
-                            12.5177401,
-                            49.6288466
-                        ],
-                        [
-                            12.6075102,
-                            49.5415474
-                        ],
-                        [
-                            12.6723442,
-                            49.4378793
-                        ],
-                        [
-                            12.8119867,
-                            49.3469896
-                        ],
-                        [
-                            12.9466419,
-                            49.3437405
-                        ],
-                        [
-                            13.2309141,
-                            49.1288206
-                        ],
-                        [
-                            13.3256715,
-                            49.1059712
-                        ],
-                        [
-                            13.4353906,
-                            49.0438984
-                        ],
-                        [
-                            13.4154417,
-                            48.9948387
-                        ],
-                        [
-                            13.5002246,
-                            48.949006
-                        ],
-                        [
-                            13.5650586,
-                            48.9882938
-                        ],
-                        [
-                            13.6847522,
-                            48.8834577
-                        ],
-                        [
-                            13.7445989,
-                            48.9031312
-                        ],
-                        [
-                            13.8243946,
-                            48.7751149
-                        ],
-                        [
-                            13.8992031,
-                            48.7751149
-                        ],
-                        [
-                            14.0587945,
-                            48.676418
-                        ],
-                        [
-                            14.0438328,
-                            48.6302932
-                        ],
-                        [
-                            14.1435774,
-                            48.5907241
-                        ],
-                        [
-                            14.3729901,
-                            48.5610269
-                        ],
-                        [
-                            14.4827091,
-                            48.6500662
-                        ],
-                        [
-                            14.5774665,
-                            48.607215
-                        ],
-                        [
-                            14.6273389,
-                            48.6335892
-                        ],
-                        [
-                            14.7071346,
-                            48.5808269
-                        ],
-                        [
-                            14.7470324,
-                            48.7027561
-                        ],
-                        [
-                            14.8118664,
-                            48.7389485
-                        ],
-                        [
-                            14.8168536,
-                            48.794831
-                        ],
-                        [
-                            14.9864195,
-                            48.7652539
-                        ],
-                        [
-                            15.0063684,
-                            49.0177392
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": false,
-                    "text": "Ortofoto public domain \u00daHUL, year 2000"
-                },
-                "country_code": "CZ",
-                "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-                "max_zoom": 18,
-                "min_zoom": 13,
-                "name": "Czech \u00daHUL:ORTOFOTO tiles proxy",
-                "type": "tms",
-                "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_uhul.php/{zoom}/{x}/{y}.jpg"
-            },
-            "type": "Feature"
-        },
-        {
             "geometry": {
                 "coordinates": [
                     [
@@ -23028,6 +23209,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "DE",
+                "id": "bavaria-2m",
                 "max_zoom": 18,
                 "name": "Bavaria (2 m)",
                 "type": "wms",
@@ -24241,6 +24423,7 @@
             },
             "properties": {
                 "country_code": "DE",
+                "id": "bavaria-DOP80",
                 "max_zoom": 18,
                 "name": "Bavaria DOP 80cm",
                 "type": "tms",
@@ -24282,6 +24465,7 @@
                     "EPSG:31494"
                 ],
                 "country_code": "DE",
+                "id": "Erlangen-2013",
                 "license_url": "http://erlangen.maps.arcgis.com/home/item.html?id=e6693e185a4d4522980dfac658d4c8cb",
                 "name": "Erlangen Luftbild (2013 6,25 cm)",
                 "type": "wms",
@@ -24323,6 +24507,7 @@
                     "EPSG:31494"
                 ],
                 "country_code": "DE",
+                "id": "Erlangen-2011",
                 "license_url": "http://erlangen.maps.arcgis.com/home/item.html?id=f834ddb433a148c9b325e9075ad0df80",
                 "name": "Erlangen Luftbild (2011 5,0 cm)",
                 "type": "wms",
@@ -24545,6 +24730,7 @@
                 ],
                 "country_code": "DE",
                 "end_date": "2016-03-18",
+                "id": "Erlangen-2016",
                 "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=abab0a0c8a4c483290878068fe667a3a",
                 "name": "Erlangen Luftbild (2016 5,0 cm)",
                 "start_date": "2016-03-18",
@@ -24559,12 +24745,22 @@
                 "available_projections": [
                     "EPSG:31467",
                     "EPSG:25832",
+                    "EPSG:3034",
+                    "EPSG:3035",
+                    "EPSG:3044",
+                    "EPSG:3857",
+                    "EPSG:4258",
+                    "EPSG:4647",
+                    "EPSG:31463",
+                    "EPSG:102100",
+                    "EPSG:102362",
                     "EPSG:4326"
                 ],
                 "country_code": "DE",
+                "id": "hamburg-40cm",
                 "name": "Hamburg (40 cm)",
                 "type": "wms",
-                "url": "http://gateway.hamburg.de/OGCFassade/HH_WMS_DOP40.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+                "url": "http://geodienste-hamburg.de/HH_WMS_DOP40?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
             },
             "type": "Feature"
         },
@@ -24577,9 +24773,10 @@
                     "EPSG:4326"
                 ],
                 "country_code": "DE",
+                "id": "Hamburg-DK5",
                 "name": "Hamburg (DK5)",
                 "type": "wms",
-                "url": "http://gateway.hamburg.de/OGCFassade/HH_WMS_Geobasisdaten.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+                "url": "http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
             },
             "type": "Feature"
         },
@@ -24617,6 +24814,7 @@
                     "EPSG:31467"
                 ],
                 "country_code": "DE",
+                "id": "Stuttgart-2011",
                 "name": "Stuttgart (Luftbild)",
                 "type": "wms",
                 "url": "http://gis3.stuttgart.de/wss/service/wms_Luftbilder2011_jpg_internet/guest?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&Layers=0,1,2,3,4,5,6,7,8&STYLES=default,default,default,default,default,default,default,default,default&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -25361,6 +25559,7 @@
                 },
                 "best": true,
                 "country_code": "DK",
+                "id": "Geodatastyrelsen_Denmark",
                 "max_zoom": 21,
                 "name": "Geodatastyrelsen (Denmark)",
                 "type": "tms",
@@ -25506,6 +25705,7 @@
                     "text": "Stevns Kommune"
                 },
                 "country_code": "DK",
+                "id": "Stevns_Denmark",
                 "max_zoom": 20,
                 "name": "Stevns (Denmark)",
                 "type": "tms",
@@ -26156,6 +26356,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/Vejmidte"
                 },
                 "country_code": "DK",
+                "id": "Vejmidte_Denmark",
                 "max_zoom": 20,
                 "name": "Vejmidte (Denmark)",
                 "type": "tms",
@@ -29210,6 +29411,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "EE",
+                "id": "maaamet.ee-pohi_vr2",
                 "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
                 "name": "Estonia Basemap (Maaamet)",
                 "type": "wms",
@@ -29254,6 +29456,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "EE",
+                "id": "maaamet.ee-cir_ngr",
                 "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
                 "name": "Estonia Forestry (Maaamet)",
                 "type": "wms",
@@ -29298,6 +29501,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "EE",
+                "id": "maaamet.ee-reljeef",
                 "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
                 "name": "Estonia Hillshading (Maaamet)",
                 "type": "wms",
@@ -29385,6 +29589,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "EE",
+                "id": "maaamet.ee-of10000",
                 "license_url": "http://www.maakaart.ee/docs/Maa-amet_vastus_OSM.pdf",
                 "name": "Estonia Ortho (Maaamet)",
                 "type": "wms",
@@ -31730,6 +31935,7 @@
             },
             "properties": {
                 "country_code": "ES",
+                "id": "Catastro-Spain",
                 "name": "Catastro Spain",
                 "type": "wms",
                 "url": "http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -32206,6 +32412,7 @@
                     "text": "GRAFCAN OrtoExpress Urbana 2009"
                 },
                 "country_code": "ES",
+                "id": "GRAFCAN-Canary_Islands",
                 "name": "GRAFCAN - Canary Islands",
                 "type": "wms",
                 "url": "http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -32640,6 +32847,7 @@
                     "text": "ideib.cat"
                 },
                 "country_code": "ES",
+                "id": "IDEIB-Balearic_Islands",
                 "name": "IDEIB - Balearic Islands",
                 "type": "wms",
                 "url": "http://ideib.caib.es/pub_ideib/public/IMATGES_AERIES/MapServer/WMSServer?VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=8&STYLES=default&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -34108,6 +34316,7 @@
                     "text": "ITACyL"
                 },
                 "country_code": "ES",
+                "id": "ITACyL-Castile-and-Leon",
                 "name": "ITACyL - Castile and Le\u00f3n",
                 "type": "wms",
                 "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -38806,6 +39015,7 @@
                 },
                 "best": true,
                 "country_code": "ES",
+                "id": "PNOA-Spain",
                 "name": "PNOA Spain",
                 "type": "wms",
                 "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -41154,6 +41364,7 @@
                     "text": "SIGPAC"
                 },
                 "country_code": "ES",
+                "id": "SIGPAC-Spain",
                 "name": "SIGPAC Spain",
                 "type": "wms",
                 "url": "http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ORTOFOTOS&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -43117,6 +43328,7 @@
                     "EPSG:4171"
                 ],
                 "country_code": "FR",
+                "id": "CRAIG-Auvergne-2009",
                 "name": "CRAIG - Auvergne 2009/2010 - 30 cm",
                 "type": "wms",
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=auvergne&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -43622,6 +43834,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
                 },
                 "country_code": "FR",
+                "id": "CRAIG-LePuy-2010",
                 "name": "CRAIG - Le Puy 2010 - 15 cm",
                 "type": "wms",
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=le_puy&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -43919,6 +44132,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
                 },
                 "country_code": "FR",
+                "id": "CRAIG-Montluon-2010",
                 "name": "CRAIG - Montlu\u00e7on 2009 - 15 cm",
                 "type": "wms",
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=montlucon&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -44520,6 +44734,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
                 },
                 "country_code": "FR",
+                "id": "CRAIG-Moulins-2010",
                 "name": "CRAIG - Moulins 2009 - 15 cm",
                 "type": "wms",
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=moulins&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -44881,6 +45096,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
                 },
                 "country_code": "FR",
+                "id": "CRAIG-Vichy-2009",
                 "name": "CRAIG - Vichy 2009 - 15 cm",
                 "type": "wms",
                 "url": "http://wms.craig.fr/osm?service=wms&request=getmap&version=1.1.1&layers=vichy&format=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -45589,6 +45805,7 @@
             },
             "properties": {
                 "country_code": "FR",
+                "id": "Geobretagne-Brest-2010",
                 "name": "G\u00e9obretagne - Brest 2010 - 10 cm",
                 "type": "wms",
                 "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-bmo-2010&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -47331,6 +47548,7 @@
             },
             "properties": {
                 "country_code": "FR",
+                "id": "Geobretagne-Morbihan-2010",
                 "name": "G\u00e9obretagne - Morbihan 2010",
                 "type": "wms",
                 "url": "http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortho-megalis-56&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -48268,6 +48486,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral"
                 },
                 "country_code": "FR",
+                "id": "Golittoral-Orthophotos2000",
                 "name": "G\u00e9olittoral - Orthophotos 2000",
                 "type": "wms",
                 "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -48283,6 +48502,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral"
                 },
                 "country_code": "FR",
+                "id": "Golittoral-Sentiers",
                 "name": "G\u00e9olittoral - Sentiers",
                 "type": "wms",
                 "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Sentiers_littoraux&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -48934,6 +49154,7 @@
                     "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral"
                 },
                 "country_code": "FR",
+                "id": "GolittoralV2-Orthophotos",
                 "name": "G\u00e9olittoral V2 - Orthophotos 2010-2012",
                 "type": "wms",
                 "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortholittorale&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -49279,6 +49500,7 @@
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData"
                 },
                 "country_code": "FR",
+                "id": "Toulouse-Orthophotoplan-2007",
                 "max_zoom": 22,
                 "name": "Toulouse - Orthophotoplan 2007",
                 "type": "tms",
@@ -49521,6 +49743,7 @@
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData"
                 },
                 "country_code": "FR",
+                "id": "Toulouse-Orthophotoplan-2011",
                 "max_zoom": 22,
                 "name": "Toulouse - Orthophotoplan 2011",
                 "type": "tms",
@@ -49763,6 +49986,7 @@
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData"
                 },
                 "country_code": "FR",
+                "id": "Toulouse-Orthophotoplan-2013",
                 "license_url": "http://opendatacommons.org/licenses/odbl/",
                 "max_zoom": 22,
                 "name": "Toulouse - Orthophotoplan 2013",
@@ -50006,6 +50230,7 @@
                     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData"
                 },
                 "country_code": "FR",
+                "id": "Toulouse-Orthophotoplan-2015",
                 "license_url": "http://opendatacommons.org/licenses/odbl/",
                 "max_zoom": 22,
                 "name": "Toulouse - Orthophotoplan 2015",
@@ -50050,6 +50275,7 @@
                 },
                 "country_code": "FR",
                 "end_date": "2013",
+                "id": "Tours-Orthophoto-2013",
                 "license_url": "http://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
                 "max_zoom": 22,
                 "name": "Tours - Orthophotos 2013",
@@ -50663,6 +50889,7 @@
                 },
                 "country_code": "FR",
                 "end_date": "2011",
+                "id": "Tours-Orthophoto-2008_2010",
                 "max_zoom": 20,
                 "name": "Tours - Orthophotos 2008-2010",
                 "start_date": "2008",
@@ -50701,6 +50928,7 @@
             },
             "properties": {
                 "country_code": "GB",
+                "id": "OS7",
                 "name": "7th Series (OS7)",
                 "type": "tms",
                 "url": "http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg"
@@ -50743,6 +50971,7 @@
                 },
                 "country_code": "GB",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS-Bartholomew-hfinch-hist",
                 "max_zoom": 15,
                 "name": "NLS - Bartholomew Half Inch, 1897-1907",
                 "type": "tms",
@@ -51840,6 +52069,7 @@
                 },
                 "country_code": "GB",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS-OS-7th_Series",
                 "max_zoom": 16,
                 "min_zoom": 5,
                 "name": "NLS - OS 1-inch 7th Series 1955-61",
@@ -53794,6 +54024,7 @@
                 },
                 "country_code": "GB",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS-OS-1st_Series",
                 "max_zoom": 16,
                 "min_zoom": 5,
                 "name": "NLS - OS 1:25k 1st Series 1937-61",
@@ -53838,6 +54069,7 @@
                 },
                 "country_code": "GB",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS-OS-25inch-hist",
                 "max_zoom": 18,
                 "name": "NLS - OS 25-inch (Scotland), 1892-1905",
                 "type": "tms",
@@ -53881,6 +54113,7 @@
                 },
                 "country_code": "GB",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS-OS-6inch-County-Series-hist",
                 "max_zoom": 17,
                 "name": "NLS - OS 6-inch County Series, 1888-1913",
                 "type": "tms",
@@ -55542,6 +55775,7 @@
                 },
                 "country_code": "GB",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS-OS-6inch-Scotland-hist",
                 "max_zoom": 16,
                 "min_zoom": 5,
                 "name": "NLS - OS 6-inch Scotland 1842-82",
@@ -55588,6 +55822,7 @@
                 "description": "Detailed town plan of Aberdeen 1866-1867, courtesy of National Library of Scotland.",
                 "end_date": "1868",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_aberdeen1866_1867",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Aberdeen 1866-1867 (NLS)",
@@ -55635,6 +55870,7 @@
                 "description": "Detailed town plan of Airdrie 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_airdrie1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Airdrie 1858 (NLS)",
@@ -55682,6 +55918,7 @@
                 "description": "Detailed town plan of Alexandria 1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_alexandria1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Alexandria 1859 (NLS)",
@@ -55729,6 +55966,7 @@
                 "description": "Detailed town plan of Alloa 1861-1862, courtesy of National Library of Scotland.",
                 "end_date": "1863",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_alloa1861_1862",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Alloa 1861-1862 (NLS)",
@@ -55776,6 +56014,7 @@
                 "description": "Detailed town plan of Annan 1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_annan1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Annan 1859 (NLS)",
@@ -55823,6 +56062,7 @@
                 "description": "Detailed town plan of Arbroath 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_arbroath1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Arbroath 1858 (NLS)",
@@ -55870,6 +56110,7 @@
                 "description": "Detailed town plan of Ayr 1855, courtesy of National Library of Scotland.",
                 "end_date": "1856",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_ayr1855",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Ayr 1855 (NLS)",
@@ -55917,6 +56158,7 @@
                 "description": "Detailed town plan of Berwick-upon-Tweed 1852, courtesy of National Library of Scotland.",
                 "end_date": "1853",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_berwick1852",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Berwick-upon-Tweed 1852 (NLS)",
@@ -55964,6 +56206,7 @@
                 "description": "Detailed town plan of Brechin 1862, courtesy of National Library of Scotland.",
                 "end_date": "1863",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_brechin1862",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Brechin 1862 (NLS)",
@@ -56011,6 +56254,7 @@
                 "description": "Detailed town plan of Burntisland 1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_burntisland1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Burntisland 1894 (NLS)",
@@ -56058,6 +56302,7 @@
                 "description": "Detailed town plan of Campbelton 1865, courtesy of National Library of Scotland.",
                 "end_date": "1866",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_campbeltown1865",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Campbelton 1865 (NLS)",
@@ -56105,6 +56350,7 @@
                 "description": "Detailed town plan of Coatbridge 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_coatbridge1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Coatbridge 1858 (NLS)",
@@ -56152,6 +56398,7 @@
                 "description": "Detailed town plan of Cupar 1854, courtesy of National Library of Scotland.",
                 "end_date": "1855",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "OS-Town_Plans-Cupar-1854",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Cupar 1854 (NLS)",
@@ -56199,6 +56446,7 @@
                 "description": "Detailed town plan of Cupar 1893-1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_cupar1893_1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Cupar 1893-1894 (NLS)",
@@ -56246,6 +56494,7 @@
                 "description": "Detailed town plan of Dalkeith 1852, courtesy of National Library of Scotland.",
                 "end_date": "1853",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dalkeith1852",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dalkeith 1852 (NLS)",
@@ -56293,6 +56542,7 @@
                 "description": "Detailed town plan of Dalkeith 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dalkeith1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dalkeith 1893 (NLS)",
@@ -56340,6 +56590,7 @@
                 "description": "Detailed town plan of Dumbarton 1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dumbarton1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dumbarton 1859 (NLS)",
@@ -56387,6 +56638,7 @@
                 "description": "Detailed town plan of Dumfries 1850, courtesy of National Library of Scotland.",
                 "end_date": "1851",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dumfries1850",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dumfries 1850 (NLS)",
@@ -56434,6 +56686,7 @@
                 "description": "Detailed town plan of Dumfries 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dumfries1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dumfries 1893 (NLS)",
@@ -56481,6 +56734,7 @@
                 "description": "Detailed town plan of Dundee 1857-1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dundee1857_1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dundee 1857-1858 (NLS)",
@@ -56528,6 +56782,7 @@
                 "description": "Detailed town plan of Dundee 1870-1872, courtesy of National Library of Scotland.",
                 "end_date": "1873",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dundee1870_1872",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dundee 1870-1872 (NLS)",
@@ -56575,6 +56830,7 @@
                 "description": "Detailed town plan of Dunfermline 1854, courtesy of National Library of Scotland.",
                 "end_date": "1855",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dunfermline1854",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dunfermline 1854 (NLS)",
@@ -56622,6 +56878,7 @@
                 "description": "Detailed town plan of Dunfermline 1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_dunfermline1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Dunfermline 1894 (NLS)",
@@ -56669,6 +56926,7 @@
                 "description": "Detailed town plan of Edinburgh 1849-1851, courtesy of National Library of Scotland.",
                 "end_date": "1852",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_edinburgh1849_1851",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Edinburgh 1849-1851 (NLS)",
@@ -56716,6 +56974,7 @@
                 "description": "Detailed town plan of Edinburgh 1876-1877, courtesy of National Library of Scotland.",
                 "end_date": "1878",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_edinburgh1876_1877",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Edinburgh 1876-1877 (NLS)",
@@ -56763,6 +57022,7 @@
                 "description": "Detailed town plan of Edinburgh 1893-1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_edinburgh1893_1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)",
@@ -56810,6 +57070,7 @@
                 "description": "Detailed town plan of Elgin 1868, courtesy of National Library of Scotland.",
                 "end_date": "1869",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_elgin1868",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Elgin 1868 (NLS)",
@@ -56857,6 +57118,7 @@
                 "description": "Detailed town plan of Falkirk 1858-1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_falkirk1858_1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Falkirk 1858-1859 (NLS)",
@@ -56904,6 +57166,7 @@
                 "description": "Detailed town plan of Forfar 1860-1861, courtesy of National Library of Scotland.",
                 "end_date": "1862",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_forfar1860_1861",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Forfar 1860-1861 (NLS)",
@@ -56951,6 +57214,7 @@
                 "description": "Detailed town plan of Forres 1868, courtesy of National Library of Scotland.",
                 "end_date": "1869",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_forres1868",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Forres 1868 (NLS)",
@@ -56998,6 +57262,7 @@
                 "description": "Detailed town plan of Galashiels 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_galashiels1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Galashiels 1858 (NLS)",
@@ -57045,6 +57310,7 @@
                 "description": "Detailed town plan of Girvan 1857, courtesy of National Library of Scotland.",
                 "end_date": "1858",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_girvan1857",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Girvan 1857 (NLS)",
@@ -57092,6 +57358,7 @@
                 "description": "Detailed town plan of Glasgow 1857-1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_glasgow1857_1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Glasgow 1857-1858 (NLS)",
@@ -57139,6 +57406,7 @@
                 "description": "Detailed town plan of Glasgow 1892-1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_glasgow1892_1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Glasgow 1892-1894 (NLS)",
@@ -57186,6 +57454,7 @@
                 "description": "Detailed town plan of Greenock 1857, courtesy of National Library of Scotland.",
                 "end_date": "1858",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_greenock1857",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Greenock 1857 (NLS)",
@@ -57233,6 +57502,7 @@
                 "description": "Detailed town plan of Haddington 1853, courtesy of National Library of Scotland.",
                 "end_date": "1854",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_haddington1853",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Haddington 1853 (NLS)",
@@ -57280,6 +57550,7 @@
                 "description": "Detailed town plan of Haddington 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_haddington1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Haddington 1893 (NLS)",
@@ -57327,6 +57598,7 @@
                 "description": "Detailed town plan of Hamilton 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_hamilton1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Hamilton 1858 (NLS)",
@@ -57374,6 +57646,7 @@
                 "description": "Detailed town plan of Hawick 1857-1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_hawick1857_1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Hawick 1857-1858 (NLS)",
@@ -57421,6 +57694,7 @@
                 "description": "Detailed town plan of Inverness 1867-1868, courtesy of National Library of Scotland.",
                 "end_date": "1869",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_inverness1867_1868",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Inverness 1867-1868 (NLS)",
@@ -57468,6 +57742,7 @@
                 "description": "Detailed town plan of Irvine 1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_irvine1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Irvine 1859 (NLS)",
@@ -57515,6 +57790,7 @@
                 "description": "Detailed town plan of Jedburgh 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_jedburgh1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Jedburgh 1858 (NLS)",
@@ -57562,6 +57838,7 @@
                 "description": "Detailed town plan of Kelso 1857, courtesy of National Library of Scotland.",
                 "end_date": "1858",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kelso1857",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kelso 1857 (NLS)",
@@ -57609,6 +57886,7 @@
                 "description": "Detailed town plan of Kilmarnock 1857-1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kilmarnock1857_1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kilmarnock 1857-1859 (NLS)",
@@ -57656,6 +57934,7 @@
                 "description": "Detailed town plan of Kirkcaldy 1855, courtesy of National Library of Scotland.",
                 "end_date": "1856",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kirkcaldy1855",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kirkcaldy 1855 (NLS)",
@@ -57703,6 +57982,7 @@
                 "description": "Detailed town plan of Kirkcaldy 1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kirkcaldy1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kirkcaldy 1894 (NLS)",
@@ -57750,6 +58030,7 @@
                 "description": "Detailed town plan of Kirkcudbright 1850, courtesy of National Library of Scotland.",
                 "end_date": "1851",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kirkcudbright1850",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kirkcudbright 1850 (NLS)",
@@ -57797,6 +58078,7 @@
                 "description": "Detailed town plan of Kirkcudbright 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kirkcudbright1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kirkcudbright 1893 (NLS)",
@@ -57844,6 +58126,7 @@
                 "description": "Detailed town plan of Kirkintilloch 1859, courtesy of National Library of Scotland.",
                 "end_date": "1860",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kirkintilloch1859",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kirkintilloch 1859 (NLS)",
@@ -57891,6 +58174,7 @@
                 "description": "Detailed town plan of Kirriemuir 1861, courtesy of National Library of Scotland.",
                 "end_date": "1862",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_kirriemuir1861",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Kirriemuir 1861 (NLS)",
@@ -57938,6 +58222,7 @@
                 "description": "Detailed town plan of Lanark 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_lanark1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Lanark 1858 (NLS)",
@@ -57985,6 +58270,7 @@
                 "description": "Detailed town plan of Linlithgow 1856, courtesy of National Library of Scotland.",
                 "end_date": "1857",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_linlithgow1856",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Linlithgow 1856 (NLS)",
@@ -58032,6 +58318,7 @@
                 "description": "Detailed town plan of Mayole 1856-1857, courtesy of National Library of Scotland.",
                 "end_date": "1858",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_maybole1856_1857",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Mayole 1856-1857 (NLS)",
@@ -58079,6 +58366,7 @@
                 "description": "Detailed town plan of Montrose 1861-1862, courtesy of National Library of Scotland.",
                 "end_date": "1863",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_montrose1861_1862",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Montrose 1861-1862 (NLS)",
@@ -58126,6 +58414,7 @@
                 "description": "Detailed town plan of Musselburgh 1853, courtesy of National Library of Scotland.",
                 "end_date": "1854",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_musselburgh1853",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Musselburgh 1853 (NLS)",
@@ -58173,6 +58462,7 @@
                 "description": "Detailed town plan of Musselburgh 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_musselburgh1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Musselburgh 1893 (NLS)",
@@ -58220,6 +58510,7 @@
                 "description": "Detailed town plan of Nairn 1867-1868, courtesy of National Library of Scotland.",
                 "end_date": "1869",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_nairn1867_1868",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Nairn 1867-1868 (NLS)",
@@ -58267,6 +58558,7 @@
                 "description": "Detailed town plan of Oban 1867-1868, courtesy of National Library of Scotland.",
                 "end_date": "1869",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_oban1867_1868",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Oban 1867-1868 (NLS)",
@@ -58314,6 +58606,7 @@
                 "description": "Detailed town plan of Paisley 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_paisley1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Paisley 1858 (NLS)",
@@ -58361,6 +58654,7 @@
                 "description": "Detailed town plan of Peebles 1856, courtesy of National Library of Scotland.",
                 "end_date": "1857",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_peebles1856",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Peebles 1856 (NLS)",
@@ -58408,6 +58702,7 @@
                 "description": "Detailed town plan of Perth 1860, courtesy of National Library of Scotland.",
                 "end_date": "1861",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_perth1860",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Perth 1860 (NLS)",
@@ -58455,6 +58750,7 @@
                 "description": "Detailed town plan of Peterhead 1868, courtesy of National Library of Scotland.",
                 "end_date": "1869",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_peterhead1868",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Peterhead 1868 (NLS)",
@@ -58502,6 +58798,7 @@
                 "description": "Detailed town plan of Port Glasgow 1856-1857, courtesy of National Library of Scotland.",
                 "end_date": "1858",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_portglasgow1856_1857",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Port Glasgow 1856-1857 (NLS)",
@@ -58549,6 +58846,7 @@
                 "description": "Detailed town plan of Portobello 1893-1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_portobello1893_1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Portobello 1893-1894 (NLS)",
@@ -58596,6 +58894,7 @@
                 "description": "Detailed town plan of Rothesay 1862-1863, courtesy of National Library of Scotland.",
                 "end_date": "1864",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_rothesay1862_1863",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Rothesay 1862-1863 (NLS)",
@@ -58643,6 +58942,7 @@
                 "description": "Detailed town plan of Selkirk 1865, courtesy of National Library of Scotland.",
                 "end_date": "1866",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_selkirk1865",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Selkirk 1865 (NLS)",
@@ -58690,6 +58990,7 @@
                 "description": "Detailed town plan of St Andrews 1854, courtesy of National Library of Scotland.",
                 "end_date": "1855",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_standrews1854",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, St Andrews 1854 (NLS)",
@@ -58737,6 +59038,7 @@
                 "description": "Detailed town plan of St Andrews 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_standrews1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, St Andrews 1893 (NLS)",
@@ -58784,6 +59086,7 @@
                 "description": "Detailed town plan of Stirling 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_stirling1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Stirling 1858 (NLS)",
@@ -58831,6 +59134,7 @@
                 "description": "Detailed town plan of Stonehaven 1864, courtesy of National Library of Scotland.",
                 "end_date": "1865",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_stonehaven1864",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Stonehaven 1864 (NLS)",
@@ -58878,6 +59182,7 @@
                 "description": "Detailed town plan of Stranraer 1847, courtesy of National Library of Scotland.",
                 "end_date": "1848",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_stranraer1847",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Stranraer 1847 (NLS)",
@@ -58925,6 +59230,7 @@
                 "description": "Detailed town plan of Stranraer 1863-1877, courtesy of National Library of Scotland.",
                 "end_date": "1878",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_stranraer1867_1877",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Stranraer 1863-1877 (NLS)",
@@ -58972,6 +59278,7 @@
                 "description": "Detailed town plan of Stranraer 1893, courtesy of National Library of Scotland.",
                 "end_date": "1894",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_stranraer1893",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Stranraer 1893 (NLS)",
@@ -59019,6 +59326,7 @@
                 "description": "Detailed town plan of Strathaven 1858, courtesy of National Library of Scotland.",
                 "end_date": "1859",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_strathaven1858",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Strathaven 1858 (NLS)",
@@ -59066,6 +59374,7 @@
                 "description": "Detailed town plan of Wick 1872, courtesy of National Library of Scotland.",
                 "end_date": "1873",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_wick1872",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Wick 1872 (NLS)",
@@ -59113,6 +59422,7 @@
                 "description": "Detailed town plan of Wigtown 1848, courtesy of National Library of Scotland.",
                 "end_date": "1849",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_wigtown1848",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Wigtown 1848 (NLS)",
@@ -59160,6 +59470,7 @@
                 "description": "Detailed town plan of Wigtown 1894, courtesy of National Library of Scotland.",
                 "end_date": "1895",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "NLS_wigtown1894",
                 "max_zoom": 20,
                 "min_zoom": 13,
                 "name": "OS Town Plans, Wigtown 1894 (NLS)",
@@ -59199,6 +59510,7 @@
             },
             "properties": {
                 "country_code": "GB",
+                "id": "OS-historic-25k-OSM_Limited",
                 "max_zoom": 17,
                 "min_zoom": 6,
                 "name": "OS 1:25k historic (OSM)",
@@ -59237,6 +59549,7 @@
             },
             "properties": {
                 "country_code": "GB",
+                "id": "OS-New_Popular_Edition-historic",
                 "name": "OS New Popular Edition historic",
                 "type": "tms",
                 "url": "http://ooc.openstreetmap.org/npe/{zoom}/{x}/{y}.png"
@@ -59273,6 +59586,7 @@
             },
             "properties": {
                 "country_code": "GB",
+                "id": "OS-OpenData_Locator",
                 "name": "OS OpenData Locator",
                 "overlay": true,
                 "type": "tms",
@@ -60378,6 +60692,7 @@
             },
             "properties": {
                 "country_code": "GB",
+                "id": "OS-OpenData_StreetView",
                 "max_zoom": 18,
                 "min_zoom": 1,
                 "name": "OS OpenData StreetView",
@@ -60416,6 +60731,7 @@
             },
             "properties": {
                 "country_code": "GB",
+                "id": "OS-Scottish_Popular-historic",
                 "max_zoom": 15,
                 "min_zoom": 6,
                 "name": "OS Scottish Popular historic",
@@ -60911,6 +61227,7 @@
             "properties": {
                 "country_code": "GB",
                 "end_date": "2009",
+                "id": "Surrey-Air_Survey",
                 "max_zoom": 19,
                 "min_zoom": 8,
                 "name": "Surrey Air Survey",
@@ -61611,6 +61928,7 @@
                 "description": "Four districts of Budapest: III, XIII, XIV, XV",
                 "end_date": "2014-03-21",
                 "icon": "http://wiki.openstreetmap.org/w/images/c/cf/Hu_Interspect.png",
+                "id": "Interspect_Budapest_2014",
                 "license_url": "http://geoserver.infobex.hu/Budapest2014/IST/license.txt",
                 "max_zoom": 21,
                 "min_zoom": 10,
@@ -62635,6 +62953,7 @@
                     "EPSG:23700"
                 ],
                 "country_code": "HU",
+                "id": "Budapest_XII_2013",
                 "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
                 "name": "Budapest district XII ortophoto 2013",
                 "type": "wms",
@@ -62693,6 +63012,7 @@
                     "url": "http://fototerkep.hu/"
                 },
                 "country_code": "HU",
+                "id": "Duna_2013",
                 "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
                 "max_zoom": 20,
                 "min_zoom": 10,
@@ -65011,6 +65331,7 @@
                 "country_code": "HU",
                 "description": "Hungary",
                 "end_date": "2000",
+                "id": "FOMI_2000",
                 "license_url": "http://e.tile.openstreetmap.hu/ortofoto2000/license.txt",
                 "max_zoom": 17,
                 "name": "F\u00d6MI ortofot\u00f3 2000",
@@ -67329,6 +67650,7 @@
                 "country_code": "HU",
                 "description": "Hungary",
                 "end_date": "2005",
+                "id": "FOMI_2005",
                 "license_url": "http://e.tile.openstreetmap.hu/ortofoto2005/license.txt",
                 "max_zoom": 17,
                 "name": "F\u00d6MI ortofot\u00f3 2005",
@@ -67565,6 +67887,7 @@
                     "url": "http://www.geo.u-szeged.hu/"
                 },
                 "country_code": "HU",
+                "id": "Szeged_2011",
                 "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
                 "max_zoom": 22,
                 "min_zoom": 10,
@@ -68203,6 +68526,7 @@
                     "EPSG:3857"
                 ],
                 "country_code": "HU",
+                "id": "Torokbalint-ortophoto-2013",
                 "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
                 "name": "T\u00f6r\u00f6kb\u00e1lint ortophoto 2013",
                 "type": "wms",
@@ -68382,6 +68706,7 @@
                 },
                 "country_code": "IE",
                 "icon": "http://nls.tileserver.com/nls70-nq8.png",
+                "id": "bartholomew_qi1940",
                 "max_zoom": 13,
                 "min_zoom": 5,
                 "name": "Ireland Bartholomew Quarter-Inch 1940",
@@ -68851,6 +69176,7 @@
                 },
                 "country_code": "IE",
                 "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png",
+                "id": "IrelandEEACORINE2006",
                 "max_zoom": 16,
                 "min_zoom": 5,
                 "name": "Ireland EEA CORINE 2006",
@@ -70379,6 +70705,7 @@
                 },
                 "country_code": "IE",
                 "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png",
+                "id": "IrelandEEAGMESUrbanAtlas",
                 "max_zoom": 17,
                 "min_zoom": 5,
                 "name": "Ireland EEA GMES Urban Atlas",
@@ -70540,6 +70867,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "IT",
+                "id": "Lodi-Italy",
                 "name": "Lodi - Italy",
                 "type": "wms",
                 "url": "http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=Terraitaly%20Ortofoto%202007&STYLES=%2C%2C&FORMAT=image/png&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -70989,6 +71317,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "IT",
+                "id": "Lombardia-Italy-CTR",
                 "name": "Lombardia - Italy (CTR)",
                 "type": "wms",
                 "url": "http://www.cartografia.regione.lombardia.it/ArcGIS10/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -71438,6 +71767,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "IT",
+                "id": "Lombardia-Italy-CTR-DBT",
                 "name": "Lombardia - Italy (CTR DBT)",
                 "type": "wms",
                 "url": "http://www.cartografia.servizirl.it/arcgis/services/wms/ctr_wms/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=CTR_DBT&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -71451,6 +71781,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "IT",
+                "id": "PCN-Italy-2006",
                 "name": "PCN 2006 - Italy",
                 "type": "wms",
                 "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_06.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2006.33,OI.ORTOIMMAGINI.2006.32&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -71922,6 +72253,7 @@
                     "EPSG:4326"
                 ],
                 "country_code": "IT",
+                "id": "PCN-Lazio_Umbria-2008",
                 "name": "PCN 2008 - IT Lazio+Umbria",
                 "type": "wms",
                 "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_08.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2008.33&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -71937,6 +72269,7 @@
                     "EPSG:32633"
                 ],
                 "country_code": "IT",
+                "id": "Sicily-ATA2007",
                 "name": "Sicily - Italy",
                 "type": "wms",
                 "url": "http://map.sitr.regione.sicilia.it/ArcGIS/services/WGS84_F33/Ortofoto_ATA20072008_f33/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=default&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -75738,7 +76071,7 @@
                 ],
                 "country_code": "IT",
                 "description": "Orthophoto of South Tyrol from 2011 with up to 20cm resolution (larger valleys)",
-                "id": "South-Tyrol-Orthofoto2011",
+                "id": "South-Tyrol-Orthofoto2011-20cm",
                 "name": "South Tyrol Orthofoto 2011 (highres)",
                 "type": "wms",
                 "url": "http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=P_BZ_OF_2011_EPSG3857,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -79227,6 +79560,7 @@
                     "url": "http://www.geoportal.lt"
                 },
                 "country_code": "LT",
+                "id": "ORT10LT",
                 "max_zoom": 18,
                 "min_zoom": 1,
                 "name": "Lithuania - N\u017dT ORT10LT",
@@ -83898,6 +84232,7 @@
                     "text": "Piekrastes ortofoto, 2007, \u00a9 Latvijas vides aizsardz\u012bbas fonds"
                 },
                 "country_code": "LV",
+                "id": "Latvia-ortho-Coastline-20cm",
                 "name": "20cm ortho - Coastline",
                 "type": "wms",
                 "url": "http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=piekraste&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}"
@@ -83912,6 +84247,7 @@
                     "text": "Ortofoto 1:10000, 2007.-2008. gads, \u00a9 Latvijas \u0122eotelpisk\u0101s inform\u0101cijas a\u0123ent\u016bra"
                 },
                 "country_code": "LV",
+                "id": "Latvia-ortho-50cm",
                 "name": "50cm ortho - Latvia",
                 "type": "wms",
                 "url": "http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortobildes&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}"
@@ -83922,6 +84258,7 @@
             "geometry": null,
             "properties": {
                 "country_code": "LV",
+                "id": "USSR-Latvia",
                 "name": "USSR - Latvia",
                 "type": "wms",
                 "url": "http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&VERSION=1.1.1&service=WMS&REQUEST=GetMap&LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}"
@@ -84332,6 +84669,7 @@
                 "best": true,
                 "country_code": "PL",
                 "icon": "http://i.imgur.com/aFlvMpM.png",
+                "id": "Geoportal-PL-aerial_image",
                 "max_zoom": 24,
                 "min_zoom": 6,
                 "name": "Geoportal.gov.pl (Orthophotomap)",
@@ -84539,6 +84877,7 @@
                 },
                 "country_code": "SK",
                 "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png",
+                "id": "Freemap.sk-Car",
                 "max_zoom": 16,
                 "min_zoom": 8,
                 "name": "Freemap.sk Car",
@@ -84746,6 +85085,7 @@
                 },
                 "country_code": "SK",
                 "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png",
+                "id": "Freemap.sk-Cyclo",
                 "max_zoom": 16,
                 "min_zoom": 8,
                 "name": "Freemap.sk Cyclo",
@@ -84953,6 +85293,7 @@
                 },
                 "country_code": "SK",
                 "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png",
+                "id": "Freemap.sk-Hiking",
                 "max_zoom": 16,
                 "min_zoom": 8,
                 "name": "Freemap.sk Hiking",
@@ -85160,6 +85501,7 @@
                 },
                 "country_code": "SK",
                 "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png",
+                "id": "Freemap.sk-Ski",
                 "max_zoom": 16,
                 "min_zoom": 8,
                 "name": "Freemap.sk Ski",
@@ -85367,6 +85709,7 @@
                     "url": "http://wiki.freemap.sk/KatasterPortal"
                 },
                 "country_code": "SK",
+                "id": "KatastrlnamapaSlovenska-kapor-2010",
                 "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)",
                 "type": "tms",
                 "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg"
@@ -85572,6 +85915,7 @@
                     "url": "http://wiki.freemap.sk/KatasterPortal"
                 },
                 "country_code": "SK",
+                "id": "KatastrlnamapaSlovenska-kapor-2011",
                 "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2011-05)",
                 "type": "tms",
                 "url": "http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg"
@@ -85778,6 +86122,7 @@
                 },
                 "country_code": "SK",
                 "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png",
+                "id": "SlovakiaEEACORINE2006",
                 "name": "Slovakia EEA CORINE 2006",
                 "type": "tms",
                 "url": "http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png"
@@ -85984,6 +86329,7 @@
                 },
                 "country_code": "SK",
                 "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png",
+                "id": "SlovakiaEEAGMESUrbanAtlas",
                 "name": "Slovakia EEA GMES Urban Atlas",
                 "type": "tms",
                 "url": "http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png"
@@ -86020,6 +86366,7 @@
             },
             "properties": {
                 "country_code": "SK",
+                "id": "Slovakia-Historic-Maps",
                 "max_zoom": 12,
                 "name": "Slovakia Historic Maps",
                 "type": "tms",
@@ -86062,6 +86409,7 @@
                     "url": "http://maps.imagico.de/#osmim"
                 },
                 "best": true,
+                "country_code": "BV",
                 "description": "LC81800982013291LGN00, 2013-10-18, channels 234 (true color), For more accurate coastline and glacier mapping",
                 "end_date": "2013-10-18",
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
@@ -87110,6 +87458,7 @@
                 },
                 "country_code": "CA",
                 "end_date": "2013-06",
+                "id": "British_Columbia_Mosaic",
                 "max_zoom": 20,
                 "min_zoom": 9,
                 "name": "British Columbia Mosaic",
@@ -88125,9 +88474,10 @@
                     "EPSG:900913"
                 ],
                 "country_code": "CA",
+                "id": "Canvec",
                 "name": "Canvec",
                 "type": "wms",
-                "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj(EPSG:4326)}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}"
+                "url": "http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&SERVICE=wms&VERSION=1.1.1&EXCEPTIONS=application/vnd.ogc.se_inimage&SRS={proj}&FORMAT=image/png&transparent=true&layers=SCW-Toporama&WIDTH={width}&height={height}&BBOX={bbox}"
             },
             "type": "Feature"
         },
@@ -89137,9 +89487,10 @@
                     "EPSG:900913"
                 ],
                 "country_code": "CA",
+                "id": "Geobase_Hydrography",
                 "name": "Geobase Hydrography",
                 "type": "wms",
-                "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nhn:hydrography,nhn:network&WIDTH={width}&height={height}&BBOX={bbox}"
+                "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS={proj}&style=&format=image/png&transparent=true&layers=nhn:hydrography,nhn:network&WIDTH={width}&height={height}&BBOX={bbox}"
             },
             "type": "Feature"
         },
@@ -90149,9 +90500,10 @@
                     "EPSG:900913"
                 ],
                 "country_code": "CA",
+                "id": "Geobase_Roads",
                 "name": "Geobase Roads",
                 "type": "wms",
-                "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS=EPSG:4326&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}"
+                "url": "http://ows.geobase.ca/wms/geobase_en?service=wms&request=GetMap&version=1.1.1&SRS={proj}&style=&format=image/png&transparent=true&layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&WIDTH={width}&height={height}&BBOX={bbox}"
             },
             "type": "Feature"
         },
@@ -94351,6 +94703,7 @@
             },
             "properties": {
                 "country_code": "HT",
+                "id": "Haiti-Drone",
                 "name": "Imagerie Drone (Haiti)",
                 "type": "tms",
                 "url": "http://wms.openstreetmap.fr/tms/1.0.0/iomhaiti/{zoom}/{x}/{y}"
@@ -95242,6 +95595,7 @@
                     "USDA:ALBERS-AK"
                 ],
                 "country_code": "US",
+                "id": "MSR_Maps-Topo",
                 "name": "MSR Maps Topo",
                 "type": "wms",
                 "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=drg&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}"
@@ -96881,6 +97235,7 @@
                     "USDA:ALBERS-AK"
                 ],
                 "country_code": "US",
+                "id": "MSR_Maps-Urban",
                 "name": "MSR Maps Urban",
                 "type": "wms",
                 "url": "http://msrmaps.com/ogcmap.ashx?version=1.1.1&request=GetMap&Layers=urbanarea&styles=&format=image/jpeg&srs={proj}&width={width}&height={height}&bbox={bbox}"
@@ -97370,6 +97725,7 @@
             "properties": {
                 "country_code": "US",
                 "icon": "data:image/png;base64,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",
+                "id": "OSM-US-TIGER-Roads_Overlay-2012",
                 "max_zoom": 19,
                 "min_zoom": 16,
                 "name": "TIGER 2012 Roads Overlay",
@@ -97863,6 +98219,7 @@
                 "country_code": "US",
                 "description": "At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap",
                 "icon": "data:image/png;base64,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",
+                "id": "New_and_Misaligned_TIGER_Roads-2013",
                 "max_zoom": 22,
                 "name": "New & Misaligned TIGER Roads",
                 "overlay": true,
@@ -98353,6 +98710,7 @@
             },
             "properties": {
                 "country_code": "US",
+                "id": "US_Forest_Service_roads",
                 "max_zoom": 19,
                 "name": "U.S. Forest Service roads",
                 "type": "tms",
@@ -102542,6 +102900,7 @@
             },
             "properties": {
                 "country_code": "US",
+                "id": "USGS-Large_Scale",
                 "max_zoom": 20,
                 "min_zoom": 12,
                 "name": "USGS Large Scale Imagery",
@@ -103330,6 +103689,7 @@
             },
             "properties": {
                 "country_code": "US",
+                "id": "USGS-Scanned_Topographic",
                 "name": "USGS Topographic Maps",
                 "type": "tms",
                 "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png"
@@ -103611,6 +103971,7 @@
                 "country_code": "US",
                 "description": "Six Inch resolution aerial imagery for the State of Maryland",
                 "end_date": "2014",
+                "id": "geodata.md.gov-MD_SixInchImagery",
                 "max_zoom": 20,
                 "name": "MD 2014 6 Inch Aerial Imagery",
                 "start_date": "2013",
@@ -104198,6 +104559,7 @@
                 ],
                 "country_code": "US",
                 "description": "Most recent true color imagery for the state of North Carolina. The imagery has a pixel resolution of 6 inches and is comprised of imagery flown in 2010, 2012, 2013, and 2014",
+                "id": "NC-US",
                 "name": "NC Latest Orthoimagery",
                 "type": "wms",
                 "url": "http://services.nconemap.com/arcgis/services/Imagery/Orthoimagery_Latest/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthoimagery_Latest&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -104693,6 +105055,7 @@
                 "country_code": "US",
                 "description": "Digital orthophotography of New Jersey, Near Infrared, 1 foot resolution",
                 "end_date": "2015-05-03",
+                "id": "geodata.state.nj.us-Infrared2015",
                 "max_zoom": 20,
                 "name": "NJ 2015 Aerial Imagery (Infrared)",
                 "start_date": "2015-03-29",
@@ -105190,6 +105553,7 @@
                 "country_code": "US",
                 "description": "Digital orthophotography of New Jersey, Natural Color, 1 foot resolution",
                 "end_date": "2015-05-03",
+                "id": "geodata.state.nj.us-Natural2015",
                 "max_zoom": 20,
                 "name": "NJ 2015 Aerial Imagery (Natural Color)",
                 "start_date": "2015-03-29",
@@ -105469,6 +105833,7 @@
                 "country_code": "US",
                 "description": "Public domain aerial imagery taken in May/June 2013 from San Juan County, WA. Resolution is 9 inch.",
                 "end_date": "2013-06",
+                "id": "sjcgis.org-Aerials_2013_WM",
                 "max_zoom": 19,
                 "name": "2013 aerial imagery for San Juan County WA",
                 "start_date": "2013-05",
@@ -105533,6 +105898,7 @@
                 "best": true,
                 "country_code": "US",
                 "description": "Public domain street and address data from the San Juan County, WA. Updated at least quarterly.",
+                "id": "sjcgis.org-General_Basemap_WM",
                 "max_zoom": 19,
                 "name": "Vector Streetmap for San Juan County WA",
                 "type": "tms",
@@ -105571,6 +105937,7 @@
             "properties": {
                 "country_code": "BR",
                 "description": "Addresses data from IBGE",
+                "id": "IBGE_DF_Addresses",
                 "max_zoom": 19,
                 "name": "IBGE Distrito Federal",
                 "overlay": true,
@@ -106213,6 +106580,7 @@
             },
             "properties": {
                 "country_code": "BR",
+                "id": "IBGE_Setores_Rurais",
                 "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer",
                 "max_zoom": 14,
                 "name": "IBGE Mapa de Setores Rurais",
@@ -106855,6 +107223,7 @@
             },
             "properties": {
                 "country_code": "BR",
+                "id": "IBGE_Setores_Urbanos",
                 "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer",
                 "max_zoom": 19,
                 "name": "IBGE Mapa de Setores Urbanos",
@@ -107397,6 +107766,8 @@
                     "text": "\u00a9 OpenStreetMap contributors",
                     "url": "https://www.openstreetmap.org/copyright"
                 },
+                "icon": "http://hikebikemap.org/hikebike16x16.png",
+                "id": "hike_n_bike",
                 "max_zoom": 18,
                 "name": "Hike & Bike",
                 "type": "tms",
@@ -107423,6 +107794,7 @@
                     "EPSG:32636",
                     "EPSG:32635"
                 ],
+                "id": "landsat",
                 "name": "Landsat",
                 "type": "wms",
                 "url": "http://irs.gis-lab.info/?layers=landsat&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -107439,6 +107811,7 @@
                 },
                 "default": true,
                 "description": "Shows major features to help orient you.",
+                "id": "mapbox_locator_overlay",
                 "max_zoom": 16,
                 "name": "Locator Overlay",
                 "overlay": true,
@@ -107473,6 +107846,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Addresses",
                 "max_zoom": 18,
                 "name": "OSM Inspector: Addresses",
                 "overlay": true,
@@ -107489,6 +107863,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Geometry",
                 "max_zoom": 18,
                 "name": "OSM Inspector: Geometry",
                 "overlay": true,
@@ -107505,6 +107880,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Highways",
                 "max_zoom": 18,
                 "name": "OSM Inspector: Highways",
                 "overlay": true,
@@ -107521,6 +107897,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Multipolygon",
                 "max_zoom": 19,
                 "min_zoom": 8,
                 "name": "OSM Inspector: Area",
@@ -107538,6 +107915,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Places",
                 "max_zoom": 18,
                 "name": "OSM Inspector: Places",
                 "overlay": true,
@@ -107554,6 +107932,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Routing",
                 "max_zoom": 18,
                 "name": "OSM Inspector: Routing",
                 "overlay": true,
@@ -107570,6 +107949,7 @@
                     "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://tools.geofabrik.de/osmi/"
                 },
+                "id": "OSM_Inspector-Tagging",
                 "max_zoom": 18,
                 "name": "OSM Inspector: Tagging",
                 "overlay": true,
@@ -107586,6 +107966,7 @@
                     "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://openstreetmap.org/"
                 },
+                "id": "openpt_map",
                 "max_zoom": 17,
                 "min_zoom": 4,
                 "name": "OpenPT Map (overlay)",
@@ -107605,6 +107986,7 @@
                     "url": "http://www.openstreetmap.org/copyright"
                 },
                 "description": "Public GPS traces uploaded to OpenStreetMap.",
+                "id": "osm-gps",
                 "max_zoom": 20,
                 "name": "OpenStreetMap GPS traces",
                 "overlay": true,
@@ -107621,6 +108003,7 @@
                     "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
                     "url": "http://openstreetmap.org/"
                 },
+                "id": "osm-mapnik-german_style",
                 "max_zoom": 18,
                 "name": "OpenStreetMap (German Style)",
                 "type": "tms",
@@ -107656,6 +108039,7 @@
                 },
                 "default": true,
                 "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAADJElEQVR4Xo2SS2hcZRSAv/+//70zkzszeU+okVqaaGLjI0akTRGl3ehGdCEiutO6c6PgwoWCSMUXdRFaCurGTRGVUtqNraKmTDA1KtIQzat3TKczSW0mznTuzNznL1zoxo1+q3PgwPnOA8cufVU647y+PnYps6Wq9lbfxvTiqdnzs+/PH7re/bY6nV7tqT5UmanOkUDJcN5w9BW9phcuXDtW/bqy7ejfdVH/qhd0cfXsO9998VN5Xq/qTffaAwACnGl9VvcHePSiaOMidSzWdb+wsRG0CLmhc8E9r/YcbyNgqZA6w4E6ETksoI3gIofIYCCT3KPD39z49OkjIGHf9aikyWFyE4EgzwoHyJFBoQmxsAmQyH1TAyABrMDCJIvCI2Ibk24kYGCTIwXksbD3P3sYDCjtMV8xhsACJHXK5BjCRBMQ0CbAxUdpQ27Xrp5XYI7oEYgQ+IBHjKBDkOiZSJqESGLSZMYOWrJEPK67NDEtIhpoTAQxMRDSpE4H0AgUSkhkaPmTAaGGJiYWWSxCOmgU0CaEpI9Bmmj1+0AthnvXMwRCEBPSh4ekSh8dBNBFAChSZESD8i9LsXxKr/wRNWWy/XTi2sO3rBGjk2lMUqSTLa3+eHJuzJIwX/bLApOYiE4y/F18xNUkInG3iFjxi5/vVJSU6FMld9NHYLCDxqPKEoqPuUQjubLLNgtsmIcnXB1HCso1qyYJiMmzwSdY9PIww2zRhUEOjYsgJ8zhXtnyFXzT218IscizzHHcROsxdhPzFzdxsBDkGYjW13bcQqhgdCS+s0MWhxPUCTCZIotAspeYCgoPqZve5SKtZSQ0RrwhmyvMUMFF8TjTFPBJ4REyiEaAiN2jP6BBzqjOhMEi7+HQIstzyada9BFqQ9u4eFpphe+wCaAMM9q1HB41POGzixe4H7d18cJAauJgd75JiIkpDOq1y1+SAAa3vXvkrcZ4PFZ7bf3k7Itvsp9hbufBl14+fe7nP8/NfXDi0ee5l25uUUTc8eFnT/42esx+gmEMbiGxGUyO/G+mcnseue+ZycmpDP+PAneb4+lRA2D3f9T+A2BEVdbaZSWbAAAAAElFTkSuQmCC",
+                "id": "osm-mapnik-black_and_white",
                 "max_zoom": 18,
                 "name": "OpenStreetMap (Standard Black & White)",
                 "type": "tms",
@@ -107671,6 +108055,7 @@
                     "text": "Simon Poole, Data \u00a9OpenStreetMap contributors",
                     "url": "http://qa.poole.ch/"
                 },
+                "id": "qa_no_address",
                 "max_zoom": 18,
                 "name": "QA No Address",
                 "overlay": true,
@@ -107688,6 +108073,7 @@
                     "url": "http://maps.skobbler.com"
                 },
                 "icon": "http://www.skobbler.com/images/skobbler_logo_josm.png",
+                "id": "skobbler",
                 "max_zoom": 18,
                 "min_zoom": 1,
                 "name": "skobbler",
@@ -107704,6 +108090,7 @@
                     "text": "Map tiles by Stamen Design, under CC BY 3.0",
                     "url": "http://maps.stamen.com/#terrain"
                 },
+                "id": "stamen-terrain-background",
                 "max_zoom": 18,
                 "min_zoom": 4,
                 "name": "Stamen Terrain",
@@ -107720,6 +108107,7 @@
                     "text": "Maps \u00a9 Thunderforest, Data \u00a9 OpenStreetMap contributors",
                     "url": "http://www.thunderforest.com/terms/"
                 },
+                "id": "tf-landscape",
                 "max_zoom": 22,
                 "name": "Thunderforest Landscape",
                 "type": "tms",
@@ -107735,6 +108123,7 @@
                     "text": "Maps \u00a9 Thunderforest, Data \u00a9 OpenStreetMap contributors",
                     "url": "http://www.thunderforest.com/terms/"
                 },
+                "id": "tf-cycle",
                 "max_zoom": 22,
                 "name": "Thunderforest OpenCycleMap",
                 "type": "tms",
@@ -107750,6 +108139,7 @@
                     "text": "\u00a9 Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
                     "url": "http://cycling.waymarkedtrails.org/en/help/legal"
                 },
+                "id": "Waymarked_Trails-Cycling",
                 "max_zoom": 17,
                 "name": "Waymarked Trails: Cycling",
                 "overlay": true,
@@ -107766,6 +108156,7 @@
                     "text": "\u00a9 Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
                     "url": "http://hiking.waymarkedtrails.org/en/help/legal"
                 },
+                "id": "Waymarked_Trails-Hiking",
                 "max_zoom": 17,
                 "name": "Waymarked Trails: Hiking",
                 "overlay": true,
@@ -107782,6 +108173,7 @@
                     "text": "\u00a9 Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
                     "url": "http://mtb.waymarkedtrails.org/en/help/legal"
                 },
+                "id": "Waymarked_Trails-MTB",
                 "max_zoom": 17,
                 "name": "Waymarked Trails: MTB",
                 "overlay": true,
@@ -107798,6 +108190,7 @@
                     "text": "\u00a9 Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
                     "url": "http://skating.waymarkedtrails.org/en/help/legal"
                 },
+                "id": "Waymarked_Trails-Skating",
                 "max_zoom": 17,
                 "name": "Waymarked Trails: Skating",
                 "overlay": true,
@@ -107814,6 +108207,7 @@
                     "text": "\u00a9 Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
                     "url": "http://slopemap.waymarkedtrails.org/en/help/legal"
                 },
+                "id": "Waymarked_Trails-Winter_Sports",
                 "max_zoom": 17,
                 "name": "Waymarked Trails: Winter Sports",
                 "overlay": true,

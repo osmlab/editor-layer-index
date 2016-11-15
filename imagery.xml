@@ -1,8 +1,10 @@
 <imagery>
   <entry>
     <name>Benin: Cotonou Pleiade 2016</name>
+    <id>Benin_cotonou_pleiade_2016</id>
     <type>tms</type>
     <url>http://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=Benin:cotonou_pleiade_2016&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=EPSG:3857&amp;tileMatrix=EPSG:3857:{zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <best />
     <country-code>BJ</country-code>
     <bounds max-lat="6.562112" max-lon="2.653665" min-lat="6.246972" min-lon="1.69563">
       <shape>
@@ -149,7 +151,28 @@
     </bounds>
   </entry>
   <entry>
+    <name>imagico.de OSM images for mapping: Cotonou</name>
+    <id>osmim-imagicode-S2A_R022_N06_20151221T103009</id>
+    <type>tms</type>
+    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
+    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
+    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>BJ</country-code>
+    <max-zoom>14</max-zoom>
+    <bounds max-lat="7.114272" max-lon="2.549419" min-lat="6.257762" min-lon="1.83975">
+      <shape>
+        <point lat="6.257762" lon="1.83975" />
+        <point lat="7.114272" lon="1.83975" />
+        <point lat="7.114272" lon="2.549419" />
+        <point lat="6.257762" lon="2.549419" />
+        <point lat="6.257762" lon="1.83975" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>imagico.de OSM images for mapping: Fogo, Cape Verde</name>
+    <id>osmim-imagicode-LC82100502015347LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -168,25 +191,8 @@
     </bounds>
   </entry>
   <entry>
-    <name>imagico.de OSM images for mapping: Cotonou</name>
-    <type>tms</type>
-    <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
-    <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
-    <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
-    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
-    <max-zoom>14</max-zoom>
-    <bounds max-lat="7.114272" max-lon="2.549419" min-lat="6.257762" min-lon="1.83975">
-      <shape>
-        <point lat="6.257762" lon="1.83975" />
-        <point lat="7.114272" lon="1.83975" />
-        <point lat="7.114272" lon="2.549419" />
-        <point lat="6.257762" lon="2.549419" />
-        <point lat="6.257762" lon="1.83975" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
     <name>imagico.de OSM images for mapping: Rwenzori Mountains</name>
+    <id>osmim-imagicode-LC81730602015040LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81730602015040LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -206,6 +212,7 @@
   </entry>
   <entry>
     <name>South Africa CD:NGI Aerial</name>
+    <id>South_Africa-CD_NGI-Aerial</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg</url>
     <best />
@@ -514,7 +521,220 @@
     </bounds>
   </entry>
   <entry>
+    <name>City of Cape Town 2013 Aerial</name>
+    <id>South_Africa-CapeTown-Aerial-2013</id>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg</url>
+    <attribution-text mandatory="true">City of Cape Town Aerial - OPENSTREETMAP USE ONLY</attribution-text>
+    <attribution-url>https://www.capetown.gov.za</attribution-url>
+    <country-code>ZA</country-code>
+    <min-zoom>1</min-zoom>
+    <max-zoom>21</max-zoom>
+    <bounds max-lat="-33.469885" max-lon="19.010837" min-lat="-34.362617" min-lon="18.296071">
+      <shape>
+        <point lat="-33.893623" lon="18.448656" />
+        <point lat="-33.902644" lon="18.448587" />
+        <point lat="-33.902766" lon="18.4702" />
+        <point lat="-33.847238" lon="18.48139" />
+        <point lat="-33.801069" lon="18.449247" />
+        <point lat="-33.735641" lon="18.428154" />
+        <point lat="-33.717723" lon="18.43914" />
+        <point lat="-33.658992" lon="18.40719" />
+        <point lat="-33.577519" lon="18.332238" />
+        <point lat="-33.550449" lon="18.332452" />
+        <point lat="-33.550592" lon="18.353996" />
+        <point lat="-33.523603" lon="18.354253" />
+        <point lat="-33.523656" lon="18.36524" />
+        <point lat="-33.514801" lon="18.365025" />
+        <point lat="-33.514765" lon="18.376012" />
+        <point lat="-33.505802" lon="18.376054" />
+        <point lat="-33.505945" lon="18.429656" />
+        <point lat="-33.487854" lon="18.429699" />
+        <point lat="-33.48789" lon="18.440492" />
+        <point lat="-33.469885" lon="18.440599" />
+        <point lat="-33.4701" lon="18.494372" />
+        <point lat="-33.479156" lon="18.494329" />
+        <point lat="-33.479174" lon="18.51583" />
+        <point lat="-33.488194" lon="18.515744" />
+        <point lat="-33.488301" lon="18.526473" />
+        <point lat="-33.524354" lon="18.526322" />
+        <point lat="-33.524425" lon="18.54793" />
+        <point lat="-33.515391" lon="18.547952" />
+        <point lat="-33.515499" lon="18.569367" />
+        <point lat="-33.524479" lon="18.569367" />
+        <point lat="-33.524533" lon="18.580117" />
+        <point lat="-33.542598" lon="18.580074" />
+        <point lat="-33.542598" lon="18.590781" />
+        <point lat="-33.560641" lon="18.590739" />
+        <point lat="-33.560534" lon="18.579945" />
+        <point lat="-33.569617" lon="18.579881" />
+        <point lat="-33.569617" lon="18.590696" />
+        <point lat="-33.578681" lon="18.590653" />
+        <point lat="-33.578735" lon="18.623011" />
+        <point lat="-33.587726" lon="18.622925" />
+        <point lat="-33.587887" lon="18.665969" />
+        <point lat="-33.614928" lon="18.665926" />
+        <point lat="-33.614973" lon="18.676719" />
+        <point lat="-33.651028" lon="18.676577" />
+        <point lat="-33.651017" lon="18.687298" />
+        <point lat="-33.660036" lon="18.687341" />
+        <point lat="-33.66009" lon="18.69807" />
+        <point lat="-33.669073" lon="18.69807" />
+        <point lat="-33.669252" lon="18.752036" />
+        <point lat="-33.642192" lon="18.752079" />
+        <point lat="-33.642246" lon="18.773644" />
+        <point lat="-33.633189" lon="18.773708" />
+        <point lat="-33.633296" lon="18.827459" />
+        <point lat="-33.660304" lon="18.827524" />
+        <point lat="-33.660287" lon="18.816666" />
+        <point lat="-33.678323" lon="18.816602" />
+        <point lat="-33.678306" lon="18.805809" />
+        <point lat="-33.705389" lon="18.805809" />
+        <point lat="-33.705443" lon="18.827395" />
+        <point lat="-33.72347" lon="18.827331" />
+        <point lat="-33.723434" lon="18.838124" />
+        <point lat="-33.741386" lon="18.838038" />
+        <point lat="-33.741369" lon="18.816516" />
+        <point lat="-33.795506" lon="18.816366" />
+        <point lat="-33.795506" lon="18.805594" />
+        <point lat="-33.813567" lon="18.805508" />
+        <point lat="-33.81355" lon="18.794758" />
+        <point lat="-33.831536" lon="18.794715" />
+        <point lat="-33.831519" lon="18.773107" />
+        <point lat="-33.840519" lon="18.773129" />
+        <point lat="-33.840519" lon="18.762357" />
+        <point lat="-33.903588" lon="18.762271" />
+        <point lat="-33.903517" lon="18.751456" />
+        <point lat="-33.984782" lon="18.751081" />
+        <point lat="-33.9848" lon="18.761906" />
+        <point lat="-34.029879" lon="18.761778" />
+        <point lat="-34.029896" lon="18.772603" />
+        <point lat="-34.038907" lon="18.772582" />
+        <point lat="-34.038941" lon="18.794034" />
+        <point lat="-34.040699" lon="18.793876" />
+        <point lat="-34.041185" lon="18.798446" />
+        <point lat="-34.041179" lon="18.803245" />
+        <point lat="-34.038921" lon="18.803406" />
+        <point lat="-34.038974" lon="18.815937" />
+        <point lat="-34.029932" lon="18.816344" />
+        <point lat="-34.031648" lon="18.837985" />
+        <point lat="-34.030003" lon="18.838001" />
+        <point lat="-34.030007" lon="18.848418" />
+        <point lat="-34.021849" lon="18.848467" />
+        <point lat="-34.023468" lon="18.859925" />
+        <point lat="-34.021013" lon="18.859861" />
+        <point lat="-34.02208" lon="18.868272" />
+        <point lat="-34.021173" lon="18.868186" />
+        <point lat="-34.023432" lon="18.88546" />
+        <point lat="-34.021316" lon="18.885181" />
+        <point lat="-34.021031" lon="18.902518" />
+        <point lat="-34.011996" lon="18.902583" />
+        <point lat="-34.011996" lon="18.913419" />
+        <point lat="-33.993958" lon="18.913483" />
+        <point lat="-33.994029" lon="18.945884" />
+        <point lat="-34.003102" lon="18.945863" />
+        <point lat="-34.002995" lon="18.967428" />
+        <point lat="-34.012085" lon="18.967471" />
+        <point lat="-34.012085" lon="18.978221" />
+        <point lat="-34.021138" lon="18.978328" />
+        <point lat="-34.021138" lon="18.989143" />
+        <point lat="-34.039134" lon="18.989165" />
+        <point lat="-34.039125" lon="19.000017" />
+        <point lat="-34.05718" lon="19.000022" />
+        <point lat="-34.057251" lon="19.010837" />
+        <point lat="-34.084144" lon="19.010794" />
+        <point lat="-34.084126" lon="19.000001" />
+        <point lat="-34.093198" lon="19.000022" />
+        <point lat="-34.093171" lon="18.989154" />
+        <point lat="-34.102198" lon="18.989175" />
+        <point lat="-34.10218" lon="18.978318" />
+        <point lat="-34.111232" lon="18.978318" />
+        <point lat="-34.111214" lon="18.967503" />
+        <point lat="-34.129254" lon="18.967492" />
+        <point lat="-34.129236" lon="18.956602" />
+        <point lat="-34.138241" lon="18.95656" />
+        <point lat="-34.138312" lon="18.967417" />
+        <point lat="-34.147316" lon="18.967417" />
+        <point lat="-34.147298" lon="18.989175" />
+        <point lat="-34.165303" lon="18.989175" />
+        <point lat="-34.165285" lon="18.978275" />
+        <point lat="-34.174286" lon="18.978318" />
+        <point lat="-34.174268" lon="18.967417" />
+        <point lat="-34.183304" lon="18.96746" />
+        <point lat="-34.183322" lon="18.95656" />
+        <point lat="-34.192357" lon="18.95656" />
+        <point lat="-34.192321" lon="18.945745" />
+        <point lat="-34.201319" lon="18.945702" />
+        <point lat="-34.201372" lon="18.934866" />
+        <point lat="-34.21933" lon="18.934887" />
+        <point lat="-34.219348" lon="18.902358" />
+        <point lat="-34.236256" lon="18.901757" />
+        <point lat="-34.237347" lon="18.887841" />
+        <point lat="-34.255412" lon="18.889419" />
+        <point lat="-34.255341" lon="18.880589" />
+        <point lat="-34.264435" lon="18.879274" />
+        <point lat="-34.264413" lon="18.869688" />
+        <point lat="-34.273439" lon="18.86971" />
+        <point lat="-34.273421" lon="18.837137" />
+        <point lat="-34.264377" lon="18.837115" />
+        <point lat="-34.264404" lon="18.848016" />
+        <point lat="-34.237391" lon="18.848027" />
+        <point lat="-34.210281" lon="18.815486" />
+        <point lat="-34.174126" lon="18.815647" />
+        <point lat="-34.156274" lon="18.854882" />
+        <point lat="-34.084055" lon="18.761756" />
+        <point lat="-34.077479" lon="18.653373" />
+        <point lat="-34.110122" lon="18.479743" />
+        <point lat="-34.134227" lon="18.446371" />
+        <point lat="-34.164087" lon="18.444451" />
+        <point lat="-34.164051" lon="18.435997" />
+        <point lat="-34.182017" lon="18.435975" />
+        <point lat="-34.182106" lon="18.446811" />
+        <point lat="-34.191105" lon="18.446725" />
+        <point lat="-34.191212" lon="18.46593" />
+        <point lat="-34.245391" lon="18.486615" />
+        <point lat="-34.254366" lon="18.47889" />
+        <point lat="-34.254375" lon="18.486004" />
+        <point lat="-34.299412" lon="18.467711" />
+        <point lat="-34.344579" lon="18.489222" />
+        <point lat="-34.344584" lon="18.500112" />
+        <point lat="-34.362617" lon="18.499919" />
+        <point lat="-34.362511" lon="18.467432" />
+        <point lat="-34.353495" lon="18.467368" />
+        <point lat="-34.317065" lon="18.3916" />
+        <point lat="-34.290016" lon="18.391772" />
+        <point lat="-34.280868" lon="18.370164" />
+        <point lat="-34.217887" lon="18.370682" />
+        <point lat="-34.181618" lon="18.349232" />
+        <point lat="-34.181494" lon="18.327474" />
+        <point lat="-34.163457" lon="18.327667" />
+        <point lat="-34.154383" lon="18.311875" />
+        <point lat="-34.143533" lon="18.311402" />
+        <point lat="-34.134689" lon="18.323666" />
+        <point lat="-34.104205" lon="18.34993" />
+        <point lat="-34.088284" lon="18.339319" />
+        <point lat="-34.059722" lon="18.361249" />
+        <point lat="-34.055384" lon="18.355047" />
+        <point lat="-34.064326" lon="18.342752" />
+        <point lat="-34.064433" lon="18.319996" />
+        <point lat="-34.045126" lon="18.296071" />
+        <point lat="-34.025264" lon="18.306821" />
+        <point lat="-34.019199" lon="18.328772" />
+        <point lat="-34.001252" lon="18.328923" />
+        <point lat="-34.00127" lon="18.339737" />
+        <point lat="-33.986628" lon="18.339802" />
+        <point lat="-33.973515" lon="18.362869" />
+        <point lat="-33.929247" lon="18.363813" />
+        <point lat="-33.929274" lon="18.372621" />
+        <point lat="-33.917763" lon="18.372836" />
+        <point lat="-33.893347" lon="18.397727" />
+        <point lat="-33.893623" lon="18.448656" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>City of Cape Town 2015 Aerial</name>
+    <id>South_Africa-CapeTown-Aerial</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg</url>
     <best />
@@ -727,6 +947,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Southern Transantarctic Mountains</name>
+    <id>osmim-imagicode-LC80281222016035LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -746,6 +967,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Pensacola Mountains</name>
+    <id>osmim-imagicode-LC81511242016033LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -765,6 +987,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Elephant Island/Clarence Island</name>
+    <id>osmim-imagicode-S2A_R009_S61_20160109</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R009_S61_20160109&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -784,6 +1007,7 @@
   </entry>
   <entry>
     <name>Cambodia, Laos, Thailand, Vietnam, Myanmar bilingual</name>
+    <id>osm-cambodia_laos_thailand_vietnam-bilingual</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.osm-tools.org/osm_then/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; osm-tools.org &amp; OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -832,6 +1056,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Southeastern Sulawesi</name>
+    <id>osmim-imagicode-LC81130622013270LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -851,6 +1076,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Bakun Reservoir</name>
+    <id>osmim-imagicode-LC81190582014075LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81190582014075LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -870,6 +1096,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Batam</name>
+    <id>osmim-imagicode-LC81250592016107LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81250592016107LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -889,6 +1116,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Rann of Kutch</name>
+    <id>osmim-imagicode-LC81510432015030LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81510432015030LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -908,6 +1136,7 @@
   </entry>
   <entry>
     <name>Japan GSI ortho Imagery</name>
+    <id>gsi.go.jp</id>
     <type>tms</type>
     <url>http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg</url>
     <country-code>JP</country-code>
@@ -942,6 +1171,7 @@
   </entry>
   <entry>
     <name>Pangasin&#225;n/Bulacan (Phillipines HiRes)</name>
+    <id>Pangasinan_Bulacan_HiRes</id>
     <type>tms</type>
     <url>http://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png</url>
     <country-code>PH</country-code>
@@ -971,6 +1201,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Western Karakoram</name>
+    <id>osmim-imagicode-LC81490352013282LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81490352013282LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -990,6 +1221,7 @@
   </entry>
   <entry>
     <name>ScanEx IRS</name>
+    <id>ScanEx-IRS</id>
     <type>scanex</type>
     <url>IRS</url>
     <attribution-text mandatory="true">IRS</attribution-text>
@@ -998,6 +1230,7 @@
   </entry>
   <entry>
     <name>ScanEx SPOT</name>
+    <id>ScanEx-SPOT</id>
     <type>scanex</type>
     <url>SPOT</url>
     <attribution-text mandatory="true">IRS</attribution-text>
@@ -1006,6 +1239,7 @@
   </entry>
   <entry>
     <name>AGRI black-and-white 2.5m</name>
+    <id>AGRI-black_and_white-2.5m</id>
     <type>tms</type>
     <url>http://agri.openstreetmap.org/{zoom}/{x}/{y}.png</url>
     <attribution-text>AGRI</attribution-text>
@@ -1071,6 +1305,7 @@
   </entry>
   <entry>
     <name>LPI NSW Administrative Boundaries County</name>
+    <id>LPI_NSW_Administrative_Boundaries_County</id>
     <type>wms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;CRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;LAYERS=County&amp;STYLES=&amp;FORMAT=image/png32&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi:96&amp;TRANSPARENT=TRUE</url>
     <projections>
@@ -1127,6 +1362,7 @@
   </entry>
   <entry>
     <name>LPI NSW Administrative Boundaries LGA</name>
+    <id>LPI_NSW_Administrative_Boundaries_LGA</id>
     <type>wms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;CRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;LAYERS=LocalGovernmentArea&amp;STYLES=&amp;FORMAT=image/png32&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi:96&amp;TRANSPARENT=TRUE</url>
     <projections>
@@ -1183,6 +1419,7 @@
   </entry>
   <entry>
     <name>LPI NSW Administrative Boundaries NPWS Reserve</name>
+    <id>LPI_NSW_Administrative_Boundaries_NPWS_Reserve</id>
     <type>wms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;CRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;LAYERS=NPWSReserve&amp;STYLES=&amp;FORMAT=image/png32&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi:96&amp;TRANSPARENT=TRUE</url>
     <projections>
@@ -1239,6 +1476,7 @@
   </entry>
   <entry>
     <name>LPI NSW Administrative Boundaries Parish</name>
+    <id>LPI_NSW_Administrative_Boundaries_Parish</id>
     <type>wms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;CRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;LAYERS=Parish&amp;STYLES=&amp;FORMAT=image/png32&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi:96&amp;TRANSPARENT=TRUE</url>
     <projections>
@@ -1295,6 +1533,7 @@
   </entry>
   <entry>
     <name>LPI NSW Administrative Boundaries State Forest</name>
+    <id>LPI_NSW_Administrative_Boundaries_StateForest</id>
     <type>wms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;CRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;LAYERS=StateForest&amp;STYLES=&amp;FORMAT=image/png32&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi:96&amp;TRANSPARENT=TRUE</url>
     <projections>
@@ -1351,6 +1590,7 @@
   </entry>
   <entry>
     <name>LPI NSW Administrative Boundaries Suburb</name>
+    <id>LPI_NSW_Administrative_Boundaries_Suburb</id>
     <type>wms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;CRS={proj}&amp;BBOX={bbox}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;LAYERS=Suburb&amp;STYLES=&amp;FORMAT=image/png32&amp;DPI=96&amp;MAP_RESOLUTION=96&amp;FORMAT_OPTIONS=dpi:96&amp;TRANSPARENT=TRUE</url>
     <projections>
@@ -1407,6 +1647,7 @@
   </entry>
   <entry>
     <name>LPI NSW Base Map</name>
+    <id>NSW_LPI_BaseMap</id>
     <type>tms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}</url>
     <attribution-text mandatory="true">&#169; Land and Property Information 2016</attribution-text>
@@ -1446,6 +1687,7 @@
   </entry>
   <entry>
     <name>LPI NSW Imagery</name>
+    <id>NSW_LPI_Imagery</id>
     <type>tms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}</url>
     <best />
@@ -1545,6 +1787,7 @@
   </entry>
   <entry>
     <name>LPI NSW Topographic Map</name>
+    <id>NSW_LPI_TopographicMap</id>
     <type>tms</type>
     <url>http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}</url>
     <attribution-text mandatory="true">&#169; Land and Property Information 2016</attribution-text>
@@ -1702,6 +1945,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Northwest Heard Island</name>
+    <id>osmim-imagicode-EO1A1350972013086110KF</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=EO1A1350972013086110KF&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -1721,6 +1965,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Heard Island coast</name>
+    <id>osmim-imagicode-S2A_R047_S54_20160411T044330</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -1740,6 +1985,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Vanatinai</name>
+    <id>osmim-imagicode-LC80910682014358LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -1759,6 +2005,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: New Ireland</name>
+    <id>osmim-imagicode-LC80940622015159LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC80940622015159LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -1778,6 +2025,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Prokletije Mountains</name>
+    <id>osmim-imagicode-S2A_R136_N41_20150831T093006</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R136_N41_20150831T093006&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -1797,6 +2045,7 @@
   </entry>
   <entry>
     <name>basemap.at</name>
+    <id>basemap.at</id>
     <type>tms</type>
     <url>https://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png</url>
     <attribution-text mandatory="true">basemap.at</attribution-text>
@@ -2000,6 +2249,7 @@
   </entry>
   <entry>
     <name>basemap.at Orthofoto</name>
+    <id>basemap.at-orthofoto</id>
     <type>tms</type>
     <url>https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg</url>
     <best />
@@ -2204,6 +2454,7 @@
   </entry>
   <entry>
     <name>Geoimage.at MaxRes</name>
+    <id>geoimage.at</id>
     <type>wms</type>
     <url>http://gis.lebensministerium.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -2428,6 +2679,7 @@
   </entry>
   <entry>
     <name>Graz: Basiskarte (base map)</name>
+    <id>graz.at-basemap</id>
     <type>wms</type>
     <url>http://geodaten1.graz.at/ArcGIS_Graz/services/Extern/BASISKARTE_WMS/MapServer/WMSServer?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -2450,6 +2702,7 @@
   </entry>
   <entry>
     <name>Tiris: contour lines</name>
+    <id>tirol.gv.at-contourlines</id>
     <type>wms</type>
     <url>https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Hoehenschichtlinien 20m&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -2713,6 +2966,7 @@
   </entry>
   <entry>
     <name>Tiris: DGM (Terrain model)</name>
+    <id>tirol.gv.at-DGM</id>
     <type>wms</type>
     <url>https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Image Schummerung_Gelaendemodell&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -2975,6 +3229,7 @@
   </entry>
   <entry>
     <name>Tiris: DOM (Surface model)</name>
+    <id>tirol.gv.at-DOM</id>
     <type>wms</type>
     <url>https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Image Schummerung_Oberflaechenmodell&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -3238,6 +3493,7 @@
   </entry>
   <entry>
     <name>Vienna: Beschriftungen (annotations)</name>
+    <id>wien.gv.at-labels</id>
     <type>tms</type>
     <url>https://maps.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png</url>
     <attribution-text>Stadt Wien</attribution-text>
@@ -3258,6 +3514,7 @@
   </entry>
   <entry>
     <name>Vienna: Mehrzweckkarte (general purpose)</name>
+    <id>wien.gv.at-gp</id>
     <type>tms</type>
     <url>https://maps.wien.gv.at/wmts/fmzk/pastell/google3857/{zoom}/{y}/{x}.jpeg</url>
     <attribution-text>Stadt Wien</attribution-text>
@@ -3278,6 +3535,7 @@
   </entry>
   <entry>
     <name>Vienna: Orthofoto (aerial image)</name>
+    <id>wien.gv.at-aerial_image</id>
     <type>tms</type>
     <url>https://maps.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg</url>
     <attribution-text>Stadt Wien</attribution-text>
@@ -3298,6 +3556,7 @@
   </entry>
   <entry>
     <name>VoGIS: DGM (Terrain model)</name>
+    <id>vogis.cnv.at-DGM</id>
     <type>wms</type>
     <url>http://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=schummerung_50cm_terrain&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -3569,6 +3828,7 @@
   </entry>
   <entry>
     <name>VoGIS: DOM (Surface model)</name>
+    <id>vogis.cnv.at-DOM</id>
     <type>wms</type>
     <url>http://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=schummerung_50cm_surface&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -3840,6 +4100,7 @@
   </entry>
   <entry>
     <name>VoGIS: Echtfarbenbild 2012 (12cm)</name>
+    <id>vogis.cnv.at-ef2012_12cm</id>
     <type>wms</type>
     <url>http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ef2012_12cm&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -3892,6 +4153,7 @@
   </entry>
   <entry>
     <name>VoGIS: Echtfarbenbild 2015 (10cm)</name>
+    <id>vogis.cnv.at-ef2015_10cm</id>
     <type>wms</type>
     <url>http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ef2015_10cm&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -3944,6 +4206,7 @@
   </entry>
   <entry>
     <name>VoGIS: Echtfarbenbild Winter 2015 (20cm)</name>
+    <id>vogis.cnv.at-wi2015_20cm</id>
     <type>wms</type>
     <url>http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=wi2015_20cm&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -4030,6 +4293,7 @@
   </entry>
   <entry>
     <name>Belgium AGIV Orthophoto Flanders</name>
+    <id>AGIV</id>
     <type>tms</type>
     <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=omwrgbmrvl&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <best />
@@ -4116,6 +4380,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Rila and Pirin Mountains</name>
+    <id>osmim-imagicode-S2A_R093_N41_20150828T092005</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R093_N41_20150828T092005&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -4135,6 +4400,7 @@
   </entry>
   <entry>
     <name>Canton de Fribourg 50cm (2005)</name>
+    <id>Fribourg-2005</id>
     <type>wms</type>
     <url>http://geo.fr.ch/wms/orthophoto_2005_fribourg.php?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Orthophoto_2005&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthophoto 2005, Etat de Fribourg </attribution-text>
@@ -4142,6 +4408,7 @@
   </entry>
   <entry>
     <name>Canton de G&#233;n&#232;ve 5cm (SITG 2011)</name>
+    <id>Geneve-SITG-2011</id>
     <type>wms</type>
     <url>http://etat.geneve.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthophotos du SITG 2011</attribution-text>
@@ -4275,6 +4542,7 @@
   </entry>
   <entry>
     <name>Canton de Neuch&#226;tel 50cm (SITN 2006)</name>
+    <id>Neuchatel-SITN-2006</id>
     <type>wms</type>
     <url>http://sitn.ne.ch/ogc-sitn-open/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>orthophotos2006sitn50cm</attribution-text>
@@ -4282,6 +4550,7 @@
   </entry>
   <entry>
     <name>Canton du Jura 50cm (RCJU 1998)</name>
+    <id>Jura-RCJU-1998</id>
     <type>wms</type>
     <url>http://sitn.ne.ch/ogc-sitj-ortho/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho1998&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthophotos 1998 RCJU 50cm </attribution-text>
@@ -4289,6 +4558,7 @@
   </entry>
   <entry>
     <name>HEIG-VD / Orthophoto Yverdon-les-Bains 25cm (2007)</name>
+    <id>Yverdon_les_Bains-HEIG_VD-2007</id>
     <type>wms</type>
     <url>http://ogc.heig-vd.ch/mapserver/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=orthophoto_yverdon&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -4299,6 +4569,7 @@
   </entry>
   <entry>
     <name>Kanton Aargau 25cm (AGIS 2011)</name>
+    <id>Aargau-AGIS-2011</id>
     <type>tms</type>
     <url>http://tiles.poole.ch/AGIS/OF2011/{zoom}/{x}/{y}.png</url>
     <attribution-text>AGIS OF2011</attribution-text>
@@ -4317,6 +4588,7 @@
   </entry>
   <entry>
     <name>Kanton Aargau 25cm (AGIS 2014)</name>
+    <id>Aargau-AGIS-2014</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <best />
@@ -4490,6 +4762,7 @@
   </entry>
   <entry>
     <name>Kanton Basel-Stadt 2015</name>
+    <id>KTBASELSTADT2015</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <attribution-text mandatory="true">Kanton Basel-Stadt OF 2015</attribution-text>
@@ -4508,6 +4781,7 @@
   </entry>
   <entry>
     <name>Kanton Solothurn 25cm (SOGIS 2014-2015)</name>
+    <id>Solothurn-sogis2014-tms</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <best />
@@ -4680,6 +4954,7 @@
   </entry>
   <entry>
     <name>Kanton Solothurn 25cm (SOGIS 2014-2015)</name>
+    <id>Solothurn-sogis2014-wms</id>
     <type>wms</type>
     <url>http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Orthofoto_SO&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <best />
@@ -4851,14 +5126,16 @@
     </bounds>
   </entry>
   <entry>
-    <name>Kanton Solothurn Infrarot 12.5cm (SOGIS 2011)</name>
+    <name>Kanton Solothurn Infrarot 12.5cm (SOGIS 2014)</name>
+    <id>Solothurn-infrared-SOGIS</id>
     <type>wms</type>
-    <url>http://www.sogis1.so.ch/cgi-bin/sogis/sogis_ortho.wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Orthofoto11_CIR&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <url>http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Orthofoto_CIR_SO&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
     <country-code>CH</country-code>
   </entry>
   <entry>
     <name>Kanton Z&#252;rich 2015  10cm</name>
+    <id>KTZUERICH2015</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <best />
@@ -4981,6 +5258,7 @@
   </entry>
   <entry>
     <name>Stadt Bern 10cm (2016)</name>
+    <id>Bern-bern2016-tms</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/bern2016/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <best />
@@ -5083,6 +5361,7 @@
   </entry>
   <entry>
     <name>Stadt Bern 10cm (2016)</name>
+    <id>Bern-bern2016-wms</id>
     <type>wms</type>
     <url>http://map.bern.ch/wms/OpenData/proxy.php?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <best />
@@ -5186,6 +5465,7 @@
   </entry>
   <entry>
     <name>Stadt Uster Orthophoto 2008 10cm</name>
+    <id>Uster-2008</id>
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Uster Vermessung Orthophoto 2008</attribution-text>
@@ -5202,6 +5482,7 @@
   </entry>
   <entry>
     <name>Stadt Z&#252;rich Luftbild 2011</name>
+    <id>Zuerich-zh_luftbild2011-tms</id>
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Luftbild 2011</attribution-text>
@@ -5218,6 +5499,7 @@
   </entry>
   <entry>
     <name>Stadtplan Z&#252;rich</name>
+    <id>Zuerich-city_map</id>
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Open Government Data</attribution-text>
@@ -5234,6 +5516,7 @@
   </entry>
   <entry>
     <name>&#220;bersichtsplan Z&#252;rich</name>
+    <id>Zuerich-zh_uebersichtsplan-tms</id>
     <type>tms</type>
     <url>http://mapproxy.sosm.ch:8080/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Open Government Data</attribution-text>
@@ -5251,6 +5534,7 @@
   </entry>
   <entry>
     <name>Czech CUZK:KM</name>
+    <id>Czech_CUZK-KM</id>
     <type>wms</type>
     <url>http://wms.cuzk.cz/wms.asp?service=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&amp;FORMAT=image/png&amp;transparent=TRUE&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -5434,6 +5718,7 @@
   </entry>
   <entry>
     <name>Czech CUZK:KM tiles proxy</name>
+    <id>Czech_CUZK-KM-tms</id>
     <type>tms</type>
     <url>http://osm-{switch:a,b,c}.zby.cz/tiles_cuzk.php/{zoom}/{x}/{y}.png</url>
     <country-code>CZ</country-code>
@@ -5605,6 +5890,7 @@
   </entry>
   <entry>
     <name>Czech RUIAN budovy</name>
+    <id>Czech_RUIAN-budovy</id>
     <type>tms</type>
     <url>http://tile.poloha.net/budovy/{zoom}/{x}/{y}.png</url>
     <attribution-url>http://poloha.net/</attribution-url>
@@ -5775,6 +6061,7 @@
   </entry>
   <entry>
     <name>Czech RUIAN parcely</name>
+    <id>Czech_RUIAN-parcely</id>
     <type>tms</type>
     <url>http://tile.poloha.net/parcely/{zoom}/{x}/{y}.png</url>
     <attribution-url>http://poloha.net/</attribution-url>
@@ -5944,194 +6231,8 @@
     </bounds>
   </entry>
   <entry>
-    <name>Czech UHUL:ORTOFOTO</name>
-    <type>wms</type>
-    <url>http://geoportal2.uhul.cz/cgi-bin/oprl.asp?SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=Ortofoto_cb&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;TRANSPARENT=TRUE&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
-    <projections>
-      <code>EPSG:2065</code>
-      <code>EPSG:4326</code>
-      <code>EPSG:28403</code>
-      <code>EPSG:28404</code>
-      <code>EPSG:32633</code>
-      <code>EPSG:32634</code>
-      <code>EPSG:102067</code>
-    </projections>
-    <country-code>CZ</country-code>
-  </entry>
-  <entry>
-    <name>Czech &#218;HUL:ORTOFOTO tiles proxy</name>
-    <type>tms</type>
-    <url>http://osm-{switch:a,b,c}.zby.cz/tiles_uhul.php/{zoom}/{x}/{y}.jpg</url>
-    <attribution-text>Ortofoto public domain &#218;HUL, year 2000</attribution-text>
-    <country-code>CZ</country-code>
-    <min-zoom>13</min-zoom>
-    <max-zoom>18</max-zoom>
-    <bounds max-lat="51.067174" max-lon="18.87646" min-lat="48.561027" min-lon="12.098813">
-      <shape>
-        <point lat="49.017739" lon="15.006368" />
-        <point lat="49.001383" lon="15.155985" />
-        <point lat="48.942455" lon="15.190896" />
-        <point lat="48.988294" lon="15.31059" />
-        <point lat="48.975201" lon="15.405347" />
-        <point lat="48.916243" lon="15.540002" />
-        <point lat="48.867057" lon="15.714555" />
-        <point lat="48.880178" lon="15.834249" />
-        <point lat="48.817823" lon="15.968904" />
-        <point lat="48.745526" lon="16.088598" />
-        <point lat="48.745526" lon="16.397806" />
-        <point lat="48.814539" lon="16.487576" />
-        <point lat="48.778401" lon="16.672104" />
-        <point lat="48.735659" lon="16.682078" />
-        <point lat="48.712629" lon="16.901516" />
-        <point lat="48.6237" lon="16.946401" />
-        <point lat="48.837523" lon="17.115967" />
-        <point lat="48.880178" lon="17.210725" />
-        <point lat="48.817823" lon="17.405227" />
-        <point lat="48.853933" lon="17.480035" />
-        <point lat="48.817823" lon="17.529907" />
-        <point lat="48.867057" lon="17.70446" />
-        <point lat="48.935903" lon="17.81418" />
-        <point lat="48.935903" lon="17.884001" />
-        <point lat="49.02101" lon="17.943848" />
-        <point lat="49.03409" lon="18.063541" />
-        <point lat="49.099441" lon="18.118401" />
-        <point lat="49.304734" lon="18.198196" />
-        <point lat="49.333992" lon="18.387711" />
-        <point lat="49.509175" lon="18.577226" />
-        <point lat="49.499459" lon="18.756766" />
-        <point lat="49.525364" lon="18.846536" />
-        <point lat="49.570664" lon="18.87646" />
-        <point lat="49.693412" lon="18.796664" />
-        <point lat="49.70954" lon="18.64206" />
-        <point lat="49.835154" lon="18.5872" />
-        <point lat="49.883381" lon="18.612137" />
-        <point lat="49.93477" lon="18.562264" />
-        <point lat="49.90587" lon="18.512392" />
-        <point lat="49.954026" lon="18.362775" />
-        <point lat="49.921928" lon="18.327864" />
-        <point lat="49.973275" lon="18.26303" />
-        <point lat="50.005339" lon="18.118401" />
-        <point lat="50.075806" lon="18.063541" />
-        <point lat="49.97969" lon="17.913924" />
-        <point lat="50.030976" lon="17.779269" />
-        <point lat="50.123792" lon="17.714435" />
-        <point lat="50.165341" lon="17.604716" />
-        <point lat="50.21962" lon="17.75932" />
-        <point lat="50.343909" lon="17.734384" />
-        <point lat="50.280212" lon="17.639626" />
-        <point lat="50.280212" lon="17.380291" />
-        <point lat="50.343909" lon="17.350367" />
-        <point lat="50.337543" lon="17.280546" />
-        <point lat="50.407521" lon="17.185789" />
-        <point lat="50.461525" lon="16.901516" />
-        <point lat="50.413878" lon="16.866606" />
-        <point lat="50.31844" lon="16.96635" />
-        <point lat="50.232383" lon="17.036171" />
-        <point lat="50.21962" lon="16.836682" />
-        <point lat="50.104603" lon="16.712001" />
-        <point lat="50.158951" lon="16.582334" />
-        <point lat="50.238763" lon="16.562385" />
-        <point lat="50.337543" lon="16.432717" />
-        <point lat="50.391626" lon="16.352921" />
-        <point lat="50.391626" lon="16.278112" />
-        <point lat="50.445648" lon="16.208291" />
-        <point lat="50.53449" lon="16.397806" />
-        <point lat="50.597846" lon="16.447678" />
-        <point lat="50.670601" lon="16.352921" />
-        <point lat="50.676922" lon="16.238215" />
-        <point lat="50.632656" lon="16.218266" />
-        <point lat="50.683242" lon="16.128495" />
-        <point lat="50.607343" lon="16.0487" />
-        <point lat="50.702198" lon="15.988853" />
-        <point lat="50.683242" lon="15.874147" />
-        <point lat="50.765329" lon="15.829262" />
-        <point lat="50.743243" lon="15.729517" />
-        <point lat="50.815773" lon="15.450232" />
-        <point lat="50.774791" lon="15.390385" />
-        <point lat="50.859866" lon="15.380411" />
-        <point lat="50.885043" lon="15.295628" />
-        <point lat="50.988757" lon="15.295628" />
-        <point lat="51.020139" lon="15.170947" />
-        <point lat="51.001312" lon="14.991407" />
-        <point lat="50.88819" lon="15.006368" />
-        <point lat="50.875603" lon="14.84179" />
-        <point lat="50.825225" lon="14.796905" />
-        <point lat="50.856718" lon="14.632326" />
-        <point lat="50.935358" lon="14.662249" />
-        <point lat="50.922784" lon="14.572479" />
-        <point lat="50.985617" lon="14.612377" />
-        <point lat="51.048366" lon="14.497671" />
-        <point lat="51.023277" lon="14.417875" />
-        <point lat="51.067174" lon="14.308156" />
-        <point lat="51.004451" lon="14.253296" />
-        <point lat="50.932215" lon="14.402913" />
-        <point lat="50.897627" lon="14.37299" />
-        <point lat="50.907063" lon="14.243322" />
-        <point lat="50.844123" lon="14.208411" />
-        <point lat="50.812621" lon="14.033858" />
-        <point lat="50.825225" lon="13.978999" />
-        <point lat="50.796863" lon="13.90419" />
-        <point lat="50.740087" lon="13.874267" />
-        <point lat="50.724304" lon="13.535135" />
-        <point lat="50.657956" lon="13.530148" />
-        <point lat="50.613672" lon="13.470301" />
-        <point lat="50.664279" lon="13.390505" />
-        <point lat="50.588348" lon="13.325672" />
-        <point lat="50.610507" lon="13.250863" />
-        <point lat="50.505952" lon="13.196003" />
-        <point lat="50.521808" lon="13.051374" />
-        <point lat="50.4107" lon="12.966591" />
-        <point lat="50.471048" lon="12.826948" />
-        <point lat="50.413878" lon="12.702268" />
-        <point lat="50.401164" lon="12.507766" />
-        <point lat="50.254709" lon="12.343187" />
-        <point lat="50.184505" lon="12.323238" />
-        <point lat="50.273837" lon="12.24843" />
-        <point lat="50.331176" lon="12.173621" />
-        <point lat="50.33436" lon="12.098813" />
-        <point lat="50.25152" lon="12.118762" />
-        <point lat="50.165341" lon="12.223493" />
-        <point lat="50.123792" lon="12.203544" />
-        <point lat="49.973275" lon="12.502778" />
-        <point lat="49.937979" lon="12.477842" />
-        <point lat="49.915505" lon="12.547663" />
-        <point lat="49.802977" lon="12.467868" />
-        <point lat="49.761113" lon="12.408021" />
-        <point lat="49.686959" lon="12.482829" />
-        <point lat="49.686959" lon="12.532702" />
-        <point lat="49.628847" lon="12.51774" />
-        <point lat="49.541547" lon="12.60751" />
-        <point lat="49.437879" lon="12.672344" />
-        <point lat="49.34699" lon="12.811987" />
-        <point lat="49.343741" lon="12.946642" />
-        <point lat="49.128821" lon="13.230914" />
-        <point lat="49.105971" lon="13.325672" />
-        <point lat="49.043898" lon="13.435391" />
-        <point lat="48.994839" lon="13.415442" />
-        <point lat="48.949006" lon="13.500225" />
-        <point lat="48.988294" lon="13.565059" />
-        <point lat="48.883458" lon="13.684752" />
-        <point lat="48.903131" lon="13.744599" />
-        <point lat="48.775115" lon="13.824395" />
-        <point lat="48.775115" lon="13.899203" />
-        <point lat="48.676418" lon="14.058794" />
-        <point lat="48.630293" lon="14.043833" />
-        <point lat="48.590724" lon="14.143577" />
-        <point lat="48.561027" lon="14.37299" />
-        <point lat="48.650066" lon="14.482709" />
-        <point lat="48.607215" lon="14.577466" />
-        <point lat="48.633589" lon="14.627339" />
-        <point lat="48.580827" lon="14.707135" />
-        <point lat="48.702756" lon="14.747032" />
-        <point lat="48.738948" lon="14.811866" />
-        <point lat="48.794831" lon="14.816854" />
-        <point lat="48.765254" lon="14.98642" />
-        <point lat="49.017739" lon="15.006368" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
     <name>Bavaria (2 m)</name>
+    <id>bavaria-2m</id>
     <type>wms</type>
     <url>http://geodaten.bayern.de/ogc/ogc_dop200_oa.cgi?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=adv_dop200c&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -6450,6 +6551,7 @@
   </entry>
   <entry>
     <name>Bavaria DOP 80cm</name>
+    <id>bavaria-DOP80</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
     <country-code>DE</country-code>
@@ -6760,6 +6862,7 @@
   </entry>
   <entry>
     <name>Erlangen Luftbild (2013 6,25 cm)</name>
+    <id>Erlangen-2013</id>
     <type>wms</type>
     <url>https://secure.erlangen.de/arcgiser/services/Luftbilder2013/MapServer/WmsServer?FORMAT=image/bmp&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Erlangen_ratio5_6.25cm.jp2&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -6779,6 +6882,7 @@
   </entry>
   <entry>
     <name>Erlangen Luftbild (2011 5,0 cm)</name>
+    <id>Erlangen-2011</id>
     <type>wms</type>
     <url>https://secure.erlangen.de/arcgiser/services/Luftbilder2011/MapServer/WmsServer?FORMAT=image/bmp&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Erlangen_ratio10_5cm_gk4.jp2&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -6798,6 +6902,7 @@
   </entry>
   <entry>
     <name>Erlangen Luftbild (2016 5,0 cm)</name>
+    <id>Erlangen-2016</id>
     <type>wms</type>
     <url>https://secure.erlangen.de/arcgiser/services/Luftbild2016/MapServer/WmsServer?FORMAT=image/bmp&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -6862,19 +6967,30 @@
   </entry>
   <entry>
     <name>Hamburg (40 cm)</name>
+    <id>hamburg-40cm</id>
     <type>wms</type>
-    <url>http://gateway.hamburg.de/OGCFassade/HH_WMS_DOP40.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <url>http://geodienste-hamburg.de/HH_WMS_DOP40?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
       <code>EPSG:31467</code>
       <code>EPSG:25832</code>
+      <code>EPSG:3034</code>
+      <code>EPSG:3035</code>
+      <code>EPSG:3044</code>
+      <code>EPSG:3857</code>
+      <code>EPSG:4258</code>
+      <code>EPSG:4647</code>
+      <code>EPSG:31463</code>
+      <code>EPSG:102100</code>
+      <code>EPSG:102362</code>
       <code>EPSG:4326</code>
     </projections>
     <country-code>DE</country-code>
   </entry>
   <entry>
     <name>Hamburg (DK5)</name>
+    <id>Hamburg-DK5</id>
     <type>wms</type>
-    <url>http://gateway.hamburg.de/OGCFassade/HH_WMS_Geobasisdaten.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <url>http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=13&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
       <code>EPSG:31467</code>
       <code>EPSG:25832</code>
@@ -6884,6 +7000,7 @@
   </entry>
   <entry>
     <name>Stuttgart (Luftbild)</name>
+    <id>Stuttgart-2011</id>
     <type>wms</type>
     <url>http://gis3.stuttgart.de/wss/service/wms_Luftbilder2011_jpg_internet/guest?FORMAT=image/jpeg&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=0,1,2,3,4,5,6,7,8&amp;STYLES=default,default,default,default,default,default,default,default,default&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -6903,6 +7020,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Northern German west coast tidalflats (infrared)</name>
+    <id>osmim-imagicode-LC81960222015233LGN00ir</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00ir&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -6922,6 +7040,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Northern German west coast tidalflats</name>
+    <id>osmim-imagicode-LC81960222015233LGN00vis</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00vis&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -6941,6 +7060,7 @@
   </entry>
   <entry>
     <name>Geodatastyrelsen (Denmark)</name>
+    <id>Geodatastyrelsen_Denmark</id>
     <type>tms</type>
     <url>http://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg</url>
     <best />
@@ -7118,6 +7238,7 @@
   </entry>
   <entry>
     <name>Stevns (Denmark)</name>
+    <id>Stevns_Denmark</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.dk/stevns/2009/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Stevns Kommune</attribution-text>
@@ -7161,6 +7282,7 @@
   </entry>
   <entry>
     <name>Vejmidte (Denmark)</name>
+    <id>Vejmidte_Denmark</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Danish municipalities</attribution-text>
@@ -7337,6 +7459,7 @@
   </entry>
   <entry>
     <name>Estonia Basemap (Maaamet)</name>
+    <id>maaamet.ee-pohi_vr2</id>
     <type>wms</type>
     <url>http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=pohi_vr2&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -8119,6 +8242,7 @@
   </entry>
   <entry>
     <name>Estonia Forestry (Maaamet)</name>
+    <id>maaamet.ee-cir_ngr</id>
     <type>wms</type>
     <url>http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=cir_ngr&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -8138,6 +8262,7 @@
   </entry>
   <entry>
     <name>Estonia Hillshading (Maaamet)</name>
+    <id>maaamet.ee-reljeef</id>
     <type>wms</type>
     <url>http://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=reljeef&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -8157,6 +8282,7 @@
   </entry>
   <entry>
     <name>Estonia Ortho (Maaamet)</name>
+    <id>maaamet.ee-orto</id>
     <type>tms</type>
     <url>http://kaart.maakaart.ee/orto/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Maa-Ameti ortofoto </attribution-text>
@@ -8174,6 +8300,7 @@
   </entry>
   <entry>
     <name>Estonia Ortho (Maaamet)</name>
+    <id>maaamet.ee-of10000</id>
     <type>wms</type>
     <url>http://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&amp;REQUEST=GetMap&amp;LAYERS=of10000&amp;SRS={proj}&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -8193,6 +8320,7 @@
   </entry>
   <entry>
     <name>Catastro Spain</name>
+    <id>Catastro-Spain</id>
     <type>wms</type>
     <url>http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Catastro&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <country-code>ES</country-code>
@@ -8800,6 +8928,7 @@
   </entry>
   <entry>
     <name>GRAFCAN - Canary Islands</name>
+    <id>GRAFCAN-Canary_Islands</id>
     <type>wms</type>
     <url>http://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=OU&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">GRAFCAN OrtoExpress Urbana 2009</attribution-text>
@@ -8937,6 +9066,7 @@
   </entry>
   <entry>
     <name>IDEIB - Balearic Islands</name>
+    <id>IDEIB-Balearic_Islands</id>
     <type>wms</type>
     <url>http://ideib.caib.es/pub_ideib/public/IMATGES_AERIES/MapServer/WMSServer?VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=8&amp;STYLES=default&amp;FORMAT=image/png&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">ideib.cat</attribution-text>
@@ -9056,6 +9186,7 @@
   </entry>
   <entry>
     <name>ITACyL - Castile and Le&#243;n</name>
+    <id>ITACyL-Castile-and-Leon</id>
     <type>wms</type>
     <url>http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;LAYERS=Ortofoto_CyL&amp;SRS={proj}&amp;FORMAT=image/jpeg&amp;STYLES=Default&amp;TRANSPARENT=TRUE&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">ITACyL</attribution-text>
@@ -9429,6 +9560,7 @@
   </entry>
   <entry>
     <name>PNOA Spain</name>
+    <id>PNOA-Spain-TMS</id>
     <type>tms</type>
     <url>http://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/png&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={z}&amp;TileRow={y}&amp;TileCol={x}</url>
     <attribution-text mandatory="true">PNOA</attribution-text>
@@ -10037,6 +10169,7 @@
   </entry>
   <entry>
     <name>PNOA Spain</name>
+    <id>PNOA-Spain</id>
     <type>wms</type>
     <url>http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;SRS={proj}&amp;LAYERS=pnoa&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <best />
@@ -10646,6 +10779,7 @@
   </entry>
   <entry>
     <name>SIGPAC Spain</name>
+    <id>SIGPAC-Spain</id>
     <type>wms</type>
     <url>http://wms.marm.es/wms/wms.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ORTOFOTOS&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">SIGPAC</attribution-text>
@@ -11254,6 +11388,7 @@
   </entry>
   <entry>
     <name>CRAIG - Auvergne 2009/2010 - 30 cm</name>
+    <id>CRAIG-Auvergne-2009</id>
     <type>wms</type>
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=auvergne&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -11756,6 +11891,7 @@
   </entry>
   <entry>
     <name>CRAIG - Le Puy 2010 - 15 cm</name>
+    <id>CRAIG-LePuy-2010</id>
     <type>wms</type>
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=le_puy&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2010</attribution-text>
@@ -11889,6 +12025,7 @@
   </entry>
   <entry>
     <name>CRAIG - Montlu&#231;on 2009 - 15 cm</name>
+    <id>CRAIG-Montluon-2010</id>
     <type>wms</type>
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=montlucon&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2009</attribution-text>
@@ -11970,6 +12107,7 @@
   </entry>
   <entry>
     <name>CRAIG - Moulins 2009 - 15 cm</name>
+    <id>CRAIG-Moulins-2010</id>
     <type>wms</type>
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=moulins&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2009</attribution-text>
@@ -12127,6 +12265,7 @@
   </entry>
   <entry>
     <name>CRAIG - Vichy 2009 - 15 cm</name>
+    <id>CRAIG-Vichy-2009</id>
     <type>wms</type>
     <url>http://wms.craig.fr/osm?service=wms&amp;request=getmap&amp;version=1.1.1&amp;layers=vichy&amp;format=image/jpeg&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/TopoGEODIS 2009</attribution-text>
@@ -12224,6 +12363,7 @@
   </entry>
   <entry>
     <name>FR-BAN</name>
+    <id>FR-BAN</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Tiles &#169; cquest@Openstreetmap France, data &#169; OpenStreetMap contributors, ODBL</attribution-text>
@@ -12317,6 +12457,7 @@
   </entry>
   <entry>
     <name>FR-Cadastre</name>
+    <id>FR-Cadastre</id>
     <type>tms</type>
     <url>http://tms.cadastre.openstreetmap.fr/*/tout/{z}/{x}/{y}.png</url>
     <attribution-text mandatory="true">cadastre-dgi-fr source : Direction G&#233;n&#233;rale des Imp&#244;ts - Cadastre. Mise &#224; jour : 2015</attribution-text>
@@ -12410,6 +12551,7 @@
   </entry>
   <entry>
     <name>G&#233;obretagne - Brest 2010 - 10 cm</name>
+    <id>Geobretagne-Brest-2010</id>
     <type>wms</type>
     <url>http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho-bmo-2010&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <country-code>FR</country-code>
@@ -12425,6 +12567,7 @@
   </entry>
   <entry>
     <name>G&#233;obretagne - Morbihan 2010</name>
+    <id>Geobretagne-Morbihan-2010</id>
     <type>wms</type>
     <url>http://geobretagne.fr/wmsouvert?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortho-megalis-56&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <country-code>FR</country-code>
@@ -12871,6 +13014,7 @@
   </entry>
   <entry>
     <name>G&#233;olittoral - Orthophotos 2000</name>
+    <id>Golittoral-Orthophotos2000</id>
     <type>wms</type>
     <url>http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortholittorale&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho littorale 2000</attribution-text>
@@ -13118,6 +13262,7 @@
   </entry>
   <entry>
     <name>G&#233;olittoral - Sentiers</name>
+    <id>Golittoral-Sentiers</id>
     <type>wms</type>
     <url>http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Sentiers_littoraux&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho littorale 2000</attribution-text>
@@ -13126,6 +13271,7 @@
   </entry>
   <entry>
     <name>G&#233;olittoral V2 - Orthophotos 2010-2012</name>
+    <id>GolittoralV2-Orthophotos</id>
     <type>wms</type>
     <url>http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortholittorale&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho Littorale V2 - MEDDE</attribution-text>
@@ -13297,6 +13443,7 @@
   </entry>
   <entry>
     <name>Toulouse - Orthophotoplan 2007</name>
+    <id>Toulouse-Orthophotoplan-2007</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
@@ -13391,6 +13538,7 @@
   </entry>
   <entry>
     <name>Toulouse - Orthophotoplan 2011</name>
+    <id>Toulouse-Orthophotoplan-2011</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
@@ -13459,6 +13607,7 @@
   </entry>
   <entry>
     <name>Toulouse - Orthophotoplan 2013</name>
+    <id>Toulouse-Orthophotoplan-2013</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
@@ -13527,6 +13676,7 @@
   </entry>
   <entry>
     <name>Toulouse - Orthophotoplan 2015</name>
+    <id>Toulouse-Orthophotoplan-2015</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
@@ -13595,6 +13745,7 @@
   </entry>
   <entry>
     <name>Tours - Orthophotos 2013</name>
+    <id>Tours-Orthophoto-2013</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">Orthophoto Tour(s)plus 2013</attribution-text>
@@ -13613,6 +13764,7 @@
   </entry>
   <entry>
     <name>Tours - Orthophotos 2008-2010</name>
+    <id>Tours-Orthophoto-2008_2010</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">Orthophoto Tour(s) Plus 2008</attribution-text>
@@ -13773,6 +13925,7 @@
   </entry>
   <entry>
     <name>7th Series (OS7)</name>
+    <id>OS7</id>
     <type>tms</type>
     <url>http://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg</url>
     <country-code>GB</country-code>
@@ -13788,6 +13941,7 @@
   </entry>
   <entry>
     <name>NLS - Bartholomew Half Inch, 1897-1907</name>
+    <id>NLS-Bartholomew-hfinch-hist</id>
     <type>tms</type>
     <url>http://geo.nls.uk/mapdata2/bartholomew/great_britain/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -13807,6 +13961,7 @@
   </entry>
   <entry>
     <name>NLS - OS 1-inch 7th Series 1955-61</name>
+    <id>NLS-OS-7th_Series</id>
     <type>tms</type>
     <url>http://geo.nls.uk/mapdata2/os/seventh/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -14107,6 +14262,7 @@
   </entry>
   <entry>
     <name>NLS - OS 1:25k 1st Series 1937-61</name>
+    <id>NLS-OS-1st_Series</id>
     <type>tms</type>
     <url>http://geo.nls.uk/mapdata2/os/25000/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -14615,6 +14771,7 @@
   </entry>
   <entry>
     <name>NLS - OS 25-inch (Scotland), 1892-1905</name>
+    <id>NLS-OS-25inch-hist</id>
     <type>tms</type>
     <url>http://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -14634,6 +14791,7 @@
   </entry>
   <entry>
     <name>NLS - OS 6-inch County Series, 1888-1913</name>
+    <id>NLS-OS-6inch-County-Series-hist</id>
     <type>tms</type>
     <url>http://geo.nls.uk/mapdata3/os/6_inch_gb_1900/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -14653,6 +14811,7 @@
   </entry>
   <entry>
     <name>NLS - OS 6-inch Scotland 1842-82</name>
+    <id>NLS-OS-6inch-Scotland-hist</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -15085,6 +15244,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Aberdeen 1866-1867 (NLS)</name>
+    <id>NLS_aberdeen1866_1867</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/aberdeen/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Aberdeen 1866-1867</attribution-text>
@@ -15105,6 +15265,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Airdrie 1858 (NLS)</name>
+    <id>NLS_airdrie1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/airdrie/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Airdrie 1858</attribution-text>
@@ -15125,6 +15286,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Alexandria 1859 (NLS)</name>
+    <id>NLS_alexandria1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/alexandria/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Alexandria 1859</attribution-text>
@@ -15145,6 +15307,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Alloa 1861-1862 (NLS)</name>
+    <id>NLS_alloa1861_1862</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/alloa/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Alloa 1861-1862</attribution-text>
@@ -15165,6 +15328,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Annan 1859 (NLS)</name>
+    <id>NLS_annan1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/annan/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Annan 1859</attribution-text>
@@ -15185,6 +15349,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Arbroath 1858 (NLS)</name>
+    <id>NLS_arbroath1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/arbroath/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Arbroath 1858</attribution-text>
@@ -15205,6 +15370,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Ayr 1855 (NLS)</name>
+    <id>NLS_ayr1855</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/ayr/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Ayr 1855</attribution-text>
@@ -15225,6 +15391,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Berwick-upon-Tweed 1852 (NLS)</name>
+    <id>NLS_berwick1852</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/berwick/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Berwick-upon-Tweed 1852</attribution-text>
@@ -15245,6 +15412,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Brechin 1862 (NLS)</name>
+    <id>NLS_brechin1862</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/brechin/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Brechin 1862</attribution-text>
@@ -15265,6 +15433,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Burntisland 1894 (NLS)</name>
+    <id>NLS_burntisland1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/burntisland/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Burntisland 1894</attribution-text>
@@ -15285,6 +15454,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Campbelton 1865 (NLS)</name>
+    <id>NLS_campbeltown1865</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/campbeltown/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Campbelton 1865</attribution-text>
@@ -15305,6 +15475,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Coatbridge 1858 (NLS)</name>
+    <id>NLS_coatbridge1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/coatbridge/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Coatbridge 1858</attribution-text>
@@ -15325,6 +15496,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Cupar 1854 (NLS)</name>
+    <id>OS-Town_Plans-Cupar-1854</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/cupar1854/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Cupar 1854</attribution-text>
@@ -15345,6 +15517,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Cupar 1893-1894 (NLS)</name>
+    <id>NLS_cupar1893_1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/cupar1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Cupar 1893-1894</attribution-text>
@@ -15365,6 +15538,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dalkeith 1852 (NLS)</name>
+    <id>NLS_dalkeith1852</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dalkeith1852/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dalkeith 1852</attribution-text>
@@ -15385,6 +15559,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dalkeith 1893 (NLS)</name>
+    <id>NLS_dalkeith1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dalkeith1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dalkeith 1893</attribution-text>
@@ -15405,6 +15580,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dumbarton 1859 (NLS)</name>
+    <id>NLS_dumbarton1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dumbarton/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dumbarton 1859</attribution-text>
@@ -15425,6 +15601,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dumfries 1850 (NLS)</name>
+    <id>NLS_dumfries1850</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dumfries1850/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dumfries 1850</attribution-text>
@@ -15445,6 +15622,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dumfries 1893 (NLS)</name>
+    <id>NLS_dumfries1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dumfries1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dumfries 1893</attribution-text>
@@ -15465,6 +15643,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dundee 1857-1858 (NLS)</name>
+    <id>NLS_dundee1857_1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dundee1857/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dundee 1857-1858</attribution-text>
@@ -15485,6 +15664,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dundee 1870-1872 (NLS)</name>
+    <id>NLS_dundee1870_1872</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dundee1870/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dundee 1870-1872</attribution-text>
@@ -15505,6 +15685,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dunfermline 1854 (NLS)</name>
+    <id>NLS_dunfermline1854</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dunfermline1854/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dunfermline 1854</attribution-text>
@@ -15525,6 +15706,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Dunfermline 1894 (NLS)</name>
+    <id>NLS_dunfermline1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/dunfermline1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Dunfermline 1894</attribution-text>
@@ -15545,6 +15727,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Edinburgh 1849-1851 (NLS)</name>
+    <id>NLS_edinburgh1849_1851</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/edinburgh1849/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Edinburgh 1849-1851</attribution-text>
@@ -15565,6 +15748,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Edinburgh 1876-1877 (NLS)</name>
+    <id>NLS_edinburgh1876_1877</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/edinburgh1876/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Edinburgh 1876-1877</attribution-text>
@@ -15585,6 +15769,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Edinburgh 1893-1894 (NLS)</name>
+    <id>NLS_edinburgh1893_1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/edinburgh1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Edinburgh 1893-1894</attribution-text>
@@ -15605,6 +15790,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Elgin 1868 (NLS)</name>
+    <id>NLS_elgin1868</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/elgin/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Elgin 1868</attribution-text>
@@ -15625,6 +15811,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Falkirk 1858-1859 (NLS)</name>
+    <id>NLS_falkirk1858_1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Falkirk 1858-1859</attribution-text>
@@ -15645,6 +15832,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Forfar 1860-1861 (NLS)</name>
+    <id>NLS_forfar1860_1861</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/forfar/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Forfar 1860-1861</attribution-text>
@@ -15665,6 +15853,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Forres 1868 (NLS)</name>
+    <id>NLS_forres1868</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/forres/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Forres 1868</attribution-text>
@@ -15685,6 +15874,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Galashiels 1858 (NLS)</name>
+    <id>NLS_galashiels1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/galashiels/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Galashiels 1858</attribution-text>
@@ -15705,6 +15895,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Girvan 1857 (NLS)</name>
+    <id>NLS_girvan1857</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/girvan/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Girvan 1857</attribution-text>
@@ -15725,6 +15916,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Glasgow 1857-1858 (NLS)</name>
+    <id>NLS_glasgow1857_1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/glasgow1857/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Glasgow 1857-1858</attribution-text>
@@ -15745,6 +15937,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Glasgow 1892-1894 (NLS)</name>
+    <id>NLS_glasgow1892_1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/glasgow1894/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Glasgow 1892-1894</attribution-text>
@@ -15765,6 +15958,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Greenock 1857 (NLS)</name>
+    <id>NLS_greenock1857</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/greenock/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Greenock 1857</attribution-text>
@@ -15785,6 +15979,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Haddington 1853 (NLS)</name>
+    <id>NLS_haddington1853</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/haddington1853/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Haddington 1853</attribution-text>
@@ -15805,6 +16000,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Haddington 1893 (NLS)</name>
+    <id>NLS_haddington1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/haddington1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Haddington 1893</attribution-text>
@@ -15825,6 +16021,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Hamilton 1858 (NLS)</name>
+    <id>NLS_hamilton1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/hamilton/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Hamilton 1858</attribution-text>
@@ -15845,6 +16042,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Hawick 1857-1858 (NLS)</name>
+    <id>NLS_hawick1857_1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/hawick/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Hawick 1857-1858</attribution-text>
@@ -15865,6 +16063,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Inverness 1867-1868 (NLS)</name>
+    <id>NLS_inverness1867_1868</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/inverness/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Inverness 1867-1868</attribution-text>
@@ -15885,6 +16084,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Irvine 1859 (NLS)</name>
+    <id>NLS_irvine1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/irvine/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Irvine 1859</attribution-text>
@@ -15905,6 +16105,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Jedburgh 1858 (NLS)</name>
+    <id>NLS_jedburgh1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/jedburgh/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Jedburgh 1858</attribution-text>
@@ -15925,6 +16126,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kelso 1857 (NLS)</name>
+    <id>NLS_kelso1857</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kelso/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kelso 1857</attribution-text>
@@ -15945,6 +16147,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kilmarnock 1857-1859 (NLS)</name>
+    <id>NLS_kilmarnock1857_1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kilmarnock/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kilmarnock 1857-1859</attribution-text>
@@ -15965,6 +16168,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kirkcaldy 1855 (NLS)</name>
+    <id>NLS_kirkcaldy1855</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kirkcaldy1855/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kirkcaldy 1855</attribution-text>
@@ -15985,6 +16189,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kirkcaldy 1894 (NLS)</name>
+    <id>NLS_kirkcaldy1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kirkcaldy1894/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kirkcaldy 1894</attribution-text>
@@ -16005,6 +16210,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kirkcudbright 1850 (NLS)</name>
+    <id>NLS_kirkcudbright1850</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kirkcudbright1850/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kirkcudbright 1850</attribution-text>
@@ -16025,6 +16231,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kirkcudbright 1893 (NLS)</name>
+    <id>NLS_kirkcudbright1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kirkcudbright1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kirkcudbright 1893</attribution-text>
@@ -16045,6 +16252,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kirkintilloch 1859 (NLS)</name>
+    <id>NLS_kirkintilloch1859</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kirkintilloch/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kirkintilloch 1859</attribution-text>
@@ -16065,6 +16273,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Kirriemuir 1861 (NLS)</name>
+    <id>NLS_kirriemuir1861</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/kirriemuir/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Kirriemuir 1861</attribution-text>
@@ -16085,6 +16294,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Lanark 1858 (NLS)</name>
+    <id>NLS_lanark1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/lanark/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Lanark 1858</attribution-text>
@@ -16105,6 +16315,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Linlithgow 1856 (NLS)</name>
+    <id>NLS_linlithgow1856</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/linlithgow/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Linlithgow 1856</attribution-text>
@@ -16125,6 +16336,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Mayole 1856-1857 (NLS)</name>
+    <id>NLS_maybole1856_1857</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Mayole 1856-1857</attribution-text>
@@ -16145,6 +16357,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Montrose 1861-1862 (NLS)</name>
+    <id>NLS_montrose1861_1862</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/montrose/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Montrose 1861-1862</attribution-text>
@@ -16165,6 +16378,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Musselburgh 1853 (NLS)</name>
+    <id>NLS_musselburgh1853</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/musselburgh1853/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Musselburgh 1853</attribution-text>
@@ -16185,6 +16399,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Musselburgh 1893 (NLS)</name>
+    <id>NLS_musselburgh1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/musselburgh1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Musselburgh 1893</attribution-text>
@@ -16205,6 +16420,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Nairn 1867-1868 (NLS)</name>
+    <id>NLS_nairn1867_1868</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Nairn 1867-1868</attribution-text>
@@ -16225,6 +16441,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Oban 1867-1868 (NLS)</name>
+    <id>NLS_oban1867_1868</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/oban/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Oban 1867-1868</attribution-text>
@@ -16245,6 +16462,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Paisley 1858 (NLS)</name>
+    <id>NLS_paisley1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/paisley/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Paisley 1858</attribution-text>
@@ -16265,6 +16483,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Peebles 1856 (NLS)</name>
+    <id>NLS_peebles1856</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/peebles/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Peebles 1856</attribution-text>
@@ -16285,6 +16504,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Perth 1860 (NLS)</name>
+    <id>NLS_perth1860</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Perth 1860</attribution-text>
@@ -16305,6 +16525,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Peterhead 1868 (NLS)</name>
+    <id>NLS_peterhead1868</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/peterhead/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Peterhead 1868</attribution-text>
@@ -16325,6 +16546,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Port Glasgow 1856-1857 (NLS)</name>
+    <id>NLS_portglasgow1856_1857</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/portglasgow/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Port Glasgow 1856-1857</attribution-text>
@@ -16345,6 +16567,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Portobello 1893-1894 (NLS)</name>
+    <id>NLS_portobello1893_1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/portobello/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Portobello 1893-1894</attribution-text>
@@ -16365,6 +16588,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Rothesay 1862-1863 (NLS)</name>
+    <id>NLS_rothesay1862_1863</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Rothesay 1862-1863</attribution-text>
@@ -16385,6 +16609,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Selkirk 1865 (NLS)</name>
+    <id>NLS_selkirk1865</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/selkirk/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Selkirk 1865</attribution-text>
@@ -16405,6 +16630,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, St Andrews 1854 (NLS)</name>
+    <id>NLS_standrews1854</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/standrews1854/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - St Andrews 1854</attribution-text>
@@ -16425,6 +16651,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, St Andrews 1893 (NLS)</name>
+    <id>NLS_standrews1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/standrews1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - St Andrews 1893</attribution-text>
@@ -16445,6 +16672,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Stirling 1858 (NLS)</name>
+    <id>NLS_stirling1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/stirling/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Stirling 1858</attribution-text>
@@ -16465,6 +16693,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Stonehaven 1864 (NLS)</name>
+    <id>NLS_stonehaven1864</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/stonehaven/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Stonehaven 1864</attribution-text>
@@ -16485,6 +16714,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Stranraer 1847 (NLS)</name>
+    <id>NLS_stranraer1847</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/stranraer1847/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Stranraer 1847</attribution-text>
@@ -16505,6 +16735,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Stranraer 1863-1877 (NLS)</name>
+    <id>NLS_stranraer1867_1877</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/stranraer1867/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Stranraer 1863-1877</attribution-text>
@@ -16525,6 +16756,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Stranraer 1893 (NLS)</name>
+    <id>NLS_stranraer1893</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/stranraer1893/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Stranraer 1893</attribution-text>
@@ -16545,6 +16777,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Strathaven 1858 (NLS)</name>
+    <id>NLS_strathaven1858</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/strathaven/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Strathaven 1858</attribution-text>
@@ -16565,6 +16798,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Wick 1872 (NLS)</name>
+    <id>NLS_wick1872</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/wick/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Wick 1872</attribution-text>
@@ -16585,6 +16819,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Wigtown 1848 (NLS)</name>
+    <id>NLS_wigtown1848</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Wigtown 1848</attribution-text>
@@ -16605,6 +16840,7 @@
   </entry>
   <entry>
     <name>OS Town Plans, Wigtown 1894 (NLS)</name>
+    <id>NLS_wigtown1894</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/towns/wigtown1894/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland - Wigtown 1894</attribution-text>
@@ -16625,6 +16861,7 @@
   </entry>
   <entry>
     <name>OS 1:25k historic (OSM)</name>
+    <id>OS-historic-25k-OSM_Limited</id>
     <type>tms</type>
     <url>http://ooc.openstreetmap.org/os1/{zoom}/{x}/{y}.jpg</url>
     <country-code>GB</country-code>
@@ -16642,6 +16879,7 @@
   </entry>
   <entry>
     <name>OS New Popular Edition historic</name>
+    <id>OS-New_Popular_Edition-historic</id>
     <type>tms</type>
     <url>http://ooc.openstreetmap.org/npe/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
@@ -16657,6 +16895,7 @@
   </entry>
   <entry>
     <name>OS OpenData Locator</name>
+    <id>OS-OpenData_Locator</id>
     <type>tms</type>
     <url>http://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
@@ -16672,6 +16911,7 @@
   </entry>
   <entry>
     <name>OS OpenData StreetView</name>
+    <id>OS-OpenData_StreetView</id>
     <type>tms</type>
     <url>http://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
@@ -16971,6 +17211,7 @@
   </entry>
   <entry>
     <name>OS Scottish Popular historic</name>
+    <id>OS-Scottish_Popular-historic</id>
     <type>tms</type>
     <url>http://ooc.openstreetmap.org/npescotland/tiles/{zoom}/{x}/{y}.jpg</url>
     <country-code>GB</country-code>
@@ -16988,6 +17229,7 @@
   </entry>
   <entry>
     <name>Surrey Air Survey</name>
+    <id>Surrey-Air_Survey</id>
     <type>tms</type>
     <url>http://gravitystorm.dev.openstreetmap.org/surrey/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
@@ -17119,6 +17361,7 @@
   </entry>
   <entry>
     <name>Interspect ortofot&#243; 2014</name>
+    <id>Interspect_Budapest_2014</id>
     <type>tms</type>
     <url>http://geoserver.infobex.hu/Budapest2014/IST/{zoom}/{x}/{y}.jpg</url>
     <best />
@@ -17303,6 +17546,7 @@
   </entry>
   <entry>
     <name>Budapest district XII ortophoto 2013</name>
+    <id>Budapest_XII_2013</id>
     <type>wms</type>
     <url>http://turistautak.openstreetmap.hu/kolesar/wms/Budapest-XII/?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Ortofot%C3%B3%202013&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -17567,6 +17811,7 @@
   </entry>
   <entry>
     <name>Danube flood ortophoto 2013</name>
+    <id>Duna_2013</id>
     <type>tms</type>
     <url>http://e.tile.openstreetmap.hu/dunai-arviz-2013/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Fot&#243;t&#233;rk&#233;p.hu</attribution-text>
@@ -17590,6 +17835,7 @@
   </entry>
   <entry>
     <name>F&#214;MI ortofot&#243; 2000</name>
+    <id>FOMI_2000</id>
     <type>tms</type>
     <url>http://e.tile.openstreetmap.hu/ortofoto2000/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">F&#246;ldm&#233;r&#233;si &#233;s T&#225;v&#233;rz&#233;kel&#233;si Int&#233;zet</attribution-text>
@@ -18176,6 +18422,7 @@
   </entry>
   <entry>
     <name>F&#214;MI ortofot&#243; 2005</name>
+    <id>FOMI_2005</id>
     <type>tms</type>
     <url>http://e.tile.openstreetmap.hu/ortofoto2005/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">F&#246;ldm&#233;r&#233;si &#233;s T&#225;v&#233;rz&#233;kel&#233;si Int&#233;zet</attribution-text>
@@ -18762,6 +19009,7 @@
   </entry>
   <entry>
     <name>Szeged ortophoto 2011</name>
+    <id>Szeged_2011</id>
     <type>tms</type>
     <url>http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">SZTE TFGT - University of Szeged</attribution-text>
@@ -18829,6 +19077,7 @@
   </entry>
   <entry>
     <name>T&#246;r&#246;kb&#225;lint ortophoto 2013</name>
+    <id>Torokbalint-ortophoto-2013</id>
     <type>wms</type>
     <url>http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -18999,6 +19248,7 @@
   </entry>
   <entry>
     <name>Ireland Bartholomew Quarter-Inch 1940</name>
+    <id>bartholomew_qi1940</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/ireland/bartholomew/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -19053,6 +19303,7 @@
   </entry>
   <entry>
     <name>Ireland British War Office 1:25k GSGS 3906</name>
+    <id>GSGS3906</id>
     <type>tms</type>
     <url>http://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Glucksman Map Library, Trinity College Dublin</attribution-text>
@@ -19072,6 +19323,7 @@
   </entry>
   <entry>
     <name>Ireland British War Office One-Inch 1941-43 GSGS 4136</name>
+    <id>GSGS4136</id>
     <type>tms</type>
     <url>http://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png</url>
     <attribution-text mandatory="true">National Library of Scotland Historic Maps</attribution-text>
@@ -19142,6 +19394,7 @@
   </entry>
   <entry>
     <name>Ireland EEA CORINE 2006</name>
+    <id>IrelandEEACORINE2006</id>
     <type>tms</type>
     <url>http://a.tile.openstreetmap.ie/tiles/corine/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">EEA Corine 2006</attribution-text>
@@ -19196,6 +19449,7 @@
   </entry>
   <entry>
     <name>Ireland EEA GMES Urban Atlas</name>
+    <id>IrelandEEAGMESUrbanAtlas</id>
     <type>tms</type>
     <url>http://a.tile.openstreetmap.ie/tiles/urbanatlas/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">EEA GMES Urban Atlas</attribution-text>
@@ -19596,6 +19850,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Eastern Iceland</name>
+    <id>osmim-imagicode-LC82160152013239LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC82160152013239LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -19615,6 +19870,7 @@
   </entry>
   <entry>
     <name>Lodi - Italy</name>
+    <id>Lodi-Italy</id>
     <type>wms</type>
     <url>http://sit.provincia.lodi.it/mapserver/mapserv.exe?map=ortofoto_wgs84.map&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=Terraitaly%20Ortofoto%202007&amp;STYLES=%2C%2C&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -19652,6 +19908,7 @@
   </entry>
   <entry>
     <name>Lombardia - Italy (CTR)</name>
+    <id>Lombardia-Italy-CTR</id>
     <type>wms</type>
     <url>http://www.cartografia.regione.lombardia.it/ArcGIS10/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=0&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -19774,6 +20031,7 @@
   </entry>
   <entry>
     <name>Lombardia - Italy (CTR DBT)</name>
+    <id>Lombardia-Italy-CTR-DBT</id>
     <type>wms</type>
     <url>http://www.cartografia.servizirl.it/arcgis/services/wms/ctr_wms/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=CTR_DBT&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -19896,6 +20154,7 @@
   </entry>
   <entry>
     <name>PCN 2006 - Italy</name>
+    <id>PCN-Italy-2006</id>
     <type>wms</type>
     <url>http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_06.map&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=OI.ORTOIMMAGINI.2006.33,OI.ORTOIMMAGINI.2006.32&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -19905,6 +20164,7 @@
   </entry>
   <entry>
     <name>PCN 2008 - IT Lazio+Umbria</name>
+    <id>PCN-Lazio_Umbria-2008</id>
     <type>wms</type>
     <url>http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_08.map&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=OI.ORTOIMMAGINI.2008.33&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -20031,6 +20291,7 @@
   </entry>
   <entry>
     <name>Sicily - Italy</name>
+    <id>Sicily-ATA2007</id>
     <type>wms</type>
     <url>http://map.sitr.regione.sicilia.it/ArcGIS/services/WGS84_F33/Ortofoto_ATA20072008_f33/MapServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=0&amp;STYLES=default&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -20042,6 +20303,7 @@
   </entry>
   <entry>
     <name>South Tyrol Orthofoto 2011</name>
+    <id>South-Tyrol-Orthofoto2011</id>
     <type>tms</type>
     <url>http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=P_BZ_OF_2011_EPSG3857&amp;STYLE=default&amp;TILEMATRIXSET=GoogleMapsCompatible&amp;TILEMATRIX=GoogleMapsCompatible%3A{zoom}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg</url>
     <attribution-text mandatory="true">&#169; Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0</attribution-text>
@@ -20524,6 +20786,7 @@
   </entry>
   <entry>
     <name>South Tyrol Orthofoto 2011 (highres)</name>
+    <id>South-Tyrol-Orthofoto2011-20cm</id>
     <type>wms</type>
     <url>http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=P_BZ_OF_2011_EPSG3857,P_BZ_OF_2011_20cm_EPSG3857&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -21008,6 +21271,7 @@
   </entry>
   <entry>
     <name>South Tyrol Orthofoto 2014</name>
+    <id>South-Tyrol-Orthofoto2014</id>
     <type>tms</type>
     <url>http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=P_BZ_OF_2014_EPSG3857&amp;STYLE=default&amp;TILEMATRIXSET=GoogleMapsCompatible&amp;TILEMATRIX=GoogleMapsCompatible%3A{zoom}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg</url>
     <best />
@@ -21307,6 +21571,7 @@
   </entry>
   <entry>
     <name>South Tyrol Topomap</name>
+    <id>South-Tyrol-Topomap</id>
     <type>tms</type>
     <url>http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=P_BZ_BASEMAP_TOPO&amp;STYLE=default&amp;TILEMATRIXSET=GoogleMapsCompatible&amp;TILEMATRIX=GoogleMapsCompatible%3A{z}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg</url>
     <attribution-text mandatory="true">&#169; Autonomen Provinz Bozen/Provincia Autonoma di Bolzano</attribution-text>
@@ -21789,6 +22054,7 @@
   </entry>
   <entry>
     <name>Lithuania - N&#381;T ORT10LT</name>
+    <id>ORT10LT</id>
     <type>tms</type>
     <url>http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">N&#381;T ORT10LT</attribution-text>
@@ -21905,6 +22171,7 @@
   </entry>
   <entry>
     <name>Luxembourg Geoportail Basemap</name>
+    <id>lu.geoportail.opendata.basemap</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/basemap/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -22145,6 +22412,7 @@
   </entry>
   <entry>
     <name>Luxembourg Geoportail Cadastre</name>
+    <id>lu.geoportail.opendata.cadastre</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/cadastre/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -22385,6 +22653,7 @@
   </entry>
   <entry>
     <name>Luxembourg Geoportail Ortho 2010</name>
+    <id>lu.geoportail.opendata.ortho2010</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <best />
@@ -22626,6 +22895,7 @@
   </entry>
   <entry>
     <name>Luxembourg Geoportail Ortho 2013</name>
+    <id>lu.geoportail.opendata.ortho2013</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <best />
@@ -22867,6 +23137,7 @@
   </entry>
   <entry>
     <name>Luxembourg Geoportail Topographical Map</name>
+    <id>lu.geoportail.opendata.topo</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/topo/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -23107,6 +23378,7 @@
   </entry>
   <entry>
     <name>20cm ortho - Coastline</name>
+    <id>Latvia-ortho-Coastline-20cm</id>
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=piekraste&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <attribution-text>Piekrastes ortofoto, 2007, &#169; Latvijas vides aizsardz&#299;bas fonds</attribution-text>
@@ -23114,6 +23386,7 @@
   </entry>
   <entry>
     <name>50cm ortho - Latvia</name>
+    <id>Latvia-ortho-50cm</id>
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/osm_latvia?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=ortobildes&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <attribution-text>Ortofoto 1:10000, 2007.-2008. gads, &#169; Latvijas &#290;eotelpisk&#257;s inform&#257;cijas a&#291;ent&#363;ra</attribution-text>
@@ -23121,12 +23394,14 @@
   </entry>
   <entry>
     <name>USSR - Latvia</name>
+    <id>USSR-Latvia</id>
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;service=WMS&amp;REQUEST=GetMap&amp;LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <country-code>LV</country-code>
   </entry>
   <entry>
     <name>Geoportal.gov.pl (Orthophotomap)</name>
+    <id>Geoportal-PL-aerial_image</id>
     <type>tms</type>
     <url>http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}</url>
     <best />
@@ -23239,6 +23514,7 @@
   </entry>
   <entry>
     <name>Freemap.sk Car</name>
+    <id>Freemap.sk-Car</id>
     <type>tms</type>
     <url>http://t{switch:1,2,3,4}.freemap.sk/A/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
@@ -23299,6 +23575,7 @@
   </entry>
   <entry>
     <name>Freemap.sk Cyclo</name>
+    <id>Freemap.sk-Cyclo</id>
     <type>tms</type>
     <url>http://t{switch:1,2,3,4}.freemap.sk/C/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
@@ -23359,6 +23636,7 @@
   </entry>
   <entry>
     <name>Freemap.sk Hiking</name>
+    <id>Freemap.sk-Hiking</id>
     <type>tms</type>
     <url>http://t{switch:1,2,3,4}.freemap.sk/T/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
@@ -23419,6 +23697,7 @@
   </entry>
   <entry>
     <name>Freemap.sk Ski</name>
+    <id>Freemap.sk-Ski</id>
     <type>tms</type>
     <url>http://t{switch:1,2,3,4}.freemap.sk/K/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">Copyright &#169;2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
@@ -23479,6 +23758,7 @@
   </entry>
   <entry>
     <name>Katastr&#225;lna mapa Slovenska (KaPor, 2010-04)</name>
+    <id>KatastrlnamapaSlovenska-kapor-2010</id>
     <type>tms</type>
     <url>http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Permisssion by UGKK</attribution-text>
@@ -23537,6 +23817,7 @@
   </entry>
   <entry>
     <name>Katastr&#225;lna mapa Slovenska (KaPor, 2011-05)</name>
+    <id>KatastrlnamapaSlovenska-kapor-2011</id>
     <type>tms</type>
     <url>http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Permisssion by UGKK</attribution-text>
@@ -23595,6 +23876,7 @@
   </entry>
   <entry>
     <name>Slovakia EEA CORINE 2006</name>
+    <id>SlovakiaEEACORINE2006</id>
     <type>tms</type>
     <url>http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">EEA Corine 2006</attribution-text>
@@ -23654,6 +23936,7 @@
   </entry>
   <entry>
     <name>Slovakia EEA GMES Urban Atlas</name>
+    <id>SlovakiaEEAGMESUrbanAtlas</id>
     <type>tms</type>
     <url>http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">EEA GMES Urban Atlas</attribution-text>
@@ -23713,6 +23996,7 @@
   </entry>
   <entry>
     <name>Slovakia Historic Maps</name>
+    <id>Slovakia-Historic-Maps</id>
     <type>tms</type>
     <url>http://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png</url>
     <country-code>SK</country-code>
@@ -23729,12 +24013,14 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Bouvet Island</name>
+    <id>osmim-imagicode-LC81800982013291LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81800982013291LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <best />
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
     <attribution-url>http://maps.imagico.de/#osmim</attribution-url>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==</icon>
+    <country-code>BV</country-code>
     <max-zoom>13</max-zoom>
     <bounds max-lat="-54.375392" max-lon="3.463913" min-lat="-54.470517" min-lon="3.246529">
       <shape>
@@ -23748,6 +24034,7 @@
   </entry>
   <entry>
     <name>British Columbia Mosaic</name>
+    <id>British_Columbia_Mosaic</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png</url>
     <attribution-text>Copyright Province of British Columbia, City of Surrey</attribution-text>
@@ -24017,8 +24304,9 @@
   </entry>
   <entry>
     <name>Canvec</name>
+    <id>Canvec</id>
     <type>wms</type>
-    <url>http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&amp;SERVICE=wms&amp;VERSION=1.1.1&amp;EXCEPTIONS=application/vnd.ogc.se_inimage&amp;SRS={proj(EPSG:4326)}&amp;FORMAT=image/png&amp;transparent=true&amp;layers=SCW-Toporama&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
+    <url>http://wms.sst-sw.rncan.gc.ca/wms/toporama_fr?REQUEST=GetMap&amp;SERVICE=wms&amp;VERSION=1.1.1&amp;EXCEPTIONS=application/vnd.ogc.se_inimage&amp;SRS={proj}&amp;FORMAT=image/png&amp;transparent=true&amp;layers=SCW-Toporama&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
@@ -24279,8 +24567,9 @@
   </entry>
   <entry>
     <name>Geobase Hydrography</name>
+    <id>Geobase_Hydrography</id>
     <type>wms</type>
-    <url>http://ows.geobase.ca/wms/geobase_en?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;SRS=EPSG:4326&amp;style=&amp;format=image/png&amp;transparent=true&amp;layers=nhn:hydrography,nhn:network&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
+    <url>http://ows.geobase.ca/wms/geobase_en?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;SRS={proj}&amp;style=&amp;format=image/png&amp;transparent=true&amp;layers=nhn:hydrography,nhn:network&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
@@ -24541,8 +24830,9 @@
   </entry>
   <entry>
     <name>Geobase Roads</name>
+    <id>Geobase_Roads</id>
     <type>wms</type>
-    <url>http://ows.geobase.ca/wms/geobase_en?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;SRS=EPSG:4326&amp;style=&amp;format=image/png&amp;transparent=true&amp;layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
+    <url>http://ows.geobase.ca/wms/geobase_en?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;SRS={proj}&amp;style=&amp;format=image/png&amp;transparent=true&amp;layers=nrn:addressrange,nrn:streetnames,nrn:streetnames:streetnames_primary,nrn:streetnames:streetnames_secondary,nrn:streetnames:streetnames_other,nhn:hydrography,nrn:roadnetwork&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:900913</code>
@@ -24803,6 +25093,7 @@
   </entry>
   <entry>
     <name>Kelowna 2012</name>
+    <id>kelowna_2012</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna2012/{zoom}/{x}/{y}.png</url>
     <country-code>CA</country-code>
@@ -24911,6 +25202,7 @@
   </entry>
   <entry>
     <name>Kelowna Roads overlay</name>
+    <id>kelowna_roads</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png</url>
     <country-code>CA</country-code>
@@ -25019,6 +25311,7 @@
   </entry>
   <entry>
     <name>Latest southwest British Columbia Landsat</name>
+    <id>landsat_047026</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_047026/{zoom}/{x}/{y}.png</url>
     <country-code>CA</country-code>
@@ -25044,6 +25337,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Eastern Devon Island coast</name>
+    <id>osmim-imagicode-LC80360072014245LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC80360072014245LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25063,6 +25357,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Northern Ellesmere Island</name>
+    <id>osmim-imagicode-nellesmere_ast</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=nellesmere_ast&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25082,6 +25377,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Qasigiannguit</name>
+    <id>osmim-imagicode-DMS_1142622_03746_20110415_17533956</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=DMS_1142622_03746_20110415_17533956&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25101,6 +25397,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Thule Air Base</name>
+    <id>osmim-imagicode-DMS_1142636_160xx_20110507_1822xxxx</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=DMS_1142636_160xx_20110507_1822xxxx&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25120,6 +25417,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Greenland mosaic</name>
+    <id>osmim-imagicode-greenland</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=greenland&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25277,6 +25575,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: May 2013 off-nadir Landsat</name>
+    <id>osmim-imagicode-ls_polar</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=ls_polar&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25296,6 +25595,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Northern Greenland ASTER</name>
+    <id>osmim-imagicode-ngreenland_ast</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -25315,6 +25615,7 @@
   </entry>
   <entry>
     <name>Imagerie Drone (Haiti)</name>
+    <id>Haiti-Drone</id>
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/iomhaiti/{zoom}/{x}/{y}</url>
     <country-code>HT</country-code>
@@ -25949,6 +26250,7 @@
   </entry>
   <entry>
     <name>MSR Maps Topo</name>
+    <id>MSR_Maps-Topo</id>
     <type>wms</type>
     <url>http://msrmaps.com/ogcmap.ashx?version=1.1.1&amp;request=GetMap&amp;Layers=drg&amp;styles=&amp;format=image/jpeg&amp;srs={proj}&amp;width={width}&amp;height={height}&amp;bbox={bbox}</url>
     <projections>
@@ -26201,6 +26503,7 @@
   </entry>
   <entry>
     <name>MSR Maps Urban</name>
+    <id>MSR_Maps-Urban</id>
     <type>wms</type>
     <url>http://msrmaps.com/ogcmap.ashx?version=1.1.1&amp;request=GetMap&amp;Layers=urbanarea&amp;styles=&amp;format=image/jpeg&amp;srs={proj}&amp;width={width}&amp;height={height}&amp;bbox={bbox}</url>
     <projections>
@@ -26694,6 +26997,7 @@
   </entry>
   <entry>
     <name>TIGER 2012 Roads Overlay</name>
+    <id>OSM-US-TIGER-Roads_Overlay-2012</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png</url>
     <icon>data:image/png;base64,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</icon>
@@ -26828,6 +27132,7 @@
   </entry>
   <entry>
     <name>New &amp; Misaligned TIGER Roads</name>
+    <id>New_and_Misaligned_TIGER_Roads-2013</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/enf.e0b8291e/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q</url>
     <icon>data:image/png;base64,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</icon>
@@ -26961,6 +27266,7 @@
   </entry>
   <entry>
     <name>U.S. Forest Service roads</name>
+    <id>US_Forest_Service_roads</id>
     <type>tms</type>
     <url>http://osm.cycle.travel/forest/{zoom}/{x}/{y}.png</url>
     <country-code>US</country-code>
@@ -27093,6 +27399,7 @@
   </entry>
   <entry>
     <name>USGS Large Scale Imagery</name>
+    <id>USGS-Large_Scale</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg</url>
     <country-code>US</country-code>
@@ -28157,6 +28464,7 @@
   </entry>
   <entry>
     <name>USGS Topographic Maps</name>
+    <id>USGS-Scanned_Topographic</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png</url>
     <country-code>US</country-code>
@@ -28367,6 +28675,7 @@
   </entry>
   <entry>
     <name>Delaware 2012 Orthophotography</name>
+    <id>Delaware2012Orthophotography</id>
     <type>tms</type>
     <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/0/https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer</url>
     <country-code>US</country-code>
@@ -28391,6 +28700,7 @@
   </entry>
   <entry>
     <name>MD 2014 6 Inch Aerial Imagery</name>
+    <id>geodata.md.gov-MD_SixInchImagery</id>
     <type>tms</type>
     <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer</url>
     <attribution-text>DoIT, MD iMap, MDP</attribution-text>
@@ -28450,6 +28760,7 @@
   </entry>
   <entry>
     <name>MD Three Inch Aerial Imagery</name>
+    <id>geodata.md.gov-MD_ThreeInchImagery</id>
     <type>wms</type>
     <url>http://geodata.md.gov/imap/services/Imagery/MD_ThreeInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=MD_ThreeInchImagery&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -28513,6 +28824,7 @@
   </entry>
   <entry>
     <name>MD Transportation Basemap</name>
+    <id>geodata.md.gov-MD_ColorBasemap</id>
     <type>tms</type>
     <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_ColorBasemap/http://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer</url>
     <attribution-text>DoIT, MD iMap, MDP</attribution-text>
@@ -28571,6 +28883,7 @@
   </entry>
   <entry>
     <name>NC Latest Orthoimagery</name>
+    <id>NC-US</id>
     <type>wms</type>
     <url>http://services.nconemap.com/arcgis/services/Imagery/Orthoimagery_Latest/ImageServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Orthoimagery_Latest&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -28634,6 +28947,7 @@
   </entry>
   <entry>
     <name>NJ 2015 Aerial Imagery (Infrared)</name>
+    <id>geodata.state.nj.us-Infrared2015</id>
     <type>tms</type>
     <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015</url>
     <attribution-text>NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)</attribution-text>
@@ -28765,6 +29079,7 @@
   </entry>
   <entry>
     <name>NJ 2015 Aerial Imagery (Natural Color)</name>
+    <id>geodata.state.nj.us-Natural2015</id>
     <type>tms</type>
     <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015</url>
     <attribution-text>NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)</attribution-text>
@@ -28896,6 +29211,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Alaska Range</name>
+    <id>osmim-imagicode-LC80700162014211LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC80700162014211LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -28915,6 +29231,7 @@
   </entry>
   <entry>
     <name>Philadelphia 2015 Imagery</name>
+    <id>Philadelphia2015Imagery</id>
     <type>wms</type>
     <url>http://maps.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2015/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -28936,6 +29253,7 @@
   </entry>
   <entry>
     <name>Texas Orthophoto</name>
+    <id>tnris.org</id>
     <type>tms</type>
     <url>https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=texas&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=0to20&amp;tileMatrix=0to20:{z}&amp;tileRow={y}&amp;tileCol={x}</url>
     <attribution-url>https://tnris.org/maps-and-data/online-mapping-services/</attribution-url>
@@ -28973,6 +29291,7 @@
   </entry>
   <entry>
     <name>2013 aerial imagery for San Juan County WA</name>
+    <id>sjcgis.org-Aerials_2013_WM</id>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}</url>
     <best />
@@ -28996,6 +29315,7 @@
   </entry>
   <entry>
     <name>Vector Streetmap for San Juan County WA</name>
+    <id>sjcgis.org-General_Basemap_WM</id>
     <type>tms</type>
     <url>http://sjcgis.org/arcgis/rest/services/Basemaps/General_Basemap_WM/MapServer/tile/{zoom}/{y}/{x}</url>
     <best />
@@ -29019,6 +29339,7 @@
   </entry>
   <entry>
     <name>IBGE Distrito Federal</name>
+    <id>IBGE_DF_Addresses</id>
     <type>tms</type>
     <url>https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g</url>
     <country-code>BR</country-code>
@@ -29035,6 +29356,7 @@
   </entry>
   <entry>
     <name>IBGE Mapa de Setores Rurais</name>
+    <id>IBGE_Setores_Rurais</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.i00mo1kj/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <country-code>BR</country-code>
@@ -29202,6 +29524,7 @@
   </entry>
   <entry>
     <name>IBGE Mapa de Setores Urbanos</name>
+    <id>IBGE_Setores_Urbanos</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.hgda0m6h/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <country-code>BR</country-code>
@@ -29369,6 +29692,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Isla Londonderry</name>
+    <id>osmim-imagicode-LC82280982013259LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC82280982013259LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29388,6 +29712,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Volc&#225;n Calbuco</name>
+    <id>osmim-imagicode-LC82330892016031LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29407,6 +29732,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: El Altar</name>
+    <id>osmim-imagicode-AST_L1T_00302052007154424_20150518041444_91492</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29426,6 +29752,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Leskov Island ASTER</name>
+    <id>osmim-imagicode-AST_L1T_00311162013112731_20150618142416_109190</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00311162013112731_20150618142416_109190&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29445,6 +29772,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Scott Island</name>
+    <id>osmim-imagicode-LC80611072014036LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC80611072014036LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29464,6 +29792,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Leskov Island Landsat</name>
+    <id>osmim-imagicode-LC81991002015286LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC81991002015286LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29483,6 +29812,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Clerke Rocks</name>
+    <id>osmim-imagicode-LC82050982015344LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC82050982015344LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29502,6 +29832,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Shag Rocks</name>
+    <id>osmim-imagicode-LC82100972015347LGN00</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=LC82100972015347LGN00&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29521,6 +29852,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Panama Canal</name>
+    <id>osmim-imagicode-S2A_R111_N09_20160604T154554</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R111_N09_20160604T154554&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29540,6 +29872,7 @@
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Willkanuta Mountains and Quelccaya Ice Cap</name>
+    <id>osmim-imagicode-S2A_R039_S15_20160510T145731</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R039_S15_20160510T145731&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
     <attribution-text mandatory="true">imagico.de OSM images for mapping</attribution-text>
@@ -29559,6 +29892,7 @@
   </entry>
   <entry>
     <name>Landsat 233055</name>
+    <id>landsat_233055</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.paulnorman.ca/landsat_233055/{zoom}/{x}/{y}.png</url>
     <country-code>VE</country-code>
@@ -29576,6 +29910,7 @@
   </entry>
   <entry>
     <name>Bing aerial imagery</name>
+    <id>Bing</id>
     <type>bing</type>
     <url>http://www.bing.com/maps/</url>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAdVBMVEX/phX/04r/////6cX/zXz/7Mz/vFD/u0z/1I7/tT3/yXH/uEX/v1f/rCT/2pz/vlP/qRz/4a//yG3/xmn//Pj/9eb/+/T/897/t0H/wl7/sTL//vv/+O3/2Jn/7dD/+vH/9+n/3KT/tDr/9OL/8Nf/26D/ynSCVQVOAAAAkklEQVR4Xq3R1w7DIBQD0NiQne69d///E3tvBYVU6UsVPyEdCYycIOlOv5AB004Aaf6DCpLtF4yxp8tkFMGCkiEkKyGz9qCxrkxuhLIAeaijMvAwi/vMycJDuyi5/AVUaPwTPik5UdCDiWCjtd5Q70TK+KKD26M+6o+tdGxwIlmFPeyZn1yuraFKFOnt/sCz/81f+9UEaf1lPCAAAAAASUVORK5CYII=</icon>
@@ -29583,14 +29918,17 @@
   </entry>
   <entry>
     <name>Hike &amp; Bike</name>
+    <id>hike_n_bike</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; OpenStreetMap contributors</attribution-text>
     <attribution-url>https://www.openstreetmap.org/copyright</attribution-url>
+    <icon>http://hikebikemap.org/hikebike16x16.png</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
     <name>Landsat</name>
+    <id>landsat</id>
     <type>wms</type>
     <url>http://irs.gis-lab.info/?layers=landsat&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
@@ -29612,6 +29950,7 @@
   </entry>
   <entry>
     <name>Locator Overlay</name>
+    <id>mapbox_locator_overlay</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <attribution-text mandatory="true">Terms &amp; Feedback</attribution-text>
@@ -29620,6 +29959,7 @@
   </entry>
   <entry>
     <name>Mapbox Satellite</name>
+    <id>Mapbox</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <attribution-text mandatory="true">Terms &amp; Feedback</attribution-text>
@@ -29629,6 +29969,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Addresses</name>
+    <id>OSM_Inspector-Addresses</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29637,6 +29978,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Geometry</name>
+    <id>OSM_Inspector-Geometry</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29645,6 +29987,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Highways</name>
+    <id>OSM_Inspector-Highways</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/highways/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29653,6 +29996,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Area</name>
+    <id>OSM_Inspector-Multipolygon</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/area/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29662,6 +30006,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Places</name>
+    <id>OSM_Inspector-Places</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/places/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29670,6 +30015,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Routing</name>
+    <id>OSM_Inspector-Routing</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29678,6 +30024,7 @@
   </entry>
   <entry>
     <name>OSM Inspector: Tagging</name>
+    <id>OSM_Inspector-Tagging</id>
     <type>tms</type>
     <url>http://tools.geofabrik.de/osmi/tiles/tagging/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29686,6 +30033,7 @@
   </entry>
   <entry>
     <name>OpenPT Map (overlay)</name>
+    <id>openpt_map</id>
     <type>tms</type>
     <url>http://openptmap.de/tiles/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29695,6 +30043,7 @@
   </entry>
   <entry>
     <name>OpenStreetMap GPS traces</name>
+    <id>osm-gps</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; OpenStreetMap contributors</attribution-text>
@@ -29703,6 +30052,7 @@
   </entry>
   <entry>
     <name>OpenStreetMap (German Style)</name>
+    <id>osm-mapnik-german_style</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png</url>
     <attribution-text>&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29711,6 +30061,7 @@
   </entry>
   <entry>
     <name>OpenStreetMap (Standard)</name>
+    <id>MAPNIK</id>
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29720,6 +30071,7 @@
   </entry>
   <entry>
     <name>OpenStreetMap (Standard Black &amp; White)</name>
+    <id>osm-mapnik-black_and_white</id>
     <type>tms</type>
     <url>https://tiles.wmflabs.org/bw-mapnik/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; OpenStreetMap contributors, CC-BY-SA</attribution-text>
@@ -29729,6 +30081,7 @@
   </entry>
   <entry>
     <name>QA No Address</name>
+    <id>qa_no_address</id>
     <type>tms</type>
     <url>http://tile3.poole.ch/noaddress/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Simon Poole, Data &#169;OpenStreetMap contributors</attribution-text>
@@ -29737,6 +30090,7 @@
   </entry>
   <entry>
     <name>skobbler</name>
+    <id>skobbler</id>
     <type>tms</type>
     <url>http://tiles{switch:1,2,3,4}-4001b3692e229e3215c9b7a73e528198.skobblermaps.com/TileService/tiles/2.0/00021210101/0/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Tiles: skobbler Map data: OpenStreetMap contributors</attribution-text>
@@ -29747,6 +30101,7 @@
   </entry>
   <entry>
     <name>Stamen Terrain</name>
+    <id>stamen-terrain-background</id>
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Map tiles by Stamen Design, under CC BY 3.0</attribution-text>
@@ -29756,6 +30111,7 @@
   </entry>
   <entry>
     <name>Thunderforest Landscape</name>
+    <id>tf-landscape</id>
     <type>tms</type>
     <url>https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Maps &#169; Thunderforest, Data &#169; OpenStreetMap contributors</attribution-text>
@@ -29764,6 +30120,7 @@
   </entry>
   <entry>
     <name>Thunderforest OpenCycleMap</name>
+    <id>tf-cycle</id>
     <type>tms</type>
     <url>https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Maps &#169; Thunderforest, Data &#169; OpenStreetMap contributors</attribution-text>
@@ -29772,6 +30129,7 @@
   </entry>
   <entry>
     <name>Waymarked Trails: Cycling</name>
+    <id>Waymarked_Trails-Cycling</id>
     <type>tms</type>
     <url>http://tile.waymarkedtrails.org/cycling/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
@@ -29780,6 +30138,7 @@
   </entry>
   <entry>
     <name>Waymarked Trails: Hiking</name>
+    <id>Waymarked_Trails-Hiking</id>
     <type>tms</type>
     <url>http://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
@@ -29788,6 +30147,7 @@
   </entry>
   <entry>
     <name>Waymarked Trails: MTB</name>
+    <id>Waymarked_Trails-MTB</id>
     <type>tms</type>
     <url>http://tile.waymarkedtrails.org/mtb/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
@@ -29796,6 +30156,7 @@
   </entry>
   <entry>
     <name>Waymarked Trails: Skating</name>
+    <id>Waymarked_Trails-Skating</id>
     <type>tms</type>
     <url>http://tile.waymarkedtrails.org/skating/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
@@ -29804,6 +30165,7 @@
   </entry>
   <entry>
     <name>Waymarked Trails: Winter Sports</name>
+    <id>Waymarked_Trails-Winter_Sports</id>
     <type>tms</type>
     <url>http://tile.waymarkedtrails.org/slopemap/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">&#169; Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
