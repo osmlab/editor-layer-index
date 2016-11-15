@@ -1,6 +1,7 @@
 {
     "type": "Feature",
     "properties": {
+        "id": "landsat",
         "url": "http://irs.gis-lab.info/?layers=landsat&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
         "name": "Landsat",

@@ -1,12 +1,14 @@
 {
     "type": "Feature",
     "properties": {
+        "id": "tirol.gv.at-DOM",
         "attribution": {
             "text": "tiris.tirol.gv.at",
             "required": false
         },
         "name": "Tiris: DOM (Surface model)",
-        "available_projections": ["EPSG:3034",
+        "available_projections": [
+            "EPSG:3034",
             "EPSG:3035",
             "EPSG:3044",
             "EPSG:3045",

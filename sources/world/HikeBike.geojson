@@ -1,7 +1,9 @@
 {
     "type": "Feature",
     "properties": {
+        "id": "hike_n_bike",
         "url": "http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png",
+        "icon": "http://hikebikemap.org/hikebike16x16.png",
         "attribution": {
             "url": "https://www.openstreetmap.org/copyright",
             "text": "© OpenStreetMap contributors",

@@ -15,6 +15,9 @@ for source in sources:
     name = ET.SubElement(entry, "name")
     name.text = props['name']
 
+    name = ET.SubElement(entry, "id")
+    name.text = props['id']
+
     type = ET.SubElement(entry, "type")
     type.text = props['type']
 

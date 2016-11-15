@@ -1,6 +1,7 @@
 {
     "type": "Feature",
     "properties": {
+        "id": "Czech_CUZK-KM",
         "url": "http://wms.cuzk.cz/wms.asp?service=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&FORMAT=image/png&transparent=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
         "name": "Czech CUZK:KM",

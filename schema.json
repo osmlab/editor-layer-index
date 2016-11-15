@@ -17,6 +17,7 @@
             "type": "object",
             "additionalProperties": false,
             "required": [
+                "id",
                 "type",
                 "url"
             ],
@@ -52,6 +53,7 @@
                 },
                 "id": {
                     "description": "A unique identifier for the source; used in imagery_used changeset tag",
+                    "pattern": "^[-_.A-Za-z0-9]+$",
                     "type": "string"
                 },
                 "description": {
