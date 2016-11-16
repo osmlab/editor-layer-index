@@ -6,6 +6,7 @@
     <url>http://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=Benin:cotonou_pleiade_2016&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=EPSG:3857&amp;tileMatrix=EPSG:3857:{zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <best />
     <country-code>BJ</country-code>
+    <max-zoom>21</max-zoom>
     <bounds max-lat="6.562112" max-lon="2.653665" min-lat="6.246972" min-lon="1.69563">
       <shape>
         <point lat="6.557451" lon="2.319538" />
@@ -1138,7 +1139,7 @@
     <name>Japan GSI ortho Imagery</name>
     <id>gsi.go.jp</id>
     <type>tms</type>
-    <url>http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg</url>
+    <url>http://cyberjapandata.gsi.go.jp/xyz/ort/{zoom}/{x}/{y}.jpg</url>
     <country-code>JP</country-code>
     <min-zoom>12</min-zoom>
     <max-zoom>19</max-zoom>
@@ -4590,7 +4591,7 @@
     <name>Kanton Aargau 25cm (AGIS 2014)</name>
     <id>Aargau-AGIS-2014</id>
     <type>tms</type>
-    <url>http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <best />
     <attribution-text>AGIS OF2014</attribution-text>
     <country-code>CH</country-code>
@@ -4764,7 +4765,7 @@
     <name>Kanton Basel-Stadt 2015</name>
     <id>KTBASELSTADT2015</id>
     <type>tms</type>
-    <url>http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text mandatory="true">Kanton Basel-Stadt OF 2015</attribution-text>
     <country-code>CH</country-code>
     <min-zoom>8</min-zoom>
@@ -4783,7 +4784,7 @@
     <name>Kanton Solothurn 25cm (SOGIS 2014-2015)</name>
     <id>Solothurn-sogis2014-tms</id>
     <type>tms</type>
-    <url>http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <best />
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
     <country-code>CH</country-code>
@@ -5137,7 +5138,7 @@
     <name>Kanton Z&#252;rich 2015  10cm</name>
     <id>KTZUERICH2015</id>
     <type>tms</type>
-    <url>http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <best />
     <attribution-text>Kanton Z&#252;rich OF 2015</attribution-text>
     <country-code>CH</country-code>
@@ -5260,7 +5261,7 @@
     <name>Stadt Bern 10cm (2016)</name>
     <id>Bern-bern2016-tms</id>
     <type>tms</type>
-    <url>http://mapproxy.osm.ch:8080/tiles/bern2016/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.osm.ch:8080/tiles/bern2016/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <best />
     <attribution-text mandatory="true">Orthophoto 2016, Vermessungsamt Stadt Bern </attribution-text>
     <country-code>CH</country-code>
@@ -5484,7 +5485,7 @@
     <name>Stadt Z&#252;rich Luftbild 2011</name>
     <id>Zuerich-zh_luftbild2011-tms</id>
     <type>tms</type>
-    <url>http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <attribution-text>Stadt Z&#252;rich Luftbild 2011</attribution-text>
     <country-code>CH</country-code>
     <bounds max-lat="47.4411" max-lon="8.6284" min-lat="47.3141" min-lon="8.4441">
@@ -6553,7 +6554,7 @@
     <name>Bavaria DOP 80cm</name>
     <id>bavaria-DOP80</id>
     <type>tms</type>
-    <url>http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{z}/{x}/{y}.png?origin=nw</url>
+    <url>http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <country-code>DE</country-code>
     <max-zoom>18</max-zoom>
     <bounds max-lat="50.568462" max-lon="13.844645" min-lat="47.262082" min-lon="8.956744">
@@ -9562,7 +9563,7 @@
     <name>PNOA Spain</name>
     <id>PNOA-Spain-TMS</id>
     <type>tms</type>
-    <url>http://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/png&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={z}&amp;TileRow={y}&amp;TileCol={x}</url>
+    <url>http://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/png&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={zoom}&amp;TileRow={y}&amp;TileCol={x}</url>
     <attribution-text mandatory="true">PNOA</attribution-text>
     <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
@@ -12459,7 +12460,7 @@
     <name>FR-Cadastre</name>
     <id>FR-Cadastre</id>
     <type>tms</type>
-    <url>http://tms.cadastre.openstreetmap.fr/*/tout/{z}/{x}/{y}.png</url>
+    <url>http://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">cadastre-dgi-fr source : Direction G&#233;n&#233;rale des Imp&#244;ts - Cadastre. Mise &#224; jour : 2015</attribution-text>
     <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation</attribution-url>
     <icon>http://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png</icon>
@@ -21573,7 +21574,7 @@
     <name>South Tyrol Topomap</name>
     <id>South-Tyrol-Topomap</id>
     <type>tms</type>
-    <url>http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=P_BZ_BASEMAP_TOPO&amp;STYLE=default&amp;TILEMATRIXSET=GoogleMapsCompatible&amp;TILEMATRIX=GoogleMapsCompatible%3A{z}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg</url>
+    <url>http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=P_BZ_BASEMAP_TOPO&amp;STYLE=default&amp;TILEMATRIXSET=GoogleMapsCompatible&amp;TILEMATRIX=GoogleMapsCompatible%3A{zoom}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg</url>
     <attribution-text mandatory="true">&#169; Autonomen Provinz Bozen/Provincia Autonoma di Bolzano</attribution-text>
     <attribution-url>http://geoservices.buergernetz.bz.it/geokatalog/</attribution-url>
     <country-code>IT</country-code>
@@ -22056,7 +22057,7 @@
     <name>Lithuania - N&#381;T ORT10LT</name>
     <id>ORT10LT</id>
     <type>tms</type>
-    <url>http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg</url>
+    <url>http://mapproxy.openmap.lt/ort10lt/g/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text mandatory="true">N&#381;T ORT10LT</attribution-text>
     <attribution-url>http://www.geoportal.lt</attribution-url>
     <country-code>LT</country-code>
@@ -23705,244 +23706,6 @@
     <country-code>SK</country-code>
     <min-zoom>8</min-zoom>
     <max-zoom>16</max-zoom>
-    <bounds max-lat="49.63961" max-lon="22.61255" min-lat="47.72075" min-lon="16.79685">
-      <shape>
-        <point lat="49.25529" lon="19.83682" />
-        <point lat="49.42385" lon="19.80075" />
-        <point lat="49.48058" lon="19.60437" />
-        <point lat="49.63961" lon="19.49179" />
-        <point lat="49.52604" lon="19.21831" />
-        <point lat="49.42521" lon="19.16778" />
-        <point lat="49.42236" lon="19.00308" />
-        <point lat="49.5308" lon="18.97611" />
-        <point lat="49.51425" lon="18.54685" />
-        <point lat="49.33818" lon="18.31432" />
-        <point lat="49.2961" lon="18.15913" />
-        <point lat="49.11134" lon="18.05564" />
-        <point lat="48.84938" lon="17.56396" />
-        <point lat="48.88816" lon="17.17929" />
-        <point lat="48.81105" lon="17.058" />
-        <point lat="48.61947" lon="16.90426" />
-        <point lat="48.38561" lon="16.79685" />
-        <point lat="48.01116" lon="17.06762" />
-        <point lat="47.97749" lon="17.32787" />
-        <point lat="47.82535" lon="17.51699" />
-        <point lat="47.73093" lon="17.74776" />
-        <point lat="47.72075" lon="18.29515" />
-        <point lat="47.75541" lon="18.67959" />
-        <point lat="47.81203" lon="18.89755" />
-        <point lat="47.88245" lon="18.79463" />
-        <point lat="48.04046" lon="18.84318" />
-        <point lat="48.05333" lon="19.46212" />
-        <point lat="48.22938" lon="19.62064" />
-        <point lat="48.09387" lon="19.89585" />
-        <point lat="48.2643" lon="20.33766" />
-        <point lat="48.52358" lon="20.55395" />
-        <point lat="48.55714" lon="20.82335" />
-        <point lat="48.47096" lon="21.10271" />
-        <point lat="48.55513" lon="21.45863" />
-        <point lat="48.31435" lon="21.74536" />
-        <point lat="48.37179" lon="22.15293" />
-        <point lat="49.08914" lon="22.61255" />
-        <point lat="49.23814" lon="22.09997" />
-        <point lat="49.36363" lon="21.9686" />
-        <point lat="49.46989" lon="21.6244" />
-        <point lat="49.46402" lon="21.06873" />
-        <point lat="49.31088" lon="20.94336" />
-        <point lat="49.44006" lon="20.73052" />
-        <point lat="49.41714" lon="20.22804" />
-        <point lat="49.23052" lon="20.05234" />
-        <point lat="49.25529" lon="19.83682" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>Katastr&#225;lna mapa Slovenska (KaPor, 2010-04)</name>
-    <id>KatastrlnamapaSlovenska-kapor-2010</id>
-    <type>tms</type>
-    <url>http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg</url>
-    <attribution-text mandatory="true">Permisssion by UGKK</attribution-text>
-    <attribution-url>http://wiki.freemap.sk/KatasterPortal</attribution-url>
-    <country-code>SK</country-code>
-    <bounds max-lat="49.63961" max-lon="22.61255" min-lat="47.72075" min-lon="16.79685">
-      <shape>
-        <point lat="49.25529" lon="19.83682" />
-        <point lat="49.42385" lon="19.80075" />
-        <point lat="49.48058" lon="19.60437" />
-        <point lat="49.63961" lon="19.49179" />
-        <point lat="49.52604" lon="19.21831" />
-        <point lat="49.42521" lon="19.16778" />
-        <point lat="49.42236" lon="19.00308" />
-        <point lat="49.5308" lon="18.97611" />
-        <point lat="49.51425" lon="18.54685" />
-        <point lat="49.33818" lon="18.31432" />
-        <point lat="49.2961" lon="18.15913" />
-        <point lat="49.11134" lon="18.05564" />
-        <point lat="48.84938" lon="17.56396" />
-        <point lat="48.88816" lon="17.17929" />
-        <point lat="48.81105" lon="17.058" />
-        <point lat="48.61947" lon="16.90426" />
-        <point lat="48.38561" lon="16.79685" />
-        <point lat="48.01116" lon="17.06762" />
-        <point lat="47.97749" lon="17.32787" />
-        <point lat="47.82535" lon="17.51699" />
-        <point lat="47.73093" lon="17.74776" />
-        <point lat="47.72075" lon="18.29515" />
-        <point lat="47.75541" lon="18.67959" />
-        <point lat="47.81203" lon="18.89755" />
-        <point lat="47.88245" lon="18.79463" />
-        <point lat="48.04046" lon="18.84318" />
-        <point lat="48.05333" lon="19.46212" />
-        <point lat="48.22938" lon="19.62064" />
-        <point lat="48.09387" lon="19.89585" />
-        <point lat="48.2643" lon="20.33766" />
-        <point lat="48.52358" lon="20.55395" />
-        <point lat="48.55714" lon="20.82335" />
-        <point lat="48.47096" lon="21.10271" />
-        <point lat="48.55513" lon="21.45863" />
-        <point lat="48.31435" lon="21.74536" />
-        <point lat="48.37179" lon="22.15293" />
-        <point lat="49.08914" lon="22.61255" />
-        <point lat="49.23814" lon="22.09997" />
-        <point lat="49.36363" lon="21.9686" />
-        <point lat="49.46989" lon="21.6244" />
-        <point lat="49.46402" lon="21.06873" />
-        <point lat="49.31088" lon="20.94336" />
-        <point lat="49.44006" lon="20.73052" />
-        <point lat="49.41714" lon="20.22804" />
-        <point lat="49.23052" lon="20.05234" />
-        <point lat="49.25529" lon="19.83682" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>Katastr&#225;lna mapa Slovenska (KaPor, 2011-05)</name>
-    <id>KatastrlnamapaSlovenska-kapor-2011</id>
-    <type>tms</type>
-    <url>http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg</url>
-    <attribution-text mandatory="true">Permisssion by UGKK</attribution-text>
-    <attribution-url>http://wiki.freemap.sk/KatasterPortal</attribution-url>
-    <country-code>SK</country-code>
-    <bounds max-lat="49.63961" max-lon="22.61255" min-lat="47.72075" min-lon="16.79685">
-      <shape>
-        <point lat="49.25529" lon="19.83682" />
-        <point lat="49.42385" lon="19.80075" />
-        <point lat="49.48058" lon="19.60437" />
-        <point lat="49.63961" lon="19.49179" />
-        <point lat="49.52604" lon="19.21831" />
-        <point lat="49.42521" lon="19.16778" />
-        <point lat="49.42236" lon="19.00308" />
-        <point lat="49.5308" lon="18.97611" />
-        <point lat="49.51425" lon="18.54685" />
-        <point lat="49.33818" lon="18.31432" />
-        <point lat="49.2961" lon="18.15913" />
-        <point lat="49.11134" lon="18.05564" />
-        <point lat="48.84938" lon="17.56396" />
-        <point lat="48.88816" lon="17.17929" />
-        <point lat="48.81105" lon="17.058" />
-        <point lat="48.61947" lon="16.90426" />
-        <point lat="48.38561" lon="16.79685" />
-        <point lat="48.01116" lon="17.06762" />
-        <point lat="47.97749" lon="17.32787" />
-        <point lat="47.82535" lon="17.51699" />
-        <point lat="47.73093" lon="17.74776" />
-        <point lat="47.72075" lon="18.29515" />
-        <point lat="47.75541" lon="18.67959" />
-        <point lat="47.81203" lon="18.89755" />
-        <point lat="47.88245" lon="18.79463" />
-        <point lat="48.04046" lon="18.84318" />
-        <point lat="48.05333" lon="19.46212" />
-        <point lat="48.22938" lon="19.62064" />
-        <point lat="48.09387" lon="19.89585" />
-        <point lat="48.2643" lon="20.33766" />
-        <point lat="48.52358" lon="20.55395" />
-        <point lat="48.55714" lon="20.82335" />
-        <point lat="48.47096" lon="21.10271" />
-        <point lat="48.55513" lon="21.45863" />
-        <point lat="48.31435" lon="21.74536" />
-        <point lat="48.37179" lon="22.15293" />
-        <point lat="49.08914" lon="22.61255" />
-        <point lat="49.23814" lon="22.09997" />
-        <point lat="49.36363" lon="21.9686" />
-        <point lat="49.46989" lon="21.6244" />
-        <point lat="49.46402" lon="21.06873" />
-        <point lat="49.31088" lon="20.94336" />
-        <point lat="49.44006" lon="20.73052" />
-        <point lat="49.41714" lon="20.22804" />
-        <point lat="49.23052" lon="20.05234" />
-        <point lat="49.25529" lon="19.83682" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>Slovakia EEA CORINE 2006</name>
-    <id>SlovakiaEEACORINE2006</id>
-    <type>tms</type>
-    <url>http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">EEA Corine 2006</attribution-text>
-    <attribution-url>http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1</attribution-url>
-    <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
-    <country-code>SK</country-code>
-    <bounds max-lat="49.63961" max-lon="22.61255" min-lat="47.72075" min-lon="16.79685">
-      <shape>
-        <point lat="49.25529" lon="19.83682" />
-        <point lat="49.42385" lon="19.80075" />
-        <point lat="49.48058" lon="19.60437" />
-        <point lat="49.63961" lon="19.49179" />
-        <point lat="49.52604" lon="19.21831" />
-        <point lat="49.42521" lon="19.16778" />
-        <point lat="49.42236" lon="19.00308" />
-        <point lat="49.5308" lon="18.97611" />
-        <point lat="49.51425" lon="18.54685" />
-        <point lat="49.33818" lon="18.31432" />
-        <point lat="49.2961" lon="18.15913" />
-        <point lat="49.11134" lon="18.05564" />
-        <point lat="48.84938" lon="17.56396" />
-        <point lat="48.88816" lon="17.17929" />
-        <point lat="48.81105" lon="17.058" />
-        <point lat="48.61947" lon="16.90426" />
-        <point lat="48.38561" lon="16.79685" />
-        <point lat="48.01116" lon="17.06762" />
-        <point lat="47.97749" lon="17.32787" />
-        <point lat="47.82535" lon="17.51699" />
-        <point lat="47.73093" lon="17.74776" />
-        <point lat="47.72075" lon="18.29515" />
-        <point lat="47.75541" lon="18.67959" />
-        <point lat="47.81203" lon="18.89755" />
-        <point lat="47.88245" lon="18.79463" />
-        <point lat="48.04046" lon="18.84318" />
-        <point lat="48.05333" lon="19.46212" />
-        <point lat="48.22938" lon="19.62064" />
-        <point lat="48.09387" lon="19.89585" />
-        <point lat="48.2643" lon="20.33766" />
-        <point lat="48.52358" lon="20.55395" />
-        <point lat="48.55714" lon="20.82335" />
-        <point lat="48.47096" lon="21.10271" />
-        <point lat="48.55513" lon="21.45863" />
-        <point lat="48.31435" lon="21.74536" />
-        <point lat="48.37179" lon="22.15293" />
-        <point lat="49.08914" lon="22.61255" />
-        <point lat="49.23814" lon="22.09997" />
-        <point lat="49.36363" lon="21.9686" />
-        <point lat="49.46989" lon="21.6244" />
-        <point lat="49.46402" lon="21.06873" />
-        <point lat="49.31088" lon="20.94336" />
-        <point lat="49.44006" lon="20.73052" />
-        <point lat="49.41714" lon="20.22804" />
-        <point lat="49.23052" lon="20.05234" />
-        <point lat="49.25529" lon="19.83682" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>Slovakia EEA GMES Urban Atlas</name>
-    <id>SlovakiaEEAGMESUrbanAtlas</id>
-    <type>tms</type>
-    <url>http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">EEA GMES Urban Atlas</attribution-text>
-    <attribution-url>http://www.eea.europa.eu/data-and-maps/data/urban-atlas</attribution-url>
-    <icon>http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png</icon>
-    <country-code>SK</country-code>
     <bounds max-lat="49.63961" max-lon="22.61255" min-lat="47.72075" min-lon="16.79685">
       <shape>
         <point lat="49.25529" lon="19.83682" />
@@ -28677,7 +28440,7 @@
     <name>Delaware 2012 Orthophotography</name>
     <id>Delaware2012Orthophotography</id>
     <type>tms</type>
-    <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/0/https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer</url>
+    <url>http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/0/https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer</url>
     <country-code>US</country-code>
     <bounds max-lat="39.856382" max-lon="-75.017706" min-lat="38.449958" min-lon="-75.806996">
       <shape>
@@ -28702,7 +28465,7 @@
     <name>MD 2014 6 Inch Aerial Imagery</name>
     <id>geodata.md.gov-MD_SixInchImagery</id>
     <type>tms</type>
-    <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer</url>
+    <url>http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer</url>
     <attribution-text>DoIT, MD iMap, MDP</attribution-text>
     <attribution-url>http://imap.maryland.gov/Pages/imagery-products.aspx</attribution-url>
     <country-code>US</country-code>
@@ -28826,7 +28589,7 @@
     <name>MD Transportation Basemap</name>
     <id>geodata.md.gov-MD_ColorBasemap</id>
     <type>tms</type>
-    <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_ColorBasemap/http://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer</url>
+    <url>http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/MD_ColorBasemap/http://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer</url>
     <attribution-text>DoIT, MD iMap, MDP</attribution-text>
     <attribution-url>http://imap.maryland.gov/Pages/imagery-products.aspx</attribution-url>
     <country-code>US</country-code>
@@ -28949,7 +28712,7 @@
     <name>NJ 2015 Aerial Imagery (Infrared)</name>
     <id>geodata.state.nj.us-Infrared2015</id>
     <type>tms</type>
-    <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015</url>
+    <url>http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015</url>
     <attribution-text>NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)</attribution-text>
     <attribution-url>https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={E30775F2-6370-4525-8E68-C371ED29BBB3}</attribution-url>
     <country-code>US</country-code>
@@ -29081,7 +28844,7 @@
     <name>NJ 2015 Aerial Imagery (Natural Color)</name>
     <id>geodata.state.nj.us-Natural2015</id>
     <type>tms</type>
-    <url>http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015</url>
+    <url>http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015</url>
     <attribution-text>NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)</attribution-text>
     <attribution-url>https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId={CDC67AB8-ADA1-4B4B-9087-67A82CB9151C}</attribution-url>
     <country-code>US</country-code>
@@ -29255,7 +29018,7 @@
     <name>Texas Orthophoto</name>
     <id>tnris.org</id>
     <type>tms</type>
-    <url>https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=texas&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=0to20&amp;tileMatrix=0to20:{z}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <url>https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=texas&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=0to20&amp;tileMatrix=0to20:{zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <attribution-url>https://tnris.org/maps-and-data/online-mapping-services/</attribution-url>
     <country-code>US</country-code>
     <max-zoom>20</max-zoom>
@@ -29341,7 +29104,7 @@
     <name>IBGE Distrito Federal</name>
     <id>IBGE_DF_Addresses</id>
     <type>tms</type>
-    <url>https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g</url>
+    <url>https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g</url>
     <country-code>BR</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="-15.5005" max-lon="-47.5695" min-lat="-16.0508" min-lon="-48.2444">
@@ -30103,7 +29866,7 @@
     <name>Stamen Terrain</name>
     <id>stamen-terrain-background</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg</url>
+    <url>http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">Map tiles by Stamen Design, under CC BY 3.0</attribution-text>
     <attribution-url>http://maps.stamen.com/#terrain</attribution-url>
     <min-zoom>4</min-zoom>

@@ -563,6 +563,7 @@
                 "country_code": "BJ",
                 "id": "Benin_cotonou_pleiade_2016",
                 "license_url": "http://taches.francophonelibre.org/project/6",
+                "max_zoom": 21,
                 "name": "Benin: Cotonou Pleiade 2016",
                 "type": "tms",
                 "url": "http://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Benin:cotonou_pleiade_2016&STYLE=&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}"
@@ -4144,7 +4145,7 @@
                 "min_zoom": 12,
                 "name": "Japan GSI ortho Imagery",
                 "type": "tms",
-                "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg"
+                "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{zoom}/{x}/{y}.jpg"
             },
             "type": "Feature"
         },
@@ -16653,7 +16654,7 @@
                 "min_zoom": 8,
                 "name": "Kanton Aargau 25cm (AGIS 2014)",
                 "type": "tms",
-                "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.osm.ch:8080/tiles/AGIS2014/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -16696,7 +16697,7 @@
                 "min_zoom": 8,
                 "name": "Kanton Basel-Stadt 2015",
                 "type": "tms",
-                "url": "http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.osm.ch:8080/tiles/KTBASELSTADT2015/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -17334,7 +17335,7 @@
                 "min_zoom": 12,
                 "name": "Kanton Solothurn 25cm (SOGIS 2014-2015)",
                 "type": "tms",
-                "url": "http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -18443,7 +18444,7 @@
                 "min_zoom": 8,
                 "name": "Kanton Z\u00fcrich 2015  10cm",
                 "type": "tms",
-                "url": "http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.osm.ch:8080/tiles/KTZUERICH2015/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -18819,7 +18820,7 @@
                 "min_zoom": 8,
                 "name": "Stadt Bern 10cm (2016)",
                 "type": "tms",
-                "url": "http://mapproxy.osm.ch:8080/tiles/bern2016/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.osm.ch:8080/tiles/bern2016/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -19278,7 +19279,7 @@
                 "id": "Zuerich-zh_luftbild2011-tms",
                 "name": "Stadt Z\u00fcrich Luftbild 2011",
                 "type": "tms",
-                "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.sosm.ch:8080/tiles/zh_luftbild2011/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -24427,7 +24428,7 @@
                 "max_zoom": 18,
                 "name": "Bavaria DOP 80cm",
                 "type": "tms",
-                "url": "http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{z}/{x}/{y}.png?origin=nw"
+                "url": "http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{zoom}/{x}/{y}.png?origin=nw"
             },
             "type": "Feature"
         },
@@ -36668,7 +36669,7 @@
                 "id": "PNOA-Spain-TMS",
                 "name": "PNOA Spain",
                 "type": "tms",
-                "url": "http://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/png&TileMatrixSet=GoogleMapsCompatible&TileMatrix={z}&TileRow={y}&TileCol={x}"
+                "url": "http://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/png&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}"
             },
             "type": "Feature"
         },
@@ -45771,7 +45772,7 @@
                 "min_zoom": 12,
                 "name": "FR-Cadastre",
                 "type": "tms",
-                "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{z}/{x}/{y}.png"
+                "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png"
             },
             "type": "Feature"
         },
@@ -79133,7 +79134,7 @@
                 "max_zoom": 20,
                 "name": "South Tyrol Topomap",
                 "type": "tms",
-                "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg"
+                "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg"
             },
             "type": "Feature"
         },
@@ -79565,7 +79566,7 @@
                 "min_zoom": 1,
                 "name": "Lithuania - N\u017dT ORT10LT",
                 "type": "tms",
-                "url": "http://mapproxy.openmap.lt/ort10lt/g/{z}/{x}/{y}.jpeg"
+                "url": "http://mapproxy.openmap.lt/ort10lt/g/{zoom}/{x}/{y}.jpeg"
             },
             "type": "Feature"
         },
@@ -85507,832 +85508,6 @@
                 "name": "Freemap.sk Ski",
                 "type": "tms",
                 "url": "http://t{switch:1,2,3,4}.freemap.sk/K/{zoom}/{x}/{y}.jpeg"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            19.83682,
-                            49.25529
-                        ],
-                        [
-                            19.80075,
-                            49.42385
-                        ],
-                        [
-                            19.60437,
-                            49.48058
-                        ],
-                        [
-                            19.49179,
-                            49.63961
-                        ],
-                        [
-                            19.21831,
-                            49.52604
-                        ],
-                        [
-                            19.16778,
-                            49.42521
-                        ],
-                        [
-                            19.00308,
-                            49.42236
-                        ],
-                        [
-                            18.97611,
-                            49.5308
-                        ],
-                        [
-                            18.54685,
-                            49.51425
-                        ],
-                        [
-                            18.31432,
-                            49.33818
-                        ],
-                        [
-                            18.15913,
-                            49.2961
-                        ],
-                        [
-                            18.05564,
-                            49.11134
-                        ],
-                        [
-                            17.56396,
-                            48.84938
-                        ],
-                        [
-                            17.17929,
-                            48.88816
-                        ],
-                        [
-                            17.058,
-                            48.81105
-                        ],
-                        [
-                            16.90426,
-                            48.61947
-                        ],
-                        [
-                            16.79685,
-                            48.38561
-                        ],
-                        [
-                            17.06762,
-                            48.01116
-                        ],
-                        [
-                            17.32787,
-                            47.97749
-                        ],
-                        [
-                            17.51699,
-                            47.82535
-                        ],
-                        [
-                            17.74776,
-                            47.73093
-                        ],
-                        [
-                            18.29515,
-                            47.72075
-                        ],
-                        [
-                            18.67959,
-                            47.75541
-                        ],
-                        [
-                            18.89755,
-                            47.81203
-                        ],
-                        [
-                            18.79463,
-                            47.88245
-                        ],
-                        [
-                            18.84318,
-                            48.04046
-                        ],
-                        [
-                            19.46212,
-                            48.05333
-                        ],
-                        [
-                            19.62064,
-                            48.22938
-                        ],
-                        [
-                            19.89585,
-                            48.09387
-                        ],
-                        [
-                            20.33766,
-                            48.2643
-                        ],
-                        [
-                            20.55395,
-                            48.52358
-                        ],
-                        [
-                            20.82335,
-                            48.55714
-                        ],
-                        [
-                            21.10271,
-                            48.47096
-                        ],
-                        [
-                            21.45863,
-                            48.55513
-                        ],
-                        [
-                            21.74536,
-                            48.31435
-                        ],
-                        [
-                            22.15293,
-                            48.37179
-                        ],
-                        [
-                            22.61255,
-                            49.08914
-                        ],
-                        [
-                            22.09997,
-                            49.23814
-                        ],
-                        [
-                            21.9686,
-                            49.36363
-                        ],
-                        [
-                            21.6244,
-                            49.46989
-                        ],
-                        [
-                            21.06873,
-                            49.46402
-                        ],
-                        [
-                            20.94336,
-                            49.31088
-                        ],
-                        [
-                            20.73052,
-                            49.44006
-                        ],
-                        [
-                            20.22804,
-                            49.41714
-                        ],
-                        [
-                            20.05234,
-                            49.23052
-                        ],
-                        [
-                            19.83682,
-                            49.25529
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "Permisssion by UGKK",
-                    "url": "http://wiki.freemap.sk/KatasterPortal"
-                },
-                "country_code": "SK",
-                "id": "KatastrlnamapaSlovenska-kapor-2010",
-                "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2010-04)",
-                "type": "tms",
-                "url": "http://www.freemap.sk/tms/kapor2/{zoom}/{x}/{y}.jpg"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            19.83682,
-                            49.25529
-                        ],
-                        [
-                            19.80075,
-                            49.42385
-                        ],
-                        [
-                            19.60437,
-                            49.48058
-                        ],
-                        [
-                            19.49179,
-                            49.63961
-                        ],
-                        [
-                            19.21831,
-                            49.52604
-                        ],
-                        [
-                            19.16778,
-                            49.42521
-                        ],
-                        [
-                            19.00308,
-                            49.42236
-                        ],
-                        [
-                            18.97611,
-                            49.5308
-                        ],
-                        [
-                            18.54685,
-                            49.51425
-                        ],
-                        [
-                            18.31432,
-                            49.33818
-                        ],
-                        [
-                            18.15913,
-                            49.2961
-                        ],
-                        [
-                            18.05564,
-                            49.11134
-                        ],
-                        [
-                            17.56396,
-                            48.84938
-                        ],
-                        [
-                            17.17929,
-                            48.88816
-                        ],
-                        [
-                            17.058,
-                            48.81105
-                        ],
-                        [
-                            16.90426,
-                            48.61947
-                        ],
-                        [
-                            16.79685,
-                            48.38561
-                        ],
-                        [
-                            17.06762,
-                            48.01116
-                        ],
-                        [
-                            17.32787,
-                            47.97749
-                        ],
-                        [
-                            17.51699,
-                            47.82535
-                        ],
-                        [
-                            17.74776,
-                            47.73093
-                        ],
-                        [
-                            18.29515,
-                            47.72075
-                        ],
-                        [
-                            18.67959,
-                            47.75541
-                        ],
-                        [
-                            18.89755,
-                            47.81203
-                        ],
-                        [
-                            18.79463,
-                            47.88245
-                        ],
-                        [
-                            18.84318,
-                            48.04046
-                        ],
-                        [
-                            19.46212,
-                            48.05333
-                        ],
-                        [
-                            19.62064,
-                            48.22938
-                        ],
-                        [
-                            19.89585,
-                            48.09387
-                        ],
-                        [
-                            20.33766,
-                            48.2643
-                        ],
-                        [
-                            20.55395,
-                            48.52358
-                        ],
-                        [
-                            20.82335,
-                            48.55714
-                        ],
-                        [
-                            21.10271,
-                            48.47096
-                        ],
-                        [
-                            21.45863,
-                            48.55513
-                        ],
-                        [
-                            21.74536,
-                            48.31435
-                        ],
-                        [
-                            22.15293,
-                            48.37179
-                        ],
-                        [
-                            22.61255,
-                            49.08914
-                        ],
-                        [
-                            22.09997,
-                            49.23814
-                        ],
-                        [
-                            21.9686,
-                            49.36363
-                        ],
-                        [
-                            21.6244,
-                            49.46989
-                        ],
-                        [
-                            21.06873,
-                            49.46402
-                        ],
-                        [
-                            20.94336,
-                            49.31088
-                        ],
-                        [
-                            20.73052,
-                            49.44006
-                        ],
-                        [
-                            20.22804,
-                            49.41714
-                        ],
-                        [
-                            20.05234,
-                            49.23052
-                        ],
-                        [
-                            19.83682,
-                            49.25529
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "Permisssion by UGKK",
-                    "url": "http://wiki.freemap.sk/KatasterPortal"
-                },
-                "country_code": "SK",
-                "id": "KatastrlnamapaSlovenska-kapor-2011",
-                "name": "Katastr\u00e1lna mapa Slovenska (KaPor, 2011-05)",
-                "type": "tms",
-                "url": "http://www.freemap.sk/tms/kapor2_201105/{zoom}/{x}/{y}.jpg"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            19.83682,
-                            49.25529
-                        ],
-                        [
-                            19.80075,
-                            49.42385
-                        ],
-                        [
-                            19.60437,
-                            49.48058
-                        ],
-                        [
-                            19.49179,
-                            49.63961
-                        ],
-                        [
-                            19.21831,
-                            49.52604
-                        ],
-                        [
-                            19.16778,
-                            49.42521
-                        ],
-                        [
-                            19.00308,
-                            49.42236
-                        ],
-                        [
-                            18.97611,
-                            49.5308
-                        ],
-                        [
-                            18.54685,
-                            49.51425
-                        ],
-                        [
-                            18.31432,
-                            49.33818
-                        ],
-                        [
-                            18.15913,
-                            49.2961
-                        ],
-                        [
-                            18.05564,
-                            49.11134
-                        ],
-                        [
-                            17.56396,
-                            48.84938
-                        ],
-                        [
-                            17.17929,
-                            48.88816
-                        ],
-                        [
-                            17.058,
-                            48.81105
-                        ],
-                        [
-                            16.90426,
-                            48.61947
-                        ],
-                        [
-                            16.79685,
-                            48.38561
-                        ],
-                        [
-                            17.06762,
-                            48.01116
-                        ],
-                        [
-                            17.32787,
-                            47.97749
-                        ],
-                        [
-                            17.51699,
-                            47.82535
-                        ],
-                        [
-                            17.74776,
-                            47.73093
-                        ],
-                        [
-                            18.29515,
-                            47.72075
-                        ],
-                        [
-                            18.67959,
-                            47.75541
-                        ],
-                        [
-                            18.89755,
-                            47.81203
-                        ],
-                        [
-                            18.79463,
-                            47.88245
-                        ],
-                        [
-                            18.84318,
-                            48.04046
-                        ],
-                        [
-                            19.46212,
-                            48.05333
-                        ],
-                        [
-                            19.62064,
-                            48.22938
-                        ],
-                        [
-                            19.89585,
-                            48.09387
-                        ],
-                        [
-                            20.33766,
-                            48.2643
-                        ],
-                        [
-                            20.55395,
-                            48.52358
-                        ],
-                        [
-                            20.82335,
-                            48.55714
-                        ],
-                        [
-                            21.10271,
-                            48.47096
-                        ],
-                        [
-                            21.45863,
-                            48.55513
-                        ],
-                        [
-                            21.74536,
-                            48.31435
-                        ],
-                        [
-                            22.15293,
-                            48.37179
-                        ],
-                        [
-                            22.61255,
-                            49.08914
-                        ],
-                        [
-                            22.09997,
-                            49.23814
-                        ],
-                        [
-                            21.9686,
-                            49.36363
-                        ],
-                        [
-                            21.6244,
-                            49.46989
-                        ],
-                        [
-                            21.06873,
-                            49.46402
-                        ],
-                        [
-                            20.94336,
-                            49.31088
-                        ],
-                        [
-                            20.73052,
-                            49.44006
-                        ],
-                        [
-                            20.22804,
-                            49.41714
-                        ],
-                        [
-                            20.05234,
-                            49.23052
-                        ],
-                        [
-                            19.83682,
-                            49.25529
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "EEA Corine 2006",
-                    "url": "http://www.eea.europa.eu/data-and-maps/data/clc-2006-vector-data-version-1"
-                },
-                "country_code": "SK",
-                "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png",
-                "id": "SlovakiaEEACORINE2006",
-                "name": "Slovakia EEA CORINE 2006",
-                "type": "tms",
-                "url": "http://www.freemap.sk/tms/clc/{zoom}/{x}/{y}.png"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            19.83682,
-                            49.25529
-                        ],
-                        [
-                            19.80075,
-                            49.42385
-                        ],
-                        [
-                            19.60437,
-                            49.48058
-                        ],
-                        [
-                            19.49179,
-                            49.63961
-                        ],
-                        [
-                            19.21831,
-                            49.52604
-                        ],
-                        [
-                            19.16778,
-                            49.42521
-                        ],
-                        [
-                            19.00308,
-                            49.42236
-                        ],
-                        [
-                            18.97611,
-                            49.5308
-                        ],
-                        [
-                            18.54685,
-                            49.51425
-                        ],
-                        [
-                            18.31432,
-                            49.33818
-                        ],
-                        [
-                            18.15913,
-                            49.2961
-                        ],
-                        [
-                            18.05564,
-                            49.11134
-                        ],
-                        [
-                            17.56396,
-                            48.84938
-                        ],
-                        [
-                            17.17929,
-                            48.88816
-                        ],
-                        [
-                            17.058,
-                            48.81105
-                        ],
-                        [
-                            16.90426,
-                            48.61947
-                        ],
-                        [
-                            16.79685,
-                            48.38561
-                        ],
-                        [
-                            17.06762,
-                            48.01116
-                        ],
-                        [
-                            17.32787,
-                            47.97749
-                        ],
-                        [
-                            17.51699,
-                            47.82535
-                        ],
-                        [
-                            17.74776,
-                            47.73093
-                        ],
-                        [
-                            18.29515,
-                            47.72075
-                        ],
-                        [
-                            18.67959,
-                            47.75541
-                        ],
-                        [
-                            18.89755,
-                            47.81203
-                        ],
-                        [
-                            18.79463,
-                            47.88245
-                        ],
-                        [
-                            18.84318,
-                            48.04046
-                        ],
-                        [
-                            19.46212,
-                            48.05333
-                        ],
-                        [
-                            19.62064,
-                            48.22938
-                        ],
-                        [
-                            19.89585,
-                            48.09387
-                        ],
-                        [
-                            20.33766,
-                            48.2643
-                        ],
-                        [
-                            20.55395,
-                            48.52358
-                        ],
-                        [
-                            20.82335,
-                            48.55714
-                        ],
-                        [
-                            21.10271,
-                            48.47096
-                        ],
-                        [
-                            21.45863,
-                            48.55513
-                        ],
-                        [
-                            21.74536,
-                            48.31435
-                        ],
-                        [
-                            22.15293,
-                            48.37179
-                        ],
-                        [
-                            22.61255,
-                            49.08914
-                        ],
-                        [
-                            22.09997,
-                            49.23814
-                        ],
-                        [
-                            21.9686,
-                            49.36363
-                        ],
-                        [
-                            21.6244,
-                            49.46989
-                        ],
-                        [
-                            21.06873,
-                            49.46402
-                        ],
-                        [
-                            20.94336,
-                            49.31088
-                        ],
-                        [
-                            20.73052,
-                            49.44006
-                        ],
-                        [
-                            20.22804,
-                            49.41714
-                        ],
-                        [
-                            20.05234,
-                            49.23052
-                        ],
-                        [
-                            19.83682,
-                            49.25529
-                        ]
-                    ]
-                ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "EEA GMES Urban Atlas",
-                    "url": "http://www.eea.europa.eu/data-and-maps/data/urban-atlas"
-                },
-                "country_code": "SK",
-                "icon": "http://www.eea.europa.eu/about-us/documents/logos/eps_logos/eea_mini.png",
-                "id": "SlovakiaEEAGMESUrbanAtlas",
-                "name": "Slovakia EEA GMES Urban Atlas",
-                "type": "tms",
-                "url": "http://www.freemap.sk/tms/urbanatlas/{zoom}/{x}/{y}.png"
             },
             "type": "Feature"
         },
@@ -103766,7 +102941,7 @@
                 "id": "Delaware2012Orthophotography",
                 "name": "Delaware 2012 Orthophotography",
                 "type": "tms",
-                "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/0/https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer"
+                "url": "http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/0/https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer"
             },
             "type": "Feature"
         },
@@ -103976,7 +103151,7 @@
                 "name": "MD 2014 6 Inch Aerial Imagery",
                 "start_date": "2013",
                 "type": "tms",
-                "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer"
+                "url": "http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer"
             },
             "type": "Feature"
         },
@@ -104377,7 +103552,7 @@
                 "id": "geodata.md.gov-MD_ColorBasemap",
                 "name": "MD Transportation Basemap",
                 "type": "tms",
-                "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/MD_ColorBasemap/http://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer"
+                "url": "http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/MD_ColorBasemap/http://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer"
             },
             "type": "Feature"
         },
@@ -105060,7 +104235,7 @@
                 "name": "NJ 2015 Aerial Imagery (Infrared)",
                 "start_date": "2015-03-29",
                 "type": "tms",
-                "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015"
+                "url": "http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/Infrared2015/http://geodata.state.nj.us/imagerywms/Infrared2015"
             },
             "type": "Feature"
         },
@@ -105558,7 +104733,7 @@
                 "name": "NJ 2015 Aerial Imagery (Natural Color)",
                 "start_date": "2015-03-29",
                 "type": "tms",
-                "url": "http://whoots.mapwarper.net/tms/{z}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015"
+                "url": "http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/Natural2015/http://geodata.state.nj.us/imagerywms/Natural2015"
             },
             "type": "Feature"
         },
@@ -105772,7 +104947,7 @@
                 "name": "Texas Orthophoto",
                 "start_date": "2012",
                 "type": "tms",
-                "url": "https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=texas&STYLE=&FORMAT=image/png&tileMatrixSet=0to20&tileMatrix=0to20:{z}&tileRow={y}&tileCol={x}"
+                "url": "https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=texas&STYLE=&FORMAT=image/png&tileMatrixSet=0to20&tileMatrix=0to20:{zoom}&tileRow={y}&tileCol={x}"
             },
             "type": "Feature"
         },
@@ -105942,7 +105117,7 @@
                 "name": "IBGE Distrito Federal",
                 "overlay": true,
                 "type": "tms",
-                "url": "https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g"
+                "url": "https://api.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g"
             },
             "type": "Feature"
         },
@@ -108095,7 +107270,7 @@
                 "min_zoom": 4,
                 "name": "Stamen Terrain",
                 "type": "tms",
-                "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg"
+                "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{zoom}/{x}/{y}.jpg"
             },
             "type": "Feature"
         },
