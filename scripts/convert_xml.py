@@ -90,4 +90,4 @@ util.indent(root)
 
 tree = ET.ElementTree(root)
 with io.open("imagery.xml", mode='wb') as f:
-    tree.write(f)
+    tree.write(f, encoding='utf-8', xml_declaration=True)
