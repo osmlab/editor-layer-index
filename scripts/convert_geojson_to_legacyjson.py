@@ -1,13 +1,13 @@
-import json, sys, io, getopt
+import json, sys, io, argparse
 
-def convert_json_source(source):
+def convert_json_source(args, source):
     converted = {}
     extent_obj = {}
 
     geometry = source.get('geometry') or {}
     polygon_coords = geometry.get('coordinates') or []
     if polygon_coords:
-        if _gen_bbox:
+        if args.gen_bbox:
             # extent_obj['polygon'] = polygon_coords
             # generate bbox from polygon coordinates as a stop gap         
             min_lon = 180
@@ -30,11 +30,11 @@ def convert_json_source(source):
             bbox_obj['min_lat'] = min_lat
             bbox_obj['max_lat'] = max_lat
             extent_obj['bbox'] = bbox_obj
-        if not _remove_polygons:
+        if not args.remove_polygons:
             extent_obj['polygon'] = polygon_coords
 
     properties = source.get('properties') or {}
-    if _tms_only and properties['type'] == 'wms':
+    if args.tms_only and properties['type'] == 'wms':
         return {}
 
     for f in ['name', 'type', 'url', 'license_url', 'id', 'description',
@@ -54,30 +54,18 @@ def convert_json_source(source):
 
     return converted
 
-try:
-    opts, args = getopt.getopt(sys.argv[1:], "btr",["bbox","tmsonly","removepolygons"])
-except getopt.GetoptError:    
-    sys.exit(2)
-    
-global _gen_bbox
-_gen_bbox = 0
-global _tms_only
-_tms_only = 0
-global _remove_polygons
-_remove_polygons = 0
+parser = argparse.ArgumentParser(description='Generate legacy json output format from geojosn format sources')
+parser.add_argument('files', metavar='F', nargs='+', help='file(s) to process')
+parser.add_argument('-b', dest='gen_bbox', action='store_true', help='generate bounding boxes from polygons')
+parser.add_argument('-t', dest='tms_only', action='store_true', help='only include tile servers')
+parser.add_argument('-r', dest='remove_polygons', action='store_true', help='remove polygons from output, typically used together with -b')
 
-for opt, arg in opts:
-        if opt in ("-b", "--bbox"):
-            _gen_bbox = 1
-        elif opt in ("-t", "--tmsonly"):
-            _tms_only = 1
-        elif opt in ("-r", "--removepolygons"):
-            _remove_polygons = 1
+args = parser.parse_args()
 
 features = []
-for file in args:
+for file in args.files:
     with io.open(file, 'r') as f:
-        features.append(convert_json_source(json.load(f)))
+        features.append(convert_json_source(args, json.load(f)))
 
 print(json.dumps(
     features,
