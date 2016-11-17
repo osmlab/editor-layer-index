@@ -1,0 +1,41 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "rio2015",
+        "url": "http://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2015_UTM/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "type": "wms",
+        "country_code": "BR",
+        "name": "Rio Mosaic 2015",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:29193"
+        ]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -42.30362723364694,
+                    -22.436982955891427
+                ],
+                [
+                    -44.10842009576469,
+                    -22.06578551470817
+                ],
+                [
+                    -44.53130477905882,
+                    -23.786301394919743
+                ],
+                [
+                    -42.70469231411757,
+                    -24.161784722114145
+                ],
+                [
+                    -42.30362723364694,
+                    -22.436982955891427
+                ]
+            ]
+        ]
+    }
+}
