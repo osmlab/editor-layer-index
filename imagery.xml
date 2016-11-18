@@ -9565,6 +9565,7 @@
     <id>PNOA-Spain-TMS</id>
     <type>tms</type>
     <url>http://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/png&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={zoom}&amp;TileRow={y}&amp;TileCol={x}</url>
+    <best />
     <attribution-text mandatory="true">PNOA</attribution-text>
     <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
@@ -10174,7 +10175,6 @@
     <id>PNOA-Spain</id>
     <type>wms</type>
     <url>http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;SRS={proj}&amp;LAYERS=pnoa&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
-    <best />
     <attribution-text mandatory="true">PNOA</attribution-text>
     <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
