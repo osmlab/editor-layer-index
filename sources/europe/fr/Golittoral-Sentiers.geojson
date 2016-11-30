@@ -1,8 +1,8 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Golittoral-Sentiers",
-        "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Sentiers_littoraux&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "id": "Geolittoral-Sentiers",
+        "url": "http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "attribution": {
             "url": "http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
             "text": "Ortho littorale 2000",
