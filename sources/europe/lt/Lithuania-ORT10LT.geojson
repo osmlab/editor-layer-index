@@ -10,9 +10,12 @@
         "name": "Lithuania - NŽT ORT10LT",
         "url": "http://mapproxy.openmap.lt/ort10lt/g/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 18,
-        "min_zoom": 1,
+        "min_zoom": 4,
         "country_code": "LT",
-        "type": "tms"
+        "type": "tms",
+        "best": true,
+        "start_date": "2010",
+        "end_date": "2016"
     },
     "geometry": {
         "type": "Polygon",
