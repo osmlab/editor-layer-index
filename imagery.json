@@ -4234,7 +4234,6 @@
             "text": "NLSC EMAP 2015",
             "url": "http://maps.nlsc.gov.tw/"
         },
-        "best": true,
         "country_code": "TW",
         "description": "The emap from Taiwan National Land Surveying and Mapping Center",
         "extent": {
@@ -4267,45 +4266,6 @@
         "start_date": "2015",
         "type": "tms",
         "url": "http://maps.nlsc.gov.tw/S_Maps/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=EMAP5_OPENDATA&STYLE=_null&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png"
-    },
-    {
-        "attribution": {
-            "required": true,
-            "text": "NLSC EMAP 2015",
-            "url": "http://maps.nlsc.gov.tw/"
-        },
-        "country_code": "TW",
-        "description": "The emap from Taiwan National Land Surveying and Mapping Center",
-        "extent": {
-            "max_zoom": 15,
-            "min_zoom": 0,
-            "polygon": [
-                [
-                    [
-                        117.96476847027898,
-                        26.432384466111355
-                    ],
-                    [
-                        124.80584676946673,
-                        26.4034785014669
-                    ],
-                    [
-                        124.80102910869266,
-                        21.800203631837395
-                    ],
-                    [
-                        117.89973004982896,
-                        21.798999216643878
-                    ]
-                ]
-            ]
-        },
-        "id": "NLSC-EMAP6",
-        "license_url": "http://data.gov.tw/license",
-        "name": "NLSC General Map",
-        "start_date": "2015",
-        "type": "tms",
-        "url": "http://maps.nlsc.gov.tw/S_Maps/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=EMAP6_OPENDATA&STYLE=_null&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png"
     },
     {
         "attribution": {
