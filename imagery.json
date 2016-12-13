@@ -4752,7 +4752,7 @@
         "name": "NLSC General Map with Contour line",
         "start_date": "2015",
         "type": "tms",
-        "url": "http://maps.nlsc.gov.tw/S_Maps/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=EMAP5_OPENDATA&STYLE=_null&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png"
+        "url": "http://maps.nlsc.gov.tw/S_Maps/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=EMAP5_OPENDATA&STYLE=_null&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image/png"
     },
     {
         "attribution": {
