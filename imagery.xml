@@ -2205,7 +2205,7 @@
     <type>tms</type>
     <url>https://maps{switch:1,2,3,4}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{zoom}/{y}/{x}.png</url>
     <attribution-text mandatory="true">basemap.at</attribution-text>
-    <icon>https://basemap.at/images/basemap_logo_klein.jpg</icon>
+    <icon>https://www.basemap.at/images/logo_basemap.jpg</icon>
     <country-code>AT</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="49.012661" max-lon="17.173974" min-lat="46.378527" min-lon="9.540631">
@@ -2411,7 +2411,7 @@
     <url>https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg</url>
     <best />
     <attribution-text mandatory="true">basemap.at</attribution-text>
-    <icon>http://www.geoimage.at/resources/geoimage/resources/img/logo_200.png</icon>
+    <icon>https://www.basemap.at/images/logo_basemap.jpg</icon>
     <country-code>AT</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="49.012661" max-lon="17.173974" min-lat="46.378527" min-lon="9.540631">
@@ -2637,7 +2637,7 @@
       <code>CRS:84</code>
     </projections>
     <attribution-text mandatory="true">geoimage.at</attribution-text>
-    <icon>http://www.geoimage.at/dms/templating-kit/themes/geoimage/img/logo_200.png</icon>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QwTFA8gQvGHigAAAwtJREFUOMvtk19oW1Ucx7/nnntukpvGtF2btHG1o52bYxULOp99sYggiM7pVKbbQNCH+SYOFMHCHhR88g9jjPmgm32YMpGNTbpp1W5D7NyfJnYLTdNm3ZI0SZPc5N5zzz3n+CIiCtM9+KQf+D39+H74Pfy+wH8Ocqvlh4enyblMO7JpKHl/X080sbhcnH3r3eNXkR1XtyU8cHiS2Hakf+iuxJ7enq7n4x12ijFDtz3fW11tzBZL1YMnpjKfvrN3m/O3ws+OTRnxmP1gsrf7g2RizUbGLCtkGdSkBnigtPCFaLXc1ZvF8vfZXOG1HdvGcn/M0z8Ln9nx8vBAas0ngwN9dzPGmGlSCkIMrTQxQABCSDjE2B2xyJ2E0A0d/Q+cPP/tMb7v0Kwx+tBz5PcL9350mXZFVuzR4b73Nm3o326HQpYdNonWMEAIgdZQWmvP8yECpZptKetNtzqTLkz8UpBfKmJ1tJo1SgBgfP8V2mhVn2JYet0Osc09Xabp+DFdbpgkV7SQ6jbRdCXaHAgU4AsFj0sQAFGbgguNhsPRqiyeM/d/PkezS4WxRilzpLM5ga5EEu5qGJvXDZFDuXvA4sO4b30MXCi4XCLRGYZhaFQaEtTQ6I5bKNV8HJ3ML1cLM+Pm1fnCaNFZmLhRORkkUltIpl2mI/duxMW8Rk0N4okRG3OLDtb2RlB3AthhgXI9QLbgIp13QQ0CrQSEU57JnX3/OBnbfWBfpVIZjEb7DClb8WRv50jMDqesSNzwpU+UFAiZFIGmaHsKFjNAKNOub8LhkC6XbiD4wvXLR19dOH/wzF9+8McL6Uev31jJNlrc8Xjg+4GSvlBKSKXaLpfFUk3kl5bddOZa7dTk1PTT2194DED3LfqxlZz+7qc35uZvXitXHdf1ROALKX+boO353nKpXr2UyU9/deLMzn9aPfLNDz+/NLC2/0WDhgZNxnqYSUzOA0f4vMg9J33xytzHz2595Ivb6vKet48kHx/b8mQ40vFwNMKS9UbzQmWleHrXK29+XZs/1cD//Cv8CriEgFStQ2K4AAAAAElFTkSuQmCC</icon>
     <country-code>AT</country-code>
     <bounds max-lat="49.012661" max-lon="17.173974" min-lat="46.378527" min-lon="9.540631">
       <shape>
@@ -2846,7 +2846,7 @@
       <code>CRS:84</code>
     </projections>
     <attribution-text>Stadt Graz – data.graz.gv.at</attribution-text>
-    <icon>http://gis.graz.at/g/graz-logo.gif</icon>
+    <icon>https://www.graz.at/cms/bilder/60222/80/0/0/2f67ae5c/graz-logo.gif</icon>
     <country-code>AT</country-code>
     <bounds max-lat="47.14375" max-lon="15.544216" min-lat="47.007293" min-lon="15.344465">
       <shape>
@@ -4455,6 +4455,7 @@
     <type>tms</type>
     <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=grb_bsk&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <attribution-text mandatory="true">GRB Flanders (c) AGIV</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
     <country-code>BE</country-code>
     <max-zoom>21</max-zoom>
     <bounds max-lat="51.523974" max-lon="5.937429" min-lat="50.675582" min-lon="2.522393">
@@ -4542,6 +4543,7 @@
     <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=omwrgbmrvl&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <best />
     <attribution-text mandatory="true">Orthophoto Flanders most recent (c) AGIV</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
     <country-code>BE</country-code>
     <max-zoom>21</max-zoom>
     <bounds max-lat="51.523974" max-lon="5.937429" min-lat="50.675582" min-lon="2.522393">
@@ -5030,6 +5032,7 @@
     <url>http://mapproxy.osm.ch:8080/tiles/sogis2014/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
     <best />
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEX///+LKCbMAABycnL+/v7v7+9sbGz39/fz8/Pw8PD8/Pz60siYAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+AIGAsXN84mS+sAAAA4SURBVAjXY2AUBAMBBkYlMCCXwcwABgZYGCwGIJo5AMQGAjYgLgYxLICY05iBwRisjsvY2IGBAQAGpQmjMKkg/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0wOC0yNFQxMToyMzo1NS0wNDowMLEFqzIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMDgtMjRUMTE6MjM6NTUtMDQ6MDDAWBOOAAAAAElFTkSuQmCC</icon>
     <country-code>CH</country-code>
     <min-zoom>15</min-zoom>
     <max-zoom>19</max-zoom>
@@ -5203,6 +5206,7 @@
     <url>http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Orthofoto_SO&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <best />
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEX///+LKCbMAABycnL+/v7v7+9sbGz39/fz8/Pw8PD8/Pz60siYAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+AIGAsXN84mS+sAAAA4SURBVAjXY2AUBAMBBkYlMCCXwcwABgZYGCwGIJo5AMQGAjYgLgYxLICY05iBwRisjsvY2IGBAQAGpQmjMKkg/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0wOC0yNFQxMToyMzo1NS0wNDowMLEFqzIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMDgtMjRUMTE6MjM6NTUtMDQ6MDDAWBOOAAAAAElFTkSuQmCC</icon>
     <country-code>CH</country-code>
     <min-zoom>15</min-zoom>
     <max-zoom>19</max-zoom>
@@ -5375,6 +5379,7 @@
     <type>wms</type>
     <url>http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Orthofoto_CIR_SO&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text>Orthofoto WMS Solothurn</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEX///+LKCbMAABycnL+/v7v7+9sbGz39/fz8/Pw8PD8/Pz60siYAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+AIGAsXN84mS+sAAAA4SURBVAjXY2AUBAMBBkYlMCCXwcwABgZYGCwGIJo5AMQGAjYgLgYxLICY05iBwRisjsvY2IGBAQAGpQmjMKkg/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0wOC0yNFQxMToyMzo1NS0wNDowMLEFqzIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMDgtMjRUMTE6MjM6NTUtMDQ6MDDAWBOOAAAAAElFTkSuQmCC</icon>
     <country-code>CH</country-code>
     <min-zoom>15</min-zoom>
     <max-zoom>19</max-zoom>
@@ -7294,6 +7299,7 @@
     <best />
     <attribution-text mandatory="true">Geodatastyrelsen og Danske Kommuner</attribution-text>
     <attribution-url>http://download.kortforsyningen.dk/content/vilkaar-og-betingelser</attribution-url>
+    <icon>https://dl.dropboxusercontent.com/u/4031522/foto/gst_icon.png</icon>
     <country-code>DK</country-code>
     <max-zoom>21</max-zoom>
     <bounds max-lat="57.822894" max-lon="15.309925" min-lat="54.468165" min-lon="8.018512">
@@ -29879,6 +29885,7 @@
       <code>EPSG:32636</code>
       <code>EPSG:32635</code>
     </projections>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUTPmdaXSdnXUmdcyo9AbYLAAAAFklEQVQI12NYtYqBgYEI4v//0FAiCAA8TB/hMzHkwAAAAABJRU5ErkJggg==</icon>
   </entry>
   <entry>
     <name>Locator Overlay</name>
@@ -29906,6 +29913,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/addresses/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -29915,6 +29923,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -29924,6 +29933,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/highways/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -29933,6 +29943,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/area/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <min-zoom>8</min-zoom>
     <max-zoom>19</max-zoom>
   </entry>
@@ -29943,6 +29954,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/places/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -29952,6 +29964,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/routing/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -29961,6 +29974,7 @@
     <url>http://tools.geofabrik.de/osmi/tiles/tagging/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://tools.geofabrik.de/osmi/</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII=</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -29970,6 +29984,7 @@
     <url>http://openptmap.de/tiles/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://openstreetmap.org/</attribution-url>
+    <icon>http://openptmap.de/favicon_pt.png</icon>
     <min-zoom>4</min-zoom>
     <max-zoom>17</max-zoom>
   </entry>
@@ -29980,6 +29995,7 @@
     <url>http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© OpenStreetMap contributors</attribution-text>
     <attribution-url>http://www.openstreetmap.org/copyright</attribution-url>
+    <icon>data:image/png;base64,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</icon>
     <max-zoom>20</max-zoom>
   </entry>
   <entry>
@@ -29989,6 +30005,7 @@
     <url>http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png</url>
     <attribution-text>© OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <attribution-url>http://openstreetmap.org/</attribution-url>
+    <icon>data:image/png;base64,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</icon>
     <max-zoom>18</max-zoom>
   </entry>
   <entry>
@@ -30057,6 +30074,7 @@
     <url>https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Maps © Thunderforest, Data © OpenStreetMap contributors</attribution-text>
     <attribution-url>http://www.thunderforest.com/terms/</attribution-url>
+    <icon>data:image/png;base64,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</icon>
     <max-zoom>22</max-zoom>
   </entry>
   <entry>
@@ -30066,6 +30084,7 @@
     <url>http://tile.waymarkedtrails.org/cycling/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
     <attribution-url>http://cycling.waymarkedtrails.org/en/help/legal</attribution-url>
+    <icon>http://static.waymarkedtrails.org/img/map_cycling.png</icon>
     <max-zoom>17</max-zoom>
   </entry>
   <entry>
@@ -30075,6 +30094,7 @@
     <url>http://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
     <attribution-url>http://hiking.waymarkedtrails.org/en/help/legal</attribution-url>
+    <icon>http://static.waymarkedtrails.org/img/map_hiking.png</icon>
     <max-zoom>17</max-zoom>
   </entry>
   <entry>
@@ -30084,6 +30104,7 @@
     <url>http://tile.waymarkedtrails.org/mtb/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
     <attribution-url>http://mtb.waymarkedtrails.org/en/help/legal</attribution-url>
+    <icon>http://static.waymarkedtrails.org/img/map_mtb.png</icon>
     <max-zoom>17</max-zoom>
   </entry>
   <entry>
@@ -30093,6 +30114,7 @@
     <url>http://tile.waymarkedtrails.org/skating/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
     <attribution-url>http://skating.waymarkedtrails.org/en/help/legal</attribution-url>
+    <icon>http://static.waymarkedtrails.org/img/map_skating.png</icon>
     <max-zoom>17</max-zoom>
   </entry>
   <entry>
@@ -30102,6 +30124,7 @@
     <url>http://tile.waymarkedtrails.org/slopemap/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
     <attribution-url>http://slopemap.waymarkedtrails.org/en/help/legal</attribution-url>
+    <icon>http://static.waymarkedtrails.org/img/map_slopes.png</icon>
     <max-zoom>17</max-zoom>
   </entry>
 </imagery>
