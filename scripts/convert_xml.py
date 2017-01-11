@@ -71,7 +71,7 @@ def add_source(source):
     geometry = source.get('geometry')
     if geometry:
         def coord_str(coord):
-            return str(round(coord, 6))
+            return "{0:.6f}".format(coord)
         bounds = ET.SubElement(entry, "bounds")
         lons = [p[0] for ring in geometry['coordinates'] for p in ring]
         lats = [p[1] for ring in geometry['coordinates'] for p in ring]
