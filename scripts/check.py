@@ -12,6 +12,8 @@ for file in sys.argv[1:]:
         if id in seen_ids:
             raise ValidationError('Id %s used multiple times' % id)
         seen_ids.add(id)
+        if '{z}' in source['properties']['url']:
+            raise ValidationError('{z} found instead of {zoom} in tile url')
         sys.stdout.write('.')
         sys.stdout.flush()
     except ValidationError as e:

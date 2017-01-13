@@ -2,12 +2,12 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "http://openstreetmap.org/",
+            "url": "https://openstreetmap.org/",
             "text": "© OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
         "name": "OpenStreetMap (Standard)",
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png",
+        "url": "https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png",
         "max_zoom": 19,
         "default": true,
         "type": "tms",

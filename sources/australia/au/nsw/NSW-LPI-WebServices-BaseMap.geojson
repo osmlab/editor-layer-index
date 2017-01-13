@@ -6,8 +6,9 @@
             "text": "© Land and Property Information 2016",
             "required": true
         },
+        "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
         "name": "LPI NSW Base Map",
-        "url": "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 19,
         "country_code": "AU",
         "type": "tms",

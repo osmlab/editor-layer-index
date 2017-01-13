@@ -8,7 +8,8 @@ for file in sys.argv[1:]:
     with io.open(file, 'r') as f:
         sources.append(json.load(f))
 
-for source in sources:
+
+def add_source(source):
     props = source['properties']
     entry = ET.SubElement(root, "entry")
 
@@ -70,7 +71,7 @@ for source in sources:
     geometry = source.get('geometry')
     if geometry:
         def coord_str(coord):
-            return str(round(coord, 6))
+            return "{0:.6f}".format(coord)
         bounds = ET.SubElement(entry, "bounds")
         lons = [p[0] for ring in geometry['coordinates'] for p in ring]
         lats = [p[1] for ring in geometry['coordinates'] for p in ring]
@@ -85,6 +86,13 @@ for source in sources:
                 point = ET.SubElement(shape, "point")
                 point.set('lon', coord_str(p[0]))
                 point.set('lat', coord_str(p[1]))
+
+for source in sources:
+    try:
+        add_source(source)
+    except StandardError:
+        print('Failed to convert %s' % source)
+        pass
 
 util.indent(root)
 
