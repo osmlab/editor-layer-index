@@ -6,15 +6,16 @@
             "text": "Administration du Cadastre et de la Topographie",
             "required": false
         },
-        "name": "Luxembourg Geoportail Ortho 2010",
-        "end_date": "2010-07-02",
-        "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
+        "name": "Luxembourg Geoportail Ortho 2016",
+        "end_date": "2016-08-16",
+        "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 20,
-        "start_date": "2010-06-24",
+        "start_date": "2013-08-30",
         "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
         "country_code": "LU",
         "type": "tms",
-        "id": "lu.geoportail.opendata.ortho2010",
+        "id": "lu.geoportail.opendata.ortho2016",
+        "best": true,
         "icon": "https://www.geoportail.lu/static/img/lion.png"
     },
     "geometry": {
