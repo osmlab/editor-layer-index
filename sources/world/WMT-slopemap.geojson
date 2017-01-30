@@ -3,13 +3,13 @@
     "properties": {
         "id": "Waymarked_Trails-Winter_Sports",
         "attribution": {
-            "url": "http://slopemap.waymarkedtrails.org/en/help/legal",
+            "url": "http://slopes.waymarkedtrails.org/en/help/legal",
             "text": "© Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
             "required": true
         },
         "name": "Waymarked Trails: Winter Sports",
         "overlay": true,
-        "url": "http://tile.waymarkedtrails.org/slopemap/{zoom}/{x}/{y}.png",
+        "url": "http://tile.waymarkedtrails.org/slopes/{zoom}/{x}/{y}.png",
         "max_zoom": 17,
         "type": "tms",
         "icon": "http://static.waymarkedtrails.org/img/map_slopes.png"
