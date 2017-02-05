@@ -22191,7 +22191,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Luxembourg Geoportail Basemap</name>
+    <name>Basemap geoportail.lu</name>
     <id>lu.geoportail.opendata.basemap</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/basemap/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png</url>
@@ -22432,7 +22432,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Luxembourg Geoportail Cadastre</name>
+    <name>Cadastre geoportail.lu</name>
     <id>lu.geoportail.opendata.cadastre</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/cadastre/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png</url>
@@ -22673,7 +22673,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Luxembourg Geoportail Ortho 2010</name>
+    <name>Ortho 2010 geoportail.lu</name>
     <id>lu.geoportail.opendata.ortho2010</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
@@ -22914,7 +22914,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Luxembourg Geoportail Ortho 2013</name>
+    <name>Ortho 2013 geoportail.lu</name>
     <id>lu.geoportail.opendata.ortho2013</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
@@ -23155,7 +23155,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Luxembourg Geoportail Ortho 2016</name>
+    <name>Ortho 2016 geoportail.lu</name>
     <id>lu.geoportail.opendata.ortho2016</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
@@ -23397,7 +23397,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>Luxembourg Geoportail Topographical Map</name>
+    <name>Topographical Map geoportail.lu</name>
     <id>lu.geoportail.opendata.topo</id>
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/topo/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png</url>
@@ -31336,9 +31336,9 @@
     <name>Waymarked Trails: Winter Sports</name>
     <id>Waymarked_Trails-Winter_Sports</id>
     <type>tms</type>
-    <url>http://tile.waymarkedtrails.org/slopemap/{zoom}/{x}/{y}.png</url>
+    <url>http://tile.waymarkedtrails.org/slopes/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0</attribution-text>
-    <attribution-url>http://slopemap.waymarkedtrails.org/en/help/legal</attribution-url>
+    <attribution-url>http://slopes.waymarkedtrails.org/en/help/legal</attribution-url>
     <icon>http://static.waymarkedtrails.org/img/map_slopes.png</icon>
     <max-zoom>17</max-zoom>
   </entry>
