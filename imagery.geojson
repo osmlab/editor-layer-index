@@ -80580,7 +80580,7 @@
                 "id": "lu.geoportail.opendata.basemap",
                 "license_url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts/",
                 "max_zoom": 20,
-                "name": "Luxembourg Geoportail Basemap",
+                "name": "Basemap geoportail.lu",
                 "start_date": "2013-07-19",
                 "type": "tms",
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/basemap/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png"
@@ -81510,7 +81510,7 @@
                 "id": "lu.geoportail.opendata.cadastre",
                 "license_url": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts/",
                 "max_zoom": 20,
-                "name": "Luxembourg Geoportail Cadastre",
+                "name": "Cadastre geoportail.lu",
                 "type": "tms",
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/cadastre/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png"
             },
@@ -82440,7 +82440,7 @@
                 "id": "lu.geoportail.opendata.ortho2010",
                 "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
                 "max_zoom": 20,
-                "name": "Luxembourg Geoportail Ortho 2010",
+                "name": "Ortho 2010 geoportail.lu",
                 "start_date": "2010-06-24",
                 "type": "tms",
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg"
@@ -83371,7 +83371,7 @@
                 "id": "lu.geoportail.opendata.ortho2013",
                 "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
                 "max_zoom": 20,
-                "name": "Luxembourg Geoportail Ortho 2013",
+                "name": "Ortho 2013 geoportail.lu",
                 "start_date": "2013-07-19",
                 "type": "tms",
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg"
@@ -84303,7 +84303,7 @@
                 "id": "lu.geoportail.opendata.ortho2016",
                 "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
                 "max_zoom": 20,
-                "name": "Luxembourg Geoportail Ortho 2016",
+                "name": "Ortho 2016 geoportail.lu",
                 "start_date": "2013-08-30",
                 "type": "tms",
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg"
@@ -85234,7 +85234,7 @@
                 "id": "lu.geoportail.opendata.topo",
                 "license_url": "https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts/",
                 "max_zoom": 20,
-                "name": "Luxembourg Geoportail Topographical Map",
+                "name": "Topographical Map geoportail.lu",
                 "start_date": "2013-07-19",
                 "type": "tms",
                 "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/topo/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png"
@@ -112364,7 +112364,7 @@
                 "attribution": {
                     "required": true,
                     "text": "\u00a9 Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
-                    "url": "http://slopemap.waymarkedtrails.org/en/help/legal"
+                    "url": "http://slopes.waymarkedtrails.org/en/help/legal"
                 },
                 "icon": "http://static.waymarkedtrails.org/img/map_slopes.png",
                 "id": "Waymarked_Trails-Winter_Sports",
@@ -112372,7 +112372,7 @@
                 "name": "Waymarked Trails: Winter Sports",
                 "overlay": true,
                 "type": "tms",
-                "url": "http://tile.waymarkedtrails.org/slopemap/{zoom}/{x}/{y}.png"
+                "url": "http://tile.waymarkedtrails.org/slopes/{zoom}/{x}/{y}.png"
             },
             "type": "Feature"
         }
