@@ -2,10 +2,15 @@
     "type": "Feature",
     "properties": {
         "id": "USGS-Scanned_Topographic",
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png",
+        "url": "http://s3-us-west-1.amazonaws.com/caltopo/topo/{zoom}/{x}/{y}.png",
         "type": "tms",
         "name": "USGS Topographic Maps",
-        "country_code": "US"
+        "country_code": "US",
+        "attribution": {
+            "url": "https://caltopo.com/",
+            "text": "© Caltopo",
+            "required": true
+        }
     },
     "geometry": {
         "type": "Polygon",
