@@ -6,6 +6,7 @@
         "url": "https://geoservices-urbis.irisnet.be/geoserver/ows/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=UrbisAdm:UrbisFR&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
         "country_code": "BE",
         "type": "wms",
+        "available_projections": ["EPSG:31370", "EPSG:4326"],
         "best": false,
         "attribution": {
             "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB",
