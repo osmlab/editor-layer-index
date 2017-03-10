@@ -107,7 +107,7 @@ d3.json("imagery.geojson", function(error, imagery) {
                 var format = url.match(/(&|\?)format=(.*?)(&|$)/i)[2];
                 var transparent = (url.match(/(&|\?)transparent=(.*?)(&|$)/i) || [])[2] || true;
                 var version = (url.match(/(&|\?)version=(.*?)(&|$)/i) || [])[2] || '1.1.1';
-                url = url.replace(/((layers|styles|format|transparent|version|width|height|bbox|srs|service|request)=.*?)(&|$)/ig, '')
+                url = url.replace(/((layers|styles|format|transparent|version|width|height|bbox|srs|crs|service|request)=.*?)(&|$)/ig, '')
                 testLayer = L.tileLayer.wms(url, {
                     layers: layers,
                     styles: styles,
