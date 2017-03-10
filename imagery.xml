@@ -4902,6 +4902,86 @@
     </bounds>
   </entry>
   <entry>
+    <name>UrbisAdm NL</name>
+    <id>UrbisAdmNL</id>
+    <type>wms</type>
+    <url>https://geoservices-urbis.irisnet.be/geoserver/ows/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=UrbisAdm:UrbisNL&amp;WIDTH={width}&amp;HEIGHT={height}&amp;CRS={proj}&amp;STYLES=&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:31370</code>
+      <code>EPSG:4326</code>
+      <code>EPSG:3857</code>
+    </projections>
+    <attribution-text mandatory="true">Realized by means of Brussels UrbIS®© - Distribution &amp; Copyright CIRB</attribution-text>
+    <country-code>BE</country-code>
+    <bounds max-lat="50.914069" max-lon="4.482382" min-lat="50.763766" min-lon="4.243430">
+      <shape>
+        <point lat="50.763821" lon="4.379729" />
+        <point lat="50.763766" lon="4.389170" />
+        <point lat="50.775166" lon="4.430283" />
+        <point lat="50.775003" lon="4.435004" />
+        <point lat="50.786454" lon="4.464272" />
+        <point lat="50.791337" lon="4.481696" />
+        <point lat="50.796166" lon="4.482382" />
+        <point lat="50.806256" lon="4.459208" />
+        <point lat="50.816614" lon="4.459466" />
+        <point lat="50.820356" lon="4.479722" />
+        <point lat="50.835374" lon="4.469594" />
+        <point lat="50.845726" lon="4.468993" />
+        <point lat="50.853963" lon="4.462384" />
+        <point lat="50.855913" lon="4.449681" />
+        <point lat="50.859923" lon="4.445990" />
+        <point lat="50.866153" lon="4.425305" />
+        <point lat="50.876281" lon="4.431828" />
+        <point lat="50.878448" lon="4.440068" />
+        <point lat="50.890144" lon="4.431056" />
+        <point lat="50.895017" lon="4.435948" />
+        <point lat="50.901026" lon="4.429596" />
+        <point lat="50.907575" lon="4.416550" />
+        <point lat="50.913420" lon="4.415434" />
+        <point lat="50.914069" lon="4.395779" />
+        <point lat="50.910930" lon="4.384621" />
+        <point lat="50.903191" lon="4.381188" />
+        <point lat="50.900322" lon="4.372605" />
+        <point lat="50.903299" lon="4.362133" />
+        <point lat="50.903407" lon="4.348572" />
+        <point lat="50.904111" lon="4.340247" />
+        <point lat="50.902487" lon="4.328917" />
+        <point lat="50.896045" lon="4.316472" />
+        <point lat="50.892743" lon="4.306343" />
+        <point lat="50.889819" lon="4.290036" />
+        <point lat="50.884946" lon="4.291495" />
+        <point lat="50.882618" lon="4.295529" />
+        <point lat="50.880939" lon="4.295615" />
+        <point lat="50.872273" lon="4.282740" />
+        <point lat="50.867128" lon="4.276989" />
+        <point lat="50.859110" lon="4.278019" />
+        <point lat="50.857214" lon="4.280423" />
+        <point lat="50.842149" lon="4.280938" />
+        <point lat="50.840360" lon="4.271925" />
+        <point lat="50.836945" lon="4.254673" />
+        <point lat="50.832880" lon="4.251069" />
+        <point lat="50.826971" lon="4.252270" />
+        <point lat="50.821820" lon="4.243430" />
+        <point lat="50.815475" lon="4.244031" />
+        <point lat="50.815096" lon="4.255188" />
+        <point lat="50.809347" lon="4.258021" />
+        <point lat="50.810107" lon="4.272183" />
+        <point lat="50.806961" lon="4.275788" />
+        <point lat="50.805062" lon="4.285401" />
+        <point lat="50.806906" lon="4.289006" />
+        <point lat="50.805930" lon="4.298018" />
+        <point lat="50.797088" lon="4.302824" />
+        <point lat="50.794538" lon="4.314583" />
+        <point lat="50.786237" lon="4.316214" />
+        <point lat="50.773809" lon="4.329518" />
+        <point lat="50.771637" lon="4.342049" />
+        <point lat="50.773375" lon="4.345225" />
+        <point lat="50.768109" lon="4.378527" />
+        <point lat="50.763821" lon="4.379729" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>imagico.de OSM images for mapping: Rila and Pirin Mountains</name>
     <id>osmim-imagicode-S2A_R093_N41_20150828T092005</id>
     <type>tms</type>
