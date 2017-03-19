@@ -60,6 +60,10 @@ def add_source(source):
         country_code = ET.SubElement(entry, "country-code")
         country_code.text = props['country_code']
 
+    if 'description' in props:
+        description = ET.SubElement(entry, "description")
+        description.text = props['description']
+
     if 'min_zoom' in props:
         min_zoom = ET.SubElement(entry, "min-zoom")
         min_zoom.text = str(props['min_zoom'])
