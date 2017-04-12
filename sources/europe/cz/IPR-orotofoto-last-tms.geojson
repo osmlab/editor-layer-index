@@ -1,0 +1,23 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "IPR-orotofoto-last-tms",
+        "name": "IPR ortofoto LAST (tmsproxy)",
+        "overlay": false,
+        "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_ipr_last.php/{zoom}/{x}/{y}.jpg",
+        "max_zoom": 18,
+        "min_zoom": 13,
+        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
+        "country_code": "CZ",
+        "type": "tms"
+    },
+    "geometry": {
+	    "type": "Polygon",
+	    "coordinates": [
+	      [[14.201491, 50.193123], 
+	      [14.735087, 50.193123],
+	      [14.735087, 49.918791],
+	      [14.201491, 49.918791]
+	      ]]
+		}
+}
