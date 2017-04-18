@@ -3822,6 +3822,61 @@
     {
         "attribution": {
             "required": true,
+            "text": "imagico.de OSM images for mapping",
+            "url": "http://maps.imagico.de/#osmim"
+        },
+        "country_code": "AQ",
+        "description": "Sentinel-2 images channels 234 (true color), Sentinel-2 images of Enderby Land and Kemp Coast early 2017",
+        "end_date": "2017",
+        "extent": {
+            "max_zoom": 13,
+            "polygon": [
+                [
+                    [
+                        45.4547,
+                        -68.5091
+                    ],
+                    [
+                        45.4547,
+                        -67.5724
+                    ],
+                    [
+                        49.7155,
+                        -65.7176
+                    ],
+                    [
+                        59.2693,
+                        -65.7176
+                    ],
+                    [
+                        67.3735,
+                        -67.3449
+                    ],
+                    [
+                        67.3735,
+                        -68.2581
+                    ],
+                    [
+                        67.088,
+                        -68.5091
+                    ],
+                    [
+                        45.4547,
+                        -68.5091
+                    ]
+                ]
+            ]
+        },
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "id": "osmim-imagicode-enderby",
+        "name": "imagico.de OSM images for mapping: Enderby Land and Kemp Coast",
+        "start_date": "2013",
+        "type": "tms",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=enderby&z={zoom}&x={x}&y={-y}"
+    },
+    {
+        "attribution": {
+            "required": true,
             "text": "\u00a9 osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
             "url": "http://www.osm-tools.org/"
         },
@@ -24625,25 +24680,27 @@
         "country_code": "CZ",
         "extent": {
             "max_zoom": 18,
-            "min_zoom": 13,
+            "min_zoom": 1,
             "polygon": [
                 [
-                    [
-                        14.201491,
-                        50.193123
-                    ],
-                    [
-                        14.735087,
-                        50.193123
-                    ],
-                    [
-                        14.735087,
-                        49.918791
-                    ],
-                    [
-                        14.201491,
-                        49.918791
-                    ]
+                    14.81231552124,
+                    49.93089301941
+                ],
+                [
+                    14.18754582291,
+                    49.87687266984
+                ],
+                [
+                    14.12025456314,
+                    50.19881542327
+                ],
+                [
+                    14.74502426147,
+                    50.25247461226
+                ],
+                [
+                    14.81231552124,
+                    49.93089301941
                 ]
             ]
         },
@@ -24657,26 +24714,164 @@
     {
         "country_code": "CZ",
         "extent": {
-            "max_zoom": 18,
-            "min_zoom": 13,
+            "max_zoom": 20,
+            "min_zoom": 1,
             "polygon": [
                 [
-                    [
-                        14.201491,
-                        50.193123
-                    ],
-                    [
-                        14.735087,
-                        50.193123
-                    ],
-                    [
-                        14.735087,
-                        49.918791
-                    ],
-                    [
-                        14.201491,
-                        49.918791
-                    ]
+                    14.30454236984,
+                    49.99538124382
+                ],
+                [
+                    14.3160436821,
+                    49.94205148763
+                ],
+                [
+                    14.3499983888,
+                    49.94508261663
+                ],
+                [
+                    14.35383872175,
+                    49.92726356386
+                ],
+                [
+                    14.42385321818,
+                    49.93351545169
+                ],
+                [
+                    14.4200902288,
+                    49.95097343212
+                ],
+                [
+                    14.48865449494,
+                    49.95709281879
+                ],
+                [
+                    14.48479036398,
+                    49.9750111737
+                ],
+                [
+                    14.55385989188,
+                    49.98117257481
+                ],
+                [
+                    14.55011770159,
+                    49.99851689993
+                ],
+                [
+                    14.58455395868,
+                    50.0015874108
+                ],
+                [
+                    14.58829614897,
+                    49.98424419323
+                ],
+                [
+                    14.69168128485,
+                    49.99346468175
+                ],
+                [
+                    14.67633637226,
+                    50.06452744171
+                ],
+                [
+                    14.71278864961,
+                    50.06777324036
+                ],
+                [
+                    14.70115373952,
+                    50.12158114828
+                ],
+                [
+                    14.66470146217,
+                    50.11833899243
+                ],
+                [
+                    14.6610031918,
+                    50.13543086714
+                ],
+                [
+                    14.62755290441,
+                    50.13245658485
+                ],
+                [
+                    14.61965341283,
+                    50.16894659259
+                ],
+                [
+                    14.58542741996,
+                    50.16590546732
+                ],
+                [
+                    14.58162921725,
+                    50.18344165464
+                ],
+                [
+                    14.40776267983,
+                    50.167995553
+                ],
+                [
+                    14.41156088254,
+                    50.15045369625
+                ],
+                [
+                    14.37764851321,
+                    50.14743927281
+                ],
+                [
+                    14.37379555571,
+                    50.16523508727
+                ],
+                [
+                    14.33892816423,
+                    50.16213672855
+                ],
+                [
+                    14.34278112173,
+                    50.14433976066
+                ],
+                [
+                    14.27367931007,
+                    50.13819641038
+                ],
+                [
+                    14.27749028245,
+                    50.12058459573
+                ],
+                [
+                    14.20879964298,
+                    50.11447476994
+                ],
+                [
+                    14.21288816219,
+                    50.09557069695
+                ],
+                [
+                    14.24656290855,
+                    50.09856724424
+                ],
+                [
+                    14.25417384067,
+                    50.06335893014
+                ],
+                [
+                    14.21987061144,
+                    50.0603042129
+                ],
+                [
+                    14.22369648177,
+                    50.04259477081
+                ],
+                [
+                    14.257999711,
+                    50.04565061557
+                ],
+                [
+                    14.26952647673,
+                    49.99225864496
+                ],
+                [
+                    14.30454236984,
+                    49.99538124382
                 ]
             ]
         },
@@ -27537,6 +27732,57 @@
         "start_date": "2015-08-21",
         "type": "tms",
         "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00vis&z={zoom}&x={x}&y={-y}"
+    },
+    {
+        "attribution": {
+            "required": true,
+            "text": "imagico.de OSM images for mapping",
+            "url": "http://maps.imagico.de/#osmim"
+        },
+        "country_code": "DE",
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160926T211248_R008_V20160925T104022_20160925T104115/S2A_OPER_PRD_MSIL1C_PDMC_20160927T051446_R008_V20160925T104022_20160925T104115, 2016-09-25 channels 234 (true color), Up-to-date low tide imagery of the coast for updating mapping of tidalflats and shoals",
+        "end_date": "2016-09-25",
+        "extent": {
+            "max_zoom": 13,
+            "polygon": [
+                [
+                    [
+                        5.1562,
+                        52.8755
+                    ],
+                    [
+                        5.1615,
+                        53.0325
+                    ],
+                    [
+                        6.4155,
+                        55.7379
+                    ],
+                    [
+                        9.8813,
+                        55.7459
+                    ],
+                    [
+                        9.8813,
+                        53.2428
+                    ],
+                    [
+                        9.6846,
+                        52.8877
+                    ],
+                    [
+                        5.1562,
+                        52.8755
+                    ]
+                ]
+            ]
+        },
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "id": "osmim-imagicode-northsea_s2_2016",
+        "name": "imagico.de OSM images for mapping: North Sea Coast 2016",
+        "start_date": "2016-09-25",
+        "type": "tms",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=northsea_s2_2016&z={zoom}&x={x}&y={-y}"
     },
     {
         "attribution": {
@@ -90106,6 +90352,121 @@
     {
         "attribution": {
             "required": true,
+            "text": "imagico.de OSM images for mapping",
+            "url": "http://maps.imagico.de/#osmim"
+        },
+        "country_code": "NO",
+        "description": "mostly Sentinel-2 2016 channels 234 (true color), Sentinel-2 mosaic of Svalbard",
+        "end_date": "2016",
+        "extent": {
+            "max_zoom": 13,
+            "polygon": [
+                [
+                    [
+                        16.6108,
+                        76.4137
+                    ],
+                    [
+                        16.4731,
+                        76.4268
+                    ],
+                    [
+                        16.3788,
+                        76.4589
+                    ],
+                    [
+                        14.4124,
+                        77.1324
+                    ],
+                    [
+                        14.0784,
+                        77.2536
+                    ],
+                    [
+                        10.9875,
+                        78.4054
+                    ],
+                    [
+                        10.631,
+                        78.5605
+                    ],
+                    [
+                        10.2314,
+                        78.8392
+                    ],
+                    [
+                        10.3952,
+                        79.6074
+                    ],
+                    [
+                        10.516,
+                        79.7731
+                    ],
+                    [
+                        10.9632,
+                        79.8707
+                    ],
+                    [
+                        20.2294,
+                        80.849
+                    ],
+                    [
+                        20.4702,
+                        80.8493
+                    ],
+                    [
+                        25.1752,
+                        80.6817
+                    ],
+                    [
+                        33.4391,
+                        80.3438
+                    ],
+                    [
+                        33.7809,
+                        80.3016
+                    ],
+                    [
+                        34.0395,
+                        80.239
+                    ],
+                    [
+                        33.977,
+                        80.1527
+                    ],
+                    [
+                        25.5722,
+                        76.5917
+                    ],
+                    [
+                        25.2739,
+                        76.481
+                    ],
+                    [
+                        25.1416,
+                        76.4327
+                    ],
+                    [
+                        24.937,
+                        76.4176
+                    ],
+                    [
+                        16.6108,
+                        76.4137
+                    ]
+                ]
+            ]
+        },
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "id": "osmim-imagicode-s2sval",
+        "name": "imagico.de OSM images for mapping: Svalbard mosaic",
+        "start_date": "2016",
+        "type": "tms",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=s2sval&z={zoom}&x={x}&y={-y}"
+    },
+    {
+        "attribution": {
+            "required": true,
             "text": "Copyright \u00a9 G\u0142\u00f3wny Urz\u0105d Geodezji i Kartografii."
         },
         "best": true,
@@ -90554,6 +90915,69 @@
         "start_date": "2016-08-07",
         "type": "tms",
         "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R021_N44_20160807T083013&z={zoom}&x={x}&y={-y}"
+    },
+    {
+        "attribution": {
+            "required": true,
+            "text": "imagico.de OSM images for mapping",
+            "url": "http://maps.imagico.de/#osmim"
+        },
+        "country_code": "RU",
+        "description": "S2A_OPER_PRD_MSIL1C_PDMC_20160930Txxxxxx_R078_V20160930T081002_20160930T080958, 2016-09-30, channels 234 (true color), Sentinel-2 image of the Pechora Sea coast in autumn 2016",
+        "end_date": "2016-09-30",
+        "extent": {
+            "max_zoom": 13,
+            "polygon": [
+                [
+                    [
+                        53.1802,
+                        67.5344
+                    ],
+                    [
+                        53.1821,
+                        68.414
+                    ],
+                    [
+                        54.2107,
+                        69.3367
+                    ],
+                    [
+                        55.3584,
+                        70.2786
+                    ],
+                    [
+                        59.004,
+                        70.2786
+                    ],
+                    [
+                        60.6947,
+                        69.977
+                    ],
+                    [
+                        61.9837,
+                        69.7161
+                    ],
+                    [
+                        61.9823,
+                        68.9395
+                    ],
+                    [
+                        59.9153,
+                        67.5344
+                    ],
+                    [
+                        53.1802,
+                        67.5344
+                    ]
+                ]
+            ]
+        },
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
+        "id": "osmim-imagicode-S2A_R078_N68_20160930T081002",
+        "name": "imagico.de OSM images for mapping: Pechora Sea Coast",
+        "start_date": "2016-09-30",
+        "type": "tms",
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R078_N68_20160930T081002&z={zoom}&x={x}&y={-y}"
     },
     {
         "attribution": {
@@ -96909,576 +97333,636 @@
             "polygon": [
                 [
                     [
-                        -43.335169388775576,
-                        59.78884556778711
+                        -43.9774,
+                        59.7171
                     ],
                     [
-                        -43.5940638938192,
-                        59.723921705576714
+                        -44.545,
+                        59.7302
                     ],
                     [
-                        -43.840898275878764,
-                        59.67490148496335
+                        -44.9203,
+                        59.7672
                     ],
                     [
-                        -44.23515133460447,
-                        59.653417915878954
+                        -45.3587,
+                        59.8218
                     ],
                     [
-                        -44.657213255061194,
-                        59.680989005977885
+                        -45.763,
+                        59.8848
                     ],
                     [
-                        -45.81015180316172,
-                        59.81951972989828
+                        -46.0859,
+                        59.9827
                     ],
                     [
-                        -46.81057076187592,
-                        59.98139710469466
+                        -46.3381,
+                        60.119
                     ],
                     [
-                        -47.20837894817284,
-                        60.150960472742064
+                        -46.577,
+                        60.2652
                     ],
                     [
-                        -47.22064190066637,
-                        60.33805731472787
+                        -46.8114,
+                        60.4418
                     ],
                     [
-                        -47.255916208498,
-                        60.42332684576548
+                        -47.2635,
+                        60.5314
                     ],
                     [
-                        -47.34990349056956,
-                        60.446387835215525
+                        -47.6937,
+                        60.5549
                     ],
                     [
-                        -47.51603887007207,
-                        60.45119769375011
+                        -48.1457,
+                        60.6192
                     ],
                     [
-                        -47.65139646003081,
-                        60.48896403744677
+                        -48.5771,
+                        60.7015
                     ],
                     [
-                        -47.79170835578903,
-                        60.52050863908786
+                        -48.8689,
+                        60.8506
                     ],
                     [
-                        -49.10695022655055,
-                        60.73414367492607
+                        -49.0578,
+                        61.0555
                     ],
                     [
-                        -49.52399924941209,
-                        60.97440124547532
+                        -49.396,
+                        61.2957
                     ],
                     [
-                        -50.493558334841985,
-                        61.089523147855694
+                        -49.7601,
+                        61.4934
                     ],
                     [
-                        -51.1011476720755,
-                        61.3931538528416
+                        -50.2064,
+                        61.7324
                     ],
                     [
-                        -51.226493283028084,
-                        61.8368218735183
+                        -50.4699,
+                        61.9539
                     ],
                     [
-                        -51.66491000695862,
-                        62.06066494936552
+                        -50.8647,
+                        62.1596
                     ],
                     [
-                        -51.98744899262875,
-                        62.355028063412306
+                        -51.0631,
+                        62.3869
                     ],
                     [
-                        -52.04791761614332,
-                        62.676138274608135
+                        -51.2121,
+                        62.6001
                     ],
                     [
-                        -52.68385390751712,
-                        62.89777335327022
+                        -51.3005,
+                        62.8389
                     ],
                     [
-                        -53.00141158114564,
-                        63.22960936121321
+                        -51.4238,
+                        62.9979
                     ],
                     [
-                        -52.98804591383922,
-                        63.665519960839994
+                        -51.6767,
+                        63.1944
                     ],
                     [
-                        -53.37455124039754,
-                        63.88257990608798
+                        -51.9465,
+                        63.4079
                     ],
                     [
-                        -53.462018437442744,
-                        64.21700667649995
+                        -52.0253,
+                        63.6377
                     ],
                     [
-                        -53.625006563694996,
-                        64.39608940752123
+                        -52.2255,
+                        63.8378
                     ],
                     [
-                        -53.62418230433685,
-                        64.87666336480167
+                        -52.3658,
+                        64.0705
                     ],
                     [
-                        -53.92737410039694,
-                        65.14174166474336
+                        -52.4829,
+                        64.3792
                     ],
                     [
-                        -54.58568916434171,
-                        65.51879633173807
+                        -52.4988,
+                        64.6788
                     ],
                     [
-                        -55.020580045260964,
-                        66.04786962007503
+                        -52.789,
+                        64.9063
                     ],
                     [
-                        -54.974959716968506,
-                        66.43747058777413
+                        -53.2046,
+                        65.1321
                     ],
                     [
-                        -55.04621700056885,
-                        66.81068389526814
+                        -53.6649,
+                        65.4753
                     ],
                     [
-                        -55.18883177742317,
-                        67.07445292724583
+                        -53.9977,
+                        65.8019
                     ],
                     [
-                        -55.295917291513724,
-                        67.2980754937805
+                        -54.1348,
+                        66.1568
                     ],
                     [
-                        -55.49386806070968,
-                        67.62765205772878
+                        -54.1441,
+                        66.5235
                     ],
                     [
-                        -55.58982586875712,
-                        67.74762927352513
+                        -54.2285,
+                        66.8319
                     ],
                     [
-                        -55.800191618857184,
-                        68.05623485476666
+                        -54.4519,
+                        67.303
                     ],
                     [
-                        -56.166042896634444,
-                        68.44155152338232
+                        -54.5141,
+                        67.7648
                     ],
                     [
-                        -56.086954623441976,
-                        68.68479069915158
+                        -54.604,
+                        68.2021
                     ],
                     [
-                        -55.692397350070934,
-                        69.09499941753234
+                        -54.568,
+                        68.5698
                     ],
                     [
-                        -55.78268862269791,
-                        69.35591450732602
+                        -54.598,
+                        68.8347
                     ],
                     [
-                        -55.97508469715559,
-                        69.51460160299163
+                        -54.7606,
+                        69.1207
                     ],
                     [
-                        -56.22131441053026,
-                        69.61961934478276
+                        -55.0028,
+                        69.4125
                     ],
                     [
-                        -56.28674985487528,
-                        69.75311038137812
+                        -55.2735,
+                        69.6187
                     ],
                     [
-                        -56.27734150260429,
-                        69.86115681621736
+                        -55.3808,
+                        69.8283
                     ],
                     [
-                        -56.47867255356253,
-                        69.98628865160101
+                        -55.3945,
+                        70.0838
                     ],
                     [
-                        -56.729667549723445,
-                        70.20797294037203
+                        -55.3094,
+                        70.2573
                     ],
                     [
-                        -56.780049018329095,
-                        70.4030123058809
+                        -55.4307,
+                        70.479
                     ],
                     [
-                        -56.66995480486827,
-                        70.53429026926025
+                        -55.5501,
+                        70.6707
                     ],
                     [
-                        -56.76965573535976,
-                        70.59936425752305
+                        -55.7654,
+                        70.861
                     ],
                     [
-                        -56.750047814068225,
-                        70.67605894741244
+                        -56.2489,
+                        71.2343
                     ],
                     [
-                        -56.630475021762926,
-                        70.75228057874938
+                        -56.5018,
+                        71.5429
                     ],
                     [
-                        -56.63957096755714,
-                        70.79345598378389
+                        -56.5867,
+                        71.9015
                     ],
                     [
-                        -56.95453022049966,
-                        70.92185386457368
+                        -56.5189,
+                        72.2355
                     ],
                     [
-                        -57.682941688207656,
-                        71.10356260725686
+                        -56.5085,
+                        72.5258
                     ],
                     [
-                        -57.9990573064922,
-                        71.18275256548473
+                        -56.8923,
+                        72.8144
                     ],
                     [
-                        -58.06673093129251,
-                        71.31878823942327
+                        -57.4027,
+                        73.1054
                     ],
                     [
-                        -57.73776694812512,
-                        71.73468567987527
+                        -57.8066,
+                        73.4566
                     ],
                     [
-                        -57.688607830732714,
-                        71.96425305773354
+                        -58.1461,
+                        73.7696
                     ],
                     [
-                        -57.29627634430133,
-                        72.25939767922573
+                        -58.3554,
+                        74.0972
                     ],
                     [
-                        -57.027097307050845,
-                        72.49722993388094
+                        -58.5125,
+                        74.3783
                     ],
                     [
-                        -57.22262816078322,
-                        72.61296218481311
+                        -58.7336,
+                        74.6328
                     ],
                     [
-                        -57.61910829550675,
-                        72.72652221937263
+                        -59.3551,
+                        74.8869
                     ],
                     [
-                        -58.05813139640902,
-                        73.01331566875426
+                        -60.1412,
+                        75.102
                     ],
                     [
-                        -58.76645057271363,
-                        73.2808359719379
+                        -61.0067,
+                        75.2763
                     ],
                     [
-                        -59.14761885260487,
-                        73.53482225342569
+                        -61.911,
+                        75.3886
                     ],
                     [
-                        -59.03651118375505,
-                        73.80651043385626
+                        -62.4706,
+                        75.5595
                     ],
                     [
-                        -58.8823279108656,
-                        74.19210040380365
+                        -62.9776,
+                        75.7454
                     ],
                     [
-                        -59.24788269229215,
-                        74.4273495816669
+                        -64.1463,
+                        75.779
                     ],
                     [
-                        -59.99510425025614,
-                        74.65678100854564
+                        -65.4481,
+                        75.7235
                     ],
                     [
-                        -60.806460490534164,
-                        74.7868931828055
+                        -66.7068,
+                        75.6792
                     ],
                     [
-                        -61.54936387752781,
-                        74.99717139513008
+                        -67.8379,
+                        75.6525
                     ],
                     [
-                        -62.44046860998914,
-                        75.00073689358435
+                        -69.0456,
+                        75.6195
                     ],
                     [
-                        -62.985115364477565,
-                        75.11722591645595
+                        -70.055,
+                        75.5344
                     ],
                     [
-                        -63.51928606785155,
-                        75.31691397958907
+                        -71.0898,
+                        75.4705
                     ],
                     [
-                        -63.64288486720879,
-                        75.52488932122031
+                        -72.1119,
+                        75.4476
                     ],
                     [
-                        -64.1242392273263,
-                        75.5921799154749
+                        -74.2311,
+                        76.4102
                     ],
                     [
-                        -64.58761243996756,
-                        75.53593567213079
+                        -74.5601,
+                        76.5328
                     ],
                     [
-                        -65.31057987327657,
-                        75.42103306523184
+                        -74.5601,
+                        82.6959
                     ],
                     [
-                        -65.99461388511591,
-                        75.4041967649632
+                        -14.4462,
+                        82.6959
                     ],
                     [
-                        -66.28964875049822,
-                        75.41792163747078
+                        -14.3994,
+                        82.5997
                     ],
                     [
-                        -68.76453492310549,
-                        75.13410011250316
+                        -13.5339,
+                        82.4379
                     ],
                     [
-                        -71.04622564987365,
-                        74.79937286637706
+                        -12.0312,
+                        82.3426
                     ],
                     [
-                        -73.5067977908339,
-                        75.97399646374085
+                        -10.7796,
+                        82.3196
                     ],
                     [
-                        -74.5600891113281,
-                        76.43270387722659
+                        -10.7796,
+                        80.1902
                     ],
                     [
-                        -74.5600891113281,
-                        82.6959093208192
+                        -11.2123,
+                        80.069
                     ],
                     [
-                        -12.86159673508746,
-                        82.6959093208192
+                        -11.136,
+                        79.8103
                     ],
                     [
-                        -11.878165975221727,
-                        82.54102593940235
+                        -10.7796,
+                        79.5176
                     ],
                     [
-                        -10.7796478271484,
-                        82.51186682511671
+                        -10.7796,
+                        79.0441
                     ],
                     [
-                        -10.7796478271484,
-                        78.34463154312763
+                        -11.2626,
+                        78.7128
                     ],
                     [
-                        -10.838211677734567,
-                        78.32665786610472
+                        -12.2579,
+                        78.3558
                     ],
                     [
-                        -12.549216515959552,
-                        77.9578508228317
+                        -13.2398,
+                        78.1272
                     ],
                     [
-                        -12.803493182847879,
-                        77.85845362808246
+                        -13.7649,
+                        77.9279
                     ],
                     [
-                        -12.916087338718654,
-                        77.65848905807152
+                        -14.1169,
+                        77.6779
                     ],
                     [
-                        -13.070950321133406,
-                        77.52877948776312
+                        -14.7129,
+                        77.5278
                     ],
                     [
-                        -13.47955419255021,
-                        77.40221679143431
+                        -15.5507,
+                        77.3655
                     ],
                     [
-                        -14.13060832134256,
-                        77.30552053875587
+                        -16.0936,
+                        77.0771
                     ],
                     [
-                        -14.69541342101231,
-                        77.14674387861214
+                        -16.0586,
+                        76.5548
                     ],
                     [
-                        -14.882617750618206,
-                        76.84736003108713
+                        -15.838,
+                        75.9611
                     ],
                     [
-                        -14.323648701941867,
-                        76.53205658256601
+                        -15.6879,
+                        75.4726
                     ],
                     [
-                        -12.810144796765599,
-                        76.24823964501138
+                        -16.253,
+                        75.058
                     ],
                     [
-                        -12.151831546734856,
-                        75.86267532270129
+                        -17.0427,
+                        74.6425
                     ],
                     [
-                        -12.987745033472448,
-                        75.38717284756257
+                        -18.3155,
+                        74.2702
                     ],
                     [
-                        -14.066766809859267,
-                        74.8451997920592
+                        -19.4463,
+                        73.9378
                     ],
                     [
-                        -15.423357647282502,
-                        74.4551642069618
+                        -19.8329,
+                        73.632
                     ],
                     [
-                        -17.28174157007599,
-                        74.24584688808936
+                        -20.2938,
+                        73.3524
                     ],
                     [
-                        -19.113380020736102,
-                        73.72978765991853
+                        -20.7831,
+                        73.0446
                     ],
                     [
-                        -20.062373344103577,
-                        73.11108267968514
+                        -21.01,
+                        72.6766
                     ],
                     [
-                        -20.162312506727517,
-                        72.6186060300425
+                        -20.8774,
+                        72.2926
                     ],
                     [
-                        -19.85354831628143,
-                        72.0718529721276
+                        -20.7672,
+                        71.8726
                     ],
                     [
-                        -19.943252248300748,
-                        71.55019790921727
+                        -20.7765,
+                        71.4304
                     ],
                     [
-                        -20.918542646451737,
-                        70.67423312425346
+                        -20.9411,
+                        70.9802
                     ],
                     [
-                        -21.379621573201593,
-                        70.27938590726379
+                        -21.219,
+                        70.6126
                     ],
                     [
-                        -21.725469254364587,
-                        70.05299977015657
+                        -21.5326,
+                        70.3001
                     ],
                     [
-                        -21.93869730345768,
-                        69.92215619574657
+                        -21.8039,
+                        70.0911
                     ],
                     [
-                        -22.463306498894173,
-                        69.6235894257334
+                        -22.166,
+                        69.8947
                     ],
                     [
-                        -23.059252433112615,
-                        69.5491649852365
+                        -22.4831,
+                        69.7539
                     ],
                     [
-                        -23.860796144964162,
-                        69.34443527043162
+                        -22.9027,
+                        69.6585
                     ],
                     [
-                        -24.74741743781591,
-                        68.93340370554307
+                        -23.3545,
+                        69.544
                     ],
                     [
-                        -25.481987646795183,
-                        68.76711754662492
+                        -23.9177,
+                        69.4036
                     ],
                     [
-                        -25.815395630476477,
-                        68.51279831615729
+                        -24.1794,
+                        69.3088
                     ],
                     [
-                        -26.344103298317982,
-                        68.32443780018751
+                        -24.6745,
+                        69.1084
                     ],
                     [
-                        -27.449680541202035,
-                        68.19315579455328
+                        -25.1222,
+                        68.9555
                     ],
                     [
-                        -28.42826258633533,
-                        67.66140945836786
+                        -25.6659,
+                        68.7995
                     ],
                     [
-                        -29.237141834543507,
-                        67.60310787132272
+                        -26.0994,
+                        68.583
                     ],
                     [
-                        -30.062476147434136,
-                        67.41414423917192
+                        -26.6316,
+                        68.4043
                     ],
                     [
-                        -31.96817868027385,
-                        66.21262359095492
+                        -27.7638,
+                        68.2813
                     ],
                     [
-                        -33.33718066100074,
-                        65.93894291103432
+                        -28.4575,
+                        68.0023
                     ],
                     [
-                        -33.86781919039464,
-                        65.7415652217968
+                        -29.353,
+                        67.8135
                     ],
                     [
-                        -34.94415141573626,
-                        65.29121928843726
+                        -30.6456,
+                        67.4911
                     ],
                     [
-                        -36.438872573697054,
-                        65.22802281646563
+                        -31.7673,
+                        67.0005
                     ],
                     [
-                        -36.716767002697864,
-                        65.14683055370199
+                        -32.9783,
+                        66.2596
                     ],
                     [
-                        -36.97927615837815,
-                        64.90967633661491
+                        -33.9313,
+                        66.0156
                     ],
                     [
-                        -37.473922616631825,
-                        64.38546237809376
+                        -34.8956,
+                        65.7403
                     ],
                     [
-                        -38.95785728548117,
-                        62.7419538908273
+                        -35.5914,
+                        65.5208
                     ],
                     [
-                        -39.61555442323402,
-                        61.96904156671025
+                        -36.1483,
+                        65.372
                     ],
                     [
-                        -40.549088272349444,
-                        60.92614046823071
+                        -36.7532,
+                        65.2559
                     ],
                     [
-                        -41.17137829347243,
-                        60.43812852329213
+                        -37.1858,
+                        65.1349
                     ],
                     [
-                        -42.07544989793619,
-                        60.311876129737485
+                        -37.6032,
+                        64.9727
                     ],
                     [
-                        -42.734129957211564,
-                        60.001556976048406
+                        -38.0624,
+                        64.4901
                     ],
                     [
-                        -43.335169388775576,
-                        59.78884556778711
+                        -38.5304,
+                        64.1244
+                    ],
+                    [
+                        -39.0545,
+                        63.7213
+                    ],
+                    [
+                        -39.3131,
+                        63.4405
+                    ],
+                    [
+                        -39.5739,
+                        62.7506
+                    ],
+                    [
+                        -39.9532,
+                        62.2739
+                    ],
+                    [
+                        -40.2757,
+                        61.8547
+                    ],
+                    [
+                        -40.714,
+                        61.3365
+                    ],
+                    [
+                        -41.2091,
+                        60.8495
+                    ],
+                    [
+                        -41.821,
+                        60.5526
+                    ],
+                    [
+                        -42.4368,
+                        60.3264
+                    ],
+                    [
+                        -42.8643,
+                        60.0299
+                    ],
+                    [
+                        -43.1131,
+                        59.9147
+                    ],
+                    [
+                        -43.3282,
+                        59.83
+                    ],
+                    [
+                        -43.5459,
+                        59.7695
+                    ],
+                    [
+                        -43.797,
+                        59.7284
+                    ],
+                    [
+                        -43.9774,
+                        59.7171
                     ]
                 ]
             ]
@@ -111374,7 +111858,7 @@
             ]
         },
         "id": "arapiraca_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Arapiraca AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Arapiraca&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -111651,7 +112135,7 @@
             ]
         },
         "id": "branquinha_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Branquinha AL",
         "type": "wms",
         "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?service=WMS&version=1.1.0&request=GetMap&layers=Branquinha&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112196,7 +112680,7 @@
             ]
         },
         "id": "cajueiro_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Cajueiro AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Cajueiro&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112353,7 +112837,7 @@
             ]
         },
         "id": "campo_alegre_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Campo Alegre AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Campo%20Alegre&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112618,7 +113102,7 @@
             ]
         },
         "id": "capela_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Capela AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Capela&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112663,7 +113147,7 @@
             ]
         },
         "id": "delmiro_gouveia",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Delmiro Gouveia AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Delmiro%20Gouveia&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112708,7 +113192,7 @@
             ]
         },
         "id": "estrela_de_alagoas",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Estrela de Alagoas",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Estrela%20de%20Alagoas&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112781,7 +113265,7 @@
             ]
         },
         "id": "girau_do_pnciano",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Girau do Ponciano",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Girau%20do%20Ponciano&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -112826,7 +113310,7 @@
             ]
         },
         "id": "major_isidoro",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Major Isidoro AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Major%20Isidoro&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -113031,7 +113515,7 @@
             ]
         },
         "id": "mar_vermelho_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Mar Vermelho AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Mar%20Vermelho&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -113240,7 +113724,7 @@
             ]
         },
         "id": "minador_do_negrao",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Minador do Negr\u00e3o",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Minador%20do%20Negrao&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -113297,7 +113781,7 @@
             ]
         },
         "id": "olho_dagua_do_casado",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Olho d'Agua do Casado AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Olho%20Dagua%20do%20Casado&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -113530,7 +114014,7 @@
             ]
         },
         "id": "al_palestina",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Palestina AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Palestina&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -113791,7 +114275,7 @@
             ]
         },
         "id": "palmeira_dos_indios",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Palmeira dos Indios AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Palmeira%20dos%20Indios&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -114040,7 +114524,7 @@
             ]
         },
         "id": "pao_de_acucar",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "P\u00e3o de A\u00e7ucar AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Pao%20de%20Acucar&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -114305,10 +114789,10 @@
             ]
         },
         "id": "al_piranhas",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Piranhas AL",
         "type": "wms",
-        "url": "wms:http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Piranhas&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Piranhas&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     {
         "attribution": {
@@ -114598,7 +115082,7 @@
             ]
         },
         "id": "poco_das_trincheiras",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Po\u00e7o das Trincheiras AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Poco%20das%20Trincheiras&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -114779,7 +115263,7 @@
             ]
         },
         "id": "santana_do_ipanema",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Santana do Ipanema AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Santana%20do%20Ipanema&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -114824,7 +115308,7 @@
             ]
         },
         "id": "Sao_miguel_dos_campos",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "S\u00e3o Miguel dos Campos AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Sao_miguel_dos_campos&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -114985,7 +115469,7 @@
             ]
         },
         "id": "teotonio_vilela",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Teotonio Vilela AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Teotonio%20Vilela&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -115162,7 +115646,7 @@
             ]
         },
         "id": "uniao_dos_palmares",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Uni\u00e3o dos Palmares AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Uniao%20dos%20Palmares&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -115375,7 +115859,7 @@
             ]
         },
         "id": "vicosa_al",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Vi\u00e7osa AL",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Vicosa&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -117584,7 +118068,7 @@
             ]
         },
         "id": "alagoas_litoral",
-        "license_url": "http://www.cgu.gov.br/acessoainformacaogov/index.asp",
+        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai",
         "name": "Alagoas Litoral 2006",
         "type": "wms",
         "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Ortofotos%202006&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
@@ -118349,6 +118833,655 @@
         "name": "DER-ES",
         "type": "wms",
         "url": "http://portal.der.es.gov.br/geoserver/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=deres-ext:TRECHOINFO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    {
+        "attribution": {
+            "text": "IBGE"
+        },
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:5396",
+            "EPSG:5641",
+            "EPSG:22525"
+        ],
+        "country_code": "BR",
+        "extent": {
+            "polygon": [
+                [
+                    [
+                        -29.3325,
+                        2.335959
+                    ],
+                    [
+                        -28.72472,
+                        2.031551
+                    ],
+                    [
+                        -27.76041,
+                        -8.937033
+                    ],
+                    [
+                        -27.67249,
+                        -22.20839
+                    ],
+                    [
+                        -51.11495,
+                        -35.46552
+                    ],
+                    [
+                        -53.39394,
+                        -33.85064
+                    ],
+                    [
+                        -53.62553,
+                        -33.72493
+                    ],
+                    [
+                        -53.62503,
+                        -33.15428
+                    ],
+                    [
+                        -53.24498,
+                        -32.73392
+                    ],
+                    [
+                        -53.65747,
+                        -32.51873
+                    ],
+                    [
+                        -53.8329,
+                        -32.16592
+                    ],
+                    [
+                        -54.64174,
+                        -31.55507
+                    ],
+                    [
+                        -55.29638,
+                        -31.3429
+                    ],
+                    [
+                        -55.57371,
+                        -30.99691
+                    ],
+                    [
+                        -56.06384,
+                        -31.16749
+                    ],
+                    [
+                        -56.10468,
+                        -30.86436
+                    ],
+                    [
+                        -56.86862,
+                        -30.20752
+                    ],
+                    [
+                        -57.39671,
+                        -30.40464
+                    ],
+                    [
+                        -57.74384,
+                        -30.22142
+                    ],
+                    [
+                        -55.83724,
+                        -28.16598
+                    ],
+                    [
+                        -54.86969,
+                        -27.44994
+                    ],
+                    [
+                        -53.9016,
+                        -27.02998
+                    ],
+                    [
+                        -53.74972,
+                        -26.25781
+                    ],
+                    [
+                        -53.97158,
+                        -25.74513
+                    ],
+                    [
+                        -54.44723,
+                        -25.79609
+                    ],
+                    [
+                        -54.67802,
+                        -25.64668
+                    ],
+                    [
+                        -54.36097,
+                        -24.35145
+                    ],
+                    [
+                        -54.41679,
+                        -24.06527
+                    ],
+                    [
+                        -54.64355,
+                        -23.94107
+                    ],
+                    [
+                        -55.22163,
+                        -24.11355
+                    ],
+                    [
+                        -55.49138,
+                        -24.02797
+                    ],
+                    [
+                        -55.71734,
+                        -22.68488
+                    ],
+                    [
+                        -55.90555,
+                        -22.39886
+                    ],
+                    [
+                        -56.45255,
+                        -22.21731
+                    ],
+                    [
+                        -56.8256,
+                        -22.4002
+                    ],
+                    [
+                        -57.34109,
+                        -22.34351
+                    ],
+                    [
+                        -58.08472,
+                        -22.13075
+                    ],
+                    [
+                        -57.95766,
+                        -20.99818
+                    ],
+                    [
+                        -58.26551,
+                        -20.24147
+                    ],
+                    [
+                        -58.03577,
+                        -19.95871
+                    ],
+                    [
+                        -58.23083,
+                        -19.75211
+                    ],
+                    [
+                        -57.64739,
+                        -18.19828
+                    ],
+                    [
+                        -57.89356,
+                        -17.57377
+                    ],
+                    [
+                        -58.16997,
+                        -17.53519
+                    ],
+                    [
+                        -58.48825,
+                        -17.21961
+                    ],
+                    [
+                        -58.57691,
+                        -16.81466
+                    ],
+                    [
+                        -58.45563,
+                        -16.42158
+                    ],
+                    [
+                        -60.2541,
+                        -16.32571
+                    ],
+                    [
+                        -60.33481,
+                        -15.51483
+                    ],
+                    [
+                        -60.67423,
+                        -15.1122
+                    ],
+                    [
+                        -60.34999,
+                        -14.99707
+                    ],
+                    [
+                        -60.63603,
+                        -13.84119
+                    ],
+                    [
+                        -61.07283,
+                        -13.62569
+                    ],
+                    [
+                        -61.9025,
+                        -13.62647
+                    ],
+                    [
+                        -62.21395,
+                        -13.25048
+                    ],
+                    [
+                        -62.80185,
+                        -13.10905
+                    ],
+                    [
+                        -63.17194,
+                        -12.76568
+                    ],
+                    [
+                        -63.74229,
+                        -12.54071
+                    ],
+                    [
+                        -64.32845,
+                        -12.59578
+                    ],
+                    [
+                        -65.10261,
+                        -12.0682
+                    ],
+                    [
+                        -65.45781,
+                        -11.27865
+                    ],
+                    [
+                        -65.41641,
+                        -9.838943
+                    ],
+                    [
+                        -66.52331,
+                        -9.985873
+                    ],
+                    [
+                        -67.66452,
+                        -10.80093
+                    ],
+                    [
+                        -67.99778,
+                        -10.75991
+                    ],
+                    [
+                        -68.52286,
+                        -11.20807
+                    ],
+                    [
+                        -69.88988,
+                        -11.02776
+                    ],
+                    [
+                        -70.30957,
+                        -11.1699
+                    ],
+                    [
+                        -70.71896,
+                        -11.02003
+                    ],
+                    [
+                        -70.68128,
+                        -9.669083
+                    ],
+                    [
+                        -71.27536,
+                        -10.08971
+                    ],
+                    [
+                        -72.18053,
+                        -10.09967
+                    ],
+                    [
+                        -72.41623,
+                        -9.587397
+                    ],
+                    [
+                        -73.29207,
+                        -9.454149
+                    ],
+                    [
+                        -73.0625,
+                        -9.017267
+                    ],
+                    [
+                        -73.61432,
+                        -8.40982
+                    ],
+                    [
+                        -74.09056,
+                        -7.527548
+                    ],
+                    [
+                        -74.03652,
+                        -7.27885
+                    ],
+                    [
+                        -73.84718,
+                        -7.238285
+                    ],
+                    [
+                        -73.78618,
+                        -6.774872
+                    ],
+                    [
+                        -73.22362,
+                        -6.430106
+                    ],
+                    [
+                        -73.33719,
+                        -6.029736
+                    ],
+                    [
+                        -72.93016,
+                        -5.038711
+                    ],
+                    [
+                        -71.93973,
+                        -4.425027
+                    ],
+                    [
+                        -70.96802,
+                        -4.248294
+                    ],
+                    [
+                        -70.79598,
+                        -4.064931
+                    ],
+                    [
+                        -70.02393,
+                        -4.167345
+                    ],
+                    [
+                        -69.51025,
+                        -1.134089
+                    ],
+                    [
+                        -69.70776,
+                        -0.567619
+                    ],
+                    [
+                        -70.13645,
+                        -0.226161
+                    ],
+                    [
+                        -70.14083,
+                        0.5844
+                    ],
+                    [
+                        -69.26594,
+                        0.806502
+                    ],
+                    [
+                        -69.34226,
+                        0.968924
+                    ],
+                    [
+                        -69.92481,
+                        1.015705
+                    ],
+                    [
+                        -69.92343,
+                        1.773851
+                    ],
+                    [
+                        -68.38511,
+                        1.82943
+                    ],
+                    [
+                        -68.24848,
+                        2.119808
+                    ],
+                    [
+                        -67.94571,
+                        1.948424
+                    ],
+                    [
+                        -67.37696,
+                        2.327468
+                    ],
+                    [
+                        -67.05751,
+                        1.858336
+                    ],
+                    [
+                        -67.00579,
+                        1.291603
+                    ],
+                    [
+                        -66.79967,
+                        1.314684
+                    ],
+                    [
+                        -66.28683,
+                        0.857709
+                    ],
+                    [
+                        -65.67671,
+                        1.111146
+                    ],
+                    [
+                        -65.42494,
+                        0.966549
+                    ],
+                    [
+                        -65.15671,
+                        1.24203
+                    ],
+                    [
+                        -64.27483,
+                        1.601591
+                    ],
+                    [
+                        -64.0486,
+                        2.065137
+                    ],
+                    [
+                        -63.47236,
+                        2.279358
+                    ],
+                    [
+                        -64.13446,
+                        2.433909
+                    ],
+                    [
+                        -64.10005,
+                        2.723778
+                    ],
+                    [
+                        -64.32628,
+                        3.118275
+                    ],
+                    [
+                        -64.28142,
+                        3.541983
+                    ],
+                    [
+                        -64.88451,
+                        4.117671
+                    ],
+                    [
+                        -64.88064,
+                        4.342461
+                    ],
+                    [
+                        -64.13653,
+                        4.223152
+                    ],
+                    [
+                        -63.95465,
+                        4.021316
+                    ],
+                    [
+                        -63.17706,
+                        4.048301
+                    ],
+                    [
+                        -62.96093,
+                        3.763658
+                    ],
+                    [
+                        -62.82024,
+                        4.106019
+                    ],
+                    [
+                        -62.49922,
+                        4.270815
+                    ],
+                    [
+                        -61.91181,
+                        4.26284
+                    ],
+                    [
+                        -61.35393,
+                        4.630097
+                    ],
+                    [
+                        -61.04904,
+                        4.623115
+                    ],
+                    [
+                        -60.70452,
+                        4.969851
+                    ],
+                    [
+                        -60.78709,
+                        5.296764
+                    ],
+                    [
+                        -60.22457,
+                        5.371207
+                    ],
+                    [
+                        -59.89857,
+                        5.107541
+                    ],
+                    [
+                        -59.97549,
+                        4.603025
+                    ],
+                    [
+                        -59.59676,
+                        4.439875
+                    ],
+                    [
+                        -59.41942,
+                        3.96994
+                    ],
+                    [
+                        -59.71017,
+                        3.542008
+                    ],
+                    [
+                        -59.88955,
+                        2.72301
+                    ],
+                    [
+                        -59.63006,
+                        2.316332
+                    ],
+                    [
+                        -59.63382,
+                        1.966581
+                    ],
+                    [
+                        -59.18812,
+                        1.478079
+                    ],
+                    [
+                        -58.80545,
+                        1.320732
+                    ],
+                    [
+                        -58.35933,
+                        1.689932
+                    ],
+                    [
+                        -57.6,
+                        1.803907
+                    ],
+                    [
+                        -57.39854,
+                        2.065119
+                    ],
+                    [
+                        -57.12392,
+                        2.128758
+                    ],
+                    [
+                        -56.02925,
+                        1.949445
+                    ],
+                    [
+                        -56.23884,
+                        2.263348
+                    ],
+                    [
+                        -55.98195,
+                        2.628657
+                    ],
+                    [
+                        -55.64816,
+                        2.519953
+                    ],
+                    [
+                        -54.93958,
+                        2.682515
+                    ],
+                    [
+                        -54.24988,
+                        2.25056
+                    ],
+                    [
+                        -53.73937,
+                        2.473731
+                    ],
+                    [
+                        -52.98578,
+                        2.280494
+                    ],
+                    [
+                        -52.65712,
+                        2.564069
+                    ],
+                    [
+                        -52.41739,
+                        3.22121
+                    ],
+                    [
+                        -51.73983,
+                        4.119158
+                    ],
+                    [
+                        -51.7246,
+                        4.556867
+                    ],
+                    [
+                        -51.0112,
+                        5.522895
+                    ],
+                    [
+                        -43.48209,
+                        5.335832
+                    ],
+                    [
+                        -29.3325,
+                        2.335959
+                    ]
+                ]
+            ]
+        },
+        "id": "IBGE_BC250_Rodoviario",
+        "license_url": "http://dados.gov.br",
+        "name": "IBGE-BC250-Trecho Rodoviario",
+        "overlay": true,
+        "type": "wms",
+        "url": "http://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Trecho_Rodoviario_L&STYLES=&SRS=EPSG:3857&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE"
     },
     {
         "country_code": "BR",
