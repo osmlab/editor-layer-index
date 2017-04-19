@@ -76,20 +76,25 @@ def add_source(source):
     if geometry:
         def coord_str(coord):
             return "{0:.6f}".format(coord)
+
+        isMultiPolygon = geometry['type'] == 'MultiPolygon'
+        polygons = geometry['coordinates'] if isMultiPolygon else [geometry['coordinates']]
+
         bounds = ET.SubElement(entry, "bounds")
-        lons = [p[0] for ring in geometry['coordinates'] for p in ring]
-        lats = [p[1] for ring in geometry['coordinates'] for p in ring]
+        lons = [p[0] for polygon in polygons for ring in polygon for p in ring]
+        lats = [p[1] for polygon in polygons for ring in polygon for p in ring]
         bounds.set('min-lon', coord_str(min(lons)))
         bounds.set('min-lat', coord_str(min(lats)))
         bounds.set('max-lon', coord_str(max(lons)))
         bounds.set('max-lat', coord_str(max(lats)))
 
-        for ring in geometry['coordinates']:
-            shape = ET.SubElement(bounds, "shape")
-            for p in ring:
-                point = ET.SubElement(shape, "point")
-                point.set('lon', coord_str(p[0]))
-                point.set('lat', coord_str(p[1]))
+        for polygon in polygons:
+            for ring in polygon:
+                shape = ET.SubElement(bounds, "shape")
+                for p in ring:
+                    point = ET.SubElement(shape, "point")
+                    point.set('lon', coord_str(p[0]))
+                    point.set('lat', coord_str(p[1]))
 
 for source in sources:
     try:
