@@ -6,18 +6,19 @@
             "text": "Törökbálint",
             "required": true
         },
-        "name": "Törökbálint ortophoto 2013",
+        "name": "Törökbálint orthophoto 2013",
         "available_projections": [
             "EPSG:4326",
             "EPSG:900913",
             "EPSG:23700",
             "EPSG:3857"
         ],
-        "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
         "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
+        "start_date": "2013",
         "country_code": "HU",
         "type": "wms",
-        "id": "Torokbalint-ortophoto-2013"
+        "id": "Torokbalint-orthophoto-2013"
     },
     "geometry": {
         "type": "Polygon",
