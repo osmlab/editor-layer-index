@@ -2,23 +2,17 @@
     "type": "Feature",
     "properties": {
         "name": "Sóskút, Pusztazámor, Tárnok, Diósd ortophoto 2017",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:900913",
-            "EPSG:23700",
-            "EPSG:3857"
-        ],
         "attribution": {
             "url": "http://fototerkep.hu/",
             "text": "Fototerkep.hu",
             "required": true
         },
-        "url": "http://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=SOSKUTORTO,TARNOKORTO,PUSZTAZAMORORTO,DIOSDORTO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
+        "url": "http://adam.openstreetmap.hu/mapproxy/tiles/1.0.0/Soskut-Tarnok-Pusztazamor-Diosd/mercator/{zoom}/{x}/{y}.png",
         "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
         "start_date": "2017-03",
         "best": true,
         "country_code": "HU",
-        "type": "wms",
+        "type": "tms",
         "id": "Soskut_Pusztazamor_Tarnok_Diosd_orto_2017"
     },
     "geometry": {
