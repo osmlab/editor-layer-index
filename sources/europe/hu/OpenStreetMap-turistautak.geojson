@@ -7,12 +7,6 @@
             "required": true
         },
         "name": "OpenStreetMap (turistautak)",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:900913",
-            "EPSG:23700",
-            "EPSG:3857"
-        ],
         "url": "http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png",
         "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
         "country_code": "HU",
