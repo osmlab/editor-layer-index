@@ -20982,7 +20982,6 @@
     <attribution-text mandatory="true">Földmérési és Távérzékelési Intézet</attribution-text>
     <attribution-url>http://www.fomi.hu/</attribution-url>
     <country-code>HU</country-code>
-    <description>Hungary</description>
     <max-zoom>17</max-zoom>
     <bounds max-lat="48.585104" max-lon="22.897435" min-lat="45.737128" min-lon="16.113915">
       <shape>
@@ -21570,7 +21569,6 @@
     <attribution-text mandatory="true">Földmérési és Távérzékelési Intézet</attribution-text>
     <attribution-url>http://www.fomi.hu/</attribution-url>
     <country-code>HU</country-code>
-    <description>Hungary</description>
     <max-zoom>17</max-zoom>
     <bounds max-lat="48.585104" max-lon="22.897435" min-lat="45.737128" min-lon="16.113915">
       <shape>
@@ -22155,12 +22153,6 @@
     <id>OpenStreetMap-turistautak</id>
     <type>tms</type>
     <url>http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png</url>
-    <projections>
-      <code>EPSG:4326</code>
-      <code>EPSG:900913</code>
-      <code>EPSG:23700</code>
-      <code>EPSG:3857</code>
-    </projections>
     <attribution-text mandatory="true">OpenStreetMap.hu</attribution-text>
     <attribution-url>http://openstreetmap.hu/</attribution-url>
     <country-code>HU</country-code>
@@ -27223,6 +27215,77 @@
     <type>wms</type>
     <url>http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;service=WMS&amp;REQUEST=GetMap&amp;LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&amp;SRS={proj}&amp;WIDTH={width}&amp;height={height}&amp;BBOX={bbox}</url>
     <country-code>LV</country-code>
+  </entry>
+  <entry>
+    <name>PDOK Luchtfoto Beeldmateriaal 25cm</name>
+    <id>Actueel_ortho25_WMTS</id>
+    <type>tms</type>
+    <url>http://geodata.nationaalgeoregister.nl/luchtfoto/wmts?FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=2016_ortho25&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=OGC:1.0:GoogleMapsCompatible&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <best />
+    <attribution-text mandatory="true">Nationaal Georegister, CC BY 4.0</attribution-text>
+    <icon>https://wiki.openstreetmap.org/w/images/thumb/9/90/OSM_Netherlands_Logo.svg/100px-OSM_Netherlands_Logo.svg.png</icon>
+    <country-code>NL</country-code>
+    <description>Landsdekkende dataset 25cm resolutie kleuren luchtfotos van de meest recente jaargang.</description>
+    <max-zoom>18</max-zoom>
+    <bounds max-lat="53.636353" max-lon="7.442170" min-lat="50.619257" min-lon="3.143769">
+      <shape>
+        <point lat="51.359840" lon="3.143769" />
+        <point lat="51.241135" lon="3.157502" />
+        <point lat="51.115441" lon="3.338776" />
+        <point lat="51.058508" lon="3.912812" />
+        <point lat="51.280666" lon="4.657136" />
+        <point lat="51.263483" lon="4.893342" />
+        <point lat="51.125785" lon="5.178986" />
+        <point lat="51.130956" lon="5.384980" />
+        <point lat="51.056782" lon="5.544282" />
+        <point lat="50.859558" lon="5.420685" />
+        <point lat="50.703263" lon="5.467377" />
+        <point lat="50.619257" lon="5.656891" />
+        <point lat="50.621435" lon="6.148530" />
+        <point lat="50.857824" lon="6.302338" />
+        <point lat="50.954382" lon="6.299592" />
+        <point lat="51.018355" lon="6.263886" />
+        <point lat="51.092590" lon="6.372376" />
+        <point lat="51.201139" lon="6.401215" />
+        <point lat="51.251021" lon="6.373749" />
+        <point lat="51.315871" lon="6.445161" />
+        <point lat="51.549601" lon="6.420441" />
+        <point lat="51.679218" lon="6.343537" />
+        <point lat="51.764291" lon="6.796723" />
+        <point lat="51.910242" lon="7.046662" />
+        <point lat="52.045586" lon="7.071381" />
+        <point lat="52.170415" lon="7.271882" />
+        <point lat="52.385511" lon="7.307587" />
+        <point lat="52.531949" lon="7.205964" />
+        <point lat="52.614576" lon="7.282868" />
+        <point lat="52.778532" lon="7.299347" />
+        <point lat="52.978271" lon="7.442170" />
+        <point lat="53.283135" lon="7.433930" />
+        <point lat="53.551588" lon="7.043915" />
+        <point lat="53.636353" lon="6.782990" />
+        <point lat="53.540164" lon="6.239167" />
+        <point lat="53.512408" lon="5.687104" />
+        <point lat="53.438848" lon="5.173493" />
+        <point lat="53.233844" lon="4.816437" />
+        <point lat="53.065831" lon="4.651642" />
+        <point lat="52.485978" lon="4.541779" />
+        <point lat="52.195675" lon="4.322053" />
+        <point lat="52.013690" lon="4.081040" />
+        <point lat="52.016225" lon="4.021988" />
+        <point lat="51.963794" lon="3.936844" />
+        <point lat="51.880793" lon="3.951951" />
+        <point lat="51.849416" lon="3.844834" />
+        <point lat="51.707523" lon="3.623734" />
+        <point lat="51.660694" lon="3.655320" />
+        <point lat="51.627458" lon="3.633347" />
+        <point lat="51.622343" lon="3.546830" />
+        <point lat="51.560915" lon="3.395768" />
+        <point lat="51.517352" lon="3.382035" />
+        <point lat="51.432671" lon="3.498765" />
+        <point lat="51.385559" lon="3.329850" />
+        <point lat="51.359840" lon="3.143769" />
+      </shape>
+    </bounds>
   </entry>
   <entry>
     <name>imagico.de OSM images for mapping: Svalbard mosaic</name>
