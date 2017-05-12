@@ -4,11 +4,12 @@
         "id": "Actueel_ortho25_WMTS",
         "attribution": {
             "text": "Nationaal Georegister, CC BY 4.0",
+            "url": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance",
             "required": true
         },
         "description": "Landsdekkende dataset 25cm resolutie kleuren luchtfotos van de meest recente jaargang.",
         "url": "http://geodata.nationaalgeoregister.nl/luchtfoto/wmts?FORMAT=image/jpeg&SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=2016_ortho25&STYLE=&FORMAT=image/jpeg&tileMatrixSet=OGC:1.0:GoogleMapsCompatible&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
-        "license_url": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance",
+        "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
         "country_code": "NL",
         "icon": "https://wiki.openstreetmap.org/w/images/thumb/9/90/OSM_Netherlands_Logo.svg/100px-OSM_Netherlands_Logo.svg.png",
         "type": "tms",
