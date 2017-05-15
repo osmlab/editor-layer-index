@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
+            "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/",
             "text": "Administration du Cadastre et de la Topographie",
             "required": false
         },
@@ -11,7 +11,7 @@
         "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 20,
         "start_date": "2013-08-30",
-        "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
+        "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/",
         "country_code": "LU",
         "type": "tms",
         "id": "lu.geoportail.opendata.ortho2016",
