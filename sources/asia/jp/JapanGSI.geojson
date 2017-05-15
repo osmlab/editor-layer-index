@@ -6,9 +6,13 @@
         "url": "http://cyberjapandata.gsi.go.jp/xyz/ort/{zoom}/{x}/{y}.jpg",
         "max_zoom": 19,
         "min_zoom": 12,
-        "license_url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+        "license_url": "https://wiki.openstreetmap.org/wiki/GSImaps",
         "country_code": "JP",
         "type": "tms"
+    },
+    "attribution": {
+            "url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+            "text": "GSI Japan"
     },
     "geometry": {
         "type": "Polygon",
