@@ -1623,7 +1623,7 @@
     <projections>
       <code>EPSG:3857</code>
     </projections>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -1680,7 +1680,7 @@
     <projections>
       <code>EPSG:3857</code>
     </projections>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -1737,7 +1737,7 @@
     <projections>
       <code>EPSG:3857</code>
     </projections>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -1794,7 +1794,7 @@
     <projections>
       <code>EPSG:3857</code>
     </projections>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -1851,7 +1851,7 @@
     <projections>
       <code>EPSG:3857</code>
     </projections>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -1908,7 +1908,7 @@
     <projections>
       <code>EPSG:3857</code>
     </projections>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -1962,7 +1962,7 @@
     <id>NSW_LPI_BaseMap</id>
     <type>tms</type>
     <url>https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}</url>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>19</max-zoom>
@@ -2003,7 +2003,7 @@
     <type>tms</type>
     <url>https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}</url>
     <best />
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>21</max-zoom>
@@ -2102,7 +2102,7 @@
     <id>NSW_LPI_TopographicMap</id>
     <type>tms</type>
     <url>https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}</url>
-    <attribution-text mandatory="true">© Land and Property Information 2016</attribution-text>
+    <attribution-text mandatory="true">© Land and Property Information 2017</attribution-text>
     <attribution-url>http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services</attribution-url>
     <country-code>AU</country-code>
     <max-zoom>16</max-zoom>
@@ -2297,6 +2297,187 @@
         <point lat="-52.949505" lon="74.088634" />
         <point lat="-53.270591" lon="74.088634" />
         <point lat="-53.270591" lon="73.068965" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>LINZ NZ Aerial Imagery</name>
+    <id>LINZ_NZ_Aerial_Imagery</id>
+    <type>tms</type>
+    <url>https://tiles-a.data-cdn.linz.govt.nz/services;key=3197c6d0e5cb494a95d58dc2de3216c2/tiles/v4/set=2/EPSG:3857/{zoom}/{x}/{y}.png</url>
+    <best />
+    <attribution-text mandatory="true">Sourced from LINZ CC-BY 3.0</attribution-text>
+    <attribution-url>http://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data</attribution-url>
+    <country-code>NZ</country-code>
+    <max-zoom>21</max-zoom>
+    <bounds max-lat="-34.234512" max-lon="178.709106" min-lat="-47.379754" min-lon="166.272583">
+      <shape>
+        <point lat="-47.219568" lon="167.250366" />
+        <point lat="-47.280161" lon="167.244873" />
+        <point lat="-47.379754" lon="167.503052" />
+        <point lat="-47.156105" lon="168.250122" />
+        <point lat="-46.796299" lon="168.744507" />
+        <point lat="-46.754917" lon="169.326782" />
+        <point lat="-46.604167" lon="169.782715" />
+        <point lat="-46.111326" lon="170.425415" />
+        <point lat="-45.951150" lon="170.804443" />
+        <point lat="-45.440863" lon="170.952759" />
+        <point lat="-44.910359" lon="171.309814" />
+        <point lat="-44.390617" lon="171.408691" />
+        <point lat="-43.929550" lon="172.562256" />
+        <point lat="-43.969098" lon="172.902832" />
+        <point lat="-43.909766" lon="173.161011" />
+        <point lat="-43.695680" lon="173.259888" />
+        <point lat="-43.536603" lon="172.974243" />
+        <point lat="-43.377105" lon="172.760010" />
+        <point lat="-43.177141" lon="173.150024" />
+        <point lat="-42.633959" lon="173.704834" />
+        <point lat="-41.783601" lon="174.364014" />
+        <point lat="-41.409776" lon="174.320068" />
+        <point lat="-41.529142" lon="174.847412" />
+        <point lat="-41.705729" lon="175.072632" />
+        <point lat="-41.672912" lon="175.506592" />
+        <point lat="-41.108330" lon="176.226196" />
+        <point lat="-40.426042" lon="176.830444" />
+        <point lat="-39.673370" lon="177.171021" />
+        <point lat="-39.393755" lon="177.039185" />
+        <point lat="-39.181175" lon="177.445679" />
+        <point lat="-39.330049" lon="177.604980" />
+        <point lat="-39.368279" lon="177.978516" />
+        <point lat="-38.659778" lon="178.335571" />
+        <point lat="-37.744657" lon="178.709106" />
+        <point lat="-37.544577" lon="178.626709" />
+        <point lat="-37.431251" lon="178.313599" />
+        <point lat="-37.378888" lon="177.621460" />
+        <point lat="-37.396346" lon="177.039185" />
+        <point lat="-37.370157" lon="176.561279" />
+        <point lat="-37.059561" lon="176.336060" />
+        <point lat="-36.297418" lon="176.006470" />
+        <point lat="-36.053540" lon="175.676880" />
+        <point lat="-35.178298" lon="174.671631" />
+        <point lat="-34.284453" lon="173.193970" />
+        <point lat="-34.234512" lon="172.677612" />
+        <point lat="-34.402377" lon="172.386475" />
+        <point lat="-34.719040" lon="172.479858" />
+        <point lat="-35.321848" lon="172.985229" />
+        <point lat="-36.142311" lon="173.562012" />
+        <point lat="-37.077093" lon="174.309082" />
+        <point lat="-38.052417" lon="174.556274" />
+        <point lat="-38.655488" lon="174.479370" />
+        <point lat="-38.865375" lon="174.325562" />
+        <point lat="-38.959409" lon="173.798218" />
+        <point lat="-39.232253" lon="173.605957" />
+        <point lat="-39.563353" lon="173.699341" />
+        <point lat="-39.956070" lon="174.589233" />
+        <point lat="-40.216635" lon="174.984741" />
+        <point lat="-40.492915" lon="174.984741" />
+        <point lat="-40.805494" lon="174.721069" />
+        <point lat="-40.651471" lon="174.149780" />
+        <point lat="-40.434405" lon="173.281860" />
+        <point lat="-40.350731" lon="172.589722" />
+        <point lat="-40.534677" lon="172.084351" />
+        <point lat="-40.826280" lon="171.765747" />
+        <point lat="-41.397415" lon="171.573486" />
+        <point lat="-41.652393" lon="171.282349" />
+        <point lat="-42.532844" lon="170.875854" />
+        <point lat="-42.871938" lon="170.354004" />
+        <point lat="-43.929550" lon="168.277588" />
+        <point lat="-44.476911" lon="167.623901" />
+        <point lat="-45.386877" lon="166.552734" />
+        <point lat="-45.916766" lon="166.272583" />
+        <point lat="-46.225453" lon="166.481323" />
+        <point lat="-46.471916" lon="167.678833" />
+        <point lat="-47.219568" lon="167.250366" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>LINZ NZ Topo50 Gridless Maps</name>
+    <id>LINZ_NZ_Topo50_Gridless_Maps</id>
+    <type>tms</type>
+    <url>https://tiles-a.data-cdn.linz.govt.nz/services;key=3197c6d0e5cb494a95d58dc2de3216c2/tiles/v4/layer=2343/EPSG:3857/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">Sourced from the LINZ Data Service and licensed by LINZ for re-use under the Creative Commons Attribution 3.0 New Zealand licence.</attribution-text>
+    <attribution-url>https://data.linz.govt.nz/layer/2343-nz-mainland-topo50-gridless-maps/</attribution-url>
+    <country-code>NZ</country-code>
+    <max-zoom>21</max-zoom>
+    <bounds max-lat="-34.234512" max-lon="178.709106" min-lat="-47.379754" min-lon="166.272583">
+      <shape>
+        <point lat="-47.219568" lon="167.250366" />
+        <point lat="-47.280161" lon="167.244873" />
+        <point lat="-47.379754" lon="167.503052" />
+        <point lat="-47.156105" lon="168.250122" />
+        <point lat="-46.796299" lon="168.744507" />
+        <point lat="-46.754917" lon="169.326782" />
+        <point lat="-46.604167" lon="169.782715" />
+        <point lat="-46.111326" lon="170.425415" />
+        <point lat="-45.951150" lon="170.804443" />
+        <point lat="-45.440863" lon="170.952759" />
+        <point lat="-44.910359" lon="171.309814" />
+        <point lat="-44.390617" lon="171.408691" />
+        <point lat="-43.929550" lon="172.562256" />
+        <point lat="-43.969098" lon="172.902832" />
+        <point lat="-43.909766" lon="173.161011" />
+        <point lat="-43.695680" lon="173.259888" />
+        <point lat="-43.536603" lon="172.974243" />
+        <point lat="-43.377105" lon="172.760010" />
+        <point lat="-43.177141" lon="173.150024" />
+        <point lat="-42.633959" lon="173.704834" />
+        <point lat="-41.783601" lon="174.364014" />
+        <point lat="-41.409776" lon="174.320068" />
+        <point lat="-41.529142" lon="174.847412" />
+        <point lat="-41.705729" lon="175.072632" />
+        <point lat="-41.672912" lon="175.506592" />
+        <point lat="-41.108330" lon="176.226196" />
+        <point lat="-40.426042" lon="176.830444" />
+        <point lat="-39.673370" lon="177.171021" />
+        <point lat="-39.393755" lon="177.039185" />
+        <point lat="-39.181175" lon="177.445679" />
+        <point lat="-39.330049" lon="177.604980" />
+        <point lat="-39.368279" lon="177.978516" />
+        <point lat="-38.659778" lon="178.335571" />
+        <point lat="-37.744657" lon="178.709106" />
+        <point lat="-37.544577" lon="178.626709" />
+        <point lat="-37.431251" lon="178.313599" />
+        <point lat="-37.378888" lon="177.621460" />
+        <point lat="-37.396346" lon="177.039185" />
+        <point lat="-37.370157" lon="176.561279" />
+        <point lat="-37.059561" lon="176.336060" />
+        <point lat="-36.297418" lon="176.006470" />
+        <point lat="-36.053540" lon="175.676880" />
+        <point lat="-35.178298" lon="174.671631" />
+        <point lat="-34.284453" lon="173.193970" />
+        <point lat="-34.234512" lon="172.677612" />
+        <point lat="-34.402377" lon="172.386475" />
+        <point lat="-34.719040" lon="172.479858" />
+        <point lat="-35.321848" lon="172.985229" />
+        <point lat="-36.142311" lon="173.562012" />
+        <point lat="-37.077093" lon="174.309082" />
+        <point lat="-38.052417" lon="174.556274" />
+        <point lat="-38.655488" lon="174.479370" />
+        <point lat="-38.865375" lon="174.325562" />
+        <point lat="-38.959409" lon="173.798218" />
+        <point lat="-39.232253" lon="173.605957" />
+        <point lat="-39.563353" lon="173.699341" />
+        <point lat="-39.956070" lon="174.589233" />
+        <point lat="-40.216635" lon="174.984741" />
+        <point lat="-40.492915" lon="174.984741" />
+        <point lat="-40.805494" lon="174.721069" />
+        <point lat="-40.651471" lon="174.149780" />
+        <point lat="-40.434405" lon="173.281860" />
+        <point lat="-40.350731" lon="172.589722" />
+        <point lat="-40.534677" lon="172.084351" />
+        <point lat="-40.826280" lon="171.765747" />
+        <point lat="-41.397415" lon="171.573486" />
+        <point lat="-41.652393" lon="171.282349" />
+        <point lat="-42.532844" lon="170.875854" />
+        <point lat="-42.871938" lon="170.354004" />
+        <point lat="-43.929550" lon="168.277588" />
+        <point lat="-44.476911" lon="167.623901" />
+        <point lat="-45.386877" lon="166.552734" />
+        <point lat="-45.916766" lon="166.272583" />
+        <point lat="-46.225453" lon="166.481323" />
+        <point lat="-46.471916" lon="167.678833" />
+        <point lat="-47.219568" lon="167.250366" />
       </shape>
     </bounds>
   </entry>
@@ -5147,7 +5328,7 @@
     <id>GRB</id>
     <type>tms</type>
     <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=grb_bsk&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
-    <attribution-text mandatory="true">GRB Flanders (c) AGIV</attribution-text>
+    <attribution-text mandatory="true">GRB Flanders © AGIV</attribution-text>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
     <country-code>BE</country-code>
     <max-zoom>21</max-zoom>
@@ -5316,7 +5497,7 @@
     <type>tms</type>
     <url>http://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=omwrgbmrvl&amp;STYLE=&amp;FORMAT=image/png&amp;tileMatrixSet=GoogleMapsVL&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <best />
-    <attribution-text mandatory="true">Orthophoto Flanders most recent (c) AGIV</attribution-text>
+    <attribution-text mandatory="true">Orthophoto Flanders most recent © AGIV</attribution-text>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
     <country-code>BE</country-code>
     <max-zoom>21</max-zoom>
@@ -26388,7 +26569,7 @@
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2010/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
-    <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
+    <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
     <country-code>LU</country-code>
     <max-zoom>20</max-zoom>
@@ -26629,7 +26810,7 @@
     <type>tms</type>
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2013/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
-    <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
+    <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
     <country-code>LU</country-code>
     <max-zoom>20</max-zoom>
@@ -26871,7 +27052,7 @@
     <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <best />
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
-    <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
+    <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
     <country-code>LU</country-code>
     <max-zoom>20</max-zoom>
@@ -38936,7 +39117,7 @@
     <type>tms</type>
     <url>http://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© OpenStreetMap contributors</attribution-text>
-    <attribution-url>http://www.openstreetmap.org/copyright</attribution-url>
+    <attribution-url>https://www.openstreetmap.org/copyright</attribution-url>
     <icon>data:image/png;base64,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</icon>
     <description>Public GPS traces uploaded to OpenStreetMap.</description>
     <max-zoom>20</max-zoom>
@@ -38947,7 +39128,7 @@
     <type>tms</type>
     <url>http://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png</url>
     <attribution-text>© OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <attribution-url>https://openstreetmap.org/</attribution-url>
     <icon>data:image/png;base64,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</icon>
     <max-zoom>18</max-zoom>
   </entry>
@@ -38967,7 +39148,7 @@
     <type>tms</type>
     <url>https://tiles.wmflabs.org/bw-mapnik/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <attribution-url>https://openstreetmap.org/</attribution-url>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAADJElEQVR4Xo2SS2hcZRSAv/+//70zkzszeU+okVqaaGLjI0akTRGl3ehGdCEiutO6c6PgwoWCSMUXdRFaCurGTRGVUtqNraKmTDA1KtIQzat3TKczSW0mznTuzNznL1zoxo1+q3PgwPnOA8cufVU647y+PnYps6Wq9lbfxvTiqdnzs+/PH7re/bY6nV7tqT5UmanOkUDJcN5w9BW9phcuXDtW/bqy7ejfdVH/qhd0cfXsO9998VN5Xq/qTffaAwACnGl9VvcHePSiaOMidSzWdb+wsRG0CLmhc8E9r/YcbyNgqZA6w4E6ETksoI3gIofIYCCT3KPD39z49OkjIGHf9aikyWFyE4EgzwoHyJFBoQmxsAmQyH1TAyABrMDCJIvCI2Ibk24kYGCTIwXksbD3P3sYDCjtMV8xhsACJHXK5BjCRBMQ0CbAxUdpQ27Xrp5XYI7oEYgQ+IBHjKBDkOiZSJqESGLSZMYOWrJEPK67NDEtIhpoTAQxMRDSpE4H0AgUSkhkaPmTAaGGJiYWWSxCOmgU0CaEpI9Bmmj1+0AthnvXMwRCEBPSh4ekSh8dBNBFAChSZESD8i9LsXxKr/wRNWWy/XTi2sO3rBGjk2lMUqSTLa3+eHJuzJIwX/bLApOYiE4y/F18xNUkInG3iFjxi5/vVJSU6FMld9NHYLCDxqPKEoqPuUQjubLLNgtsmIcnXB1HCso1qyYJiMmzwSdY9PIww2zRhUEOjYsgJ8zhXtnyFXzT218IscizzHHcROsxdhPzFzdxsBDkGYjW13bcQqhgdCS+s0MWhxPUCTCZIotAspeYCgoPqZve5SKtZSQ0RrwhmyvMUMFF8TjTFPBJ4REyiEaAiN2jP6BBzqjOhMEi7+HQIstzyada9BFqQ9u4eFpphe+wCaAMM9q1HB41POGzixe4H7d18cJAauJgd75JiIkpDOq1y1+SAAa3vXvkrcZ4PFZ7bf3k7Itvsp9hbufBl14+fe7nP8/NfXDi0ee5l25uUUTc8eFnT/42esx+gmEMbiGxGUyO/G+mcnseue+ZycmpDP+PAneb4+lRA2D3f9T+A2BEVdbaZSWbAAAAAElFTkSuQmCC</icon>
     <max-zoom>18</max-zoom>
   </entry>
