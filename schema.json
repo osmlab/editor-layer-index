@@ -54,6 +54,23 @@
                     "type": "integer",
                     "minimum": 0
                 },
+                "license": {
+                    "description": "The license or permissions for the imagery",
+                    "type": "string",
+                    "enum": [
+                        "OSM-only",
+                        "PD-USGov",
+                        "CC-Zero",
+                        "CC-BY-2.0",
+                        "CC-BY-3.0",
+                        "CC-BY-3.0-AT",
+                        "CC-BY-4.0",
+                        "CC-BY-SA-2.0",
+                        "CC-BY-SA-3.0",
+                        "CC-BY-SA-3.0-AT",
+                        "CC-BY-SA-4.0"
+                    ]
+                },
                 "license_url": {
                     "description": "A URL for the license or permissions for the imagery",
                     "type": "string"
