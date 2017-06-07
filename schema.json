@@ -26,6 +26,10 @@
                     "description": "The name of the imagery source",
                     "type": "string"
                 },
+                "i18n": {
+                    "description": "Whether the imagery name should be translated",
+                    "type": "boolean"
+                },
                 "type": {
                     "type": "string",
                     "enum": [

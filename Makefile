@@ -1,4 +1,4 @@
-ALL = imagery.geojson imagery.json imagery.xml
+ALL = imagery.geojson imagery.json imagery.xml i18n/en.json
 SOURCES = $(shell find sources -type f -name '*.geojson' | LC_ALL="C" sort)
 PYTHON = python
 
@@ -18,3 +18,6 @@ imagery.json: $(SOURCES)
 
 imagery.geojson: $(SOURCES)
 	@$(PYTHON) scripts/concat_geojson.py $(SOURCES) > imagery.geojson
+
+i18n/en.json: $(SOURCES)
+	@$(PYTHON) scripts/extract_i18n.py $(SOURCES) > $@
