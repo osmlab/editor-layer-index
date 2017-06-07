@@ -10,8 +10,10 @@ for file in sys.argv[1:]:
         props = source['properties']
         if 'i18n' in props and props['i18n']:
             layer_id = props['id']
-            name = props['name']
-            i18n_strings[layer_id] = name
+            if 'name' in props:
+                i18n_strings[layer_id] = props['name']
+            if 'description' in props:
+                i18n_strings[layer_id + '_description'] = props['description']
 
 print(json.dumps(
     i18n_strings,
