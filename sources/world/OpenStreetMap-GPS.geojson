@@ -9,6 +9,7 @@
             "required": true
         },
         "name": "OpenStreetMap GPS traces",
+        "i18n": true,
         "overlay": true,
         "url": "https://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png",
         "max_zoom": 20,
