@@ -11,9 +11,13 @@ for file in sys.argv[1:]:
         if 'i18n' in props and props['i18n']:
             layer_id = props['id']
             if 'name' in props:
-                i18n_strings[layer_id] = props['name']
+                i18n_strings[layer_id + '.name'] = props['name']
             if 'description' in props:
-                i18n_strings[layer_id + '_description'] = props['description']
+                i18n_strings[layer_id + '.description'] = props['description']
+            if 'attribution' in props:
+                attr = props['attribution']
+                if 'text' in attr:
+                    i18n_strings[layer_id + '.attribution.text'] = attr['text']
 
 print(json.dumps(
     i18n_strings,
