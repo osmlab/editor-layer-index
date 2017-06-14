@@ -2,12 +2,12 @@
     "type": "Feature",
     "properties": {
         "id": "OSM_Inspector-Highways",
+        "name": "OSM Inspector: Highways",
         "attribution": {
             "url": "http://tools.geofabrik.de/osmi/",
             "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
-        "name": "OSM Inspector: Highways",
         "overlay": true,
         "url": "http://tools.geofabrik.de/osmi/tiles/highways/{zoom}/{x}/{y}.png",
         "max_zoom": 18,

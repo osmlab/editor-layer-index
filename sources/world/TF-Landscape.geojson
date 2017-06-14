@@ -2,6 +2,8 @@
     "type": "Feature",
     "properties": {
         "id": "tf-landscape",
+        "name": "Thunderforest Landscape",
+        "i18n": true,
         "url": "https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png",
         "attribution": {
             "url": "http://www.thunderforest.com/terms/",
@@ -9,8 +11,7 @@
             "required": true
         },
         "max_zoom": 22,
-        "type": "tms",
-        "name": "Thunderforest Landscape"
+        "type": "tms"
     },
     "geometry": null
 }

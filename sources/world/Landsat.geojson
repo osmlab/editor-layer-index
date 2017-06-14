@@ -2,9 +2,9 @@
     "type": "Feature",
     "properties": {
         "id": "landsat",
+        "name": "Landsat",
         "url": "http://irs.gis-lab.info/?layers=landsat&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
-        "name": "Landsat",
         "available_projections": [
             "NASA:4326",
             "EPSG:32641",

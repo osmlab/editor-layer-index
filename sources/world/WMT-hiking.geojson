@@ -2,12 +2,12 @@
     "type": "Feature",
     "properties": {
         "id": "Waymarked_Trails-Hiking",
+        "name": "Waymarked Trails: Hiking",
         "attribution": {
             "url": "http://hiking.waymarkedtrails.org/en/help/legal",
             "text": "© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
             "required": true
         },
-        "name": "Waymarked Trails: Hiking",
         "overlay": true,
         "url": "http://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png",
         "max_zoom": 17,

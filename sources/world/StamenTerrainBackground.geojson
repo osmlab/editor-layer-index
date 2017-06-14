@@ -2,12 +2,13 @@
     "type": "Feature",
     "properties": {
         "id": "stamen-terrain-background",
+        "name": "Stamen Terrain",
+        "i18n": true,
         "attribution": {
             "url": "http://maps.stamen.com/#terrain",
             "text": "Map tiles by Stamen Design, under CC BY 3.0",
             "required": true
         },
-        "name": "Stamen Terrain",
         "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{zoom}/{x}/{y}.jpg",
         "max_zoom": 18,
         "min_zoom": 4,

@@ -2,12 +2,12 @@
     "type": "Feature",
     "properties": {
         "id": "OSM_Inspector-Geometry",
+        "name": "OSM Inspector: Geometry",
         "attribution": {
             "url": "http://tools.geofabrik.de/osmi/",
             "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
-        "name": "OSM Inspector: Geometry",
         "overlay": true,
         "url": "http://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png",
         "max_zoom": 18,

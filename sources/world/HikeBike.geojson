@@ -2,6 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "hike_n_bike",
+        "name": "Hike & Bike",
         "url": "http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png",
         "icon": "http://hikebikemap.org/hikebike16x16.png",
         "attribution": {
@@ -10,8 +11,7 @@
             "required": true
         },
         "max_zoom": 18,
-        "type": "tms",
-        "name": "Hike & Bike"
+        "type": "tms"
     },
     "geometry": null
 }
