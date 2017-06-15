@@ -51,3 +51,42 @@ After you've made a modification:
 
 1. run `make check` to validate the source files against `schema.json`
 2. run `make` to generate `imagery.xml`, `imagery.json`, and `imagery.geojson`
+
+
+### Translations
+
+Imagery sources optionally support localization of the name, description, and
+attribution text. To set an imagery source as being translatable, include the
+property `i18n: true`.
+
+Translations are managed using the
+[Transifex](https://www.transifex.com/projects/p/id-editor/) platform.
+After signing up, you can go to [iD's project page](https://www.transifex.com/projects/p/id-editor/),
+select a language and click **Translate** to start translating.
+
+The translation strings for this project are located in a resource called
+[**imagery**](https://www.transifex.com/openstreetmap/id-editor/imagery/).
+
+
+#### Working with translation files
+
+To work with translation files,
+[install the Transifex Client](https://docs.transifex.com/client/introduction) software.
+
+The Transifex Client uses a file
+[`~/.transifex.rc`](https://docs.transifex.com/client/client-configuration#-transifexrc)
+to store your username and password.
+
+Note that you can also use a
+[Transifex API Token](https://docs.transifex.com/api/introduction#authentication)
+in place of your username and password.  In this usage, the username is `api`
+and the password is the generated API token.
+
+Once you have installed the client and setup the `~/.transifex.rc` file, you can
+use the following commands:
+
+* `tx push -s`  - upload latest source `/i18n/en.json` file to Transifex
+* `tx pull -a`  - download latest translation files to `/i18n/<lang>.json`
+
+For convenience you can also run these commands as `make txpush` or `make txpull`.
+
