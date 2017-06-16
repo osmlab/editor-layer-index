@@ -85,8 +85,8 @@ and the password is the generated API token.
 Once you have installed the client and setup the `~/.transifex.rc` file, you can
 use the following commands:
 
-* `tx push -s`  - upload latest source `/i18n/en.json` file to Transifex
-* `tx pull -a`  - download latest translation files to `/i18n/<lang>.json`
+* `tx push -s`  - upload latest source `/i18n/en.yaml` file to Transifex
+* `tx pull -a`  - download latest translation files to `/i18n/<lang>.yaml`
 
 For convenience you can also run these commands as `make txpush` or `make txpull`.
 
