@@ -23,7 +23,7 @@ imagery.geojson: $(SOURCES)
 i18n/en.yaml: $(SOURCES)
 	@$(PYTHON) scripts/extract_i18n.py $(SOURCES) > $@
 
-txpush: i18n/en.json
+txpush: i18n/en.yaml
 ifeq (, $(TX))
 	@echo "Transifex not installed"
 else
