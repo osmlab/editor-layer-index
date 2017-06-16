@@ -1,27 +1,32 @@
 """Extracts imagery names for i18n"""
 import io
 import json
+import yaml
 import sys
 
-i18n_strings = dict()
+data = {}
 for file in sys.argv[1:]:
     with io.open(file, 'r') as f:
         source = json.load(f)
         props = source['properties']
         if 'i18n' in props and props['i18n']:
             layer_id = props['id']
+            data[layer_id] = {}
             if 'name' in props:
-                i18n_strings[layer_id + '.name'] = props['name']
+                data[layer_id]['name'] = props['name']
             if 'description' in props:
-                i18n_strings[layer_id + '.description'] = props['description']
+                data[layer_id]['description'] = props['description']
             if 'attribution' in props:
                 attr = props['attribution']
+                data[layer_id]['attribution'] = {}
                 if 'text' in attr:
-                    i18n_strings[layer_id + '.attribution.text'] = attr['text']
+                    data[layer_id]['attribution']['text'] = attr['text']
 
-print(json.dumps(
-    i18n_strings,
-    indent=4,
-    sort_keys=True,
-    separators=(',', ': ')
+print(yaml.safe_dump(
+    {'en': { 'imagery': data }},
+    allow_unicode=True,
+    default_flow_style=False,
+    default_style='"',
+    encoding='utf-8',
+    width=99999
 ))
