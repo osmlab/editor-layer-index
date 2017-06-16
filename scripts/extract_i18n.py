@@ -26,7 +26,7 @@ print(yaml.safe_dump(
     {'en': { 'imagery': data }},
     allow_unicode=True,
     default_flow_style=False,
-    default_style='"',
+    default_style='',
     encoding='utf-8',
     width=99999
 ))
