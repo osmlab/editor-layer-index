@@ -1,67 +1,64 @@
-en_GB:
+ja:
   imagery:
     Bing:
-      description: Satellite and aerial imagery.
-      name: Bing aerial imagery
+      description: 衛星・航空画像です。
+      name: Bing航空画像
     DigitalGlobe-Premium:
       attribution:
-        text: Terms & Feedback
-      description: Premium DigitalGlobe satellite imagery.
-      name: DigitalGlobe Premium Imagery
+        text: 規約＆フィードバック
+      description: DigitalGlobeのプレミアム衛星画像です。
+      name: DigitalGlobeプレミアム画像
     DigitalGlobe-Standard:
       attribution:
-        text: Terms & Feedback
-      description: Standard DigitalGlobe satellite imagery.
-      name: DigitalGlobe Standard Imagery
+        text: 規約＆フィードバック
+      description: DigitalGlobeの標準衛星画像です。
+      name: DigitalGlobe標準画像
     MAPNIK:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
-      description: The default OpenStreetMap layer.
-      name: OpenStreetMap (Standard)
+      description: OpenStreetMap標準レイヤーです。
+      name: OpenStreetMap (標準)
     Mapbox:
       attribution:
-        text: Terms & Feedback
-      description: Satellite and aerial imagery.
-      name: Mapbox Satellite
-    New_and_Misaligned_TIGER_Roads-2013:
-      description: At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap
-      name: New & Misaligned TIGER Roads
+        text: 規約＆フィードバック
+      description: 衛星・航空画像です。
+      name: Mapbox衛星画像
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Addresses'
+      name: 'OSM Inspector: 住所'
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Geometry'
+      name: 'OSM Inspector: ジオメトリ'
     OSM_Inspector-Highways:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Highways'
+      name: 'OSM Inspector: 道路'
     OSM_Inspector-Multipolygon:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Area'
+      name: 'OSM Inspector: エリア'
     OSM_Inspector-Places:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Places'
+      name: 'OSM Inspector: 場所'
     OSM_Inspector-Routing:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Routing'
+      name: 'OSM Inspector: ルーティング'
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
-      name: 'OSM Inspector: Tagging'
+      name: 'OSM Inspector: タグ付け'
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
-      name: 'Waymarked Trails: Cycling'
+      name: 'Waymarked Trails: サイクリング'
     Waymarked_Trails-Hiking:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
-      name: 'Waymarked Trails: Hiking'
+      name: 'Waymarked Trails: ハイキング'
     Waymarked_Trails-MTB:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
@@ -69,39 +66,27 @@ en_GB:
     Waymarked_Trails-Skating:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
-      name: 'Waymarked Trails: Skating'
+      name: 'Waymarked Trails: スケート'
     Waymarked_Trails-Winter_Sports:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
-      name: 'Waymarked Trails: Winter Sports'
-    basemap.at:
-      attribution:
-        text: basemap.at
-      description: Basemap of Austria, based on goverment data.
-      name: basemap.at
-    basemap.at-orthofoto:
-      attribution:
-        text: basemap.at
-      description: Orthofoto layer provided by basemap.at. "Successor" of geoimage.at imagery.
-      name: basemap.at Orthofoto
+      name: 'Waymarked Trails: 冬季スポーツ'
     hike_n_bike:
       attribution:
         text: © OpenStreetMap contributors
       name: Hike & Bike
     mapbox_locator_overlay:
       attribution:
-        text: Terms & Feedback
-      description: Shows major features to help orient you.
-      name: Locator Overlay
+        text: 規約 & フィードバック
     openpt_map:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
-      name: OpenPT Map (overlay)
+      name: OpenPT Map (オーバーレイ)
     osm-gps:
       attribution:
         text: © OpenStreetMap contributors
-      description: Public GPS traces uploaded to OpenStreetMap.
-      name: OpenStreetMap GPS traces
+      description: OpenStreetMapにアップロードされた公開GPSトレースです。
+      name: OpenStreetMap GPSトレース
     osm-mapnik-black_and_white:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
@@ -109,11 +94,10 @@ en_GB:
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
-      name: OpenStreetMap (German Style)
+      name: OpenStreetMap (ドイツスタイル)
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
-      name: QA No Address
     skobbler:
       attribution:
         text: '© Tiles: skobbler Map data: OpenStreetMap contributors'
@@ -121,7 +105,7 @@ en_GB:
     stamen-terrain-background:
       attribution:
         text: Map tiles by Stamen Design, under CC BY 3.0
-      name: Stamen Terrain
+      name: Stamen 地形図
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors

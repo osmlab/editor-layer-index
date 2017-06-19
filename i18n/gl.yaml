@@ -1,0 +1,122 @@
+gl:
+  imagery:
+    Bing:
+      description: Imaxe satélite e aérea.
+      name: Imaxe aérea Bing.
+    DigitalGlobe-Premium:
+      attribution:
+        text: Termos & Autoachegas
+      description: Imaxes de satélite Premium DigitalGlobe.
+      name: Imaxes de DigitalGlobe Premium
+    DigitalGlobe-Standard:
+      attribution:
+        text: Termos & Autoachegas
+      description: Imaxes de satélite Standard DigitalGlobe.
+      name: Imaxes DigitalGlobe Standard
+    MAPNIK:
+      attribution:
+        text: © OpenStreetMap contribuidores, CC-BY-SA
+      description: Capa OpenStreetMap por defecto.
+      name: OpenStreetMap (Estandard)
+    Mapbox:
+      attribution:
+        text: Termos & Autoachegas
+      description: Imaxes satélite e aéreas.
+      name: Mapbox Satélite
+    New_and_Misaligned_TIGER_Roads-2013:
+      description: A zoom nivel 16+, informacións do mapa de dominio público do censo de US. A baixo nivel de zoom, só trocos dende 2006 mínimas achegas xa incorporadas a OpenStreetMap
+      name: Novas & Estradas TIGER Desaliñadas
+    OSM_Inspector-Addresses:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Enderezos'
+    OSM_Inspector-Geometry:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Xeometría'
+    OSM_Inspector-Highways:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Autoestradas'
+    OSM_Inspector-Multipolygon:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Área'
+    OSM_Inspector-Places:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Lugares'
+    OSM_Inspector-Routing:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Ruteiros'
+    OSM_Inspector-Tagging:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contribuidores, CC-BY-SA
+      name: 'OSM Inspector: Lapelas'
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, datos do mapa OpenStreetMap contribuidores, ODbL 1.0
+      name: 'Marcador de Pistas: Ciclismo'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, datos do mapa OpenStreetMap contribuidores, ODbL 1.0
+      name: 'Marcador de vías Pistas: Excursionismo'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, información do mapa OpenStreetMap contribuidores, ODbL 1.0
+      name: 'Marcador de Pistas: MTB'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, información de OpenStreetMap contribuidores, ODbL 1.0
+      name: 'Marcador de Pistas: Skate'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © Michael Spreng, CC by-SA 3.0, información do mapa OpenStreetMap contribuitores, ODbL 1.0
+      name: 'Marcadores de Pistas: Deportes de inverno'
+    hike_n_bike:
+      attribution:
+        text: © OpenStreetMap contribuidores
+      name: Camiño & Bici
+    mapbox_locator_overlay:
+      attribution:
+        text: Termos & Autoachegas
+      description: Amosar os elementos importantes e axuda a orientarte.
+      name: Superposición de Localizador
+    openpt_map:
+      attribution:
+        text: © OpenStreetMap contribuidores, CC-BY-SA
+      name: OpenPT Mapa (superposición)
+    osm-gps:
+      attribution:
+        text: © OpenStreetMap contribuidores
+      description: Trazas públicas GPS subidas a OpenStreetMap.
+      name: OpenStreetMap trazas GPS
+    osm-mapnik-black_and_white:
+      attribution:
+        text: © OpenStreetMap contribuidores, CC-BY-SA
+      name: OpenStreetMap (Estandard Branco & Negro)
+    osm-mapnik-german_style:
+      attribution:
+        text: © OpenStreetMap contribuidores, CC-BY-SA
+      name: OpenStreetMap (Estilo Alemá)
+    qa_no_address:
+      attribution:
+        text: Simon Poole, Achegas ©OpenStreetMap contribuidores
+      name: QA Sen Enderezos
+    skobbler:
+      attribution:
+        text: '© Tiles: skobbler información Mapa: OpenStreetMap contribuidores'
+      name: skobbler
+    stamen-terrain-background:
+      attribution:
+        text: Tiles do mapa por Stamen Design, baixo CC BY 3.0
+      name: Terreo Stamen
+    tf-cycle:
+      attribution:
+        text: Mapas © Thunderforest, Información © OpenStreetMap contribuidores
+      name: Thunderforest OpenCycleMap
+    tf-landscape:
+      attribution:
+        text: Mapas © Thunderforest, Información © OpenStreetMap contribuidores
+      name: Paisaxe Thunderforest
