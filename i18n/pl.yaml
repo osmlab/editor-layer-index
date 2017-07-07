@@ -2,17 +2,17 @@ pl:
   imagery:
     Bing:
       description: Zdjęcia satelitarne i lotnicze.
-      name: Zdjęcia lotnicze Bing
+      name: Bing (satelitarne)
     DigitalGlobe-Premium:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne DigitalGlobe Premium.
-      name: Zdjęcia satelitarne DigitalGlobe Premium
+      name: DigitalGlobe Premium (satelitarne)
     DigitalGlobe-Standard:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne DigitalGlobe Standard.
-      name: Zdjęcia satelitarne DigitalGlobe Standard
+      name: DigitalGlobe Standard (satelitarne)
     MAPNIK:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
@@ -22,14 +22,14 @@ pl:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze.
-      name: Zdjęcia satelitarne Mapbox
+      name: Mapbox Satellite (satelitarne)
     New_and_Misaligned_TIGER_Roads-2013:
-      description: Przy poziomie przybliżenia 16+ dane w domenie publicznej z Spisu ludności Stanów Zjednoczonych. Przy mniejszym przybliżeniu - tylko zmiany od 2006 oprócz zmian już wprowadzonych do OpenStreetMap
+      description: Przy poziomie przybliżenia 16+ dane w domenie publicznej ze Spisu ludności Stanów Zjednoczonych. Przy mniejszym przybliżeniu - tylko zmiany od 2006 oprócz zmian już wprowadzonych do OpenStreetMap
       name: Nowe i niewyrównane drogi TIGER
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
-      name: 'Inspektor OSM: Adresy'
+      name: 'OSM Inspector: Adresy'
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -49,35 +49,45 @@ pl:
     OSM_Inspector-Routing:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
-      name: 'Inspektor OSM: Routing'
+      name: 'Inspektor OSM: Nawigacja'
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
-      name: 'Inspektor OSM: Tagi'
+      name: 'Inspektor OSM: Tagowanie'
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, dane mapy autorzy OpenStreetMap, ODbL 1.0
-      name: 'Oznakowane Szlaki Rowerowe'
+      name: 'Waymarked Trails: Szlaki rowerowe'
     Waymarked_Trails-Hiking:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, dane mapy autorzy OpenStreetMap, ODbL 1.0
-      name: 'Oznakowane Szlaki Piesze'
+      name: 'Waymarked Trails: Szlaki piesze'
     Waymarked_Trails-MTB:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, dane mapy autorzy OpenStreetMap, ODbL 1.0
-      name: 'Oznakowane Szlaki MTB'
+      name: 'Waymarked Trails: Trasy MTB'
     Waymarked_Trails-Skating:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, dane mapy autorzy OpenStreetMap, ODbL 1.0
-      name: 'Ozankowane Szlaki Skaterskie'
+      name: 'Waymarked Trails: Szlaki skaterskie'
     Waymarked_Trails-Winter_Sports:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, dane mapy autorzy OpenStreetMap, ODbL 1.0
-      name: 'Oznakowane szlaki sportów zimowych'
+      name: 'Waymarked Trails: Szlaki sportów zimowych'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: Mapa bazowa Austrii, oparta o dane rządowe.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: Warstwa ortofotomapy dostarczana przez basemap.at. "Następca" obrazowania z serwisu geoimage.at.
+      name: basemap.at Orthofoto
     hike_n_bike:
       attribution:
         text: © autorzy OpenStreetMap
-      name: Wędrówki & Rowery
+      name: Hike & Bike
     mapbox_locator_overlay:
       attribution:
         text: Warunki użytkowania i opinia
@@ -111,7 +121,7 @@ pl:
     stamen-terrain-background:
       attribution:
         text: Kafelki mapowe Stamen Design, licencja CC BY 3.0
-      name: Teren Stamen
+      name: Stamen - Teren
     tf-cycle:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap
