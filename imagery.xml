@@ -39166,6 +39166,17 @@
     <max-zoom>19</max-zoom>
   </entry>
   <entry>
+    <name>Esri Imagery</name>
+    <id>EsriImagery</id>
+    <type>tms</type>
+    <url>https://{switch:services,server}.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}</url>
+    <attribution-text mandatory="true">Terms &amp; Feedback</attribution-text>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/Esri</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADApo5rAAAgAElEQVR4nM...</icon>
+    <description>Esri satellite imagery.</description>
+    <max-zoom>23</max-zoom>
+  </entry>
+  <entry>
     <name>Hike &amp; Bike</name>
     <id>hike_n_bike</id>
     <type>tms</type>

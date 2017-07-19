@@ -1,0 +1,20 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "EsriImagery",
+        "name": "Esri Imagery",
+        "description": "Esri satellite imagery.",
+        "i18n": true,
+        "attribution": {
+            "url": "https://wiki.openstreetmap.org/wiki/Esri",
+            "text": "Terms & Feedback",
+            "required": true
+        },
+        "url": "https://{switch:services,server}.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 23,
+        "default": true,
+        "type": "tms",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAYAAADApo5rAA..."
+    },
+    "geometry": null
+}
