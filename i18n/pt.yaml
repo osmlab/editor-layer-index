@@ -29,29 +29,74 @@ pt:
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Moradas'
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Geometria'
     OSM_Inspector-Highways:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Estradas'
     OSM_Inspector-Multipolygon:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Áreas'
     OSM_Inspector-Places:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Lugares'
     OSM_Inspector-Routing:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Rotas'
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+      name: 'Inspector OSM: Etiquetagem'
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, conteúdo do mapa contribuidores OpenStreetMap, ODbL 1.0
+      name: 'Waymarked Trails: Ciclismo'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, conteúdo do mapa contribuidores OpenStreetMap, ODbL 1.0
+      name: 'Waymarked Trails: Pedestrianismo'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, conteúdo do mapa contribuidores OpenStreetMap, ODbL 1.0
+      name: 'Waymarked Trails: Ciclismo de montanha'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, conteúdo do mapa contribuidores OpenStreetMap, ODbL 1.0
+      name: 'Waymarked Trails: Skate'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, conteúdo do mapa contribuidores OpenStreetMap, ODbL 1.0
+      name: 'Waymarked Trails: Desportos de Inverno'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: 'Mapa base Áustria, baseado em informação govenamental '
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: Ortofotomapa fornecido por basemap.at. Sucessor de geoimage.at imagery.
+      name: Ortofotomapa geoimage.at
     hike_n_bike:
+      attribution:
+        text: Contribuidores © OpenStreetMap
       name: Bicicleta & caminhadas
     mapbox_locator_overlay:
       attribution:
         text: Termos e opinião
+      description: Mostras as principais funcionalidades para ajudar a orientá-lo.
+      name: Sobreposição de localização
+    openpt_map:
+      attribution:
+        text: Contribuidores © OpenStreetMap, CC-BY-SA
+      name: OpenPT Map (sobreposição)
     osm-gps:
       attribution:
         text: © contribuidores OpenStreetMap
@@ -65,3 +110,23 @@ pt:
       attribution:
         text: © contribuidores OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (estilo alemão)
+    qa_no_address:
+      attribution:
+        text: Simon Poole, dados contribuidores © OpenStreetMap
+      name: QA Sem morada
+    skobbler:
+      attribution:
+        text: '© moisaco: skobbler, dados do mapa contribuidores © OpenStreetMap'
+      name: skobbler
+    stamen-terrain-background:
+      attribution:
+        text: moisaco do mapa por Stamen Design, sob licença CC BY 3.0
+      name: Terreno Stamen
+    tf-cycle:
+      attribution:
+        text: Mapa © Thunderforest, dados do mapa contribuidores © OpenStreetMap
+      name: Thunderforest OpenCycleMap
+    tf-landscape:
+      attribution:
+        text: Mapa © Thunderforest, dados do mapa contribuidores © OpenStreetMap
+      name: Thunderforest Landscape
