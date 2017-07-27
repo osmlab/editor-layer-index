@@ -12,7 +12,12 @@
 * `jsonschema` package (for running `make check`)
   * `pip install jsonschema`
 
+
 ### Adding new sources
+
+See [FAQ.md](FAQ.md#what-imagery-licenses-are-compatible-with-this-index) for information
+about which licenses are compatible with this index.
+
 The 'source' documents for this project are the .geojson files in `sources`. To add
 a new imagery source, add a new file to this directory.
 
@@ -24,6 +29,8 @@ See [schema.json](schema.json) for the full list of available properties.
 ##### Imagery Extent
 
 Local (i.e. not worldwide) sources should define an appropriate extent as the geometry for the GeoJSON feature. Polygons and bounding boxes can be created by using a tool like http://geojson.io/
+
+See [FAQ.md](FAQ.md#how-can-i-draw-a-bounding-polygon) for information about how to draw a bounding polygon.
 
 
 ##### Imagery Dates
