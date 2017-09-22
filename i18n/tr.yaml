@@ -1,9 +1,33 @@
 tr:
   imagery:
+    Bing:
+      description: Uydu görüntüleri.
+      name: Bing Uydu Görüntüleri
+    DigitalGlobe-Premium:
+      attribution:
+        text: Şartlar & Geri Bildirim
+      description: DigitalGlobe Uydu Görüntüleri
+      name: DigitalGlobe Uydu Görüntüleri
+    DigitalGlobe-Standard:
+      attribution:
+        text: Şartlar & Geri Bildirim
+      description: Standart DigitalGlobe Uydu Görüntüleri
+      name: Standart DigitalGlobe Uydu Görüntüleri
+    EsriWorldImagery:
+      attribution:
+        text: Şartlar & Geri Bildirim
+      description: Esri Uydu Görüntüleri
+      name: Esri Uydu Görüntüleri
     MAPNIK:
       attribution:
         text: © OpenStreetMap destekçileri, CC-BY-SA
+      description: Varsayılan OpenStreetMap katmanı.
       name: OpenStreetMap (Klasik)
+    Mapbox:
+      attribution:
+        text: Şartlar & Geri Bildirim
+      description: Uydu görüntüleri.
+      name: Mapbox Uydu Görüntüleri
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
@@ -40,9 +64,20 @@ tr:
     Waymarked_Trails-Winter_Sports:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, harita verileri OpenStreetMap destekçileri, ODbL 1.0
+    basemap.at:
+      attribution:
+        text: basemap.at
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      name: basemap.at Orthofoto
     hike_n_bike:
       attribution:
         text: © OpenStreetMap destekçileri
+    mapbox_locator_overlay:
+      attribution:
+        text: Şartlar & Geri Bildirim
     osm-gps:
       attribution:
         text: © OpenStreetMap destekçileri

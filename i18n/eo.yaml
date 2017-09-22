@@ -13,6 +13,11 @@ eo:
         text: Kondiĉoj kaj rimarkoj
       description: Norma satelita fotaro de DigitalGlobe.
       name: Norma fotaro de DigitalGlobe
+    EsriWorldImagery:
+      attribution:
+        text: Kondiĉoj kaj rimarkoj
+      description: Tutmonda fotaro de Esri.
+      name: Tutmonda fotaro de Esri.
     MAPNIK:
       attribution:
         text: © OpenStreetMap kontribuintoj, CC-BY-SA
@@ -87,6 +92,7 @@ eo:
     hike_n_bike:
       attribution:
         text: © OpenStreetMap kontribuintoj
+      name: Hike & Bike
     mapbox_locator_overlay:
       attribution:
         text: Kondiĉoj kaj rimarkoj
@@ -112,15 +118,20 @@ eo:
     qa_no_address:
       attribution:
         text: Simon POOLE, Datumoj ©OpenStreetMap kontribuintoj
+      name: QA No Address
     skobbler:
       attribution:
         text: '© Kaheloj: skobbler map-datumoj: OpenStreetMap kontribuintoj'
+      name: skobbler
     stamen-terrain-background:
       attribution:
         text: Map-kaheloj de Stamen Design, laŭ CC BY 3.0
+      name: Stamen Terrain
     tf-cycle:
       attribution:
         text: 'Mapoj: © Thunderforest, datumoj: © OpenStreetMap kontribuintoj'
+      name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: 'Mapoj: © Thunderforest, datumoj: © OpenStreetMap kontribuintoj'
+      name: Thunderforest Landscape
