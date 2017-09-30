@@ -5,14 +5,19 @@ ko:
       name: Bing 항공 이미지
     DigitalGlobe-Premium:
       attribution:
-        text: 조건 & 피드백
+        text: 이용 약관
       description: 프리미엄 DigitalGlobe 위성 이미지
       name: DigitalGlobe 프리미엄 이미지
     DigitalGlobe-Standard:
       attribution:
-        text: 조건 & 피드백
+        text: 이용 약관
       description: 일반 DigitalGlobe 위성 이미지
       name: DigitalGlobe 일반 이미지
+    EsriWorldImagery:
+      attribution:
+        text: 이용 약관
+      description: Esri 세계 이미지.
+      name: Esri 세계 이미지
     MAPNIK:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
@@ -20,30 +25,38 @@ ko:
       name: OpenStreetMap (일반)
     Mapbox:
       attribution:
-        text: 조건 & 피드백
+        text: 이용 약관
       description: 위성 및 항공 이미지
       name: Mapbox 위성
+    New_and_Misaligned_TIGER_Roads-2013:
+      description: 확대 수준 16 이상에서는 미국 센서스의 공개 도메인지도 데이터입니다. 더 낮은 줌에서는 2006 년 이후로 변경된 부분부터 OpenStreetMap에 이미 통합된 변경 사항을 뺀 부분만 변경됩니다.
+      name: 새로운 & 잘못 만들어진 TIGER 도로
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: 주소  '
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
     OSM_Inspector-Highways:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: 고속도로'
     OSM_Inspector-Multipolygon:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: 지역'
     OSM_Inspector-Places:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: 장소'
     OSM_Inspector-Routing:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: 태그'
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
@@ -59,18 +72,44 @@ ko:
     Waymarked_Trails-Winter_Sports:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
+    basemap.at:
+      description: 오스트리아의 Basemap, 정부 데이터를 기반으로합니다.
     hike_n_bike:
       attribution:
         text: © OpenStreetMap 기여자
+      name: 걷기 & 자전거
+    mapbox_locator_overlay:
+      attribution:
+        text: 이용 약관
+      description: 당신을 돕기위한 주요 기능을 보여줍니다.
     openpt_map:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
+      name: OpenPT Map (오버레이)
     osm-gps:
       attribution:
         text: © OpenStreetMap 기여자
+      description: 공용 GPS 추적을 OpenStreetMap에 업로드했습니다.
+      name: OpenStreetMap GPS 추적들
     osm-mapnik-black_and_white:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
+      name: OpenStreetMap (표준 흑백)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
+      name: OpenStreetMap (독일 스타일)
+    qa_no_address:
+      name: QA 주소 없음
+    skobbler:
+      attribution:
+        text: '© 타일: skobbler 지도 데이터: OpenStreetMap 기여자'
+    stamen-terrain-background:
+      attribution:
+        text: 맵 타일 by Stamen Design, CC BY 3.0 이하
+    tf-cycle:
+      attribution:
+        text: Maps © Thunderforest, 데이터 © OpenStreetMap 기여자
+    tf-landscape:
+      attribution:
+        text: Maps © Thunderforest, 데이터 © OpenStreetMap 기여자
