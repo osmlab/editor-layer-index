@@ -5582,6 +5582,88 @@
     </bounds>
   </entry>
   <entry>
+    <name>UrbIS-Ortho 2017</name>
+    <id>UrbISOrtho2017</id>
+    <type>wms</type>
+    <url>https://geoservices-urbis.irisnet.be/geoserver/ows/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=Ortho2017&amp;WIDTH={width}&amp;HEIGHT={height}&amp;CRS={proj}&amp;STYLES=&amp;BBOX={bbox}</url>
+    <best />
+    <projections>
+      <code>EPSG:31370</code>
+      <code>EPSG:4326</code>
+      <code>EPSG:3857</code>
+    </projections>
+    <attribution-text mandatory="true">Realized by means of Brussels UrbIS®© - Distribution &amp; Copyright CIRB</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsSAAALEgHS3X78AAACnUlEQVQoz11SXUiTYRh93ndz06YMNWcpRmWRSpgO+0EUDYwQ6sZ+oAyti8y6yCyKxOimILqQsLKbukmHSpFFLYlMqSkUmi3/pjZ/Zmv+Tec2bU237z1dfFHSc/HcPOc5HM45DAAREREgGOM217BpzDjs7PEHfNGa2PT47KxN+RFqrYDgjBMRE0JijBMRAKOlzmgxhChDN0cla1ThM0uTE65vsRFxRRkXk3TpMiMBkEQQQFPvw0LDnoYvVStBNwAhBIApj+X6m5OlT/dbnX0AJCHxkbl+zhTWub6XA4ZDqcd3JJTl1to7HV7G2E3TxOU2zaWcKm1YZKO5RlaliNknBma6Bqe7V6SVc5mVrmVFxSvLu1G3bSlwy2jVaXE6IzE0JLzV+jxJlxYTvp5X5j3Qx2ePzPcn6VJVysiUaHXX+d2zy8HqlrE8/bq3xXoiStalr1Fpxl1DRMQ547s27NWGRikVKtmuju9e34pEYcrhWV/f7E8iUinDQrjaH/AREQfAmSJGEzc6P0Qkvbd5ymt7DqfEmEr0Tre/4PFXInK4R7z+hXjtRiIi2aKPtpbi+qxue6vHj5ou+8KvAIBPP7yG3mkAd9sry18ULPrdAAgQAIJS4EZLacXrwqVlDwBJiKAkJCEB+Gz/UNyQ1TxY/8dWIiYgFFx5JPXM7JLjWe8jIgKBM3DGXT5no7lmy9rteVsLiIjJGXPGBcQ2XdqBlKJWa1PHeLOCcRAEhKH7zuKy+4T+QohCDQhGjLBqJBGsNl0teZI3OGMG0GiuKarPNI0aZTEyhq0qHxhjXv/C7bYyASkjIddoqctPOnY07ezf5hHRvwcikg+TXtv9jmsOjy0n8eCpnVeIESMiecnE/6kC0D/Vea+90h/wARAQqwG/AaEjsUbwLtXdAAAAAElFTkSuQmCC</icon>
+    <country-code>BE</country-code>
+    <bounds max-lat="50.914069" max-lon="4.482382" min-lat="50.763766" min-lon="4.243430">
+      <shape>
+        <point lat="50.763821" lon="4.379729" />
+        <point lat="50.763766" lon="4.389170" />
+        <point lat="50.775166" lon="4.430283" />
+        <point lat="50.775003" lon="4.435004" />
+        <point lat="50.786454" lon="4.464272" />
+        <point lat="50.791337" lon="4.481696" />
+        <point lat="50.796166" lon="4.482382" />
+        <point lat="50.806256" lon="4.459208" />
+        <point lat="50.816614" lon="4.459466" />
+        <point lat="50.820356" lon="4.479722" />
+        <point lat="50.835374" lon="4.469594" />
+        <point lat="50.845726" lon="4.468993" />
+        <point lat="50.853963" lon="4.462384" />
+        <point lat="50.855913" lon="4.449681" />
+        <point lat="50.859923" lon="4.445990" />
+        <point lat="50.866153" lon="4.425305" />
+        <point lat="50.876281" lon="4.431828" />
+        <point lat="50.878448" lon="4.440068" />
+        <point lat="50.890144" lon="4.431056" />
+        <point lat="50.895017" lon="4.435948" />
+        <point lat="50.901026" lon="4.429596" />
+        <point lat="50.907575" lon="4.416550" />
+        <point lat="50.913420" lon="4.415434" />
+        <point lat="50.914069" lon="4.395779" />
+        <point lat="50.910930" lon="4.384621" />
+        <point lat="50.903191" lon="4.381188" />
+        <point lat="50.900322" lon="4.372605" />
+        <point lat="50.903299" lon="4.362133" />
+        <point lat="50.903407" lon="4.348572" />
+        <point lat="50.904111" lon="4.340247" />
+        <point lat="50.902487" lon="4.328917" />
+        <point lat="50.896045" lon="4.316472" />
+        <point lat="50.892743" lon="4.306343" />
+        <point lat="50.889819" lon="4.290036" />
+        <point lat="50.884946" lon="4.291495" />
+        <point lat="50.882618" lon="4.295529" />
+        <point lat="50.880939" lon="4.295615" />
+        <point lat="50.872273" lon="4.282740" />
+        <point lat="50.867128" lon="4.276989" />
+        <point lat="50.859110" lon="4.278019" />
+        <point lat="50.857214" lon="4.280423" />
+        <point lat="50.842149" lon="4.280938" />
+        <point lat="50.840360" lon="4.271925" />
+        <point lat="50.836945" lon="4.254673" />
+        <point lat="50.832880" lon="4.251069" />
+        <point lat="50.826971" lon="4.252270" />
+        <point lat="50.821820" lon="4.243430" />
+        <point lat="50.815475" lon="4.244031" />
+        <point lat="50.815096" lon="4.255188" />
+        <point lat="50.809347" lon="4.258021" />
+        <point lat="50.810107" lon="4.272183" />
+        <point lat="50.806961" lon="4.275788" />
+        <point lat="50.805062" lon="4.285401" />
+        <point lat="50.806906" lon="4.289006" />
+        <point lat="50.805930" lon="4.298018" />
+        <point lat="50.797088" lon="4.302824" />
+        <point lat="50.794538" lon="4.314583" />
+        <point lat="50.786237" lon="4.316214" />
+        <point lat="50.773809" lon="4.329518" />
+        <point lat="50.771637" lon="4.342049" />
+        <point lat="50.773375" lon="4.345225" />
+        <point lat="50.768109" lon="4.378527" />
+        <point lat="50.763821" lon="4.379729" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Belgium AGIV Orthophoto Flanders</name>
     <id>AGIV</id>
     <type>tms</type>
@@ -27854,7 +27936,7 @@
     <name>PDOK Luchtfoto Beeldmateriaal 25cm</name>
     <id>Actueel_ortho25_WMTS</id>
     <type>tms</type>
-    <url>http://geodata.nationaalgeoregister.nl/luchtfoto/wmts?FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=2016_ortho25&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=OGC:1.0:GoogleMapsCompatible&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <url>https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts?FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=2016_ortho25&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=OGC:1.0:GoogleMapsCompatible&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <best />
     <attribution-text mandatory="true">Kadaster / Beeldmateriaal.nl, CC BY 4.0</attribution-text>
     <attribution-url>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&amp;isChild=%27false%27&amp;resultType=details&amp;any_OR_title_OR_keyword=luchtfoto&amp;fast=index&amp;_content_type=json&amp;from=1&amp;to=20&amp;sortBy=relevance</attribution-url>
@@ -31649,10 +31731,10 @@
     </bounds>
   </entry>
   <entry>
-    <name>TIGER 2012 Roads Overlay</name>
-    <id>OSM-US-TIGER-Roads_Overlay-2012</id>
+    <name>TIGER Roads 2012</name>
+    <id>US-TIGER-Roads-2012</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png</url>
+    <url>https://{switch:a,b,c,d}.tile.openstreetmap.us/tiger2012_roads_expanded/{zoom}/{x}/{y}.png</url>
     <icon>data:image/png;base64,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</icon>
     <country-code>US</country-code>
     <min-zoom>16</min-zoom>
@@ -31784,10 +31866,145 @@
     </bounds>
   </entry>
   <entry>
-    <name>New &amp; Misaligned TIGER Roads</name>
-    <id>New_and_Misaligned_TIGER_Roads-2013</id>
+    <name>TIGER Roads 2014</name>
+    <id>US-TIGER-Roads-2014</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/enf.e0b8291e/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q</url>
+    <url>https://{switch:a,b,c,d}.tiles.mapbox.com/v4/enf.e0b8291e/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q</url>
+    <icon>data:image/png;base64,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</icon>
+    <country-code>US</country-code>
+    <description>At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap</description>
+    <max-zoom>22</max-zoom>
+    <bounds max-lat="71.563333" max-lon="-66.945284" min-lat="18.758697" min-lon="-178.000097">
+      <shape>
+        <point lat="48.413015" lon="-124.761789" />
+        <point lat="45.902450" lon="-124.605949" />
+        <point lat="40.055761" lon="-124.993427" />
+        <point lat="36.856609" lon="-122.536974" />
+        <point lat="33.006410" lon="-119.977587" />
+        <point lat="32.463022" lon="-117.675935" />
+        <point lat="32.479989" lon="-114.861231" />
+        <point lat="31.336015" lon="-111.008931" />
+        <point lat="31.326002" lon="-108.199269" />
+        <point lat="31.775512" lon="-108.187112" />
+        <point lat="31.782095" lon="-106.530722" />
+        <point lat="31.746446" lon="-106.484205" />
+        <point lat="31.752058" lon="-106.429317" />
+        <point lat="31.561329" lon="-106.286885" />
+        <point lat="31.446704" lon="-106.205248" />
+        <point lat="30.536099" lon="-105.020526" />
+        <point lat="29.699786" lon="-104.588192" />
+        <point lat="28.890868" lon="-103.251886" />
+        <point lat="29.392057" lon="-102.717363" />
+        <point lat="29.747570" lon="-102.151398" />
+        <point lat="29.481052" lon="-101.255287" />
+        <point lat="28.008217" lon="-100.006244" />
+        <point lat="26.447596" lon="-99.235107" />
+        <point lat="25.992804" lon="-98.010907" />
+        <point lat="25.826601" lon="-97.435024" />
+        <point lat="25.982159" lon="-96.955526" />
+        <point lat="27.797817" lon="-96.806174" />
+        <point lat="28.587607" lon="-95.556335" />
+        <point lat="29.474209" lon="-93.740531" />
+        <point lat="28.856451" lon="-90.902846" />
+        <point lat="28.994434" lon="-88.015671" />
+        <point lat="30.003886" lon="-88.016249" />
+        <point lat="30.004745" lon="-86.027751" />
+        <point lat="28.996178" lon="-84.018791" />
+        <point lat="25.982677" lon="-81.997198" />
+        <point lat="25.013492" lon="-81.996662" />
+        <point lat="25.012578" lon="-84.016559" />
+        <point lat="24.005274" lon="-84.016007" />
+        <point lat="24.007096" lon="-80.019998" />
+        <point lat="26.855071" lon="-79.890112" />
+        <point lat="32.016128" lon="-80.024531" />
+        <point lat="35.053189" lon="-75.414738" />
+        <point lat="39.572793" lon="-74.021116" />
+        <point lat="40.991246" lon="-72.002019" />
+        <point lat="40.992046" lon="-69.879740" />
+        <point lat="43.261992" lon="-69.848930" />
+        <point lat="44.710494" lon="-66.945284" />
+        <point lat="47.099002" lon="-67.759663" />
+        <point lat="47.512233" lon="-69.250513" />
+        <point lat="46.217657" lon="-70.461489" />
+        <point lat="45.254878" lon="-71.412273" />
+        <point lat="45.005985" lon="-72.022251" />
+        <point lat="44.980285" lon="-75.079884" />
+        <point lat="43.802457" lon="-76.902306" />
+        <point lat="43.624958" lon="-78.762394" />
+        <point lat="43.446259" lon="-79.157980" />
+        <point lat="42.800532" lon="-79.006009" />
+        <point lat="41.688946" lon="-82.662475" />
+        <point lat="43.588535" lon="-82.176164" />
+        <point lat="46.138853" lon="-83.281398" />
+        <point lat="48.014270" lon="-87.506454" />
+        <point lat="48.296327" lon="-88.349219" />
+        <point lat="47.983782" lon="-89.435315" />
+        <point lat="49.006714" lon="-93.998108" />
+        <point lat="49.412004" lon="-95.110538" />
+        <point lat="49.006055" lon="-96.013120" />
+        <point lat="49.004288" lon="-123.322893" />
+        <point lat="48.184993" lon="-123.227523" />
+        <point lat="48.413015" lon="-124.761789" />
+      </shape>
+      <shape>
+        <point lat="22.506295" lon="-160.578762" />
+        <point lat="21.498465" lon="-160.578219" />
+        <point lat="21.243984" lon="-158.747060" />
+        <point lat="20.995803" lon="-157.508319" />
+        <point lat="18.779019" lon="-155.996194" />
+        <point lat="18.758697" lon="-154.621780" />
+        <point lat="19.880572" lon="-154.689018" />
+        <point lat="21.222589" lon="-156.292762" />
+        <point lat="21.998496" lon="-157.504738" />
+        <point lat="22.507018" lon="-159.009369" />
+        <point lat="22.506295" lon="-160.578762" />
+      </shape>
+      <shape>
+        <point lat="68.721974" lon="-167.157155" />
+        <point lat="67.025508" lon="-164.855398" />
+        <point lat="66.001750" lon="-168.002195" />
+        <point lat="66.001546" lon="-169.008745" />
+        <point lat="64.998767" lon="-169.007538" />
+        <point lat="63.876727" lon="-172.514328" />
+        <point lat="59.740140" lon="-173.819702" />
+        <point lat="58.000582" lon="-162.501815" />
+        <point lat="58.001239" lon="-160.015902" />
+        <point lat="57.000035" lon="-160.014972" />
+        <point lat="56.999902" lon="-160.505479" />
+        <point lat="54.824847" lon="-165.809258" />
+        <point lat="52.244647" lon="-178.000097" />
+        <point lat="51.255425" lon="-177.999300" />
+        <point lat="51.821533" lon="-171.468907" />
+        <point lat="53.956664" lon="-162.402510" />
+        <point lat="55.002502" lon="-159.007572" />
+        <point lat="55.002785" lon="-158.019071" />
+        <point lat="55.999190" lon="-151.996321" />
+        <point lat="57.998785" lon="-151.500341" />
+        <point lat="58.991982" lon="-151.501289" />
+        <point lat="58.995319" lon="-138.515999" />
+        <point lat="57.998643" lon="-138.515047" />
+        <point lat="54.003169" lon="-133.994819" />
+        <point lat="54.004339" lon="-130.004442" />
+        <point lat="57.000051" lon="-130.007083" />
+        <point lat="56.999516" lon="-131.975877" />
+        <point lat="59.756601" lon="-135.122987" />
+        <point lat="59.991805" lon="-138.007181" />
+        <point lat="60.412723" lon="-139.171588" />
+        <point lat="61.011855" lon="-140.987401" />
+        <point lat="69.953507" lon="-140.968398" />
+        <point lat="71.563333" lon="-156.176891" />
+        <point lat="70.739773" lon="-160.413634" />
+        <point lat="69.970743" lon="-163.021827" />
+        <point lat="68.994689" lon="-164.971700" />
+        <point lat="68.721974" lon="-167.157155" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>TIGER Roads 2017</name>
+    <id>US-TIGER-Roads-2017</id>
+    <type>tms</type>
+    <url>https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/openstreetmapus/cj8dftc3q1ecn2tnx9qhwyj0c/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcHVzIiwiYSI6ImNpcnF4Ym43dDBoOXZmYW04bWhlNWdrY2EifQ.4SFexuTUuKkZeerO3dgtmw</url>
     <icon>data:image/png;base64,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</icon>
     <country-code>US</country-code>
     <description>At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap</description>
@@ -37968,7 +38185,7 @@
     <name>IBGE Mapa de Setores Rurais</name>
     <id>IBGE_Setores_Rurais</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.i00mo1kj/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
+    <url>https://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.i00mo1kj/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <country-code>BR</country-code>
     <max-zoom>14</max-zoom>
     <bounds max-lat="5.522895" max-lon="-27.672490" min-lat="-35.465520" min-lon="-74.090560">
@@ -38136,7 +38353,7 @@
     <name>IBGE Mapa de Setores Urbanos</name>
     <id>IBGE_Setores_Urbanos</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.hgda0m6h/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
+    <url>https://{switch:a,b,c}.tiles.mapbox.com/v4/tmpsantos.hgda0m6h/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <country-code>BR</country-code>
     <max-zoom>19</max-zoom>
     <bounds max-lat="5.522895" max-lon="-27.672490" min-lat="-35.465520" min-lon="-74.090560">
@@ -39491,7 +39708,7 @@
     <name>Locator Overlay</name>
     <id>mapbox_locator_overlay</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
+    <url>https://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw</url>
     <attribution-text mandatory="true">Terms &amp; Feedback</attribution-text>
     <attribution-url>http://www.mapbox.com/about/maps/</attribution-url>
     <description>Shows major features to help orient you.</description>
