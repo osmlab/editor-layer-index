@@ -28,9 +28,6 @@ ko:
         text: 이용 약관
       description: 위성 및 항공 이미지
       name: Mapbox 위성
-    New_and_Misaligned_TIGER_Roads-2013:
-      description: 확대 수준 16 이상에서는 미국 센서스의 공개 도메인지도 데이터입니다. 더 낮은 줌에서는 2006 년 이후로 변경된 부분부터 OpenStreetMap에 이미 통합된 변경 사항을 뺀 부분만 변경됩니다.
-      name: 새로운 & 잘못 만들어진 TIGER 도로
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
@@ -38,6 +35,7 @@ ko:
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: Geometry'
     OSM_Inspector-Highways:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
@@ -53,27 +51,48 @@ ko:
     OSM_Inspector-Routing:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
+      name: 'OSM 검사기: 경로'
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
       name: 'OSM 검사기: 태그'
+    US-TIGER-Roads-2012:
+      name: TIGER Roads 2012
+    US-TIGER-Roads-2014:
+      description: 확대 수준 16 이상에서는 미국 센서스의 공개 도메인지도 데이터입니다. 더 낮은 줌에서는 2006 년 이후로 변경된 부분부터 OpenStreetMap에 이미 통합된 변경 사항을 뺀 부분만 변경됩니다.
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
+      name: '도로 표지가 달린 길: 자전거'
     Waymarked_Trails-Hiking:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
+      name: '도로 표지가 달린 길: 걷기'
     Waymarked_Trails-MTB:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
+      name: '도로 표지가 달린 길: 산악 자전거'
     Waymarked_Trails-Skating:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
+      name: '도로 표지가 달린 길: 스케이트'
     Waymarked_Trails-Winter_Sports:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, 맵 데이터 OpenStreetMap 기여자, ODbL 1.0
+      name: '도로 표지가 달린 길: 겨울 스포츠'
     basemap.at:
-      description: 오스트리아의 Basemap, 정부 데이터를 기반으로합니다.
+      attribution:
+        text: basemap.at
+      description: 오스트리아의 기본 지도는  정부 데이터를 기반으로합니다.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: Orthofoto 층은 basemap.at에서 제공합니다. geoimage.at 형상의 "계승".
+      name: basemap.at Orthofoto
     hike_n_bike:
       attribution:
         text: © OpenStreetMap 기여자
@@ -82,6 +101,7 @@ ko:
       attribution:
         text: 이용 약관
       description: 당신을 돕기위한 주요 기능을 보여줍니다.
+      name: Locator Overlay
     openpt_map:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
@@ -100,6 +120,8 @@ ko:
         text: © OpenStreetMap 기여자, CC-BY-SA
       name: OpenStreetMap (독일 스타일)
     qa_no_address:
+      attribution:
+        text: Simon Poole, 데이터 ©OpenStreetMap 기여자
       name: QA 주소 없음
     skobbler:
       attribution:
@@ -107,9 +129,12 @@ ko:
     stamen-terrain-background:
       attribution:
         text: 맵 타일 by Stamen Design, CC BY 3.0 이하
+      name: Stamen 지형
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, 데이터 © OpenStreetMap 기여자
+      name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: Maps © Thunderforest, 데이터 © OpenStreetMap 기여자
+      name: Thunderforest 풍경
