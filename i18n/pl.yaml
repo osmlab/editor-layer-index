@@ -1,7 +1,7 @@
 pl:
   imagery:
     Bing:
-      description: Zdjęcia satelitarne i lotnicze.
+      description: Zdjęcia satelitarne i lotnicze Bing.
       name: Bing (satelitarne)
     DigitalGlobe-Premium:
       attribution:
@@ -16,8 +16,8 @@ pl:
     EsriWorldImagery:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Obrazowanie świata Esri.
-      name: Obrazowanie świata Esri
+      description: Zdjęcia satelitarne i lotnicze Esri.
+      name: Esri (satelitarne i lotnicze)
     MAPNIK:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
@@ -26,7 +26,7 @@ pl:
     Mapbox:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne i lotnicze.
+      description: Zdjęcia satelitarne i lotnicze Mapbox.
       name: Mapbox Satellite (satelitarne)
     OSM_Inspector-Addresses:
       attribution:
@@ -56,6 +56,14 @@ pl:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
       name: 'Inspektor OSM: Tagowanie'
+    US-TIGER-Roads-2012:
+      name: TIGER Roads 2012
+    US-TIGER-Roads-2014:
+      description: Na poziomie powiększenia 16+ są dane public domain od US Census. Na niższych poziomach powiększenia są tylko zmiany od 2006, ale bez zmian już włączonych do OpenStreetMap
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
+      name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, dane mapy autorzy OpenStreetMap, ODbL 1.0
@@ -115,7 +123,7 @@ pl:
     qa_no_address:
       attribution:
         text: Simon Poole, Dane © autorzy OpenStreetMap
-      name: QA Bez Adesu
+      name: QA Bez Adresu
     skobbler:
       attribution:
         text: '© Podład: skobbler Dane mapy: autorzy OpenStreetMap'

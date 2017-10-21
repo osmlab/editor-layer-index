@@ -3,14 +3,36 @@ ca:
     Bing:
       description: Imatges aèries i de satèl·lit.
       name: Imatges aèries de Bing
+    DigitalGlobe-Premium:
+      attribution:
+        text: Termes i comentaris
     DigitalGlobe-Standard:
+      attribution:
+        text: Termes i comentaris
       description: Imatges de satèl·lit de DigitalGlobe estàndard
       name: Imatges de DigitalGlobe estàndard
+    EsriWorldImagery:
+      attribution:
+        text: Termes i comentaris
     MAPNIK:
       description: La capa d'OpenStreetmap predeterminada
       name: OpenStreetMap (Estàndard)
     Mapbox:
+      attribution:
+        text: Termes i comentaris
       description: Imatges aèries i de satèl·lit.
+    OSM_Inspector-Addresses:
+      name: 'Inspector OSM: Adreces'
+    OSM_Inspector-Geometry:
+      name: 'Inspector OSM: Geometria'
+    OSM_Inspector-Highways:
+      name: 'Inspector OSM: Carreteres'
+    OSM_Inspector-Multipolygon:
+      name: 'Inspector OSM: Àrea'
+    OSM_Inspector-Places:
+      name: 'Inspector OSM: Llocs'
+    OSM_Inspector-Routing:
+      name: 'Inspector OSM: Planificació de ruta'
     basemap.at:
       attribution:
         text: basemap.at
