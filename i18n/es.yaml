@@ -8,11 +8,21 @@ es:
         text: Términos y comentarios
       description: Imagen de satélite Premium de DigitalGlobe.
       name: Imágenes aéreas DigitalGlobe Premium
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Términos y Observaciones
+      description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de zoom 14 y superior.
+      name: Galería Antigua Premium de DigitalGlobe
     DigitalGlobe-Standard:
       attribution:
         text: Términos y comentarios
       description: Imagen de satélite Standard de DigitalGlobe.
       name: Imágenes aéreas DigitalGlobe Standard
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Términos y Observaciones
+      description: Límites de galerías y fechas de captura. Las etiquetas aparecen en el nivel de zoom 14 y superior.
+      name: Galería Antigua Estándar de DigitalGlobe
     EsriWorldImagery:
       attribution:
         text: Términos y comentarios
@@ -59,10 +69,10 @@ es:
     US-TIGER-Roads-2012:
       name: Carreteras TIGER 2012
     US-TIGER-Roads-2014:
-      description: En nivel de zoom +16, datos de mapa de dominio público desde el US Census. En zooms inferiores, sólo cambios desde 2006 menos los cambios ya incorporados en OpenStreetMap
+      description: En nivel de acercamiento +16, datos del mapa de dominio público desde el US Census. En acercamientos inferiores, sólo cambios desde 2006 menos los cambios ya incorporados en OpenStreetMap
       name: Carreteras TIGER 2014
     US-TIGER-Roads-2017:
-      description: Amarillo = Datos de mapa de dominio público desde el US Census. Rojo = Datos no encontrados en OpenStreetMap
+      description: Amarillo = Datos del mapa de dominio público desde el US Census. Rojo = Datos no encontrados en OpenStreetMap
       name: Carreteras TIGER 2017
     Waymarked_Trails-Cycling:
       attribution:

@@ -6,15 +6,31 @@ ca:
     DigitalGlobe-Premium:
       attribution:
         text: Termes i comentaris
+      description: Imatges de satèl·lit de DigitalGlobe Premium
+      name: Imatges de DigitalGlobe Premium
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Termes i comentaris
+      description: Limitacions d'imatges i dates de captura. Les etiquetes apareixen al nivell de zoom 14 i superior.
+      name: Imatges de DigitalGlobe Premium Vintage
     DigitalGlobe-Standard:
       attribution:
         text: Termes i comentaris
       description: Imatges de satèl·lit de DigitalGlobe estàndard
       name: Imatges de DigitalGlobe estàndard
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Termes i comentaris
+      description: Limitacions d'imatges i dates de captura. Les etiquetes apareixen al nivell de zoom 14 i superior.
+      name: Imatges de DigitalGlobe estàndard Vintage
     EsriWorldImagery:
       attribution:
         text: Termes i comentaris
+      description: Imatges aèries de Esri
+      name: Imatges aèries de Esri
     MAPNIK:
+      attribution:
+        text: © OpenStreetMap col·laboradors, CC-BY-SA
       description: La capa d'OpenStreetmap predeterminada
       name: OpenStreetMap (Estàndard)
     Mapbox:
@@ -22,17 +38,32 @@ ca:
         text: Termes i comentaris
       description: Imatges aèries i de satèl·lit.
     OSM_Inspector-Addresses:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
       name: 'Inspector OSM: Adreces'
     OSM_Inspector-Geometry:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
       name: 'Inspector OSM: Geometria'
     OSM_Inspector-Highways:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
       name: 'Inspector OSM: Carreteres'
     OSM_Inspector-Multipolygon:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
       name: 'Inspector OSM: Àrea'
     OSM_Inspector-Places:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
       name: 'Inspector OSM: Llocs'
     OSM_Inspector-Routing:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
       name: 'Inspector OSM: Planificació de ruta'
+    OSM_Inspector-Tagging:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
     basemap.at:
       attribution:
         text: basemap.at
@@ -40,8 +71,24 @@ ca:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
+    hike_n_bike:
+      name: Excursió i bicicleta
+    mapbox_locator_overlay:
+      attribution:
+        text: Termes i comentaris
+    openpt_map:
+      attribution:
+        text: © OpenStreetMap col·laboradors, CC-BY-SA
     osm-gps:
+      attribution:
+        text: © OpenStreetMap col·laboradors
       description: Traces GPS públiques pujades a OpenStreetMap.
       name: Traces GPS d'OpenStreetMap
+    osm-mapnik-black_and_white:
+      attribution:
+        text: © OpenStreetMap col·laboradors, CC-BY-SA
+      name: OpenStreetMap (Estàndard Blanc i Negre)
     osm-mapnik-german_style:
+      attribution:
+        text: © OpenStreetMap col·laboradors, CC-BY-SA
       name: OpenStreetMap (Estil alemany)

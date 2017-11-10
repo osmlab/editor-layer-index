@@ -5,17 +5,27 @@ sv:
       name: Bing-flygfoto
     DigitalGlobe-Premium:
       attribution:
-        text: Villkor & feedback
+        text: Villkor & återkoppling
       description: Premium DigitalGlobe-satellitfoton.
       name: DigitalGlobe Premium-bilder
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Villkor & återkoppling
+      description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 14 och upp.
+      name: DigitalGlobe Premium flygfotoålder
     DigitalGlobe-Standard:
       attribution:
-        text: Villkor & feedback
+        text: Villkor & återkoppling
       description: Standard DigitalGlobe-satellitfoton.
       name: DigitalGlobe Standard-bilder
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Villkor & återkoppling
+      description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 14 och upp.
+      name: DigitalGlobe Standard flygfotoålder
     EsriWorldImagery:
       attribution:
-        text: Villkor & feedback
+        text: Villkor & återkoppling
       description: Esri världsflygfoto.
       name: Esri världsflygfoto
     MAPNIK:
@@ -25,7 +35,7 @@ sv:
       name: OpenStreetMap (standard)
     Mapbox:
       attribution:
-        text: Villkor & feedback
+        text: Villkor & återkoppling
       description: Satellit- eller flygfoton.
       name: Mapbox satellit
     OSM_Inspector-Addresses:
@@ -100,7 +110,7 @@ sv:
       name: Vandring & cykel
     mapbox_locator_overlay:
       attribution:
-        text: Villkor & feedback
+        text: Villkor & återkoppling
       description: 'Visa de viktigaste objekten för att hjälpa dig att orientera dig. '
       name: Bildlager för lokalisering
     openpt_map:

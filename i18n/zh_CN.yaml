@@ -8,11 +8,21 @@ zh_CN:
         text: 条款与反馈
       description: DigitalGlobe 优质卫星影像
       name: DigitalGlobe 优质影像
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: 使用条款与意见反馈
+      description: 影像边界和拍摄日期。标签会在缩放到14层级或更高时显示。
+      name: DigitalGlobe 优质影像年份
     DigitalGlobe-Standard:
       attribution:
         text: 条款与反馈
       description: DigitalGlobe 标准卫星影像
       name: DigitalGlobe 标准影像
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: 使用条款与意见反馈
+      description: 影像边界和拍摄日期。标签会在缩放到14层级或更高时显示。
+      name: DigitalGlobe 标准影像年份
     EsriWorldImagery:
       attribution:
         text: 条款和反馈
@@ -101,7 +111,7 @@ zh_CN:
     mapbox_locator_overlay:
       attribution:
         text: 条款与反馈
-      description: 显示主要要素辅助定向
+      description: 叠加显示主要要素，以辅助定位
       name: 定位辅助叠加层
     openpt_map:
       attribution:

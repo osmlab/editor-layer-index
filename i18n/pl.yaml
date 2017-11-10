@@ -8,11 +8,21 @@ pl:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne DigitalGlobe Premium.
       name: DigitalGlobe Premium (satelitarne)
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Warunki użytkowania i opinia
+      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 14 i wyższym.
+      name: 'Datowanie zdjęć DigitalGlobe Premium '
     DigitalGlobe-Standard:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne DigitalGlobe Standard.
       name: DigitalGlobe Standard (satelitarne)
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Warunki użytkowania i opinia
+      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 14 i wyższym.
+      name: Datowanie zdjęć DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
         text: Warunki użytkowania i opinia
@@ -102,7 +112,7 @@ pl:
       attribution:
         text: Warunki użytkowania i opinia
       description: Pokazuje najważniejsze obiekty pomocne w orientacji.
-      name: Nakładka lokalizująca
+      name: Nakładka identyfikująca
     openpt_map:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
