@@ -6,28 +6,28 @@ es:
     DigitalGlobe-Premium:
       attribution:
         text: Términos y comentarios
-      description: Imagen de satélite Premium de DigitalGlobe.
-      name: Imágenes aéreas DigitalGlobe Premium
+      description: Imágenes de satélite DigitalGlobe Premium.
+      name: Imágenes DigitalGlobe Premium
     DigitalGlobe-Premium-vintage:
       attribution:
-        text: Términos y Observaciones
-      description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de zoom 14 y superior.
-      name: Galería Antigua Premium de DigitalGlobe
+        text: Términos y comentarios
+      description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de acercamiento 14 y superior.
+      name: Imágenes antiguas DigitalGlobe Premium
     DigitalGlobe-Standard:
       attribution:
         text: Términos y comentarios
-      description: Imagen de satélite Standard de DigitalGlobe.
-      name: Imágenes aéreas DigitalGlobe Standard
+      description: Imagen de satélite DigitalGlobe Standard.
+      name: Imágenes DigitalGlobe Standard
     DigitalGlobe-Standard-vintage:
       attribution:
-        text: Términos y Observaciones
-      description: Límites de galerías y fechas de captura. Las etiquetas aparecen en el nivel de zoom 14 y superior.
-      name: Galería Antigua Estándar de DigitalGlobe
+        text: Términos y comentarios
+      description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de acercamiento 14 y superior.
+      name: Imágenes antiguas DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
         text: Términos y comentarios
-      description: Imágenes Esri globales.
-      name: Imágenes Esri globales
+      description: Imágenes mundiales Esri.
+      name: Imágenes mundiales Esri
     MAPNIK:
       attribution:
         text: © contribuidores OpenStreetMap, CC-BY-SA
@@ -69,7 +69,7 @@ es:
     US-TIGER-Roads-2012:
       name: Carreteras TIGER 2012
     US-TIGER-Roads-2014:
-      description: En nivel de acercamiento +16, datos del mapa de dominio público desde el US Census. En acercamientos inferiores, sólo cambios desde 2006 menos los cambios ya incorporados en OpenStreetMap
+      description: En nivel de acercamiento 16 o más, datos del mapa de dominio público desde el US Census. En acercamientos inferiores, sólo cambios desde 2006 menos los cambios ya incorporados en OpenStreetMap
       name: Carreteras TIGER 2014
     US-TIGER-Roads-2017:
       description: Amarillo = Datos del mapa de dominio público desde el US Census. Rojo = Datos no encontrados en OpenStreetMap
@@ -102,7 +102,7 @@ es:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Capa de ortofoto proporcionada por basemap.at. «Sucesor» de las imágenes aéreas de geoimage.at.
+      description: Capa de ortofoto proporcionada por basemap.at. «Sucesor» de las imágenes de geoimage.at.
       name: Ortofoto de basemap.at
     hike_n_bike:
       attribution:
@@ -112,7 +112,7 @@ es:
       attribution:
         text: Términos y comentarios
       description: Muestra los principales elementos que le ayudarán a orientarse.
-      name: Superposición de localizador
+      name: Capa de orientación
     openpt_map:
       attribution:
         text: © contribuidores OpenStreetMap, CC-BY-SA

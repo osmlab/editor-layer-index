@@ -8,11 +8,21 @@ en_GB:
         text: Terms & Feedback
       description: Premium DigitalGlobe satellite imagery.
       name: DigitalGlobe Premium Imagery
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Terms & Feedback
+      description: Imagery boundaries and capture dates. Labels appear at zoom level 14 and higher.
+      name: DigitalGlobe Premium Imagery Vintage
     DigitalGlobe-Standard:
       attribution:
         text: Terms & Feedback
       description: Standard DigitalGlobe satellite imagery.
       name: DigitalGlobe Standard Imagery
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Terms & Feedback
+      description: Imagery boundaries and capture dates. Labels appear at zoom level 14 and higher.
+      name: DigitalGlobe Standard Imagery Vintage
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
@@ -62,6 +72,7 @@ en_GB:
       description: At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
       attribution:
