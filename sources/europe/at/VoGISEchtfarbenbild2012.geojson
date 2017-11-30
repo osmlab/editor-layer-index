@@ -6,9 +6,11 @@
         "id": "vogis.cnv.at-ef2012_12cm",
         "name": "VoGIS: Echtfarbenbild 2012 (12cm)",
         "type": "wms",
-        "license": "CC-BY-3.0",
         "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2012_12cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "AT",
+        "permission_osm": "explicit",
+        "license": "CC-BY-3.0",
+        "license_url": "http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm",
         "available_projections": [
             "EPSG:4326",
             "EPSG:3857",
