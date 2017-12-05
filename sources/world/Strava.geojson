@@ -1,0 +1,18 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "strava",
+        "name": "Strava Global Heatmap",
+        "i18n": true,
+        "attribution": {
+            "url": "http://labs.strava.com/heatmap/",
+            "text": "© Tiles: Strava Global Heatmap",
+            "required": true
+        },
+        "url": "https://heatmap-external-{switch:a,b,c}.strava.com/tiles/all/hot/{zoom}/{x}/{y}.png?px=256",
+        "max_zoom": 15,
+        "min_zoom": 1,
+        "type": "tms"
+    },
+    "geometry": null
+}
