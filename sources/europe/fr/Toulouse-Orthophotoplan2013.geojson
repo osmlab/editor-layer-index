@@ -8,11 +8,11 @@
             "required": true
         },
         "name": "Toulouse - Orthophotoplan 2013",
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}",
+        "url": "https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 22,
-        "license_url": "http://opendatacommons.org/licenses/odbl/",
+        "license_url": "https://data.toulouse-metropole.fr/page/licence/",
         "country_code": "FR",
-        "type": "tms"
+        "type": "wms"
     },
     "geometry": {
         "type": "Polygon",
