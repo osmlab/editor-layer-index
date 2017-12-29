@@ -8,11 +8,16 @@
             "required": true
         },
         "name": "Toulouse - Orthophotoplan 2015",
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:3943",
+            "EPSG:900913"
+        ],
+        "url": "https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho2015&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 22,
-        "license_url": "http://opendatacommons.org/licenses/odbl/",
+        "license_url": "https://data.toulouse-metropole.fr/page/licence/",
         "country_code": "FR",
-        "type": "tms"
+        "type": "wms"
     },
     "geometry": {
         "type": "Polygon",
