@@ -16076,8 +16076,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2007</name>
     <id>Toulouse-Orthophotoplan-2007</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2007&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -16171,8 +16176,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2011</name>
     <id>Toulouse-Orthophotoplan-2011</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2011&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -16240,8 +16250,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2013</name>
     <id>Toulouse-Orthophotoplan-2013</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2013&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -16309,8 +16324,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2015</name>
     <id>Toulouse-Orthophotoplan-2015</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2015&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -20892,7 +20912,7 @@
     <name>OS OpenData StreetView</name>
     <id>OS-OpenData_StreetView</id>
     <type>tms</type>
-    <url>http://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
+    <url>https://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
     <min-zoom>1</min-zoom>
     <max-zoom>18</max-zoom>
@@ -27734,9 +27754,9 @@
   </entry>
   <entry>
     <name>Ortho 2017 geoportail.lu</name>
-    <id>lu.geoportail.opendata.ortho2016</id>
+    <id>lu.geoportail.opendata.ortho2017</id>
     <type>tms</type>
-    <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
+    <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2017/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
@@ -34589,6 +34609,345 @@
         <point lat="40.008683" lon="-75.056534" />
         <point lat="40.072555" lon="-74.935341" />
         <point lat="40.085427" lon="-74.865990" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>NYS Orthos Online</name>
+    <id>orthos.dhses.ny.gov_latest</id>
+    <type>wms</type>
+    <url>http://www.orthos.dhses.ny.gov/arcgis/services/Latest/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0,1,2,3,4&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <attribution-text>New York State Statewide Digital Orthoimagery Program</attribution-text>
+    <attribution-url>https://gis.ny.gov/gateway/orthoprogram/index.cfm</attribution-url>
+    <country-code>US</country-code>
+    <description>New York State High Resolution Digital Orthoimagery, 1 foot resolution</description>
+    <max-zoom>19</max-zoom>
+    <bounds max-lat="45.036821" max-lon="-71.845820" min-lat="40.485318" min-lon="-79.781897">
+      <shape>
+        <point lat="45.036061" lon="-74.912311" />
+        <point lat="45.029965" lon="-73.477879" />
+        <point lat="45.030981" lon="-73.338461" />
+        <point lat="45.005581" lon="-73.319776" />
+        <point lat="44.985253" lon="-73.322651" />
+        <point lat="44.928296" lon="-73.348522" />
+        <point lat="44.839696" lon="-73.367207" />
+        <point lat="44.817270" lon="-73.342773" />
+        <point lat="44.776473" lon="-73.345648" />
+        <point lat="44.734626" lon="-73.372957" />
+        <point lat="44.679465" lon="-73.370082" />
+        <point lat="44.644707" lon="-73.397391" />
+        <point lat="44.602764" lon="-73.393079" />
+        <point lat="44.545429" lon="-73.397391" />
+        <point lat="44.512640" lon="-73.349960" />
+        <point lat="44.495213" lon="-73.345648" />
+        <point lat="44.470602" lon="-73.378706" />
+        <point lat="44.435719" lon="-73.308278" />
+        <point lat="44.418269" lon="-73.303966" />
+        <point lat="44.339168" lon="-73.332712" />
+        <point lat="44.271282" lon="-73.308278" />
+        <point lat="44.251725" lon="-73.308278" />
+        <point lat="44.148683" lon="-73.380143" />
+        <point lat="44.041329" lon="-73.404577" />
+        <point lat="43.795957" lon="-73.339899" />
+        <point lat="43.642216" lon="-73.280969" />
+        <point lat="43.549573" lon="-73.209104" />
+        <point lat="43.512059" lon="-73.213416" />
+        <point lat="42.675571" lon="-73.246474" />
+        <point lat="42.142839" lon="-73.459195" />
+        <point lat="42.039380" lon="-73.470693" />
+        <point lat="41.737642" lon="-73.487941" />
+        <point lat="41.643191" lon="-73.499439" />
+        <point lat="41.627078" lon="-73.477880" />
+        <point lat="41.579788" lon="-73.431886" />
+        <point lat="41.563659" lon="-73.426137" />
+        <point lat="41.459259" lon="-73.426855" />
+        <point lat="41.403223" lon="-73.439790" />
+        <point lat="41.383275" lon="-73.449852" />
+        <point lat="41.370333" lon="-73.438353" />
+        <point lat="41.359006" lon="-73.427573" />
+        <point lat="41.343901" lon="-73.417512" />
+        <point lat="41.276424" lon="-73.418950" />
+        <point lat="41.244551" lon="-73.430448" />
+        <point lat="41.197523" lon="-73.465662" />
+        <point lat="41.145050" lon="-73.529622" />
+        <point lat="41.133684" lon="-73.554775" />
+        <point lat="41.135308" lon="-73.615860" />
+        <point lat="41.108781" lon="-73.626640" />
+        <point lat="41.054069" lon="-73.627359" />
+        <point lat="40.991175" lon="-73.639576" />
+        <point lat="40.981953" lon="-73.618735" />
+        <point lat="40.965675" lon="-73.599331" />
+        <point lat="40.934737" lon="-73.599331" />
+        <point lat="40.916818" lon="-73.634545" />
+        <point lat="40.891833" lon="-73.680539" />
+        <point lat="40.879880" lon="-73.698505" />
+        <point lat="40.870642" lon="-73.686288" />
+        <point lat="40.879336" lon="-73.662573" />
+        <point lat="40.905413" lon="-73.638138" />
+        <point lat="40.911930" lon="-73.597894" />
+        <point lat="40.917904" lon="-73.575616" />
+        <point lat="40.923877" lon="-73.526747" />
+        <point lat="40.942880" lon="-73.501595" />
+        <point lat="40.953736" lon="-73.490096" />
+        <point lat="40.960791" lon="-73.417512" />
+        <point lat="40.961334" lon="-73.383736" />
+        <point lat="40.955907" lon="-73.337023" />
+        <point lat="40.936365" lon="-73.308277" />
+        <point lat="40.926592" lon="-73.270907" />
+        <point lat="40.919533" lon="-73.209103" />
+        <point lat="40.927135" lon="-73.186825" />
+        <point lat="40.931479" lon="-73.168140" />
+        <point lat="40.959706" lon="-73.165984" />
+        <point lat="40.970016" lon="-73.168859" />
+        <point lat="40.981953" lon="-73.129333" />
+        <point lat="40.981953" lon="-73.107773" />
+        <point lat="40.974900" lon="-73.066810" />
+        <point lat="40.974357" lon="-72.858401" />
+        <point lat="40.981953" lon="-72.718264" />
+        <point lat="41.005277" lon="-72.655741" />
+        <point lat="41.004735" lon="-72.644242" />
+        <point lat="40.992260" lon="-72.626276" />
+        <point lat="41.038893" lon="-72.541475" />
+        <point lat="41.063281" lon="-72.476796" />
+        <point lat="41.089285" lon="-72.458112" />
+        <point lat="41.093076" lon="-72.418586" />
+        <point lat="41.138555" lon="-72.366124" />
+        <point lat="41.141803" lon="-72.360375" />
+        <point lat="41.154790" lon="-72.322286" />
+        <point lat="41.163988" lon="-72.290666" />
+        <point lat="41.182381" lon="-72.214488" />
+        <point lat="41.191575" lon="-72.200834" />
+        <point lat="41.259139" lon="-72.048480" />
+        <point lat="41.293705" lon="-72.025483" />
+        <point lat="41.307742" lon="-71.939245" />
+        <point lat="41.306662" lon="-71.923434" />
+        <point lat="41.299104" lon="-71.902593" />
+        <point lat="41.289385" lon="-71.901875" />
+        <point lat="41.245091" lon="-71.994581" />
+        <point lat="41.198064" lon="-72.104535" />
+        <point lat="41.167234" lon="-72.182868" />
+        <point lat="41.162365" lon="-72.189336" />
+        <point lat="41.122316" lon="-72.251858" />
+        <point lat="41.104449" lon="-72.304320" />
+        <point lat="41.095243" lon="-72.315818" />
+        <point lat="41.084410" lon="-72.279167" />
+        <point lat="41.080618" lon="-72.272699" />
+        <point lat="41.049733" lon="-72.268387" />
+        <point lat="41.048107" lon="-72.217363" />
+        <point lat="41.042145" lon="-72.196522" />
+        <point lat="41.052985" lon="-72.186461" />
+        <point lat="41.058404" lon="-72.171369" />
+        <point lat="41.058946" lon="-72.149810" />
+        <point lat="41.096326" lon="-72.156278" />
+        <point lat="41.107698" lon="-72.152684" />
+        <point lat="41.146673" lon="-72.149091" />
+        <point lat="41.145050" lon="-72.133999" />
+        <point lat="41.105532" lon="-72.070758" />
+        <point lat="41.056778" lon="-72.074351" />
+        <point lat="41.031846" lon="-72.086568" />
+        <point lat="41.006904" lon="-72.109565" />
+        <point lat="41.012869" lon="-72.087287" />
+        <point lat="41.025340" lon="-72.062134" />
+        <point lat="41.032388" lon="-72.045605" />
+        <point lat="41.032930" lon="-72.019015" />
+        <point lat="41.042145" lon="-72.008954" />
+        <point lat="41.051359" lon="-72.001767" />
+        <point lat="41.077368" lon="-71.963679" />
+        <point lat="41.088743" lon="-71.921997" />
+        <point lat="41.087660" lon="-71.889658" />
+        <point lat="41.080618" lon="-71.855881" />
+        <point lat="41.074659" lon="-71.845820" />
+        <point lat="41.052985" lon="-71.855881" />
+        <point lat="41.037267" lon="-71.890376" />
+        <point lat="41.030220" lon="-71.916248" />
+        <point lat="41.003650" lon="-71.990988" />
+        <point lat="40.972729" lon="-72.079382" />
+        <point lat="40.882053" lon="-72.319412" />
+        <point lat="40.840203" lon="-72.442301" />
+        <point lat="40.786900" lon="-72.627713" />
+        <point lat="40.750434" lon="-72.765695" />
+        <point lat="40.712858" lon="-72.884991" />
+        <point lat="40.686706" lon="-72.959731" />
+        <point lat="40.659998" lon="-73.037345" />
+        <point lat="40.648549" lon="-73.081183" />
+        <point lat="40.616371" lon="-73.229944" />
+        <point lat="40.613098" lon="-73.321932" />
+        <point lat="40.618553" lon="-73.352115" />
+        <point lat="40.569440" lon="-73.554775" />
+        <point lat="40.577082" lon="-73.759591" />
+        <point lat="40.548146" lon="-73.882480" />
+        <point lat="40.534493" lon="-73.933505" />
+        <point lat="40.533947" lon="-73.945003" />
+        <point lat="40.562889" lon="-73.945722" />
+        <point lat="40.562343" lon="-74.082266" />
+        <point lat="40.549238" lon="-74.080110" />
+        <point lat="40.520837" lon="-74.122510" />
+        <point lat="40.513735" lon="-74.157724" />
+        <point lat="40.501167" lon="-74.187189" />
+        <point lat="40.486958" lon="-74.228871" />
+        <point lat="40.485318" lon="-74.261210" />
+        <point lat="40.495703" lon="-74.276302" />
+        <point lat="40.543778" lon="-74.279176" />
+        <point lat="40.566710" lon="-74.269834" />
+        <point lat="40.572169" lon="-74.258335" />
+        <point lat="40.572169" lon="-74.225277" />
+        <point lat="40.583086" lon="-74.225996" />
+        <point lat="40.595638" lon="-74.251149" />
+        <point lat="40.622371" lon="-74.252586" />
+        <point lat="40.640915" lon="-74.243244" />
+        <point lat="40.649094" lon="-74.233901" />
+        <point lat="40.654001" lon="-74.202280" />
+        <point lat="40.656727" lon="-74.125385" />
+        <point lat="40.691065" lon="-74.115324" />
+        <point lat="40.689975" lon="-74.099513" />
+        <point lat="40.710679" lon="-74.077954" />
+        <point lat="40.718305" lon="-74.062862" />
+        <point lat="40.743900" lon="-74.052082" />
+        <point lat="40.792885" lon="-74.025492" />
+        <point lat="40.869012" lon="-73.980936" />
+        <point lat="40.925506" lon="-73.962251" />
+        <point lat="40.964590" lon="-73.949315" />
+        <point lat="40.998769" lon="-73.946440" />
+        <point lat="41.016123" lon="-73.981654" />
+        <point lat="41.043229" lon="-74.045614" />
+        <point lat="41.095243" lon="-74.180721" />
+        <point lat="41.149379" lon="-74.307922" />
+        <point lat="41.215365" lon="-74.440873" />
+        <point lat="41.259139" lon="-74.527830" />
+        <point lat="41.302344" lon="-74.613350" />
+        <point lat="41.310981" lon="-74.657906" />
+        <point lat="41.335807" lon="-74.702462" />
+        <point lat="41.389745" lon="-74.767141" />
+        <point lat="41.410230" lon="-74.796606" />
+        <point lat="41.422625" lon="-74.853379" />
+        <point lat="41.431786" lon="-74.907278" />
+        <point lat="41.471106" lon="-74.997829" />
+        <point lat="41.527084" lon="-75.041666" />
+        <point lat="41.593226" lon="-75.084785" />
+        <point lat="41.618482" lon="-75.084067" />
+        <point lat="41.664669" lon="-75.073287" />
+        <point lat="41.702775" lon="-75.087660" />
+        <point lat="41.713505" lon="-75.087660" />
+        <point lat="41.761769" lon="-75.121437" />
+        <point lat="41.792317" lon="-75.119281" />
+        <point lat="41.816959" lon="-75.130779" />
+        <point lat="41.838379" lon="-75.187553" />
+        <point lat="41.849622" lon="-75.252950" />
+        <point lat="41.854975" lon="-75.287445" />
+        <point lat="41.882268" lon="-75.298225" />
+        <point lat="41.930405" lon="-75.306130" />
+        <point lat="41.940027" lon="-75.340626" />
+        <point lat="41.956597" lon="-75.366497" />
+        <point lat="41.977436" lon="-75.372246" />
+        <point lat="41.979573" lon="-75.580655" />
+        <point lat="41.923988" lon="-75.581374" />
+        <point lat="41.926662" lon="-75.789065" />
+        <point lat="41.982778" lon="-75.786909" />
+        <point lat="41.981176" lon="-79.776866" />
+        <point lat="42.209944" lon="-79.781897" />
+        <point lat="42.280169" lon="-79.771836" />
+        <point lat="42.298244" lon="-79.721530" />
+        <point lat="42.367308" lon="-79.573488" />
+        <point lat="42.465990" lon="-79.429758" />
+        <point lat="42.499910" lon="-79.373703" />
+        <point lat="42.545460" lon="-79.257281" />
+        <point lat="42.562400" lon="-79.189728" />
+        <point lat="42.569810" lon="-79.165293" />
+        <point lat="42.624829" lon="-79.120737" />
+        <point lat="42.645976" lon="-79.096303" />
+        <point lat="42.696702" lon="-79.068994" />
+        <point lat="42.710433" lon="-79.031624" />
+        <point lat="42.723105" lon="-78.988505" />
+        <point lat="42.776933" lon="-78.883582" />
+        <point lat="42.814901" lon="-78.886456" />
+        <point lat="42.886554" lon="-78.939637" />
+        <point lat="42.936031" lon="-78.939637" />
+        <point lat="42.969694" lon="-79.048872" />
+        <point lat="43.051672" lon="-79.047435" />
+        <point lat="43.052722" lon="-79.093428" />
+        <point lat="43.092620" lon="-79.091991" />
+        <point lat="43.265558" lon="-79.086242" />
+        <point lat="43.276023" lon="-79.064682" />
+        <point lat="43.330414" lon="-78.849087" />
+        <point lat="43.352365" lon="-78.729790" />
+        <point lat="43.370130" lon="-78.639240" />
+        <point lat="43.379533" lon="-78.548690" />
+        <point lat="43.387889" lon="-78.478262" />
+        <point lat="43.384756" lon="-77.955083" />
+        <point lat="43.347139" lon="-77.731582" />
+        <point lat="43.340345" lon="-77.711459" />
+        <point lat="43.311591" lon="-77.662591" />
+        <point lat="43.283870" lon="-77.615160" />
+        <point lat="43.252996" lon="-77.553356" />
+        <point lat="43.255090" lon="-77.528203" />
+        <point lat="43.278638" lon="-77.456338" />
+        <point lat="43.284916" lon="-77.422561" />
+        <point lat="43.294332" lon="-77.163846" />
+        <point lat="43.293809" lon="-77.050299" />
+        <point lat="43.293286" lon="-76.941783" />
+        <point lat="43.307931" lon="-76.914474" />
+        <point lat="43.316297" lon="-76.850514" />
+        <point lat="43.328322" lon="-76.802364" />
+        <point lat="43.351842" lon="-76.759964" />
+        <point lat="43.428089" lon="-76.647854" />
+        <point lat="43.480258" lon="-76.545087" />
+        <point lat="43.494857" lon="-76.519934" />
+        <point lat="43.527171" lon="-76.443038" />
+        <point lat="43.538113" lon="-76.422197" />
+        <point lat="43.538634" lon="-76.282060" />
+        <point lat="43.556864" lon="-76.238222" />
+        <point lat="43.741465" lon="-76.240378" />
+        <point lat="43.829146" lon="-76.306494" />
+        <point lat="43.867498" lon="-76.311525" />
+        <point lat="43.861799" lon="-76.346020" />
+        <point lat="43.861281" lon="-76.400638" />
+        <point lat="43.884075" lon="-76.471784" />
+        <point lat="43.908933" lon="-76.466754" />
+        <point lat="43.931192" lon="-76.418604" />
+        <point lat="43.932227" lon="-76.371892" />
+        <point lat="43.902719" lon="-76.369736" />
+        <point lat="43.929639" lon="-76.333084" />
+        <point lat="43.929639" lon="-76.278467" />
+        <point lat="43.904273" lon="-76.278467" />
+        <point lat="43.895987" lon="-76.266968" />
+        <point lat="43.912039" lon="-76.236066" />
+        <point lat="43.933262" lon="-76.192947" />
+        <point lat="43.950855" lon="-76.190073" />
+        <point lat="43.960168" lon="-76.215225" />
+        <point lat="43.949821" lon="-76.250439" />
+        <point lat="43.947751" lon="-76.312243" />
+        <point lat="43.976202" lon="-76.305776" />
+        <point lat="44.004639" lon="-76.330928" />
+        <point lat="44.024795" lon="-76.395607" />
+        <point lat="44.062505" lon="-76.398482" />
+        <point lat="44.064571" lon="-76.375485" />
+        <point lat="44.090901" lon="-76.376203" />
+        <point lat="44.092965" lon="-76.471066" />
+        <point lat="44.109480" lon="-76.466035" />
+        <point lat="44.129600" lon="-76.442319" />
+        <point lat="44.132179" lon="-76.398482" />
+        <point lat="44.204347" lon="-76.397763" />
+        <point lat="44.216710" lon="-76.376203" />
+        <point lat="44.219286" lon="-76.239660" />
+        <point lat="44.228041" lon="-76.239660" />
+        <point lat="44.228556" lon="-76.217381" />
+        <point lat="44.347905" lon="-76.215225" />
+        <point lat="44.371027" lon="-76.118926" />
+        <point lat="44.391571" lon="-76.046342" />
+        <point lat="44.434179" lon="-75.934232" />
+        <point lat="44.503414" lon="-75.837214" />
+        <point lat="44.558231" lon="-75.768224" />
+        <point lat="44.603787" lon="-75.699233" />
+        <point lat="44.648285" lon="-75.631680" />
+        <point lat="44.705009" lon="-75.567720" />
+        <point lat="44.745857" lon="-75.504479" />
+        <point lat="44.781575" lon="-75.452736" />
+        <point lat="44.872300" lon="-75.317629" />
+        <point lat="44.937453" lon="-75.153777" />
+        <point lat="44.973053" lon="-75.090535" />
+        <point lat="45.027934" lon="-74.974114" />
+        <point lat="45.036821" lon="-74.919854" />
+        <point lat="45.036061" lon="-74.912311" />
       </shape>
     </bounds>
   </entry>
