@@ -20912,7 +20912,7 @@
     <name>OS OpenData StreetView</name>
     <id>OS-OpenData_StreetView</id>
     <type>tms</type>
-    <url>https://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
+    <url>https://{switch:a,b,c}.os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
     <min-zoom>1</min-zoom>
     <max-zoom>18</max-zoom>
