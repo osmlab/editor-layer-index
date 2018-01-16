@@ -16076,8 +16076,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2007</name>
     <id>Toulouse-Orthophotoplan-2007</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2007&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -16171,8 +16176,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2011</name>
     <id>Toulouse-Orthophotoplan-2011</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2011/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2011&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -16240,8 +16250,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2013</name>
     <id>Toulouse-Orthophotoplan-2013</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2013/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2013&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -16309,8 +16324,13 @@
   <entry>
     <name>Toulouse - Orthophotoplan 2015</name>
     <id>Toulouse-Orthophotoplan-2015</id>
-    <type>tms</type>
-    <url>http://wms.openstreetmap.fr/tms/1.0.0/toulouse_2015/{zoom}/{x}/{y}</url>
+    <type>wms</type>
+    <url>https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortho2015&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+      <code>EPSG:3943</code>
+      <code>EPSG:900913</code>
+    </projections>
     <attribution-text mandatory="true">ToulouseMetropole</attribution-text>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData</attribution-url>
     <country-code>FR</country-code>
@@ -20892,7 +20912,7 @@
     <name>OS OpenData StreetView</name>
     <id>OS-OpenData_StreetView</id>
     <type>tms</type>
-    <url>http://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
+    <url>https://os.openstreetmap.org/sv/{zoom}/{x}/{y}.png</url>
     <country-code>GB</country-code>
     <min-zoom>1</min-zoom>
     <max-zoom>18</max-zoom>
@@ -27734,9 +27754,9 @@
   </entry>
   <entry>
     <name>Ortho 2017 geoportail.lu</name>
-    <id>lu.geoportail.opendata.ortho2016</id>
+    <id>lu.geoportail.opendata.ortho2017</id>
     <type>tms</type>
-    <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2016/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
+    <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2017/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/</attribution-url>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
@@ -28548,6 +28568,49 @@
         <point lat="51.432671" lon="3.498765" />
         <point lat="51.385559" lon="3.329850" />
         <point lat="51.359840" lon="3.143769" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
+    <name>Kartverket N50 topo</name>
+    <id>kartverket-topo4</id>
+    <type>tms</type>
+    <url>http://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&amp;zoom={zoom}&amp;x={x}&amp;y={y}</url>
+    <attribution-text mandatory="true">© Kartverket</attribution-text>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/No:Kartverket_import</attribution-url>
+    <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country-code>NO</country-code>
+    <description>Topographic map N50, equivalent to Norway 1:50.000 paper map series.</description>
+    <min-zoom>3</min-zoom>
+    <max-zoom>15</max-zoom>
+    <bounds max-lat="71.328964" max-lon="31.904253" min-lat="57.739355" min-lon="4.218706">
+      <shape>
+        <point lat="70.436814" lon="31.904253" />
+        <point lat="71.328964" lon="28.476519" />
+        <point lat="71.251426" lon="23.686501" />
+        <point lat="70.073082" lon="16.809060" />
+        <point lat="67.525390" lon="11.162066" />
+        <point lat="64.811576" lon="9.975542" />
+        <point lat="62.144997" lon="4.218706" />
+        <point lat="59.187197" lon="4.372537" />
+        <point lat="57.891503" lon="6.174306" />
+        <point lat="57.739355" lon="7.932118" />
+        <point lat="58.864910" lon="10.777577" />
+        <point lat="58.762509" lon="11.722401" />
+        <point lat="60.114151" lon="12.722157" />
+        <point lat="61.349352" lon="13.051747" />
+        <point lat="63.616992" lon="12.524392" />
+        <point lat="63.985609" lon="14.238259" />
+        <point lat="65.901662" lon="15.117166" />
+        <point lat="68.374908" lon="18.698708" />
+        <point lat="68.261258" lon="20.061013" />
+        <point lat="68.784152" lon="21.005837" />
+        <point lat="68.350602" lon="25.246560" />
+        <point lat="69.847201" lon="26.938455" />
+        <point lat="69.611213" lon="28.762185" />
+        <point lat="68.855600" lon="28.586404" />
+        <point lat="69.519155" lon="31.069314" />
+        <point lat="70.436814" lon="31.904253" />
       </shape>
     </bounds>
   </entry>
