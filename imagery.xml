@@ -285,7 +285,7 @@
     <name>South Africa CD:NGI Aerial</name>
     <id>South_Africa-CD_NGI-Aerial</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg</url>
+    <url>https://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg</url>
     <best />
     <country-code>ZA</country-code>
     <min-zoom>1</min-zoom>
@@ -595,7 +595,7 @@
     <name>City of Cape Town 2013 Aerial</name>
     <id>South_Africa-CapeTown-Aerial-2013</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg</url>
+    <url>https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg</url>
     <attribution-text mandatory="true">City of Cape Town Aerial - OPENSTREETMAP USE ONLY</attribution-text>
     <attribution-url>https://www.capetown.gov.za</attribution-url>
     <country-code>ZA</country-code>
@@ -808,7 +808,7 @@
     <name>City of Cape Town 2015 Aerial</name>
     <id>South_Africa-CapeTown-Aerial</id>
     <type>tms</type>
-    <url>http://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg</url>
+    <url>https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg</url>
     <best />
     <attribution-text mandatory="true">City of Cape Town Aerial - OPENSTREETMAP USE ONLY</attribution-text>
     <attribution-url>https://www.capetown.gov.za</attribution-url>
@@ -1643,7 +1643,7 @@
     <name>AGRI black-and-white 2.5m</name>
     <id>AGRI-black_and_white-2.5m</id>
     <type>tms</type>
-    <url>http://agri.openstreetmap.org/{zoom}/{x}/{y}.png</url>
+    <url>https://agri.openstreetmap.org/{zoom}/{x}/{y}.png</url>
     <attribution-text>AGRI</attribution-text>
     <country-code>AU</country-code>
     <bounds max-lat="-9.992408" max-lon="156.627610" min-lat="-44.060127" min-lon="112.287780">
@@ -9573,7 +9573,7 @@
     <type>tms</type>
     <url>http://{switch:a,b,c}.tile.openstreetmap.dk/danmark/vejmidte/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Danish municipalities</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/Vejmidte</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/Vejmidte</attribution-url>
     <country-code>DK</country-code>
     <max-zoom>20</max-zoom>
     <bounds max-lat="57.822894" max-lon="15.309925" min-lat="54.468165" min-lon="8.018512">
@@ -13681,7 +13681,7 @@
     <type>tms</type>
     <url>http://tiles.craig.fr/osm/tms/1.0.0/ortho_2013/webmercator/{zoom-1}/{x}/{-y}.jpeg</url>
     <attribution-text mandatory="true">Orthophotographie CRAIG/Sintegra/IGN 2013</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG</attribution-url>
     <country-code>FR</country-code>
     <bounds max-lat="46.821959" max-lon="4.506552" min-lat="44.603782" min-lon="2.045741">
       <shape>
@@ -14273,7 +14273,7 @@
     <type>tms</type>
     <url>http://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2015</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation</attribution-url>
     <icon>https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png</icon>
     <country-code>FR</country-code>
     <description>French land registry</description>
@@ -14369,7 +14369,7 @@
     <type>wms</type>
     <url>http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortholittorale&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho littorale 2000</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
     <country-code>FR</country-code>
     <bounds max-lat="51.121437" max-lon="2.606826" min-lat="43.303572" min-lon="-5.198673">
       <shape>
@@ -14634,7 +14634,7 @@
     <type>wms</type>
     <url>http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=n_sentier_littoral_l&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho littorale 2000</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
     <country-code>FR</country-code>
     <bounds max-lat="51.173546" max-lon="7.605516" min-lat="42.400154" min-lon="-5.198673">
       <shape>
@@ -15125,7 +15125,7 @@
     <type>wms</type>
     <url>http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=ortholittorale_v2_rvb&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <attribution-text mandatory="true">Ortho Littorale V2 - MEDDE</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral</attribution-url>
     <country-code>FR</country-code>
     <bounds max-lat="51.173546" max-lon="7.605516" min-lat="42.400154" min-lon="-5.198673">
       <shape>
@@ -16401,7 +16401,7 @@
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">Orthophoto Tour(s)plus 2013</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
     <country-code>FR</country-code>
     <max-zoom>22</max-zoom>
     <bounds max-lat="47.500967" max-lon="0.814362" min-lat="47.261990" min-lon="0.427094">
@@ -16420,7 +16420,7 @@
     <type>tms</type>
     <url>http://wms.openstreetmap.fr/tms/1.0.0/tours/{zoom}/{x}/{y}</url>
     <attribution-text mandatory="true">Orthophoto Tour(s) Plus 2008</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/Tours/Orthophoto</attribution-url>
     <country-code>FR</country-code>
     <max-zoom>20</max-zoom>
     <bounds max-lat="47.488195" max-lon="0.775491" min-lat="47.262423" min-lon="0.431139">
@@ -23953,7 +23953,7 @@
     <type>tms</type>
     <url>http://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">Glucksman Map Library, Trinity College Dublin</attribution-text>
-    <attribution-url>http://wiki.openstreetmap.org/wiki/WikiProject_Ireland#Trinity_College_Dublin</attribution-url>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_Ireland#Trinity_College_Dublin</attribution-url>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAB3RJTUUH3gQOFR0YB1KT3QAAAAlwSFlzAAAewQAAHsEBw2lUUwAAAARnQU1BAACxjwv8YQUAAAS/SURBVHjandN7TFNXHAfwzrn/lm3ZHy7LYrJkybK5zMw9fCEoPjbeChoHTtBVRF7l1ZZSaG8flCtvsFVpoZZHC5Y6jDM+UScDaxF5lIfSAaMIlVKBS8EZN4d+d9voZpbMFX/JN7nnnvM7n5xzcxmM5wrPlX1yFmP2adgmXKHc78bsU+j9ZRT3HzzE+D0n7tjuYdo5h38X47/q+UWD1nE0tw/gktEC66gdN/tG0Dc4hnEHhdG7DujOdqGHxi4ae2AZti8ccJXZYoOxawRPnjzGwcpmzM8//ntOe86MickZTEw7ka+99nJAZ/8YWjqs7ufc6ibM/fbQ/fzHo0eoOduJ8UkKljt2nLhk9hj4/Wlm6VA9A2NUa/ew6wNQE1OzVGvPEGUZvkvZHVNUo2mA6ugfpvoGrNT8/Dz1tMfd/yJgKZ13h6zjzFbzvbwO8wDZaR4kzeZbZG/fIHnTbCOvdzrI9h472dnVT97oociO23NkW+9M3pDVsc/V69rjRYA7Su11/dvbfkRJvDeOcMORuj8CpelLkJO6BVs4vQhj3QD5fTQS2PXYndQAblw2yrUt9c/6/xeoqzulK+VEoCTtawgSM5HCr0Nsmg48ngJhYiukonNIybeg8MQEFIZBFBWIoa4z1XoMaOrbtbHci2BtW4RachnOlO/GZW0SjuZEY2eWGYVEFfYJ+kDo/4ThdDPExadQcbxb5zmgb6/xYZlAxPtDmByFS2U+EHM5yBOyEZZ8HkzeZaQmyxFZROGkgUQIMQSNvkPrMXBM31YdFqNDJK8ZHE4FYgSt2Jl0GpKUGAhFjTiQ2QJDgRBGdSTIvEJ8IXDSQJvngEbfWrWacGJDzn1sJ34FkSqFQbgWTcUrcLWIATlnBzYSE8hOOIBQzk9YK56jgRs1CzlBVXD6bcijCYSwTYjhXUFD7nrUlHyFc6pPUCL4BpskUwhn6iGPSMYG3igN3KxeCKDZyulGddReBKV3YbNkGidkIWhQLMeFiuUoE3ths8iOfXFnoQ5nwTt9xHVFVZ5f0XGjxks0A++sIWyNqYM0TYp6qS9+UHxOn+BjqMQfwF8wgg2x5+ErccCboKA5bloAUGc8tk40i2CmGuGhgQhjX0MZwUY5uRJVuX6QcpPhm2TErlBfBLAa4S2epYHrlZ5fke4K6SVyIjRejz1REfhO2Ab2wavgZJ8EU9gEUek1MDMvIIa5DUFpzVhHzECtbRR4DJRrDP5f8h04ILwAmTQLAkEWCgsLIJVIIcwS4uhRBSQSCfi8FGzP6sbKjLsoV+tWewwolUfe+pR1y7GD1YDd4cGIi4uFgM/HulWr4LdpI5ITE5EQH49dOwMRmtmND/ebLMoy+WueA2VyBmO9opSTcx6HimWQHypGBicF+6MjwdzzLSQEH6UlBSjKFyNS1AnGMm6Csuwww2NApVK6hkv2JMptmTkGiPNqEcc+jFiuGsy0SrD4lciQ1kJW3ICAqJIWeu1ilUq1EEDlHr/6vr/XxozBuQD6jw6UUXRm6DgRQCeQfIA1iaZ+BuP191xrXwpw1RtL16zwSfi5PVg2hZAcyp0gqQOr9548TU+/82zdywGvLH429eZnO8rPBNMbB4ps+MhPpvyna9ELgb8ASvKZeuq+E9sAAAAASUVORK5CYII=</icon>
     <country-code>IE</country-code>
     <max-zoom>18</max-zoom>
@@ -40492,7 +40492,7 @@
     <type>tms</type>
     <url>http://openptmap.de/tiles/{zoom}/{x}/{y}.png</url>
     <attribution-text mandatory="true">© OpenStreetMap contributors, CC-BY-SA</attribution-text>
-    <attribution-url>http://openstreetmap.org/</attribution-url>
+    <attribution-url>https://openstreetmap.org/</attribution-url>
     <icon>http://openptmap.de/favicon_pt.png</icon>
     <min-zoom>4</min-zoom>
     <max-zoom>17</max-zoom>
