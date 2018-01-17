@@ -8,11 +8,21 @@ nl:
         text: Gebruiksvoorwaarden & feedback
       description: DigitalGlobe premium satellietbeelden
       name: DigitalGlobe-premiumbeelden
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Gebruiksvoorwaarden & feedback
+      description: Luchtfoto grenzen en opnamedatum. Labels verschijnen bij zoomniveau 14 en hoger.
+      name: DigitalGlobe-premiumbeelden Vintage
     DigitalGlobe-Standard:
       attribution:
         text: Gebruiksvoorwaarden & feedback
       description: DigitalGlobe standaard satellietbeelden
       name: DigitalGlobe-standaardbeelden
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Gebruiksvoorwaarden & feedback
+      description: Luchtfoto grenzen en opnamedatum. Labels verschijnen bij zoomniveau 14 en hoger.
+      name: DigitalGlobe-premiumbeelden Vintage
     EsriWorldImagery:
       attribution:
         text: Voorwaarden & Terugkoppeling
@@ -56,6 +66,14 @@ nl:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap-bijdragers, CC-BY-SA
       name: 'OSM Inspecteur: Tagging'
+    US-TIGER-Roads-2012:
+      name: TIGER Roads 2012
+    US-TIGER-Roads-2014:
+      description: Bij zoomniveau 16+, kaartgegevens in publiek domein van de VS Census. Bij lagere zoomniveaus, enkel wijzigingen sinds 2006 behalve wijzigingen die al in OpenStreetMap zitten
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
+      name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, kaartgegevens OpenStreetMap-bijdragers, ODbL 1.0

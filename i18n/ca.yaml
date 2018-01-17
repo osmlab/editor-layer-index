@@ -37,6 +37,7 @@ ca:
       attribution:
         text: Termes i comentaris
       description: Imatges aèries i de satèl·lit.
+      name: 'Satèl·lit Mapbox '
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
@@ -64,21 +65,58 @@ ca:
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap col·laboradors, CC-BY-SA
+      name: 'Inspector OSM: Etiquetatge'
+    US-TIGER-Roads-2012:
+      name: Carreteres TIGER 2012
+    US-TIGER-Roads-2014:
+      description: Al nivell de zoom 16+, les dades del mapa són del domini públic del US Census. A zooms més baixos, només canvis d'ençà de 2006, els canvis menors incorporats a OpenStreetMap
+      name: Carreteres TIGER 2014
+    US-TIGER-Roads-2017:
+      description: Groc = Dades de mapa del domini públic del US Census. Vermell = No es troben dades a OpenStreetMap
+      name: Carreteres TIGER 2017
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, Dades del mapa OpenStreetMap col·laboradors, ODbL 1.0
+      name: 'Waymarked Trails: Ciclisme'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, Dades del mapa OpenStreetMap col·laboradors, ODbL 1.0
+      name: 'Waymarked Trails: Senderisme'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, Dades del mapa OpenStreetMap col·laboradors, ODbL 1.0
+      name: 'Waymarked Trails: Ciclisme de Muntanya'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © Sarah Hoffmann, CC by-SA 3.0, Dades del mapa OpenStreetMap col·laboradors, ODbL 1.0
+      name: 'Waymarked Trails: Patinatge'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © Michael Spreng, CC by-SA 3.0, Dades del mapa OpenStreetMap col·laboradors, ODbL 1.0
+      name: 'Waymarked Trails: Esports d''hivern'
     basemap.at:
       attribution:
         text: basemap.at
+      description: Mapa Base d'Austria, basat en dades governamentals.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
+      description: Capa d'ortofoto proveïda per basemap.at. "Successora" de geoimage.at imagery.
+      name: 'Ortofoto basemap.at '
     hike_n_bike:
+      attribution:
+        text: © OpenStreetMap col·laboradors
       name: Excursió i bicicleta
     mapbox_locator_overlay:
       attribution:
         text: Termes i comentaris
+      description: Visualitza característiques importants per ajudar a orientar-te.
+      name: Localitzador superposat
     openpt_map:
       attribution:
         text: © OpenStreetMap col·laboradors, CC-BY-SA
+      name: OpenPT Map (superposat)
     osm-gps:
       attribution:
         text: © OpenStreetMap col·laboradors
@@ -92,3 +130,23 @@ ca:
       attribution:
         text: © OpenStreetMap col·laboradors, CC-BY-SA
       name: OpenStreetMap (Estil alemany)
+    qa_no_address:
+      attribution:
+        text: Simon Poole, Dades ©OpenStreetMap col·laboradors
+      name: QA Sense adreça
+    skobbler:
+      attribution:
+        text: '© Quadrícules: skobbler Dades del mapa: OpenStreetMap col·laboradors'
+      name: skobbler
+    stamen-terrain-background:
+      attribution:
+        text: Quadricula de mapes de Stamen Design, sota CC BY 3.0
+      name: Stamen Terrain
+    tf-cycle:
+      attribution:
+        text: Mapes © Thunderforest, Dades © OpenStreetMap col·laboradors
+      name: Thunderforest OpenCycleMap
+    tf-landscape:
+      attribution:
+        text: Mapes © Thunderforest, Dades © OpenStreetMap col·laboradors
+      name: Thunderforest Landscape

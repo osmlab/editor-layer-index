@@ -8,14 +8,26 @@ ja:
         text: 規約＆フィードバック
       description: DigitalGlobeのプレミアム衛星画像です。
       name: DigitalGlobeプレミアム画像
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: 規約＆フィードバック
+      description: 画像の境界と取得日付。ラベルはズームレベル14以上で表示。
+      name: DigitalGlobeプレミアム画像撮影日
     DigitalGlobe-Standard:
       attribution:
         text: 規約＆フィードバック
       description: DigitalGlobeの標準衛星画像です。
       name: DigitalGlobe標準画像
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: 規約＆フィードバック
+      description: 画像の境界と取得日付。ラベルはズームレベル14以上で表示。
+      name: DigitalGlobe標準画像撮影日
     EsriWorldImagery:
       attribution:
         text: 規約 & フィードバック
+      description: Esri world imagery.
+      name: Esri World Imagery
     MAPNIK:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
@@ -54,6 +66,14 @@ ja:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
       name: 'OSM Inspector: タグ付け'
+    US-TIGER-Roads-2012:
+      name: TIGER Roads 2012
+    US-TIGER-Roads-2014:
+      description: ズームレベル16+ではUS Censusのパブリックドメインの地図データ。それ以下では2006年以降のOpenStreetmapに未投入の変更分のみ。
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
+      name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
@@ -74,6 +94,16 @@ ja:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
       name: 'Waymarked Trails: 冬季スポーツ'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: Basemap of Austria, based on goverment data.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: basemap.at が提供するオルソ写真レイヤ。geoimage.at 画像の「後継」。
+      name: basemap.at Orthofoto
     hike_n_bike:
       attribution:
         text: © OpenStreetMap contributors
@@ -81,6 +111,8 @@ ja:
     mapbox_locator_overlay:
       attribution:
         text: 規約 & フィードバック
+      description: 背景画像上に低ズームでも主要な地物を表示します。
+      name: 地物簡略表示（低ズーム時）
     openpt_map:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
@@ -101,6 +133,7 @@ ja:
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
+      name: QA No Address
     skobbler:
       attribution:
         text: '© Tiles: skobbler Map data: OpenStreetMap contributors'

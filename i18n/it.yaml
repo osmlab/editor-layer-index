@@ -8,11 +8,26 @@ it:
         text: Termini & Feedback
       description: Immagini satellitari Premium DigitalGlobe.
       name: Immagini DigitalGlobe Premium
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Termini & Feedback
+      description: Immagini dei confini e data di riferimento. Le etichette vengono mostrate a livelli di zoom maggiori o uguali a 14.
+      name: DigitalGlobe Premium Imagery Vintage
     DigitalGlobe-Standard:
       attribution:
         text: Termini & Feedback
       description: Immagini satellitari Standard DigitalGlobe.
       name: Immagini DigitalGlobe Standard
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Termini & Feedback
+      description: Immagini dei confini e data di riferimento. Le etichette vengono mostrate a livelli di zoom maggiori o uguali a 14.
+      name: DigitalGlobe Standard Imagery Vintage
+    EsriWorldImagery:
+      attribution:
+        text: Termini & Feedback
+      description: Esri world imagery.
+      name: Esri world imagery
     MAPNIK:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
@@ -51,6 +66,14 @@ it:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
       name: 'OSM Inspector: Etichette'
+    US-TIGER-Roads-2012:
+      name: TIGER Roads 2012
+    US-TIGER-Roads-2014:
+      description: A livelli di zoom maggiori di 16, dati in pubblico dominio di US Census. A zoom minori solo cambiamenti a partire dal 2006 meno le modifiche già incorporate in OpenStreetMap
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: Giallo = Dati pubblici forniti da enti statali Statunitensi.
+      name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
       attribution:
         text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
@@ -71,6 +94,16 @@ it:
       attribution:
         text: © Michael Spreng, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0
       name: 'Waymarked Trails: Piste per sport invernali'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: Basemap of Austria, basati su dati governativi.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: Immagini satellitari fornite da basemap.at, successore di geoimage.at
+      name: Immagini satellitari basemap.at
     hike_n_bike:
       attribution:
         text: © OpenStreetMap contributors
