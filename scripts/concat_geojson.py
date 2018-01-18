@@ -6,8 +6,14 @@ for file in sys.argv[1:]:
     with io.open(file, 'r') as f:
         source_features.append(json.load(f))
 
+generated = print('"{:%Y-%m-%d %H:%M:%S},"'.format(datetime.datetime.now()))
+
 collection = {
     "type": "FeatureCollection",
+    "properties": {
+        "generated": generated
+        "format_version": "1.0"
+    }
     "features": source_features
 }
 
