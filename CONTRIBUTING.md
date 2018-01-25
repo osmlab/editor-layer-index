@@ -26,6 +26,25 @@ Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, 
 See [schema.json](schema.json) for the full list of available properties.
 
 
+##### Source URL
+
+The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles.
+
+Supported TMS tokens:
+- `{zoom}`, `{x}`, `{y}` for Z/X/Y tile coordinates
+- `{-y}` for flipped TMS-style Y coordinates
+- `{switch:a,b,c}` for DNS server multiplexing
+
+Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
+
+Supported WMS tokens:
+- `{proj}` - requested projection (e.g. EPSG:3857)
+- `{width}`, `{height}` - requested image dimensions (e.g. 256, 512)
+- `{bbox}` - requested bounding box
+
+Example: `http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}`
+
+
 ##### Imagery Extent
 
 Local (i.e. not worldwide) sources should define an appropriate extent as the geometry for the GeoJSON feature. Polygons and bounding boxes can be created by using a tool like http://geojson.io/
