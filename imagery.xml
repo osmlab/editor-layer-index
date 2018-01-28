@@ -7759,7 +7759,7 @@
     </bounds>
   </entry>
   <entry>
-    <name>imagico.de: Cental Alps in late September 2016</name>
+    <name>imagico.de: Central Alps in late September 2016</name>
     <id>osmim-imagicode-S2A_R065_N47_20160929T102022</id>
     <type>tms</type>
     <url>http://imagico.de/map/osmim_tiles.php?layer=S2A_R065_N47_20160929T102022&amp;z={zoom}&amp;x={x}&amp;y={-y}</url>
@@ -28472,7 +28472,7 @@
     <name>Latest available ortho geoportail.lu</name>
     <id>lu.geoportail.opendata.ortholatest</id>
     <type>tms</type>
-    <url>https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_latest/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
+    <url>http://{switch:wmts1,wmts2}.geoportail.lu/opendata/wmts/ortho_latest/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg</url>
     <best />
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts/</attribution-url>
