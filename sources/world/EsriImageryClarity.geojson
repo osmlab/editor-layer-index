@@ -1,16 +1,16 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "EsriWorldImagery",
-        "name": "Esri World Imagery",
-        "description": "Esri world imagery.",
+        "id": "EsriWorldImageryClarity",
+        "name": "Esri World Imagery (Clarity) Beta",
+        "description": "Esri archive imagery that may be clearer and more accurate than the default layer.",
         "i18n": true,
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/Esri",
             "text": "Terms & Feedback",
             "required": true
         },
-        "url": "https://{switch:services,server}.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 22,
         "default": true,
         "type": "tms",
