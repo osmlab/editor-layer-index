@@ -9351,6 +9351,151 @@
     <country-code>DE</country-code>
   </entry>
   <entry>
+    <name>Saxony latest aerial imagery</name>
+    <id>GEOSN-DOP-RGB</id>
+    <type>wms</type>
+    <url>https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=sn_dop_020&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:4326</code>
+      <code>EPSG:25833</code>
+      <code>EPSG:3857</code>
+      <code>EPSG:31468</code>
+    </projections>
+    <attribution-text mandatory="true">Staatsbetrieb Geobasisinformation und Vermessung Sachsen</attribution-text>
+    <attribution-url>https://geoportal.sachsen.de/md/cd01c334-7e32-482f-bd43-af286707178a</attribution-url>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAABVCAMAAACiqkDBAAAA51BMVEWxs7T////a29oAaUD+/f6tr7CusLH8/P3t7e67vb76+fr29fXP0NHq6urn5+fe3t/h4eHS0tPLzMz3+PjMz87z8/Lw8PDV1taqrK0Ab0UEcUe0trcnfFzX19cAYDbFxscbd1QSckzHy8rCw8S+wcG3uboAbEPl5OQMcUoGbEXj4+NWm4CkyryTqqGXwrLN49qdsalBj3FZi3hwmInc4N6zwLtNiXI2fmN8nJBDhGuIpJmJuqe31sp+s54zhmau0cTq9PDd7edwqpPk8exjo4vm6OepubNikX+vvLfX6eLB3NLz9vW9x8PQldiEAAAK6ElEQVR4Xr2Z53LjuBKFdcCcM5VzDs4554n7/s9zGxDplThcz1Rdec4PF8mi8KEDumGwgjKldgInZjI+QyXIqBpY2sETADf2/gaSBRae7lrS/P75VuO3n4yc2g5+7h9JnbV6zwfAov15SN32gYfljFjz5Wq17NOFtPwBVJ1PQVpBGzh47nHM/c0LEguPqyMB/Q4r2DlSZoGJl5t7KXOmyQxVNQJLvuXQ/g1g7xbpxTq01dGcRp8tHyK43UpNUZVaTRkmWPU6Umf5CBbtDukvgNt13I72X6CHlVqt0jS6cdt3UhN4XBKzdQDP2hkyivHEI9jiDvW6w7C9cCwNXLKlW+YU+5LU6f+AZ+7Oscx9XC5vNY6IZABm4ixYEA6NcVOJ5WYXt/0OZwa7Q6IKQHehL7xq3CVQRVVIqlqpqAbimqEdcOYB7B0hme1AD4zaEMMaBxFpU9ZCUQzzoE/xfATbDTIAQkrQylhuK5VfpCwsbqt8S/E8gp7sBImFgwHB1NRRS5AxDLWijLBPeXsDezdIWAxtGtbXmkXgOpiKINNakQ7g7QYJ2JhWajaGJWZWIl8RDv5JK+kIPv5QsqaZpgYuLTI1TS4gEUCvGAjKgukm6wvzgVy7wsdtRdOZTUs79L2pScJadGV5jA3DYdzWcySYZhmRW4a0ZYMbrwywpHqh+ShX4tlhmFeon08HPx5W+/s3d3c3N/ur1e2P748ahOx3JKZ6lFhlwRxhoAq2/p2ydr8kmk41DKYmAO3pdv95edTqzejNLUnSrHd/9Hr3Yqb/IuE6kEclwWxqTMkS6ZXM3K5BCYsDh8O+r+6W932pwJEK6PlPGxtIOA5spcRMXVezqD7Npc6Dlubv2+FCJtrB/ut9T8oxc7Jm+UzefLj9wXVLDr7hpvfpx3dY5MicaTV/NVNhWjNfL0uetLbAxS6Al4fno9w0qX+/vFv9ePopy7JpJbo79UkL16HWwGf2+NqZP/rYRmIq6yX5MwD3t0oN1D2QpPkLC2yOe9pftuYZrXf0vDoglunosPMiLZQV6+aYodV5RVBEgmFRcK2q1pqyXauMqYFWddx3OjcZLjNudv+8+h7B1L3QaKo1A91apURKSmvsIDWLSCBAoKxJfJ40O2MYBpqli6YmW/JNp3O/es1x/aO72xfIqTcwKuJ1SjZeqUvz/kjEpIgUzFGN+2E0sNlCX7dqGfqC2YPRWPUogd6tu7t9hOYEo6bKXZcrccuQCsWkcyvrZUjTtZizth9m6njVcDhua00RkfVcCSm1Xh9eAATcOLUwtlUp0ZgW2D3aKEPCAxJ9KoxqVkTwlSG6+bjmHXlz/7uGtG34kVqS3215XCl5+jijKsLKkQhg5HmWaSznxVfxnh4eYfpdcmaNXixBDkqbg3bT6UULlCNhWdNiNJL8ido19cCg2IlrMr6k2ZXUEyXUWlQG4v9C4pfZK9Pk/ZqiqhYGL9ZH/1dk8tCZv1jJfyIjq/AjJaD4lA3ulSDVVN+eMIWAZ90rYvwnEiG2O0q5C8t3LpubC762K+Oh7VtUtQ4w/QA5RZhNv5g/BX+XrQdFxIVgatMYVKeJDMi0Qo7A8AESrlMgWIsyZLXM37UhQoVM85wI4HUwNtgLlQFUP0SGKNaOtMyeEHl/zd1IfhwFSIRp6bQ6MJrcXOv73T4c7UMk983v17dqkD05TKWgxczhMGguC0fjvOoqXZD0GB8iFwi3kOoA5fuFdo0MaxrdwNcjzkoIZugWn8JGlvGemeJjZGpVlQ/X97rPNBM9ZG6iiZj53I3cspq35SPVyKL4MTLSCyuuafIHOYrbZbO3VLBSl8VDHrPcMsXeWlLKVNf+BJkWi4Gur104DKu+Y2WstqtlrE2vq8PN/bA6Row/stLfbtRj16x6TiI2jhb5MBR21cJCmmUQ2a+9b0FqVTP9E2RqspogjbrvjVq2eEvrUrze7VJH6BZWiUhd0+raVeZTzliRiQB/gvThthdkVPYvtd8ObQzUDFVWlUSKUuJ64kemGfn+dBqGth1Uu+4fIQPIWrLefKytqmWDF0UNgNPGXeZEsqZPgyC0A8/VI5Tp4+rTrWT+U98HL0Eqjq4YtqMh8eKYuR+Afu9YrbiFVp1CSxLerLjQoFdtL/p/D0ddvBXHVzyzWeQNHFjteLGT89gYgVJE2tslRTE8gNn6ro6AXdn4xYlil5fz1a4OJ3R2d+rchpuNXtqlVbWbwrM1YHdIhlAtPzIQLh3p8Nq7PehuQxeM0pRVxj4cG9gt0i0/pfAi7tMQmq1hx0gbYOWnFOPa2BVn3jtGppZW+r+T2oUxlE0b2DmSod1Oy2JpaDo8F7tHBkgrgdkscexYgw3sHkkNf1gbyIZa3OjUDCuy8QlI2UegqEMMCanm/XFsDEObQffxGcgAHvW/phzy8/zRwOYH+pHY4cNPAWe0d7139ofxPP2yd304MMGlvb29pRCy3t6cyibRGRvdsC2n2d7DTPSpF4QjD7YG96Rf55p9Zfit2PlMvHzxBSS/1++3dHAd0tW/SCZD4yRNNl2/bXdH2flNrYoqEPfqkjSp0596/x/8RnG/zt+d0J89bjH/1Qm49upS/x3paKbH7MHQqOjO5iG7yhACpz36/ez85JjIk/4pPlTUopcvTr5ecNQAOG1IktRgGbKXI1NHM9Ykxbc289WDDeC8LtWvGADnmK6+5vmmYUNafvcPvXIt3NiQ6scZsn5eQEYeRvkZRFtrbhKrAGKyrZWCS2s1GjN+meydt1oXl5nFzvUVv8tNmSWAmGm9FwnkRKqfbSGTtjxUtk7w82qONkiXNO9DrDXY2zsk5OlFfUKq98+EYb313exwPe5c5A2mg9jWOHJ+TnM2N5Ee/FrJ/+lEDMB1NZFmLjZlUaDqfRFhBlRnE7rr89h9IT7PtKvrQQohQpKJV5RKGbLwL2X+0UAQGaqZMydijojYWiYOiXipW2d9iqwIdWPP0b/1pEkvgXm1zu7e+d4iR/5jE8zZROqms3G0xJSM2M5M6k0mFyBVG3OumU+Q9ZPr+qRn+o1sEXyhiXwD9K8NWiESd/uJlVmJ4zq9s4GEjYGSM6OFwoliPQqZ3EoNQMAjRgnvgz85IZ1PpLl7RqQYpLRPtou5XV9QMeCvHufI09mk4R9uIDXH2j66UQIEyHUxkfo6ANYi0TgLjUexQaqTGA00Fy6kx+8raHF2KRZmNUNSDk6ON5FgqOarxI3EzjXGu77WKRrCXlP7Vs+tPM7kcORpjjwBG8QM4vaaZ3qOTHuT+ZW0gUSAsZplDW06QgyQS8RocgXk2UvIC25OLu7YM2HZjBeB40a9BaGE7vdyJE+5yRZSzz/NKAQfFj5OkB/rJwkAjZao1DjFCaVNyoc5P/9q6TOakQzQU17hyLbJISAgHJYjZYrPFhL5Ry8lRBsMW/rGo9I6ub7kBYAjqw0qo98G141644qjiHl4yIshof2ZJFHYvuxRbvGJ5UgMGgWk7CcCqY6AAAVdi75ASVi/OJ8QEpcNfk+MHt2kF1nrkPoMwJ5EzDqJUuwbcqTIiW0kFrDF6hiVfer+0qoLXb0dNjgS1+v+ec4AvhJFg5ws/XVwW521LkYAPKkjEZnk8y/Mm0i05SYZOTZdq6wlnV0eH5+cAfogjkByv1xeHtrI5B1u3pkxfWO7WVVlcXPKWAIhl7HTLWRq+vwEydXxmdpCwoah6pqLv4jEQndNH38V6UFu4+8iUa3is/U/e1Y2pAhuIKYAAAAASUVORK5CYII=</icon>
+    <country-code>DE</country-code>
+    <bounds max-lat="51.693183" max-lon="15.055834" min-lat="50.156684" min-lon="11.859634">
+      <shape>
+        <point lat="50.697922" lon="13.549014" />
+        <point lat="50.711263" lon="13.842514" />
+        <point lat="50.745042" lon="13.932390" />
+        <point lat="50.793890" lon="14.046138" />
+        <point lat="50.859532" lon="14.252571" />
+        <point lat="50.889661" lon="14.400023" />
+        <point lat="50.935703" lon="14.426705" />
+        <point lat="50.971973" lon="14.356490" />
+        <point lat="50.993191" lon="14.325595" />
+        <point lat="50.990539" lon="14.275040" />
+        <point lat="51.042662" lon="14.315765" />
+        <point lat="51.012633" lon="14.415471" />
+        <point lat="51.003797" lon="14.519389" />
+        <point lat="50.981699" lon="14.588200" />
+        <point lat="50.919770" lon="14.544667" />
+        <point lat="50.906489" lon="14.579775" />
+        <point lat="50.922426" lon="14.647181" />
+        <point lat="50.909146" lon="14.644373" />
+        <point lat="50.856873" lon="14.605052" />
+        <point lat="50.817851" lon="14.720205" />
+        <point lat="50.813415" lon="14.810081" />
+        <point lat="50.890547" lon="14.856423" />
+        <point lat="50.947206" lon="14.912595" />
+        <point lat="51.086789" lon="14.996853" />
+        <point lat="51.247932" lon="15.053026" />
+        <point lat="51.292741" lon="15.055834" />
+        <point lat="51.344524" lon="14.992640" />
+        <point lat="51.398000" lon="14.988427" />
+        <point lat="51.457540" lon="14.977193" />
+        <point lat="51.496025" lon="14.909786" />
+        <point lat="51.537097" lon="14.739865" />
+        <point lat="51.591221" lon="14.739865" />
+        <point lat="51.606050" lon="14.700545" />
+        <point lat="51.598200" lon="14.679480" />
+        <point lat="51.578133" lon="14.683693" />
+        <point lat="51.558056" lon="14.673863" />
+        <point lat="51.557183" lon="14.617691" />
+        <point lat="51.590349" lon="14.583987" />
+        <point lat="51.569405" lon="14.519389" />
+        <point lat="51.559802" lon="14.435131" />
+        <point lat="51.525740" lon="14.326999" />
+        <point lat="51.555437" lon="14.134610" />
+        <point lat="51.499522" lon="14.067203" />
+        <point lat="51.478536" lon="14.027882" />
+        <point lat="51.452290" lon="14.043330" />
+        <point lat="51.392743" lon="13.995583" />
+        <point lat="51.405885" lon="13.957667" />
+        <point lat="51.388362" lon="13.888856" />
+        <point lat="51.374338" lon="13.724552" />
+        <point lat="51.392743" lon="13.554631" />
+        <point lat="51.459290" lon="13.404371" />
+        <point lat="51.439161" lon="13.352411" />
+        <point lat="51.443538" lon="13.315899" />
+        <point lat="51.418147" lon="13.286409" />
+        <point lat="51.400629" lon="13.226024" />
+        <point lat="51.461040" lon="13.213385" />
+        <point lat="51.526614" lon="13.219002" />
+        <point lat="51.598200" lon="13.174064" />
+        <point lat="51.677512" lon="13.002739" />
+        <point lat="51.653123" lon="12.905842" />
+        <point lat="51.666190" lon="12.903033" />
+        <point lat="51.693183" lon="12.853883" />
+        <point lat="51.659221" lon="12.764007" />
+        <point lat="51.670545" lon="12.688175" />
+        <point lat="51.629593" lon="12.643237" />
+        <point lat="51.630464" lon="12.577235" />
+        <point lat="51.610411" lon="12.425569" />
+        <point lat="51.570278" lon="12.230371" />
+        <point lat="51.530109" lon="12.177007" />
+        <point lat="51.460165" lon="12.139091" />
+        <point lat="51.417272" lon="12.167177" />
+        <point lat="51.334874" lon="12.174199" />
+        <point lat="51.318201" lon="12.132070" />
+        <point lat="51.213637" lon="12.186838" />
+        <point lat="51.188119" lon="12.158751" />
+        <point lat="51.092963" lon="12.220541" />
+        <point lat="51.054139" lon="12.490168" />
+        <point lat="50.993191" lon="12.521062" />
+        <point lat="50.972857" lon="12.605321" />
+        <point lat="50.918885" lon="12.626385" />
+        <point lat="50.910917" lon="12.502806" />
+        <point lat="50.818738" lon="12.237393" />
+        <point lat="50.729933" lon="12.213519" />
+        <point lat="50.664999" lon="12.286543" />
+        <point lat="50.646303" lon="12.217732" />
+        <point lat="50.627599" lon="12.133474" />
+        <point lat="50.563416" lon="12.053428" />
+        <point lat="50.647193" lon="12.019725" />
+        <point lat="50.548248" lon="11.859634" />
+        <point lat="50.508076" lon="11.876486" />
+        <point lat="50.505397" lon="11.927041" />
+        <point lat="50.486637" lon="11.936871" />
+        <point lat="50.441941" lon="11.870869" />
+        <point lat="50.399888" lon="11.934062" />
+        <point lat="50.339875" lon="11.969170" />
+        <point lat="50.297732" lon="12.120835" />
+        <point lat="50.306702" lon="12.172794" />
+        <point lat="50.260938" lon="12.185433" />
+        <point lat="50.253755" lon="12.212115" />
+        <point lat="50.216029" lon="12.257053" />
+        <point lat="50.156684" lon="12.282330" />
+        <point lat="50.158483" lon="12.355354" />
+        <point lat="50.221420" lon="12.355354" />
+        <point lat="50.281582" lon="12.414335" />
+        <point lat="50.347045" lon="12.511232" />
+        <point lat="50.387354" lon="12.537914" />
+        <point lat="50.402573" lon="12.678345" />
+        <point lat="50.386459" lon="12.712048" />
+        <point lat="50.396307" lon="12.728900" />
+        <point lat="50.425840" lon="12.756986" />
+        <point lat="50.433891" lon="12.786476" />
+        <point lat="50.417787" lon="12.817371" />
+        <point lat="50.436574" lon="12.846861" />
+        <point lat="50.387354" lon="12.947971" />
+        <point lat="50.414208" lon="13.009761" />
+        <point lat="50.449989" lon="13.046273" />
+        <point lat="50.487530" lon="13.056103" />
+        <point lat="50.492891" lon="13.214789" />
+        <point lat="50.566092" lon="13.275174" />
+        <point lat="50.568768" lon="13.341177" />
+        <point lat="50.613344" lon="13.391732" />
+        <point lat="50.585711" lon="13.477394" />
+        <point lat="50.634725" lon="13.547610" />
+        <point lat="50.672120" lon="13.568674" />
+        <point lat="50.697922" lon="13.549014" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>imagico.de: Northern German west coast tidalflats (infrared)</name>
     <id>osmim-imagicode-LC81960222015233LGN00ir</id>
     <type>tms</type>
