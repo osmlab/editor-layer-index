@@ -1,0 +1,157 @@
+bg:
+  imagery:
+    Bing:
+      description: Сателитни и аерофото изображения.
+      name: Bing аерофото изображения
+    DigitalGlobe-Premium:
+      attribution:
+        text: Условия & oбратна връзка
+      description: Премиум DigitalGlobe сателитни изображения
+      name: DigitalGlobe премиум изображения
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Условия & oбратна връзка
+      description: Граници на изображения и дата на заснемане. Надписите се появяват при ниво на увеличение 14 или по-високо.
+      name: Стари DigitalGlobe Премиум изображения
+    DigitalGlobe-Standard:
+      attribution:
+        text: Условия & oбратна връзка
+      description: Стандартни DigitalGlobe сателитни изображения.
+      name: Стандартни DigitalGlobe изображения
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Условия & oбратна връзка
+      description: Граници на изображения и дата на заснемане. Надписите се появяват при ниво на увеличение 14 или по-високо.
+      name: Стари стандартни DigitalGlobe сателитни изображения.
+    EsriWorldImagery:
+      attribution:
+        text: Условия & oбратна връзка
+      description: Esri world изображения.
+      name: Esri World изображения
+    EsriWorldImageryClarity:
+      attribution:
+        text: Условия & oбратна връзка
+      description: Архивните изображения на Esri могат да бъдат по ясни и точни от изображенията по подразбиране.
+      name: Esri World изображения (Clarity) Beta
+    MAPNIK:
+      attribution:
+        text: © OpenStreetMap contributors, CC-BY-SA
+      description: Стандартният OpenStreetMap слой.
+      name: OpenStreetMap (Стандартен)
+    Mapbox:
+      attribution:
+        text: Условия & обратна връзка
+      description: Сателитни и аерофото изображения.
+      name: Mapbox Сателит
+    OSM_Inspector-Addresses:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Адреси'
+    OSM_Inspector-Geometry:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Геометрия'
+    OSM_Inspector-Highways:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Пътища'
+    OSM_Inspector-Multipolygon:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Площ'
+    OSM_Inspector-Places:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Места'
+    OSM_Inspector-Routing:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Упътвания'
+    OSM_Inspector-Tagging:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+      name: 'OSM Inspector: Тагове'
+    US-TIGER-Roads-2012:
+      name: TIGER Пътища 2012
+    US-TIGER-Roads-2014:
+      description: При ниво на увеличение 16+, публично достъпни картографски данни от US Census. При по-ниски нива увеличение само промените от 2006 година насам без тези вече включени в OpenStreetMap
+      name: TIGER Пътища 2014
+    US-TIGER-Roads-2017:
+      description: Жълто = Публично достъпни картографски данни от US Census. Червено = Данни, които не са нанесени в OpenStreetMap
+      name: TIGER Пътища 2017
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'Waymarked Trails: Колоездене'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'Waymarked Trails: Туризъм'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'Waymarked Trails: Планинско колоездене'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'Waymarked Trails: Каране на ролери'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'Waymarked Trails: Зимни спортове'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: Базова карта на Австрия, на основата на държавни публични данни.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: Ортофото слой осигурен от basemap.at. "Приемник" на geoimage.at изображенията.
+      name: basemap.at Ортофото
+    hike_n_bike:
+      attribution:
+        text: © OpenStreetMap contributors
+      name: Туризъм & Колоездене
+    mapbox_locator_overlay:
+      attribution:
+        text: Условия & обратна връзка
+      description: Показва главните обекти, за да ви помогне в ориентацията.
+      name: Locator Слой
+    openpt_map:
+      attribution:
+        text: © OpenStreetMap contributors, CC-BY-SA
+      name: OpenPT Map (слой)
+    osm-gps:
+      attribution:
+        text: © OpenStreetMap contributors
+      description: Публични GPS следи качени в OpenStreetMap.
+      name: OpenStreetMap GPS следи
+    osm-mapnik-black_and_white:
+      attribution:
+        text: © OpenStreetMap contributors, CC-BY-SA
+      name: OpenStreetMap (Стандартен черно-бял)
+    osm-mapnik-german_style:
+      attribution:
+        text: © OpenStreetMap contributors, CC-BY-SA
+      name: OpenStreetMap (Немски стил)
+    qa_no_address:
+      attribution:
+        text: Simon Poole, Data ©OpenStreetMap contributors
+      name: QA Номер Адрес
+    skobbler:
+      attribution:
+        text: '© Тайлове: skobbler Map данни: OpenStreetMap contributors'
+      name: skobbler
+    stamen-terrain-background:
+      attribution:
+        text: Картни тайлове от Stamen Design, под CC BY 3.0
+      name: Stamen Топография
+    tf-cycle:
+      attribution:
+        text: Карти © Thunderforest, Данни © OpenStreetMap contributors
+      name: Thunderforest OpenCycleMap
+    tf-landscape:
+      attribution:
+        text: Maps © Thunderforest, Data © OpenStreetMap contributors
+      name: Thunderforest Ландшафт

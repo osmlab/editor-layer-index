@@ -28,6 +28,11 @@ ca:
         text: Termes i comentaris
       description: Imatges aèries de Esri
       name: Imatges aèries de Esri
+    EsriWorldImageryClarity:
+      attribution:
+        text: Termes & Comentaris
+      description: ' L''arxiu Esri pot ser més clar i acotat que la capa per defecte '
+      name: Imatges aèries de Esri (Claredat) Beta
     MAPNIK:
       attribution:
         text: © OpenStreetMap col·laboradors, CC-BY-SA
@@ -75,14 +80,24 @@ ca:
       description: Groc = Dades de mapa del domini públic del US Census. Vermell = No es troben dades a OpenStreetMap
       name: Carreteres TIGER 2017
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contribuïdors, CC by-SA 3.0
       name: 'Waymarked Trails: Ciclisme'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contribuïdors, CC by-SA 3.0
       name: 'Waymarked Trails: Senderisme'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contribuïdors, CC by-SA 3.0
       name: 'Waymarked Trails: Ciclisme de Muntanya'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contribuïdors, CC by-SA 3.0
       name: 'Waymarked Trails: Patinatge'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contribuïdors, CC by-SA 3.0
       name: 'Waymarked Trails: Esports d''hivern'
     basemap.at:
       attribution:

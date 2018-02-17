@@ -1,0 +1,157 @@
+is:
+  imagery:
+    Bing:
+      description: Gervihnatta- og loftmyndir.
+      name: Loftmyndir frá Bing
+    DigitalGlobe-Premium:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Gervihnattamyndir frá DigitalGlobe (Premium).
+      name: Myndir frá DigitalGlobe (Premium)
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Útjaðar myndefnis og tökudagsetningar. Merkingar birtast við aðdráttarstig 14 og hærra.
+      name: Eldri myndir frá DigitalGlobe (Premium Vintage)
+    DigitalGlobe-Standard:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Gervihnattamyndir frá DigitalGlobe (Standard).
+      name: Myndir frá DigitalGlobe (Standard)
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Útjaðar myndefnis og tökudagsetningar. Merkingar birtast við aðdráttarstig 14 og hærra.
+      name: Eldri myndir frá DigitalGlobe (Standard Vintage)
+    EsriWorldImagery:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Heimsmyndir frá Esri.
+      name: Heimsmyndir frá Esri
+    EsriWorldImageryClarity:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Myndefni úr safni Esri sem gæti verið skýrara og nákvæmara en sjálfgefna lagið.
+      name: Heimsmyndir frá Esri (Clarity) prófun
+    MAPNIK:
+      attribution:
+        text: © Þátttakendur í OpenStreetMap, CC-BY-SA
+      description: Sjálfgefna OpenStreetMap-lagið.
+      name: OpenStreetMap (staðlað)
+    Mapbox:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Gervihnatta- og loftmyndir.
+      name: Mapbox gervihnattamyndir
+    OSM_Inspector-Addresses:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Heimilisföng'
+    OSM_Inspector-Geometry:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Rúmfræði (geometry)'
+    OSM_Inspector-Highways:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Þjóðvegir'
+    OSM_Inspector-Multipolygon:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Svæði'
+    OSM_Inspector-Places:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Staðir'
+    OSM_Inspector-Routing:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Leiðagerð'
+    OSM_Inspector-Tagging:
+      attribution:
+        text: © Geofabrik GmbH, þátttakendur í OpenStreetMap, CC-BY-SA
+      name: 'OSM Inspector: Merkingar'
+    US-TIGER-Roads-2012:
+      name: TIGER vegir 2012
+    US-TIGER-Roads-2014:
+      description: Við aðdráttarstig 16+ birtast kortagögn í almenningseigu frá US Census þjóðskránni. Við lægri aðdrátt birtast einungis breytingar síðan 2006 mínus þær breytingar sem þegar hafa verið settar inn í OpenStreetMap
+      name: TIGER vegir 2014
+    US-TIGER-Roads-2017:
+      description: Gult = Kortagögn í almenningseigu frá US Census þjóðskránni. Rautt = Gögn fundust ekki í OpenStreetMap
+      name: TIGER vegir 2017
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, þátttakendur í OpenStreetMap, CC by-SA 3.0
+      name: 'Waymarked Trails: Hjólreiðar'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, þátttakendur í OpenStreetMap, CC by-SA 3.0
+      name: 'Waymarked Trails: Gönguferðir'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, þátttakendur í OpenStreetMap, CC by-SA 3.0
+      name: 'Waymarked Trails: Fjallahjól'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, þátttakendur í OpenStreetMap, CC by-SA 3.0
+      name: 'Waymarked Trails: Skautar'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, þátttakendur í OpenStreetMap, CC by-SA 3.0
+      name: 'Waymarked Trails: Vetraríþróttir'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: Grunnkort af Austurríki, byggt á opinberum gögnum.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: Orthofoto lag frá basemap.at. "Arftaki" myndefnis frá geoimage.at.
+      name: basemap.at Orthofoto
+    hike_n_bike:
+      attribution:
+        text: © Þátttakendur í OpenStreetMap
+      name: Hike & Bike göngu og hjólamyndir
+    mapbox_locator_overlay:
+      attribution:
+        text: Skilmálar og umsagnir
+      description: Birtir aðalfitjur til að hjálpa þér við að staðsetja hlutina.
+      name: Staðsetningarþekja
+    openpt_map:
+      attribution:
+        text: © Þátttakendur í OpenStreetMap, CC-BY-SA
+      name: OpenPT kort (yfirlagsþekja)
+    osm-gps:
+      attribution:
+        text: © Þátttakendur í OpenStreetMap
+      description: Opinberir GPS-ferlar sendir inn á OpenStreetMap.
+      name: OpenStreetMap GPS-ferlar
+    osm-mapnik-black_and_white:
+      attribution:
+        text: © Þátttakendur í OpenStreetMap, CC-BY-SA
+      name: OpenStreetMap (staðlað svart/hvítt)
+    osm-mapnik-german_style:
+      attribution:
+        text: © Þátttakendur í OpenStreetMap, CC-BY-SA
+      name: OpenStreetMap (þýskur stíll)
+    qa_no_address:
+      attribution:
+        text: Simon Poole, gögn eru með © þátttakendur í OpenStreetMap
+      name: QA No Address (ekkert heimilisfang)
+    skobbler:
+      attribution:
+        text: '© Kortaflísar: skobbler, kortagögn: þátttakendur í OpenStreetMap'
+      name: skobbler
+    stamen-terrain-background:
+      attribution:
+        text: Kortaflísar frá Stamen Design, með CC BY 3.0 notkunarleyfi
+      name: Stamen landsyfirborð
+    tf-cycle:
+      attribution:
+        text: Kort © Thunderforest, gögn eru með © þátttakendur í OpenStreetMap
+      name: Thunderforest OpenCycleMap
+    tf-landscape:
+      attribution:
+        text: Kort © Thunderforest, gögn eru með © þátttakendur í OpenStreetMap
+      name: Thunderforest landslag

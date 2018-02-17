@@ -6,9 +6,30 @@ fi:
     DigitalGlobe-Premium:
       attribution:
         text: Käyttöehdot ja palaute
+      description: Premium DigitalGlobe -satelliittikuvat
+      name: DigitalGlobe Premium -sateliittikuvat
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Käyttöehdot ja palaute
+      description: Kuva-alueet ja kuvauspäivämäärät. Aineisto on käytettävissä suurennostasolla 14 ja lähempänä.
     DigitalGlobe-Standard:
       attribution:
         text: Käyttöehdot ja palaute
+      description: Standard DigitalGlobe -satelliittikuvat
+      name: DigitalGlobe standardit -satelliittikuvat
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Käyttöehdot ja palaute
+      description: 'Kuvien rajat ja kuvauspäivät. Merkit näkyvät zoomaus tasolla 14 tai isommalla. '
+    EsriWorldImagery:
+      attribution:
+        text: Käyttöehdot ja palaute
+      description: Kansainväliset Esri-sateliittikuvat
+      name: Kansainväliset Esri-sateliittikuvat
+    EsriWorldImageryClarity:
+      attribution:
+        text: Käyttöehdot ja palaute
+      description: Esrin arkistokuvat voivat olle selkeämpiä ja tarkempia kuin oletustaustakuva.
     MAPNIK:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
@@ -19,21 +40,106 @@ fi:
         text: Käyttöehdot ja palaute
       description: Satelliitti- ja ilmakuvat.
       name: Mapbox-satelliittikuvat
+    OSM_Inspector-Addresses:
+      attribution:
+        text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM-tarkastaja: Osoitteet'
+    OSM_Inspector-Geometry:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM tarkastaja: Geometria'
+    OSM_Inspector-Highways:
+      attribution:
+        text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM Tarkastajat: Valtatiet'
+    OSM_Inspector-Multipolygon:
+      attribution:
+        text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM Tarkastajat: Alueet'
+    OSM_Inspector-Places:
+      attribution:
+        text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM Tarkastajat: Paikat'
+    OSM_Inspector-Routing:
+      attribution:
+        text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM Tarkastajat: Reitit'
+    OSM_Inspector-Tagging:
+      attribution:
+        text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: 'OSM Tarkastajat: Tagit'
+    US-TIGER-Roads-2012:
+      name: TIGER Roads 2012
+    US-TIGER-Roads-2014:
+      description: Suurennostasolla 16 ja sitä lähempänä käytetään Yhdysvaltain väestönlaskentaviranomaisen kartta-aineistoa. Kauempana näytetään vain muutokset vuodelta 2006 pois lukien jo OpenStreetMapiin yhdistetyt muutokset.
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: Keltainen = Tekijänoikeudeton kartta-aineisto Yhdysvaltain väestönlaskentaviranomaiselta. Punainen = Aineisto ei löydy OpenStreetMapista
+      name: TIGER Roads 2017
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMapin tekijät, CC by-SA 3.0
+      name: 'Waymarked Trails: Pyöräily'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMapin tekijät, CC by-SA 3.0
+      name: 'Waymarked Trails: Vaellus'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMapin tekijät, CC by-SA 3.0
+      name: 'Waymarked Trails: Maastopyöräily'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMapin tekijät, CC by-SA 3.0
+      name: 'Waymarked Trails: Luistelu'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMapin tekijät, CC by-SA 3.0
+      name: 'Waymarked Trails: Talviurheilu'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: Taustakartta perustuu Itävallan hallinnon julkaisemaan aineistoon.
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      name: basemap.at Orthofoto
     hike_n_bike:
       attribution:
         text: © OpenStreetMapin tekijät
+      name: Vaellus ja pyöräily
     mapbox_locator_overlay:
       attribution:
         text: Käyttöehdot ja palaute
+      description: Korostaa tärkeimpiä kohteita.
     openpt_map:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: OpenPT-kartta (lisäkartta)
     osm-gps:
       attribution:
         text: © OpenStreetMapin tekijät
+      description: OpenStreetMapiin tallennetut julkiset GPS-jäljet
+      name: OpenStreetMapin GPS-jäljet
     osm-mapnik-black_and_white:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: OpenStreetMap (oletusnäkymä mustavalkoisena)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
+      name: OpenStreetMap (saksalainen tyyli)
+    qa_no_address:
+      attribution:
+        text: Simon Poole, aineisto ©OpenStreetMapin tekijät
+      name: QA Ei osoitetta
+    skobbler:
+      attribution:
+        text: '© Karttakuvat: skobbler Kartta-aineisto: OpenStreetMapin tekijät'
+    tf-cycle:
+      name: Thunderforest OpenCycleMap
+    tf-landscape:
+      attribution:
+        text: Kartat © Thunderforest, Aineisto © OpenStreetMapin tekijät
+      name: Thunderforest-maisema
