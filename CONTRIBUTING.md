@@ -5,13 +5,15 @@
   * Ubuntu: `sudo apt-get install build-essential git`
   * Mac OS X: Install Xcode and run `xcode-select --install` from a command line
   * Arch Linux: `sudo pacman -S make git`
+  * RedHat/Centos : `yum install git make`
 * Python and Pip
   * Ubuntu: `sudo apt-get install python-pip python-dev`
   * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`, then `brew linkapps python`
   * Arch Linux: `sudo pacman -S python2 python2-jsonschema`
-* `jsonschema` package (for running `make check`)
+  * RedHat/Centos : `yum install python`
+* jsonschema package (for running `make check`)
   * `pip install jsonschema`
-
+  * RedHat/Centos : `yum install python2-jsonschema`
 
 ### Adding new sources
 
