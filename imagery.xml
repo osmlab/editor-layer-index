@@ -8906,6 +8906,7 @@
     <id>bavaria-DOP80</id>
     <type>tms</type>
     <url>http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{zoom}/{x}/{y}.png?origin=nw</url>
+    <best />
     <country-code>DE</country-code>
     <max-zoom>18</max-zoom>
     <bounds max-lat="50.568462" max-lon="13.844645" min-lat="47.262082" min-lon="8.956744">
@@ -9355,6 +9356,7 @@
     <id>GEOSN-DOP-RGB</id>
     <type>wms</type>
     <url>https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=sn_dop_020&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <best />
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:25833</code>
@@ -13916,6 +13918,101 @@
     </bounds>
   </entry>
   <entry>
+    <name>BANO</name>
+    <id>BANO</id>
+    <type>tms</type>
+    <url>http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png</url>
+    <attribution-text mandatory="true">Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL</attribution-text>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)</attribution-url>
+    <country-code>FR</country-code>
+    <description>French address registry or Base Adresses Nationale Ouverte</description>
+    <min-zoom>12</min-zoom>
+    <max-zoom>20</max-zoom>
+    <bounds max-lat="51.176167" max-lon="9.635682" min-lat="41.313624" min-lon="-5.352550">
+      <shape>
+        <point lat="49.089189" lon="8.324785" />
+        <point lat="49.616737" lon="6.156688" />
+        <point lat="50.212615" lon="4.866671" />
+        <point lat="51.176167" lon="2.493706" />
+        <point lat="50.932468" lon="1.312153" />
+        <point lat="50.187749" lon="1.265998" />
+        <point lat="49.825859" lon="0.112137" />
+        <point lat="49.431234" lon="-0.349407" />
+        <point lat="49.485234" lon="-1.023262" />
+        <point lat="49.790116" lon="-1.327882" />
+        <point lat="49.790116" lon="-2.103277" />
+        <point lat="48.742066" lon="-1.623270" />
+        <point lat="48.972851" lon="-3.100213" />
+        <point lat="48.681156" lon="-5.112546" />
+        <point lat="48.436778" lon="-5.352550" />
+        <point lat="47.719496" lon="-4.598419" />
+        <point lat="47.023278" lon="-2.555398" />
+        <point lat="46.663882" lon="-2.473808" />
+        <point lat="46.105572" lon="-1.667695" />
+        <point lat="45.514113" lon="-1.334807" />
+        <point lat="44.162700" lon="-1.491460" />
+        <point lat="43.370815" lon="-1.994057" />
+        <point lat="42.736475" lon="-0.956228" />
+        <point lat="42.284189" lon="2.202949" />
+        <point lat="42.544413" lon="3.234250" />
+        <point lat="43.114054" lon="3.240777" />
+        <point lat="43.328096" lon="4.043626" />
+        <point lat="42.808345" lon="6.432590" />
+        <point lat="43.593410" lon="7.627072" />
+        <point lat="44.172064" lon="7.816362" />
+        <point lat="44.419670" lon="7.039622" />
+        <point lat="45.495814" lon="7.268075" />
+        <point lat="46.214078" lon="7.124476" />
+        <point lat="46.771283" lon="6.563135" />
+        <point lat="47.591280" lon="7.657149" />
+        <point lat="47.594181" lon="7.652784" />
+        <point lat="47.577674" lon="7.622470" />
+        <point lat="47.578221" lon="7.604730" />
+        <point lat="47.590153" lon="7.587705" />
+        <point lat="47.651610" lon="7.521558" />
+        <point lat="47.702350" lon="7.503992" />
+        <point lat="47.776850" lon="7.520958" />
+        <point lat="47.848390" lon="7.557124" />
+        <point lat="47.879205" lon="7.549463" />
+        <point lat="47.930280" lon="7.574615" />
+        <point lat="47.968040" lon="7.613179" />
+        <point lat="47.987100" lon="7.611904" />
+        <point lat="48.038362" lon="7.561240" />
+        <point lat="48.125800" lon="7.574915" />
+        <point lat="48.159770" lon="7.595338" />
+        <point lat="48.197170" lon="7.633047" />
+        <point lat="48.224730" lon="7.662748" />
+        <point lat="48.303050" lon="7.684659" />
+        <point lat="48.491580" lon="7.763463" />
+        <point lat="48.512598" lon="7.800460" />
+        <point lat="48.587800" lon="7.799582" />
+        <point lat="48.644390" lon="7.834088" />
+        <point lat="48.688990" lon="7.912107" />
+        <point lat="48.757159" lon="7.967230" />
+        <point lat="48.788790" lon="8.020692" />
+        <point lat="48.795600" lon="8.043024" />
+        <point lat="48.813055" lon="8.086466" />
+        <point lat="48.897824" lon="8.136442" />
+        <point lat="48.960210" lon="8.197059" />
+        <point lat="48.994900" lon="8.281613" />
+        <point lat="49.025966" lon="8.299672" />
+        <point lat="49.059964" lon="8.312427" />
+        <point lat="49.089189" lon="8.324785" />
+      </shape>
+      <shape>
+        <point lat="43.134510" lon="9.360962" />
+        <point lat="42.484390" lon="8.439317" />
+        <point lat="41.817537" lon="8.483627" />
+        <point lat="41.376828" lon="8.846968" />
+        <point lat="41.313624" lon="9.205877" />
+        <point lat="41.546178" lon="9.489460" />
+        <point lat="42.199456" lon="9.635682" />
+        <point lat="42.901254" lon="9.604665" />
+        <point lat="43.134510" lon="9.360962" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>CRAIG - Auvergne 2013 - 25 cm</name>
     <id>CRAIG-Auvergne-2013</id>
     <type>tms</type>
@@ -14409,101 +14506,6 @@
         <point lat="44.647299" lon="2.922022" />
         <point lat="44.647314" lon="2.940097" />
         <point lat="44.633884" lon="2.940119" />
-      </shape>
-    </bounds>
-  </entry>
-  <entry>
-    <name>FR-BAN</name>
-    <id>FR-BAN</id>
-    <type>tms</type>
-    <url>http://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png</url>
-    <attribution-text mandatory="true">Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL</attribution-text>
-    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)</attribution-url>
-    <country-code>FR</country-code>
-    <description>French address registry or Base Adresses Nationale</description>
-    <min-zoom>12</min-zoom>
-    <max-zoom>20</max-zoom>
-    <bounds max-lat="51.176167" max-lon="9.635682" min-lat="41.313624" min-lon="-5.352550">
-      <shape>
-        <point lat="49.089189" lon="8.324785" />
-        <point lat="49.616737" lon="6.156688" />
-        <point lat="50.212615" lon="4.866671" />
-        <point lat="51.176167" lon="2.493706" />
-        <point lat="50.932468" lon="1.312153" />
-        <point lat="50.187749" lon="1.265998" />
-        <point lat="49.825859" lon="0.112137" />
-        <point lat="49.431234" lon="-0.349407" />
-        <point lat="49.485234" lon="-1.023262" />
-        <point lat="49.790116" lon="-1.327882" />
-        <point lat="49.790116" lon="-2.103277" />
-        <point lat="48.742066" lon="-1.623270" />
-        <point lat="48.972851" lon="-3.100213" />
-        <point lat="48.681156" lon="-5.112546" />
-        <point lat="48.436778" lon="-5.352550" />
-        <point lat="47.719496" lon="-4.598419" />
-        <point lat="47.023278" lon="-2.555398" />
-        <point lat="46.663882" lon="-2.473808" />
-        <point lat="46.105572" lon="-1.667695" />
-        <point lat="45.514113" lon="-1.334807" />
-        <point lat="44.162700" lon="-1.491460" />
-        <point lat="43.370815" lon="-1.994057" />
-        <point lat="42.736475" lon="-0.956228" />
-        <point lat="42.284189" lon="2.202949" />
-        <point lat="42.544413" lon="3.234250" />
-        <point lat="43.114054" lon="3.240777" />
-        <point lat="43.328096" lon="4.043626" />
-        <point lat="42.808345" lon="6.432590" />
-        <point lat="43.593410" lon="7.627072" />
-        <point lat="44.172064" lon="7.816362" />
-        <point lat="44.419670" lon="7.039622" />
-        <point lat="45.495814" lon="7.268075" />
-        <point lat="46.214078" lon="7.124476" />
-        <point lat="46.771283" lon="6.563135" />
-        <point lat="47.591280" lon="7.657149" />
-        <point lat="47.594181" lon="7.652784" />
-        <point lat="47.577674" lon="7.622470" />
-        <point lat="47.578221" lon="7.604730" />
-        <point lat="47.590153" lon="7.587705" />
-        <point lat="47.651610" lon="7.521558" />
-        <point lat="47.702350" lon="7.503992" />
-        <point lat="47.776850" lon="7.520958" />
-        <point lat="47.848390" lon="7.557124" />
-        <point lat="47.879205" lon="7.549463" />
-        <point lat="47.930280" lon="7.574615" />
-        <point lat="47.968040" lon="7.613179" />
-        <point lat="47.987100" lon="7.611904" />
-        <point lat="48.038362" lon="7.561240" />
-        <point lat="48.125800" lon="7.574915" />
-        <point lat="48.159770" lon="7.595338" />
-        <point lat="48.197170" lon="7.633047" />
-        <point lat="48.224730" lon="7.662748" />
-        <point lat="48.303050" lon="7.684659" />
-        <point lat="48.491580" lon="7.763463" />
-        <point lat="48.512598" lon="7.800460" />
-        <point lat="48.587800" lon="7.799582" />
-        <point lat="48.644390" lon="7.834088" />
-        <point lat="48.688990" lon="7.912107" />
-        <point lat="48.757159" lon="7.967230" />
-        <point lat="48.788790" lon="8.020692" />
-        <point lat="48.795600" lon="8.043024" />
-        <point lat="48.813055" lon="8.086466" />
-        <point lat="48.897824" lon="8.136442" />
-        <point lat="48.960210" lon="8.197059" />
-        <point lat="48.994900" lon="8.281613" />
-        <point lat="49.025966" lon="8.299672" />
-        <point lat="49.059964" lon="8.312427" />
-        <point lat="49.089189" lon="8.324785" />
-      </shape>
-      <shape>
-        <point lat="43.134510" lon="9.360962" />
-        <point lat="42.484390" lon="8.439317" />
-        <point lat="41.817537" lon="8.483627" />
-        <point lat="41.376828" lon="8.846968" />
-        <point lat="41.313624" lon="9.205877" />
-        <point lat="41.546178" lon="9.489460" />
-        <point lat="42.199456" lon="9.635682" />
-        <point lat="42.901254" lon="9.604665" />
-        <point lat="43.134510" lon="9.360962" />
       </shape>
     </bounds>
   </entry>
