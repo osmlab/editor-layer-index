@@ -5486,6 +5486,123 @@
     </bounds>
   </entry>
   <entry>
+    <name>AGIV Flanders 2013-2015 aerial imagery 10cm</name>
+    <id>AGIV10cm</id>
+    <type>wms</type>
+    <url>http://geoservices.informatievlaanderen.be/raadpleegdiensten/OGW/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OGWRGB13_15VL&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:3857</code>
+    </projections>
+    <attribution-text mandatory="true">Orthophoto Flanders © AGIV</attribution-text>
+    <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
+    <country-code>BE</country-code>
+    <bounds max-lat="51.558616" max-lon="5.984945" min-lat="50.641521" min-lon="2.470006">
+      <shape>
+        <point lat="50.707228" lon="5.984945" />
+        <point lat="50.767197" lon="5.984945" />
+        <point lat="50.822753" lon="5.910787" />
+        <point lat="50.835330" lon="5.755605" />
+        <point lat="50.862642" lon="5.754232" />
+        <point lat="50.933233" lon="5.833196" />
+        <point lat="51.026611" lon="5.855169" />
+        <point lat="51.077544" lon="5.909414" />
+        <point lat="51.182255" lon="5.912160" />
+        <point lat="51.208073" lon="5.878515" />
+        <point lat="51.236886" lon="5.774145" />
+        <point lat="51.240755" lon="5.684194" />
+        <point lat="51.269977" lon="5.623083" />
+        <point lat="51.297893" lon="5.623083" />
+        <point lat="51.347240" lon="5.539999" />
+        <point lat="51.348527" lon="5.447301" />
+        <point lat="51.321071" lon="5.398549" />
+        <point lat="51.323217" lon="5.312032" />
+        <point lat="51.361820" lon="5.266714" />
+        <point lat="51.372537" lon="5.199422" />
+        <point lat="51.396106" lon="5.182943" />
+        <point lat="51.492399" lon="5.158910" />
+        <point lat="51.530860" lon="5.083379" />
+        <point lat="51.539829" lon="5.032567" />
+        <point lat="51.505223" lon="4.955663" />
+        <point lat="51.505650" lon="4.901418" />
+        <point lat="51.543672" lon="4.838247" />
+        <point lat="51.558616" lon="4.770956" />
+        <point lat="51.547089" lon="4.711904" />
+        <point lat="51.496674" lon="4.640493" />
+        <point lat="51.497102" lon="4.614400" />
+        <point lat="51.531714" lon="4.565648" />
+        <point lat="51.530432" lon="4.482564" />
+        <point lat="51.521888" lon="4.426259" />
+        <point lat="51.469735" lon="4.300603" />
+        <point lat="51.425657" lon="4.295110" />
+        <point lat="51.424373" lon="4.181127" />
+        <point lat="51.395249" lon="4.137182" />
+        <point lat="51.350671" lon="4.138555" />
+        <point lat="51.300469" lon="4.052038" />
+        <point lat="51.272984" lon="3.933248" />
+        <point lat="51.270836" lon="3.865270" />
+        <point lat="51.290164" lon="3.863210" />
+        <point lat="51.324075" lon="3.762960" />
+        <point lat="51.359247" lon="3.593358" />
+        <point lat="51.331369" lon="3.477315" />
+        <point lat="51.397391" lon="3.425817" />
+        <point lat="51.351529" lon="3.235616" />
+        <point lat="51.365678" lon="3.226003" />
+        <point lat="51.361820" lon="3.177938" />
+        <point lat="51.332227" lon="3.160085" />
+        <point lat="51.302186" lon="3.062581" />
+        <point lat="51.170201" lon="2.750844" />
+        <point lat="51.074524" lon="2.470006" />
+        <point lat="50.993777" lon="2.492666" />
+        <point lat="50.955730" lon="2.531118" />
+        <point lat="50.911591" lon="2.509145" />
+        <point lat="50.821451" lon="2.530431" />
+        <point lat="50.764157" lon="2.599096" />
+        <point lat="50.764592" lon="2.665014" />
+        <point lat="50.666770" lon="2.770071" />
+        <point lat="50.658935" lon="2.897100" />
+        <point lat="50.725487" lon="2.991857" />
+        <point lat="50.726357" lon="3.113393" />
+        <point lat="50.705923" lon="3.236989" />
+        <point lat="50.658500" lon="3.362646" />
+        <point lat="50.702009" lon="3.471136" />
+        <point lat="50.667205" lon="3.639364" />
+        <point lat="50.681565" lon="3.698415" />
+        <point lat="50.712445" lon="3.727941" />
+        <point lat="50.684175" lon="3.818578" />
+        <point lat="50.641521" lon="3.874883" />
+        <point lat="50.642827" lon="4.092550" />
+        <point lat="50.663288" lon="4.150228" />
+        <point lat="50.644133" lon="4.206533" />
+        <point lat="50.642827" lon="4.313650" />
+        <point lat="50.687656" lon="4.452352" />
+        <point lat="50.678084" lon="4.534750" />
+        <point lat="50.695485" lon="4.613027" />
+        <point lat="50.695920" lon="4.676885" />
+        <point lat="50.732007" lon="4.727010" />
+        <point lat="50.732007" lon="4.780569" />
+        <point lat="50.712880" lon="4.799795" />
+        <point lat="50.712880" lon="4.862279" />
+        <point lat="50.695485" lon="4.885625" />
+        <point lat="50.695485" lon="4.961156" />
+        <point lat="50.657629" lon="5.031194" />
+        <point lat="50.650229" lon="5.107412" />
+        <point lat="50.648923" lon="5.200796" />
+        <point lat="50.665464" lon="5.235815" />
+        <point lat="50.665900" lon="5.325078" />
+        <point lat="50.682000" lon="5.366964" />
+        <point lat="50.664159" lon="5.421209" />
+        <point lat="50.674603" lon="5.522146" />
+        <point lat="50.724183" lon="5.622396" />
+        <point lat="50.698530" lon="5.675268" />
+        <point lat="50.697225" lon="5.739812" />
+        <point lat="50.671992" lon="5.772771" />
+        <point lat="50.660241" lon="5.812597" />
+        <point lat="50.659806" lon="5.908041" />
+        <point lat="50.707228" lon="5.984945" />
+      </shape>
+    </bounds>
+  </entry>
+  <entry>
     <name>Belgium AGIV GRB Flanders</name>
     <id>GRB</id>
     <type>tms</type>
@@ -5494,81 +5611,109 @@
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
     <country-code>BE</country-code>
     <max-zoom>21</max-zoom>
-    <bounds max-lat="51.523974" max-lon="5.937429" min-lat="50.675582" min-lon="2.522393">
+    <bounds max-lat="51.558616" max-lon="5.984945" min-lat="50.641521" min-lon="2.470006">
       <shape>
-        <point lat="51.101724" lon="2.522393" />
-        <point lat="51.341177" lon="3.126061" />
-        <point lat="51.382460" lon="3.174929" />
-        <point lat="51.387842" lon="3.376152" />
-        <point lat="51.330401" lon="3.410647" />
-        <point lat="51.285476" lon="3.402024" />
-        <point lat="51.256700" lon="3.491136" />
-        <point lat="51.303451" lon="3.482513" />
-        <point lat="51.323216" lon="3.577375" />
-        <point lat="51.272889" lon="3.813093" />
-        <point lat="51.236907" lon="3.821716" />
-        <point lat="51.236907" lon="3.930952" />
-        <point lat="51.274687" lon="4.054560" />
-        <point lat="51.351950" lon="4.201165" />
-        <point lat="51.380665" lon="4.169544" />
-        <point lat="51.395017" lon="4.342021" />
-        <point lat="51.464914" lon="4.365018" />
-        <point lat="51.500717" lon="4.537494" />
-        <point lat="51.479238" lon="4.571989" />
-        <point lat="51.448793" lon="4.560491" />
-        <point lat="51.450585" lon="4.638105" />
-        <point lat="51.523974" lon="4.750215" />
-        <point lat="51.507874" lon="4.836453" />
-        <point lat="51.498927" lon="5.080795" />
-        <point lat="51.447002" lon="5.135413" />
-        <point lat="51.391429" lon="5.106667" />
-        <point lat="51.317826" lon="5.264770" />
-        <point lat="51.287274" lon="5.264770" />
-        <point lat="51.292667" lon="5.408501" />
-        <point lat="51.325012" lon="5.486115" />
-        <point lat="51.283678" lon="5.580977" />
-        <point lat="51.235107" lon="5.583852" />
-        <point lat="51.204499" lon="5.767827" />
-        <point lat="51.161253" lon="5.877062" />
-        <point lat="50.802925" lon="5.704585" />
-        <point lat="50.786572" lon="5.905808" />
-        <point lat="50.732020" lon="5.937429" />
-        <point lat="50.701078" lon="5.902933" />
-        <point lat="50.693795" lon="5.813820" />
-        <point lat="50.761122" lon="5.615472" />
-        <point lat="50.712001" lon="5.500488" />
-        <point lat="50.702899" lon="5.204403" />
-        <point lat="50.675582" lon="5.164159" />
-        <point lat="50.701078" lon="5.037676" />
-        <point lat="50.750211" lon="4.988808" />
-        <point lat="50.726561" lon="4.916942" />
-        <point lat="50.766577" lon="4.790460" />
-        <point lat="50.770213" lon="4.681225" />
-        <point lat="50.735658" lon="4.669726" />
-        <point lat="50.679225" lon="4.287403" />
-        <point lat="50.677403" lon="3.910829" />
-        <point lat="50.752030" lon="3.718231" />
-        <point lat="50.712001" lon="3.654989" />
-        <point lat="50.710181" lon="3.534256" />
-        <point lat="50.741116" lon="3.514133" />
-        <point lat="50.743845" lon="3.456641" />
-        <point lat="50.695616" lon="3.373277" />
-        <point lat="50.707450" lon="3.310036" />
-        <point lat="50.736568" lon="3.289914" />
-        <point lat="50.742935" lon="3.164868" />
-        <point lat="50.772031" lon="3.131810" />
-        <point lat="50.760213" lon="3.080067" />
-        <point lat="50.739297" lon="2.874533" />
-        <point lat="50.711091" lon="2.896092" />
-        <point lat="50.695616" lon="2.874533" />
-        <point lat="50.702899" lon="2.796918" />
-        <point lat="50.800200" lon="2.699182" />
-        <point lat="50.797475" lon="2.620130" />
-        <point lat="50.858303" lon="2.569824" />
-        <point lat="50.923581" lon="2.566950" />
-        <point lat="50.949848" lon="2.602882" />
-        <point lat="50.996006" lon="2.549702" />
-        <point lat="51.101724" lon="2.522393" />
+        <point lat="50.707228" lon="5.984945" />
+        <point lat="50.767197" lon="5.984945" />
+        <point lat="50.822753" lon="5.910787" />
+        <point lat="50.835330" lon="5.755605" />
+        <point lat="50.862642" lon="5.754232" />
+        <point lat="50.933233" lon="5.833196" />
+        <point lat="51.026611" lon="5.855169" />
+        <point lat="51.077544" lon="5.909414" />
+        <point lat="51.182255" lon="5.912160" />
+        <point lat="51.208073" lon="5.878515" />
+        <point lat="51.236886" lon="5.774145" />
+        <point lat="51.240755" lon="5.684194" />
+        <point lat="51.269977" lon="5.623083" />
+        <point lat="51.297893" lon="5.623083" />
+        <point lat="51.347240" lon="5.539999" />
+        <point lat="51.348527" lon="5.447301" />
+        <point lat="51.321071" lon="5.398549" />
+        <point lat="51.323217" lon="5.312032" />
+        <point lat="51.361820" lon="5.266714" />
+        <point lat="51.372537" lon="5.199422" />
+        <point lat="51.396106" lon="5.182943" />
+        <point lat="51.492399" lon="5.158910" />
+        <point lat="51.530860" lon="5.083379" />
+        <point lat="51.539829" lon="5.032567" />
+        <point lat="51.505223" lon="4.955663" />
+        <point lat="51.505650" lon="4.901418" />
+        <point lat="51.543672" lon="4.838247" />
+        <point lat="51.558616" lon="4.770956" />
+        <point lat="51.547089" lon="4.711904" />
+        <point lat="51.496674" lon="4.640493" />
+        <point lat="51.497102" lon="4.614400" />
+        <point lat="51.531714" lon="4.565648" />
+        <point lat="51.530432" lon="4.482564" />
+        <point lat="51.521888" lon="4.426259" />
+        <point lat="51.469735" lon="4.300603" />
+        <point lat="51.425657" lon="4.295110" />
+        <point lat="51.424373" lon="4.181127" />
+        <point lat="51.395249" lon="4.137182" />
+        <point lat="51.350671" lon="4.138555" />
+        <point lat="51.300469" lon="4.052038" />
+        <point lat="51.272984" lon="3.933248" />
+        <point lat="51.270836" lon="3.865270" />
+        <point lat="51.290164" lon="3.863210" />
+        <point lat="51.324075" lon="3.762960" />
+        <point lat="51.359247" lon="3.593358" />
+        <point lat="51.331369" lon="3.477315" />
+        <point lat="51.397391" lon="3.425817" />
+        <point lat="51.351529" lon="3.235616" />
+        <point lat="51.365678" lon="3.226003" />
+        <point lat="51.361820" lon="3.177938" />
+        <point lat="51.332227" lon="3.160085" />
+        <point lat="51.302186" lon="3.062581" />
+        <point lat="51.170201" lon="2.750844" />
+        <point lat="51.074524" lon="2.470006" />
+        <point lat="50.993777" lon="2.492666" />
+        <point lat="50.955730" lon="2.531118" />
+        <point lat="50.911591" lon="2.509145" />
+        <point lat="50.821451" lon="2.530431" />
+        <point lat="50.764157" lon="2.599096" />
+        <point lat="50.764592" lon="2.665014" />
+        <point lat="50.666770" lon="2.770071" />
+        <point lat="50.658935" lon="2.897100" />
+        <point lat="50.725487" lon="2.991857" />
+        <point lat="50.726357" lon="3.113393" />
+        <point lat="50.705923" lon="3.236989" />
+        <point lat="50.658500" lon="3.362646" />
+        <point lat="50.702009" lon="3.471136" />
+        <point lat="50.667205" lon="3.639364" />
+        <point lat="50.681565" lon="3.698415" />
+        <point lat="50.712445" lon="3.727941" />
+        <point lat="50.684175" lon="3.818578" />
+        <point lat="50.641521" lon="3.874883" />
+        <point lat="50.642827" lon="4.092550" />
+        <point lat="50.663288" lon="4.150228" />
+        <point lat="50.644133" lon="4.206533" />
+        <point lat="50.642827" lon="4.313650" />
+        <point lat="50.687656" lon="4.452352" />
+        <point lat="50.678084" lon="4.534750" />
+        <point lat="50.695485" lon="4.613027" />
+        <point lat="50.695920" lon="4.676885" />
+        <point lat="50.732007" lon="4.727010" />
+        <point lat="50.732007" lon="4.780569" />
+        <point lat="50.712880" lon="4.799795" />
+        <point lat="50.712880" lon="4.862279" />
+        <point lat="50.695485" lon="4.885625" />
+        <point lat="50.695485" lon="4.961156" />
+        <point lat="50.657629" lon="5.031194" />
+        <point lat="50.650229" lon="5.107412" />
+        <point lat="50.648923" lon="5.200796" />
+        <point lat="50.665464" lon="5.235815" />
+        <point lat="50.665900" lon="5.325078" />
+        <point lat="50.682000" lon="5.366964" />
+        <point lat="50.664159" lon="5.421209" />
+        <point lat="50.674603" lon="5.522146" />
+        <point lat="50.724183" lon="5.622396" />
+        <point lat="50.698530" lon="5.675268" />
+        <point lat="50.697225" lon="5.739812" />
+        <point lat="50.671992" lon="5.772771" />
+        <point lat="50.660241" lon="5.812597" />
+        <point lat="50.659806" lon="5.908041" />
+        <point lat="50.707228" lon="5.984945" />
       </shape>
     </bounds>
   </entry>
@@ -5578,6 +5723,7 @@
     <type>wms</type>
     <url>https://geoservices-urbis.irisnet.be/geoserver/ows/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=Urbis:Ortho2016&amp;WIDTH={width}&amp;HEIGHT={height}&amp;CRS={proj}&amp;STYLES=&amp;BBOX={bbox}</url>
     <projections>
+      <code>CRS:84</code>
       <code>EPSG:31370</code>
       <code>EPSG:4326</code>
       <code>EPSG:3857</code>
@@ -5822,7 +5968,7 @@
     <name>UrbisAdm FR</name>
     <id>UrbisAdmFR</id>
     <type>wms</type>
-    <url>https://geoservices-urbis.irisnet.be/geoserver/ows/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=UrbisAdm:UrbisFR&amp;WIDTH={width}&amp;HEIGHT={height}&amp;CRS={proj}&amp;STYLES=&amp;BBOX={bbox}</url>
+    <url>https://geoservices-urbis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Urbis:urbisFR&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;TRANSPARENT=true</url>
     <projections>
       <code>EPSG:31370</code>
       <code>EPSG:4326</code>
@@ -5903,7 +6049,7 @@
     <name>UrbisAdm NL</name>
     <id>UrbisAdmNL</id>
     <type>wms</type>
-    <url>https://geoservices-urbis.irisnet.be/geoserver/ows/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=UrbisAdm:UrbisNL&amp;WIDTH={width}&amp;HEIGHT={height}&amp;CRS={proj}&amp;STYLES=&amp;BBOX={bbox}</url>
+    <url>https://geoservices-urbis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Urbis:urbisNL&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;TRANSPARENT=true</url>
     <projections>
       <code>EPSG:31370</code>
       <code>EPSG:4326</code>
