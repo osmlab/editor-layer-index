@@ -5489,9 +5489,18 @@
     <name>AGIV Flanders 2013-2015 aerial imagery 10cm</name>
     <id>AGIV10cm</id>
     <type>wms</type>
-    <url>http://geoservices.informatievlaanderen.be/raadpleegdiensten/OGW/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OGWRGB13_15VL&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <url>https://geoservices.informatievlaanderen.be/raadpleegdiensten/OGW/wms?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OGWRGB13_15VL&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
+      <code>CRS:84</code>
+      <code>EPSG:4326</code>
+      <code>EPSG:4258</code>
+      <code>EPSG:31370</code>
+      <code>EPSG:3812</code>
+      <code>EPSG:3043</code>
+      <code>EPSG:32631</code>
+      <code>EPSG:25831</code>
       <code>EPSG:3857</code>
+      <code>EPSG:102100</code>
     </projections>
     <attribution-text mandatory="true">Orthophoto Flanders © AGIV</attribution-text>
     <icon>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC</icon>
