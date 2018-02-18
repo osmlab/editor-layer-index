@@ -7983,6 +7983,8 @@
       <code>EPSG:4258</code>
       <code>EPSG:3035</code>
       <code>EPSG:2065</code>
+      <code>EPSG:3857</code>
+      <code>EPSG:900913</code>
     </projections>
     <country-code>CZ</country-code>
     <bounds max-lat="51.067174" max-lon="18.876460" min-lat="48.561027" min-lon="12.098813">
@@ -11008,6 +11010,24 @@
     <id>Catastro-Spain</id>
     <type>wms</type>
     <url>http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Catastro&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <projections>
+      <code>EPSG:4230</code>
+      <code>EPSG:4326</code>
+      <code>EPSG:4258</code>
+      <code>EPSG:32627</code>
+      <code>EPSG:32628</code>
+      <code>EPSG:23029</code>
+      <code>EPSG:23030</code>
+      <code>EPSG:23031</code>
+      <code>EPSG:32629</code>
+      <code>EPSG:32630</code>
+      <code>EPSG:32631</code>
+      <code>EPSG:25829</code>
+      <code>EPSG:25830</code>
+      <code>EPSG:25831</code>
+      <code>EPSG:3785</code>
+      <code>EPSG:3857</code>
+    </projections>
     <country-code>ES</country-code>
     <bounds max-lat="43.809819" max-lon="4.398739" min-lat="27.630257" min-lon="-18.166103">
       <shape>
@@ -22628,6 +22648,7 @@
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:23700</code>
+      <code>EPSG:900913</code>
     </projections>
     <attribution-text mandatory="true">Budapest XI. kerület önkormányzata</attribution-text>
     <attribution-url>http://terinfo.ujbuda.hu/</attribution-url>
@@ -22733,6 +22754,7 @@
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:23700</code>
+      <code>EPSG:900913</code>
     </projections>
     <attribution-text mandatory="true">Budapest XI. kerület önkormányzata</attribution-text>
     <attribution-url>http://terinfo.ujbuda.hu/</attribution-url>
@@ -41313,9 +41335,16 @@
     <type>wms</type>
     <url>http://sigsc.sc.gov.br:80/sigserver/SIGSC/wms?SERVICE=WMS&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OrtoRGB-Landsat-2012&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <projections>
-      <code>EPSG:4326</code>
+      <code>EPSG:102113</code>
       <code>EPSG:29193</code>
       <code>EPSG:31982</code>
+      <code>EPSG:3587</code>
+      <code>EPSG:3785</code>
+      <code>EPSG:3857</code>
+      <code>EPSG:41001</code>
+      <code>EPSG:4326</code>
+      <code>EPSG:54004</code>
+      <code>EPSG:900913</code>
     </projections>
     <attribution-text>Sistema de Informações Geográficas - Governo de Santa Catarina</attribution-text>
     <attribution-url>http://sigsc.sds.sc.gov.br/download/termo_sigsc.pdf</attribution-url>
