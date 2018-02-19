@@ -80,6 +80,9 @@ for imagery in imageries:
     if min_zoom_node:
         properties['min_zoom'] = int(min_zoom_node[0].childNodes[0].nodeValue)
 
+    properties['license_url'] = imagery.getElementsByTagName('permission-ref')[0].childNodes[0].nodeValue
+    properties['description'] = imagery.getElementsByTagName('description')[0].childNodes[0].nodeValue
+
     (bbox, rings) = util.getrings(imagery)
 
     if rings:
