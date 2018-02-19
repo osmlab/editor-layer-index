@@ -5,8 +5,8 @@ schema = json.load(io.open('schema.json', encoding='utf-8'))
 seen_ids = set()
 
 for file in sys.argv[1:]:
-    source = json.load(io.open(file, encoding='utf-8'))
     try:
+        source = json.load(io.open(file, encoding='utf-8'))
         validate(source, schema)
         id = source['properties']['id']
         if id in seen_ids:
