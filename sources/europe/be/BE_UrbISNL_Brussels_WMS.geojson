@@ -3,7 +3,7 @@
     "properties": {
         "id": "UrbisAdmNL",
         "name": "UrbisAdm NL",
-        "url": "https://geoservices-urbis.irisnet.be/geoserver/wms?SERVICE=WMS&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Urbis:urbisNL&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
+        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=urbisNL&WIDTH=%7Bwidth%7D&HEIGHT=%7Bheight%7D&CRS=%7Bproj%7D&STYLES=&BBOX=%7Bbbox%7D",
         "country_code": "BE",
         "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsSAAALEgHS3X78AAACnUlEQVQoz11SXUiTYRh93ndz06YMNWcpRmWRSpgO+0EUDYwQ6sZ+oAyti8y6yCyKxOimILqQsLKbukmHSpFFLYlMqSkUmi3/pjZ/Zmv+Tec2bU237z1dfFHSc/HcPOc5HM45DAAREREgGOM217BpzDjs7PEHfNGa2PT47KxN+RFqrYDgjBMRE0JijBMRAKOlzmgxhChDN0cla1ThM0uTE65vsRFxRRkXk3TpMiMBkEQQQFPvw0LDnoYvVStBNwAhBIApj+X6m5OlT/dbnX0AJCHxkbl+zhTWub6XA4ZDqcd3JJTl1to7HV7G2E3TxOU2zaWcKm1YZKO5RlaliNknBma6Bqe7V6SVc5mVrmVFxSvLu1G3bSlwy2jVaXE6IzE0JLzV+jxJlxYTvp5X5j3Qx2ePzPcn6VJVysiUaHXX+d2zy8HqlrE8/bq3xXoiStalr1Fpxl1DRMQ547s27NWGRikVKtmuju9e34pEYcrhWV/f7E8iUinDQrjaH/AREQfAmSJGEzc6P0Qkvbd5ymt7DqfEmEr0Tre/4PFXInK4R7z+hXjtRiIi2aKPtpbi+qxue6vHj5ou+8KvAIBPP7yG3mkAd9sry18ULPrdAAgQAIJS4EZLacXrwqVlDwBJiKAkJCEB+Gz/UNyQ1TxY/8dWIiYgFFx5JPXM7JLjWe8jIgKBM3DGXT5no7lmy9rteVsLiIjJGXPGBcQ2XdqBlKJWa1PHeLOCcRAEhKH7zuKy+4T+QohCDQhGjLBqJBGsNl0teZI3OGMG0GiuKarPNI0aZTEyhq0qHxhjXv/C7bYyASkjIddoqctPOnY07ezf5hHRvwcikg+TXtv9jmsOjy0n8eCpnVeIESMiecnE/6kC0D/Vea+90h/wARAQqwG/AaEjsUbwLtXdAAAAAElFTkSuQmCC",
         "type": "wms",
