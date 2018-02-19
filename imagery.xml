@@ -5977,7 +5977,7 @@
     <name>UrbisAdm FR</name>
     <id>UrbisAdmFR</id>
     <type>wms</type>
-    <url>https://geoservices-urbis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Urbis:urbisFR&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;TRANSPARENT=true</url>
+    <url>https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=urbisFR&amp;WIDTH=%7Bwidth%7D&amp;HEIGHT=%7Bheight%7D&amp;CRS=%7Bproj%7D&amp;STYLES=&amp;BBOX=%7Bbbox%7D</url>
     <projections>
       <code>EPSG:31370</code>
       <code>EPSG:4326</code>
@@ -6058,7 +6058,7 @@
     <name>UrbisAdm NL</name>
     <id>UrbisAdmNL</id>
     <type>wms</type>
-    <url>https://geoservices-urbis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Urbis:urbisNL&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;TRANSPARENT=true</url>
+    <url>https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;TRANSPARENT=true&amp;LAYERS=urbisNL&amp;WIDTH=%7Bwidth%7D&amp;HEIGHT=%7Bheight%7D&amp;CRS=%7Bproj%7D&amp;STYLES=&amp;BBOX=%7Bbbox%7D</url>
     <projections>
       <code>EPSG:31370</code>
       <code>EPSG:4326</code>
