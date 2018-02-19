@@ -74,11 +74,11 @@ for imagery in imageries:
 
     max_zoom_node = imagery.getElementsByTagName('max-zoom')
     if max_zoom_node:
-        properties['max_zoom'] = max_zoom_node[0].childNodes[0].nodeValue
+        properties['max_zoom'] = int(max_zoom_node[0].childNodes[0].nodeValue)
 
     min_zoom_node = imagery.getElementsByTagName('min-zoom')
     if min_zoom_node:
-        properties['min_zoom'] = min_zoom_node[0].childNodes[0].nodeValue
+        properties['min_zoom'] = int(min_zoom_node[0].childNodes[0].nodeValue)
 
     (bbox, rings) = util.getrings(imagery)
 
