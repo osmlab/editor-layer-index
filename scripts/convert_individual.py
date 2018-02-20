@@ -23,9 +23,7 @@ for imagery in imageries:
     entry['type'] = 'Feature'
 
     properties = entry['properties'] = OrderedDict()
-    id_node = imagery.getElementsByTagName('id')
-    if id_node:
-        properties['id'] = id_node[0].childNodes[0].nodeValue
+    properties['id'] = imagery.getElementsByTagName('id')[0].childNodes[0].nodeValue
     properties['name'] = imagery.getElementsByTagName('name')[0].childNodes[0].nodeValue
     properties['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
     properties['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
@@ -80,8 +78,13 @@ for imagery in imageries:
     if min_zoom_node:
         properties['min_zoom'] = int(min_zoom_node[0].childNodes[0].nodeValue)
 
-    properties['license_url'] = imagery.getElementsByTagName('permission-ref')[0].childNodes[0].nodeValue
-    properties['description'] = imagery.getElementsByTagName('description')[0].childNodes[0].nodeValue
+    permission_ref_node = imagery.getElementsByTagName('permission-ref')
+    if permission_ref_node:
+        properties['license_url'] = permission_ref_node[0].childNodes[0].nodeValue
+    
+    description_node = imagery.getElementsByTagName('description')
+    if description_node:
+        properties['description'] = description_node[0].childNodes[0].nodeValue
 
     (bbox, rings) = util.getrings(imagery)
 
