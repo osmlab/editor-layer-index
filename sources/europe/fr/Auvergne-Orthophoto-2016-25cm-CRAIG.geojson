@@ -1,0 +1,16 @@
+{
+    "type": "Feature", 
+    "properties": {
+        "id": "CRAIG-Auvergne-2016", 
+        "name": "Auvergne - 2016 - 25 cm - CRAIG", 
+        "type": "wms", 
+        "url": "http://tiles.craig.fr/ortho/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "country_code": "FR", 
+        "attribution": {
+            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
+            "text": "CRAIG - IGN -TopoGEODIS - Feder Auvergne-Rh\u00f4ne-Alpes 2016", 
+            "required": true
+        }, 
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
+    }
+}
