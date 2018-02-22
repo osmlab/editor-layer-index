@@ -5,7 +5,8 @@
         "name": "BD Carthage", 
         "type": "tms", 
         "url": "http://{switch:a,b,c}.tile.openstreetmap.fr/route500hydro/{zoom}/{x}/{y}.png", 
-        "country_code": "FR", 
+        "country_code": "FR",
+        "overlay": true,
         "attribution": {
             "url": "http://www.sandre.eaufrance.fr/actualite/la-bd-carthage-en-licence-ouverte-open-licence", 
             "text": "Tiles © cquest@Openstreetmap France, data © Onema - IGN, LO/OL", 
