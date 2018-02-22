@@ -98,8 +98,6 @@ for source in sources:
         print('Failed to convert %s' % source)
         pass
 
-util.indent(root)
-
 tree = ET.ElementTree(root)
 with io.open("imagery.xml", mode='wb') as f:
     tree.write(f, encoding='utf-8', xml_declaration=True)
