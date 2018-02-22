@@ -1,4 +1,8 @@
-import json, sys, util, io
+#!/usr/bin/env python
+import json
+import sys
+import util
+import io
 from datetime import datetime
 from xml.dom.minidom import parse
 
@@ -19,9 +23,5 @@ collection = {
     "features": source_features
 }
 
-print(json.dumps(
-    collection,
-    indent=4,
-    sort_keys=True,
-    separators=(',', ': ')
-))
+print(json.dumps(collection, sort_keys=True, separators=(',', ':')
+                 ))
