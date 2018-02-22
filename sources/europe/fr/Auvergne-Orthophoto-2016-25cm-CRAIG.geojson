@@ -3,8 +3,8 @@
     "properties": {
         "id": "CRAIG-Auvergne-2016", 
         "name": "Auvergne - 2016 - 25 cm - CRAIG", 
-        "type": "wms", 
-        "url": "http://tiles.craig.fr/ortho/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "type": "tms", 
+        "url": "http://tiles.craig.fr/ortho/tms/1.0.0/ortho_2016/webmercator/{zoom-1}/{x}/{-y}.jpeg", 
         "country_code": "FR", 
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG", 
