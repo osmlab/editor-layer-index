@@ -644,7 +644,7 @@
             "EPSG:5641", 
             "EPSG:22525"
         ], 
-        "url": "http://www.geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BCIM_Municipio_A&STYLES=&SRS=EPSG:3857&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "url": "http://www.geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BCIM_Municipio_A&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
         "license_url": "http://dados.gov.br", 
         "country_code": "BR", 
         "type": "wms", 
