@@ -8,11 +8,11 @@
   * RedHat/Centos : `yum install git make`
 * Python and Pip
   * Ubuntu: `sudo apt-get install python-pip python-dev`
-  * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`, then `brew linkapps python`
+  * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`
   * Arch Linux: `sudo pacman -S python2 python2-jsonschema`
   * RedHat/Centos : `yum install python`
 * jsonschema package (for running `make check`)
-  * `pip install jsonschema`
+  * `pip install -r requirements.txt`
   * RedHat/Centos : `yum install python2-jsonschema`
 
 ### Adding new sources
@@ -23,10 +23,10 @@ about which licenses are compatible with this index.
 The 'source' documents for this project are the .geojson files in `sources`. To add
 a new imagery source, add a new file to this directory.
 
-Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, and `url` properties. To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
+Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, and `url` properties.
+To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
 
 See [schema.json](schema.json) for the full list of available properties.
-
 
 ##### Source URL
 
@@ -72,14 +72,13 @@ Implementations may round down the end date (e.g. consider `2013` the same as th
 start of `2013` so to specify imagery taken sometime in 2013, use `"start_date": "2013"`,
 `"end_date": "2014"`.
 
+### Submitting your modifications
 
-### Building the combined files
+Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. When branches are mentioned, replace `master` with `gh-pages`.
 
-After you've made a modification:
+After you've made a modification, run `make check` to validate the source files against `schema.json`, and submit a pull request.
 
-1. run `make check` to validate the source files against `schema.json`
-2. run `make` to generate `imagery.xml`, `imagery.json`, and `imagery.geojson`
-
+We previously required contributors to run `make` to rebuild the combined files. This is now handled automatically and should not be done anymore.
 
 ### Translations
 

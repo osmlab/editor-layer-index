@@ -1,7 +1,24 @@
 language: python
-install: pip install jsonschema
-script: make check
+install: pip install -r requirements.txt
 branches:
   only:
-    - gh-pages
-    - /^.*$/
+    - gh-pages # needs to be explicitely included
+    - /.*/
+script: make check
+after_success:
+    - make clean
+    - make
+    # Check if the imagery files needs to be deployed
+    # If there are no changes to the compiled out except the generated date (e.g. this is a README update) then don't set the deploy flag
+    # imagery.xml doesn't contain the date but gets generated when we make. It's used to detect changes.
+    - DEPLOY=$(git ls-files -m imagery.xml)
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  name: Robot Fairhurst
+  keep-history: true
+  on:
+    # Only deploy from gh-pages branch itself
+    branch: gh-pages
+    condition:  $DEPLOY
