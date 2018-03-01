@@ -37,6 +37,8 @@ a .pdf, using the a similar name as the .geojson source file.<br/>
 
 You can use http://geojson.io to draw a polygon.
 
+[Download.geofabrik.de](https://download.geofabrik.de/) has free .poly files that geojson.io can import.
+
 Geojson.io will even let you add a tile-based imagery layer to the map.  This lets
 you see where the imagery is valid.
 
