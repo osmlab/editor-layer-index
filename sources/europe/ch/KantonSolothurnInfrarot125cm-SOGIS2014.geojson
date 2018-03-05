@@ -1,6 +1,7 @@
 {
     "type": "Feature",
     "properties": {
+        "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
         "id": "Solothurn-infrared-SOGIS",
         "url": "http://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_CIR_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
