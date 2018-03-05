@@ -5,7 +5,8 @@
         "name": "Route 500", 
         "type": "tms", 
         "url": "http://{switch:a,b,c}.tile.openstreetmap.fr/route500/{zoom}/{x}/{y}.png", 
-        "country_code": "FR", 
+        "country_code": "FR",
+        "overlay": true,
         "attribution": {
             "url": "http://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE", 
             "text": "Tiles © cquest@Openstreetmap France, data © IGN, LO/OL", 
