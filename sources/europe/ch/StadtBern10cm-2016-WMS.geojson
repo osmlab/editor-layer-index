@@ -9,7 +9,8 @@
         },
         "name": "Stadt Bern 10cm (2016)",
         "available_projections": [
-            "EPSG:21781"
+            "EPSG:21781",
+            "EPSG:4326"
         ],
         "url": "https://map.bern.ch/wms/OpenData/proxy.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=luftbild_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "CH",
