@@ -2,7 +2,8 @@
     "type": "Feature",
     "properties": {
         "id": "bavaria-DOP80",
-        "url": "http://mapproxy.osm.ch:8080/tiles/BAYERNDOP80/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "url": "https://mapproxy.osm.ch/tiles/BAYERNDOP80/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "min_zoom": 7,
         "max_zoom": 18,
         "type": "tms",
         "name": "Bavaria DOP 80cm",
