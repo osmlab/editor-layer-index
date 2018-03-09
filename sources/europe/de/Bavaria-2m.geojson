@@ -7,6 +7,11 @@
         "type": "wms",
         "name": "Bavaria (2 m)",
         "country_code": "DE",
+        "attribution": {
+            "url": "www.geodaten.bayern.de",
+            "text": "Bayerische Vermessungsverwaltung",
+            "required": false
+        },
         "available_projections": [
             "EPSG:31467",
             "EPSG:31468",
