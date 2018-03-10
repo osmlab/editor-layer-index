@@ -14,6 +14,8 @@ after_success:
     - DEPLOY=$(git ls-files -m imagery.xml)
 deploy:
   provider: pages
+  edge:
+    branch: pages-ivar-set
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   name: Robot Fairhurst
