@@ -8,6 +8,11 @@
             "text": "Ortho littorale 2000",
             "required": true
         },
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:900913"
+        ],
         "type": "wms",
         "name": "Géolittoral - Orthophotos 2000",
         "start_date": "2000",
