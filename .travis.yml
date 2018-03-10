@@ -6,12 +6,13 @@ branches:
     - /.*/
 script: make check
 after_success:
-    - make clean
-    - make
     # Check if the imagery files needs to be deployed
     # If there are no changes to the compiled out except the generated date (e.g. this is a README update) then don't set the deploy flag
-    # imagery.xml doesn't contain the date but gets generated when we make. It's used to detect changes.
-    - DEPLOY=$(git ls-files -m imagery.xml)
+    # Detect changes to the sources directory.
+    - DEPLOY=$(git ls-files -md sources/)
+before_deploy:
+    - make clean
+    - make
 deploy:
   provider: pages
   edge:
