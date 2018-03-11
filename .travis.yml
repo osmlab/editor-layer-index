@@ -9,9 +9,9 @@ after_success:
     # Check if the imagery files needs to be deployed
     # If there are no changes to the compiled out except the generated date (e.g. this is a README update) then don't set the deploy flag
     # Detect changes to the imagery.xml file which doesn't contain the modification date.
-    - DEPLOY=$(git ls-files -m imagery.xml)
     - make clean
     - make
+    - DEPLOY=$(git ls-files -m imagery.xml)
 deploy:
   provider: pages
   edge:
