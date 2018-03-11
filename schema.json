@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/osmlab/editor-layer-index",
     "properties": {
         "type": {
             "type": "string",
@@ -19,7 +20,8 @@
             "required": [
                 "id",
                 "type",
-                "url"
+                "url",
+                "name"
             ],
             "properties": {
                 "name": {
