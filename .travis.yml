@@ -10,7 +10,6 @@ after_success:
     # If there are no changes to the compiled out except the generated date (e.g. this is a README update) then don't set the deploy flag
     # Detect changes to the sources directory.
     - DEPLOY=$(git ls-files -md sources/)
-before_deploy:
     - make clean
     - make
 deploy:
@@ -21,6 +20,7 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   name: Robot Fairhurst
   keep-history: true
+  verbose: true
   on:
     # Only deploy from gh-pages branch itself
     branch: gh-pages
