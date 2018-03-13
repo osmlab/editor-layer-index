@@ -6,12 +6,12 @@
             "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano",
             "required": true
         },
+        "license_url": "http://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
         "description": "Topographical basemap of South Tyrol",
         "url": "http://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
         "max_zoom": 20,
         "country_code": "IT",
         "type": "tms",
-        "license_url": "http://wiki.openstreetmap.org/wiki/AltoAdige_-_S%C3%BCdtirol#Provincia_Autonoma_di_Bolzano_-_Autonome_Provinz_Bozen",
         "id": "South-Tyrol-Topomap",
         "name": "South Tyrol Topomap"
     },
