@@ -52,6 +52,15 @@ def add_source(source):
         default = ET.SubElement(entry, "default")
         default.text = 'true'
 
+    if 'start_date' in props:
+        date = ET.SubElement(entry, "date")
+        if 'end_date' in props and props['start_date'] == props['end_date']:
+            date.text = props['start_date']
+        elif 'end_date' in props and props['start_date'] != props['end_date']:
+            date.text = ';'.join([props['start_date'], props['end_date']])
+        else:
+            date.text = ';'.join([props['start_date'], "-"])
+
     if 'icon' in props:
         icon = ET.SubElement(entry, "icon")
         icon.text = props['icon']
