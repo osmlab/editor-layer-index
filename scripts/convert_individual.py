@@ -108,4 +108,4 @@ for imagery in imageries:
         os.mkdir(dir)
     except OSError:
         pass
-    open('%s/%s.geojson' % (dir, strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4))
+    open('%s/%s.geojson' % (dir, strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4, ensure_ascii=False).encode('utf-8'))
