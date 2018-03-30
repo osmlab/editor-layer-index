@@ -3,11 +3,17 @@
     "properties": {
         "id": "openlabs-geoportal-tirana",
         "name": "Municipality of Tirana (Open Labs GeoPortal)",
+        "description": "Streets & Builings",
         "type": "tms",
         "url": "https://geoportal.openlabs.cc/mapcache/tms/1.0.0/tirana@GoogleMapsCompatibleExtended/{zoom}/{x}/{-y}.png",
         "license_url": "https://cloud.openlabs.cc/s/3lzVn1ZzUEMifHq#pdfviewer",
         "country_code": "AL",
-        "max_zoom": 21
+        "max_zoom": 21,
+        "attribution": {
+            "text": "Data provided by the Muncipality of Tirana hosted by Open Labs",
+            "url": "https://geoportal.openlabs.cc/#map=13/19.8156/41.3314",
+            "required": false
+        }
     },
     "geometry": {
         "type": "Polygon",
