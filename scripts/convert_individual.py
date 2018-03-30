@@ -39,10 +39,10 @@ for imagery in imageries:
             properties['end_date'] = date_values[1]
 
     if imagery.getAttribute('overlay') == "true":
-        properties['overlay'] = "true"
+        properties['overlay'] = True
 
     if imagery.getAttribute('eli-best') == "true":
-        properties['best'] = "true"
+        properties['best'] = True
 
     country_code_node = imagery.getElementsByTagName('country-code')
     if country_code_node:
