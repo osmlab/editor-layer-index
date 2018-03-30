@@ -25,9 +25,11 @@ def add_source(source):
     url = ET.SubElement(entry, "url")
     url.text = props['url']
 
-    if props.get('best') == True:
-        #entry.set('best', 'true')
-        best = ET.SubElement(entry, "best")
+    if props.get('overlay') == "true":
+        entry.set("overlay", props['overlay'])
+
+    if props.get('best') == "true":
+        entry.set('eli-best', props['best'])
 
     if 'available_projections' in props:
         projections = ET.SubElement(entry, "projections")
@@ -68,6 +70,10 @@ def add_source(source):
     if 'country_code' in props:
         country_code = ET.SubElement(entry, "country-code")
         country_code.text = props['country_code']
+
+    if 'license_url' in props:
+        permission_ref = ET.SubElement(entry, "permission-ref")
+        permission_ref.text = props['license_url']
 
     if 'description' in props:
         description = ET.SubElement(entry, "description")

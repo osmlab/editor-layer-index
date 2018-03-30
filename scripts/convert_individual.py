@@ -38,6 +38,11 @@ for imagery in imageries:
         elif len(date_values) == 2 and date_values[1] != '-':
             properties['end_date'] = date_values[1]
 
+    if imagery.getAttribute('overlay') == "true":
+        properties['overlay'] = "true"
+
+    if imagery.getAttribute('eli-best') == "true":
+        properties['best'] = "true"
 
     country_code_node = imagery.getElementsByTagName('country-code')
     if country_code_node:
