@@ -1,4 +1,4 @@
-#!env python2
+#!/usr/bin/env python
 import json, sys, string, util, os
 from xml.dom.minidom import parse
 from collections import OrderedDict
@@ -6,6 +6,7 @@ from collections import OrderedDict
 if len(sys.argv) != 3:
     print("Usage: %s [JOSM XML file] [target directory]"  % __file__)
     print("Converts JOSM imagery XML file into individual source files for editor-layer-index.")
+    print("Hint: the latest JOSM imagery XML file is at https://josm.openstreetmap.de/maps")
     exit(1)
 
 dom = parse(sys.argv[1])
@@ -81,7 +82,7 @@ for imagery in imageries:
     permission_ref_node = imagery.getElementsByTagName('permission-ref')
     if permission_ref_node:
         properties['license_url'] = permission_ref_node[0].childNodes[0].nodeValue
-    
+
     description_node = imagery.getElementsByTagName('description')
     if description_node:
         properties['description'] = description_node[0].childNodes[0].nodeValue
