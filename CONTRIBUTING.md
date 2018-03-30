@@ -46,6 +46,7 @@ Supported WMS tokens:
 
 Example: `http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}`
 
+Make sure you submit the most appropriate image format for the images: usually, jpeg for photography and png for maps. See #435 for a case where bmp was better.
 
 ##### Imagery Extent
 
