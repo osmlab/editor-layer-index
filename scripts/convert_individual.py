@@ -29,6 +29,15 @@ for imagery in imageries:
     properties['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
     properties['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
 
+    date_node = imagery.getElementsByTagName('date')
+    if date_node:
+        date_values = date_node[0].childNodes[0].nodeValue.split(';')
+        properties['start_date'] = date_values[0]
+        if len(date_values) == 1:
+            properties['end_date'] = date_values[0]
+        elif len(date_values) == 2 and date_values[1] != '-':
+            properties['end_date'] = date_values[1]
+
 
     country_code_node = imagery.getElementsByTagName('country-code')
     if country_code_node:
