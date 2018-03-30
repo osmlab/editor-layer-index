@@ -26,8 +26,8 @@ for file in sys.argv[1:]:
             raise ValidationError('{z} found instead of {zoom} in tile url')
         sys.stdout.write('.')
         sys.stdout.flush()
-    except ValidationError as e:
-        print("Validation error in "+file+" :")
+    except Exception as e:
+        print("Error in "+file+" :")
         print(e.message)
         raise SystemExit(1)
 
