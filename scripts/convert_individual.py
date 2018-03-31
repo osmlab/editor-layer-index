@@ -65,7 +65,14 @@ for imagery in imageries:
         attr_url = attr_url_node[0].childNodes[0].nodeValue
 
     if any((attr_text, attr_required, attr_url)):
-        properties['attribution'] = dict(text=attr_text, url=attr_url, required=attr_required)
+        attribution_dict = dict()
+        if attr_text:
+            attribution_dict['text'] = attr_text
+        if attr_url:
+            attribution_dict['url'] = attr_url
+        if attr_required:
+            attribution_dict['required'] = attr_required
+        properties['attribution'] = attribution_dict
 
     default = None
 
