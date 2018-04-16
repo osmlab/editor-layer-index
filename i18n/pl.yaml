@@ -11,7 +11,6 @@ pl:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 14 i wyższym.
       name: 'Datowanie zdjęć DigitalGlobe Premium '
     DigitalGlobe-Standard:
       attribution:
@@ -21,13 +20,17 @@ pl:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 14 i wyższym.
       name: Datowanie zdjęć DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Esri.
       name: Esri (satelitarne i lotnicze)
+    EsriWorldImageryClarity:
+      attribution:
+        text: Warunki użytkowania i opinia
+      description: Zdjęcia satelitarne i lotnicze Esri, które mogą być czytelniejsze i dokładniejsze niż standardowy podkład.
+      name: Esri Beta (satelitarne i lotnicze)
     MAPNIK:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
@@ -41,7 +44,7 @@ pl:
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
-      name: 'OSM Inspector: Adresy'
+      name: 'Inspektor OSM: Adresy'
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -75,19 +78,28 @@ pl:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Szlaki rowerowe'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Szlaki piesze'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Trasy MTB'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Szlaki skaterskie'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Szlaki sportów zimowych'
     basemap.at:
       attribution:
         text: basemap.at
-      description: Mapa bazowa Austrii, oparta o dane rządowe.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -129,8 +141,6 @@ pl:
         text: '© Podład: skobbler Dane mapy: autorzy OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
-      attribution:
-        text: Kafelki mapowe Stamen Design, licencja CC BY 3.0
       name: Stamen - Teren
     tf-cycle:
       attribution:

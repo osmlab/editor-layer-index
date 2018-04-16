@@ -11,6 +11,8 @@ he:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: תנאים ומשוב
+      description: ' גבולות ומועדי צילום. תוויות מופיעות ברמות תקריב של 13 ומעלה. '
+      name: דיגיטל גלוב' תצלומי אוויר פרמיום
     DigitalGlobe-Standard:
       attribution:
         text: תנאים ומשוב
@@ -19,10 +21,17 @@ he:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: תנאים ומשוב
-      description: גבולות ומועדי צילום. תוויות מופיעות ברמות תקריב של 14 ומעלה.
+      name: דיגיטל גלוב' תצלומי אוויר
     EsriWorldImagery:
       attribution:
         text: תנאים ומשוב
+      description: ESRI תצלומי אוויר
+      name: ESRI תצלומי אוויר
+    EsriWorldImageryClarity:
+      attribution:
+        text: תנאים ומשוב
+      description: מידע מESRI שיתכן ויותר ברור ומדיוק משכבת הבררת מחדל
+      name: ESRI תצלומי אוויר (Clarity Beta)
     MAPNIK:
       attribution:
         text: מתנדבי © OpenStreetMap,‏ CC-BY-SA
@@ -61,6 +70,46 @@ he:
       attribution:
         text: © Geofabrik GmbH, תורמי OpenStreetMap,‮ CC-BY-SA
       name: 'חוקר OSM: תיוג'
+    US-TIGER-Roads-2012:
+      name: מידע טופולוגי ארה"ב  2012
+    US-TIGER-Roads-2014:
+      description: מידע ממשלתי מבוסס על המיפקד אוכלוסין מ2006. תוויות מופיעות ברמות תקריב של 16 ומעלה.
+      name: מידע טופולוגי ארה"ב  2014
+    US-TIGER-Roads-2017:
+      description: 'צהוב = מידע ציבורי מממשלת ארה"ב
+
+        אדום = מידע שלא נמצא בOSM'
+      name: מידע טופולוגי ארה"ב  2017
+    Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'שבילים מסומנים: אופניים'
+    Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'שבילים מסומנים: טיול רגל'
+    Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'שבילים מסומנים: אופני הרים'
+    Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'שבילים מסומנים: החלקה'
+    Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+      name: 'שבילים מסומנים: ספורט חורף'
+    basemap.at:
+      attribution:
+        text: basemap.at
+      description: ' מפת אוסטריה מבוסס על מידע ממשלתי'
+      name: basemap.at
+    basemap.at-orthofoto:
+      attribution:
+        text: basemap.at
+      description: אורטופוטו basemap.at
+      name: אורטופוטו basemap.at
     hike_n_bike:
       attribution:
         text: מתנדבי © OpenStreetMap
@@ -68,6 +117,8 @@ he:
     mapbox_locator_overlay:
       attribution:
         text: תנאים ומשוב
+      description: מראה סממנים מרכזים כדי להתמצא
+      name: צפיה תוחם
     openpt_map:
       attribution:
         text: תורמי ‎© OpenStreetMap,‏ CC-BY-SA
@@ -88,15 +139,20 @@ he:
     qa_no_address:
       attribution:
         text: Simon Poole, נתונים באדיבות מתנדבי ©OpenStreetMap
+      name: QA אין כתובת
     skobbler:
       attribution:
         text: '© אריחים: skobbler נתוני מפה: מתנדבי OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: אריחי מפה מאת Stamen Design, תחת הרשיון CC BY 3.0
+        text: אריחי מפה מאת Stamen Design, ברישיון CC BY 3.0. הנתונים מאת OpenStreetMap, תחת ODbL
+      name: תווי שטח מסטודיו Stamen
     tf-cycle:
+      attribution:
+        text: מפות  מThunderforest
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: מפות © Thunderforest, נתונים באדיבות מתנדבי © OpenStreetMap
+      name: תווי שטח מThunderforest

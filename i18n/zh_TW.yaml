@@ -11,7 +11,7 @@ zh_TW:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: 使用條款與意見回饋
-      description: 影像邊界與取得時間。標籤會在縮放14層級或更高時顯示。
+      description: 影像邊界與拍攝日期。標籤將會在縮放等級大於等於 13 時出現。
       name: DigitalGlobe Premium 空照圖年份
     DigitalGlobe-Standard:
       attribution:
@@ -21,7 +21,7 @@ zh_TW:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: 使用條款與意見回饋
-      description: 影像邊界與取得時間。標籤會在縮放14層級或更高時顯示。
+      description: 影像邊界與拍攝日期。標籤將會在縮放等級大於等於 13 時出現。
       name: DigitalGlobe Standard 空照圖年份
     EsriWorldImagery:
       attribution:
@@ -79,6 +79,8 @@ zh_TW:
     US-TIGER-Roads-2017:
       description: 黃 = 自美國人口普查局的公共領域地圖資料取得。紅 = 在開放街圖上找不到資料
       name: TIGER 道路 2017
+    US_Forest_Service_roads_overlay:
+      name: 美國森林道路覆蓋層
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org，OpenStreetMap 貢獻者,，CC by-SA 3.0
@@ -102,7 +104,7 @@ zh_TW:
     basemap.at:
       attribution:
         text: basemap.at
-      description: 基於政府資料的奧地利底圖。
+      description: 奧地利的底圖，基於政府資料。
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -145,7 +147,7 @@ zh_TW:
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: Stamen 設計的圖磚，以 CC-BY 3.0 授權
+        text: Stamen Design 的圖磚，以 CC BY 3.0 授權。資料自 OpenStreetMap 處取得，以 ODbL 授權
       name: Stamen Terrain
     tf-cycle:
       attribution:
