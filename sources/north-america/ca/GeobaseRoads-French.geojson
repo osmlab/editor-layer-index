@@ -4,9 +4,9 @@
         "id": "Geobase_Roads_French", 
         "name": "Geobase Roads - French", 
         "type": "wms", 
-        "url": "https://maps.geogratis.gc.ca/wms/roads_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=roads.road_segment.label&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "url": "https://cartes.geogratis.gc.ca/wms/roads_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=routes&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "max_zoom": 20,
-        "min_zoom": 11,
+        "min_zoom": 4,
         "country_code": "CA", 
         "available_projections": [
             "EPSG:4326", 

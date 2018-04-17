@@ -2,9 +2,9 @@
     "type": "Feature",
     "properties": {
         "id": "Geobase_Roads",
-        "url": "https://maps.geogratis.gc.ca/wms/roads_en?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=roads.road_segment.label&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "url": "https://maps.geogratis.gc.ca/wms/roads_en?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=roads&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "max_zoom": 20,
-        "min_zoom": 11,
+        "min_zoom": 4,
         "type": "wms",
         "name": "Geobase Roads - English", 
         "country_code": "CA",
