@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "type": "wms_endpoint",
+        "name": "FTA Road Network options",
+        "id": "fta-digiroad-option",
+        "country_code": "FI",
+        "description": "Digiroad national road network from the Finnish Transport Agency with several options for map layers.",
+        "url": "https://extranet.liikennevirasto.fi/inspirepalvelu/beta/wms?service=wms&request=getCapabilities",
+        "icon": "https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png",
+        "min_zoom": 3,
+        "max_zoom": 20,
+        "valid-georeference": true,
+        "overlay": true,
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 Liikennevirasto",
+            "url": "https://www.liikennevirasto.fi/web/en/open-data/digiroad/"
+        },
+        "license_url": "https://lookaside.fbsbx.com/file/Digiroad_permission_23032017.pdf?token=AWzxeAA6eoURtiEfhamunEmttk0mdOG8xdWL0xQJ2ycs6k0AB2M3DQVY11G1Cg8VQpkoW8PoiPfXFrocjWpmietbZi5EtBGPk-coh5sgCxeArDFwVSmmEaCRccgzstqIN4bA5PYnXJSISjW-K8AnAcaw",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326", "EPSG:2391", "EPSG:2392", "EPSG:2393", "EPSG:2394",
+            "EPSG:3034", "EPSG:3035", "EPSG:3046", "EPSG:3047", "EPSG:3048",
+            "EPSG:3067",
+            "EPSG:3126", "EPSG:3127", "EPSG:3128", "EPSG:3129", "EPSG:3130", "EPSG:3131", "EPSG:3132",
+            "EPSG:3133", "EPSG:3134", "EPSG:3135", "EPSG:3136", "EPSG:3137", "EPSG:3138",
+            "EPSG:3386", "EPSG:3387",
+            "EPSG:3395",
+            "EPSG:3873", "EPSG:3874", "EPSG:3875", "EPSG:3876", "EPSG:3877", "EPSG:3878", "EPSG:3879",
+            "EPSG:3880", "EPSG:3881", "EPSG:3882", "EPSG:3883", "EPSG:3884", "EPSG:3885",
+            "EPSG:4123",
+            "EPSG:4258",
+            "EPSG:5048"
+        ]
+    }, 
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+            [12.7111707,55.2666045],[14.3810926,55.2916348],[19.6545301,57.2493436],
+            [19.852284,59.7508666],[17.775868,61.1379379],[18.0615125,62.2781508],
+            [20.9728895,63.5779045],[24.3566785,65.6084197],[23.9611707,66.7919139],
+            [20.6103406,66.451891],[17.1386609,63.9663237],[11.9970594,61.0370176],
+            [12.2936902,60.3160739],[10.7006727,58.8137475],[12.7111707,55.2666045]
+        ]]
+    }      
+}
