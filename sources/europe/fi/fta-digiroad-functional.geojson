@@ -1,0 +1,50 @@
+{
+    "type": "Feature",
+    "properties": {
+        "type": "wms",
+        "name": "FTA Road Network",
+        "id": "fta-digiroad-functional",
+        "country_code": "FI",
+        "description": "Digiroad national road network from the Finnish Transport Agency, functional road classes.",
+        "url": "https://extranet.liikennevirasto.fi/inspirepalvelu/beta/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=dr_tielinkki_toim_lk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "icon": "https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png",
+        "min_zoom": 3,
+        "max_zoom": 20,
+        "overlay": true,
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 Liikennevirasto",
+            "url": "https://www.liikennevirasto.fi/web/en/open-data/digiroad/"
+        },
+        "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326", "EPSG:2391", "EPSG:2392", "EPSG:2393", "EPSG:2394",
+            "EPSG:3034", "EPSG:3035", "EPSG:3046", "EPSG:3047", "EPSG:3048",
+            "EPSG:3067",
+            "EPSG:3126", "EPSG:3127", "EPSG:3128", "EPSG:3129", "EPSG:3130", "EPSG:3131", "EPSG:3132",
+            "EPSG:3133", "EPSG:3134", "EPSG:3135", "EPSG:3136", "EPSG:3137", "EPSG:3138",
+            "EPSG:3386", "EPSG:3387",
+            "EPSG:3395",
+            "EPSG:3873", "EPSG:3874", "EPSG:3875", "EPSG:3876", "EPSG:3877", "EPSG:3878", "EPSG:3879",
+            "EPSG:3880", "EPSG:3881", "EPSG:3882", "EPSG:3883", "EPSG:3884", "EPSG:3885",
+            "EPSG:4123",
+            "EPSG:4258",
+            "EPSG:5048"
+        ]
+    }, 
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+            [27.5317328, 60.2179935], [31.3549585, 62.5123281], [31.6351264, 62.9077314],
+            [30.0915418, 64.9188897], [30.2123914, 65.8747292], [29.1357313, 66.9042207],
+            [30.1904078, 67.676093], [28.7072645, 68.4274779], [29.025868, 68.9505042],
+            [29.4872938, 69.5882321], [27.9492078, 70.1329023], [26.4001356, 69.9491461],
+            [25.861811, 69.6933403], [24.9499292, 68.6245517], [23.9227186, 68.8536149],
+            [22.9064832, 68.6985045], [21.4288221, 69.3841854], [20.4235621, 69.0430447],
+            [23.269032, 67.986995], [23.5217176, 66.297794], [24.10396, 65.869129],
+            [24.1149793, 65.3943022], [21.4123426, 63.6511407], [20.1708766, 63.1989825],
+            [19.0818678, 60.1907003], [20.5004774, 59.2096939], [27.5317328, 60.2179935]
+        ]]
+    }      
+}

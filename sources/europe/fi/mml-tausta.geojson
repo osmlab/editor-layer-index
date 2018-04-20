@@ -1,0 +1,34 @@
+{
+    "type": "Feature",
+    "properties": {
+        "type": "tms",
+        "name": "MML Background Map",
+        "id": "mml-tausta",
+        "country_code": "FI",
+        "description": "Background map from the National Land Survey of Finland",
+        "url": "http://tiles.kartat.kapsi.fi/taustakartta/{zoom}/{x}/{y}.jpg",
+        "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
+        "min_zoom": 2,
+        "max_zoom": 19,
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 Maanmittauslaitoksen",
+            "url": "https://www.maanmittauslaitos.fi/en/"
+        },
+        "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+            [27.5317328, 60.2179935], [31.3549585, 62.5123281], [31.6351264, 62.9077314],
+            [30.0915418, 64.9188897], [30.2123914, 65.8747292], [29.1357313, 66.9042207],
+            [30.1904078, 67.676093], [28.7072645, 68.4274779], [29.025868, 68.9505042],
+            [29.4872938, 69.5882321], [27.9492078, 70.1329023], [26.4001356, 69.9491461],
+            [25.861811, 69.6933403], [24.9499292, 68.6245517], [23.9227186, 68.8536149],
+            [22.9064832, 68.6985045], [21.4288221, 69.3841854], [20.4235621, 69.0430447],
+            [23.269032, 67.986995], [23.5217176, 66.297794], [24.10396, 65.869129],
+            [24.1149793, 65.3943022], [21.4123426, 63.6511407], [20.1708766, 63.1989825],
+            [19.0818678, 60.1907003], [20.5004774, 59.2096939], [27.5317328, 60.2179935]
+        ]]
+    }
+}
