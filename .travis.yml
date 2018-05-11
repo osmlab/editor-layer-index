@@ -5,13 +5,9 @@ branches:
     - gh-pages # needs to be explicitely included
     - /.*/
 script: make check
-after_success:
-    # Check if the imagery files needs to be deployed
-    # If there are no changes to the compiled out except the generated date (e.g. this is a README update) then don't set the deploy flag
-    # Detect changes to the imagery.xml file which doesn't contain the modification date.
+before_deploy:
     - make clean
     - make
-    - DEPLOY=$(git ls-files -m imagery.xml)
 deploy:
   provider: pages
   skip-cleanup: true
@@ -21,4 +17,5 @@ deploy:
   on:
     # Only deploy from gh-pages branch itself
     branch: gh-pages
-    condition:  $DEPLOY
+    # Don't deploy if the last commit is by Travis itself
+    condition:  $(git log --format="%cn" -n 1) != "Robot Fairhurst (from Travis CI)"

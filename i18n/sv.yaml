@@ -11,7 +11,7 @@ sv:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Villkor & återkoppling
-      description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 14 och upp.
+      description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 13 och upp.
       name: DigitalGlobe Premium flygfotoålder
     DigitalGlobe-Standard:
       attribution:
@@ -21,13 +21,18 @@ sv:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Villkor & återkoppling
-      description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 14 och upp.
+      description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 13 och upp.
       name: DigitalGlobe Standard flygfotoålder
     EsriWorldImagery:
       attribution:
         text: Villkor & återkoppling
       description: Esri världsflygfoto.
       name: Esri världsflygfoto
+    EsriWorldImageryClarity:
+      attribution:
+        text: Villkor & återkoppling
+      description: Arkivbilder från Esri som kan vara tydligare och mer korrekta än det normala lagret.
+      name: Esri världsflygfoto (Clarity) Beta
     MAPNIK:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA
@@ -74,15 +79,27 @@ sv:
     US-TIGER-Roads-2017:
       description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      name: Bildlager för Skogsvägar i USA
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMaps bidragsgivare, CC by-SA 3.0
       name: 'Waymarked Trails: Cykel'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMaps bidragsgivare, CC by-SA 3.0
       name: 'Waymarked Trails: Vandring'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMaps bidragsgivare, CC by-SA 3.0
       name: 'Waymarked Trails: Mountainbike'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMaps bidragsgivare, CC by-SA 3.0
       name: 'Waymarked Trails: Inline skating'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMaps bidragsgivare, CC by-SA 3.0
       name: 'Waymarked Trails: Vintersport'
     basemap.at:
       attribution:
@@ -106,7 +123,7 @@ sv:
     openpt_map:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA
-      name: OpenP-karta (bildlager)
+      name: OpenPT-karta (bildlager)
     osm-gps:
       attribution:
         text: © OpenStreetMaps bidragsgivare
@@ -130,7 +147,7 @@ sv:
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: Kartplattor av Stamen Design, under CC BY 3.0
+        text: 'Kartplattor av Stamen Design, under CC BY 3.0. Data från OpenStreetMap, under ODbL '
       name: Stamen terräng
     tf-cycle:
       attribution:

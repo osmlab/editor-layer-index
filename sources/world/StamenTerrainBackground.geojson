@@ -6,10 +6,10 @@
         "i18n": true,
         "attribution": {
             "url": "http://maps.stamen.com/#terrain",
-            "text": "Map tiles by Stamen Design, under CC BY 3.0",
+            "text": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL",
             "required": true
         },
-        "url": "http://{switch:a,b,c,d}.tile.stamen.com/terrain-background/{zoom}/{x}/{y}.jpg",
+        "url": "https://stamen-tiles-{switch:a,b,c,d}.a.ssl.fastly.net/terrain-background/{zoom}/{x}/{y}.jpg",
         "max_zoom": 18,
         "min_zoom": 4,
         "type": "tms"

@@ -11,7 +11,6 @@ fa:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: ارسال نظرات
-      description: مرزها و تاریخ نقشه ها از زوم 14 به بالا قابل مشاهده هستند
       name: فهرست DigitalGlobe Premium
     DigitalGlobe-Standard:
       attribution:
@@ -21,13 +20,17 @@ fa:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: ارسال نظرات
-      description: مرزها و تاریخ نقشه ها از زوم 14 به بالا قابل مشاهده هستند
       name: فهرست DigitalGlobe Premium
     EsriWorldImagery:
       attribution:
         text: ارسال نظرات
       description: نقشه های Esri world 
       name: 'نقشه های Esri world '
+    EsriWorldImageryClarity:
+      attribution:
+        text: فید بک
+      description: تصاویر بایگانی Esri که ممکن است واضح تر و دقیق تر از لایه پیش فرض باشد.
+      name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
         text: ©همکاران OSM و CC-BY-SA
@@ -75,19 +78,29 @@ fa:
       description: 'زود = داده های دولتی سرشماری آمریکا. قرمز : داده های بدون منبع در OSM'
       name: جاده های TIGER 2017
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
       name: 'مسیرهای مشخص شده: دوچرخه سواری'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
       name: 'مسیرهای مشخص شده: پیاده روی'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
       name: 'مسیرهای مشخص شده: MTB'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
       name: 'مسیرهای مشخص شده: اسکیت'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
       name: 'مسیرهای مشخص شده: ورزشهای زمستانی'
     basemap.at:
       attribution:
         text: basemap.at
-      description: نقشه اصلی استرالیا، نقشه ثبت شده دولتی
+      description: نقشه اصلی اتریش، بر اساس اطلاعات دولت می‌باشد.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -123,12 +136,12 @@ fa:
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
+      name: س/ج بدون آدرس
     skobbler:
       attribution:
         text: '© Tiles: skobbler Map data: OpenStreetMap contributors'
+      name: skobbler
     stamen-terrain-background:
-      attribution:
-        text: Map tiles by Stamen Design, under CC BY 3.0
       name: لجن زار
     tf-cycle:
       attribution:

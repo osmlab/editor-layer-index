@@ -10,7 +10,8 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#Main_Roads_.28state_government_agency.29",
         "name": "Main Roads WA Road Hierarchy",
         "available_projections": [
-            "EPSG:3857"
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "url": "https://services.slip.wa.gov.au/public/services/SLIP_Public_Services/Transport/MapServer/WMSServer?LAYERS=8&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
         "overlay": true,

@@ -22,5 +22,5 @@ collection = {
     "features": source_features
 }
 
-print(json.dumps(collection, sort_keys=True, separators=(',', ':')
-                 ))
+print(json.dumps(collection, sort_keys=True, separators=(',', ':'), ensure_ascii=False
+                 ).encode('utf-8'))

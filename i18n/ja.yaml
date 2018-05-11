@@ -11,7 +11,7 @@ ja:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: 規約＆フィードバック
-      description: 画像の境界と取得日付。ラベルはズームレベル14以上で表示。
+      description: 画像の境界と取得日付。ラベルはズームレベル13以上で表示。
       name: DigitalGlobeプレミアム画像撮影日
     DigitalGlobe-Standard:
       attribution:
@@ -21,7 +21,7 @@ ja:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: 規約＆フィードバック
-      description: 画像の境界と取得日付。ラベルはズームレベル14以上で表示。
+      description: 画像の境界と取得日付。ラベルはズームレベル13以上で表示。
       name: DigitalGlobe標準画像撮影日
     EsriWorldImagery:
       attribution:
@@ -32,7 +32,7 @@ ja:
       attribution:
         text: 規約 & フィードバック
       description: おそらくEsriデフォルトのレイヤより明瞭で正確、しかしやや古いEsriアーカイブ画像。（日本での違いは不明）
-      name: Esri World Imagery(鮮明版)ベータ
+      name: Esri World Imagery(精細版)ベータ
     MAPNIK:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
@@ -79,6 +79,8 @@ ja:
     US-TIGER-Roads-2017:
       description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      name: U.S. Forest Roads Overlay
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
@@ -102,7 +104,7 @@ ja:
     basemap.at:
       attribution:
         text: basemap.at
-      description: Basemap of Austria, based on goverment data.
+      description: オーストリアのベースマップ、政府データに基づく。
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -145,7 +147,7 @@ ja:
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: Map tiles by Stamen Design, under CC BY 3.0
+        text: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL
       name: Stamen 地形図
     tf-cycle:
       attribution:
