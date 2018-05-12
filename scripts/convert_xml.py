@@ -25,9 +25,11 @@ def add_source(source):
     url = ET.SubElement(entry, "url")
     url.text = props['url']
 
-    if props.get('best') == True:
-        #entry.set('best', 'true')
-        best = ET.SubElement(entry, "best")
+    if props.get('overlay'):
+        entry.set("overlay", 'true')
+
+    if props.get('best'):
+        entry.set('eli-best', 'true')
 
     if 'available_projections' in props:
         projections = ET.SubElement(entry, "projections")
@@ -52,6 +54,15 @@ def add_source(source):
         default = ET.SubElement(entry, "default")
         default.text = 'true'
 
+    if 'start_date' in props:
+        date = ET.SubElement(entry, "date")
+        if 'end_date' in props and props['start_date'] == props['end_date']:
+            date.text = props['start_date']
+        elif 'end_date' in props and props['start_date'] != props['end_date']:
+            date.text = ';'.join([props['start_date'], props['end_date']])
+        else:
+            date.text = ';'.join([props['start_date'], "-"])
+
     if 'icon' in props:
         icon = ET.SubElement(entry, "icon")
         icon.text = props['icon']
@@ -59,6 +70,10 @@ def add_source(source):
     if 'country_code' in props:
         country_code = ET.SubElement(entry, "country-code")
         country_code.text = props['country_code']
+
+    if 'license_url' in props:
+        permission_ref = ET.SubElement(entry, "permission-ref")
+        permission_ref.text = props['license_url']
 
     if 'description' in props:
         description = ET.SubElement(entry, "description")

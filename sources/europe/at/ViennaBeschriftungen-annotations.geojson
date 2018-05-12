@@ -3,10 +3,11 @@
     "properties": {
         "id": "wien.gv.at-labels",
         "attribution": {
-            "url": "https://data.wien.gv.at/",
+            "url": "https://data.wien.gv.at",
             "text": "Stadt Wien",
             "required": false
         },
+        "overlay": true,
         "name": "Vienna: Beschriftungen (annotations)",
         "url": "https://maps.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png",
         "min_zoom": 12,

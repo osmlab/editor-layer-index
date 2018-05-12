@@ -5,19 +5,32 @@ gl:
       name: Imaxe aérea Bing.
     DigitalGlobe-Premium:
       attribution:
-        text: Termos & Autoachegas
+        text: Termos e comentarios
       description: Imaxes de satélite Premium DigitalGlobe.
       name: Imaxes DigitalGlobe Premium
+    DigitalGlobe-Premium-vintage:
+      attribution:
+        text: Termos e comentarios
+      name: Antigüidade das imaxes DigitalGlobe Premium
     DigitalGlobe-Standard:
       attribution:
-        text: Termos & Autoachegas
-      description: Imaxes de satélite Standard DigitalGlobe.
+        text: Termos e comentarios
+      description: Imaxes de satélite DigitalGlobe estándar.
       name: Imaxes DigitalGlobe Standard
+    DigitalGlobe-Standard-vintage:
+      attribution:
+        text: Termos e comentarios
+      name: Antigüidade das imaxes DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
-        text: Termos & Autoachegas
-      description: Imaxes mundiais Esri
+        text: Termos e comentarios
+      description: Imaxes mundiais Esri.
       name: Imaxes mundiais Esri
+    EsriWorldImageryClarity:
+      attribution:
+        text: Termos e comentarios
+      description: Arquivo de imaxes de Esri que pode que sexan máis claras e máis precisas que a súa capa por defecto.
+      name: Imaxes mundiais Esri (Clarity) Beta
     MAPNIK:
       attribution:
         text: © contribuidores do OpenStreetMap, CC-BY-SA
@@ -25,7 +38,7 @@ gl:
       name: OpenStreetMap (Estándar)
     Mapbox:
       attribution:
-        text: Termos & Autoachegas
+        text: Termos e comentarios
       description: Imaxes satélite e aéreas.
       name: Mapbox Satélite
     OSM_Inspector-Addresses:
@@ -39,7 +52,7 @@ gl:
     OSM_Inspector-Highways:
       attribution:
         text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
-      name: 'OSM Inspector: Autoestradas'
+      name: 'OSM Inspector: Estradas'
     OSM_Inspector-Multipolygon:
       attribution:
         text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
@@ -55,7 +68,7 @@ gl:
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
-      name: 'OSM Inspector: Lapelas'
+      name: 'OSM Inspector: Etiquetado'
     Waymarked_Trails-Cycling:
       name: 'Marcador de Pistas: Ciclismo'
     Waymarked_Trails-Hiking:
@@ -69,7 +82,6 @@ gl:
     basemap.at:
       attribution:
         text: basemap.at
-      description: Mapa base para Austria, baseado en datos do goberno.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -82,7 +94,7 @@ gl:
       name: Camiño & Bici
     mapbox_locator_overlay:
       attribution:
-        text: Termos & Autoachegas
+        text: Termos e comentarios
       description: Amosa os elementos importantes para axudarche a orientarte.
       name: Superposición de Localizador
     openpt_map:
@@ -104,21 +116,21 @@ gl:
       name: OpenStreetMap (Estilo Alemá)
     qa_no_address:
       attribution:
-        text: Simon Poole, Achegas ©contribuidores do OpenStreetMap
+        text: Simon Poole, Datos ©contribuidores do OpenStreetMap
       name: QA Sen Enderezos
     skobbler:
       attribution:
-        text: '© Tiles: skobbler información Mapa: contribuidores do OpenStreetMap'
+        text: '© Teselas: skobbler Datos do mapa: contribuidores do OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: Tiles do mapa por Stamen Design, baixo CC BY 3.0
+        text: Teselas do mapa por Stamen Design, baixo CC BY 3.0. Datos por OpenStreetMap, baixo ODbL
       name: Terreo Stamen
     tf-cycle:
       attribution:
-        text: Mapas © Thunderforest, Información © contribuidores do OpenStreetMap
-      name: Thunderforest OpenCycleMap
+        text: Mapas © Thunderforest, Datos © contribuidores do OpenStreetMap
+      name: OpenCycleMap de Thunderforest
     tf-landscape:
       attribution:
-        text: Mapas © Thunderforest, Información © contribuidores do OpenStreetMap
-      name: Paisaxe Thunderforest
+        text: Mapas © Thunderforest, Datos © contribuidores do OpenStreetMap
+      name: Landscape de Thunderforest

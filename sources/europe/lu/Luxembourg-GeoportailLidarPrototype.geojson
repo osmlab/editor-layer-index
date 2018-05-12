@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://act.public.lu/fr/cartographie/lidar/",
+            "url": "https://act.public.lu/fr/cartographie/lidar",
             "text": "Administration du Cadastre et de la Topographie",
             "required": false
         },
@@ -11,7 +11,7 @@
         "url": "http://{switch:wmts1,wmts2}.geoportail.lu/opendata/wmts/ortho_10cm_proto_lidar/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 21,
         "start_date": "2017-04-09",
-        "license_url": "https://data.public.lu/en/datasets/lidar-projet-pilote-dun-releve-3d-du-territoire-luxembourgeois/",
+        "license_url": "https://data.public.lu/en/datasets/lidar-projet-pilote-dun-releve-3d-du-territoire-luxembourgeois",
         "country_code": "LU",
         "type": "tms",
         "id": "lu.geoportail.opendata.ortho_10cm_proto_lidar",

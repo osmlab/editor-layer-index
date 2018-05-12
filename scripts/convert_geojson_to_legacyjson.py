@@ -67,5 +67,4 @@ for file in args.files:
     with io.open(file, 'r') as f:
         features.append(convert_json_source(args, json.load(f)))
 
-print(json.dumps(features, sort_keys=True, separators=(',', ':')
-                 ))
+print(json.dumps(features, sort_keys=True, separators=(',', ':'), ensure_ascii=False).encode('utf-8'))

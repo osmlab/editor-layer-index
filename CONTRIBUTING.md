@@ -46,6 +46,7 @@ Supported WMS tokens:
 
 Example: `http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}`
 
+Make sure you submit the most appropriate image format for the images: usually, jpeg for photography and png for maps. See #435 for a case where bmp was better.
 
 ##### Imagery Extent
 
@@ -68,9 +69,11 @@ except that a reduced precision date is allowed. For example, `2013-04-15T14:02:
 is a fully specified ISO 8601 date-time, `2013-04-15` could be used for just the date,
 or `2013-04` for just the month, `2013` for just the year.
 
-Implementations may round down the end date (e.g. consider `2013` the same as the
-start of `2013` so to specify imagery taken sometime in 2013, use `"start_date": "2013"`,
-`"end_date": "2014"`.
+To specify imagery taken sometime in 2019, use `"start_date": "2019"`,
+`"end_date": "2019"`.
+
+Implementations *must not* round down the end date (e.g. consider `2013` the same as the
+start of `2013`. Note that this is the opposite of what we did before, and layers before 2015 could have overly wide date ranges.
 
 ### Submitting your modifications
 

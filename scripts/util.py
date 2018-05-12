@@ -1,7 +1,7 @@
 def getprojs(elem):
     o = []
     projs_node = elem.getElementsByTagName('projections')
-    if projs_node:
+    if projs_node and projs_node[0].parentNode.tagName != 'mirror':
         o = []
         for proj_node in projs_node[0].getElementsByTagName('code'):
             code = proj_node.childNodes[0].nodeValue

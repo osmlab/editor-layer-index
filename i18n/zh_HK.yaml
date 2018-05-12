@@ -11,7 +11,6 @@ zh_HK:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: 條款和意見
-      description: 航攝邊界及拍攝日期。標籤會在縮放第14級或更高時顯示。
       name: DigitalGlobe Premium 舊航攝圖
     DigitalGlobe-Standard:
       attribution:
@@ -21,13 +20,17 @@ zh_HK:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: 條款和意見
-      description: 航攝邊界及拍攝日期。標籤會在縮放水平14或以上時顯示。
       name: DigitalGlobe Standard 舊航攝圖
     EsriWorldImagery:
       attribution:
         text: 條款和意見
       description: Esri world 世界航攝圖
       name: Esri world 世界航攝圖
+    EsriWorldImageryClarity:
+      attribution:
+        text: 條款和意見
+      description: Esri 之前的航攝圖可能比預設圖層會更清楚和更準確。
+      name: Esri World (Clarity) Beta 航攝圖
     MAPNIK:
       attribution:
         text: © OpenStreetMap 貢獻者，CC-BY-SA
@@ -75,19 +78,28 @@ zh_HK:
       description: 黃色 = 來自美國人口普查的公共地圖數據。紅色 = 在OpenStreetMap找不到數據
       name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap 貢獻者，CC by-SA 3.0
       name: 'Waymarked Trails: 單車'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap 貢獻者，CC by-SA 3.0
       name: 'Waymarked Trails: 遠足'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap 貢獻者，CC by-SA 3.0
       name: 'Waymarked Trails: 越野單車'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap 貢獻者，CC by-SA 3.0
       name: 'Waymarked Trails: 溜冰'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap 貢獻者，CC by-SA 3.0
       name: 'Waymarked Trails: 冬季運動'
     basemap.at:
       attribution:
         text: basemap.at
-      description: 基於政府資料的奧地利底圖。
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -129,8 +141,6 @@ zh_HK:
         text: '© 區塊：skobbler 地圖資料：OpenStreetMap 貢獻者'
       name: skobbler
     stamen-terrain-background:
-      attribution:
-        text: Stamen 設計的區塊，以 CC-BY 3.0 授權
       name: Stamen 地形
     tf-cycle:
       attribution:

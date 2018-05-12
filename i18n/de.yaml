@@ -11,7 +11,7 @@ de:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Bedingungen & Feedback
-      description: Lufbildgrenzen und Aufnahmedaten. Die Beschriftung erscheint auf Zoom Level 14 und höher.
+      description: Kachelgrenzen und Aufnahmedatum werden bei Zoom-Level 13 und höher angezeigt.
       name: DigitalGlobe Premium Bildmaterial Klassisch
     DigitalGlobe-Standard:
       attribution:
@@ -21,7 +21,7 @@ de:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Bedingungen & Feedback
-      description: Lufbildgrenzen und Aufnahmedaten. Die Beschriftung erscheint auf Zoom Level 14 und höher.
+      description: Kachelgrenzen und Aufnahmedatum werden bei Zoom-Level 13 und höher angezeigt.
       name: DigitalGlobe Standard Bildmaterial Klassisch
     EsriWorldImagery:
       attribution:
@@ -79,6 +79,8 @@ de:
     US-TIGER-Roads-2017:
       description: Gelb = Freie Daten vom US Census. Rot = In OpenStreetMap fehlende Daten
       name: TIGER Straßen 2017
+    US_Forest_Service_roads_overlay:
+      name: U.S.A. Forststraßen Overlay
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap-Mitwirkende, CC BY-SA 3.0
@@ -102,7 +104,7 @@ de:
     basemap.at:
       attribution:
         text: basemap.at
-      description: Amtliche Verwaltungsgrundkarte von Österreich
+      description: basemap von Österreich, basiert auf Regierungsdaten
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -145,7 +147,7 @@ de:
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: Kacheln © Stamen Design, CC-BY 3.0
+        text: Kacheln © Stamen Design, CC BY 3.0, Kartendaten © OpenStreetMap-Mitwirkende, ODbL 1.0
       name: Stamen Terrain
     tf-cycle:
       attribution:

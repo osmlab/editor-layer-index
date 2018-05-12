@@ -2,13 +2,13 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://www.openstreetmap.org/",
+            "url": "https://www.openstreetmap.org",
             "text": "© OpenStreetMap contributors",
             "required": true
         },
         "name": "OpenStreetMap (turistautak)",
         "url": "http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png",
-        "license_url": "http://www.openstreetmap.hu/",
+        "license_url": "http://www.openstreetmap.hu",
         "country_code": "HU",
         "type": "tms",
         "min_zoom": 0,

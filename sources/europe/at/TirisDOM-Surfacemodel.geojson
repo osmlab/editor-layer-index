@@ -3,6 +3,7 @@
     "properties": {
         "id": "tirol.gv.at-DOM",
         "attribution": {
+        	"url": "https://tiris.tirol.gv.at",
             "text": "tiris.tirol.gv.at",
             "required": false
         },
@@ -30,7 +31,7 @@
             "EPSG:102100"
         ],
         "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image Schummerung_Oberflaechenmodell&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol/",
+        "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol",
         "country_code": "AT",
         "type": "wms",
         "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"

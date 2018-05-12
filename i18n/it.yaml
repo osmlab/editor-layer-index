@@ -11,7 +11,7 @@ it:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Termini & Feedback
-      description: Immagini dei confini e data di riferimento. Le etichette vengono mostrate a livelli di zoom maggiori o uguali a 14.
+      description: Confini delle immagini e data di acquisizione. Le etichette appaiono a livelli di ingrandimento 13 e successivi.
       name: DigitalGlobe Premium Imagery Vintage
     DigitalGlobe-Standard:
       attribution:
@@ -21,7 +21,7 @@ it:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Termini & Feedback
-      description: Immagini dei confini e data di riferimento. Le etichette vengono mostrate a livelli di zoom maggiori o uguali a 14.
+      description: Confini delle immagini e data di acquisizione. Le etichette appaiono a livelli di ingrandimento 13 e successivi.
       name: DigitalGlobe Standard Imagery Vintage
     EsriWorldImagery:
       attribution:
@@ -79,6 +79,8 @@ it:
     US-TIGER-Roads-2017:
       description: Giallo = Dati pubblici forniti da enti statali Statunitensi.
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      name: Strade forestali U.S. (sovrapposta)
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, collaboratori OpenStreetMap, CC by-SA 3.0
@@ -102,7 +104,7 @@ it:
     basemap.at:
       attribution:
         text: basemap.at
-      description: Basemap of Austria, basati su dati governativi.
+      description: mappa di base, ottenuta da dati del governo.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -145,7 +147,7 @@ it:
       name: skobbler
     stamen-terrain-background:
       attribution:
-        text: Map tiles by Stamen Design, under CC BY 3.0
+        text: Tasselli della mappa di Stamen Design con licenza CC-BY 3.0. Dati di OpenStreetMap com licenza ODbL
       name: Stamen Terrain
     tf-cycle:
       attribution:
