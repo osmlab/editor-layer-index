@@ -11,7 +11,7 @@ ru:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Условия и обратная связь
-      description: Границы подложек и даты съемки. Надписи появляются на 13 зуме и выше.
+      description: Границы подложек и даты съемки. Надписи появляются на 13 масштабе и выше.
       name: Премиум снимки DigitalGlobe (Vintage).
     DigitalGlobe-Standard:
       attribution:
@@ -21,7 +21,7 @@ ru:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Условия и обратная связь
-      description: Границы подложек и даты съемки. Надписи появляются на 13 зуме и выше.
+      description: Границы подложек и даты съемки. Надписи появляются на 13 масштабе и выше.
       name: Стандартные снимки DigitalGlobe (Vintage)
     EsriWorldImagery:
       attribution:
@@ -31,7 +31,7 @@ ru:
     EsriWorldImageryClarity:
       attribution:
         text: Условия и обратная связь
-      description: Архивная подложка Esri, может быть чище и аккуратнее чем не-архивная.
+      description: Архивная подложка Esri, может быть чище и аккуратнее, чем актуальная.
       name: Всемирные снимки Esri (Clarity)
     MAPNIK:
       attribution:
@@ -74,11 +74,14 @@ ru:
     US-TIGER-Roads-2012:
       name: TIGER дороги 2012
     US-TIGER-Roads-2014:
-      description: На зумах 16+ — общедостпуные картографические данные от US Census. На меньших зумах — только изменения с 2006 за вычетом изменений, включённых в OpenStreetMap
-      name: TIGER дороги 2014
+      description: На масштабах 16+ — общедостпуные картографические данные от US Census. На меньших масштабах — только изменения с 2006 за вычетом изменений, включённых в OpenStreetMap
+      name: Дороги TIGER 2014
     US-TIGER-Roads-2017:
       description: Жёлтым = общедоступные картографические данные от US Census. Красным = данные, отсутствующие в OpenStreetMap
-      name: TIGER дороги 2017
+      name: Дороги TIGER 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Дороги: зелёный контур = без классификации; коричневый = просёлочные. Покрытие: гравий = светло-коричневый цвет; асфальт = чёрный; другое покрытие = серый; земля = белый; бетон = синий; трава = зелёный. Сезонные дороги = белые штрихи'
+      name: Лесные дороги США
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, участники OpenStreetMap, CC by-SA 3.0

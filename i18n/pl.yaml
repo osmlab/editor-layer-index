@@ -11,6 +11,7 @@ pl:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Warunki użytkowania i opinia
+      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 13 i wyższym.
       name: 'Datowanie zdjęć DigitalGlobe Premium '
     DigitalGlobe-Standard:
       attribution:
@@ -20,6 +21,7 @@ pl:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Warunki użytkowania i opinia
+      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 13 i wyższym.
       name: Datowanie zdjęć DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
@@ -77,6 +79,9 @@ pl:
     US-TIGER-Roads-2017:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Drogi:  Zielone obramowanie = czwartorzędna. Brązowe obramowanie = polna/leśna. Nawierzchnia: żwir = jasno-brązowe wypełnienie, asfalt = czarny, twarda = szary, grunt = biały, beton = niebieski, trawa = zielony. Dostępna sezonowo = białe paski'
+      name: Nakładka z drogami z U.S. Forest
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
@@ -100,6 +105,7 @@ pl:
     basemap.at:
       attribution:
         text: basemap.at
+      description: Mapa bazowa Austrii, na podstawie danych rządowych
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -141,6 +147,8 @@ pl:
         text: '© Podład: skobbler Dane mapy: autorzy OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
+      attribution:
+        text: Kafle mapy od Stamen Design, licencja CC BY 3.0. Dane z OpenStreetMap, licencja ODbL
       name: Stamen - Teren
     tf-cycle:
       attribution:

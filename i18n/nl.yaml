@@ -11,6 +11,7 @@ nl:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Gebruiksvoorwaarden & feedback
+      description: Beeldgrenzen en opnamedata. Labels verschijnen op zoomniveau 13 en hoger.
       name: DigitalGlobe-premiumbeelden Vintage
     DigitalGlobe-Standard:
       attribution:
@@ -20,16 +21,17 @@ nl:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Gebruiksvoorwaarden & feedback
+      description: Beeldgrenzen en opnamedata. Labels verschijnen op zoomniveau 13 en hoger.
       name: DigitalGlobe-premiumbeelden Vintage
     EsriWorldImagery:
       attribution:
         text: Voorwaarden & Terugkoppeling
-      description: Esri world imagery
+      description: Esri world imagery.
       name: Esri World Imagery
     EsriWorldImageryClarity:
       attribution:
         text: Gebruiksvoorwaarden & feedback
-      description: Esri archiefbeelden kunnen duidelijker en accurater zijn dan de standaard achtergrondbeelden.
+      description: Esri-archiefbeelden kunnen duidelijker en accurater zijn dan de standaard achtergrondbeelden.
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
@@ -77,34 +79,38 @@ nl:
     US-TIGER-Roads-2017:
       description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Wegen: Groene omlijning = ongeclassificeerd. Bruine omlijning = veldweg. Oppervlak: grind = lichtbruin gevuld, asfalt = zwart, bestraat = grijs, grond = wit, beton = blauw, gras = groen. Seizoensgebonden = witte balken'
+      name: U.S. Forest Roads-laag
     Waymarked_Trails-Cycling:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap bijdragers, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap-bijdragers, CC BY-SA 3.0
       name: 'Waymarked Trails: Fietsen'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap bijdragers, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap-bijdragers, CC BY-SA 3.0
       name: 'Waymarked Trails: Wandelen'
     Waymarked_Trails-MTB:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap bijdragers, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap-bijdragers, CC BY-SA 3.0
       name: 'Waymarked Trails: Mountainbiken'
     Waymarked_Trails-Skating:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap bijdragers, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap-bijdragers, CC BY-SA 3.0
       name: 'Waymarked Trails: Inline skaten'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap bijdragers, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap-bijdragers, CC BY-SA 3.0
       name: 'Waymarked Trails: Wintersportpistes'
     basemap.at:
       attribution:
         text: basemap.at
+      description: Basiskaart van Oostenrijk, gebaseerd op overheidsgegevens.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Orthofotolaag voorzien door basemap.at. 'Opvolger' van beelden van geoimage.at.
+      description: Orthofoto-laag voorzien door basemap.at. 'Opvolger' van geoimage.at.
       name: basemap.at Orthofoto
     hike_n_bike:
       attribution:
@@ -141,6 +147,8 @@ nl:
         text: '© Tegels: skobbler Kaartgegevens: OpenStreetMap-bijdragers'
       name: skobbler
     stamen-terrain-background:
+      attribution:
+        text: Kaarttegels van Stamen Design, onder CC BY 3.0. Gegevens van OpenStreetMap, onder ODbL
       name: Stamen Terrein
     tf-cycle:
       attribution:
