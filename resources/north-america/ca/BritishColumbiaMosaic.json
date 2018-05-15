@@ -1,0 +1,17 @@
+{
+  "id": "British_Columbia_Mosaic",
+  "featureId": "British_Columbia_Mosaic",
+  "type": "tms",
+  "name": "British Columbia Mosaic",
+  "url": "http://{switch:a,b,c,d}.imagery.paulnorman.ca/tiles/bc_mosaic/{zoom}/{x}/{y}.png",
+  "min_zoom": 9,
+  "max_zoom": 20,
+  "country_code": "CA",
+  "start_date": "2009",
+  "end_date": "2013-06",
+  "attribution": {
+    "url": "http://imagery.paulnorman.ca/tiles/about.html",
+    "text": "Copyright Province of British Columbia, City of Surrey",
+    "required": false
+  }
+}

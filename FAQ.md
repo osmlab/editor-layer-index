@@ -28,9 +28,9 @@ Within that document are variations for general and creative commons waivers.
 https://wiki.osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates
 
 Completed imagery waivers should be stored in this repository in the same location
-as the corresponding .geojson source files.  Please save the completed waiver as
-a .pdf, using the a similar name as the .geojson source file.<br/>
-(For example `NYS2017-orthos.geojson`, `NYS2017-orthos-waiver.pdf`)
+as the corresponding .json resource files.  Please save the completed waiver as
+a .pdf, using the a similar name as the .json source file.<br/>
+(For example `NYS2017-orthos.json`, `NYS2017-orthos-waiver.pdf`)
 
 
 ## How can I draw a bounding polygon?

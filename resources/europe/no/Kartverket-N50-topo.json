@@ -1,0 +1,18 @@
+{
+  "id": "kartverket-topo4",
+  "featureId": "kartverket-topo4",
+  "type": "tms",
+  "name": "Kartverket N50 topo",
+  "description": "Topographic map N50, equivalent to Norway 1:50.000 paper map series.",
+  "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom={zoom}&x={x}&y={y}",
+  "min_zoom": 3,
+  "max_zoom": 15,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+  "country_code": "NO",
+  "attribution": {
+    "required": true,
+    "text": "© Kartverket",
+    "url": "https://wiki.openstreetmap.org/wiki/No:Kartverket_import"
+  },
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+}

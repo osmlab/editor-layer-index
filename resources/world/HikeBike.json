@@ -1,0 +1,15 @@
+{
+  "id": "hike_n_bike",
+  "type": "tms",
+  "i18n": true,
+  "name": "Hike & Bike",
+  "url": "http://{switch:a,b,c}.tiles.wmflabs.org/hikebike/{zoom}/{x}/{y}.png",
+  "max_zoom": 18,
+  "license_url": "http://hikebikemap.org",
+  "attribution": {
+    "url": "https://www.openstreetmap.org/copyright",
+    "text": "© OpenStreetMap contributors",
+    "required": true
+  },
+  "icon": "http://hikebikemap.org/hikebike16x16.png"
+}

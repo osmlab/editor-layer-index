@@ -1,0 +1,14 @@
+{
+  "id": "Geolittoral-Sentiers",
+  "featureId": "Geolittoral-Sentiers",
+  "type": "wms",
+  "name": "Géolittoral - Sentiers",
+  "url": "http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "FR",
+  "available_projections": ["EPSG:4326", "EPSG:3857", "EPSG:900913"],
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+    "text": "Ortho littorale 2000",
+    "required": true
+  }
+}

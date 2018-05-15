@@ -1,0 +1,17 @@
+{
+  "id": "wien.gv.at-labels",
+  "featureId": "wien.gv.at-labels",
+  "type": "tms",
+  "overlay": true,
+  "name": "Vienna: Beschriftungen (annotations)",
+  "url": "https://maps.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png",
+  "min_zoom": 12,
+  "max_zoom": 19,
+  "country_code": "AT",
+  "attribution": {
+    "url": "https://data.wien.gv.at",
+    "text": "Stadt Wien",
+    "required": false
+  },
+  "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
+}

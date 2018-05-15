@@ -1,0 +1,15 @@
+{
+  "id": "stamen-terrain-background",
+  "type": "tms",
+  "i18n": true,
+  "name": "Stamen Terrain",
+  "url": "https://stamen-tiles-{switch:a,b,c,d}.a.ssl.fastly.net/terrain-background/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 4,
+  "max_zoom": 18,
+  "attribution": {
+    "url": "http://maps.stamen.com/#terrain",
+    "text": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL",
+    "required": true
+  },
+  "icon": "https://stamen.com/wp-content/uploads/2016/07/stamen_compass_rose_small-01.png"
+}

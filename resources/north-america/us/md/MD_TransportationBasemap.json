@@ -1,0 +1,22 @@
+{
+  "id": "geodata.md.gov-MD_ColorBasemap",
+  "featureId": "geodata.md.gov-MD_ColorBasemap",
+  "type": "wms",
+  "name": "MD Transportation Basemap",
+  "description": "Maryland State Highway Administration road features and additional Maryland focused landmarks",
+  "url": "https://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=MD_ColorBasemap&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
+  "country_code": "US",
+  "available_projections": [
+    "CRS:84",
+    "EPSG:4326",
+    "EPSG:3857",
+    "EPSG:102685",
+    "EPSG:26985",
+    "EPSG:2248"
+  ],
+  "attribution": {
+    "url": "http://imap.maryland.gov/Pages/imagery-products.aspx",
+    "text": "DoIT, MD iMap, MDP",
+    "required": false
+  }
+}

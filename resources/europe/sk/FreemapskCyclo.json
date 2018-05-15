@@ -1,0 +1,15 @@
+{
+  "id": "Freemap.sk-Cyclo",
+  "featureId": "Freemap.sk-Cyclo",
+  "type": "tms",
+  "name": "Freemap.sk Cyclo",
+  "url": "https://{switch:a,b,c,d}.freemap.sk/C/{zoom}/{x}/{y}.jpeg",
+  "min_zoom": 8,
+  "max_zoom": 16,
+  "country_code": "SK",
+  "attribution": {
+    "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.",
+    "required": true
+  },
+  "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+}

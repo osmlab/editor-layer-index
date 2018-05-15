@@ -1,19 +1,8 @@
 ## Contributing
 
 ### Prerequisites
-* Command line development tools (`make`, `git`) for your platform
-  * Ubuntu: `sudo apt-get install build-essential git`
-  * Mac OS X: Install Xcode and run `xcode-select --install` from a command line
-  * Arch Linux: `sudo pacman -S make git`
-  * RedHat/Centos : `yum install git make`
-* Python and Pip
-  * Ubuntu: `sudo apt-get install python-pip python-dev`
-  * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`
-  * Arch Linux: `sudo pacman -S python2 python2-jsonschema`
-  * RedHat/Centos : `yum install python`
-* jsonschema package (for running `make check`)
-  * `pip install -r requirements.txt`
-  * RedHat/Centos : `yum install python2-jsonschema`
+* [Node.js](https://nodejs.org/) version 6 or newer
+* [`git`](https://www.atlassian.com/git/tutorials/install-git/) for your platform
 
 ### Adding new sources
 
@@ -118,5 +107,5 @@ use the following commands:
 * `tx push -s`  - upload latest source `/i18n/en.yaml` file to Transifex
 * `tx pull -a`  - download latest translation files to `/i18n/<lang>.yaml`
 
-For convenience you can also run these commands as `make txpush` or `make txpull`.
+For convenience you can also run these commands as `npm run txpush` or `npm run txpull`.
 

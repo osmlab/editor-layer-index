@@ -1,0 +1,17 @@
+{
+  "id": "IBGE_BC250_Rios_Drenagem",
+  "featureId": "IBGE_BC250_Rios_Drenagem",
+  "type": "wms",
+  "overlay": true,
+  "name": "IBGE-BC250-Rios Drenagem",
+  "url": "http://www.geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Trecho_Drenagem_L&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+  "license_url": "http://dados.gov.br",
+  "country_code": "BR",
+  "available_projections": [
+    "EPSG:3857",
+    "EPSG:4326",
+    "EPSG:5396",
+    "EPSG:22525"
+  ],
+  "attribution": {"text": "IBGE"}
+}

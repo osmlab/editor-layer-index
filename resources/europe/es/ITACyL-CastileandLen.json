@@ -1,0 +1,30 @@
+{
+  "id": "ITACyL-Castile-and-Leon",
+  "featureId": "ITACyL-Castile-and-Leon",
+  "type": "wms",
+  "name": "ITACyL - Castile and León",
+  "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "ES",
+  "available_projections": [
+    "EPSG:25830",
+    "EPSG:4230",
+    "EPSG:4258",
+    "EPSG:4326",
+    "EPSG:23028",
+    "EPSG:23029",
+    "EPSG:23030",
+    "EPSG:23031",
+    "EPSG:23032",
+    "EPSG:25828",
+    "EPSG:25829",
+    "EPSG:25831",
+    "EPSG:25832",
+    "EPSG:32627",
+    "EPSG:32628",
+    "EPSG:32629",
+    "EPSG:32630",
+    "EPSG:32631",
+    "EPSG:32632"
+  ],
+  "attribution": {"text": "ITACyL", "required": true}
+}

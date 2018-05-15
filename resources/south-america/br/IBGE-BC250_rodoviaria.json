@@ -1,0 +1,17 @@
+{
+  "id": "IBGE_BC250_Rodoviario",
+  "featureId": "IBGE_BC250_Rodoviario",
+  "type": "wms",
+  "overlay": true,
+  "name": "IBGE-BC250-Trecho Rodoviario",
+  "url": "http://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Trecho_Rodoviario_L&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image/png&TRANSPARENT=TRUE",
+  "license_url": "http://dados.gov.br",
+  "country_code": "BR",
+  "available_projections": [
+    "EPSG:3857",
+    "EPSG:4326",
+    "EPSG:5396",
+    "EPSG:22525"
+  ],
+  "attribution": {"text": "IBGE"}
+}

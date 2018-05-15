@@ -1,0 +1,17 @@
+{
+  "id": "Geneve-SITG-2011",
+  "featureId": "Geneve-SITG-2011",
+  "type": "wms",
+  "name": "Canton de Génève 5cm (SITG 2011)",
+  "url": "https://ge.ch/ags2/services/Orthophotos_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://ge.ch/sitg/donnees/conditions-d-utilisation/open-data",
+  "country_code": "CH",
+  "start_date": "2011",
+  "end_date": "2011",
+  "available_projections": ["EPSG:4326", "EPSG:2056", "EPSG:3857"],
+  "attribution": {
+    "text": "Orthophotos du SITG 2011",
+    "url": "http://ge.ch/sitg/donnees/conditions-d-utilisation/open-data",
+    "required": false
+  }
+}

@@ -1,20 +1,43 @@
 {
   "name": "editor-layer-index",
-  "version": "0.0.0",
-  "description": "available imagery for osm editors",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/osmlab/editor-layer-index.git"
-  },
+  "version": "0.1.0",
+  "license": "ISC",
+  "repository": "osmlab/editor-layer-index",
+  "author": "Guillaume Rischard <openstreetmap@stereo.lu>",
+  "description": "An index of imagery available for use in OpenStreetMap",
   "keywords": [
-    "openstreetmap",
-    "editor",
+    "OSM",
+    "OpenStreetMap",
     "imagery"
   ],
-  "author": "Ian Dees",
-  "license": "BSD"
+  "main": "dist/index.js",
+  "module": "index.mjs",
+  "scripts": {
+    "build": "node build.js && rollup -c",
+    "icons": "node build_icons.js",
+    "lint": "eslint *.js test/*.js",
+    "test": "npm run build && npm run lint && tap test/*.js",
+    "stats": "node stats.js",
+    "txpull": "tx pull -a",
+    "txpush": "tx push -s"
+  },
+  "devDependencies": {
+    "bytes": "^3.0.0",
+    "colors": "^1.1.2",
+    "easy-table": "^1.1.1",
+    "eslint": "^4.3.0",
+    "geojson-precision": "^0.4.0",
+    "geojson-rewind": "^0.3.1",
+    "glob": "^7.1.0",
+    "js-yaml": "^3.11.0",
+    "json-stringify-pretty-compact": "^1.1.0",
+    "jsonschema": "^1.1.0",
+    "rollup": "^0.58.0",
+    "rollup-plugin-json": "^3.0.0",
+    "shelljs": "^0.8.0",
+    "tap": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
 }

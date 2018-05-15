@@ -1,0 +1,15 @@
+{
+  "id": "lu.geoportail.opendata.wms_endpoint",
+  "featureId": "lu.geoportail.opendata.wms_endpoint",
+  "type": "wms_endpoint",
+  "name": "geoportail.lu all layers",
+  "url": "http://wmts1.geoportail.lu/opendata/service?REQUEST=GetCapabilities",
+  "license_url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts",
+  "country_code": "LU",
+  "attribution": {
+    "required": true,
+    "text": "Administration du Cadastre et de la Topographie",
+    "url": "https://data.public.lu/en/usage/"
+  },
+  "icon": "https://www.geoportail.lu/static/img/lion.png"
+}

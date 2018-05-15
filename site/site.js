@@ -12,7 +12,7 @@ function updateOpacity(value) {
     testLayer.setOpacity(value);
 }
 
-d3.json("imagery.geojson", function(error, imagery) {
+d3.json('dist/imagery.geojson', function(error, imagery) {
     imagery.features = imagery.features.sort(function(a,b) {
         // sort by country code, then alphabetically
         if (a.properties['country_code'] === b.properties['country_code']) {

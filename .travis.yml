@@ -1,13 +1,12 @@
-language: python
-install: pip install -r requirements.txt
+language: node_js
+node_js:
+  - "6"
+  - "8"
+  - "10"
 branches:
   only:
     - gh-pages # needs to be explicitely included
     - /.*/
-script: make check
-before_deploy:
-    - make clean
-    - make
 deploy:
   provider: pages
   skip-cleanup: true

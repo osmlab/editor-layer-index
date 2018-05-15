@@ -1,0 +1,25 @@
+{
+  "id": "AGIV10cm",
+  "featureId": "AGIV10cm",
+  "type": "wms",
+  "name": "AGIV Flanders 2013-2015 aerial imagery 10cm",
+  "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/OGW/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OGWRGB13_15VL&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "https://download.agiv.be/Producten/Detail?id=1209&title=Orthofotomozaiek_grootschalig_winteropnamen_kleur_2013_2015_Vlaanderen",
+  "country_code": "BE",
+  "start_date": "2013",
+  "end_date": "2015",
+  "available_projections": [
+    "CRS:84",
+    "EPSG:4326",
+    "EPSG:4258",
+    "EPSG:31370",
+    "EPSG:3812",
+    "EPSG:3043",
+    "EPSG:32631",
+    "EPSG:25831",
+    "EPSG:3857",
+    "EPSG:102100"
+  ],
+  "attribution": {"required": true, "text": "Orthophoto Flanders © AGIV"},
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQ4y6WTPUgCYRjHf5oFJVfRUZKVHYFBoBAUFLZE0FBD0NQHRENESzS019LSFNHWx1DQEhGRg0JFREM11FJuLWem4GB5HULdwdkgHprn5LO97/O8v+fj/7y2bDabpQKzFx5S6ntlgE81xvHtclHAbuSNloNT5q/uywP021cAvO4hAPYu5/hI5e6GWpsBCEfjxNSMNUALPvJ7eA3AQPcML3KIzbNhlvdEWmu+6RCcAISiCWtA3fosPztBfrYvAGgX/QCIggdR8DDe6Qbg5E0uAdjyKhhykq+uBeySi9qVCfSAB61HRBQ8RFJpRs6vALiZHMUnNpYO0Ujn+jPkJJnVfbTBNeqfFQB8YqP56H8VJqBKcuHcWsQuuXIOyUX1sN8MnPJKlnOwWS2SIScx0hkcvV3mXUzN0HcSAuBoNMBYZxsADittVXcT/XcPKE/PltqHowkTYLcMkOMoml52+wr9jnIZAJZ8XjYGe0vaUDSdsBxnulsqrUDRdMLReNHg8tYhOAs2M2HdQiSVBqChprpI7/9q5JPYKv3OfxL1n52ATYYBAAAAAElFTkSuQmCC"
+}

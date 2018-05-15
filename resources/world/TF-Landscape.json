@@ -1,0 +1,14 @@
+{
+  "id": "tf-landscape",
+  "type": "tms",
+  "i18n": true,
+  "name": "Thunderforest Landscape",
+  "url": "https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png",
+  "max_zoom": 22,
+  "license_url": "https://thunderforest.com/terms",
+  "attribution": {
+    "url": "https://www.thunderforest.com/terms",
+    "text": "Maps © Thunderforest, Data © OpenStreetMap contributors",
+    "required": true
+  }
+}

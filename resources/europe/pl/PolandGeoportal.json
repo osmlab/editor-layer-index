@@ -1,0 +1,16 @@
+{
+  "id": "Geoportal-PL-aerial_image",
+  "featureId": "Geoportal-PL-aerial_image",
+  "type": "tms",
+  "best": true,
+  "name": "Geoportal.gov.pl (Orthophotomap)",
+  "url": "https://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}",
+  "min_zoom": 6,
+  "max_zoom": 24,
+  "country_code": "PL",
+  "attribution": {
+    "text": "Copyright © Główny Urząd Geodezji i Kartografii.",
+    "required": true
+  },
+  "icon": "https://i.imgur.com/aFlvMpM.png"
+}

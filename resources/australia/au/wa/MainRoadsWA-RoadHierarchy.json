@@ -1,0 +1,17 @@
+{
+  "id": "MainRoadsWA_Road_Hierarchy",
+  "featureId": "MainRoadsWA_Road_Hierarchy",
+  "type": "wms",
+  "overlay": true,
+  "name": "Main Roads WA Road Hierarchy",
+  "url": "https://services.slip.wa.gov.au/public/services/SLIP_Public_Services/Transport/MapServer/WMSServer?LAYERS=8&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
+  "max_zoom": 21,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#Main_Roads_.28state_government_agency.29",
+  "country_code": "AU",
+  "available_projections": ["EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://catalogue.data.wa.gov.au/dataset/clss-road-hierarchy",
+    "text": "Main Roads Western Australia",
+    "required": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "rio2015",
+  "featureId": "rio2015",
+  "type": "wms",
+  "name": "Rio Mosaic 2015",
+  "url": "https://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2015_UTM/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 13,
+  "license_url": "http://data.rio/about",
+  "country_code": "BR",
+  "start_date": "2015",
+  "end_date": "2015",
+  "available_projections": ["EPSG:4326", "EPSG:3857", "EPSG:29193"],
+  "attribution": {
+    "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2015_UTM/MapServer",
+    "text": "Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro."
+  }
+}

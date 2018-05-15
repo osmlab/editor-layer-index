@@ -1,0 +1,18 @@
+{
+  "id": "lu.geoportail.opendata.topo",
+  "featureId": "lu.geoportail.opendata.topo",
+  "type": "tms",
+  "name": "Topographical Map geoportail.lu",
+  "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/topo/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png",
+  "max_zoom": 20,
+  "license_url": "https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts",
+  "country_code": "LU",
+  "start_date": "2013-07-19",
+  "end_date": "2010-07-20",
+  "attribution": {
+    "url": "https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts",
+    "text": "Administration du Cadastre et de la Topographie",
+    "required": false
+  },
+  "icon": "https://www.geoportail.lu/static/img/lion.png"
+}

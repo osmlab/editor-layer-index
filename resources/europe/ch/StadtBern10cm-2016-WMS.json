@@ -1,0 +1,17 @@
+{
+  "id": "Bern-bern2016-wms",
+  "featureId": "Bern-bern2016-wms",
+  "type": "wms",
+  "best": true,
+  "name": "Stadt Bern 10cm (2016)",
+  "url": "https://map.bern.ch/wms/OpenData/proxy.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=luftbild_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://lists.openstreetmap.ch/pipermail/talk-ch/2016-November/003868.html",
+  "country_code": "CH",
+  "start_date": "2016",
+  "end_date": "2016",
+  "available_projections": ["EPSG:21781", "EPSG:4326"],
+  "attribution": {
+    "text": "Orthophoto 2016, Vermessungsamt Stadt Bern",
+    "required": true
+  }
+}

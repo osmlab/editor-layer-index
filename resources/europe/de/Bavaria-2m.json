@@ -1,0 +1,23 @@
+{
+  "id": "bavaria-2m",
+  "featureId": "bavaria-2m",
+  "type": "wms",
+  "name": "Bavaria (2 m)",
+  "url": "https://geodaten.bayern.de/ogc/ogc_dop200_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=adv_dop200c&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 8,
+  "max_zoom": 18,
+  "country_code": "DE",
+  "available_projections": [
+    "EPSG:31467",
+    "EPSG:31468",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:4258",
+    "EPSG:4326"
+  ],
+  "attribution": {
+    "url": "www.geodaten.bayern.de",
+    "text": "Bayerische Vermessungsverwaltung",
+    "required": false
+  }
+}

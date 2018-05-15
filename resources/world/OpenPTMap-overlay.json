@@ -1,0 +1,16 @@
+{
+  "id": "openpt_map",
+  "type": "tms",
+  "i18n": true,
+  "overlay": true,
+  "name": "OpenPT Map (overlay)",
+  "url": "http://openptmap.de/tiles/{zoom}/{x}/{y}.png",
+  "min_zoom": 4,
+  "max_zoom": 17,
+  "attribution": {
+    "url": "https://openstreetmap.org",
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "required": true
+  },
+  "icon": "http://openptmap.de/favicon_pt.png"
+}

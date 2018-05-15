@@ -1,0 +1,18 @@
+{
+  "id": "Cadastre",
+  "featureId": "Cadastre",
+  "type": "tms",
+  "name": "Cadastre",
+  "description": "French land registry",
+  "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png",
+  "min_zoom": 12,
+  "max_zoom": 22,
+  "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
+  "country_code": "FR",
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
+    "text": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2015",
+    "required": true
+  },
+  "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png"
+}

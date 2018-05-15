@@ -1,0 +1,16 @@
+{
+  "id": "Delaware2012Orthophotography",
+  "featureId": "Delaware2012Orthophotography",
+  "type": "wms",
+  "name": "Delaware 2012 Orthophotography",
+  "description": "This data set consists of 0.3-meter pixel resolution (approximately 1-foot), 4-band true color and near infrared (R, G, B, IR) orthoimages covering New Castle, Kent and Sussex Counties in Delaware.",
+  "url": "https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "US",
+  "start_date": "2012",
+  "end_date": "2012",
+  "available_projections": ["EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://firstmap.delaware.gov/arcgis/rest/services/DE_Imagery/DE_Imagery_2012/ImageServer",
+    "text": "Digital Aerial Solutions, LLC"
+  }
+}

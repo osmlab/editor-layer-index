@@ -1,0 +1,16 @@
+{
+  "id": "gsi.go.jp",
+  "featureId": "gsi.go.jp",
+  "type": "tms",
+  "name": "Japan GSI ortho Imagery",
+  "url": "https://cyberjapandata.gsi.go.jp/xyz/ort/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 5,
+  "max_zoom": 19,
+  "license_url": "https://wiki.openstreetmap.org/wiki/GSImaps",
+  "country_code": "JP",
+  "attribution": {
+    "url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "text": "GSI Japan",
+    "required": false
+  }
+}

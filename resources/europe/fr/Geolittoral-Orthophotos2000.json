@@ -1,0 +1,16 @@
+{
+  "id": "Geolittoral-Orthophotos2000",
+  "featureId": "Geolittoral-Orthophotos2000",
+  "type": "wms",
+  "name": "Géolittoral - Orthophotos 2000",
+  "url": "http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortholittorale&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "FR",
+  "start_date": "2000",
+  "end_date": "2000",
+  "available_projections": ["EPSG:4326", "EPSG:3857", "EPSG:900913"],
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+    "text": "Ortho littorale 2000",
+    "required": true
+  }
+}

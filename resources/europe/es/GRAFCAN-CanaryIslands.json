@@ -1,0 +1,10 @@
+{
+  "id": "GRAFCAN-Canary_Islands",
+  "featureId": "GRAFCAN-Canary_Islands",
+  "type": "wms",
+  "name": "GRAFCAN - Canary Islands",
+  "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "ES",
+  "available_projections": ["EPSG:4326", "EPSG:32628", "EPSG:32627"],
+  "attribution": {"text": "GRAFCAN OrtoExpress Urbana 2009", "required": true}
+}

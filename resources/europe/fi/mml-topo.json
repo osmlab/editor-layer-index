@@ -1,0 +1,18 @@
+{
+  "id": "mml-topo",
+  "featureId": "mml-topo",
+  "type": "tms",
+  "name": "MML Topographic Map",
+  "description": "Topographic map from the National Land Survey of Finland",
+  "url": "http://tiles.kartat.kapsi.fi/peruskartta/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 2,
+  "max_zoom": 19,
+  "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
+  "country_code": "FI",
+  "attribution": {
+    "required": true,
+    "text": "© Maanmittauslaitos",
+    "url": "https://www.maanmittauslaitos.fi/en/"
+  },
+  "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png"
+}

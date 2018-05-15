@@ -1,0 +1,20 @@
+{
+  "id": "trafikverket-vagnat-navn",
+  "featureId": "trafikverket-vagnat-navn",
+  "type": "tms",
+  "overlay": true,
+  "name": "Trafikverket Street Names",
+  "description": "Swedish NVDB street names",
+  "url": "https://mapproxy.openstreetmap.se/tiles/1.0.0/nvdb_names/EPSG3857/{zoom}/{x}/{y}.png",
+  "min_zoom": 15,
+  "max_zoom": 19,
+  "license_url": "https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667",
+  "country_code": "SE",
+  "available_projections": ["EPSG:3857"],
+  "attribution": {
+    "required": true,
+    "text": "© Trafikverket, CC0",
+    "url": "https://www.trafikverket.se"
+  },
+  "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png"
+}

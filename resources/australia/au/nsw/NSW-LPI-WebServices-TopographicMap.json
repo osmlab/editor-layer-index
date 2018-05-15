@@ -1,0 +1,15 @@
+{
+  "id": "NSW_LPI_TopographicMap",
+  "featureId": "NSW_LPI_TopographicMap",
+  "type": "tms",
+  "name": "LPI NSW Topographic Map",
+  "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
+  "max_zoom": 16,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
+  "country_code": "AU",
+  "attribution": {
+    "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+    "text": "© Land and Property Information 2017",
+    "required": true
+  }
+}

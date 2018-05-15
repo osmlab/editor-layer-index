@@ -1,0 +1,18 @@
+{
+  "id": "BANO",
+  "featureId": "BANO",
+  "type": "tms",
+  "overlay": true,
+  "name": "BANO",
+  "description": "French address registry or Base Adresses Nationale Ouverte",
+  "url": "https://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png",
+  "min_zoom": 12,
+  "max_zoom": 20,
+  "license_url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
+  "country_code": "FR",
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
+    "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL",
+    "required": true
+  }
+}

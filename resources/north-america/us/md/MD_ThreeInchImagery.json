@@ -1,0 +1,21 @@
+{
+  "id": "geodata.md.gov-MD_ThreeInchImagery",
+  "featureId": "geodata.md.gov-MD_ThreeInchImagery",
+  "type": "wms",
+  "name": "MD Three Inch Aerial Imagery",
+  "description": "Three Inch Resolution Imagery for the cities of Rockville, Gaithersburg and Annapolis",
+  "url": "https://geodata.md.gov/imap/services/Imagery/MD_ThreeInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=MD_ThreeInchImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 20,
+  "country_code": "US",
+  "available_projections": [
+    "EPSG:2248",
+    "EPSG:3857",
+    "EPSG:4326",
+    "EPSG:26985"
+  ],
+  "attribution": {
+    "url": "http://imap.maryland.gov/Pages/imagery-products.aspx",
+    "text": "DoIT, MD iMap, MDP",
+    "required": false
+  }
+}

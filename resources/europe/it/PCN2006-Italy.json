@@ -1,0 +1,11 @@
+{
+  "id": "PCN-Italy-2006",
+  "featureId": "PCN-Italy-2006",
+  "type": "wms",
+  "name": "PCN 2006 - Italy",
+  "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_06.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2006.33,OI.ORTOIMMAGINI.2006.32&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "IT",
+  "start_date": "2006",
+  "end_date": "2006",
+  "available_projections": ["EPSG:4326", "EPSG:3857"]
+}

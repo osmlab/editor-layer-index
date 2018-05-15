@@ -1,0 +1,11 @@
+{
+  "id": "kelowna_roads",
+  "featureId": "kelowna_roads",
+  "type": "tms",
+  "overlay": true,
+  "name": "Kelowna Roads overlay",
+  "url": "http://{switch:a,b,c,d}.tile.paulnorman.ca/kelowna_overlay/{zoom}/{x}/{y}.png",
+  "min_zoom": 9,
+  "max_zoom": 20,
+  "country_code": "CA"
+}

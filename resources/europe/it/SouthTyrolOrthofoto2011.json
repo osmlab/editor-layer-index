@@ -1,0 +1,17 @@
+{
+  "id": "South-Tyrol-Orthofoto2011",
+  "featureId": "South-Tyrol-Orthofoto2011",
+  "type": "tms",
+  "name": "South Tyrol Orthofoto 2011",
+  "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_OF_2011_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
+  "max_zoom": 18,
+  "license_url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+  "country_code": "IT",
+  "start_date": "2011",
+  "end_date": "2011",
+  "attribution": {
+    "url": "https://geoservices.buergernetz.bz.it/geokatalog",
+    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0",
+    "required": true
+  }
+}

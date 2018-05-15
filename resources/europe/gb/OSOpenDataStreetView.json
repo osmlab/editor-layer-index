@@ -1,0 +1,10 @@
+{
+  "id": "OS-OpenData_StreetView",
+  "featureId": "OS-OpenData_StreetView",
+  "type": "tms",
+  "name": "OS OpenData StreetView",
+  "url": "https://{switch:a,b,c}.os.openstreetmap.org/sv/{zoom}/{x}/{y}.png",
+  "min_zoom": 1,
+  "max_zoom": 18,
+  "country_code": "GB"
+}
