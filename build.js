@@ -165,6 +165,7 @@ function generateResources(tstrings, features) {
     return resources;
 }
 
+
 function validateFile(file, resource, schema) {
     var validationErrors = v.validate(resource, schema).errors;
     if (validationErrors.length) {
@@ -180,6 +181,7 @@ function validateFile(file, resource, schema) {
         process.exit(1);
     }
 }
+
 
 function prettifyFile(file, object, contents) {
     var pretty = prettyStringify(object);
