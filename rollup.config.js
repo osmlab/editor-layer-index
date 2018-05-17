@@ -8,6 +8,6 @@ export default {
         format: 'umd'
     },
     plugins: [
-        json()
+        json( { indent: '' })
     ]
 };
