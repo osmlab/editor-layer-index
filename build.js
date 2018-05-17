@@ -80,41 +80,6 @@ function generateResources(tstrings, features) {
     var resources = {};
     var files = {};
 
-    // one time conversion code - remove
-    // glob.sync(__dirname + '/resources/**/*.geojson').forEach(function(file) {
-    //     var contents = fs.readFileSync(file, 'utf8');
-    //     var resource = JSON.parse(contents);
-
-    //     resource = resource.properties;
-    //     var out = {};
-    //     out.id = resource.id;
-    //     out.featureId = resource.id;
-    //     if (/\/resources\/world/.test(file)) { delete out.featureId; }
-    //     if (resource.type !== undefined) out.type = resource.type;
-    //     if (resource.i18n !== undefined) out.i18n = resource.i18n;
-    //     if (resource.default !== undefined) out.default = resource.default;
-    //     if (resource.overlay !== undefined) out.overlay = resource.overlay;
-    //     if (resource.best !== undefined) out.best = resource.best;
-    //     if (resource.name !== undefined) out.name = resource.name;
-    //     if (resource.description !== undefined) out.description = resource.description;
-    //     if (resource.url !== undefined) out.url = resource.url;
-    //     if (resource.min_zoom !== undefined) out.min_zoom = resource.min_zoom;
-    //     if (resource.max_zoom !== undefined) out.max_zoom = resource.max_zoom;
-    //     if (resource.license_url !== undefined) out.license_url = resource.license_url;
-    //     if (resource.country_code !== undefined) out.country_code = resource.country_code;
-    //     if (resource.start_date !== undefined) out.start_date = resource.start_date;
-    //     if (resource.end_date !== undefined) out.end_date = resource.end_date;
-    //     if (resource.available_projections !== undefined) out.available_projections = resource.available_projections;
-    //     if (resource.attribution !== undefined) out.attribution = resource.attribution;
-    //     if (resource.icon !== undefined) out.icon = resource.icon;
-
-    //     var outfile = file.replace(/\.geojson$/i, '.json');
-    //     shell.rm('-f', outfile);
-    //     shell.exec('git mv ' + file + ' ' + outfile);
-
-    //     prettifyFile(outfile, out, '');
-    // });
-
     glob.sync(__dirname + '/resources/**/*.json').forEach(function(file) {
         var contents = fs.readFileSync(file, 'utf8');
         var resource = JSON.parse(contents);
@@ -125,6 +90,14 @@ function generateResources(tstrings, features) {
         if (files[resourceId]) {
             console.error(colors.red('Error - Duplicate resource id: ') + colors.yellow(resourceId));
             console.error('  ' + colors.yellow(files[resourceId]));
+            console.error('  ' + colors.yellow(file));
+            process.exit(1);
+        }
+
+        var url = resource.url;
+        if (/\{z\}/.test(url)) {
+            console.error(colors.red('Error - {z} found instead of {zoom} in tile url: '));
+            console.error('  ' + colors.yellow(url));
             console.error('  ' + colors.yellow(file));
             process.exit(1);
         }
