@@ -10,6 +10,7 @@
         "name": "LPI NSW Imagery",
         "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 21,
+        "min_zoom": 1, 
         "country_code": "AU",
         "type": "tms",
         "id": "NSW_LPI_Imagery",
