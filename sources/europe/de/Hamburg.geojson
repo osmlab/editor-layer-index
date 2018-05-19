@@ -1,10 +1,10 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "hamburg-40cm",
-        "url": "http://geodienste.hamburg.de/HH_WMS_DOP40?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "id": "hamburg-20cm", 
+        "url": "https://geodienste.hamburg.de/HH_WMS_DOP20?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "type": "wms",
-        "name": "Hamburg (40 cm)",
+        "name": "Hamburg (20 cm)", 
         "country_code": "DE",
         "available_projections": [
             "EPSG:31467",
