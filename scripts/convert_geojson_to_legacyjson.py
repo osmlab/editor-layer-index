@@ -66,7 +66,7 @@ args = parser.parse_args()
 features = []
 for file in args.files:
     with io.open(file, 'r') as f:
-        features.append(convert_json_source(args, json.load(f, parse_float=lambda x: str(round(float(x), 5)))))
+        features.append(convert_json_source(args, json.load(f, parse_float=lambda x: round(float(x), 5))))
 
 output = json.dumps(features, sort_keys=True, ensure_ascii=False, separators=(',', ':'))
 if sys.version_info.major == 2:
