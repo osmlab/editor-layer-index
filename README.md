@@ -5,9 +5,9 @@ The goal of this project is to maintain a canonical representation of the layers
 
 * [iD](https://github.com/openstreetmap/iD),
 * [Vespucci](http://vespucci.io/),
-* [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!)
-* [Potlatch 2](https://github.com/systemed/potlatch2)
-* [JOSM](https://josm.openstreetmap.de/) (optional),
+* [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!),
+* [Potlatch 2](https://github.com/systemed/potlatch2) and
+* [JOSM](https://josm.openstreetmap.de/) (optional)
 
 Both imagery and other raster data that is useful for mapping are within scope of the project.
 
@@ -24,6 +24,7 @@ If you are using iD, Potlatch 2, Vespucci or Go Map!!, you are already using thi
 
 For JOSM you can add `https://osmlab.github.io/editor-layer-index/imagery.xml` to the preference key `imagery.layers.sites` in advanced preferences. You probably want to remove the `https://josm.openstreetmap.de/maps` entry or you'll get the same layers listed twice.
 
+For any other usage, use https://osmlab.github.io/editor-layer-index/imagery.geojson.
 
 ## Layer Overview
 
