@@ -79,54 +79,43 @@ for filename in tqdm.tqdm(arguments.path):
                 raise ValidationError('Unknown license %s' % license)
 
         ## Check for license url. Too many missing to mark as required in schema.
-        try:
-            license_url = source['properties']['license_url']
-        except KeyError:
+        if 'license_url' not in source['properties']:
             logger.debug("Debug: {} has no license_url".format(filename))
 
         ## Check for big fat embedded icons
-        try:
+        if 'icon' in source['properties']:
             if source['properties']['icon'].startswith("data:"):
                 iconsize = len(source['properties']['icon'].encode('utf-8'))
                 spacesave += iconsize
-                logger.warning("{} icon should be disembedded to save {} KB".format(filename, round(iconsize/1024.0, 2)))
-        except KeyError:
-            pass
+                logger.debug("{} icon should be disembedded to save {} KB".format(filename, round(iconsize/1024.0, 2)))
 
         ## Validate that url has the tokens we expect
         params = []
-        ### tms: {zoom}, {x}, {y} or {-y}
+
+        ### tms
         if source['properties']['type'] == "tms":
-            try:
-                source['properties']['max_zoom']
-            except KeyError:
+            if not 'max_zoom' in source['properties']:
                 logger.warning("Missing max_zoom parameter in {}".format(filename))
-            try:
+            if 'min_zoom' in source['properties']:
                 if source['properties']['min_zoom'] == 0:
                     logger.warning("Useless min_zoom parameter in {}".format(filename))
-            except KeyError:
-                pass
             params = ["{zoom}", "{x}", "{y}"]
+
         ### wms: {proj}, {bbox}, {width}, {height}
         elif source['properties']['type'] == "wms":
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
+
         missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}")]
         if missingparams:
             raise ValidationError("Missing parameter in {}: {}".format(filename, missingparams))
 
-        # If we're not 'default' we must have a geometry.
+        # If we're not global we must have a geometry.
         # The geometry itself is validated by jsonschema
-        try:
-            source['properties']['default']
-        except KeyError:
+        if 'world' not in filename:
             try:
                 source['geometry']['type'] == "Polygon"
             except (TypeError, KeyError):
-                raise ValidationError("{} should have a valid geometry or be marked default".format(filename))
-
-
-
->>>>>>> Linter improvements: see #428
+                raise ValidationError("{} should have a valid geometry or be global".format(filename))
     except Exception as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))
