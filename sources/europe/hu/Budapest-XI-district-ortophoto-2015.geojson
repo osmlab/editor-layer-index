@@ -10,8 +10,7 @@
         "description": "5 cm resolution bald image",
         "available_projections": [
             "EPSG:4326",
-            "EPSG:23700",
-            "EPSG:900913"
+            "EPSG:23700"
         ],
         "url": "http://terinfo.ujbuda.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto2015_20160304&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofotók#Budapest_XI._ker.C3.BClet",
