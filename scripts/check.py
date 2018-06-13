@@ -36,7 +36,6 @@ def dict_raise_on_duplicates(ordered_pairs):
             d[k] = v
     return d
 
-<<<<<<< HEAD
 parser = ArgumentParser(description='Checks ELI sourcen for validity and common errors')
 parser.add_argument('path', nargs='+', help='Path of files to check.')
 parser.add_argument("-v", "--verbose", dest="verbose_count",
