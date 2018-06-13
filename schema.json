@@ -54,6 +54,19 @@
                     "type": "integer",
                     "minimum": 0
                 },
+                "permission_osm": {
+                    "description": "explicit/implicit permission by the owner for use in OSM",
+                    "type": "string",
+                    "enum": [
+                        "explicit",
+                        "implicit",
+                        "no"
+                    ]
+                },
+                "license": {
+                    "description": "The license for the imagery specified using a SPDX identifier",
+                    "type": "string"
+                },
                 "license_url": {
                     "description": "A URL for the license or permissions for the imagery",
                     "type": "string"
