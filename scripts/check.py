@@ -1,10 +1,4 @@
-import json, sys, io
-from jsonschema import validate, ValidationError
-import spdx_lookup
-import colorlog
-import tqdm
-from argparse import ArgumentParser
-
+#!/usr/bin/env python
 
 """
 usage: check.py [-h] [-v] path [path ...]
@@ -24,11 +18,29 @@ find sources -name \*.geojson | xargs python scripts/check.py -vv
 
 """
 
+import json
+import io
+from argparse import ArgumentParser
+from jsonschema import validate, ValidationError
+import spdx_lookup
+import colorlog
+import tqdm
+
+def dict_raise_on_duplicates(ordered_pairs):
+    """Reject duplicate keys."""
+    d = {}
+    for k, v in ordered_pairs:
+        if k in d:
+            raise ValidationError("duplicate key: %r" % (k,))
+        else:
+            d[k] = v
+    return d
+
 parser = ArgumentParser(description='Checks ELI sourcen for validity and common errors')
 parser.add_argument('path', nargs='+', help='Path of files to check.')
 parser.add_argument("-v", "--verbose", dest="verbose_count",
-                        action="count", default=0,
-                        help="increases log verbosity for each occurence.")
+                    action="count", default=0,
+                    help="increases log verbosity for each occurence.")
 arguments = parser.parse_args()
 logger = colorlog.getLogger()
 # Start off at Error, reduce by one level for each -v argument
@@ -39,20 +51,6 @@ logger.addHandler(handler)
 
 schema = json.load(io.open('schema.json', encoding='utf-8'))
 seen_ids = set()
-
-resolver = RefResolver('', None)
-validator = Draft4Validator(schema, resolver=resolver)
-
-
-def dict_raise_on_duplicates(ordered_pairs):
-    """Reject duplicate keys."""
-    d = {}
-    for k, v in ordered_pairs:
-        if k in d:
-           raise ValidationError("duplicate key: %r" % (k,))
-        else:
-           d[k] = v
-    return d
 
 borkenbuild = False
 spacesave = 0
@@ -65,10 +63,10 @@ for filename in tqdm.tqdm(arguments.path):
 
         ## jsonschema validate
         validate(source, schema)
-        id = source['properties']['id']
-        if id in seen_ids:
-            raise ValidationError('Id %s used multiple times' % id)
-        seen_ids.add(id)
+        sourceid = source['properties']['id']
+        if sourceid in seen_ids:
+            raise ValidationError('Id %s used multiple times' % sourceid)
+        seen_ids.add(sourceid)
 
         ## {z} instead of {zoom}
         if '{z}' in source['properties']['url']:
@@ -116,7 +114,7 @@ for filename in tqdm.tqdm(arguments.path):
                 source['geometry']['type'] == "Polygon"
             except (TypeError, KeyError):
                 raise ValidationError("{} should have a valid geometry or be global".format(filename))
-    except Exception as e:
+    except ValidationError as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))
 if spacesave > 0:
