@@ -12,6 +12,8 @@
         "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery.",
         "i18n": true,
         "url": "https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg",
+        "permission_osm": "explicit",
+        "license": "CC-BY-3.0",
         "license_url": "https://basemap.at/#sec-nutzung",
         "country_code": "AT",
         "icon": "https://www.basemap.at/images/logo_basemap.jpg",

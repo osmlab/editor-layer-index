@@ -1,5 +1,6 @@
 import json, sys, io
 from jsonschema import validate, ValidationError
+import spdx_lookup
 
 schema = json.load(io.open('schema.json', encoding='utf-8'))
 seen_ids = set()
@@ -24,6 +25,10 @@ for file in sys.argv[1:]:
         seen_ids.add(id)
         if '{z}' in source['properties']['url']:
             raise ValidationError('{z} found instead of {zoom} in tile url')
+        if 'license' in source['properties']:
+            license = source['properties']['license']
+            if not spdx_lookup.by_id(license):
+                raise ValidationError('Unknown license %s' % license)
         sys.stdout.write('.')
         sys.stdout.flush()
     except Exception as e:
