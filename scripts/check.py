@@ -1,5 +1,6 @@
 import json, sys, io
 from jsonschema import validate, ValidationError
+import spdx_lookup
 import colorlog
 import tqdm
 from argparse import ArgumentParser
@@ -72,6 +73,10 @@ for filename in tqdm.tqdm(arguments.path):
         ## {z} instead of {zoom}
         if '{z}' in source['properties']['url']:
             raise ValidationError('{z} found instead of {zoom} in tile url')
+        if 'license' in source['properties']:
+            license = source['properties']['license']
+            if not spdx_lookup.by_id(license):
+                raise ValidationError('Unknown license %s' % license)
 
         ## Check for license url. Too many missing to mark as required in schema.
         try:
@@ -121,6 +126,7 @@ for filename in tqdm.tqdm(arguments.path):
 
 
 
+>>>>>>> Linter improvements: see #428
     except Exception as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))
