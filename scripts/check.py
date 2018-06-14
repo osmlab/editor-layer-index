@@ -1,9 +1,13 @@
 import json, sys, io
-from jsonschema import validate, ValidationError
+from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
 import spdx_lookup
 
 schema = json.load(io.open('schema.json', encoding='utf-8'))
 seen_ids = set()
+
+resolver = RefResolver('', None)
+validator = Draft4Validator(schema, resolver=resolver)
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -18,7 +22,7 @@ def dict_raise_on_duplicates(ordered_pairs):
 for file in sys.argv[1:]:
     try:
         source = json.load(io.open(file, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
-        validate(source, schema)
+        validator.validate(source, schema)
         id = source['properties']['id']
         if id in seen_ids:
             raise ValidationError('Id %s used multiple times' % id)
