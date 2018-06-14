@@ -1,4 +1,7 @@
-var map = L.map('map').fitWorld();
+var map = L.map('map', {
+        minZoom: 0,
+        maxZoom: 23
+    }).fitWorld();
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
