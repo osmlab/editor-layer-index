@@ -21,7 +21,7 @@ find sources -name \*.geojson | xargs python scripts/check.py -vv
 import json
 import io
 from argparse import ArgumentParser
-from jsonschema import validate, ValidationError
+from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
 import spdx_lookup
 import colorlog
 import tqdm
@@ -52,6 +52,9 @@ logger.addHandler(handler)
 schema = json.load(io.open('schema.json', encoding='utf-8'))
 seen_ids = set()
 
+resolver = RefResolver('', None)
+validator = Draft4Validator(schema, resolver=resolver)
+
 borkenbuild = False
 spacesave = 0
 
@@ -62,7 +65,7 @@ for filename in tqdm.tqdm(arguments.path):
         source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
 
         ## jsonschema validate
-        validate(source, schema)
+        validator.validate(source, schema)
         sourceid = source['properties']['id']
         if sourceid in seen_ids:
             raise ValidationError('Id %s used multiple times' % sourceid)
