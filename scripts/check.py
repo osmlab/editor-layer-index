@@ -130,6 +130,11 @@ for filename in arguments.path:
                 raise ValidationError("{} should have a valid geometry or be global".format(filename))
             if not 'country_code' in source['properties']:
                 raise ValidationError("{} should have a country or be global".format(filename))
+        else:
+            if 'geometry' not in source:
+                ValidationError("{} should have null geometry".format(filename))
+            elif source['geometry'] != None:
+                ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
     except ValidationError as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))
