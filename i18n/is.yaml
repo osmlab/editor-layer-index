@@ -11,6 +11,7 @@ is:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Skilmálar og umsagnir
+      description: Útjaðar myndefnis og tökudagsetningar. Merkingar birtast við aðdráttarstig 13 og hærra.
       name: Eldri myndir frá DigitalGlobe (Premium Vintage)
     DigitalGlobe-Standard:
       attribution:
@@ -20,6 +21,7 @@ is:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Skilmálar og umsagnir
+      description: Útjaðar myndefnis og tökudagsetningar. Merkingar birtast við aðdráttarstig 13 og hærra.
       name: Eldri myndir frá DigitalGlobe (Standard Vintage)
     EsriWorldImagery:
       attribution:
@@ -77,6 +79,9 @@ is:
     US-TIGER-Roads-2017:
       description: Gult = Kortagögn í almenningseigu frá US Census þjóðskránni. Rautt = Gögn fundust ekki í OpenStreetMap
       name: TIGER vegir 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Vegur: Grænn útjaðar = óflokkað. Brúnn útjaðar = slóði. Yfirborð: möl = ljósbrún fylling, malbik = svart, hellur = grátt, jarðvegur = hvítt, steypa = blátt, gras = grænt. Árstíðabundið = hvítar rendur'
+      name: U.S. Forest vegayfirlag
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, þátttakendur í OpenStreetMap, CC by-SA 3.0
