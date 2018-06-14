@@ -24,7 +24,6 @@ from argparse import ArgumentParser
 from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
 import spdx_lookup
 import colorlog
-import tqdm
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -58,7 +57,7 @@ validator = Draft4Validator(schema, resolver=resolver)
 borkenbuild = False
 spacesave = 0
 
-for filename in tqdm.tqdm(arguments.path):
+for filename in arguments.path:
     try:
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
