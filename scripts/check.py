@@ -96,6 +96,8 @@ for filename in arguments.path:
         if source['properties']['type'] == "tms":
             if not 'max_zoom' in source['properties']:
                 ValidationError("Missing max_zoom parameter in {}".format(filename))
+            if 'available_projections' in source['properties']:
+                ValidationError("Senseless available_projections parameter in {}".format(filename))
             if 'min_zoom' in source['properties']:
                 if source['properties']['min_zoom'] == 0:
                     logger.warning("Useless min_zoom parameter in {}".format(filename))
@@ -103,6 +105,10 @@ for filename in arguments.path:
 
         ### wms: {proj}, {bbox}, {width}, {height}
         elif source['properties']['type'] == "wms":
+            if 'min_zoom' in source['properties']:
+                ValidationError("Senseless min_zoom parameter in {}".format(filename))
+            if 'max_zoom' in source['properties']:
+                ValidationError("Senseless max_zoom parameter in {}".format(filename))
             if not 'available_projections' in source['properties']:
                 ValidationError("Missing available_projections parameter in {}".format(filename))
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
