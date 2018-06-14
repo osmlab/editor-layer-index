@@ -77,10 +77,14 @@ for filename in arguments.path:
             license = source['properties']['license']
             if not spdx_lookup.by_id(license):
                 raise ValidationError('Unknown license %s' % license)
+        else:
+            logger.debug("{} has no license property".format(filename))
 
         ## Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
-            logger.debug("Debug: {} has no license_url".format(filename))
+            logger.debug("{} has no license_url".format(filename))
+        if 'attribution' not in source['properties']:
+            logger.debug("{} has no attribution".format(filename))
 
         ## Check for big fat embedded icons
         if 'icon' in source['properties']:
