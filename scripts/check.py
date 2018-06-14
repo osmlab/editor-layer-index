@@ -96,7 +96,7 @@ for filename in tqdm.tqdm(arguments.path):
         ### tms
         if source['properties']['type'] == "tms":
             if not 'max_zoom' in source['properties']:
-                logger.warning("Missing max_zoom parameter in {}".format(filename))
+                ValidationError("Missing max_zoom parameter in {}".format(filename))
             if 'min_zoom' in source['properties']:
                 if source['properties']['min_zoom'] == 0:
                     logger.warning("Useless min_zoom parameter in {}".format(filename))
