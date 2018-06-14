@@ -1,6 +1,6 @@
 var map = L.map('map', {
         minZoom: 0,
-        maxZoom: 23
+        maxZoom: 25
     }).fitWorld();
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
