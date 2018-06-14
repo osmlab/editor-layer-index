@@ -104,6 +104,8 @@ d3.json("imagery.geojson", function(error, imagery) {
                 url = url.replace(/{switch:(.*?)}/, '{s}');
                 testLayer = L.tileLayer(url, {
                     subdomains: domains,
+                    minZoom: 0,
+                    maxZoom: 25,
                     opacity: testLayerOpacity,
                     attribution: d.properties.attribution ?
                         '&copy; ' + (d.properties.attribution.url ?
@@ -126,6 +128,8 @@ d3.json("imagery.geojson", function(error, imagery) {
                     format: format,
                     version: version,
                     transparent: transparent,
+                    minZoom: 0,
+                    maxZoom: 25,
                     opacity: testLayerOpacity,
                     uppercase: true,
                     attribution: d.properties.attribution ?
