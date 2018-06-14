@@ -5,7 +5,9 @@
         "url": "https://ooc.openstreetmap.org/os7/{zoom}/{x}/{y}.jpg",
         "type": "tms",
         "name": "7th Series (OS7)",
-        "country_code": "GB"
+        "country_code": "GB",
+        "min_zoom": 6,
+        "max_zoom": 14
     },
     "geometry": {
         "type": "Polygon",
