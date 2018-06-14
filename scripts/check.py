@@ -103,6 +103,8 @@ for filename in arguments.path:
 
         ### wms: {proj}, {bbox}, {width}, {height}
         elif source['properties']['type'] == "wms":
+            if not 'available_projections' in source['properties']:
+                ValidationError("Missing available_projections parameter in {}".format(filename))
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
 
         missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}")]
@@ -116,6 +118,8 @@ for filename in arguments.path:
                 source['geometry']['type'] == "Polygon"
             except (TypeError, KeyError):
                 raise ValidationError("{} should have a valid geometry or be global".format(filename))
+            if not 'country_code' in source['properties']:
+                raise ValidationError("{} should have a country or be global".format(filename))
     except ValidationError as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))

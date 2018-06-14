@@ -82,7 +82,7 @@
                     "type": "string"
                 },
                 "country_code": {
-                    "description": "The ISO 3166-1 alpha-2 two letter country code in upper case",
+                    "description": "The ISO 3166-1 alpha-2 two letter country code in upper case. Use ZZ for unknown or multiple.",
                     "type": "string",
                     "pattern": "^[A-Z]{2}$"
                 },
