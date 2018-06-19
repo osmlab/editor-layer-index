@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Extracts imagery names for i18n"""
 import io
 import json
@@ -22,11 +23,13 @@ for file in sys.argv[1:]:
                 if 'text' in attr:
                     data[layer_id]['attribution']['text'] = attr['text']
 
-print(yaml.safe_dump(
+output = yaml.safe_dump(
     {'en': { 'imagery': data }},
     allow_unicode=True,
     default_flow_style=False,
     default_style='',
-    encoding='utf-8',
     width=99999
-))
+)
+if sys.version_info.major == 2:
+    output = output.encode('utf8')
+print(output)
