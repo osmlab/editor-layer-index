@@ -115,7 +115,7 @@ for imagery in imageries:
         entry['geometry']['type'] = 'Polygon'
         entry['geometry']['coordinates'] = rings
 
-    dir = os.path.join(sys.argv[2], properties['country_code']) if 'country_code' in properties else sys.argv[2]
+    dir = os.path.join(sys.argv[2], properties['country_code'].lower()) if 'country_code' in properties else sys.argv[2]
     try:
         os.mkdir(dir)
     except OSError:
