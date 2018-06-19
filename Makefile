@@ -1,5 +1,5 @@
 ALL = imagery.geojson imagery.json imagery.xml i18n/en.yaml
-SOURCES = $(shell find sources -type f -name '*.geojson' | LC_ALL="C" sort)
+SOURCES = $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
 TX := $(shell which tx)
 
