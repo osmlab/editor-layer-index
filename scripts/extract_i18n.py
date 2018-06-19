@@ -23,13 +23,11 @@ for file in sys.argv[1:]:
                 if 'text' in attr:
                     data[layer_id]['attribution']['text'] = attr['text']
 
-output = yaml.safe_dump(
+print(yaml.safe_dump(
     {'en': { 'imagery': data }},
     allow_unicode=True,
     default_flow_style=False,
     default_style='',
+
     width=99999
-)
-if sys.version_info.major == 2:
-    output = output.encode('utf8')
-print(output)
+))
