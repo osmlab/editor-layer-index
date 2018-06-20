@@ -115,7 +115,7 @@ for imagery in imageries:
         entry['geometry']['type'] = 'Polygon'
         entry['geometry']['coordinates'] = rings
     else:
-        raise
+        print("Entry {} doesn't have a geometry".format(properties['name']))
 
     if not os.path.exists(sys.argv[2]):
         os.makedirs(sys.argv[2])
