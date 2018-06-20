@@ -1,17 +1,17 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "openseamap",
-    "name": "OpenSeaMap",
-    "type": "tms",
-    "url": "https://tiles.openseamap.org/seamark/{zoom}/{x}/{y}.png",
-    "overlay": true,
-    "attribution": {
-      "text": "© OpenStreetMap contributors, CC-BY-SA",
-      "url": "https://www.openstreetmap.org/copyright",
-      "required": true
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+            "url": "https://www.openstreetmap.org/copyright"
+        },
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenSeaMap.png",
+        "id": "openseamap",
+        "max_zoom": 18,
+        "name": "OpenSeaMap",
+        "overlay": true,
+        "type": "tms",
+        "url": "https://tiles.openseamap.org/seamark/{zoom}/{x}/{y}.png"
     },
-    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACa0lEQVQoz2P4jw0wwAAWKSAWM7GQsHaSsHOVtHfnU9XkEhHnl1MSUdMRkFcBsnllFcVMLMXNrMWMzaAaZEOSNbpWqbUsFjRz0ghOStty2TSpmFdSTs7KNXjlCd2Ucl51fZW62TJBCXANSUANfAbWnu0LcvbcSd9506myn09aXsMvNnj1ab/lx+26lgL1SPlGQzXIBCUqlfQruoUAVWftuqUbnAg0npWLm0dCVsLIxmfZMfdFh3Tz2wR0TOAa4kWdAkMmr4YYH75wn2fPMh5JWevKfqfeFZ5LjrgsPGg/dy+3nAo0HGQC4vhUdEDG776duv16wpYr0Rsu8EjIuE/ZCDHeaf5+29m7Ra3dYRqCkkT0LSDGJ229GrvpUsT681yikk59K+HGW83aJReaDtUgF5EhqGUMNF7bLzp2/Tmg8WFrz3KJSti2zndffBhovLRrsFH7YjEHX5iG6BwhC5eYJQfkzB1FNfT9Z28PWX2aU1jcsm66y/z9oiZ27MLiZtO2cSuqQzXIx+ZJReTqxuZr+ERy8AtpBid5zNjKISSqnVSm4BvDKS7Np6qrUdLLq6IFDSW5qGyNzpW8WiYWuY0+0zZJWzhxCokxsbCycvMJ6ZjqV09VSS7nUdeXcPaDRVxEOjDiVOvn8mmb6qdWBiw/5jFnF4egqHZqpd2cPZp5rdxKWsrlk6V9o+AxnQLUAETqHcvF/RP51PTFrT1kvSLF7Xx4NQxFHAPUmhcCZWUCYmGJz8pRLipLNjxdNixNNiwVaKF0YIKkT7RsVLZiZq1CYgnQzUBZMXM7qAYRRTkgQk7DEBERRVlhRVk0KQAitU6ZgB+H8gAAAABJRU5ErkJggg==",
-    "max_zoom": 18
-  }
+    "type": "Feature"
 }

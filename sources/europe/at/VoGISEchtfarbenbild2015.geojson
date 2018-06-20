@@ -1,29 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "start_date": "2015",
-        "end_date": "2015",
-        "id": "vogis.cnv.at-ef2015_10cm",
-        "name": "VoGIS: Echtfarbenbild 2015 (10cm)",
-        "type": "wms",
-        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2015_10cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "country_code": "AT",
-        "permission_osm": "explicit",
-        "license": "CC-BY-3.0",
-        "license_url": "http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:3857",
-            "EPSG:31254",
-            "EPSG:31284",
-            "EPSG:32632",
-            "EPSG:25832",
-            "EPSG:21781"
-        ],
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAD1BMVEUAAACEAgT8AgQEAgSEgoTQjzHEAAAAAXRSTlMAQObYZgAAAHJJREFUeF6ljVEKgzAQRCftBUQv0KwXML7cwPvfqQwJtIVqi76fHR7DrKSUJY1DD84xKEVuwcT40C1HC18bqQDTBKWosUZn+VvQ4UTjkoCYWd/Eco9ZLwEWggsNC9CPL3C0UauFz44wFh941Bw0tm1PPAGCUydahBcw6wAAAABJRU5ErkJggg=="
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -147,6 +123,30 @@
                     47.4847893
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:31254",
+            "EPSG:31284",
+            "EPSG:32632",
+            "EPSG:25832",
+            "EPSG:21781"
+        ],
+        "country_code": "AT",
+        "end_date": "2015",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
+        "id": "vogis.cnv.at-ef2015_10cm",
+        "license": "CC-BY-3.0",
+        "license_url": "http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm",
+        "name": "VoGIS: Echtfarbenbild 2015 (10cm)",
+        "permission_osm": "explicit",
+        "start_date": "2015",
+        "type": "wms",
+        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2015_10cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    "type": "Feature"
 }

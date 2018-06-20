@@ -1,16 +1,16 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "public_transport_oepnv",
-    "name": "Public Transport (ÖPNV)",
-    "type": "tms",
-    "url": "https://tile.memomaps.de/tilegen/{zoom}/{x}/{y}.png",
-    "attribution": {
-      "text": "© OpenStreetMap contributors, CC-BY-SA",
-      "url": "https://öpnvkarte.de/",
-      "required": true
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+            "url": "https://\u00f6pnvkarte.de/"
+        },
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/PublicTransport(PNV).png",
+        "id": "public_transport_oepnv",
+        "max_zoom": 18,
+        "name": "Public Transport (\u00d6PNV)",
+        "type": "tms",
+        "url": "https://tile.memomaps.de/tilegen/{zoom}/{x}/{y}.png"
     },
-    "icon": "data:image/png;base64,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",
-    "max_zoom": 18
-  }
+    "type": "Feature"
 }

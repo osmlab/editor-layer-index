@@ -1,16 +1,16 @@
 {
-    "type": "Feature",
+    "geometry": null,
     "properties": {
-        "license_url": "https://wiki.openstreetmap.org/wiki/Bing_Maps",
-        "id": "Bing",
-        "name": "Bing aerial imagery",
+        "default": true,
         "description": "Satellite and aerial imagery.",
         "i18n": true,
-        "url": "https://www.bing.com/maps",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/Bing.png",
+        "id": "Bing",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Bing_Maps",
         "max_zoom": 22,
-        "default": true,
+        "name": "Bing aerial imagery",
         "type": "bing",
-        "icon": "data:image/png;base64,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"
+        "url": "https://www.bing.com/maps"
     },
-    "geometry": null
+    "type": "Feature"
 }

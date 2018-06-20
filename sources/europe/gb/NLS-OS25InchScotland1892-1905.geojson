@@ -1,23 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS-OS-25inch-hist",
-        "attribution": {
-            "url": "https://geo.nls.uk/maps",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "NLS - OS 25-inch (Scotland), 1892-1905",
-        "url": "https://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png",
-        "start_date": "1892",
-        "end_date": "1906",
-        "max_zoom": 18,
-        "country_code": "GB",
-        "type": "tms",
-        "icon": "data:image/png;base64,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"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -1659,6 +1641,24 @@
                     59.5626284
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://geo.nls.uk/maps"
+        },
+        "country_code": "GB",
+        "end_date": "1906",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS-OS-25inch-hist",
+        "max_zoom": 18,
+        "name": "NLS - OS 25-inch (Scotland), 1892-1905",
+        "start_date": "1892",
+        "type": "tms",
+        "url": "https://geo.nls.uk/mapdata2/os/25_inch/scotland_1/{zoom}/{x}/{y}.png"
+    },
+    "type": "Feature"
 }

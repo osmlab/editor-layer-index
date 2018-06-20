@@ -1,19 +1,19 @@
 {
-    "type": "Feature",
+    "geometry": null,
     "properties": {
-        "id": "OSM_Inspector-Geometry",
-        "name": "OSM Inspector: Geometry",
-        "i18n": true,
         "attribution": {
-            "url": "https://tools.geofabrik.de/osmi",
-            "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-            "required": true
+            "required": true,
+            "text": "\u00a9 Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+            "url": "https://tools.geofabrik.de/osmi"
         },
-        "overlay": true,
-        "url": "https://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png",
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OSMIHighways.png",
+        "id": "OSM_Inspector-Geometry",
         "max_zoom": 18,
+        "name": "OSM Inspector: Geometry",
+        "overlay": true,
         "type": "tms",
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAB5UlEQVQ4y4WTwWsTURDGfy8W1yYmXZOqtGJJFyGw6KF7CEigwYuS0kthrYUi4i0iORS9BU9hQdA/ILcixVBrwENKLz1FUBB0wWOwYFAqxUNYTZq6BfM8yC5d05iBObz3vfnmm3kz4sqDh/zP7szdlG5I+Of1zQ1xFA8xxI4GH2cjg4Cl+UUJcC4SJq6c7FPkKRlIoPQk0+NnuDwxHrhvuYd83+8OVuBlHouE/eDXzW8+/qO9DyHB0vyiVHoy2INSNiPdeg23XuPs3icmIoofPKXGmFJjjEUjgf4EFNi2TT6fJ5FI0Gg0ePrkMRfnbvn41QsJgEAJAQUdbYZyuQxAcvoSpmnydesFAF+cn8f2KUCw/fGt6GgzWJbF706bVCoFwGxyktnk5N8kB79QepL1zQ3xbOulCJWyGbkQHZWlbEZ6JIZhBDI1nQ5Np8P2zi4t9zAwGyNe3QALti11XSedTvsPYrEY73f3Bk+irusAnI6qrNy7z43sNUbFCQC6LYdCoYBbr/k1/2sh690HUalUaH7eIRxXA+6RFItF3HqN6+dP9REIb5lK2Yy0bdsHDMMgl8vRbTkAhOMqlmVhmibLq2ui7xsf1d+IV+0D3zVNw7KsPiXVapXnd2/Lodu4vLomTNMcSvIHY6bDkqJtEqIAAAAASUVORK5CYII="
+        "url": "https://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png"
     },
-    "geometry": null
+    "type": "Feature"
 }
