@@ -1,5 +1,5 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
 	"id": "orthos.dhses.ny.gov_latest",
 	"available_projections": [
@@ -7,7 +7,7 @@
 	    "EPSG:4326",
 	    "EPSG:120100"
 	],
-	"url": "http://www.orthos.dhses.ny.gov/arcgis/services/Latest/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3,4&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+	"url": "https://orthos.dhses.ny.gov/arcgis/services/Latest/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3,4&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
 	"type" : "wms",
 	"name" : "NYS Orthos Online",
 	"attribution": {
