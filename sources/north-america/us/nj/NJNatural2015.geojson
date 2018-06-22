@@ -27,7 +27,8 @@
     "url": "https://geodata.state.nj.us/imagerywms/Natural2015?FORMAT=image/png&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&WIDTH={width}&HEIGHT={height}&LAYERS=Natural2015&BBOX={bbox}"
   },
   "geometry": {
-      "coordinates": [
+    "coordinates": [
+      [
         [
           -74.86599,
           40.08543
@@ -340,7 +341,8 @@
           -74.86599,
           40.08543
         ]
-      ],
+      ]
+    ],
     "type": "Polygon"
   }
 }
