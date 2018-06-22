@@ -1015,8 +1015,12 @@
         "country_code": "AT",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
         "id": "vogis.cnv.at-DGM",
+        "attribution": {
+            "text": "Datenquelle: Land Vorarlberg \u2013 data.vorarlberg.gv.at",
+            "url": "http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
+        },
+        "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "license": "CC-BY-3.0",
-        "license_url": "http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm",
         "name": "VoGIS: DGM (Terrain model)",
         "permission_osm": "explicit",
         "type": "wms",
