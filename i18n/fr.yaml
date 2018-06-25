@@ -1,12 +1,23 @@
 fr:
   imagery:
+    AGIV:
+      attribution:
+        text: Orthophoto la plus récente de la Flandre © AGIV
+      name: Images aériennes AGIV les plus récentes de la Flandre
+    AGIV10cm:
+      attribution:
+        text: Orthophoto de la Flandre © AGIV
+      name: Images aériennes 10cm AGIV de la Flandre 2013-2015
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Flandres © AGIV
+      name: AGIV Flandres GRB
     Bing:
       description: Images satellite et aérienne.
       name: Images aériennes Bing
     DigitalGlobe-Premium:
       attribution:
         text: Termes & commentaires
-      description: Images satellite DigitalGlobe premium
       name: Images DigitalGlobe premium
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -16,7 +27,6 @@ fr:
     DigitalGlobe-Standard:
       attribution:
         text: Termes & commentaires
-      description: Images satellite DigitalGlobe standard
       name: Images DigitalGlobe standard
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -71,6 +81,10 @@ fr:
       attribution:
         text: © Geofabrik GmbH, contributeurs OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Étiqueter'
+    SPW_ORTHO_LAST:
+      name: Imagerie aérienne SPW(allonie) la plus récente
+    SPW_PICC:
+      name: Imagerie numérique SPW(allonie) PICC
     US-TIGER-Roads-2012:
       name: Données géographiques et topologiques intégrées et encodées 2012
     US-TIGER-Roads-2014:
@@ -82,6 +96,22 @@ fr:
     US_Forest_Service_roads_overlay:
       description: 'Voies : en vert route non classifiée, en marron piste. Surface : les graviers sont représentés par un remplissage marron, l''asphalte par du noir, les pavés par du gris, la terre par du blanc, le béton par du bleu, l''herbe par du vert. Les voies saisonnières ont des barres blanches.'
       name: Surcouche des routes forestières états-uniennes
+    UrbISOrtho2016:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2017
+    UrbisAdmFR:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, contributeurs OpenStreetMap, CC by-SA 3.0
@@ -138,6 +168,11 @@ fr:
       attribution:
         text: © contributeurs OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (style allemand)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
+      description: Numérisation de ´Economic maps´ de 1950-1980
+      name: Carte économique (historique) de Lantmäteriet
     qa_no_address:
       attribution:
         text: Simon Poole, données © contributeurs OpenStreetMap
@@ -158,3 +193,33 @@ fr:
       attribution:
         text: Cartes © Thunderforest, données © contributeurs OpenStreetMap
       name: Thunderforest Landscape
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau ferroviaire suédois, y compris les embranchements
+      name: Réseau ferroviaire Trafikverket
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau ferroviaire suédois avec plusieurs possibilités pour les couches
+      name: Options pour le réseau ferroviaire Trafikverket
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau routier suédois NVDB
+      name: Réseau routier Trafikverket
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+      description: 'Détails supplémentaires pour la NVDB suédoise : numérotation des routes, ralentisseurs, aires de repos, arrêts de bus, tunnels, radars'
+      name: Suppléments au réseau routier Trafikverket
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Noms des rues de la NVDB suédoise
+      name: Noms des rues du Trafikverket
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau routier de la NVDB suédoise avec plusieurs possibilités pour les couches
+      name: Options pour le réseau routier Trafikverket
