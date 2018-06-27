@@ -327,9 +327,10 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/URBIS2015aerialimagery.png",
         "id": "URBISnl2013",
         "name": "URBISnl numerical imagery (2013)",
+        "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf",
         "start_date": "2013",
         "type": "wms",
-        "url": "https://www.gis.irisnet.be/arcgis/rest/services/basemap/urbisNL/MapServer/export?f=image&format=png8&transparent=False&SRS={proj}&bboxSR=3857&imageSR=3857&bbox={bbox}&size={width},{height}"
+        "url": "https://gis.irisnet.be/arcgis/rest/services/basemap/urbisNL/MapServer/export?f=image&format=png8&transparent=False&SRS={proj}&bboxSR=3857&imageSR=3857&bbox={bbox}&size={width},{height}"
     },
     "type": "Feature"
 }
