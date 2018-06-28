@@ -2,9 +2,9 @@
   "type": "Feature",
   "properties": {
     "id": "Berlin-2016",
-    "name": "Berlin aerial photograph 2016",
-    "type": "wms",
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_rgb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "name": "Berlin aerial photography 2016",
+    "type": "tms",
+    "url": "https://tiles.codefor.de/berlin-2016/{z}/{x}/{y}.png",
     "start_date": "2016",
     "end_date": "2016",
     "country_code": "DE",
