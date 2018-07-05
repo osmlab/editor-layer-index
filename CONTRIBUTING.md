@@ -15,7 +15,7 @@ See [schema.json](schema.json) for the full list of available properties.
 
 ##### Source URL
 
-The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles.
+The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles. Whenever possible, use https URLs.
 
 Supported TMS tokens:
 - `{zoom}`, `{x}`, `{y}` for Z/X/Y tile coordinates
