@@ -6,13 +6,14 @@
             "text": "© Jacobs Group (Australia) Pty Ltd and Australian Capital Territory",
             "required": true
         },
-        "license_url": "https://wiki.openstreetmap.org/wiki/File:ACT%20Government%2020180314%20Permission%20to%20Incorporate%20CCBY%20data%20into%20OSM.PDF",
+        "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/act/ACTmapi-Imagery.PDF",
+        "license": "CC-BY-4.0",
         "name": "ACTmapi Imagery 2018",
         "available_projections": [
             "EPSG:4326",
             "EPSG:28355"
         ],
-        "url": "http://data.actmapi.act.gov.au/arcgis/services/actmapi/imagery2018mga/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://data.actmapi.act.gov.au/arcgis/services/actmapi/imagery2018mga/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "best": true,
         "overlay": false,
         "start_date": "2018-03-19",
