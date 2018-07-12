@@ -192,7 +192,8 @@
     },
     "properties": {
         "available_projections": [
-            "EPSG:3857"
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "country_code": "BE",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/TECbusstops.png",
@@ -202,7 +203,7 @@
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
         "type": "wms",
-        "url": "https://geodata.tec-wl.be/arcgis/rest/services/Poteaux/MapServer/export?f=image&format=png8&transparent=True&SRS={proj}&bboxSR=3857&imageSR=3857&bbox={bbox}&size={width},{height}"
+        "url": "https://geodata.tec-wl.be/arcgis/services/Poteaux/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "type": "Feature"
 }
