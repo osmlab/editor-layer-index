@@ -106,7 +106,8 @@
                 },
                 "overlay": {
                     "description": "'true' if tiles are transparent and can be overlaid on another source",
-                    "type": "boolean"
+                    "type": "boolean",
+                    "default": "false"
                 },
                 "available_projections": {
                     "type": "array",
