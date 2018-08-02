@@ -4,7 +4,7 @@
     "id": "Ministerio-de-Energia-y-Mineria-wms",
     "name": "Ministry of Energy and Mining (WMS)",
     "type": "wms_endpoint",
-    "url": "https://sig.se.gob.ar/cgi-bin/mapserv6?map=/var/www/html/visor/geofiles/map/mapase.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",
+    "url": "http://sig.se.gob.ar/cgi-bin/mapserv6?map=/var/www/html/visor/geofiles/map/mapase.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",
     "country_code": "AR",
     "available_projections": [
       "EPSG:4326",
@@ -12,7 +12,7 @@
     ],
     "attribution": {
       "text": "Ministerio de Energía y Minería",
-      "url": "https://sig.se.gob.ar/geoportal"
+      "url": "http://sig.se.gob.ar/geoportal"
     },
     "max_zoom": 20,
     "min_zoom": 1,
