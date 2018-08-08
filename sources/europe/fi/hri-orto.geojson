@@ -16,13 +16,11 @@
                 "description": "Ortophotos from Helsinki Region Infoshare",
                 "icon": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/hri_logo.png",
                 "id": "hri-orto",
-                "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=710304#p710304",
+                "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
                 "max_zoom": 19,
                 "name": "HRI Orthophoto",
-                "tile_size": 512,
                 "type": "wms",
                 "url": "https://kartta.hsy.fi/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=taustakartat_ja_aluejaot:Ortoilmakuva_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-                "valid-georeference": true
             },
             "geometry": {
                 "type": "Polygon",
