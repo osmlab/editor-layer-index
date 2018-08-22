@@ -3,7 +3,7 @@
     "properties": {
         "id": "GeoPortal_DF_2017",
         "name": "GeoPortal DF 2017",
-        "overlay": false,
+        "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
         "url": "https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/PLEIADES_2017/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
         "start_date": "2017",
@@ -11,10 +11,11 @@
         "country_code": "BR",
         "attribution": {
             "text": "GeoPortal DF",
-            "required": false
+            "required": false,
+            "url": "http://www.geoportal.segeth.df.gov.br/"
         },
         "type": "wms",
-        "description": "GeoPortal - Infraestrutura de Dados Espaciais do Distrito Federal"
+        "description": "Satellite imagery"
     },
     "geometry": {
         "type": "Polygon",
