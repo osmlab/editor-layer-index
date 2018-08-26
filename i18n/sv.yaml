@@ -7,7 +7,7 @@ sv:
     AGIV10cm:
       attribution:
         text: Ortofoto Flandern © AGIV
-      name: AGIV Flandern 2013-2015 flygfoton 10cm
+      name: AGIV Flandern 2013–2015 flygfoton 10 cm
     AGIVFlandersGRB:
       attribution:
         text: GRB Flandern © AGIV
@@ -18,7 +18,7 @@ sv:
     DigitalGlobe-Premium:
       attribution:
         text: Villkor & återkoppling
-      description: Premium DigitalGlobe-satellitfoton.
+      description: DigitalGlobe-Premium är ett mosaik som består av DigitalGlobes baskarta med valda regioner fyllda med +Vivid eller anpassade område med intressanta flygfoton, 50 cm upplösning eller bättre och uppdateras oftare med fortlöpande uppdateringar.
       name: DigitalGlobe Premium-bilder
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -28,7 +28,7 @@ sv:
     DigitalGlobe-Standard:
       attribution:
         text: Villkor & återkoppling
-      description: Standard DigitalGlobe-satellitfoton.
+      description: DigitalGlobe-Standard är en kuraterad bildserie som täcker 86% av jordens landmassa, med 30–60 cm upplösning där den är tillgänglig och Landsat för övrig yta. Medelåldern är 2,31 år och vissa områden uppdaterade 2 gånger per år.
       name: DigitalGlobe Standard-bilder
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -100,19 +100,19 @@ sv:
       name: Bildlager för Skogsvägar i USA
     UrbISOrtho2016:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© - Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© - Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
     UrbisAdmFR:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© - Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© - Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -148,6 +148,21 @@ sv:
       attribution:
         text: © OpenStreetMaps bidragsgivare
       name: Vandring & cykel
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Kelkkareitit.fi snöskoterleder från OSM (Nordisk täckning)
+      name: Bildlager med nordiska skoterleder
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mosaik av svenska ortofoton från perioden 1955–1965. Äldre och yngre bilder kan förekomma.
+      name: Lantmäteriets historiska ortofoton 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mosaik av svenska ortofoton från perioden 1970–1980. Är under uppbyggnad.
+      name: Lantmäteriets historiska ortofoton 1975
     mapbox_locator_overlay:
       attribution:
         text: Villkor & återkoppling
@@ -173,8 +188,8 @@ sv:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
-      description: Inskanning av den Ekonomiska kartan från ca 1950–1980
-      name: Lantmäteriets Ekonomiska karta (historisk)
+      description: Inskanning av "Ekonomisk karta" från ungefär 1950–1980
+      name: Lantmäteriets Ekonomiska karta 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMaps bidragsgivare
@@ -183,6 +198,11 @@ sv:
       attribution:
         text: '© Plattor: skobbler Kartdata: OpenStreetMaps contributors'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Snöskoterleder
+      name: Snöskoterkarta, Sverige
     stamen-terrain-background:
       attribution:
         text: 'Kartplattor av Stamen Design, under CC BY 3.0. Data från OpenStreetMap, under ODbL '
@@ -218,7 +238,7 @@ sv:
     trafikverket-vagnat-navn:
       attribution:
         text: © Trafikverket, CC0
-      description: Svenska nationella vägdatabasen, NVDB - Gatunamn
+      description: Svenska nationella vägdatabasen, NVDB – Gatunamn
       name: Trafikverkets gaturnamn
     trafikverket-vagnat-option:
       attribution:

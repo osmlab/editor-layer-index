@@ -18,7 +18,7 @@ zh_TW:
     DigitalGlobe-Premium:
       attribution:
         text: 使用條款與意見回饋
-      description: Premium DigitalGlobe 衛星圖
+      description: 'DigitalGlobe-Premium 是以 DigitalGlobe 底圖鑲嵌 +Vivid，或是局部區域有興趣的影像，有 50 公分或更高解析度，以及更新更頻繁。 '
       name: DigitalGlobe Premium 空照圖
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -28,7 +28,7 @@ zh_TW:
     DigitalGlobe-Standard:
       attribution:
         text: 使用條款與意見回饋
-      description: Standard DigitalGlobe 衛星圖
+      description: DigitalGlobe-Standard  累積全球陸地 86% 的影像，有影像的部分具有 30-60 公分解析度，部分用 Ladnsat 補充。平均的影像年齡是 2.31 年，有些地方一年更新兩次。
       name: DigitalGlobe Standard 空照圖
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -148,6 +148,21 @@ zh_TW:
       attribution:
         text: © OpenStreetMap 貢獻者
       name: 健行與自行車
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: 來自 OSM 的 Kelkkareitit.fi 雪車賽道（包含北歐）
+      name: 北歐雪車覆蓋層
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: 瑞典自1955-1965的正射影像馬賽克。可能會同時出現較舊與較新的照片。
+      name: Lantmäteriet 歷史正射影像 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: 瑞典自1970-1980的正射影像馬賽克。正在建構中。
+      name: Lantmäteriet 歷史正射影像 1975
     mapbox_locator_overlay:
       attribution:
         text: 使用條款與意見回饋
@@ -173,8 +188,8 @@ zh_TW:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
-      description: 掃描 1950-1980 的「經濟地圖」
-      name: Lantmäteriet 經濟地圖（歷史地圖）
+      description: 掃描「經濟地圖」1950-1980
+      name: Lantmäteriet 經濟地圖 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole，資料 ©OpenStreetMap 貢獻者
@@ -183,6 +198,11 @@ zh_TW:
       attribution:
         text: '© 圖磚：skobbler 圖資：OpenStreetMap 貢獻者'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Snowmobile 路徑
+      name: Snowmobile 地圖瑞典
     stamen-terrain-background:
       attribution:
         text: Stamen Design 的圖磚，以 CC BY 3.0 授權。資料自 OpenStreetMap 處取得，以 ODbL 授權

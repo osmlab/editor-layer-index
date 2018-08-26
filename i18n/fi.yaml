@@ -1,7 +1,7 @@
 fi:
   imagery:
     Bing:
-      description: Satelliitti- ja ilmakuvat.
+      description: Satelliitti- ja ilmakuvat
       name: Bing-ilmakuvat
     DigitalGlobe-Premium:
       attribution:
@@ -34,7 +34,7 @@ fi:
     Mapbox:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Satelliitti- ja ilmakuvat.
+      description: Satelliitti- ja ilmakuvat
       name: Mapbox-satelliittikuvat
     OSM_Inspector-Addresses:
       attribution:
@@ -107,10 +107,22 @@ fi:
       attribution:
         text: © OpenStreetMapin tekijät
       name: Vaellus ja pyöräily
+    kelkkareitit:
+      description: Kelkkareitit.fi-moottorikelkkareitit Pohjoismaissa
+      name: Pohjoismaiset moottorikelkkareitit
+    lantmateriet-orto1960:
+      attribution:
+        text: © Maanmittauslaitos, CC0
+      name: Maanmittauslaitoksen historiallinen ortokuva vuodelta 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Maanmittauslaitos, CC0
+      name: Maanmittauslaitoksen historiallinen ortokuva vuodelta 1975
     mapbox_locator_overlay:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Korostaa tärkeimpiä kohteita.
+      description: Näyttää merkittävimmät karttakohteet kauas loitonnettaessa
+      name: Karkean sijainnin lisänäkymä
     openpt_map:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
@@ -131,6 +143,7 @@ fi:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
+      name: Maanmittauslaitoksen talouskartta 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, aineisto ©OpenStreetMapin tekijät
@@ -138,6 +151,9 @@ fi:
     skobbler:
       attribution:
         text: '© Karttakuvat: skobbler Kartta-aineisto: OpenStreetMapin tekijät'
+    skoterleder:
+      description: Moottorikelkkareitit
+      name: Ruotsin moottorikelkkareitit
     tf-cycle:
       attribution:
         text: Kartat © Thunderforest, Aineisto © OpenStreetMapin tekijät
