@@ -7,7 +7,7 @@
             "required": false
         },
         "name": "Latest available ortho geoportail.lu",
-        "url": "http://{switch:wmts1,wmts2}.geoportail.lu/opendata/wmts/ortho_latest/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
+        "url": "https://{switch:wmts1,wmts2}.geoportail.lu/opendata/wmts/ortho_latest/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 20,
         "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
         "country_code": "LU",
