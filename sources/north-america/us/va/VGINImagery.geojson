@@ -2,9 +2,9 @@
         "type": "Feature",
         "properties": {
             "id": "VGIN-Imagery_WM",
-            "name": "Virginia Imagery Service - Most Recent, WGS Web Mercator (VBMP)",
+            "name": "Virginia Imagery Service - Most Recent",
             "end_date": "2018-08",
-            "url": "https://gismaps.vita.virginia.gov/arcgis/rest/services/MostRecentImagery/MostRecentImagery_WGS/MapServer/tile/{zoom}/{y}/{x}",
+            "url": "http://tileify-ags.herokuapp.com/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vita.virginia.gov%2Farcgis%2Frest%2Fservices%2FMostRecentImagery%2FMostRecentImagery_WGS%2FMapServer&transparent=true&layers=show%3A0",
             "max_zoom": 20,
             "country_code": "US",
             "attribution": {

@@ -2,9 +2,9 @@
         "type": "Feature",
         "properties": {
             "id": "VGIN-BuildingFootprints_WM",
-            "name": "Virginia Building Footprint Map Service",
+            "name": "Virginia Building Footprints",
             "end_date": "2018-06",
-            "url": "https://gismaps.vita.virginia.gov/arcgis/rest/services/VA_Base_layers/VA_Building_Footprints/MapServer/tile/{zoom}/{y}/{x}",
+            "url": "http://tileify-ags.herokuapp.com/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vita.virginia.gov%2Farcgis%2Frest%2Fservices%2FVA_Base_layers%2FVA_Building_Footprints%2FMapServer&transparent=true&layers=show%3A20",
             "max_zoom": 20,
             "country_code": "US",
             "attribution": {
