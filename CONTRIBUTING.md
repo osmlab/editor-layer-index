@@ -21,6 +21,7 @@ Supported TMS tokens:
 - `{zoom}`, `{x}`, `{y}` for Z/X/Y tile coordinates
 - `{-y}` for flipped TMS-style Y coordinates
 - `{switch:a,b,c}` for DNS server multiplexing
+- `{apikey}` for an app specific apikey
 
 Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
 

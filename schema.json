@@ -135,6 +135,14 @@
                 },
                 "icon": {
                     "type": "string"
+                },
+                "apikey": {
+                    "description": "does this layer require an apikey and how it is added to the request",
+                    "type": "string",
+                    "enum": [
+                        "url",
+                        "proprietary"
+                    ]
                 }
             }
         }

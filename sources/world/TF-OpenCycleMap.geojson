@@ -13,7 +13,8 @@
         "max_zoom": 22,
         "name": "Thunderforest OpenCycleMap",
         "type": "tms",
-        "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png"
+        "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png?apikey={apikey}",
+        "apikey": "url"
     },
     "type": "Feature"
 }

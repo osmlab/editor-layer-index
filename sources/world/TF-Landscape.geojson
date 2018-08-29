@@ -5,14 +5,15 @@
         "id": "tf-landscape",
         "name": "Thunderforest Landscape",
         "i18n": true,
-        "url": "https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png",
+        "url": "https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png?apikey={apikey}",
         "attribution": {
             "url": "https://www.thunderforest.com/terms",
             "text": "Maps © Thunderforest, Data © OpenStreetMap contributors",
             "required": true
         },
         "max_zoom": 22,
-        "type": "tms"
+        "type": "tms",
+        "apikey": "url"
     },
     "geometry": null
 }
