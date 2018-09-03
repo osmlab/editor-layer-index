@@ -106,14 +106,25 @@
                 },
                 "no_tile_header": {
                     "description": "HTTP header to check for information if the tile is invalid",
-                    "type": "string"
-                },
-                "no_tile_values": {
-                    "description": "Values for the no tile header indicating that the tile is invalid",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
+                    "type": "object",
+                    "minProperties": 1,
+                    "maxProperties": 1,
+                    "patternProperties": {
+                        "^.*$": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
                 },
                 "overlay": {
                     "description": "'true' if tiles are transparent and can be overlaid on another source",
