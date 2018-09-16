@@ -193,8 +193,8 @@
     "type": "Feature", 
     "properties": {
         "attribution": {
-            "url": "http://www.seplande.al.gov.br", 
-            "text": "Secretaria de Estado do Planejamento e Desenvolvimento Econ\u00f4mico"
+            "url": "http://www.seplag.al.gov.br", 
+            "text": "Secretaria de Estado do Planejamento, Gestão e Patrimônio"
         }, 
         "name": "Minador do Negr\u00e3o", 
         "available_projections": [
@@ -202,8 +202,8 @@
             "EPSG:4326", 
             "EPSG:22525"
         ], 
-        "url": "http://geo.seplande.al.gov.br/teogc/terraogcwms.cgi?LAYERS=Minador%20do%20Negrao&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "license_url": "http://www.acessoainformacao.gov.br/menu-de-apoio/entenda-a-lai", 
+        "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Minador%20do%20Negrao&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao", 
         "country_code": "BR", 
         "type": "wms", 
         "id": "minador_do_negrao"
