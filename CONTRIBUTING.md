@@ -66,7 +66,7 @@ Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) t
 
 After you've made a modification, and submit a pull request including those json files. Tests will be run automatically.
 
-We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for everp pull request, and should not be done anymore.
+We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
 
 ### Translations
 
