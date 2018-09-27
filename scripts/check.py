@@ -75,7 +75,7 @@ for filename in arguments.path:
             raise ValidationError('{z} found instead of {zoom} in tile url')
         if 'license' in source['properties']:
             license = source['properties']['license']
-            if not spdx_lookup.by_id(license):
+            if not spdx_lookup.by_id(license) and license != 'COMMERCIAL':
                 raise ValidationError('Unknown license %s' % license)
         else:
             logger.debug("{} has no license property".format(filename))
