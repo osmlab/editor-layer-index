@@ -6,13 +6,14 @@
         "end_date": "2016-03-18",
         "available_projections": [
             "EPSG:4326",
-            "EPSG:31464",
             "EPSG:31468",
             "EPSG:3857"
         ],
         "url": "https://secure.erlangen.de/arcgiser/services/Luftbild2016/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license": "CC-BY-4.0",
         "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=abab0a0c8a4c483290878068fe667a3a",
         "country_code": "DE",
+        "best": true,
         "attribution": {
             "text": "© Stadt Erlangen | © Geocart GmbH",
             "required": true

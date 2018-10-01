@@ -1,30 +1,44 @@
 cs:
   imagery:
+    AGIV:
+      attribution:
+        text: Nejaktuálnější ortofoto Flanders © AGIV
+      name: Nejaktuálnější letecké snímky AGIV Flanders
+    AGIV10cm:
+      attribution:
+        text: Ortofoto Flanders © AGIV
+      name: 10cm letecké snímky AGIV Flanders 2013-2015
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Flanders © AGIV
+      name: AGIV Flanders GRB
     Bing:
       description: Satelitní a letecké snímky.
       name: Letecké snímky Bing
     DigitalGlobe-Premium:
       attribution:
         text: Podmínky použití & zpětná vazba
-      description: Prémiové satelitní snímky DigitalGlobe
       name: Prémiové snímky DigitalGlobe
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Podmínky použití a zpětná vazba
     DigitalGlobe-Standard:
       attribution:
-        text: Podmínky použití & zpětná vazba
-      description: Standardní satelitní snímky DigitalGlobe
+        text: Podmínky použití a zpětná vazba
       name: Standardní snímky DigitalGlobe
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Podmínky použití a zpětná vazba
     EsriWorldImagery:
       attribution:
-        text: Podmínky použití & zpětná vazba
+        text: Podmínky použití a zpětná vazba
+      description: Světové snímky Esri.
+      name: Světové snímky Esri
     EsriWorldImageryClarity:
       attribution:
         text: Podmínky použití a zpětná vazba
+      description: Archivní snímky Esri, které mohou být čistší a přesnější jak výchozí vrstva.
+      name: Světové snímky Esri (Clarity) Beta
     MAPNIK:
       attribution:
         text: © Přispěvatelé OpenStreetMap, CC-BY-SA
@@ -63,12 +77,22 @@ cs:
       attribution:
         text: © Geofabrik GmbH, přispěvatelé OpenStreetMap, CC-BY-SA
       name: 'OSM Inspektor: Štítkování'
+    SPW_ORTHO_LAST:
+      name: Nejaktuálnější snímky SPW(allonie)
     US-TIGER-Roads-2012:
       name: TIGER Roads 2012
     US-TIGER-Roads-2014:
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       name: TIGER Roads 2017
+    UrbISOrtho2016:
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      name: UrbIS-Ortho 2017
+    UrbisAdmFR:
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, přispěvatelé OpenStreetMap, CC BY-SA 3.0
@@ -103,7 +127,7 @@ cs:
       name: Turistika & cyklistika
     mapbox_locator_overlay:
       attribution:
-        text: Podmínky použití & zpětná vazba
+        text: Podmínky použití a zpětná vazba
       name: Překryv lokátoru
     openpt_map:
       attribution:
@@ -122,14 +146,45 @@ cs:
       attribution:
         text: © Přispěvatelé OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (německý styl)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
     qa_no_address:
       attribution:
         text: Simon Poole, data © přispěvatelé OpenStreetMap
+    skobbler:
+      attribution:
+        text: '© Dlaždice: skobbler, mapová data: přispěvatelé OpenStreetMap'
+      name: skobbler
     stamen-terrain-background:
       name: Terén Stamen
     tf-cycle:
       attribution:
         text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap
+      name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap
+      name: Thunderforest Landscape
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Železniční síť Trafikverket
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Silniční síť Trafikverket
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Názvy ulic Trafikverket
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Volby silniční sítě Trafikverket

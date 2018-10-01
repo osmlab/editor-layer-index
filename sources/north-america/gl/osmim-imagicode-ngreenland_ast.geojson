@@ -1,27 +1,68 @@
 {
-    "type": "Feature",
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    -52.49221819430999,
+                    82.48971755550389
+                ],
+                [
+                    -52.49221819430999,
+                    82.94294978186194
+                ],
+                [
+                    -49.28695697579964,
+                    83.47311821807558
+                ],
+                [
+                    -44.52850362441216,
+                    83.7321400994933
+                ],
+                [
+                    -29.525299334683975,
+                    83.7321400994933
+                ],
+                [
+                    -25.263977329098022,
+                    83.58271128961059
+                ],
+                [
+                    -21.183929736898254,
+                    83.39775984253468
+                ],
+                [
+                    -21.183929736898254,
+                    82.74312310369845
+                ],
+                [
+                    -23.404541300879075,
+                    82.48971755550389
+                ],
+                [
+                    -52.49221819430999,
+                    82.48971755550389
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "required": true,
             "text": "imagico.de OSM images for mapping",
-            "required": true
+            "url": "http://maps.imagico.de/#osmim"
         },
+        "country_code": "GL",
         "description": "Assembled from mostly 2012 ASTER imagery, some 2005 images mainly in the northeast (true color with estimated blue)",
         "end_date": "2012-08-13",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&z={zoom}&x={x}&y={-y}",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "id": "osmim-imagicode-ngreenland_ast",
         "license_url": "http://imagico.de/map/osmim_tiles.php",
         "max_zoom": 10,
+        "name": "imagico.de: Northern Greenland ASTER",
         "start_date": "2005-06-21",
-        "country_code": "GL",
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVQ4y13TS2gcdQDH8e/szGQ372Tz2irGpoS0KSapoqjRQ4knD0WweLRCCXiQXuJFMR6EYMVC0IsPyKVFsJpWbQ0KQmL14KPWirGmZjdmk+w7mX1kZ2d2dv7/mfFUsX5Pv8Pv+lH4X6/NvTPc239gOlXyp7ZzlaEg8EGYyVaZWY7dc+/CuTde+fu/f+XOeP3iLT2bTMxN9NVm1PZhbfKBGC/OXsDzHJr1EEf6ilSMLZFrxObHJk/OfvDqCQmgArz3TUJfXZm/3K53nZ4YPRw69czjXPrqR+LJHJ4rUFXA3qG33Va3cpknU2vxY1pz9yWzlPZVgL6xobNGXp7u6T9Geq/O+U+usHRtE6du0aJncSyXtnCOcqVC0ZTIhnM44itNhpFeVs5+kRxe//OP22VDar4ncRwHz85TKtY40H2D4n6KwNMRgUPIC9ES0mj2NNwK4rfE2qhWyBnT1YrUQkqA3hwmpIYw63law4JcaR/hR9GVAh2tOmEUHunpwKkJVm10VdOntbptP+VJiaIoKIDv7zPQbVDxJIPRPkRkh8CN0KFrjHdGiXW3kkuXSRYEakid0qQrDkrhEgQ+tZpNtVTmoQdNrGgB6XjUpEJzSxvCgnhOZ+RQFKtcZV8IpO8NhXxfIoWLY9tUS0XePxXHMNrY3BxkOx+lXVX54dc+VjdaiHabXPg6RcMSWFULT3poEGxJ0eit1Wq06w4FMURPl8NObo9MvgnTaOGF402M399DrDNEPJHnl99rZIoWvudvaeGwtux53sOPjffy9pn7CHdKnn5WJ/5XnudnrjF2tJ/F61mGBiIc7fe4mXT5ds0lu1tE8f1lbSDWu5DZyb98fMLVwp0dgINv5Bjpcfj50yloUsAo8Ob8T/iVBociLrtlC9+tCwgW1O8++7A09dxLbUvfrzzRpV7nSCyK0qRDOEwjlUYr7iH2DPx6hXevpLi5YXNjfRsCcQ4aiwrAlxuB/tHCx5fTyaUTg/1pJke6eHR0GF9AKZtnv1BlYSWFWYBEepdyuXwV5EmQ8l9Mn9929asXF+c21xMz5b1NreHewvNcHAc0qRGpQyqfFZZZnQc5C1LepfFOZ946P5xJbkybRmbKzm8f3C3b2GZlyzYLy9WqteD5jbs4/wOHuM2qT5aWEQAAAABJRU5ErkJggg==",
         "type": "tms",
-        "id": "osmim-imagicode-ngreenland_ast",
-        "name": "imagico.de: Northern Greenland ASTER"
+        "url": "http://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&z={zoom}&x={x}&y={-y}"
     },
-    "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-            [ [ -52.492218194309991, 82.489717555503887 ], [ -52.492218194309991, 82.942949781861941 ], [ -49.28695697579964, 83.473118218075584 ], [ -44.52850362441216, 83.732140099493293 ], [ -29.525299334683975, 83.732140099493293 ], [ -25.263977329098022, 83.582711289610586 ], [ -21.183929736898254, 83.397759842534683 ], [ -21.183929736898254, 82.743123103698451 ], [ -23.404541300879075, 82.489717555503887 ], [ -52.492218194309991, 82.489717555503887 ] ]
-        ]
-    }
+    "type": "Feature"
 }

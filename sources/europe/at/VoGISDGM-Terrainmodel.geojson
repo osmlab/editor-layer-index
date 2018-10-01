@@ -1,24 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "vogis.cnv.at-DGM",
-        "name": "VoGIS: DGM (Terrain model)",
-        "type": "wms",
-        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_terrain&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "country_code": "AT",
-        "available_projections": [
-            "EPSG:4326",
-            "EPSG:3857",
-            "EPSG:31254",
-            "EPSG:31284",
-            "EPSG:32632",
-            "EPSG:25832",
-            "EPSG:21781"
-        ],
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAD1BMVEUAAACEAgT8AgQEAgSEgoTQjzHEAAAAAXRSTlMAQObYZgAAAHJJREFUeF6ljVEKgzAQRCftBUQv0KwXML7cwPvfqQwJtIVqi76fHR7DrKSUJY1DD84xKEVuwcT40C1HC18bqQDTBKWosUZn+VvQ4UTjkoCYWd/Eco9ZLwEWggsNC9CPL3C0UauFz44wFh941Bw0tm1PPAGCUydahBcw6wAAAABJRU5ErkJggg=="
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -1018,6 +999,32 @@
                     47.5463081
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:31254",
+            "EPSG:31284",
+            "EPSG:32632",
+            "EPSG:25832",
+            "EPSG:21781"
+        ],
+        "country_code": "AT",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
+        "id": "vogis.cnv.at-DGM",
+        "attribution": {
+            "text": "Datenquelle: Land Vorarlberg \u2013 data.vorarlberg.gv.at",
+            "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
+        },
+        "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
+        "license": "CC-BY-3.0",
+        "name": "VoGIS: DGM (Terrain model)",
+        "permission_osm": "explicit",
+        "type": "wms",
+        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_terrain&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    "type": "Feature"
 }

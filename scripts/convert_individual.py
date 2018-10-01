@@ -114,10 +114,15 @@ for imagery in imageries:
         entry['geometry'] = {}
         entry['geometry']['type'] = 'Polygon'
         entry['geometry']['coordinates'] = rings
+    else:
+        print("Entry {} doesn't have a geometry".format(properties['id']))
 
-    dir = os.path.join(sys.argv[2], properties['country_code']) if 'country_code' in properties else sys.argv[2]
-    try:
-        os.mkdir(dir)
-    except OSError:
-        pass
-    open('%s/%s.geojson' % (dir, strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4, ensure_ascii=False).encode('utf-8'))
+    if not os.path.exists(sys.argv[2]):
+        os.makedirs(sys.argv[2])
+    directory = os.path.join(sys.argv[2], properties['country_code'].lower()) if 'country_code' in properties else sys.argv[2]
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    output = json.dumps(entry, ensure_ascii=False, separators=(',', ':'))
+    if sys.version_info.major == 2:
+        output = output.encode('utf8')
+    open('%s/%s.geojson' % (directory, strfn(properties['name'])), 'w+').write(output)

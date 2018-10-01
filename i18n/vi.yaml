@@ -1,12 +1,24 @@
 vi:
   imagery:
+    AGIV:
+      attribution:
+        text: Hình ảnh trực giao Vlaanderen mới nhất © AGIV
+      name: Hình ảnh trực giao Vlaanderen mới nhất của AGIV
+    AGIV10cm:
+      attribution:
+        text: Hình ảnh trực giao Vlaanderen © AGIV
+      name: Hình chụp trên không 10 cm 2013–2015 Vlaanderen AGIV
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Vlaanderen © AGIV
+      name: AGIV Vlaanderen GRB
     Bing:
       description: Hình ảnh chụp từ vệ tinh và trên không trung.
       name: Hình chụp trên không Bing
     DigitalGlobe-Premium:
       attribution:
         text: Điều khoản & Phản hồi
-      description: Hình ảnh thượng hạng chụp từ vệ tinh DigitalGlobe.
+      description: 'DigitalGlobe Thượng hạng là một lớp hình ảnh hỗn hợp: ở nhiều nơi có lớp hình gốc của DigitalGlobe, còn một số khu vực được ghép lại hình ảnh +Vivid hoặc hình ảnh khu vực quan tâm tùy biến có độ phân giải 50 cm trở lên, và được cập nhật thường xuyên hơn.'
       name: DigitalGlobe Thượng hạng
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -16,7 +28,7 @@ vi:
     DigitalGlobe-Standard:
       attribution:
         text: Điều khoản & Phản hồi
-      description: Hình ảnh tiêu chuẩn chụp từ vệ tinh DigitalGlobe.
+      description: DigitalGlobe Tiêu chuẩn là tập hợp hình ảnh được lựa chọn chiếm 86% tổng diện tích đất đai của Trái Đất có độ phân giải 30–60 cm ở nơi nào có sẵn; ở nơi nào không có sẵn thì có hình ảnh Landsat thay thế. Hình ảnh được chụp cách đây trung bình 2,31 năm, một số khu vực được cập nhật mỗi năm hai lần.
       name: DigitalGlobe Tiêu chuẩn
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -71,6 +83,10 @@ vi:
       attribution:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
       name: 'Trình kiểm tra OSM: Thẻ'
+    SPW_ORTHO_LAST:
+      name: Hình chụp trên không Wallonie mới nhất của SPW
+    SPW_PICC:
+      name: Hình ảnh số PICC Wallonie của SPW
     US-TIGER-Roads-2012:
       name: Đường sá TIGER 2012
     US-TIGER-Roads-2014:
@@ -80,7 +96,28 @@ vi:
       description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: Đường sá TIGER 2017
     US_Forest_Service_roads_overlay:
+      description: 'Đường sá: vỏ xanh là ngõ; vỏ nâu là đường mòn.
+
+        Mặt đường: sỏi đá được tô màu nâu nhạt; nhựa là màu đen, mặt lát là màu xám; đất là màu trắng; bê tông là màu xanh lam; cỏ là màu xanh lá cây.
+
+        Tùy mùa có vạch màu trắng.'
       name: Lớp phủ Đường Lâm nghiệp Hoa Kỳ
+    UrbISOrtho2016:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbIS trực giao 2016
+    UrbISOrtho2017:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbIS trực giao 2017
+    UrbisAdmFR:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbisAdm Pháp
+    UrbisAdmNL:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbisAdm Hà Lan
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, những người đóng góp vào OpenStreetMap, CC BY-SA 3.0
@@ -115,6 +152,19 @@ vi:
       attribution:
         text: © những người đóng góp vào OpenStreetMap
       name: Đi bộ & Đạp xe
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Đường xe máy trượt tuyết Kelkkareitit.fi từ OSM (Bắc Âu)
+      name: Lớp phủ xe máy trượt tuyết Bắc Âu
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      name: Hình ảnh trực giao lịch sử Lantmäteriet 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      name: Hình ảnh trực giao lịch sử Lantmäteriet 1975
     mapbox_locator_overlay:
       attribution:
         text: Điều khoản & Phản hồi
@@ -137,6 +187,9 @@ vi:
       attribution:
         text: © những người đóng góp vào OpenStreetMap, CC BY-SA
       name: OpenStreetMap (Kiểu Đức)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
     qa_no_address:
       attribution:
         text: Simon Poole, Dữ liệu © những người đóng góp vào OpenStreetMap
@@ -145,6 +198,11 @@ vi:
       attribution:
         text: '© Hình bản đồ: skobbler Dữ liệu bản đồ: những người đóng góp vào OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Đường xe máy trượt tuyết
+      name: Bản đồ xe máy trượt tuyết Thụy Điển
     stamen-terrain-background:
       attribution:
         text: Hình bản đồ do Stamen Design cung cấp dưới CC BY 3.0. Dữ liệu do OpenStreetMap cung cấp dưới ODbL.
@@ -157,3 +215,33 @@ vi:
       attribution:
         text: Bản đồ © Thunderforest, dữ liệu © những người đóng góp vào OpenStreetMap
       name: Phong cảnh Thunderforest
+    trafikverket-baninfo:
+      attribution:
+        text: © Bộ Giao thông Thụy Điển, CC0
+      description: Hệ thống đường sắt Thụy Điển có cả đường tránh
+      name: Hệ thống Đường sắt Bộ Giao thông Thụy Điển
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Bộ Giao thông Thụy Điển, CC0
+      description: Hệ thống đường sắt Thụy Điển có vài lớp bản đồ để lựa chọn
+      name: Hệ thống Đường sắt Thụy Điển có tùy chọn
+    trafikverket-vagnat:
+      attribution:
+        text: © Bộ Giao thông Thụy Điển, CC0
+      description: Hệ thống Đường bộ NVDB Thụy Điển
+      name: Hệ thống Đường bộ Bộ Giao thông Thụy Điển
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Bộ Giao thông Thụy Điển, CC0
+      description: 'Chi tiết bổ sung từ NVDB Thụy Điển: số đường, thiết bị điều hòa giao thông, trạm dừng nghỉ, trạm xe buýt, cầu, đường hầm, camera giám sát tốc độ'
+      name: Hệ thống Đường bộ Bộ Giao thông Thụy Điển bổ sung
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Bộ Giao thông Thụy Điển, CC0
+      description: Tên Đường NVDB Thụy Điển
+      name: Tên Đường Bộ Giao thông Thụy Điển
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Bộ Giao thông Thụy Điển, CC0
+      description: Hệ thống đường bộ Thụy Điển có vài lớp bản đồ để lựa chọn
+      name: Hệ thống Đường bộ Thụy Điển có tùy chọn

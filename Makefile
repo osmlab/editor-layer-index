@@ -1,5 +1,5 @@
 ALL = imagery.geojson imagery.json imagery.xml i18n/en.yaml
-SOURCES = $(shell find sources -type f -name '*.geojson' | LC_ALL="C" sort)
+SOURCES := $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
 TX := $(shell which tx)
 
@@ -11,16 +11,16 @@ check:
 clean:
 	rm -f $(ALL)
 
-imagery.xml: $(SOURCES)
+imagery.xml:
 	@$(PYTHON) scripts/convert_xml.py $(SOURCES)
 
-imagery.json: $(SOURCES)
+imagery.json:
 	@$(PYTHON) scripts/convert_geojson_to_legacyjson.py $(SOURCES) > imagery.json
 
-imagery.geojson: $(SOURCES)
+imagery.geojson:
 	@$(PYTHON) scripts/concat_geojson.py $(SOURCES) > imagery.geojson
 
-i18n/en.yaml: $(SOURCES)
+i18n/en.yaml:
 	@$(PYTHON) scripts/extract_i18n.py $(SOURCES) > $@
 
 txpush: i18n/en.yaml

@@ -1,12 +1,11 @@
 fi:
   imagery:
     Bing:
-      description: Satelliitti- ja ilmakuvat.
+      description: Satelliitti- ja ilmakuvat
       name: Bing-ilmakuvat
     DigitalGlobe-Premium:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Premium DigitalGlobe -satelliittikuvat
       name: DigitalGlobe Premium -sateliittikuvat
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -14,7 +13,6 @@ fi:
     DigitalGlobe-Standard:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Standard DigitalGlobe -satelliittikuvat
       name: DigitalGlobe standardit -satelliittikuvat
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -36,7 +34,7 @@ fi:
     Mapbox:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Satelliitti- ja ilmakuvat.
+      description: Satelliitti- ja ilmakuvat
       name: Mapbox-satelliittikuvat
     OSM_Inspector-Addresses:
       attribution:
@@ -74,6 +72,8 @@ fi:
     US-TIGER-Roads-2017:
       description: Keltainen = Tekijänoikeudeton kartta-aineisto Yhdysvaltain väestönlaskentaviranomaiselta. Punainen = Aineisto ei löydy OpenStreetMapista
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Valtatie: Vihreä kehys = luokittelematon. Ruskea kehys = track. Pinta: gravel = vaaleanruskea täyttö, asfaltti = musta, pinnoitettu = harmaa, ground =white, concrete = blue, grass = green. Seasonal = white bars'
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMapin tekijät, CC by-SA 3.0
@@ -97,6 +97,7 @@ fi:
     basemap.at:
       attribution:
         text: basemap.at
+      description: Itävallan taustakartta, Itävallan hallinnon tietoihin pohjautuva.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -106,10 +107,22 @@ fi:
       attribution:
         text: © OpenStreetMapin tekijät
       name: Vaellus ja pyöräily
+    kelkkareitit:
+      description: Kelkkareitit.fi-moottorikelkkareitit Pohjoismaissa
+      name: Pohjoismaiset moottorikelkkareitit
+    lantmateriet-orto1960:
+      attribution:
+        text: © Maanmittauslaitos, CC0
+      name: Maanmittauslaitoksen historiallinen ortokuva vuodelta 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Maanmittauslaitos, CC0
+      name: Maanmittauslaitoksen historiallinen ortokuva vuodelta 1975
     mapbox_locator_overlay:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Korostaa tärkeimpiä kohteita.
+      description: Näyttää merkittävimmät karttakohteet kauas loitonnettaessa
+      name: Karkean sijainnin lisänäkymä
     openpt_map:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
@@ -127,6 +140,10 @@ fi:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
       name: OpenStreetMap (saksalainen tyyli)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
+      name: Maanmittauslaitoksen talouskartta 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, aineisto ©OpenStreetMapin tekijät
@@ -134,6 +151,9 @@ fi:
     skobbler:
       attribution:
         text: '© Karttakuvat: skobbler Kartta-aineisto: OpenStreetMapin tekijät'
+    skoterleder:
+      description: Moottorikelkkareitit
+      name: Ruotsin moottorikelkkareitit
     tf-cycle:
       attribution:
         text: Kartat © Thunderforest, Aineisto © OpenStreetMapin tekijät
@@ -142,3 +162,15 @@ fi:
       attribution:
         text: Kartat © Thunderforest, Aineisto © OpenStreetMapin tekijät
       name: Thunderforest-maisema
+    trafikverket-baninfo:
+      description: Ruotsin rautatieverkosto, sivuraiteet mukaanlukien.
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Ruotsinkieliset NVDB:n tiennimet

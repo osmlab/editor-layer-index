@@ -1,25 +1,39 @@
 pl:
   imagery:
+    AGIV:
+      attribution:
+        text: Najnowsza ortofotomapa Flandrii © AGIV
+      name: Najnowsze zdjęcia lotnicze AGIV Flandria
+    AGIV10cm:
+      attribution:
+        text: Ortofotomapa Flandrii © AGIV
+      name: AGIV Flandria, zdjęcia lotnicze 2013-2015, 10cm
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Flandria © AGIV
+      name: AGIV Flandria GRB
     Bing:
       description: Zdjęcia satelitarne i lotnicze Bing.
       name: Bing (satelitarne)
     DigitalGlobe-Premium:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne DigitalGlobe Premium.
+      description: DigitalGlobe-Premium to mozaika stworzona z podstawowych map DigitalGlobe z wybranymi obszarami uzupełnionymi o +Vivid lub innymi obrazami innych obszarów, rozdzielczość 50cm lub wyższa, odświeżana częściej wraz z bieżącymi aktualizacjami.
       name: DigitalGlobe Premium (satelitarne)
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Warunki użytkowania i opinia
+      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 13 i wyższym.
       name: 'Datowanie zdjęć DigitalGlobe Premium '
     DigitalGlobe-Standard:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne DigitalGlobe Standard.
+      description: DigitalGlobe-Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjeć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
       name: DigitalGlobe Standard (satelitarne)
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Warunki użytkowania i opinia
+      description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 13 i wyższym.
       name: Datowanie zdjęć DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
@@ -69,6 +83,10 @@ pl:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
       name: 'Inspektor OSM: Tagowanie'
+    SPW_ORTHO_LAST:
+      name: Najświeższe zdjęcia lotnicze SPW(allonie)
+    SPW_PICC:
+      name: Obrazowanie numeryczne SPW(allonie) PICC
     US-TIGER-Roads-2012:
       name: TIGER Roads 2012
     US-TIGER-Roads-2014:
@@ -77,6 +95,25 @@ pl:
     US-TIGER-Roads-2017:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Drogi:  Zielone obramowanie = czwartorzędna. Brązowe obramowanie = polna/leśna. Nawierzchnia: żwir = jasno-brązowe wypełnienie, asfalt = czarny, twarda = szary, grunt = biały, beton = niebieski, trawa = zielony. Dostępna sezonowo = białe paski'
+      name: Nakładka z drogami z U.S. Forest
+    UrbISOrtho2016:
+      attribution:
+        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+      name: UrbIS-Ortho 2017
+    UrbisAdmFR:
+      attribution:
+        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+      name: UrbisAdm Francja
+    UrbisAdmNL:
+      attribution:
+        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+      name: UrbisAdm Holandia
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
@@ -100,6 +137,7 @@ pl:
     basemap.at:
       attribution:
         text: basemap.at
+      description: Mapa bazowa Austrii, na podstawie danych rządowych
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -110,6 +148,21 @@ pl:
       attribution:
         text: © autorzy OpenStreetMap
       name: Hike & Bike
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Szlaki skuterów śnieżnych Kelkkareitit.fi z OSM (kraje nordyckie)
+      name: Nakładka nordycka dla skuterów śnieżnych
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mozaika szwedzkich ortofotomap z okresu 1955-1965. Mogą pojawiać się starsze i nowsze zdjęcia.
+      name: Historyczne ortofotomapy Lantmäteriet 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mozaika szwedzkich ortofotomap z okresu 1970-1980. W budowie.
+      name: Historyczne ortofotomapy Lantmäteriet 1975
     mapbox_locator_overlay:
       attribution:
         text: Warunki użytkowania i opinia
@@ -132,6 +185,11 @@ pl:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Styl niemiecki)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
+      description: Skany "Economic maps" ok. 1950-1980
+      name: Mapa ekonomiczna Lantmäteriet 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, Dane © autorzy OpenStreetMap
@@ -140,7 +198,14 @@ pl:
       attribution:
         text: '© Podład: skobbler Dane mapy: autorzy OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Szlaki skuterów śnieżnych
+      name: Mapa Szwecji dla skuterów śnieżnych
     stamen-terrain-background:
+      attribution:
+        text: Kafle mapy od Stamen Design, licencja CC BY 3.0. Dane z OpenStreetMap, licencja ODbL
       name: Stamen - Teren
     tf-cycle:
       attribution:
@@ -150,3 +215,33 @@ pl:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap
       name: Thunderforest Krajobraz
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Szwedzka sieć kolejowa, uwzględnia bocznice
+      name: Sieć kolejowa Trafikverket
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Szwedzka sieć kolejowa z kilkoma wariantami warstw mapy
+      name: Opcje sieci kolejowej Trafikverket
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Szwedzka sieć drogowa NVDB
+      name: Sieć drogowa Trafikverket
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+      description: 'Dodatkowe szczegóły szwedzkiej NVDB: numery dróg, uspokojenia ruchu, miejsca odpoczynku, przystanki autobusowe, mosty, tunele, fotoradary'
+      name: Dodatki sieci drogowej Trafikverket
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Szwedzkie nazwy ulic NVDB
+      name: Nazwy ulic Trafikverket
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Szwedzka sieć drogowa NVDV z kilkoma wariantami warstw mapy
+      name: Opcje sieci drogowej Trafikverket

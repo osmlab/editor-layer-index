@@ -1,0 +1,17 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "openinframap-petroleum",
+    "name": "OpenInfraMap Petroleum",
+    "type": "tms",
+    "url": "https://tiles-{switch:a,b,c}.openinframap.org/petroleum/{zoom}/{x}/{y}.png",
+    "overlay": true,
+    "attribution": {
+      "text": "© OpenInfraMap.org",
+      "url": "https://www.openinframap.org/"
+    },
+    "max_zoom": 19,
+    "description": "Overlay imagery for petroleum infrastructure mapping in OSM. Updated daily."
+  },
+  "geometry": null
+}

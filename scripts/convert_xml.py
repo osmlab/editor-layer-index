@@ -6,7 +6,7 @@ root = ET.Element("imagery")
 sources = []
 for file in sys.argv[1:]:
     with io.open(file, 'r') as f:
-        sources.append(json.load(f))
+        sources.append(json.load(f, parse_float=lambda x: round(float(x), 5)))
 
 
 def add_source(source):

@@ -10,6 +10,7 @@
         "name": "LPI NSW Topographic Map",
         "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 16,
+        "min_zoom": 1, 
         "country_code": "AU",
         "type": "tms",
         "id": "NSW_LPI_TopographicMap"

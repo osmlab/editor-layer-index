@@ -1,24 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "UrbISOrtho2016",
-        "name": "UrbIS-Ortho 2016",
-        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=Urbis:Ortho2016&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
-        "country_code": "BE",
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsSAAALEgHS3X78AAACnUlEQVQoz11SXUiTYRh93ndz06YMNWcpRmWRSpgO+0EUDYwQ6sZ+oAyti8y6yCyKxOimILqQsLKbukmHSpFFLYlMqSkUmi3/pjZ/Zmv+Tec2bU237z1dfFHSc/HcPOc5HM45DAAREREgGOM217BpzDjs7PEHfNGa2PT47KxN+RFqrYDgjBMRE0JijBMRAKOlzmgxhChDN0cla1ThM0uTE65vsRFxRRkXk3TpMiMBkEQQQFPvw0LDnoYvVStBNwAhBIApj+X6m5OlT/dbnX0AJCHxkbl+zhTWub6XA4ZDqcd3JJTl1to7HV7G2E3TxOU2zaWcKm1YZKO5RlaliNknBma6Bqe7V6SVc5mVrmVFxSvLu1G3bSlwy2jVaXE6IzE0JLzV+jxJlxYTvp5X5j3Qx2ePzPcn6VJVysiUaHXX+d2zy8HqlrE8/bq3xXoiStalr1Fpxl1DRMQ547s27NWGRikVKtmuju9e34pEYcrhWV/f7E8iUinDQrjaH/AREQfAmSJGEzc6P0Qkvbd5ymt7DqfEmEr0Tre/4PFXInK4R7z+hXjtRiIi2aKPtpbi+qxue6vHj5ou+8KvAIBPP7yG3mkAd9sry18ULPrdAAgQAIJS4EZLacXrwqVlDwBJiKAkJCEB+Gz/UNyQ1TxY/8dWIiYgFFx5JPXM7JLjWe8jIgKBM3DGXT5no7lmy9rteVsLiIjJGXPGBcQ2XdqBlKJWa1PHeLOCcRAEhKH7zuKy+4T+QohCDQhGjLBqJBGsNl0teZI3OGMG0GiuKarPNI0aZTEyhq0qHxhjXv/C7bYyASkjIddoqctPOnY07ezf5hHRvwcikg+TXtv9jmsOjy0n8eCpnVeIESMiecnE/6kC0D/Vea+90h/wARAQqwG/AaEjsUbwLtXdAAAAAElFTkSuQmCC",
-        "type": "wms",
-        "available_projections": ["CRS:84", "EPSG:31370", "EPSG:4326", "EPSG:3857"],
-        "best": false,
-        "start_date": "2016",
-        "end_date": "2016",
-        "attribution": {
-            "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB",
-            "required": true
-        },
-        "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -30,7 +11,7 @@
                     50.7637662
                 ],
                 [
-                    4.4302830,
+                    4.430283,
                     50.7751656
                 ],
                 [
@@ -38,7 +19,7 @@
                     50.7750028
                 ],
                 [
-                    4.4642720,
+                    4.464272,
                     50.7864537
                 ],
                 [
@@ -50,7 +31,7 @@
                     50.7961658
                 ],
                 [
-                    4.4592080,
+                    4.459208,
                     50.8062556
                 ],
                 [
@@ -86,7 +67,7 @@
                     50.8661526
                 ],
                 [
-                    4.4318280,
+                    4.431828,
                     50.8762815
                 ],
                 [
@@ -115,7 +96,7 @@
                 ],
                 [
                     4.3957791,
-                    50.9140690
+                    50.914069
                 ],
                 [
                     4.3846211,
@@ -142,8 +123,8 @@
                     50.9041108
                 ],
                 [
-                    4.3289170,
-                    50.9024870
+                    4.328917,
+                    50.902487
                 ],
                 [
                     4.3164716,
@@ -199,7 +180,7 @@
                 ],
                 [
                     4.2510686,
-                    50.8328800
+                    50.83288
                 ],
                 [
                     4.2522702,
@@ -207,7 +188,7 @@
                 ],
                 [
                     4.2434296,
-                    50.8218200
+                    50.82182
                 ],
                 [
                     4.2440305,
@@ -238,7 +219,7 @@
                     50.8069065
                 ],
                 [
-                    4.2980180,
+                    4.298018,
                     50.8059302
                 ],
                 [
@@ -274,6 +255,31 @@
                     50.7638205
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Realized by means of Brussels UrbIS\u00ae\u00a9 - Distribution & Copyright CIRB"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:31370",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "best": false,
+        "country_code": "BE",
+        "end_date": "2016",
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/URBIS2015aerialimagery.png",
+        "id": "UrbISOrtho2016",
+        "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf",
+        "name": "UrbIS-Ortho 2016",
+        "start_date": "2016",
+        "type": "wms",
+        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=Urbis:Ortho2016&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}"
+    },
+    "type": "Feature"
 }

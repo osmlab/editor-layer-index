@@ -914,7 +914,7 @@
         "attribution": {
             "required": true,
             "text": "Administration du Cadastre et de la Topographie",
-            "url": "https://data.public.lu/en/usage/"
+            "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts"
         },
         "country_code": "LU",
         "icon": "https://www.geoportail.lu/static/img/lion.png",
@@ -922,7 +922,7 @@
         "license_url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts",
         "name": "geoportail.lu all layers",
         "type": "wms_endpoint",
-        "url": "http://wmts1.geoportail.lu/opendata/service?REQUEST=GetCapabilities"
+        "url": "https://wmts1.geoportail.lu/opendata/service?REQUEST=GetCapabilities"
     },
     "type": "Feature"
 }

@@ -1,33 +1,89 @@
 {
-    "type": "Feature",
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    12.7111707,
+                    55.2666045
+                ],
+                [
+                    14.3810926,
+                    55.2916348
+                ],
+                [
+                    19.6545301,
+                    57.2493436
+                ],
+                [
+                    19.852284,
+                    59.7508666
+                ],
+                [
+                    17.775868,
+                    61.1379379
+                ],
+                [
+                    18.0615125,
+                    62.2781508
+                ],
+                [
+                    20.9728895,
+                    63.5779045
+                ],
+                [
+                    24.3566785,
+                    65.6084197
+                ],
+                [
+                    23.9611707,
+                    66.7919139
+                ],
+                [
+                    20.6103406,
+                    66.451891
+                ],
+                [
+                    17.1386609,
+                    63.9663237
+                ],
+                [
+                    11.9970594,
+                    61.0370176
+                ],
+                [
+                    12.2936902,
+                    60.3160739
+                ],
+                [
+                    10.7006727,
+                    58.8137475
+                ],
+                [
+                    12.7111707,
+                    55.2666045
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
     "properties": {
-        "type": "tms", 
-        "name": "Lantmäteriet Economic Map (historic)",
-        "id": "osmse-ekonomiska", 
-        "country_code": "SE", 
-        "description": "Scan of ´Economic maps´ ca 1950-1980", 
-        "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg", 
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA0CAMAAADPNIq/AAAA7VBMVEVHcEz1NzT1NjT4NzTwNTLzNjP4ODX3NzTyNTPyNS/zNjPyNjPxNTP2NzTvMi70NjPzNjP0NjL1NjP3NzP1NzT1NjP0NjP3NzT/Njb0NjP3NzT4ODP0NjPzNjP2NzX2NzTvLCzzNjTtNC/zNTPyNDP5NzT0NjTzNjP1NjPtMy72NzT5ODX3ODT1NjT1NzTyNjP1NzTyODD0NzT/Ozj/OjfzNzT9OTb3NzT0NDH/ODX6ODX1NzT/PDn5NTL4ODX0NjP2PTr8YmL1OTb9Y2P2QT/4TUz3R0X+Zmb7ODX8X1/4Skj6UlH7W1r+NjP5T03RuQwnAAAAMnRSTlMA8SH8F63p7FkZsHRcsw/ErCddmTKo2/QD+34roLpExwfMG25W1djATRKRk9CG+VOkPjR6UnQAAAIzSURBVEjHnZXpVuowEIDZC3gBBRQEBNerqN4lk9bS1FIqUAH0/R/HbkmT0haOc/jDnK/zTZihyWR+GP3my6BaHbw0+2lUrvecn3gBYD33cglY5akz+TTMuROmOjWw3nmqxHHNEn4zv7armROrDZoiZOilX7vcI3yam5ltv7thrywHRLICj1HuVFeXM3u23SyWy+V6bboccoueitxAVxf2ajFHahAoCKIPeO7I4d4XlqpOUTSIfhRy7fzbemvGUJ4932ZgYzLfIBXFhwwNyj0AWVpJnCOHhwC8x6bFaQkxiEDCfTBey0CMkzXAhoFBk/kuT/wjA/90tnXbbv9tSULSP3gNuHZqwSbkahD6oeamumdKmOHm8C98XjnrOolCVgsTlyF4+ZsV0LIFJ3FybrCCTX5cZVbSOHdP00cU1KQ6D9alDwoid99zfyiIR+KmNLBQccx6xBcieIGFHrusaXwlgldYOHWmSJs2OsJ/pJKlPUHVS9xAZAJ0ScP8jT8EdhqtdM0VLGmRWYczlPFoTLnxCNO9AHrI//iVSe6Gfm54x8QED+nTRZBZTaXRK5d7DYXVk4OjeO1I4V4QDNj5hKvzIV3zY+V3mghfxAU4Bjnpr1UVhlDg5EIoUuRFJco58c5rqqjL+8WJ8h1xgjxGLP7sKeJYeaw4Rp4g3vnZZSgmXh+FknKAOCJPEQvyNLEgTxVzcgLlfbemJ98nZnJFKuy/iG+BHCD2bzv9+KC7vd5q1TM/j284bszID7oc+QAAAABJRU5ErkJggg==", 
-        "min_zoom": 3, 
-        "max_zoom": 17,
         "attribution": {
-            "required": true, 
-            "text": "\u00a9 Lantmäteriet", 
+            "required": true,
+            "text": "\u00a9 Lantm\u00e4teriet",
             "url": "https://www.lantmateriet.se"
         },
-        "license_url": "https://www.lantmateriet.se/en/Maps-and-geographic-information/Historical-Maps/upphovsratt-till-kartor-och-bilder",
-        "available_projections": [
-            "EPSG:3857"
-         ]
+        "country_code": "SE",
+        "description": "Scan of \u0022Economic maps\u0022 ca. 1950\u20131980",
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/se/LantmterietHistoricOrthophoto1960.png",
+        "id": "osmse-ekonomiska",
+        "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
+        "license": "CC0-1.0",
+        "max_zoom": 17,
+        "min_zoom": 3,
+        "name": "Lantm\u00e4teriet Economic Map 1950\u20131980",
+        "type": "tms",
+        "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg"
     },
-    "geometry": {
-        "type": "Polygon",
-        "coordinates": [[
-            [12.7111707,55.2666045],[14.3810926,55.2916348],[19.6545301,57.2493436],
-            [19.852284,59.7508666],[17.775868,61.1379379],[18.0615125,62.2781508],
-            [20.9728895,63.5779045],[24.3566785,65.6084197],[23.9611707,66.7919139],
-            [20.6103406,66.451891],[17.1386609,63.9663237],[11.9970594,61.0370176],
-            [12.2936902,60.3160739],[10.7006727,58.8137475],[12.7111707,55.2666045]
-        ]]
-    }      
+    "type": "Feature"
 }

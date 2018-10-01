@@ -24,12 +24,12 @@
             "EPSG:31258",
             "EPSG:31259",
             "EPSG:31287",
-            "EPSG:31297",
             "EPSG:32632",
-            "EPSG:32633",
-            "EPSG:102100"
+            "EPSG:32633"
         ],
         "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/orthofoto/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Aktuell_CIR&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "permission_osm": "explicit",
+        "license": "CC-BY-3.0",
         "license_url": "https://www.data.gv.at/katalog/dataset/35691b6c-9ed7-4517-b4b3-688b0569729a",
         "country_code": "AT",
         "type": "wms",

@@ -3,6 +3,7 @@
     "properties": {
         "type": "tms", 
         "name": "Trafikverket Street Names",
+        "i18n": true,
         "id": "trafikverket-vagnat-navn", 
         "country_code": "SE", 
         "description": "Swedish NVDB street names", 
@@ -16,10 +17,7 @@
             "url": "https://www.trafikverket.se"
         },
         "license_url": "https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667",
-        "overlay": true,
-        "available_projections": [
-            "EPSG:3857"
-         ]
+        "overlay": true
     },
     "geometry": {
         "type": "Polygon",

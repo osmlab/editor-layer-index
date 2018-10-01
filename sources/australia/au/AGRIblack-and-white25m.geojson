@@ -4,12 +4,17 @@
         "id": "AGRI-black_and_white-2.5m",
         "url": "https://{switch:a,b,c}.agri.openstreetmap.org/layer/au_ga_agri/{zoom}/{x}/{y}.png",
         "attribution": {
-            "text": "AGRI",
+            "text": "AGRI, Geoscience Australia",
+            "url": "https://data.gov.au/dataset/agri-the-australian-geographic-reference-image",
             "required": false
         },
+        "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/Geoscience_Australia",
         "type": "tms",
         "name": "AGRI black-and-white 2.5m",
-        "country_code": "AU"
+        "country_code": "AU",
+        "start_date": "2006",
+        "end_date": "2011",
+        "max_zoom": 16
     },
     "geometry": {
         "type": "Polygon",

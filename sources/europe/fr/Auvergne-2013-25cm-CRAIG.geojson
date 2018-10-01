@@ -3,7 +3,7 @@
     "properties": {
         "id": "CRAIG-Auvergne-2013",
         "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+            "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/8cabc987-829c-4c9f-943b-6a0e255cd73",
             "text": "Orthophotographie CRAIG/Sintegra/IGN 2013",
             "required": true
         },
@@ -13,7 +13,9 @@
         "country_code": "FR",
         "start_date": "2013",
         "end_date": "2013",
-        "type": "tms"
+        "type": "tms",
+        "max_zoom": 21,
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
     },
     "geometry": {
         "type": "Polygon",

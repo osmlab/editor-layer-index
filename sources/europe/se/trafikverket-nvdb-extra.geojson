@@ -3,10 +3,11 @@
     "properties": {
         "type": "wms",
         "name": "Trafikverket Road Network extra",
+        "i18n": true,
         "id": "trafikverket-vagnat-extra",
         "country_code": "SE",
         "description": "Swedish NVDB extra details: Highway reference, traffic calming, rest area, bus stop, bridge, tunnel, speed camera",
-        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=VagnummerText,Vaghinder,Rastplats,Rastficka,Hallplats,Farthinder,BroTunnel,ATK_Matplats&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vagnummer,Vaghinder,Rastplats,Rastficka,Hallplats,Farthinder,BroTunnel,ATK_Matplats&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
         "min_zoom": 3,
         "max_zoom": 20,

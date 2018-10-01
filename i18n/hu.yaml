@@ -1,12 +1,18 @@
 hu:
   imagery:
+    AGIV10cm:
+      attribution:
+        text: Orthophoto Flanders © AGIV
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Flanders © AGIV
+      name: AGIV Flanders GRB
     Bing:
       description: Műholdképek és légi felvételek
       name: Bing légi felvételek
     DigitalGlobe-Premium:
       attribution:
         text: Feltételek és visszajelzés
-      description: Premium DigitalGlobe műholdképek
       name: DigitalGlobe Premium felvételek
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -15,7 +21,6 @@ hu:
     DigitalGlobe-Standard:
       attribution:
         text: Feltételek és visszajelzés
-      description: Standard DigitalGlobe műholdképek
       name: DigitalGlobe Standard felvételek
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -29,6 +34,7 @@ hu:
     EsriWorldImageryClarity:
       attribution:
         text: Feltételek és visszajelzés
+      name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
         text: © OpenStreetMap-közreműködők, CC-BY-SA
@@ -73,6 +79,14 @@ hu:
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       name: TIGER Roads 2017
+    UrbISOrtho2016:
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      name: UrbIS-Ortho 2017
+    UrbisAdmFR:
+      name: UrbIS-Ortho 2017
+    UrbisAdmNL:
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap-közreműködők, CC by-SA 3.0

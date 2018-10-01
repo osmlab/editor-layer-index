@@ -1,12 +1,24 @@
 fr:
   imagery:
+    AGIV:
+      attribution:
+        text: Orthophoto la plus récente de la Flandre © AGIV
+      name: Images aériennes AGIV les plus récentes de la Flandre
+    AGIV10cm:
+      attribution:
+        text: Orthophoto de la Flandre © AGIV
+      name: Images aériennes 10cm AGIV de la Flandre 2013-2015
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Flandres © AGIV
+      name: AGIV Flandres GRB
     Bing:
       description: Images satellite et aérienne.
       name: Images aériennes Bing
     DigitalGlobe-Premium:
       attribution:
         text: Termes & commentaires
-      description: Images satellite DigitalGlobe premium
+      description: DigitalGlobe-Premium est une mosaïque composée de la carte de base de DigitalGlobe avec des régions utilisant +Vivid ou des imageries à des endroits intéressants avec une résolution de 50 cm ou mieux, et rafraîchi plus fréquemment avec des mises à jours régulières.
       name: Images DigitalGlobe premium
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -16,7 +28,7 @@ fr:
     DigitalGlobe-Standard:
       attribution:
         text: Termes & commentaires
-      description: Images satellite DigitalGlobe standard
+      description: DigitalGlobe-Standard est un ensemble organisé d'images, fournies par Landsat, couvrant 86% de la surface de la Terre, avec une résolution de 30-60cm lorsque disponible. L'âge moyen de ces images est 2,31 ans, avec certaines régions mises à jour 2 fois par an.
       name: Images DigitalGlobe standard
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -32,7 +44,7 @@ fr:
       attribution:
         text: Termes & commentaires
       description: Images Esri archivées qui peut être plus propre et plus précise que la couche par défaut
-      name: Images Esri mondiales (clarifiées) bêta
+      name: Images mondiales Esri (clarifiées) bêta
     MAPNIK:
       attribution:
         text: © contributeurs OpenStreetMap, CC-BY-SA
@@ -71,6 +83,10 @@ fr:
       attribution:
         text: © Geofabrik GmbH, contributeurs OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Étiqueter'
+    SPW_ORTHO_LAST:
+      name: Imagerie aérienne SPW(allonie) la plus récente
+    SPW_PICC:
+      name: Imagerie numérique SPW(allonie) PICC
     US-TIGER-Roads-2012:
       name: Données géographiques et topologiques intégrées et encodées 2012
     US-TIGER-Roads-2014:
@@ -80,7 +96,24 @@ fr:
       description: Le jaune correspond aux données des cartes du domaine public issues du recensement américain, le rouge à des données non trouvées dans OpenStreetMap
       name: Données géographiques et topologiques intégrées et encodées 2017
     US_Forest_Service_roads_overlay:
+      description: 'Voies : en vert route non classifiée, en marron piste. Surface : les graviers sont représentés par un remplissage marron, l''asphalte par du noir, les pavés par du gris, la terre par du blanc, le béton par du bleu, l''herbe par du vert. Les voies saisonnières ont des barres blanches.'
       name: Surcouche des routes forestières états-uniennes
+    UrbISOrtho2016:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2017
+    UrbisAdmFR:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      attribution:
+        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, contributeurs OpenStreetMap, CC by-SA 3.0
@@ -115,6 +148,19 @@ fr:
       attribution:
         text: © contributeurs OpenStreetMap
       name: Randonnée & Vélo
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Chemins motoneige de Kelkkareitit.fi depuis les données OSM (couverture nordique)
+      name: Surcouche motoneige nordique
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      name: Ortophotos historiques Lantmäteriet 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      name: Ortophotos historiques Lantmäteriet 1975
     mapbox_locator_overlay:
       attribution:
         text: Termes & commentaires
@@ -137,6 +183,9 @@ fr:
       attribution:
         text: © contributeurs OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (style allemand)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
     qa_no_address:
       attribution:
         text: Simon Poole, données © contributeurs OpenStreetMap
@@ -145,6 +194,11 @@ fr:
       attribution:
         text: '© Tuile: données skobbler Map : contributeurs OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Chemins motoneige
+      name: Carte motoneige en Suède
     stamen-terrain-background:
       attribution:
         text: Tuiles par Stamen Design, sous CC-BY 3.0. Données par OpenStreetMap, sous ODbL
@@ -157,3 +211,33 @@ fr:
       attribution:
         text: Cartes © Thunderforest, données © contributeurs OpenStreetMap
       name: Thunderforest Landscape
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau ferroviaire suédois, y compris les embranchements
+      name: Réseau ferroviaire Trafikverket
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau ferroviaire suédois avec plusieurs possibilités pour les couches
+      name: Options pour le réseau ferroviaire Trafikverket
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau routier suédois NVDB
+      name: Réseau routier Trafikverket
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+      description: 'Détails supplémentaires pour la NVDB suédoise : numérotation des routes, ralentisseurs, aires de repos, arrêts de bus, tunnels, radars'
+      name: Suppléments au réseau routier Trafikverket
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Noms des rues de la NVDB suédoise
+      name: Noms des rues du Trafikverket
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Réseau routier de la NVDB suédoise avec plusieurs possibilités pour les couches
+      name: Options pour le réseau routier Trafikverket

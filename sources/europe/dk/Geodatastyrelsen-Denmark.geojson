@@ -1,22 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "Geodatastyrelsen_Denmark",
-        "attribution": {
-            "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser",
-            "text": "Geodatastyrelsen og Danske Kommuner",
-            "required": true
-        },
-        "name": "SDFE aerial imagery",
-        "url": "https://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg",
-        "max_zoom": 21,
-        "country_code": "DK",
-        "type": "tms",
-        "best": true,
-        "icon": "data:image/png;base64,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"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -648,6 +631,23 @@
                     55.3639405
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Geodatastyrelsen og Danske Kommuner",
+            "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser"
+        },
+        "best": true,
+        "country_code": "DK",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png",
+        "id": "Geodatastyrelsen_Denmark",
+        "max_zoom": 21,
+        "name": "SDFE aerial imagery",
+        "type": "tms",
+        "url": "https://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg"
+    },
+    "type": "Feature"
 }

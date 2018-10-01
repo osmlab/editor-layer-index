@@ -1,20 +1,5 @@
 ## Contributing
 
-### Prerequisites
-* Command line development tools (`make`, `git`) for your platform
-  * Ubuntu: `sudo apt-get install build-essential git`
-  * Mac OS X: Install Xcode and run `xcode-select --install` from a command line
-  * Arch Linux: `sudo pacman -S make git`
-  * RedHat/Centos : `yum install git make`
-* Python and Pip
-  * Ubuntu: `sudo apt-get install python-pip python-dev`
-  * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`
-  * Arch Linux: `sudo pacman -S python2 python2-jsonschema`
-  * RedHat/Centos : `yum install python`
-* jsonschema package (for running `make check`)
-  * `pip install -r requirements.txt`
-  * RedHat/Centos : `yum install python2-jsonschema`
-
 ### Adding new sources
 
 See [FAQ.md](FAQ.md#what-imagery-licenses-are-compatible-with-this-index) for information
@@ -30,7 +15,7 @@ See [schema.json](schema.json) for the full list of available properties.
 
 ##### Source URL
 
-The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles.
+The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles. Whenever possible, use https URLs.
 
 Supported TMS tokens:
 - `{zoom}`, `{x}`, `{y}` for Z/X/Y tile coordinates
@@ -77,11 +62,11 @@ start of `2013`. Note that this is the opposite of what we did before, and layer
 
 ### Submitting your modifications
 
-Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. When branches are mentioned, replace `master` with `gh-pages`.
+Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `gh-pages`.
 
-After you've made a modification, run `make check` to validate the source files against `schema.json`, and submit a pull request.
+After you've made a modification, and submit a pull request including those json files. Tests will be run automatically.
 
-We previously required contributors to run `make` to rebuild the combined files. This is now handled automatically and should not be done anymore.
+We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
 
 ### Translations
 

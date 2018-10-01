@@ -1,30 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
-        "id": "Solothurn-sogis2014-wms",
-        "attribution": {
-            "text": "Orthofoto WMS Solothurn",
-            "required": false
-        },
-        "name": "Kanton Solothurn (SOGIS)",
-        "url": "https://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "max_zoom": 20,
-        "min_zoom": 15,
-        "country_code": "CH",
-        "start_date": "2015",
-        "end_date": "2017",
-        "type": "wms",
-        "available_projections": [
-            "EPSG:21781",
-            "EPSG:4326",
-            "EPSG:2056"
-        ],
-        "best": true,
-        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEX///+LKCbMAABycnL+/v7v7+9sbGz39/fz8/Pw8PD8/Pz60siYAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+AIGAsXN84mS+sAAAA4SURBVAjXY2AUBAMBBkYlMCCXwcwABgZYGCwGIJo5AMQGAjYgLgYxLICY05iBwRisjsvY2IGBAQAGpQmjMKkg/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNi0wOC0yNFQxMToyMzo1NS0wNDowMLEFqzIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTYtMDgtMjRUMTE6MjM6NTUtMDQ6MDDAWBOOAAAAAElFTkSuQmCC"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -676,6 +651,31 @@
                     47.4716195
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": false,
+            "text": "Orthofoto WMS Solothurn"
+        },
+        "available_projections": [
+            "EPSG:21781",
+            "EPSG:4326",
+            "EPSG:2056"
+        ],
+        "best": true,
+        "country_code": "CH",
+        "end_date": "2017",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ch/KantonSolothurn-SOGIS-wms.png",
+        "id": "Solothurn-sogis2014-wms",
+        "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
+        "max_zoom": 20,
+        "min_zoom": 15,
+        "name": "Kanton Solothurn (SOGIS)",
+        "start_date": "2015",
+        "type": "wms",
+        "url": "https://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    "type": "Feature"
 }

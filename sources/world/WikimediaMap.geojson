@@ -1,0 +1,16 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "wikimedia-map",
+    "name": "Wikimedia Map",
+    "type": "tms",
+    "url": "https://maps.wikimedia.org/osm-intl/{zoom}/{x}/{y}.png",
+    "attribution": {
+      "text": "© OpenStreetMap contributors, CC-BY-SA",
+      "url": "https://www.openstreetmap.org/",
+      "required": true
+    },
+    "max_zoom": 18
+  },
+  "geometry": null
+}
