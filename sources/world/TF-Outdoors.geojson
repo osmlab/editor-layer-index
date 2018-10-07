@@ -1,0 +1,18 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://thunderforest.com/terms",
+        "id": "tf-outdoors",
+        "name": "Thunderforest Outdoors",
+        "i18n": true,
+        "url": "https://{switch:a,b,c}.tile.thunderforest.com/outdoors/{zoom}/{x}/{y}.png",
+        "attribution": {
+            "url": "https://www.thunderforest.com/terms",
+            "text": "Maps © Thunderforest, Data © OpenStreetMap contributors",
+            "required": true
+        },
+        "max_zoom": 22,
+        "type": "tms"
+    },
+    "geometry": null
+}
