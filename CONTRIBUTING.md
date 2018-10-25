@@ -41,7 +41,9 @@ Following are the key details in the schema json that needs to be filled in:
 </tr>
 </tbody>
 </table>
-
+</td>
+</tr>
+</table>
 <p>
 
 </p>
