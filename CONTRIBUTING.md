@@ -15,14 +15,34 @@ See [schema.json](schema.json) for the full list of available properties.
 
 ## collapsible markdown?
 
-<details><summary>CLICK ME</summary>
+<details>
+<summary>Click here to see detailed explanation</summary>
+Following are the key details in the schema json that needs to be filled in:
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>object</td>
+<td><table>
+<thead><tr><th>Name</th><th>Type</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>string</td>
+</tr>
+<tr>
+<td>enum</td>
+<td>array</td>
+<td>Feature</td>
+</tr>
+</td>
+</tr>
+</tbody>
+</table>
+
 <p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-```
 
 </p>
 </details>
