@@ -13,6 +13,20 @@ To improve readability, the keys of the GeoJSON document should be ordered consi
 
 See [schema.json](schema.json) for the full list of available properties.
 
+## collapsible markdown?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 ##### Source URL
 
 The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles. Whenever possible, use https URLs.
