@@ -15,7 +15,7 @@ take a break and cool off.  This project will still be here later.
 * When you make a mistake, apologize.
 
 
-#### We will not tolerate
+#### We will tolerate
 
 * Sexualized language or imagery
 * Hate speech
