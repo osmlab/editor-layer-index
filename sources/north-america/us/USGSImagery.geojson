@@ -4186,7 +4186,8 @@
         "min_zoom": 12,
         "name": "USGS Imagery",
         "type": "tms",
-        "url": "https://ags-proxy.openstreetmap.us/tiles/{z}/{x}/{y}?url=https%3A%2F%2Fbasemap.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FUSGSImageryOnly%2FMapServer"
+        "url": "https://ags-proxy.openstreetmap.us/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fbasemap.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FUSGSImageryOnly%2FMapServer",
+        "description": "Public domain aerial imagery, mostly NAIP"
     },
     "type": "Feature"
 }
