@@ -4181,12 +4181,13 @@
     "properties": {
         "country_code": "US",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USGSTopographicMaps.png",
-        "id": "USGS-Large_Scale",
+        "id": "USGS-Imagery",
         "max_zoom": 20,
         "min_zoom": 12,
-        "name": "USGS Large Scale Imagery",
+        "name": "USGS Imagery",
         "type": "tms",
-        "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg"
+        "url": "https://ags-proxy.openstreetmap.us/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fbasemap.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FUSGSImageryOnly%2FMapServer",
+        "description": "Public domain aerial imagery, mostly NAIP"
     },
     "type": "Feature"
 }
