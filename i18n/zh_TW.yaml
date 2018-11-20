@@ -87,14 +87,15 @@ zh_TW:
       name: SPW(allonie) 最新空照圖
     SPW_PICC:
       name: SPW(allonie) PICC 數值圖
-    US-TIGER-Roads-2012:
-      name: TIGER 道路 2012
     US-TIGER-Roads-2014:
       description: 在縮放等級 16 以上的資料是從美國人口普查局的公眾領域圖資取得的。較低縮放等級的則僅有自2006年開放街圖刪除部份不合授權條款的資料後併入開放街圖的資料
       name: TIGER 道路 2014
     US-TIGER-Roads-2017:
       description: 黃 = 自美國人口普查局的公共領域地圖資料取得。紅 = 在開放街圖上找不到資料
       name: TIGER 道路 2017
+    US-TIGER-Roads-2018:
+      description: 黃 = 從美國人口普查而來的公有領域資料。紅 = 在開放街圖中找不到的資料
+      name: TIGER Roads 2018
     US_Forest_Service_roads_overlay:
       description: '道路：綠色外框 = 非分類道路。棕色外框 = 土路。路面：碎石路 = 亮棕色實心填滿，柏油 = 黑色，有舖面 = 灰色，地面 = 白色，水泥 = 藍色，草地 = 綠色。季節性 = 白色條紋'
       name: 美國森林道路覆蓋層
@@ -106,6 +107,10 @@ zh_TW:
       attribution:
         text: 透過布魯塞爾的工具 UrbIS®© - 散佈 & 版權所有 CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: 透過 Brussels UrbIS®© - 散佈與版權 CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
       attribution:
         text: 透過布魯塞爾的工具 UrbIS®© - 散佈 & 版權所有 CIRB
@@ -144,10 +149,46 @@ zh_TW:
         text: basemap.at
       description: 由 basemap.at 提供的 Orthofoto 圖層。geoimage.at 圖的「繼承者」。
       name: basemap.at Orthofoto
-    hike_n_bike:
+    eufar-balaton:
       attribution:
-        text: © OpenStreetMap 貢獻者
-      name: 健行與自行車
+        text: EUFAR 巴拉頓正射影像 2010
+      description: 從巴拉頓湖沼學協會而來的 1940 有地理標記的照片。
+      name: EUFAR 巴拉頓正射影像
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: 透過 finds.jp 而來的 GSI Kiban 2500。適合用於追蹤軌跡，但有點老舊。
+      name: 日本 GSI KIBAN 2500
+    gsi.go.jp:
+      attribution:
+        text: GSI 日本
+      description: 日本 GSI 正射影像。通常比 bing 好，但有點老舊。
+      name: 日本 GSI 正射影像
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI 日本
+      description: 日本 GSI 標準地圖。涵蓋範圍大。
+      name: 日本 GSI 標準地圖
+    helsingborg-orto:
+      attribution:
+        text: © 赫爾辛堡市
+      description: 來自赫爾辛堡市的2016年正射影像，公眾領域
+      name: 赫爾辛堡正射影像
+    kalmar-orto-2014:
+      attribution:
+        text: © 卡爾馬市
+      description: 來自卡爾馬市北海岸的2014年正射影像
+      name: 卡爾馬北海岸正射影像2014
+    kalmar-orto-2016:
+      attribution:
+        text: © 卡爾馬市
+      description: 來自卡爾馬市南海岸的2016年正射影像
+      name: 卡爾馬南海岸正射影像2016
+    kalmar-orto-2018:
+      attribution:
+        text: © 卡爾馬市
+      description: 來自卡爾馬市區的2018年正射影像
+      name: 卡爾馬市區正射影像2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -163,6 +204,16 @@ zh_TW:
         text: © Lantmäteriet, CC0
       description: 瑞典自1970-1980的正射影像馬賽克。正在建構中。
       name: Lantmäteriet 歷史正射影像 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: 瑞典的 1:50000 地形圖
+      name: 土地調查地形圖
+    linkoping-orto:
+      attribution:
+        text: © 林雪平市
+      description: 來自林雪平市的2010年正射影像，開放資料
+      name: 林雪平正射影像
     mapbox_locator_overlay:
       attribution:
         text: 使用條款與意見回饋
@@ -207,6 +258,11 @@ zh_TW:
       attribution:
         text: Stamen Design 的圖磚，以 CC BY 3.0 授權。資料自 OpenStreetMap 處取得，以 ODbL 授權
       name: Stamen Terrain
+    stockholm-orto:
+      attribution:
+        text: © 斯德哥爾摩市，CC0
+      description: 來自斯德哥爾摩市的2015年正射影像，CC0 授權
+      name: 斯德哥爾摩正射影像
     tf-cycle:
       attribution:
         text: 地圖 © Thunderforest，資料 © OpenStreetMap 貢獻者

@@ -87,14 +87,15 @@ pl:
       name: Najświeższe zdjęcia lotnicze SPW(allonie)
     SPW_PICC:
       name: Obrazowanie numeryczne SPW(allonie) PICC
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
     US-TIGER-Roads-2014:
       description: Na poziomie powiększenia 16+ są dane public domain od US Census. Na niższych poziomach powiększenia są tylko zmiany od 2006, ale bez zmian już włączonych do OpenStreetMap
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
+      name: TIGER Roads 2018
     US_Forest_Service_roads_overlay:
       description: 'Drogi:  Zielone obramowanie = czwartorzędna. Brązowe obramowanie = polna/leśna. Nawierzchnia: żwir = jasno-brązowe wypełnienie, asfalt = czarny, twarda = szary, grunt = biały, beton = niebieski, trawa = zielony. Dostępna sezonowo = białe paski'
       name: Nakładka z drogami z U.S. Forest
@@ -106,6 +107,10 @@ pl:
       attribution:
         text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
       attribution:
         text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
@@ -144,10 +149,46 @@ pl:
         text: basemap.at
       description: Warstwa ortofotomapy dostarczana przez basemap.at. "Następca" obrazowania z serwisu geoimage.at.
       name: basemap.at Orthofoto
-    hike_n_bike:
+    eufar-balaton:
       attribution:
-        text: © autorzy OpenStreetMap
-      name: Hike & Bike
+        text: EUFAR Balaton ortofotó 2010
+      description: Geotagowane zdjęcia z 1940 od Balaton Limnological Institute.
+      name: Ortofotomapy EUFAR Balaton
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 przez finds.jp. Dobra do odrysowywania, ale trochę starsza.
+      name: Japońska GSI KIBAN 2500
+    gsi.go.jp:
+      attribution:
+        text: GSI Japonia
+      description: Ortofotomapa z japońskiego GSI. Zazwyczaj lepsza niż bing, ale trochę starsza.
+      name: Ortofotomapa z japońskiego GSI
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japonia
+      description: Standardowa mapa japońskiego GSI. Duże pokrycie.
+      name: Standardowa mapa japońskiego GSI
+    helsingborg-orto:
+      attribution:
+        text: © Urząd miasta Helsingborg
+      description: Ortofotografie z urzędu miejskiego Helsingborgu 2016, domena publiczna
+      name: Ortofotografia Helsingborga
+    kalmar-orto-2014:
+      attribution:
+        text: © Urząd miasta Kalmar
+      description: Ortofotografie północnego wybrzeża z urzędu miasta Kalmar 2014
+      name: Ortofoto Kalmar Północ 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Urząd miasta Kalmar
+      description: Ortofotografie południowego wybrzeża z urzędu miasta Kalmar 2016
+      name: Ortofoto Kalmar Południe 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Urząd miasta Kalmar
+      description: Ortofotografie obszaru miejskiego z urzędu miasta Kalmar 2018
+      name: Ortofoto Kalmar Miasto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -163,6 +204,16 @@ pl:
         text: © Lantmäteriet, CC0
       description: Mozaika szwedzkich ortofotomap z okresu 1970-1980. W budowie.
       name: Historyczne ortofotomapy Lantmäteriet 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mapa topograficzna Szwecji 1:50 000
+      name: Mapa topograficzna Lantmäteriet
+    linkoping-orto:
+      attribution:
+        text: © Urząd miasta Linköping
+      description: Ortofotografie z urzędu miejskiego Linköpingu 2010, dane otwarte
+      name: Ortofotografia Linköpingu
     mapbox_locator_overlay:
       attribution:
         text: Warunki użytkowania i opinia
@@ -207,6 +258,11 @@ pl:
       attribution:
         text: Kafle mapy od Stamen Design, licencja CC BY 3.0. Dane z OpenStreetMap, licencja ODbL
       name: Stamen - Teren
+    stockholm-orto:
+      attribution:
+        text: © Urząd miasta Sztokholm, CC0
+      description: Ortofotografie z urzędu miejskiego Sztokholmu 2015, licencja CC0
+      name: Ortofotografia Sztokholmu
     tf-cycle:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap

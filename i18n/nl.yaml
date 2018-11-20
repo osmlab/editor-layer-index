@@ -11,7 +11,7 @@ nl:
     AGIVFlandersGRB:
       attribution:
         text: GRB Vlaanderen © AGIV
-      name: AGIV Vlaandere GRB
+      name: AGIV Vlaanderen GRB
     Bing:
       description: Satelliet- en luchtfoto's.
       name: Bing-luchtfotografie
@@ -85,8 +85,6 @@ nl:
       name: 'OSM Inspecteur: Tagging'
     SPW_ORTHO_LAST:
       name: Nieuwste luchtfoto's van SPW(allonie)
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
     US-TIGER-Roads-2014:
       description: Bij zoomniveau 16+, kaartgegevens in publiek domein van de VS Census. Bij lagere zoomniveaus, enkel wijzigingen sinds 2006 behalve wijzigingen die al in OpenStreetMap zitten
       name: TIGER Roads 2014
@@ -142,10 +140,22 @@ nl:
         text: basemap.at
       description: Orthofoto-laag voorzien door basemap.at. 'Opvolger' van geoimage.at.
       name: basemap.at Orthofoto
-    hike_n_bike:
+    eufar-balaton:
       attribution:
-        text: © OpenStreetMap-bijdragers
-      name: Wandelen & Fietsen
+        text: EUFAR Balaton orthofoto's 2010
+      name: EUFAR Balaton orthofoto's
+    finds.jp_KBN_2500:
+      attribution:
+        text: GIS KIBAN 2500
+      description: GIS KIBAN 2500 van finds.jp. Goed voor het tekenen van tracés, maar iets ouder.
+      name: Japan GSI KIBAN 2500
+    gsi.go.jp:
+      attribution:
+        text: GSI Japan
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japan
+      name: Japan GSI Standaard Kaart
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -154,10 +164,12 @@ nl:
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
+      description: Mosaic van Zweedse luchtfoto's van de periode 1955–1965. Oudere en nieuwere luchtfoto's kunnen voorkomen.
       name: Lantmäteriet Historic Orthophoto 1960
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
+      description: Mosaic van Zweedse luchtfoto's van de periode 1970-1980. Wordt uitgebreid.
       name: Lantmäteriet Historic Orthophoto 1975
     mapbox_locator_overlay:
       attribution:
@@ -184,6 +196,7 @@ nl:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
+      description: Scan van "Economische kaarten" ca. 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, Gegevens ©OpenStreetMap-bijdragers
@@ -212,6 +225,7 @@ nl:
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
+      description: Zweeds spoorwegnet, zijsporen inbegrepen
       name: Trafikverket Spoornetwerk
     trafikverket-baninfo-option:
       attribution:

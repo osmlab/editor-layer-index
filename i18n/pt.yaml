@@ -1,5 +1,11 @@
 pt:
   imagery:
+    AGIV:
+      attribution:
+        text: Orthophoto Flanders mais recente © AGIV
+    AGIVFlandersGRB:
+      attribution:
+        text: GRB Flandres © AGIV
     Bing:
       description: Imagens aéreas e de satélite.
       name: Imagens aéreas Bing
@@ -69,8 +75,6 @@ pt:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Etiquetagem'
-    US-TIGER-Roads-2012:
-      name: Estradas TIGER 2012
     US-TIGER-Roads-2014:
       description: No nível de zoom 16+, existe informação de mapas do domínio público dos Censos dos EUA. Nos níveis de zoom menores, apenas alterações desde 2006 ,exceto alterações  já incorporadas no OpenStreetMap
       name: Estradas TIGER 2014
@@ -110,10 +114,6 @@ pt:
         text: basemap.at
       description: Ortofotomapa fornecido por basemap.at. Sucessor de imagens da geoimage.at .
       name: Ortofotomapa geoimage.at
-    hike_n_bike:
-      attribution:
-        text: © Contribuidores OpenStreetMap
-      name: Bicicleta & caminhadas
     mapbox_locator_overlay:
       attribution:
         text: Termos e opinião
@@ -156,3 +156,6 @@ pt:
       attribution:
         text: Mapas © Thunderforest, dados do mapa © contribuidores OpenStreetMap
       name: Thunderforest Landscape
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0

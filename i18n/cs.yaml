@@ -18,6 +18,7 @@ cs:
     DigitalGlobe-Premium:
       attribution:
         text: Podmínky použití & zpětná vazba
+      description: DigitalGlobe-Premium je mozaika složená ze základní mapy DigitalGlobe s vybranými aktuálními oblastmi nebo vlastními oblastmi zájmových snímků o rozlišení 50 cm nebo vyšším a častěji obnovovanými s průběžnými aktualizacemi.
       name: Prémiové snímky DigitalGlobe
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -25,6 +26,7 @@ cs:
     DigitalGlobe-Standard:
       attribution:
         text: Podmínky použití a zpětná vazba
+      description: DigitalGlobe-Standard je soustředěná sada snímků pokrývající 86% zemské zemské půdy, s rozlišením 30-60 cm, jsou-li k dispozici, nasnímané družicí Landsat. Průměrné stáří je 2,31 roku, některé oblasti jsou aktualizovány 2x za rok.
       name: Standardní snímky DigitalGlobe
     DigitalGlobe-Standard-vintage:
       attribution:
@@ -79,12 +81,14 @@ cs:
       name: 'OSM Inspektor: Štítkování'
     SPW_ORTHO_LAST:
       name: Nejaktuálnější snímky SPW(allonie)
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
     US-TIGER-Roads-2014:
+      description: Na úrovni zvětšení 16+ získáte údaje o mapě ve veřejné doméně z amerického sčítání lidu. Při nižších přiblíženích dochází pouze k změnám od roku 2006, bez změn již zahrnutých do OpenStreetMapy
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
+      description: Žlutá = data z veřejně dostupné mapy z amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      description: 'Vozovka: Zelené okraje = neklasifikovaná. Hnědé okraje = cesta. Povrch: Štěrk = světle hnědá výplň, asfalt = černá, dlažba = šedá, zemina = bílá, beton = modrá, tráva = zelená. Sezónní = bílé čáry'
     UrbISOrtho2016:
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
@@ -116,15 +120,21 @@ cs:
     basemap.at:
       attribution:
         text: basemap.at
+      description: Základní mapa Rakouska, založená na vládních datech.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
       name: Ortofoto basemap.at
-    hike_n_bike:
+    kelkkareitit:
       attribution:
-        text: © Přispěvatelé OpenStreetMap
-      name: Turistika & cyklistika
+        text: © Kelkkareitit.fi
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
     mapbox_locator_overlay:
       attribution:
         text: Podmínky použití a zpětná vazba
@@ -156,7 +166,12 @@ cs:
       attribution:
         text: '© Dlaždice: skobbler, mapová data: přispěvatelé OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
     stamen-terrain-background:
+      attribution:
+        text: Mapové dlaždice od Stamen Design pod CC BY 3.0. Data od OpenStreetMap, pod ODbL
       name: Terén Stamen
     tf-cycle:
       attribution:

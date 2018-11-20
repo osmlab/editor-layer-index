@@ -2,38 +2,38 @@ gl:
   imagery:
     Bing:
       description: Imaxe satélite e aérea.
-      name: Imaxe aérea Bing.
+      name: Imaxe aérea do Bing
     DigitalGlobe-Premium:
       attribution:
         text: Termos e comentarios
-      name: Imaxes DigitalGlobe Premium
+      name: Imaxes do DigitalGlobe Premium
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Termos e comentarios
-      description: Límites das imaxes e datas de captura. As etiquetas aparecen a un nivel de zoom de 13 e superior.
-      name: Antigüidade das imaxes DigitalGlobe Premium
+      description: Límites das imaxes e datas de captura. As etiquetas xorden a un nivel de zoom de 13 e superior.
+      name: Antigüidade das imaxes do DigitalGlobe Premium
     DigitalGlobe-Standard:
       attribution:
         text: Termos e comentarios
-      name: Imaxes DigitalGlobe Standard
+      name: Imaxes do DigitalGlobe Standard
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Termos e comentarios
-      description: Límites das imaxes e datas de captura. As etiquetas aparecen a un nivel de zoom de 13 e superior.
-      name: Antigüidade das imaxes DigitalGlobe Standard
+      description: Límites das imaxes e datas de captura. As etiquetas xorden a un nivel de zoom de 13 e superior.
+      name: Antigüidade das imaxes do DigitalGlobe Standard
     EsriWorldImagery:
       attribution:
         text: Termos e comentarios
-      description: Imaxes mundiais Esri.
-      name: Imaxes mundiais Esri
+      description: Imaxes mundiais do Esri.
+      name: Imaxes mundiais do Esri
     EsriWorldImageryClarity:
       attribution:
         text: Termos e comentarios
-      description: Arquivo de imaxes de Esri que pode que sexan máis claras e máis precisas que a súa capa por defecto.
-      name: Imaxes mundiais Esri (Clarity) Beta
+      description: Arquivo de imaxes do Esri que pode que sexan máis craras e máis precisas que a súa capa por defecto.
+      name: Imaxes mundiais do Esri (Clarity) Beta
     MAPNIK:
       attribution:
-        text: © contribuidores do OpenStreetMap, CC-BY-SA
+        text: © contribuíntes do OpenStreetMap, CC-BY-SA
       description: Capa OpenStreetMap por defecto.
       name: OpenStreetMap (Estándar)
     Mapbox:
@@ -43,41 +43,51 @@ gl:
       name: Mapbox Satélite
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Enderezos'
     OSM_Inspector-Geometry:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Xeometría'
     OSM_Inspector-Highways:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Estradas'
     OSM_Inspector-Multipolygon:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Área'
     OSM_Inspector-Places:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Lugares'
     OSM_Inspector-Routing:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Roteiros'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, contribuidores do OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Etiquetado'
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, contribuíntes do OpenStreetMap, CC by-SA 3.0
       name: 'Marcador de Pistas: Ciclismo'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, contribuíntes do OpenStreetMap, CC by-SA 3.0
       name: 'Marcador de Pistas: Excursionismo'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, contribuíntes do OpenStreetMap, CC by-SA 3.0
       name: 'Marcador de Pistas: MTB'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, contribuíntes do OpenStreetMap, CC by-SA 3.0
       name: 'Marcador de Pistas: Skate'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, contribuíntes do OpenStreetMap, CC by-SA 3.0
       name: 'Marcadores de Pistas: Deportes de inverno'
     basemap.at:
       attribution:
@@ -86,12 +96,11 @@ gl:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Capa ortofoto proporcionada por basemap.at  "Sucesor" de imaxes de geoimage.at.
+      description: Capa ortofoto fornecida polo basemap.at  "Sucesor" de imaxes do geoimage.at.
       name: Ortofoto basemap.at
-    hike_n_bike:
+    gsi.go.jp:
       attribution:
-        text: © contribuidores do OpenStreetMap
-      name: Camiño & Bici
+        text: Xapón GSI
     mapbox_locator_overlay:
       attribution:
         text: Termos e comentarios
@@ -99,28 +108,28 @@ gl:
       name: Superposición de Localizador
     openpt_map:
       attribution:
-        text: © contribuidores do OpenStreetMap, CC-BY-SA
+        text: © contribuíntes do OpenStreetMap, CC-BY-SA
       name: OpenPT Mapa (superposición)
     osm-gps:
       attribution:
-        text: © contribuidores do OpenStreetMap
+        text: © contribuíntes do OpenStreetMap
       description: Trazas públicas GPS subidas a OpenStreetMap.
       name: Trazas GPS de OpenStreetMap
     osm-mapnik-black_and_white:
       attribution:
-        text: © contribuidores do OpenStreetMap, CC-BY-SA
+        text: © contribuíntes do OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Estándar Branco e Negro)
     osm-mapnik-german_style:
       attribution:
-        text: © contribuidores do OpenStreetMap, CC-BY-SA
+        text: © contribuíntes do OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Estilo Alemá)
     qa_no_address:
       attribution:
-        text: Simon Poole, Datos ©contribuidores do OpenStreetMap
+        text: Simon Poole, Datos ©contribuíntes do OpenStreetMap
       name: QA Sen Enderezos
     skobbler:
       attribution:
-        text: '© Teselas: skobbler Datos do mapa: contribuidores do OpenStreetMap'
+        text: '© Teselas: skobbler Datos do mapa: contribuíntes do OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
       attribution:
@@ -128,9 +137,9 @@ gl:
       name: Terreo Stamen
     tf-cycle:
       attribution:
-        text: Mapas © Thunderforest, Datos © contribuidores do OpenStreetMap
+        text: Mapas © Thunderforest, Datos © contribuíntes do OpenStreetMap
       name: OpenCycleMap de Thunderforest
     tf-landscape:
       attribution:
-        text: Mapas © Thunderforest, Datos © contribuidores do OpenStreetMap
+        text: Mapas © Thunderforest, Datos © contribuíntes do OpenStreetMap
       name: Landscape de Thunderforest
