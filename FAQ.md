@@ -52,5 +52,5 @@ Tips for drawing the polygon:
 2. You don't need to be super detailed, just roughly trace around where the imagery is valid.
 3. Double click to stop drawing.
 4. If you want to change the shape, click the "Edit Layers" button - it looks like a square with pencil in it.
-5. In edit mode you can move or click once to delete exising points, or drag midpoints to create new points.
+5. In edit mode you can move or click once to delete existing points, or drag midpoints to create new points.
 
