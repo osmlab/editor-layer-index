@@ -4,10 +4,10 @@
     "id": "MassGIS-L3-Parcels",
     "name": "MassGIS L3 Parcels",
     "type": "tms",
-    "url": "https://ags-proxy.openstreetmap.us/tiles/{zoom}/{x}/{y}?url=http%3A%2F%2Fgisprpxy.itd.state.ma.us%2Farcgisserver%2Frest%2Fservices%2FAGOL%2FL3Parcels_feature_service%2FMapServer%2F&transparent=true&layers=show%3A0",
+    "url": "http://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGIS_Level3_Parcels/MapServer/tile/{z}/{y}/{x}",
     "country_code": "US",
     "overlay": true,
-    "max_zoom": 22,
+    "max_zoom": 20,
     "min_zoom": 15
   },
   "geometry": {
