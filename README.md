@@ -24,6 +24,8 @@ If you are using iD, Potlatch 2, Vespucci or Go Map!!, you are already using thi
 
 For JOSM you can add `https://osmlab.github.io/editor-layer-index/imagery.xml` to the preference key `imagery.layers.sites` in advanced preferences. You probably want to remove the `https://josm.openstreetmap.de/maps` entry or you'll get the same layers listed twice.
 
+For QGIS, [use the layer index converter script](https://github.com/andrewharvey/osm-editor-layer-index-qgis). You must check yourself whether the license allows you to use the layer(s) you are interested in.
+
 For any other usage, use https://osmlab.github.io/editor-layer-index/imagery.geojson.
 
 ## Layer Overview
