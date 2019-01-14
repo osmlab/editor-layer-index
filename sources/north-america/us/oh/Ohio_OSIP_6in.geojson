@@ -3,7 +3,7 @@
     "properties": {
         "name": "OSIP 6in Imagery Most Current Available",
         "type": "wms",
-        "url": "https://geo.oit.ohio.gov/arcgis/rest/services/OSIP/OSIP_6in_best_avail/ImageServer/exportImage?f=image&bbox={bbox}&imageSR=4326&bboxSR=4326&size={width}%2C{height}",
+        "url": "https://geo.oit.ohio.gov/arcgis/rest/services/OSIP/OSIP_6in_best_avail/ImageServer/exportImage?f=image&bbox={bbox}&imageSR=4326&bboxSR=4326&SR={proj}&size={width}%2C{height}",
         "min_zoom": 1,
         "max_zoom": 22,
         "permission_osm": "implicit",
