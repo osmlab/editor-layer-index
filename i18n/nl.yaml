@@ -85,12 +85,17 @@ nl:
       name: 'OSM Inspecteur: Tagging'
     SPW_ORTHO_LAST:
       name: Nieuwste luchtfoto's van SPW(allonie)
+    SPW_PICC:
+      name: SPW(allonie) PICC numerieke beelden
     US-TIGER-Roads-2014:
       description: Bij zoomniveau 16+, kaartgegevens in publiek domein van de VS Census. Bij lagere zoomniveaus, enkel wijzigingen sinds 2006 behalve wijzigingen die al in OpenStreetMap zitten
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
+      name: TIGER Roads 2018
     US_Forest_Service_roads_overlay:
       description: 'Wegen: Groene omlijning = ongeclassificeerd. Bruine omlijning = veldweg. Oppervlak: grind = lichtbruin gevuld, asfalt = zwart, bestraat = grijs, grond = wit, beton = blauw, gras = groen. Seizoensgebonden = witte balken'
       name: U.S. Forest Roads-laag
@@ -102,6 +107,10 @@ nl:
       attribution:
         text: Gerealiseerd met middelen van Brussels UrbIS®© - Distributie & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Gerealiseerd met middelen van Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
       attribution:
         text: Gerealiseerd met middelen van Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -143,6 +152,7 @@ nl:
     eufar-balaton:
       attribution:
         text: EUFAR Balaton orthofoto's 2010
+      description: 1940 gegeorefereede fotografie van Balaton Limnological Institute.
       name: EUFAR Balaton orthofoto's
     finds.jp_KBN_2500:
       attribution:
@@ -152,10 +162,33 @@ nl:
     gsi.go.jp:
       attribution:
         text: GSI Japan
+      description: Japan GSI orthofoto. Gewoonlijk beter dan bing, maar iets ouder.
+      name: Japan GSI orthofoto
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
+      description: Japan GSI Standaard Kaart. Grootschalige dekking.
       name: Japan GSI Standaard Kaart
+    helsingborg-orto:
+      attribution:
+        text: © Gemeente Helsingborg
+      description: Orthofoto's van de gemeente Helsingborg 2016, publiek domein
+      name: Helsingborg Orthofoto
+    kalmar-orto-2014:
+      attribution:
+        text: © Gemeente Kalmar
+      description: Orthofoto's van de noordkust van de gemeente Kalmar 2014
+      name: Kalmar-noord Orthofoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Gemeente Kalmar
+      description: Orthofoto's van de zuidkust van de gemeente Kalmar 2016
+      name: Kalmar-zuid Orthofoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Gemeente Kalmar
+      description: Orthofoto's van de stedelijke gebieden van de gemeente Kalmar 2018
+      name: Kalmar Stedelijke Orthofoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -171,6 +204,16 @@ nl:
         text: © Lantmäteriet, CC0
       description: Mosaic van Zweedse luchtfoto's van de periode 1970-1980. Wordt uitgebreid.
       name: Lantmäteriet Historic Orthophoto 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Topografische kaart van Zweden 1:50 000
+      name: Lantmäteriet Topografische Kaart
+    linkoping-orto:
+      attribution:
+        text: © Gemeente Linköping
+      description: Orthofoto's van de gemeente Linköping 2010, open data
+      name: Linköping Orthofoto
     mapbox_locator_overlay:
       attribution:
         text: Gebruiksvoorwaarden & feedback
@@ -197,6 +240,7 @@ nl:
       attribution:
         text: © Lantmäteriet
       description: Scan van "Economische kaarten" ca. 1950-1980
+      name: Lantmäteriet Economische Kaart 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Gegevens ©OpenStreetMap-bijdragers
@@ -214,6 +258,11 @@ nl:
       attribution:
         text: Kaarttegels van Stamen Design, onder CC BY 3.0. Gegevens van OpenStreetMap, onder ODbL
       name: Stamen Terrein
+    stockholm-orto:
+      attribution:
+        text: © Gemeente Stockholm, CC0
+      description: Orthofoto's van de gemeente Stockholm 2015, CC0 licentie
+      name: Stockholm Orthofoto
     tf-cycle:
       attribution:
         text: Kaarten © Thunderforest, gegevens © OpenStreetMap-bijdragers

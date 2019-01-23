@@ -23,6 +23,7 @@ cs:
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Podmínky použití a zpětná vazba
+      description: Hranice snímků and data pořízení. Popisky se objevují od zoomu 13 a více.
     DigitalGlobe-Standard:
       attribution:
         text: Podmínky použití a zpětná vazba
@@ -31,6 +32,7 @@ cs:
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Podmínky použití a zpětná vazba
+      description: Hranice snímků and data pořízení. Popisky se objevují od zoomu 13 a více.
     EsriWorldImagery:
       attribution:
         text: Podmínky použití a zpětná vazba
@@ -87,15 +89,31 @@ cs:
     US-TIGER-Roads-2017:
       description: Žlutá = data z veřejně dostupné mapy z amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Žlutá = Veřejně přístupná data ze sčítání USA. Červená = Data nenalezena v OpenStreetMap
+      name: Silnice TIGER 2018
     US_Forest_Service_roads_overlay:
       description: 'Vozovka: Zelené okraje = neklasifikovaná. Hnědé okraje = cesta. Povrch: Štěrk = světle hnědá výplň, asfalt = černá, dlažba = šedá, zemina = bílá, beton = modrá, tráva = zelená. Sezónní = bílé čáry'
+      name: Vrstva lesních cest USA
     UrbISOrtho2016:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -125,7 +143,24 @@ cs:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
+      description: Vrstva ortofoto poskytnuta basemap.at. "Následník" geoimage.at.
       name: Ortofoto basemap.at
+    eufar-balaton:
+      attribution:
+        text: Ortofoto EUFAR Balaton 2010
+      name: Ortofoto EUFAR Balaton
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 přes finds.jp. Dobrá pro odvozování dat, ale trochu starší.
+      name: GSI KIBAN 2500 Japonsko
+    gsi.go.jp:
+      attribution:
+        text: GSI Japonsko
+      description: Ortofoto GSI Japonsko. většinou lepší než Bing, ale trochu starší.
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japonsko
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -173,6 +208,8 @@ cs:
       attribution:
         text: Mapové dlaždice od Stamen Design pod CC BY 3.0. Data od OpenStreetMap, pod ODbL
       name: Terén Stamen
+    stockholm-orto:
+      name: Ortofotomapy Stockholmu
     tf-cycle:
       attribution:
         text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap
