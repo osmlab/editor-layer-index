@@ -40,7 +40,8 @@ def convert_json_source(args, source):
 
     for f in ['name', 'type', 'url', 'license_url', 'id', 'description',
             'country_code', 'default', 'best', 'start_date', 'end_date',
-            'overlay', 'available_projections', 'attribution', 'icon']:
+            'overlay', 'available_projections', 'attribution', 'icon',
+            'privacy_policy_url']:
         thing = properties.get(f)
         if thing is not None:
             converted[f] = thing

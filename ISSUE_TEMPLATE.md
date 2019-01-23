@@ -20,6 +20,9 @@ about which licenses are compatible with this index.
 ## Attribution (text, URL, required?)
 (optional)
 
+## Privacy policy (URL)
+(optional)
+
 ## Icon
 (optional)
 
