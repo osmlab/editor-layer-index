@@ -73,6 +73,10 @@
                     "description": "A URL for the license or permissions for the imagery",
                     "type": "string"
                 },
+                "privacy_policy_url": {
+                    "description": "A URL for the privacy policy of the operator",
+                    "type": "string"
+                },
                 "id": {
                     "description": "A unique identifier for the source; used in imagery_used changeset tag",
                     "pattern": "^[-_.A-Za-z0-9]+$",
