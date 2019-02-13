@@ -109,6 +109,28 @@
                     "type": "string",
                     "pattern": "^\\d\\d\\d\\d(-\\d\\d(-\\d\\d)?)?$"
                 },
+                "no_tile_header": {
+                    "description": "HTTP header to check for information if the tile is invalid",
+                    "type": "object",
+                    "minProperties": 1,
+                    "maxProperties": 1,
+                    "patternProperties": {
+                        "^.*$": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
                 "overlay": {
                     "description": "'true' if tiles are transparent and can be overlaid on another source",
                     "type": "boolean",

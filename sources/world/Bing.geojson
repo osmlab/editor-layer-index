@@ -11,6 +11,11 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/Bing_Maps",
         "min_zoom": 1,
         "max_zoom": 22,
+        "no_tile_header": {
+            "X-VE-Tile-Info": [
+                "no-tile"
+            ]
+        },
         "name": "Bing aerial imagery",
         "type": "bing",
         "url": "https://www.bing.com/maps"
