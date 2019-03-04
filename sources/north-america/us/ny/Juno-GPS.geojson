@@ -1,0 +1,33 @@
+{
+    "geometry": {
+        "coordinates": [[
+            [-74.337, 40.484],
+            [-73.572, 40.484],
+            [-73.572, 40.957],
+            [-74.337, 40.957],
+            [-74.337, 40.484]
+        ]],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 2019 Juno",
+            "url": "https://gps-tile.junolab.net/about.html"
+        },
+        "country_code": "US",
+        "description": "Juno drivers' GPS traces from two days ago, updated daily",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ny/Juno-GPS.png",
+        "id": "juno-gps",
+        "max_zoom": 19,
+        "start_date": "2019",
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://gps-tile.junolab.net/about.html",
+        "permission_osm": "explicit",
+        "name": "Juno GPS traces",
+        "overlay": true,
+        "type": "tms",
+        "url": "https://gps-tile.junolab.net/{zoom}/{x}/{y}.png"
+    },
+    "type": "Feature"
+}
