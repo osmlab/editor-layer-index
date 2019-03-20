@@ -1,0 +1,85 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "cascavel_pr",
+        "url": "http://geoserver.cascavel.pr.gov.br:8181/geoserver/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ctmgeo_22s:Municipio_Base&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&tiled=true",
+        "type": "wms",
+        "country_code": "BR",
+        "name": "Cascavel PR",
+        "license_url": "TODO",
+        "attribution": {
+            "url": "http://geocascavel.cascavel.pr.gov.br/geo-view/index.ctm",
+            "text": "Governo Municipal Cascavel"
+        },
+        "available_projections": [
+                                  "EPSG:3857",
+                                  ]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -53.52745073318,
+              -24.94061553271
+            ],
+            [
+              -53.52075593948,
+              -24.9971046633
+            ],
+            [
+              -53.47320573807,
+              -25.0067503506
+            ],
+            [
+              -53.42908876419,
+              -25.00286105167
+            ],
+            [
+              -53.39441316605,
+              -24.97781101739
+            ],
+            [
+              -53.38462846756,
+              -24.94295030785
+            ],
+            [
+              -53.39218156815,
+              -24.92006760393
+            ],
+            [
+              -53.41346757889,
+              -24.90200750624
+            ],
+            [
+              -53.4364702034,
+              -24.90154039968
+            ],
+            [
+              -53.47406404495,
+              -24.91788807726
+            ],
+            [
+              -53.48814027786,
+              -24.90449871137
+            ],
+            [
+              -53.50187318802,
+              -24.91866648406
+            ],
+            [
+              -53.49311845779,
+              -24.92660595281
+            ],
+            [
+              -53.52521913528,
+              -24.93532321192
+            ],
+            [
+              -53.52745073318,
+              -24.94061553271
+            ]
+          ]
+        ]
+    }
+}
