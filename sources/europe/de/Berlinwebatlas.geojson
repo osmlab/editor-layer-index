@@ -1,0 +1,45 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Berlin-Webatlas",
+    "name": "Berlin WebAtlas (Straßen, Hausumringe & -Nr.)",
+    "type": "wms",
+    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_webatlasberlin?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "start_date": "2018",
+    "end_date": "2018",
+    "country_code": "DE",
+    "available_projections": [
+      "EPSG:25833",
+      "EPSG:3068",
+      "EPSG:4326",
+      "EPSG:4258"
+    ],
+    "attribution": {
+      "text": "Geoportal Berlin / WebAtlas Berlin"
+    },
+    "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          12.996267,
+          52.693275
+        ],
+        [
+          13.824885,
+          52.693275
+        ],
+        [
+          13.824885,
+          52.308280
+        ],
+        [
+          12.996267,
+          52.308280
+        ]
+      ]
+    ]
+  }
+}
