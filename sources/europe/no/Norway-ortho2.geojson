@@ -3,11 +3,11 @@
     "properties": {
         "best": true, 
         "type": "tms",
-        "name": "Norway Orthophoto",
-        "id": "geovekst-nib",
+        "name": "Norway Orthophoto (more recent, less zoom)",
+        "id": "geovekst-nib2",
         "country_code": "NO",
-        "description": "Norwegian orthophotos (max zoom 21), courtesy of Geovekst and Norkart.",
-        "url": "https://waapi.webatlas.no/maptiles/tiles/webatlas-orto-newup/wa_grid/{zoom}/{x}/{y}.jpeg?api_key=b8e36d51-119a-423b-b156-d744d54123d5",
+        "description": "Most recent Norwegian orthophotos (max zoom 19), courtesy of Geovekst and Kartverket.",
+        "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_nib_web_mercator_wmts_v2?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Nibcache_web_mercator_v2&STYLE=default&FORMAT=image/jpgpng&tileMatrixSet=default028mm&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
         "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
         "max_zoom": 21,
         "attribution": {
