@@ -10,10 +10,9 @@
         "license": "CC-BY-4.0",
         "name": "ACTmapi Imagery 2018",
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:28355"
+            "EPSG:3857"
         ],
-        "url": "https://data.actmapi.act.gov.au/arcgis/services/actmapi/imagery2018mga/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery2018mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
         "best": true,
         "start_date": "2018-03-19",
         "end_date": "2018-03-19",
