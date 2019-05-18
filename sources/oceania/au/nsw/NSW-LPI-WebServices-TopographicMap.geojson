@@ -3,17 +3,18 @@
     "properties": {
         "attribution": {
             "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-            "text": "© Land and Property Information 2017",
+            "text": "© Land and Property Information 2019",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
         "name": "LPI NSW Topographic Map",
         "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 16,
-        "min_zoom": 1, 
+        "min_zoom": 1,
         "country_code": "AU",
         "type": "tms",
-        "id": "NSW_LPI_TopographicMap"
+        "id": "NSW_LPI_TopographicMap",
+        "icon": "http://spatialservices.finance.nsw.gov.au/__data/assets/file/0010/210520/favicon.ico"
     },
     "geometry": {
         "type": "Polygon",
