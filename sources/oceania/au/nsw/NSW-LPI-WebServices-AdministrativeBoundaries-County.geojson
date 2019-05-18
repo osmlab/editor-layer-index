@@ -4,7 +4,7 @@
         "id": "LPI_NSW_Administrative_Boundaries_County",
         "attribution": {
             "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-            "text": "© Land and Property Information 2017",
+            "text": "© Land and Property Information 2019",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
@@ -15,9 +15,10 @@
         "url": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=4&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE",
         "overlay": true,
         "max_zoom": 21,
-        "min_zoom": 1, 
+        "min_zoom": 1,
         "country_code": "AU",
-        "type": "wms"
+        "type": "wms",
+        "icon": "http://spatialservices.finance.nsw.gov.au/__data/assets/file/0010/210520/favicon.ico"
     },
     "geometry": {
         "type": "Polygon",

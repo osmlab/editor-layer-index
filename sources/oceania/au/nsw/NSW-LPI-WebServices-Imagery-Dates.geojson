@@ -3,7 +3,7 @@
     "properties": {
         "attribution": {
             "url": "http://spatialservices.finance.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-            "text": "© Land and Property Information 2017",
+            "text": "© Land and Property Information 2019",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
@@ -16,7 +16,8 @@
         "overlay": true,
         "max_zoom": 21,
         "country_code": "AU",
-        "type": "wms"
+        "type": "wms",
+        "icon": "http://spatialservices.finance.nsw.gov.au/__data/assets/file/0010/210520/favicon.ico"
     },
     "geometry": {
         "type": "Polygon",
