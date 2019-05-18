@@ -413,7 +413,7 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Orthophoto Flanders \u00a9 AGIV"
+            "text": "\u00a9 agentschap Informatie Vlaanderen"
         },
         "available_projections": [
             "EPSG:4326",
@@ -429,9 +429,9 @@
         "end_date": "2015",
         "i18n": true,
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/BE_GRB_Flanders_TMS.png",
-        "id": "AGIV10cm",
+        "id": "AIV10cm",
         "license_url": "https://download.agiv.be/Producten/Detail?id=1209&title=Orthofotomozaiek_grootschalig_winteropnamen_kleur_2013_2015_Vlaanderen",
-        "name": "AGIV Flanders 2013-2015 aerial imagery 10cm",
+        "name": "AIV Flanders 2013-2015 aerial imagery 10cm",
         "start_date": "2013",
         "type": "wms",
         "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/OGW/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OGWRGB13_15VL&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
