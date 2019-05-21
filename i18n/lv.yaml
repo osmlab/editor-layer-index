@@ -1,17 +1,5 @@
 lv:
   imagery:
-    AGIV:
-      attribution:
-        text: Ortofoto Flanders vissjaunākie © AGIV
-      name: AGIV Flanders vissjaunākā aerofotoattēli
-    AGIV10cm:
-      attribution:
-        text: Ortofoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 aerofotoattēli 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Satelītu un aerofotoattēli.
       name: Bing aerofotoattēli
@@ -35,6 +23,9 @@ lv:
         text: Noteikumi un atsauksmes
       description: Attēlu malas un uztveršanas datumi. Etiķetes parādās palielinājuma līmenī 13 un zemāk.
       name: Vecāki DigitalGlobe Standarta Attēli
+    EOXAT2018CLOUDLESS:
+      description: Apstrādāti Sentinel Satalītattēli.
+      name: eox.at 2018 bez-mākoņu
     EsriWorldImagery:
       attribution:
         text: Noteikumi un atsauksmes
@@ -164,6 +155,13 @@ lv:
         text: GSI Japāna
       description: Japānas GSI ortogrāfiskie attēli. Parasti labāki par bing, bet nedaudz vecāki.
       name: Japānas GSI ortogrāfiskie attēli
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japāna
+      name: Japānas GSI gaisa-foto attēli
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japānas bezšuvju foto
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japāna
@@ -261,7 +259,6 @@ lv:
     stockholm-orto:
       attribution:
         text: © Stokholmas pašvaldība, CC0
-      description: 2015. gada Ortofoto no Stokholmas pašvaldības, CC0 licence
       name: Stokholmas Ortofoto
     tf-cycle:
       attribution:

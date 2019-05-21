@@ -2,16 +2,24 @@ eo:
   imagery:
     AGIV:
       attribution:
-        text: Aera fotaro pri Flandrujo (plej aktuala) © AGIV
-      name: Plej aktuala aera fotaro de Informa Geografia Agentejo de Flandrujo (AGIV/FGIA)
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: plej aktuala fotaro'
     AGIV10cm:
       attribution:
-        text: Aera fotaro pri Flandrujo © AGIV
-      name: Aera fotaro 10cm de Informa Geografia Agentejo de Flandrujo (AGIV/FGIA) de 2013–2015
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: 2013-2015 aera fotaro 10cm'
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandrujo © AGIV
-      name: AGIV Flandrujo GRB
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: GRB'
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, plurdirekta altreliefo 0,25m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0,25m
     Bing:
       description: Satelita kaj aera fotaroj.
       name: Aera fotaro de Bing
@@ -19,7 +27,7 @@ eo:
       attribution:
         text: Kondiĉoj kaj rimarkoj
       description: DigitalGlobe-Premium estas kunmetaĵo de Digital-Globe-bazmapo kun kelkaj regionoj plenigitaj per +Vivid fotaro je distingivo 50cm aŭ pli bona kaj aktualigata pli ofte.
-      name: Detala fotaro de DigitalGlobe
+      name: 'DigitalGlobe: detala fotaro'
     DigitalGlobe-Premium-vintage:
       attribution:
         text: Kondiĉoj kaj rimarkoj
@@ -29,12 +37,22 @@ eo:
       attribution:
         text: Kondiĉoj kaj rimarkoj
       description: DigitalGlobe-Standard estas prizorgata fotaro ampleksanta 86% da tero je distingivo 30–60cm (se disponebla), danke al programo Landsat. Mezuma aĝo de fotaro estas 2,31a, sed kelkaj areoj estas aktualigataj dufoje en jaro.
-      name: Norma fotaro de DigitalGlobe
+      name: 'DigitalGlobe: norma fotaro'
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Kondiĉoj kaj rimarkoj
       description: Limoj kaj datoj de fotoj. Etikedoj montriĝas de skal-nivelo 13.
       name: Norma fotaro de DigitalGlobe - fot-dato
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Kondiĉoj kaj rimarkoj
+      description: 'DigitalGlobe-Vivid estas kunmetaĵo de kiel eble plej bela kaj aktuala fotaro por iu ajn areo de la Tero: distingivo 50cm aŭ pli bona kaj mezuma aktualeco <20 monatoj.'
+      name: DigitalGlobe-Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel‑2 sennuba fotaro de EOX IT Services GmbH (enhavas modifitajn datumojn (2017‑2018) de Copernicus)
+      description: Pritraktita fotaro de la satelito Sentinel‑2.
+      name: eox.at 2018 sennuba
     EsriWorldImagery:
       attribution:
         text: Kondiĉoj kaj rimarkoj
@@ -169,6 +187,11 @@ eo:
         text: GSI Japanujo
       description: Aera fotaro de GSI Japanujo. Ne tute geometrie korektita, sed iomete pli aktuala aŭ kovranta aliajn terenojn ol fotaro de GSI.
       name: Aera fotaro GSI Japanujo (nekorektita)
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japanujo unuforma fotaro
+      description: Senkunliga (unuforma) fotaro de GSI Japanujo. Kolekto de la plej aktualaj aeraj fotoj de GSI post la kataklismo kaj aliaj.
+      name: Unuforma fotaro GSI Japanujo
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japanujo
@@ -266,7 +289,7 @@ eo:
     stockholm-orto:
       attribution:
         text: © komunumo Stokholmo, CC0
-      description: Aera fotaro de la komunumo Stokholmo, permesilo CC0, 2015
+      description: Aera fotaro de la komunumo Stokholmo, permesilo CC0, 2016
       name: Aera fotaro Stokholmo
     tf-cycle:
       attribution:

@@ -2,16 +2,22 @@ he:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders העדכני ביותר © AGIV
-      name: צילומי האוויר העדכניים ביותר של AGIV Flanders
+        text: © agentschap מידע פלמי
+      name: צילומי האוויר העדכניים ביותר של AIV Flanders
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders‏ 2013-‎2015 צילום אווירי 10 ס״מ
+        text: © agentschap מידע פלמי
+      name: AIV Flanders‏ 2013-‎2015 צילום אווירי 10 ס״מ
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap מידע פלמי
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap מידע פלמי
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap מידע פלמי
     Bing:
       description: צילומי אוויר ולוויין.
       name: צילומי אוויר של Bing
@@ -35,6 +41,16 @@ he:
         text: תנאים ומשוב
       description: גבולות תמונות רקע ותאריכי צילום. תוויות מופיעות בתקריב ברמה 13 ומעלה.
       name: דיגיטל גלוב' תצלומי אוויר
+    DigitalGlobe-Vivid:
+      attribution:
+        text: תנאים ומשוב
+      description: DigitalGlobe-Vivid הוא פסיפס עם אסתטיקה ועדכניות מיטביים לכל אזור ברחבי כדור הארץ, רזולוציה של 50 ס״מ או טובה יותר, עדכניות של <20 חודשים בממוצע בכל רחבי העולם.
+      name: צילומי Vivid של DigitalGlobe
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 נטול עננים - https://s2maps.eu מבית שירותי EOX IT GmbH (מכיל נתונים ערוכים מתוך Copernicus Sentinel 2017 & 2018)
+      description: תמונות לוויין שעברו עיבוד מבית Sentinel.
+      name: eox.at 2018 נטול עננים
     EsriWorldImagery:
       attribution:
         text: תנאים ומשוב
@@ -169,7 +185,13 @@ he:
     gsi.go.jp_airphoto:
       attribution:
         text: GSI יפן
+      description: צילומי אוויר של GSI יפן. לא מיושר אבל מעט חדש יותר ו/או מכוסה בצורה קצת שונה מצילומי GSI מיושרים.
       name: צילומי אוויר של GSI יפן
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: צילום רציף וחלק מ־GSI יפן
+      description: צילום רציף וחלק מ־GSI יפן. האוסף של הצילום העדכני ביותר מ־GSO מיושר, אווירי, לאחר אסון ואחרים.
+      name: צילום רציף וחלק מ־GSI יפן
     gsi.go.jp_std_map:
       attribution:
         text: GSI יפן
@@ -267,7 +289,7 @@ he:
     stockholm-orto:
       attribution:
         text: מחוז סטוקהולם CC0
-      description: אורטופוטו ממחוז סטוקהולם 2015, CC0 רישיון
+      description: צילומי אורתופוטו מעיריית שטוקהולם 2016, רישיון CC0
       name: אורטופוטו סטוקהולם
     tf-cycle:
       attribution:

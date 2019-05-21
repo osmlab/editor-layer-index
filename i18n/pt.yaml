@@ -1,17 +1,5 @@
 pt:
   imagery:
-    AGIV:
-      attribution:
-        text: Orthophoto Flanders mais recente © AGIV
-      name: AGIV Flandres imagens aéreas mais recentes
-    AGIV10cm:
-      attribution:
-        text: Orthophoto Flanders © AGIV
-      name: Imagens aéreas 10cmAGIV Flanders 2013-2015
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flandres © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Imagens aéreas e de satélite.
       name: Imagens aéreas Bing
@@ -35,6 +23,16 @@ pt:
         text: Termos e Opinião
       description: Limites das imagens aéreas e datas de captura. As etiquetas aparecem no nível de magnificação 13 e superiores.
       name: Imagens DigitalGlobe Standard antigaas
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Termos e opinião
+      description: DigitalGlobe-Vivid é um mosaico de imagens aéreas com aparência ótima e atualidade para qualquer parte do mundo, com resolução de 50 cm ou superior e atualidade das imagens inferior a 20 meses no geral.
+      name: Imagens aéreas DigitalGlobe Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sem nuvens - https://s2maps.eu por EOX IT Services GmbH (contém dados alterados do Copernicus Sentinel de 2017 e 2018)
+      description: Imagens processadas do satélite Sentinel.
+      name: eox.at 2018 sem nuvens
     EsriWorldImagery:
       attribution:
         text: Termos e Opinião
@@ -169,6 +167,11 @@ pt:
         text: GSI Japão
       description: Fotos aéreas do GSI Japão. Não completamente ortorretificadas, mas um pouco mais recente e/ou diferente das imagens aéras GSI orto.
       name: Imagens aéreas do Japão GSI
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Japão GSI contínuo
+      description: Imagens aéreas do Japão GSI contínuo. A coleção das últimas imagens GSI ortofotos, aéreas, pós-desastre e outras.
+      name: Imagens aéreas do Japão GSI contínuo
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japão
@@ -266,7 +269,7 @@ pt:
     stockholm-orto:
       attribution:
         text: © Município de Estocolmo, CC0
-      description: Ortofotos do município de Estocolmo 2015, licença CC0
+      description: Ortofotos do município de Estocolmo 2016, licença CC0
       name: Ortofotos de Estocolmo
     tf-cycle:
       attribution:

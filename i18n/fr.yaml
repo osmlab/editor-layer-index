@@ -1,17 +1,5 @@
 fr:
   imagery:
-    AGIV:
-      attribution:
-        text: Orthophoto la plus récente de la Flandre © AGIV
-      name: Images aériennes AGIV les plus récentes de la Flandre
-    AGIV10cm:
-      attribution:
-        text: Orthophoto de la Flandre © AGIV
-      name: Images aériennes 10cm AGIV de la Flandre 2013-2015
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flandres © AGIV
-      name: AGIV Flandres GRB
     Bing:
       description: Images satellite et aérienne.
       name: Images aériennes Bing
@@ -35,6 +23,16 @@ fr:
         text: Termes & commentaires
       description: Limites et dates des images. Les textes sont visibles à partir du niveau de zoom 13.
       name: Images DigitalGlobe Standard Vintage
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Termes & commentaires
+      description: DigitalGlobe-Vivid est une mosaïque avec les meilleurs visuels les plus récents pour toutes les régions du globe, en résolution de 50cm ou mieux et la date de l'imagerie est de moins de 20 mois en moyenne sur tout le globe.
+      name: Images DigitalGlobe Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sans nuages — https://s2maps.eu par EOX IT Services GmbH (contient des données Copernicus Sentinel modifiées de 2017 et de 2018)
+      description: Imagerie satellite Sentinel retravaillée
+      name: eox.at 2018 sans nuages
     EsriWorldImagery:
       attribution:
         text: Termes & commentaires
@@ -169,6 +167,11 @@ fr:
         text: GSI Japon
       description: Imagerie ortho GSI du Japon. Pas totalement ortho-rectifiée, mais un peu plus récente et avec une couverture différente de l'imagerie ortho GSI.
       name: Imagerie ortho GSI aérienne du Japon
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Intégration des photos GSI du Japon
+      description: Imagerie de photos intégrées GSI du Japon. La collection des dernières imageries ortho GSI, aériennes, post-catastrophe et d'autres.
+      name: Imagerie intégrée GSI du Japon
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japon
@@ -266,7 +269,7 @@ fr:
     stockholm-orto:
       attribution:
         text: © Municipalité de Stockholm, CC0
-      description: Orthophotos de la municipalité de Stockholm 2015, licence CC0
+      description: Orthophotos de la municipalité de Stockholm 2016, licence CC0
       name: Orthophoto de Stockholm
     tf-cycle:
       attribution:

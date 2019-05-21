@@ -1,17 +1,5 @@
 is:
   imagery:
-    AGIV:
-      attribution:
-        text: Nýjustu uppréttar loftmyndir frá Orthophoto Flanders © AGIV
-      name: Nýjustu loftmyndir frá AGIV Flanders
-    AGIV10cm:
-      attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 loftmyndir 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Gervihnatta- og loftmyndir.
       name: Loftmyndir frá Bing
@@ -164,6 +152,11 @@ is:
         text: GSI Japan
       description: Japan GSI uppréttar ortho loftmyndir. Venjulega betra en Bing, en dálítið eldra.
       name: Japan GSI uppréttar ortho loftmyndir
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI airphoto loftmyndefni. Ekki að fullu uppréttað, en eilítið nýrri og/eða með annarri þekju en uppréttu GSI loftmyndirnar.
+      name: Japan GSI airphoto loftmyndir
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -261,7 +254,6 @@ is:
     stockholm-orto:
       attribution:
         text: © Sveitarfélagið Stokkhólmi, CC0
-      description: Orthophoto uppréttar loftmyndir frá sveitarfélaginu Stokkhólmi 2015, CC0 notkunarleyfi
       name: Stockholm - orthophoto uppréttar loftmyndir
     tf-cycle:
       attribution:

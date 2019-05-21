@@ -1,23 +1,12 @@
 gl:
   imagery:
-    AGIV:
-      attribution:
-        text: Ortofoto Flanders máis recente © AGIV
-      name: Imaxes aéreas máis recentes do AGIV Flanders
-    AGIV10cm:
-      attribution:
-        text: Ortofoto Flanders © AGIV
-      name: Imaxes aéreas do AGIV Flandes 2013-2015 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Imaxes satelitais e aéreas.
       name: Imaxes aéreas do Bing
     DigitalGlobe-Premium:
       attribution:
         text: Termos e opinións
+      description: DigitalGlobe-Premium é un mosaico composto do mapa base de DigitalGlobe con algunhas rexións cubertas con +Vivid ou con imaxes personalizadas á área de interese, resolución de 50cm ou mellor e actualizado de forma máis frecuente con actualizacións continuas.
       name: Imaxes do DigitalGlobe Premium
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -27,12 +16,23 @@ gl:
     DigitalGlobe-Standard:
       attribution:
         text: Termos e opinións
+      description: DigitalGlobe-Standard é un revisado conxunto de imaxes que cobren o 86% da superficie terrestre, cunha resolución entre 30 e 60cm onde estea dispoñible, e con imaxes de Landsat no resto das zonas. A antigüidade media é de 2,31 anos, con algunhas áreas actualizadas dúas veces por ano.
       name: Imaxes do DigitalGlobe Standard
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Termos e opinións
       description: Límites das imaxes e datas de captura. As etiquetas xorden  nun nivel do achegamento de 13 e superior.
       name: Imaxes antigas do DigitalGlobe Standard
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Termos e opinións
+      description: O DigitalGlobe-Vivid é un mosaico cunha aparencia e actualización axeitadas para calquera área do mundo, cunha resolución de 50 cm. ou superior e unha actualización de imaxe cun promedio duns 20 meses en todo o mundo.
+      name: Imaxes do DigitalGlobe Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sen nubes - https://s2maps.eu polo EOX IT Services GmbH (Contén os datos do Copernicus Sentinel modificados no 2017 e 2018)
+      description: Imaxes satelitais post-procesadas do Sentinel
+      name: eox.at 2018 sen nubes
     EsriWorldImagery:
       attribution:
         text: Termos e opinións
@@ -86,6 +86,7 @@ gl:
     SPW_PICC:
       name: Imaxes numéricas PICC do SPW(allonie)
     US-TIGER-Roads-2014:
+      description: No nivel de achegamento de 16 ou máis, datos do mapa de dominio público dende o US Census. En achegamentos máis baixos, só hai mudanzas dende o 2006 agás as mudanzas xa engadidas no OpenStreetMap
       name: Estradas do TIGER 2014
     US-TIGER-Roads-2017:
       description: Amarelo = Datos do mapa de dominio público dende o US Census. Vermello = Datos non atopados no OpenStreetMap
@@ -139,7 +140,7 @@ gl:
     basemap.at:
       attribution:
         text: basemap.at
-      description: Mapa base de Austria, baseado nos datos gubernamentais.
+      description: Mapa base de Austria, baseado nos datos gobernamentais.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -164,7 +165,13 @@ gl:
     gsi.go.jp_airphoto:
       attribution:
         text: Xapón GSI
+      description: Imaxes aéreas do Xapón GSI. Non está ortorrectificado de xeito completo, pero é un chisco máis recente e/ou está cuberto de xeito diferente que as ortoimaxes do GSI.
       name: Imaxes aéreas do Xapón GSI
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Imaxes sen ortorectificar do GSI Xapón
+      description: Imaxes sen ortorectificar do GSI Xapón. A colección das últimas imaxes ortográficas, imaxe aérea, postdesastre e outros do GSI.
+      name: Imaxes sen ortorectificar do GSI Xapón
     gsi.go.jp_std_map:
       attribution:
         text: Xapón GSI
@@ -227,8 +234,8 @@ gl:
     osm-gps:
       attribution:
         text: © contribuíntes do OpenStreetMap
-      description: Trazas públicas GPS subidas a OpenStreetMap.
-      name: Trazas GPS de OpenStreetMap
+      description: Pistas GPS públicas subidas ó OpenStreetMap.
+      name: Pistas GPS do OpenStreetMap
     osm-mapnik-black_and_white:
       attribution:
         text: © contribuíntes do OpenStreetMap, CC-BY-SA
@@ -262,7 +269,7 @@ gl:
     stockholm-orto:
       attribution:
         text: © Municipio de Estocolmo, CC0
-      description: Ortofotos do municipio de Estocolmo 2015, licenza CC0.
+      description: Ortofotos do municipio de Estocolmo no 2016, licenza CC0.
       name: Ortofoto de Estocolmo
     tf-cycle:
       attribution:

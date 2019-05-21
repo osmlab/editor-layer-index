@@ -1,20 +1,8 @@
 nl:
   imagery:
-    AGIV:
-      attribution:
-        text: Orthofoto Vlaanderen nieuwste © AGIV
-      name: AGIV nieuwste luchtfoto's
-    AGIV10cm:
-      attribution:
-        text: Orthofoto Vlaanderen © AGIV
-      name: AGIV 2013-2015 luchtfoto's 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Vlaanderen © AGIV
-      name: AGIV Vlaanderen GRB
     Bing:
       description: Satelliet- en luchtfoto's.
-      name: Bing-luchtfotografie
+      name: Bing-luchtfoto's
     DigitalGlobe-Premium:
       attribution:
         text: Gebruiksvoorwaarden & feedback
@@ -35,6 +23,11 @@ nl:
         text: Gebruiksvoorwaarden & feedback
       description: Beeldgrenzen en opnamedata. Labels verschijnen op zoomniveau 13 en hoger.
       name: DigitalGlobe-premiumbeelden Vintage
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 onbewolkt - https://s2maps.eu door EOX IT Services GmbH (Bevat aangepaste gegevens van Copernicus Sentinel 2017 & 2018)
+      description: Postprocessed foto's van Sentinel Satellite.
+      name: eox.at 2018 onbewolkt
     EsriWorldImagery:
       attribution:
         text: Voorwaarden & Terugkoppeling
@@ -162,8 +155,18 @@ nl:
     gsi.go.jp:
       attribution:
         text: GSI Japan
-      description: Japan GSI orthofoto. Gewoonlijk beter dan bing, maar iets ouder.
+      description: Japan GSI orthofoto. Gewoonlijk beter dan Bing, maar iets ouder.
       name: Japan GSI orthofoto
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI luchtfoto. Niet volledig orthogerectificeerd, maar voor een deel nieuwer en/of ander bereik dan GSI orthofoto.
+      name: Japan GSI luchtfoto
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan naadloze foto
+      description: Japan GSI naadloze foto Imagery. De verzameling van de laatste beelden van GSI ortho, airphoto, post disaster en andere.
+      name: Japan GSI naadloze foto Imagery
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -261,7 +264,7 @@ nl:
     stockholm-orto:
       attribution:
         text: © Gemeente Stockholm, CC0
-      description: Orthofoto's van de gemeente Stockholm 2015, CC0 licentie
+      description: Orthofoto's van de gemeente Stockholm 2016, CC0-licentie
       name: Stockholm Orthofoto
     tf-cycle:
       attribution:

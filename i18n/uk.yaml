@@ -2,16 +2,24 @@ uk:
   imagery:
     AGIV:
       attribution:
-        text: Свіжі Ортофото Фландрія © AGIV
-      name: Свіжі аерофотознімки Фландрії від AGIV
+        text: © agentschap Informatie Vlaanderen
+      name: Свіжі аерофотознімки Фландрії від AIV
     AGIV10cm:
       attribution:
-        text: Ортофото Фландрія © AGIV
-      name: Аерофотознімки Фландрії від AGIV 2013-2015 10см
+        text: © agentschap Informatie Vlaanderen
+      name: Аерофотознімки Фландрії від AIV 2013-2015 10см
     AGIVFlandersGRB:
       attribution:
-        text: GRB Фландрія © AGIV
-      name: GBR знімки Фландрії від AGIV
+        text: © agentschap Informatie Vlaanderen
+      name: GRB Фландрія AIV
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Цифрова модель висот Фландрії II, багатонаправлена ​​відмивка 0,25 м
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Цифрова модель висот Фландрії II, коефіцієнт Skyview 0,25 м
     Bing:
       description: Супутникові та аерофотознімки.
       name: Знімки Bing
@@ -35,6 +43,16 @@ uk:
         text: Умови використання та Відгуки
       description: 'Межі та дати знімків. Підписи з''являються з 13 рівня масштабування. '
       name: Період знімків DigitalGlobe Standard
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Умови використання та Відгуки
+      description: Мозаїка DigitalGlobe-Vivid з оптимальними підбором кольорів та актуальності для будь-якої місцевості на земній кулі, з розподільчою здатністю 50см та не давніше ніж 20 місяців.
+      name: Знімки DigitalGlobe Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 безхмарні знімки - https://s2maps.eu від EOX IT Services GmbH (Містить модифіковані дані Copernicus Sentinel 2017 та 2018)
+      description: Оброблені супутникові знімки Sentinel.
+      name: eox.at 2018 без хмар
     EsriWorldImagery:
       attribution:
         text: Умови використання та Відгуки
@@ -169,6 +187,11 @@ uk:
         text: GSI Japan
       description: Japan GSI аерофотознімки. Не повністю орторектифіковані, але трохи новіші та/або з різним покриттям, ніж GSI ортознімки.
       name: Japan GSI аерофотознімки
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan безшовні фото
+      description: 'GSI Japan безшовні фото - збірка останніх знімків від GSI: орто, аерофто, знімки з місць катастроф та інше.'
+      name: GSI Japan безшовні фото
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -177,7 +200,7 @@ uk:
     helsingborg-orto:
       attribution:
         text: © Helsingborg municipality
-      description: Ортофоти муніципалітету Хельсінгборг, 2016 р., громадське надбання
+      description: Ортофото муніципалітету Хельсінгборг, 2016 р., суспільне надбання
       name: Хельсінгборг ортофото
     kalmar-orto-2014:
       attribution:
@@ -217,7 +240,7 @@ uk:
     linkoping-orto:
       attribution:
         text: © Linköping municipality
-      description: Ортофоти муніципалітету Лінчепінг, 2010 р., ввідкриті дані
+      description: Ортофото муніципалітету Лінчепінг, 2010 р., відкриті дані
       name: Лінчепінг ортофото
     mapbox_locator_overlay:
       attribution:
@@ -266,7 +289,7 @@ uk:
     stockholm-orto:
       attribution:
         text: © Stockholm municipality, CC0
-      description: Ортофоти муніципалітету Стокгольм, 2015 р., Ліцензія CC0
+      description: Ортофото муніципалітету Стокгольм, 2016 р., Ліцензія CC0
       name: Стокгольм ортофото
     tf-cycle:
       attribution:

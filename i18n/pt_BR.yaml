@@ -1,17 +1,5 @@
 pt_BR:
   imagery:
-    AGIV:
-      attribution:
-        text: Ortofoto Flanders mais recente © AGIV
-      name: AGIV Flandres mais recente imagem aérea
-    AGIV10cm:
-      attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 imagens aéreas 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Imagens aéreas e de satélite.
       name: Imagens aéreas do Bing
@@ -35,6 +23,16 @@ pt_BR:
         text: Termos e Comentários
       description: Limites de imagens e datas de captura. Os rótulos aparecem no nível de zoom 13 e superior.
       name: Data das imagens de satélite DigitalGlobe Standard
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Termos e Comentários
+      description: O DigitalGlobe-Vivid é um mosaico com estética e moeda ideais para qualquer área do globo, resolução de 50 cm ou superior e moeda de imagem <média de 20 meses globalmente.
+      name: Imagens vívidas do DigitalGlobe
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contém dados Copernicus Sentinel modificados 2017 e 2018)
+      description: Imagens de satélite Sentinel pós-processadas.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Termos e Comentários
@@ -169,6 +167,11 @@ pt_BR:
         text: GSI Japão
       description: Imagens do Japão GSI airphoto. Não completamente ortorretificado, mas um pouco mais novo e/ou diferente do que as Imagens do GSI orto.
       name: Imagens do Japão GSI airphoto
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Foto sem emenda GSI Japão
+      description: Imagens do seamlessphoto de Japão GSI. A coleção de imagens mais recentes da GSI orto, airphoto, pós desastre e outros.
+      name: Imagens do Japan GSI seamlessphoto
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japão
@@ -266,7 +269,7 @@ pt_BR:
     stockholm-orto:
       attribution:
         text: © Município de Estocolmo, CC0
-      description: Orthophotos do município de Estocolmo 2015, licença CC0
+      description: Orthophotos do municipio de Estocolmo 2016,  licença CC0
       name: Stockholm Orthophoto
     tf-cycle:
       attribution:

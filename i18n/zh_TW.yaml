@@ -2,16 +2,24 @@ zh_TW:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders 最新 © AGIV
-      name: AGIV Flanders 最新空照圖
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 最近的空照圖
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 空照圖 10公分
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 的 10 公分空照圖
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺多方向山體陰影圖
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺 Skyview
     Bing:
       description: 衛星與空照圖
       name: Bing 空照圖
@@ -35,6 +43,16 @@ zh_TW:
         text: 使用條款與意見回饋
       description: 影像邊界與拍攝日期。標籤將會在縮放等級大於等於 13 時出現。
       name: DigitalGlobe Standard 空照圖年份
+    DigitalGlobe-Vivid:
+      attribution:
+        text: 條款與回饋
+      description: DigitalGlobe-Vivid 是一款有良好美學效果的拼貼圖，目前在全球各地都有 50 公分或更佳的解析度，全球照片平均拍攝時間為20個月之內。
+      name: DigitalGlobe Vivid 影像
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2017 & 2018)
+      description: 後處理過的 Sentinel 衛星影像。
+      name: eox.at 2018 無雲
     EsriWorldImagery:
       attribution:
         text: 使用條款與回饋
@@ -169,6 +187,11 @@ zh_TW:
         text: GSI 日本
       description: 日本 GSI 航空照片。並未完全正射，但比 GSI 正射影像新且／或覆蓋範圍不同。
       name: 日本 GSI 航空照片
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI 日本無縫照片
+      description: 日本 GSI 無縫照片影像，具有最新 GSI ortho，航空影像，災後影像等組合。
+      name: 日本 GSI 無縫照片影像
     gsi.go.jp_std_map:
       attribution:
         text: GSI 日本
@@ -266,7 +289,7 @@ zh_TW:
     stockholm-orto:
       attribution:
         text: © 斯德哥爾摩市，CC0
-      description: 來自斯德哥爾摩市的2015年正射影像，CC0 授權
+      description: 來自斯德哥爾摩市的2016年正射影像，CC0 授權
       name: 斯德哥爾摩正射影像
     tf-cycle:
       attribution:

@@ -2,23 +2,31 @@ pl:
   imagery:
     AGIV:
       attribution:
-        text: Najnowsza ortofotomapa Flandrii © AGIV
-      name: Najnowsze zdjęcia lotnicze AGIV Flandria
+        text: © Agentschap Informatie Vlaanderen
+      name: Najnowsze zdjęcia lotnicze AIV Flandria
     AGIV10cm:
       attribution:
-        text: Ortofotomapa Flandrii © AGIV
-      name: AGIV Flandria, zdjęcia lotnicze 2013-2015, 10cm
+        text: © Agentschap Informatie Vlaanderen
+      name: AGIV Flandria, zdjęcia lotnicze 2013-2015, 10 cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandria © AGIV
+        text: © Agentschap Informatie Vlaanderen
       name: AGIV Flandria GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: Cyfrowy model wysokościowy Flandrii AIV, 25 cm, wielokierunkowe oświetlenie
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: Cyfrowy model wysokościowy Flandrii AIV, 25 cm, widok z góry
     Bing:
       description: Zdjęcia satelitarne i lotnicze Bing.
-      name: Bing (satelitarne)
+      name: Zdjęcia lotnicze Bing
     DigitalGlobe-Premium:
       attribution:
         text: Warunki użytkowania i opinia
-      description: DigitalGlobe-Premium to mozaika stworzona z podstawowych map DigitalGlobe z wybranymi obszarami uzupełnionymi o +Vivid lub innymi obrazami innych obszarów, rozdzielczość 50cm lub wyższa, odświeżana częściej wraz z bieżącymi aktualizacjami.
+      description: DigitalGlobe-Premium to mozaika stworzona z podstawowych map DigitalGlobe z wybranymi obszarami uzupełnionymi o +Vivid lub innymi obrazami innych obszarów, rozdzielczość 50 cm lub wyższa, odświeżana częściej wraz z bieżącymi aktualizacjami.
       name: DigitalGlobe Premium (satelitarne)
     DigitalGlobe-Premium-vintage:
       attribution:
@@ -28,13 +36,23 @@ pl:
     DigitalGlobe-Standard:
       attribution:
         text: Warunki użytkowania i opinia
-      description: DigitalGlobe-Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjeć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
+      description: DigitalGlobe-Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60 cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjeć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
       name: DigitalGlobe Standard (satelitarne)
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Warunki użytkowania i opinia
       description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 13 i wyższym.
       name: Datowanie zdjęć DigitalGlobe Standard
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Warunki użytkowania i opinia
+      description: DigitalGlobe-Vivid to mozaika o optymalnej estetyce i powszechnym użyciu dla dowolnego miejsca na Ziemi, rozdzielczość 50 cm lub wyższa, zdjęcia nie starsze niż 20 miesięcy.
+      name: DigitalGlobe Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 bezchmurne – https://s2maps.eu, EOX IT Services GmbH (zawiera zmodyfikowane dane Copernicus Sentinel 2017 i 2018)
+      description: Przetworzone zdjęcia satelitarne Sentinel
+      name: eox.at 2018 bezchmurne
     EsriWorldImagery:
       attribution:
         text: Warunki użytkowania i opinia
@@ -101,23 +119,23 @@ pl:
       name: Nakładka z drogami z U.S. Forest
     UrbISOrtho2016:
       attribution:
-        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+        text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+        text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       attribution:
-        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+        text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbIS-Ortho 2018
     UrbisAdmFR:
       attribution:
-        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+        text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbisAdm Francja
     UrbisAdmNL:
       attribution:
-        text: Zrealizowano za pomocą Brussels UrbIS®© - Dystrybucja i prawa autorskie CIRB
+        text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbisAdm Holandia
     Waymarked_Trails-Cycling:
       attribution:
@@ -162,8 +180,11 @@ pl:
     gsi.go.jp:
       attribution:
         text: GSI Japonia
-      description: Ortofotomapa z japońskiego GSI. Zazwyczaj lepsza niż bing, ale trochę starsza.
+      description: Ortofotomapa z japońskiego GSI. Zazwyczaj lepsza niż Bing, ale trochę starsza.
       name: Ortofotomapa z japońskiego GSI
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japonia
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japonia
@@ -257,11 +278,11 @@ pl:
     stamen-terrain-background:
       attribution:
         text: Kafle mapy od Stamen Design, licencja CC BY 3.0. Dane z OpenStreetMap, licencja ODbL
-      name: Stamen - Teren
+      name: Stamen – Teren
     stockholm-orto:
       attribution:
         text: © Urząd miasta Sztokholm, CC0
-      description: Ortofotografie z urzędu miejskiego Sztokholmu 2015, licencja CC0
+      description: Ortofotografie z urzędu miejskiego Sztokholmu 2016, licencja CC0
       name: Ortofotografia Sztokholmu
     tf-cycle:
       attribution:

@@ -2,16 +2,24 @@ sv:
   imagery:
     AGIV:
       attribution:
-        text: Ortofoto Flandern mest aktuella © AGIV
-      name: AGIV Flanderns mest aktuella flygfoton
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders mest aktuella flygfoton
     AGIV10cm:
       attribution:
-        text: Ortofoto Flandern © AGIV
-      name: AGIV Flandern 2013–2015 flygfoton 10 cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern 2013–2015 flygfoton 10 cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandern © AGIV
-      name: AGIV Flandern GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multiriktad skuggningsbild 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Satellit- eller flygfoton.
       name: Bing-flygfoto
@@ -35,6 +43,16 @@ sv:
         text: Villkor & återkoppling
       description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 13 och upp.
       name: DigitalGlobe Standard flygfotoålder
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Villkor & återkoppling
+      description: DigitalGlobe-Vivid är en mosaik med optimal estetik och aktualitet för alla områden på jorden, 50 cm upplösning eller bättre och högst 20 månaders genomsnittlig ålder globalt.
+      name: DigitalGlobe Vivid-bilder
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu av EOX IT Services GmbH (Innehåller modifierad data från Copernicus Sentinel 2017 & 2018)
+      description: Efterbearbetade Sentinel-satellitbilder.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Villkor & återkoppling
@@ -169,6 +187,11 @@ sv:
         text: GSI Japan
       description: Japan GSI- flygfoton. Inte fullständigt Ortofotoeserade, men lite nyare och/eller annan täckningsgrad än  GSI ortho-flygfoton.
       name: Japan GSI- flygfoton
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan sömlössa foton
+      description: Japan GSI sömlösa flygfoton. Samlingen med senaste bilderna från GSI ortho, flygfoton, katastroffoton m.m.
+      name: Japan GSI sömlösa flygfoton
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -266,7 +289,7 @@ sv:
     stockholm-orto:
       attribution:
         text: © Stockholms kommun, CC0
-      description: Flygfoton från Stockholms kommun 2015, CC0-licens
+      description: Flygfoton från Stockholms kommun 2016, CC0-licens
       name: Flygfoton Stockholm
     tf-cycle:
       attribution:

@@ -2,16 +2,24 @@ de:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flandern aktuell © AGIV
-      name: AGIV Flandern aktuelle Luftbilder
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern aktuellste Luftbilder
     AGIV10cm:
       attribution:
-        text: Orthophoto Flandern © AGIV
-      name: AGIV Flandern 2013-2015 Luftbilder 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern 2013-2015 Luftbilder 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandern © AGIV
-      name: AGIV Flandern GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitales Höhenmodell Vlaanderen II, mehrrichtungs  Hügelschattierung0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitales Höhenmodell Vlaanderen II, Skyview-Faktor 0,25 m
     Bing:
       description: Satellitenbilder und Luftbilder
       name: Bing Luftbildmaterial
@@ -35,6 +43,16 @@ de:
         text: Bedingungen & Feedback
       description: Kachelgrenzen und Aufnahmedatum werden bei Zoom-Level 13 und höher angezeigt.
       name: DigitalGlobe Standard Bildmaterial Klassisch
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Bedingungen & Feedback
+      description: DigitalGlobe-Vivid ist ein Mosaik mit optimalen ästhetischen Ansichten für jeden Bereich am Globus, 50cm Auflösung oder besser und Aktualität <20 Monate durchschnittlich.
+      name: DigitalGlobe Vivid Hintergrund
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 wolkenfrei - https://s2maps.eu by EOX IT Services GmbH (enthält modofizierte Copernicus Sentinel Daten 2017 & 2018)
+      description: Nachbearbeitete Sentinel Satellitenbilder
+      name: eox.at 2018 wolkenfrei
     EsriWorldImagery:
       attribution:
         text: Bedingungen & Feedback
@@ -169,6 +187,11 @@ de:
         text: GSI Japan
       description: Japan GSI Luftbilder. Nicht ganz lagegenau, aber etwas neuer oder andere Abdeckung als GSI Orthofotos.
       name: Japan GSI Luftbilder
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan nahtlose Fotos
+      description: GSI Japan nahtloser Fotohintergrund. Die Sammlung der aktuellste Hintergrundbilder von GSI Orthofotos, Luftbilder, nach der Katastrophe und andere.
+      name: GSI Japan nahtloser Fotohintergrund
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -266,7 +289,7 @@ de:
     stockholm-orto:
       attribution:
         text: © Gemeinde Stockholm, CC0
-      description: Orthofotos von der Gemeinde Stockholm 2015, CC0 Lizenz
+      description: Orthofotos von der Gemeinde Stockholm 2016, CC0 Lizenz
       name: Stockholm Orthofoto
     tf-cycle:
       attribution:

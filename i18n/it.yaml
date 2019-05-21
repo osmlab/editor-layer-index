@@ -1,17 +1,5 @@
 it:
   imagery:
-    AGIV:
-      attribution:
-        text: Ortofoto Flanders le più recenti © AGIV
-      name: AGIV Flanders le immagini aeree più recenti
-    AGIV10cm:
-      attribution:
-        text: Ortofoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 immagini aeree 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Immagini satellitari e aeree.
       name: Immagini aeree Bing
@@ -35,6 +23,11 @@ it:
         text: Termini & Feedback
       description: Confini delle immagini e data di acquisizione. Le etichette appaiono a livelli di ingrandimento 13 e successivi.
       name: DigitalGlobe Standard Imagery Vintage
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu di EOX IT Services GmbH (contiene dati modificati di Copernicus Sentinel del 2017-2018)
+      description: Immagini satellitari post-elaborate di Sentinel.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Termini & Feedback
@@ -164,6 +157,16 @@ it:
         text: GSI Giappone
       description: Ortofoto di GSI Giappone. In genere migliori di Bing ma un po’ più vecchie.
       name: Ortofoto di GSI Giappone
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI del Giappone
+      description: Immagini aeree GSI del Giappone. Non del tutto orto-rettificate ma un po’ più recenti e/o con copertura differente delle orto-immagini GSI.
+      name: Immagini aeree GSI del Giappone
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Foto GSI senza interruzioni del Giappone
+      description: Immagini GSI senza interruzioni del Giappone. L’insieme delle ultime immagini di ortofoto GSI, foto aeree, post-disastro e altro.
+      name: Immagini senza interruzioni GSI del Giappone
     gsi.go.jp_std_map:
       attribution:
         text: GSI Giappone
@@ -261,7 +264,7 @@ it:
     stockholm-orto:
       attribution:
         text: © comune di Stoccolma, CC0
-      description: Ortofoto del comune di Stoccolma del 2015, licenza CC0
+      description: Ortofoto del comune di Stoccolma del 2016, licenza CC0
       name: Ortofoto di Stoccolma
     tf-cycle:
       attribution:

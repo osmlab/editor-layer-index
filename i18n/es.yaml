@@ -2,16 +2,24 @@ es:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders más reciente © AGIV
-      name: Imágenes aéreas más recientes de AGIV Flanders
+        text: © agentschap Informatie Vlaanderen
+      name: Imágenes aéreas más recientes del AIV Flanders
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: Imágenes aéreas de AGIV Flandes 2013-2015 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 imágenes aéreas 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Modelo de altura digital AIV Flanders II, sombreado multidireccional 0.25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Modelo de altura digital AIV Flanders II, factor Skyview 0.25 m
     Bing:
       description: Imágenes satelitales y aéreas.
       name: Imágenes aéreas Bing
@@ -35,6 +43,16 @@ es:
         text: Términos y comentarios
       description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de zoom 13 y superior.
       name: Imágenes antiguas DigitalGlobe Standard
+    DigitalGlobe-Vivid:
+      attribution:
+        text: Términos y comentarios
+      description: DigitalGlobe-Vivid es un mosaico con una estética y actualización óptimas para cualquier área del mundo, con una resolución de 50 cm o superior y una actualización de imagen con un promedio de 20 meses en todo el mundo.
+      name: Imágenes de DigitalGlobe Vivid
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene los datos de Copernicus Sentinel modificados 2017 y 2018)
+      description: Imágenes satelitales post-procesadas de Sentinel
+      name: eox.at 2018 sin nubes
     EsriWorldImagery:
       attribution:
         text: Términos y comentarios
@@ -169,6 +187,11 @@ es:
         text: GSI Japón
       description: Imágenes aéreas de Japón GSI. No está completamente ortorrectificado, pero es un poco más reciente y/o está cubierto de manera diferente que las ortoimágenes de GSI.
       name: Imágenes aéreas de Japón GSI
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Imágenes sin ortorectificar de GSI Japón
+      description: Imágenes sin ortorectificar de GSI Japón. La colección de las últimas imágenes ortográficas, foto aérea, post desastre y otros de GSI.
+      name: Imágenes sin ortorectificar de GSI Japón
     gsi.go.jp_std_map:
       attribution:
         text: Japón GSI
@@ -266,7 +289,7 @@ es:
     stockholm-orto:
       attribution:
         text: © Municipio de Estocolmo, CC0
-      description: Ortofotos del municipio de Estocolmo 2015, licencia CC0.
+      description: Ortofotos del municipio de Estocolmo 2016, licencia CC0.
       name: Ortofoto de Estocolmo
     tf-cycle:
       attribution:

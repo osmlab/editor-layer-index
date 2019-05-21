@@ -2,16 +2,24 @@ ja:
   imagery:
     AGIV:
       attribution:
-        text: オルソ写真Flanders 最新 © AGIV
-      name: AGIV Flanders 最新航空画像
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 最新航空画像
     AGIV10cm:
       attribution:
-        text: オルソ写真Flanders © AGIV
-      name: AGIV Flanders 2013-2015 航空写真 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 航空写真 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: 衛星・航空写真。撮影日付はCtrl+Shift+Bで現れる右下のパネルで確認可能。比較的新しい箇所が多いが位置ズレやゆがみ（特に高低差のある場所）に注意。日本では位置精度は概して国土地理院のものが高い。
       name: Bing航空画像
@@ -35,6 +43,16 @@ ja:
         text: 規約＆フィードバック
       description: 画像の境界と取得日付。ラベルはズームレベル13以上で表示。
       name: DigitalGlobe標準画像撮影日
+    DigitalGlobe-Vivid:
+      attribution:
+        text: 規約＆フィードバック
+      description: DigitalGlobe-Vivid は地球上のあらゆる地域向けの最適な美観と即時性をもつモザイク写真で、50cm解像度以上かつ画像の即時性は平均20ヶ月未満です。
+      name: DigitalGlobe Vivid 画像
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
+      description: 後処理済みのSentinel 衛星画像(日本では低解像度)
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: 規約 & フィードバック
@@ -161,17 +179,22 @@ ja:
       name: 国土地理院 基盤地図2500(NARO経由)
     gsi.go.jp:
       attribution:
-        text: 国土地理院
+        text: 国土地理院 オルソ
       description: 最大ズームレベル17。歪みは補正（オルソ化）済みであり、概してBingより位置精度が高く国内では最も安定して利用可能な画像だが、Bingよりやや古い場合がある。
       name: 国土地理院 電子国土基本図(オルソ画像)
     gsi.go.jp_airphoto:
       attribution:
-        text: 国土地理院
+        text: 国土地理院 簡易空中写真
       description: 航空レーザー測量点検用写真をつなぎ合わせたもので、地理院オルソ画像とは撮影時期やカバー範囲が少し異なる部分もあるため、オルソ画像の代替として有用な場合がある。
       name: 国土地理院 簡易空中写真
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: 国土地理院 シームレス写真
+      description: 国土地理院のシームレス写真。電子国土基本図(オルソ画像), 東日本大震災後正射画像, 森林(国有林)の空中写真(林野庁), 簡易空中写真, 国土画像情報, からそれぞれ最新の写真を組合せたもの。
+      name: 国土地理院 全国最新写真(シームレス)
     gsi.go.jp_std_map:
       attribution:
-        text: 国土地理院
+        text: 国土地理院 標準地図
       description: ズームレベル5～18の日本全国とその周辺地域をカバー。地図画像なのでトレースしやすく、概してBingより位置精度が高いが、やや古い場合がある。
       name: 国土地理院 標準地図
     helsingborg-orto:
@@ -266,7 +289,7 @@ ja:
     stockholm-orto:
       attribution:
         text: © Stockholm municipality, CC0
-      description: Orthophotos from the municipality of Stockholm 2015, CC0 license
+      description: Orthophotos from the municipality of Stockholm 2016, CC0 license
       name: Stockholm Orthophoto
     tf-cycle:
       attribution:
