@@ -5,6 +5,10 @@
     "name": "National Agriculture Imagery Program",
     "type": "wms",
     "url": "https://gis.apfo.usda.gov/arcgis/services/NAIP/USDA_CONUS_PRIME/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "available_projections": [
+      "EPSG:4326",
+      "EPSG:3857"
+    ],
     "max_zoom": 20,
     "min_zoom": 12,
     "country_code": "US",
