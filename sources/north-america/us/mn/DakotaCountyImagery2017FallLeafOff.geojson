@@ -2,26 +2,26 @@
     "type": "Feature",
     "properties": {
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
-        "id": "MCGIS-County-NAIP-Imagery-2017",
+        "id": "Dakota-County-Fall-Leaf-Off-2017-6-inch",
         "type": "wms",
-        "name": "Mesa County GIS NAIP 2017",
-        "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/NAIP_2017/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "name": "Dakota County Fall Leaf-Off 2017 6-inch",
+        "url": "https://gisimg.co.dakota.mn.us/arcgis/services/AerialPhotography/2017AirPhotoLeafOff6Inch/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 13,
         "permission_osm": "implicit",
         "country_code": "US",
-        "start_date": "2017-08-26",
-        "end_date": "2017-10-24",
+        "start_date": "2017",
+        "end_date": "2017",
         "available_projections": [
             "EPSG:4326",
-            "EPSG:3742",
+            "EPSG:26915",
             "CRS:84"
         ],
         "attribution": {
-            "url": "http://gis.mesacounty.us/",
-            "text": "Mesa County GIS",
-            "required": true
+            "url": "https://dakotacounty.us/",
+            "text": "Dakota County GIS",
+            "required": false
         },
-        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
+        "icon": ""
     },
     "geometry": {
         "type": "Polygon",
