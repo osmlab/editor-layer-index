@@ -1,12 +1,12 @@
 {
-    "type": "Feature",
-    "properties": {
+  "type": "FeatureCollection",
+        "properties": {
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
-        "id": "Dakota-County-Fall-Leaf-Off-2017-6-inch",
+        "id": "DCGIS-County-Imagery-2017-Fall-Leaf-Off-6-Inch",
         "type": "wms",
-        "name": "Dakota County Fall Leaf-Off 2017 6-inch",
+        "name": "Dakota County GIS 2017 Fall Leaf-Off 6-Inch",
         "url": "https://gisimg.co.dakota.mn.us/arcgis/services/AerialPhotography/2017AirPhotoLeafOff6Inch/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "max_zoom": 13,
+        "max_zoom": 20,
         "permission_osm": "implicit",
         "country_code": "US",
         "start_date": "2017",
@@ -21,8 +21,13 @@
             "text": "Dakota County GIS",
             "required": false
         },
-        "icon": ""
+        "icon": "https://www.co.dakota.mn.us//SiteAssets/DakotaCountyLogo_W.png"
     },
+
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -238,7 +243,24 @@
             [
               -93.32967434173672,
               44.7910661080082
-            ],
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "ORIG_FID": 13,
+        "SHAPE_Length": 603484.302839114,
+        "SHAPE_Area": 16630240364.1215
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
             [
               -93.32967434173672,
               44.7910661080082
@@ -453,5 +475,13 @@
             ]
           ]
         ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "ORIG_FID": 13,
+        "SHAPE_Length": 603484.302839114,
+        "SHAPE_Area": 16630240364.1215
+      }
+    }
   ]
 }
