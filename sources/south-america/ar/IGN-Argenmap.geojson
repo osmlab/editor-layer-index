@@ -1,19 +1,20 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "ign-topografico-tms",
-    "name": "IGN topographical map (TMS)",
+    "id": "ign-argenmap",
+    "name": "National Geographic Institute Argenmap (TMS)",
     "type": "tms",
-    "url": "https://ide.ign.gob.ar/geoservicios/rest/services/Mapas_IGN/mapa_topografico/MapServer/tile/{zoom}/{y}/{x}",
+    "description": "Mapa base del Instituto Geográfico Nacional de la República Argentina",
+    "url": "http://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG:3857@png/{z}/{y}/{x}.png",
     "country_code": "AR",
     "attribution": {
+      "required": true,
       "text": "Instituto Geográfico Nacional de la República Argentina",
       "url": "https://www.ign.gob.ar/"
     },
-    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
-    "max_zoom": 19,
-    "min_zoom": 1,
-    "license_url": "https://www.ign.gob.ar/descargas/tyc1.html"
+    "icon": "http://www.ign.gob.ar/sites/default/files/favicon.png",
+    "max_zoom": 20,
+    "license_url": "https://datos.gob.ar/acerca/seccion/Marco%20legal"
   },
   "geometry": {
     "type": "Polygon",
