@@ -15,9 +15,11 @@ he:
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap מידע פלמי
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, הצללה ממגוון כיוונים 0.25 מטר
     AIV_DHMV_II_SVF_25cm:
       attribution:
         text: © agentschap מידע פלמי
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, גורם מבט אווירי 0.25 מטר
     Bing:
       description: צילומי אוויר ולוויין.
       name: צילומי אוויר של Bing
@@ -30,7 +32,7 @@ he:
       attribution:
         text: תנאים ומשוב
       description: ' גבולות ומועדי צילום. תוויות מופיעות ברמות תקריב של 13 ומעלה. '
-      name: דיגיטל גלוב' תצלומי אוויר פרמיום
+      name: דיגיטל גלוב תצלומי אוויר פרימיום
     DigitalGlobe-Standard:
       attribution:
         text: תנאים ומשוב
@@ -40,12 +42,7 @@ he:
       attribution:
         text: תנאים ומשוב
       description: גבולות תמונות רקע ותאריכי צילום. תוויות מופיעות בתקריב ברמה 13 ומעלה.
-      name: דיגיטל גלוב' תצלומי אוויר
-    DigitalGlobe-Vivid:
-      attribution:
-        text: תנאים ומשוב
-      description: DigitalGlobe-Vivid הוא פסיפס עם אסתטיקה ועדכניות מיטביים לכל אזור ברחבי כדור הארץ, רזולוציה של 50 ס״מ או טובה יותר, עדכניות של <20 חודשים בממוצע בכל רחבי העולם.
-      name: צילומי Vivid של DigitalGlobe
+      name: דיגיטל גלוב תצלומי אוויר
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 נטול עננים - https://s2maps.eu מבית שירותי EOX IT GmbH (מכיל נתונים ערוכים מתוך Copernicus Sentinel 2017 & 2018)
@@ -54,7 +51,7 @@ he:
     EsriWorldImagery:
       attribution:
         text: תנאים ומשוב
-      description: ESRI תצלומי אוויר
+      description: ESRI תצלומי אוויר.
       name: ESRI תצלומי אוויר
     EsriWorldImageryClarity:
       attribution:
@@ -65,12 +62,22 @@ he:
       attribution:
         text: מתנדבי © OpenStreetMap,‏ CC-BY-SA
       description: שכבת בררת המחדל של OpenStreetMap.
-      name: OpenStreetMap (תקני)
+      name: OpenStreetMap (רגיל)
     Mapbox:
       attribution:
         text: תנאים ומשוב
       description: צילומי אוויר ולוויין.
       name: Mapbox לווייני
+    Maxar-Premium:
+      attribution:
+        text: תנאים ומשוב
+      description: Maxar פרימיום הוא פסיפס שמורכב ממפת הבסיס Maxar עם שטחים נבחרים במילוי ‎+Vivid או שטח צילום מותאם אישית, ברזולוציה של 50 ס״מ ומעלה, שמתרענן בתדירות גבוהה יותר ככל שמצטרפים עוד עדכונים.
+      name: צילומי פרימיום של Maxar (בטא)
+    Maxar-Standard:
+      attribution:
+        text: תנאים ומשוב
+      description: Maxar רגיל הוא סדרה אסופה של צילומים שמכסים 86% מהקרקע בכדור הארץ ברזולוציה של 30-60 ס״מ איפה שניתן, עם מילוי חוסרים מצד Landsat. הגיל הממוצע הוא 2.31 שנים, עם שטחים מסוימים שמתעדכנים פעמיים בשנה.
+      name: צילומים רגילים של Maxar (בטא)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‮ CC-BY-SA
@@ -114,6 +121,9 @@ he:
     US-TIGER-Roads-2018:
       description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא בOSM
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: צילומי ה־DOQQ העדכניים ביותר מבית תכנית הצילום החקלאית הלאומית (NAIP) לגבולותיה של כל מדינה בארה״ב.
+      name: תכנית הצילום החקלאית הלאומית
     US_Forest_Service_roads_overlay:
       description: 'כביש מהיר: תחימה ירוקה = ללא סיווג. תחימה חומה = מסלול. פני שטח: חצץ = מילוי חום בהיר, אספלט = שחור, מרוצף = אפור, אדמה =לבן, בטון = כחול, דשא = ירוק. עונתי = פסים לבנים'
       name: שכבת דרכי יערות בארה״ב
@@ -167,6 +177,21 @@ he:
         text: basemap.at
       description: אורטופוטו basemap.at
       name: אורטופוטו basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: שכבת הערות שמסופקת על ידי basemap.at.
+      name: שכבת basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: שכבת משטח שמסופקת על ידי basemap.at.
+      name: משטח של basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: שכבת תוואי שטח שמסופקת על ידי basemap.at.
+      name: תוואי שטח של basemap.at
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010

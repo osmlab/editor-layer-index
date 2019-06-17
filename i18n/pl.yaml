@@ -43,11 +43,6 @@ pl:
         text: Warunki użytkowania i opinia
       description: Granice zdjęć i data ich wykonania. Opisy są widoczne na poziomie powiększenia 13 i wyższym.
       name: Datowanie zdjęć DigitalGlobe Standard
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Warunki użytkowania i opinia
-      description: DigitalGlobe-Vivid to mozaika o optymalnej estetyce i powszechnym użyciu dla dowolnego miejsca na Ziemi, rozdzielczość 50 cm lub wyższa, zdjęcia nie starsze niż 20 miesięcy.
-      name: DigitalGlobe Vivid
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 bezchmurne – https://s2maps.eu, EOX IT Services GmbH (zawiera zmodyfikowane dane Copernicus Sentinel 2017 i 2018)
@@ -73,6 +68,16 @@ pl:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Mapbox.
       name: Mapbox Satellite (satelitarne)
+    Maxar-Premium:
+      attribution:
+        text: Warunki użytkowania i opinia
+      description: Maxar Premium to mozaika stworzona z podstawowych map Maxar z wybranymi obszarami uzupełnionymi o +Vivid lub innymi obrazami innych obszarów, rozdzielczość 50 cm lub wyższa, odświeżana częściej wraz z bieżącymi aktualizacjami.
+      name: Maxar Premium (Beta)
+    Maxar-Standard:
+      attribution:
+        text: Warunki użytkowania i opinia
+      description: Maxar Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60 cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjeć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
+      name: Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -114,6 +119,9 @@ pl:
     US-TIGER-Roads-2018:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: Najnowszy rok DOQQ z Krajowego Programu Obrazowania Rolnictwa (NAIP) dla każdego sąsiadującego stanu w Stanach Zjednoczonych.
+      name: Krajowy Program Obrazowania Rolnictwa
     US_Forest_Service_roads_overlay:
       description: 'Drogi:  Zielone obramowanie = czwartorzędna. Brązowe obramowanie = polna/leśna. Nawierzchnia: żwir = jasno-brązowe wypełnienie, asfalt = czarny, twarda = szary, grunt = biały, beton = niebieski, trawa = zielony. Dostępna sezonowo = białe paski'
       name: Nakładka z drogami z U.S. Forest
@@ -166,7 +174,22 @@ pl:
       attribution:
         text: basemap.at
       description: Warstwa ortofotomapy dostarczana przez basemap.at. "Następca" obrazowania z serwisu geoimage.at.
-      name: basemap.at Orthofoto
+      name: Ortofotomapa basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Nakładka z adnotacjami dostarczona przez basemap.at
+      name: Nakładka basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Warstwa dostarczona przez basemap.at.
+      name: basemap.at (powierzchnia)
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Warstwa dostarczona przez basemap.at.
+      name: basemap.at (model wysokościowy)
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010

@@ -1,5 +1,12 @@
 cs:
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Nejaktuálnější letecké snímky AIV Flanders
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
     Bing:
       description: Satelitní a letecké snímky.
       name: Letecké snímky Bing
@@ -43,6 +50,14 @@ cs:
         text: Podmínky použití & zpětná vazba
       description: Satelitní a letecké snímky.
       name: Satelitní snímky Mapbox
+    Maxar-Premium:
+      attribution:
+        text: Terms & Feedback
+      name: Prémiové snímky Maxar (beta)
+    Maxar-Standard:
+      attribution:
+        text: Podmínky použití & zpětná vazba
+      name: Standardní snímky Maxar (beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, přispěvatelé OpenStreetMap, CC-BY-SA
@@ -73,8 +88,10 @@ cs:
       name: 'OSM Inspektor: Štítkování'
     SPW_ORTHO_LAST:
       name: Nejaktuálnější snímky SPW(allonie)
+    SPW_PICC:
+      name: PICC numerické snímky SPW(allonie)
     US-TIGER-Roads-2014:
-      description: Na úrovni zvětšení 16+ získáte údaje o mapě ve veřejné doméně z amerického sčítání lidu. Při nižších přiblíženích dochází pouze k změnám od roku 2006, bez změn již zahrnutých do OpenStreetMapy
+      description: Na úrovni zvětšení 16+ získáte údaje o mapě ve veřejné doméně z amerického sčítání lidu. Při nižších přiblíženích dochází pouze k změnám od roku 2006, beze změn již zahrnutých do OpenStreetMap
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Žlutá = data z veřejně dostupné mapy z amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
@@ -135,6 +152,12 @@ cs:
         text: basemap.at
       description: Vrstva ortofoto poskytnuta basemap.at. "Následník" geoimage.at.
       name: Ortofoto basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR Balaton 2010

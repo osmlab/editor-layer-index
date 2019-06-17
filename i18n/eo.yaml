@@ -43,11 +43,6 @@ eo:
         text: Kondiĉoj kaj rimarkoj
       description: Limoj kaj datoj de fotoj. Etikedoj montriĝas de skal-nivelo 13.
       name: Norma fotaro de DigitalGlobe - fot-dato
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Kondiĉoj kaj rimarkoj
-      description: 'DigitalGlobe-Vivid estas kunmetaĵo de kiel eble plej bela kaj aktuala fotaro por iu ajn areo de la Tero: distingivo 50cm aŭ pli bona kaj mezuma aktualeco <20 monatoj.'
-      name: DigitalGlobe-Vivid
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel‑2 sennuba fotaro de EOX IT Services GmbH (enhavas modifitajn datumojn (2017‑2018) de Copernicus)
@@ -73,6 +68,16 @@ eo:
         text: Kondiĉoj kaj rimarkoj
       description: Satelita kaj aera fotaroj.
       name: Mapbox Satellite
+    Maxar-Premium:
+      attribution:
+        text: Kondiĉoj kaj rimarkoj
+      description: Maxar Premium estas kunmetaĵo de Maxar-bazmapo kun kelkaj regionoj plenigitaj per +Vivid fotaro je distingivo 50cm aŭ pli bona kaj aktualigata pli ofte.
+      name: 'Maxar: detala fotaro (beta)'
+    Maxar-Standard:
+      attribution:
+        text: Kondiĉoj kaj rimarkoj
+      description: Maxar Standard estas prizorgata fotaro ampleksanta 86% da tero je distingivo 30–60cm (se disponebla), danke al programo Landsat. Mezuma aĝo de fotaro estas 2,31a, sed kelkaj areoj estas aktualigataj dufoje en jaro.
+      name: 'Maxar: norma fotaro (beta)'
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, kontribuintoj de OpenStreetMap, CC-BY-SA
@@ -114,6 +119,9 @@ eo:
     US-TIGER-Roads-2018:
       description: Flave = publikaj map-datumoj de Usona popolnombrado. Ruĝe = datumoj ne trovitaj en OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: Ĉi tiu jara ortfotmapo DOQQ de «National Agriculture Imagery Program» (NAIP) por ĉiu kontinenta subŝtato de Usono.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Vojo: verda rando = neklasifikita, bruna rando = kampa vojo. Pavimo: helbruna plenigo = sablego, nigra = asfalto, griza = pavimita, blanka = tera, blua = betono, verda = herbo. Blankaj strioj = sezona vojo.'
       name: Surtavolo de arbar-kultivaj vojoj
@@ -167,6 +175,21 @@ eo:
         text: basemap.at
       description: Ortofota tavolo liverata de basemap.at, anstataŭanto de fotaro geoimage.at.
       name: basemap.at ortofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Surtavolo de notoj de basemap.at.
+      name: basemap.at surtavolo
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Tavolo de supraĵo liverata de basemap.at.
+      name: basemap.at supraĵo
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Tavolo de altreliefo liverata de basemap.at.
+      name: basemap.at altreliefo
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -180,12 +203,12 @@ eo:
     gsi.go.jp:
       attribution:
         text: GSI Japanujo
-      description: Aera fotaro de GSI Japanujo. Kutime pli akurata ol Bing, sed malpli nova.
-      name: Aera fotaro GSI Japanujo (korektita)
+      description: Ortfotmapo de GSI Japanujo. Kutime pli akurata ol Bing, sed malpli nova.
+      name: Ortfotmapo GSI Japanujo (korektita)
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japanujo
-      description: Aera fotaro de GSI Japanujo. Ne tute geometrie korektita, sed iomete pli aktuala aŭ kovranta aliajn terenojn ol fotaro de GSI.
+      description: Ortfotmapo de GSI Japanujo. Ne tute geometrie korektita, sed iomete pli aktuala aŭ kovranta aliajn terenojn ol fotaro de GSI.
       name: Aera fotaro GSI Japanujo (nekorektita)
     gsi.go.jp_seamlessphoto:
       attribution:
@@ -200,23 +223,23 @@ eo:
     helsingborg-orto:
       attribution:
         text: © komunumo Helsingborg
-      description: Aera fotaro de la komunumo Helsingborg, publika uzo, 2016
-      name: Aera fotaro Helsingborg
+      description: Ortfotmapo de la komunumo Helsingborg, publika uzo, 2016
+      name: Ortfotmapo Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © komunumo Kalmar
-      description: Aera fotaro pri la norda marbordo de la komunumo Kalmar, 2014
-      name: Aera fotaro Kalmar (nordo) 2014
+      description: Ortfotmapo pri la norda marbordo de la komunumo Kalmar, 2014
+      name: Ortfotmapo Kalmar (nordo) 2014
     kalmar-orto-2016:
       attribution:
         text: © komunumo Kalmar
-      description: Aera fotaro pri la suda marbordo de la komunumo Kalmar, 2016
-      name: Aera fotaro Kalmar (sudo) 2016
+      description: Ortfotmapo pri la suda marbordo de la komunumo Kalmar, 2016
+      name: Ortfotmapo Kalmar (sudo) 2016
     kalmar-orto-2018:
       attribution:
         text: © komunumo Kalmar
-      description: Aera fotaro pri urba areo de la komunumo Kalmar, 2018
-      name: Aera fotaro Kalmar (urbo) 2018
+      description: Ortfotmapo pri urba areo de la komunumo Kalmar, 2018
+      name: Ortfotmapo Kalmar (urbo) 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -225,13 +248,13 @@ eo:
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
-      description: Kunmetaĵo de Sveda aera fotaro de jaroj 1955–1965. Pli novaj kaj pli malnovaj fotoj povas esti miksitaj.
-      name: Lantmäteriet historia aera fotaro 1960
+      description: Kunmetaĵo de Sveda ortfotmapo de jaroj 1955–1965. Pli novaj kaj pli malnovaj fotoj povas esti miksitaj.
+      name: Lantmäteriet historia ortfotmapo 1960
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
-      description: Kunmetaĵo de Sveda aera fotaro de jaroj 1970–1980. Estos plivastigita.
-      name: Lantmäteriet historia aera fotaro 1975
+      description: Kunmetaĵo de Sveda ortfotmapo de jaroj 1970–1980. Estos plivastigita.
+      name: Lantmäteriet historia ortfotmapo 1975
     lantmateriet-topowebb:
       attribution:
         text: © Lantmäteriet, CC0
@@ -240,8 +263,8 @@ eo:
     linkoping-orto:
       attribution:
         text: © komunumo Linköping
-      description: Aera fotaro de la komunumo Linköping, malfermaj datumoj, 2010
-      name: Aera fotaro Linköping
+      description: Ortfotmapo de la komunumo Linköping, malfermaj datumoj, 2010
+      name: Ortfotmapo Linköping
     mapbox_locator_overlay:
       attribution:
         text: Kondiĉoj kaj rimarkoj
@@ -289,8 +312,8 @@ eo:
     stockholm-orto:
       attribution:
         text: © komunumo Stokholmo, CC0
-      description: Aera fotaro de la komunumo Stokholmo, permesilo CC0, 2016
-      name: Aera fotaro Stokholmo
+      description: Ortfotmapo de la komunumo Stokholmo, permesilo CC0, 2016
+      name: Ortfotmapo Stokholmo
     tf-cycle:
       attribution:
         text: 'Mapoj: © Thunderforest, datumoj: © kontribuintoj de OpenStreetMap'

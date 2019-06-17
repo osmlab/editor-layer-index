@@ -43,11 +43,6 @@ mk:
         text: Услови и мислења
       description: Граници на снимките и датуми на снимање. Натписите се појавуваат при степен на приближеност 13 и повисоко.
       name: Стандардни снимки на DigitalGlobe — Старински
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Услови и мислења
-      description: DigitalGlobe-Vivid е мозаик со оптимална естетика и тековност за секое место на светот. Има разделност од 50 см или подобра, а сликите се просечно стари не повеќе од 20 месеци.
-      name: Снимки на DigitalGlobe-Vivid
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 безоблачно — https://s2maps.eu од EOX IT Services GmbH (содржи податоци од Copernicus Sentinel 2017 и 2018)
@@ -73,6 +68,16 @@ mk:
         text: Услови и мислења
       description: Сателитски и воздушни снимки.
       name: Mapbox Сателитски
+    Maxar-Premium:
+      attribution:
+        text: Услови и мислења
+      description: Maxar-напредна е мозаик составен од основната карта на Maxar и избрани подрачја исполнети со +Vivid или прилагодени снимки за местата од интерес, разложност 50 см или подобра, превчитувањето е позачестено со постојаните поднови.
+      name: Снимки на Maxar-напредна (бета)
+    Maxar-Standard:
+      attribution:
+        text: Услови и мислења
+      description: Maxar-стандардна е стручно згрижена снимкозбирка која покрива 86% од копнената маса на Земјата, со разложност од 30-60 см кајшто е достапна, а со заднинска потполнка од Landsat. Просечната старост изнесува 2,31 години, иако некои подрачја се подновуваат двапати годишно.
+      name: Стандардни снимки на Maxar (бета)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, учесници на OpenStreetMap, CC-BY-SA
@@ -114,6 +119,9 @@ mk:
     US-TIGER-Roads-2018:
       description: Жолто = Картографски податоци од пописот на САД во јавна сопственост. Црвено = Податоци кои не е присутни на OpenStreetMap
       name: TIGER Патишта 2018
+    USDA-NAIP:
+      description: Најновата година на DOQQ од Националната програма за земјоделски снимки (NAIP) за секоја континентална сојузна држава на САД.
+      name: Национална програма за земјоделски снимки
     US_Forest_Service_roads_overlay:
       description: 'Пат: Зелена обраба = некласификувано. Кафеава обраба = козја патека. Површина: Чакал = светлокафеава полнетица, Асфалт = црно, поплочено = сиво, земја = бело, бетон = сино, трева = зелено. Сезонски = бели пруги'
       name: Облога за шумски патишта на САД
@@ -167,6 +175,21 @@ mk:
         text: basemap.at
       description: Слојот на ортоснимки е преземен од basemap.at. „Наследник“  на сликите од geoimage.at.
       name: basemap.at Ортофото
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Прибележна облога на basemap.at.
+      name: basemap.at Облога
+    basemap.at-surface:
+      attribution:
+        text: 'basemap.at    '
+      description: Површинска облога на basemap.at.
+      name: basemap.at Површинска
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Теренска облога на basemap.at.
+      name: basemap.at Теренска
     eufar-balaton:
       attribution:
         text: EUFAR Балатон ортофото 2010

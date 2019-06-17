@@ -43,11 +43,6 @@ de:
         text: Bedingungen & Feedback
       description: Kachelgrenzen und Aufnahmedatum werden bei Zoom-Level 13 und höher angezeigt.
       name: DigitalGlobe Standard Bildmaterial Klassisch
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Bedingungen & Feedback
-      description: DigitalGlobe-Vivid ist ein Mosaik mit optimalen ästhetischen Ansichten für jeden Bereich am Globus, 50cm Auflösung oder besser und Aktualität <20 Monate durchschnittlich.
-      name: DigitalGlobe Vivid Hintergrund
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 wolkenfrei - https://s2maps.eu by EOX IT Services GmbH (enthält modofizierte Copernicus Sentinel Daten 2017 & 2018)
@@ -73,6 +68,16 @@ de:
         text: Bedingungen & Feedback
       description: Satellitenbilder und Luftbilder
       name: Mapbox Satellit
+    Maxar-Premium:
+      attribution:
+        text: Bedingungen & Feedback
+      description: Maxar Premium ist ein Mosaic zusammengestellt aus der Maxar Basiskarte mit ausgewählten Regionen gefüllt mit +Vivid oder kundenspezifischen/benutzerdefinierten Bildbereichen mit einer Auflösung von mindestens 50 cm, die bei fortlaufenden Aktualisierungen häufiger aktualisiert werden.
+      name: Maxar Premium Luftbilder (Beta)
+    Maxar-Standard:
+      attribution:
+        text: Bedingungen & Feedback
+      description: Maxar Standard ist eine Sammlung von kuratierten Bildern, die 86% der Landmasse der Erde abdecken, mit einer Auflösung von 30 bis 60 cm, sofern verfügbar, ergänzt durch Landsat. Das Durchschnittsalter beträgt 2,31 Jahre, wobei einige Gebiete zweimal pro Jahr aktualisiert werden.
+      name: Maxar Standard Luftbilder (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap-Mitwirkende, CC BY-SA
@@ -113,7 +118,10 @@ de:
       name: TIGER Straßen 2017
     US-TIGER-Roads-2018:
       description: Gelb = Public domain Kartendaten vom US Census. Rot  = Data nicht in OpenStreetMap
-      name: TIGER Roads 2018
+      name: TIGER Straßen 2018
+    USDA-NAIP:
+      description: Das aktuellste Jahr der DOQQs aus dem Programm für Nationale Landwirtschafts-Luftbilder (National Agriculture Imagery Program, NAIP) für jeden Staat in den zusammenhängenden USA.
+      name: Programm für Nationale Landwirtschafts-Luftbilder (National Agriculture Imagery Program, NAIP)
     US_Forest_Service_roads_overlay:
       description: 'Straße: Grüner Rand = Nebenstraße. Brauner Rand = Feldweg/Waldweg. Oberfläche: Schotter = hellbraune Füllung, Asphalt = schwarz, befestigt = grau, ground = weiß, Beton = blau, Gras = grün. Saisonal = weißes Gitter'
       name: U.S.A. Forststraßen Overlay
@@ -167,6 +175,21 @@ de:
         text: basemap.at
       description: Orthofotos von basemap.at, früher geoimage.at
       name: basemap.at Orthofotos
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Anmerkungen von basemap.at.
+      name: basemap.at Überlagerung
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Oberflächenkarte von basemap.at.
+      name: basemap.at Oberfläche
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Geländekarte von basemap.at.
+      name: basemap.at Gelände
     eufar-balaton:
       attribution:
         text: EUFAR Balaton Orthofoto 2010

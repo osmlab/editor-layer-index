@@ -43,11 +43,6 @@ sv:
         text: Villkor & återkoppling
       description: Gränser för flygfoto och fotograferingsdatum. Etiketter visas vid zoomnivå 13 och upp.
       name: DigitalGlobe Standard flygfotoålder
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Villkor & återkoppling
-      description: DigitalGlobe-Vivid är en mosaik med optimal estetik och aktualitet för alla områden på jorden, 50 cm upplösning eller bättre och högst 20 månaders genomsnittlig ålder globalt.
-      name: DigitalGlobe Vivid-bilder
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu av EOX IT Services GmbH (Innehåller modifierad data från Copernicus Sentinel 2017 & 2018)
@@ -73,6 +68,16 @@ sv:
         text: Villkor & återkoppling
       description: Satellit- eller flygfoton.
       name: Mapbox satellit
+    Maxar-Premium:
+      attribution:
+        text: Villkor & återkoppling
+      description: Maxar Standard är en kuraterad bildserie som täcker 86% av jordens landmassa, med 30–60 cm upplösning där den finns tillgänglig och Landsat för resten. Medelåldern är 2,31 år, med vissa områden uppdaterade 2 gånger per år.
+      name: Maxar Premium-bilder (Beta)
+    Maxar-Standard:
+      attribution:
+        text: Villkor & återkoppling
+      description: Maxar Standard är en kuraterad bildserie som täcker 86% av jordens landmassa, med 30–60 cm upplösning där den finns tillgänglig, för resten används Landsat. Medelåldern är 2,31 år, med vissa områden uppdaterade 2 gånger per år.
+      name: Maxar Standard-bilder (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMaps bidragsgivare, CC-BY-SA
@@ -114,6 +119,9 @@ sv:
     US-TIGER-Roads-2018:
       description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad på OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: Det senaste året av DOQQs från National Agriculture Imagery Program (NAIP) för varje stat i USA.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Väg: Grön ram = oklassificerad. Brun ram = bruksväg. Underlag: grus = ljusbrun fyllning, asfalt = svart, belagd = grå, mark = vit, betong = blå, gräs = grön. Säsongsöppen = vita streck'
       name: Bildlager för Skogsvägar i USA
@@ -167,6 +175,21 @@ sv:
         text: basemap.at
       description: Ortofoto-lager tillhandahållen av basemap.at. "Efterträdare" till geoimage.at imagery.
       name: basemap.at ortofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Noteringsöverdrag tillhandahållen av basemap.at.
+      name: basemap.at Överdrag
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Ytlager tillhandahållen av basemap.at.
+      name: basemap.at Yta
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Terränglager tillhandahållen av basemap.at.
+      name: basemap.at Terräng
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofoto 2010

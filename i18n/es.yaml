@@ -43,11 +43,6 @@ es:
         text: Términos y comentarios
       description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de zoom 13 y superior.
       name: Imágenes antiguas DigitalGlobe Standard
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Términos y comentarios
-      description: DigitalGlobe-Vivid es un mosaico con una estética y actualización óptimas para cualquier área del mundo, con una resolución de 50 cm o superior y una actualización de imagen con un promedio de 20 meses en todo el mundo.
-      name: Imágenes de DigitalGlobe Vivid
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene los datos de Copernicus Sentinel modificados 2017 y 2018)
@@ -73,6 +68,16 @@ es:
         text: Términos y comentarios
       description: Imágenes satelitales y aéreas.
       name: Mapbox Satellite
+    Maxar-Premium:
+      attribution:
+        text: Términos y comentarios
+      description: Maxar Premium es un mosaico compuesto por un mapa base de Maxar con regiones seleccionadas llenas de imágenes vívidas o de áreas de interés personalizadas, con una resolución de 50 cm o superior, y se actualiza con más frecuencia.
+      name: Imágenes Premium de Maxar (Beta)
+    Maxar-Standard:
+      attribution:
+        text: Términos y comentarios
+      description: Maxar Standard es un conjunto curado de imágenes que cubren el 86% de la masa terrestre, con una resolución de 30-60 cm donde esté disponible, rellenado por Landsat. La antigüedad promedio es de 2.31 años, con algunas áreas actualizadas 2 veces por año.
+      name: Imágenes Estándar de Maxar (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
@@ -114,6 +119,9 @@ es:
     US-TIGER-Roads-2018:
       description: Amarillo = Datos del mapa de dominio público del Censo de los Estados Unidos. Rojo = Datos no encontrados en OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: El año más reciente de DOQQs del Programa Nacional de Imágenes de Agricultura (NAIP) para cada estado en Estados Unidos contiguos.
+      name: Programa Nacional de Imágenes de Agricultura
     US_Forest_Service_roads_overlay:
       description: 'Carretera: marco verde = sin clasificar. marco marrón = pista. Superficie: grava = relleno marrón claro, asfalto = negro, pavimentado = gris, tierra = blanco, hormigón = azul, hierba/pasto = verde. Estacional = barras blancas'
       name: Superposición de carreteras forestales de los EE.UU.
@@ -167,6 +175,21 @@ es:
         text: basemap.at
       description: Capa de ortofoto proporcionada por basemap.at. «Sucesor» de las imágenes de geoimage.at.
       name: Ortofoto de basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Superposición de anotación proporcionada por basemap.at.
+      name: Superposición basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Capa de superficie proporcionada por basemap.at.
+      name: Superficie basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Capa de terreno proporcionada por basemap.at.
+      name: Terreno basemap.at
     eufar-balaton:
       attribution:
         text: Ortofotos de EUFAR Balaton 2010

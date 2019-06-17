@@ -48,6 +48,13 @@ it:
         text: Termini & Feedback
       description: Immagini satellitari e aeree.
       name: Mapbox Satellite
+    Maxar-Premium:
+      attribution:
+        text: Termini & Feedback
+    Maxar-Standard:
+      attribution:
+        text: Termini & Feedback
+      name: Maxar Standard Imagery (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
@@ -89,6 +96,8 @@ it:
     US-TIGER-Roads-2018:
       description: Giallo = dati della mappa di pubblico dominio del censimento US. Rosso = dati non presenti in OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Strada: bordo verde = non classificata. Bordo marrone = carrareccia. Manto in ghiaia = colore diriempimento marrone chiaro, asfaltato = nero, pavimentato = grigio, terra = bianco,  cemento = blu, erboso = verde. Stagionale = con barre bianche'
       name: Strade forestali U.S. (sovrapposta)
@@ -142,6 +151,15 @@ it:
         text: basemap.at
       description: Immagini satellitari fornite da basemap.at, successore di geoimage.at
       name: Immagini satellitari basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR di Balaton 2010
@@ -259,7 +277,7 @@ it:
       name: Mappa svedese per motoslitte
     stamen-terrain-background:
       attribution:
-        text: Tasselli della mappa di Stamen Design con licenza CC-BY 3.0. Dati di OpenStreetMap com licenza ODbL
+        text: Tasselli della mappa di Stamen Design con licenza CC-BY 3.0. Dati di OpenStreetMap con licenza ODbL
       name: Stamen Terrain
     stockholm-orto:
       attribution:

@@ -36,18 +36,13 @@ uk:
     DigitalGlobe-Standard:
       attribution:
         text: Умови використання та Відгуки
-      description: DigitalGlobe-Standard – підібрана збірка, що покриває 86% поверхні сущі, з розподільчою здатністю 30-60 см, де це можливо, заповнена Landsat. Середній вік – 2.31 роки, деякі ділянки оновлюються 2 рази на рік.
+      description: DigitalGlobe-Standard – підібрана збірка, що покриває 86% поверхні суші, з розподільчою здатністю 30-60 см, де це можливо, заповнена Landsat. Середній вік – 2.31 роки, деякі ділянки оновлюються 2 рази на рік.
       name: Знімки DigitalGlobe Standard
     DigitalGlobe-Standard-vintage:
       attribution:
         text: Умови використання та Відгуки
       description: 'Межі та дати знімків. Підписи з''являються з 13 рівня масштабування. '
       name: Період знімків DigitalGlobe Standard
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Умови використання та Відгуки
-      description: Мозаїка DigitalGlobe-Vivid з оптимальними підбором кольорів та актуальності для будь-якої місцевості на земній кулі, з розподільчою здатністю 50см та не давніше ніж 20 місяців.
-      name: Знімки DigitalGlobe Vivid
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 безхмарні знімки - https://s2maps.eu від EOX IT Services GmbH (Містить модифіковані дані Copernicus Sentinel 2017 та 2018)
@@ -73,6 +68,16 @@ uk:
         text: Умови використання та Відгуки
       description: Супутникові та аерофотознімки.
       name: Супутникові знімки Mapbox
+    Maxar-Premium:
+      attribution:
+        text: Умови використання та Відгуки
+      description: Maxar Premium – мозаїка зібрана з основного покриття Maxar та окремих ділянок заповнених знімками +Vivid або знімками зробленими на замовлення, розподільча здатність 50 см чи краще, з поточним оновленням.
+      name: Знімки Maxar Premium (Beta)
+    Maxar-Standard:
+      attribution:
+        text: Умови використання та Відгуки
+      description: Maxar Standard – підібрана збірка, що покриває 86% поверхні суші, з розподільчою здатністю 30-60 см, де це можливо, заповнена Landsat. Середній вік – 2.31 роки, деякі ділянки оновлюються 2 рази на рік.
+      name: Знімки Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, Учасники OpenStreetMap, CC-BY-SA
@@ -114,6 +119,9 @@ uk:
     US-TIGER-Roads-2018:
       description: Жовтий = Дані, що розповсюджуються US Census на умовах суспільного надбання. Червоний = Дані, відсутні в OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: Останній рік DOQQ від Національної програми землеробства (NAIP) для кожного штату
+      name: Знімки Національної програми землеробства
     US_Forest_Service_roads_overlay:
       description: 'Дороги: Зелений контур = unclassified. Коричневий контур = track. Покриття: gravel = світло-коричневе заповнення, asphalt = чорне, paved = сіре, ground = біле, concrete = синє, grass = зелене. Seasonal = білі смуги'
       name: U.S. Forest Roads, додатковий шар
@@ -167,6 +175,21 @@ uk:
         text: basemap.at
       description: Шат ортофото надається basemap.at. "Наступник" знімків від geoimage.at.
       name: basemap.at Ортофото
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Шар з підписами від  basemap.at.
+      name: basemap.at - допоміжний шар
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Шар поверхні від  basemap.at.
+      name: basemap.at - поверхня
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Шар ландшафту від  basemap.at.
+      name: basemap.at - ландшафт
     eufar-balaton:
       attribution:
         text: EUFAR Балатон ортофото 2010

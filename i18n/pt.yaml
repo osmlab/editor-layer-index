@@ -1,5 +1,25 @@
 pt:
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders - imagens áreas mais recentes
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 imagens aéreas 10cm
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, sombreamento de colinas multi-direcional 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Imagens aéreas e de satélite.
       name: Imagens aéreas Bing
@@ -23,11 +43,6 @@ pt:
         text: Termos e Opinião
       description: Limites das imagens aéreas e datas de captura. As etiquetas aparecem no nível de magnificação 13 e superiores.
       name: Imagens DigitalGlobe Standard antigaas
-    DigitalGlobe-Vivid:
-      attribution:
-        text: Termos e opinião
-      description: DigitalGlobe-Vivid é um mosaico de imagens aéreas com aparência ótima e atualidade para qualquer parte do mundo, com resolução de 50 cm ou superior e atualidade das imagens inferior a 20 meses no geral.
-      name: Imagens aéreas DigitalGlobe Vivid
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 sem nuvens - https://s2maps.eu por EOX IT Services GmbH (contém dados alterados do Copernicus Sentinel de 2017 e 2018)
@@ -53,6 +68,16 @@ pt:
         text: Termos e opinião
       description: Imagens aéreas e de satélite.
       name: Mapbox Satellite
+    Maxar-Premium:
+      attribution:
+        text: Termos de utilização e comentários
+      description: O Maxar Premium é um mosaico composto pelo mapa base Maxar com regiões selecionadas preenchidas com +Vivid ou área de imagens de interesse personalizada, com resolução de 50cm ou superior, e atualizada com mais frequência.
+      name: Maxar Premium Imagery (Beta)
+    Maxar-Standard:
+      attribution:
+        text: Termos de utilização e comentários
+      description: O Maxar Standard são imagens aéreas revistas que cobrem 86% da massa da Terra, com resolução de 30 a 60cm onde estiver disponível, com recuso alternativo ao Landsat. A idade média é de 2,31 anos com algumas áreas atualizadas 2 vezes por ano.
+      name: Maxar Standard Imagery (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
@@ -94,6 +119,9 @@ pt:
     US-TIGER-Roads-2018:
       description: Amarelo = Dados do mapa de domínio público do Censo dos EUA. Vermelho = Dados não encontrados no OpenStreetMap
       name: Estradas do TIGRE 2018
+    USDA-NAIP:
+      description: O ano mais recente de DOQQs da National Agriculture Imagery Program (NAIP) para cada estado nos Estados Unidos contíguos.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Estrada: cobertura verde = não classificada. cobertura castanha = trilho. Superfície: gravilha = preenchimento castanho claro, asfalto = preto, pavimentado = cinza, terra = branco, cimento = azul, erva = verde. Sazonal = barras brancas'
       name: Sobreposição Estradas Florestais E.U.A.
@@ -147,6 +175,21 @@ pt:
         text: basemap.at
       description: Ortofotomapa fornecido por basemap.at. Sucessor de imagens da geoimage.at .
       name: Ortofotomapa geoimage.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Camada com anotações fornecido por basemap.at.
+      name: basemap.at - camada superior
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Camada de superfície fornecido por basemap.at.
+      name: basemap.at - superfície
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Camada de terreno fornecido por basemap.at.
+      name: basemap.at - terreno
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
