@@ -5,7 +5,7 @@
     "name": "National Geographic Institute Argenmap (TMS)",
     "type": "tms",
     "description": "Mapa base del Instituto Geográfico Nacional de la República Argentina",
-    "url": "http://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG:3857@png/{z}/{y}/{x}.png",
+    "url": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG:3857@png/{zoom}/{x}/{-y}.png",
     "country_code": "AR",
     "attribution": {
       "required": true,
