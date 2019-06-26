@@ -22,7 +22,7 @@ collection = {
     "features": source_features
 }
 
-output = json.dumps(collection, sort_keys=True, ensure_ascii=False, separators=(',', ':'))
+output = json.dumps(collection, ensure_ascii=False, separators=(',', ':'))
 if sys.version_info.major == 2:
     output = output.encode('utf8')
 print(output)
