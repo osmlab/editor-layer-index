@@ -1,5 +1,25 @@
 nl:
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen meest recente luchtfotografie
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen 2013-2015 luchtfotografie 10cm
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionele hillshade 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Satelliet- en luchtfoto's.
       name: Bing-luchtfoto's
@@ -48,6 +68,16 @@ nl:
         text: Gebruiksvoorwaarden & feedback
       description: Satelliet- en luchtfoto's.
       name: Mapbox-satellietbeelden
+    Maxar-Premium:
+      attribution:
+        text: Termen en terugkoppeling
+      description: Maxar Premium is een mozaïek die samengesteld is uit de Maxar-basiskaart met bepaalde regionen gevuld met +Vivid of maatwerk beelden van belangrijke gebieden, 50cm-resolutie of beter, en meer frequent ververst om doorlopen updates.
+      name: Maxar premiumbeelden (bèta)
+    Maxar-Standard:
+      attribution:
+        text: Termen en terugkoppeling
+      description: Maxar Standard is een gecureerde set van beelden die 86% van het aardoppervlak bedekken, met 30-60cm-resolutie waar beschikbaar, aangevuld met Landsat. Gemiddelde is het 2,31 oud, met sommige gebieden die 2x per jaar worden geüpdatet.
+      name: Maxar standaardbeelden (bèta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap-bijdragers, CC-BY-SA
@@ -89,6 +119,9 @@ nl:
     US-TIGER-Roads-2018:
       description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
       name: TIGER Roads 2018
+    USDA-NAIP:
+      description: Het meest recente jaar van DOQQs van het National Agriculture Imagery Program (NAIP) voor de aaneengesloten staten van de Verenigde Staten.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Wegen: Groene omlijning = ongeclassificeerd. Bruine omlijning = veldweg. Oppervlak: grind = lichtbruin gevuld, asfalt = zwart, bestraat = grijs, grond = wit, beton = blauw, gras = groen. Seizoensgebonden = witte balken'
       name: U.S. Forest Roads-laag
@@ -142,6 +175,21 @@ nl:
         text: basemap.at
       description: Orthofoto-laag voorzien door basemap.at. 'Opvolger' van geoimage.at.
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Annotatie-overlay is geleverd door basemap.at.
+      name: basemap.at Overlay
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Oppervlaktelaag is geleverd door basemap.at.
+      name: basemap.at Oppervlakte
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Terreinlaag is geleverd door basemap.at.
+      name: basemap.at Terrein
     eufar-balaton:
       attribution:
         text: EUFAR Balaton orthofoto's 2010

@@ -1,5 +1,25 @@
 it:
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Le più recenti immagini aeree AIV delle Fiandre
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Fiandre 2013-2015 immagini aeree 10cm
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Fiandre GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, rilievo ombreggiato multidirezionale 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, fattore Skyview 0,25 m
     Bing:
       description: Immagini satellitari e aeree.
       name: Immagini aeree Bing
@@ -51,9 +71,12 @@ it:
     Maxar-Premium:
       attribution:
         text: Termini & Feedback
+      description: Maxar Premium è un mosaico composto dalla mappa base Maxar con alcune regioni in +Vivid o immagini da aree di interesse personalizzate, con una risoluzione di almeno 50cm, aggiornato con più frequenza e migliorato continuamente.
+      name: Immagini Maxar Premium (Beta)
     Maxar-Standard:
       attribution:
         text: Termini & Feedback
+      description: Maxar Standard è un set curato di immagini che copre l’86% della terra emersa mondiale, con risoluzione dai 30 ai 60cm laddove possibile e copertura alternativa che usa Landsat. L’età media è di 2,31 anni anche se alcune aree vengono aggiornate due volte l’anno.
       name: Maxar Standard Imagery (Beta)
     OSM_Inspector-Addresses:
       attribution:
@@ -97,6 +120,7 @@ it:
       description: Giallo = dati della mappa di pubblico dominio del censimento US. Rosso = dati non presenti in OpenStreetMap
       name: TIGER Roads 2018
     USDA-NAIP:
+      description: L’anno più recente di DOQQs dal programma nazionale delle immagini per l’agricoltura (NAIP) per ciascuno stato degli Stati Uniti contigui.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Strada: bordo verde = non classificata. Bordo marrone = carrareccia. Manto in ghiaia = colore diriempimento marrone chiaro, asfaltato = nero, pavimentato = grigio, terra = bianco,  cemento = blu, erboso = verde. Stagionale = con barre bianche'
@@ -154,12 +178,18 @@ it:
     basemap.at-overlay:
       attribution:
         text: basemap.at
+      description: Annotazioni sovrapposte fornite da basemap.at.
+      name: Sovrimpresso basemap.at
     basemap.at-surface:
       attribution:
         text: basemap.at
+      description: Livello superficie fornito da basemap.at.
+      name: Superficie basemap.at
     basemap.at-terrain:
       attribution:
         text: basemap.at
+      description: Livello terreno fornito da basemap.at.
+      name: Terreno basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR di Balaton 2010
