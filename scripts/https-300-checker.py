@@ -21,7 +21,7 @@ def check_url(url):
             print("Could not connect to " + url)
             print("--")
         return True
-    if response.history and response.url != "http://imagico.de/map/empty_tile.png" and response.url != url+'/':
+    if response.history and response.url != "http://imagico.de/map/empty_tile.png":
         print("Request was redirected")
         for resp in response.history:
             print(resp.status_code, resp.url)
@@ -33,7 +33,7 @@ def check_url(url):
         try:
             response2 = requests.get(urls, timeout=5)
             if response.text == response2.text:
-                print("It looks like {} can be converted to https, but check!".format( url.encode('ascii')))
+                print("It looks like {} can be converted to https".format( url.encode('ascii')))
                 print("--")
         except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError):
             pass
