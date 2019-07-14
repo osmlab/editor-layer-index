@@ -1,30 +1,28 @@
 {
     "type": "Feature",
     "properties": {
-        "name": "Kanton Thurgau Relief DTM",
+        "name": "Kanton Thurgau, Wanderwege",
         "i18n": false,
         "type": "wms",
-        "url": "https://ows-raster.geo.tg.ch/geofy_access_proxy/reliefschattierung?LAYERS=DTMRelief&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://ows.geo.tg.ch/geofy_access_proxy/wanderwege?LAYERS=Wanderwege&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "min_zoom": 8,
         "max_zoom": 21,
-        "license_url": "https://opendata.swiss/dataset/reliefschattierung",
+        "license_url": "https://opendata.swiss/dataset/wanderwege",
         "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
-        "id": "kt_tg_dtm_hillshade",
-        "description": "Digitale Repräsentation des Geländes",
+        "id": "kt_tg_ww",
+        "description": "Langsamverkehr: Verlauf der Wanderwege mit symbolischer Darstellung der Wegweiser, Unterführungen, Treppen und Brücken. Informationen über die Wegoberfläche und Rollstuhlgängigkeit.",
         "country_code": "CH",
         "default": false,
         "best": false,
-        "start_date": "2014",
-        "end_date": "2014",
         "available_projections": [
-            "EPSG:2056",
             "EPSG:4326",
-            "EPSG:3857",
-            "EPSG:21781"
+            "EPSG:2056",
+            "EPSG:21781",
+            "EPSG:3857"
         ],
         "attribution": {
-            "url": "https://opendata.swiss/dataset/reliefschattierung",
-            "text": "Kanton Thurgau, DTM Relief 2014",
+            "url": "https://opendata.swiss/dataset/wanderwege",
+            "text": "Kanton Thurgau, Wanderwege",
             "required": true
         },
         "icon": ""
