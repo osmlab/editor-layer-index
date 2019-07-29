@@ -1,22 +1,33 @@
 {
-	"type": "Feature",
-	"properties": {
-		"id": "KTTHURGAU2017",
-		"attribution": {
-			"text": "Kanton Thurgau OF 2017",
-			"required": true
-		},
-		"description": "This imagery is provided via a proxy operated by https://sosm.ch/", 
-		"privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
-		"name": "Kanton Thurgau OF 2017",
-		"url": "https://mapproxy.osm.ch/tiles/KTTHURGAU2017/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-		"max_zoom": 21,
-		"min_zoom": 8,
-		"country_code": "CH",
-		"type": "tms",
-		"best": true
-	},
-	"geometry": {
+    "type": "Feature",
+    "properties": {
+        "name": "Kanton Thurgau, Basisplan-AV",
+        "i18n": false,
+        "type": "wms",
+        "url": "https://ows.geo.tg.ch/geofy_access_proxy/basisplanf?LAYERS=Basisplan_farbig&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 8,
+        "max_zoom": 21,
+        "license_url": "https://opendata.swiss/dataset/basisplan-av",
+        "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
+        "id": "kt_tg_av",
+        "description": "Basisplan-AV des Kantons Thurgau farbig & schwarzweiss mit Liegenschaften, Nomenklatur, Landes-, Kantons- und Gemeindegrenzen, Einzelobjekten, Bodenbedeckung, Strassennamen, Höhenkurven und Geländemodell",
+        "country_code": "CH",
+        "default": false,
+        "best": false,
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:2056",
+            "EPSG:21781",
+            "EPSG:3857"
+        ],
+        "attribution": {
+            "url": "https://opendata.swiss/dataset/basisplan-av",
+            "text": "Kanton Thurgau, Basisplan-AV",
+            "required": true
+        },
+        "icon": ""
+    },
+    "geometry": {
 		"type": "Polygon",
 		"coordinates": [
 			[
