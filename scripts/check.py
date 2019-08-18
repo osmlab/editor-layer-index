@@ -124,10 +124,10 @@ for filename in arguments.path:
         # If we're not global we must have a geometry.
         # The geometry itself is validated by jsonschema
         if 'world' not in filename:
-            try:
-                source['geometry']['type'] == "Polygon"
-            except (TypeError, KeyError):
+            if not 'type' in source['geometry']:
                 raise ValidationError("{} should have a valid geometry or be global".format(filename))
+            if source['geometry']['type'] != "Polygon":
+                raise ValidationError("{} should have a Polygon geometry".format(filename))
             if not 'country_code' in source['properties']:
                 raise ValidationError("{} should have a country or be global".format(filename))
         else:
