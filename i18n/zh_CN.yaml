@@ -1,27 +1,30 @@
 zh_CN:
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 最近的航拍图
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 的 10厘米 航拍图
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 米 Skyview
     Bing:
       description: 卫星和航空影像
       name: 必应航空影像
-    DigitalGlobe-Premium:
-      attribution:
-        text: 条款与反馈
-      name: DigitalGlobe 优质影像
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: 使用条款与意见反馈
-      description: 影像边界和拍摄日期。标签会在缩放到13层级或更高时显示。
-      name: DigitalGlobe 优质影像年份
-    DigitalGlobe-Standard:
-      attribution:
-        text: 条款与反馈
-      name: DigitalGlobe 标准影像
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: 使用条款与意见反馈
-      description: 影像边界和拍摄日期。标签会在缩放到13层级或更高时显示。
-      name: DigitalGlobe 标准影像年份
     EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 无云 - https://s2maps.eu by EOX IT Services GmbH (包含已修改的 Copernicus Sentinel data 2017 & 2018)
       description: 经后期处理的 Sentinel 卫星影像。
       name: eox.at 2018 无云
     EsriWorldImagery:
@@ -47,10 +50,12 @@ zh_CN:
     Maxar-Premium:
       attribution:
         text: 条款与反馈
+      description: Maxar Premium 是由 Maxar 底图所组成的拼接图，特定区域以 +Vivid 或自订照片填充，其解析度为 50 厘米或更高，且会不断更新。
       name: Maxar 优质影像 (Beta)
     Maxar-Standard:
       attribution:
         text: 条款与反馈
+      description: Maxar Standard 是一套经过精心选取，覆盖地球上 86% 的陆地面积，其解析度为 30-60 厘米，不足的部份以 Landsat 填满。平均更新时间为 2.31 年，部份地区每年更新两次。
       name: Maxar 标准影像 (Beta)
     OSM_Inspector-Addresses:
       attribution:
@@ -80,6 +85,10 @@ zh_CN:
       attribution:
         text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：标签'
+    SPW_ORTHO_LAST:
+      name: SPW(allonie) 最新航空影像
+    SPW_PICC:
+      name: SPW(allonie) PICC 数字图像
     US-TIGER-Roads-2014:
       description: 在缩放等级16级以上是来自美国人口调查局的公共领域地图数据。低缩放等级下仅包含自2006年以来的变更，不含已纳入 OpenStreetMap 的变更。
       name: TIGER 道路 2014
@@ -89,9 +98,16 @@ zh_CN:
     US-TIGER-Roads-2018:
       description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
       name: TIGER 道路 2018
+    USDA-NAIP:
+      description: 近年来自美国各州的国家农业影像计划 (NAIP) 的 DOQQ。
+      name: 国家农业影像计划
     US_Forest_Service_roads_overlay:
       description: '公路：绿色线框 = 未分级。棕色线框 = 未铺设路面。表面：沙砾 = 浅棕色填充，沥青 = 黑色，已铺设 = 灰色，土地 = 白色，混凝土 = 蓝色，草地 = 绿色。季节性 = 白色条状'
       name: 美国森林道路叠加层
+    UrbISOrtho2016:
+      attribution:
+        text: 道路：绿色外框 = 非分类道路。棕色外框 = 土路。路面：碎石路 = 亮棕色实心填满，柏油 = 黑色，有铺面 = 灰色，地面 = 白色，水泥 = 蓝色，草地 = 绿色。季节性 = 白色条纹
+      name: UrbIS-Ortho 2016
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap 贡献者, 署名-相同方式共享 3.0
