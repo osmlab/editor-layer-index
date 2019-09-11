@@ -1,0 +1,40 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Frankfurt-am-Main-2016",
+    "name": "Frankfurt am Main Luftbild 2016",
+    "description": "aerial imagery of Frankfurt am Main, photographed on 2016-05-06",
+    "type": "wms",
+    "url": "https://geoportal.frankfurt.de/opendata/luftbild-2016.exe?service=wms&REQUEST=GetMap&LAYERS=luftbild_20cm&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image/jpeg",
+    "privacy_policy": "https://geoportal.frankfurt.de/impressum/datenschutz.html",
+    "start_date": "2016-05-06",
+    "end_date": "2016-05-06",
+    "country_code": "DE",
+    "best": true,
+    "available_projections": [
+      "EPSG:25832",
+      "EPSG:31467",
+      "EPSG:4326",
+      "EPSG:3857"
+    ],
+    "attribution": {
+      "text": "Stadtvermessungsam Frankfurt am Main",
+      "url": "http://offenedaten.frankfurt.de/dataset/wms-luftbild-2016",
+      "required": true
+    },
+    "license_url": "http://www.govdata.de/dl-de/by-2-0",
+    "permission_osm": "https://wiki.openstreetmap.org/wiki/Frankfurt_am_Main/amtliche_Daten_f%C3%BCr_OSM"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [ 8.469644332546354, 50.011112672551235 ],
+        [8.467273079750514, 50.226955783020827],
+        [8.804598215308536, 50.228003436371765],
+        [8.804595467622788, 50.012149168408321],
+        [8.469644332546354, 50.011112672551235]
+      ]
+    ]
+  }
+}
