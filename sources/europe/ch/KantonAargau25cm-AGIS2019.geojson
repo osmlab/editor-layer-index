@@ -4,19 +4,20 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/Switzerland/AGIS",
         "description": "This imagery is provided via a proxy operated by https://sosm.ch/", 
         "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
-        "id": "Aargau-AGIS-2017",
+        "id": "Aargau-AGIS-2019",
         "attribution": {
-            "text": "AGIS OF2017",
+            "text": "AGIS OF2019",
             "required": false
         },
-        "name": "Kanton Aargau 25cm (AGIS 2017)",
-        "url": "https://mapproxy.osm.ch/tiles/AGIS2017/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-        "start_date": "2017",
-        "end_date": "2017",
+        "name": "Kanton Aargau 25cm (AGIS 2019)",
+        "url": "https://mapproxy.osm.ch/tiles/AGIS2019/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "start_date": "2019",
+        "end_date": "2019",
         "max_zoom": 19,
         "min_zoom": 8,
         "country_code": "CH",
-        "type": "tms"
+        "type": "tms",
+        "best": true
     },
     "geometry": {
         "type": "Polygon",
