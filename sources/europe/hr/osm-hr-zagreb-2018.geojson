@@ -12,7 +12,12 @@
         "max_zoom": 19,
         "min_zoom": 0,
         "country_code": "HR",
-        "type": "tms"
+        "type": "tms",
+        "attribution": {
+        	"required": true,
+        	"text": "Grad Zagreb, Gradski ured za strategijsko planiranje i razvoj Grada",
+        	"url": "https://geoportal.zagreb.hr/"
+        	}
     },
     "geometry": {
         "type": "Polygon",
