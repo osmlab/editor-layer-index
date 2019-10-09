@@ -1,10 +1,10 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "openrailwaymap",
-    "name": "OpenRailwayMap",
+    "id": "openrailwaymap-signalling",
+    "name": "OpenRailwayMap Signalling",
     "type": "tms",
-    "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/standard/{zoom}/{x}/{y}.png",
+    "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/signals/{zoom}/{x}/{y}.png",
     "overlay": true,
     "attribution": {
       "text": "© OpenRailwayMap.org",
@@ -15,4 +15,4 @@
     "description": "Overlay imagery for railway mapping in OSM"
   },
   "geometry": null
-}
+  }
