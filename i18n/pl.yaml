@@ -56,7 +56,7 @@ pl:
     Maxar-Standard:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Maxar Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60 cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjeć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
+      description: Maxar Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60 cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjęć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
       name: Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
@@ -99,6 +99,9 @@ pl:
     US-TIGER-Roads-2018:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Żółty = Dane public domain z US Census Bureau. Czerwony = Brak danych w OpenStreetMap
+      name: TIGER Roads 2019
     USDA-NAIP:
       description: Najnowszy rok DOQQ z Krajowego Programu Obrazowania Rolnictwa (NAIP) dla każdego sąsiadującego stanu w Stanach Zjednoczonych.
       name: Krajowy Program Obrazowania Rolnictwa
@@ -117,6 +120,10 @@ pl:
       attribution:
         text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: 'Zrealizowany za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie: CIRB'
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
@@ -271,7 +278,7 @@ pl:
       name: QA Bez Adresu
     skobbler:
       attribution:
-        text: '© Podład: skobbler Dane mapy: autorzy OpenStreetMap'
+        text: '© Podkład: skobbler Dane mapy: autorzy OpenStreetMap'
       name: skobbler
     skoterleder:
       attribution:
