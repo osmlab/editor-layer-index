@@ -1651,15 +1651,13 @@
             "url": "https://geo.nls.uk/maps"
         },
         "country_code": "GB",
-        "end_date": "1883",
+        "end_date": "1960",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
-        "id": "NLS-OS-6inch-Scotland-hist",
-        "max_zoom": 16,
-        "min_zoom": 5,
-        "name": "NLS - OS 6-inch Scotland 1842-82",
-        "start_date": "1842",
+        "id": "NLS-OS-NatGrid-12500-1940-60-singles",
+        "max_zoom": 18,
+        "name": "NLS - OS 1:2,500 National Grid Maps, 1940s-1960s - single sheets",
         "type": "tms",
-        "url": "https://geo.nls.uk/mapdata3/os/6inchfirst/{zoom}/{x}/{y}.png" 
+        "url": "https://geo.nls.uk/maps/os/scotland_2500_singles/{zoom}/{x}/{y}.png"
     },
     "type": "Feature"
 }
