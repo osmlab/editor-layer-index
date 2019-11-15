@@ -11,6 +11,8 @@ a new imagery source, add a new file to this directory.
 Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, and `url` properties.
 To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
 
+We further recommend to add `category`, the licence related and `privacy_policy_url` properties.
+
 See [schema.json](schema.json) for the full list of available properties.
 
 ##### Source URL
