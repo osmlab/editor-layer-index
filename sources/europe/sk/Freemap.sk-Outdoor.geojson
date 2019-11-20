@@ -7,7 +7,7 @@
             "required": true
         },
         "name": "Freemap.sk Outdoor",
-        "url": "https://outdoor.tiles.freemap.sk/{z}/{x}/{y}",
+        "url": "https://{switch:a,b,c,d}.freemap.sk/A/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 19,
         "min_zoom": 7,
         "country_code": "SK",
