@@ -63,7 +63,13 @@ spacesave = 0
 strict_mode = arguments.strict
 
 for filename in arguments.path:
+
+    if not filename.lower()[-8:] == '.geojson':
+        continue
+
     try:
+
+
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
