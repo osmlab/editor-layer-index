@@ -3,7 +3,7 @@
             "properties": {
                 "attribution": {
                     "required": true,
-                    "text": "Strava Global Heatmap",
+                    "text": "\u00a9 Strava Global Heatmap",
                     "url": "https://labs.strava.com/heatmap/"
                 },
                 "i18n": true,
@@ -12,7 +12,8 @@
                 "max_zoom": 11,
                 "min_zoom": 3,
                 "name": "Strava water sports heatmap",
-                "permission_url": "https://github.com/nnngrach/strava_auto_auth",
+                "overlay": true,
+                "license_url": "https://github.com/nnngrach/strava_auto_auth",
                 "privacy_policy_url": "https://www.strava.com/legal/privacy",
                 "tile_size": 512,
                 "type": "tms",
