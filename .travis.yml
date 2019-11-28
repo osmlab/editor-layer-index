@@ -4,7 +4,9 @@ branches:
   only:
     - gh-pages # needs to be explicitely included
     - /.*/
-script: make check
+script:
+   - make check
+   - python scripts/check.py --scrict $(git diff --name-only --diff-filter=AM HEAD...$TRAVIS_BRANCH)
 before_deploy:
     - make clean
     - make
