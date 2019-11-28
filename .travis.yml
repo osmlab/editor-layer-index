@@ -6,7 +6,7 @@ branches:
     - /.*/
 script:
    - make check
-   - python scripts/check.py --scrict $(git diff --name-only --diff-filter=AM HEAD...$TRAVIS_BRANCH)
+   - python scripts/check.py --strict $(git diff --name-only --diff-filter=AM HEAD...$TRAVIS_BRANCH)
 before_deploy:
     - make clean
     - make
