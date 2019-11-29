@@ -9,6 +9,8 @@ script:
    # See https://github.com/travis-ci/travis-ci/issues/6069
    - git config remote.origin.fetch "+refs/heads/gh-pages:refs/remotes/origin/gh-pages"
    - git fetch
+   - git diff --name-only --diff-filter=AM HEAD origin/${TRAVIS_BRANCH}
+   - git diff --name-only --diff-filter=AM gh-pages origin/${TRAVIS_BRANCH}
    - python scripts/check.py --strict $(git diff --name-only --diff-filter=AM HEAD origin/${TRAVIS_BRANCH})
 before_deploy:
     - make clean
