@@ -66,11 +66,11 @@ strict_mode = arguments.strict
 for filename in arguments.path:
 
     if not filename.lower()[-8:] == '.geojson':
-        logger.debug("{} is not a geojson file, continue".format(filename))
+        logger.debug("{} is not a geojson file, skip".format(filename))
         continue
 
     if not os.path.exists(filename):
-        logger.debug("{} does not exist, continue".format(filename))
+        logger.debug("{} does not exist, skip".format(filename))
         continue
 
     try:
@@ -100,6 +100,20 @@ for filename in arguments.path:
         ## Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
             logger.debug("{} has no license_url".format(filename))
+
+        ## Check if license url exists
+        if strict_mode and 'license_url' in source['properties']:
+            try:
+                r = requests.get(source['properties']['license_url'])
+                if not r.status_code == 200:
+                    raise ValidationError("{}: license url {} is not reachable: HTTP code: {}".format(
+                        filename, source['properties']['license_url'], r.status_code))
+
+            except Exception as e:
+                raise ValidationError("{}: license url {} is not reachable: {}".format(
+                    filename, source['properties']['license_url'], str(e)))
+
+
         if 'attribution' not in source['properties']:
             logger.debug("{} has no attribution".format(filename))
 
@@ -162,7 +176,6 @@ for filename in arguments.path:
                              " is important to comply with legal requirements in certain countries.".format(filename))
 
             # Check if privacy url exists
-            broken_privacy_policy = False
             try:
                 r = requests.get(source['properties']['privacy_policy_url'])
                 if not r.status_code == 200:
