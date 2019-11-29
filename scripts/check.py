@@ -25,6 +25,7 @@ from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
 import spdx_lookup
 import colorlog
 import requests
+import os
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -65,6 +66,11 @@ strict_mode = arguments.strict
 for filename in arguments.path:
 
     if not filename.lower()[-8:] == '.geojson':
+        logger.debug("{} is not a geojson file, continue".format(filename))
+        continue
+
+    if not os.path.exists(filename):
+        logger.debug("{} does not exist, continue".format(filename))
         continue
 
     try:
