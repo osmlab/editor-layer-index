@@ -6,9 +6,6 @@ branches:
     - /.*/
 script:
    - make check
-   # See https://github.com/travis-ci/travis-ci/issues/6069
-   - git config remote.origin.fetch "+refs/heads/gh-pages:refs/remotes/origin/gh-pages"
-   - git fetch
    - python scripts/check.py --strict $(git diff --name-only HEAD origin/${TRAVIS_BRANCH})
 before_deploy:
     - make clean
