@@ -6,7 +6,7 @@ branches:
     - /.*/
 script:
    - make check
-   - python scripts/check.py --strict $(git diff --name-only HEAD origin/${TRAVIS_BRANCH})
+   - python scripts/check.py --strict  --diff-filter=ACMRT $(git diff --name-only HEAD origin/${TRAVIS_BRANCH})
 before_deploy:
     - make clean
     - make
