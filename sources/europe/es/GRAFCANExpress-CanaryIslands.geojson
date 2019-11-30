@@ -2,7 +2,8 @@
   "type": "Feature",
   "properties": {
     "id": "GRAFCAN_Express-Canary_Islands",
-    "name": "GRAFCAN Express - Canary Islands",
+    "name": "GRAFCAN OrtoExpress - Canary Islands",
+    "description": "High resolution imagery covering the Canary Islands, 20 cm/pixel. More recent in some urban areas than the higher-resolution \"GRAFCAN OrtoExpress Urbana\".",
     "type": "wms",
     "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortoexpress&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "ES",
@@ -13,6 +14,7 @@
     ],
     "attribution": {
       "text": "GRAFCAN OrtoExpress",
+      "url": "https://catalogo.idecanarias.es/geonetwork/srv/spa/catalog.search#/metadata/spagrafcan_ORTOWMS_20160101",
       "required": true
     }
   },
