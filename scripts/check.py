@@ -24,6 +24,8 @@ from argparse import ArgumentParser
 from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
 import spdx_lookup
 import colorlog
+import requests
+import os
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -40,6 +42,8 @@ parser.add_argument('path', nargs='+', help='Path of files to check.')
 parser.add_argument("-v", "--verbose", dest="verbose_count",
                     action="count", default=0,
                     help="increases log verbosity for each occurence.")
+parser.add_argument("--strict", help="enable more strict checks", action="store_true")
+
 arguments = parser.parse_args()
 logger = colorlog.getLogger()
 # Start off at Error, reduce by one level for each -v argument
@@ -57,8 +61,21 @@ validator = Draft4Validator(schema, resolver=resolver)
 borkenbuild = False
 spacesave = 0
 
+strict_mode = arguments.strict
+
 for filename in arguments.path:
+
+    if not filename.lower()[-8:] == '.geojson':
+        logger.debug("{} is not a geojson file, skip".format(filename))
+        continue
+
+    if not os.path.exists(filename):
+        logger.debug("{} does not exist, skip".format(filename))
+        continue
+
     try:
+
+
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
@@ -83,6 +100,20 @@ for filename in arguments.path:
         ## Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
             logger.debug("{} has no license_url".format(filename))
+
+        ## Check if license url exists
+        if strict_mode and 'license_url' in source['properties']:
+            try:
+                r = requests.get(source['properties']['license_url'])
+                if not r.status_code == 200:
+                    raise ValidationError("{}: license url {} is not reachable: HTTP code: {}".format(
+                        filename, source['properties']['license_url'], r.status_code))
+
+            except Exception as e:
+                raise ValidationError("{}: license url {} is not reachable: {}".format(
+                    filename, source['properties']['license_url'], str(e)))
+
+
         if 'attribution' not in source['properties']:
             logger.debug("{} has no attribution".format(filename))
 
@@ -135,6 +166,26 @@ for filename in arguments.path:
                 ValidationError("{} should have null geometry".format(filename))
             elif source['geometry'] != None:
                 ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
+
+        ## Privacy policy
+        if strict_mode:
+
+            # Check if privacy url is set
+            if 'privacy_policy_url' not in source['properties']:
+                raise ValidationError("{} has no privacy_policy_url. Adding privacy policies to sources"
+                             " is important to comply with legal requirements in certain countries.".format(filename))
+
+            # Check if privacy url exists
+            try:
+                r = requests.get(source['properties']['privacy_policy_url'])
+                if not r.status_code == 200:
+                    raise ValidationError("{}: privacy policy url {} is not reachable: HTTP code: {}".format(
+                        filename, source['properties']['privacy_policy_url'], r.status_code))
+
+            except Exception as e:
+                raise ValidationError("{}: privacy policy url {} is not reachable: {}".format(
+                    filename, source['properties']['privacy_policy_url'], str(e)))
+
     except ValidationError as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))
