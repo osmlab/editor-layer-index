@@ -14,7 +14,7 @@ script:
    - export CHANGED_FILES=$(git diff --name-only $TRAVIS_COMMIT_RANGE)
    - echo $CHANGED_FILES
    # We only execute strict tests if we have changed files
-   - if [ -z "$CHANGED_FILES" ]; then echo "No files available"; else python scripts/check.py --strict $CHANGED_FILES; fi
+   - if [ -z "$CHANGED_FILES" ]; then echo "No files available"; else [ "${TRAVIS_PULL_REQUEST}" = "true" ] && python scripts/check.py --strict $CHANGED_FILES; fi
 
 before_deploy:
     - make clean
