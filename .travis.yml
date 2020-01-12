@@ -15,7 +15,7 @@ script:
    - echo $CHANGED_FILES
    - echo $TRAVIS_PULL_REQUEST
    # We only execute strict tests if we have changed files and are a pull request
-   - if [ -z "$CHANGED_FILES" ]; then echo "No files available"; elif [ "${TRAVIS_PULL_REQUEST}" = "true" ]; then python scripts/check.py --strict $CHANGED_FILES; fi
+   - if [ -z "$CHANGED_FILES" ]; then echo "No files available"; elif [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then python scripts/check.py --strict $CHANGED_FILES; fi
 
 before_deploy:
     - make clean
