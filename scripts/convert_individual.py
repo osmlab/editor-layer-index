@@ -108,6 +108,10 @@ for imagery in imageries:
     if description_node:
         properties['description'] = description_node[0].childNodes[0].nodeValue
 
+    category_node = imagery.getElementsByTagName('category')
+    if category_node:
+        properties['category'] = category_node[0].childNodes[0].nodeValue
+
     (bbox, rings) = util.getrings(imagery)
 
     if rings:
