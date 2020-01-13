@@ -15,6 +15,7 @@
         "name": "OpenStreetMap GPS traces",
         "overlay": true,
         "type": "tms",
+        "category": "other",
         "url": "https://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png"
     },
     "type": "Feature"
