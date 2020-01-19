@@ -10,6 +10,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var testLayer;
 var testLayerOpacity = 1;
 
+var remoteControlHost = 'http://localhost:8111';
+
 function updateOpacity(value) {
     testLayerOpacity = value;
     testLayer.setOpacity(value);
@@ -43,7 +45,22 @@ d3.json("imagery.geojson", function(error, imagery) {
         map.openPopup(
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
-                return match.feature.properties.name;
+                var remoteControlParams = {
+                    title: match.feature.properties.name,
+                    type: match.feature.properties.type,
+                    min_zoom: match.feature.properties.min_zoom,
+                    max_zoom: match.feature.properties.max_zoom,
+                    url: match.feature.properties.url
+                };
+                Object.keys(remoteControlParams).forEach(function (key) {
+                    if (remoteControlParams[key] === undefined) {
+                        delete remoteControlParams[key];
+                    }
+                });
+                var remoteControlURL = remoteControlHost + '/imagery?' +
+                    (new URLSearchParams(remoteControlParams)).toString();
+                return match.feature.properties.name +
+                    ` [<a href="${remoteControlURL}" title="Add to JOSM">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );
