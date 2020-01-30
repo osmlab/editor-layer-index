@@ -17,14 +17,14 @@
         "id": "turku-orto",
         "license_url": "https://dev.turku.fi/openstreetmap-lupa.pdf",
         "max_zoom": 20,
-        "min-zoom": 4,
+        "min_zoom": 4,
         "name": "City of Turku ortophoto",
         "type": "wms",
         "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "geometry": {
         "type": "Polygon",
-        "coordinates": [
+        "coordinates": [[
             [21.48608453880,60.90844047386],
             [21.49955863924,60.48376777234],
             [21.08956538761,60.50960480727],
@@ -42,6 +42,6 @@
             [23.14814738764,60.91835358385],
             [22.31594792877,60.91512243762],
             [21.48608453880,60.90844047386]
-        ]
+        ]]
     }
 }
