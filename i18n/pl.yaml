@@ -48,16 +48,6 @@ pl:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Mapbox.
       name: Mapbox Satellite (satelitarne)
-    Maxar-Premium:
-      attribution:
-        text: Warunki użytkowania i opinia
-      description: Maxar Premium to mozaika stworzona z podstawowych map Maxar z wybranymi obszarami uzupełnionymi o +Vivid lub innymi obrazami innych obszarów, rozdzielczość 50 cm lub wyższa, odświeżana częściej wraz z bieżącymi aktualizacjami.
-      name: Maxar Premium (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Warunki użytkowania i opinia
-      description: Maxar Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60 cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjęć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
-      name: Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -187,6 +177,11 @@ pl:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 przez finds.jp. Dobra do odrysowywania, ale trochę starsza.
       name: Japońska GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Gmina Göteborg, CC0
+      description: Mapa miasta to mapa przeglądowa Göteborga. Zawiera ogólne informacje o gruntach, komunikacji, hydrografii, budynkach, adresach, nazwach ulic i podziale administracyjnym.
+      name: Mapa Göteborga
     gsi.go.jp:
       attribution:
         text: GSI Japonia

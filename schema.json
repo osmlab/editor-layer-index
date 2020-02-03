@@ -43,6 +43,20 @@
                         "wmts"
                     ]
                 },
+                "category": {
+                    "description": "A rough categorisation of different types of layers",
+                    "type": "string",
+                    "enum": [
+                        "photo",
+                        "map",
+                        "historicmap",
+                        "osmbasedmap",
+                        "historicphoto",
+                        "qa",
+                        "elevation",
+                        "other"
+                    ]
+                },
                 "url": {
                     "description": "A URL template for imagery tiles",
                     "type": "string"

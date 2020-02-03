@@ -48,16 +48,6 @@ gl:
         text: Termos e opinións
       description: Imaxes satelitais e aéreas.
       name: Mapbox Satélite
-    Maxar-Premium:
-      attribution:
-        text: Termos e opinións
-      description: O Maxar Premium é un mosaico composto por un mapa base do Maxar con rexións seleccionadas cheas de imaxes +Vivid ou de áreas de interese personalizadas, cunha resolución duns 50 cm ou superior, e actualízase con máis frecuencia.
-      name: Imaxes Premium do Maxar (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Termos e opinións
-      description: Maxar Estándar é un conxunto preciso de imaxes que cobren o 86% da Terra, cunha resolución duns 30-60 cm onde estea dispoñíbel recheo polo Landsat. A antigüidade promedio é duns 2.31 años, con algunhas áreas actualizadas dúas ocasións por ano.
-      name: Imaxes Estándar do Maxar (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, contribuíntes do OpenStreetMap, CC-BY-SA
@@ -100,6 +90,7 @@ gl:
       description: Amarelo = Datos do mapa de dominio público do Censo dos Estados Unidos. Vermello = Datos non atopados no OpenStreetMap
       name: Estradas do TIGER 2018
     US-TIGER-Roads-2019:
+      description: Amarelo = Datos do mapa de dominio público do censo dos EE.UU. Vermello = Datos non atopados no OpenStreetMap
       name: Estradas TIGER 2019
     USDA-NAIP:
       description: O ano máis recente de DOQQs do Programa Nacional de Imaxes de Agricultura (NAIP) para cada estado nos Estados Unidos adxacentes.
@@ -119,6 +110,10 @@ gl:
       attribution:
         text: Feito a través do Bruselas UrbIS® © - Distribución e Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Feito por medio do Brussels UrbIS® © - Distribución e Copyright CIRB
+      name: UrbIS-Ortofoto 2019
     UrbisAdmFR:
       attribution:
         text: Feito por medio do Brussels UrbIS®© - Distribución e Copyright CIRB
@@ -182,6 +177,11 @@ gl:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 a través do finds.jp. Bo para rastrexar, pero un pouco máis vello.
       name: Xapón GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Concello de Gotemburgo, CC0
+      description: O mapa da cidade é un mapa xeral que describe Gotemburgo. Contén información xeral acerca dos terreos, comunicacións, hidrografía, edificios, números de enderezo, nomes de rúas, división administrativa e outros textos orientativos.
+      name: Mapa da cidade de Gotemburgo
     gsi.go.jp:
       attribution:
         text: Xapón GSI

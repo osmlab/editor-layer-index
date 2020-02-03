@@ -498,15 +498,16 @@
             "EPSG:31370",
             "EPSG:3857"
         ],
+        "category": "historicphoto",
         "country_code": "BE",
-        "end_date": "2016",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW(allonie)2009-2010aerialimagery.png",
-        "id": "SPW2016",
+        "end_date": "2015",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png",
+        "id": "SPW2015",
         "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
-        "name": "SPW(allonie) 2016 aerial imagery",
-        "start_date": "2016",
+        "name": "SPW(allonie) 2015 aerial imagery",
+        "start_date": "2015",
         "type": "wms",
-        "url": "https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2016/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2015/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "type": "Feature"
 }
