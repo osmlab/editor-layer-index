@@ -4,6 +4,7 @@
         "id": "MunichLatestAerialImagery", 
         "name": "Munich latest aerial imagery 60cm", 
         "type": "wms", 
+        "category": "historicphoto",
         "url": "https://ogc.muenchen.de/wms/opendata_luftbild?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=bgl0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "start_date": "2015", 
         "end_date": "2015", 
@@ -13,7 +14,7 @@
             "EPSG:31468"
         ], 
         "attribution": {
-            "url": "http://www.geodatenservice-muenchen.de/", 
+            "url": "https://www.muenchen.de/rathaus/Stadtverwaltung/Kommunalreferat/geodatenservice.html", 
             "text": "Datenquelle: dl-de/by-2-0: Landeshauptstadt München – Kommunalreferat – GeodatenService – www.geodatenservice-muenchen.de", 
             "required": true
         }, 
