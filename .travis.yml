@@ -1,15 +1,26 @@
 language: python
+
+cache: pip
+
 install: pip install -r requirements.txt
+
 branches:
   only:
     - gh-pages # needs to be explicitely included
     - /.*/
+
 script:
    - make check
-   # - python scripts/check.py --strict $(git diff --name-only --diff-filter=ACMRT origin/${TRAVIS_BRANCH} HEAD)
+   - export CHANGED_FILES=$(git diff --name-only $TRAVIS_COMMIT_RANGE)
+   - echo $CHANGED_FILES
+   - echo $TRAVIS_PULL_REQUEST
+   # We only execute strict tests if we have changed files and are a pull request
+   - if [ -z "$CHANGED_FILES" ]; then echo "No files available"; elif [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then python scripts/check.py --strict $CHANGED_FILES; fi
+
 before_deploy:
     - make clean
     - make
+
 deploy:
   provider: pages
   skip-cleanup: true
