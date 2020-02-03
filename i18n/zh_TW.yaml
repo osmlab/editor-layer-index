@@ -2,39 +2,32 @@ zh_TW:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders 最新 © AGIV
-      name: AGIV Flanders 最新空照圖
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 最近的空照圖
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 空照圖 10公分
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 的 10 公分空照圖
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺多方向山體陰影圖
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺 Skyview
     Bing:
       description: 衛星與空照圖
       name: Bing 空照圖
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: 使用條款與意見回饋
-      description: 'DigitalGlobe-Premium 是以 DigitalGlobe 底圖鑲嵌 +Vivid，或是局部區域有興趣的影像，有 50 公分或更高解析度，以及更新更頻繁。 '
-      name: DigitalGlobe Premium 空照圖
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: 使用條款與意見回饋
-      description: 影像邊界與拍攝日期。標籤將會在縮放等級大於等於 13 時出現。
-      name: DigitalGlobe Premium 空照圖年份
-    DigitalGlobe-Standard:
-      attribution:
-        text: 使用條款與意見回饋
-      description: DigitalGlobe-Standard  累積全球陸地 86% 的影像，有影像的部分具有 30-60 公分解析度，部分用 Ladnsat 補充。平均的影像年齡是 2.31 年，有些地方一年更新兩次。
-      name: DigitalGlobe Standard 空照圖
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: 使用條款與意見回饋
-      description: 影像邊界與拍攝日期。標籤將會在縮放等級大於等於 13 時出現。
-      name: DigitalGlobe Standard 空照圖年份
+        text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2017 & 2018)
+      description: 後處理過的 Sentinel 衛星影像。
+      name: eox.at 2018 無雲
     EsriWorldImagery:
       attribution:
         text: 使用條款與回饋
@@ -96,6 +89,12 @@ zh_TW:
     US-TIGER-Roads-2018:
       description: 黃 = 從美國人口普查而來的公有領域資料。紅 = 在開放街圖中找不到的資料
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: 黃 = 來自美國人口普查的公有領域地圖資料。紅 = 在開放街圖上找不到的資料
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: 近年來自美國各州的國家農業影像計畫 (NAIP) 的 DOQQ。
+      name: 國家農業影像計畫
     US_Forest_Service_roads_overlay:
       description: '道路：綠色外框 = 非分類道路。棕色外框 = 土路。路面：碎石路 = 亮棕色實心填滿，柏油 = 黑色，有舖面 = 灰色，地面 = 白色，水泥 = 藍色，草地 = 綠色。季節性 = 白色條紋'
       name: 美國森林道路覆蓋層
@@ -111,6 +110,10 @@ zh_TW:
       attribution:
         text: 透過 Brussels UrbIS®© - 散佈與版權 CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: 透過 Brussels UrbIS®© 實現 - CIRB 散佈與著作權
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: 透過布魯塞爾的工具 UrbIS®© - 散佈 & 版權所有 CIRB
@@ -149,6 +152,21 @@ zh_TW:
         text: basemap.at
       description: 由 basemap.at 提供的 Orthofoto 圖層。geoimage.at 圖的「繼承者」。
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: 由 basemap.at 提供的註釋覆蓋層。
+      name: basemap.at 覆蓋層
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: 由 basemap.at 提供的表面層。
+      name: basemap.at 表面
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: 由 basemap.at 提供的地形圖層。
+      name: basemap.at 地形
     eufar-balaton:
       attribution:
         text: EUFAR 巴拉頓正射影像 2010
@@ -159,11 +177,26 @@ zh_TW:
         text: GSI KIBAN 2500
       description: 透過 finds.jp 而來的 GSI Kiban 2500。適合用於追蹤軌跡，但有點老舊。
       name: 日本 GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © 哥特堡市, CC0
+      description: 城市地圖是描述哥特堡的概覽地圖。它包含了關於土地、通訊、水文、建築、地址號碼與街道名稱、行政區劃與其他方向文字等的一般性資訊。
+      name: 哥特堡城市地圖
     gsi.go.jp:
       attribution:
         text: GSI 日本
       description: 日本 GSI 正射影像。通常比 bing 好，但有點老舊。
       name: 日本 GSI 正射影像
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI 日本
+      description: 日本 GSI 航空照片。並未完全正射，但比 GSI 正射影像新且／或覆蓋範圍不同。
+      name: 日本 GSI 航空照片
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI 日本無縫照片
+      description: 日本 GSI 無縫照片影像，具有最新 GSI ortho，航空影像，災後影像等組合。
+      name: 日本 GSI 無縫照片影像
     gsi.go.jp_std_map:
       attribution:
         text: GSI 日本
@@ -261,7 +294,7 @@ zh_TW:
     stockholm-orto:
       attribution:
         text: © 斯德哥爾摩市，CC0
-      description: 來自斯德哥爾摩市的2015年正射影像，CC0 授權
+      description: 來自斯德哥爾摩市的2016年正射影像，CC0 授權
       name: 斯德哥爾摩正射影像
     tf-cycle:
       attribution:

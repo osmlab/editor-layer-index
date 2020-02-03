@@ -1,40 +1,8 @@
 is:
   imagery:
-    AGIV:
-      attribution:
-        text: Nýjustu uppréttar loftmyndir frá Orthophoto Flanders © AGIV
-      name: Nýjustu loftmyndir frá AGIV Flanders
-    AGIV10cm:
-      attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 loftmyndir 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Gervihnatta- og loftmyndir.
       name: Loftmyndir frá Bing
-    DigitalGlobe-Premium:
-      attribution:
-        text: Skilmálar og umsagnir
-      description: DigitalGlobe-Premium er mósaík samsett úr DigitalGlobe grunnkorti þar sem valin svæði eru fyllt með +Vivid eða sérsniðnu myndefni á skoðuðum svæðum, 50sm upplausn eða betri, og er betur uppfært með reglulegu millibili.
-      name: Myndir frá DigitalGlobe (Premium)
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Skilmálar og umsagnir
-      description: Útjaðar myndefnis og tökudagsetningar. Merkingar birtast við aðdráttarstig 13 og hærra.
-      name: Eldri myndir frá DigitalGlobe (Premium Vintage)
-    DigitalGlobe-Standard:
-      attribution:
-        text: Skilmálar og umsagnir
-      description: DigitalGlobe-Standard er ritstýrt úrval loftmynda sem þekur 86% af landmassa jarðar, með 30-60sm upplausn þegar auðið er, fyllt upp í eyður með Landsat-gögnum. Meðalaldur er 2.31 ár, þar sem sum svæði eru uppfærð 2x á ári.
-      name: Myndir frá DigitalGlobe (Standard)
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Skilmálar og umsagnir
-      description: Útjaðar myndefnis og tökudagsetningar. Merkingar birtast við aðdráttarstig 13 og hærra.
-      name: Eldri myndir frá DigitalGlobe (Standard Vintage)
     EsriWorldImagery:
       attribution:
         text: Skilmálar og umsagnir
@@ -107,6 +75,10 @@ is:
       attribution:
         text: Framkvæmt með tilstilli Brussels UrbIS®© - Dreifing & höfundarréttur CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Gert með tilstilli Brussels UrbIS®© - Dreifing & höfundarréttur CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
       attribution:
         text: Framkvæmt með tilstilli Brussels UrbIS®© - Dreifing & höfundarréttur CIRB
@@ -160,6 +132,11 @@ is:
         text: GSI Japan
       description: Japan GSI uppréttar ortho loftmyndir. Venjulega betra en Bing, en dálítið eldra.
       name: Japan GSI uppréttar ortho loftmyndir
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI airphoto loftmyndefni. Ekki að fullu uppréttað, en eilítið nýrri og/eða með annarri þekju en uppréttu GSI loftmyndirnar.
+      name: Japan GSI airphoto loftmyndir
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -257,7 +234,6 @@ is:
     stockholm-orto:
       attribution:
         text: © Sveitarfélagið Stokkhólmi, CC0
-      description: Orthophoto uppréttar loftmyndir frá sveitarfélaginu Stokkhólmi 2015, CC0 notkunarleyfi
       name: Stockholm - orthophoto uppréttar loftmyndir
     tf-cycle:
       attribution:

@@ -2,39 +2,32 @@ en:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders most recent © AGIV
-      name: AGIV Flanders most recent aerial imagery
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders most recent aerial imagery
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 aerial imagery 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 aerial imagery 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Satellite and aerial imagery.
       name: Bing aerial imagery
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Terms & Feedback
-      description: DigitalGlobe-Premium is a mosaic composed of DigitalGlobe basemap with select regions filled with +Vivid or custom area of interest imagery, 50cm resolution or better, and refreshed more frequently with ongoing updates.
-      name: DigitalGlobe Premium Imagery
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Terms & Feedback
-      description: Imagery boundaries and capture dates. Labels appear at zoom level 13 and higher.
-      name: DigitalGlobe Premium Imagery Vintage
-    DigitalGlobe-Standard:
-      attribution:
-        text: Terms & Feedback
-      description: DigitalGlobe-Standard is a curated set of imagery covering 86% of the earth’s landmass, with 30-60cm resolution where available, backfilled by Landsat. Average age is 2.31 years, with some areas updated 2x per year.
-      name: DigitalGlobe Standard Imagery
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Terms & Feedback
-      description: Imagery boundaries and capture dates. Labels appear at zoom level 13 and higher.
-      name: DigitalGlobe Standard Imagery Vintage
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
@@ -47,7 +40,7 @@ en:
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © OpenStreetMap contributors, CC-BY-SA 2.0
       description: The default OpenStreetMap layer.
       name: OpenStreetMap (Standard)
     Mapbox:
@@ -96,6 +89,12 @@ en:
     US-TIGER-Roads-2018:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars'
       name: U.S. Forest Roads Overlay
@@ -111,6 +110,10 @@ en:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -149,6 +152,21 @@ en:
         text: basemap.at
       description: Orthofoto layer provided by basemap.at. "Successor" of geoimage.at imagery.
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Annotation overlay provided by basemap.at.
+      name: basemap.at Overlay
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Surface layer provided by basemap.at.
+      name: basemap.at Surface
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Terrain layer provided by basemap.at.
+      name: basemap.at Terrain
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -159,11 +177,26 @@ en:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. Good for tracing, but a bit older.
       name: Japan GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.
+      name: Gothenburg City map
     gsi.go.jp:
       attribution:
         text: GSI Japan
       description: Japan GSI ortho Imagery. Usually better than bing, but a bit older.
       name: Japan GSI ortho Imagery
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI airphoto Imagery. Not fully orthorectified, but a bit newer and/or differently covered than GSI ortho Imagery.
+      name: Japan GSI airphoto Imagery
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan seamless photo
+      description: Japan GSI seamlessphoto Imagery. The collection of latest imageries of GSI ortho, airphoto, post disaster and others.
+      name: Japan GSI seamlessphoto Imagery
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -261,7 +294,7 @@ en:
     stockholm-orto:
       attribution:
         text: © Stockholm municipality, CC0
-      description: Orthophotos from the municipality of Stockholm 2015, CC0 license
+      description: Orthophotos from the municipality of Stockholm 2016, CC0 license
       name: Stockholm Orthophoto
     tf-cycle:
       attribution:

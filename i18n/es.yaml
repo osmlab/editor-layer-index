@@ -2,39 +2,32 @@ es:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders más reciente © AGIV
-      name: Imágenes aéreas más recientes de AGIV Flanders
+        text: © agentschap Informatie Vlaanderen
+      name: Imágenes aéreas más recientes del AIV Flanders
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: Imágenes aéreas de AGIV Flandes 2013-2015 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 imágenes aéreas 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Modelo de altura digital AIV Flanders II, sombreado multidireccional 0.25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Modelo de altura digital AIV Flanders II, factor Skyview 0.25 m
     Bing:
       description: Imágenes satelitales y aéreas.
       name: Imágenes aéreas Bing
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Términos y comentarios
-      description: DigitalGlobe-Premium es un mosaico compuesto por el mapa base de DigitalGlobe con regiones seleccionadas llenas de imágenes con +Vivid o de áreas de interés personalizadas, resolución de 50 cm o superior, y actualizadas con mayor frecuencia con actualizaciones continuas.
-      name: Imágenes DigitalGlobe Premium
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Términos y comentarios
-      description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de zoom 13 y superior.
-      name: Imágenes antiguas DigitalGlobe Premium
-    DigitalGlobe-Standard:
-      attribution:
-        text: Términos y comentarios
-      description: DigitalGlobe-Standard es un conjunto de imágenes seleccionadas que cubren el 86% de la superficie terrestre, con una resolución de 30-60 cm, donde esté disponible, rellenado por Landsat. La antigüedad promedio es de 2.31 años, con algunas áreas actualizadas 2 veces por año.
-      name: Imágenes DigitalGlobe Standard
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Términos y comentarios
-      description: Límites de imágenes y fechas de captura. Las etiquetas aparecen en el nivel de zoom 13 y superior.
-      name: Imágenes antiguas DigitalGlobe Standard
+        text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene los datos de Copernicus Sentinel modificados 2017 y 2018)
+      description: Imágenes satelitales post-procesadas de Sentinel
+      name: eox.at 2018 sin nubes
     EsriWorldImagery:
       attribution:
         text: Términos y comentarios
@@ -96,6 +89,12 @@ es:
     US-TIGER-Roads-2018:
       description: Amarillo = Datos del mapa de dominio público del Censo de los Estados Unidos. Rojo = Datos no encontrados en OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Amarillo = Datos del mapa de dominio público del censo de EE.UU. Rojo = Datos no encontrados en OpenStreetMap
+      name: TIGER Carreteras 2019
+    USDA-NAIP:
+      description: El año más reciente de DOQQs del Programa Nacional de Imágenes de Agricultura (NAIP) para cada estado en Estados Unidos contiguos.
+      name: Programa Nacional de Imágenes de Agricultura
     US_Forest_Service_roads_overlay:
       description: 'Carretera: marco verde = sin clasificar. marco marrón = pista. Superficie: grava = relleno marrón claro, asfalto = negro, pavimentado = gris, tierra = blanco, hormigón = azul, hierba/pasto = verde. Estacional = barras blancas'
       name: Superposición de carreteras forestales de los EE.UU.
@@ -111,6 +110,10 @@ es:
       attribution:
         text: Realizado a través de Bruselas UrbIS® © - Distribución y Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realizado por medio de Brussels UrbIS® © - Distribución y Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realizado por medio de Brussels UrbIS®© - Distribución y Copyright CIRB
@@ -149,6 +152,21 @@ es:
         text: basemap.at
       description: Capa de ortofoto proporcionada por basemap.at. «Sucesor» de las imágenes de geoimage.at.
       name: Ortofoto de basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Superposición de anotación proporcionada por basemap.at.
+      name: Superposición basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Capa de superficie proporcionada por basemap.at.
+      name: Superficie basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Capa de terreno proporcionada por basemap.at.
+      name: Terreno basemap.at
     eufar-balaton:
       attribution:
         text: Ortofotos de EUFAR Balaton 2010
@@ -159,11 +177,26 @@ es:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 a través de finds.jp. Bueno para rastrear, pero un poco más viejo.
       name: Japón GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Municipio de Gotemburgo, CC0
+      description: El mapa de la ciudad es un mapa general que describe Gotemburgo. Contiene información general sobre terrenos, comunicaciones, hidrografía, edificios, números de dirección y nombres de calles, división administrativa y otro texto de orientación.
+      name: Mapa de la ciudad de Gotemburgo
     gsi.go.jp:
       attribution:
         text: Japón GSI
       description: Imágenes ortográficas de Japón GSI. Por lo general, mejor que bing, pero un poco más viejo.
       name: Imágenes ortográficas de Japón GSI
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japón
+      description: Imágenes aéreas de Japón GSI. No está completamente ortorrectificado, pero es un poco más reciente y/o está cubierto de manera diferente que las ortoimágenes de GSI.
+      name: Imágenes aéreas de Japón GSI
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Imágenes sin ortorectificar de GSI Japón
+      description: Imágenes sin ortorectificar de GSI Japón. La colección de las últimas imágenes ortográficas, foto aérea, post desastre y otros de GSI.
+      name: Imágenes sin ortorectificar de GSI Japón
     gsi.go.jp_std_map:
       attribution:
         text: Japón GSI
@@ -261,7 +294,7 @@ es:
     stockholm-orto:
       attribution:
         text: © Municipio de Estocolmo, CC0
-      description: Ortofotos del municipio de Estocolmo 2015, licencia CC0.
+      description: Ortofotos del municipio de Estocolmo 2016, licencia CC0.
       name: Ortofoto de Estocolmo
     tf-cycle:
       attribution:

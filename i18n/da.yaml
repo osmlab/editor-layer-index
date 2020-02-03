@@ -3,23 +3,6 @@ da:
     Bing:
       description: Satellit og luft-foto.
       name: Bing luftfoto
-    DigitalGlobe-Premium:
-      attribution:
-        text: Vilkår & tilbagemelding
-      name: DigitalGlobe Premium fotos
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Vilkår & tilbagemelding
-      name: DigitalGlobe Premium ældre fotos
-    DigitalGlobe-Standard:
-      attribution:
-        text: Vilkår & tilbagemelding
-      name: DigitalGlobe Standard fotos
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Vilkår & tilbagemelding
-      description: Imagery boundaries and capture dates. Labels appear at zoom level 13 and higher.
-      name: DigitalGlobe Standard ældre fotos
     EsriWorldImagery:
       attribution:
         text: Vilkår & tilbagemelding
@@ -74,6 +57,8 @@ da:
     US-TIGER-Roads-2017:
       description: Gul = Public domain kort-data fra US Census. Rød = Ingen data i OpenStreetMap
       name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      name: Amerikansk skovvejs-overlag (U.S. Forest Service)
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
@@ -104,10 +89,12 @@ da:
         text: basemap.at
       description: Ortofoto-lag leveret af basemap.at. "Efterfølger" til geoimage.at.
       name: basemap.at Ortofoto
+    kelkkareitit:
+      name: Nordisk snescooter-overlag (Kelkkareitit.fi)
     mapbox_locator_overlay:
       attribution:
         text: Vilkår & tilbagemelding
-      description: Viser større objekter for at hjælpe dig med at finde vej.
+      description: Viser større objekter ved høj zoom for at hjælpe dig med at finde vej.
       name: Lokaliserings-overlag
     openpt_map:
       attribution:
@@ -116,7 +103,7 @@ da:
     osm-gps:
       attribution:
         text: © OpenStreetMap bidragsydere
-      description: Offentlige GPS-spor uploaded til OpenStreetMap,
+      description: Offentlige GPS-spor uploadet til OpenStreetMap.
       name: OpenStreetMap GPS-spor
     osm-mapnik-black_and_white:
       attribution:

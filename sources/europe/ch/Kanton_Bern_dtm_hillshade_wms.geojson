@@ -1,0 +1,105 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "Digitales Terrainmodell LIDAR 50cm © Amt für Wald des Kantons Bern",
+            "required": true
+        },
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:2056",
+            "EPSG:21781",
+            "EPSG:3857"
+        ],
+        "country_code": "CH",
+        "start_date": "2015",
+        "end_date": "2015",
+        "min_zoom": 8,
+        "id": "Bern-dtm-hillshade-2015",
+        "name": "Kanton Bern, Digitales Terrainmodell 50cm, Relief",
+        "license_url": "http://files.be.ch/bve/agi/geoportal/geo/nutzungsbedingungen/agi_dv_nutzungsbedingungen.pdf",
+        "privacy_policy_url": "http://www.geo.apps.be.ch/de/rechtliches.html",
+        "type": "wms",
+        "url": "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WmsServer?LAYERS=GEODB.LDTM50CM_LTRELIEF&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.82525634765625,
+              47.07900693020397
+            ],
+            [
+              7.284965515136718,
+              46.742213379963886
+            ],
+            [
+              7.063350677490234,
+              46.27329197678964
+            ],
+            [
+              8.2012939453125,
+              46.43974964419869
+            ],
+            [
+              8.443336486816406,
+              46.59001283632443
+            ],
+            [
+              8.4759521484375,
+              46.76314860125452
+            ],
+            [
+              8.412437438964844,
+              46.79841427927054
+            ],
+            [
+              8.13983917236328,
+              46.78689669816405
+            ],
+            [
+              7.965431213378905,
+              46.80687460491035
+            ],
+            [
+              7.90088653564453,
+              46.89140469161033
+            ],
+            [
+              7.9767608642578125,
+              47.00413868965255
+            ],
+            [
+              7.887840270996094,
+              47.05608969226366
+            ],
+            [
+              7.903633117675781,
+              47.17664533468975
+            ],
+            [
+              7.81951904296875,
+              47.29413372501023
+            ],
+            [
+              7.55859375,
+              47.332307907337515
+            ],
+            [
+              7.16583251953125,
+              47.311827628230446
+            ],
+            [
+              6.823883056640625,
+              47.1813125359862
+            ],
+            [
+              6.82525634765625,
+              47.07900693020397
+            ]
+          ]
+        ]
+      }
+
+}

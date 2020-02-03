@@ -1064,6 +1064,8 @@
             "text": "Orthofoto WMS Solothurn"
         },
         "available_projections": [
+            "EPSG:3857",
+            "CRS:84",
             "EPSG:21781",
             "EPSG:4326",
             "EPSG:2056"
@@ -1078,7 +1080,7 @@
         "name": "Kanton Solothurn Infrarot (SOGIS)",
         "start_date": "2015",
         "type": "wms",
-        "url": "https://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_CIR_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geo.so.ch/api/wms?LAYERS=ch.so.agi.orthofoto_2015.cir&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }
