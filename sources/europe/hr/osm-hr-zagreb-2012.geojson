@@ -9,10 +9,16 @@
         "url": "https://tms.osm-hr.org/zagreb-2012/{zoom}/{x}/{-y}.png",
         "permission_osm": "explicit",
         "license_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html",
+        "privacy_policy_url": "https://tms.osm-hr.org/privacy.htm",
         "max_zoom": 19,
         "min_zoom": 0,
         "country_code": "HR",
-        "type": "tms"
+        "type": "tms",
+        "attribution": {
+        	"required": true,
+        	"text": "Grad Zagreb, Gradski ured za strategijsko planiranje i razvoj Grada",
+        	"url": "https://geoportal.zagreb.hr/"
+        	}
     },
     "geometry": {
         "type": "Polygon",

@@ -40,14 +40,6 @@ cs:
         text: Podmínky použití & zpětná vazba
       description: Satelitní a letecké snímky.
       name: Satelitní snímky Mapbox
-    Maxar-Premium:
-      attribution:
-        text: Terms & Feedback
-      name: Prémiové snímky Maxar (beta)
-    Maxar-Standard:
-      attribution:
-        text: Podmínky použití & zpětná vazba
-      name: Standardní snímky Maxar (beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, přispěvatelé OpenStreetMap, CC-BY-SA
@@ -145,7 +137,11 @@ cs:
     basemap.at-overlay:
       attribution:
         text: basemap.at
+      description: Překrytí anotací poskytuje basemap.at.
     basemap.at-surface:
+      attribution:
+        text: basemap.at
+    basemap.at-terrain:
       attribution:
         text: basemap.at
     eufar-balaton:
@@ -161,6 +157,9 @@ cs:
       attribution:
         text: GSI Japonsko
       description: Ortofoto GSI Japonsko. většinou lepší než Bing, ale trochu starší.
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japonsko

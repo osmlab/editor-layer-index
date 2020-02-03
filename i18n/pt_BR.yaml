@@ -48,16 +48,6 @@ pt_BR:
         text: Termos e Comentários
       description: Imagens aéreas e de satélite.
       name: Imagens de satélite Mapbox
-    Maxar-Premium:
-      attribution:
-        text: Termos e Comentários
-      description: O Maxar Premium é um mosaico composto de mapa base Maxar com regiões selecionadas preenchidas com imagens +Vivid ou personalizadas de área de interesse, resolução de 50 cm ou superior, e atualizadas com mais frequência com atualizações contínuas.
-      name: Imagens Maxar Premium (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Termos e Comentários
-      description: O Maxar Padrão é um conjunto curado de imagens que cobre 86% da massa terrestre do planeta, com resolução de 30 a 60 cm, quando disponível, preenchida pelo Landsat. A idade média é de 2,31 anos, com algumas áreas atualizadas 2x por ano.
-      name: Imagens padrão do Maxar (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, Colaboradores do OpenStreetMap, CC-BY-SA
@@ -99,6 +89,9 @@ pt_BR:
     US-TIGER-Roads-2018:
       description: Amarelo = Dados de mapa de domínio público do Censo dos EUA. Vermelho = Dados não encontrados no OpenStreetMap
       name: Estradas do TIGRE 2018
+    US-TIGER-Roads-2019:
+      description: Amarelo = Dados de mapas de domínio público do Censo dos EUA. Vermelho = Dados não encontrados no OpenStreetMap
+      name: Estradas TIGER 2019
     USDA-NAIP:
       description: O ano mais recente de DOQQs da National Agriculture Imagery Program (NAIP) para cada estado nos Estados Unidos contíguos.
       name: National Agriculture Imagery Program
@@ -117,6 +110,10 @@ pt_BR:
       attribution:
         text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
@@ -180,6 +177,11 @@ pt_BR:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. Bom para rastrear, mas um pouco mais velho.
       name: Japão GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Município de Gotemburgo, CC0
+      description: O mapa da cidade é um mapa geral que descreve Gotemburgo. Ele contém informações gerais sobre terrenos, comunicações, hidrografia, edifícios, números de endereços e nomes de ruas, divisão administrativa e outro texto de orientação.
+      name: Mapa da cidade de Gotemburgo 
     gsi.go.jp:
       attribution:
         text: GSI Japão
