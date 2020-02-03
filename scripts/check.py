@@ -74,8 +74,8 @@ for filename in arguments.path:
         continue
 
     try:
-
-
+        if strict_mode:
+            print("Proccessing {} in strict mode".format(filename))
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
