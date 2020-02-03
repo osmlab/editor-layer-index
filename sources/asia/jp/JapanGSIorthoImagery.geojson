@@ -1,6 +1,8 @@
 {
   "type": "Feature",
   "properties": {
+    "description": "Japan GSI ortho Imagery. Usually better than bing, but a bit older.",
+    "i18n": true,
     "country_code": "JP",
     "id": "gsi.go.jp",
     "license_url": "https://wiki.openstreetmap.org/wiki/GSImaps",
@@ -10,7 +12,7 @@
     "type": "tms",
     "url": "https://cyberjapandata.gsi.go.jp/xyz/ort/{zoom}/{x}/{y}.jpg",
     "attribution": {
-      "url": "http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+      "url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
       "text": "GSI Japan",
       "required": false
     }

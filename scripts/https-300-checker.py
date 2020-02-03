@@ -13,7 +13,11 @@ def check_url(url):
         # not for me
         return True
 
+    # on switch parameter, e.g. a.tile, b.tile, just use the first one.
     url = switch.sub(r'\1', url)
+    if not url.startswith("http"):
+        print("Whoa, url is weird: " + url)
+        return False
     try:
         response = requests.get(url, timeout=5)
     except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError):

@@ -1,24 +1,10 @@
 tr:
   imagery:
+    AGIV:
+      name: AIV Flanders'ın en son uydu görüntüleri
     Bing:
       description: Uydu görüntüleri.
       name: Bing Uydu Görüntüleri
-    DigitalGlobe-Premium:
-      attribution:
-        text: Şartlar & Geri Bildirim
-      name: DigitalGlobe Uydu Görüntüleri
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Şartlar ve Geri Bildirim
-      name: DigitalGlobe Özel Görüntü Dönemi Ürünü
-    DigitalGlobe-Standard:
-      attribution:
-        text: Şartlar ve Geri Bildirim
-      name: Standart DigitalGlobe Uydu Görüntüleri
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Şartlar ve Geri Bildirim
-      name: DigitalGlobe Standard Görüntü Dönemi Ürünü
     EsriWorldImagery:
       attribution:
         text: Şartlar ve Geri Bildirim
@@ -27,6 +13,7 @@ tr:
     EsriWorldImageryClarity:
       attribution:
         text: Şartlar ve Geri Bildirim
+      name: Esri Uydu Görüntüleri (Net) Beta
     MAPNIK:
       attribution:
         text: © OpenStreetMap destekçileri, CC-BY-SA
@@ -65,8 +52,8 @@ tr:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
       name: 'OSM Müfettişi: Etiketleme'
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
+    SPW_ORTHO_LAST:
+      name: SPW(allonie)'nin en son havadan görüntüleri
     US-TIGER-Roads-2014:
       description: 16'dan büyük ölçekte, US Census verileri. Daha küçük ölçeklerde, 2006'dan bu yana yapılmış güncellemeler - OpenStreetMap güncellemeleri hariç
       name: TIGER Roads 2014
@@ -102,10 +89,6 @@ tr:
         text: basemap.at
       description: basemap.at - daha önce geoimage.at - tarafından sağlanan Orthofoto katmanı.
       name: basemap.at Orthofoto
-    hike_n_bike:
-      attribution:
-        text: © OpenStreetMap destekçileri
-      name: Yürüyüş & Bisiklet
     mapbox_locator_overlay:
       attribution:
         text: Şartlar & Geri Bildirim

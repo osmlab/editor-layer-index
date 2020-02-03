@@ -4,7 +4,7 @@
     "id": "nve-nettanlegg",
     "name": "NVE Electricity Network overlay",
     "type": "wms",
-    "url": "https://gis3.nve.no/map/services/Nettanlegg1/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Sentralnett,Regionalnett,Distribusjonsnett,Sjokabler,Master og stolper,Transformatorstasjoner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://gis3.nve.no/map/services/Nettanlegg2/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Sentralnett,Regionalnett,Distribusjonsnett,Sjokabler,Master og stolper,Transformatorstasjoner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "overlay": true,
     "country_code": "NO",
     "available_projections": [
@@ -27,10 +27,11 @@
       "text": "© NVE",
       "url": "https://www.nve.no/karttjenester/"
     },
-    "icon": "https://www.nve.no/Content/Images/nve-logo.png",
+    "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png",
     "max_zoom": 22,
     "min_zoom": 6,
     "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
+    "privacy_policy_url": "https://www.nve.no/nves-personvernerklaering/",
     "description": "Power lines (high voltage network) including transformers, submarine cables and pylons. Local distribution network is not included."
   },
   "geometry": {

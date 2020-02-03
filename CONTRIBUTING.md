@@ -8,8 +8,10 @@ about which licenses are compatible with this index.
 The 'source' documents for this project are the .geojson files in `sources`. To add
 a new imagery source, add a new file to this directory.
 
-Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, and `url` properties.
+Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, `url`, and `category` properties.
 To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
+
+We further recommend to add the licence related and `privacy_policy_url` properties.
 
 See [schema.json](schema.json) for the full list of available properties.
 
@@ -66,7 +68,7 @@ Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) t
 
 After you've made a modification, and submit a pull request including those json files. Tests will be run automatically.
 
-We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for everp pull request, and should not be done anymore.
+We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
 
 ### Translations
 

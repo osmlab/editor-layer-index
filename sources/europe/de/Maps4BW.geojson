@@ -4,7 +4,7 @@
         "id": "Maps4BW-LGL_BW", 
         "name": "Maps4BW (LGL-BW, www.lgl-bw.de)", 
         "type": "wms", 
-        "url": "http://www.webatlasde.de/arcgis/services/Maps4BW/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Halbtonvariante&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "url": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_Maps4BW?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=webatlasde&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "country_code": "DE", 
         "available_projections": [
             "EPSG:4326", 

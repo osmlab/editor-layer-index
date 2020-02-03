@@ -2,39 +2,32 @@ fr:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto la plus récente de la Flandre © AGIV
-      name: Images aériennes AGIV les plus récentes de la Flandre
+        text: © agentschap Informatie Vlaanderen
+      name: Images aériennes AIV les plus récentes de la Flandre
     AGIV10cm:
       attribution:
-        text: Orthophoto de la Flandre © AGIV
-      name: Images aériennes 10cm AGIV de la Flandre 2013-2015
+        text: © agentschap Informatie Vlaanderen
+      name: Images aériennes 10cm AIV de la Flandre 2013-2015
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandres © AGIV
-      name: AGIV Flandres GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandres GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Images satellite et aérienne.
       name: Images aériennes Bing
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Termes & commentaires
-      description: DigitalGlobe-Premium est une mosaïque composée de la carte de base de DigitalGlobe avec des régions utilisant +Vivid ou des imageries à des endroits intéressants avec une résolution de 50 cm ou mieux, et rafraîchi plus fréquemment avec des mises à jours régulières.
-      name: Images DigitalGlobe premium
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Termes & commentaires
-      description: Limites et dates des images. Les textes sont visibles à partir du niveau de zoom 13.
-      name: Images DigitalGlobe Premium Vintage
-    DigitalGlobe-Standard:
-      attribution:
-        text: Termes & commentaires
-      description: DigitalGlobe-Standard est un ensemble organisé d'images, fournies par Landsat, couvrant 86% de la surface de la Terre, avec une résolution de 30-60cm lorsque disponible. L'âge moyen de ces images est 2,31 ans, avec certaines régions mises à jour 2 fois par an.
-      name: Images DigitalGlobe standard
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Termes & commentaires
-      description: Limites et dates des images. Les textes sont visibles à partir du niveau de zoom 13.
-      name: Images DigitalGlobe Standard Vintage
+        text: Sentinel-2 sans nuages — https://s2maps.eu par EOX IT Services GmbH (contient des données Copernicus Sentinel modifiées de 2017 et de 2018)
+      description: Imagerie satellite Sentinel retravaillée
+      name: eox.at 2018 sans nuages
     EsriWorldImagery:
       attribution:
         text: Termes & commentaires
@@ -86,15 +79,22 @@ fr:
     SPW_ORTHO_LAST:
       name: Imagerie aérienne SPW(allonie) la plus récente
     SPW_PICC:
-      name: Imagerie numérique SPW(allonie) PICC
-    US-TIGER-Roads-2012:
-      name: Données géographiques et topologiques intégrées et encodées 2012
+      name: Imagerie numérique PICC SPW(allonie)
     US-TIGER-Roads-2014:
       description: Au niveau de zoom 16+, carte du domaine public issue du recensement américain. A des niveaux de zooms inférieur, les changements depuis 2006, moins les changements déjà incorporés dans OpenStreetMap
       name: Données géographiques et topologiques intégrées et encodées 2014
     US-TIGER-Roads-2017:
       description: Le jaune correspond aux données des cartes du domaine public issues du recensement américain, le rouge à des données non trouvées dans OpenStreetMap
       name: Données géographiques et topologiques intégrées et encodées 2017
+    US-TIGER-Roads-2018:
+      description: Jaune = Données de cartes dans le domaine public du recensement américain. Rouge = Données introuvables sur OpenStreetMap
+      name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Jaune = données cartographiques du domaine public issues du recensement américain. Rouge = données non présentes dans OpenStreetMap
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: L'année la plus récente de DOQQ du programme d'imagerie nationale pour l'agriculture (NAIP) pour chaque état des États-Unis contigus.
+      name: Programme d'imagerie national pour l'agriculture
     US_Forest_Service_roads_overlay:
       description: 'Voies : en vert route non classifiée, en marron piste. Surface : les graviers sont représentés par un remplissage marron, l''asphalte par du noir, les pavés par du gris, la terre par du blanc, le béton par du bleu, l''herbe par du vert. Les voies saisonnières ont des barres blanches.'
       name: Surcouche des routes forestières états-uniennes
@@ -106,6 +106,14 @@ fr:
       attribution:
         text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Réalisé avec les moyens de Brussels UrbIS®© - Distribution & droits CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Réalisé avec les moyens d'UrbIS®© Bruxelles - Distribution & Droits CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -144,10 +152,101 @@ fr:
         text: basemap.at
       description: Couche orthophoto fournie par basemap.at "successeur" de geoimage.at.
       name: Orthophoto basemap.at
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: © contributeurs OpenStreetMap
-      name: Randonnée & Vélo
+        text: basemap.at
+      description: Surcouche d'annotations fournie par basemap.at.
+      name: Surcouche basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Couche de surface fournie par basemap.at.
+      name: Surface basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Couche terrain fournie par basemap.at.
+      name: Terrain basemap.at
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton ortofotó 2010
+      description: Photographies géo-référencées de 1940 de Balaton Limnological Institute.
+      name: orthophotos EUFAR Balaton
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 via finds.jp. Bonnes données pour tracer des routes, mais un peu vieilles.
+      name: GSI KIBAN 2500 japonais
+    gothenburg-citymap:
+      attribution:
+        text: © Municipalité de Göteborg, CC0
+      description: La carte décrit de manière globale la ville de Göteborg. Elle contient des informations générales sur le terrain, les communications, l'hydrographie, les bâtiments, les adresses et les noms de rues, les divisions administratives.
+      name: Carte de la ville de Göteborg
+    gsi.go.jp:
+      attribution:
+        text: GSI Japon
+      description: Imagerie ortho GSI du Japon. Typiquement meilleure que bing, mais un peu plus vieille.
+      name: Imagerie ortho GSI du Japon
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japon
+      description: Imagerie ortho GSI du Japon. Pas totalement ortho-rectifiée, mais un peu plus récente et avec une couverture différente de l'imagerie ortho GSI.
+      name: Imagerie ortho GSI aérienne du Japon
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Intégration des photos GSI du Japon
+      description: Imagerie de photos intégrées GSI du Japon. La collection des dernières imageries ortho GSI, aériennes, post-catastrophe et d'autres.
+      name: Imagerie intégrée GSI du Japon
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japon
+      description: Carte GSI standard du Japon. Bonne couverture.
+      name: Carte GSI standard du Japon
+    helsingborg-orto:
+      attribution:
+        text: © Municipalité d'Helsingborg
+      description: Orthophotos de la municipalité d'Helsingborg 2016, domaine public
+      name: Orthophoto d'Helsingborg
+    kalmar-orto-2014:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos pour la côte nord de la municipalité de Kalmar en 2014
+      name: Kalmar North Orthophoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos pour la côte sud de la municipalité de Kalmar en 2016
+      name: Kalmar South Orthophoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos des zones urbaines de la municipalité de Kalmar en 2018
+      name: Kalmar Urban Orthophoto 2018
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Chemins motoneige de Kelkkareitit.fi depuis les données OSM (couverture nordique)
+      name: Surcouche motoneige nordique
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mosaïque d'orthophotos suédoises entre 1955 et 1965. Des photos plus ou moins vieilles peuvent apparaître.
+      name: Ortophotos historiques Lantmäteriet 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mosaïque d'orthophotos suédoises entre 1970 et 1980. Encore incomplète.
+      name: Ortophotos historiques Lantmäteriet 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Carte topographique de la Suède 1:50 000
+      name: Carte topographique Lantmäteriet
+    linkoping-orto:
+      attribution:
+        text: © municipalité de Linköping
+      description: Orthophotos de la municipalité de Linköping 2010, données ouvertes
+      name: Orthophoto de Linköping
     mapbox_locator_overlay:
       attribution:
         text: Termes & commentaires
@@ -173,8 +272,8 @@ fr:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
-      description: Numérisation de ´Economic maps´ de 1950-1980
-      name: Carte économique (historique) de Lantmäteriet
+      description: Numérisation de « Economic maps » de 1950-1980
+      name: Carte économique (historique) de Lantmäteriet entre 1950 et 1980
     qa_no_address:
       attribution:
         text: Simon Poole, données © contributeurs OpenStreetMap
@@ -183,10 +282,20 @@ fr:
       attribution:
         text: '© Tuile: données skobbler Map : contributeurs OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Chemins motoneige
+      name: Carte motoneige en Suède
     stamen-terrain-background:
       attribution:
         text: Tuiles par Stamen Design, sous CC-BY 3.0. Données par OpenStreetMap, sous ODbL
       name: Stamen Terrain
+    stockholm-orto:
+      attribution:
+        text: © Municipalité de Stockholm, CC0
+      description: Orthophotos de la municipalité de Stockholm 2016, licence CC0
+      name: Orthophoto de Stockholm
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors

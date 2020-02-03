@@ -2,39 +2,32 @@ eo:
   imagery:
     AGIV:
       attribution:
-        text: Aera fotaro pri Flandrujo (plej aktuala) © AGIV
-      name: Plej aktuala aera fotaro de Informa Geografia Agentejo de Flandrujo (AGIV/FGIA)
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: plej aktuala fotaro'
     AGIV10cm:
       attribution:
-        text: Aera fotaro pri Flandrujo © AGIV
-      name: Aera fotaro 10cm de Informa Geografia Agentejo de Flandrujo (AGIV/FGIA) de 2013-2015
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: 2013-2015 aera fotaro 10cm'
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandrujo © AGIV
-      name: AGIV Flandrujo GRB
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: GRB'
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, plurdirekta altreliefo 0,25m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0,25m
     Bing:
       description: Satelita kaj aera fotaroj.
       name: Aera fotaro de Bing
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Kondiĉoj kaj rimarkoj
-      description: DigitalGlobe-Premium estas kunmetaĵo de Digital-Globe-bazmapo kun kelkaj regionoj plenigitaj per +Vivid fotaro je distingivo 50cm aŭ pli bona kaj aktualigata pli ofte.
-      name: Detala fotaro de DigitalGlobe
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Kondiĉoj kaj rimarkoj
-      description: Limoj kaj datoj de fotoj. Etikedoj montriĝas de skal-nivelo 13.
-      name: Detala fotaro de DigitalGlobe - fot-dato
-    DigitalGlobe-Standard:
-      attribution:
-        text: Kondiĉoj kaj rimarkoj
-      description: DigitalGlobe-Standard estas prizorgata fotaro ampleksanta 86% da tero je distingivo 30-60cm (se disponebla), danke al programo Landsat. Mezuma aĝo de fotaro estas 2,31a, sed kelkaj areoj estas aktualigataj dufoje en jaro.
-      name: Norma fotaro de DigitalGlobe
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Kondiĉoj kaj rimarkoj
-      description: Limoj kaj datoj de fotoj. Etikedoj montriĝas de skal-nivelo 13.
-      name: Norma fotaro de DigitalGlobe - fot-dato
+        text: Sentinel‑2 sennuba fotaro de EOX IT Services GmbH (enhavas modifitajn datumojn (2017‑2018) de Copernicus)
+      description: Pritraktita fotaro de la satelito Sentinel‑2.
+      name: eox.at 2018 sennuba
     EsriWorldImagery:
       attribution:
         text: Kondiĉoj kaj rimarkoj
@@ -87,14 +80,20 @@ eo:
       name: Plej aktuala aera fotaro de SPW(allonie)
     SPW_PICC:
       name: Cifereca fotaro de PICC SPW(allonie)
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
     US-TIGER-Roads-2014:
       description: Ĉe skal-nivelo 16+, publikaj map-datumoj de Usona popolnombrado. Ĉe malpli grandaj skal-niveloj, nur ŝanĝoj de post 2006 sen ŝanĝoj jam aldonitaj al OpenStreetMap.
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Flave = publikaj map-datumoj de Usona popolnombrado. Ruĝe = datumoj ne trovitaj en OpenStreetMap
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Flave = publikaj map-datumoj de Usona popolnombrado. Ruĝe = datumoj ne trovitaj en OpenStreetMap
+      name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: Ĉi tiu jara ortfotmapo DOQQ de «National Agriculture Imagery Program» (NAIP) por ĉiu kontinenta subŝtato de Usono.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Vojo: verda rando = neklasifikita, bruna rando = kampa vojo. Pavimo: helbruna plenigo = sablego, nigra = asfalto, griza = pavimita, blanka = tera, blua = betono, verda = herbo. Blankaj strioj = sezona vojo.'
       name: Surtavolo de arbar-kultivaj vojoj
@@ -106,6 +105,12 @@ eo:
       attribution:
         text: Farita per rimedoj de Brussels UrbIS®© - distribuo kaj kopirajto al CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Farita per rimedoj de Brussels UrbIS®© - distribuo kaj kopirajto al CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Farita per rimedoj de Brussels UrbIS®© - distribuo kaj kopirajto al CIRB
@@ -144,10 +149,96 @@ eo:
         text: basemap.at
       description: Ortofota tavolo liverata de basemap.at, anstataŭanto de fotaro geoimage.at.
       name: basemap.at ortofoto
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: © OpenStreetMap kontribuintoj
-      name: Hike & Bike
+        text: basemap.at
+      description: Surtavolo de notoj de basemap.at.
+      name: basemap.at surtavolo
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Tavolo de supraĵo liverata de basemap.at.
+      name: basemap.at supraĵo
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Tavolo de altreliefo liverata de basemap.at.
+      name: basemap.at altreliefo
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton ortofotó 2010
+      description: Geografi-etikedita fotaro de 1940 de Balatona Instituto de Limnologio
+      name: EUFAR Balaton aera fotaro
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 de finds.jp. Bona por mapigi, sed malpli aktuala.
+      name: Japanujo GSI KIBAN 2500
+    gsi.go.jp:
+      attribution:
+        text: GSI Japanujo
+      description: Ortfotmapo de GSI Japanujo. Kutime pli akurata ol Bing, sed malpli nova.
+      name: Ortfotmapo GSI Japanujo (korektita)
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japanujo
+      description: Ortfotmapo de GSI Japanujo. Ne tute geometrie korektita, sed iomete pli aktuala aŭ kovranta aliajn terenojn ol fotaro de GSI.
+      name: Aera fotaro GSI Japanujo (nekorektita)
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japanujo unuforma fotaro
+      description: Senkunliga (unuforma) fotaro de GSI Japanujo. Kolekto de la plej aktualaj aeraj fotoj de GSI post la kataklismo kaj aliaj.
+      name: Unuforma fotaro GSI Japanujo
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japanujo
+      description: Norma mapo de GSI Japanujo, larĝa map-atingo.
+      name: Norma mapo GSI Japanujo
+    helsingborg-orto:
+      attribution:
+        text: © komunumo Helsingborg
+      description: Ortfotmapo de la komunumo Helsingborg, publika uzo, 2016
+      name: Ortfotmapo Helsingborg
+    kalmar-orto-2014:
+      attribution:
+        text: © komunumo Kalmar
+      description: Ortfotmapo pri la norda marbordo de la komunumo Kalmar, 2014
+      name: Ortfotmapo Kalmar (nordo) 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © komunumo Kalmar
+      description: Ortfotmapo pri la suda marbordo de la komunumo Kalmar, 2016
+      name: Ortfotmapo Kalmar (sudo) 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © komunumo Kalmar
+      description: Ortfotmapo pri urba areo de la komunumo Kalmar, 2018
+      name: Ortfotmapo Kalmar (urbo) 2018
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Motorsledaj kursoj el OSM en Nordlandoj (Kelkkareitit.fi)
+      name: Nordlanda motorsleda surtavolo
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Kunmetaĵo de Sveda ortfotmapo de jaroj 1955–1965. Pli novaj kaj pli malnovaj fotoj povas esti miksitaj.
+      name: Lantmäteriet historia ortfotmapo 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Kunmetaĵo de Sveda ortfotmapo de jaroj 1970–1980. Estos plivastigita.
+      name: Lantmäteriet historia ortfotmapo 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Topografia mapo de Svedujo 1:50 000
+      name: Lantmäteriet topografia mapo
+    linkoping-orto:
+      attribution:
+        text: © komunumo Linköping
+      description: Ortfotmapo de la komunumo Linköping, malfermaj datumoj, 2010
+      name: Ortfotmapo Linköping
     mapbox_locator_overlay:
       attribution:
         text: Kondiĉoj kaj rimarkoj
@@ -173,8 +264,8 @@ eo:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
-      description: Skano de “ekonomia mapo” ~1950-1980
-      name: Lantmäteriet ekonomia mapo (historia)
+      description: Skano de “ekonomia mapo” ~1950–1980
+      name: Lantmäteriet ekonomia mapo ~1950–1980
     qa_no_address:
       attribution:
         text: Simon POOLE, Datumoj © kontribuintoj de OpenStreetMap
@@ -183,10 +274,20 @@ eo:
       attribution:
         text: '© Kaheloj: skobbler map-datumoj: kontribuintoj de OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Mapo de motorsledaj kursoj
+      name: Motorsledaj kursoj en Svedujo
     stamen-terrain-background:
       attribution:
         text: Map-kaheloj de Stamen Design, laŭ CC BY 3.0. Datumoj de OpenStreetMap, laŭ ODbL
       name: Stamen Terrain
+    stockholm-orto:
+      attribution:
+        text: © komunumo Stokholmo, CC0
+      description: Ortfotmapo de la komunumo Stokholmo, permesilo CC0, 2016
+      name: Ortfotmapo Stokholmo
     tf-cycle:
       attribution:
         text: 'Mapoj: © Thunderforest, datumoj: © kontribuintoj de OpenStreetMap'

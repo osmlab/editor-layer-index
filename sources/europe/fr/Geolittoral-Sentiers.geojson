@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "Geolittoral-Sentiers",
-        "url": "http://geolittoral.application.developpement-durable.gouv.fr/wms2/metropole?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
             "text": "Ortho littorale 2000",
@@ -14,6 +14,7 @@
         ],
         "type": "wms",
         "name": "Géolittoral - Sentiers",
+        "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
         "country_code": "FR"
     },
     "geometry": {
