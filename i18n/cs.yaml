@@ -2,35 +2,24 @@ cs:
   imagery:
     AGIV:
       attribution:
-        text: Nejaktuálnější ortofoto Flanders © AGIV
-      name: Nejaktuálnější letecké snímky AGIV Flanders
+        text: © agentschap Informatie Vlaanderen
+      name: Nejaktuálnější letecké snímky AIV Flanders
     AGIV10cm:
       attribution:
-        text: Ortofoto Flanders © AGIV
-      name: 10cm letecké snímky AGIV Flanders 2013-2015
+        text: © agentschap Informatie Vlaanderen
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
     Bing:
       description: Satelitní a letecké snímky.
       name: Letecké snímky Bing
-    DigitalGlobe-Premium:
-      attribution:
-        text: Podmínky použití & zpětná vazba
-      description: DigitalGlobe-Premium je mozaika složená ze základní mapy DigitalGlobe s vybranými aktuálními oblastmi nebo vlastními oblastmi zájmových snímků o rozlišení 50 cm nebo vyšším a častěji obnovovanými s průběžnými aktualizacemi.
-      name: Prémiové snímky DigitalGlobe
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Podmínky použití a zpětná vazba
-    DigitalGlobe-Standard:
-      attribution:
-        text: Podmínky použití a zpětná vazba
-      description: DigitalGlobe-Standard je soustředěná sada snímků pokrývající 86% zemské zemské půdy, s rozlišením 30-60 cm, jsou-li k dispozici, nasnímané družicí Landsat. Průměrné stáří je 2,31 roku, některé oblasti jsou aktualizovány 2x za rok.
-      name: Standardní snímky DigitalGlobe
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Podmínky použití a zpětná vazba
     EsriWorldImagery:
       attribution:
         text: Podmínky použití a zpětná vazba
@@ -81,21 +70,39 @@ cs:
       name: 'OSM Inspektor: Štítkování'
     SPW_ORTHO_LAST:
       name: Nejaktuálnější snímky SPW(allonie)
+    SPW_PICC:
+      name: PICC numerické snímky SPW(allonie)
     US-TIGER-Roads-2014:
-      description: Na úrovni zvětšení 16+ získáte údaje o mapě ve veřejné doméně z amerického sčítání lidu. Při nižších přiblíženích dochází pouze k změnám od roku 2006, bez změn již zahrnutých do OpenStreetMapy
+      description: Na úrovni zvětšení 16+ získáte údaje o mapě ve veřejné doméně z amerického sčítání lidu. Při nižších přiblíženích dochází pouze k změnám od roku 2006, beze změn již zahrnutých do OpenStreetMap
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Žlutá = data z veřejně dostupné mapy z amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Žlutá = Veřejně přístupná data ze sčítání USA. Červená = Data nenalezena v OpenStreetMap
+      name: Silnice TIGER 2018
     US_Forest_Service_roads_overlay:
       description: 'Vozovka: Zelené okraje = neklasifikovaná. Hnědé okraje = cesta. Povrch: Štěrk = světle hnědá výplň, asfalt = černá, dlažba = šedá, zemina = bílá, beton = modrá, tráva = zelená. Sezónní = bílé čáry'
+      name: Vrstva lesních cest USA
     UrbISOrtho2016:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -125,7 +132,37 @@ cs:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
+      description: Vrstva ortofoto poskytnuta basemap.at. "Následník" geoimage.at.
       name: Ortofoto basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Překrytí anotací poskytuje basemap.at.
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+    eufar-balaton:
+      attribution:
+        text: Ortofoto EUFAR Balaton 2010
+      name: Ortofoto EUFAR Balaton
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 přes finds.jp. Dobrá pro odvozování dat, ale trochu starší.
+      name: GSI KIBAN 2500 Japonsko
+    gsi.go.jp:
+      attribution:
+        text: GSI Japonsko
+      description: Ortofoto GSI Japonsko. většinou lepší než Bing, ale trochu starší.
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japonsko
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -173,6 +210,8 @@ cs:
       attribution:
         text: Mapové dlaždice od Stamen Design pod CC BY 3.0. Data od OpenStreetMap, pod ODbL
       name: Terén Stamen
+    stockholm-orto:
+      name: Ortofotomapy Stockholmu
     tf-cycle:
       attribution:
         text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap

@@ -2,39 +2,32 @@ de:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flandern aktuell © AGIV
-      name: AGIV Flandern aktuelle Luftbilder
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern aktuellste Luftbilder
     AGIV10cm:
       attribution:
-        text: Orthophoto Flandern © AGIV
-      name: AGIV Flandern 2013-2015 Luftbilder 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern 2013-2015 Luftbilder 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flandern © AGIV
-      name: AGIV Flandern GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitales Höhenmodell Vlaanderen II, mehrrichtungs  Hügelschattierung0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitales Höhenmodell Vlaanderen II, Skyview-Faktor 0,25 m
     Bing:
       description: Satellitenbilder und Luftbilder
       name: Bing Luftbildmaterial
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Bedingungen & Feedback
-      description: DigitalGlobe-Premium ist ein Mosaik zusammengesetzt aus der DigitalGlobe basemap, wobei ausgewählte Regionen mit +Vivid oder regionspezifischen Quellen aufgefüllt sind, Auflösung 50cm oder besser und häufiger aktualisiert.
-      name: DigitalGlobe Premium Bildmaterial
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Bedingungen & Feedback
-      description: Kachelgrenzen und Aufnahmedatum werden bei Zoom-Level 13 und höher angezeigt.
-      name: DigitalGlobe Premium Bildmaterial Klassisch
-    DigitalGlobe-Standard:
-      attribution:
-        text: Bedingungen & Feedback
-      description: DigitalGlobe-Standard ist eine kuratierte Zusammenstellung von Luftbildern, die 86% der weltweiten Landmasse abdecken, Auflösung 30-60cm soweit verfügbar; aufgefüllt mit Landsat Satelitenbildern. Durchschnittliches Alter ist 2,31 Jahre, manche Gebiete werden zwei mal pro Jahr erneuert.
-      name: DigitalGlobe Standard Bildmaterial
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Bedingungen & Feedback
-      description: Kachelgrenzen und Aufnahmedatum werden bei Zoom-Level 13 und höher angezeigt.
-      name: DigitalGlobe Standard Bildmaterial Klassisch
+        text: Sentinel-2 wolkenfrei - https://s2maps.eu by EOX IT Services GmbH (enthält modofizierte Copernicus Sentinel Daten 2017 & 2018)
+      description: Nachbearbeitete Sentinel Satellitenbilder
+      name: eox.at 2018 wolkenfrei
     EsriWorldImagery:
       attribution:
         text: Bedingungen & Feedback
@@ -95,7 +88,13 @@ de:
       name: TIGER Straßen 2017
     US-TIGER-Roads-2018:
       description: Gelb = Public domain Kartendaten vom US Census. Rot  = Data nicht in OpenStreetMap
-      name: TIGER Roads 2018
+      name: TIGER Straßen 2018
+    US-TIGER-Roads-2019:
+      description: Gelb = Public Domain vom US Census. Rot = Daten, die in OpenStreetMap nicht gefunden wurden
+      name: TIGER Straßen 2019
+    USDA-NAIP:
+      description: Das aktuellste Jahr der DOQQs aus dem Programm für Nationale Landwirtschafts-Luftbilder (National Agriculture Imagery Program, NAIP) für jeden Staat in den zusammenhängenden USA.
+      name: Programm für Nationale Landwirtschafts-Luftbilder (National Agriculture Imagery Program, NAIP)
     US_Forest_Service_roads_overlay:
       description: 'Straße: Grüner Rand = Nebenstraße. Brauner Rand = Feldweg/Waldweg. Oberfläche: Schotter = hellbraune Füllung, Asphalt = schwarz, befestigt = grau, ground = weiß, Beton = blau, Gras = grün. Saisonal = weißes Gitter'
       name: U.S.A. Forststraßen Overlay
@@ -111,6 +110,10 @@ de:
       attribution:
         text: Durchgeführt mit den Mitteln von Brüssel UrbIS®© - Verteilung & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realisiert mittel Brüssel UrbIS®© - Verteilung & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realisiert von Brüssel UrbIS®© - Vertrieb & Copyright CIRB
@@ -149,6 +152,21 @@ de:
         text: basemap.at
       description: Orthofotos von basemap.at, früher geoimage.at
       name: basemap.at Orthofotos
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Anmerkungen von basemap.at.
+      name: basemap.at Überlagerung
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Oberflächenkarte von basemap.at.
+      name: basemap.at Oberfläche
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Geländekarte von basemap.at.
+      name: basemap.at Gelände
     eufar-balaton:
       attribution:
         text: EUFAR Balaton Orthofoto 2010
@@ -159,11 +177,26 @@ de:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. Hohe Qualität, aber etwas älter.
       name: Japan GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Gemeinde Gothenburg, CC0
+      description: Die Karte der Gemeinde ist eine Überblickskarte die Gothenburg zeigt. Sie enthält Informationen über Flächennutzung, Kommunikation, Hydrgraphie, Gebäude, Adressen und Straßennamen. administrative Gliederung und Orientierungstexte.
+      name: Karte der Gemeinde Gothenburg
     gsi.go.jp:
       attribution:
         text: GSI Japan
       description: Japan GSI Orthofoto. Normalerweise etwas besser als Bing, aber auch älter.
       name: Japan GSI Orthofoto
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI Luftbilder. Nicht ganz lagegenau, aber etwas neuer oder andere Abdeckung als GSI Orthofotos.
+      name: Japan GSI Luftbilder
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan nahtlose Fotos
+      description: GSI Japan nahtloser Fotohintergrund. Die Sammlung der aktuellste Hintergrundbilder von GSI Orthofotos, Luftbilder, nach der Katastrophe und andere.
+      name: GSI Japan nahtloser Fotohintergrund
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -261,7 +294,7 @@ de:
     stockholm-orto:
       attribution:
         text: © Gemeinde Stockholm, CC0
-      description: Orthofotos von der Gemeinde Stockholm 2015, CC0 Lizenz
+      description: Orthofotos von der Gemeinde Stockholm 2016, CC0 Lizenz
       name: Stockholm Orthofoto
     tf-cycle:
       attribution:

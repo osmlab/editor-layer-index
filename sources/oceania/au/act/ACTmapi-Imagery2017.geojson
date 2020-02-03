@@ -9,17 +9,18 @@
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/act/ACTmapi-Imagery.PDF",
         "license": "CC-BY-4.0",
+        "privacy_policy_url": "https://www.environment.act.gov.au/about/privacy",
         "name": "ACTmapi Imagery 2017",
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:28355"
+            "EPSG:3857"
         ],
-        "url": "https://data.actmapi.act.gov.au/arcgis/services/actmapi/imagery2017mga/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery2017mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
         "start_date": "2017-05",
         "end_date": "2017-05",
         "max_zoom": 21,
         "country_code": "AU",
-        "type": "wms"
+        "type": "wms",
+        "icon": "http://actmapi.act.gov.au/img/apple-touch-icon.png"
     },
     "geometry": {
         "type": "Polygon",

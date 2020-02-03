@@ -6,13 +6,15 @@
             "text": "CC BY 4.0 Land Information New Zealand",
             "required": true
         },
+        "license": "CC-BY-4.0",
         "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
         "name": "LINZ NZ Topo50 Gridless Maps",
-        "url": "https://tiles-a.data-cdn.linz.govt.nz/services;key=3197c6d0e5cb494a95d58dc2de3216c2/tiles/v4/layer=2343/EPSG:3857/{zoom}/{x}/{y}.png",
+        "url": "https://map.cazzaserver.com/linz_topo/{zoom}/{x}/{y}.png",
         "max_zoom": 21,
         "country_code": "NZ",
         "type": "tms",
-        "id": "LINZ_NZ_Topo50_Gridless_Maps"
+        "id": "LINZ_NZ_Topo50_Gridless_Maps",
+        "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico"
     },
     "geometry": {
         "type": "Polygon",

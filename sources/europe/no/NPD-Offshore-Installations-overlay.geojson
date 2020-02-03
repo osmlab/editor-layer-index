@@ -4,7 +4,7 @@
         "id": "npd-offshore", 
         "name": "NPD Offshore Installations overlay", 
         "type": "wms", 
-        "url": "http://gis.npd.no/ogc/factmaps/2_0?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fclFixed,pplAll,fldByStatus&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "url": "https://gis.npd.no/ogc/factmaps/2_0?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fclFixed,pplAll,fldByStatus&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "overlay": true, 
         "country_code": "NO", 
         "available_projections": [
@@ -30,7 +30,7 @@
             "EPSG:32636"
         ], 
         "attribution": {
-            "url": "http://www.npd.no/no/Kart/Faktakart/", 
+            "url": "https://www.npd.no/no/Kart/Faktakart/", 
             "text": "© Oljedirektoratet"
         }, 
         "icon": "https://register.geonorge.no/data/organizations/870917732_od_liten.png", 

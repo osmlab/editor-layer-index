@@ -1,40 +1,11 @@
 lv:
   imagery:
-    AGIV:
-      attribution:
-        text: Ortofoto Flanders vissjaunākie © AGIV
-      name: AGIV Flanders vissjaunākā aerofotoattēli
-    AGIV10cm:
-      attribution:
-        text: Ortofoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 aerofotoattēli 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
     Bing:
       description: Satelītu un aerofotoattēli.
       name: Bing aerofotoattēli
-    DigitalGlobe-Premium:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: DigitalGlobe-Premium ir aerofoto mozaīka, kas sastāv no DigitalGlobe apakškartes ar atsevišķiem reģioniem piepildītiem izmantojot +Vivid vai pielāgotu interešu vietas informāciju, aerofoto ir 50cm izsķirtspēja vai augstāka, un tā tiek atjaunota daudz biežāk, ar nepārtrauktiem atjauninājumiem.
-      name: DigitalGlobe Premium Attēli
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: Attēlu malas un uztveršanas datumi. Etiķetes parādās palielinājuma līmenī 13 un zemāk.
-      name: Vecāki DigitalGlobe Premium Attēli
-    DigitalGlobe-Standard:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: 'DigitalGlobe-Standard ir kārtota attēlu grupa, kas aptver aptuveni 86% no visas pasaules ar 30-60 cm izsķirtspēju, kur tas ir iespējams. Fona aizpildījumu nodrošina Landsat. Vidējais vecums ir 2.31 gadi, lai gan dažas vietas tiek atjauninātas 2 reizes gadā. '
-      name: DigitalGlobe Standarta Attēli
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: Attēlu malas un uztveršanas datumi. Etiķetes parādās palielinājuma līmenī 13 un zemāk.
-      name: Vecāki DigitalGlobe Standarta Attēli
+    EOXAT2018CLOUDLESS:
+      description: Apstrādāti Sentinel Satalītattēli.
+      name: eox.at 2018 bez-mākoņu
     EsriWorldImagery:
       attribution:
         text: Noteikumi un atsauksmes
@@ -107,6 +78,10 @@ lv:
       attribution:
         text: Realizēts, izmantojot  UrbIS®© - Izplatīšana & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realizēts, izmantojot  UrbIS®© - Izplatīšana & Copyright CIRB
+      name: UrbIS-Ortho 2018
     UrbisAdmFR:
       attribution:
         text: Realizēts, izmantojot  UrbIS®© - Izplatīšana & Copyright CIRB
@@ -160,6 +135,13 @@ lv:
         text: GSI Japāna
       description: Japānas GSI ortogrāfiskie attēli. Parasti labāki par bing, bet nedaudz vecāki.
       name: Japānas GSI ortogrāfiskie attēli
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japāna
+      name: Japānas GSI gaisa-foto attēli
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japānas bezšuvju foto
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japāna
@@ -173,13 +155,18 @@ lv:
     kalmar-orto-2014:
       attribution:
         text: © Kalmaras pašvaldība
+      description: Kalmāras pašlavaldības ziemeļu krasta ortofoto 2014
+      name: Kalmāras Ziemeļu Ortofoto 2014
     kalmar-orto-2016:
       attribution:
         text: © Kalmaras pašvaldība
+      description: Kalmāras pašvaldības dienvidu krasta ortofoto 2016
+      name: Kalmāras Dienvidu Ortofoto 2016
     kalmar-orto-2018:
       attribution:
         text: © Kalmaras pašvaldība
       description: Urbāno vietu ortofoto no Kalmaras pašvaldības 2018
+      name: Kalmāras Dienvidu Ortofoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -252,7 +239,6 @@ lv:
     stockholm-orto:
       attribution:
         text: © Stokholmas pašvaldība, CC0
-      description: 2015. gada Ortofoto no Stokholmas pašvaldības, CC0 licence
       name: Stokholmas Ortofoto
     tf-cycle:
       attribution:

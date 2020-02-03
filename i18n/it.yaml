@@ -2,39 +2,32 @@ it:
   imagery:
     AGIV:
       attribution:
-        text: Ortofoto Flanders le più recenti © AGIV
-      name: AGIV Flanders le immagini aeree più recenti
+        text: © agentschap Informatie Vlaanderen
+      name: Le più recenti immagini aeree AIV delle Fiandre
     AGIV10cm:
       attribution:
-        text: Ortofoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 immagini aeree 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Fiandre 2013-2015 immagini aeree 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Fiandre GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, rilievo ombreggiato multidirezionale 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, fattore Skyview 0,25 m
     Bing:
       description: Immagini satellitari e aeree.
       name: Immagini aeree Bing
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Termini & Feedback
-      description: DigitalGlobe-Premium è un mosaico di DigitalGlobe basemap con alcune selezionate regioni in +Vivid o immagini da aree di interesse personalizzate, con una risoluzione di meno di 50cm, aggiornamenti più frequenti e migliorata continuamente.
-      name: Immagini DigitalGlobe Premium
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Termini & Feedback
-      description: Confini delle immagini e data di acquisizione. Le etichette appaiono a livelli di ingrandimento 13 e successivi.
-      name: DigitalGlobe Premium Imagery Vintage
-    DigitalGlobe-Standard:
-      attribution:
-        text: Termini & Feedback
-      description: DigitalGlobe-Standard è un set curato di immagini che copre l’86% della terra emersa mondiale, con risoluzione disponibile dai 30 ai 60cm e copertura alternativa che usa Landsat. L’età media è di 2,31 anni anche se alcune aree vengono aggiornate due volte l’anno.
-      name: Immagini DigitalGlobe Standard
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Termini & Feedback
-      description: Confini delle immagini e data di acquisizione. Le etichette appaiono a livelli di ingrandimento 13 e successivi.
-      name: DigitalGlobe Standard Imagery Vintage
+        text: Sentinel-2 cloudless - https://s2maps.eu di EOX IT Services GmbH (contiene dati modificati di Copernicus Sentinel del 2017-2018)
+      description: Immagini satellitari post-elaborate di Sentinel.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Termini & Feedback
@@ -96,6 +89,12 @@ it:
     US-TIGER-Roads-2018:
       description: Giallo = dati della mappa di pubblico dominio del censimento US. Rosso = dati non presenti in OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Giallo = Dati delle mappe di dominio pubblico dal US Census. Rosso = Dati non trovati in OpenStreetMap
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: L’anno più recente di DOQQs dal programma nazionale delle immagini per l’agricoltura (NAIP) per ciascuno stato degli Stati Uniti contigui.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Strada: bordo verde = non classificata. Bordo marrone = carrareccia. Manto in ghiaia = colore diriempimento marrone chiaro, asfaltato = nero, pavimentato = grigio, terra = bianco,  cemento = blu, erboso = verde. Stagionale = con barre bianche'
       name: Strade forestali U.S. (sovrapposta)
@@ -111,6 +110,10 @@ it:
       attribution:
         text: Realizzato tramite Bussels UrbIS®© - Distribuzione & copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realizzato per mezzo di Brussels UrbIS®© - Distribuzione & Diritti d'autore CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realizzato con i mezzi di Bruxelles UrbIS®© - Distribuzione & Copyright CIRB
@@ -149,6 +152,21 @@ it:
         text: basemap.at
       description: Immagini satellitari fornite da basemap.at, successore di geoimage.at
       name: Immagini satellitari basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Annotazioni sovrapposte fornite da basemap.at.
+      name: Sovrimpresso basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Livello superficie fornito da basemap.at.
+      name: Superficie basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Livello terreno fornito da basemap.at.
+      name: Terreno basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR di Balaton 2010
@@ -164,6 +182,16 @@ it:
         text: GSI Giappone
       description: Ortofoto di GSI Giappone. In genere migliori di Bing ma un po’ più vecchie.
       name: Ortofoto di GSI Giappone
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI del Giappone
+      description: Immagini aeree GSI del Giappone. Non del tutto orto-rettificate ma un po’ più recenti e/o con copertura differente delle orto-immagini GSI.
+      name: Immagini aeree GSI del Giappone
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Foto GSI senza interruzioni del Giappone
+      description: Immagini GSI senza interruzioni del Giappone. L’insieme delle ultime immagini di ortofoto GSI, foto aeree, post-disastro e altro.
+      name: Immagini senza interruzioni GSI del Giappone
     gsi.go.jp_std_map:
       attribution:
         text: GSI Giappone
@@ -256,12 +284,12 @@ it:
       name: Mappa svedese per motoslitte
     stamen-terrain-background:
       attribution:
-        text: Tasselli della mappa di Stamen Design con licenza CC-BY 3.0. Dati di OpenStreetMap com licenza ODbL
+        text: Tasselli della mappa di Stamen Design con licenza CC-BY 3.0. Dati di OpenStreetMap con licenza ODbL
       name: Stamen Terrain
     stockholm-orto:
       attribution:
         text: © comune di Stoccolma, CC0
-      description: Ortofoto del comune di Stoccolma del 2015, licenza CC0
+      description: Ortofoto del comune di Stoccolma del 2016, licenza CC0
       name: Ortofoto di Stoccolma
     tf-cycle:
       attribution:

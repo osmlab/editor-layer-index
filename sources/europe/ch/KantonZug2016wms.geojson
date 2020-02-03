@@ -1,0 +1,104 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "GIS Kanton Zug",
+            "required": false
+        },
+        "available_projections": [
+            "EPSG:21781",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:2056"
+        ],
+        "best": true,
+        "country_code": "CH",
+        "start_date": "2016",
+        "end_date": "2016",
+        "id": "Zug-2016",
+        "name": "Kanton Zug Nord 2016",
+        "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
+        "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
+        "type": "wms",
+        "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2016_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "min_zoom": 10,
+        "max_zoom": 21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.41092757684,
+                    47.16520545038
+                ],
+                [
+                    8.40758976199,
+                    47.16918441125
+                ],
+                [
+                    8.40754403850,
+                    47.23724681706
+                ],
+                [
+                    8.41899777300,
+                    47.23721577244
+                ],
+                [
+                    8.42336436640,
+                    47.22957824293
+                ],
+                [
+                    8.43891035335,
+                    47.22945404637
+                ],
+                [
+                    8.48056445368,
+                    47.21249848397
+                ],
+                [
+                    8.52939714210,
+                    47.22687690195
+                ],
+                [
+                    8.57951008828,
+                    47.22274699962
+                ],
+                [
+                    8.57946431906,
+                    47.17083189356
+                ],
+                [
+                    8.57534920487,
+                    47.14925556125
+                ],
+                [
+                    8.56428412004,
+                    47.14944213769
+                ],
+                [
+                    8.53593555560,
+                    47.15205413916
+                ],
+                [
+                    8.50658107435,
+                    47.15267602535
+                ],
+                [
+                    8.50685541530,
+                    47.16200344498
+                ],
+                [
+                    8.44723198299,
+                    47.16256303809
+                ],
+                [
+                    8.41092757684,
+                    47.16520545038
+                ]
+            ]
+        ]
+    }
+}
+
+

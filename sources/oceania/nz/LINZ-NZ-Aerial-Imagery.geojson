@@ -6,13 +6,15 @@
             "text": "Sourced from LINZ CC-BY 4.0",
             "required": true
         },
+        "license": "CC-BY-4.0",
         "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
         "name": "LINZ NZ Aerial Imagery",
-        "url": "https://tiles-a.data-cdn.linz.govt.nz/services;key=3197c6d0e5cb494a95d58dc2de3216c2/tiles/v4/set=2/EPSG:3857/{zoom}/{x}/{y}.png",
+        "url": "https://map.cazzaserver.com/linz_aerial/{zoom}/{x}/{y}.png",
         "max_zoom": 21,
         "country_code": "NZ",
         "type": "tms",
         "id": "LINZ_NZ_Aerial_Imagery",
+        "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
         "best": true
     },
     "geometry": {

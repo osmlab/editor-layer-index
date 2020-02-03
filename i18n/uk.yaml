@@ -2,49 +2,42 @@ uk:
   imagery:
     AGIV:
       attribution:
-        text: Свіжі Ортофото Фландрія © AGIV
-      name: Свіжі аерофотознімки Фландрії від AGIV
+        text: © agentschap Informatie Vlaanderen
+      name: Свіжі аерофотознімки Фландрії від AIV
     AGIV10cm:
       attribution:
-        text: Ортофото Фландрія © AGIV
-      name: Аерофотознімки Фландрії від AGIV 2013-2015 10см
+        text: © agentschap Informatie Vlaanderen
+      name: Аерофотознімки Фландрії від AIV 2013-2015 10см
     AGIVFlandersGRB:
       attribution:
-        text: GRB Фландрія © AGIV
-      name: GBR знімки Фландрії від AGIV
+        text: © agentschap Informatie Vlaanderen
+      name: GRB Фландрія AIV
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Цифрова модель висот Фландрії II, багатонаправлена ​​відмивка 0,25 м
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Цифрова модель висот Фландрії II, коефіцієнт Skyview 0,25 м
     Bing:
       description: Супутникові та аерофотознімки.
-      name: Знімки Bing
-    DigitalGlobe-Premium:
+      name: Bing, аерофото
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Умови використання та Відгуки
-      description: DigitalGlobe-Premium – мозаїка зібрана з основного покриття DigitalGlobe та окремих ділянок заповнених знімками +Vivid або знімками зробленими на замовлення, розподільча здатність 50 см чи краще, з поточним оновленням.
-      name: Знімки DigitalGlobe Premium
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Умови використання та Відгуки
-      description: 'Межі та дати знімків. Підписи з''являються з 13 рівня масштабування. '
-      name: Період знімків DigitalGlobe Premium
-    DigitalGlobe-Standard:
-      attribution:
-        text: Умови використання та Відгуки
-      description: DigitalGlobe-Standard – підібрана збірка, що покриває 86% поверхні сущі, з розподільчою здатністю 30-60 см, де це можливо, заповнена Landsat. Середній вік – 2.31 роки, деякі ділянки оновлюються 2 рази на рік.
-      name: Знімки DigitalGlobe Standard
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Умови використання та Відгуки
-      description: 'Межі та дати знімків. Підписи з''являються з 13 рівня масштабування. '
-      name: Період знімків DigitalGlobe Standard
+        text: Sentinel-2 безхмарні знімки - https://s2maps.eu від EOX IT Services GmbH (Містить модифіковані дані Copernicus Sentinel 2017 та 2018)
+      description: Оброблені супутникові знімки Sentinel.
+      name: eox.at 2018 без хмар
     EsriWorldImagery:
       attribution:
         text: Умови використання та Відгуки
       description: Знімки Esri.
-      name: Знімки Esri
+      name: Esri, знімки світу
     EsriWorldImageryClarity:
       attribution:
         text: Умови використання та Відгуки
       description: Архівні знімки Esri які можуть бути чіткішими та більш точними ніж знімки зі звичайного шару.
-      name: Знімки Esri (Прозорі) бета
+      name: Esri, знімки світу (очищені) бета
     MAPNIK:
       attribution:
         text: © Учасники OpenStreetMap, CC-BY-SA
@@ -54,7 +47,7 @@ uk:
       attribution:
         text: Умови використання та Відгуки
       description: Супутникові та аерофотознімки.
-      name: Супутникові знімки Mapbox
+      name: 'Mapbox, супутникові знімки '
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, Учасники OpenStreetMap, CC-BY-SA
@@ -84,7 +77,7 @@ uk:
         text: © Geofabrik GmbH, Учасники OpenStreetMap, CC-BY-SA
       name: 'OSM Інспектор: Теґи'
     SPW_ORTHO_LAST:
-      name: PW (allonie) найновіші аерофотознімки
+      name: SPW (allonie) найновіші аерофотознімки
     SPW_PICC:
       name: SPW (allonie) числові зображення PICC
     US-TIGER-Roads-2014:
@@ -96,6 +89,12 @@ uk:
     US-TIGER-Roads-2018:
       description: Жовтий = Дані, що розповсюджуються US Census на умовах суспільного надбання. Червоний = Дані, відсутні в OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Жовтий = Дані, що розповсюджуються US Census на умовах суспільного надбання. Червоний = Дані, відсутні в OpenStreetMap
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: Свіжі знімки DOQQ від Національної програми землеробства (NAIP) для кожного штату
+      name: NAIP, Знімки Національної програми землеробства
     US_Forest_Service_roads_overlay:
       description: 'Дороги: Зелений контур = unclassified. Коричневий контур = track. Покриття: gravel = світло-коричневе заповнення, asphalt = чорне, paved = сіре, ground = біле, concrete = синє, grass = зелене. Seasonal = білі смуги'
       name: U.S. Forest Roads, додатковий шар
@@ -107,6 +106,14 @@ uk:
       attribution:
         text: Випущено за допомоги Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Випущено за допомоги Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Випущено за допомоги Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Випущено за допомоги Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -118,23 +125,23 @@ uk:
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, Учасники OpenStreetMap, CC by-SA 3.0
-      name: 'Позначені маршрути: Велосипедні'
+      name: 'Waymarked Trails: Велосипед'
     Waymarked_Trails-Hiking:
       attribution:
         text: © waymarkedtrails.org, Учасники OpenStreetMap, CC by-SA 3.0
-      name: 'Позначені маршрути: Туристичні'
+      name: 'Waymarked Trails: Піший туризм'
     Waymarked_Trails-MTB:
       attribution:
         text: © waymarkedtrails.org, Учасники OpenStreetMap, CC by-SA 3.0
-      name: 'Позначені маршрути: MTB'
+      name: 'Waymarked Trails: MTB'
     Waymarked_Trails-Skating:
       attribution:
         text: © waymarkedtrails.org, Учасники OpenStreetMap, CC by-SA 3.0
-      name: 'Позначені маршрути: Ковзани'
+      name: 'Waymarked Trails: Ковзани'
     Waymarked_Trails-Winter_Sports:
       attribution:
         text: © waymarkedtrails.org, Учасники OpenStreetMap, CC by-SA 3.0
-      name: 'Позначені маршрути: Зимові вид спорту'
+      name: 'Waymarked Trails: Зимові вид спорту'
     basemap.at:
       attribution:
         text: basemap.at
@@ -143,23 +150,53 @@ uk:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Шат ортофото надається basemap.at. "Наступник" знімків від geoimage.at.
+      description: Шар ортофото надається basemap.at. "Наступник" знімків від geoimage.at.
       name: basemap.at Ортофото
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Шар з підписами від  basemap.at.
+      name: basemap.at - допоміжний шар
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Шар поверхні від  basemap.at.
+      name: basemap.at - поверхня
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Шар ландшафту від  basemap.at.
+      name: basemap.at - ландшафт
     eufar-balaton:
       attribution:
         text: EUFAR Балатон ортофото 2010
-      description: 1940 р. гео-теговані фотографії Балатонського лімнологічного інституту.
+      description: 1940 р. геотеговані фотографії Балатонського лімнологічного інституту.
       name: EUFAR Балатон ортофото
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 від finds.jp. Годиться для мапінгу, але трохи застарілі дані.
       name: Japan GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Муніципалітет Гетеборга, CC0
+      description: Мапа міста - це оглядова мапа, яка зображує Гетеборг. Вона містить загальну інформацію про землю, комунікації, гідрографію, будинки, адресні номери та назви вулиць, адміністративний поділ та інший орієнтаційний текст.
+      name: Мапа міста Гетеборг
     gsi.go.jp:
       attribution:
         text: GSI Japan
       description: Japan GSI ортофото. Зазвичай краще, ніж Bing, але трохи застарілі.
       name: Japan GSI ортофото
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI аерофотознімки. Не повністю орторектифіковані, але трохи новіші та/або з різним покриттям, ніж GSI ортознімки.
+      name: Japan GSI аерофотознімки
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan безшовні фото
+      description: 'GSI Japan безшовні фото - збірка останніх знімків від GSI: орто, аерофто, знімки з місць катастроф та інше.'
+      name: GSI Japan безшовні фото
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japan
@@ -168,18 +205,18 @@ uk:
     helsingborg-orto:
       attribution:
         text: © Helsingborg municipality
-      description: Ортофоти муніципалітету Хельсінгборг, 2016 р., громадське надбання
-      name: Хельсінгборг ортофото
+      description: Ортофото муніципалітету Хельсінгборг, 2016 р., суспільне надбання
+      name: Helsingborg Orthophoto
     kalmar-orto-2014:
       attribution:
         text: © Kalmar municipality
       description: Ортофото північного узбережжя муніципалітету Кальмар, 2014 рік
-      name: Ортофото північний Кальмар, 2014
+      name: Kalmar North Orthophoto 2014
     kalmar-orto-2016:
       attribution:
         text: © Kalmar municipality
       description: Ортофото південного узбережжя муніципалітету Кальмар, 2016 рік
-      name: Ортофото південний Кальмар, 2016
+      name: Kalmar South Orthophoto 2016
     kalmar-orto-2018:
       attribution:
         text: © Kalmar municipality
@@ -208,7 +245,7 @@ uk:
     linkoping-orto:
       attribution:
         text: © Linköping municipality
-      description: Ортофоти муніципалітету Лінчепінг, 2010 р., ввідкриті дані
+      description: Ортофото муніципалітету Лінчепінг, 2010 р., відкриті дані
       name: Лінчепінг ортофото
     mapbox_locator_overlay:
       attribution:
@@ -218,7 +255,7 @@ uk:
     openpt_map:
       attribution:
         text: © Учасники OpenStreetMap, CC-BY-SA
-      name: Мапа OpenPT (накладка)
+      name: OpenPT мапа (допоміжний шар)
     osm-gps:
       attribution:
         text: © Учасники OpenStreetMap
@@ -240,7 +277,7 @@ uk:
     qa_no_address:
       attribution:
         text: Simon Poole, Дані © Учасники OpenStreetMap
-      name: QA Без адрес
+      name: QA, Немає адрес
     skobbler:
       attribution:
         text: '© Тайли: skobbler Дані: Учасники OpenStreetMap'
@@ -257,7 +294,7 @@ uk:
     stockholm-orto:
       attribution:
         text: © Stockholm municipality, CC0
-      description: Ортофоти муніципалітету Стокгольм, 2015 р., Ліцензія CC0
+      description: Ортофото муніципалітету Стокгольм, 2016 р., Ліцензія CC0
       name: Стокгольм ортофото
     tf-cycle:
       attribution:
@@ -276,7 +313,7 @@ uk:
       attribution:
         text: © Trafikverket, CC0
       description: Шведська залізнична мережа з декількома варіантами шарів мапи
-      name: Trafikverket Залізниця (з варіантами)
+      name: Trafikverket Залізниця, додатково
     trafikverket-vagnat:
       attribution:
         text: © Trafikverket, CC0
@@ -296,4 +333,4 @@ uk:
       attribution:
         text: © Trafikverket, CC0
       description: Дорожня мережа Швеції NVDB з кількома варіантами шарів мапи
-      name: Trafikverket Дорожня мережа (з варіантамі)
+      name: Trafikverket Дорожня мережа, додатково
