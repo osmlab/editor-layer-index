@@ -1,18 +1,43 @@
 vi:
   imagery:
+    AGIV:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: AIV hình ảnh Vlaanderen mới nhất
+    AGIV10cm:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: AIV hình ảnh trên không 10 cm 2013–2015
+    AGIVFlandersGRB:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: AIV Vlaanderen GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: AIV Mô hình Chiều cao Số Vlaanderen II, bóng đồi đa chiều 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: AIV Mô hình Chiều cao Số Vlaanderen II, hệ số Skyview 0,25 m
     Bing:
       description: Hình ảnh chụp từ vệ tinh và trên không trung.
-      name: Hình chụp trên không Bing
+      name: Bing hình ảnh trên không
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 không có mây – https://s2maps.eu bởi EOX IT Services GmbH (Chứa dữ liệu Copernicus Sentinel đã sửa đổi 2017 & 2018)
+      description: Hình ảnh vệ tinh Sentinel được xử lý sau
+      name: eox.at 2018 không có mây
     EsriWorldImagery:
       attribution:
         text: Điều khoản & Phản hồi
       description: Hình ảnh thế giới Esri.
-      name: Hình ảnh Thế giới Esri
+      name: Esri Hình ảnh Thế giới
     EsriWorldImageryClarity:
       attribution:
         text: Điều khoản & Phản hồi
       description: Hình ảnh lưu trữ Esri có thể rõ hơn và chính xác hơn lớp mặc định.
-      name: Hình ảnh Thế giới Esri (Clarity) Beta
+      name: Esri Hình ảnh Thế giới (Clarity) Beta
     MAPNIK:
       attribution:
         text: © những người đóng góp vào OpenStreetMap, CC BY-SA
@@ -22,7 +47,7 @@ vi:
       attribution:
         text: Điều khoản & Phản hồi
       description: Hình ảnh chụp từ vệ tinh và trên không trung.
-      name: Vệ tinh Mapbox
+      name: Mapbox Vệ tinh
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
@@ -52,18 +77,24 @@ vi:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
       name: 'Trình kiểm tra OSM: Thẻ'
     SPW_ORTHO_LAST:
-      name: Hình chụp trên không Wallonie mới nhất của SPW
+      name: SPW hình chụp trên không Wallonie mới nhất
     SPW_PICC:
-      name: Hình ảnh số PICC Wallonie của SPW
+      name: SPW hình ảnh số PICC Wallonie
     US-TIGER-Roads-2014:
       description: Ở các mức thu phóng 16+, dữ liệu bản đồ thuộc phạm vi công cộng từ Điều tra dân số Hoa Kỳ. Ở các mức nhỏ hơn, chỉ các thay đổi từ 2006 trở về sau trừ các thay đổi đã được nhập vào OpenStreetMap.
-      name: Đường sá TIGER 2014
+      name: TIGER Đường sá 2014
     US-TIGER-Roads-2017:
       description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
-      name: Đường sá TIGER 2017
+      name: TIGER Đường sá 2017
     US-TIGER-Roads-2018:
       description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
-      name: Đường sá TIGER 2018
+      name: TIGER Đường sá 2018
+    US-TIGER-Roads-2019:
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      name: TIGER Đường sá 2019
+    USDA-NAIP:
+      description: Các phần tư tứ giác hình ảnh trực giao số (DOQQ) vào năm gần đây nhất của Chương trình Hình ảnh Nông nghiệp Quốc gia (NAIP) cho mỗi tiểu bang Hoa Kỳ tiếp giáp nhau.
+      name: Chương trình Hình ảnh Nông nghiệp Quốc gia
     US_Forest_Service_roads_overlay:
       description: 'Đường sá: vỏ xanh là ngõ; vỏ nâu là đường mòn.
 
@@ -83,6 +114,10 @@ vi:
       attribution:
         text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
       name: UrbIS trực giao 2018
+    UrbISOrtho2019:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbIS trực giao 2019
     UrbisAdmFR:
       attribution:
         text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
@@ -121,31 +156,56 @@ vi:
         text: basemap.at
       description: Lớp hình ảnh trực giao do basemap.at cung cấp. “Kế tiếp” hình ảnh geoimage.at.
       name: Hình ảnh trực giao basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Lớp phủ chú thích do basemap.at cung cấp.
+      name: basemap.at Lớp phủ
+    basemap.at-surface:
+      attribution:
+        text: 'basemap.at '
+      description: Lớp mặt đất do basemap.at cung cấp.
+      name: basemap.at Mặt đất
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Lớp địa hình do basemap.at cung cấp.
+      name: basemap.at Địa hình
     eufar-balaton:
       attribution:
         text: Hình ảnh trực giao EUFAR Balaton 2010
       description: Hình chụp gắn thẻ địa lý năm 1940 do Viện nghiên cứu hồ Balaton cung cấp.
-      name: Hình ảnh trực giao EUFAR Balaton
+      name: EUFAR hình ảnh trực giao Balaton
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 theo finds.jp. Có ích trong việc vẽ nhưng hơi cũ hơn.
-      name: GSI KIBAN 2500 Nhật Bản
+      name: GSI Nhật Bản KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © đô thị Göteborg, CC0
+      description: Bản đồ Göteborg tả thành phố nhìn chung. Nó bao gồm thông tin tổng quát về đất đai, viễn thông, thủy văn, tòa nhà, số nhà, tên đường, phân cấp hành chính, và các nhãn định hướng khác.
+      name: Bản đồ Thành phố Göteborg
     gsi.go.jp:
       attribution:
         text: GSI Nhật Bản
       description: Hình ảnh trực giao GSI Nhật Bản. Thường rõ hơn Bing nhưng hơi cũ hơn.
-      name: Hình ảnh trực giao GSI Nhật Bản
+      name: GIS Nhật Bản hình ảnh trực giao
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Nhật Bản
       description: Hình ảnh trực giao GSI Nhật Bản từ không trung. Không hoàn toàn chiếu trực giao nhưng đúng thời hơn một tí hoặc có mức phủ đất khác với hình ảnh trực giao GSI.
-      name: Hình trực giao GSI Nhật Bản
+      name: GSI Nhật Bản hình ảnh trên không
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Hình ảnh liền mạch Viện Địa lý Quốc gia Nhật Bản
+      description: Hình ảnh liền mạch Viện Địa lý Quốc gia Nhật Bản (GSI). Bộ sưu tập các hình ảnh mới nhất của GSI trong số nguồn hình ảnh trực giao, trên không, sau thảm họa, và những thứ khác.
+      name: GSI Nhật Bản hình ảnh liền mạch
     gsi.go.jp_std_map:
       attribution:
         text: GIS Nhật Bản
       description: Bản đồ chuẩn GIS Nhật Bản. Có phạm vi rộng rãi.
-      name: Bản đồ chuẩn GIS Nhật Bản
+      name: GIS Nhật Bản Bản đồ Chuẩn
     helsingborg-orto:
       attribution:
         text: © đô thị Helsingborg
@@ -175,22 +235,22 @@ vi:
       attribution:
         text: © Lantmäteriet, CC0
       description: Hỗn hợp các hình ảnh trực giao Thụy Điển vào thời kỳ 1955–1965, có thể bao gồm các hình ảnh cũ hơn hoặc mới hơn.
-      name: Hình ảnh trực giao lịch sử Lantmäteriet 1960
+      name: Lantmäteriet Hình ảnh Trực giao Lịch sử 1960
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
       description: Hỗn hợp các hình ảnh trực giao Thụy Điển vào thời kỳ 1970–1980, sẽ được mở rộng.
-      name: Hình ảnh trực giao lịch sử Lantmäteriet 1975
+      name: Lantmäteriet Hình ảnh Trực giao Lịch sử 1975
     lantmateriet-topowebb:
       attribution:
         text: © Lantmäteriet, CC0
       description: Bản đồ địa hình Thụy Điển tỷ lệ 1:50.000
-      name: Bản đồ Địa hình Lantmäteriet
+      name: Lantmäteriet Bản đồ Địa hình
     linkoping-orto:
       attribution:
         text: © đô thị Linköping
       description: Hình ảnh trực giao từ đô thị Linköping năm 2010 là dữ liệu mở
-      name: Hình trực giao Linköping
+      name: Hình ảnh trực giao Linköping
     mapbox_locator_overlay:
       attribution:
         text: Điều khoản & Phản hồi
@@ -217,7 +277,7 @@ vi:
       attribution:
         text: © Lantmäteriet
       description: Hình quét các “bản đồ kinh tế” những năm 1950–1980
-      name: Bản đồ kinh tế Lantmäteriet 1950–1980
+      name: Lantmäteriet Bản đồ Kinh tế 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Dữ liệu © những người đóng góp vào OpenStreetMap
@@ -234,10 +294,11 @@ vi:
     stamen-terrain-background:
       attribution:
         text: Hình bản đồ do Stamen Design cung cấp dưới CC BY 3.0. Dữ liệu do OpenStreetMap cung cấp dưới ODbL.
-      name: Địa thế Stamen
+      name: Stamen Địa hình
     stockholm-orto:
       attribution:
         text: © đô thị Stockholm, CC0
+      description: Hình ảnh trực giao từ đô thị Stockholm năm 2016 được phát hành theo CC0
       name: Hình trực giao Stockholm
     tf-cycle:
       attribution:
@@ -246,7 +307,7 @@ vi:
     tf-landscape:
       attribution:
         text: Bản đồ © Thunderforest, dữ liệu © những người đóng góp vào OpenStreetMap
-      name: Phong cảnh Thunderforest
+      name: Thunderforest Phong cảnh
     trafikverket-baninfo:
       attribution:
         text: © Bộ Giao thông Thụy Điển, CC0
@@ -256,7 +317,7 @@ vi:
       attribution:
         text: © Bộ Giao thông Thụy Điển, CC0
       description: Hệ thống đường sắt Thụy Điển có vài lớp bản đồ để lựa chọn
-      name: Hệ thống Đường sắt Thụy Điển có tùy chọn
+      name: Hệ thống Đường sắt Bộ Giao thông Thụy Điển có tùy chọn
     trafikverket-vagnat:
       attribution:
         text: © Bộ Giao thông Thụy Điển, CC0
@@ -276,4 +337,4 @@ vi:
       attribution:
         text: © Bộ Giao thông Thụy Điển, CC0
       description: Hệ thống đường bộ Thụy Điển có vài lớp bản đồ để lựa chọn
-      name: Hệ thống Đường bộ Thụy Điển có tùy chọn
+      name: Hệ thống Đường bộ Bộ Giao thông Thụy Điển có tùy chọn

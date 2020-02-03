@@ -20,6 +20,7 @@
         "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
         "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
         "type": "wms",
+        "category": "photo",
         "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2018_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "min_zoom": 10,
         "max_zoom": 21
