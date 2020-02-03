@@ -11,6 +11,7 @@
         "min_zoom": 3,
         "name": "OpenTopoMap",
         "type": "tms",
+        "category": "osmbasedmap",
         "url": "https://{switch:a,b,c}.tile.opentopomap.org/{zoom}/{x}/{y}.png"
     },
     "type": "Feature",

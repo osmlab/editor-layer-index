@@ -48,16 +48,6 @@ he:
         text: תנאים ומשוב
       description: צילומי אוויר ולוויין.
       name: Mapbox לווייני
-    Maxar-Premium:
-      attribution:
-        text: תנאים ומשוב
-      description: Maxar פרימיום הוא פסיפס שמורכב ממפת הבסיס Maxar עם שטחים נבחרים במילוי ‎+Vivid או שטח צילום מותאם אישית, ברזולוציה של 50 ס״מ ומעלה, שמתרענן בתדירות גבוהה יותר ככל שמצטרפים עוד עדכונים.
-      name: צילומי פרימיום של Maxar (בטא)
-    Maxar-Standard:
-      attribution:
-        text: תנאים ומשוב
-      description: Maxar רגיל הוא סדרה אסופה של צילומים שמכסים 86% מהקרקע בכדור הארץ ברזולוציה של 30-60 ס״מ איפה שניתן, עם מילוי חוסרים מצד Landsat. הגיל הממוצע הוא 2.31 שנים, עם שטחים מסוימים שמתעדכנים פעמיים בשנה.
-      name: צילומים רגילים של Maxar (בטא)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‮ CC-BY-SA
@@ -101,6 +91,9 @@ he:
     US-TIGER-Roads-2018:
       description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא בOSM
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: צהוב = נתונים לרשות הציבור באדיבות משרד האוכלוסין של ארה״ב. אדום = לא נמצאו נתונים ב־OpenStreetMap
+      name: דרכי TIGER‏ 2019
     USDA-NAIP:
       description: צילומי ה־DOQQ העדכניים ביותר מבית תכנית הצילום החקלאית הלאומית (NAIP) לגבולותיה של כל מדינה בארה״ב.
       name: תכנית הצילום החקלאית הלאומית
@@ -119,6 +112,10 @@ he:
       attribution:
         text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: עובד על ידי Brussels UrbIS®©‎ - הפצה וזכויות יוצרים CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -182,6 +179,11 @@ he:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. טוב לשרטוט, אבל ישן.
       name: יפן GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © עיריית גותנבורג, CC0
+      description: מפת העיר היא מפה סיקורית שמתארת את גותנברת. היא מכילה פרטים כלליים על קרקע, תקשורת, תשתיות מים, בניינים, מספרי כתובות ושמות רחובות, חלוקה מנהלית וטקסט שמסייע בהתמצאות.
+      name: מפת העיר גותנבורג
     gsi.go.jp:
       attribution:
         text: GSI יפן

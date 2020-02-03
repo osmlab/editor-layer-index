@@ -4,8 +4,7 @@
         "id": "orthophoto_lyon",
         "name": "Lyon Orthophoto 8cm",
         "type": "tms",
-        "url": "http://wms.openstreetmap.fr/tms/1.0.0/lyon/{zoom}/{x}/{y}",
-        "best": true,
+        "url": "https://wms.openstreetmap.fr/tms/1.0.0/lyon/{zoom}/{x}/{y}",
         "end_date": "2018",
         "start_date": "2015-05",
         "country_code": "FR",
@@ -16,7 +15,8 @@
             "text": "M\u00e9tropole de Lyon DINSI",
             "required": true
         },
-        "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf"
+        "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
+        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales"
     },
     "geometry": {
         "type": "Polygon",

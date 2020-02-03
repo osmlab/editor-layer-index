@@ -48,16 +48,6 @@ ja:
         text: 規約＆フィードバック
       description: 衛星・航空画像です。
       name: Mapbox衛星画像
-    Maxar-Premium:
-      attribution:
-        text: Terms & Feedback
-      description: MaxarプレミアムはMaxarベースマップの繋ぎ合わせから成り、50cm以上の解像度した組み合わせで、選ばれた地域が+Vividや興味深いカスタムエリアで埋められ、今後の更新でより頻繁にリフレッシュされます。
-      name: Maxarプレミアム画像(Beta)
-    Maxar-Standard:
-      attribution:
-        text: Terms & Feedback
-      description: 'Maxar標準は地球の大陸部の86%をカバーする画像を集めたセットで、一部30-60cm解像度でランドサットを下敷きにしています。平均年齢は2.31歳で、場所によっては毎年2x 更新されます。 '
-      name: Maxar標準画像(Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
@@ -99,6 +89,9 @@ ja:
     US-TIGER-Roads-2018:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
+      name: TIGER Roads 2019
     USDA-NAIP:
       description: The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
       name: National Agriculture Imagery Program
@@ -117,6 +110,10 @@ ja:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -180,6 +177,11 @@ ja:
         text: 国土地理院 基盤地図2500
       description: 独立行政法人 農研機構(NARO)より配信。ズームレベル15～20。輪郭が鮮明な地図画像なので最もトレースしやすく、概してBingより位置精度が高いが、Bingよりやや古いことが多い。
       name: 国土地理院 基盤地図2500(NARO経由)
+    gothenburg-citymap:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.
+      name: Gothenburg City map
     gsi.go.jp:
       attribution:
         text: 国土地理院 オルソ

@@ -1024,7 +1024,8 @@
         "name": "VoGIS: DGM (Terrain model)",
         "permission_osm": "explicit",
         "type": "wms",
-        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_terrain&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "category": "elevation",
+        "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_terrain&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "type": "Feature"
 }

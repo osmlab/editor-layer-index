@@ -48,16 +48,6 @@ sv:
         text: Villkor & återkoppling
       description: Satellit- eller flygfoton.
       name: Mapbox satellit
-    Maxar-Premium:
-      attribution:
-        text: Villkor & återkoppling
-      description: Maxar Standard är en kuraterad bildserie som täcker 86% av jordens landmassa, med 30–60 cm upplösning där den finns tillgänglig och Landsat för resten. Medelåldern är 2,31 år, med vissa områden uppdaterade 2 gånger per år.
-      name: Maxar Premium-bilder (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Villkor & återkoppling
-      description: Maxar Standard är en kuraterad bildserie som täcker 86% av jordens landmassa, med 30–60 cm upplösning där den finns tillgänglig, för resten används Landsat. Medelåldern är 2,31 år, med vissa områden uppdaterade 2 gånger per år.
-      name: Maxar Standard-bilder (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMaps bidragsgivare, CC-BY-SA
@@ -99,6 +89,9 @@ sv:
     US-TIGER-Roads-2018:
       description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad på OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
+      name: TIGER Roads 2019
     USDA-NAIP:
       description: Det senaste året av DOQQs från National Agriculture Imagery Program (NAIP) för varje stat i USA.
       name: National Agriculture Imagery Program
@@ -117,6 +110,10 @@ sv:
       attribution:
         text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
@@ -180,6 +177,11 @@ sv:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. Bra för kartläggning, men lite gammal.
       name: Japan GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Göteborgs Stad, CC0
+      description: Stadskartan är en översiktlig karta som beskriver Göteborg. Den innehåller generell information om mark, kommunikation, hydrografi, byggnader, adressnummer och gatunamn, administrativ indelning och övrig orienterande text.
+      name: Göteborg Stadskarta
     gsi.go.jp:
       attribution:
         text: GSI Japan

@@ -4,6 +4,8 @@
     "id": "Zuerich-overview",
     "name": "City of Zürich Overview map (Steets, buildings, house numbers)",
     "type": "wms",
+    "license": "cc0-1.0",
+    "license_url": "https://data.stadt-zuerich.ch/dataset/geo_uebersichtsplan_stadt_zuerich",
     "url": "https://www.gis.stadt-zuerich.ch/maps/services/wms/WMS-ZH-STZH-OGD/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Uebersichtsplan&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "CH",
     "available_projections": [

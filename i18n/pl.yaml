@@ -48,16 +48,6 @@ pl:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Mapbox.
       name: Mapbox Satellite (satelitarne)
-    Maxar-Premium:
-      attribution:
-        text: Warunki użytkowania i opinia
-      description: Maxar Premium to mozaika stworzona z podstawowych map Maxar z wybranymi obszarami uzupełnionymi o +Vivid lub innymi obrazami innych obszarów, rozdzielczość 50 cm lub wyższa, odświeżana częściej wraz z bieżącymi aktualizacjami.
-      name: Maxar Premium (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Warunki użytkowania i opinia
-      description: Maxar Standard to wyselekcjonowane obrazy pokrywające 86% lądu na Ziemi, czasem nawet o rozdzielczości 30-60 cm na piksel, uzupełnione obrazami z Landsat. Średni wiek zdjeć to 2,31 roku, a niektóre obszary są uaktualniane dwa razy w roku.
-      name: Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -99,6 +89,9 @@ pl:
     US-TIGER-Roads-2018:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Żółty = Dane public domain z US Census Bureau. Czerwony = Brak danych w OpenStreetMap
+      name: TIGER Roads 2019
     USDA-NAIP:
       description: Najnowszy rok DOQQ z Krajowego Programu Obrazowania Rolnictwa (NAIP) dla każdego sąsiadującego stanu w Stanach Zjednoczonych.
       name: Krajowy Program Obrazowania Rolnictwa
@@ -117,6 +110,10 @@ pl:
       attribution:
         text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: 'Zrealizowany za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie: CIRB'
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Zrealizowano za pomocą Brussels UrbIS®© – Dystrybucja i prawa autorskie CIRB
@@ -180,6 +177,11 @@ pl:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 przez finds.jp. Dobra do odrysowywania, ale trochę starsza.
       name: Japońska GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Gmina Göteborg, CC0
+      description: Mapa miasta to mapa przeglądowa Göteborga. Zawiera ogólne informacje o gruntach, komunikacji, hydrografii, budynkach, adresach, nazwach ulic i podziale administracyjnym.
+      name: Mapa Göteborga
     gsi.go.jp:
       attribution:
         text: GSI Japonia
@@ -271,7 +273,7 @@ pl:
       name: QA Bez Adresu
     skobbler:
       attribution:
-        text: '© Podład: skobbler Dane mapy: autorzy OpenStreetMap'
+        text: '© Podkład: skobbler Dane mapy: autorzy OpenStreetMap'
       name: skobbler
     skoterleder:
       attribution:
