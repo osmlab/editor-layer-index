@@ -4,6 +4,7 @@
         "id": "mainzlatestaerialimagery", 
         "name": "Mainz latest aerial imagery", 
         "type": "wms", 
+        "category": "photo",
         "url": "https://geodaten.mainz.de/map/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2018&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "country_code": "DE", 
         "available_projections": [

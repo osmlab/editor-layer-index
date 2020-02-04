@@ -4,6 +4,7 @@
         "name": "Kanton Glarus Orthophoto 2017",
         "i18n": false,
         "type": "wms",
+        "category": "photo",
         "url": "https://wms.geo.gl.ch?LAYERS=ch.gl.imagery.orthofoto2017&STYLES=default&FORMAT=image/jpeg&CRS={proj}&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "min_zoom": 8,
         "license_url": "https://www.gl.ch/public/upload/assets/5053/ktgl-ogd-geo-20180601.pdf",

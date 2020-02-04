@@ -4,7 +4,7 @@
     "id": "Agroindustria-wms",
     "name": "Ministry of Agroindustry (WMS)",
     "type": "wms_endpoint",
-    "url": "http://ide.agroindustria.gob.ar/geoserver/agroindustria/ows?service=wms&version=1.1.1&request=GetCapabilities",
+    "url": "https://ide.agroindustria.gob.ar/geoserver/agroindustria/ows?service=wms&version=1.1.1&request=GetCapabilities",
     "country_code": "AR",
     "available_projections": [
       "EPSG:4326",
@@ -16,7 +16,7 @@
     },
     "max_zoom": 20,
     "min_zoom": 1,
-    "license_url": "http://datos.gob.ar/acerca/marco-legal"
+    "license_url": "https://datos.gob.ar/acerca/marco-legal"
   },
   "geometry": {
     "type": "Polygon",

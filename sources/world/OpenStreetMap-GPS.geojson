@@ -15,7 +15,10 @@
         "name": "OpenStreetMap GPS traces",
         "overlay": true,
         "type": "tms",
-        "url": "https://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png"
+        "category": "other",
+        "url": "https://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png",
+        "license_url": "https://wiki.osmfoundation.org/wiki/Terms_of_Use",
+        "privacy_policy_url": "https://wiki.osmfoundation.org/wiki/Privacy_Policy"
     },
     "type": "Feature"
 }

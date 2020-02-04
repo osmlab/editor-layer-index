@@ -150,7 +150,8 @@
         "permission_osm": "explicit",
         "start_date": "2012",
         "type": "wms",
-        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2012_12cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "category": "historicphoto",
+        "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2012_12cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "type": "Feature"
 }

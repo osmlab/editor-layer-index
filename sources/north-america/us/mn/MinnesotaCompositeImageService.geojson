@@ -802,7 +802,7 @@
         "attribution": {
             "required": false,
             "text": "MnGeo",
-            "url": "http://www.mngeo.state.mn.us/chouse/wms/composite_image.html"
+            "url": "https://www.mngeo.state.mn.us/chouse/wms/composite_image.html"
         },
         "available_projections": [
             "EPSG:26915"
@@ -811,6 +811,8 @@
         "end_date": "2017",
         "icon": "https://gisdata.mn.gov/agencyLogos/mnLogo.jpg",
         "id": "Minnesota-Composite-Image-Service",
+        "license_url": "ftp://ftp.gisdata.mn.gov/pub/gdrs/data/pub/us_mn_state_mngeo/base_mn_composite_image_service/metadata/metadata.html",
+        "privacy_policy_url":"https://www.co.dakota.mn.us/Policies/Pages/default.aspx",
         "max_zoom": 20,
         "min_zoom": 5,
         "name": "Minnesota Composite Image Service",
