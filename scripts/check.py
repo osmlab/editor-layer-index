@@ -63,6 +63,8 @@ spacesave = 0
 
 strict_mode = arguments.strict
 
+headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
+
 for filename in arguments.path:
 
     if not filename.lower()[-8:] == '.geojson':
@@ -104,7 +106,7 @@ for filename in arguments.path:
         ## Check if license url exists
         if strict_mode and 'license_url' in source['properties']:
             try:
-                r = requests.get(source['properties']['license_url'])
+                r = requests.get(source['properties']['license_url'],  headers=headers)
                 if not r.status_code == 200:
                     raise ValidationError("{}: license url {} is not reachable: HTTP code: {}".format(
                         filename, source['properties']['license_url'], r.status_code))
@@ -177,7 +179,7 @@ for filename in arguments.path:
 
             # Check if privacy url exists
             try:
-                r = requests.get(source['properties']['privacy_policy_url'])
+                r = requests.get(source['properties']['privacy_policy_url'],  headers=headers)
                 if not r.status_code == 200:
                     raise ValidationError("{}: privacy policy url {} is not reachable: HTTP code: {}".format(
                         filename, source['properties']['privacy_policy_url'], r.status_code))
