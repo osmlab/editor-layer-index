@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var testLayer;
 var testLayerOpacity = 1;
 
-var remoteControlHost = 'http://localhost:8111';
+var remoteControlHost = 'http://127.0.0.1:8111';
 
 function updateOpacity(value) {
     testLayerOpacity = value;
