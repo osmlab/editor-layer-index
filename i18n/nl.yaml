@@ -40,7 +40,7 @@ nl:
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
-        text: © OpenStreetMap-bijdragers, CC-BY-SA
+        text: © OpenStreetMap contributors, CC-BY-SA 2.0
       description: De standaard OpenStreetMap-laag
       name: OpenStreetMap (Standaard)
     Mapbox:
@@ -48,16 +48,6 @@ nl:
         text: Gebruiksvoorwaarden & feedback
       description: Satelliet- en luchtfoto's.
       name: Mapbox-satellietbeelden
-    Maxar-Premium:
-      attribution:
-        text: Termen en terugkoppeling
-      description: Maxar Premium is een mozaïek die samengesteld is uit de Maxar-basiskaart met bepaalde regionen gevuld met +Vivid of maatwerk beelden van belangrijke gebieden, 50cm-resolutie of beter, en meer frequent ververst om doorlopen updates.
-      name: Maxar premiumbeelden (bèta)
-    Maxar-Standard:
-      attribution:
-        text: Termen en terugkoppeling
-      description: Maxar Standard is een gecureerde set van beelden die 86% van het aardoppervlak bedekken, met 30-60cm-resolutie waar beschikbaar, aangevuld met Landsat. Gemiddelde is het 2,31 oud, met sommige gebieden die 2x per jaar worden geüpdatet.
-      name: Maxar standaardbeelden (bèta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap-bijdragers, CC-BY-SA
@@ -187,6 +177,11 @@ nl:
         text: GIS KIBAN 2500
       description: GIS KIBAN 2500 van finds.jp. Goed voor het tekenen van tracés, maar iets ouder.
       name: Japan GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Gemeente Gotenburg, CC0
+      description: Deze stadskaart is een overzichtskaart die Gotenburg beschrijft. Het bevat algemene informatie over landgebruik, communicatie, hydrografie, gebouwen, huisnummers en straatnamen, administratieve indeling en andere oriënterende teksten.
+      name: Stadskaart Gotenburg
     gsi.go.jp:
       attribution:
         text: GSI Japan

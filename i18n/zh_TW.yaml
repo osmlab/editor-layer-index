@@ -48,16 +48,6 @@ zh_TW:
         text: 使用條款與意見回饋
       description: 衛星與空照圖
       name: Mapbox 衛星圖
-    Maxar-Premium:
-      attribution:
-        text: 條款與回饋
-      description: Maxar Premium 是由 Maxar 底圖所組成的拼接圖，特定區域以 +Vivid 或自訂照片填充，其解析度為 50 公分或更高，且會不斷更新。
-      name: Maxar Premium 圖（測試版）
-    Maxar-Standard:
-      attribution:
-        text: 條款與回饋
-      description: Maxar Standard 是一套經過精心選取，覆蓋地球上 86% 的陸地面積，其解析度為 30 至 60 公分，不足的部份以 Landsat 填滿。平均更新時間為 2.31 年，部份地區每年更新兩次。
-      name: Maxar Standard 圖（測試版）
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 貢獻者，CC-BY-SA
@@ -187,6 +177,11 @@ zh_TW:
         text: GSI KIBAN 2500
       description: 透過 finds.jp 而來的 GSI Kiban 2500。適合用於追蹤軌跡，但有點老舊。
       name: 日本 GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © 哥特堡市, CC0
+      description: 城市地圖是描述哥特堡的概覽地圖。它包含了關於土地、通訊、水文、建築、地址號碼與街道名稱、行政區劃與其他方向文字等的一般性資訊。
+      name: 哥特堡城市地圖
     gsi.go.jp:
       attribution:
         text: GSI 日本
