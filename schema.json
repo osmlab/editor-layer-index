@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/osmlab/editor-layer-index",
     "properties": {
         "type": {
             "type": "string",
@@ -19,7 +20,8 @@
             "required": [
                 "id",
                 "type",
-                "url"
+                "url",
+                "name"
             ],
             "properties": {
                 "name": {
@@ -36,7 +38,23 @@
                         "tms",
                         "wms",
                         "bing",
-                        "scanex"
+                        "scanex",
+                        "wms_endpoint",
+                        "wmts"
+                    ]
+                },
+                "category": {
+                    "description": "A rough categorisation of different types of layers",
+                    "type": "string",
+                    "enum": [
+                        "photo",
+                        "map",
+                        "historicmap",
+                        "osmbasedmap",
+                        "historicphoto",
+                        "qa",
+                        "elevation",
+                        "other"
                     ]
                 },
                 "url": {
@@ -45,14 +63,32 @@
                 },
                 "min_zoom": {
                     "type": "integer",
-                    "minimum": 0
+                    "minimum": 0,
+                    "default": 0
                 },
                 "max_zoom": {
                     "type": "integer",
-                    "minimum": 0
+                    "minimum": 1
+                },
+                "permission_osm": {
+                    "description": "explicit/implicit permission by the owner for use in OSM",
+                    "type": "string",
+                    "enum": [
+                        "explicit",
+                        "implicit",
+                        "no"
+                    ]
+                },
+                "license": {
+                    "description": "The license for the imagery specified using a SPDX identifier, or 'COMMERCIAL'",
+                    "type": "string"
                 },
                 "license_url": {
                     "description": "A URL for the license or permissions for the imagery",
+                    "type": "string"
+                },
+                "privacy_policy_url": {
+                    "description": "A URL for the privacy policy of the operator",
                     "type": "string"
                 },
                 "id": {
@@ -65,7 +101,7 @@
                     "type": "string"
                 },
                 "country_code": {
-                    "description": "The ISO 3166-1 alpha-2 two letter country code in upper case",
+                    "description": "The ISO 3166-1 alpha-2 two letter country code in upper case. Use ZZ for unknown or multiple.",
                     "type": "string",
                     "pattern": "^[A-Z]{2}$"
                 },
@@ -87,9 +123,32 @@
                     "type": "string",
                     "pattern": "^\\d\\d\\d\\d(-\\d\\d(-\\d\\d)?)?$"
                 },
+                "no_tile_header": {
+                    "description": "HTTP header to check for information if the tile is invalid",
+                    "type": "object",
+                    "minProperties": 1,
+                    "maxProperties": 1,
+                    "patternProperties": {
+                        "^.*$": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
                 "overlay": {
                     "description": "'true' if tiles are transparent and can be overlaid on another source",
-                    "type": "boolean"
+                    "type": "boolean",
+                    "default": "false"
                 },
                 "available_projections": {
                     "type": "array",

@@ -1,0 +1,111 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "orthophoto_lyon_2012",
+        "name": "Lyon Orthophoto 2012-03 10cm",
+        "type": "wms",
+        "url": "https://download.data.grandlyon.com/wms/grandlyon?language=fre&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1830_5150_10cm_CC46,1830_5155_10cm_CC46,1830_5160_10cm_CC46,1830_5165_10cm_CC46,1830_5170_10cm_CC46,1830_5175_10cm_CC46,1830_5180_10cm_CC46,1830_5185_10cm_CC46,1830_5190_10cm_CC46,1835_5150_10cm_CC46,1835_5155_10cm_CC46,1835_5160_10cm_CC46,1835_5165_10cm_CC46,1835_5170_10cm_CC46,1835_5175_10cm_CC46,1835_5180_10cm_CC46,1835_5185_10cm_CC46,1835_5190_10cm_CC46,1840_5150_10cm_CC46,1840_5155_10cm_CC46,1840_5160_10cm_CC46,1840_5165_10cm_CC46,1840_5170_10cm_CC46,1840_5175_10cm_CC46,1840_5180_10cm_CC46,1840_5185_10cm_CC46,1840_5190_10cm_CC46,1845_5150_10cm_CC46,1845_5155_10cm_CC46,1845_5160_10cm_CC46,1845_5165_10cm_CC46,1845_5170_10cm_CC46,1845_5175_10cm_CC46,1845_5180_10cm_CC46,1845_5185_10cm_CC46,1845_5190_10cm_CC46,1850_5155_10cm_CC46,1850_5160_10cm_CC46,1850_5165_10cm_CC46,1850_5170_10cm_CC46,1850_5175_10cm_CC46,1850_5180_10cm_CC46,1850_5185_10cm_CC46,1855_5155_10cm_CC46,1855_5165_10cm_CC46,1855_5170_10cm_CC46,1855_5175_10cm_CC46,1855_5180_10cm_CC46,1855_5185_10cm_CC46,1860_5155_10cm_CC46,1860_5160_10cm_CC46,1860_5165_10cm_CC46,1860_5170_10cm_CC46,1860_5175_10cm_CC46,1860_5180_10cm_CC46,1860_5185_10cm_CC46,1865_5155_10cm_CC46,1865_5160_10cm_CC46,1865_5165_10cm_CC46,1865_5170_10cm_CC46&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "end_date": "2012-03",
+        "start_date": "2012-03",
+        "country_code": "FR",
+        "available_projections": [
+            "EPSG:4171",
+            "EPSG:4326",
+            "EPSG:2154",
+            "EPSG:27572",
+            "EPSG:27562",
+            "EPSG:3946",
+            "EPSG:3857"
+        ],
+        "attribution": {
+            "url": "https://data.grandlyon.com/imagerie/orthophotographie-2012-du-grand-lyon",
+            "text": "Grand Lyon Smart Data DSIT",
+            "required": false
+        },
+        "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
+        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    4.690486,
+                    45.546522
+                ],
+                [
+                    4.831309,
+                    45.546522
+                ],
+                [
+                    4.831309,
+                    45.571307
+                ],
+                [
+                    4.883437,
+                    45.571307
+                ],
+                [
+                    4.883437,
+                    45.59745
+                ],
+                [
+                    5.166222,
+                    45.59745
+                ],
+                [
+                    5.166222,
+                    45.745327
+                ],
+                [
+                    5.107934,
+                    45.745327
+                ],
+                [
+                    5.107934,
+                    45.881452
+                ],
+                [
+                    4.906982,
+                    45.881452
+                ],
+                [
+                    4.906982,
+                    45.92107
+                ],
+                [
+                    4.84377,
+                    45.92107
+                ],
+                [
+                    4.84377,
+                    45.940115
+                ],
+                [
+                    4.715432,
+                    45.940115
+                ],
+                [
+                    4.715432,
+                    45.870179
+                ],
+                [
+                    4.674581,
+                    45.870179
+                ],
+                [
+                    4.674581,
+                    45.717805
+                ],
+                [
+                    4.695675,
+                    45.717805
+                ],
+                [
+                    4.690486,
+                    45.546522
+                ]
+            ]
+        ]
+    }
+}

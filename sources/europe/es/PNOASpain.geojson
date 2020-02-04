@@ -7,9 +7,26 @@
             "required": true
         },
         "name": "PNOA Spain",
-        "url": "http://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "ES",
         "type": "wms",
+        "available_projections": [
+                    "EPSG:25830", 
+                    "EPSG:32630", 
+                    "EPSG:4258", 
+                    "EPSG:4326", 
+                    "EPSG:4230", 
+                    "EPSG:25828", 
+                    "EPSG:25829", 
+                    "EPSG:25831", 
+                    "EPSG:32628", 
+                    "EPSG:32629", 
+                    "EPSG:32631", 
+                    "EPSG:23029", 
+                    "EPSG:23030", 
+                    "EPSG:23031", 
+                    "EPSG:3857"
+        ], 
         "best": true
     },
     "geometry": {

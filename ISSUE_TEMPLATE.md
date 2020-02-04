@@ -11,7 +11,7 @@ When **requesting the addition of an imagery layer**, please provide the followi
 
 ## License
 (required)<br/>
-See [FAQ.md](FAQ.md#what-imagery-licenses-are-compatible-with-this-index) for information
+See FAQ at https://github.com/osmlab/editor-layer-index/blob/gh-pages/FAQ.md#what-imagery-licenses-are-compatible-with-this-index for information
 about which licenses are compatible with this index.
 
 ## Is the license compatible with OSM?
@@ -20,9 +20,12 @@ about which licenses are compatible with this index.
 ## Attribution (text, URL, required?)
 (optional)
 
+## Privacy policy (URL)
+(required)
+
 ## Icon
 (optional)
 
 ## Bounding polygon
 (if possible, provide a bounding polygon where the imagery is valid, e.g. as a GeoJSON or OSM file.)<br/>
-See [FAQ.md](FAQ.md#how-can-i-draw-a-bounding-polygon) for information about how to draw a bounding polygon.
+See FAQ at https://github.com/osmlab/editor-layer-index/blob/gh-pages/FAQ.md#how-can-i-draw-a-bounding-polygon) for information about how to draw a bounding polygon.

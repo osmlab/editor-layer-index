@@ -3,29 +3,22 @@ da:
     Bing:
       description: Satellit og luft-foto.
       name: Bing luftfoto
-    DigitalGlobe-Premium:
-      attribution:
-        text: Betingelser & tilbagemelding
-      description: Premium DigitalGlobe satellitfoto.
-      name: DigitalGlobe Premium fotos.
-    DigitalGlobe-Standard:
-      attribution:
-        text: Betingelser & tilbagemelding
-      description: Standard DigitalGlobe satellitfotos.
-      name: DigitalGlobe Standard fotos.
     EsriWorldImagery:
       attribution:
-        text: Betingelser & tilbegemelding
+        text: Vilkår & tilbagemelding
       description: Esri World fotos.
       name: Esri World fotos
-    MAPNIK:
+    EsriWorldImageryClarity:
       attribution:
-        text: © OpenStreetMap bidragsydere, CC BY-SA
+        text: Vilkår & tilbagemelding
+      description: Esri arkivfotos som kan være af bedre kvalitet og mere præcise end standard-laget.
+      name: Esri World fotos (Clarity) Beta
+    MAPNIK:
       description: Standard-laget fra OpenStreetMap.
       name: OpenStreetMap (standard)
     Mapbox:
       attribution:
-        text: Betingelser & tilbegemelding
+        text: Vilkår & tilbagemelding
       description: Satellit og luft-foto.
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
@@ -56,44 +49,50 @@ da:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap bidragsydere, CC BY-SA
       name: 'OSM Inspector: Tagging'
+    US-TIGER-Roads-2014:
+      description: Ved zoom-niveau 16+ offentligt tilgængelige public domain kort-data fra US Census. Ved lavere niveauer kun ændringer siden 2006, eksklusiv ændringer allerede indarbejdet i OpenStreetMap.
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: Gul = Public domain kort-data fra US Census. Rød = Ingen data i OpenStreetMap
+      name: TIGER Roads 2017
+    US_Forest_Service_roads_overlay:
+      name: Amerikansk skovvejs-overlag (U.S. Forest Service)
     Waymarked_Trails-Cycling:
       attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap bidragsydere, ODbL 1.0
+        text: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
       name: 'Afmærkede spor: Cykling'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap bidragsydere, ODbL 1.0
+        text: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
       name: 'Afmærkede spor: Vandring'
     Waymarked_Trails-MTB:
       attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap bidragsydere, ODbL 1.0
+        text: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
       name: 'Afmærkede spor: MTB'
     Waymarked_Trails-Skating:
       attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap bidragsydere, ODbL 1.0
+        text: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
       name: 'Afmærkede spor: Skøjtning'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap bidragsydere, ODbL 1.0
+        text: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
       name: 'Afmærkede spor: Vintersport'
     basemap.at:
       attribution:
         text: basemap.at
-      description: Basiskort for Østrig, baseret på offentlige data.
+      description: © waymarkedtrails.org, OpenStreetMap-bidragsydere, CC by-SA 3.0
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
       description: Ortofoto-lag leveret af basemap.at. "Efterfølger" til geoimage.at.
       name: basemap.at Ortofoto
-    hike_n_bike:
-      attribution:
-        text: © OpenStreetMap bidragsydere
-      name: Vandring & Cykling
+    kelkkareitit:
+      name: Nordisk snescooter-overlag (Kelkkareitit.fi)
     mapbox_locator_overlay:
       attribution:
-        text: Betingelser & tilbagemelding
-      description: Viser større objekter for at hjælpe dig med at finde vej.
+        text: Vilkår & tilbagemelding
+      description: Viser større objekter ved høj zoom for at hjælpe dig med at finde vej.
       name: Lokaliserings-overlag
     openpt_map:
       attribution:
@@ -102,7 +101,7 @@ da:
     osm-gps:
       attribution:
         text: © OpenStreetMap bidragsydere
-      description: Offentlige GPS-spor uploaded til OpenStreetMap,
+      description: Offentlige GPS-spor uploadet til OpenStreetMap.
       name: OpenStreetMap GPS-spor
     osm-mapnik-black_and_white:
       attribution:
@@ -121,8 +120,6 @@ da:
         text: '© Fliser: skobbler Map data: OpenStreetMap bidragsydere'
       name: skobbler
     stamen-terrain-background:
-      attribution:
-        text: Kort-fliser af Stamen Design, under CC BY 3.0
       name: Stamen Terræn
     tf-cycle:
       attribution:

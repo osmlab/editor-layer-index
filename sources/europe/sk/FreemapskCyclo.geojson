@@ -7,12 +7,12 @@
             "required": true
         },
         "name": "Freemap.sk Cyclo",
-        "url": "http://t{switch:1,2,3,4}.freemap.sk/C/{zoom}/{x}/{y}.jpeg",
+        "url": "https://{switch:a,b,c,d}.freemap.sk/C/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 16,
         "min_zoom": 8,
         "country_code": "SK",
         "type": "tms",
-        "icon": "http://www.freemap.sk/index.php?c=core.download&filename=/JOSM/freemap.png"
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
     },
     "geometry": {
         "type": "Polygon",

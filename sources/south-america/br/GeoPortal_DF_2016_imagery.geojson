@@ -1,0 +1,36 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "GeoPortal_DF_2016",
+        "name": "GeoPortal DF 2016",
+        "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
+        "url": "https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/FOTO_2016/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 22,
+        "start_date": "2016",
+        "end_date": "2016",
+        "country_code": "BR",
+        "attribution": {
+            "text": "GeoPortal DF",
+            "required": false,
+            "url": "http://www.geoportal.segeth.df.gov.br/"
+        },
+        "type": "wms",
+        "description": "Satellite imagery"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-48.27335580555556, -16.048080430555558],
+                [-48.213492855555558, -15.641392452777778],
+                [-48.001597016666665, -15.546371897222221],
+                [-47.803954261111109, -15.552073130555554],
+                [-47.504639511111108, -15.623338547222222],
+                [-47.486585605555554, -15.975864808333336],
+                [-47.79920323333333, -16.022424880555558],
+                [-47.956937355555553, -16.056632280555558],
+                [-48.27335580555556, -16.048080430555558]
+            ]
+        ]
+    }
+}

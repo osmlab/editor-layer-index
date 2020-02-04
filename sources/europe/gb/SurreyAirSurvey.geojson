@@ -3,13 +3,13 @@
     "properties": {
         "id": "Surrey-Air_Survey",
         "name": "Surrey Air Survey",
+        "start_date": "2007",
         "end_date": "2009",
-        "url": "http://gravitystorm.dev.openstreetmap.org/surrey/{zoom}/{x}/{y}.png",
-        "max_zoom": 19,
+        "url": "https://{switch:a,b,c}.surrey.aerial.openstreetmap.org.uk/layer/gb_surrey_aerial/{zoom}/{x}/{y}.png",
+        "max_zoom": 21,
         "min_zoom": 8,
         "country_code": "GB",
-        "type": "tms",
-        "start_date": "2007"
+        "type": "tms"
     },
     "geometry": {
         "type": "Polygon",

@@ -5,15 +5,16 @@
         "name": "Waymarked Trails: Hiking",
         "i18n": true,
         "attribution": {
-            "url": "http://hiking.waymarkedtrails.org/en/help/legal",
-            "text": "© Sarah Hoffmann, CC by-SA 3.0, map data OpenStreetMap contributors, ODbL 1.0",
+            "url": "https://hiking.waymarkedtrails.org/en/help/legal",
+            "text": "© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0",
             "required": true
         },
         "overlay": true,
-        "url": "http://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png",
+        "url": "https://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png",
         "max_zoom": 17,
         "type": "tms",
-        "icon": "http://static.waymarkedtrails.org/img/map_hiking.png"
+        "category": "other",
+        "icon": "https://static.waymarkedtrails.org/img/map_hiking.png"
     },
     "geometry": null
 }

@@ -4,9 +4,14 @@
         "id": "sjcgis.org-Aerials_2013_WM",
         "name": "2013 aerial imagery for San Juan County WA",
         "end_date": "2013-06",
-        "url": "http://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://sjcgis.org/arcgis/rest/services/Basemaps/Aerials_2013_WM/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 19,
         "country_code": "US",
+        "attribution": {
+            "url": "https://www.arcgis.com/home/item.html?id=7bf69831861d438d8365cf9f46662523",
+            "text": "Pictometry Inc, San Juan County GIS",
+            "required": true
+        },
         "type": "tms",
         "start_date": "2013-05",
         "best": false,

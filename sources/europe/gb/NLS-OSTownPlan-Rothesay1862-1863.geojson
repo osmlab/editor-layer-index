@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_rothesay1862_1863",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/rothesay.html",
-            "text": "National Library of Scotland - Rothesay 1862-1863",
-            "required": true
-        },
-        "name": "OS Town Plans, Rothesay 1862-1863 (NLS)",
-        "end_date": "1864",
-        "url": "http://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1862",
-        "description": "Detailed town plan of Rothesay 1862-1863, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     55.82864114
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Rothesay 1862-1863",
+            "url": "https://maps.nls.uk/townplans/rothesay.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Rothesay 1862-1863, courtesy of National Library of Scotland.",
+        "end_date": "1864",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_rothesay1862_1863",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Rothesay 1862-1863 (NLS)",
+        "start_date": "1862",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

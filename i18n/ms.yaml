@@ -3,19 +3,15 @@ ms:
     Bing:
       description: Imejan satelit dan udara.
       name: Imejan udara Bing
-    DigitalGlobe-Premium:
+    EsriWorldImagery:
       attribution:
         text: Terma & Maklum Balas
-      description: Imejan satelit Premium DigitalGlobe.
-      name: Imejan DigitalGlobe Premium
-    DigitalGlobe-Standard:
+      description: Imejan sejagat Esri.
+      name: Esri World Imagery
+    EsriWorldImageryClarity:
       attribution:
         text: Terma & Maklum Balas
-      description: Imejan satelit Standard DigitalGlobe.
-      name: Imejan DigitalGlobe Standard
     MAPNIK:
-      attribution:
-        text: © Penyumbang-penyumbang OpenStreetMap, CC-BY-SA
       description: Lapisan OpenStreetMap tersedia.
       name: OpenStreetMap (Standard)
     Mapbox:
@@ -51,40 +47,31 @@ ms:
       attribution:
         text: © Geofabrik GmbH, penyumbang-penyumbang OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Penandaan'
+    US-TIGER-Roads-2014:
+      description: Pada tahap zum 16+, data peta domain awam dari Banci AS. Pada tahap zum yang lebih rendah, hanya perubahan sejak 2006 tanpa perubahan yang telah dimasukkan ke dalam OpenStreetMap
+      name: TIGER Roads 2014
+    US-TIGER-Roads-2017:
+      description: Kuning = Data peta domain awam daripada Banci AS. Merah = Data tidak ditemui dalam OpenStreetMap
+      name: TIGER Roads 2017
     Waymarked_Trails-Cycling:
-      attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, data peta penyumbang-penyumbang OpenStreetMap, ODbL 1.0
       name: 'Waymarked Trails: Berbasikal'
     Waymarked_Trails-Hiking:
-      attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, data peta penyumbang-penyumbang OpenStreetMap, ODbL 1.0
       name: 'Waymarked Trails: Mendaki'
     Waymarked_Trails-MTB:
-      attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, data peta penyumbang-penyumbang OpenStreetMap, ODbL 1.0
-      name: 'Waymarked Trails: MTB'
+      name: 'Waymarked Trails: Basikal bukit (MTB)'
     Waymarked_Trails-Skating:
-      attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, data peta penyumbang-penyumbang OpenStreetMap, ODbL 1.0
       name: 'Waymarked Trails: Luncur'
     Waymarked_Trails-Winter_Sports:
-      attribution:
-        text: © Sarah Hoffmann, CC by-SA 3.0, data peta penyumbang-penyumbang OpenStreetMap, ODbL 1.0
       name: 'Waymarked Trails: Sukan Musim Sejuk'
     basemap.at:
       attribution:
         text: basemap.at
-      description: Petaasas Austria, berdasarkan data kerajaan.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Lapisan Orthofoto disediakan oleh basemap.at. "Pengganti" imejan geoimage.at.
+      description: Lapisan Ortofoto disediakan oleh basemap.at. "Pengganti" imejan geoimage.at.
       name: Orthofoto basemap.at
-    hike_n_bike:
-      attribution:
-        text: © Penyumbang-penyumbang OpenStreetMap
-      name: Hike & Bike
     mapbox_locator_overlay:
       attribution:
         text: Terma & Maklum Balas
@@ -116,8 +103,6 @@ ms:
         text: '© Tiles: data Peta skobbler: penyumbang-penyumbang OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
-      attribution:
-        text: Jubin peta oleh Stamen Design, di bawah CC BY 3.0
       name: Rupa Bumi Stamen
     tf-cycle:
       attribution:

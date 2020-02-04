@@ -1,18 +1,5 @@
 ## Contributing
 
-### Prerequisites
-* Command line development tools (`make`, `git`) for your platform
-  * Ubuntu: `sudo apt-get install build-essential git`
-  * Mac OS X: Install Xcode and run `xcode-select --install` from a command line
-  * Arch Linux: `sudo pacman -S make git`
-* Python and Pip
-  * Ubuntu: `sudo apt-get install python-pip python-dev`
-  * Mac OS X (via [Homebrew](http://brew.sh/)): `brew install python`, then `brew linkapps python`
-  * Arch Linux: `sudo pacman -S python2 python2-jsonschema`
-* `jsonschema` package (for running `make check`)
-  * `pip install jsonschema`
-
-
 ### Adding new sources
 
 See [FAQ.md](FAQ.md#what-imagery-licenses-are-compatible-with-this-index) for information
@@ -21,10 +8,32 @@ about which licenses are compatible with this index.
 The 'source' documents for this project are the .geojson files in `sources`. To add
 a new imagery source, add a new file to this directory.
 
-Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, and `url` properties. To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
+Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, `url`, and `category` properties.
+To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
+
+We further recommend to add the licence related and `privacy_policy_url` properties.
 
 See [schema.json](schema.json) for the full list of available properties.
 
+##### Source URL
+
+The source `url` property should contain a url with replacement tokens. An application will replace the tokens as needed to download image tiles. Whenever possible, use https URLs.
+
+Supported TMS tokens:
+- `{zoom}`, `{x}`, `{y}` for Z/X/Y tile coordinates
+- `{-y}` for flipped TMS-style Y coordinates
+- `{switch:a,b,c}` for DNS server multiplexing
+
+Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
+
+Supported WMS tokens:
+- `{proj}` - requested projection (e.g. EPSG:3857)
+- `{width}`, `{height}` - requested image dimensions (e.g. 256, 512)
+- `{bbox}` - requested bounding box
+
+Example: `http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}`
+
+Make sure you submit the most appropriate image format for the images: usually, jpeg for photography and png for maps. See #435 for a case where bmp was better.
 
 ##### Imagery Extent
 
@@ -47,18 +56,19 @@ except that a reduced precision date is allowed. For example, `2013-04-15T14:02:
 is a fully specified ISO 8601 date-time, `2013-04-15` could be used for just the date,
 or `2013-04` for just the month, `2013` for just the year.
 
-Implementations may round down the end date (e.g. consider `2013` the same as the
-start of `2013` so to specify imagery taken sometime in 2013, use `"start_date": "2013"`,
-`"end_date": "2014"`.
+To specify imagery taken sometime in 2019, use `"start_date": "2019"`,
+`"end_date": "2019"`.
 
+Implementations *must not* round down the end date (e.g. consider `2013` the same as the
+start of `2013`. Note that this is the opposite of what we did before, and layers before 2015 could have overly wide date ranges.
 
-### Building the combined files
+### Submitting your modifications
 
-After you've made a modification:
+Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `gh-pages`.
 
-1. run `make check` to validate the source files against `schema.json`
-2. run `make` to generate `imagery.xml`, `imagery.json`, and `imagery.geojson`
+After you've made a modification, and submit a pull request including those json files. Tests will be run automatically.
 
+We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
 
 ### Translations
 

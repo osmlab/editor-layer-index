@@ -3,15 +3,19 @@
     "properties": {
         "name": "Sóskút, Pusztazámor, Tárnok, Diósd ortophoto 2017",
         "attribution": {
-            "url": "http://fototerkep.hu/",
+            "url": "http://fototerkep.hu",
             "text": "Fototerkep.hu",
             "required": true
         },
         "url": "http://adam.openstreetmap.hu/mapproxy/tiles/1.0.0/Soskut-Tarnok-Pusztazamor-Diosd/mercator/{zoom}/{x}/{y}.png",
+        "min_zoom": 11,
+        "max_zoom": 20,
         "start_date": "2017-03",
+        "end_date": "2017-03",
         "best": true,
         "country_code": "HU",
         "type": "tms",
+        "description": "5 cm resolution bald image of 4 settlement",
         "id": "Soskut_Pusztazamor_Tarnok_Diosd_orto_2017"
     },
     "geometry": {

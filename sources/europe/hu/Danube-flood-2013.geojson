@@ -1,9 +1,11 @@
 {
     "type": "Feature",
     "properties": {
+        "start_date": "2013",
+        "end_date": "2013",
         "id": "Duna_2013",
         "attribution": {
-            "url": "http://fototerkep.hu/",
+            "url": "http://fototerkep.hu",
             "text": "Fotótérkép.hu",
             "required": true
         },
@@ -11,8 +13,9 @@
         "url": "http://e.tile.openstreetmap.hu/dunai-arviz-2013/{zoom}/{x}/{y}.jpg",
         "max_zoom": 20,
         "min_zoom": 10,
-        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k",
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#.C3.81rv.C3.ADzi_ortofot.C3.B3_a_Dun.C3.A1r.C3.B3l",
         "country_code": "HU",
+        "description": "Riverbank of Danube at Budapest, Szentendre and Szigetmonostor",
         "type": "tms"
     },
     "geometry": {

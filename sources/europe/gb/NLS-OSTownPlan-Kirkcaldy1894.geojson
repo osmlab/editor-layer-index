@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_kirkcaldy1894",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/kirkcaldy_2.html",
-            "text": "National Library of Scotland - Kirkcaldy 1894",
-            "required": true
-        },
-        "name": "OS Town Plans, Kirkcaldy 1894 (NLS)",
-        "end_date": "1895",
-        "url": "http://geo.nls.uk/maps/towns/kirkcaldy1894/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1894",
-        "description": "Detailed town plan of Kirkcaldy 1894, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     56.09513375
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Kirkcaldy 1894",
+            "url": "https://maps.nls.uk/townplans/kirkcaldy_2.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Kirkcaldy 1894, courtesy of National Library of Scotland.",
+        "end_date": "1895",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_kirkcaldy1894",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Kirkcaldy 1894 (NLS)",
+        "start_date": "1894",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/kirkcaldy1894/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

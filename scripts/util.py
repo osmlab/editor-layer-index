@@ -1,7 +1,7 @@
 def getprojs(elem):
     o = []
     projs_node = elem.getElementsByTagName('projections')
-    if projs_node:
+    if projs_node and projs_node[0].parentNode.tagName != 'mirror':
         o = []
         for proj_node in projs_node[0].getElementsByTagName('code'):
             code = proj_node.childNodes[0].nodeValue
@@ -33,18 +33,3 @@ def getrings(elem):
             rings.append(ring)
         return bbox, rings
     return None, None
-
-def indent(elem, level=0):
-    i = "\n" + level*"  "
-    if len(elem):
-        if not elem.text or not elem.text.strip():
-            elem.text = i + "  "
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-        for elem in elem:
-            indent(elem, level+1)
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-    else:
-        if level and (not elem.tail or not elem.tail.strip()):
-            elem.tail = i

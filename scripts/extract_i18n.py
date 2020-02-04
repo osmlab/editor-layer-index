@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Extracts imagery names for i18n"""
 import io
 import json
@@ -27,6 +28,6 @@ print(yaml.safe_dump(
     allow_unicode=True,
     default_flow_style=False,
     default_style='',
-    encoding='utf-8',
+
     width=99999
 ))

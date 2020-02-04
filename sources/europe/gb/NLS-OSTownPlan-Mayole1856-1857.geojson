@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_maybole1856_1857",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/maybole.html",
-            "text": "National Library of Scotland - Mayole 1856-1857",
-            "required": true
-        },
-        "name": "OS Town Plans, Mayole 1856-1857 (NLS)",
-        "end_date": "1858",
-        "url": "http://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1856",
-        "description": "Detailed town plan of Mayole 1856-1857, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     55.34340178
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Mayole 1856-1857",
+            "url": "https://maps.nls.uk/townplans/maybole.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Mayole 1856-1857, courtesy of National Library of Scotland.",
+        "end_date": "1858",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_maybole1856_1857",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Mayole 1856-1857 (NLS)",
+        "start_date": "1856",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/maybole/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

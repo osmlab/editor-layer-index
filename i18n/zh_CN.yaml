@@ -1,26 +1,46 @@
 zh_CN:
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 最近的航拍图
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 的 10厘米 航拍图
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV 佛兰德地区数字高程模型 II, 0.25 米多向山体阴影
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 米 Skyview
     Bing:
       description: 卫星和航空影像
       name: 必应航空影像
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: 条款与反馈
-      description: DigitalGlobe 优质卫星影像
-      name: DigitalGlobe 优质影像
-    DigitalGlobe-Standard:
-      attribution:
-        text: 条款与反馈
-      description: DigitalGlobe 标准卫星影像
-      name: DigitalGlobe 标准影像
+        text: Sentinel-2 无云 - https://s2maps.eu by EOX IT Services GmbH (包含已修改的 Copernicus Sentinel data 2017 & 2018)
+      description: 经后期处理的 Sentinel 卫星影像。
+      name: eox.at 2018 无云
     EsriWorldImagery:
       attribution:
         text: 条款和反馈
       description: Esri 世界影像
       name: Esri 世界影像
+    EsriWorldImageryClarity:
+      attribution:
+        text: 条款与反馈
+      description: 比默认图层或许更为清晰准确的 Esri 归档影像。
+      name: Esri 世界影像 (清晰) Beta
     MAPNIK:
       attribution:
-        text: © OpenStreetMap贡献者, 署名-相同方式共享
+        text: © OpenStreetMap 贡献者, 署名-相同方式共享
       description: OpenStreetMap 默认图层
       name: OpenStreetMap (标准)
     Mapbox:
@@ -30,113 +50,287 @@ zh_CN:
       name: Mapbox 卫星
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：地址'
     OSM_Inspector-Geometry:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：几何'
     OSM_Inspector-Highways:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：道路'
     OSM_Inspector-Multipolygon:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：区域（面）'
     OSM_Inspector-Places:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：地名'
     OSM_Inspector-Routing:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：路线'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik有限公司, OpenStreetMap贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM查看器：标签'
-    US-TIGER-Roads-2012:
-      name: TIGER 道路 2012
+    SPW_ORTHO_LAST:
+      name: SPW(allonie) 最新航空影像
+    SPW_PICC:
+      name: SPW(allonie) PICC 数字图像
     US-TIGER-Roads-2014:
-      description: 在缩放等级16级以上是来自美国人口调查局的公共领域地图数据。低缩放等级下仅包含自2006年以来的变更，不含已纳入OpenStreetMap的变更。
+      description: 在缩放等级16级以上是来自美国人口调查局的公共领域地图数据。低缩放等级下仅包含自2006年以来的变更，不含已纳入 OpenStreetMap 的变更。
       name: TIGER 道路 2014
     US-TIGER-Roads-2017:
       description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
       name: TIGER 道路 2017
+    US-TIGER-Roads-2018:
+      description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
+      name: TIGER 道路 2018
+    US-TIGER-Roads-2019:
+      description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
+      name: TIGER 道路 2019
+    USDA-NAIP:
+      description: 近年来自美国各州的国家农业影像计划 (NAIP) 的 DOQQ。
+      name: 国家农业影像计划
+    US_Forest_Service_roads_overlay:
+      description: '公路：绿色线框 = 未分级。棕色线框 = 未铺设路面。表面：沙砾 = 浅棕色填充，沥青 = 黑色，已铺设 = 灰色，土地 = 白色，混凝土 = 蓝色，草地 = 绿色。季节性 = 白色条状'
+      name: 美国森林道路叠加层
+    UrbISOrtho2016:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbIS-Ortho 2019
+    UrbisAdmFR:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
-        text: © Sarah Hoffmann, 署名-相同方式共享3.0, 地图数据版权OpenStreetMap贡献者, 开放数据库授权1.0
+        text: © waymarkedtrails.org, OpenStreetMap 贡献者, 署名-相同方式共享 3.0
       name: '以路径表示的小路：自行车道'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © Sarah Hoffmann, 署名-相同方式共享3.0, 地图数据版权OpenStreetMap贡献者, 开放数据库授权1.0
+        text: © waymarkedtrails.org, OpenStreetMap 贡献者, 署名-相同方式共享 3.0
       name: '以路径表示的小路：徒步'
     Waymarked_Trails-MTB:
       attribution:
-        text: © Sarah Hoffmann, 署名-相同方式共享3.0, 地图数据版权OpenStreetMap贡献者, 开放数据库授权1.0
+        text: © waymarkedtrails.org, OpenStreetMap 贡献者, 署名-相同方式共享 3.0
       name: '以路径表示的小路：山地自行车'
     Waymarked_Trails-Skating:
       attribution:
-        text: © Sarah Hoffmann, 署名-相同方式共享3.0, 地图数据版权OpenStreetMap贡献者, 开放数据库授权1.0
+        text: © waymarkedtrails.org, OpenStreetMap 贡献者, 署名-相同方式共享 3.0
       name: '以路径表示的小路：滑冰'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © Michael Spreng, 署名-相同方式共享3.0, 地图数据版权OpenStreetMap贡献者, 开放数据库授权1.0
+        text: © waymarkedtrails.org, OpenStreetMap 贡献者, 署名-相同方式共享 3.0
       name: '以路径表示的小路：冬季运动'
     basemap.at:
       attribution:
         text: basemap.at
-      description: 基于政府数据的奥地利底图
+      description: 基于政府数据的奥地利底图。
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: 由basemap.at提供的正射影像图层，接替geoimage.at影像图层。
-      name: basemap.at正射影像
-    hike_n_bike:
+      description: 由 basemap.at 提供的正射影像图层，接替 geoimage.at 影像图层。
+      name: basemap.at 正射影像
+    basemap.at-overlay:
       attribution:
-        text: © OpenStreetMap贡献者
-      name: 徒步与自行车
+        text: basemap.at
+      description: 由basemap.at 提供的注释叠加层
+      name: basemap.at 叠加层
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: 由 basemap.at 提供的地表层
+      name: basemap.at 地表
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: 由basemap.at 提供的地形层
+      name: basemap.at 地形
+    eufar-balaton:
+      attribution:
+        text: 欧洲空载研究舰队(EUFAR) 巴拉顿正射影像（2010）
+      description: 来自巴拉顿湖沼学研究所的1940年地理标记照片
+      name: 欧洲空载研究舰队(EUFAR) 巴拉顿正射影像
+    finds.jp_KBN_2500:
+      attribution:
+        text: 国土地理院基盘地图 2500
+      description: 由 finds.jp 提供的国土地理院基盘地图 2500。适合描绘，但较为陈旧。
+      name: 日本国土地理院基盘地图 2500
+    gothenburg-citymap:
+      attribution:
+        text: © 哥德堡市, CC0
+      description: 城市地图是描述哥德堡的概览地图。 它包含有关土地、通讯、水文、建筑物、地址号码和街道名称，行政区划和其他方向性文字的一般信息。
+      name: 哥德堡城市地图
+    gsi.go.jp:
+      attribution:
+        text: 日本国土地理院
+      description: 日本国土地理院正射影像(电子国土基本图)。通常比 Bing 更好，但较为陈旧。
+      name: 日本国土地理院正射影像
+    gsi.go.jp_airphoto:
+      attribution:
+        text: 日本国土地理院
+      description: 日本国土地理院航空影像(空中写真)。未经过正射校正，但与国土地理院正射影像相比，其内容较新和/或覆盖范围有所不同。
+      name: 日本国土地理院航空影像
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: 日本国土地理院无缝照片
+      description: 日本国土地理院无缝影像。国土地理院最新正射、航空、灾后等影像的集合。
+      name: 日本国土地理院无缝影像
+    gsi.go.jp_std_map:
+      attribution:
+        text: 日本国土地理院
+      description: 日本国土地理院标准地图。广泛覆盖。
+      name: 日本国土地理院地图
+    helsingborg-orto:
+      attribution:
+        text: © 赫尔辛堡市
+      description: 来自2016年赫尔辛堡市的正射影像，公有领域
+      name: 赫尔辛堡市正射影像
+    kalmar-orto-2014:
+      attribution:
+        text: © 卡尔马市
+      description: 来自2014年卡尔马市北部海岸的正射影像
+      name: 卡尔马市北部正射影像（2014）
+    kalmar-orto-2016:
+      attribution:
+        text: © 卡尔马市
+      description: 来自2016年卡尔马市南部海岸的正射影像
+      name: 卡尔马市南部正射影像（2016）
+    kalmar-orto-2018:
+      attribution:
+        text: © 卡尔马市
+      description: 来自2018年卡尔马市城区的正射影像
+      name: 卡尔马市城区正射影像（2018）
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: 来自 OSM 的 Kelkkareitit.fi 机动雪橇车径（覆盖斯堪的纳维亚国家）
+      name: 斯堪的纳维亚国家机动雪橇叠加层
+    lantmateriet-orto1960:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet), CC0
+      description: 1955-1965年瑞典正射镶嵌影像。新旧照片都可能会出现。
+      name: 瑞典国家测绘局历史正射影像（1960）
+    lantmateriet-orto1975:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet), CC0
+      description: 1970-1980年瑞典正射镶嵌影像。正在建设中。
+      name: 瑞典国家测绘局历史正射影像（1975）
+    lantmateriet-topowebb:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet), CC0
+      description: 瑞典地形图，1:50 000
+      name: 瑞典国家测绘局地形图
+    linkoping-orto:
+      attribution:
+        text: © 林雪平市
+      description: 来自2010年林雪平市的正射影像，公开数据
+      name: 林雪平市正射影像
     mapbox_locator_overlay:
       attribution:
         text: 条款与反馈
-      description: 显示主要要素辅助定向
+      description: 叠加显示主要要素，以辅助定位
       name: 定位辅助叠加层
     openpt_map:
       attribution:
-        text: © OpenStreetMap贡献者, 署名-相同方式共享
+        text: © OpenStreetMap 贡献者, 署名-相同方式共享
       name: OpenPT Map (叠加层)
     osm-gps:
       attribution:
-        text: © OpenStreetMap贡献者
+        text: © OpenStreetMap 贡献者
       description: 上传至 OpenStreetMap 的公开 GPS 轨迹
       name: OpenStreetMap GPS 轨迹
     osm-mapnik-black_and_white:
       attribution:
-        text: © OpenStreetMap贡献者, 署名-相同方式共享
+        text: © OpenStreetMap 贡献者, 署名-相同方式共享
       name: OpenStreetMap（黑白标准）
     osm-mapnik-german_style:
       attribution:
-        text: © OpenStreetMap贡献者, 署名-相同方式共享
+        text: © OpenStreetMap 贡献者, 署名-相同方式共享
       name: OpenStreetMap（德国样式）
+    osmse-ekonomiska:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet)
+      description: “经济地理图”扫描版本，约1950-1980年
+      name: 瑞典国家测绘局经济地理图（1950-1980）
     qa_no_address:
       attribution:
-        text: © Simon Poole, 数据© OpenStreetMap贡献者
+        text: © Simon Poole, 数据 © OpenStreetMap 贡献者
       name: 地址缺失质检
     skobbler:
       attribution:
-        text: '© 瓦片 skobbler, 地图数据 OpenStreetMap贡献者'
+        text: '© 瓦片：skobbler 地图数据：OpenStreetMap 贡献者'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: 机动雪橇车径
+      name: 瑞典机动雪橇地图
     stamen-terrain-background:
       attribution:
-        text: 地图瓦片由Stamen Design设计并以知识共享署名3.0协议授权
+        text: 地图瓦片由 Stamen 设计，并以 署名 3.0 协议授权。数据由 OpenStreetMap 提供并采用开放数据共享开放数据库许可协议 (ODbL) 授权。
       name: Stamen 地形
+    stockholm-orto:
+      attribution:
+        text: © 斯德哥尔摩市, CC0
+      description: 来自2016年斯德哥尔摩市的正射影像，CC0 许可
+      name: 斯德哥尔摩市正射影像
     tf-cycle:
       attribution:
-        text: 地图© Thunderforest, 数据© OpenStreetMap贡献者
+        text: 地图 © Thunderforest，数据 © OpenStreetMap 贡献者
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
-        text: 地图© Thunderforest, 数据© OpenStreetMap贡献者
+        text: 地图 © Thunderforest，数据 © OpenStreetMap 贡献者
       name: Thunderforest 地貌
+    trafikverket-baninfo:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典铁路网络，包括侧线
+      name: 瑞典交通管理局铁路网络
+    trafikverket-baninfo-option:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典铁路网络，并可选择多种地图图层
+      name: 瑞典交通管理局铁路网络选项
+    trafikverket-vagnat:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典国家道路数据库(NVDB)道路网络
+      name: 瑞典交通管理局道路网络
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: '瑞典国家道路数据库(NVDB)新增细节：道路编号、交通稳静化、休息区、公交车站、桥梁、隧道和测速照相机'
+      name: 瑞典交通管理局道路网络追加项
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典国家道路数据库(NVDB)道路名称
+      name: 瑞典交通管理局道路名称
+    trafikverket-vagnat-option:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典国家道路数据库(NVDB)道路网络，并可选择多种地图图层
+      name: 瑞典交通管理局道路网络选项

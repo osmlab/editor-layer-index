@@ -1,6 +1,7 @@
 {
     "type": "Feature",
     "properties": {
+        "license_url": "https://wiki.openstreetmap.org/wiki/Potential_Datasources#Texas",
         "id": "tnris.org",
         "type": "tms",
         "name": "Texas Orthophoto",
@@ -9,7 +10,9 @@
         "max_zoom": 20,
         "country_code": "US",
         "attribution": {
-            "url": "https://tnris.org/maps-and-data/online-mapping-services/"
+            "url": "https://tnris.org/maps-and-data/online-mapping-services",
+            "text": "Texas Natural Resources Information System",
+            "required": true
         }
     },
     "geometry": {

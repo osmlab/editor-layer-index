@@ -3,19 +3,13 @@ yue:
     Bing:
       description: 衞星同般空相。
       name: 必應般空相
-    DigitalGlobe-Premium:
+    EsriWorldImagery:
       attribution:
         text: 條款同回應
-      description: 數碼地球，特等衞星相。
-      name: 數碼地球特等相。
-    DigitalGlobe-Standard:
+    EsriWorldImageryClarity:
       attribution:
         text: 條款同回應
-      description: 數碼地球，一般衞星相。
-      name: 數碼地球一般相。
     MAPNIK:
-      attribution:
-        text: 版權所有，公家街圖協力人。共創之下，任發任改，然而必須提及協力者，改咗必以同樣條款發放。
       description: 預設公家街圖層
       name: 公家街圖（一般）
     Mapbox:
@@ -23,6 +17,9 @@ yue:
         text: 條款同回應
       description: 衞星同般空相。
       name: 輿圖盒衛星
+    mapbox_locator_overlay:
+      attribution:
+        text: 條款同回應
     tf-cycle:
       name: 雷林公家單車地圖
     tf-landscape:

@@ -8,10 +8,11 @@
             "required": false
         },
         "name": "MD Latest 6 Inch Aerial Imagery",
-        "url": "http://whoots.mapwarper.net/tms/{zoom}/{x}/{y}/MD_SixInchImagery/http://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer",
+        "url": "https://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=MD_SixInchImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
         "country_code": "US",
-        "type": "tms",
+        "type": "wms",
+        "available_projections": ["EPSG:4326", "EPSG:2248", "EPSG:102685", "EPSG:26985", "EPSG:3857"],
         "start_date": "2013",
         "end_date": "2016",
         "description": "Six Inch resolution aerial imagery for the State of Maryland"

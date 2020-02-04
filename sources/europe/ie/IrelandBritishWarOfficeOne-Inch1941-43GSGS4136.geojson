@@ -1,22 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "attribution": {
-            "url": "http://geo.nls.uk/maps/",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136",
-        "url": "http://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png",
-        "max_zoom": 15,
-        "min_zoom": 5,
-        "country_code": "IE",
-        "type": "tms",
-        "id": "GSGS4136",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -240,6 +223,25 @@
                     51.4147902
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://geo.nls.uk/maps"
+        },
+        "country_code": "IE",
+        "end_date": "1943",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "GSGS4136",
+        "max_zoom": 15,
+        "min_zoom": 5,
+        "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136",
+        "start_date": "1941",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

@@ -1,4 +1,4 @@
-#!env python2
+#!/usr/bin/env python
 import json, sys, string, util, os
 from xml.dom.minidom import parse
 from collections import OrderedDict
@@ -6,6 +6,7 @@ from collections import OrderedDict
 if len(sys.argv) != 3:
     print("Usage: %s [JOSM XML file] [target directory]"  % __file__)
     print("Converts JOSM imagery XML file into individual source files for editor-layer-index.")
+    print("Hint: the latest JOSM imagery XML file is at https://josm.openstreetmap.de/maps")
     exit(1)
 
 dom = parse(sys.argv[1])
@@ -23,13 +24,25 @@ for imagery in imageries:
     entry['type'] = 'Feature'
 
     properties = entry['properties'] = OrderedDict()
-    id_node = imagery.getElementsByTagName('id')
-    if id_node:
-        properties['id'] = id_node[0].childNodes[0].nodeValue
+    properties['id'] = imagery.getElementsByTagName('id')[0].childNodes[0].nodeValue
     properties['name'] = imagery.getElementsByTagName('name')[0].childNodes[0].nodeValue
     properties['type'] = imagery.getElementsByTagName('type')[0].childNodes[0].nodeValue
     properties['url']  = imagery.getElementsByTagName('url')[0].childNodes[0].nodeValue
 
+    date_node = imagery.getElementsByTagName('date')
+    if date_node:
+        date_values = date_node[0].childNodes[0].nodeValue.split(';')
+        properties['start_date'] = date_values[0]
+        if len(date_values) == 1:
+            properties['end_date'] = date_values[0]
+        elif len(date_values) == 2 and date_values[1] != '-':
+            properties['end_date'] = date_values[1]
+
+    if imagery.getAttribute('overlay') == "true":
+        properties['overlay'] = True
+
+    if imagery.getAttribute('eli-best') == "true":
+        properties['best'] = True
 
     country_code_node = imagery.getElementsByTagName('country-code')
     if country_code_node:
@@ -52,7 +65,14 @@ for imagery in imageries:
         attr_url = attr_url_node[0].childNodes[0].nodeValue
 
     if any((attr_text, attr_required, attr_url)):
-        properties['attribution'] = dict(text=attr_text, url=attr_url, required=attr_required)
+        attribution_dict = dict()
+        if attr_text:
+            attribution_dict['text'] = attr_text
+        if attr_url:
+            attribution_dict['url'] = attr_url
+        if attr_required:
+            attribution_dict['required'] = attr_required
+        properties['attribution'] = attribution_dict
 
     default = None
 
@@ -74,11 +94,19 @@ for imagery in imageries:
 
     max_zoom_node = imagery.getElementsByTagName('max-zoom')
     if max_zoom_node:
-        properties['max_zoom'] = max_zoom_node[0].childNodes[0].nodeValue
+        properties['max_zoom'] = int(max_zoom_node[0].childNodes[0].nodeValue)
 
     min_zoom_node = imagery.getElementsByTagName('min-zoom')
     if min_zoom_node:
-        properties['min_zoom'] = min_zoom_node[0].childNodes[0].nodeValue
+        properties['min_zoom'] = int(min_zoom_node[0].childNodes[0].nodeValue)
+
+    permission_ref_node = imagery.getElementsByTagName('permission-ref')
+    if permission_ref_node:
+        properties['license_url'] = permission_ref_node[0].childNodes[0].nodeValue
+
+    description_node = imagery.getElementsByTagName('description')
+    if description_node:
+        properties['description'] = description_node[0].childNodes[0].nodeValue
 
     (bbox, rings) = util.getrings(imagery)
 
@@ -86,10 +114,15 @@ for imagery in imageries:
         entry['geometry'] = {}
         entry['geometry']['type'] = 'Polygon'
         entry['geometry']['coordinates'] = rings
+    else:
+        print("Entry {} doesn't have a geometry".format(properties['id']))
 
-    dir = os.path.join(sys.argv[2], properties['country_code']) if 'country_code' in properties else sys.argv[2]
-    try:
-        os.mkdir(dir)
-    except OSError:
-        pass
-    open('%s/%s.geojson' % (dir, strfn(properties['name'])), 'w+').write(json.dumps(entry, indent=4))
+    if not os.path.exists(sys.argv[2]):
+        os.makedirs(sys.argv[2])
+    directory = os.path.join(sys.argv[2], properties['country_code'].lower()) if 'country_code' in properties else sys.argv[2]
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    output = json.dumps(entry, ensure_ascii=False, separators=(',', ':'))
+    if sys.version_info.major == 2:
+        output = output.encode('utf8')
+    open('%s/%s.geojson' % (directory, strfn(properties['name'])), 'w+').write(output)

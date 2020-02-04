@@ -1,22 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS-OS-1st_Series",
-        "attribution": {
-            "url": "http://geo.nls.uk/maps/",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "NLS - OS 1:25k 1st Series 1937-61",
-        "url": "http://geo.nls.uk/mapdata2/os/25000/{zoom}/{x}/{-y}.png",
-        "max_zoom": 16,
-        "min_zoom": 5,
-        "country_code": "GB",
-        "type": "tms",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -1950,6 +1933,25 @@
                     55.4153626
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://geo.nls.uk/maps"
+        },
+        "country_code": "GB",
+        "end_date": "1962",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS-OS-1st_Series",
+        "max_zoom": 16,
+        "min_zoom": 5,
+        "name": "NLS - OS 1:25k 1st Series 1937-61",
+        "start_date": "1937",
+        "type": "tms",
+        "url": "https://geo.nls.uk/mapdata2/os/25000/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

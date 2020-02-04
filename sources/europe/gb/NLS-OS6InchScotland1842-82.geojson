@@ -1,22 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS-OS-6inch-Scotland-hist",
-        "attribution": {
-            "url": "http://geo.nls.uk/maps/",
-            "text": "National Library of Scotland Historic Maps",
-            "required": true
-        },
-        "name": "NLS - OS 6-inch Scotland 1842-82",
-        "url": "http://geo.nls.uk/maps/os/six_inch/{zoom}/{x}/{-y}.png",
-        "max_zoom": 16,
-        "min_zoom": 5,
-        "country_code": "GB",
-        "type": "tms",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png"
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -1658,6 +1641,25 @@
                     59.5626284
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://geo.nls.uk/maps"
+        },
+        "country_code": "GB",
+        "end_date": "1883",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS-OS-6inch-Scotland-hist",
+        "max_zoom": 16,
+        "min_zoom": 5,
+        "name": "NLS - OS 6-inch Scotland 1842-82",
+        "start_date": "1842",
+        "type": "tms",
+        "url": "https://geo.nls.uk/mapdata3/os/6inchfirst/{zoom}/{x}/{y}.png" 
+    },
+    "type": "Feature"
 }

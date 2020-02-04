@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import json, sys, io, argparse
 
 def convert_json_source(args, source):
@@ -9,7 +10,7 @@ def convert_json_source(args, source):
     if polygon_coords:
         if args.gen_bbox:
             # extent_obj['polygon'] = polygon_coords
-            # generate bbox from polygon coordinates as a stop gap         
+            # generate bbox from polygon coordinates as a stop gap
             min_lon = 180
             max_lon = -180
             min_lat = 90
@@ -39,11 +40,12 @@ def convert_json_source(args, source):
 
     for f in ['name', 'type', 'url', 'license_url', 'id', 'description',
             'country_code', 'default', 'best', 'start_date', 'end_date',
-            'overlay', 'available_projections', 'attribution', 'icon']:
+            'overlay', 'available_projections', 'attribution', 'icon',
+            'privacy_policy_url']:
         thing = properties.get(f)
         if thing is not None:
             converted[f] = thing
-     
+
     for f in ['min_zoom', 'max_zoom']:
         thing = properties.get(f)
         if thing is not None:
@@ -65,11 +67,9 @@ args = parser.parse_args()
 features = []
 for file in args.files:
     with io.open(file, 'r') as f:
-        features.append(convert_json_source(args, json.load(f)))
+        features.append(convert_json_source(args, json.load(f, parse_float=lambda x: round(float(x), 5))))
 
-print(json.dumps(
-    features,
-    indent=4,
-    sort_keys=True,
-    separators=(',', ': ')
-))
+output = json.dumps(features, sort_keys=True, ensure_ascii=False, separators=(',', ':'))
+if sys.version_info.major == 2:
+    output = output.encode('utf8')
+print(output)

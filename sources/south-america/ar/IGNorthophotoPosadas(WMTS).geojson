@@ -1,0 +1,113 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "ign-posadas",
+    "name": "IGN orthophoto Posadas (WMTS)",
+    "type": "wms_endpoint",
+    "url": "https://ide.ign.gob.ar/geoservicios/services/sensores_remotos/posadas/ImageServer/WMSServer?request=GetCapabilities&service=WMS",
+    "country_code": "AR",
+    "available_projections": [
+      "EPSG:4326",
+      "EPSG:3857"
+    ],
+    "attribution": {
+      "url": "https://www.ign.gob.ar/",
+      "text": "Instituto Geográfico Nacional de la República Argentina"
+    },
+    "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+    "max_zoom": 20,
+    "min_zoom": 1,
+    "license_url": "https://www.ign.gob.ar/descargas/tyc1.html"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -55.9810715,
+          -27.4916098
+        ],
+        [
+          -55.8153629,
+          -27.490097
+        ],
+        [
+          -55.7954665,
+          -27.47875
+        ],
+        [
+          -55.8022879,
+          -27.4690413
+        ],
+        [
+          -55.8012221,
+          -27.4681587
+        ],
+        [
+          -55.8121651,
+          -27.4541611
+        ],
+        [
+          -55.8301429,
+          -27.4491796
+        ],
+        [
+          -55.8466995,
+          -27.4398465
+        ],
+        [
+          -55.8656011,
+          -27.3760703
+        ],
+        [
+          -55.8835789,
+          -27.346409
+        ],
+        [
+          -55.9903089,
+          -27.3463459
+        ],
+        [
+          -56.0080025,
+          -27.3541722
+        ],
+        [
+          -56.004947,
+          -27.3586531
+        ],
+        [
+          -56.0172401,
+          -27.3639543
+        ],
+        [
+          -56.0075051,
+          -27.3815599
+        ],
+        [
+          -56.0175954,
+          -27.3867337
+        ],
+        [
+          -56.0060128,
+          -27.4029478
+        ],
+        [
+          -56.0187323,
+          -27.4098239
+        ],
+        [
+          -56.0039521,
+          -27.4309541
+        ],
+        [
+          -56.0166716,
+          -27.4387113
+        ],
+        [
+          -55.9810715,
+          -27.4916098
+        ]
+      ]
+    ]
+  }
+}

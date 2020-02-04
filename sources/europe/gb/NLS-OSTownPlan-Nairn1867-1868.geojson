@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_nairn1867_1868",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/nairn.html",
-            "text": "National Library of Scotland - Nairn 1867-1868",
-            "required": true
-        },
-        "name": "OS Town Plans, Nairn 1867-1868 (NLS)",
-        "end_date": "1869",
-        "url": "http://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1867",
-        "description": "Detailed town plan of Nairn 1867-1868, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     57.57899149
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Nairn 1867-1868",
+            "url": "https://maps.nls.uk/townplans/nairn.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Nairn 1867-1868, courtesy of National Library of Scotland.",
+        "end_date": "1869",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_nairn1867_1868",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Nairn 1867-1868 (NLS)",
+        "start_date": "1867",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/nairn/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

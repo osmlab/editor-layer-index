@@ -7,13 +7,13 @@
             "required": true
         },
         "name": "Geoportal.gov.pl (Orthophotomap)",
-        "url": "http://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}",
+        "url": "https://wms.misek.pl/geoportal.orto/tms/{zoom}/{x}/{y}",
         "max_zoom": 24,
         "min_zoom": 6,
         "country_code": "PL",
         "type": "tms",
         "best": true,
-        "icon": "http://i.imgur.com/aFlvMpM.png"
+        "icon": "https://i.imgur.com/aFlvMpM.png"
     },
     "geometry": {
         "type": "Polygon",

@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
+            "url": "https://www.openstreetmap.org/copyright"
+        },
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenSeaMap.png",
+        "id": "openseamap",
+        "max_zoom": 18,
+        "name": "OpenSeaMap",
+        "overlay": true,
+        "type": "tms",
+        "category": "osmbasedmap",
+        "url": "https://tiles.openseamap.org/seamark/{zoom}/{x}/{y}.png"
+    },
+    "type": "Feature",
+    "geometry": null
+}

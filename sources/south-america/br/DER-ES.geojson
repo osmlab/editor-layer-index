@@ -2,20 +2,20 @@
     "type": "Feature",
     "properties": {
         "id": "der-es",
+        "overlay": true,
         "url": "http://portal.der.es.gov.br/geoserver/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=deres-ext:TRECHOINFO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
         "country_code": "BR",
         "name": "DER-ES",
-        "license_url": "http://www.acessoainformacao.es.gov.br/DER-ES/",
+        "license_url": "http://www.acessoainformacao.es.gov.br/DER-ES",
         "attribution": {
-            "url": "https://der.es.gov.br/",
+            "url": "https://der.es.gov.br",
             "text": "Departamento de Estradas de Rodagem do Estado do Espírito Santo"
         },
         "available_projections": [
                                   "EPSG:3857",
                                   "EPSG:4326",
                                   "EPSG:5396",
-                                  "EPSG:5641",
                                   "EPSG:22525"
                                   ]
     },

@@ -1,12 +1,14 @@
 {
     "type": "Feature",
     "properties": {
+        "start_date": "2016",
+        "end_date": "2016",
         "id": "Benin_cotonou_pleiade_2016",
         "name": "Benin: Cotonou Pleiade 2016",
         "type": "tms",
         "max_zoom": 21,
         "best": true,
-        "url": "http://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Benin:cotonou_pleiade_2016&STYLE=&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}",
+        "url": "https://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Benin:cotonou_pleiade_2016&STYLE=&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}",
         "license_url": "http://taches.francophonelibre.org/project/6",
         "country_code": "BJ"
     },

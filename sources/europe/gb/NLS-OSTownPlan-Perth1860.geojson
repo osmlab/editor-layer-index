@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_perth1860",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/perth.html",
-            "text": "National Library of Scotland - Perth 1860",
-            "required": true
-        },
-        "name": "OS Town Plans, Perth 1860 (NLS)",
-        "end_date": "1861",
-        "url": "http://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1860",
-        "description": "Detailed town plan of Perth 1860, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     56.37794226
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Perth 1860",
+            "url": "https://maps.nls.uk/townplans/perth.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Perth 1860, courtesy of National Library of Scotland.",
+        "end_date": "1861",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_perth1860",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Perth 1860 (NLS)",
+        "start_date": "1860",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/perth/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

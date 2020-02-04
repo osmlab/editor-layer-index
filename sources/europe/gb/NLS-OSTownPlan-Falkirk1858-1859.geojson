@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_falkirk1858_1859",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/falkirk.html",
-            "text": "National Library of Scotland - Falkirk 1858-1859",
-            "required": true
-        },
-        "name": "OS Town Plans, Falkirk 1858-1859 (NLS)",
-        "end_date": "1860",
-        "url": "http://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1858",
-        "description": "Detailed town plan of Falkirk 1858-1859, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     55.99343101
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Falkirk 1858-1859",
+            "url": "https://maps.nls.uk/townplans/falkirk.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Falkirk 1858-1859, courtesy of National Library of Scotland.",
+        "end_date": "1860",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_falkirk1858_1859",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Falkirk 1858-1859 (NLS)",
+        "start_date": "1858",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/falkirk/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

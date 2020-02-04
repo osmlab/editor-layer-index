@@ -1,6 +1,8 @@
 {
     "type": "Feature",
     "properties": {
+        "start_date": "2013",
+        "end_date": "2013",
         "id": "rio2013",
         "url": "http://geo.rio.rj.gov.br/ArcGIS/services/Imagens/Mosaico_2013/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
@@ -8,11 +10,12 @@
         "name": "Rio Mosaic 2013",
         "license_url": "http://data.rio/about",
         "attribution": {
-            "url": "http://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2013_UTM/MapServer",
+            "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2013_UTM/MapServer",
             "text": "Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro."
         },
         "available_projections": [
             "EPSG:4326",
+            "EPSG:3857",
             "EPSG:29193"
         ]
     },

@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_stonehaven1864",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/stonehaven.html",
-            "text": "National Library of Scotland - Stonehaven 1864",
-            "required": true
-        },
-        "name": "OS Town Plans, Stonehaven 1864 (NLS)",
-        "end_date": "1865",
-        "url": "http://geo.nls.uk/maps/towns/stonehaven/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1864",
-        "description": "Detailed town plan of Stonehaven 1864, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     56.9565098
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Stonehaven 1864",
+            "url": "https://maps.nls.uk/townplans/stonehaven.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Stonehaven 1864, courtesy of National Library of Scotland.",
+        "end_date": "1865",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_stonehaven1864",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Stonehaven 1864 (NLS)",
+        "start_date": "1864",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/stonehaven/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }

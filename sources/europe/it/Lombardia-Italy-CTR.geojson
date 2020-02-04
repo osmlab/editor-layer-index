@@ -3,16 +3,17 @@
     "properties": {
         "id": "Lombardia-Italy-CTR",
         "attribution": {
-            "url": "http://www.dati.gov.it/iodl/2.0",
+            "url": "https://www.dati.gov.it/content/italian-open-data-license-v20",
             "text": "Regione Lombardia - Infrastruttura per l'informazione territoriale",
             "required": false
         },
         "name": "Lombardia - Italy (CTR)",
         "available_projections": [
+            "EPSG:3857",
             "EPSG:32632",
             "EPSG:4326"
         ],
-        "url": "http://www.cartografia.regione.lombardia.it/ArcGIS10/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://www.cartografia.regione.lombardia.it/ArcGIS10/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "IT",
         "type": "wms"
     },

@@ -3,11 +3,10 @@
     "properties": {
         "id": "IPR-orotofoto-vege-tms",
         "name": "IPR ortofoto Low-Vegetation (tmsproxy)",
-        "overlay": false,
-        "url": "http://osm-{switch:a,b,c}.zby.cz/tiles_ipr_vege.php/{zoom}/{x}/{y}.jpg",
+        "url": "https://osm-{switch:a,b,c}.zby.cz/tiles_ipr_vege.php/{zoom}/{x}/{y}.jpg",
         "max_zoom": 20,
         "min_zoom": 1,
-        "license_url": "http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
         "country_code": "CZ",
         "type": "tms"
     },

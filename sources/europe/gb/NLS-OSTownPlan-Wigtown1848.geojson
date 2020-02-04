@@ -1,25 +1,5 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NLS_wigtown1848",
-        "attribution": {
-            "url": "http://maps.nls.uk/townplans/wigtown_1.html",
-            "text": "National Library of Scotland - Wigtown 1848",
-            "required": true
-        },
-        "name": "OS Town Plans, Wigtown 1848 (NLS)",
-        "end_date": "1849",
-        "url": "http://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png",
-        "max_zoom": 20,
-        "min_zoom": 13,
-        "country_code": "GB",
-        "icon": "http://nls.tileserver.com/nls70-nq8.png",
-        "type": "tms",
-        "start_date": "1848",
-        "description": "Detailed town plan of Wigtown 1848, courtesy of National Library of Scotland."
-    },
     "geometry": {
-        "type": "Polygon",
         "coordinates": [
             [
                 [
@@ -43,6 +23,26 @@
                     54.8572296
                 ]
             ]
-        ]
-    }
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "National Library of Scotland - Wigtown 1848",
+            "url": "https://maps.nls.uk/townplans/wigtown_1.html"
+        },
+        "country_code": "GB",
+        "description": "Detailed town plan of Wigtown 1848, courtesy of National Library of Scotland.",
+        "end_date": "1849",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "id": "NLS_wigtown1848",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "OS Town Plans, Wigtown 1848 (NLS)",
+        "start_date": "1848",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/towns/wigtown1848/{zoom}/{x}/{-y}.png"
+    },
+    "type": "Feature"
 }
