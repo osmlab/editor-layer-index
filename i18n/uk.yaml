@@ -40,7 +40,7 @@ uk:
       name: Esri, знімки світу (очищені) бета
     MAPNIK:
       attribution:
-        text: © Учасники OpenStreetMap, CC-BY-SA
+        text: © Учасники OpenStreetMap, CC-BY-SA 2.0
       description: Типовий шар OpenStreetMap.
       name: OpenStreetMap (Стандартний)
     Mapbox:
@@ -48,16 +48,6 @@ uk:
         text: Умови використання та Відгуки
       description: Супутникові та аерофотознімки.
       name: 'Mapbox, супутникові знімки '
-    Maxar-Premium:
-      attribution:
-        text: Умови використання та Відгуки
-      description: Maxar Premium – мозаїка зібрана з основного покриття Maxar та окремих ділянок заповнених знімками +Vivid або знімками зробленими на замовлення, розподільча здатність 50 см чи краще, з поточним оновленням.
-      name: Maxar Premium (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Умови використання та Відгуки
-      description: Maxar Standard – підібрана збірка, що покриває 86% поверхні суші, з розподільчою здатністю 30-60 см, де це можливо, заповнена Landsat. Середній вік – 2.31 роки, деякі ділянки оновлюються 2 рази на рік.
-      name: Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, Учасники OpenStreetMap, CC-BY-SA
@@ -187,11 +177,11 @@ uk:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 від finds.jp. Годиться для мапінгу, але трохи застарілі дані.
       name: Japan GSI KIBAN 2500
-    gsi.go.jp:
+    gothenburg-citymap:
       attribution:
-        text: GSI Japan
-      description: Japan GSI ортофото. Зазвичай краще, ніж Bing, але трохи застарілі.
-      name: Japan GSI ортофото
+        text: © Муніципалітет Гетеборга, CC0
+      description: Мапа міста - це оглядова мапа, яка зображує Гетеборг. Вона містить загальну інформацію про землю, комунікації, гідрографію, будинки, адресні номери та назви вулиць, адміністративний поділ та інший орієнтаційний текст.
+      name: Мапа міста Гетеборг
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan

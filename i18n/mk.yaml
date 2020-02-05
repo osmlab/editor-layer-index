@@ -40,7 +40,7 @@ mk:
       name: Светски снимки на Esri (Clarity) Бета
     MAPNIK:
       attribution:
-        text: © Учесници на OpenStreetMap, CC-BY-SA
+        text: © Учесници на OpenStreetMap, CC-BY-SA 2.0
       description: Вообичаениот слој на OpenStreetMap.
       name: OpenStreetMap (стандардна)
     Mapbox:
@@ -48,16 +48,6 @@ mk:
         text: Услови и мислења
       description: Сателитски и воздушни снимки.
       name: Mapbox Сателитски
-    Maxar-Premium:
-      attribution:
-        text: Услови и мислења
-      description: Maxar-напредна е мозаик составен од основната карта на Maxar и избрани подрачја исполнети со +Vivid или прилагодени снимки за местата од интерес, разложност 50 см или подобра, превчитувањето е позачестено со постојаните поднови.
-      name: Снимки на Maxar-напредна (бета)
-    Maxar-Standard:
-      attribution:
-        text: Услови и мислења
-      description: Maxar-стандардна е стручно згрижена снимкозбирка која покрива 86% од копнената маса на Земјата, со разложност од 30-60 см кајшто е достапна, а со заднинска потполнка од Landsat. Просечната старост изнесува 2,31 години, иако некои подрачја се подновуваат двапати годишно.
-      name: Стандардни снимки на Maxar (бета)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, учесници на OpenStreetMap, CC-BY-SA
@@ -187,11 +177,11 @@ mk:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 преку finds.jp. Добра за исцртување траги, но малку постара.
       name: GSI Јапонија KIBAN 2500
-    gsi.go.jp:
+    gothenburg-citymap:
       attribution:
-        text: GSI Јапонија
-      description: Ортоснимки на GSI Јапонија. Обично подобри од Bing, но малку постари.
-      name: Ортоснимки на GSI Јапонија
+        text: © Општина Гетеборг, CC0
+      description: Градската карта дава описен преглед на Гетеборг. Содржи општи информации а земјиштето, врските, хидрографијата, градбите, адресните броеви и имињата на улиците, управната поделба и друг текст за насочување.
+      name: Градска карта на Гетеборг
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Јапонија

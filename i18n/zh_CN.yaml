@@ -15,6 +15,7 @@ zh_CN:
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
+      name: AIV 佛兰德地区数字高程模型 II, 0.25 米多向山体阴影
     AIV_DHMV_II_SVF_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -39,7 +40,7 @@ zh_CN:
       name: Esri 世界影像 (清晰) Beta
     MAPNIK:
       attribution:
-        text: © OpenStreetMap 贡献者, 署名-相同方式共享
+        text: © OpenStreetMap 贡献者, 署名-相同方式共享 2.0
       description: OpenStreetMap 默认图层
       name: OpenStreetMap (标准)
     Mapbox:
@@ -47,16 +48,6 @@ zh_CN:
         text: 条款与反馈
       description: 卫星和航空影像
       name: Mapbox 卫星
-    Maxar-Premium:
-      attribution:
-        text: 条款与反馈
-      description: Maxar Premium 是由 Maxar 底图所组成的拼接图，特定区域以 +Vivid 或自订照片填充，其解析度为 50 厘米或更高，且会不断更新。
-      name: Maxar 优质影像 (Beta)
-    Maxar-Standard:
-      attribution:
-        text: 条款与反馈
-      description: Maxar Standard 是一套经过精心选取，覆盖地球上 86% 的陆地面积，其解析度为 30-60 厘米，不足的部份以 Landsat 填满。平均更新时间为 2.31 年，部份地区每年更新两次。
-      name: Maxar 标准影像 (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
@@ -98,6 +89,9 @@ zh_CN:
     US-TIGER-Roads-2018:
       description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
       name: TIGER 道路 2018
+    US-TIGER-Roads-2019:
+      description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
+      name: TIGER 道路 2019
     USDA-NAIP:
       description: 近年来自美国各州的国家农业影像计划 (NAIP) 的 DOQQ。
       name: 国家农业影像计划
@@ -106,15 +100,27 @@ zh_CN:
       name: 美国森林道路叠加层
     UrbISOrtho2016:
       attribution:
-        text: 道路：绿色外框 = 非分类道路。棕色外框 = 土路。路面：碎石路 = 亮棕色实心填满，柏油 = 黑色，有铺面 = 灰色，地面 = 白色，水泥 = 蓝色，草地 = 绿色。季节性 = 白色条纹
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
+      attribution:
+        text: 由布鲁塞尔 UrbIS®© 驱动 - 发行与版权 CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -154,20 +160,88 @@ zh_CN:
     basemap.at-surface:
       attribution:
         text: basemap.at
+      description: 由 basemap.at 提供的地表层
+      name: basemap.at 地表
     basemap.at-terrain:
       attribution:
         text: basemap.at
       description: 由basemap.at 提供的地形层
       name: basemap.at 地形
+    eufar-balaton:
+      attribution:
+        text: 欧洲空载研究舰队(EUFAR) 巴拉顿正射影像（2010）
+      description: 来自巴拉顿湖沼学研究所的1940年地理标记照片
+      name: 欧洲空载研究舰队(EUFAR) 巴拉顿正射影像
     finds.jp_KBN_2500:
       attribution:
-        text: GSI KIBAN 2500
-    gsi.go.jp:
+        text: 国土地理院基盘地图 2500
+      description: 由 finds.jp 提供的国土地理院基盘地图 2500。适合描绘，但较为陈旧。
+      name: 日本国土地理院基盘地图 2500
+    gothenburg-citymap:
       attribution:
-        text: 日本GSI
+        text: © 哥德堡市, CC0
+      description: 城市地图是描述哥德堡的概览地图。 它包含有关土地、通讯、水文、建筑物、地址号码和街道名称，行政区划和其他方向性文字的一般信息。
+      name: 哥德堡城市地图
     gsi.go.jp_airphoto:
       attribution:
-        text: 日本GSI
+        text: 日本国土地理院
+      description: 日本国土地理院航空影像(空中写真)。未经过正射校正，但与国土地理院正射影像相比，其内容较新和/或覆盖范围有所不同。
+      name: 日本国土地理院航空影像
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: 日本国土地理院无缝照片
+      description: 日本国土地理院无缝影像。国土地理院最新正射、航空、灾后等影像的集合。
+      name: 日本国土地理院无缝影像
+    gsi.go.jp_std_map:
+      attribution:
+        text: 日本国土地理院
+      description: 日本国土地理院标准地图。广泛覆盖。
+      name: 日本国土地理院地图
+    helsingborg-orto:
+      attribution:
+        text: © 赫尔辛堡市
+      description: 来自2016年赫尔辛堡市的正射影像，公有领域
+      name: 赫尔辛堡市正射影像
+    kalmar-orto-2014:
+      attribution:
+        text: © 卡尔马市
+      description: 来自2014年卡尔马市北部海岸的正射影像
+      name: 卡尔马市北部正射影像（2014）
+    kalmar-orto-2016:
+      attribution:
+        text: © 卡尔马市
+      description: 来自2016年卡尔马市南部海岸的正射影像
+      name: 卡尔马市南部正射影像（2016）
+    kalmar-orto-2018:
+      attribution:
+        text: © 卡尔马市
+      description: 来自2018年卡尔马市城区的正射影像
+      name: 卡尔马市城区正射影像（2018）
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: 来自 OSM 的 Kelkkareitit.fi 机动雪橇车径（覆盖斯堪的纳维亚国家）
+      name: 斯堪的纳维亚国家机动雪橇叠加层
+    lantmateriet-orto1960:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet), CC0
+      description: 1955-1965年瑞典正射镶嵌影像。新旧照片都可能会出现。
+      name: 瑞典国家测绘局历史正射影像（1960）
+    lantmateriet-orto1975:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet), CC0
+      description: 1970-1980年瑞典正射镶嵌影像。正在建设中。
+      name: 瑞典国家测绘局历史正射影像（1975）
+    lantmateriet-topowebb:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet), CC0
+      description: 瑞典地形图，1:50 000
+      name: 瑞典国家测绘局地形图
+    linkoping-orto:
+      attribution:
+        text: © 林雪平市
+      description: 来自2010年林雪平市的正射影像，公开数据
+      name: 林雪平市正射影像
     mapbox_locator_overlay:
       attribution:
         text: 条款与反馈
@@ -190,6 +264,11 @@ zh_CN:
       attribution:
         text: © OpenStreetMap 贡献者, 署名-相同方式共享
       name: OpenStreetMap（德国样式）
+    osmse-ekonomiska:
+      attribution:
+        text: © 瑞典国家测绘局(Lantmäteriet)
+      description: “经济地理图”扫描版本，约1950-1980年
+      name: 瑞典国家测绘局经济地理图（1950-1980）
     qa_no_address:
       attribution:
         text: © Simon Poole, 数据 © OpenStreetMap 贡献者
@@ -198,10 +277,20 @@ zh_CN:
       attribution:
         text: '© 瓦片：skobbler 地图数据：OpenStreetMap 贡献者'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: 机动雪橇车径
+      name: 瑞典机动雪橇地图
     stamen-terrain-background:
       attribution:
         text: 地图瓦片由 Stamen 设计，并以 署名 3.0 协议授权。数据由 OpenStreetMap 提供并采用开放数据共享开放数据库许可协议 (ODbL) 授权。
       name: Stamen 地形
+    stockholm-orto:
+      attribution:
+        text: © 斯德哥尔摩市, CC0
+      description: 来自2016年斯德哥尔摩市的正射影像，CC0 许可
+      name: 斯德哥尔摩市正射影像
     tf-cycle:
       attribution:
         text: 地图 © Thunderforest，数据 © OpenStreetMap 贡献者
@@ -210,3 +299,33 @@ zh_CN:
       attribution:
         text: 地图 © Thunderforest，数据 © OpenStreetMap 贡献者
       name: Thunderforest 地貌
+    trafikverket-baninfo:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典铁路网络，包括侧线
+      name: 瑞典交通管理局铁路网络
+    trafikverket-baninfo-option:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典铁路网络，并可选择多种地图图层
+      name: 瑞典交通管理局铁路网络选项
+    trafikverket-vagnat:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典国家道路数据库(NVDB)道路网络
+      name: 瑞典交通管理局道路网络
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: '瑞典国家道路数据库(NVDB)新增细节：道路编号、交通稳静化、休息区、公交车站、桥梁、隧道和测速照相机'
+      name: 瑞典交通管理局道路网络追加项
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典国家道路数据库(NVDB)道路名称
+      name: 瑞典交通管理局道路名称
+    trafikverket-vagnat-option:
+      attribution:
+        text: © 瑞典交通管理局(Trafikverket), CC0
+      description: 瑞典国家道路数据库(NVDB)道路网络，并可选择多种地图图层
+      name: 瑞典交通管理局道路网络选项

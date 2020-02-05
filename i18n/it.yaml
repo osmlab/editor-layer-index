@@ -39,8 +39,6 @@ it:
       description: Le immagini ESRI potrebbero essere migliori e più precise di quelle impostate di default.
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
-      attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
       description: Il livello base di OpenStreetMap.
       name: OpenStreetMap (Standard)
     Mapbox:
@@ -48,16 +46,6 @@ it:
         text: Termini & Feedback
       description: Immagini satellitari e aeree.
       name: Mapbox Satellite
-    Maxar-Premium:
-      attribution:
-        text: Termini & Feedback
-      description: Maxar Premium è un mosaico composto dalla mappa base Maxar con alcune regioni in +Vivid o immagini da aree di interesse personalizzate, con una risoluzione di almeno 50cm, aggiornato con più frequenza e migliorato continuamente.
-      name: Immagini Maxar Premium (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Termini & Feedback
-      description: Maxar Standard è un set curato di immagini che copre l’86% della terra emersa mondiale, con risoluzione dai 30 ai 60cm laddove possibile e copertura alternativa che usa Landsat. L’età media è di 2,31 anni anche se alcune aree vengono aggiornate due volte l’anno.
-      name: Maxar Standard Imagery (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
@@ -187,11 +175,6 @@ it:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. Buono per la tracciatura ma un po’ vecchio.
       name: GSI KIBAN 2500 Giappone
-    gsi.go.jp:
-      attribution:
-        text: GSI Giappone
-      description: Ortofoto di GSI Giappone. In genere migliori di Bing ma un po’ più vecchie.
-      name: Ortofoto di GSI Giappone
     gsi.go.jp_airphoto:
       attribution:
         text: GSI del Giappone

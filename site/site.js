@@ -10,9 +10,32 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var testLayer;
 var testLayerOpacity = 1;
 
+var remoteControlHost = 'http://127.0.0.1:8111';
+
 function updateOpacity(value) {
     testLayerOpacity = value;
     testLayer.setOpacity(value);
+}
+
+function remoteControlURL(d) {
+    var remoteControlParams = {
+        title: d.properties.name,
+        type: d.properties.type,
+        min_zoom: d.properties.min_zoom,
+        max_zoom: d.properties.max_zoom,
+        url: d.properties.url
+    };
+
+    Object.keys(remoteControlParams).forEach(function (key) {
+        if (remoteControlParams[key] === undefined) {
+            delete remoteControlParams[key];
+        }
+    });
+
+    var remoteControlURL = remoteControlHost + '/imagery?' +
+        (new URLSearchParams(remoteControlParams)).toString();
+
+    return remoteControlURL;
 }
 
 d3.json("imagery.geojson", function(error, imagery) {
@@ -43,7 +66,8 @@ d3.json("imagery.geojson", function(error, imagery) {
         map.openPopup(
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
-                return match.feature.properties.name;
+                return match.feature.properties.name +
+                    ` [<a href="${remoteControlURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );
@@ -61,7 +85,7 @@ d3.json("imagery.geojson", function(error, imagery) {
             return d.properties.best === true;
         });
 
-    var imagery_links = divs.append('a')
+    var imagery_links = divs.append('span').append('a')
         .text(function(d) {
             return (d.properties['country_code'] || 'world') + ' / ' + d.properties.name + (d.properties.best ? '*' : '');
         })
@@ -149,6 +173,13 @@ d3.json("imagery.geojson", function(error, imagery) {
             else
                 return d.properties.type;
         });
+
+    var editorLinks = divs.append('span')
+        .classed('remote-control', true)
+        .append('a')
+        .text('JOSM')
+        .attr('href', remoteControlURL)
+        .attr('title', 'Add to JOSM')
 
     var meta = divs.append('div')
         .classed('meta', true);

@@ -21,7 +21,7 @@ about which licenses are compatible with this index.
 (optional)
 
 ## Privacy policy (URL)
-(optional)
+(required)
 
 ## Icon
 (optional)
