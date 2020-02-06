@@ -195,8 +195,14 @@ def test_tms(data, filename):
             .replace("{y}", str(tile.google[1]))
             .replace("{-y}", str(tile.tms[1]))
         )
-        r = httpx.get(myurl, headers=headers)
-        if r.status_code == 200 and magic.from_buffer(r.content).startswith(
+        try:
+            r = httpx.get(myurl, headers=headers)
+        except httpx.exceptions.NetworkError:
+            raise ValidationError(
+                "{}: tile url {} is not reachable: Network error".format(
+                    filename, myurl
+                )
+            )        if r.status_code == 200 and magic.from_buffer(r.content).startswith(
             ("JPEG", "PNG")
         ):
             logger.warning(
