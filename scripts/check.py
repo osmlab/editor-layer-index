@@ -202,7 +202,8 @@ def test_tms(data, filename):
                 "{}: tile url {} is not reachable: Network error".format(
                     filename, myurl
                 )
-            )        if r.status_code == 200 and magic.from_buffer(r.content).startswith(
+            )
+        if r.status_code == 200 and magic.from_buffer(r.content).startswith(
             ("JPEG", "PNG")
         ):
             logger.warning(
