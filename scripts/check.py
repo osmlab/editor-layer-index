@@ -289,6 +289,9 @@ for filename in arguments.path:
                         filename, round(iconsize / 1024.0, 2)
                     )
                 )
+        # min_zoom 0 is default
+        if "min_zoom" in source["properties"] and source["properties"]["min_zoom"] == 0:
+            logger.warning("Useless default min_zoom parameter in {}".format(filename))
 
         ## Validate that url will work as we expect
         params = []
@@ -303,18 +306,11 @@ for filename in arguments.path:
                 logger.error(
                     "Senseless available_projections parameter in {}".format(filename)
                 )
-            if "min_zoom" in source["properties"]:
-                if source["properties"]["min_zoom"] == 0:
-                    logger.warning("Useless min_zoom parameter in {}".format(filename))
             params = ["{zoom}", "{x}", "{y}"]
             test_tms(source, filename)
 
         ### wms: {proj}, {bbox}, {width}, {height}
         elif source["properties"]["type"] == "wms":
-            if "min_zoom" in source["properties"]:
-                logger.error("Senseless min_zoom parameter in {}".format(filename))
-            if "max_zoom" in source["properties"]:
-                logger.error("Senseless max_zoom parameter in {}".format(filename))
             if not "available_projections" in source["properties"]:
                 raise ValidationError(
                     "Missing available_projections parameter in {}".format(filename)
