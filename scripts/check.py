@@ -22,7 +22,6 @@ import json
 import io
 from argparse import ArgumentParser
 from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
-import spdx_lookup
 import colorlog
 import requests
 import os
@@ -92,12 +91,6 @@ for filename in arguments.path:
         ## {z} instead of {zoom}
         if '{z}' in source['properties']['url']:
             raise ValidationError('{z} found instead of {zoom} in tile url')
-        if 'license' in source['properties']:
-            license = source['properties']['license']
-            if not spdx_lookup.by_id(license) and license != 'COMMERCIAL':
-                raise ValidationError('Unknown license %s' % license)
-        else:
-            logger.debug("{} has no license property".format(filename))
 
         ## Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
