@@ -10,15 +10,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var testLayer;
 var testLayerOpacity = 1;
 
-var remoteControlHost = 'http://127.0.0.1:8111';
-
 function updateOpacity(value) {
     testLayerOpacity = value;
     testLayer.setOpacity(value);
 }
 
-function remoteControlURL(d) {
-    var remoteControlParams = {
+function josmURL(d) {
+    var params = {
         title: d.properties.name,
         type: d.properties.type,
         min_zoom: d.properties.min_zoom,
@@ -26,16 +24,22 @@ function remoteControlURL(d) {
         url: d.properties.url
     };
 
-    Object.keys(remoteControlParams).forEach(function (key) {
-        if (remoteControlParams[key] === undefined) {
-            delete remoteControlParams[key];
+    Object.keys(params).forEach(function (key) {
+        if (params[key] === undefined) {
+            delete params[key];
         }
     });
 
-    var remoteControlURL = remoteControlHost + '/imagery?' +
-        (new URLSearchParams(remoteControlParams)).toString();
+    return 'http://127.0.0.1:8111/imagery?' + (new URLSearchParams(params)).toString();
+}
 
-    return remoteControlURL;
+function idURL(d) {
+    var params = {
+        editor: 'id',
+        background: 'custom:' + d.properties.url
+    };
+
+    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString();
 }
 
 d3.json("imagery.geojson", function(error, imagery) {
@@ -67,7 +71,8 @@ d3.json("imagery.geojson", function(error, imagery) {
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
                 return match.feature.properties.name +
-                    ` [<a href="${remoteControlURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
+                    ` [<a href="${idURL(match.feature)}" title="Add to iD">iD</a>] ` +
+                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );
@@ -174,12 +179,21 @@ d3.json("imagery.geojson", function(error, imagery) {
                 return d.properties.type;
         });
 
-    var editorLinks = divs.append('span')
+    var josmLink = divs.append('span')
         .classed('remote-control', true)
         .append('a')
         .text('JOSM')
-        .attr('href', remoteControlURL)
+        .attr('href', josmURL)
         .attr('title', 'Add to JOSM')
+        .attr('target', '_blank')
+
+    var idLink = divs.append('span')
+        .classed('remote-control', true)
+        .append('a')
+        .text('iD')
+        .attr('href', idURL)
+        .attr('title', 'Add to iD')
+        .attr('target', '_blank')
 
     var meta = divs.append('div')
         .classed('meta', true);
