@@ -39,6 +39,8 @@ vi:
       description: Hình ảnh lưu trữ Esri có thể rõ hơn và chính xác hơn lớp mặc định.
       name: Esri Hình ảnh Thế giới (Clarity) Beta
     MAPNIK:
+      attribution:
+        text: © những người đóng góp vào OpenStreetMap, CC BY-SA 2.0
       description: Lớp OpenStreetMap mặc định.
       name: OpenStreetMap (Chuẩn)
     Mapbox:
@@ -159,16 +161,6 @@ vi:
         text: basemap.at
       description: Lớp phủ chú thích do basemap.at cung cấp.
       name: basemap.at Lớp phủ
-    basemap.at-surface:
-      attribution:
-        text: 'basemap.at '
-      description: Lớp mặt đất do basemap.at cung cấp.
-      name: basemap.at Mặt đất
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Lớp địa hình do basemap.at cung cấp.
-      name: basemap.at Địa hình
     eufar-balaton:
       attribution:
         text: Hình ảnh trực giao EUFAR Balaton 2010

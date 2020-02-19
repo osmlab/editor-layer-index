@@ -7,7 +7,7 @@ ar:
     AGIV10cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
-      name: الصور الجوية من AIV Flanders من 2013 إلى 2015 بدقة 10 سم
+      name: AIV فلاندرز 2013-2015 صور جوية 10 سم
     AGIVFlandersGRB:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -22,12 +22,19 @@ ar:
     Bing:
       description: الصور الجوية والقمر الصناعي.
       name: الصور الجوية ل بينج
+    EOXAT2018CLOUDLESS:
+      description: صور القمر الصناعي Sentinel بعد المعالجة.
+      name: eox.at 2018 غائم
     EsriWorldImagery:
       attribution:
         text: الشروط والملاحظات
+      description: صور العالم Esri.
+      name: صور العالم Esri.
     EsriWorldImageryClarity:
       attribution:
         text: الشروط والملاحظات
+      description: تقوم Esri بأرشفة الصور التي قد تكون أكثر وضوحًا ودقة من الطبقة الافتراضية.
+      name: صور العالم Esri (الوضوح) بيتا
     MAPNIK:
       description: الطبقة الافتراضية لخرائط الشارع المفتوحة.
       name: خرائط الشارع المفتوحة (قياسي)
@@ -39,6 +46,7 @@ ar:
     basemap.at:
       attribution:
         text: basemap.at
+      description: الخريطة الأساسية للنمسا ، بناءً على البيانات الحكومية.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -48,6 +56,7 @@ ar:
       attribution:
         text: الشروط والملاحظات
       description: عرض الميزات الرئيسية للمساعدة على توجيهك
+      name: محدد تراكب
     openpt_map:
       attribution:
         text: © مساهمو خرائط الشارع المفتوحة، رخصة المشاع الإبداعي
@@ -72,3 +81,4 @@ ar:
     tf-landscape:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
+      name: المناظر الطبيعية الغابات
