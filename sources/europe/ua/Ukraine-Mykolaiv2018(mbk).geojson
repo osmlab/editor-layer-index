@@ -7,6 +7,7 @@
         "url": "http://mbk.mkrada.gov.ua/map/rtile/carto_2013928517078615452/ua/{zoom}/{x}/{y}.png",
         "category": "photo",
         "permission_osm": "implicit",
+        "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
         "start_date": "2018",
         "end_date": "2018",
         "country_code": "UA",
@@ -17,7 +18,8 @@
         "attribution": {
             "text": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради",
             "required": true
-        }
+        },
+        "icon": "https://mkrada.gov.ua/favicon.ico"
 },
     "geometry": {
         "type": "Polygon",
