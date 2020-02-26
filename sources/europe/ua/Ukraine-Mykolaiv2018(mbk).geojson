@@ -10,11 +10,15 @@
         "start_date": "2018",
         "end_date": "2018",
         "country_code": "UA",
+        "best": true,
         "max_zoom": 19,
         "min_zoom": 11,
         "description": "Works only from within Ukraine or with an Ukrainian proxy server.",
-        "attribution": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради"
-    },
+        "attribution": {
+            "text": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради",
+            "required": true
+        }
+},
     "geometry": {
         "type": "Polygon",
         "coordinates": [
