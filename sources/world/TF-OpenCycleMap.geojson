@@ -10,11 +10,12 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/world/TF-OpenCycleMap.png",
         "id": "tf-cycle",
         "license_url": "https://thunderforest.com/terms",
+        "privacy_policy_url": "https://www.thunderforest.com/privacy",
         "max_zoom": 22,
         "name": "Thunderforest OpenCycleMap",
         "type": "tms",
-        "category": "osmbasedmap",
-        "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png"
+        "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png?apikey={apikey}",
+        "category": "osmbasedmap"
     },
     "type": "Feature"
 }
