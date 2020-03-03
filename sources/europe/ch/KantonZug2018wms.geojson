@@ -1,0 +1,90 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "GIS Kanton Zug",
+            "required": false
+        },
+        "available_projections": [
+            "EPSG:21781",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:2056"
+        ],
+        "best": true,
+        "country_code": "CH",
+        "start_date": "2018",
+        "end_date": "2018",
+        "id": "Zug-2018",
+        "name": "Kanton Zug Gemeinde Zug Süd 2018",
+        "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
+        "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
+        "type": "wms",
+        "category": "photo",
+        "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2018_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "min_zoom": 10,
+        "max_zoom": 21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.50052278038,
+                    47.11290726738
+                ],
+                [
+                    8.49638480444,
+                    47.11760578559
+                ],
+                [
+                    8.49451014131,
+                    47.12364168355
+                ],
+                [
+                    8.49537888764,
+                    47.12653493822
+                ],
+                [
+                    8.50461503282,
+                    47.13723550193
+                ],
+                [
+                    8.50322046635,
+                    47.13933492382
+                ],
+                [
+                    8.50466075632,
+                    47.14721867914
+                ],
+                [
+                    8.51099345982,
+                    47.15915870889
+                ],
+                [
+                    8.56414699529,
+                    47.15298693463
+                ],
+                [
+                    8.56519863558,
+                    47.14928662627
+                ],
+                [
+                    8.54924113721,
+                    47.13843297568
+                ],
+                [
+                    8.55097862987,
+                    47.12132387083
+                ],
+                [
+                    8.50052278038,
+                    47.11290726738
+                ]
+            ]
+        ]
+    }
+}
+
+
+

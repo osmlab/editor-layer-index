@@ -11,13 +11,13 @@
         ],
         "url": "https://secure.erlangen.de/arcgiser/services/Luftbilder2013/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Erlangen_ratio5_6.25cm.jp2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=d8659c9277ed4ba291a82ec1f2de3035",
-        "license": "CC-BY-3.0",
         "country_code": "DE",
         "attribution": {
             "text": "© Stadt Erlangen | © Aerowest GmbH",
             "required": true
         },
-        "type": "wms"
+        "type": "wms",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",

@@ -1,0 +1,28 @@
+{
+    "geometry": null,
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)",
+            "url": "https://s2maps.eu/"
+        },
+        "default": false,
+        "permission_osm": "explicit",
+        "description": "Post-processed Sentinel Satellite imagery.",
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/eox.png",
+        "id": "EOXAT2018CLOUDLESS",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Eox.at",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "start_date": "2018",
+        "end_date": "2018",
+        "max_zoom": 18,
+        "name": "eox.at 2018 cloudless",
+        "type": "wms",
+        "category": "photo",
+        "url": "https://tiles.maps.eox.at/??FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=s2cloudless-2018_3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    "type": "Feature"
+}

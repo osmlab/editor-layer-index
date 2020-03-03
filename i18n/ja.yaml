@@ -2,39 +2,32 @@ ja:
   imagery:
     AGIV:
       attribution:
-        text: オルソ写真Flanders 最新 © AGIV
-      name: AGIV Flanders 最新航空画像
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 最新航空画像
     AGIV10cm:
       attribution:
-        text: オルソ写真Flanders © AGIV
-      name: AGIV Flanders 2013-2015 航空写真 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 航空写真 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
-      description: 衛星・航空画像です。
+      description: 衛星・航空写真。撮影日付はCtrl+Shift+Bで現れる右下のパネルで確認可能。比較的新しい箇所が多いが位置ズレやゆがみ（特に高低差のある場所）に注意。日本では位置精度は概して国土地理院のものが高い。
       name: Bing航空画像
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: 規約＆フィードバック
-      description: DigitalGlobe-Premiumは DigitalGlobe ベースマップの繋ぎ合わせから成り、50cm以上の解像度した組み合わせで、選ばれた地域が+Vividや興味深いカスタムエリアで埋められ、今後の更新でより頻繁にリフレッシュされます。
-      name: DigitalGlobeプレミアム画像
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: 規約＆フィードバック
-      description: 画像の境界と取得日付。ラベルはズームレベル13以上で表示。
-      name: DigitalGlobeプレミアム画像撮影日
-    DigitalGlobe-Standard:
-      attribution:
-        text: 規約＆フィードバック
-      description: DigitalGlobe-Standardは地球の大陸部の86%をカバーする画像を集めたセットで、一部30-60cm解像度でランドサットを下敷きにしています。平均年齢は2.31歳で、場所によっては毎年2x 更新されます。
-      name: DigitalGlobe標準画像
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: 規約＆フィードバック
-      description: 画像の境界と取得日付。ラベルはズームレベル13以上で表示。
-      name: DigitalGlobe標準画像撮影日
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
+      description: 後処理済みのSentinel 衛星画像(日本では低解像度)
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: 規約 & フィードバック
@@ -47,7 +40,7 @@ ja:
       name: Esri World Imagery(精細版)ベータ
     MAPNIK:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © OpenStreetMap contributors, CC-BY-SA 2.0
       description: OpenStreetMap標準レイヤーです。
       name: OpenStreetMap (標準)
     Mapbox:
@@ -87,14 +80,21 @@ ja:
       name: SPW(allonie) 最新航空画像
     SPW_PICC:
       name: SPW(allonie) PICC numerical imagery
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
     US-TIGER-Roads-2014:
       description: ズームレベル16+ではUS Censusのパブリックドメインの地図データ。それ以下では2006年以降のOpenStreetmapに未投入の変更分のみ。
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
+      name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Highway: 緑枠 = unclassified.ブラウン枠 = track. Surface: gravel = ライトブラウン, Asphalt = 黒, paved = グレイ, ground =白, concrete = 青, grass = 緑. Seasonal = 白棒'
       name: U.S. Forest Roads Overlay
@@ -106,6 +106,14 @@ ja:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-オルソ 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -144,10 +152,71 @@ ja:
         text: basemap.at
       description: basemap.at が提供するオルソ写真レイヤ。geoimage.at 画像の「後継」。
       name: basemap.at Orthofoto
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: © OpenStreetMap contributors
-      name: Hike & Bike
+        text: basemap.at
+      description: Annotation overlay provided by basemap.at.
+      name: basemap.at Overlay
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Surface layer provided by basemap.at.
+      name: basemap.at Surface
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Terrain layer provided by basemap.at.
+      name: basemap.at Terrain
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton ortofotó 2010
+      description: 1940 geo-tagged photography from Balaton Limnological Institute.
+      name: EUFAR Balaton orthophotos
+    finds.jp_KBN_2500:
+      attribution:
+        text: 国土地理院 基盤地図2500
+      description: 独立行政法人 農研機構(NARO)より配信。ズームレベル15～20。輪郭が鮮明な地図画像なので最もトレースしやすく、概してBingより位置精度が高いが、Bingよりやや古いことが多い。
+      name: 国土地理院 基盤地図2500(NARO経由)
+    gothenburg-citymap:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.
+      name: Gothenburg City map
+    gsi.go.jp_airphoto:
+      attribution:
+        text: 国土地理院 簡易空中写真
+      description: 航空レーザー測量点検用写真をつなぎ合わせたもので、地理院オルソ画像とは撮影時期やカバー範囲が少し異なる部分もあるため、オルソ画像の代替として有用な場合がある。
+      name: 国土地理院 簡易空中写真
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: 国土地理院 シームレス写真
+      description: 国土地理院のシームレス写真。電子国土基本図(オルソ画像), 東日本大震災後正射画像, 森林(国有林)の空中写真(林野庁), 簡易空中写真, 国土画像情報, からそれぞれ最新の写真を組合せたもの。
+      name: 国土地理院 全国最新写真(シームレス)
+    gsi.go.jp_std_map:
+      attribution:
+        text: 国土地理院 標準地図
+      description: ズームレベル5～18の日本全国とその周辺地域をカバー。地図画像なのでトレースしやすく、概してBingより位置精度が高いが、やや古い場合がある。
+      name: 国土地理院 標準地図
+    helsingborg-orto:
+      attribution:
+        text: © Helsingborg municipality
+      description: Orthophotos from the municipality of Helsingborg 2016, public domain
+      name: Helsingborg Orthophoto
+    kalmar-orto-2014:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos for the north coast of the municipality of Kalmar 2014
+      name: Kalmar North Orthophoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos for the south coast of the municipality of Kalmar 2016
+      name: Kalmar South Orthophoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos for urban areas of the municipality of Kalmar 2018
+      name: Kalmar Urban Orthophoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -163,6 +232,16 @@ ja:
         text: © Lantmäteriet, CC0
       description: Mosaic of Swedish orthophotos from the period 1970–1980. Is under construction.
       name: Lantmäteriet Historic Orthophoto 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Topographic map of Sweden 1:50 000
+      name: Lantmäteriet Topographic Map
+    linkoping-orto:
+      attribution:
+        text: © Linköping municipality
+      description: Orthophotos from the municipality of Linköping 2010, open data
+      name: Linköping Orthophoto
     mapbox_locator_overlay:
       attribution:
         text: 規約 & フィードバック
@@ -207,6 +286,11 @@ ja:
       attribution:
         text: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL
       name: Stamen 地形図
+    stockholm-orto:
+      attribution:
+        text: © Stockholm municipality, CC0
+      description: Orthophotos from the municipality of Stockholm 2016, CC0 license
+      name: Stockholm Orthophoto
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors

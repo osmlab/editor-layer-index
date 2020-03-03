@@ -109,7 +109,7 @@ def add_source(source):
 for source in sources:
     try:
         add_source(source)
-    except StandardError:
+    except Exception:
         print('Failed to convert %s' % source)
         pass
 

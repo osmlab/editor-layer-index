@@ -2,41 +2,36 @@ he:
   imagery:
     AGIV:
       attribution:
-        text: Orthophoto Flanders העדכני ביותר © AGIV
-      name: צילומי האוויר העדכניים ביותר של AGIV Flanders
+        text: © agentschap מידע פלמי
+      name: צילומי האוויר העדכניים ביותר של AIV Flanders
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders‏ 2013-‎2015 צילום אווירי 10 ס״מ
+        text: © agentschap מידע פלמי
+      name: AIV Flanders‏ 2013-‎2015 צילום אווירי 10 ס״מ
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap מידע פלמי
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap מידע פלמי
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, הצללה ממגוון כיוונים 0.25 מטר
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap מידע פלמי
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, גורם מבט אווירי 0.25 מטר
     Bing:
       description: צילומי אוויר ולוויין.
       name: צילומי אוויר של Bing
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: תנאים ומשוב
-      name: צילומי DigitalGlobe Premium
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: תנאים ומשוב
-      description: ' גבולות ומועדי צילום. תוויות מופיעות ברמות תקריב של 13 ומעלה. '
-      name: דיגיטל גלוב' תצלומי אוויר פרמיום
-    DigitalGlobe-Standard:
-      attribution:
-        text: תנאים ומשוב
-      name: צילומים תקניים של DigitalGlobe
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: תנאים ומשוב
-      description: גבולות תמונות רקע ותאריכי צילום. תוויות מופיעות בתקריב ברמה 13 ומעלה.
-      name: דיגיטל גלוב' תצלומי אוויר
+        text: Sentinel-2 נטול עננים - https://s2maps.eu מבית שירותי EOX IT GmbH (מכיל נתונים ערוכים מתוך Copernicus Sentinel 2017 & 2018)
+      description: תמונות לוויין שעברו עיבוד מבית Sentinel.
+      name: eox.at 2018 נטול עננים
     EsriWorldImagery:
       attribution:
         text: תנאים ומשוב
-      description: ESRI תצלומי אוויר
+      description: ESRI תצלומי אוויר.
       name: ESRI תצלומי אוויר
     EsriWorldImageryClarity:
       attribution:
@@ -47,7 +42,7 @@ he:
       attribution:
         text: מתנדבי © OpenStreetMap,‏ CC-BY-SA
       description: שכבת בררת המחדל של OpenStreetMap.
-      name: OpenStreetMap (תקני)
+      name: OpenStreetMap (רגיל)
     Mapbox:
       attribution:
         text: תנאים ומשוב
@@ -85,8 +80,6 @@ he:
       name: הצילום האווירי העדכני ביותר של SPW(allonie)
     SPW_PICC:
       name: SPW(allonie) צילום PICC אלפא נומרי
-    US-TIGER-Roads-2012:
-      name: מידע טופולוגי ארה"ב  2012
     US-TIGER-Roads-2014:
       description: מידע ממשלתי מבוסס על המיפקד אוכלוסין מ2006. תוויות מופיעות ברמות תקריב של 16 ומעלה.
       name: מידע טופולוגי ארה"ב  2014
@@ -95,16 +88,41 @@ he:
 
         אדום = מידע שלא נמצא בOSM'
       name: מידע טופולוגי ארה"ב  2017
+    US-TIGER-Roads-2018:
+      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא בOSM
+      name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: צהוב = נתונים לרשות הציבור באדיבות משרד האוכלוסין של ארה״ב. אדום = לא נמצאו נתונים ב־OpenStreetMap
+      name: דרכי TIGER‏ 2019
+    USDA-NAIP:
+      description: צילומי ה־DOQQ העדכניים ביותר מבית תכנית הצילום החקלאית הלאומית (NAIP) לגבולותיה של כל מדינה בארה״ב.
+      name: תכנית הצילום החקלאית הלאומית
     US_Forest_Service_roads_overlay:
       description: 'כביש מהיר: תחימה ירוקה = ללא סיווג. תחימה חומה = מסלול. פני שטח: חצץ = מילוי חום בהיר, אספלט = שחור, מרוצף = אפור, אדמה =לבן, בטון = כחול, דשא = ירוק. עונתי = פסים לבנים'
       name: שכבת דרכי יערות בארה״ב
     UrbISOrtho2016:
+      attribution:
+        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
+      attribution:
+        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: עובד על ידי Brussels UrbIS®©‎ - הפצה וזכויות יוצרים CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
+      attribution:
+        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
+      attribution:
+        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -136,10 +154,96 @@ he:
         text: basemap.at
       description: אורטופוטו basemap.at
       name: אורטופוטו basemap.at
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: מתנדבי © OpenStreetMap
-      name: טיולים ואופניים
+        text: basemap.at
+      description: שכבת הערות שמסופקת על ידי basemap.at.
+      name: שכבת basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: שכבת משטח שמסופקת על ידי basemap.at.
+      name: משטח של basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: שכבת תוואי שטח שמסופקת על ידי basemap.at.
+      name: תוואי שטח של basemap.at
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton ortofotó 2010
+      description: צילומית עם תיאוג גאו-מרחבי מ1940 ע"י  Balaton Limnological Institute.
+      name: EUFAR Balaton אורטפוטו
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 via finds.jp. טוב לשרטוט, אבל ישן.
+      name: יפן GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © עיריית גותנבורג, CC0
+      description: מפת העיר היא מפה סיקורית שמתארת את גותנברת. היא מכילה פרטים כלליים על קרקע, תקשורת, תשתיות מים, בניינים, מספרי כתובות ושמות רחובות, חלוקה מנהלית וטקסט שמסייע בהתמצאות.
+      name: מפת העיר גותנבורג
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI יפן
+      description: צילומי אוויר של GSI יפן. לא מיושר אבל מעט חדש יותר ו/או מכוסה בצורה קצת שונה מצילומי GSI מיושרים.
+      name: צילומי אוויר של GSI יפן
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: צילום רציף וחלק מ־GSI יפן
+      description: צילום רציף וחלק מ־GSI יפן. האוסף של הצילום העדכני ביותר מ־GSO מיושר, אווירי, לאחר אסון ואחרים.
+      name: צילום רציף וחלק מ־GSI יפן
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI יפן
+      description: יפן GSI מפת סטנדרט, כיסוי נרחב
+      name: יפן GSI מפת סטנדרט
+    helsingborg-orto:
+      attribution:
+        text: מחוז הלסינגבורג
+      description: אורטופוטו ממחוז הלסינגבורג 2015, CC0 רישיון
+      name: אורטופוטו הלסינגבורג
+    kalmar-orto-2014:
+      attribution:
+        text: © Kalmar municipality
+      description: Kalmar אורטופוטו חוף צפוני 2018
+      name: Kalmar אורטופוטו צפוני 2018
+    kalmar-orto-2016:
+      attribution:
+        text: © Kalmar municipality
+      description: Kalmar אורטופוטו חוף דרומי 2018
+      name: Kalmar אורטופוטו דרומי 2018
+    kalmar-orto-2018:
+      attribution:
+        text: © Kalmar municipality
+      description: Kalmar אורטופוטו עירוני2018
+      name: Kalmar אורטופוטו עירוני2018
+    kelkkareitit:
+      attribution:
+        text: ‎© Kelkkareitit.fi
+      description: Kelkkareitit.fi מסלולי תחבורה בשלג מ־OSM (כיסוי נורדי)
+      name: שכבת מסלולי שלג נורדיים
+    lantmateriet-orto1960:
+      attribution:
+        text: ‎© Lantmäteriet, CC0
+      description: פסיפס של אורטופוטו שוודי מ1955-1965, יתכן ויש תמונות יותר חדשות או ישנות
+      name: סריקה של מפה כלכלית 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: ‎© Lantmäteriet, CC0
+      description: פסיפס של אורטופוטו שוודי מ1970-1980, עדיין בבניה.
+      name: סריקה של מפה כלכלית 1960
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: 'מפה טופוגרפית של שוודיה 1:50000 '
+      name: מפה טופוגרפית Lantmäteriet
+    linkoping-orto:
+      attribution:
+        text: מחוז הלינקופינג
+      description: אורטופוטו ממחוז לינקופינג 2010, מידע פתוח
+      name: אורטופוטו לינקופינג
     mapbox_locator_overlay:
       attribution:
         text: תנאים ומשוב
@@ -165,6 +269,8 @@ he:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
+      description: סריקה של ´מפות כלכליות´ סביב 1950-1980
+      name: סריקה של ´מפות כלכליות´ סביב 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, נתונים באדיבות מתנדבי ©OpenStreetMap
@@ -173,10 +279,20 @@ he:
       attribution:
         text: '© אריחים: skobbler נתוני מפה: מתנדבי OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: ‎© Skoterleder.org
+      description: מסלולי תחבורת שלג
+      name: מפת תחבורת שלג בשוודיה
     stamen-terrain-background:
       attribution:
         text: אריחי מפה מאת Stamen Design, ברישיון CC BY 3.0. הנתונים מאת OpenStreetMap, תחת ODbL
       name: תווי שטח מסטודיו Stamen
+    stockholm-orto:
+      attribution:
+        text: מחוז סטוקהולם CC0
+      description: צילומי אורתופוטו מעיריית שטוקהולם 2016, רישיון CC0
+      name: אורטופוטו סטוקהולם
     tf-cycle:
       attribution:
         text: מפות  מThunderforest

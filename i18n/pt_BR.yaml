@@ -2,39 +2,32 @@ pt_BR:
   imagery:
     AGIV:
       attribution:
-        text: Ortofoto Flanders mais recente © AGIV
-      name: AGIV Flandres mais recente imagem aérea
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders - imagens áreas mais recentes
     AGIV10cm:
       attribution:
-        text: Orthophoto Flanders © AGIV
-      name: AGIV Flanders 2013-2015 imagens aéreas 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 imagens aéreas 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
-      name: AGIV Flanders GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, sombreamento de colinas multi-direcional 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Imagens aéreas e de satélite.
       name: Imagens aéreas do Bing
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Termos e Comentários
-      description: O DigitalGlobe-Premium é um mosaico composto de mapa base DigitalGlobe com regiões selecionadas preenchidas com imagens Vivid ou personalizadas de área de interesse, resolução de 50 cm ou superior, e atualizadas com mais frequência com atualizações contínuas.
-      name: Imagens DigitalGlobe Premium
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Termos e Comentários
-      description: Limites de imagens e datas de captura. Os rótulos aparecem no nível de zoom 13 e superior.
-      name: Data das imagens de satélite DigitalGlobe Premium
-    DigitalGlobe-Standard:
-      attribution:
-        text: Termos e Comentários
-      description: O DigitalGlobe-Standard é um conjunto curado de imagens que cobre 86% da massa terrestre do planeta, com resolução de 30-60 cm onde disponível, provida pela Landsat. A idade média é de 2,31 anos, com algumas áreas atualizadas 2x por ano.
-      name: Imagens DigitalGlobe Standard
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Termos e Comentários
-      description: Limites de imagens e datas de captura. Os rótulos aparecem no nível de zoom 13 e superior.
-      name: Data das imagens de satélite DigitalGlobe Standard
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contém dados Copernicus Sentinel modificados 2017 e 2018)
+      description: Imagens de satélite Sentinel pós-processadas.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Termos e Comentários
@@ -47,7 +40,7 @@ pt_BR:
       name: Imagens globais da Esri (Clareadas) Beta
     MAPNIK:
       attribution:
-        text: © Colaboradores do OpenStreetMap, CC-BY-SA
+        text: © Colaboradores do OpenStreetMap, CC-BY-SA 2.0
       description: A camada padrão do OpenStreetMap.
       name: OpenStreetMap (Padrão)
     Mapbox:
@@ -87,14 +80,21 @@ pt_BR:
       name: SPW (allonie) imagens aéreas mais recentes
     SPW_PICC:
       name: SPW (allonie) Imagens numéricas PICC
-    US-TIGER-Roads-2012:
-      name: Estradas TIGER 2012
     US-TIGER-Roads-2014:
       description: No nível de zoom 16+, há dados de mapas de domínio público do Censo dos EUA. Nos níveis de zoom menores, apenas alterações desde 2006 exceto alterações já incorporadas no OpenStreetMap
       name: Estradas TIGER 2014
     US-TIGER-Roads-2017:
       description: Amarelo = Dados de mapa de domínio público do Censo dos EUA. Vermelho = Dados não encontrados no OpenStreetMap
       name: Estradas TIGER 2017
+    US-TIGER-Roads-2018:
+      description: Amarelo = Dados de mapa de domínio público do Censo dos EUA. Vermelho = Dados não encontrados no OpenStreetMap
+      name: Estradas do TIGRE 2018
+    US-TIGER-Roads-2019:
+      description: Amarelo = Dados de mapas de domínio público do Censo dos EUA. Vermelho = Dados não encontrados no OpenStreetMap
+      name: Estradas TIGER 2019
+    USDA-NAIP:
+      description: O ano mais recente de DOQQs da National Agriculture Imagery Program (NAIP) para cada estado nos Estados Unidos contíguos.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Estrada: Cobertura verde = não classificada. Cobertura marrom = trilha. Superfície: cascalho = preenchimento marrom claro, Asfalto = preto, Pavimentado = cinza, Terra = branco, Concreto = azul, Grama = verde. Sazonal = barras brancas'
       name: Sobreposição de estradas florestais dos EUA
@@ -106,6 +106,14 @@ pt_BR:
       attribution:
         text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realizado por meio da Brussels UrbIS®© - Distribuição & Copyright CIRB
@@ -144,10 +152,71 @@ pt_BR:
         text: basemap.at
       description: Ortofotomapa fornecido por basemap.at, "sucessor" das imagens de geoimage.at.
       name: Ortofotomapa basemap.at
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: © Colaboradores do OpenStreetMap
-      name: Caminhada e Ciclismo
+        text: basemap.at
+      description: Sobreposição de anotação fornecida por basemap.at.
+      name: Anotação do basemap.at
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Camada de superfície fornecida por basemap.at.
+      name: Superfície do basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Camada de terreno fornecida por basemap.at.
+      name: Terreno do basemap.at
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton ortofotó 2010
+      description: 1940 fotografia com geo-tag do Balaton Limnological Institute.
+      name: Orthofotos de EUFAR Balaton
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 via finds.jp. Bom para rastrear, mas um pouco mais velho.
+      name: Japão GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Município de Gotemburgo, CC0
+      description: O mapa da cidade é um mapa geral que descreve Gotemburgo. Ele contém informações gerais sobre terrenos, comunicações, hidrografia, edifícios, números de endereços e nomes de ruas, divisão administrativa e outro texto de orientação.
+      name: Mapa da cidade de Gotemburgo 
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japão
+      description: Imagens do Japão GSI airphoto. Não completamente ortorretificado, mas um pouco mais novo e/ou diferente do que as Imagens do GSI orto.
+      name: Imagens do Japão GSI airphoto
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Foto sem emenda GSI Japão
+      description: Imagens do seamlessphoto de Japão GSI. A coleção de imagens mais recentes da GSI orto, airphoto, pós desastre e outros.
+      name: Imagens do Japan GSI seamlessphoto
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japão
+      description: Mapa Padrão do Japão GSI. Amplamente coberto.
+      name: Mapa Padrão do Japão GSI
+    helsingborg-orto:
+      attribution:
+        text: © Município de Helsingborg
+      description: Orthophotos do município de Helsingborg 2016, domínio público
+      name: Helsingborg Orthophoto
+    kalmar-orto-2014:
+      attribution:
+        text: © Município de Kalmar
+      description: Ortofotos para a costa norte do município de Kalmar 2014
+      name: Kalmar North Orthophoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Município de Kalmar
+      description: Ortofotos para a costa sul do município de Kalmar 2016
+      name: Kalmar South Orthophoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Município de Kalmar
+      description: Ortofotos para áreas urbanas do município de Kalmar 2018
+      name: Kalmar Urban Orthophoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -163,6 +232,16 @@ pt_BR:
         text: © Lantmäteriet, CC0
       description: Mosaico de ortofotografias suecas do período 1970-1980. Em construção.
       name: Lantmäteriet Historic Orthophoto 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Mapa topográfico da Suécia 1:50 000
+      name: Mapa topográfico de Lantmäteriet
+    linkoping-orto:
+      attribution:
+        text: © Município de Linköping
+      description: Orthophotos do município de Linköping 2010, dados abertos
+      name: Linköping Orthophoto
     mapbox_locator_overlay:
       attribution:
         text: Termos e Comentários
@@ -175,8 +254,8 @@ pt_BR:
     osm-gps:
       attribution:
         text: © Colaboradores do OpenStreetMap
-      description: Traços GPS públicos enviados ao OpenStreetMap.
-      name: Traços GPS OpenStreetMap
+      description: Trilhos GPS públicos enviados ao OpenStreetMap.
+      name: Trilhos GPS OpenStreetMap
     osm-mapnik-black_and_white:
       attribution:
         text: © Colaboradores do OpenStreetMap, CC-BY-SA
@@ -207,6 +286,11 @@ pt_BR:
       attribution:
         text: Quadros do mapa de Stamen Design, sob CC BY 3.0.   Dados por OpenStreetMap, sob ODbL
       name: Relevo Stamen
+    stockholm-orto:
+      attribution:
+        text: © Município de Estocolmo, CC0
+      description: Orthophotos do municipio de Estocolmo 2016,  licença CC0
+      name: Stockholm Orthophoto
     tf-cycle:
       attribution:
         text: Mapas © Thunderforest, Dados © Colaboradores do OpenStreetMap

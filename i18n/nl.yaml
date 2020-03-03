@@ -2,39 +2,32 @@ nl:
   imagery:
     AGIV:
       attribution:
-        text: Orthofoto Vlaanderen nieuwste © AGIV
-      name: AGIV nieuwste luchtfoto's
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen meest recente luchtfotografie
     AGIV10cm:
       attribution:
-        text: Orthofoto Vlaanderen © AGIV
-      name: AGIV 2013-2015 luchtfoto's 10cm
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen 2013-2015 luchtfotografie 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Vlaanderen © AGIV
-      name: AGIV Vlaandere GRB
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionele hillshade 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Satelliet- en luchtfoto's.
-      name: Bing-luchtfotografie
-    DigitalGlobe-Premium:
+      name: Bing-luchtfoto's
+    EOXAT2018CLOUDLESS:
       attribution:
-        text: Gebruiksvoorwaarden & feedback
-      description: DigitalGlobe-Premium is een mosaik bestaand uit de DigitalGlobe basiskaart, waarbij bepaalde regio's gevuld zijn met +Vivid of eigen gemaakte beelden uit gebieden die van interesse zijn, met een 50cm resolutie of beter, en die vaker worden vernieuwd met recente updates
-      name: DigitalGlobe-premiumbeelden
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Gebruiksvoorwaarden & feedback
-      description: Beeldgrenzen en opnamedata. Labels verschijnen op zoomniveau 13 en hoger.
-      name: DigitalGlobe-premiumbeelden Vintage
-    DigitalGlobe-Standard:
-      attribution:
-        text: Gebruiksvoorwaarden & feedback
-      description: DigitalGlobe-Standard is een uitgekozen set van foto's, die 86% van de landmassa van de aarde omvatten, met 30-60cm resolutie waar het mogelijk is, aangevuld door Landsat. De Doorsneeleeftijd is 2,31 jaar, sommige plaatsen worden 2x per jaar geüpdatet
-      name: DigitalGlobe-standaardbeelden
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Gebruiksvoorwaarden & feedback
-      description: Beeldgrenzen en opnamedata. Labels verschijnen op zoomniveau 13 en hoger.
-      name: DigitalGlobe-premiumbeelden Vintage
+        text: Sentinel-2 onbewolkt - https://s2maps.eu door EOX IT Services GmbH (Bevat aangepaste gegevens van Copernicus Sentinel 2017 & 2018)
+      description: Postprocessed foto's van Sentinel Satellite.
+      name: eox.at 2018 onbewolkt
     EsriWorldImagery:
       attribution:
         text: Voorwaarden & Terugkoppeling
@@ -47,7 +40,7 @@ nl:
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
-        text: © OpenStreetMap-bijdragers, CC-BY-SA
+        text: © OpenStreetMap contributors, CC-BY-SA 2.0
       description: De standaard OpenStreetMap-laag
       name: OpenStreetMap (Standaard)
     Mapbox:
@@ -85,14 +78,23 @@ nl:
       name: 'OSM Inspecteur: Tagging'
     SPW_ORTHO_LAST:
       name: Nieuwste luchtfoto's van SPW(allonie)
-    US-TIGER-Roads-2012:
-      name: TIGER Roads 2012
+    SPW_PICC:
+      name: SPW(allonie) PICC numerieke beelden
     US-TIGER-Roads-2014:
       description: Bij zoomniveau 16+, kaartgegevens in publiek domein van de VS Census. Bij lagere zoomniveaus, enkel wijzigingen sinds 2006 behalve wijzigingen die al in OpenStreetMap zitten
       name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
       name: TIGER Roads 2017
+    US-TIGER-Roads-2018:
+      description: Geel = Publiek domein kaartgegevens van de US Census. Rood = data niet gevonden in OpenStreetMap
+      name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Geel = Openbare kaartgegevens van de US Census. Rood = Gegevens die niet in OpenStreetMap zijn gevonden
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      description: Het meest recente jaar van DOQQs van het National Agriculture Imagery Program (NAIP) voor de aaneengesloten staten van de Verenigde Staten.
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Wegen: Groene omlijning = ongeclassificeerd. Bruine omlijning = veldweg. Oppervlak: grind = lichtbruin gevuld, asfalt = zwart, bestraat = grijs, grond = wit, beton = blauw, gras = groen. Seizoensgebonden = witte balken'
       name: U.S. Forest Roads-laag
@@ -104,6 +106,14 @@ nl:
       attribution:
         text: Gerealiseerd met middelen van Brussels UrbIS®© - Distributie & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Gerealiseerd met middelen van Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Tot stand gekomen door middel van Brussel UrbIS®© - Distributie & Auteursrecht CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Gerealiseerd met middelen van Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -142,10 +152,71 @@ nl:
         text: basemap.at
       description: Orthofoto-laag voorzien door basemap.at. 'Opvolger' van geoimage.at.
       name: basemap.at Orthofoto
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: © OpenStreetMap-bijdragers
-      name: Wandelen & Fietsen
+        text: basemap.at
+      description: Annotatie-overlay is geleverd door basemap.at.
+      name: basemap.at Overlay
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+      description: Oppervlaktelaag is geleverd door basemap.at.
+      name: basemap.at Oppervlakte
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Terreinlaag is geleverd door basemap.at.
+      name: basemap.at Terrein
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton orthofoto's 2010
+      description: 1940 gegeorefereede fotografie van Balaton Limnological Institute.
+      name: EUFAR Balaton orthofoto's
+    finds.jp_KBN_2500:
+      attribution:
+        text: GIS KIBAN 2500
+      description: GIS KIBAN 2500 van finds.jp. Goed voor het tekenen van tracés, maar iets ouder.
+      name: Japan GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Gemeente Gotenburg, CC0
+      description: Deze stadskaart is een overzichtskaart die Gotenburg beschrijft. Het bevat algemene informatie over landgebruik, communicatie, hydrografie, gebouwen, huisnummers en straatnamen, administratieve indeling en andere oriënterende teksten.
+      name: Stadskaart Gotenburg
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI luchtfoto. Niet volledig orthogerectificeerd, maar voor een deel nieuwer en/of ander bereik dan GSI orthofoto.
+      name: Japan GSI luchtfoto
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan naadloze foto
+      description: Japan GSI naadloze foto Imagery. De verzameling van de laatste beelden van GSI ortho, airphoto, post disaster en andere.
+      name: Japan GSI naadloze foto Imagery
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japan
+      description: Japan GSI Standaard Kaart. Grootschalige dekking.
+      name: Japan GSI Standaard Kaart
+    helsingborg-orto:
+      attribution:
+        text: © Gemeente Helsingborg
+      description: Orthofoto's van de gemeente Helsingborg 2016, publiek domein
+      name: Helsingborg Orthofoto
+    kalmar-orto-2014:
+      attribution:
+        text: © Gemeente Kalmar
+      description: Orthofoto's van de noordkust van de gemeente Kalmar 2014
+      name: Kalmar-noord Orthofoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Gemeente Kalmar
+      description: Orthofoto's van de zuidkust van de gemeente Kalmar 2016
+      name: Kalmar-zuid Orthofoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Gemeente Kalmar
+      description: Orthofoto's van de stedelijke gebieden van de gemeente Kalmar 2018
+      name: Kalmar Stedelijke Orthofoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -154,11 +225,23 @@ nl:
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
+      description: Mosaic van Zweedse luchtfoto's van de periode 1955–1965. Oudere en nieuwere luchtfoto's kunnen voorkomen.
       name: Lantmäteriet Historic Orthophoto 1960
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
+      description: Mosaic van Zweedse luchtfoto's van de periode 1970-1980. Wordt uitgebreid.
       name: Lantmäteriet Historic Orthophoto 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Topografische kaart van Zweden 1:50 000
+      name: Lantmäteriet Topografische Kaart
+    linkoping-orto:
+      attribution:
+        text: © Gemeente Linköping
+      description: Orthofoto's van de gemeente Linköping 2010, open data
+      name: Linköping Orthofoto
     mapbox_locator_overlay:
       attribution:
         text: Gebruiksvoorwaarden & feedback
@@ -184,6 +267,8 @@ nl:
     osmse-ekonomiska:
       attribution:
         text: © Lantmäteriet
+      description: Scan van "Economische kaarten" ca. 1950-1980
+      name: Lantmäteriet Economische Kaart 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Gegevens ©OpenStreetMap-bijdragers
@@ -201,6 +286,11 @@ nl:
       attribution:
         text: Kaarttegels van Stamen Design, onder CC BY 3.0. Gegevens van OpenStreetMap, onder ODbL
       name: Stamen Terrein
+    stockholm-orto:
+      attribution:
+        text: © Gemeente Stockholm, CC0
+      description: Orthofoto's van de gemeente Stockholm 2016, CC0-licentie
+      name: Stockholm Orthofoto
     tf-cycle:
       attribution:
         text: Kaarten © Thunderforest, gegevens © OpenStreetMap-bijdragers
@@ -212,6 +302,7 @@ nl:
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
+      description: Zweeds spoorwegnet, zijsporen inbegrepen
       name: Trafikverket Spoornetwerk
     trafikverket-baninfo-option:
       attribution:

@@ -2,39 +2,28 @@ lv:
   imagery:
     AGIV:
       attribution:
-        text: Ortofoto Flanders vissjaunākie © AGIV
-      name: AGIV Flanders vissjaunākā aerofotoattēli
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders vissjaunākie aerofotoattēli.
     AGIV10cm:
       attribution:
-        text: Ortofoto Flanders © AGIV
+        text: © agentschap Informatie Vlaanderen
       name: AGIV Flanders 2013-2015 aerofotoattēli 10cm
     AGIVFlandersGRB:
       attribution:
-        text: GRB Flanders © AGIV
+        text: © agentschap Informatie Vlaanderen
       name: AGIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
     Bing:
       description: Satelītu un aerofotoattēli.
       name: Bing aerofotoattēli
-    DigitalGlobe-Premium:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: DigitalGlobe-Premium ir aerofoto mozaīka, kas sastāv no DigitalGlobe apakškartes ar atsevišķiem reģioniem piepildītiem izmantojot +Vivid vai pielāgotu interešu vietas informāciju, aerofoto ir 50cm izsķirtspēja vai augstāka, un tā tiek atjaunota daudz biežāk, ar nepārtrauktiem atjauninājumiem.
-      name: DigitalGlobe Premium Attēli
-    DigitalGlobe-Premium-vintage:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: Attēlu malas un uztveršanas datumi. Etiķetes parādās palielinājuma līmenī 13 un zemāk.
-      name: Vecāki DigitalGlobe Premium Attēli
-    DigitalGlobe-Standard:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: 'DigitalGlobe-Standard ir kārtota attēlu grupa, kas aptver aptuveni 86% no visas pasaules ar 30-60 cm izsķirtspēju, kur tas ir iespējams. Fona aizpildījumu nodrošina Landsat. Vidējais vecums ir 2.31 gadi, lai gan dažas vietas tiek atjauninātas 2 reizes gadā. '
-      name: DigitalGlobe Standarta Attēli
-    DigitalGlobe-Standard-vintage:
-      attribution:
-        text: Noteikumi un atsauksmes
-      description: Attēlu malas un uztveršanas datumi. Etiķetes parādās palielinājuma līmenī 13 un zemāk.
-      name: Vecāki DigitalGlobe Standarta Attēli
+    EOXAT2018CLOUDLESS:
+      description: Apstrādāti Sentinel Satalītattēli.
+      name: eox.at 2018 bez-mākoņu
     EsriWorldImagery:
       attribution:
         text: Noteikumi un atsauksmes
@@ -46,8 +35,6 @@ lv:
       description: Esri arhīvu attēli kas var būt skaidrāki un precīzāki nekā noklusējuma slānis.
       name: Esri Pasaules Attēli (Skaidrība) Beta
     MAPNIK:
-      attribution:
-        text: © OpenStreetMap ieguldītāji, CC-BY-SA
       description: Noklusējuma OpenStreetMap slānis.
       name: OpenStreetMap (Standarta)
     Mapbox:
@@ -87,14 +74,18 @@ lv:
       name: SPW(allonie) vissjaunākie aerofotoattēli.
     SPW_PICC:
       name: SPW(allonie) PICC skaitliskā attēlošana
-    US-TIGER-Roads-2012:
-      name: TIGER Ceļi 2012
     US-TIGER-Roads-2014:
       description: 'Pie palielinājuma līmeņa 16+, publiska domēna karšu dati no ASV tautskaitīšanas. Zemākos līmeņos tikai izmaiņas kopš 2006. gada, izņemot izmaiņas, kas jau ir OpenStreetMap '
       name: TIGER Ceļi 2014
     US-TIGER-Roads-2017:
       description: Dzeltens = Publiska domēna kartes dati no ASV tautskaites. Sarkans = Dati, kas nav atrodami OpenStreetMap
       name: TIGER Ceļi 2017
+    US-TIGER-Roads-2018:
+      description: Dzeltens = Publiska domēna kartes dati no ASV tautskaites. Sarkans = Dati, kas nav atrodami OpenStreetMap
+      name: TIGER Ceļi 2018
+    US-TIGER-Roads-2019:
+      description: Dzeltens = Publiska domēna kartes dati no ASV tautskaites. Sarkans = Dati, kas nav atrodami OpenStreetMap
+      name: TIGER Ceļi 2019
     US_Forest_Service_roads_overlay:
       description: 'Šoseja: Zaļa apmale = neklasificēts. Brūna apmale = trase. Virsma: grants = gaiši brūns pildījums, Asfalts = melns, Bruģēts = pelēks, betons = zils, zāle = zaļš. Sezonāli = baltas strīpas.'
       name: ASV Meža Ceļu Pārklājums
@@ -106,6 +97,14 @@ lv:
       attribution:
         text: Realizēts, izmantojot  UrbIS®© - Izplatīšana & Copyright CIRB
       name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realizēts, izmantojot  UrbIS®© - Izplatīšana & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realizēts, izmantojot  Brussels UrbIS®© - Izplatīšana & Autortiesības CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realizēts, izmantojot  UrbIS®© - Izplatīšana & Copyright CIRB
@@ -144,10 +143,60 @@ lv:
         text: basemap.at
       description: Ortofoto slāni nodrošina basemap.at. "Pēctecis" geoimage.at attēlošanai.
       name: basemap.at Ortofoto
-    hike_n_bike:
+    basemap.at-overlay:
       attribution:
-        text: © OpenStreetMap ieguldītāji
-      name: Pārgājiens un Velo
+        text: basemap.at
+      name: basemap.at Pārklājs
+    basemap.at-surface:
+      attribution:
+        text: basemap.at
+    basemap.at-terrain:
+      attribution:
+        text: basemap.at
+      description: Apvidus datu slāni nodrošina basemap.at.
+      name: basemap.at Apvidus Dati
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balton ortofoto 2010
+      description: 1940 ģeotagota fotogrāfēšana no Balatonas Limnoloģiskā Institūta
+      name: EUFAR Balaton ortofotogrāfijas
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 caur finds,jp. Labs trasēšanai, bet nedaudz novecojis,
+      name: Japānas GSI KIBAN 2500
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japāna
+      name: Japānas GSI gaisa-foto attēli
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japānas bezšuvju foto
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japāna
+      description: Japānas GSI Standarta Karte. Plaši pārklāta.
+      name: Japānas GSI Standarta karte
+    helsingborg-orto:
+      attribution:
+        text: © Helsingborjas pašvaldība
+      description: 2016. gada Helsingborjas Ortofoto no Helsingborjas pašvaldības, publiska domēna dati
+      name: Helsingborjas Ortofoto
+    kalmar-orto-2014:
+      attribution:
+        text: © Kalmaras pašvaldība
+      description: Kalmāras pašlavaldības ziemeļu krasta ortofoto 2014
+      name: Kalmāras Ziemeļu Ortofoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Kalmaras pašvaldība
+      description: Kalmāras pašvaldības dienvidu krasta ortofoto 2016
+      name: Kalmāras Dienvidu Ortofoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Kalmaras pašvaldība
+      description: Urbāno vietu ortofoto no Kalmaras pašvaldības 2018
+      name: Kalmāras Dienvidu Ortofoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -163,6 +212,16 @@ lv:
         text: © Lantmäteriet, CC0
       description: Zviedru ortofoto mozaīka no 1970-1980. gadu perioda. Vēl tiek pielabots.
       name: Lantmäteriet Vēsturiskie Ortofoto 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Zviedrijas topogrāfiskā karte 1:50 000
+      name: Lantmäteriet Topogrāfiskā Karte
+    linkoping-orto:
+      attribution:
+        text: © Linköpingas pašvaldība
+      description: Ortofoto no Linköpingas pašvaldības 2010, atvēŗtie dati
+      name: Linköpingas Ortofoto
     mapbox_locator_overlay:
       attribution:
         text: Noteikumi un atsauksmes
@@ -207,6 +266,10 @@ lv:
       attribution:
         text: Kartes kvadrāti no Stamen Design, zem CC BY 3.0. Dati no OpenStreetMap, zem ODbL
       name: Stamen Terrain
+    stockholm-orto:
+      attribution:
+        text: © Stokholmas pašvaldība, CC0
+      name: Stokholmas Ortofoto
     tf-cycle:
       attribution:
         text: Kartes © Thunderforest, Dati ©OpenStreetMap ieguldītāji

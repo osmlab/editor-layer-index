@@ -1,11 +1,81 @@
 "no":
   imagery:
+    AGIV:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders nyligste ortofoto
+    AGIV10cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders 2013-2015 ortofoto 10cm
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, flersidede terrengskygger 0,25 m
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview faktor 0,25 m
     Bing:
       description: Flyfoto og satellitt-ortofoto.
       name: Bing ortofoto
-    DigitalGlobe-Premium:
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu av EOX IT Services GmbH (Inneholder modifisert Copernicus Sentinel data 2017 & 2018)
+      description: Etterbehandlet Sentinel Satellite ortofoto.
+      name: eox.at 2018 skyfri
+    EsriWorldImagery:
       attribution:
         text: Vilkår og tilbakemelding
+      description: Esri World ortofoto.
+      name: Esri World ortofoto
+    EsriWorldImageryClarity:
+      attribution:
+        text: Vilkår og tilbakemelding
+      description: Esri arkivbilder som kan være klarere og mer nøyaktige enn det forhåndsvalgte laget.
+      name: Esri World ortofoto (skarphet) beta
+    MAPNIK:
+      description: Standard OpenStreerMap-laget.
+      name: OpenStreetMap (standard)
+    Mapbox:
+      attribution:
+        text: Vilkår og tilbakemelding
+      description: Flyfoto- og satellitt-ortofoto.
+      name: Mapbox Satellitt
+    OSM_Inspector-Addresses:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Adresser'
+    OSM_Inspector-Geometry:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Geometri'
+    OSM_Inspector-Highways:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Veier'
+    OSM_Inspector-Multipolygon:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Område'
+    OSM_Inspector-Places:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Steder'
+    OSM_Inspector-Routing:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Ruteregning'
+    OSM_Inspector-Tagging:
+      attribution:
+        text: © Geofabrik GmbH, OpenStreetMap-bidragsytere, CC-BY-SA
+      name: 'OSM Inspector: Egenskaper'
+    SPW_ORTHO_LAST:
+      name: SPW(allonie) nyligste ortofoto
     osm-gps:
       attribution:
         text: © OpenStreetMap bidragsytere

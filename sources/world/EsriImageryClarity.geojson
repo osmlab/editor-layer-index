@@ -7,6 +7,7 @@
             "url": "https://wiki.openstreetmap.org/wiki/Esri"
         },
         "default": true,
+        "permission_osm": "explicit",
         "description": "Esri archive imagery that may be clearer and more accurate than the default layer.",
         "i18n": true,
         "icon": "https://osmlab.github.io/editor-layer-index/sources/world/EsriImageryClarity.png",
@@ -15,6 +16,7 @@
         "max_zoom": 22,
         "name": "Esri World Imagery (Clarity) Beta",
         "type": "tms",
+        "category": "photo",
         "url": "https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}"
     },
     "type": "Feature"
