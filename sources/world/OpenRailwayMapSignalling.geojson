@@ -1,11 +1,10 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "openrailwaymap",
-    "name": "OpenRailwayMap",
+    "id": "openrailwaymap-signalling",
+    "name": "OpenRailwayMap Signalling",
     "type": "tms",
-    "category": "osmbasedmap",
-    "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/standard/{zoom}/{x}/{y}.png",
+    "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/signals/{zoom}/{x}/{y}.png",
     "overlay": true,
     "attribution": {
       "text": "Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors",
@@ -14,7 +13,7 @@
     "privacy_policy_url": "https://www.openrailwaymap.org/en/imprint",
     "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png",
     "max_zoom": 20,
-    "description": "Overlay imagery showing railway infrastructure based on OpenStreetMap data"
+    "description": "Overlay imagery showing railway signals based on OpenStreetMap data"
   },
   "geometry": null
-}
+  }
