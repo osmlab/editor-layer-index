@@ -2,24 +2,25 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://terinfo.ujbuda.hu",
+            "url": "http://terinfo.ujbuda.hu",
             "text": "Budapest XI. kerület önkormányzata",
             "required": true
         },
-        "name": "Budapest district XI orthophoto 2017",
+        "name": "Budapest district XI orthophoto 2019",
         "description": "5 cm resolution bald image",
         "available_projections": [
             "EPSG:4326",
             "EPSG:23700"
         ],
-        "url": "https://terinfo.ujbuda.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://terinfo.ujbuda.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2019&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofotók#Budapest_XI._ker.C3.BClet",
         "privacy_policy_url": "https://kozigazgatas.ujbuda.hu/adatvedelem",
-        "start_date": "2017-03",
-        "end_date": "2017-03",
+        "start_date": "2019",
+        "end_date": "2019",
+        "best": true,
         "country_code": "HU",
         "type": "wms",
-        "id": "Budapest_XI_2017"
+        "id": "Budapest_XI_2019"
     },
     "geometry": {
         "type": "Polygon",
