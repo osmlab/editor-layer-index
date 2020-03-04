@@ -3,7 +3,6 @@
   "properties": {
     "id": "gothenburg-citymap",
     "name": "Gothenburg City map",
-    "best": true,
     "country_code": "SE",
     "i18n": true,
     "description": "The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.",
@@ -22,8 +21,7 @@
     "available_projections": [
       "EPSG:3006",
       "EPSG:3007",
-      "EPSG:3857",
-      "CRS:84"
+      "EPSG:3857"
     ]
   },
   "geometry": {
