@@ -197,10 +197,6 @@
                     "description": "Set to `true` if imagery source is properly aligned and does not need imagery offset adjustments. This is used for OSM based sources too.",
                     "type": "string"
                 },
-                "last-check": {
-                    "description": "Date of last check of the data to be valid and accessible, in the form YYYY-MM-DD",
-                    "type": "string"
-                },
                 "tile-size": {
                     "description": "Size of individual tiles delivered by a TMS service",
                     "type": "integer",
