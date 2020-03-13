@@ -224,7 +224,7 @@
                     "additionalProperties": false
                 },
                "default-layers": {
-                   "description": "Default layer to open (when using WMS_ENDPOINT type). Contains list of layer tag with two attributes - name and style, e.g. <default-layers><layer name="Basisdata_NP_Basiskart_JanMayen_WMTS_25829" style="default" /></default-layers> (not allowed in <mirror> tag)",
+                   "description": "Default layer to open (when using WMS_ENDPOINT type). Contains list of layer tag with two attributes - name and style, e.g. `\"default-layers\": [\"layer\": { name=\"Basisdata_NP_Basiskart_JanMayen_WMTS_25829\" \"style\":\"default\" } ]` (not allowed in `mirror` attribute)",
                     "type": "array",
                     "items": {
                         "type": "object"
