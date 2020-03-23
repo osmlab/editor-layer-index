@@ -3,15 +3,16 @@
     "properties": {
         "id": "maaamet.ee-reljeef",
         "attribution": {
-            "text": "Maa-Ameti reljeefikaart",
+            "text": "Maa-Ameti reljeefvarjutusega põhikaart",
             "required": true
         },
-        "name": "Estonia Hillshading (Maaamet)",
+        "name": "Estonia Hillshaded base (Maaamet)",
         "available_projections": [
             "EPSG:4326"
         ],
-        "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=reljeef&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+        "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vv&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+    "privacy_policy_url": "https://www.maaamet.ee/et/amet-kontakt/isikuandmete-tootlemine",
         "country_code": "EE",
         "type": "wms"
     },
