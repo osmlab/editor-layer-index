@@ -1,10 +1,10 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "Maaamet-Estonia_DSM_Ortho",
-    "name": "Estonia Ortho with DSM (Maaamet)",
+    "id": "Maaamet-Estonia_Hybrid",
+    "name": "Estonia Hybrid (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000,nDSM&SRS={proj}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=EESTIFOTO,HYBRID&SRS={proj}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "EE",
     "available_projections": [
       "EPSG:4326"
