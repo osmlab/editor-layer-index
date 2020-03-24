@@ -3,14 +3,14 @@
     "properties": {
         "id": "maaamet.ee-pohi_vr2",
         "attribution": {
-            "text": "Maa-Ameti põhikaart",
+            "text": "Maa-Ameti mustvalge põhikaart",
             "required": true
         },
-        "name": "Estonia Basemap (Maaamet)",
+        "name": "Estonia BW Basemap (Maaamet)",
         "available_projections": [
             "EPSG:4326"
         ],
-        "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&TRANSPARENT=false&Layers=pohi_mvr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
         "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data",
         "country_code": "EE",
