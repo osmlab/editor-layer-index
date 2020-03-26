@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Tallinn-TallinnDetailed",
+    "name": "Tallinn detailed (Urban Planning Department)",
+    "type": "wms",
+    "url": "http://kaart.tallinn.ee/tar/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&LAYERS=detailne_aluskaart&CRS={proj}&STYLES=&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "EE",
+    "available_projections": [
+      "EPSG:3301"
+    ],
+    "attribution": {
+      "text": "Tallinn Basemap: Tallinn Urban Planning Department",
+      "required": true
+    },
+    "best": true,
+    "max_zoom": 21,
+    "min_zoom": 8,
+    "license_url": "https://www.tallinn.ee/est/geoportaal/Geoportaali-litsentsileping",
+    "privacy_policy_url": "https://www.tallinn.ee/Andmekaitsetingimused"
+  },
+  "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.5813187078,
+              58.8707896274
+            ],
+            [
+              26.1589529896,
+              58.8707896274
+            ],
+            [
+              26.1589529896,
+              59.8395279876
+            ],
+            [
+              23.5813187078,
+              59.8395279876
+            ],
+            [
+              23.5813187078,
+              58.8707896274
+            ]
+          ]
+        ]
+      }
+  
+}
