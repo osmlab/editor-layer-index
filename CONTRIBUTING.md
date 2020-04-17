@@ -46,7 +46,7 @@ Local (i.e. not worldwide) sources should define an appropriate extent as the ge
 
 See [FAQ.md](FAQ.md#how-can-i-draw-a-bounding-polygon) for information about how to draw a bounding polygon.
 
-Alternatively, polygons can be created based on administrative boundaries using the followin binder notebook.
+Alternatively, polygons can be created based on administrative boundaries using the following binder notebook.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rbuffat/eli-helper/master?urlpath=apps%2Fcreate_simplified_geometry_appmode.ipynb)
 
