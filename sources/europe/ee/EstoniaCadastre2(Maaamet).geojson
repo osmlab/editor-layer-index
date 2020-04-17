@@ -7,7 +7,8 @@
     "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=EESTIFOTO,TOPOYKSUS_6569,TOPOYKSUS_7793&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "EE",
     "available_projections": [
-      "EPSG:4326"
+      "EPSG:4326",
+      "EPSG:3301"
     ],
     "attribution": {
       "text": "Maa-Ameti katastrikaart ortofoto alusel koos aadressitega",

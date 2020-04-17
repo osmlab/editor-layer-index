@@ -7,7 +7,8 @@
     "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000,nDSM&SRS={proj}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "EE",
     "available_projections": [
-      "EPSG:4326"
+      "EPSG:4326",
+      "EPSG:3301"
     ],
     "attribution": {
       "text": "Maa-Ameti maakatte kõrgusmudel",
