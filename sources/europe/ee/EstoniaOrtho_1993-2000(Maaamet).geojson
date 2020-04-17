@@ -1,21 +1,24 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "Maaamet-Estonia_Hybrid",
-    "name": "Estonia Hybrid (Maaamet)",
+    "id": "Maaamet-Estonia_Ortho_1993-2000",
+    "name": "1993-2000 Ortho (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=EESTIFOTO,HYBRID&SRS={proj}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/ajalooline?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=of1993-2000_10k,of1994-2000_2k&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&BBOX={bbox}&CRS={proj}&WIDTH={width}&HEIGHT={height}",
     "country_code": "EE",
+    "description": "Estonian land board 1994-2000 urban 1:2000 imagery laid over to 1993-2000 nationwide 1:10000 aerial photos."
     "available_projections": [
-      "EPSG:4326",
       "EPSG:3301"
     ],
     "attribution": {
-      "text": "Maa-Ameti hübriidkaart",
+      "text": "Maa-Ameti ortofoto 1993-2000",
       "required": true
     },
+    "best": true,
     "max_zoom": 21,
-    "min_zoom": 6,
+    "min_zoom": 14,
+    "start_date": "1993",
+    "end_date": "2000",
     "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
   },

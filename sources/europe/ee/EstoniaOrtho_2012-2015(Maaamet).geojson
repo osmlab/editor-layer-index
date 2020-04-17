@@ -1,21 +1,24 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "Maaamet-Estonia_Hybrid",
-    "name": "Estonia Hybrid (Maaamet)",
+    "id": "Maaamet-Estonia_Ortho_2012-2015",
+    "name": "2012-2015 Ortho (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=EESTIFOTO,HYBRID&SRS={proj}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/ajalooline?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=of2012aero,of2015aero,of2014aero,of2013aero&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&BBOX={bbox}&CRS={proj}&WIDTH={width}&HEIGHT={height}",
     "country_code": "EE",
+    "description": "Estonian land board 2012 (West coast, islands), 2013 (N, NE), 2014 (E, central) and 2015 (S, SE) imageries combined."
     "available_projections": [
-      "EPSG:4326",
       "EPSG:3301"
     ],
     "attribution": {
-      "text": "Maa-Ameti hübriidkaart",
+      "text": "Maa-Ameti ortofoto 2012-2015",
       "required": true
     },
+    "best": true,
     "max_zoom": 21,
-    "min_zoom": 6,
+    "min_zoom": 7,
+    "start_date": "2012",
+    "end_date": "2015",
     "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
   },
