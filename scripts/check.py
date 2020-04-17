@@ -17,7 +17,7 @@ Suggested way of running:
 find sources -name \*.geojson | xargs python scripts/check.py -vv
 
 """
-
+import certifi
 import json
 import io
 from argparse import ArgumentParser
@@ -62,7 +62,32 @@ spacesave = 0
 
 strict_mode = arguments.strict
 
-headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
+
+def check_url_exists(url):
+    """
+    Check if a url returns HTTP code 200
+    """
+    headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
+    try:
+        r = requests.get(url,
+                         headers=headers,
+                         verify=certifi.where())
+        if not r.status_code == 200:
+            logger.warning("{} returned HTTP code {}".format(url, r.status_code))
+        return r.status_code == 200
+    except:
+        # Try without SSL verification
+        try:
+            r = requests.get(url,
+                             headers=headers,
+                             verify=False)
+            if not r.status_code == 200:
+                logger.warning("{} returned HTTP code {}".format(url, r.status_code))
+            return r.status_code == 200
+        except Exception as e:
+            logger.exception("Exception while checking {}".format(url))
+        return False
+
 
 for filename in arguments.path:
 
@@ -98,16 +123,10 @@ for filename in arguments.path:
 
         ## Check if license url exists
         if strict_mode and 'license_url' in source['properties']:
-            try:
-                r = requests.get(source['properties']['license_url'],  headers=headers)
-                if not r.status_code == 200:
-                    raise ValidationError("{}: license url {} is not reachable: HTTP code: {}".format(
-                        filename, source['properties']['license_url'], r.status_code))
 
-            except Exception as e:
-                raise ValidationError("{}: license url {} is not reachable: {}".format(
-                    filename, source['properties']['license_url'], str(e)))
-
+            if not check_url_exists(source['properties']['license_url']):
+                raise ValidationError("{}: license url {} check was not successful.".format(
+                    filename, source['properties']['license_url']))
 
         if 'attribution' not in source['properties']:
             logger.debug("{} has no attribution".format(filename))
@@ -168,18 +187,12 @@ for filename in arguments.path:
             # Check if privacy url is set
             if 'privacy_policy_url' not in source['properties']:
                 raise ValidationError("{} has no privacy_policy_url. Adding privacy policies to sources"
-                             " is important to comply with legal requirements in certain countries.".format(filename))
+                                      " is important to comply with legal requirements in certain countries.".format(filename))
 
             # Check if privacy url exists
-            try:
-                r = requests.get(source['properties']['privacy_policy_url'],  headers=headers)
-                if not r.status_code == 200:
-                    raise ValidationError("{}: privacy policy url {} is not reachable: HTTP code: {}".format(
-                        filename, source['properties']['privacy_policy_url'], r.status_code))
-
-            except Exception as e:
-                raise ValidationError("{}: privacy policy url {} is not reachable: {}".format(
-                    filename, source['properties']['privacy_policy_url'], str(e)))
+            if not check_url_exists(source['properties']['privacy_policy_url']):
+                raise ValidationError("{}: privacy policy url {} check was not successful.".format(
+                    filename, source['properties']['privacy_policy_url']))
 
     except ValidationError as e:
         borkenbuild = True
@@ -188,4 +201,3 @@ if spacesave > 0:
     logger.warning("Disembedding all icons would save {} KB".format(round(spacesave/1024.0, 2)))
 if borkenbuild:
     raise SystemExit(1)
-
