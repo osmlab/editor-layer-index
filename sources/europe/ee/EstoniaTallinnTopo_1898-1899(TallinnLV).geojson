@@ -4,7 +4,7 @@
     "id": "Tallinn-Tallinn_Topo_1898-1899",
     "name": "Tallinn 1898-1899 üheverstane (1:42k)",
     "type": "wms",
-    "url": "http://gis.tallinn.ee/proxykaardiarhiiv/MapServer/export?dpi=96&transparent=false&format=png&layers=show:67&bbox={bbox}&bboxSR={wkid}&size={width},{height}&f=image",
+    "url": "http://gis.tallinn.ee/proxykaardiarhiiv/MapServer/export?dpi=96&transparent=false&format=png&layers=show:67&bbox={bbox}&bboxSR={wkid}&size={width},{height}&f=image#{proj}",
     "country_code": "EE",
     "description": "Tsarist Russian 1899 topomap hosted by Tallinn urban planning department. Better than one hosted by Maa-amet because this map supports wider range of zoom levels.",
     "available_projections": [
