@@ -4,7 +4,7 @@
     "id": "kystverket-navigasjon",
     "name": "Kystverket Navigational Aid overlay",
     "type": "wms",
-    "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=17,16,15,14,12,10,9,8,7,4&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13,12,10,8,6,5,4,3&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "overlay": true,
     "country_code": "NO",
     "available_projections": [
@@ -21,6 +21,7 @@
     "max_zoom": 19,
     "min_zoom": 12,
     "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
+    "privacy_policy_url": "https://www.kystverket.no/en/About-Kystverket/privacy-statement/",
     "description": "Beacons, buoys, lights and fairways maintained by the Norwegian Coastal Administration"
   },
   "geometry": {
