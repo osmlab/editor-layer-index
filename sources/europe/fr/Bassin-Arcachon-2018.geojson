@@ -7,7 +7,10 @@
         "url": "https://siba.geosphere.fr/cgi-bin/mapserv.exe?map=C:/ms4w/geosphere/client1/Carte12_IA.map&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Couche51&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
         "end_date": "2018",
         "start_date": "2018",
-        "country_code": "FR", 
+        "country_code": "FR",
+        "available_projections": [
+            "EPSG:2154"
+        ],
         "attribution": {
             "text": "SIBA Vues aeriennes 2018", 
             "required": true
