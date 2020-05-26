@@ -729,7 +729,8 @@
         "name": "GURS: Road lines",
         "overlay": true,
         "type": "tms",
-        "url": "https://wms.openstreetmap.de/tms/GURS-road-lines/{zoom}/{x}/{y}.png"
+        "url": "https://wms.openstreetmap.de/tms/GURS-road-lines/{zoom}/{x}/{y}.png",
+        "valid-georeference": true
     },
     "type": "Feature"
 }
