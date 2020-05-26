@@ -4,7 +4,7 @@
     "id": "kartverket-abas",
     "name": "Kartverket Administrative Boundaries overlay",
     "type": "wms",
-    "url": "https://openwms.statkart.no/skwms1/wms.adm_enheter?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=avtaltavgrensningslinje,territorialgrense,riksgrense,fylker,kommuner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://wms.geonorge.no/skwms1/wms.adm_enheter2?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fylker_gjel,kommuner_gjel&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "overlay": true,
     "country_code": "NO",
     "available_projections": [
@@ -36,11 +36,13 @@
     ],
     "attribution": {
       "text": "© Kartverket",
-      "url": "https://www.kartverket.no/data/Kartdata/Grenser/"
+      "url": "https://www.kartverket.no/kunnskap/Norges-grenser/"
     },
     "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+    "min_zoom": 1,
     "max_zoom": 22,
     "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+    "privacy_policy_url": "https://www.kartverket.no/en/About-The-Norwegian-Mapping-Authority/privacy-policy/",
     "description": "Official administrative boundaries at the national, county and municipality levels"
   },
   "geometry": {

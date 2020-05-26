@@ -34,6 +34,10 @@ Supported WMS tokens:
 
 Example: `http://geodienste-hamburg.de/HH_WMS_Geobasisdaten?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}`
 
+Alternatively, with following binder wizard a template can be created based on a WMS GetCapabilities query.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rbuffat/eli-helper/master?urlpath=apps%2F/create_wms_template_appmode.ipynb)
+
 Make sure you submit the most appropriate image format for the images: usually, jpeg for photography and png for maps. See #435 for a case where bmp was better.
 
 ##### Imagery Extent
@@ -41,6 +45,10 @@ Make sure you submit the most appropriate image format for the images: usually, 
 Local (i.e. not worldwide) sources should define an appropriate extent as the geometry for the GeoJSON feature. Polygons and bounding boxes can be created by using a tool like http://geojson.io/
 
 See [FAQ.md](FAQ.md#how-can-i-draw-a-bounding-polygon) for information about how to draw a bounding polygon.
+
+Alternatively, polygons can be created based on administrative boundaries using the following binder notebook.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rbuffat/eli-helper/master?urlpath=apps%2Fcreate_simplified_geometry_appmode.ipynb)
 
 
 ##### Imagery Dates
