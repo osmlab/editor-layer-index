@@ -6,6 +6,9 @@
     "type": "tms",
     "url": "https://tiles.maaamet.ee/tm/tms/1.0.0/foto@GMC/{zoom}/{x}/{-y}.png",
     "country_code": "EE",
+    "available_projections": [
+      "EPSG:3857"
+    ],
     "attribution": {
       "text": "Maa-Ameti ortofoto",
       "required": true

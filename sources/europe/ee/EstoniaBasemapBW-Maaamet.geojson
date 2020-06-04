@@ -4,7 +4,7 @@
     "id": "maaamet.ee-pohi_mvr2",
     "name": "Estonia BW Basemap (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&TRANSPARENT=false&Layers=pohi_mvr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&TRANSPARENT=false&Layers=pohi_mvr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "EE",
     "available_projections": [
       "EPSG:4326",
@@ -15,7 +15,7 @@
       "required": true
     },
     "category": "map",
-    "max_zoom": 21,
+    "max_zoom": 19,
     "min_zoom": 15,
     "license_url": "https://geoportaal.maaamet.ee/docs/Avaandmed/ETAK_ruumiandmete_litsentsileping.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
