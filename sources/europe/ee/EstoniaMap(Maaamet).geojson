@@ -1,22 +1,22 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "maaamet.ee-pohi_vr2",
-    "name": "Estonia Basemap (Maaamet)",
+    "id": "Maaamet-Estonia_Map",
+    "name": "Estonian Map (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=CORINE,BAASKAART,KAART24,HALDUSPIIRID,TEED,KYLAD&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "EE",
     "available_projections": [
       "EPSG:4326",
       "EPSG:3301"
     ],
     "attribution": {
-      "text": "Maa-Ameti põhikaart",
+      "text": "Maa-Ameti tavakaart",
       "required": true
     },
     "category": "map",
-    "max_zoom": 19,
-    "min_zoom": 15,
+    "max_zoom": 21,
+    "min_zoom": 8,
     "license_url": "https://geoportaal.maaamet.ee/docs/Avaandmed/ETAK_ruumiandmete_litsentsileping.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
   },

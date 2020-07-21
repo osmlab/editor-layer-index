@@ -1,22 +1,24 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "maaamet.ee-pohi_vr2",
-    "name": "Estonia Basemap (Maaamet)",
+    "id": "Maaamet-Soviet_Topo-o42_1974-1989",
+    "name": "Soviet topo 1974-1989 (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/ajalooline?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=nltopo_uuem_25T,nltopo_uuem_50T,nltopo_uuem_100T,nltopo_uuem_200T,nltopo_500T,nltopo_1M&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&BBOX={bbox}&CRS={proj}&WIDTH={width}&HEIGHT={height}",
     "country_code": "EE",
+    "description": "Soviet topographic maps (1942 reference system) in scales 1:25k - 1:1M hosted by Estonian land board.",
     "available_projections": [
-      "EPSG:4326",
       "EPSG:3301"
     ],
     "attribution": {
-      "text": "Maa-Ameti põhikaart",
+      "text": "NL topokaardid (uuem) 1974-1989 (Maa-Amet)",
       "required": true
     },
-    "category": "map",
-    "max_zoom": 19,
-    "min_zoom": 15,
+    "category": "historicmap",
+    "max_zoom": 18,
+    "min_zoom": 7,
+    "start_date": "1974",
+    "end_date": "1989",
     "license_url": "https://geoportaal.maaamet.ee/docs/Avaandmed/ETAK_ruumiandmete_litsentsileping.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
   },

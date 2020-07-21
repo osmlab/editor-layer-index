@@ -1,22 +1,24 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "maaamet.ee-pohi_vr2",
-    "name": "Estonia Basemap (Maaamet)",
+    "id": "Maaamet-Estonia_Ortho_2008-2011",
+    "name": "2008-2011 Ortho (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/ajalooline?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=of2011aero,of2010aero,of2008aero,of2009aero&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&BBOX={bbox}&CRS={proj}&WIDTH={width}&HEIGHT={height}",
     "country_code": "EE",
+    "description": "Estonian land board 2008 (West coast, islands), 2009 (N, NE), 2010 (E, central) and 2011 (S, SE) imageries combined.",
     "available_projections": [
-      "EPSG:4326",
       "EPSG:3301"
     ],
     "attribution": {
-      "text": "Maa-Ameti põhikaart",
+      "text": "Maa-Ameti ortofoto 2008-2011",
       "required": true
     },
-    "category": "map",
-    "max_zoom": 19,
-    "min_zoom": 15,
+    "category": "historicphoto",
+    "max_zoom": 21,
+    "min_zoom": 7,
+    "start_date": "2008",
+    "end_date": "2011",
     "license_url": "https://geoportaal.maaamet.ee/docs/Avaandmed/ETAK_ruumiandmete_litsentsileping.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
   },

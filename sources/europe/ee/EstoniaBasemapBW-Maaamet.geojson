@@ -1,17 +1,17 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "maaamet.ee-pohi_vr2",
-    "name": "Estonia Basemap (Maaamet)",
+    "id": "maaamet.ee-pohi_mvr2",
+    "name": "Estonia BW Basemap (Maaamet)",
     "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&TRANSPARENT=false&Layers=pohi_mvr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "country_code": "EE",
     "available_projections": [
       "EPSG:4326",
       "EPSG:3301"
     ],
     "attribution": {
-      "text": "Maa-Ameti põhikaart",
+      "text": "Maa-Ameti mustvalge põhikaart",
       "required": true
     },
     "category": "map",
