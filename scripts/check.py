@@ -65,6 +65,10 @@ spacesave = 0
 
 strict_mode = arguments.strict
 
+# Disable strict mode if @skipstrict is in the commit message
+if "@skipstrict" in os.environ['TRAVIS_COMMIT_MESSAGE']:
+    strict_mode = False
+
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
 
 for filename in arguments.path:
