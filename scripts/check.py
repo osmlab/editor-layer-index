@@ -25,6 +25,9 @@ from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
 import colorlog
 import requests
 import os
+import fiona
+from shapely.geometry import shape
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -156,6 +159,19 @@ for filename in arguments.path:
                 raise ValidationError("{} should have a Polygon geometry".format(filename))
             if not 'country_code' in source['properties']:
                 raise ValidationError("{} should have a country or be global".format(filename))
+
+            # Check validity of geometries
+            try:
+                with fiona.open(filename, mode='r', driver='GeoJSON') as src:
+                    for f in src:
+                        geom = shape(f['geometry'])
+                        if not geom.is_valid:
+                            #TODO convert to raise
+                            print("{} geometry is not valid.".format(filename))
+            except Exception as e:
+                # TODO convert to raise
+                print("{} Error: {}".format(filename, str(e)))
+
         else:
             if 'geometry' not in source:
                 ValidationError("{} should have null geometry".format(filename))
