@@ -143,7 +143,7 @@ for filename in arguments.path:
                 ValidationError("Missing available_projections parameter in {}".format(filename))
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
 
-        missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}").replace("{wkid}", "{proj}")]]
+        missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}").replace("{wkid}", "{proj}")]
         if missingparams:
             raise ValidationError("Missing parameter in {}: {}".format(filename, missingparams))
 
