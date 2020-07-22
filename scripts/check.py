@@ -3,7 +3,7 @@
 """
 usage: check.py [-h] [-v] path [path ...]
 
-Checks ELI sourcen for validity and common errors
+Checks ELI source for validity and common errors
 
 Adding -v increases log verbosity for each occurence:
 
@@ -143,7 +143,7 @@ for filename in arguments.path:
                 ValidationError("Missing available_projections parameter in {}".format(filename))
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
 
-        missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}")]
+        missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}").replace("{wkid}", "{proj}")]]
         if missingparams:
             raise ValidationError("Missing parameter in {}: {}".format(filename, missingparams))
 
