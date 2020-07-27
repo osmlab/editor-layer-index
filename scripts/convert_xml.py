@@ -1,5 +1,6 @@
 import json, sys, string, util, io
 import xml.etree.cElementTree as ET
+from shapely.geometry import shape, Polygon
 
 root = ET.Element("imagery")
 
@@ -91,20 +92,28 @@ def add_source(source):
     if geometry:
         def coord_str(coord):
             return "{0:.6f}".format(coord)
-        bounds = ET.SubElement(entry, "bounds")
-        lons = [p[0] for ring in geometry['coordinates'] for p in ring]
-        lats = [p[1] for ring in geometry['coordinates'] for p in ring]
-        bounds.set('min-lon', coord_str(min(lons)))
-        bounds.set('min-lat', coord_str(min(lats)))
-        bounds.set('max-lon', coord_str(max(lons)))
-        bounds.set('max-lat', coord_str(max(lats)))
 
-        for ring in geometry['coordinates']:
-            shape = ET.SubElement(bounds, "shape")
-            for p in ring:
-                point = ET.SubElement(shape, "point")
-                point.set('lon', coord_str(p[0]))
-                point.set('lat', coord_str(p[1]))
+        geom = shape(geometry)
+        bounds = ET.SubElement(entry, "bounds")
+
+        minx, miny, maxx, maxy = geom.bounds
+        bounds.set('min-lon', coord_str(minx))
+        bounds.set('min-lat', coord_str(miny))
+        bounds.set('max-lon', coord_str(maxx))
+        bounds.set('max-lat', coord_str(maxy))
+
+        if isinstance(geom, Polygon):
+            geom = [geom]
+
+        for g in geom:
+            exterior_ring = ET.SubElement(bounds, "shape")
+
+            # All interior rings (=holes) of polygons are ignored
+            for c in g.exterior.coords:
+                point = ET.SubElement(exterior_ring, "point")
+                point.set('lon', coord_str(c[0]))
+                point.set('lat', coord_str(c[1]))
+
 
 for source in sources:
     try:
