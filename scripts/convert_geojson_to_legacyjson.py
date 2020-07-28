@@ -1,38 +1,35 @@
 #!/usr/bin/env python
-import json, sys, io, argparse
+import json
+import sys
+import io
+import argparse
+from shapely.geometry import shape, Polygon
+
 
 def convert_json_source(args, source):
     converted = {}
     extent_obj = {}
 
-    geometry = source.get('geometry') or {}
-    polygon_coords = geometry.get('coordinates') or []
-    if polygon_coords:
+    geometry = source.get('geometry')
+    if geometry:
+        geom = shape(geometry)
+
         if args.gen_bbox:
-            # extent_obj['polygon'] = polygon_coords
-            # generate bbox from polygon coordinates as a stop gap
-            min_lon = 180
-            max_lon = -180
-            min_lat = 90
-            max_lat = -90
-            for ring in polygon_coords:
-                for coord in ring:
-                    if coord[0] < min_lon:
-                        min_lon = coord[0]
-                    if coord[0] > max_lon:
-                        max_lon = coord[0]
-                    if coord[1] < min_lat:
-                        min_lat = coord[1]
-                    if coord[1] > max_lat:
-                        max_lat = coord[1]
+            minx, miny, maxx, maxy = geom.bounds
             bbox_obj = {}
-            bbox_obj['min_lon'] = min_lon
-            bbox_obj['max_lon'] = max_lon
-            bbox_obj['min_lat'] = min_lat
-            bbox_obj['max_lat'] = max_lat
+            bbox_obj['min_lon'] = minx
+            bbox_obj['max_lon'] = maxx
+            bbox_obj['min_lat'] = miny
+            bbox_obj['max_lat'] = maxy
             extent_obj['bbox'] = bbox_obj
+
         if not args.remove_polygons:
-            extent_obj['polygon'] = polygon_coords
+            if isinstance(geom, Polygon):
+                geom = [geom]
+            exterior_rings = []
+            for g in geom:
+                exterior_rings.append(list(g.exterior.coords))
+            extent_obj['polygon'] = exterior_rings
 
     properties = source.get('properties') or {}
     if args.tms_only and properties['type'] == 'wms':
@@ -55,6 +52,7 @@ def convert_json_source(args, source):
         converted['extent'] = extent_obj
 
     return converted
+
 
 parser = argparse.ArgumentParser(description='Generate legacy json output format from geojosn format sources')
 parser.add_argument('files', metavar='F', nargs='+', help='file(s) to process')
