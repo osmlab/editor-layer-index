@@ -16,11 +16,10 @@ def convert_json_source(args, source):
 
         if args.gen_bbox:
             minx, miny, maxx, maxy = geom.bounds
-            bbox_obj = {}
-            bbox_obj['min_lon'] = minx
-            bbox_obj['max_lon'] = maxx
-            bbox_obj['min_lat'] = miny
-            bbox_obj['max_lat'] = maxy
+            bbox_obj = {'min_lon': minx,
+                        'max_lon': maxx,
+                        'min_lat': miny,
+                        'max_lat': maxy}
             extent_obj['bbox'] = bbox_obj
 
         if not args.remove_polygons:
@@ -36,9 +35,9 @@ def convert_json_source(args, source):
         return {}
 
     for f in ['name', 'type', 'url', 'license_url', 'id', 'description',
-            'country_code', 'default', 'best', 'start_date', 'end_date',
-            'overlay', 'available_projections', 'attribution', 'icon',
-            'privacy_policy_url']:
+              'country_code', 'default', 'best', 'start_date', 'end_date',
+              'overlay', 'available_projections', 'attribution', 'icon',
+              'privacy_policy_url']:
         thing = properties.get(f)
         if thing is not None:
             converted[f] = thing
