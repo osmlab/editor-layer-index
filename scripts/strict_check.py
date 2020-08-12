@@ -433,19 +433,9 @@ def check_tms(source, good_msgs, warning_msgs, error_msgs):
                 zoom_failures.append(zoom)
                 return False
 
-        # Test min zoom. In case of failure, increase test range
-        if not test_zoom(min_zoom):
-            for zoom in range(min_zoom + 1, min(min_zoom + 4, max_zoom)):
-                if zoom not in tested_zooms:
-                    if test_zoom(zoom):
-                        break
-
-        # Test max_zoom. In case of failure, increase test range
-        if not test_zoom(max_zoom):
-            for zoom in range(max_zoom, max(max_zoom - 4, min_zoom), -1):
-                if zoom not in tested_zooms:
-                    if test_zoom(zoom):
-                        break
+        # Test zoom levels
+        for zoom in range(min_zoom, max_zoom + 1):
+            test_zoom(zoom)
 
         tested_str = ",".join(list(map(str, sorted(tested_zooms))))
         if len(zoom_failures) == 0 and len(zoom_success) > 0:
