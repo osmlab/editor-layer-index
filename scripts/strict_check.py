@@ -1,20 +1,9 @@
 #!/usr/bin/env python
 
 """
-usage: check.py [-h] [-v] path [path ...]
+usage: strict_check.py [-h] path [path ...]
 
-Checks ELI sourcen for validity and common errors
-
-Adding -v increases log verbosity for each occurence:
-
-    check.py foo.geojson only shows errors
-    check.py -v foo.geojson shows warnings too
-    check.py -vv foo.geojson shows debug messages too
-    etc.
-
-Suggested way of running:
-
-find sources -name \*.geojson | xargs python scripts/check.py -vv
+Checks new ELI sources for validity and common errors
 
 """
 
