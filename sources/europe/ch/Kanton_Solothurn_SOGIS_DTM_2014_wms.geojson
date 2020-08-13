@@ -18,9 +18,10 @@
         "name": "Kanton Solothurn, DTM Relief 2014 50cm",
         "start_date": "2014",
         "end_date": "2014",
-        "min_zoom": 8,
+        "min_zoom": 10,
         "type": "wms",
-        "url": "https://geo.so.ch/api/wms?LAYERS=ch.so.agi.lidar_2014.dtm_relief&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "elevation",
+        "url": "https://geo.so.ch/api/wms?LAYERS=ch.so.agi.lidar_2014.dtm_relief&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "privacy_policy_url": "https://www.so.ch/rechtliches/"
     },
     "geometry": {
