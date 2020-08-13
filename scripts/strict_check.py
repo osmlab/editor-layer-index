@@ -502,6 +502,10 @@ for filename in arguments.path:
                 logger.warning(
                     "{} icon should be disembedded to save {} KB".format(filename, round(iconsize / 1024.0, 2)))
 
+        # Check for category
+        if 'category' not in source['properties']:
+            error_msgs.append("Source has no category.")
+
         # If we're not global we must have a geometry.
         # The geometry itself is validated by jsonschema
         if 'world' not in filename:
