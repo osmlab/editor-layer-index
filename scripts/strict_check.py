@@ -171,7 +171,7 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
     wms_args = {}
     u = urlparse(wms_url)
     url_parts = list(u)
-    for k, v in parse_qsl(u.query):
+    for k, v in parse_qsl(u.query, keep_blank_values=True):
         wms_args[k.lower()] = v
 
     # Check mandatory WMS GetMap parameters (Table 8, Section 7.3.2, WMS 1.3.0 specification)
