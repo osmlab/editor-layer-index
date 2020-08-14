@@ -287,9 +287,18 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
     if imagery_format not in wms['formats']:
         error_msgs.append("Format '{}' not in '{}'.".format(imagery_format, imagery_formats_str))
 
-    if 'jpeg' not in imagery_format and 'jpeg' in imagery_formats_str:
-        warning_msgs.append("Server supports jpeg, but '{}' is used. "
-                            "(Server supports: '{}')".format(imagery_format, imagery_formats_str))
+    if 'category' in source['properties'] and 'photo' in source['properties']['category']:
+        if 'jpeg' not in imagery_format and 'jpeg' in imagery_formats_str:
+            warning_msgs.append("Server supports JPEG, but '{}' is used. "
+                                "JPEG is typically preferred for photo sources, but might not be always "
+                                "the best choice. "
+                                "(Server supports: '{}')".format(imagery_format, imagery_formats_str))
+    elif 'category' in source['properties'] and 'map' in source['properties']['category']:
+        if 'png' not in imagery_format and 'png' in imagery_formats_str:
+            warning_msgs.append("Server supports PNG, but '{}' is used. "
+                                "PNG is typically preferred for map sources, but might not be always "
+                                "the best choice. "
+                                "(Server supports: '{}')".format(imagery_format, imagery_formats_str))
 
 
 def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
