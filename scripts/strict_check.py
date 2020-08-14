@@ -176,9 +176,19 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
 
     # Check mandatory WMS GetMap parameters (Table 8, Section 7.3.2, WMS 1.3.0 specification)
     missing_request_parameters = set()
-    for request_parameter in ['version', 'request', 'layers', 'bbox', 'width', 'height', 'format']:
+    is_esri = 'request' not in wms_args
+    if is_esri:
+        required_parameters = ['f', 'bbox', 'size', 'imageSR', 'bboxSR', 'format']
+    else:
+        required_parameters = ['version', 'request', 'layers', 'bbox', 'width', 'height', 'format']
+    for request_parameter in required_parameters:
         if request_parameter.lower() not in wms_args:
             missing_request_parameters.add(request_parameter)
+
+    # Nothing more to do for esri rest api
+    if is_esri:
+        return good_msgs, warning_msgs, error_msgs
+
     if 'version' in wms_args and wms_args['version'] == '1.3.0':
         if 'crs' not in wms_args:
             missing_request_parameters.add('crs')
