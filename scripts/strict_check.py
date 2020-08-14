@@ -187,7 +187,7 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
 
     # Nothing more to do for esri rest api
     if is_esri:
-        return good_msgs, warning_msgs, error_msgs
+        return
 
     if 'version' in wms_args and wms_args['version'] == '1.3.0':
         if 'crs' not in wms_args:
