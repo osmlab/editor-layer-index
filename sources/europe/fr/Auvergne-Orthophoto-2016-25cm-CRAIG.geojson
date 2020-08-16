@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "CRAIG-Auvergne-2016",
-        "name": "Auvergne 2016 25cm CRAIG",
+        "name": "Auvergne 2016 25cm CRAIG (WMTS)",
         "type": "tms",
         "url": "https://tiles.craig.fr/ortho/wmts/1.0.0/ortho_2016/webmercator/{zoom}/{x}/{y}.jpeg",
         "end_date": "2016",
@@ -14,7 +14,8 @@
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
-        "max_zoom": 21
+        "max_zoom": 21,
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",

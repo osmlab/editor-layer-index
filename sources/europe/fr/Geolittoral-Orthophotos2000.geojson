@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "Geolittoral-Orthophotos2000",
-        "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortholittorale&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?LAYERS=ortholittorale&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMa",
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
             "text": "Ortho littorale 2000",
@@ -10,14 +10,17 @@
         },
         "available_projections": [
             "EPSG:4326",
-            "EPSG:3857"
+            "EPSG:3857",
+            "CRS:84"
         ],
         "type": "wms",
         "name": "Géolittoral - Orthophotos 2000",
         "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
+        "description": "C\u00f4tes Atlantique - Manche - Mer du Nord (Disponible du 1/100.000 au 1/100)",
         "start_date": "2000",
         "end_date": "2000",
-        "country_code": "FR"
+        "country_code": "FR",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",
