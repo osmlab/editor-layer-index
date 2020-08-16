@@ -303,12 +303,6 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
                                 "JPEG is typically preferred for photo sources, but might not be always "
                                 "the best choice. "
                                 "(Server supports: '{}')".format(imagery_format, imagery_formats_str))
-    elif 'category' in source['properties'] and 'map' in source['properties']['category']:
-        if 'png' not in imagery_format and 'png' in imagery_formats_str:
-            warning_msgs.append("Server supports PNG, but '{}' is used. "
-                                "PNG is typically preferred for map sources, but might not be always "
-                                "the best choice. "
-                                "(Server supports: '{}')".format(imagery_format, imagery_formats_str))
 
 
 def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
