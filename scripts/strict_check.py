@@ -325,12 +325,34 @@ def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
     """
 
     wms_url = source['properties']['url']
+
+    wms_args = {}
+    u = urlparse(wms_url)
+    url_parts = list(u)
+    for k, v in parse_qsl(u.query, keep_blank_values=True):
+        wms_args[k.lower()] = v
+
+    def get_getcapabilitie_url(wms_version=None):
+
+        get_capabilities_args = {'service': 'WMS',
+                                 'request': 'GetCapabilities'}
+        if wms_version is not None:
+            get_capabilities_args['version'] = wms_version
+
+        # Some server only return capabilities when the map parameter is specified
+        if 'map' in wms_args:
+            get_capabilities_args['map'] = wms_args['map']
+
+        url_parts[4] = urlencode(list(get_capabilities_args.items()))
+        return urlunparse(url_parts)
+
     try:
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            r = requests.get(wms_url, headers=headers)
+        for wmsversion in [None, '1.3.0', '1.1.1', '1.1.0', '1.0.0']:
+            url = get_getcapabilitie_url(wms_version=None)
+            r = requests.get(url, headers=headers)
             xml = r.text
             wms = parse_wms(xml)
+            break
     except Exception as e:
         error_msgs.append("Exception: {}".format(str(e)))
 
