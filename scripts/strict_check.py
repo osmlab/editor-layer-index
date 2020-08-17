@@ -140,10 +140,26 @@ def parse_wms(xml):
         formats.append(es.text)
     wms['formats'] = formats
 
+    # Parse formats
+    formats = []
+    for es in root.findall(".//Capability/Request/GetMap/Format"):
+        formats.append(es.text)
+    wms['formats'] = formats
+
+    # Parse access constraints and fees
+    constraints = []
+    for es in root.findall(".//AccessConstraints"):
+        constraints.append(es.text)
+    fees = []
+    for es in root.findall(".//Fees"):
+        fees.append(es.text)
+    wms['Fees'] = fees
+    wms['AccessConstraints'] = constraints
+
     return wms
 
 
-def check_wms(source, good_msgs, warning_msgs, error_msgs):
+def check_wms(source, info_msgs, warning_msgs, error_msgs):
     """
     Check WMS source
 
@@ -151,7 +167,7 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
     ----------
     source : dict
         Source dictionary
-    good_msgs : list
+    info_msgs : list
         Good messages
     warning_msgs: list
         Warning messages
@@ -245,6 +261,11 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
             error_msgs.append(msg)
         return
 
+    for access_constraint in wms['AccessConstraints']:
+        info_msgs.append("AccessConstraints: {}".format(access_constraint))
+    for fee in wms['Fees']:
+        info_msgs.append("Fee: {}".format(fee))
+
     # Check layers
     if 'layers' in wms_args:
         layer_arg = wms_args['layers']
@@ -320,7 +341,7 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
                                 "(Server supports: '{}')".format(imagery_format, imagery_formats_str))
 
 
-def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
+def check_wms_endpoint(source, info_msgs, warning_msgs, error_msgs):
     """
     Check WMS Endpoint source
 
@@ -330,7 +351,7 @@ def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
     ----------
     source : dict
         Source dictionary
-    good_msgs : list
+    info_msgs : list
         Good messages
     warning_msgs: list
         Warning messages
@@ -367,12 +388,18 @@ def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
             r = requests.get(url, headers=headers)
             xml = r.text
             wms = parse_wms(xml)
+
+            for access_constraint in wms['AccessConstraints']:
+                info_msgs.append("AccessConstraints: {}".format(access_constraint))
+            for fee in wms['Fees']:
+                info_msgs.append("Fee: {}".format(fee))
+
             break
         except Exception as e:
             error_msgs.append("WMS: {} Exception: {}".format(wmsversion, str(e)))
 
 
-def check_wmts(source, good_msgs, warning_msgs, error_msgs):
+def check_wmts(source, info_msgs, warning_msgs, error_msgs):
     """
     Check WMTS source
 
@@ -380,7 +407,7 @@ def check_wmts(source, good_msgs, warning_msgs, error_msgs):
     ----------
     source : dict
         Source dictionary
-    good_msgs : list
+    info_msgs : list
         Good messages
     warning_msgs: list
         Warning messages
@@ -397,7 +424,7 @@ def check_wmts(source, good_msgs, warning_msgs, error_msgs):
         error_msgs.append("Exception: {}".format(str(e)))
 
 
-def check_tms(source, good_msgs, warning_msgs, error_msgs):
+def check_tms(source, info_msgs, warning_msgs, error_msgs):
     """
     Check TMS source
 
@@ -405,7 +432,7 @@ def check_tms(source, good_msgs, warning_msgs, error_msgs):
     ----------
     source : dict
         Source dictionary
-    good_msgs : list
+    info_msgs : list
         Good messages
     warning_msgs: list
         Warning messages
@@ -478,7 +505,7 @@ def check_tms(source, good_msgs, warning_msgs, error_msgs):
 
         tested_str = ",".join(list(map(str, sorted(tested_zooms))))
         if len(zoom_failures) == 0 and len(zoom_success) > 0:
-            good_msgs.append("Zoom levels reachable. (Tested: {})".format(tested_str))
+            info_msgs.append("Zoom levels reachable. (Tested: {})".format(tested_str))
         elif len(zoom_failures) > 0 and len(zoom_success) > 0:
             not_found_str = ",".join(list(map(str, sorted(zoom_failures))))
             warning_msgs.append("Zoom level {} not reachable. (Tested: {}) "
@@ -515,7 +542,7 @@ for filename in arguments.path:
         # jsonschema validate
         validator.validate(source, schema)
 
-        good_msgs = []
+        info_msgs = []
         warning_msgs = []
         error_msgs = []
         # Check for license url. Too many missing to mark as required in schema.
@@ -580,17 +607,17 @@ for filename in arguments.path:
 
         # Check imagery type
         if source['properties']['type'] == 'tms':
-            check_tms(source, good_msgs, warning_msgs, error_msgs)
+            check_tms(source, info_msgs, warning_msgs, error_msgs)
         elif source['properties']['type'] == 'wms':
-            check_wms(source, good_msgs, warning_msgs, error_msgs)
+            check_wms(source, info_msgs, warning_msgs, error_msgs)
         elif source['properties']['type'] == 'wms_endpoint':
-            check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs)
+            check_wms_endpoint(source, info_msgs, warning_msgs, error_msgs)
         elif source['properties']['type'] == 'wmts':
-            check_wmts(source, good_msgs, warning_msgs, error_msgs)
+            check_wmts(source, info_msgs, warning_msgs, error_msgs)
         else:
             warning_msgs.append("Imagery type {} is currently not checked.".format(source['properties']['type']))
 
-        for msg in good_msgs:
+        for msg in info_msgs:
             logger.info(msg)
         for msg in warning_msgs:
             logger.warning(msg)
