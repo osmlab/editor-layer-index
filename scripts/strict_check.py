@@ -268,7 +268,7 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
                     error_msgs.append("Not the same number of styles and layers.")
                 else:
                     for layer_name, style in zip(layers, styles):
-                        if (len(style) > 0 and layer_name in wms['layers'] and
+                        if (len(style) > 0 and not style == 'default' and layer_name in wms['layers'] and
                                 style not in wms['layers'][layer_name]['Styles']):
                             error_msgs.append("Layer '{}' does not support style '{}'".format(layer_name, style))
 
