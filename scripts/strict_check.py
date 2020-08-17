@@ -140,12 +140,6 @@ def parse_wms(xml):
         formats.append(es.text)
     wms['formats'] = formats
 
-    # Parse formats
-    formats = []
-    for es in root.findall(".//Capability/Request/GetMap/Format"):
-        formats.append(es.text)
-    wms['formats'] = formats
-
     # Parse access constraints and fees
     constraints = []
     for es in root.findall(".//AccessConstraints"):
