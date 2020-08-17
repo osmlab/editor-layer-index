@@ -254,7 +254,8 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
             if layer_name not in wms['layers']:
                 not_found_layers.append(layer_name)
         if len(not_found_layers) > 0:
-            error_msgs.append("Layers '{}' not advertised by WMS GetCapabilities request.".format(",".join(not_found_layers)))
+            error_msgs.append("Layers '{}' not advertised by WMS GetCapabilities "
+                              "request.".format(",".join(not_found_layers)))
 
         # Check styles
         if 'styles' in wms_args:
@@ -267,10 +268,12 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
                     error_msgs.append("Not the same number of styles and layers.")
                 else:
                     for layer_name, style in zip(layers, styles):
-                        if len(style) > 0 and layer_name in wms['layers'] and style not in wms['layers'][layer_name]['Styles']:
+                        if (len(style) > 0 and layer_name in wms['layers'] and
+                                style not in wms['layers'][layer_name]['Styles']):
                             error_msgs.append("Layer '{}' does not support style '{}'".format(layer_name, style))
 
         # Check CRS
+        crs_should_included_if_available = {'EPSG:4326', 'EPSG:3857', 'CRS:84'}
         if 'available_projections' not in source['properties']:
             error_msgs.append("source is missing 'available_projections' element.")
         else:
@@ -284,8 +287,20 @@ def check_wms(source, good_msgs, warning_msgs, error_msgs):
                     if len(not_supported_crs) > 0:
                         supported_crs_str = ",".join(wms['layers'][layer_name]['CRS'])
                         not_supported_crs_str = ",".join(not_supported_crs)
-                        error_msgs.append("CRS '{}' not in: {}".format(not_supported_crs_str,
-                                                                       supported_crs_str))
+                        warning_msgs.append("Layer '{}': CRS '{}' not in: {}".format(layer_name,
+                                                                                     not_supported_crs_str,
+                                                                                     supported_crs_str))
+
+                    supported_but_not_included = set()
+                    for crs in crs_should_included_if_available:
+                        if (crs not in source['properties']['available_projections'] and
+                                crs in wms['layers'][layer_name]['CRS']):
+                            supported_but_not_included.add(crs)
+
+                    if len(supported_but_not_included) > 0:
+                        supported_but_not_included_str = ','.join(supported_but_not_included)
+                        warning_msgs.append("Layer '{}': CRS '{}' not included in available_projections but "
+                                            "supported by server.".format(layer_name, supported_but_not_included_str))
 
     if wms_args['version'] < wms['version']:
         warning_msgs.append("Query requests WMS version '{}', server supports '{}'".format(wms_args['version'],
