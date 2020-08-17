@@ -361,15 +361,15 @@ def check_wms_endpoint(source, good_msgs, warning_msgs, error_msgs):
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
 
-    try:
-        for wmsversion in [None, '1.3.0', '1.1.1', '1.1.0', '1.0.0']:
-            url = get_getcapabilitie_url(wms_version=None)
+    for wmsversion in [None, '1.3.0', '1.1.1', '1.1.0', '1.0.0']:
+        try:
+            url = get_getcapabilitie_url(wms_version=wmsversion)
             r = requests.get(url, headers=headers)
             xml = r.text
             wms = parse_wms(xml)
             break
-    except Exception as e:
-        error_msgs.append("Exception: {}".format(str(e)))
+        except Exception as e:
+            error_msgs.append("WMS: {} Exception: {}".format(wmsversion, str(e)))
 
 
 def check_wmts(source, good_msgs, warning_msgs, error_msgs):
