@@ -9,7 +9,8 @@
         "start_date": "2019",
         "country_code": "FR",
         "available_projections": [
-            "EPSG:3857"
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "attribution": {
             "text": "Ville de Bayonne - 2019", 
@@ -17,11 +18,12 @@
         },
         "max_zoom": 20,
         "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
-        "privacy_policy_url": "https://www.data.gouv.fr/fr/datasets/orthophotographie-petit-et-grand-bayonne-2019/"
+        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/"
     }, 
     "geometry": {
         "type": "Polygon", 
         "coordinates": [
+            [
                 [
                     -1.48262,
                     43.49176
@@ -123,5 +125,6 @@
                     43.49176
                 ]
             ]
+        ]
     }
 }
