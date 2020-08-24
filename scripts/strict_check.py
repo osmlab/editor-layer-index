@@ -235,7 +235,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
         # Keep extra arguments, such as map or key
         for key in wms_args:
             if key not in {'version', 'request', 'layers', 'bbox', 'width', 'height', 'format', 'crs', 'srs'}:
-                get_capabilities_args['map'] = wms_args[key]
+                get_capabilities_args[key] = wms_args[key]
 
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
@@ -387,7 +387,7 @@ def check_wms_endpoint(source, info_msgs, warning_msgs, error_msgs):
         # Keep extra arguments, such as map or key
         for key in wms_args:
             if key not in {'version', 'request', 'layers', 'bbox', 'width', 'height', 'format', 'crs', 'srs'}:
-                get_capabilities_args['map'] = wms_args[key]
+                get_capabilities_args[key] = wms_args[key]
 
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
