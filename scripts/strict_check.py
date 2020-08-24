@@ -225,16 +225,17 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
     if 'styles' not in wms_args:
         warning_msgs.append("Parameter 'styles' is missing in url. 'STYLES=' can be used to request default style.")
 
-    def get_GetCapabilities_url(wms_version):
-        """ Construct GetCapabilities URL """
+    def get_getcapabilitie_url(wms_version=None):
+
         get_capabilities_args = {'service': 'WMS',
                                  'request': 'GetCapabilities'}
         if wms_version is not None:
             get_capabilities_args['version'] = wms_version
 
-        # Some server only return capabilities when the map parameter is specified
-        if 'map' in wms_args:
-            get_capabilities_args['map'] = wms_args['map']
+        # Keep extra arguments, such as map or key
+        for key in wms_args:
+            if key not in {'version', 'request', 'layers', 'bbox', 'width', 'height', 'format', 'crs', 'srs'}:
+                get_capabilities_args['map'] = wms_args[key]
 
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
@@ -252,7 +253,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
             wmsversion_str = wmsversion
 
         try:
-            wms_getcapabilites_url = get_GetCapabilities_url(wmsversion)
+            wms_getcapabilites_url = get_getcapabilitie_url(wmsversion)
             r = requests.get(wms_getcapabilites_url, headers=headers)
             xml = r.text
             wms = parse_wms(xml)
@@ -383,9 +384,10 @@ def check_wms_endpoint(source, info_msgs, warning_msgs, error_msgs):
         if wms_version is not None:
             get_capabilities_args['version'] = wms_version
 
-        # Some server only return capabilities when the map parameter is specified
-        if 'map' in wms_args:
-            get_capabilities_args['map'] = wms_args['map']
+        # Keep extra arguments, such as map or key
+        for key in wms_args:
+            if key not in {'version', 'request', 'layers', 'bbox', 'width', 'height', 'format', 'crs', 'srs'}:
+                get_capabilities_args['map'] = wms_args[key]
 
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
