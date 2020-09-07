@@ -2,23 +2,21 @@
     "type": "Feature",
     "properties": {
         "id": "Toulouse-Orthophotoplan-2007",
-        "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
-            "text": "ToulouseMetropole",
-            "required": true
-        },
         "name": "Toulouse - Orthophotoplan 2007",
-        "available_projections": [
-            "EPSG:3857",
-            "EPSG:3943"
-        ],
-        "url": "https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho2007&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "max_zoom": 22,
-        "license_url": "https://data.toulouse-metropole.fr/page/licence",
-        "country_code": "FR",
+        "type": "tms",
+        "url": "https://wms.openstreetmap.fr/tms/1.0.0/toulouse_ortho2007/{zoom}/{x}/{y}",
         "start_date": "2007",
         "end_date": "2007",
-        "type": "wms"
+        "country_code": "FR",
+        "attribution": {
+            "text": "Orthophotoplan 2007 - Toulouse Métropole, 20/09/2012, sous license ODbL",
+            "url": "https://data.toulouse-metropole.fr/explore/dataset/orthophotoplan-2007/information/",
+            "required": true
+        },
+        "max_zoom": 22,
+        "min_zoom": 7,
+        "category": "historicphoto",
+        "license_url": "https://data.toulouse-metropole.fr/explore/dataset/orthophotoplan-2007/information/"
     },
     "geometry": {
         "type": "Polygon",
