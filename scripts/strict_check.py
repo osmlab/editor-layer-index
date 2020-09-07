@@ -625,6 +625,10 @@ for filename in arguments.path:
             elif source['geometry'] is not None:
                 error_msgs.append("{} should have null geometry but it is {}".format(filename, source['geometry']))
 
+        # Check if URL encodes HTTP headers
+        if "user-agent" in source['properties']['url'].lower():
+            error_msgs.append("URL should not encode HTTP headers")
+
         # Check imagery type
         if source['properties']['type'] == 'tms':
             check_tms(source, info_msgs, warning_msgs, error_msgs)
