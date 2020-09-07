@@ -214,9 +214,13 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
     if 'version' in wms_args and wms_args['version'] == '1.3.0':
         if 'crs' not in wms_args:
             missing_request_parameters.add('crs')
+        if 'srs' in wms_args:
+            error_msgs.append("WMS {} urls should not contain SRS parameter.".format(wms_args['version']))
     elif 'version' in wms_args and not wms_args['version'] == '1.3.0':
         if 'srs' not in wms_args:
             missing_request_parameters.add('srs')
+        if 'crs' in wms_args:
+            error_msgs.append("WMS {} urls should not contain CRS parameter.".format(wms_args['version']))
     if len(missing_request_parameters) > 0:
         missing_request_parameters_str = ",".join(missing_request_parameters)
         error_msgs.append("Parameter '{}' is missing in url.".format(missing_request_parameters_str))
