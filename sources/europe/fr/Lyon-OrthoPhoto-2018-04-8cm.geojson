@@ -2,22 +2,33 @@
     "type": "Feature",
     "properties": {
         "id": "orthophoto_lyon_2018",
-        "name": "Lyon Orthophoto 2018",
+        "name": "Lyon Orthophoto 2018 (8cm)",
         "type": "wms",
-        "url": "https://download.data.grandlyon.com/wms/grandlyon?VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&WIDTH={width}&HEIGHT={height}&transparent=true&LAYERS=Ortho2018_Dalle_unique_8cm_CC46&FORMAT=image/png&CRS={proj}&BBOX={bbox}",
+        "url": "https://download.data.grandlyon.com/wms/grandlyon?LAYERS=Ortho2018_Dalle_unique_8cm_CC46&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "best": true,
         "end_date": "2018-04-20",
         "start_date": "2018-04-17",
         "country_code": "FR",
         "max_zoom": 22,
         "min_zoom": 10,
+        "description": "Orthophotographie 2018 de la M\u00e9tropole de Lyon",
         "attribution": {
-            "url": "https://data.grandlyon.com/imagerie/orthophotographie-2015-du-grand-lyon/",
+            "url": "https://data.beta.grandlyon.com/fr/jeux-de-donnees/orthophotographie-2018-metropole-lyon-format-ecw/info",
             "text": "M\u00e9tropole de Lyon",
             "required": true
         },
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:4171",
+            "EPSG:27562",
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3946",
+            "EPSG:27572"
+        ],
         "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
-        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales"
+        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",
