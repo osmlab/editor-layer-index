@@ -84,5 +84,6 @@ for filename in glob.glob(os.path.join(eli_path, '**', '*.geojson'), recursive=T
 
                     with open(out_file, 'w') as out:
                         json.dump(source, out, indent=4, sort_keys=False)
+                        out.write("\n")
 
 
