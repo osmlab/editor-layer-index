@@ -1,29 +1,45 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "IBGE_DF_Addresses",
-    "name": "IBGE Distrito Federal",
-    "overlay": true,
-    "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
-    "max_zoom": 20,
-    "country_code": "BR",
-    "attribution": {
-      "text": "IBGE",
-      "required": false
+    "type": "Feature",
+    "properties": {
+        "id": "IBGE_DF_Addresses",
+        "name": "IBGE Distrito Federal",
+        "overlay": true,
+        "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
+        "max_zoom": 20,
+        "country_code": "BR",
+        "attribution": {
+            "text": "IBGE",
+            "required": false
+        },
+        "type": "tms",
+        "description": "Addresses data from IBGE",
+        "category": "other"
     },
-    "type": "tms",
-    "description": "Addresses data from IBGE"
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [-48.2444, -16.0508],
-        [-48.2444, -15.5005],
-        [-47.5695, -15.5005],
-        [-47.5695, -16.0508],
-        [-48.2444, -16.0508]
-      ]
-    ]
-  }
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -48.2444,
+                    -16.0508
+                ],
+                [
+                    -48.2444,
+                    -15.5005
+                ],
+                [
+                    -47.5695,
+                    -15.5005
+                ],
+                [
+                    -47.5695,
+                    -16.0508
+                ],
+                [
+                    -48.2444,
+                    -16.0508
+                ]
+            ]
+        ]
+    }
 }

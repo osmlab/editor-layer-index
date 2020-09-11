@@ -1,43 +1,44 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
-        "id": "GrandNancy_Orthophotographie_2012", 
-        "name": "GrandNancy - Orthophoto - 2012", 
-        "type": "tms", 
-        "url": "https://wms.openstreetmap.fr/tms/1.0.0/nancy_2012/{zoom}/{x}/{y}", 
+        "id": "GrandNancy_Orthophotographie_2012",
+        "name": "GrandNancy - Orthophoto - 2012",
+        "type": "tms",
+        "url": "https://wms.openstreetmap.fr/tms/1.0.0/nancy_2012/{zoom}/{x}/{y}",
         "end_date": "2012",
         "start_date": "2012",
-        "country_code": "FR", 
+        "country_code": "FR",
         "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/Nancy/Orthophotographie", 
-            "text": "GrandNancy Orthophotographie 2012", 
+            "url": "https://wiki.openstreetmap.org/wiki/Nancy/Orthophotographie",
+            "text": "GrandNancy Orthophotographie 2012",
             "required": true
-        }, 
-        "max_zoom": 22, 
-        "license_url": "https://openstreetmap.fr/outils"
-    }, 
+        },
+        "max_zoom": 22,
+        "license_url": "https://openstreetmap.fr/outils",
+        "category": "historicphoto"
+    },
     "geometry": {
-        "type": "Polygon", 
+        "type": "Polygon",
         "coordinates": [
             [
                 [
-                    6.06066031366, 
+                    6.06066031366,
                     48.60554459242
-                ], 
+                ],
                 [
-                    6.29717112787, 
+                    6.29717112787,
                     48.59922593248
-                ], 
+                ],
                 [
-                    6.30611158204, 
+                    6.30611158204,
                     48.74076820528
-                ], 
+                ],
                 [
-                    6.06896018357, 
+                    6.06896018357,
                     48.74710338225
-                ], 
+                ],
                 [
-                    6.06066031366, 
+                    6.06066031366,
                     48.60554459242
                 ]
             ]

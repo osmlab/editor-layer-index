@@ -95,7 +95,8 @@
         "min_zoom": 5,
         "name": "Lantm\u00e4teriet Historic Orthophoto 1975",
         "type": "wms",
-        "url": "https://api.lantmateriet.se/historiska-ortofoton/wms/v1/token/9b342b7d9f12d4ddb92277be9869d860/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.Histortho_75&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://api.lantmateriet.se/historiska-ortofoton/wms/v1/token/9b342b7d9f12d4ddb92277be9869d860/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.Histortho_75&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "historicphoto"
     },
     "type": "Feature"
 }

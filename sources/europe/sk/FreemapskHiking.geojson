@@ -3,7 +3,7 @@
     "properties": {
         "id": "Freemap.sk-Hiking",
         "attribution": {
-            "text": "Map © Freemap Slovakia, data © OpenStreetMap contributors and SRTM",
+            "text": "Map \u00a9 Freemap Slovakia, data \u00a9 OpenStreetMap contributors and SRTM",
             "required": true,
             "url": "https://www.freemap.sk/?layers=T"
         },
@@ -13,33 +13,34 @@
         "min_zoom": 8,
         "country_code": "SK",
         "type": "tms",
-        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "category": "osmbasedmap"
     },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-          [
             [
-              16.69,
-              47.64
-            ],
-            [
-              22.67,
-              47.64
-            ],
-            [
-              22.67,
-              49.65
-            ],
-            [
-              16.69,
-              49.65
-            ],
-            [
-              16.69,
-              47.64
+                [
+                    16.69,
+                    47.64
+                ],
+                [
+                    22.67,
+                    47.64
+                ],
+                [
+                    22.67,
+                    49.65
+                ],
+                [
+                    16.69,
+                    49.65
+                ],
+                [
+                    16.69,
+                    47.64
+                ]
             ]
-          ]
         ]
     }
 }

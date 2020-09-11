@@ -117,7 +117,8 @@
         "max_zoom": 19,
         "name": "Powiat rzeszowski: Orthophotomap (aerial image)",
         "type": "wms",
-        "url": "https://powiatrzeszowski.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://powiatrzeszowski.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo"
     },
     "type": "Feature"
 }

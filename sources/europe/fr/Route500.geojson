@@ -3,19 +3,20 @@
     "properties": {
         "id": "route500",
         "name": "Route 500",
-        "description": "Routes du réseau classé (autoroutes, nationales, départementales)",
+        "description": "Routes du r\u00e9seau class\u00e9 (autoroutes, nationales, d\u00e9partementales)",
         "type": "tms",
         "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500/{zoom}/{x}/{y}.png",
         "country_code": "FR",
         "overlay": true,
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
-            "text": "Tiles © cquest@Openstreetmap France, data © IGN, LO/OL",
+            "text": "Tiles \u00a9 cquest@Openstreetmap France, data \u00a9 IGN, LO/OL",
             "required": true
         },
         "max_zoom": 20,
         "min_zoom": 12,
-        "license_url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE"
+        "license_url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
+        "category": "map"
     },
     "geometry": {
         "type": "Polygon",
