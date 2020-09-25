@@ -623,6 +623,33 @@ for filename in arguments.path:
                 error_msgs.append("{}: license url {} is not reachable: {}".format(
                     filename, source['properties']['license_url'], str(e)))
 
+        # Check attribution url exists
+        if 'attribution' in source['properties']:
+            if 'url' in source['properties']['attribution']:
+                url = source['properties']['attribution']['url']
+                try:
+                    r = requests.get(url, headers=headers)
+                    if not r.status_code == 200:
+                        error_msgs.append("{}: attribution url {} is not reachable: HTTP code: {}".format(
+                            filename, url, r.status_code))
+
+                except Exception as e:
+                    error_msgs.append("{}: attribution url {} is not reachable: {}".format(
+                        filename, url, str(e)))
+
+        # Check icon url exists
+        if 'icon' in source['properties'] and source['properties']['icon'].startswith("http"):
+            url = source['properties']['icon']
+            try:
+                r = requests.get(url, headers=headers)
+                if not r.status_code == 200:
+                    error_msgs.append("{}: icon url {} is not reachable: HTTP code: {}".format(
+                        filename, url, r.status_code))
+
+            except Exception as e:
+                error_msgs.append("{}: icon url {} is not reachable: {}".format(
+                    filename, url, str(e)))
+
         # Privacy policy
         # Check if privacy url is set
         if 'privacy_policy_url' not in source['properties']:
