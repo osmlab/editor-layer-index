@@ -274,7 +274,6 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
 
         try:
             wms_getcapabilites_url = get_getcapabilitie_url(wmsversion)
-            print(wms_getcapabilites_url)
             r = requests.get(wms_getcapabilites_url, headers=headers)
             xml = r.text
             wms = parse_wms(xml)
