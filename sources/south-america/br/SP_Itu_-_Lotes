@@ -1,10 +1,11 @@
 {
   "type" : "Feature",
   "properties" : {
-    "country_code": "BR",
     "id" : "SP_Itu_-_Lotes",
     "name" : "Itu - Lotes",
     "type" : "wms",
+    "country_code": "BR",
+    "max_zoom": 19,
     "available_projections" : [ "EPSG:3857", "EPSG:4326" ],
     "url" : "https://urbigis.com/geoproxy/4ac1cd2049d8857b21d9ff38339f7c1SERVICE=WMS&REQUEST=GETMAP&FORMAT=image/png8&VERSION=1.3.0&LAYERS=48503435-fe09-49ae-91f3-dfd54e029f95&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
   },
