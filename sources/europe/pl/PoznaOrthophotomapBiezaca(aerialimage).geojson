@@ -3,7 +3,7 @@
     "properties": {
         "name": "Poznań: Orthophotomap Bieżąca (aerial image)",
         "type": "wms",
-        "url": "http://wms2.geopoz.poznan.pl/geoserver/ortogpkg/wms?LAYERS=ortofotomapa_biezaca&STYLES=raster&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "http://wms2.geopoz.poznan.pl/geoserver/gwc/service/wms?LAYERS=ortogpkg:ortofotomapa_biezaca&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "https://www.geopoz.pl/bip/index.php?t=200&id=2449",
         "privacy_policy_url": "https://www.geopoz.pl/portal/index.php?t=200&id=5142",
         "id": "poznan-ortofotomapaBiezaca",
