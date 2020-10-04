@@ -123,17 +123,17 @@ def parse_wms(xml):
         # WMS Version 1.3.0
         e = element.find("./EX_GeographicBoundingBox")
         if e is not None:
-            bbox = [float(e.find("./{}".format(orient)).text) for orient in ['westBoundLongitude',
-                                                                             'southBoundLatitude',
-                                                                             'eastBoundLongitude',
-                                                                             'northBoundLatitude']]
+            bbox = [float(e.find("./{}".format(orient)).text.replace(',', '.'))
+                    for orient in ['westBoundLongitude',
+                                   'southBoundLatitude',
+                                   'eastBoundLongitude',
+                                   'northBoundLatitude']]
             new_layer['BBOX'] = bbox
         # WMS Version < 1.3.0
         e = element.find("./LatLonBoundingBox")
         if e is not None:
-            bbox = [float(e.attrib[orient]) for orient in ['minx', 'miny', 'maxx', 'maxy']]
+            bbox = [float(e.attrib[orient].replace(',', '.')) for orient in ['minx', 'miny', 'maxx', 'maxy']]
             new_layer['BBOX'] = bbox
-
         if 'Name' in new_layer:
             layers[new_layer['Name']] = new_layer
 
