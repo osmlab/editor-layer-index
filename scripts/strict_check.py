@@ -57,9 +57,20 @@ spacesave = 0
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
 
 
-def test_url(url):
+def get_http_headers(source):
+    """ Extract http headers from source"""
+    custom_headers = {}
+    custom_headers.update(headers)
+    if 'custom-http-headers' in source['properties']:
+        key = source['properties']['custom-http-headers']['header-name']
+        value = source['properties']['custom-http-headers']['header-value']
+        custom_headers[key] = value
+    return custom_headers
+
+
+def test_url(url, headers):
     try:
-        r = requests.get(url)
+        r = requests.get(url, headers=headers)
         if r.status_code == 200:
             return True
     except:
@@ -186,6 +197,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
     """
 
     wms_url = source['properties']['url']
+    source_headers = get_http_headers(source)
 
     params = ["{proj}", "{bbox}", "{width}", "{height}"]
     missingparams = [p for p in params if p not in wms_url]
@@ -274,7 +286,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
 
         try:
             wms_getcapabilites_url = get_getcapabilitie_url(wmsversion)
-            r = requests.get(wms_getcapabilites_url, headers=headers)
+            r = requests.get(wms_getcapabilites_url, headers=source_headers)
             xml = r.text
             wms = parse_wms(xml)
             if wms is not None:
@@ -409,6 +421,7 @@ def check_wms_endpoint(source, info_msgs, warning_msgs, error_msgs):
     """
 
     wms_url = source['properties']['url']
+    source_headers = get_http_headers(source)
     if not validators.url(wms_url):
         error_msgs.append("URL validation error: {}".format(wms_url))
 
@@ -436,7 +449,7 @@ def check_wms_endpoint(source, info_msgs, warning_msgs, error_msgs):
     for wmsversion in [None, '1.3.0', '1.1.1', '1.1.0', '1.0.0']:
         try:
             url = get_getcapabilitie_url(wms_version=wmsversion)
-            r = requests.get(url, headers=headers)
+            r = requests.get(url, headers=source_headers)
             xml = r.text
             wms = parse_wms(xml)
 
@@ -502,6 +515,7 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
             centroid = Point(6.1, 49.6)
 
         tms_url = source['properties']['url']
+        source_headers = get_http_headers(source)
 
         def validate_url():
             url = re.sub(r'switch:?([^}]*)', 'switch', tms_url).replace('{', '').replace('}', '')
@@ -553,7 +567,7 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
             parameters['x'] = tile.x
             parameters['zoom'] = zoom
             query_url = query_url.format(**parameters)
-            if test_url(query_url):
+            if test_url(query_url, source_headers):
                 zoom_success.append(zoom)
                 return True
             else:
