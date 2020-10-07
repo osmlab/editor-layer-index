@@ -6,8 +6,8 @@
             "text": "Administration du Cadastre et de la Topographie",
             "required": false
         },
-        "name": "openstreetmap.lu \"mapper’s delight\" hillshade lidar 2019",
-        "url": "https://lidar-hillshade-2019.openstreetmap.lu/layer/mappers_delight_lidar_hillshade_2019_reprojected/{zoom}/{x}/{y}.png",
+        "name": "openstreetmap.lu \"mapper’s delight\" hillshade lidar 2019 with unclassified points",
+        "url": "https://lidar-hillshade-2019.openstreetmap.lu/layer/mappers_delight_lidar_hillshade_2019_withunclassified/{zoom}/{x}/{y}.png",
         "max_zoom": 22,
         "min_zoom": 5,
         "license_url": "https://data.public.lu/fr/datasets/lidar-2019-releve-3d-du-territoire-luxembourgeois",
@@ -15,7 +15,7 @@
         "country_code": "LU",
         "type": "tms",
         "start_date": "2019-02-15",
-        "id": "lu.openstreetmap.lidar.hillshade.2019",
+        "id": "lu.openstreetmap.lidar.hillshade.2019.classy",
         "icon": "https://www.geoportail.lu/static/img/lion.png",
         "category": "elevation",
         "valid-georeference": true
