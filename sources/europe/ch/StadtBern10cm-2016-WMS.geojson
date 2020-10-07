@@ -7,7 +7,8 @@
         "end_date": "2016",
         "id": "Bern-bern2016-wms",
         "attribution": {
-            "text": "Orthophoto 2016, Vermessungsamt Stadt Bern",
+            "url": "https://www.bern.ch/themen/planen-und-bauen/geodaten-und-plane/nutzungsbedingungengeodaten/nutzungsbedingungen",
+            "text": "Geodaten Stadt Bern (Luftbild 2016)",
             "required": true
         },
         "name": "Stadt Bern 10cm (2016)",
@@ -21,7 +22,7 @@
         "country_code": "CH",
         "type": "wms",
         "category": "photo",
-        "best": true,
+        "best": false,
         "min_zoom": 10
     },
     "geometry":{"type":"Polygon","coordinates":
