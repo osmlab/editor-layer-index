@@ -2,7 +2,7 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 3.246529403113632, -54.470469931671111 ], [ 3.246529403113632, -54.375391687979096 ], [ 3.463852706336288, -54.375391687979096 ], [ 3.463852706336288, -54.470469931671111 ], [ 3.246529403113632, -54.470469931671111 ] ]
+            [ [ 9.8813, 45.1489 ], [ 9.882, 45.7551 ], [ 10.9491, 48.7111 ], [ 14.9569, 48.7111 ], [ 14.9569, 48.3679 ], [ 13.5583, 45.1489 ], [ 9.8813, 45.1489 ] ]
         ]
     },
     "properties": {
@@ -12,20 +12,19 @@
             "required": true
         },
         "category": "photo",
-        "country_code": "BV",
-        "description": "For more accurate coastline and glacier mapping (true color)",
-        "end_date": "2013-10-18",
+        "country_code": "AT",
+        "description": "Autumn colors in the eastern Alps - Austria, Germany, Italy and Slovenia (true color)",
+        "end_date": "2017-10-26",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
-        "id": "osmim-imagicode-LC81800982013291LGN00",
+        "id": "osmim-imagicode-S2B_R022_N47_20191026T101029",
         "license_url": "https://imagico.de/map/osmim_tiles.php",
-        "name": "imagico.de: Bouvet Island"
+        "name": "imagico.de: Eastern Alps autumn colors 2019"
         "max_zoom": 13,
         "permission_osm": "explicit",
         "privacy_policy_url": "http://services.imagico.de/privacy.php",
-        "start_date": "2013-10-18",
+        "start_date": "2017-10-26",
         "type": "tms",
-        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81800982013291LGN00&z={zoom}&x={x}&y={-y}",
-        "best": true,
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R022_N47_20191026T101029&z={zoom}&x={x}&y={-y}",
     },
     "type": "Feature"
 }
