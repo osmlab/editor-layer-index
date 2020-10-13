@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "miljodirektoratet-vern",
-        "name": "Milj\u00f8direktoratet Protected Areas overlay",
+        "name": "Miljødirektoratet Protected Areas overlay",
         "type": "wms",
         "url": "https://kart.miljodirektoratet.no/arcgis/services/vern/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=naturvern_klasser_omrade&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
@@ -26,7 +26,7 @@
             "EPSG:32636"
         ],
         "attribution": {
-            "text": "\u00a9 Milj\u00f8direktoratet",
+            "text": "© Miljødirektoratet",
             "url": "https://kart.naturbase.no"
         },
         "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",

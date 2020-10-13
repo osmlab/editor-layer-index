@@ -5,14 +5,14 @@
         "name": "Kartverket Hiking Trails",
         "id": "kartverket-friluft",
         "country_code": "NO",
-        "description": "Hiking trails from the Norwegian database `Tur- og Friluftsruter\u00b4, including DNT routes.",
+        "description": "Hiking trails from the Norwegian database `Tur- og Friluftsruter´, including DNT routes.",
         "url": "https://wms.geonorge.no/skwms1/wms.friluftsruter2?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Fotrute&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
         "min_zoom": 6,
         "max_zoom": 24,
         "attribution": {
             "required": true,
-            "text": "\u00a9 Kartverket",
+            "text": "© Kartverket",
             "url": "https://kartverket.no/geodataarbeid/temadata/nasjonal-database-for-tur--og-friluftsruter/"
         },
         "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
