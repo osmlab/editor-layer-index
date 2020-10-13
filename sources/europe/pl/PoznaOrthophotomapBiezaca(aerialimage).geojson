@@ -1,7 +1,7 @@
 {
     "type": "Feature",
     "properties": {
-        "name": "Pozna\u0144: Orthophotomap Bie\u017c\u0105ca (aerial image)",
+        "name": "Poznań: Orthophotomap Bieżąca (aerial image)",
         "type": "wms",
         "url": "http://wms2.geopoz.poznan.pl/geoserver/gwc/service/wms?LAYERS=ortogpkg:ortofotomapa_biezaca&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "https://www.geopoz.pl/bip/index.php?t=200&id=2449",
@@ -20,11 +20,10 @@
             "EPSG:4326"
         ],
         "attribution": {
-            "text": "Zarz\u0105d Geodezji i Katastru Miejskiego GEOPOZ",
+            "text": "Zarząd Geodezji i Katastru Miejskiego GEOPOZ",
             "html": "https://www.geopoz.pl/",
             "required": true
-        },
-        "category": "photo"
+        }
     },
     "geometry": {
         "type": "Polygon",
