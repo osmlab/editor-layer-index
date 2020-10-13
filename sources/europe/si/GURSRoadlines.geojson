@@ -123,7 +123,7 @@
                     45.43241
                 ],
                 [
-                    13.3800,
+                    13.38,
                     45.5666
                 ],
                 [
@@ -717,7 +717,7 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "CC-BY \u00a92020 Geodetska uprava Republike Slovenije (gov.si).",
+            "text": "CC-BY ©2020 Geodetska uprava Republike Slovenije (gov.si).",
             "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/"
         },
         "country_code": "SI",
@@ -729,7 +729,8 @@
         "name": "GURS: Road lines",
         "overlay": true,
         "type": "tms",
-        "url": "https://wms.openstreetmap.de/tms/GURS-road-lines/{zoom}/{x}/{y}.png"
+        "url": "https://wms.openstreetmap.de/tms/GURS-road-lines/{zoom}/{x}/{y}.png",
+        "category": "other"
     },
     "type": "Feature"
 }
