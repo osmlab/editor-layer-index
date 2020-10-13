@@ -1,52 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    1.839749701876779,
-                    6.257803795151386
-                ],
-                [
-                    1.839749701876779,
-                    7.114271792431897
-                ],
-                [
-                    2.549397834200998,
-                    7.114271792431897
-                ],
-                [
-                    2.549397834200998,
-                    6.489052510574106
-                ],
-                [
-                    2.497813590426584,
-                    6.258059752887941
-                ],
-                [
-                    1.839749701876779,
-                    6.257803795151386
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 1.839749701876779, 6.257803795151386 ], [ 1.839749701876779, 7.114271792431897 ], [ 2.549397834200998, 7.114271792431897 ], [ 2.549397834200998, 6.489052510574106 ], [ 2.497813590426584, 6.258059752887941 ], [ 1.839749701876779, 6.257803795151386 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "BJ",
         "description": "Patchy and partly cloudy coverage in usual sources (true color)",
         "end_date": "2015-12-21",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R022_N06_20151221T103009",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Cotonou",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2015-12-21",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R022_N06_20151221T103009&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
