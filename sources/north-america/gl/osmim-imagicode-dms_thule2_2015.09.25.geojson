@@ -1,64 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -68.74291885235837,
-                    76.52635852412212
-                ],
-                [
-                    -68.74446380475094,
-                    76.52840070669755
-                ],
-                [
-                    -68.74806869366695,
-                    76.54938731810256
-                ],
-                [
-                    -68.7461482320123,
-                    76.56016657973251
-                ],
-                [
-                    -68.72275936940244,
-                    76.56022393334496
-                ],
-                [
-                    -68.72017371991207,
-                    76.5577475347327
-                ],
-                [
-                    -68.71853220799495,
-                    76.5292079974043
-                ],
-                [
-                    -68.71977675297786,
-                    76.52636602351234
-                ],
-                [
-                    -68.74291885235837,
-                    76.52635852412212
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -68.742918852358372, 76.526358524122116 ], [ -68.744463804750936, 76.528400706697553 ], [ -68.748068693666951, 76.549387318102561 ], [ -68.746148232012303, 76.56016657973251 ], [ -68.722759369402439, 76.560223933344957 ], [ -68.720173719912069, 76.557747534732698 ], [ -68.718532207994954, 76.529207997404299 ], [ -68.719776752977864, 76.526366023512338 ], [ -68.742918852358372, 76.526358524122116 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "GL",
         "description": "Icebridge DMS aerial images from Thule Airbase - alignment might be poor",
         "end_date": "2015-09-25",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-dms_thule2_2015.09.25",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 17,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Thule Airbase DMS low altitude overflight September 2015",
+        "max_zoom": 17,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2015-09-25",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=dms_thule2_2015.09.25&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=dms_thule2_2015.09.25&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

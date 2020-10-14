@@ -1,53 +1,54 @@
-        {
-            "type": "Feature",
-            "properties": {
-                "id": "helsingborg-orto",
-                "name": "Helsingborg Orthophoto",
-                "best": true,
-                "country_code": "SE",
-                "description": "Orthophotos from the municipality of Helsingborg 2016, public domain",
-                "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Helsingborg_vapen.svg/198px-Helsingborg_vapen.svg.png",
-                "i18n": true,
-                "license_url": "https://helsingborg.opendatasoft.com/explore/dataset/flygbilder/information/",
-                "max_zoom": 20,
-                "min_zoom": 5,
-                "type": "tms",
-                "url": "https://mapproxy.openstreetmap.se/tiles/1.0.0/hborg2016_EPSG3857/{zoom}/{x}/{y}.jpeg",
-                "attribution": {
-                    "required": true,
-                    "text": "\u00a9 Helsingborg municipality",
-                    "url": "https://helsingborg.opendatasoft.com/"
-                }
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            12.7434514,
-                            55.9499704
-                        ],
-                        [
-                            12.937774,
-                            55.9080399
-                        ],
-                        [
-                            13.0036873,
-                            55.9684218
-                        ],
-                        [
-                            12.7908271,
-                            56.2502203
-                        ],
-                        [
-                            12.5669834,
-                            56.1356043
-                        ],
-                        [
-                            12.7434514,
-                            55.9499704
-                        ]
-                    ]
+{
+    "type": "Feature",
+    "properties": {
+        "id": "helsingborg-orto",
+        "name": "Helsingborg Orthophoto",
+        "best": true,
+        "country_code": "SE",
+        "description": "Orthophotos from the municipality of Helsingborg 2016, public domain",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Helsingborg_vapen.svg/198px-Helsingborg_vapen.svg.png",
+        "i18n": true,
+        "license_url": "https://helsingborg.opendatasoft.com/explore/dataset/flygbilder/information/",
+        "max_zoom": 20,
+        "min_zoom": 5,
+        "type": "tms",
+        "url": "https://mapproxy.openstreetmap.se/tiles/1.0.0/hborg2016_EPSG3857/{zoom}/{x}/{y}.jpeg",
+        "attribution": {
+            "required": true,
+            "text": "© Helsingborg municipality",
+            "url": "https://helsingborg.opendatasoft.com/"
+        },
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    12.7434514,
+                    55.9499704
+                ],
+                [
+                    12.937774,
+                    55.9080399
+                ],
+                [
+                    13.0036873,
+                    55.9684218
+                ],
+                [
+                    12.7908271,
+                    56.2502203
+                ],
+                [
+                    12.5669834,
+                    56.1356043
+                ],
+                [
+                    12.7434514,
+                    55.9499704
                 ]
-            }
-        }
+            ]
+        ]
+    }
+}

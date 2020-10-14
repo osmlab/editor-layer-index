@@ -1,60 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    162.9125,
-                    -78.4514
-                ],
-                [
-                    162.6595,
-                    -78.4257
-                ],
-                [
-                    159.2712,
-                    -77.6013
-                ],
-                [
-                    159.2712,
-                    -77.4108
-                ],
-                [
-                    164.157,
-                    -76.477
-                ],
-                [
-                    169.7813,
-                    -76.4764
-                ],
-                [
-                    169.7813,
-                    -78.4514
-                ],
-                [
-                    162.9125,
-                    -78.4514
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 162.9125, -78.4514 ], [ 162.6595, -78.4257 ], [ 159.2712, -77.6013 ], [ 159.2712, -77.4108 ], [ 164.157, -76.477 ], [ 169.7813, -76.4764 ], [ 169.7813, -78.4514 ], [ 162.9125, -78.4514 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "AQ",
         "description": "Up-to-date late season image - not ice minimum, be careful with distinguishing sea ice from ice shelves. (true color)",
         "end_date": "2017-02-14",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R042_S78_20170214T202521",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 12,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: McMurdo Sound and Dry Valleys",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2017-02-14",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R042_S78_20170214T202521&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R042_S78_20170214T202521&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

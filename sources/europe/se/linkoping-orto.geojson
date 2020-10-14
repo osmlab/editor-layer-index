@@ -1,129 +1,130 @@
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            15.3688428,
-                            58.630502
-                        ],
-                        [
-                            15.4127881,
-                            58.656228
-                        ],
-                        [
-                            15.4663464,
-                            58.6338975
-                        ],
-                        [
-                            15.5429074,
-                            58.644082
-                        ],
-                        [
-                            15.5411908,
-                            58.6067244
-                        ],
-                        [
-                            15.5837628,
-                            58.6414021
-                        ],
-                        [
-                            15.7592008,
-                            58.5526729
-                        ],
-                        [
-                            15.7667539,
-                            58.5200586
-                        ],
-                        [
-                            15.9143826,
-                            58.5175485
-                        ],
-                        [
-                            16.0808942,
-                            58.3714778
-                        ],
-                        [
-                            15.8271787,
-                            58.3058817
-                        ],
-                        [
-                            15.8491513,
-                            58.2144935
-                        ],
-                        [
-                            15.6586072,
-                            58.1551277
-                        ],
-                        [
-                            15.5676267,
-                            58.1913381
-                        ],
-                        [
-                            15.5593869,
-                            58.1466129
-                        ],
-                        [
-                            15.5017087,
-                            58.0767873
-                        ],
-                        [
-                            15.3777692,
-                            58.05881
-                        ],
-                        [
-                            15.287132,
-                            58.1031013
-                        ],
-                        [
-                            15.2720258,
-                            58.1348338
-                        ],
-                        [
-                            15.3588854,
-                            58.1645465
-                        ],
-                        [
-                            15.3238672,
-                            58.380119
-                        ],
-                        [
-                            15.2497094,
-                            58.4002729
-                        ],
-                        [
-                            15.3581987,
-                            58.4728759
-                        ],
-                        [
-                            15.3688428,
-                            58.630502
-                        ]
-                    ]
+{
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    15.3688428,
+                    58.630502
                 ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "\u00a9 Link\u00f6ping municipality",
-                    "url": "https://www.linkoping.se/open/"
-                },
-                "available_projections": [
-                    "EPSG:3857",
-                    "EPSG:3009"
+                [
+                    15.4127881,
+                    58.656228
                 ],
-                "best": true,
-                "country_code": "SE",
-                "description": "Orthophotos from the municipality of Link\u00f6ping 2010, open data",
-                "i18n": true,
-                "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Link\u00f6ping_vapen.svg/198px-Link\u00f6ping_vapen.svg.png",
-                "id": "linkoping-orto",
-                "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/linkoping_permission.pdf",
-                "max_zoom": 20,
-                "min_zoom": 13,
-                "name": "Link\u00f6ping Orthophoto",
-                "type": "wms",
-                "url": "http://kartan.linkoping.se/wms?servicename=wms_ortofoto&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Kommun_2010_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
-            },
-            "type": "Feature"
-        }
+                [
+                    15.4663464,
+                    58.6338975
+                ],
+                [
+                    15.5429074,
+                    58.644082
+                ],
+                [
+                    15.5411908,
+                    58.6067244
+                ],
+                [
+                    15.5837628,
+                    58.6414021
+                ],
+                [
+                    15.7592008,
+                    58.5526729
+                ],
+                [
+                    15.7667539,
+                    58.5200586
+                ],
+                [
+                    15.9143826,
+                    58.5175485
+                ],
+                [
+                    16.0808942,
+                    58.3714778
+                ],
+                [
+                    15.8271787,
+                    58.3058817
+                ],
+                [
+                    15.8491513,
+                    58.2144935
+                ],
+                [
+                    15.6586072,
+                    58.1551277
+                ],
+                [
+                    15.5676267,
+                    58.1913381
+                ],
+                [
+                    15.5593869,
+                    58.1466129
+                ],
+                [
+                    15.5017087,
+                    58.0767873
+                ],
+                [
+                    15.3777692,
+                    58.05881
+                ],
+                [
+                    15.287132,
+                    58.1031013
+                ],
+                [
+                    15.2720258,
+                    58.1348338
+                ],
+                [
+                    15.3588854,
+                    58.1645465
+                ],
+                [
+                    15.3238672,
+                    58.380119
+                ],
+                [
+                    15.2497094,
+                    58.4002729
+                ],
+                [
+                    15.3581987,
+                    58.4728759
+                ],
+                [
+                    15.3688428,
+                    58.630502
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© Linköping municipality",
+            "url": "https://www.linkoping.se/open/"
+        },
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:3009"
+        ],
+        "best": true,
+        "country_code": "SE",
+        "description": "Orthophotos from the municipality of Linköping 2010, open data",
+        "i18n": true,
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linköping_vapen.svg/198px-Linköping_vapen.svg.png",
+        "id": "linkoping-orto",
+        "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/linkoping_permission.pdf",
+        "max_zoom": 20,
+        "min_zoom": 13,
+        "name": "Linköping Orthophoto",
+        "type": "wms",
+        "url": "http://kartan.linkoping.se/wms?servicename=wms_ortofoto&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Kommun_2010_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo"
+    },
+    "type": "Feature"
+}

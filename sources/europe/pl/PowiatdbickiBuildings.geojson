@@ -84,7 +84,7 @@
     },
     "properties": {
         "attribution": {
-            "text": "Powiat d\u0119bicki"
+            "text": "Powiat dębicki"
         },
         "available_projections": [
             "EPSG:2178",
@@ -95,9 +95,10 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png",
         "id": "debicki-buildings",
         "max_zoom": 19,
-        "name": "Powiat d\u0119bicki: Buildings",
+        "name": "Powiat dębicki: Buildings",
         "type": "wms",
-        "url": "https://debica.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,adresy,EBU,EBT,S&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://debica.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,adresy,EBU,EBT,S&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other"
     },
     "type": "Feature"
 }

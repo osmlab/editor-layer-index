@@ -1,134 +1,135 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "kystverket-navigasjon",
-    "name": "Kystverket Navigational Aid overlay",
-    "type": "wms",
-    "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13,12,10,8,6,5,4,3&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "overlay": true,
-    "country_code": "NO",
-    "available_projections": [
-      "EPSG:4326",
-      "EPSG:3857",
-      "EPSG:25833",
-      "EPSG:32633"
-    ],
-    "attribution": {
-      "text": "© Kystverket",
-      "url": "https://kystverket.no/Maritim-infrastruktur/Fyr-og-merker-/"
+    "type": "Feature",
+    "properties": {
+        "id": "kystverket-navigasjon",
+        "name": "Kystverket Navigational Aid overlay",
+        "type": "wms",
+        "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13,12,10,8,6,5,4,3&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "overlay": true,
+        "country_code": "NO",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:25833",
+            "EPSG:32633"
+        ],
+        "attribution": {
+            "text": "© Kystverket",
+            "url": "https://kystverket.no/Maritim-infrastruktur/Fyr-og-merker-/"
+        },
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg/143px-Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg.png",
+        "max_zoom": 19,
+        "min_zoom": 12,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
+        "privacy_policy_url": "https://www.kystverket.no/en/About-Kystverket/privacy-statement/",
+        "description": "Beacons, buoys, lights and fairways maintained by the Norwegian Coastal Administration",
+        "category": "other"
     },
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg/143px-Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg.png",
-    "max_zoom": 19,
-    "min_zoom": 12,
-    "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
-    "privacy_policy_url": "https://www.kystverket.no/en/About-Kystverket/privacy-statement/",
-    "description": "Beacons, buoys, lights and fairways maintained by the Norwegian Coastal Administration"
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          3.2485669,
-          56.0859887
-        ],
-        [
-          2.609242,
-          56.5942845
-        ],
-        [
-          1.472146,
-          58.4592402
-        ],
-        [
-          1.7770359,
-          61.362514
-        ],
-        [
-          -0.4930128,
-          63.886645
-        ],
-        [
-          -13.7329211,
-          69.7637608
-        ],
-        [
-          -12.4365454,
-          72.5874119
-        ],
-        [
-          -5.1196508,
-          74.3962594
-        ],
-        [
-          -3.6035595,
-          79.1299845
-        ],
-        [
-          5.8558682,
-          82.3486251
-        ],
-        [
-          34.9886117,
-          82.3401041
-        ],
-        [
-          37.9687391,
-          78.6278417
-        ],
-        [
-          37.9961939,
-          75.7967336
-        ],
-        [
-          36.9579639,
-          73.689623
-        ],
-        [
-          32.0745823,
-          70.2733636
-        ],
-        [
-          30.3511044,
-          69.5688218
-        ],
-        [
-          21.4617893,
-          69.5709798
-        ],
-        [
-          18.3032007,
-          68.3668092
-        ],
-        [
-          14.479975,
-          66.2558018
-        ],
-        [
-          11.5026636,
-          63.2830723
-        ],
-        [
-          11.5016553,
-          58.9544352
-        ],
-        [
-          11.0824572,
-          58.9677125
-        ],
-        [
-          10.0305121,
-          58.2517301
-        ],
-        [
-          8.8824408,
-          57.6953443
-        ],
-        [
-          3.2485669,
-          56.0859887
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    3.2485669,
+                    56.0859887
+                ],
+                [
+                    2.609242,
+                    56.5942845
+                ],
+                [
+                    1.472146,
+                    58.4592402
+                ],
+                [
+                    1.7770359,
+                    61.362514
+                ],
+                [
+                    -0.4930128,
+                    63.886645
+                ],
+                [
+                    -13.7329211,
+                    69.7637608
+                ],
+                [
+                    -12.4365454,
+                    72.5874119
+                ],
+                [
+                    -5.1196508,
+                    74.3962594
+                ],
+                [
+                    -3.6035595,
+                    79.1299845
+                ],
+                [
+                    5.8558682,
+                    82.3486251
+                ],
+                [
+                    34.9886117,
+                    82.3401041
+                ],
+                [
+                    37.9687391,
+                    78.6278417
+                ],
+                [
+                    37.9961939,
+                    75.7967336
+                ],
+                [
+                    36.9579639,
+                    73.689623
+                ],
+                [
+                    32.0745823,
+                    70.2733636
+                ],
+                [
+                    30.3511044,
+                    69.5688218
+                ],
+                [
+                    21.4617893,
+                    69.5709798
+                ],
+                [
+                    18.3032007,
+                    68.3668092
+                ],
+                [
+                    14.479975,
+                    66.2558018
+                ],
+                [
+                    11.5026636,
+                    63.2830723
+                ],
+                [
+                    11.5016553,
+                    58.9544352
+                ],
+                [
+                    11.0824572,
+                    58.9677125
+                ],
+                [
+                    10.0305121,
+                    58.2517301
+                ],
+                [
+                    8.8824408,
+                    57.6953443
+                ],
+                [
+                    3.2485669,
+                    56.0859887
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }
