@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -24.758781955967567,
-                    14.748140156641956
-                ],
-                [
-                    -24.758781955967567,
-                    15.092493544965103
-                ],
-                [
-                    -24.267057941685337,
-                    15.092493544965103
-                ],
-                [
-                    -24.267057941685337,
-                    14.748140156641956
-                ],
-                [
-                    -24.758781955967567,
-                    14.748140156641956
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -24.758781955967567, 14.748140156641956 ], [ -24.758781955967567, 15.092493544965103 ], [ -24.267057941685337, 15.092493544965103 ], [ -24.267057941685337, 14.748140156641956 ], [ -24.758781955967567, 14.748140156641956 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "CV",
         "description": "Image from after the 2014/2015 eruption (true color)",
         "end_date": "2015-12-13",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC82100502015347LGN00",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Fogo, Cape Verde",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2015-12-13",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC82100502015347LGN00&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
