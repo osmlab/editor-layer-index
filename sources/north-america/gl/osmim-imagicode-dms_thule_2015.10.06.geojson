@@ -1,60 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -68.81923965911197,
-                    76.52510098413808
-                ],
-                [
-                    -68.82651380996036,
-                    76.54176603738404
-                ],
-                [
-                    -68.77344898680974,
-                    76.5439032956252
-                ],
-                [
-                    -68.7021022270136,
-                    76.54544610909097
-                ],
-                [
-                    -68.59176687697696,
-                    76.54560088014632
-                ],
-                [
-                    -68.59183124999333,
-                    76.52793072237704
-                ],
-                [
-                    -68.65970186690618,
-                    76.52510098413808
-                ],
-                [
-                    -68.81923965911197,
-                    76.52510098413808
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -68.819239659111972, 76.525100984138078 ], [ -68.82651380996036, 76.541766037384036 ], [ -68.77344898680974, 76.543903295625199 ], [ -68.702102227013597, 76.545446109090975 ], [ -68.591766876976962, 76.545600880146324 ], [ -68.591831249993334, 76.527930722377036 ], [ -68.659701866906175, 76.525100984138078 ], [ -68.819239659111972, 76.525100984138078 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "GL",
         "description": "Icebridge DMS aerial images from Thule Airbase - alignment might be poor",
         "end_date": "2015-10-06",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-dms_thule_2015.10.06",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 16,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Thule Airbase DMS overflight October 2015",
+        "max_zoom": 16,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2015-10-06",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=dms_thule_2015.10.06&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=dms_thule_2015.10.06&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

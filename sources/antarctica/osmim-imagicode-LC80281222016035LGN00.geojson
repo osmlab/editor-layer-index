@@ -1,68 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    156.96951345925345,
-                    -84.50097988272655
-                ],
-                [
-                    154.50857596843485,
-                    -84.46255082580927
-                ],
-                [
-                    154.50857596843485,
-                    -82.60681485793681
-                ],
-                [
-                    175.46774337070775,
-                    -82.58504749645738
-                ],
-                [
-                    177.00582930246938,
-                    -83.52806548607914
-                ],
-                [
-                    177.00582930246938,
-                    -84.19262083779002
-                ],
-                [
-                    171.93838547371908,
-                    -84.34632646581997
-                ],
-                [
-                    166.83798266071676,
-                    -84.44370142483508
-                ],
-                [
-                    161.67028858819987,
-                    -84.50045345467909
-                ],
-                [
-                    156.96951345925345,
-                    -84.50097988272655
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 156.969513459253449, -84.500979882726554 ], [ 154.508575968434855, -84.462550825809274 ], [ 154.508575968434855, -82.606814857936811 ], [ 175.467743370707751, -82.585047496457378 ], [ 177.00582930246938, -83.528065486079143 ], [ 177.00582930246938, -84.192620837790017 ], [ 171.93838547371908, -84.346326465819971 ], [ 166.837982660716762, -84.443701424835083 ], [ 161.670288588199867, -84.500453454679089 ], [ 156.969513459253449, -84.500979882726554 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "AQ",
-        "description": "Outside regular Landsat coverage and therefore not in LIMA and Bing/Mapbox (true color)",
+        "description": "Outside regular Landsat coverage and therefore not in LIMA and Bing/Maxar/Esri/Mapbox (true color)",
         "end_date": "2016-02-04",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC80281222016035LGN00",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 10,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Southern Transantarctic Mountains",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-02-04",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80281222016035LGN00&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
