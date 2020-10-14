@@ -69,20 +69,21 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "\u00a9 Lantm\u00e4teriet",
+            "text": "© Lantmäteriet",
             "url": "https://www.lantmateriet.se"
         },
         "country_code": "SE",
-        "description": "Scan of \u0022Economic maps\u0022 ca. 1950\u20131980",
+        "description": "Scan of \"Economic maps\" ca. 1950–1980",
         "i18n": true,
         "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png",
         "id": "osmse-ekonomiska",
         "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
         "max_zoom": 17,
         "min_zoom": 3,
-        "name": "Lantm\u00e4teriet Economic Map 1950\u20131980",
+        "name": "Lantmäteriet Economic Map 1950–1980",
         "type": "tms",
-        "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg"
+        "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg",
+        "category": "historicmap"
     },
     "type": "Feature"
 }
