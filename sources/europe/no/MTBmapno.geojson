@@ -112,7 +112,7 @@
     },
     "properties": {
         "attribution": {
-            "text": "\u00a9 MTBmap.no",
+            "text": "© MTBmap.no",
             "url": "https://www.mtbmap.no/"
         },
         "country_code": "NO",
@@ -123,7 +123,8 @@
         "min_zoom": 3,
         "name": "MTBmap.no",
         "type": "tms",
-        "url": "https://mtbmap.no/tiles/osm/mtbmap/{zoom}/{x}/{y}.jpg"
+        "url": "https://mtbmap.no/tiles/osm/mtbmap/{zoom}/{x}/{y}.jpg",
+        "category": "osmbasedmap"
     },
     "type": "Feature"
 }

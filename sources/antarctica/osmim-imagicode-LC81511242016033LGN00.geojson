@@ -1,56 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -53.20921946177197,
-                    -84.12524693598144
-                ],
-                [
-                    -60.615377881406225,
-                    -83.78609327915953
-                ],
-                [
-                    -60.615377881406225,
-                    -82.29968785439104
-                ],
-                [
-                    -48.72405102147429,
-                    -82.29987186164387
-                ],
-                [
-                    -44.52178052933989,
-                    -82.43683433550413
-                ],
-                [
-                    -44.51354078327688,
-                    -84.12524693598144
-                ],
-                [
-                    -53.20921946177197,
-                    -84.12524693598144
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -53.209219461771973, -84.125246935981437 ], [ -60.615377881406225, -83.78609327915953 ], [ -60.615377881406225, -82.299687854391038 ], [ -48.724051021474288, -82.299871861643865 ], [ -44.521780529339892, -82.43683433550413 ], [ -44.513540783276881, -84.125246935981437 ], [ -53.209219461771973, -84.125246935981437 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "AQ",
-        "description": "Outside regular Landsat coverage and therefore not in LIMA and Bing/Mapbox (true color)",
+        "description": "Outside regular Landsat coverage and therefore not in LIMA and Bing/Maxar/Esri/Mapbox (true color)",
         "end_date": "2016-02-02",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC81511242016033LGN00",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 10,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Pensacola Mountains",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-02-02",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
