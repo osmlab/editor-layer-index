@@ -1,15 +1,15 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
-        "id": "miljodirektoratet-friluftsomrader", 
-        "name": "Miljødirektoratet Public Recreation Areas overlay", 
-        "type": "wms", 
-        "url": "https://kart.miljodirektoratet.no/arcgis/services/friluftsliv_statlig_sikra/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=friluftsliv_statlig_sikra&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "overlay": true, 
-        "country_code": "NO", 
+        "id": "miljodirektoratet-friluftsomrader",
+        "name": "Miljødirektoratet Public Recreation Areas overlay",
+        "type": "wms",
+        "url": "https://kart.miljodirektoratet.no/arcgis/services/friluftsliv_statlig_sikra/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=friluftsliv_statlig_sikra&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "overlay": true,
+        "country_code": "NO",
         "available_projections": [
-            "EPSG:4326", 
-            "EPSG:4267", 
+            "EPSG:4326",
+            "EPSG:4267",
             "EPSG:4269",
             "EPSG:25831",
             "EPSG:25832",
@@ -23,122 +23,123 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ], 
+        ],
         "attribution": {
-            "url": "https://kartkatalog.miljodirektoratet.no/Dataset/Details/30", 
+            "url": "https://kartkatalog.miljodirektoratet.no/Dataset/Details/30",
             "text": "© Miljødirektoratet"
-        }, 
-        "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png", 
-        "max_zoom": 22, 
-        "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html", 
-        "description": "Public recreation areas with State ownership (\"friluftsområder\")."
-    }, 
+        },
+        "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
+        "max_zoom": 22,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
+        "description": "Public recreation areas with State ownership (\"friluftsområder\").",
+        "category": "other"
+    },
     "geometry": {
-        "type": "Polygon", 
+        "type": "Polygon",
         "coordinates": [
             [
                 [
-                    31.904253, 
+                    31.904253,
                     70.4368136
-                ], 
+                ],
                 [
-                    28.4765186, 
+                    28.4765186,
                     71.3289643
-                ], 
+                ],
                 [
-                    23.6865015, 
+                    23.6865015,
                     71.2514263
-                ], 
+                ],
                 [
-                    16.8090601, 
+                    16.8090601,
                     70.0730823
-                ], 
+                ],
                 [
-                    11.1620655, 
+                    11.1620655,
                     67.5253903
-                ], 
+                ],
                 [
-                    9.975542, 
+                    9.975542,
                     64.811576
-                ], 
+                ],
                 [
-                    4.2187061, 
+                    4.2187061,
                     62.1449966
-                ], 
+                ],
                 [
-                    4.3725367, 
+                    4.3725367,
                     59.1871966
-                ], 
+                ],
                 [
-                    6.1743055, 
+                    6.1743055,
                     57.8915032
-                ], 
+                ],
                 [
-                    7.932118, 
+                    7.932118,
                     57.7393554
-                ], 
+                ],
                 [
-                    10.777577, 
+                    10.777577,
                     58.8649103
-                ], 
+                ],
                 [
-                    11.7224012, 
+                    11.7224012,
                     58.762509
-                ], 
+                ],
                 [
-                    12.722157, 
+                    12.722157,
                     60.1141506
-                ], 
+                ],
                 [
-                    13.0517469, 
+                    13.0517469,
                     61.3493518
-                ], 
+                ],
                 [
-                    12.5243921, 
+                    12.5243921,
                     63.6169922
-                ], 
+                ],
                 [
-                    14.2382593, 
+                    14.2382593,
                     63.9856094
-                ], 
+                ],
                 [
-                    15.1171656, 
+                    15.1171656,
                     65.9016624
-                ], 
+                ],
                 [
-                    18.6987085, 
+                    18.6987085,
                     68.3749083
-                ], 
+                ],
                 [
-                    20.0610132, 
+                    20.0610132,
                     68.2612583
-                ], 
+                ],
                 [
-                    21.0058375, 
+                    21.0058375,
                     68.7841518
-                ], 
+                ],
                 [
-                    25.2465601, 
+                    25.2465601,
                     68.3506025
-                ], 
+                ],
                 [
-                    26.9384546, 
+                    26.9384546,
                     69.8472011
-                ], 
+                ],
                 [
-                    28.7621851, 
+                    28.7621851,
                     69.6112133
-                ], 
+                ],
                 [
-                    28.5864039, 
+                    28.5864039,
                     68.8556004
-                ], 
+                ],
                 [
-                    31.069314, 
+                    31.069314,
                     69.5191547
-                ], 
+                ],
                 [
-                    31.904253, 
+                    31.904253,
                     70.4368136
                 ]
             ]

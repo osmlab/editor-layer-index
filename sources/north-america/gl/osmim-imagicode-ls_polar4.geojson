@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ -82.9935, 81.9147 ], [ -84.4409, 82.1649 ], [ -84.4409, 82.9562 ], [ -78.3559, 83.4863 ], [ -71.9, 83.8983 ], [ -28.3104, 83.8983 ], [ -22.4464, 83.5671 ], [ -16.7075, 83.1347 ], [ -16.7075, 81.9147 ], [ -82.9935, 81.9147 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "GL",
+        "description": "Latest images north of the regular Landsat limit (true color)",
+        "end_date": "2020-07-12",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-ls_polar4",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Landsat off-nadir early July 2020",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "2020-07-12",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=ls_polar4&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

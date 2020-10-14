@@ -1,129 +1,130 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "poznan-ortofotomapa2014",
-    "name": "Poznań: Orthophotomap 2014 (aerial image)",
-    "type": "wms",
-    "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapa_2014/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2014_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "start_date": "2014",
-    "end_date": "2014",
-    "country_code": "PL",
-    "available_projections": [
-      "EPSG:4326",
-      "EPSG:2177",
-      "EPSG:2180",
-      "EPSG:3857"
-    ],
-    "attribution": {
-      "text": "Zarząd Geodezji i Katastru Miejskiego GEOPOZ"
+    "type": "Feature",
+    "properties": {
+        "id": "poznan-ortofotomapa2014",
+        "name": "Poznań: Orthophotomap 2014 (aerial image)",
+        "type": "wms",
+        "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapa_2014/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2014_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2014",
+        "end_date": "2014",
+        "country_code": "PL",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:2177",
+            "EPSG:2180",
+            "EPSG:3857"
+        ],
+        "attribution": {
+            "text": "Zarząd Geodezji i Katastru Miejskiego GEOPOZ"
+        },
+        "max_zoom": 23,
+        "category": "historicphoto"
     },
-    "max_zoom": 23
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          16.72794,
-          52.48838
-        ],
-        [
-          16.86925,
-          52.48982
-        ],
-        [
-          16.86879,
-          52.50779
-        ],
-        [
-          16.93948,
-          52.50845
-        ],
-        [
-          16.93926,
-          52.51743
-        ],
-        [
-          16.98639,
-          52.51784
-        ],
-        [
-          16.98784,
-          52.45494
-        ],
-        [
-          17.03491,
-          52.45534
-        ],
-        [
-          17.0353,
-          52.43736
-        ],
-        [
-          17.08235,
-          52.43774
-        ],
-        [
-          17.0831,
-          52.4018
-        ],
-        [
-          17.0596,
-          52.40161
-        ],
-        [
-          17.06129,
-          52.32075
-        ],
-        [
-          17.01438,
-          52.32035
-        ],
-        [
-          17.01518,
-          52.28441
-        ],
-        [
-          16.96829,
-          52.28401
-        ],
-        [
-          16.96787,
-          52.30198
-        ],
-        [
-          16.89752,
-          52.30134
-        ],
-        [
-          16.89662,
-          52.33728
-        ],
-        [
-          16.80273,
-          52.33638
-        ],
-        [
-          16.80176,
-          52.37232
-        ],
-        [
-          16.77828,
-          52.3721
-        ],
-        [
-          16.77603,
-          52.45294
-        ],
-        [
-          16.72897,
-          52.45244
-        ],
-        [
-          16.72794,
-          52.48838
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    16.72794,
+                    52.48838
+                ],
+                [
+                    16.86925,
+                    52.48982
+                ],
+                [
+                    16.86879,
+                    52.50779
+                ],
+                [
+                    16.93948,
+                    52.50845
+                ],
+                [
+                    16.93926,
+                    52.51743
+                ],
+                [
+                    16.98639,
+                    52.51784
+                ],
+                [
+                    16.98784,
+                    52.45494
+                ],
+                [
+                    17.03491,
+                    52.45534
+                ],
+                [
+                    17.0353,
+                    52.43736
+                ],
+                [
+                    17.08235,
+                    52.43774
+                ],
+                [
+                    17.0831,
+                    52.4018
+                ],
+                [
+                    17.0596,
+                    52.40161
+                ],
+                [
+                    17.06129,
+                    52.32075
+                ],
+                [
+                    17.01438,
+                    52.32035
+                ],
+                [
+                    17.01518,
+                    52.28441
+                ],
+                [
+                    16.96829,
+                    52.28401
+                ],
+                [
+                    16.96787,
+                    52.30198
+                ],
+                [
+                    16.89752,
+                    52.30134
+                ],
+                [
+                    16.89662,
+                    52.33728
+                ],
+                [
+                    16.80273,
+                    52.33638
+                ],
+                [
+                    16.80176,
+                    52.37232
+                ],
+                [
+                    16.77828,
+                    52.3721
+                ],
+                [
+                    16.77603,
+                    52.45294
+                ],
+                [
+                    16.72897,
+                    52.45244
+                ],
+                [
+                    16.72794,
+                    52.48838
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
-	"privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
+        "privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
         "id": "MCGIS-County-Valleywide-Imagery-2018",
         "type": "wms",
         "name": "Mesa County GIS Valleywide 2018",
@@ -21,7 +21,8 @@
             "text": "Mesa County GIS",
             "required": true
         },
-        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
+        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",
