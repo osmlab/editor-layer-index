@@ -1,64 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -62.7282,
-                    -68.9652
-                ],
-                [
-                    -64.0489,
-                    -68.7318
-                ],
-                [
-                    -64.0486,
-                    -68.5373
-                ],
-                [
-                    -60.8845,
-                    -65.9399
-                ],
-                [
-                    -59.9187,
-                    -65.9389
-                ],
-                [
-                    -59.1088,
-                    -66.0775
-                ],
-                [
-                    -59.1088,
-                    -68.8359
-                ],
-                [
-                    -59.2544,
-                    -68.9652
-                ],
-                [
-                    -62.7282,
-                    -68.9652
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -62.7282, -68.9652 ], [ -64.0489, -68.7318 ], [ -64.0486, -68.5373 ], [ -60.8845, -65.9399 ], [ -59.9187, -65.9389 ], [ -59.1088, -66.0775 ], [ -59.1088, -68.8359 ], [ -59.2544, -68.9652 ], [ -62.7282, -68.9652 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "AQ",
         "description": "For updating the ice edge after the 2017 iceberg calving (true color)",
         "end_date": "2018-01-06",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-larsen_2018",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 12,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Larsen C ice shelf after calving",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2018-01-06",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=larsen_2018&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=larsen_2018&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

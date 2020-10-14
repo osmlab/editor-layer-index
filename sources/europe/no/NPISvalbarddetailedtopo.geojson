@@ -1,1 +1,113 @@
-{"type":"Feature","properties":{"id":"npi-svalbard-fkb","name":"NPI Svalbard detailed topo","type":"wmts","url":"https://geodata.npolar.no/arcgis/rest/services/Basisdata/FKB_Svalbard_WMTS_25833/MapServer/WMTS/","country_code":"NO","available_projections":["EPSG:25833"],"attribution":{"url":"https://geodata.npolar.no/","text":"© Norwegian Polar Institute"},"icon":"https://www.npolar.no/npcms/export/sites/np/images/logos/NPI-logo-eng.png","max_zoom":17,"license_url":"https://lists.nuug.no/pipermail/kart/2018-February/006371.html","description":"Detailed topographic map for Longyearbyen, Barentsburg and Ny-Ålesund from the Norwegian Polar Institute"},"geometry":{"type":"Polygon","coordinates":[[[15.483787,78.1613975],[16.2093757,78.134842],[16.3310677,78.1595249],[16.2550102,78.2214767],[15.727171,78.2741471],[15.7241287,78.3204281],[15.6450289,78.3312011],[15.2236703,78.2208556],[15.483787,78.1613975]],[[14.1284429,78.1094814],[14.2889242,78.1094814],[14.3201078,78.0321329],[14.1968946,78.0299247],[14.1284429,78.1094814]],[[11.7033496,78.9278981],[11.8322666,78.9545596],[12.1015102,78.9185097],[12.00872,78.8902602],[11.9022395,78.8939235],[11.7033496,78.9278981]]]}}
+{
+    "type": "Feature",
+    "properties": {
+        "id": "npi-svalbard-fkb",
+        "name": "NPI Svalbard detailed topo",
+        "type": "wmts",
+        "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/FKB_Svalbard_WMTS_25833/MapServer/WMTS/",
+        "country_code": "NO",
+        "available_projections": [
+            "EPSG:25833"
+        ],
+        "attribution": {
+            "url": "https://geodata.npolar.no/",
+            "text": "© Norwegian Polar Institute"
+        },
+        "icon": "https://www.npolar.no/npcms/export/sites/np/images/logos/NPI-logo-eng.png",
+        "max_zoom": 17,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
+        "description": "Detailed topographic map for Longyearbyen, Barentsburg and Ny-Ålesund from the Norwegian Polar Institute",
+        "category": "map"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    15.483787,
+                    78.1613975
+                ],
+                [
+                    16.2093757,
+                    78.134842
+                ],
+                [
+                    16.3310677,
+                    78.1595249
+                ],
+                [
+                    16.2550102,
+                    78.2214767
+                ],
+                [
+                    15.727171,
+                    78.2741471
+                ],
+                [
+                    15.7241287,
+                    78.3204281
+                ],
+                [
+                    15.6450289,
+                    78.3312011
+                ],
+                [
+                    15.2236703,
+                    78.2208556
+                ],
+                [
+                    15.483787,
+                    78.1613975
+                ]
+            ],
+            [
+                [
+                    14.1284429,
+                    78.1094814
+                ],
+                [
+                    14.2889242,
+                    78.1094814
+                ],
+                [
+                    14.3201078,
+                    78.0321329
+                ],
+                [
+                    14.1968946,
+                    78.0299247
+                ],
+                [
+                    14.1284429,
+                    78.1094814
+                ]
+            ],
+            [
+                [
+                    11.7033496,
+                    78.9278981
+                ],
+                [
+                    11.8322666,
+                    78.9545596
+                ],
+                [
+                    12.1015102,
+                    78.9185097
+                ],
+                [
+                    12.00872,
+                    78.8902602
+                ],
+                [
+                    11.9022395,
+                    78.8939235
+                ],
+                [
+                    11.7033496,
+                    78.9278981
+                ]
+            ]
+        ]
+    }
+}

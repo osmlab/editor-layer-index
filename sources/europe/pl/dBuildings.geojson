@@ -228,7 +228,7 @@
     },
     "properties": {
         "attribution": {
-            "text": "Urz\u0105d Miasta \u0141odzi"
+            "text": "Urząd Miasta Łodzi"
         },
         "available_projections": [
             "EPSG:4326",
@@ -237,9 +237,10 @@
         "country_code": "PL",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/dOrthophotomap2017(aerialimage).png",
         "id": "Lodz-buildings",
-        "name": "\u0141\u00f3d\u017a: Buildings",
+        "name": "Łódź: Buildings",
         "type": "wms",
-        "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other"
     },
     "type": "Feature"
 }

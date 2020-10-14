@@ -4,26 +4,28 @@
         "id": "orthophoto_lyon_2012",
         "name": "Lyon Orthophoto 2012-03 10cm",
         "type": "wms",
-        "url": "https://download.data.grandlyon.com/wms/grandlyon?language=fre&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1830_5150_10cm_CC46,1830_5155_10cm_CC46,1830_5160_10cm_CC46,1830_5165_10cm_CC46,1830_5170_10cm_CC46,1830_5175_10cm_CC46,1830_5180_10cm_CC46,1830_5185_10cm_CC46,1830_5190_10cm_CC46,1835_5150_10cm_CC46,1835_5155_10cm_CC46,1835_5160_10cm_CC46,1835_5165_10cm_CC46,1835_5170_10cm_CC46,1835_5175_10cm_CC46,1835_5180_10cm_CC46,1835_5185_10cm_CC46,1835_5190_10cm_CC46,1840_5150_10cm_CC46,1840_5155_10cm_CC46,1840_5160_10cm_CC46,1840_5165_10cm_CC46,1840_5170_10cm_CC46,1840_5175_10cm_CC46,1840_5180_10cm_CC46,1840_5185_10cm_CC46,1840_5190_10cm_CC46,1845_5150_10cm_CC46,1845_5155_10cm_CC46,1845_5160_10cm_CC46,1845_5165_10cm_CC46,1845_5170_10cm_CC46,1845_5175_10cm_CC46,1845_5180_10cm_CC46,1845_5185_10cm_CC46,1845_5190_10cm_CC46,1850_5155_10cm_CC46,1850_5160_10cm_CC46,1850_5165_10cm_CC46,1850_5170_10cm_CC46,1850_5175_10cm_CC46,1850_5180_10cm_CC46,1850_5185_10cm_CC46,1855_5155_10cm_CC46,1855_5165_10cm_CC46,1855_5170_10cm_CC46,1855_5175_10cm_CC46,1855_5180_10cm_CC46,1855_5185_10cm_CC46,1860_5155_10cm_CC46,1860_5160_10cm_CC46,1860_5165_10cm_CC46,1860_5170_10cm_CC46,1860_5175_10cm_CC46,1860_5180_10cm_CC46,1860_5185_10cm_CC46,1865_5155_10cm_CC46,1865_5160_10cm_CC46,1865_5165_10cm_CC46,1865_5170_10cm_CC46&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://download.data.grandlyon.com/wms/grandlyon?LAYERS=Ortho2012_vue_ensemble_20cm_CC46&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "end_date": "2012-03",
         "start_date": "2012-03",
         "country_code": "FR",
+        "description": "Orthophotographie 2012 du Grand Lyon",
         "available_projections": [
-            "EPSG:4171",
-            "EPSG:4326",
-            "EPSG:2154",
             "EPSG:27572",
             "EPSG:27562",
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:4326",
             "EPSG:3946",
-            "EPSG:3857"
+            "EPSG:4171"
         ],
         "attribution": {
-            "url": "https://data.grandlyon.com/imagerie/orthophotographie-2012-du-grand-lyon",
+            "url": "https://data.grandlyon.com/jeux-de-donnees/orthophotographie-2012-metropole-lyon/info",
             "text": "Grand Lyon Smart Data DSIT",
             "required": false
         },
         "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
-        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales"
+        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",

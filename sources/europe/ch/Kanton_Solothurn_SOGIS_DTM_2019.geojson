@@ -4,23 +4,26 @@
       "id": "Solothurn-sogis2019-dtm-wms",
       "name": "Kanton Solothurn, DTM Relief 2019",
       "type": "wms",
-      "url": "https://geo.so.ch/api/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/jpeg&TRANSPARENT=true&LAYERS=ch.so.agi.lidar_2019.dtm_relief&STYLES=&SRS={proj}&CRS={proj}&TILED=false&DPI=96&OPACITIES=255&t=675&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+      "category": "elevation",
+      "url": "https://geo.so.ch/api/wms?LAYERS=ch.so.agi.lidar_2019.dtm_relief&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
       "start_date": "2019",
       "end_date": "2019",
       "country_code": "CH",
       "available_projections": [
-        "EPSG:21781",
-        "EPSG:4326",
-        "EPSG:2056",
-        "EPSG:3857"
+            "EPSG:2056",
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:21781",
+            "EPSG:3857"
       ],
       "attribution": {
         "text": "Kanton Solothurn, DTM Relief 2019, WMS Solothurn (SOGIS)",
         "required": true
       },
       "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ch/KantonSolothurn-SOGIS-wms.png",
-      "min_zoom": 8,
-      "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS"
+      "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
+      "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
+      "min_zoom": 10
     },
     "geometry": {
       "type": "Polygon",
@@ -1158,4 +1161,3 @@
       ]
     }
   }
-  

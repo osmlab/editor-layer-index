@@ -112,7 +112,7 @@
     },
     "properties": {
         "attribution": {
-            "text": "Powiat \u0142a\u0144cucki"
+            "text": "Powiat łańcucki"
         },
         "available_projections": [
             "EPSG:2178",
@@ -123,9 +123,10 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png",
         "id": "lancucki-buildings",
         "max_zoom": 19,
-        "name": "Powiat \u0142a\u0144cucki: Buildings",
+        "name": "Powiat łańcucki: Buildings",
         "type": "wms",
-        "url": "https://lancut.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,budynki,adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://lancut.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,budynki,adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other"
     },
     "type": "Feature"
 }
