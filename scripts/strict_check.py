@@ -57,6 +57,10 @@ spacesave = 0
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
 
 
+logger.warning("This is a new and improved check for new or changed imagery sources. "
+               "It is currently in beta stage. Please report any issues.")
+
+
 def get_http_headers(source):
     """ Extract http headers from source"""
     custom_headers = {}
@@ -620,9 +624,10 @@ for filename in arguments.path:
         info_msgs = []
         warning_msgs = []
         error_msgs = []
+
         # Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
-            error_msgs.append("{} has no license_url".format(filename))
+            error_msgs.append("{} has no license_url set".format(filename))
 
         # Check if license url exists
         else:
