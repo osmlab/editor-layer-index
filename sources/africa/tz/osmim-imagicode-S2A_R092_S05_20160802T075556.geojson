@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    37.24768638610839,
-                    -3.229213650135676
-                ],
-                [
-                    37.24768638610839,
-                    -2.968155849006605
-                ],
-                [
-                    37.61581420898436,
-                    -2.968155849006605
-                ],
-                [
-                    37.61581420898436,
-                    -3.229213650135676
-                ],
-                [
-                    37.24768638610839,
-                    -3.229213650135676
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 37.247686386108391, -3.229213650135676 ], [ 37.247686386108391, -2.968155849006605 ], [ 37.615814208984361, -2.968155849006605 ], [ 37.615814208984361, -3.229213650135676 ], [ 37.247686386108391, -3.229213650135676 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "TZ",
         "description": "Up-to-date image for glacier mapping (true color)",
         "end_date": "2016-08-02",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R092_S05_20160802T075556",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Mount Kilimanjaro 2016",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-08-02",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S05_20160802T075556&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S05_20160802T075556&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

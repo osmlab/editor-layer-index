@@ -1,56 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -154.5102,
-                    59.4577
-                ],
-                [
-                    -154.5097,
-                    60.6888
-                ],
-                [
-                    -153.5403,
-                    62.1718
-                ],
-                [
-                    -148.0423,
-                    62.1718
-                ],
-                [
-                    -148.0445,
-                    61.5342
-                ],
-                [
-                    -149.7291,
-                    59.4584
-                ],
-                [
-                    -154.5102,
-                    59.4577
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -154.5102, 59.4577 ], [ -154.5097, 60.6888 ], [ -153.5403, 62.1718 ], [ -148.0423, 62.1718 ], [ -148.0445, 61.5342 ], [ -149.7291, 59.4584 ], [ -154.5102, 59.4577 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "US",
         "description": "Tidal flats and glaciers in surrounding mountains (true color)",
         "end_date": "2016-08-31",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R086_N60_20160831T213532",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Cook Inlet",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-08-31",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R086_N60_20160831T213532&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R086_N60_20160831T213532&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

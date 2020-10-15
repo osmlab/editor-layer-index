@@ -1,52 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    153.0613810625655,
-                    -11.789228234021259
-                ],
-                [
-                    153.0613810625655,
-                    -11.288690822294749
-                ],
-                [
-                    153.10927458673538,
-                    -11.072292520575749
-                ],
-                [
-                    154.41201277643268,
-                    -11.072292520575749
-                ],
-                [
-                    154.41201277643268,
-                    -11.789228234021259
-                ],
-                [
-                    153.0613810625655,
-                    -11.789228234021259
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 153.061381062565488, -11.789228234021259 ], [ 153.061381062565488, -11.288690822294749 ], [ 153.109274586735381, -11.072292520575749 ], [ 154.412012776432675, -11.072292520575749 ], [ 154.412012776432675, -11.789228234021259 ], [ 153.061381062565488, -11.789228234021259 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "PG",
         "description": "Coarse coastline due to cloud cover in Bing/Mapbox (true color)",
         "end_date": "2014-12-24",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC80910682014358LGN00",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Vanatinai",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2014-12-24",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
