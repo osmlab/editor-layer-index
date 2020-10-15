@@ -1,26 +1,28 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "poznan-ortofotomapa2014",
-    "name": "Poznań: Orthophotomap 2014 (aerial image)",
+    "id": "poznan-ortofotomapa2016",
+    "name": "Poznań: Orthophotomap 2016 (aerial image)",
     "type": "wms",
-    "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapa_2014/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2014_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapy/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2016_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "category": "historicphoto",
     "license_url": "https://www.geopoz.pl/bip/index.php?t=200&id=2449",
     "privacy_policy_url": "https://www.geopoz.pl/portal/index.php?t=200&id=5142",
-	  "category": "historicphoto",
-	  "start_date": "2014",
-    "end_date": "2014",
+	"category": "historicphoto",
+	"start_date": "2016",
+    "end_date": "2016",
     "country_code": "PL",
-    "max_zoom": 23,
     "available_projections": [
-        "EPSG:4326",
-        "EPSG:2177",
-        "EPSG:2180",
-        "EPSG:3857"
+      "EPSG:4326",
+      "EPSG:2177",
+      "EPSG:2180",
+      "EPSG:3857"
     ],
     "attribution": {
       "text": "Zarząd Geodezji i Katastru Miejskiego GEOPOZ"
     },
+    "max_zoom": 23
+  },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
