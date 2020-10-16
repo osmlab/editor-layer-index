@@ -11,7 +11,9 @@
         "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
         "name": "DCS NSW Administrative Boundaries Parish",
         "available_projections": [
-            "EPSG:3857"
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
         ],
         "url": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=3&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE",
         "overlay": true,
