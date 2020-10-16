@@ -1,19 +1,21 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LPI_NSW_Administrative_Boundaries_Suburb",
+        "id": "LPI_NSW_Administrative_Boundaries_StateForest",
         "attribution": {
-            "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-            "text": "© Department of Customer Service 2019",
+            "url": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
             "required": true
         },
-        "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "privacy_policy_url": "https://maps.six.nsw.gov.au/js/sixmaps/app/coreTerms.html",
-        "name": "LPI NSW Administrative Boundaries Suburb",
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Administrative Boundaries State Forest",
         "available_projections": [
-            "EPSG:3857"
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
         ],
-        "url": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=7&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE",
+        "url": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=2&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE",
         "overlay": true,
         "max_zoom": 21,
         "min_zoom": 1,
