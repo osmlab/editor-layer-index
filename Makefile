@@ -12,8 +12,8 @@ check: scripts/check.py $(SOURCES)
 clean:
 	rm -f $(ALL)
 
-imagery.xml: scripts/convert_xml.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED)
+imagery.xml:
+	@$(PYTHON) scripts/convert_xml.py sources
 
 imagery.json: scripts/convert_geojson_to_legacyjson.py $(SOURCES)
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
