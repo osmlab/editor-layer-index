@@ -2,19 +2,21 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-            "text": "© Department of Customer Service 2019",
+            "url": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
             "required": true
         },
-        "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "name": "LPI NSW Topographic Map",
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Topographic Map",
         "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 16,
         "min_zoom": 1,
         "country_code": "AU",
         "type": "tms",
         "id": "NSW_LPI_TopographicMap",
-        "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico"
+        "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico",
+        "category": "map"
     },
     "geometry": {
         "type": "Polygon",

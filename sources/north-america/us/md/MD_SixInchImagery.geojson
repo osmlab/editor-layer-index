@@ -12,10 +12,17 @@
         "max_zoom": 20,
         "country_code": "US",
         "type": "wms",
-        "available_projections": ["EPSG:4326", "EPSG:2248", "EPSG:102685", "EPSG:26985", "EPSG:3857"],
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:2248",
+            "EPSG:102685",
+            "EPSG:26985",
+            "EPSG:3857"
+        ],
         "start_date": "2013",
         "end_date": "2016",
-        "description": "Six Inch resolution aerial imagery for the State of Maryland"
+        "description": "Six Inch resolution aerial imagery for the State of Maryland",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",

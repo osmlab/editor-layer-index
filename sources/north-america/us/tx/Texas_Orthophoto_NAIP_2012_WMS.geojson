@@ -1,19 +1,26 @@
 {
     "type": "Feature",
     "properties": {
-        "license_url": "https://wiki.openstreetmap.org/wiki/Potential_Datasources#Texas",
-        "id": "tnris.org",
-        "type": "tms",
-        "name": "Texas Orthophoto",
-        "url": "https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=texas&STYLE=&FORMAT=image/png&tileMatrixSet=0to20&tileMatrix=0to20:{zoom}&tileRow={y}&tileCol={x}",
+        "license_url": "https://data.tnris.org/collection/924d3c6f-9f74-4147-8044-d4025f12eac3",
+        "id": "texas_naip_2012_wms",
+        "type": "wms",
+        "name": "Texas NAIP Imagery 2012",
+        "url": "https://webservices.tnris.org/arcgis/services/NAIP/NAIP12_NC_CIR_1m/ImageServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2012",
-        "max_zoom": 20,
+        "end_date": "2012",
         "country_code": "US",
         "attribution": {
-            "url": "https://tnris.org/maps-and-data/online-mapping-services",
-            "text": "Texas Natural Resources Information System",
-            "required": true
-        }
+            "url": "https://data.tnris.org/collection/924d3c6f-9f74-4147-8044-d4025f12eac3",
+            "text": "United States Department of Agriculture (USDA). Texas NAIP Imagery, 2012-10-01",
+            "required": false
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "category": "historicphoto",
+        "privacy_policy_url": "https://tnris.org/site-policies/#privacy-and-security-policy"
     },
     "geometry": {
         "type": "Polygon",

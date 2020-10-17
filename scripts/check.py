@@ -21,12 +21,12 @@ find sources -name \*.geojson | xargs python scripts/check.py -vv
 import json
 import io
 from argparse import ArgumentParser
-from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
+from jsonschema import ValidationError, RefResolver, Draft4Validator
 import colorlog
-import requests
 import os
 from shapely.geometry import shape
 from shapely.validation import explain_validity
+
 
 
 def dict_raise_on_duplicates(ordered_pairs):
@@ -39,12 +39,12 @@ def dict_raise_on_duplicates(ordered_pairs):
             d[k] = v
     return d
 
+
 parser = ArgumentParser(description='Checks ELI sourcen for validity and common errors')
 parser.add_argument('path', nargs='+', help='Path of files to check.')
 parser.add_argument("-v", "--verbose", dest="verbose_count",
                     action="count", default=0,
                     help="increases log verbosity for each occurence.")
-parser.add_argument("--strict", help="enable more strict checks", action="store_true")
 
 arguments = parser.parse_args()
 logger = colorlog.getLogger()
@@ -63,8 +63,6 @@ validator = Draft4Validator(schema, resolver=resolver)
 borkenbuild = False
 spacesave = 0
 
-strict_mode = arguments.strict
-
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
 
 for filename in arguments.path:
@@ -78,8 +76,6 @@ for filename in arguments.path:
         continue
 
     try:
-        if strict_mode:
-            print("Proccessing {} in strict mode".format(filename))
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
@@ -98,19 +94,6 @@ for filename in arguments.path:
         ## Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
             logger.debug("{} has no license_url".format(filename))
-
-        ## Check if license url exists
-        if strict_mode and 'license_url' in source['properties']:
-            try:
-                r = requests.get(source['properties']['license_url'],  headers=headers)
-                if not r.status_code == 200:
-                    raise ValidationError("{}: license url {} is not reachable: HTTP code: {}".format(
-                        filename, source['properties']['license_url'], r.status_code))
-
-            except Exception as e:
-                raise ValidationError("{}: license url {} is not reachable: {}".format(
-                    filename, source['properties']['license_url'], str(e)))
-
 
         if 'attribution' not in source['properties']:
             logger.debug("{} has no attribution".format(filename))
@@ -170,25 +153,6 @@ for filename in arguments.path:
                 ValidationError("{} should have null geometry".format(filename))
             elif source['geometry'] != None:
                 ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
-
-        ## Privacy policy
-        if strict_mode:
-
-            # Check if privacy url is set
-            if 'privacy_policy_url' not in source['properties']:
-                raise ValidationError("{} has no privacy_policy_url. Adding privacy policies to sources"
-                             " is important to comply with legal requirements in certain countries.".format(filename))
-
-            # Check if privacy url exists
-            try:
-                r = requests.get(source['properties']['privacy_policy_url'],  headers=headers)
-                if not r.status_code == 200:
-                    raise ValidationError("{}: privacy policy url {} is not reachable: HTTP code: {}".format(
-                        filename, source['properties']['privacy_policy_url'], r.status_code))
-
-            except Exception as e:
-                raise ValidationError("{}: privacy policy url {} is not reachable: {}".format(
-                    filename, source['properties']['privacy_policy_url'], str(e)))
 
     except ValidationError as e:
         borkenbuild = True
