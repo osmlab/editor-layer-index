@@ -23,6 +23,7 @@ import requests
 import os
 from owslib.wmts import WebMapTileService
 from shapely.geometry import shape, Point, box
+from shapely.validation import explain_validity
 
 
 def dict_raise_on_duplicates(ordered_pairs):
@@ -702,8 +703,13 @@ for filename in arguments.path:
         if 'world' not in filename:
             if 'type' not in source['geometry']:
                 error_msgs.append("{} should have a valid geometry or be global".format(filename))
-            if source['geometry']['type'] != "Polygon":
-                error_msgs.append("{} should have a Polygon geometry".format(filename))
+            if not source['geometry']['type'] in {"Polygon", "MultiPolygon"}:
+                raise ValidationError("{} should have Polygon or MultiPolygon geometry".format(filename))
+            else:
+                # Check validity of geometries
+                geom = shape(source['geometry'])
+                if not geom.is_valid:
+                    raise ValidationError("{} geometry is not valid: {}".format(filename, explain_validity(geom)))
             if 'country_code' not in source['properties']:
                 error_msgs.append("{} should have a country or be global".format(filename))
         else:

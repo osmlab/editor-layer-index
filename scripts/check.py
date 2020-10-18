@@ -146,7 +146,7 @@ for filename in arguments.path:
             # Check validity of geometries
             geom = shape(source['geometry'])
             if not geom.is_valid:
-                raise("{} geometry is not valid: {}".format(filename, explain_validity(geom)))
+                raise ValidationError("{} geometry is not valid: {}".format(filename, explain_validity(geom)))
 
         else:
             if 'geometry' not in source:
