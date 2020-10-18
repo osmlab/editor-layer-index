@@ -58,3 +58,7 @@ collection_legacy = {
     },
     "features": source_features_legacy
 }
+
+with open('imagery.geojson', 'w', encoding='utf-8') as out:
+    json.dump(collection_legacy, out, sort_keys=True, ensure_ascii=False, separators=(',', ':'))
+    out.write("\n")
