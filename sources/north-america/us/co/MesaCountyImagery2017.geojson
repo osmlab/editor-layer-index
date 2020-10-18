@@ -2,6 +2,7 @@
     "type": "Feature",
     "properties": {
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
+        "privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
         "id": "MCGIS-County-NAIP-Imagery-2017",
         "type": "wms",
         "name": "Mesa County GIS NAIP 2017",
@@ -13,15 +14,15 @@
         "end_date": "2017-10-24",
         "available_projections": [
             "EPSG:4326",
-            "EPSG:3742",
-            "CRS:84"
+            "EPSG:3742"
         ],
         "attribution": {
-            "url": "http://gis.mesacounty.us/",
+            "url": "https://gis.mesacounty.us/",
             "text": "Mesa County GIS",
             "required": true
         },
-        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
+        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",

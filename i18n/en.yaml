@@ -40,7 +40,7 @@ en:
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © OpenStreetMap contributors, CC-BY-SA 2.0
       description: The default OpenStreetMap layer.
       name: OpenStreetMap (Standard)
     Mapbox:
@@ -157,16 +157,6 @@ en:
         text: basemap.at
       description: Annotation overlay provided by basemap.at.
       name: basemap.at Overlay
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Surface layer provided by basemap.at.
-      name: basemap.at Surface
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Terrain layer provided by basemap.at.
-      name: basemap.at Terrain
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -175,13 +165,18 @@ en:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Good for tracing, but a bit older.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Good for tracing, but a bit older.
       name: Japan GSI KIBAN 2500
-    gsi.go.jp:
+    gothenburg-citymap:
       attribution:
-        text: GSI Japan
-      description: Japan GSI ortho Imagery. Usually better than bing, but a bit older.
-      name: Japan GSI ortho Imagery
+        text: © Gothenburg municipality, CC0
+      description: The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.
+      name: Gothenburg City map
+    gothenburg-ortho:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -251,6 +246,21 @@ en:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenPT Map (overlay)
+    openrailwaymap:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Overlay imagery showing railway infrastructure based on OpenStreetMap data
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Overlay imagery showing railway speed limits based on OpenStreetMap data
+      name: OpenRailwayMap Maxspeeds
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Overlay imagery showing railway signals based on OpenStreetMap data
+      name: OpenRailwayMap Signalling
     osm-gps:
       attribution:
         text: © OpenStreetMap contributors
@@ -291,6 +301,11 @@ en:
         text: © Stockholm municipality, CC0
       description: Orthophotos from the municipality of Stockholm 2016, CC0 license
       name: Stockholm Orthophoto
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Susono city orthophoto
+      description: The aerial photos released by Susono City as open data.
+      name: Susono city orthophoto
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
@@ -299,6 +314,10 @@ en:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Maps © Thunderforest, Data © OpenStreetMap contributors
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -329,4 +348,8 @@ en:
         text: © Trafikverket, CC0
       description: Swedish NVDB road network with several options for map layers
       name: Trafikverket Road Network options
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Orthophotomap 2018 (aerial image)'
 

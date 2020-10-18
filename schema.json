@@ -43,6 +43,20 @@
                         "wmts"
                     ]
                 },
+                "category": {
+                    "description": "A rough categorisation of different types of layers",
+                    "type": "string",
+                    "enum": [
+                        "photo",
+                        "map",
+                        "historicmap",
+                        "osmbasedmap",
+                        "historicphoto",
+                        "qa",
+                        "elevation",
+                        "other"
+                    ]
+                },
                 "url": {
                     "description": "A URL template for imagery tiles",
                     "type": "string"
@@ -64,10 +78,6 @@
                         "implicit",
                         "no"
                     ]
-                },
-                "license": {
-                    "description": "The license for the imagery specified using a SPDX identifier, or 'COMMERCIAL'",
-                    "type": "string"
                 },
                 "license_url": {
                     "description": "A URL for the license or permissions for the imagery",
@@ -162,7 +172,86 @@
                 },
                 "icon": {
                     "type": "string"
-                }
+                },
+                "eula": {
+                    "description": "A link to an EULA text that has to be accepted by the user, before the imagery source is added. Can contain {lang} to be replaced by a current user language wiki code (like FR:) or an empty string for the default English text.",
+                    "type": "string"
+                },
+                "logo-image": {
+                    "description": "A URL for an image, that is displayed in the mapview for attribution",
+                    "type": "string"
+                },
+                "terms-of-use-text": {
+                    "description": "Customized text for the terms of use link (default is \"Background Terms of Use\")",
+                    "type": "string"
+                },
+                "no-tile-checksum": {
+                    "description": "Specify a checksum for tiles, which aren't real tiles. `type` is the digest type and can be MD5, SHA-1, SHA-256, SHA-384 and SHA-512, value is the hex encoded checksum in lower case. To create a checksum save the tile as file and upload it to e.g. https://defuse.ca/checksums.htm.",
+                    "type": "string"
+                },
+                "metadata-header": {
+                    "description": "header-name attribute specifies a header returned by tile server, that will be shown as `metadata-key` attribute in Show Tile Info dialog",
+                    "type": "string"
+                },
+                "valid-georeference": {
+                    "description": "Set to `true` if imagery source is properly aligned and does not need imagery offset adjustments. This is used for OSM based sources too.",
+                    "type": "boolean"
+                },
+                "tile-size": {
+                    "description": "Size of individual tiles delivered by a TMS service",
+                    "type": "integer",
+                    "default": 256
+                },
+                "mod-tile-features": {
+                    "description": "Whether tiles status can be accessed by appending /status to the tile URL and can be submitted for re-rendering by appending /dirty.",
+                    "type": "string"
+                },
+                "custom-http-headers": {
+                    "description": "HTTP headers to be sent to server. It has two attributes header-name and header-value. May be specified multiple times.",
+                    "type": "object",
+                    "properties": {
+                        "header-name": {
+                            "type": "string"
+                        },
+                        "header-value": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+               "default-layers": {
+                   "description": "Default layer to open (when using WMS_ENDPOINT type). Contains list of layer tag with two attributes - name and style, e.g. `\"default-layers\": [\"layer\": { name=\"Basisdata_NP_Basiskart_JanMayen_WMTS_25829\" \"style\":\"default\" } ]` (not allowed in `mirror` attribute)",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "layer" : {
+                                "type": "object",
+                                "properties": {
+                                    "layer-name": {
+                                        "type": "string"
+                                    },
+                                    "layer-style": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "format": {
+                    "description": "format to use when connecting tile server (when using WMS_ENDPOINT type)",
+                    "type": "string"
+                },
+                "transparent": {
+                    "description": "If `true` transparent tiles will be requested from WMS server",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "minimum-tile-expire": {
+                    "description": "minimum expiry time for tiles in seconds. The larger the value, the longer entry in cache will be considered valid",
+                    "type": "integer"
+                }                            
             }
         }
     }

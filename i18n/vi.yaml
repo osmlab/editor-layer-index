@@ -39,8 +39,6 @@ vi:
       description: Hình ảnh lưu trữ Esri có thể rõ hơn và chính xác hơn lớp mặc định.
       name: Esri Hình ảnh Thế giới (Clarity) Beta
     MAPNIK:
-      attribution:
-        text: © những người đóng góp vào OpenStreetMap, CC BY-SA
       description: Lớp OpenStreetMap mặc định.
       name: OpenStreetMap (Chuẩn)
     Mapbox:
@@ -48,16 +46,6 @@ vi:
         text: Điều khoản & Phản hồi
       description: Hình ảnh chụp từ vệ tinh và trên không trung.
       name: Mapbox Vệ tinh
-    Maxar-Premium:
-      attribution:
-        text: Điều khoản & Phản hồi
-      description: Maxar Premium là một lớp hình ảnh hỗn hợp bao gồm bản đồ nền Maxar, một số khu vực được ghép lại hình ảnh +Vivid hoặc hình ảnh khu vực quan tâm tùy chỉnh, độ phân giải 50 cm hoặc rõ hơn và được tiếp tục làm mới thường xuyên hơn.
-      name: Maxar Hình ảnh Thượng hạng (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Điều khoản & Phản hồi
-      description: Maxar Chuẩn là một bộ hình ảnh được lựa chọn bao phủ 86% tổng diện tích bề mặt Trái Đất có độ phân giải 30–60 cm ở nơi nào có sẵn, nếu không thì được Landsat thay thế. Hình ảnh được chụp cách đây trung bình 2,31 năm, một số khu vực được cập nhật mỗi năm 2 lần.
-      name: Maxar Hình ảnh Bình thường (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
@@ -191,11 +179,11 @@ vi:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 theo finds.jp. Có ích trong việc vẽ nhưng hơi cũ hơn.
       name: GSI Nhật Bản KIBAN 2500
-    gsi.go.jp:
+    gothenburg-citymap:
       attribution:
-        text: GSI Nhật Bản
-      description: Hình ảnh trực giao GSI Nhật Bản. Thường rõ hơn Bing nhưng hơi cũ hơn.
-      name: GIS Nhật Bản hình ảnh trực giao
+        text: © đô thị Göteborg, CC0
+      description: Bản đồ Göteborg tả thành phố nhìn chung. Nó bao gồm thông tin tổng quát về đất đai, viễn thông, thủy văn, tòa nhà, số nhà, tên đường, phân cấp hành chính, và các nhãn định hướng khác.
+      name: Bản đồ Thành phố Göteborg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Nhật Bản

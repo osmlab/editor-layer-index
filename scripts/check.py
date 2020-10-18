@@ -21,9 +21,10 @@ find sources -name \*.geojson | xargs python scripts/check.py -vv
 import json
 import io
 from argparse import ArgumentParser
-from jsonschema import validate, ValidationError, RefResolver, Draft4Validator
-import spdx_lookup
+from jsonschema import ValidationError, RefResolver, Draft4Validator
 import colorlog
+import os
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -35,11 +36,13 @@ def dict_raise_on_duplicates(ordered_pairs):
             d[k] = v
     return d
 
+
 parser = ArgumentParser(description='Checks ELI sourcen for validity and common errors')
 parser.add_argument('path', nargs='+', help='Path of files to check.')
 parser.add_argument("-v", "--verbose", dest="verbose_count",
                     action="count", default=0,
                     help="increases log verbosity for each occurence.")
+
 arguments = parser.parse_args()
 logger = colorlog.getLogger()
 # Start off at Error, reduce by one level for each -v argument
@@ -57,7 +60,18 @@ validator = Draft4Validator(schema, resolver=resolver)
 borkenbuild = False
 spacesave = 0
 
+headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
+
 for filename in arguments.path:
+
+    if not filename.lower()[-8:] == '.geojson':
+        logger.debug("{} is not a geojson file, skip".format(filename))
+        continue
+
+    if not os.path.exists(filename):
+        logger.debug("{} does not exist, skip".format(filename))
+        continue
+
     try:
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
@@ -73,16 +87,11 @@ for filename in arguments.path:
         ## {z} instead of {zoom}
         if '{z}' in source['properties']['url']:
             raise ValidationError('{z} found instead of {zoom} in tile url')
-        if 'license' in source['properties']:
-            license = source['properties']['license']
-            if not spdx_lookup.by_id(license) and license != 'COMMERCIAL':
-                raise ValidationError('Unknown license %s' % license)
-        else:
-            logger.debug("{} has no license property".format(filename))
 
         ## Check for license url. Too many missing to mark as required in schema.
         if 'license_url' not in source['properties']:
             logger.debug("{} has no license_url".format(filename))
+
         if 'attribution' not in source['properties']:
             logger.debug("{} has no attribution".format(filename))
 
@@ -135,6 +144,7 @@ for filename in arguments.path:
                 ValidationError("{} should have null geometry".format(filename))
             elif source['geometry'] != None:
                 ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
+
     except ValidationError as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))

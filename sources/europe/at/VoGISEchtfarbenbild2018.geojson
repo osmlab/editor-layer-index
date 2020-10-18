@@ -145,12 +145,12 @@
             "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
         },
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "license": "CC-BY-3.0",
         "name": "VoGIS: Echtfarbenbild 2018 (10cm)",
         "permission_osm": "explicit",
         "start_date": "2018",
         "type": "wms",
-        "url": "http://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2018_10cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "category": "photo",
+        "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2018_10cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "type": "Feature"
 }

@@ -31,10 +31,10 @@
         "min_zoom": 15,
         "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Hoehenschichtlinien_20m&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "permission_osm": "explicit",
-        "license": "CC-BY-3.0",
         "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol",
         "country_code": "AT",
         "type": "wms",
+        "category": "elevation",
         "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
     },
     "geometry": {

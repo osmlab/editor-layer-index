@@ -22,7 +22,7 @@ pt:
       name: AIV Modelo Digital de Altitude da Flandres II, Skyview factor 0,25 m
     Bing:
       description: Imagens aéreas e de satélite.
-      name: Imagens aéreas Bing
+      name: Imagens Aéreas Bing
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 sem nuvens - https://s2maps.eu por EOX IT Services GmbH (contém dados alterados do Copernicus Sentinel de 2017 e 2018)
@@ -31,16 +31,16 @@ pt:
     EsriWorldImagery:
       attribution:
         text: Termos e Opinião
-      description: Imagens aéreas Esri.
-      name: Imagens globais da Esri
+      description: Imagens aéreas ESRI.
+      name: Imagens Globais da ESRI
     EsriWorldImageryClarity:
       attribution:
         text: Termos e opinião
-      description: A imagem de arquivo da ESRI poderá ser mais definida e detalhada que a cama pré-definida.
+      description: A imagem de arquivo da ESRI poderá ser mais definida e detalhada que a camada pré-definida.
       name: Imagem Global ESRI (Claridade) versão Beta
     MAPNIK:
       attribution:
-        text: © contribuidores OpenStreetMap, CC-BY-SA
+        text: © Contribuidores do OpenStreetMap, CC-BY-SA 2.0
       description: A camada padrão do OpenStreetMap.
       name: OpenStreetMap (Padrão)
     Mapbox:
@@ -48,16 +48,6 @@ pt:
         text: Termos e opinião
       description: Imagens aéreas e de satélite.
       name: Mapbox Satellite
-    Maxar-Premium:
-      attribution:
-        text: Termos de utilização e Comentários
-      description: O Maxar Premium é um mosaico composto pelo mapa base Maxar com regiões selecionadas preenchidas com +Vivid ou área de imagens de interesse personalizada, com resolução de 50 cm ou superior, e atualizada com mais frequência.
-      name: Imagens Maxar Premium (Beta)
-    Maxar-Standard:
-      attribution:
-        text: Termos de utilização e comentários
-      description: O Maxar Standard são imagens aéreas revistas que cobrem 86% da massa da Terra, com resolução de 30 a 60 cm onde estiver disponível, com recurso alternativo ao Landsat. A idade média é de 2,31 anos com algumas áreas atualizadas duas vezes por ano.
-      name: Imagens Maxar Standard (Beta)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
@@ -187,11 +177,11 @@ pt:
         text: GSI KIBAN 2500
       description: GSI Kiban 2500 via finds.jp. Bom para rastrear, mas um pouco mais velho.
       name: Japão GSI KIBAN 2500
-    gsi.go.jp:
+    gothenburg-citymap:
       attribution:
-        text: GSI Japão
-      description: Ortoimagens GSI do Japão. Normalmente melhor que o Bing, mas um pouco mais velho.
-      name: Ortoimagens GSI do Japão
+        text: © Município de Gotemburgo, CC0
+      description: O mapa da cidade é um mapa síntese que descreve Gotemburgo. Contém informação geral sobre o solo, as comunicações, a hidrografia, os edifícios, os números de polícia e os nomes das ruas, a divisão administrativa e outros textos de orientação.
+      name: Mapa da Cidade de Gotemburgo
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japão

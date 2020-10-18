@@ -4,10 +4,12 @@
     "id": "Berlin-2011",
     "name": "Berlin aerial photography 2011",
     "type": "wms",
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2011_20?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "category": "historicphoto",
+    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2011_20?LAYERS=0&STYLES=default&FORMAT=image/png&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
     "start_date": "2011",
     "end_date": "2011",
     "country_code": "DE",
+    "description": "Digitale Orthophotos f\u00fcr das gesamte Berliner Stadtgebiet mit einer Bodenaufl\u00f6sung von 0,20 m im Blattschnitt 2 km x 2 km.",
     "available_projections": [
       "EPSG:25833",
       "EPSG:25832",

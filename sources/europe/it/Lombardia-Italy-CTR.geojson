@@ -7,15 +7,18 @@
             "text": "Regione Lombardia - Infrastruttura per l'informazione territoriale",
             "required": false
         },
-        "name": "Lombardia - Italy (CTR)",
+        "name": "Lombardia - Italy (C.T.R. 10000 - 1980-94)",
         "available_projections": [
-            "EPSG:3857",
+            "CRS:84",
             "EPSG:32632",
             "EPSG:4326"
         ],
-        "url": "https://www.cartografia.regione.lombardia.it/ArcGIS10/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "map",
+        "url": "https://www.cartografia.servizirl.it/arcgis/services/wms/ctr_wms/MapServer/WmsServer?LAYERS=C.T.R. 10000 - 1980-94&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "IT",
-        "type": "wms"
+        "type": "wms",
+        "license_url": "http://www.geoportale.regione.lombardia.it/en/metadati?p_p_id=PublishedMetadata_WAR_geoportalemetadataportlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_PublishedMetadata_WAR_geoportalemetadataportlet_view=editPublishedMetadata&_PublishedMetadata_WAR_geoportalemetadataportlet_uuid={4314F5A6-7099-4DFB-BCE2-F71001E1C615}&_PublishedMetadata_WAR_geoportalemetadataportlet_editType=view&_PublishedMetadata_WAR_geoportalemetadataportlet_fromAsset=true&rid=local",
+        "privacy_policy_url": "http://www.geoportale.regione.lombardia.it/en/privacy"
     },
     "geometry": {
         "type": "Polygon",

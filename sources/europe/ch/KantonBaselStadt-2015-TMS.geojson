@@ -8,14 +8,15 @@
             "text": "Kanton Basel-Stadt OF 2015",
             "required": true
         },
-        "description": "This imagery is provided via a proxy operated by https://sosm.ch/", 
+        "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
         "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
         "name": "Kanton Basel-Stadt 2015",
         "url": "https://mapproxy.osm.ch/tiles/KTBASELSTADT2015/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
         "max_zoom": 21,
         "min_zoom": 8,
         "country_code": "CH",
-        "type": "tms"
+        "type": "tms",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",
