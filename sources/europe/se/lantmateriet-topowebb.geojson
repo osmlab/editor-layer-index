@@ -1,104 +1,105 @@
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            12.8018162,
-                            55.1961173
-                        ],
-                        [
-                            14.2272895,
-                            55.2728604
-                        ],
-                        [
-                            18.4460395,
-                            56.6924447
-                        ],
-                        [
-                            19.7424207,
-                            57.9848139
-                        ],
-                        [
-                            20.0061008,
-                            59.5371045
-                        ],
-                        [
-                            19.083938,
-                            60.1930844
-                        ],
-                        [
-                            20.4949924,
-                            63.2497044
-                        ],
-                        [
-                            24.2523085,
-                            65.5743697
-                        ],
-                        [
-                            23.8183485,
-                            67.9251447
-                        ],
-                        [
-                            23.2360731,
-                            68.346545
-                        ],
-                        [
-                            20.4345594,
-                            69.1703766
-                        ],
-                        [
-                            18.0834852,
-                            68.5644031
-                        ],
-                        [
-                            16.5014539,
-                            67.8838194
-                        ],
-                        [
-                            14.4360242,
-                            66.1427472
-                        ],
-                        [
-                            11.8212781,
-                            63.3077531
-                        ],
-                        [
-                            12.2003119,
-                            60.3106301
-                        ],
-                        [
-                            10.6237739,
-                            58.5481974
-                        ],
-                        [
-                            12.6425144,
-                            56.0306237
-                        ],
-                        [
-                            12.8018162,
-                            55.1961173
-                        ]
-                    ]
+{
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    12.8018162,
+                    55.1961173
                 ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "\u00a9 Lantm\u00e4teriet, CC0",
-                    "url": "https://www.lantmateriet.se/"
-                },
-                "country_code": "SE",
-                "description": "Topographic map of Sweden 1:50 000",
-                "i18n": true,
-                "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png",
-                "id": "lantmateriet-topowebb",
-                "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
-                "max_zoom": 15,
-                "min_zoom": 3,
-                "name": "Lantm\u00e4teriet Topographic Map",
-                "type": "tms",
-                "url": "https://api.lantmateriet.se/open/topowebb-ccby/v1/wmts/token/9b342b7d9f12d4ddb92277be9869d860/1.0.0/topowebb/default/3857/{zoom}/{y}/{x}.png"
-            },
-            "type": "Feature"
-        }
+                [
+                    14.2272895,
+                    55.2728604
+                ],
+                [
+                    18.4460395,
+                    56.6924447
+                ],
+                [
+                    19.7424207,
+                    57.9848139
+                ],
+                [
+                    20.0061008,
+                    59.5371045
+                ],
+                [
+                    19.083938,
+                    60.1930844
+                ],
+                [
+                    20.4949924,
+                    63.2497044
+                ],
+                [
+                    24.2523085,
+                    65.5743697
+                ],
+                [
+                    23.8183485,
+                    67.9251447
+                ],
+                [
+                    23.2360731,
+                    68.346545
+                ],
+                [
+                    20.4345594,
+                    69.1703766
+                ],
+                [
+                    18.0834852,
+                    68.5644031
+                ],
+                [
+                    16.5014539,
+                    67.8838194
+                ],
+                [
+                    14.4360242,
+                    66.1427472
+                ],
+                [
+                    11.8212781,
+                    63.3077531
+                ],
+                [
+                    12.2003119,
+                    60.3106301
+                ],
+                [
+                    10.6237739,
+                    58.5481974
+                ],
+                [
+                    12.6425144,
+                    56.0306237
+                ],
+                [
+                    12.8018162,
+                    55.1961173
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© Lantmäteriet, CC0",
+            "url": "https://www.lantmateriet.se/"
+        },
+        "country_code": "SE",
+        "description": "Topographic map of Sweden 1:50 000",
+        "i18n": true,
+        "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png",
+        "id": "lantmateriet-topowebb",
+        "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
+        "max_zoom": 15,
+        "min_zoom": 3,
+        "name": "Lantmäteriet Topographic Map",
+        "type": "tms",
+        "url": "https://api.lantmateriet.se/open/topowebb-ccby/v1/wmts/token/9b342b7d9f12d4ddb92277be9869d860/1.0.0/topowebb/default/3857/{zoom}/{y}/{x}.png",
+        "category": "map"
+    },
+    "type": "Feature"
+}

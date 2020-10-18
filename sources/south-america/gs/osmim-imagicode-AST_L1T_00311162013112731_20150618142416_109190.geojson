@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -28.210747081406492,
-                    -56.72108048139938
-                ],
-                [
-                    -28.210747081406492,
-                    -56.624975043089115
-                ],
-                [
-                    -27.96956284678735,
-                    -56.624975043089115
-                ],
-                [
-                    -27.96956284678735,
-                    -56.72108048139938
-                ],
-                [
-                    -28.210747081406492,
-                    -56.72108048139938
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -28.210747081406492, -56.721080481399383 ], [ -28.210747081406492, -56.624975043089115 ], [ -27.969562846787351, -56.624975043089115 ], [ -27.969562846787351, -56.721080481399383 ], [ -28.210747081406492, -56.721080481399383 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "GS",
         "description": "Missing in other image sources (true color with estimated blue)",
         "end_date": "2013-11-16",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-AST_L1T_00311162013112731_20150618142416_109190",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Leskov Island ASTER",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2013-11-16",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00311162013112731_20150618142416_109190&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00311162013112731_20150618142416_109190&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

@@ -1,106 +1,107 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "Siemianowice_Slaskie-buildings",
-    "name": "Siemianowice Śląskie: Buildings",
-    "type": "wms",
-    "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,drogi,adresy,ulice&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "country_code": "PL",
-    "available_projections": [
-      "EPSG:2177",
-      "EPSG:2180",
-      "EPSG:4326"
-    ],
-    "attribution": {
-      "text": "Urząd Miasta Siemianowice Śląskie"
+    "type": "Feature",
+    "properties": {
+        "id": "Siemianowice_Slaskie-buildings",
+        "name": "Siemianowice Śląskie: Buildings",
+        "type": "wms",
+        "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,drogi,adresy,ulice&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "PL",
+        "available_projections": [
+            "EPSG:2177",
+            "EPSG:2180",
+            "EPSG:4326"
+        ],
+        "attribution": {
+            "text": "Urząd Miasta Siemianowice Śląskie"
+        },
+        "max_zoom": 19,
+        "category": "other"
     },
-    "max_zoom": 19
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          19.0310261,
-          50.339329
-        ],
-        [
-          19.0315972,
-          50.3541314
-        ],
-        [
-          19.0656031,
-          50.3537286
-        ],
-        [
-          19.0652949,
-          50.3421931
-        ],
-        [
-          19.0611833,
-          50.3374872
-        ],
-        [
-          19.0606865,
-          50.3196714
-        ],
-        [
-          19.0560326,
-          50.3197459
-        ],
-        [
-          19.0556205,
-          50.3015538
-        ],
-        [
-          19.0643237,
-          50.3014971
-        ],
-        [
-          19.0636603,
-          50.2717459
-        ],
-        [
-          19.0437879,
-          50.2717901
-        ],
-        [
-          19.0437473,
-          50.274782
-        ],
-        [
-          19.0212968,
-          50.2750495
-        ],
-        [
-          19.0215586,
-          50.2839766
-        ],
-        [
-          19.0102663,
-          50.2885627
-        ],
-        [
-          18.9879053,
-          50.2887134
-        ],
-        [
-          18.9882191,
-          50.3021983
-        ],
-        [
-          18.9814266,
-          50.3022558
-        ],
-        [
-          18.9821286,
-          50.3397694
-        ],
-        [
-          19.0310261,
-          50.339329
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    19.0310261,
+                    50.339329
+                ],
+                [
+                    19.0315972,
+                    50.3541314
+                ],
+                [
+                    19.0656031,
+                    50.3537286
+                ],
+                [
+                    19.0652949,
+                    50.3421931
+                ],
+                [
+                    19.0611833,
+                    50.3374872
+                ],
+                [
+                    19.0606865,
+                    50.3196714
+                ],
+                [
+                    19.0560326,
+                    50.3197459
+                ],
+                [
+                    19.0556205,
+                    50.3015538
+                ],
+                [
+                    19.0643237,
+                    50.3014971
+                ],
+                [
+                    19.0636603,
+                    50.2717459
+                ],
+                [
+                    19.0437879,
+                    50.2717901
+                ],
+                [
+                    19.0437473,
+                    50.274782
+                ],
+                [
+                    19.0212968,
+                    50.2750495
+                ],
+                [
+                    19.0215586,
+                    50.2839766
+                ],
+                [
+                    19.0102663,
+                    50.2885627
+                ],
+                [
+                    18.9879053,
+                    50.2887134
+                ],
+                [
+                    18.9882191,
+                    50.3021983
+                ],
+                [
+                    18.9814266,
+                    50.3022558
+                ],
+                [
+                    18.9821286,
+                    50.3397694
+                ],
+                [
+                    19.0310261,
+                    50.339329
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

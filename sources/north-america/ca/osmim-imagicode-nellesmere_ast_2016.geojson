@@ -1,60 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -78.89729497133754,
-                    82.17577067162792
-                ],
-                [
-                    -82.64500613899595,
-                    82.19425721404356
-                ],
-                [
-                    -82.64500613899595,
-                    83.08067098163464
-                ],
-                [
-                    -66.58986093522367,
-                    83.08497116318647
-                ],
-                [
-                    -63.78010752773773,
-                    82.98907949583335
-                ],
-                [
-                    -63.78010752773773,
-                    82.72198178031782
-                ],
-                [
-                    -65.0092029821365,
-                    82.17577067162792
-                ],
-                [
-                    -78.89729497133754,
-                    82.17577067162792
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -78.897294971337544, 82.175770671627916 ], [ -82.645006138995953, 82.19425721404356 ], [ -82.645006138995953, 83.08067098163464 ], [ -66.589860935223669, 83.084971163186466 ], [ -63.780107527737727, 82.989079495833352 ], [ -63.780107527737727, 82.721981780317819 ], [ -65.0092029821365, 82.175770671627916 ], [ -78.897294971337544, 82.175770671627916 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "CA",
         "description": "Assembled from July 2016 ASTER imagery (true color with estimated blue)",
         "end_date": "2012-07-15",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-nellesmere_ast_2016",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 10,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Northern Ellesmere Island July 2016",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2012-07-08",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=nellesmere_ast_2016&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=nellesmere_ast_2016&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
