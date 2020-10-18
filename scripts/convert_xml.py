@@ -529,6 +529,18 @@ def add_source(source_path, root):
     with open(source_path) as f:
         source = json.load(f)
 
+    # Check compatibility
+    if 'geometry' in source and source['geometry'] is not None:
+        geom = shape(source['geometry'])
+        if isinstance(geom, Polygon):
+            geom = [geom]
+        for g in geom:
+            # Limit of 999 is defined in maps.xsd
+            if len(g.exterior.coords) > 999:
+                print(
+                    "Skipping source with id {}: geometry has too many coordinates.".format(source['properties']['id']))
+                return
+
     properties = source['properties']
     entry = ET.SubElement(root, "entry")
 
@@ -626,13 +638,12 @@ def add_source(source_path, root):
             geom = [geom]
 
         for g in geom:
-            exterior_ring = ET.SubElement(bounds, "shape")
-
+            shape_element = ET.SubElement(bounds, "shape")
             # All interior rings (=holes) of polygons are ignored
             for c in g.exterior.coords:
-                point = ET.SubElement(exterior_ring, "point")
-                point.set('lon', coord_str(c[0]))
-                point.set('lat', coord_str(c[1]))
+                point_element = ET.SubElement(shape_element, "point")
+                point_element.set('lon', coord_str(c[0]))
+                point_element.set('lat', coord_str(c[1]))
 
 
 root = ET.Element("imagery")
