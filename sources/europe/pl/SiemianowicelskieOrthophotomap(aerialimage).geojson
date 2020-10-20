@@ -4,7 +4,7 @@
         "id": "Siemianowice_Slaskie-aerial_image",
         "name": "Siemianowice Śląskie: Orthophotomap (aerial image)",
         "type": "wms",
-        "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?LAYERS=ortofotomapa&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "PL",
         "available_projections": [
             "EPSG:2177",

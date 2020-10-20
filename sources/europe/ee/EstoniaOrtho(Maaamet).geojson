@@ -4,7 +4,7 @@
         "id": "Maaamet-Estonia_Ortho",
         "name": "Estonia Ortho (Maaamet)",
         "type": "wms",
-        "url": "https://kaart.maaamet.ee/wms/alus?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kaart.maaamet.ee/wms/alus?LAYERS=of10000&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&REQUEST=GetMap",
         "country_code": "EE",
         "available_projections": [
             "EPSG:3301"

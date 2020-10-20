@@ -6,15 +6,16 @@
         "id": "MCGIS-County-Valleywide-Imagery-2018",
         "type": "wms",
         "name": "Mesa County GIS Valleywide 2018",
-        "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/City_Color_2018/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/City_Color_2018/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 20,
         "permission_osm": "implicit",
         "country_code": "US",
         "start_date": "2018",
         "end_date": "2018",
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:3742"
+            "CRS:84",
+            "EPSG:3742",
+            "EPSG:4326"
         ],
         "attribution": {
             "url": "https://gis.mesacounty.us/",

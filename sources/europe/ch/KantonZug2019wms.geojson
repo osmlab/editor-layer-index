@@ -6,11 +6,11 @@
             "required": true
         },
         "available_projections": [
-            "EPSG:3857",
             "CRS:84",
+            "EPSG:2056",
+            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:21781",
-            "EPSG:2056"
+            "EPSG:21781"
         ],
         "best": true,
         "country_code": "CH",
@@ -70,6 +70,3 @@
         ]
     }
 }
-
-
-
