@@ -4,9 +4,10 @@
         "id": "Czestochowa-buildings",
         "name": "Częstochowa: Buildings",
         "type": "wms",
-        "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?LAYERS=ieg_budynek&STYLES=&FORMAT=image/png&TRANSPARENT=true&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?LAYERS=ieg_budynek&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "PL",
         "available_projections": [
+            "CRS:84",
             "EPSG:2172",
             "EPSG:2173",
             "EPSG:2174",
