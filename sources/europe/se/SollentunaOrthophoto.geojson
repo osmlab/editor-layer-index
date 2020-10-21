@@ -1,15 +1,15 @@
 {
-    "type":"Feature",
-    "properties":{
-        "id":"sollentuna-orto",
-        "name":"Sollentuna Orthophoto",
-        "type":"wms",
-        "url":"https://kartor.sollentuna.se/bios/wms/site/web/WMS_ORTOFOTO2016?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=p_40137&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "category":"photo",
-        "best":true,
-        "country_code":"SE",
-        "available_projections":[
-          "EPSG:2172",
+    "type": "Feature",
+    "properties": {
+        "id": "sollentuna-orto",
+        "name": "Sollentuna Orthophoto",
+        "type": "wms",
+        "url": "https://kartor.sollentuna.se/bios/wms/site/web/WMS_ORTOFOTO2016?LAYERS=p_40137&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "category": "photo",
+        "best": true,
+        "country_code": "SE",
+        "available_projections": [
+            "EPSG:2172",
             "EPSG:2173",
             "EPSG:2174",
             "EPSG:2175",
@@ -19,10 +19,6 @@
             "EPSG:2179",
             "EPSG:2180",
             "EPSG:2400",
-            "EPSG:25832",
-            "EPSG:25833",
-            "EPSG:25835",
-            "EPSG:25884",
             "EPSG:3006",
             "EPSG:3007",
             "EPSG:3008",
@@ -39,8 +35,6 @@
             "EPSG:3044",
             "EPSG:3120",
             "EPSG:3152",
-            "EPSG:32632",
-            "EPSG:32633",
             "EPSG:3301",
             "EPSG:3395",
             "EPSG:3857",
@@ -49,22 +43,27 @@
             "EPSG:5850",
             "EPSG:5973",
             "EPSG:5975",
-            "EPSG:900913"
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:25835",
+            "EPSG:25884",
+            "EPSG:32632",
+            "EPSG:32633"
         ],
-        "attribution":{
-            "text":"\u00a9 Solentuna municipality",
-            "url":"https://www.sollentuna.se/"
+        "attribution": {
+            "text": "© Solentuna municipality",
+            "url": "https://www.sollentuna.se/"
         },
-        "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sollentuna_kommunvapen_-_Riksarkivet_Sverige.png/207px-Sollentuna_kommunvapen_-_Riksarkivet_Sverige.png",
-        "max_zoom":20,
-        "min_zoom":5,
-        "license_url":"https://www.sollentuna.se/kommun--politik/kvalitet-och-utveckling/oppna-data-i-sollentuna/",
-        "description":"Orthophotos from the municipality of Sollentuna 2016, open data",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sollentuna_kommunvapen_-_Riksarkivet_Sverige.png/207px-Sollentuna_kommunvapen_-_Riksarkivet_Sverige.png",
+        "max_zoom": 20,
+        "min_zoom": 5,
+        "license_url": "https://www.sollentuna.se/kommun--politik/kvalitet-och-utveckling/oppna-data-i-sollentuna/",
+        "description": "Orthophotos from the municipality of Sollentuna 2016, open data",
         "privacy_policy_url": "https://www.sollentuna.se/om-webbplatsen/Kakor-cookies-pa-webbplatsen/"
     },
-    "geometry":{
-        "type":"Polygon",
-        "coordinates":[
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     17.8218412,

@@ -3,6 +3,7 @@ import asyncio
 import glob
 import io
 import json
+import logging
 import os
 import re
 import xml.etree.ElementTree as ET
@@ -18,6 +19,8 @@ from pyproj import Transformer
 from pyproj.crs import CRS
 import aiofiles
 from aiohttp import ClientSession
+
+logging.basicConfig(level=logging.INFO)
 
 parser = argparse.ArgumentParser(description='Update WMS URLs and related properties')
 parser.add_argument('sources',
@@ -53,31 +56,33 @@ async def get_url(url: str, session: ClientSession, with_text=False, headers=Non
         lock = domain_locks[o.netloc]
 
     async with lock:
-        if url not in response_cache:
-            try:
-                print("GET {}".format(url), headers)
-                async with session.request(method="GET", url=url, ssl=False, headers=headers) as response:
-                    status = response.status
-                    if with_text:
-                        try:
-                            text = await response.text()
-                        except:
-                            text = await response.read()
-                        response_cache[url] = RequestResult(status=status, text=text)
-                    else:
-                        response_cache[url] = RequestResult(status=status)
-            except asyncio.TimeoutError:
-                response_cache[url] = RequestResult(exception="Timeout for: {}".format(url))
-            except Exception as e:
-                print("Error for: {} ({})".format(url, str(e)))
-                response_cache[url] = RequestResult(exception="Exception {} for: {}".format(str(e), url))
-        else:
-            print("Cached {}".format(url))
-
+        for i in range(3):
+            if url not in response_cache:
+                try:
+                    logging.debug("GET {}".format(url))
+                    async with session.request(method="GET", url=url, ssl=False, headers=headers) as response:
+                        status = response.status
+                        if with_text:
+                            try:
+                                text = await response.text()
+                            except:
+                                text = await response.read()
+                            response_cache[url] = RequestResult(status=status, text=text)
+                        else:
+                            response_cache[url] = RequestResult(status=status)
+                except asyncio.TimeoutError:
+                    response_cache[url] = RequestResult(exception="Timeout for: {}".format(url))
+                except Exception as e:
+                    logging.debug("Error for: {} ({})".format(url, str(e)))
+                    response_cache[url] = RequestResult(exception="Exception {} for: {}".format(str(e), url))
+            else:
+                logging.debug("Cached {}".format(url))
+            if RequestResult.exception is None:
+                break
         return response_cache[url]
 
 
-async def get_image(url, available_projections, lon, lat, zoom, session):
+async def get_image(url, available_projections, lon, lat, zoom, session, messages):
     """ Download image (tms tile for coordinate lon,lat on level zoom and calculate image hash"""
     tile = list(mercantile.tiles(lon, lat, lon, lat, zooms=zoom))[0]
     bounds = list(mercantile.bounds(tile))
@@ -89,9 +94,13 @@ async def get_image(url, available_projections, lon, lat, zoom, session):
         proj = 'EPSG:3857'
     else:
         for proj in available_projections:
-            if 'EPSG' in proj.upper():
-                break
+            try:
+                CRS.from_string(proj)
+            except:
+                continue
+            break
     if proj is None:
+        messages.append("No projection left: {}".format(available_projections))
         return None
 
     if not proj == 'EPSG:4326':
@@ -112,16 +121,21 @@ async def get_image(url, available_projections, lon, lat, zoom, session):
                                width=512,
                                height=512,
                                bbox=bbox)
+    messages.append("Image URL: {}".format(formatted_url))
+    for i in range(3):
+        try:
+            # Downloag image
+            async with session.request(method="GET", url=formatted_url, ssl=False) as response:
+                data = await response.read()
+                img = Image.open(io.BytesIO(data))
+                img_hash = imagehash.average_hash(img)
+                messages.append("ImageHash: {}".format(img_hash))
+                return img_hash
+        except Exception as e:
+            messages.append("Could not download image in try {}: {}".format(i, str(e)))
+        await asyncio.sleep(5)
 
-    try:
-        # Downloag image
-        async with session.request(method="GET", url=formatted_url, ssl=False) as response:
-            data = await response.read()
-            img = Image.open(io.BytesIO(data))
-            hash = imagehash.average_hash(img)
-            return hash
-    except Exception as e:
-        return None
+    return None
 
 
 def parse_wms(xml):
@@ -226,7 +240,7 @@ def parse_wms(xml):
     return wms
 
 
-async def update_wms(wms_url, session: ClientSession):
+async def update_wms(wms_url, session: ClientSession, messages):
     """ Update wms parameters using WMS GetCapabilities request"""
     wms_args = {}
     u = urlparse(wms_url)
@@ -237,6 +251,7 @@ async def update_wms(wms_url, session: ClientSession):
     layers = wms_args['layers'].split(',')
     if len(layers) > 1:
         # Currently only one layer is supported"
+        messages.append("Currently only 1 layer is supported")
         return None
 
     def get_getcapabilitie_url(wms_version=None):
@@ -257,14 +272,16 @@ async def update_wms(wms_url, session: ClientSession):
     # According to the WMS Specification Section 6.2 Version numbering and negotiation, the server should return
     # the GetCapabilities XML with the highest version the server supports.
     # If this fails, it is tried to explicitly specify a WMS version
-    exceptions = []
     wms = None
-    for wmsversion in ['1.3.0', '1.1.1', '1.1.0', '1.0.0', None]:
+    for wmsversion in ['1.3.0', '1.1.1', '1.1.0', '1.0.0']:
+        if wmsversion < wms_args['version']:
+            continue
+
         try:
             wms_getcapabilites_url = get_getcapabilitie_url(wmsversion)
             resp = await get_url(wms_getcapabilites_url, session, with_text=True)
             if resp.exception is not None:
-                exceptions.append("WMS {}: {}".format(wmsversion, resp.exception))
+                messages.append("Could not download GetCapabilites URL for {}: {}".format(wmsversion, resp.exception))
                 continue
             xml = resp.text
             if isinstance(xml, bytes):
@@ -280,14 +297,16 @@ async def update_wms(wms_url, session: ClientSession):
             if wms is not None:
                 break
         except Exception as e:
-            pass
+            messages.append("Could not get GetCapabilites URL for {} in try: {}".format(wmsversion, str(e)))
 
     if wms is None:
         # Could not request GetCapabilities
+        messages.append("Could not contact WMS server")
         return None
 
     if layers[0] not in wms['layers']:
         # Layer not advertised by server
+        messages.append("Layer {} not advertised by server".format(layers[0]))
         return None
 
     wms_args['version'] = wms['version']
@@ -297,9 +316,21 @@ async def update_wms(wms_url, session: ClientSession):
     if 'styles' not in wms_args:
         wms_args['styles'] = ''
 
+    def test_proj(proj):
+        if proj == 'CRS:84':
+            return True
+        if 'AUTO' in proj:
+            return False
+        if 'EPSG' in proj:
+            try:
+                CRS.from_string(proj)
+                return True
+            except:
+                return False
+        return False
+
     new_projections = wms['layers'][layers[0]]['CRS']
-    new_projections = [proj for proj in new_projections if 'AUTO' not in proj]
-    new_projections = sorted(new_projections, key=lambda x: (x.split(':')[0], int(x.split(':')[1])))
+    new_projections = set([proj.upper() for proj in new_projections if test_proj(proj)])
 
     new_wms_parameters = OrderedDict()
     for key in ['map', 'layers', 'styles', 'format', 'transparent', 'crs', 'srs', 'width', 'height', 'bbox', 'version',
@@ -313,7 +344,7 @@ async def update_wms(wms_url, session: ClientSession):
     baseurl = wms_url.split("?")[0]
     new_url = baseurl + "?" + "&".join(
         ["{}={}".format(key.upper(), value) for key, value in new_wms_parameters.items()])
-    return {'url': new_url, 'available_projections': list(new_projections)}
+    return {'url': new_url, 'available_projections': new_projections}
 
 
 async def process_source(filename, session: ClientSession):
@@ -331,16 +362,22 @@ async def process_source(filename, session: ClientSession):
         return
     if 'header' in source['properties']['url']:
         return
+    if 'geometry' not in source:
+        return
+    if source['geometry'] is None:
+        return
 
     # Get existing image hash
     geom = shape(source['geometry'])
     pt = geom.centroid
+    original_img_messages = []
     image_hash = await get_image(url=source['properties']['url'],
                                  available_projections=source['properties']['available_projections'],
                                  lon=pt.x,
                                  lat=pt.y,
                                  zoom=15,
-                                 session=session)
+                                 session=session,
+                                 messages=original_img_messages)
     if image_hash is None:
         # We are finished if it was not possible to get the image
         return
@@ -348,30 +385,75 @@ async def process_source(filename, session: ClientSession):
     if str(image_hash) in {'0000000000000000', 'FFFFFFFFFFFFFFFF'}:
         # These image hashes indicate that the downloaded image is not useful to determine
         # if the updated query returns the same image
+        logging.info(
+            "ImageHash {} not useful for: {} || {}".format(str(image_hash), filename, "||".join(original_img_messages)))
         return
 
     # Update wms
-    result = await update_wms(source['properties']['url'], session)
+    wms_messages = []
+    result = await update_wms(source['properties']['url'], session, wms_messages)
     if result is None:
+        logging.info("Not possible to update wms url for {}: {}".format(filename, "||".join(wms_messages)))
         return
 
+    # Test if selected projections previously included and not advertised anymore still works
+    for EPSG in {'EPSG:3857', 'EPSG:4326'}:
+        if EPSG in source['properties']['available_projections'] and EPSG not in result['available_projections']:
+            epsg_image_hash = await get_image(url=result['url'],
+                                              available_projections=[EPSG],
+                                              lon=pt.x,
+                                              lat=pt.y,
+                                              zoom=15,
+                                              session=session,
+                                              messages=[])
+            if epsg_image_hash == image_hash:
+                result['available_projections'].add(EPSG)
+
+    # Download image for updated url
+    new_img_messages = []
     new_image_hash = await get_image(url=result['url'],
                                      available_projections=result['available_projections'],
                                      lon=pt.x,
                                      lat=pt.y,
                                      zoom=15,
-                                     session=session)
+                                     session=session,
+                                     messages=new_img_messages)
+
+    if new_image_hash is None:
+        logging.warning("Could not download new image: {}".format("||".join(new_img_messages)))
+        return
 
     # Only sources are updated where the new query returns the same image
-    if image_hash == new_image_hash:
-        # Skip servers with a lot of available projections. These servers are probably not ideally configured.
-        if len(result['available_projections']) < 10:
-            source['properties']['url'] = result['url']
-            source['properties']['available_projections'] = result['available_projections']
+    if not image_hash == new_image_hash:
+        logging.info(
+            "Image hash not the same for: {}: {} {} ".format(filename, image_hash, new_image_hash))
 
-            with open(filename, 'w', encoding='utf-8') as out:
-                json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
-                out.write("\n")
+    # Servers that report a lot of projection may be configured wrongly
+    # Check for CRS:84, EPSG:3857, EPSG:4326 and keep existing projections if still advertised
+    if len(result['available_projections']) > 15:
+        filtered_projs = set()
+        for proj in ['CRS:84', 'EPSG:3857', 'EPSG:4326']:
+            if proj in result['available_projections']:
+                filtered_projs.add(proj)
+        for proj in source['properties']['available_projections']:
+            if proj in result['available_projections']:
+                filtered_projs.add(proj)
+        result['available_projections'] = filtered_projs
+
+    # Filter alias projections
+    if 'EPSG:3857' in result['available_projections']:
+        for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]:
+            epsg_str = 'EPSG:{}'.format(epsg)
+            if epsg_str in result['available_projections']:
+                result['available_projections'].remove(epsg_str)
+
+    source['properties']['url'] = result['url']
+    source['properties']['available_projections'] = list(
+        sorted(result['available_projections'], key=lambda x: (x.split(':')[0], int(x.split(':')[1]))))
+
+    with open(filename, 'w', encoding='utf-8') as out:
+        json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
+        out.write("\n")
 
 
 async def start_processing(sources_directory):

@@ -4,7 +4,7 @@
         "id": "Czestochowa-2011",
         "name": "Częstochowa: Orthophotomap 2011 (aerial image)",
         "type": "wms",
-        "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2011&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?LAYERS=orto_2011&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2011",
         "end_date": "2011",
         "country_code": "PL",
