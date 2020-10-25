@@ -390,7 +390,7 @@ async def process_source(filename, session: ClientSession):
 
     # Get existing image hash
     geom = shape(source['geometry'])
-    pt = geom.centroid
+    pt = geom.representative_point()
     original_img_messages = []
     image_hash = await get_image(url=source['properties']['url'],
                                  available_projections=source['properties']['available_projections'],
