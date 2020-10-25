@@ -10,7 +10,7 @@
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Stockholm_vapen_bra.svg/196px-Stockholm_vapen_bra.svg.png",
         "license_url": "https://dataportalen.stockholm.se/dataportalen/GetMetaDataById?id=6841c003-2363-4b74-92b9-2509f75fd312",
         "type": "wms",
-        "url": "https://openmap.stockholm.se/bios/wms/app/baggis/web/WMS_STHLM_ORTOFOTO_2016?LAYERS=p_1002630&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://openmap.stockholm.se/bios/wms/app/baggis/web/WMS_STHLM_ORTOFOTO_2016?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=p_1002630&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 21,
         "min_zoom": 5,
         "attribution": {
@@ -19,6 +19,12 @@
             "url": "https://dataportalen.stockholm.se/dataportalen/"
         },
         "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:25835",
+            "EPSG:25884",
             "EPSG:3006",
             "EPSG:3007",
             "EPSG:3008",
@@ -34,17 +40,11 @@
             "EPSG:3018",
             "EPSG:3044",
             "EPSG:3152",
-            "EPSG:3857",
-            "EPSG:4326",
+            "EPSG:32632",
+            "EPSG:32633",
             "EPSG:5850",
             "EPSG:5973",
-            "EPSG:5975",
-            "EPSG:25832",
-            "EPSG:25833",
-            "EPSG:25835",
-            "EPSG:25884",
-            "EPSG:32632",
-            "EPSG:32633"
+            "EPSG:5975"
         ],
         "category": "photo"
     },

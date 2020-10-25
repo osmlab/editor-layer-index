@@ -2,13 +2,13 @@
     "type": "Feature",
     "properties": {
         "id": "Sicily-ATA2007",
-        "url": "http://map.sitr.regione.sicilia.it/ArcGIS/services/WGS84_F33/Ortofoto_ATA20072008_f33/MapServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "http://map.sitr.regione.sicilia.it/ArcGIS/services/WGS84_F33/Ortofoto_ATA20072008_f33/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=default&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
         "name": "Sicily - Italy",
         "country_code": "IT",
         "available_projections": [
-            "CRS:84",
             "EPSG:4326",
+            "EPSG:3857",
             "EPSG:32633"
         ],
         "category": "photo"

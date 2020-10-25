@@ -4,14 +4,14 @@
         "id": "wroclaw-orto2015",
         "name": "Wrocław: Orthophotomap 2015 (aerial image)",
         "type": "wms",
-        "url": "https://gis1.um.wroc.pl/arcgis/services/ogc/OGC_ortofoto_2015/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gis1.um.wroc.pl/arcgis/services/ogc/OGC_ortofoto_2015/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "start_date": "2015",
         "end_date": "2015",
         "country_code": "PL",
         "available_projections": [
+            "EPSG:4326",
             "EPSG:2177",
-            "EPSG:2180",
-            "EPSG:4326"
+            "EPSG:3857"
         ],
         "attribution": {
             "text": "Urząd Miasta Wrocław"

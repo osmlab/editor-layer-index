@@ -6,7 +6,7 @@
         "id": "kartverket-dtm-skygge",
         "country_code": "NO",
         "description": "Shaded relief representation of the Norwegian digital terrain model (DTM), i.e. earth surface without trees, buildings and other objects.",
-        "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm_somlos_skyggerelieff?LAYERS=las_dtm_skyggerelieff_somlos&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm_somlos_skyggerelieff?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=las_dtm_skyggerelieff_somlos&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
         "max_zoom": 24,
         "attribution": {
@@ -16,10 +16,15 @@
         },
         "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
         "available_projections": [
-            "CRS:84",
             "EPSG:3857",
             "EPSG:4258",
             "EPSG:4326",
+            "EPSG:25831",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:25834",
+            "EPSG:25835",
+            "EPSG:25836",
             "EPSG:5105",
             "EPSG:5106",
             "EPSG:5107",
@@ -45,13 +50,7 @@
             "EPSG:5127",
             "EPSG:5128",
             "EPSG:5129",
-            "EPSG:5130",
-            "EPSG:25831",
-            "EPSG:25832",
-            "EPSG:25833",
-            "EPSG:25834",
-            "EPSG:25835",
-            "EPSG:25836"
+            "EPSG:5130"
         ],
         "category": "elevation"
     },

@@ -4,7 +4,7 @@
         "id": "wroclaw-orto2018",
         "name": "Wrocław: Orthophotomap 2018 (aerial image)",
         "type": "wms",
-        "url": "https://gis1.um.wroc.pl/arcgis/services/ogc/OGC_ortofoto_2018/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gis1.um.wroc.pl/arcgis/services/ogc/OGC_ortofoto_2018/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "start_date": "2018-04-06",
         "end_date": "2018-04-07",
         "country_code": "PL",
@@ -12,10 +12,9 @@
         "i18n": true,
         "privacy_policy_url": "http://bip.um.wroc.pl/artykul/7/32673/dane-osobowe",
         "available_projections": [
-            "CRS:84",
+            "EPSG:4326",
             "EPSG:2177",
-            "EPSG:2180",
-            "EPSG:4326"
+            "EPSG:3857"
         ],
         "attribution": {
             "text": "Urząd Miasta Wrocław"

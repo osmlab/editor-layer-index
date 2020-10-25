@@ -2,13 +2,14 @@
     "type": "Feature",
     "properties": {
         "id": "ITACyL-Castile-and-Leon",
-        "url": "http://orto.wms.itacyl.es/WMS?LAYERS=Ortofoto_CyL&STYLES=Default&FORMAT=image/jpeg&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "attribution": {
             "text": "ITACyL",
             "required": true
         },
         "type": "wms",
         "available_projections": [
+            "EPSG:25830",
             "EPSG:4230",
             "EPSG:4258",
             "EPSG:4326",
@@ -19,7 +20,6 @@
             "EPSG:23032",
             "EPSG:25828",
             "EPSG:25829",
-            "EPSG:25830",
             "EPSG:25831",
             "EPSG:25832",
             "EPSG:32627",

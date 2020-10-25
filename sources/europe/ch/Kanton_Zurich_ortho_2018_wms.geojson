@@ -7,13 +7,12 @@
         },
         "available_projections": [
             "EPSG:2056",
-            "EPSG:3857",
-            "EPSG:4258",
-            "EPSG:4326",
-            "EPSG:21780",
             "EPSG:21781",
+            "EPSG:21780",
             "EPSG:21782",
-            "EPSG:31297"
+            "EPSG:4326",
+            "EPSG:4258",
+            "EPSG:3857"
         ],
         "best": true,
         "country_code": "CH",
@@ -26,7 +25,7 @@
         "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
         "type": "wms",
         "category": "photo",
-        "url": "https://wms.zh.ch/OGDOrthoZH?LAYERS=ortho&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+        "url": "https://wms.zh.ch/OGDOrthoZH?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=&LAYERS=ortho&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "geometry": {
         "type": "Polygon",

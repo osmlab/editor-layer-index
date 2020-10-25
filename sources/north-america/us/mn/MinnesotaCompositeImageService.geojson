@@ -818,7 +818,7 @@
         "name": "Minnesota Composite Image Service",
         "start_date": "2008",
         "type": "wms",
-        "url": "https://imageserver.gisdata.mn.gov/cgi-bin/mncomp?LAYERS=mncomp&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://imageserver.gisdata.mn.gov/cgi-bin/mncomp?LAYERS=mncomp&FORMAT=image/jpeg&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
         "category": "photo"
     },
     "type": "Feature"

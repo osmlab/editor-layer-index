@@ -339,7 +339,6 @@
             "url": "http://data-kalmar.opendata.arcgis.com/"
         },
         "available_projections": [
-            "CRS:84",
             "EPSG:3010",
             "EPSG:4326"
         ],
@@ -356,7 +355,7 @@
         "name": "Kalmar Urban Orthophoto 2018",
         "start_date": "2018",
         "type": "wms",
-        "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2018/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2018/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "photo"
     },
     "type": "Feature"

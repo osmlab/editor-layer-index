@@ -4,16 +4,15 @@
         "id": "poznan-ortofotomapa2016",
         "name": "Poznań: Orthophotomap 2016 (aerial image)",
         "type": "wms",
-        "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapy/MapServer/WmsServer?LAYERS=ortofotomapa_2016_image&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapy/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2016_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "start_date": "2016",
         "end_date": "2016",
         "country_code": "PL",
         "available_projections": [
-            "CRS:84",
+            "EPSG:4326",
             "EPSG:2177",
             "EPSG:2180",
-            "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:3857"
         ],
         "attribution": {
             "text": "Zarząd Geodezji i Katastru Miejskiego GEOPOZ"

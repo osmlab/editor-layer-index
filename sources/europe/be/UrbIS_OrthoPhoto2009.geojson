@@ -261,13 +261,10 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
+            "text": "Realized by means of Brussels UrbIS\u00ae\u00a9 - Distribution & Copyright CIRB"
         },
         "available_projections": [
-            "CRS:84",
-            "EPSG:3857",
-            "EPSG:4326",
-            "EPSG:31370"
+            "EPSG:3857"
         ],
         "category": "historicphoto",
         "country_code": "BE",
@@ -279,7 +276,7 @@
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
         "start_date": "2009",
         "type": "wms",
-        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?LAYERS=Urbis:Ortho2009&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=Urbis:Ortho2009&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}"
     },
     "type": "Feature"
 }

@@ -9,12 +9,10 @@
         "name": "Budapest district XI orthophoto 2019",
         "description": "5 cm resolution bald image",
         "available_projections": [
-            "CRS:84",
-            "EPSG:3857",
             "EPSG:4326",
             "EPSG:23700"
         ],
-        "url": "https://terinfo.ujbuda.hu/mapproxy/service?LAYERS=orto_2019&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://terinfo.ujbuda.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2019&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofotók#Budapest_XI._ker.C3.BClet",
         "privacy_policy_url": "https://kozigazgatas.ujbuda.hu/adatvedelem",
         "start_date": "2019",

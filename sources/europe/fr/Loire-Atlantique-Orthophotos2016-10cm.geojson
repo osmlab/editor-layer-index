@@ -353,10 +353,9 @@
             "text": "© Loire-Atlantique ouverture des données publiques"
         },
         "available_projections": [
-            "CRS:84",
+            "EPSG:4326",
             "EPSG:2154",
-            "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:3857"
         ],
         "country_code": "FR",
         "end_date": "2016",
@@ -366,7 +365,7 @@
         "name": "Loire-Atlantique - Orthophotos 2016 - 10 cm",
         "start_date": "2016",
         "type": "wms",
-        "url": "https://wms-vuduciel2.makina-corpus.net/geoserver/wms?LAYERS=cg44:ortho44-2016&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://wms-vuduciel2.makina-corpus.net/geoserver/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=cg44:ortho44-2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "photo"
     },
     "type": "Feature"

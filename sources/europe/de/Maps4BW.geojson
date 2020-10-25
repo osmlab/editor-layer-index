@@ -4,20 +4,16 @@
         "id": "Maps4BW-LGL_BW",
         "name": "Maps4BW (LGL-BW, www.lgl-bw.de)",
         "type": "wms",
-        "url": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_Maps4BW?LAYERS=webatlasde&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_Maps4BW?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=webatlasde&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "DE",
         "available_projections": [
-            "EPSG:3857",
-            "EPSG:4258",
             "EPSG:4326",
-            "EPSG:4647",
-            "EPSG:5649",
-            "EPSG:5650",
             "EPSG:25832",
-            "EPSG:25833",
+            "EPSG:3857",
             "EPSG:31466",
             "EPSG:31467",
-            "EPSG:31468"
+            "EPSG:31468",
+            "EPSG:25833"
         ],
         "attribution": {
             "url": "https://www.lgl-bw.de/",

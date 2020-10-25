@@ -21,7 +21,7 @@
         "min_zoom": 4,
         "name": "City of Turku ortophoto",
         "type": "wms",
-        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?LAYERS=Ilmakuva&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "photo"
     },
     "geometry": {

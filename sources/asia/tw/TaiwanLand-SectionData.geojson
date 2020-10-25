@@ -77,10 +77,10 @@
             "url": "https://maps.nlsc.gov.tw/"
         },
         "available_projections": [
-            "EPSG:3825",
-            "EPSG:3826",
             "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:4326",
+            "EPSG:3826",
+            "EPSG:3825"
         ],
         "country_code": "TW",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
@@ -88,7 +88,7 @@
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
         "name": "Taiwan Land-Section Data",
         "type": "wms",
-        "url": "https://wms.nlsc.gov.tw/wms?LAYERS=LANDSECT&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=LANDSECT&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "other"
     },
     "type": "Feature"

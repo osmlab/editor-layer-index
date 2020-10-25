@@ -640,18 +640,18 @@
             "text": "Geodatastyrelsen og Danske Kommuner"
         },
         "available_projections": [
-            "EPSG:3395",
-            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:4258",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:32632",
+            "EPSG:32633",
             "EPSG:4093",
             "EPSG:4094",
             "EPSG:4095",
             "EPSG:4096",
-            "EPSG:4258",
-            "EPSG:4326",
-            "EPSG:25832",
-            "EPSG:25833",
-            "EPSG:32632",
-            "EPSG:32633"
+            "EPSG:3395",
+            "EPSG:3857"
         ],
         "country_code": "DK",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png",
@@ -659,7 +659,7 @@
         "max_zoom": 19,
         "name": "SDFE Skærmkort",
         "type": "wms",
-        "url": "https://kortforsyningen.kms.dk/topo_skaermkort?LAYERS=dtk_skaermkort&STYLES=&FORMAT=image/png&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LOGIN=OpenStreetMapDK2015&PASSWORD=Gall4Peters",
+        "url": "https://kortforsyningen.kms.dk/topo_skaermkort?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=dtk_skaermkort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "map"
     },
     "type": "Feature"

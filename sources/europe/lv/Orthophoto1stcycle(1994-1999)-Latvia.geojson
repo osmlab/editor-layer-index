@@ -4,11 +4,12 @@
         "id": "ORTOFOTO_V1",
         "name": "Orthophoto 1st cycle (1994-1999) - Latvia",
         "type": "wms",
-        "url": "https://services.lgia.gov.lv/arcfree/services/Ortofoto_v1/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://services.lgia.gov.lv/arcfree/services/Ortofoto_v1/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "LV",
         "available_projections": [
-            "EPSG:3059",
-            "EPSG:4326"
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:3059"
         ],
         "attribution": {
             "text": "Latvijas Ģeotelpiskās informācijas aģentūras brīvais WMS serviss 1994 - 1999.gada Latvijas ortofotokarte"
