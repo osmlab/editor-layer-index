@@ -7,9 +7,17 @@
         "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGIS_Level3_Parcels/MapServer/tile/{zoom}/{y}/{x}",
         "country_code": "US",
         "overlay": true,
-        "max_zoom": 20,
         "min_zoom": 15,
+        "max_zoom": 20,
+        "attribution": {
+          "url": "https://docs.digital.mass.gov/dataset/massgis-data-standardized-assessors-parcels",
+          "text": "MassGIS L3 Parcels",
+          "required": false
+        },
+        "valid-georeference": true,
         "category": "other"
+        "license_url": "https://wiki.openstreetmap.org/wiki/MassGIS#Right_to_Use",
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
     },
     "geometry": {
         "type": "Polygon",
