@@ -473,15 +473,20 @@ async def process_source(filename, session: ClientSession):
                 result['available_projections'].remove(epsg_str)
 
     # Check if only formatting has changes
-    if not compare_urls(source['properties']['url'], result['url']):
+    url_has_changed = not compare_urls(source['properties']['url'], result['url'])
+    projections_have_changed = not compare_projs(source['properties']['available_projections'],
+                                                 result['available_projections'])
+
+    if url_has_changed:
         source['properties']['url'] = result['url']
-    if not compare_projs(source['properties']['available_projections'], result['available_projections']):
+    if projections_have_changed:
         source['properties']['available_projections'] = list(
             sorted(result['available_projections'], key=lambda x: (x.split(':')[0], int(x.split(':')[1]))))
 
-    with open(filename, 'w', encoding='utf-8') as out:
-        json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
-        out.write("\n")
+    if url_has_changed or projections_have_changed:
+        with open(filename, 'w', encoding='utf-8') as out:
+            json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
+            out.write("\n")
 
 
 async def start_processing(sources_directory):
