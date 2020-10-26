@@ -45,12 +45,34 @@ ZOOM_LEVEL = 14
 
 
 def compare_projs(old_projs, new_projs):
-    """ Compare two sets of projections """
+    """ Compare two collections of projections. Returns True if both collections contain the same elements.
+
+    Parameters
+    ----------
+    old_projs : collection
+    new_projs : collection
+
+    Returns
+    -------
+    bool
+
+    """
     return set(old_projs) == set(new_projs)
 
 
 def compare_urls(old_url, new_url):
-    """ Compare URLs"""
+    """ Compare URLs. Returns True if the urls contain the same parameters.
+
+    Parameters
+    ----------
+    old_url : str
+    new_url : str
+
+    Returns
+    -------
+    bool
+
+    """
     old_parameters = parse_qsl(urlparse(old_url.lower()).query, keep_blank_values=True)
     new_parameters = parse_qsl(urlparse(new_url.lower()).query, keep_blank_values=True)
     # Fail if old url contains duplicated parameters
@@ -60,8 +82,23 @@ def compare_urls(old_url, new_url):
 
 
 async def get_url(url: str, session: ClientSession, with_text=False, with_data=False, headers=None):
-    """ Ensure that only one request is sent to a domain at one point in time and that the same url is not
+    """ Fetch url.
+
+    This function ensures that only one request is sent to a domain at one point in time and that the same url is not
     queried more than once.
+
+    Parameters
+    ----------
+    url : str
+    session: ClientSession
+    with_text: bool
+    with_data : bool
+    headers: dict
+
+    Returns
+    -------
+    RequestResult
+
     """
     o = urlparse(url)
     if len(o.netloc) == 0:
@@ -104,7 +141,23 @@ async def get_url(url: str, session: ClientSession, with_text=False, with_data=F
 
 
 async def get_image(url, available_projections, lon, lat, zoom, session, messages):
-    """ Download image (tms tile for coordinate lon,lat on level zoom and calculate image hash"""
+    """ Download image (tms tile for coordinate lon,lat on level zoom and calculate image hash
+
+    Parameters
+    ----------
+    url : str
+    available_projections : collection
+    lon : float
+    lat : float
+    zoom : int
+    session : ClientSession
+    messages : list
+
+    Returns
+    -------
+    ImageHash or None
+
+    """
     tile = list(mercantile.tiles(lon, lat, lon, lat, zooms=zoom))[0]
     bounds = list(mercantile.bounds(tile))
 
@@ -124,13 +177,16 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
         messages.append("No projection left: {}".format(available_projections))
         return None
 
+    crs_from = CRS.from_string("epsg:4326")
+    crs_to = CRS.from_string(proj)
     if not proj == 'EPSG:4326':
-        crs_from = CRS.from_string("epsg:4326")
-        crs_to = CRS.from_string(proj)
         transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
-        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(transformer.transform(bounds[2], bounds[3]))
+        bounds = list(transformer.transform(bounds[0], bounds[1])) + \
+                 list(transformer.transform(bounds[2], bounds[3]))
 
-    if proj == 'EPSG:4326' and '1.3.0' in url:
+    # WMS < 1.3.0 assumes x,y coordinate ordering.
+    # WMS 1.3.0 expects coordinate ordering defined in CRS.
+    if crs_to.axis_info[0].direction == 'north' and '=1.3.0' in url:
         bbox = ",".join(map(str, [bounds[1],
                                   bounds[0],
                                   bounds[3],
@@ -262,7 +318,20 @@ def parse_wms(xml):
 
 
 async def update_wms(wms_url, session: ClientSession, messages):
-    """ Update wms parameters using WMS GetCapabilities request"""
+    """ Update wms parameters using WMS GetCapabilities request
+
+    Parameters
+    ----------
+    wms_url : str
+    session : ClientSession
+    messages : list
+
+    Returns
+    -------
+        dict
+            Dict with new url and available projections
+
+    """
     wms_args = {}
     u = urlparse(wms_url)
     url_parts = list(u)
@@ -289,12 +358,10 @@ async def update_wms(wms_url, session: ClientSession, messages):
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
 
-    # We first send a service=WMS&request=GetCapabilities request to server
-    # According to the WMS Specification Section 6.2 Version numbering and negotiation, the server should return
-    # the GetCapabilities XML with the highest version the server supports.
-    # If this fails, it is tried to explicitly specify a WMS version
+    # Fetch highest possible WMS GetCapabilities
     wms = None
     for wmsversion in ['1.3.0', '1.1.1', '1.1.0', '1.0.0']:
+        # Do not try versions older than in the url
         if wmsversion < wms_args['version']:
             continue
 
@@ -373,6 +440,7 @@ async def process_source(filename, session: ClientSession):
         contents = await f.read()
         source = json.loads(contents)
 
+    # Exclude sources
     # Skip non wms layers
     if not source['properties']['type'] == 'wms':
         return
@@ -407,14 +475,14 @@ async def process_source(filename, session: ClientSession):
         # These image hashes indicate that the downloaded image is not useful to determine
         # if the updated query returns the same image
         logging.info(
-            "ImageHash {} not useful for: {} || {}".format(str(image_hash), filename, "||".join(original_img_messages)))
+            "ImageHash {} not useful for: {} || {}".format(str(image_hash), filename, " || ".join(original_img_messages)))
         return
 
     # Update wms
     wms_messages = []
     result = await update_wms(source['properties']['url'], session, wms_messages)
     if result is None:
-        logging.info("Not possible to update wms url for {}: {}".format(filename, "||".join(wms_messages)))
+        logging.info("Not possible to update wms url for {}: {}".format(filename, " || ".join(wms_messages)))
         return
 
     # Test if selected projections work despite not being advertised
@@ -441,7 +509,7 @@ async def process_source(filename, session: ClientSession):
                                      messages=new_img_messages)
 
     if new_image_hash is None:
-        logging.warning("Could not download new image: {}".format("||".join(new_img_messages)))
+        logging.warning("Could not download new image: {}".format(" || ".join(new_img_messages)))
         return
 
     # Only sources are updated where the new query returns the same image
