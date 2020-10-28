@@ -1,0 +1,41 @@
+name: ELI WMS sync
+
+on:
+  schedule:
+    - cron: '0 0 * * 6'
+
+jobs:
+  build:
+    name: WMS_sync_cron
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-wms_sync.txt
+
+      - name: Run WMS sync
+        run: |
+          python scripts/sync_wms.py sources
+
+      - name: Test
+        run: |
+          python scripts/check.py $(find sources -type f -name '*.geojson')
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Sync WMS sources [skip travis]
+          delete-branch: true
+          draft: false
+          title: WMS Sync Bot
+          body: Update url and available_projections of WMS sources using scripts/sync_wms.py. Sources are tested with scripts/check.py before PR is created. Delete .github/workflows/sync_wms.yml to stop.
