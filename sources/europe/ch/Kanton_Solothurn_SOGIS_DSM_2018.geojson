@@ -901,7 +901,7 @@
             [
               7.690901756286669,
               47.562468164954744
-            ]                
+            ]
             ]
         ],
         "type": "Polygon"
@@ -913,21 +913,22 @@
         },
         "available_projections": [
             "EPSG:21781",
+            "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:2056",
-			"EPSG:3857",
-			"EPSG:84"
+            "EPSG:2056"
         ],
         "country_code": "CH",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ch/KantonSolothurn-SOGIS-wms.png",
         "id": "Solothurn-sogis2018-dsm-wms",
         "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
-        "min_zoom": 8,
         "name": "Kanton Solothurn, DSM Relief 2018",
         "start_date": "2018",
 		"end_date": "2018",
         "type": "wms",
-        "url": "https://geo.so.ch/api/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/jpeg&TRANSPARENT=true&LAYERS=ch.bl.agi.lidar_2018.dsm_relief&STYLES=&SRS={proj}&CRS={proj}&TILED=false&DPI=96&OPACITIES=255&t=675&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "elevation",
+        "min_zoom": 10,
+        "url": "https://geo.so.ch/api/wms?LAYERS=ch.bl.agi.lidar_2018.dsm_relief&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "privacy_policy_url": "https://www.so.ch/rechtliches/"
     },
     "type": "Feature"

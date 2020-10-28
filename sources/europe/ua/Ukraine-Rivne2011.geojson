@@ -1,0 +1,72 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "UkraineRivne2011",
+        "name": "Ukraine - Rivne 2011",
+        "type": "tms",
+        "url": "http://geo.rv.ua/map/rtile/carto_1850678323655476854/ua/{zoom}/{x}/{y}.png",
+        "category": "photo",
+        "permission_osm": "implicit",
+        "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+        "privacy_policy_url": "https://zakon.rada.gov.ua/laws/show/3792-12",
+        "start_date": "2011",
+        "end_date": "2011",
+        "country_code": "UA",
+        "best": true,
+        "max_zoom": 19,
+        "min_zoom": 14,
+        "attribution": {
+            "text": "© Містобудівний кадастр Рівненської міської ради",
+            "url": "https://geo.rv.ua/",
+            "required": true
+        },
+        "icon": "https://geo.rv.ua/tpl/icons/favicon.ico"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    26.3431,
+                    50.6120
+                ],
+                [
+                    26.3421,
+                    50.6178
+                ],
+                [
+                    26.3228,
+                    50.6407
+                ],
+                [
+                    26.1680,
+                    50.6644
+                ],
+                [
+                    26.1447,
+                    50.6035
+                ],
+                [
+                    26.1440,
+                    50.5871
+                ],
+                [
+                    26.1924,
+                    50.5603
+                ],
+                [
+                    26.3053,
+                    50.5727
+                ],
+                [
+                    26.3390,
+                    50.5932
+                ],
+                [
+                    26.3431,
+                    50.6120
+                ]
+            ]
+        ]
+    }
+}

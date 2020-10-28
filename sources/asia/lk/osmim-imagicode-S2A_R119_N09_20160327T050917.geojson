@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    79.01779174804685,
-                    8.827572266651268
-                ],
-                [
-                    79.01401519775389,
-                    9.64678471986339
-                ],
-                [
-                    80.17642021179198,
-                    9.650423231331946
-                ],
-                [
-                    80.17727851867674,
-                    8.831304063493132
-                ],
-                [
-                    79.01779174804685,
-                    8.827572266651268
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 79.017791748046847, 8.827572266651268 ], [ 79.014015197753892, 9.64678471986339 ], [ 80.176420211791978, 9.650423231331946 ], [ 80.177278518676744, 8.831304063493132 ], [ 79.017791748046847, 8.827572266651268 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "LK",
         "description": "Supplementing incomplete coverage in other sources (true color)",
         "end_date": "2016-03-27",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R119_N09_20160327T050917",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Adams Bridge",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-03-27",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R119_N09_20160327T050917&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R119_N09_20160327T050917&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

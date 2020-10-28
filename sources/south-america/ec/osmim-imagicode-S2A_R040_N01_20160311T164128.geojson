@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -92.05216379429558,
-                    1.321295617717369
-                ],
-                [
-                    -92.05216379429558,
-                    1.72181118585353
-                ],
-                [
-                    -91.74849481846549,
-                    1.72181118585353
-                ],
-                [
-                    -91.74849481846549,
-                    1.321295617717369
-                ],
-                [
-                    -92.05216379429558,
-                    1.321295617717369
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -92.052163794295581, 1.321295617717369 ], [ -92.052163794295581, 1.72181118585353 ], [ -91.748494818465488, 1.72181118585353 ], [ -91.748494818465488, 1.321295617717369 ], [ -92.052163794295581, 1.321295617717369 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "EC",
-        "description": "Recent image, only old and poor images in other sources currently (true color)",
+        "description": "Recent image, only old and poor images in most other sources currently (true color)",
         "end_date": "2016-03-11",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R040_N01_20160311T164128",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Darwin and Wolf islands, Galapagos",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-03-11",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R040_N01_20160311T164128&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R040_N01_20160311T164128&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

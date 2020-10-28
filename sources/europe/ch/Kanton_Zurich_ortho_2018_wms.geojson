@@ -18,14 +18,14 @@
         "country_code": "CH",
         "start_date": "2018",
         "end_date": "2018",
-        "min_zoom": 8,
+        "min_zoom": 10,
         "id": "OGDOrthoZH2018",
         "name": "Kanton Zurich, Orthofoto ZH Sommer 2018 RGB 10cm",
-        "license_url": "https://opendata.swiss/de/dataset/wms-orthofotos-ogd",
+        "license_url": "https://opendata.swiss/de/dataset/wms-orthofotos-ogd1",
         "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
         "type": "wms",
         "category": "photo",
-        "url": "https://wms.zh.ch/OGDOrthoZH?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=ortho&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://wms.zh.ch/OGDOrthoZH?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=&LAYERS=ortho&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "geometry": {
         "type": "Polygon",

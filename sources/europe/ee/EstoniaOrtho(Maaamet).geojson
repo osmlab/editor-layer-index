@@ -1,17 +1,23 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "Maaamet-Estonia_Ortho",
-    "name": "Estonia Ortho (Maaamet)",
-    "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "country_code": "EE",
-    "available_projections": [
-      "EPSG:3301"
-    ],
-    "attribution": {
-      "text": "Maa-Ameti ortofoto",
-      "required": true
+    "type": "Feature",
+    "properties": {
+        "id": "Maaamet-Estonia_Ortho",
+        "name": "Estonia Ortho (Maaamet)",
+        "type": "wms",
+        "url": "https://kaart.maaamet.ee/wms/alus?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "EE",
+        "available_projections": [
+            "EPSG:3301"
+        ],
+        "attribution": {
+            "text": "Maa-Ameti ortofoto",
+            "required": true
+        },
+        "best": true,
+        "max_zoom": 21,
+        "min_zoom": 15,
+        "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+        "category": "photo"
     },
     "category": "photo",
     "best": true,

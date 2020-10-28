@@ -17,13 +17,14 @@
         "country_code": "CH",
         "start_date": "2014",
         "end_date": "2014",
-        "min_zoom": 8,
+        "min_zoom": 10,
         "id": "OGDLidarZH-DOM",
         "name": "Kanton Zurich, Oberflächenschummerung 50cm",
-        "license_url": "https://opendata.swiss/de/dataset/wms-digitales-hohenmodell-ogd",
+        "license_url": "https://opendata.swiss/de/dataset/wms-digitales-hohenmodell-ogd1",
         "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
         "type": "wms",
-        "url": "https://wms.zh.ch/OGDLidarZH?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=dom2014hillshade&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "category": "elevation",
+        "url": "https://wms.zh.ch/OGDLidarZH?FORMAT=image/jpeg&STYLES=&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=dom2014hillshade&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "geometry": {
         "type": "Polygon",
