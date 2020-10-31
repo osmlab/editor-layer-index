@@ -44,6 +44,10 @@ RequestResult = namedtuple('RequestResultCache',
 ZOOM_LEVEL = 14
 
 
+# Before adding a new WMS version, it should be checked if every consumer supports it!
+supported_wms_versions = ['1.3.0', '1.1.1', '1.1.0', '1.0.0']
+
+
 def compare_projs(old_projs, new_projs):
     """ Compare two collections of projections. Returns True if both collections contain the same elements.
 
@@ -358,9 +362,9 @@ async def update_wms(wms_url, session: ClientSession, messages):
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
 
-    # Fetch highest possible WMS GetCapabilities
+    # Fetch highest supported WMS GetCapabilities
     wms = None
-    for wmsversion in ['1.3.0', '1.1.1', '1.1.0', '1.0.0']:
+    for wmsversion in supported_wms_versions:
         # Do not try versions older than in the url
         if wmsversion < wms_args['version']:
             continue
