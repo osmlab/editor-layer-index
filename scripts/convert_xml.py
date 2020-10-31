@@ -5,6 +5,8 @@ import os
 import lxml.etree as ET
 from lxml.etree import CDATA
 from shapely.geometry import shape, Polygon
+from shapely.ops import transform
+from pyproj import Transformer, CRS
 
 parser = argparse.ArgumentParser(description='Convert sources to xml.')
 parser.add_argument('sources',
@@ -523,23 +525,21 @@ country_code_list = {
 }
 
 
+def simplify_geometry(geom, distance=200):
+    """ Simplify geometry in epsg:3857"""
+    transformer = Transformer.from_crs("epsg:4326", "epsg:3857", always_xy=True)
+    transformer_back = Transformer.from_crs("epsg:3857", "epsg:4326", always_xy=True)
+    geom_3857 = transform(transformer.transform, geom)
+    geom_3857_simplified = geom_3857.simplify(distance, preserve_topology=True)
+    geom_simplified = transform(transformer_back.transform, geom_3857_simplified)
+    return geom_simplified
+
+
 def add_source(source_path, root):
     """ Convert a source to an entry and add it to root"""
 
     with open(source_path) as f:
         source = json.load(f)
-
-    # Check compatibility
-    if 'geometry' in source and source['geometry'] is not None:
-        geom = shape(source['geometry'])
-        if isinstance(geom, Polygon):
-            geom = [geom]
-        for g in geom:
-            # Limit of 999 is defined in maps.xsd
-            if len(g.exterior.coords) > 999:
-                print(
-                    "Skipping source with id {}: geometry has too many coordinates.".format(source['properties']['id']))
-                return
 
     properties = source['properties']
     entry = ET.SubElement(root, "entry")
@@ -638,6 +638,15 @@ def add_source(source_path, root):
             geom = [geom]
 
         for g in geom:
+
+            if len(g.exterior.coords) > 999:
+                print("Source {} has Polygon with too many points: {}".format(properties['name'],
+                                                                              len(g.exterior.coords)))
+            distance = 100
+            while len(g.exterior.coords) > 999:
+                g = simplify_geometry(g, distance)
+                distance *= 1.5
+
             shape_element = ET.SubElement(bounds, "shape")
             # All interior rings (=holes) of polygons are ignored
             for c in g.exterior.coords:
