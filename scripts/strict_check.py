@@ -23,6 +23,7 @@ import requests
 import os
 from owslib.wmts import WebMapTileService
 from shapely.geometry import shape, Point, box
+import logging
 
 
 def dict_raise_on_duplicates(ordered_pairs):
@@ -59,6 +60,10 @@ headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Edito
 
 logger.warning("This is a new and improved check for new or changed imagery sources. "
                "It is currently in beta stage. Please report any issues.")
+
+
+# Filter shapely logs (e.g. for invalid geometries)
+logging.getLogger('shapely').setLevel(logging.ERROR)
 
 
 def get_http_headers(source):
@@ -364,29 +369,32 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
         else:
             for layer_name in layers:
                 if layer_name in wms['layers']:
+
+                    # Warn if not advertised CRS are included in available_projections
                     not_supported_crs = set()
                     for crs in source['properties']['available_projections']:
                         if crs.upper() not in wms['layers'][layer_name]['CRS']:
                             not_supported_crs.add(crs)
-
                     if len(not_supported_crs) > 0:
                         supported_crs_str = ",".join(wms['layers'][layer_name]['CRS'])
                         not_supported_crs_str = ",".join(not_supported_crs)
-                        warning_msgs.append("Layer '{}': CRS '{}' not in: {}".format(layer_name,
-                                                                                     not_supported_crs_str,
-                                                                                     supported_crs_str))
+                        warning_msgs.append("Layer '{}': CRS '{}' not in: {}. (Some server support "
+                                            "CRS that are not advertised.)".format(layer_name,
+                                                                                   not_supported_crs_str,
+                                                                                   supported_crs_str))
 
+                    # Warn if a widely supported CRS is advertised but not included in available_projections
                     supported_but_not_included = set()
                     for crs in crs_should_included_if_available:
                         if (crs not in source['properties']['available_projections'] and
                                 crs in wms['layers'][layer_name]['CRS']):
                             supported_but_not_included.add(crs)
-
                     if len(supported_but_not_included) > 0:
                         supported_but_not_included_str = ','.join(supported_but_not_included)
                         warning_msgs.append("Layer '{}': CRS '{}' not included in available_projections but "
                                             "supported by server.".format(layer_name, supported_but_not_included_str))
 
+                    # Check for EPSG:3857 alias
                     if 'EPSG:3857' in source['properties']['available_projections']:
                         for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]:
                             epsg_str = 'EPSG:{}'.format(epsg)
