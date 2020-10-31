@@ -1315,14 +1315,14 @@
         ],
         "country_code": "US",
         "description": "New York State High Resolution Digital Orthoimagery, 1 foot resolution",
-        "end_date": "2018",
+        "end_date": "2020",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ny/NYS_Orthos_Online.png",
         "id": "orthos.dhses.ny.gov_latest",
         "max_zoom": 19,
         "name": "NYS Orthos Online",
         "start_date": "2013",
         "type": "wms",
-        "url": "https://orthos.dhses.ny.gov/arcgis/services/Latest/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3,4&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+	"url": "https://orthos.its.ny.gov/arcgis/services/wms/Latest/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3,4,5,6&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
         "category": "photo"
     },
     "type": "Feature"
