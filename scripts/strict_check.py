@@ -387,6 +387,13 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                         warning_msgs.append("Layer '{}': CRS '{}' not included in available_projections but "
                                             "supported by server.".format(layer_name, supported_but_not_included_str))
 
+                    if 'EPSG:3857' in source['properties']['available_projections']:
+                        for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]:
+                            epsg_str = 'EPSG:{}'.format(epsg)
+                            if epsg_str in source['properties']['available_projections']:
+                                error_msgs.append("Layer '{}': {} is an alias for EPSG:3857 and should be excluded "
+                                                  "from available_projections".format(layer_name, epsg_str))
+
     if wms_args['version'] < wms['version']:
         warning_msgs.append("Query requests WMS version '{}', server supports '{}'".format(wms_args['version'],
                                                                                            wms['version']))
