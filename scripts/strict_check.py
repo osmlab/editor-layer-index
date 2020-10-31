@@ -383,7 +383,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                                                                                    not_supported_crs_str,
                                                                                    supported_crs_str))
 
-                    # Warn if a widely supported CRS is advertised but not included in available_projections
+                    # Log info message if a WGS84 based CRS is advertised but not included in available_projections
                     supported_but_not_included = set()
                     for crs in crs_should_included_if_available:
                         if (crs not in source['properties']['available_projections'] and
@@ -391,8 +391,8 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                             supported_but_not_included.add(crs)
                     if len(supported_but_not_included) > 0:
                         supported_but_not_included_str = ','.join(supported_but_not_included)
-                        warning_msgs.append("Layer '{}': CRS '{}' not included in available_projections but "
-                                            "supported by server.".format(layer_name, supported_but_not_included_str))
+                        info_msgs.append("Layer '{}': CRS '{}' not included in available_projections but "
+                                         "supported by server.".format(layer_name, supported_but_not_included_str))
 
                     # Check for EPSG:3857 alias
                     if 'EPSG:3857' in source['properties']['available_projections']:
