@@ -1,12 +1,12 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Gliwice-2013",
-        "name": "Gliwice: Orthophotomap 2013 (aerial image)",
+        "id": "Gliwice-2020",
+        "name": "Gliwice: Orthophotomap 2020 (aerial image)",
         "type": "wms",
-        "url": "http://msip-mapa.um.gliwice.pl:9090/isdp/gs/ows/wms2?LAYERS=default:orto_2013&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "start_date": "2013",
-        "end_date": "2013",
+        "url": "http://msip-mapa.um.gliwice.pl:9090/isdp/gs/ows/wms2?LAYERS=default:orto_2020&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "start_date": "2020",
+        "end_date": "2020",
         "country_code": "PL",
         "available_projections": [
             "CRS:84",
@@ -20,7 +20,7 @@
             "text": "Urząd Miasta Gliwice"
         },
         "min_zoom": 14,
-        "category": "historicphoto",
+        "category": "photo",
         "privacy_policy_url": "https://gliwice.eu/polityka-prywatnosci"
     },
     "geometry": {
