@@ -25,6 +25,8 @@ from owslib.wmts import WebMapTileService
 from shapely.geometry import shape, Point, box
 import logging
 
+from shapely.ops import cascaded_union
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -335,16 +337,16 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
         # Regardless of its projection, each layer should advertise an approximated bounding box in lon/lat.
         # See WMS 1.3.0 Specification Section 7.2.4.6.6 EX_GeographicBoundingBox
         if geom is not None and geom.is_valid:
-            max_outside = 0.0
+            layer_bboxs = []
             for layer_name in layers:
                 if layer_name in wms['layers']:
                     bbox = wms['layers'][layer_name]['BBOX']
-                    geom_bbox = box(*bbox)
-                    geom_outside_bbox = geom.difference(geom_bbox)
-                    area_outside_bbox = geom_outside_bbox.area / geom.area * 100.0
-                    max_outside = max(max_outside, area_outside_bbox)
+                    layer_bboxs.append(box(*bbox))
+            all_layer_bbox = cascaded_union(layer_bboxs)
+            geom_outside_bbox = geom.difference(all_layer_bbox)
+            area_outside_bbox = geom_outside_bbox.area / geom.area * 100.0
             # 5% is an arbitrary chosen value and should be adapted as needed
-            if max_outside > 5.0:
+            if area_outside_bbox > 5.0:
                 error_msgs.append("{}% of geometry is outside of the layers bounding box. "
                                   "Geometry should be checked".format(round(area_outside_bbox, 2)))
 
