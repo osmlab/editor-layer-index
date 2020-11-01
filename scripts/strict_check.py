@@ -59,10 +59,8 @@ spacesave = 0
 
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
 
-
 logger.warning("This is a new and improved check for new or changed imagery sources. "
                "It is currently in beta stage. Please report any issues.")
-
 
 # Filter shapely logs (e.g. for invalid geometries)
 logging.getLogger('shapely').setLevel(logging.ERROR)
@@ -79,13 +77,44 @@ def get_http_headers(source):
     return custom_headers
 
 
-def test_url(url, headers):
+def check_url(url, headers, url_type, info_msgs, warning_msgs, error_msgs):
+    """ Check existence of an url
+
+    Check if https url works if only http is used.
+
+    Parameters
+    ----------
+    url : str
+    headers : dict
+    url_type : str
+    info_msgs : list
+    warning_msgs : list
+    error_msgs : list
+
+    Returns
+    -------
+    bool
+
+    """
+    https_url_reachable = False
+    if url.lower().startswith("http://"):
+        try:
+            https_url = url.replace('http://', 'https://')
+            r = requests.get(https_url, headers=headers)
+            if r.status_code == 200:
+                https_url_reachable = True
+        except:
+            pass
     try:
         r = requests.get(url, headers=headers)
+        if https_url_reachable:
+            error_msgs.append("{} URL: {} should be changed to HTTPS".format(url_type, url))
         if r.status_code == 200:
             return True
-    except:
-        pass
+        else:
+            error_msgs.append("{} URL: {} returns status code: {}".format(url_type, url, r.status_code))
+    except Exception as e:
+        error_msgs.append("{} URL: Not able to test URL: {}  {}".format(url_type, url, str(e)))
     return False
 
 
@@ -342,13 +371,14 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                 if layer_name in wms['layers']:
                     bbox = wms['layers'][layer_name]['BBOX']
                     layer_bboxs.append(box(*bbox))
-            all_layer_bbox = cascaded_union(layer_bboxs)
-            geom_outside_bbox = geom.difference(all_layer_bbox)
-            area_outside_bbox = geom_outside_bbox.area / geom.area * 100.0
-            # 5% is an arbitrary chosen value and should be adapted as needed
-            if area_outside_bbox > 5.0:
-                error_msgs.append("{}% of geometry is outside of the layers bounding box. "
-                                  "Geometry should be checked".format(round(area_outside_bbox, 2)))
+            if len(layer_bboxs) > 0:
+                all_layer_bbox = cascaded_union(layer_bboxs)
+                geom_outside_bbox = geom.difference(all_layer_bbox)
+                area_outside_bbox = geom_outside_bbox.area / geom.area * 100.0
+                # 5% is an arbitrary chosen value and should be adapted as needed
+                if area_outside_bbox > 5.0:
+                    error_msgs.append("{}% of geometry is outside of the layers bounding box. "
+                                      "Geometry should be checked".format(round(area_outside_bbox, 2)))
 
         # Check styles
         if 'styles' in wms_args:
@@ -361,7 +391,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                 else:
                     for layer_name, style in zip(layers, styles):
                         if (len(style) > 0 and not style == 'default' and layer_name in wms['layers'] and
-                                style not in wms['layers'][layer_name]['Styles']):
+                            style not in wms['layers'][layer_name]['Styles']):
                             error_msgs.append("Layer '{}' does not support style '{}'".format(layer_name, style))
 
         # Check CRS
@@ -389,7 +419,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                     supported_but_not_included = set()
                     for crs in crs_should_included_if_available:
                         if (crs not in source['properties']['available_projections'] and
-                                crs in wms['layers'][layer_name]['CRS']):
+                            crs in wms['layers'][layer_name]['CRS']):
                             supported_but_not_included.add(crs)
                     if len(supported_but_not_included) > 0:
                         supported_but_not_included_str = ','.join(supported_but_not_included)
@@ -588,7 +618,12 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
             parameters['x'] = tile.x
             parameters['zoom'] = zoom
             query_url = query_url.format(**parameters)
-            if test_url(query_url, source_headers):
+            if check_url(query_url,
+                         source_headers,
+                         url_type="imagery url",
+                         info_msgs=info_msgs,
+                         warning_msgs=warning_msgs,
+                         error_msgs=error_msgs):
                 zoom_success.append(zoom)
                 return True
             else:
@@ -648,42 +683,31 @@ for filename in arguments.path:
 
         # Check if license url exists
         else:
-            try:
-                r = requests.get(source['properties']['license_url'], headers=headers)
-                if not r.status_code == 200:
-                    error_msgs.append("{}: license url {} is not reachable: HTTP code: {}".format(
-                        filename, source['properties']['license_url'], r.status_code))
-
-            except Exception as e:
-                error_msgs.append("{}: license url {} is not reachable: {}".format(
-                    filename, source['properties']['license_url'], str(e)))
+            check_url(source['properties']['license_url'],
+                      headers=headers,
+                      url_type="license_url",
+                      info_msgs=info_msgs,
+                      warning_msgs=warning_msgs,
+                      error_msgs=error_msgs)
 
         # Check attribution url exists
         if 'attribution' in source['properties']:
             if 'url' in source['properties']['attribution']:
-                url = source['properties']['attribution']['url']
-                try:
-                    r = requests.get(url, headers=headers)
-                    if not r.status_code == 200:
-                        error_msgs.append("{}: attribution url {} is not reachable: HTTP code: {}".format(
-                            filename, url, r.status_code))
-
-                except Exception as e:
-                    error_msgs.append("{}: attribution url {} is not reachable: {}".format(
-                        filename, url, str(e)))
+                check_url(source['properties']['attribution']['url'],
+                          headers=headers,
+                          url_type="attribution url",
+                          info_msgs=info_msgs,
+                          warning_msgs=warning_msgs,
+                          error_msgs=error_msgs)
 
         # Check icon url exists
-        if 'icon' in source['properties'] and source['properties']['icon'].startswith("http"):
-            url = source['properties']['icon']
-            try:
-                r = requests.get(url, headers=headers)
-                if not r.status_code == 200:
-                    error_msgs.append("{}: icon url {} is not reachable: HTTP code: {}".format(
-                        filename, url, r.status_code))
-
-            except Exception as e:
-                error_msgs.append("{}: icon url {} is not reachable: {}".format(
-                    filename, url, str(e)))
+        if 'icon' in source['properties'] and source['properties']['icon'].lower().startswith("http"):
+            check_url(source['properties']['icon'],
+                      headers=headers,
+                      url_type="icon url",
+                      info_msgs=info_msgs,
+                      warning_msgs=warning_msgs,
+                      error_msgs=error_msgs)
 
         # Privacy policy
         # Check if privacy url is set
@@ -692,15 +716,12 @@ for filename in arguments.path:
                               " is important to comply with legal requirements in certain countries.".format(filename))
         else:
             # Check if privacy url exists
-            try:
-                r = requests.get(source['properties']['privacy_policy_url'], headers=headers)
-                if not r.status_code == 200:
-                    error_msgs.append("{}: privacy policy url {} is not reachable: HTTP code: {}".format(
-                        filename, source['properties']['privacy_policy_url'], r.status_code))
-
-            except Exception as e:
-                error_msgs.append("{}: privacy policy url {} is not reachable: {}".format(
-                    filename, source['properties']['privacy_policy_url'], str(e)))
+            check_url(source['properties']['privacy_policy_url'],
+                      headers=headers,
+                      url_type="privacy_policy_url",
+                      info_msgs=info_msgs,
+                      warning_msgs=warning_msgs,
+                      error_msgs=error_msgs)
 
         # Check for big fat embedded icons
         if 'icon' in source['properties']:
@@ -734,6 +755,9 @@ for filename in arguments.path:
             error_msgs.append("URL should not encode HTTP headers")
 
         # Check imagery type
+        url = source['properties']['url']
+        if url.startswith("http://"):
+            error_msgs.append("Imagery url {}: check if HTTPS can be used".format(url))
         if source['properties']['type'] == 'tms':
             check_tms(source, info_msgs, warning_msgs, error_msgs)
         elif source['properties']['type'] == 'wms':
