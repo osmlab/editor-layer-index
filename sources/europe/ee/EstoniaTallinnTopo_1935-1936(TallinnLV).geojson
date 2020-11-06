@@ -1,0 +1,53 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Tallinn-Tallinn_Topo_1935-1936",
+    "name": "Tallinn 1935-1936 topo (1:50k)",
+    "type": "wms",
+    "url": "http://gis.tallinn.ee/proxykaardiarhiiv/MapServer/export?dpi=96&transparent=false&format=png&layers=show:68&bbox={bbox}&bboxSR={wkid}&size={width},{height}&f=image#{proj}",
+    "country_code": "EE",
+    "description": "Estonian 1936 topomap hosted by Tallinn urban planning department. Better than one hosted by Maa-amet because this map supports wider range of zoom levels.",
+    "available_projections": [
+      "EPSG:3301",
+      "EPSG:4326"
+    ],
+    "attribution": {
+      "text": "Estonian Topomap: Tallinn Urban Planning Department. 1935-1936",
+      "required": true
+    },
+    "category": "historicmap",
+    "max_zoom": 19,
+    "min_zoom": 11,
+    "start_date": "1935",
+    "end_date": "1936",
+    "license_url": "https://www.tallinn.ee/est/geoportaal/Geoportaali-litsentsileping",
+    "privacy_policy_url": "https://www.tallinn.ee/Andmekaitsetingimused"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          24.35155,
+          59.26445
+        ],
+        [
+          25.05242,
+          59.26445
+        ],
+        [
+          25.05242,
+          59.53506
+        ],
+        [
+          24.35155,
+          59.53506
+        ],
+        [
+          24.35155,
+          59.26445
+        ]
+      ]
+    ]
+  }
+}

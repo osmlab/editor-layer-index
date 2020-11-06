@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Tallinn-TallinnDetailedAlt",
+    "name": "Tallinn detailed (Urban Planning Department)",
+    "type": "wms",
+    "url": "https://gis.tallinn.ee/arcgis/rest/services/aluskaart/MapServer/export?bbox={bbox}&bboxSR={wkid}&size={width},{height}&format=jpg&f=image#{proj}",
+    "country_code": "EE",
+    "description": "WARNING: Server's CRS-conversion is bit buggy. DO NOT use this layer, if your software supports EPSG:3301 projection. Use other version instead.",
+    "available_projections": [
+      "EPSG:4326"
+    ],
+    "attribution": {
+      "text": "Tallinn Basemap: Tallinn Urban Planning Department",
+      "required": true
+    },
+    "category": "map",
+    "max_zoom": 21,
+    "min_zoom": 8,
+    "license_url": "https://www.tallinn.ee/est/geoportaal/Geoportaali-litsentsileping",
+    "privacy_policy_url": "https://www.tallinn.ee/Andmekaitsetingimused"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          24.1670637085,
+          59.2491551042
+        ],
+        [
+          25.2168891297,
+          59.2491551042
+        ],
+        [
+          25.2168891297,
+          59.6592346967
+        ],
+        [
+          24.1670637085,
+          59.6592346967
+        ],
+        [
+          24.1670637085,
+          59.2491551042
+        ]
+      ]
+    ]
+  }
+}

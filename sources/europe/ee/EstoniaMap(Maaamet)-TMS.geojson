@@ -1,22 +1,21 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "Maaamet-Estonia_Cadastre",
-    "name": "Estonia Cadastre (Maaamet)",
-    "type": "wms",
-    "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=of10000,TOPOYKSUS_6569,TOPOYKSUS_6573&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "id": "Maaamet-Estonia_Map_TMS",
+    "name": "Estonian Map TMS (Maaamet)",
+    "type": "tms",
+    "url": "https://tiles.maaamet.ee/tm/tms/1.0.0/kaart@GMC/{zoom}/{x}/{-y}.png",
     "country_code": "EE",
     "available_projections": [
-      "EPSG:4326",
-      "EPSG:3301"
+      "EPSG:3857"
     ],
     "attribution": {
-      "text": "Maa-Ameti katastrikaart ortofoto alusel",
+      "text": "Maa-Ameti tavakaart",
       "required": true
     },
-    "category": "photo",
-    "max_zoom": 21,
-    "min_zoom": 15,
+    "category": "map",
+    "min_zoom": 6,
+    "max_zoom": 18,
     "license_url": "https://geoportaal.maaamet.ee/docs/Avaandmed/ETAK_ruumiandmete_litsentsileping.pdf",
     "privacy_policy_url": "https://www.maaamet.ee/en/board-contacts/processing-personal-data"
   },
