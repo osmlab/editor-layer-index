@@ -494,9 +494,12 @@
     },
     "properties": {
         "available_projections": [
+            "CRS:84",
+            "EPSG:3812",
+            "EPSG:3857",
+            "EPSG:4258",
             "EPSG:4326",
-            "EPSG:31370",
-            "EPSG:3857"
+            "EPSG:31370"
         ],
         "category": "historicphoto",
         "country_code": "BE",
@@ -508,7 +511,7 @@
         "name": "SPW(allonie) 2018 aerial imagery",
         "start_date": "2018",
         "type": "wms",
-        "url": "https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2018/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2018/MapServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }

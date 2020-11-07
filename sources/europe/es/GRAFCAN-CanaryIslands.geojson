@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "GRAFCAN-Canary_Islands",
-        "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoUrb?LAYERS=OU&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "attribution": {
             "text": "GRAFCAN OrtoExpress Urbana",
             "url": "https://catalogo.idecanarias.es/geonetwork/srv/spa/catalog.search#/metadata/spagrafcan_ORTOURBANAWMS_20160101",

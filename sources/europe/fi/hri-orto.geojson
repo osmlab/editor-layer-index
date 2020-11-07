@@ -20,7 +20,7 @@
         "max_zoom": 19,
         "name": "Helsinki region orthophoto",
         "type": "wms",
-        "url": "https://kartta.hsy.fi/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=taustakartat_ja_aluejaot:Ortoilmakuva_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kartta.hsy.fi/geoserver/ows?LAYERS=taustakartat_ja_aluejaot:Ortoilmakuva_2017&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "category": "photo"
     },
     "geometry": {
