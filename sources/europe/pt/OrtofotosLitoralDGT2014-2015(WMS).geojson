@@ -4,7 +4,7 @@
         "id": "ORTOS_DGT_2014_15",
         "name": "Ortofotos Litoral DGT 2014-2015 (WMS)",
         "type": "wms",
-        "url": "http://ows.dgterritorio.pt/wss/service/ortos2014-2015-wms/guest?language=por&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortoimagens_2014-2015_Litoral&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://ows.dgterritorio.pt/wss/service/ortos2014-2015-wms/guest?LAYERS=Ortoimagens_2014-2015_Litoral&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LANGUAGE=por",
         "start_date": "2014",
         "end_date": "2015",
         "country_code": "PT",

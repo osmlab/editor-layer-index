@@ -225,9 +225,10 @@
             "url": "https://dakotacounty.us"
         },
         "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:26915",
-            "EPSG:103726"
+            "EPSG:26915"
         ],
         "country_code": "US",
         "end_date": "2019",
@@ -240,7 +241,7 @@
         "name": "Dakota County GIS 2019 Spring Leaf-Off 6-Inch",
         "start_date": "2019",
         "type": "wms",
-        "url": "https://gisimg.co.dakota.mn.us/arcgis/services/AerialPhotography/2019AirPhotoLeafOff6Inch_Spring/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=2019AirPhotoLeafOff6Inch_Spring:default&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gisimg.co.dakota.mn.us/arcgis/services/AerialPhotography/2019AirPhotoLeafOff6Inch_Spring/ImageServer/WMSServer?LAYERS=2019AirPhotoLeafOff6Inch_Spring:default&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "category": "photo"
     },
     "type": "Feature"
