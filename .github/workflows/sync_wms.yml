@@ -2,14 +2,13 @@ name: ELI WMS sync
 
 on:
   schedule:
-    - cron: '0 0 * * 6'
+    - cron: '0 0 * * 0'
 
 jobs:
-  build:
+  wms_sync:
     name: WMS_sync_cron
-
+    if: github.repository == 'osmlab/editor-layer-index'
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
 
