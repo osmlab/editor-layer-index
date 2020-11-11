@@ -89,7 +89,8 @@
         "name": "Taiwan Land-Section Data",
         "type": "wms",
         "url": "https://wms.nlsc.gov.tw/wms?LAYERS=LANDSECT&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
-        "category": "other"
+        "category": "other",
+        "min_zoom": 1
     },
     "type": "Feature"
 }
