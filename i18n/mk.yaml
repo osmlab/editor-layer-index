@@ -157,16 +157,6 @@ mk:
         text: basemap.at
       description: Прибележна облога на basemap.at.
       name: basemap.at Облога
-    basemap.at-surface:
-      attribution:
-        text: 'basemap.at    '
-      description: Површинска облога на basemap.at.
-      name: basemap.at Површинска
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Теренска облога на basemap.at.
-      name: basemap.at Теренска
     eufar-balaton:
       attribution:
         text: EUFAR Балатон ортофото 2010
@@ -175,13 +165,18 @@ mk:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 преку finds.jp. Добра за исцртување траги, но малку постара.
+      description: GSI Kiban 2500 преку aginfo.cgk.affrc.go.jp. Добра за исцртување траги, но малку постара.
       name: GSI Јапонија KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Општина Гетеборг, CC0
       description: Градската карта дава описен преглед на Гетеборг. Содржи општи информации а земјиштето, врските, хидрографијата, градбите, адресните броеви и имињата на улиците, управната поделба и друг текст за насочување.
       name: Градска карта на Гетеборг
+    gothenburg-ortho:
+      attribution:
+        text: © Општина Гетеборг, CC0
+      description: Ортоснимки за Општина Гетеборг
+      name: Гетеборшки ортоснимки
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Јапонија
@@ -251,6 +246,21 @@ mk:
       attribution:
         text: © Учесници на OpenStreetMap, CC-BY-SA
       name: Карта OpenPT (облога)
+    openrailwaymap:
+      attribution:
+        text: 'Испис: OpenRailwayMap, © Картог. податоци: Учесници на OpenStreetMap'
+      description: Обложната слика со железничка инфраструктура се заснова на податоци од OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Испис: OpenRailwayMap, © Картог. податоци: Учесници на OpenStreetMap'
+      description: Обложната слика со дозволените брзини на пругите се заснова на податоци од OpenStreetMap
+      name: OpenRailwayMap Дозволени брзини
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Испис: OpenRailwayMap, © Картог. податоци: Учесници на OpenStreetMap'
+      description: Обложната слика со железничка сигнализација се заснова на податоци од OpenStreetMap
+      name: OpenRailwayMap Сигнализација
     osm-gps:
       attribution:
         text: © Учесници на OpenStreetMap
@@ -291,6 +301,11 @@ mk:
         text: © Општина Стокхолм, CC0
       description: Ортоснимки од општината Стокхолм, 2016 г., лиценца CC0
       name: Стокхолмски ортоснимки
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ортоснимки на Сусоно
+      description: Воздушните фотографии објавени од градот Сусоно како отворени податоци.
+      name: Ортоснимки на Сусоно
     tf-cycle:
       attribution:
         text: Карти © Thunderforest, Податоци © учесници на OpenStreetMap
@@ -299,6 +314,10 @@ mk:
       attribution:
         text: карти © Thunderforest, податоци © учесници на OpenStreetMap
       name: Thunderforest Пределна
+    tf-outdoors:
+      attribution:
+        text: Карти © Thunderforest, Податоци © учесници на OpenStreetMap
+      name: Thunderforest Активности во природа
     trafikverket-baninfo:
       attribution:
         text: © Сообраќајна управа на Шведска, CC0
@@ -329,3 +348,7 @@ mk:
         text: © Сообраќајна управа на Шведска, CC0
       description: Шведска железничка мрежа на NVDB со неколку можности за слоеви
       name: Можности за патната мрежа на Сообраќајната управа на Шведска
+    wroclaw-orto2018:
+      attribution:
+        text: Управа на Град Вроцлав
+      name: 'Вроцлав: Ортофотокарта 2018 (воздушна снимка)'

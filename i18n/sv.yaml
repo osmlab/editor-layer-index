@@ -157,16 +157,6 @@ sv:
         text: basemap.at
       description: Noteringsöverdrag tillhandahållen av basemap.at.
       name: basemap.at Överdrag
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Ytlager tillhandahållen av basemap.at.
-      name: basemap.at Yta
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Terränglager tillhandahållen av basemap.at.
-      name: basemap.at Terräng
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofoto 2010
@@ -175,13 +165,18 @@ sv:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Bra för kartläggning, men lite gammal.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Bra för kartläggning, men lite gammal.
       name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Göteborgs Stad, CC0
       description: Stadskartan är en översiktlig karta som beskriver Göteborg. Den innehåller generell information om mark, kommunikation, hydrografi, byggnader, adressnummer och gatunamn, administrativ indelning och övrig orienterande text.
       name: Göteborg Stadskarta
+    gothenburg-ortho:
+      attribution:
+        text: © Göteborgs Stad, CC0
+      description: Flygfoto för Göteborgs Stad
+      name: Flygfoton Göteborg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -251,6 +246,21 @@ sv:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA
       name: OpenPT-karta (bildlager)
+    openrailwaymap:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Kartdata OpenStreetMaps bidragsgivare'
+      description: Bildlager som visar järnvägsinfrastruktur baserat på data från OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Kartdata OpenStreetMaps bidragsgivare'
+      description: Bildlager som visar hastighetsgränser för järnväg baserat på data från OpenStreetMap
+      name: OpenRailwayMap hastighetsgränser
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Kartdata OpenStreetMaps bidragsgivare'
+      description: Bildlager som visar järnvägssignaler baserat på data från OpenStreetMap
+      name: OpenRailwayMap signaler
     osm-gps:
       attribution:
         text: © OpenStreetMaps bidragsgivare
@@ -291,6 +301,11 @@ sv:
         text: © Stockholms kommun, CC0
       description: Flygfoton från Stockholms kommun 2016, CC0-licens
       name: Flygfoton Stockholm
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Flygfoton Susono city
+      description: Flygfotona släppta av Susono City som öppen data.
+      name: Flygfoton Susono City
     tf-cycle:
       attribution:
         text: Kartor © Thunderforest, Data © OpenStreetMaps bidragsgivare
@@ -299,6 +314,10 @@ sv:
       attribution:
         text: Kartor © Thunderforest, Data © OpenStreetMaps bidragsgivare
       name: Thunderforest landskap
+    tf-outdoors:
+      attribution:
+        text: Kartor © Thunderforest, Data © OpenStreetMaps bidragsgivare
+      name: Thunderforest utomhus
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -329,3 +348,7 @@ sv:
         text: © Trafikverket, CC0
       description: Svenska nationella vägdatabasen, NVDB, med flera kartlager att välja
       name: Trafikverkets vägdatabas anpassningsbar
+    wroclaw-orto2018:
+      attribution:
+        text: Wrocław stadshus
+      name: 'Wrocław: Flygfoton 2018'

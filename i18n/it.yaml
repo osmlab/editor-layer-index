@@ -39,6 +39,8 @@ it:
       description: Le immagini ESRI potrebbero essere migliori e più precise di quelle impostate di default.
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
+      attribution:
+        text: © collaboratori OpenStreetMap, CC-BY-SA
       description: Il livello base di OpenStreetMap.
       name: OpenStreetMap (Standard)
     Mapbox:
@@ -155,16 +157,6 @@ it:
         text: basemap.at
       description: Annotazioni sovrapposte fornite da basemap.at.
       name: Sovrimpresso basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Livello superficie fornito da basemap.at.
-      name: Superficie basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Livello terreno fornito da basemap.at.
-      name: Terreno basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR di Balaton 2010
@@ -173,8 +165,18 @@ it:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Buono per la tracciatura ma un po’ vecchio.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Buone per il tracciamento ma un po’ più vecchie
       name: GSI KIBAN 2500 Giappone
+    gothenburg-citymap:
+      attribution:
+        text: © comune di Göteborg, CC0
+      description: La mappa della città è una mappa panoramica che descrive Göteborg. Contiene informazioni generali su terreni, comunicazioni, idrografia, edifici, nomi di strada e numeri civici, divisione amministrativa e altro testo di orientamento.
+      name: Mappa della città di Göteborg
+    gothenburg-ortho:
+      attribution:
+        text: © comune di Göteborg, CC0
+      description: Ortofoto del comune di Göteborg
+      name: Ortofoto di Göteborg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI del Giappone
@@ -244,6 +246,21 @@ it:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenPT Map (sovrapposta)
+    openrailwaymap:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Immagini sovrapposte che mostrano l'infrastruttura ferroviaria basata sui dati OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Immagini sovrapposte che mostrano i limiti di velocità ferroviaria basati sui dati OpenStreetMap
+      name: OpenRailwayMap Limiti di velocità
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Immagini sovrapposte che mostrano segnali ferroviari basati su dati OpenStreetMap
+      name: OpenRailwayMap Signali ferroviari
     osm-gps:
       attribution:
         text: © OpenStreetMap contributors
@@ -284,6 +301,11 @@ it:
         text: © comune di Stoccolma, CC0
       description: Ortofoto del comune di Stoccolma del 2016, licenza CC0
       name: Ortofoto di Stoccolma
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofoto della città di Susono
+      description: Le foto aeree rilasciate come open data dalla Città di Susono.
+      name: Ortofoto della città di Susono
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
@@ -292,6 +314,10 @@ it:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Mappe © Thunderforest, Data © OpenStreetMap contributors
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -322,3 +348,7 @@ it:
         text: © Trafikverket, CC0
       description: Rete stradale NVDB svedese con diverse opzioni per gli strati della mappa
       name: Opzioni della rete stradale di Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Comune di Breslavia
+      name: 'Breslavia: mappe ortofoto 2018 (immagini aeree)'

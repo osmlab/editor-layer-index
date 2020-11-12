@@ -157,16 +157,6 @@ pt:
         text: basemap.at
       description: Camada com anotações fornecido por basemap.at.
       name: basemap.at - camada superior
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Camada de superfície fornecido por basemap.at.
-      name: basemap.at - superfície
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Camada de terreno fornecido por basemap.at.
-      name: basemap.at - terreno
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -175,13 +165,18 @@ pt:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Bom para rastrear, mas um pouco mais velho.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp.  Bom para rastrear, mas um pouco mais velho.
       name: Japão GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Município de Gotemburgo, CC0
       description: O mapa da cidade é um mapa síntese que descreve Gotemburgo. Contém informação geral sobre o solo, as comunicações, a hidrografia, os edifícios, os números de polícia e os nomes das ruas, a divisão administrativa e outros textos de orientação.
       name: Mapa da Cidade de Gotemburgo
+    gothenburg-ortho:
+      attribution:
+        text: © Município de Gotemburgo, CC0
+      description: Ortofotos para o município de Gotemburgo
+      name: Ortofotos de Gotemburgo
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japão
@@ -251,6 +246,21 @@ pt:
       attribution:
         text: © Contribuidores OpenStreetMap, CC-BY-SA
       name: OpenPT Map (sobreposição)
+    openrailwaymap:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data contribuidores OpenStreetMap'
+      description: Camada de imagens que mostra a infraestrutura ferroviária com base nos dados OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data contribuidores OpenStreetMap'
+      description: Camada de imagens que mostra os limites de velocidade ferroviários com base nos dados OpneStreetMap
+      name: Velocidades máximas OpenRailwayMap
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data contribuidores OpenStreetMap'
+      description: Camada de imagens que mostra os sinais ferroviários com base nos dados OpenStreetMap
+      name: Sinalização OpenRailwayMap
     osm-gps:
       attribution:
         text: © contribuidores OpenStreetMap
@@ -291,6 +301,11 @@ pt:
         text: © Município de Estocolmo, CC0
       description: Ortofotos do município de Estocolmo 2016, licença CC0
       name: Ortofotos de Estocolmo
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofotos da cidade de Susono
+      description: As fotos aéreas disponibilizadas pela cidade de Susono na forma de dados abertos.
+      name: Ortofotos da cidade de Susono
     tf-cycle:
       attribution:
         text: Mapas © Thunderforest, dados do mapa © contribuidores OpenStreetMap
@@ -299,6 +314,10 @@ pt:
       attribution:
         text: Mapas © Thunderforest, dados do mapa © contribuidores OpenStreetMap
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Maps © Thunderforest, Data © contribuidores OpenStreetMap
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -329,3 +348,7 @@ pt:
         text: © Trafikverket, CC0
       description: Rede rodoviária sueca NVDB com várias opções de camadas de mapa
       name: Opções da Rede Rodoviária Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Município de Breslávia
+      name: 'Breslávia: Ortofotomapa 2018 (imagens aéreas)'

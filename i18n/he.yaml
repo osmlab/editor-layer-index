@@ -40,7 +40,7 @@ he:
       name: ESRI תצלומי אוויר (Clarity Beta)
     MAPNIK:
       attribution:
-        text: מתנדבי © OpenStreetMap,‏ CC-BY-SA
+        text: מתנדבי © OpenStreetMap,‏ CC-BY-SA 2.0
       description: שכבת בררת המחדל של OpenStreetMap.
       name: OpenStreetMap (רגיל)
     Mapbox:
@@ -126,15 +126,15 @@ he:
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: אופניים'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: טיול רגל'
     Waymarked_Trails-MTB:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: אופני הרים'
     Waymarked_Trails-Skating:
       attribution:
@@ -142,7 +142,7 @@ he:
       name: 'שבילים מסומנים: החלקה'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: ספורט חורף'
     basemap.at:
       attribution:
@@ -152,23 +152,13 @@ he:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: אורטופוטו basemap.at
+      description: שכבת האורתופוטו סופקה על ידי basemap.at. „תכנית ההמשך” של צילומי geoimage.at.
       name: אורטופוטו basemap.at
     basemap.at-overlay:
       attribution:
         text: basemap.at
       description: שכבת הערות שמסופקת על ידי basemap.at.
       name: שכבת basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: שכבת משטח שמסופקת על ידי basemap.at.
-      name: משטח של basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: שכבת תוואי שטח שמסופקת על ידי basemap.at.
-      name: תוואי שטח של basemap.at
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -177,13 +167,18 @@ he:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. טוב לשרטוט, אבל ישן.
+      description: GSI Kiban 2500 דרך aginfo.cgk.affrc.go.jp. טוב למעקב אבל קצת ישן.
       name: יפן GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © עיריית גותנבורג, CC0
-      description: מפת העיר היא מפה סיקורית שמתארת את גותנברת. היא מכילה פרטים כלליים על קרקע, תקשורת, תשתיות מים, בניינים, מספרי כתובות ושמות רחובות, חלוקה מנהלית וטקסט שמסייע בהתמצאות.
+      description: מפת העיר היא מפה סיקורית שמתארת את גותנבורג. היא מכילה פרטים כלליים על קרקע, תקשורת, תשתיות מים, בניינים, מספרי כתובות ושמות רחובות, חלוקה מנהלית וטקסט שמסייע בהתמצאות.
       name: מפת העיר גותנבורג
+    gothenburg-ortho:
+      attribution:
+        text: © עיריית גותנבורג, CC0
+      description: אורתופוטו לעיריית גותנברג
+      name: אורתופוטו של גותנברג
     gsi.go.jp_airphoto:
       attribution:
         text: GSI יפן
@@ -202,11 +197,11 @@ he:
     helsingborg-orto:
       attribution:
         text: מחוז הלסינגבורג
-      description: אורטופוטו ממחוז הלסינגבורג 2015, CC0 רישיון
-      name: אורטופוטו הלסינגבורג
+      description: אורתופוטו ממחוז הלסינגבורג 2015, CC0 רישיון
+      name: אורתופוטו של הלסינגבורג
     kalmar-orto-2014:
       attribution:
-        text: © Kalmar municipality
+        text: © עיריית קלמר
       description: Kalmar אורטופוטו חוף צפוני 2018
       name: Kalmar אורטופוטו צפוני 2018
     kalmar-orto-2016:
@@ -253,6 +248,21 @@ he:
       attribution:
         text: תורמי ‎© OpenStreetMap,‏ CC-BY-SA
       name: מפת OpenPT (שכבת על)
+    openrailwaymap:
+      attribution:
+        text: 'עיבוד: OpenRailwayMap, © נתוני המפה מאת מתנדבי OpenStreetMap'
+      description: שכבת תמונות שמציגה את תשתית מסילות הרבת על בסיס נתוני OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'עיבוד: OpenRailwayMap, © נתוני המפה מאת מתנדבי OpenStreetMap'
+      description: שכבת תמונות שמציגה מיהרויות מרביות על מסילות רכבת בהתאם לנתונים של OpenStreetMap
+      name: מהירויות מרביות על OpenRailwayMap
+    openrailwaymap-signalling:
+      attribution:
+        text: 'עיבוד: OpenRailwayMap, © נתוני המפה בחסות מתנדבי OpenStreetMap'
+      description: שכבת תמונות שמציגה איתות של מסילות רכבת בהתאם לנתונים של OpenStreetMap
+      name: איתות ב־OpenRailwayMap
     osm-gps:
       attribution:
         text: תורמי ‎© OpenStreetMap
@@ -290,17 +300,26 @@ he:
       name: תווי שטח מסטודיו Stamen
     stockholm-orto:
       attribution:
-        text: מחוז סטוקהולם CC0
+        text: מחוז שטוקהולם CC0
       description: צילומי אורתופוטו מעיריית שטוקהולם 2016, רישיון CC0
-      name: אורטופוטו סטוקהולם
+      name: אורתופוטו שטוקהולם
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: צילום אוויר של העיר סוסונו
+      description: הצילומים האוויריים ששוחררו על ידי העיר סוסונו כנתונים פתוחים.
+      name: צילום אוויר של העיר סוסונו
     tf-cycle:
       attribution:
-        text: מפות  מThunderforest
+        text: מפות מ־Thunderforest
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: מפות © Thunderforest, נתונים באדיבות מתנדבי © OpenStreetMap
-      name: תווי שטח מThunderforest
+      name: תוואי שטח מ־Thunderforest
+    tf-outdoors:
+      attribution:
+        text: מפות © Thunderforest, נתונים מתנדבי © OpenStreetMap
+      name: יערות מ־Thunderforest
     trafikverket-baninfo:
       attribution:
         text: ‎© Trafikverket, CC0
@@ -331,3 +350,7 @@ he:
         text: ‎© Trafikverket, CC0
       description: רשת הכבישים של NVDB השבדית עם מגוון אפשרויות לשכבות מפה
       name: אפשרויות רשת כבישים Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: עיריית ורוצלב
+      name: 'ורוצלב: מפת אורתופוטו 2018 (תצלום אווירי)'

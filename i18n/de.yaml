@@ -21,8 +21,8 @@ de:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitales Höhenmodell Vlaanderen II, Skyview-Faktor 0,25 m
     Bing:
-      description: Satellitenbilder und Luftbilder
-      name: Bing Luftbildmaterial
+      description: Satelliten- und Luftbilder
+      name: Bing Luftbilder
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 wolkenfrei - https://s2maps.eu by EOX IT Services GmbH (enthält modofizierte Copernicus Sentinel Daten 2017 & 2018)
@@ -31,13 +31,13 @@ de:
     EsriWorldImagery:
       attribution:
         text: Bedingungen & Feedback
-      description: Esri World Bildmaterial.
-      name: Esri World Bildmaterial
+      description: Esri Weltbilder
+      name: Esri Weltbilder
     EsriWorldImageryClarity:
       attribution:
         text: Bedingungen & Feedback
-      description: Esri Archiv-Bildmaterial (kann klarer und genauer sein)
-      name: Esri World Bildmaterial (Clarity) Beta
+      description: Esri Archiv-Bilder (kann klarer und genauer als Esri Weltbilder sein)
+      name: Esri Weltbilder (Klarheit) Beta
     MAPNIK:
       attribution:
         text: © OpenStreetMap-Mitwirkende, CC-BY-SA 2.0
@@ -155,33 +155,28 @@ de:
     basemap.at-overlay:
       attribution:
         text: basemap.at
-      description: Anmerkungen von basemap.at.
+      description: Anmerkungsüberlagerung von basemap.at
       name: basemap.at Überlagerung
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Oberflächenkarte von basemap.at.
-      name: basemap.at Oberfläche
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Geländekarte von basemap.at.
-      name: basemap.at Gelände
     eufar-balaton:
       attribution:
         text: EUFAR Balaton Orthofoto 2010
-      description: 1940 geo-tagged Photos vom limnologischen Balaton Institut
+      description: 1940 geo-tagged Fotos vom limnologischen Balaton Institut
       name: EUFAR Balaton Orthofoto
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Hohe Qualität, aber etwas älter.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Gut zum Aufspüren, aber etwas älter.
       name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Gemeinde Gothenburg, CC0
       description: Die Karte der Gemeinde ist eine Überblickskarte die Gothenburg zeigt. Sie enthält Informationen über Flächennutzung, Kommunikation, Hydrgraphie, Gebäude, Adressen und Straßennamen. administrative Gliederung und Orientierungstexte.
       name: Karte der Gemeinde Gothenburg
+    gothenburg-ortho:
+      attribution:
+        text: © Gemeinde Gothenburg, CC0
+      description: Orthofoto für Gemeinde Gothenburg
+      name: Gothenburg Orthofoto
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -201,7 +196,7 @@ de:
       attribution:
         text: © Gemeinde Helsingborg
       description: Orthofotos von der Gemeinde Helsingborg 2016, public domain
-      name: Helsingborg Orthophoto
+      name: Helsingborg Orthooto
     kalmar-orto-2014:
       attribution:
         text: © Gemeinde Kalmar
@@ -226,12 +221,12 @@ de:
       attribution:
         text: © Lantmäteriet, CC0
       description: Mosaic von schwedischen Orthofotos von 1955–1965. Frühere und spätere Aufnahmen können vorkommen.
-      name: Lantmäteriet Historische Orthophotos 1960
+      name: Lantmäteriet Historische Orthofotos 1960
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
       description: Mosaic von schwedischen Orthofotos von 1970-1980. Wird noch aufgebaut.
-      name: Lantmäteriet Historische Orthophotos 1975
+      name: Lantmäteriet Historische Orthofotos 1975
     lantmateriet-topowebb:
       attribution:
         text: © Lantmäteriet, CC0
@@ -251,6 +246,21 @@ de:
       attribution:
         text: © OpenStreetMap-Mitwirkende, CC-BY-SA
       name: OpenPT Map (Overlay)
+    openrailwaymap:
+      attribution:
+        text: 'Darstellung: OpenRailwayMap, Kartendaten © OpenStreetMap-Mitwirkende'
+      description: Overlay mit Eisenbahninfrastruktur, basierend auf OpenStreetMap-Daten
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Darstellung: OpenRailwayMap, Kartendaten © OpenStreetMap-Mitwirkende'
+      description: Overlay mit Eisenbahnhöchstgeschwindigkeiten, basierend auf OpenStreetMap-Daten
+      name: OpenRailwayMap Höchstgeschwindigkeiten
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Darstellung: OpenRailwayMap, Kartendaten © OpenStreetMap-Mitwirkende'
+      description: Overlay mit Eisenbahnsignalen, basierend auf OpenStreetMap-Daten
+      name: OpenRailwayMap Signale
     osm-gps:
       attribution:
         text: © OpenStreetMap-Mitwirkende
@@ -291,14 +301,23 @@ de:
         text: © Gemeinde Stockholm, CC0
       description: Orthofotos von der Gemeinde Stockholm 2016, CC0 Lizenz
       name: Stockholm Orthofoto
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Susono City Orthophoto
+      description: Die Luftbilder von Susono City wurden als Open Daten freigegeben.
+      name: Susono City Orthophoto
     tf-cycle:
       attribution:
-        text: Kacheln © Thunderforest, Kartendaten © OpenStreetMap-Mitwirkende, ODbL 1.0
+        text: Kacheln © Thunderforest, Kartendaten © OpenStreetMap-Mitwirkende
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
-        text: Kacheln © Thunderforest, Kartendaten © OpenStreetMap-Mitwirkende, ODbL 1.0
+        text: Kacheln © Thunderforest, Kartendaten © OpenStreetMap-Mitwirkende
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Kacheln © Thunderforest, Kartendaten © OpenStreetMap-Mitwirkende
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -329,3 +348,7 @@ de:
         text: © Trafikverket, CC0
       description: Schwedisches NVDB Straßen-Netzwerk mit mehreren Optionen für Karten-Layer
       name: Trafikverket Straßen-Netzwerk Optionen
+    wroclaw-orto2018:
+      attribution:
+        text: Stadtverwaltung Wrocław
+      name: 'Wrocław: Orthofotokarte 2018 (Luftbild)'

@@ -2,24 +2,24 @@ zh_CN:
   imagery:
     AGIV:
       attribution:
-        text: © agentschap Informatie Vlaanderen
+        text: © 法兰德斯新闻社
       name: AIV Flanders 最近的航拍图
     AGIV10cm:
       attribution:
-        text: © agentschap Informatie Vlaanderen
+        text: © 法兰德斯新闻社
       name: AIV Flanders 2013-2015 的 10厘米 航拍图
     AGIVFlandersGRB:
       attribution:
-        text: © agentschap Informatie Vlaanderen
+        text: © 法兰德斯新闻社
       name: AIV Flanders GRB
     AIV_DHMV_II_HILL_25cm:
       attribution:
-        text: © agentschap Informatie Vlaanderen
+        text: © 法兰德斯新闻社
       name: AIV 佛兰德地区数字高程模型 II, 0.25 米多向山体阴影
     AIV_DHMV_II_SVF_25cm:
       attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 米 Skyview
+        text: © 法兰德斯新闻社
+      name: AIV 佛兰德斯数字高度模型 II，0.25 米 天空视角
     Bing:
       description: 卫星和航空影像
       name: 必应航空影像
@@ -37,12 +37,12 @@ zh_CN:
       attribution:
         text: 条款与反馈
       description: 比默认图层或许更为清晰准确的 Esri 归档影像。
-      name: Esri 世界影像 (清晰) Beta
+      name: Esri 世界影像（清晰）Beta
     MAPNIK:
       attribution:
         text: © OpenStreetMap 贡献者, 署名-相同方式共享 2.0
       description: OpenStreetMap 默认图层
-      name: OpenStreetMap (标准)
+      name: OpenStreetMap（标准）
     Mapbox:
       attribution:
         text: 条款与反馈
@@ -50,7 +50,7 @@ zh_CN:
       name: Mapbox 卫星
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
+        text: © Geofabrik 有限公司，OpenStreetMap 贡献者，署名-相同方式共享
       name: 'OSM查看器：地址'
     OSM_Inspector-Geometry:
       attribution:
@@ -157,16 +157,6 @@ zh_CN:
         text: basemap.at
       description: 由basemap.at 提供的注释叠加层
       name: basemap.at 叠加层
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: 由 basemap.at 提供的地表层
-      name: basemap.at 地表
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: 由basemap.at 提供的地形层
-      name: basemap.at 地形
     eufar-balaton:
       attribution:
         text: 欧洲空载研究舰队(EUFAR) 巴拉顿正射影像（2010）
@@ -175,13 +165,17 @@ zh_CN:
     finds.jp_KBN_2500:
       attribution:
         text: 国土地理院基盘地图 2500
-      description: 由 finds.jp 提供的国土地理院基盘地图 2500。适合描绘，但较为陈旧。
       name: 日本国土地理院基盘地图 2500
     gothenburg-citymap:
       attribution:
         text: © 哥德堡市, CC0
       description: 城市地图是描述哥德堡的概览地图。 它包含有关土地、通讯、水文、建筑物、地址号码和街道名称，行政区划和其他方向性文字的一般信息。
       name: 哥德堡城市地图
+    gothenburg-ortho:
+      attribution:
+        text: © 哥德堡市，CC0
+      description: 哥德堡市的正射影像
+      name: 哥德堡正射影像
     gsi.go.jp_airphoto:
       attribution:
         text: 日本国土地理院
@@ -251,6 +245,21 @@ zh_CN:
       attribution:
         text: © OpenStreetMap 贡献者, 署名-相同方式共享
       name: OpenPT Map (叠加层)
+    openrailwaymap:
+      attribution:
+        text: '渲染：OpenRailwayMap，© 地图数据 OpenStreetMap 贡献者'
+      description: 基于 OpenStreetMap 数据、显示铁路设施的叠加影像
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: '渲染：OpenRailwayMap，© 地图数据 OpenStreetMap 贡献者'
+      description: 基于 OpenStreetMap 数据、显示铁路速度限制的叠加影像
+      name: OpenRailwayMap Maxspeeds
+    openrailwaymap-signalling:
+      attribution:
+        text: '渲染：OpenRailwayMap，© 地图数据 OpenStreetMap 贡献者'
+      description: 基于 OpenStreetMap 数据、显示铁路信号的叠加影像
+      name: OpenRailwayMap Signalling
     osm-gps:
       attribution:
         text: © OpenStreetMap 贡献者
@@ -299,6 +308,10 @@ zh_CN:
       attribution:
         text: 地图 © Thunderforest，数据 © OpenStreetMap 贡献者
       name: Thunderforest 地貌
+    tf-outdoors:
+      attribution:
+        text: 地图 © Thunderforest，数据 © OpenStreetMap 贡献者
+      name: Thunderforest 户外
     trafikverket-baninfo:
       attribution:
         text: © 瑞典交通管理局(Trafikverket), CC0
@@ -329,3 +342,7 @@ zh_CN:
         text: © 瑞典交通管理局(Trafikverket), CC0
       description: 瑞典国家道路数据库(NVDB)道路网络，并可选择多种地图图层
       name: 瑞典交通管理局道路网络选项
+    wroclaw-orto2018:
+      attribution:
+        text: 弗罗茨瓦夫市政厅
+      name: '弗罗茨瓦夫：2018 正射影像（航空影像）'

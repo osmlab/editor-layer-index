@@ -8,7 +8,13 @@ sk:
         text: Podmienky & pripomienky
       description: Esri snímky sveta.
       name: Esri snímky sveta
+    EsriWorldImageryClarity:
+      attribution:
+        text: Podmienky a pripomienky
+      description: Archív snímok Esri, ktoré môžu byť jasnejšie a presnejšie než východzia hladina.
     MAPNIK:
+      attribution:
+        text: © OpenStreetMap prispievatelia, CC-BY-SA 2.0
       description: Štandardná vrstva OpenStreetMap.
       name: OpenStreetMap (Štandardná)
     Mapbox:
@@ -44,15 +50,57 @@ sk:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap prispievatelia, CC-BY-SA
       name: 'OSM Inspector: Označenia'
+    SPW_ORTHO_LAST:
+      name: SPW(Valónsko) najnovšie letecké snímky
+    SPW_PICC:
+      name: SPW(Valónsko) PICC numerické snímky
+    US-TIGER-Roads-2014:
+      description: Verejne dostupné mapové údaje od US Census na úrovniach 16+. Na nižšom priblížení sú iba zmeny od roku 2006 bez zmien, ktoré sú už vložené do OpenStreetMap.
+    US-TIGER-Roads-2017:
+      description: Žltá = Verejne dostupné mapové údaje od US Census. Červená = Dáta nenájdené v OpenStreetMap.
+    US-TIGER-Roads-2018:
+      description: Žltá = Verejne dostupné mapové údaje od US Census. Červená = Dáta nenájdené v OpenStreetMap.
+    US-TIGER-Roads-2019:
+      description: Žltá = Verejne dostupné mapové údaje od US Census. Červená = Dáta nenájdené v OpenStreetMap.
+    USDA-NAIP:
+      name: Národný program poľnohospodárskych snímok
+    UrbISOrtho2016:
+      attribution:
+        text: Realizované formou Bruselského UrbIS® © - Distribúcia a autorské práva CIRB
+    UrbISOrtho2017:
+      attribution:
+        text: Realizované formou Bruselského UrbIS® © - Distribúcia a autorské práva CIRB
+    UrbISOrtho2018:
+      attribution:
+        text: Realizované formou Bruselského UrbIS® © - Distribúcia a autorské práva CIRB
+    UrbISOrtho2019:
+      attribution:
+        text: Realizované formou Bruselského UrbIS® © - Distribúcia a autorské práva CIRB
+    UrbisAdmFR:
+      attribution:
+        text: Realizované formou Bruselského UrbIS® © - Distribúcia a autorské práva CIRB
+    UrbisAdmNL:
+      attribution:
+        text: Realizované formou Bruselského UrbIS® © - Distribúcia a autorské práva CIRB
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap prispievatelia, CC by-SA 3.0
       name: 'Waymarked Trails: Cyklistika'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap prispievatelia, CC by-SA 3.0
       name: 'Waymarked Trails: Turistika'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap prispievatelia, CC by-SA 3.0
       name: 'Waymarked Trails: Horské bicykle'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap prispievatelia, CC by-SA 3.0
       name: 'Waymarked Trails: Skating'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, OpenStreetMap prispievatelia, CC by-SA 3.0
       name: 'Waymarked Trails: Zimné športy'
     basemap.at:
       attribution:
@@ -63,6 +111,16 @@ sk:
         text: basemap.at
       description: Letecké snímky poskytnuté od basemap.at. Nástupca záberov geoimage.at.
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+    gothenburg-citymap:
+      name: Mestská mapa Gothenburg
+    gothenburg-ortho:
+      attribution:
+        text: © Miestna správa Gothenburg, CC0
+      description: Otrofotomapa od miestnej správy Gothenburg
+      name: Ortofotomapa Gothenburg
     mapbox_locator_overlay:
       attribution:
         text: Podmienky & pripomienky
@@ -85,6 +143,11 @@ sk:
       attribution:
         text: © OpenStreetMap prispievatelia, CC-BY-SA
       name: OpenStreetMap (Nemecký štýl)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet
+      description: Sken "Ekonomických máp" cca. 1950–1980
+      name: Lantmäteriet ekonomická mapa 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Údaje ©OpenStreetMap prispievatelia
@@ -93,8 +156,20 @@ sk:
       attribution:
         text: '© Dlaždice: skobbler Mapové údaje: OpenStreetMap prispievatelia'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Trasy pre snežné skútre
+      name: Mapa Švédska pre snežné skútre
     stamen-terrain-background:
       name: Stamen terén
+    stockholm-orto:
+      name: Ortofoto snímky mesta Štokholm
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofoto snímky mesta Susono
+      description: Letecké fotografie zverejnené mestom Susono City ako otvorené dáta.
+      name: Ortofoto snímky mesta Susono
     tf-cycle:
       attribution:
         text: Mapa © Thunderforest, Údaje © OpenStreetMap prispievatelia
@@ -103,3 +178,32 @@ sk:
       attribution:
         text: Mapa © Thunderforest, Údaje © OpenStreetMap prispievatelia
       name: Thunderforest Krajina
+    tf-outdoors:
+      attribution:
+        text: Mapy © Thunderforest, Údaje © OpenStreetMap prispievatelia
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Železničná sieť Trafikverket
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Cestná sieť Trafikverket
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Cestná sieť extra Trafikverket
+    trafikverket-vagnat-navn:
+      attribution:
+        text: © Trafikverket, CC0
+      name: Názvy ulíc Trafikverket
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+    wroclaw-orto2018:
+      attribution:
+        text: Mestský úrad Wroclaw
+      name: 'Wroclaw: ortofotomapa 2018 (vzdušné zábery)'
