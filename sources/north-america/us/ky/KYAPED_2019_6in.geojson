@@ -3,7 +3,7 @@
     "properties": {
         "name": "KyFromAbove 2019 6in",
         "type": "wms",
-        "url": "https://kyraster.ky.gov/arcgis/services/ImageServices/Ky_KYAPED_2019_6IN_WGS84WM/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kyraster.ky.gov/arcgis/services/ImageServices/Ky_KYAPED_2019_6IN_WGS84WM/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "min_zoom": 2,
         "max_zoom": 20,
         "permission_osm": "implicit",
@@ -18,8 +18,9 @@
             "required": false
         },
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:3857"
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "start_date": "2019",
         "end_date": "2019",

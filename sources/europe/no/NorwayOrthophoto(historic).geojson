@@ -14,7 +14,12 @@
         "max_zoom": 21,
         "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
         "description": "Historic Norwegian orthophotos and maps, courtesy of Geovekst and Norkart.",
-        "category": "historicphoto"
+        "custom-http-headers": {
+            "header-name": "X-WAAPI-TOKEN",
+            "header-value": "b8e36d51-119a-423b-b156-d744d54123d5"
+        },
+        "category": "historicphoto",
+        "privacy_policy_url": "https://www.norkart.no/personvernerklaering/"
     },
     "geometry": {
         "type": "Polygon",

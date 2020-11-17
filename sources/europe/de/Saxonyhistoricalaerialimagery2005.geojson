@@ -533,9 +533,10 @@
             "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=3f38c3f3-03db-4a2a-b6da-2704b9a1d5f0"
         },
         "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
             "EPSG:25833",
-            "EPSG:3857",
             "EPSG:31468"
         ],
         "country_code": "DE",
@@ -547,7 +548,7 @@
         "start_date": "2005",
         "type": "wms",
         "category": "historicphoto",
-        "url": "https://geodienste.sachsen.de/wms_geosn_dop-2005/guest?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=dop_2005&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geodienste.sachsen.de/wms_geosn_dop-2005/guest?LAYERS=dop_2005&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }
