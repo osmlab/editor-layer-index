@@ -10,9 +10,10 @@
         },
         "type": "wms",
         "available_projections": [
+            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:32628",
-            "EPSG:32627"
+            "EPSG:32627",
+            "EPSG:32628"
         ],
         "name": "GRAFCAN OrtoExpress Urbana - Canary Islands",
         "description": "High resolution imagery covering the Canary Islands, 12.5 or 10 cm/pixel in urban areas, and 20 cm/pixel elsewhere. Older in some urban areas than the lower-resolution \"GRAFCAN OrtoExpress\".",
