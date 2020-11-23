@@ -13,6 +13,7 @@ from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import aiohttp
 import imagehash
 import mercantile
+import pyproj
 from PIL import Image
 from shapely.geometry import shape
 from pyproj import Transformer
@@ -46,6 +47,18 @@ ZOOM_LEVEL = 14
 
 # Before adding a new WMS version, it should be checked if every consumer supports it!
 supported_wms_versions = ['1.3.0', '1.1.1', '1.1.0', '1.0.0']
+
+# List of not deprecated EPSG codes
+valid_epsgs = set()
+for pj_type in pyproj.enums.PJType:
+    valid_epsgs.update(
+        map(
+            lambda x: "EPSG:{}".format(x),
+            pyproj.get_codes("EPSG", pj_type, allow_deprecated=False),
+        )
+    )
+
+epsg_3857_alias = set(['EPSG:{}'.format(epsg) for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]])
 
 
 def compare_projs(old_projs, new_projs):
@@ -539,10 +552,15 @@ async def process_source(filename, session: ClientSession):
 
     # Filter alias projections
     if 'EPSG:3857' in result['available_projections']:
-        for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]:
-            epsg_str = 'EPSG:{}'.format(epsg)
-            if epsg_str in result['available_projections']:
-                result['available_projections'].remove(epsg_str)
+        for epsg in epsg_3857_alias:
+            if epsg in result['available_projections']:
+                result['available_projections'].remove(epsg)
+
+    # Filter deprecated projections
+    result["available_projections"] = [
+        epsg for epsg in result["available_projections"]
+        if epsg == "CRS:84" or (epsg in valid_epsgs and epsg not in epsg_3857_alias)
+    ]
 
     # Check if only formatting has changes
     url_has_changed = not compare_urls(source['properties']['url'], result['url'])
