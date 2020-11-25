@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ 160.9914, -78.4975 ], [ 160.0011, -77.9962 ], [ 160.0011, -77.2475 ], [ 164.006, -77.2475 ], [ 164.9963, -77.7469 ], [ 164.9963, -78.2495 ], [ 164.006, -78.4975 ], [ 160.9914, -78.4975 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "map",
+        "country_code": "AQ",
+        "description": "1:50k topographic maps of the McMurdo Dry Valleys produced by USGS/LINZ",
+        "end_date": "1989",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-usgs_50k_ant",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: USGS 50k Topos McMurdo Dry Valleys",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "1980",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=usgs_50k_ant&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}
