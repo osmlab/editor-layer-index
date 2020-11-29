@@ -4,7 +4,7 @@
         "id": "kartverket-luftfartshindre",
         "name": "Kartverket Aviation Obstructions overlay",
         "type": "wms",
-        "url": "https://openwms.statkart.no/skwms1/wms.nrl?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nrl3_wms&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://openwms.statkart.no/skwms1/wms.nrl?LAYERS=nrl3_wms&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [

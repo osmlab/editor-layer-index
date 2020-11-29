@@ -5,12 +5,13 @@
         "name": "GRAFCAN OrtoExpress - Canary Islands",
         "description": "High resolution imagery covering the Canary Islands, 20 cm/pixel. More recent in some urban areas than the higher-resolution \"GRAFCAN OrtoExpress Urbana\".",
         "type": "wms",
-        "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortoexpress&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress?LAYERS=ortoexpress&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
         "available_projections": [
+            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:32628",
-            "EPSG:32627"
+            "EPSG:32627",
+            "EPSG:32628"
         ],
         "attribution": {
             "text": "GRAFCAN OrtoExpress",
