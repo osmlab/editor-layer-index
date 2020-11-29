@@ -1,12 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Gliwice-buildings",
-        "name": "Gliwice: Buildings",
+        "id": "Gliwice-2018",
+        "name": "Gliwice: Orthophotomap 2018 (aerial image)",
         "type": "wms",
-        "url": "http://msip-mapa.um.gliwice.pl:9090/isdp/gs/ows/wms?LAYERS=default:EGIB_budynek,default:pkt_adr&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&TRANSPARENT=True",
+        "url": "http://msip-mapa.um.gliwice.pl:9090/isdp/gs/ows/wms2?LAYERS=default:orto_2018&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "start_date": "2018",
+        "end_date": "2018",
         "country_code": "PL",
-        "overlay": true,
         "available_projections": [
             "CRS:84",
             "EPSG:2175",
@@ -18,7 +19,8 @@
         "attribution": {
             "text": "Urząd Miasta Gliwice"
         },
-        "category": "other",
+        "min_zoom": 14,
+        "category": "historicphoto",
         "privacy_policy_url": "https://gliwice.eu/polityka-prywatnosci",
         "license_url": "https://msip.gliwice.eu/portal-planistyczny/otwarte-dane.html"
     },
