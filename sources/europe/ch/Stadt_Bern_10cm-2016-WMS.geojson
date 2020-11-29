@@ -2,23 +2,28 @@
     "type": "Feature",
     "properties": {
         "license_url": "http://lists.openstreetmap.ch/pipermail/talk-ch/2016-November/003868.html",
-        "description": "This imagery is provided via a proxy operated by https://sosm.ch/", 
-        "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+        "privacy_policy_url": "https://www.bern.ch/disclaimer",
         "start_date": "2016",
         "end_date": "2016",
-        "id": "Bern-bern2016-tms",
+        "id": "Bern-bern2016-wms",
         "attribution": {
-            "text": "Orthophoto 2016, Vermessungsamt Stadt Bern",
+            "url": "https://www.bern.ch/themen/planen-und-bauen/geodaten-und-plane/nutzungsbedingungengeodaten/nutzungsbedingungen",
+            "text": "Geodaten Stadt Bern",
             "required": true
         },
         "name": "Stadt Bern 10cm (2016)",
-        "url": "https://mapproxy.osm.ch/tiles/bern2016/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-        "min_zoom": 8,
-        "max_zoom": 21,
+        "available_projections": [
+            "EPSG:2056",
+            "CRS:84",
+            "EPSG:21781",
+            "EPSG:4326"
+        ],
+        "url": "https://map.bern.ch/wms/OpenData/proxy.php?LAYERS=luftbild_2016&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "CH",
-        "type": "tms",
+        "type": "wms",
         "category": "photo",
-        "best": true
+        "best": false,
+        "min_zoom": 10
     },
     "geometry":{"type":"Polygon","coordinates":
       [
@@ -39,7 +44,7 @@
     	  [7.4146941,46.9368183],[7.413844,46.9315682],[7.4070798,46.9303824],[7.408065,46.9256296],[7.4021268,46.9241992],
     	  [7.4014835,46.9211927],[7.3875736,46.9304506],[7.3823129,46.927282],[7.3800187,46.9298929],[7.3808694,46.9324085],
     	  [7.3748669,46.9314306],[7.3748901,46.9327104],[7.368066,46.9323929],[7.3683058,46.930426],[7.3604074,46.9285884],
-    	  [7.3605592,46.9272018],[7.338783,46.9245357],[7.3393683,46.9196675],[7.3274574,46.9190326],[7.3269178,46.9235974],  
+    	  [7.3605592,46.9272018],[7.338783,46.9245357],[7.3393683,46.9196675],[7.3274574,46.9190326],[7.3269178,46.9235974],
     	  [7.324374,46.9251891],[7.3082264,46.9222857],[7.2943145,46.9237564]
        ]
      ]

@@ -2,27 +2,24 @@
     "type": "Feature",
     "properties": {
         "license_url": "http://lists.openstreetmap.ch/pipermail/talk-ch/2016-November/003868.html",
-        "privacy_policy_url": "https://www.bern.ch/disclaimer",
+        "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
+        "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
         "start_date": "2016",
         "end_date": "2016",
-        "id": "Bern-bern2016-wms",
+        "id": "Bern-bern2016-tms",
         "attribution": {
-            "text": "Orthophoto 2016, Vermessungsamt Stadt Bern",
+            "url": "https://www.bern.ch/themen/planen-und-bauen/geodaten-und-plane/nutzungsbedingungengeodaten/nutzungsbedingungen",
+            "text": "Geodaten Stadt Bern",
             "required": true
         },
         "name": "Stadt Bern 10cm (2016)",
-        "available_projections": [
-            "EPSG:2056",
-            "CRS:84",
-            "EPSG:21781",
-            "EPSG:4326"
-        ],
-        "url": "https://map.bern.ch/wms/OpenData/proxy.php?LAYERS=luftbild_2016&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://mapproxy.osm.ch/tiles/bern2016/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "min_zoom": 8,
+        "max_zoom": 21,
         "country_code": "CH",
-        "type": "wms",
+        "type": "tms",
         "category": "photo",
-        "best": true,
-        "min_zoom": 10
+        "best": false
     },
     "geometry":{"type":"Polygon","coordinates":
       [
