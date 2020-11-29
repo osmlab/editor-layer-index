@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -78.531997745432,
-                    -1.805085317123331
-                ],
-                [
-                    -78.531997745432,
-                    -1.608105565001241
-                ],
-                [
-                    -78.33561713019762,
-                    -1.608105565001241
-                ],
-                [
-                    -78.33561713019762,
-                    -1.805085317123331
-                ],
-                [
-                    -78.531997745432,
-                    -1.805085317123331
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -78.531997745431994, -1.805085317123331 ], [ -78.531997745431994, -1.608105565001241 ], [ -78.335617130197619, -1.608105565001241 ], [ -78.335617130197619, -1.805085317123331 ], [ -78.531997745431994, -1.805085317123331 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "EC",
         "description": "2007 ASTER image offering better glacier coverage than common sources (true color with estimated blue)",
         "end_date": "2012-02-05",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-AST_L1T_00302052007154424_20150518041444_91492",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: El Altar",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2012-02-05",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

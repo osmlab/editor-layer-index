@@ -413,17 +413,19 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "\u00a9 agentschap Informatie Vlaanderen"
+            "text": "© agentschap Informatie Vlaanderen"
         },
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:4258",
-            "EPSG:31370",
-            "EPSG:3812",
+            "CRS:84",
+            "EPSG:3035",
             "EPSG:3043",
-            "EPSG:32631",
+            "EPSG:3812",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326",
             "EPSG:25831",
-            "EPSG:3857"
+            "EPSG:31370",
+            "EPSG:32631"
         ],
         "category": "elevation",
         "country_code": "BE",
@@ -435,7 +437,7 @@
         "name": "AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m",
         "start_date": "2013",
         "type": "wms",
-        "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/dhmv/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DHMV_II_HILL_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/dhmv/wms?LAYERS=DHMV_II_HILL_25cm&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }

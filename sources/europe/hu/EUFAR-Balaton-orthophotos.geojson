@@ -1,51 +1,106 @@
 {
-  "type": "Feature",
-  "properties": {
-    "name": "EUFAR Balaton orthophotos",
-    "i18n": true,
-    "type": "tms",
-    "url": "http://e.tile.openstreetmap.hu/balaton/0/{zoom}/{x}/{y}.jpg",
-    "min_zoom": 12,
-    "max_zoom": 19,
-    "permission_osm": "explicit",
-    "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#Balaton",
-    "id": "eufar-balaton",
-    "description": "1940 geo-tagged photography from Balaton Limnological Institute.",
-    "country_code": "HU",
-    "default": false,
-    "best": true,
-    "start_date": "2010-08-01",
-    "end_date": "2010-08-31",
-    "overlay": false,
-    "attribution": {
-      "url": "http://www.bli.okologia.mta.hu/",
-      "text": "EUFAR Balaton ortofotó 2010",
-      "required": true
+    "type": "Feature",
+    "properties": {
+        "name": "EUFAR Balaton orthophotos",
+        "i18n": true,
+        "type": "tms",
+        "url": "http://e.tile.openstreetmap.hu/balaton/0/{zoom}/{x}/{y}.jpg",
+        "min_zoom": 12,
+        "max_zoom": 19,
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#Balaton",
+        "id": "eufar-balaton",
+        "description": "1940 geo-tagged photography from Balaton Limnological Institute.",
+        "country_code": "HU",
+        "default": false,
+        "best": true,
+        "start_date": "2010-08-01",
+        "end_date": "2010-08-31",
+        "overlay": false,
+        "attribution": {
+            "url": "http://www.bli.okologia.mta.hu/",
+            "text": "EUFAR Balaton ortofotó 2010",
+            "required": true
+        },
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    18.1791758,
+                    46.9850246
+                ],
+                [
+                    18.1777274,
+                    47.0181625
+                ],
+                [
+                    18.081758,
+                    47.0564259
+                ],
+                [
+                    18.1028079,
+                    47.0631062
+                ],
+                [
+                    18.0815219,
+                    47.093442
+                ],
+                [
+                    18.0643558,
+                    47.090491
+                ],
+                [
+                    18.0353665,
+                    47.0798252
+                ],
+                [
+                    18.0334353,
+                    47.082616
+                ],
+                [
+                    17.9582047,
+                    47.0556657
+                ],
+                [
+                    17.9943607,
+                    47.0044899
+                ],
+                [
+                    17.8644146,
+                    46.9551741
+                ],
+                [
+                    17.8027361,
+                    47.0102964
+                ],
+                [
+                    17.6718398,
+                    46.9720678
+                ],
+                [
+                    17.238749,
+                    46.7707923
+                ],
+                [
+                    17.2224412,
+                    46.6795954
+                ],
+                [
+                    17.4717507,
+                    46.7030597
+                ],
+                [
+                    18.1673513,
+                    46.9413273
+                ],
+                [
+                    18.1791758,
+                    46.9850246
+                ]
+            ]
+        ]
     }
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [ 18.1791758, 46.9850246 ],
-        [ 18.1777274, 47.0181625 ],
-        [ 18.0817580, 47.0564259 ],
-        [ 18.1028079, 47.0631062 ],
-        [ 18.0815219, 47.0934420 ],
-        [ 18.0643558, 47.0904910 ],
-        [ 18.0353665, 47.0798252 ],
-        [ 18.0334353, 47.0826160 ],
-        [ 17.9582047, 47.0556657 ],
-        [ 17.9943607, 47.0044899 ],
-        [ 17.8644146, 46.9551741 ],
-        [ 17.8027361, 47.0102964 ],
-        [ 17.6718398, 46.9720678 ],
-        [ 17.2387490, 46.7707923 ],
-        [ 17.2224412, 46.6795954 ],
-        [ 17.4717507, 46.7030597 ],
-        [ 18.1673513, 46.9413273 ],
-        [ 18.1791758, 46.9850246 ]
-      ]
-    ]
-  }
 }

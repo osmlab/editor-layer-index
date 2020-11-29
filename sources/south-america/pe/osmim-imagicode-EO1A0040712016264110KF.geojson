@@ -1,56 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -72.7594470977783,
-                    -15.68684010813036
-                ],
-                [
-                    -72.7594470977783,
-                    -15.49570157136026
-                ],
-                [
-                    -72.74434089660643,
-                    -15.426295586903299
-                ],
-                [
-                    -72.41286277770995,
-                    -15.426295586903299
-                ],
-                [
-                    -72.41286277770995,
-                    -15.652957427428944
-                ],
-                [
-                    -72.42410659790038,
-                    -15.686674840407827
-                ],
-                [
-                    -72.7594470977783,
-                    -15.68684010813036
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -72.759447097778306, -15.68684010813036 ], [ -72.759447097778306, -15.495701571360261 ], [ -72.744340896606431, -15.426295586903299 ], [ -72.412862777709947, -15.426295586903299 ], [ -72.412862777709947, -15.652957427428944 ], [ -72.424106597900376, -15.686674840407827 ], [ -72.759447097778306, -15.68684010813036 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "PE",
         "description": "Up-to-date image for glacier mapping (true color)",
         "end_date": "2016-09-21",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-EO1A0040712016264110KF",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 14,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Coropuna",
+        "max_zoom": 14,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-09-21",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=EO1A0040712016264110KF&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=EO1A0040712016264110KF&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

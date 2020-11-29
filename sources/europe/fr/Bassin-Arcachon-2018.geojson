@@ -1,10 +1,10 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
-        "id": "SIBA_2018", 
-        "name": "Bassin d Arcachon 2018", 
-        "type": "wms", 
-        "url": "https://siba.geosphere.fr/cgi-bin/mapserv.exe?map=C:/ms4w/geosphere/client1/Carte12_IA.map&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Couche51&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
+        "id": "SIBA_2018",
+        "name": "Bassin d Arcachon 2018",
+        "type": "wms",
+        "url": "https://siba.geosphere.fr/cgi-bin/mapserv.exe?MAP=C:/ms4w/geosphere/client1/Carte12_IA.map&LAYERS=Couche51&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "end_date": "2018",
         "start_date": "2018",
         "country_code": "FR",
@@ -12,15 +12,16 @@
             "EPSG:2154"
         ],
         "attribution": {
-            "text": "SIBA Vues aeriennes 2018", 
+            "text": "SIBA Vues aeriennes 2018",
             "required": true
         },
         "max_zoom": 20,
         "license_url": "https://madada.fr/request/9/response/39/attach/2/SIBA%20Licence%20Ouverte.pdf",
-        "privacy_policy_url": "https://madada.fr/demande/les_orthophotoplans_de_la_campag"
-    }, 
+        "privacy_policy_url": "https://madada.fr/demande/les_orthophotoplans_de_la_campag",
+        "category": "photo"
+    },
     "geometry": {
-        "type": "Polygon", 
+        "type": "Polygon",
         "coordinates": [
             [
                 [

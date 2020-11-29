@@ -1,102 +1,103 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "Bytom-2012",
-    "name": "Bytom: Orthophotomap 2012 (aerial image)",
-    "type": "wms",
-    "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tiff_ortofoto_2012&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "start_date": "2012",
-    "end_date": "2012",
-    "country_code": "PL",
-    "available_projections": [
-      "EPSG:2177"
-    ],
-    "attribution": {
-      "text": "Urząd Miasta Bytomia"
+    "type": "Feature",
+    "properties": {
+        "id": "Bytom-2012",
+        "name": "Bytom: Orthophotomap 2012 (aerial image)",
+        "type": "wms",
+        "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tiff_ortofoto_2012&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2012",
+        "end_date": "2012",
+        "country_code": "PL",
+        "available_projections": [
+            "EPSG:2177"
+        ],
+        "attribution": {
+            "text": "Urząd Miasta Bytomia"
+        },
+        "max_zoom": 23,
+        "category": "historicphoto"
     },
-    "max_zoom": 23
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          18.8103303,
-          50.4071538
-        ],
-        [
-          18.810322,
-          50.4161053
-        ],
-        [
-          18.900803,
-          50.4151313
-        ],
-        [
-          18.9001228,
-          50.3792274
-        ],
-        [
-          18.9453243,
-          50.3785601
-        ],
-        [
-          18.9451526,
-          50.3699186
-        ],
-        [
-          18.9673518,
-          50.3698389
-        ],
-        [
-          18.9659319,
-          50.3157291
-        ],
-        [
-          18.8770839,
-          50.3165362
-        ],
-        [
-          18.8766077,
-          50.3255944
-        ],
-        [
-          18.8544306,
-          50.3257594
-        ],
-        [
-          18.8550752,
-          50.3348092
-        ],
-        [
-          18.8317632,
-          50.3346697
-        ],
-        [
-          18.8324054,
-          50.3438225
-        ],
-        [
-          18.8092549,
-          50.3439859
-        ],
-        [
-          18.8097098,
-          50.3707346
-        ],
-        [
-          18.787513,
-          50.3709899
-        ],
-        [
-          18.7881165,
-          50.4074093
-        ],
-        [
-          18.8103303,
-          50.4071538
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    18.8103303,
+                    50.4071538
+                ],
+                [
+                    18.810322,
+                    50.4161053
+                ],
+                [
+                    18.900803,
+                    50.4151313
+                ],
+                [
+                    18.9001228,
+                    50.3792274
+                ],
+                [
+                    18.9453243,
+                    50.3785601
+                ],
+                [
+                    18.9451526,
+                    50.3699186
+                ],
+                [
+                    18.9673518,
+                    50.3698389
+                ],
+                [
+                    18.9659319,
+                    50.3157291
+                ],
+                [
+                    18.8770839,
+                    50.3165362
+                ],
+                [
+                    18.8766077,
+                    50.3255944
+                ],
+                [
+                    18.8544306,
+                    50.3257594
+                ],
+                [
+                    18.8550752,
+                    50.3348092
+                ],
+                [
+                    18.8317632,
+                    50.3346697
+                ],
+                [
+                    18.8324054,
+                    50.3438225
+                ],
+                [
+                    18.8092549,
+                    50.3439859
+                ],
+                [
+                    18.8097098,
+                    50.3707346
+                ],
+                [
+                    18.787513,
+                    50.3709899
+                ],
+                [
+                    18.7881165,
+                    50.4074093
+                ],
+                [
+                    18.8103303,
+                    50.4071538
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }
