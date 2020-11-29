@@ -88,7 +88,7 @@
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
         "name": "Taiwan Village Boundaries",
         "type": "wms",
-        "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://wms.nlsc.gov.tw/wms?LAYERS=Village&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "category": "other"
     },
     "type": "Feature"

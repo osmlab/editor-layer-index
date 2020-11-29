@@ -5,7 +5,7 @@
         "name": "Frankfurt am Main Luftbild 2017",
         "description": "aerial imagery of Frankfurt am Main, photographed on 11.06.2017 and 06.07.2017",
         "type": "wms",
-        "url": "https://geoportal.frankfurt.de/opendata/luftbild-2017.exe?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=wms_opendata_luftbilder_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoportal.frankfurt.de/opendata/luftbild-2017.exe?LAYERS=wms_opendata_luftbilder_2017&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "privacy_policy_url": "https://geoportal.frankfurt.de/impressum/datenschutz.html",
         "start_date": "2016-05-06",
         "end_date": "2016-05-06",
