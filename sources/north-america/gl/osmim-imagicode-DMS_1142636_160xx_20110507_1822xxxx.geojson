@@ -1,56 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -68.93976917529807,
-                    76.51132557714853
-                ],
-                [
-                    -68.93976917529807,
-                    76.54990046497333
-                ],
-                [
-                    -68.76634826923117,
-                    76.55175699880375
-                ],
-                [
-                    -68.50992908740743,
-                    76.55175699880375
-                ],
-                [
-                    -68.50743999744161,
-                    76.51611959755911
-                ],
-                [
-                    -68.67897262836203,
-                    76.51193618208278
-                ],
-                [
-                    -68.93976917529807,
-                    76.51132557714853
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -68.939769175298068, 76.511325577148526 ], [ -68.939769175298068, 76.549900464973334 ], [ -68.766348269231173, 76.551756998803754 ], [ -68.509929087407428, 76.551756998803754 ], [ -68.507439997441608, 76.516119597559111 ], [ -68.678972628362033, 76.511936182082778 ], [ -68.939769175298068, 76.511325577148526 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "GL",
         "description": "Icebridge DMS image - alignment might be poor",
         "end_date": "2011-05-07",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-DMS_1142636_160xx_20110507_1822xxxx",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 15,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Thule Air Base",
+        "max_zoom": 15,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2011-05-07",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=DMS_1142636_160xx_20110507_1822xxxx&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=DMS_1142636_160xx_20110507_1822xxxx&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

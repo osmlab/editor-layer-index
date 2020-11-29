@@ -1,52 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    73.06896521028185,
-                    -53.270590689700434
-                ],
-                [
-                    73.06896521028185,
-                    -52.875489636268725
-                ],
-                [
-                    73.67338491853381,
-                    -52.87673289134188
-                ],
-                [
-                    74.08863378938341,
-                    -52.94950473139763
-                ],
-                [
-                    74.08863378938341,
-                    -53.270590689700434
-                ],
-                [
-                    73.06896521028185,
-                    -53.270590689700434
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 73.068965210281846, -53.270590689700434 ], [ 73.068965210281846, -52.875489636268725 ], [ 73.673384918533813, -52.876732891341881 ], [ 74.088633789383408, -52.949504731397631 ], [ 74.088633789383408, -53.270590689700434 ], [ 73.068965210281846, -53.270590689700434 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "AU",
         "description": "Recent image of Heard island with interior mostly cloud covered but mostly well visible coast (true color)",
         "end_date": "2016-04-12",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R047_S54_20160411T044330",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Heard Island coast",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-04-12",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

@@ -6,9 +6,10 @@
             "required": false
         },
         "available_projections": [
-            "EPSG:21781",
             "EPSG:3857",
             "EPSG:4326",
+            "CRS:84",
+            "EPSG:21781",
             "EPSG:2056"
         ],
         "best": true,
@@ -20,9 +21,10 @@
         "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
         "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
         "type": "wms",
-        "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2011_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "min_zoom": 10,
-        "max_zoom": 21
+        "category": "photo",
+        "description": "Ausdehnung: ganzer Kanton Aufloesung: 10cm per Pixel Bildflug: 1.4.2011",
+        "url": "https://services.geo.zg.ch/ows/Orthofotos?LAYERS=zg.orthofoto_2011_kt_zg&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 10
     },
     "geometry": {
         "type": "Polygon",

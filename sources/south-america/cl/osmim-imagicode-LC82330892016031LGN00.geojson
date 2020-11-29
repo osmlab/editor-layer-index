@@ -1,52 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -72.8669610523419,
-                    -41.51741123877955
-                ],
-                [
-                    -72.8669610523419,
-                    -41.045274923011036
-                ],
-                [
-                    -72.23181395761533,
-                    -41.045274923011036
-                ],
-                [
-                    -71.87510161630674,
-                    -41.10829439141359
-                ],
-                [
-                    -72.00007109872861,
-                    -41.51741123877955
-                ],
-                [
-                    -72.8669610523419,
-                    -41.51741123877955
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -72.866961052341907, -41.517411238779552 ], [ -72.866961052341907, -41.045274923011036 ], [ -72.23181395761533, -41.045274923011036 ], [ -71.875101616306736, -41.108294391413587 ], [ -72.000071098728611, -41.517411238779552 ], [ -72.866961052341907, -41.517411238779552 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "CL",
         "description": "Image from after the 2015 eruption (true color)",
         "end_date": "2016-01-31",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC82330892016031LGN00",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Volcán Calbuco",
         "max_zoom": 13,
-        "name": "imagico.de: Volc\u00e1n Calbuco",
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-01-31",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

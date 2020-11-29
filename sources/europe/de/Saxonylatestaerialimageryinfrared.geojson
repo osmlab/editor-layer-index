@@ -513,9 +513,10 @@
             "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=ba87bbed-4cb5-4539-a9f5-f863de752f52"
         },
         "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
             "EPSG:25833",
-            "EPSG:3857",
             "EPSG:31468"
         ],
         "country_code": "DE",
@@ -524,7 +525,8 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
         "name": "Saxony latest aerial imagery infrared",
         "type": "wms",
-        "url": "https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=sn_dop_020_cir&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?LAYERS=sn_dop_020_cir&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "photo"
     },
     "type": "Feature"
 }

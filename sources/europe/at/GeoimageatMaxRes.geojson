@@ -777,8 +777,9 @@
             "url": "http://geoimage.at"
         },
         "available_projections": [
-            "EPSG:3857",
-            "EPSG:31287",
+            "CRS:84",
+            "EPSG:25832",
+            "EPSG:25833",
             "EPSG:3034",
             "EPSG:3035",
             "EPSG:3044",
@@ -789,21 +790,25 @@
             "EPSG:31257",
             "EPSG:31258",
             "EPSG:31259",
+            "EPSG:31287",
             "EPSG:32632",
             "EPSG:32633",
             "EPSG:3416",
+            "EPSG:3857",
             "EPSG:4258",
             "EPSG:4326"
-        ],
+                ],
         "country_code": "AT",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/GeoimageatMaxRes.png",
         "id": "geoimage.at",
-        "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
+        "license_url": "http://www.geoimage.at/geoimage/geodatendienste",
+        "privacy_policy_url": "https://www.bmlrt.gv.at/datenschutzinformationen.html",
+        "description": "Aktuelle Digitale Orthophotos des LFRZ aus gemeinsamen Befliegungen mit den Landesregierungen",
         "name": "Geoimage.at MaxRes",
         "permission_osm": "explicit",
         "type": "wms",
         "category": "photo",
-        "url": "https://gis.bmlfuw.gv.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://gis.bmlfuw.gv.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&service=WMS&LAYERS=Luftbild&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }

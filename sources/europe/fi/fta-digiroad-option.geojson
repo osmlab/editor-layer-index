@@ -6,18 +6,20 @@
         "id": "fta-digiroad-option",
         "country_code": "FI",
         "description": "Digiroad national road network from the Finnish Transport Agency with several options for map layers.",
-        "url": "https://extranet.liikennevirasto.fi/inspirepalvelu/beta/wms?service=wms&request=getCapabilities",
-        "icon": "https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png",
+        "url": "https://julkinen.vayla.fi/inspirepalvelu/wms?service=wms&request=getCapabilities",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/V%C3%A4yl%C3%A4virasto_logo.svg/200px-V%C3%A4yl%C3%A4virasto_logo.svg.png",
         "min_zoom": 3,
         "max_zoom": 20,
         "overlay": true,
         "attribution": {
             "required": true,
-            "text": "\u00a9 Liikennevirasto",
-            "url": "https://www.liikennevirasto.fi/web/en/open-data/digiroad/"
+            "text": "\u00a9 Väylävirasto",
+            "url": "https://vayla.fi/web/en/open-data/digiroad/"
         },
-        "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf"
-    }, 
+        "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf",
+        "privacy_policy_url": "https://vayla.fi/web/en/contact-information/data-protection",
+        "category": "other"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -42,5 +44,5 @@
             [29.15634,69.69667],[28.38455,69.83488],[28.35845,69.88312],[28.17169,69.92511],[28.00415,70.01495],
             [27.96569,70.09880]
         ]]
-    }      
+    }
 }
