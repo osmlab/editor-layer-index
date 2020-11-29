@@ -7,7 +7,7 @@ import logging
 import os
 import re
 import xml.etree.ElementTree as ET
-from collections import OrderedDict, namedtuple
+from collections import OrderedDict, namedtuple, defaultdict
 from io import StringIO
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import aiohttp
@@ -15,7 +15,7 @@ import imagehash
 import mercantile
 import pyproj
 from PIL import Image
-from shapely.geometry import shape
+from shapely.geometry import shape, box
 from pyproj import Transformer
 from pyproj.crs import CRS
 import aiofiles
@@ -59,6 +59,14 @@ for pj_type in pyproj.enums.PJType:
     )
 
 epsg_3857_alias = set(['EPSG:{}'.format(epsg) for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]])
+
+
+def max_count(elements):
+    """ Return the occurences of the most common element"""
+    counts = defaultdict(int)
+    for el in elements:
+        counts[el] += 1
+    return max(counts.items(), key=lambda x: x[1])[1]
 
 
 def compare_projs(old_projs, new_projs):
@@ -488,7 +496,7 @@ async def process_source(filename, session: ClientSession):
         # We are finished if it was not possible to get the image
         return
 
-    if str(image_hash) in {'0000000000000000', 'FFFFFFFFFFFFFFFF'}:
+    if max_count(str(image_hash)) == 16:
         # These image hashes indicate that the downloaded image is not useful to determine
         # if the updated query returns the same image
         logging.info(
@@ -537,6 +545,32 @@ async def process_source(filename, session: ClientSession):
                                                                       new_image_hash,
                                                                       "||".join(original_img_messages),
                                                                       "||".join(new_img_messages)))
+
+    # Servers might support projections that are not used in the area covered by a source
+    # Keep only EPSG codes that are used in the area covered by the sources geometry
+    if source['geometry'] is not None:
+        epsg_outside_area_of_use = set()
+        for epsg in source['properties']['available_projections']:
+            try:
+                if epsg == 'CRS:84':
+                    continue
+                crs = CRS.from_string(epsg)
+                area_of_use = crs.area_of_use
+                crs_box = box(
+                    area_of_use.west,
+                    area_of_use.south,
+                    area_of_use.east,
+                    area_of_use.north,
+                )
+                if not crs_box.intersects(geom):
+                    epsg_outside_area_of_use.add(epsg)
+            except Exception as e:
+                logging.exception("Could not check area of use for projection {}: {}".format(epsg, str(e)))
+                continue
+        if len(result["available_projections"]) == len(epsg_outside_area_of_use):
+            logging.error("{}: epsg_outside_area_of_use filter removes all EPSG".format(filename))
+        result["available_projections"] = [epsg for epsg in result["available_projections"]
+                                           if epsg not in epsg_outside_area_of_use]
 
     # Servers that report a lot of projection may be configured wrongly
     # Check for CRS:84, EPSG:3857, EPSG:4326 and keep existing projections if still advertised
