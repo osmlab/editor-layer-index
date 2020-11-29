@@ -456,19 +456,21 @@
             "text": "City of Cape Town Aerial",
             "url": "https://www.arcgis.com/sharing/rest/content/items/739759d8127f4d1f9ba8ef9019878147/info/metadata/metadata.xml?format=default&output=html"
         },
-        "best": true,
         "country_code": "ZA",
-        "description": "City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance.",
-        "end_date": "2018",
-        "id": "South_Africa-CapeTown-Aerial-2018",
-        "name": "2018 Aerial Imagery from the City of Cape Town",
+        "description": "City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance",
+        "end_date": "2017",
+        "id": "South_Africa-CapeTown-Aerial-2017-rest",
+        "name": "City of Cape Town 2017 Aerial",
         "permission_osm": "explicit",
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
-        "start_date": "2018",
-        "type": "wmts",
+        "start_date": "2017",
+        "type": "wms",
+        "available_projections": [
+            "EPSG:3857"
+        ],
         "privacy_policy_url": "https://www.capetown.gov.za/General/Privacy",
-        "url": "https://citymaps.capetown.gov.za/agsext1/rest/services/Aerial_Photography_Cached/AP_2018_Feb/MapServer/WMTS/1.0.0/WMTSCapabilities.xml",
-        "category": "photo"
+        "url": "https://citymaps.capetown.gov.za/agsext1/rest/services/Aerial_Photography_Cached/AP_2017_Jan/MapServer/export?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
+        "category": "historicphoto"
     },
     "type": "Feature"
 }
