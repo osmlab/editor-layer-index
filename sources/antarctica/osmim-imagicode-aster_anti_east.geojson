@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ 159.6688, -83.1798 ], [ 180.0, -83.8305 ], [ 180.0, -85.0511 ], [ 155.693, -85.0511 ], [ 153.0905, -84.8712 ], [ 159.6688, -83.1798 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "ASTER imagery from 2001-2009 from the far southern Transantarctic Mountains - eastern hemisphere, positional accuracy in parts is bad (true color with estimated blue)",
+        "end_date": "2009",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-aster_anti_east",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Far southern Transantarctic Mnts. east",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "2001",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti_east&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}
