@@ -18,14 +18,14 @@ find sources -name \*.geojson | xargs python scripts/check.py -vv
 
 """
 
-import json
 import io
-from argparse import ArgumentParser
-from jsonschema import ValidationError, RefResolver, Draft4Validator
-import colorlog
+import json
 import os
-
-from shapely.geometry import shape
+from argparse import ArgumentParser
+import colorlog
+from jsonschema import Draft4Validator, RefResolver, ValidationError
+from shapely.geometry import Polygon, shape
+from shapely.ops import cascaded_union
 
 
 def dict_raise_on_duplicates(ordered_pairs):
@@ -63,6 +63,28 @@ borkenbuild = False
 spacesave = 0
 
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
+
+countries = {}
+with open(
+    os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), "data", "countries.geojson"
+    ),
+    encoding="utf-8",
+) as f:
+    data = json.load(f)
+    for feature in data["features"]:
+        countries[feature["properties"]["ISO3166-1"]] = shape(feature["geometry"])
+
+
+def parse_eli_geometry(geometry):
+    """ELI currently uses a geometry encoding not compatible with geojson.
+    Create valid geometries from this format."""
+    _geom = shape(geometry)
+    geoms = [Polygon(_geom.exterior.coords)]
+    for ring in _geom.interiors:
+        geoms.append(Polygon(ring.coords))
+    return cascaded_union(geoms)
+
 
 for filename in arguments.path:
 
@@ -141,6 +163,8 @@ for filename in arguments.path:
                 raise ValidationError("{} should have a Polygon geometry".format(filename))
             if not 'country_code' in source['properties']:
                 raise ValidationError("{} should have a country or be global".format(filename))
+
+            # Check geometry bounds
             min_lon, min_lat, max_lon, max_lat = shape(source['geometry']).bounds
             within_bounds = True
             for lon in [min_lon, max_lon]:
@@ -152,6 +176,26 @@ for filename in arguments.path:
             if not within_bounds:
                 raise ValidationError("{} contains invalid coordinates.: Geometry extent: {}"
                                       "".format(filename, ",".join(map(str, [min_lon, min_lat, max_lon, max_lat]))))
+
+            # Check if geometry intersects country of country_code
+            country_code = source["properties"]["country_code"]
+
+            # Following codes are currently failing
+            if country_code not in {"AQ", "ZZ", "PS", "XN", "EU", "BV"}:
+                if country_code not in countries:
+                    ValidationError(
+                        "{} no geometry available for country_code {}".format(
+                            filename, country_code
+                        )
+                    )
+                geom = parse_eli_geometry(source["geometry"])
+                if not geom.intersects(countries[country_code]):
+                    ValidationError(
+                        "{} geometry does not intersect with geometry of country ".format(
+                            filename, country_code
+                        )
+                    )
+
         else:
             if 'geometry' not in source:
                 ValidationError("{} should have null geometry".format(filename))
