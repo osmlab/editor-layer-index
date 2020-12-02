@@ -15,11 +15,12 @@ import imagehash
 import mercantile
 import pyproj
 from PIL import Image
-from shapely.geometry import shape, box
+from shapely.geometry import shape, box, Polygon, Point
 from pyproj import Transformer
 from pyproj.crs import CRS
 import aiofiles
 from aiohttp import ClientSession
+from shapely.ops import cascaded_union
 
 logging.basicConfig(level=logging.INFO)
 
@@ -59,6 +60,16 @@ for pj_type in pyproj.enums.PJType:
     )
 
 epsg_3857_alias = set(['EPSG:{}'.format(epsg) for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]])
+
+
+def parse_eli_geometry(geometry):
+    """ELI currently uses a geometry encoding not compatible with geojson.
+    Create valid geometries from this format."""
+    _geom = shape(geometry)
+    geoms = [Polygon(_geom.exterior.coords)]
+    for ring in _geom.interiors:
+        geoms.append(Polygon(ring.coords))
+    return cascaded_union(geoms)
 
 
 def max_count(elements):
@@ -478,12 +489,15 @@ async def process_source(filename, session: ClientSession):
         return
     if 'geometry' not in source:
         return
+
     if source['geometry'] is None:
-        return
+        geom = box(-180, -90, 180, 90)
+        pt = Point(7.44, 46.56)
+    else:
+        geom = parse_eli_geometry(source['geometry'])
+        pt = geom.representative_point()
 
     # Get existing image hash
-    geom = shape(source['geometry'])
-    pt = geom.representative_point()
     original_img_messages = []
     image_hash = await get_image(url=source['properties']['url'],
                                  available_projections=source['properties']['available_projections'],
