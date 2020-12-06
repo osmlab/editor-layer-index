@@ -24,13 +24,15 @@ from shapely.ops import cascaded_union
 
 logging.basicConfig(level=logging.INFO)
 
-parser = argparse.ArgumentParser(description='Update WMS URLs and related properties')
-parser.add_argument('sources',
-                    metavar='sources',
-                    type=str,
-                    nargs='?',
-                    help='path to sources directory',
-                    default="sources")
+parser = argparse.ArgumentParser(description="Update WMS URLs and related properties")
+parser.add_argument(
+    "sources",
+    metavar="sources",
+    type=str,
+    nargs="?",
+    help="path to sources directory",
+    default="sources",
+)
 
 args = parser.parse_args()
 sources_directory = args.sources
@@ -39,18 +41,26 @@ response_cache = {}
 domain_locks = {}
 domain_lock = asyncio.Lock()
 
-RequestResult = namedtuple('RequestResultCache',
-                           ['status', 'text', 'exception'],
-                           defaults=[None, None, None])
+RequestResult = namedtuple(
+    "RequestResultCache", ["status", "text", "exception"], defaults=[None, None, None]
+)
 
 ZOOM_LEVEL = 14
 
 
 # Before adding a new WMS version, it should be checked if every consumer supports it!
-supported_wms_versions = ['1.3.0', '1.1.1', '1.1.0', '1.0.0']
+supported_wms_versions = ["1.3.0", "1.1.1", "1.1.0", "1.0.0"]
+
+
+epsg_3857_alias = set(
+    [
+        "EPSG:{}".format(epsg)
+        for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]
+    ]
+)
 
 # List of not deprecated EPSG codes
-valid_epsgs = set()
+valid_epsgs = set(["CRS:84"])
 for pj_type in pyproj.enums.PJType:
     valid_epsgs.update(
         map(
@@ -59,7 +69,8 @@ for pj_type in pyproj.enums.PJType:
         )
     )
 
-epsg_3857_alias = set(['EPSG:{}'.format(epsg) for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]])
+# EPSG:3857 alias are valid if server does not support EPSG:3857
+valid_epsgs.update(epsg_3857_alias)
 
 
 def parse_eli_geometry(geometry):
@@ -81,7 +92,7 @@ def max_count(elements):
 
 
 def compare_projs(old_projs, new_projs):
-    """ Compare two collections of projections. Returns True if both collections contain the same elements.
+    """Compare two collections of projections. Returns True if both collections contain the same elements.
 
     Parameters
     ----------
@@ -97,7 +108,7 @@ def compare_projs(old_projs, new_projs):
 
 
 def compare_urls(old_url, new_url):
-    """ Compare URLs. Returns True if the urls contain the same parameters.
+    """Compare URLs. Returns True if the urls contain the same parameters.
 
     Parameters
     ----------
@@ -117,8 +128,10 @@ def compare_urls(old_url, new_url):
     return set(old_parameters) == set(new_parameters)
 
 
-async def get_url(url: str, session: ClientSession, with_text=False, with_data=False, headers=None):
-    """ Fetch url.
+async def get_url(
+    url: str, session: ClientSession, with_text=False, with_data=False, headers=None
+):
+    """Fetch url.
 
     This function ensures that only one request is sent to a domain at one point in time and that the same url is not
     queried more than once.
@@ -150,24 +163,34 @@ async def get_url(url: str, session: ClientSession, with_text=False, with_data=F
             for i in range(3):
                 try:
                     logging.debug("GET {}".format(url))
-                    async with session.request(method="GET", url=url, ssl=False, headers=headers) as response:
+                    async with session.request(
+                        method="GET", url=url, ssl=False, headers=headers
+                    ) as response:
                         status = response.status
                         if with_text:
                             try:
                                 text = await response.text()
                             except:
                                 text = await response.read()
-                            response_cache[url] = RequestResult(status=status, text=text)
+                            response_cache[url] = RequestResult(
+                                status=status, text=text
+                            )
                         elif with_data:
                             data = await response.read()
-                            response_cache[url] = RequestResult(status=status, text=data)
+                            response_cache[url] = RequestResult(
+                                status=status, text=data
+                            )
                         else:
                             response_cache[url] = RequestResult(status=status)
                 except asyncio.TimeoutError:
-                    response_cache[url] = RequestResult(exception="Timeout for: {}".format(url))
+                    response_cache[url] = RequestResult(
+                        exception="Timeout for: {}".format(url)
+                    )
                 except Exception as e:
                     logging.debug("Error for: {} ({})".format(url, str(e)))
-                    response_cache[url] = RequestResult(exception="Exception {} for: {}".format(str(e), url))
+                    response_cache[url] = RequestResult(
+                        exception="Exception {} for: {}".format(str(e), url)
+                    )
                 if RequestResult.exception is None:
                     break
                 await asyncio.sleep(5)
@@ -178,7 +201,7 @@ async def get_url(url: str, session: ClientSession, with_text=False, with_data=F
 
 
 async def get_image(url, available_projections, lon, lat, zoom, session, messages):
-    """ Download image (tms tile for coordinate lon,lat on level zoom and calculate image hash
+    """Download image (tms tile for coordinate lon,lat on level zoom and calculate image hash
 
     Parameters
     ----------
@@ -199,12 +222,12 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
     bounds = list(mercantile.bounds(tile))
 
     proj = None
-    if 'EPSG:4326' in available_projections:
-        proj = 'EPSG:4326'
-    elif 'EPSG:3857' in available_projections:
-        proj = 'EPSG:3857'
+    if "EPSG:4326" in available_projections:
+        proj = "EPSG:4326"
+    elif "EPSG:3857" in available_projections:
+        proj = "EPSG:3857"
     else:
-        for proj in available_projections:
+        for proj in sorted(available_projections):
             try:
                 CRS.from_string(proj)
             except:
@@ -216,30 +239,27 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
 
     crs_from = CRS.from_string("epsg:4326")
     crs_to = CRS.from_string(proj)
-    if not proj == 'EPSG:4326':
+    if not proj == "EPSG:4326":
         transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
-        bounds = list(transformer.transform(bounds[0], bounds[1])) + \
-                 list(transformer.transform(bounds[2], bounds[3]))
+        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
+            transformer.transform(bounds[2], bounds[3])
+        )
 
     # WMS < 1.3.0 assumes x,y coordinate ordering.
     # WMS 1.3.0 expects coordinate ordering defined in CRS.
-    if crs_to.axis_info[0].direction == 'north' and '=1.3.0' in url:
-        bbox = ",".join(map(str, [bounds[1],
-                                  bounds[0],
-                                  bounds[3],
-                                  bounds[2]]))
+    if crs_to.axis_info[0].direction == "north" and "=1.3.0" in url:
+        bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
     else:
         bbox = ",".join(map(str, bounds))
 
-    formatted_url = url.format(proj=proj,
-                               width=512,
-                               height=512,
-                               bbox=bbox)
+    formatted_url = url.format(proj=proj, width=512, height=512, bbox=bbox)
     messages.append("Image URL: {}".format(formatted_url))
     for i in range(3):
         try:
             # Download image
-            async with session.request(method="GET", url=formatted_url, ssl=False) as response:
+            async with session.request(
+                method="GET", url=formatted_url, ssl=False
+            ) as response:
                 data = await response.read()
                 img = Image.open(io.BytesIO(data))
                 img_hash = imagehash.average_hash(img)
@@ -253,9 +273,9 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
 
 
 def parse_wms(xml):
-    """ Rudimentary parsing of WMS Layers from GetCapabilites Request
-        owslib.wms seems to have problems parsing some weird not relevant metadata.
-        This function aims at only parsing relevant layer metadata
+    """Rudimentary parsing of WMS Layers from GetCapabilites Request
+    owslib.wms seems to have problems parsing some weird not relevant metadata.
+    This function aims at only parsing relevant layer metadata
     """
     wms = {}
     # Remove prefixes to make parsing easier
@@ -263,83 +283,89 @@ def parse_wms(xml):
     try:
         it = ET.iterparse(StringIO(xml))
         for _, el in it:
-            _, _, el.tag = el.tag.rpartition('}')
+            _, _, el.tag = el.tag.rpartition("}")
         root = it.root
     except:
         raise RuntimeError("Could not parse XML.")
 
     root_tag = root.tag.rpartition("}")[-1]
-    if root_tag in {'ServiceExceptionReport', 'ServiceException'}:
+    if root_tag in {"ServiceExceptionReport", "ServiceException"}:
         raise RuntimeError("WMS service exception")
 
-    if root_tag not in {'WMT_MS_Capabilities', 'WMS_Capabilities'}:
-        raise RuntimeError("No Capabilities Element present: Root tag: {}".format(root_tag))
+    if root_tag not in {"WMT_MS_Capabilities", "WMS_Capabilities"}:
+        raise RuntimeError(
+            "No Capabilities Element present: Root tag: {}".format(root_tag)
+        )
 
-    if 'version' not in root.attrib:
+    if "version" not in root.attrib:
         raise RuntimeError("WMS version cannot be identified.")
-    version = root.attrib['version']
-    wms['version'] = version
+    version = root.attrib["version"]
+    wms["version"] = version
 
     layers = {}
 
     def parse_layer(element, crs=set(), styles={}, bbox=None):
-        new_layer = {'CRS': crs,
-                     'Styles': {},
-                     'BBOX': bbox}
-        new_layer['Styles'].update(styles)
-        for tag in ['Name', 'Title', 'Abstract']:
+        new_layer = {"CRS": crs, "Styles": {}, "BBOX": bbox}
+        new_layer["Styles"].update(styles)
+        for tag in ["Name", "Title", "Abstract"]:
             e = element.find("./{}".format(tag))
             if e is not None:
                 new_layer[e.tag] = e.text
-        for tag in ['CRS', 'SRS']:
+        for tag in ["CRS", "SRS"]:
             es = element.findall("./{}".format(tag))
             for e in es:
                 new_layer["CRS"].add(e.text.upper())
-        for tag in ['Style']:
+        for tag in ["Style"]:
             es = element.findall("./{}".format(tag))
             for e in es:
                 new_style = {}
-                for styletag in ['Title', 'Name']:
+                for styletag in ["Title", "Name"]:
                     el = e.find("./{}".format(styletag))
                     if el is not None:
                         new_style[styletag] = el.text
-                new_layer["Styles"][new_style['Name']] = new_style
+                new_layer["Styles"][new_style["Name"]] = new_style
         # WMS Version 1.3.0
         e = element.find("./EX_GeographicBoundingBox")
         if e is not None:
-            bbox = [float(e.find("./{}".format(orient)).text.replace(',', '.'))
-                    for orient in ['westBoundLongitude',
-                                   'southBoundLatitude',
-                                   'eastBoundLongitude',
-                                   'northBoundLatitude']]
-            new_layer['BBOX'] = bbox
+            bbox = [
+                float(e.find("./{}".format(orient)).text.replace(",", "."))
+                for orient in [
+                    "westBoundLongitude",
+                    "southBoundLatitude",
+                    "eastBoundLongitude",
+                    "northBoundLatitude",
+                ]
+            ]
+            new_layer["BBOX"] = bbox
         # WMS Version < 1.3.0
         e = element.find("./LatLonBoundingBox")
         if e is not None:
-            bbox = [float(e.attrib[orient].replace(',', '.')) for orient in ['minx', 'miny', 'maxx', 'maxy']]
-            new_layer['BBOX'] = bbox
+            bbox = [
+                float(e.attrib[orient].replace(",", "."))
+                for orient in ["minx", "miny", "maxx", "maxy"]
+            ]
+            new_layer["BBOX"] = bbox
 
-        if 'Name' in new_layer:
-            layers[new_layer['Name']] = new_layer
+        if "Name" in new_layer:
+            layers[new_layer["Name"]] = new_layer
 
         for sl in element.findall("./Layer"):
-            parse_layer(sl,
-                        new_layer['CRS'].copy(),
-                        new_layer['Styles'],
-                        new_layer['BBOX'])
+            parse_layer(
+                sl, new_layer["CRS"].copy(), new_layer["Styles"], new_layer["BBOX"]
+            )
 
     # Find child layers. CRS and Styles are inherited from parent
     top_layers = root.findall(".//Capability/Layer")
     for top_layer in top_layers:
         parse_layer(top_layer)
 
-    wms['layers'] = layers
+    wms["layers"] = layers
 
     # Parse formats
     formats = []
     for es in root.findall(".//Capability/Request/GetMap/Format"):
         formats.append(es.text)
-    wms['formats'] = formats
+    wms["formats"] = formats
 
     # Parse access constraints and fees
     constraints = []
@@ -348,14 +374,14 @@ def parse_wms(xml):
     fees = []
     for es in root.findall(".//Fees"):
         fees.append(es.text)
-    wms['Fees'] = fees
-    wms['AccessConstraints'] = constraints
+    wms["Fees"] = fees
+    wms["AccessConstraints"] = constraints
 
     return wms
 
 
 async def update_wms(wms_url, session: ClientSession, messages):
-    """ Update wms parameters using WMS GetCapabilities request
+    """Update wms parameters using WMS GetCapabilities request
 
     Parameters
     ----------
@@ -375,22 +401,31 @@ async def update_wms(wms_url, session: ClientSession, messages):
     for k, v in parse_qsl(u.query, keep_blank_values=True):
         wms_args[k.lower()] = v
 
-    layers = wms_args['layers'].split(',')
-    # if len(layers) > 1:
-    #     # Currently only one layer is supported"
-    #     messages.append("Currently only 1 layer is supported")
-    #     return None
+    layers = wms_args["layers"].split(",")
 
     def get_getcapabilitie_url(wms_version=None):
-        get_capabilities_args = {'service': 'WMS',
-                                 'request': 'GetCapabilities'}
+        get_capabilities_args = {"service": "WMS", "request": "GetCapabilities"}
         if wms_version is not None:
-            get_capabilities_args['version'] = wms_version
+            get_capabilities_args["version"] = wms_version
 
         # Drop all wms getmap parameters, keep all extra arguments (e.g. such as map or key)
         for key in wms_args:
-            if key not in {'version', 'request', 'layers', 'bbox', 'width', 'height', 'format', 'crs', 'srs',
-                           'styles', 'transparent', 'dpi', 'map_resolution', 'format_options'}:
+            if key not in {
+                "version",
+                "request",
+                "layers",
+                "bbox",
+                "width",
+                "height",
+                "format",
+                "crs",
+                "srs",
+                "styles",
+                "transparent",
+                "dpi",
+                "map_resolution",
+                "format_options",
+            }:
                 get_capabilities_args[key] = wms_args[key]
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
@@ -399,21 +434,25 @@ async def update_wms(wms_url, session: ClientSession, messages):
     wms = None
     for wmsversion in supported_wms_versions:
         # Do not try versions older than in the url
-        if wmsversion < wms_args['version']:
+        if wmsversion < wms_args["version"]:
             continue
 
         try:
             wms_getcapabilites_url = get_getcapabilitie_url(wmsversion)
             resp = await get_url(wms_getcapabilites_url, session, with_text=True)
             if resp.exception is not None:
-                messages.append("Could not download GetCapabilites URL for {}: {}".format(wmsversion, resp.exception))
+                messages.append(
+                    "Could not download GetCapabilites URL for {}: {}".format(
+                        wmsversion, resp.exception
+                    )
+                )
                 continue
             xml = resp.text
             if isinstance(xml, bytes):
                 # Parse xml encoding to decode
                 try:
-                    xml_ignored = xml.decode(errors='ignore')
-                    str_encoding = re.search("encoding=\"(.*?)\"", xml_ignored).group(1)
+                    xml_ignored = xml.decode(errors="ignore")
+                    str_encoding = re.search('encoding="(.*?)"', xml_ignored).group(1)
                     xml = xml.decode(encoding=str_encoding)
                 except Exception as e:
                     raise RuntimeError("Could not parse encoding: {}".format(str(e)))
@@ -422,7 +461,11 @@ async def update_wms(wms_url, session: ClientSession, messages):
             if wms is not None:
                 break
         except Exception as e:
-            messages.append("Could not get GetCapabilites URL for {} in try: {}".format(wmsversion, str(e)))
+            messages.append(
+                "Could not get GetCapabilites URL for {} in try: {}".format(
+                    wmsversion, str(e)
+                )
+            )
 
     if wms is None:
         # Could not request GetCapabilities
@@ -431,29 +474,29 @@ async def update_wms(wms_url, session: ClientSession, messages):
 
     # Abort if a layer is not advertised by WMS server
     for layer in layers:
-        if layer not in wms['layers']:
+        if layer not in wms["layers"]:
             messages.append("Layer {} not advertised by server".format(layer))
             return None
 
-    wms_args['version'] = wms['version']
-    if wms_args['version'] == '1.3.0':
-        wms_args.pop('srs', None)
-        wms_args['crs'] = '{proj}'
-    if 'styles' not in wms_args:
-        wms_args['styles'] = ''
+    wms_args["version"] = wms["version"]
+    if wms_args["version"] == "1.3.0":
+        wms_args.pop("srs", None)
+        wms_args["crs"] = "{proj}"
+    if "styles" not in wms_args:
+        wms_args["styles"] = ""
 
     def test_proj(proj):
-        if proj == 'CRS:84':
+        if proj == "CRS:84":
             return True
-        if 'AUTO' in proj:
+        if "AUTO" in proj:
             return False
         # 'EPSG:102067' is not valid, should be ESRI:102067: https://epsg.io/102067
-        if proj == 'EPSG:102067':
+        if proj == "EPSG:102067":
             return False
         # 'EPSG:102066' is not valid, should be ESRI:102066: https://epsg.io/102066
-        if proj == 'EPSG:102066':
+        if proj == "EPSG:102066":
             return False
-        if 'EPSG' in proj:
+        if "EPSG" in proj:
             try:
                 CRS.from_string(proj)
                 return True
@@ -462,9 +505,9 @@ async def update_wms(wms_url, session: ClientSession, messages):
         return False
 
     # For multilayer WMS queries only EPSG codes are valid that are available for all layers
-    new_projections = wms['layers'][layers[0]]['CRS']
+    new_projections = wms["layers"][layers[0]]["CRS"]
     for layer in layers[1:]:
-        new_projections.intersection_update(wms['layers'][layer]['CRS'])
+        new_projections.intersection_update(wms["layers"][layer]["CRS"])
     new_projections = set([proj.upper() for proj in new_projections if test_proj(proj)])
     if len(new_projections) == 0:
         if len(layers) > 1:
@@ -474,8 +517,21 @@ async def update_wms(wms_url, session: ClientSession, messages):
         return None
 
     new_wms_parameters = OrderedDict()
-    for key in ['map', 'layers', 'styles', 'format', 'transparent', 'crs', 'srs', 'width', 'height', 'bbox', 'version',
-                'service', 'request']:
+    for key in [
+        "map",
+        "layers",
+        "styles",
+        "format",
+        "transparent",
+        "crs",
+        "srs",
+        "width",
+        "height",
+        "bbox",
+        "version",
+        "service",
+        "request",
+    ]:
         if key in wms_args:
             new_wms_parameters[key] = wms_args[key]
     for key in wms_args:
@@ -483,52 +539,60 @@ async def update_wms(wms_url, session: ClientSession, messages):
             new_wms_parameters[key] = wms_args[key]
 
     baseurl = wms_url.split("?")[0]
-    new_url = baseurl + "?" + "&".join(
-        ["{}={}".format(key.upper(), value) for key, value in new_wms_parameters.items()])
-    return {'url': new_url, 'available_projections': new_projections}
+    url_parameters = "&".join(
+        [
+            "{}={}".format(key.upper(), value)
+            for key, value in new_wms_parameters.items()
+        ]
+    )
+    new_url = f"{baseurl}?{url_parameters}"
+
+    return {"url": new_url, "available_projections": new_projections}
 
 
 async def process_source(filename, session: ClientSession):
 
     try:
-        async with aiofiles.open(filename, mode='r', encoding='utf-8') as f:
+        async with aiofiles.open(filename, mode="r", encoding="utf-8") as f:
             contents = await f.read()
             source = json.loads(contents)
 
         # Exclude sources
         # Skip non wms layers
-        if not source['properties']['type'] == 'wms':
+        if not source["properties"]["type"] == "wms":
             return
         # check if it is esri rest and not wms
-        if 'bboxSR' in source['properties']['url']:
+        if "bboxSR" in source["properties"]["url"]:
             return
-        if 'available_projections' not in source['properties']:
+        if "available_projections" not in source["properties"]:
             return
-        if 'header' in source['properties']['url']:
+        if "header" in source["properties"]["url"]:
             return
-        if 'geometry' not in source:
+        if "geometry" not in source:
             return
 
-        if source['geometry'] is None:
+        if source["geometry"] is None:
             geom = box(-180, -90, 180, 90)
             pt = Point(7.44, 46.56)
         else:
-            geom = parse_eli_geometry(source['geometry'])
+            geom = parse_eli_geometry(source["geometry"])
             pt = geom.representative_point()
 
         test_zoom_level = ZOOM_LEVEL
-        if 'min_zoom' in source['properties']:
-            test_zoom_level = max(source['properties']['min_zoom'], test_zoom_level)
+        if "min_zoom" in source["properties"]:
+            test_zoom_level = max(source["properties"]["min_zoom"], test_zoom_level)
 
         # Get existing image hash
         original_img_messages = []
-        image_hash = await get_image(url=source['properties']['url'],
-                                     available_projections=source['properties']['available_projections'],
-                                     lon=pt.x,
-                                     lat=pt.y,
-                                     zoom=test_zoom_level,
-                                     session=session,
-                                     messages=original_img_messages)
+        image_hash = await get_image(
+            url=source["properties"]["url"],
+            available_projections=source["properties"]["available_projections"],
+            lon=pt.x,
+            lat=pt.y,
+            zoom=test_zoom_level,
+            session=session,
+            messages=original_img_messages,
+        )
         if image_hash is None:
             # We are finished if it was not possible to get the image
             return
@@ -537,59 +601,75 @@ async def process_source(filename, session: ClientSession):
             # These image hashes indicate that the downloaded image is not useful to determine
             # if the updated query returns the same image
             logging.info(
-                "ImageHash {} not useful for: {} || {}".format(str(image_hash), filename, " || ".join(original_img_messages)))
+                "ImageHash {} not useful for: {} || {}".format(
+                    str(image_hash), filename, " || ".join(original_img_messages)
+                )
+            )
             return
 
         # Update wms
         wms_messages = []
-        result = await update_wms(source['properties']['url'], session, wms_messages)
+        result = await update_wms(source["properties"]["url"], session, wms_messages)
         if result is None:
-            logging.info("Not possible to update wms url for {}: {}".format(filename, " || ".join(wms_messages)))
+            logging.info(
+                "Not possible to update wms url for {}: {}".format(
+                    filename, " || ".join(wms_messages)
+                )
+            )
             return
 
         # Test if selected projections work despite not being advertised
-        for EPSG in {'EPSG:3857', 'EPSG:4326'}:
-            if EPSG not in result['available_projections']:
-                epsg_image_hash = await get_image(url=result['url'],
-                                                  available_projections=[EPSG],
-                                                  lon=pt.x,
-                                                  lat=pt.y,
-                                                  zoom=test_zoom_level,
-                                                  session=session,
-                                                  messages=[])
+        for EPSG in {"EPSG:3857", "EPSG:4326"}:
+            if EPSG not in result["available_projections"]:
+                epsg_image_hash = await get_image(
+                    url=result["url"],
+                    available_projections=[EPSG],
+                    lon=pt.x,
+                    lat=pt.y,
+                    zoom=test_zoom_level,
+                    session=session,
+                    messages=[],
+                )
                 if epsg_image_hash == image_hash:
-                    result['available_projections'].add(EPSG)
+                    result["available_projections"].add(EPSG)
 
         # Download image for updated url
         new_img_messages = []
-        new_image_hash = await get_image(url=result['url'],
-                                         available_projections=result['available_projections'],
-                                         lon=pt.x,
-                                         lat=pt.y,
-                                         zoom=test_zoom_level,
-                                         session=session,
-                                         messages=new_img_messages)
+        new_image_hash = await get_image(
+            url=result["url"],
+            available_projections=result["available_projections"],
+            lon=pt.x,
+            lat=pt.y,
+            zoom=test_zoom_level,
+            session=session,
+            messages=new_img_messages,
+        )
 
         if new_image_hash is None:
-            logging.warning("Could not download new image: {}".format(" || ".join(new_img_messages)))
+            logging.warning(
+                "Could not download new image: {}".format(" || ".join(new_img_messages))
+            )
             return
 
         # Only sources are updated where the new query returns the same image
         if not image_hash == new_image_hash:
             logging.info(
-                "Image hash not the same for: {}: '{}' vs '{}' | {} | {}".format(filename,
-                                                                                 image_hash,
-                                                                                 new_image_hash,
-                                                                                 " || ".join(original_img_messages),
-                                                                                 " || ".join(new_img_messages)))
+                "Image hash not the same for: {}: '{}' vs '{}' | {} | {}".format(
+                    filename,
+                    image_hash,
+                    new_image_hash,
+                    " || ".join(original_img_messages),
+                    " || ".join(new_img_messages),
+                )
+            )
 
         # Servers might support projections that are not used in the area covered by a source
         # Keep only EPSG codes that are used in the area covered by the sources geometry
-        if source['geometry'] is not None:
+        if source["geometry"] is not None:
             epsg_outside_area_of_use = set()
             for epsg in result["available_projections"]:
                 try:
-                    if epsg == 'CRS:84':
+                    if epsg == "CRS:84":
                         continue
                     crs = CRS.from_string(epsg)
                     area_of_use = crs.area_of_use
@@ -602,47 +682,58 @@ async def process_source(filename, session: ClientSession):
                     if not crs_box.intersects(geom):
                         epsg_outside_area_of_use.add(epsg)
                 except Exception as e:
-                    logging.exception("Could not check area of use for projection {}: {}".format(epsg, str(e)))
+                    logging.exception(
+                        "Could not check area of use for projection {}: {}".format(
+                            epsg, str(e)
+                        )
+                    )
                     continue
             if len(result["available_projections"]) == len(epsg_outside_area_of_use):
-                logging.error("{}: epsg_outside_area_of_use filter removes all EPSG".format(filename))
+                logging.error(
+                    "{}: epsg_outside_area_of_use filter removes all EPSG".format(
+                        filename
+                    )
+                )
             result["available_projections"] -= epsg_outside_area_of_use
 
         # Servers that report a lot of projection may be configured wrongly
         # Check for CRS:84, EPSG:3857, EPSG:4326 and keep existing projections if still advertised
-        if len(result['available_projections']) > 15:
+        if len(result["available_projections"]) > 15:
             filtered_projs = set()
-            for proj in ['CRS:84', 'EPSG:3857', 'EPSG:4326']:
-                if proj in result['available_projections']:
+            for proj in ["CRS:84", "EPSG:3857", "EPSG:4326"]:
+                if proj in result["available_projections"]:
                     filtered_projs.add(proj)
-            for proj in source['properties']['available_projections']:
-                if proj in result['available_projections']:
+            for proj in source["properties"]["available_projections"]:
+                if proj in result["available_projections"]:
                     filtered_projs.add(proj)
-            result['available_projections'] = filtered_projs
+            result["available_projections"] = filtered_projs
 
         # Filter alias projections
-        if 'EPSG:3857' in result['available_projections']:
-            result['available_projections'] -= epsg_3857_alias
+        if "EPSG:3857" in result["available_projections"]:
+            result["available_projections"] -= epsg_3857_alias
 
         # Filter deprecated projections
-        result["available_projections"] = [
-            epsg for epsg in result["available_projections"]
-            if epsg == "CRS:84" or (epsg in valid_epsgs and epsg not in epsg_3857_alias)
-        ]
+        result["available_projections"].intersection_update(valid_epsgs)
 
         # Check if only formatting has changed
-        url_has_changed = not compare_urls(source['properties']['url'], result['url'])
-        projections_have_changed = not compare_projs(source['properties']['available_projections'],
-                                                     result['available_projections'])
+        url_has_changed = not compare_urls(source["properties"]["url"], result["url"])
+        projections_have_changed = not compare_projs(
+            source["properties"]["available_projections"],
+            result["available_projections"],
+        )
 
         if url_has_changed:
-            source['properties']['url'] = result['url']
+            source["properties"]["url"] = result["url"]
         if projections_have_changed:
-            source['properties']['available_projections'] = list(
-                sorted(result['available_projections'], key=lambda x: (x.split(':')[0], int(x.split(':')[1]))))
+            source["properties"]["available_projections"] = list(
+                sorted(
+                    result["available_projections"],
+                    key=lambda x: (x.split(":")[0], int(x.split(":")[1])),
+                )
+            )
 
         if url_has_changed or projections_have_changed:
-            with open(filename, 'w', encoding='utf-8') as out:
+            with open(filename, "w", encoding="utf-8") as out:
                 json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
                 out.write("\n")
     except Exception as e:
@@ -650,13 +741,15 @@ async def process_source(filename, session: ClientSession):
 
 
 async def start_processing(sources_directory):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; ELI WMS sync )'}
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; MSIE 6.0; ELI WMS sync )"}
     timeout = aiohttp.ClientTimeout(total=180)
 
     async with ClientSession(headers=headers, timeout=timeout) as session:
         jobs = []
-        for filename in glob.glob(os.path.join(sources_directory, '**', '*.geojson'), recursive=True):
+        files = glob.glob(
+            os.path.join(sources_directory, "**", "*.geojson"), recursive=True
+        )
+        for filename in files:
             jobs.append(process_source(filename, session))
         await asyncio.gather(*jobs)
 
