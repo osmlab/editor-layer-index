@@ -170,6 +170,7 @@ async def get_url(url: str, session: ClientSession, with_text=False, with_data=F
                     response_cache[url] = RequestResult(exception="Exception {} for: {}".format(str(e), url))
                 if RequestResult.exception is None:
                     break
+                await asyncio.sleep(5)
         else:
             logging.debug("Cached {}".format(url))
 
@@ -237,7 +238,7 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
     messages.append("Image URL: {}".format(formatted_url))
     for i in range(3):
         try:
-            # Downloag image
+            # Download image
             async with session.request(method="GET", url=formatted_url, ssl=False) as response:
                 data = await response.read()
                 img = Image.open(io.BytesIO(data))
@@ -375,10 +376,10 @@ async def update_wms(wms_url, session: ClientSession, messages):
         wms_args[k.lower()] = v
 
     layers = wms_args['layers'].split(',')
-    if len(layers) > 1:
-        # Currently only one layer is supported"
-        messages.append("Currently only 1 layer is supported")
-        return None
+    # if len(layers) > 1:
+    #     # Currently only one layer is supported"
+    #     messages.append("Currently only 1 layer is supported")
+    #     return None
 
     def get_getcapabilitie_url(wms_version=None):
         get_capabilities_args = {'service': 'WMS',
@@ -389,7 +390,7 @@ async def update_wms(wms_url, session: ClientSession, messages):
         # Drop all wms getmap parameters, keep all extra arguments (e.g. such as map or key)
         for key in wms_args:
             if key not in {'version', 'request', 'layers', 'bbox', 'width', 'height', 'format', 'crs', 'srs',
-                           'styles', 'transparent'}:
+                           'styles', 'transparent', 'dpi', 'map_resolution', 'format_options'}:
                 get_capabilities_args[key] = wms_args[key]
         url_parts[4] = urlencode(list(get_capabilities_args.items()))
         return urlunparse(url_parts)
@@ -428,10 +429,11 @@ async def update_wms(wms_url, session: ClientSession, messages):
         messages.append("Could not contact WMS server")
         return None
 
-    if layers[0] not in wms['layers']:
-        # Layer not advertised by server
-        messages.append("Layer {} not advertised by server".format(layers[0]))
-        return None
+    # Abort if a layer is not advertised by WMS server
+    for layer in layers:
+        if layer not in wms['layers']:
+            messages.append("Layer {} not advertised by server".format(layer))
+            return None
 
     wms_args['version'] = wms['version']
     if wms_args['version'] == '1.3.0':
@@ -445,6 +447,12 @@ async def update_wms(wms_url, session: ClientSession, messages):
             return True
         if 'AUTO' in proj:
             return False
+        # 'EPSG:102067' is not valid, should be ESRI:102067: https://epsg.io/102067
+        if proj == 'EPSG:102067':
+            return False
+        # 'EPSG:102066' is not valid, should be ESRI:102066: https://epsg.io/102066
+        if proj == 'EPSG:102066':
+            return False
         if 'EPSG' in proj:
             try:
                 CRS.from_string(proj)
@@ -453,8 +461,17 @@ async def update_wms(wms_url, session: ClientSession, messages):
                 return False
         return False
 
+    # For multilayer WMS queries only EPSG codes are valid that are available for all layers
     new_projections = wms['layers'][layers[0]]['CRS']
+    for layer in layers[1:]:
+        new_projections.intersection_update(wms['layers'][layer]['CRS'])
     new_projections = set([proj.upper() for proj in new_projections if test_proj(proj)])
+    if len(new_projections) == 0:
+        if len(layers) > 1:
+            messages.append("No common valid projections among layers.")
+        else:
+            messages.append("No valid projections for layer.")
+        return None
 
     new_wms_parameters = OrderedDict()
     for key in ['map', 'layers', 'styles', 'format', 'transparent', 'crs', 'srs', 'width', 'height', 'bbox', 'version',
@@ -472,159 +489,164 @@ async def update_wms(wms_url, session: ClientSession, messages):
 
 
 async def process_source(filename, session: ClientSession):
-    async with aiofiles.open(filename, mode='r', encoding='utf-8') as f:
-        contents = await f.read()
-        source = json.loads(contents)
 
-    # Exclude sources
-    # Skip non wms layers
-    if not source['properties']['type'] == 'wms':
-        return
-    # check if it is esri rest and not wms
-    if 'bboxSR' in source['properties']['url']:
-        return
-    if 'available_projections' not in source['properties']:
-        return
-    if 'header' in source['properties']['url']:
-        return
-    if 'geometry' not in source:
-        return
+    try:
+        async with aiofiles.open(filename, mode='r', encoding='utf-8') as f:
+            contents = await f.read()
+            source = json.loads(contents)
 
-    if source['geometry'] is None:
-        geom = box(-180, -90, 180, 90)
-        pt = Point(7.44, 46.56)
-    else:
-        geom = parse_eli_geometry(source['geometry'])
-        pt = geom.representative_point()
+        # Exclude sources
+        # Skip non wms layers
+        if not source['properties']['type'] == 'wms':
+            return
+        # check if it is esri rest and not wms
+        if 'bboxSR' in source['properties']['url']:
+            return
+        if 'available_projections' not in source['properties']:
+            return
+        if 'header' in source['properties']['url']:
+            return
+        if 'geometry' not in source:
+            return
 
-    # Get existing image hash
-    original_img_messages = []
-    image_hash = await get_image(url=source['properties']['url'],
-                                 available_projections=source['properties']['available_projections'],
-                                 lon=pt.x,
-                                 lat=pt.y,
-                                 zoom=ZOOM_LEVEL,
-                                 session=session,
-                                 messages=original_img_messages)
-    if image_hash is None:
-        # We are finished if it was not possible to get the image
-        return
+        if source['geometry'] is None:
+            geom = box(-180, -90, 180, 90)
+            pt = Point(7.44, 46.56)
+        else:
+            geom = parse_eli_geometry(source['geometry'])
+            pt = geom.representative_point()
 
-    if max_count(str(image_hash)) == 16:
-        # These image hashes indicate that the downloaded image is not useful to determine
-        # if the updated query returns the same image
-        logging.info(
-            "ImageHash {} not useful for: {} || {}".format(str(image_hash), filename, " || ".join(original_img_messages)))
-        return
+        test_zoom_level = ZOOM_LEVEL
+        if 'min_zoom' in source['properties']:
+            test_zoom_level = max(source['properties']['min_zoom'], test_zoom_level)
 
-    # Update wms
-    wms_messages = []
-    result = await update_wms(source['properties']['url'], session, wms_messages)
-    if result is None:
-        logging.info("Not possible to update wms url for {}: {}".format(filename, " || ".join(wms_messages)))
-        return
-
-    # Test if selected projections work despite not being advertised
-    for EPSG in {'EPSG:3857', 'EPSG:4326'}:
-        if EPSG not in result['available_projections']:
-            epsg_image_hash = await get_image(url=result['url'],
-                                              available_projections=[EPSG],
-                                              lon=pt.x,
-                                              lat=pt.y,
-                                              zoom=ZOOM_LEVEL,
-                                              session=session,
-                                              messages=[])
-            if epsg_image_hash == image_hash:
-                result['available_projections'].add(EPSG)
-
-    # Download image for updated url
-    new_img_messages = []
-    new_image_hash = await get_image(url=result['url'],
-                                     available_projections=result['available_projections'],
+        # Get existing image hash
+        original_img_messages = []
+        image_hash = await get_image(url=source['properties']['url'],
+                                     available_projections=source['properties']['available_projections'],
                                      lon=pt.x,
                                      lat=pt.y,
-                                     zoom=ZOOM_LEVEL,
+                                     zoom=test_zoom_level,
                                      session=session,
-                                     messages=new_img_messages)
+                                     messages=original_img_messages)
+        if image_hash is None:
+            # We are finished if it was not possible to get the image
+            return
 
-    if new_image_hash is None:
-        logging.warning("Could not download new image: {}".format(" || ".join(new_img_messages)))
-        return
+        if max_count(str(image_hash)) == 16:
+            # These image hashes indicate that the downloaded image is not useful to determine
+            # if the updated query returns the same image
+            logging.info(
+                "ImageHash {} not useful for: {} || {}".format(str(image_hash), filename, " || ".join(original_img_messages)))
+            return
 
-    # Only sources are updated where the new query returns the same image
-    if not image_hash == new_image_hash:
-        logging.info(
-            "Image hash not the same for: {}: {} {} | {} | {}".format(filename,
-                                                                      image_hash,
-                                                                      new_image_hash,
-                                                                      "||".join(original_img_messages),
-                                                                      "||".join(new_img_messages)))
+        # Update wms
+        wms_messages = []
+        result = await update_wms(source['properties']['url'], session, wms_messages)
+        if result is None:
+            logging.info("Not possible to update wms url for {}: {}".format(filename, " || ".join(wms_messages)))
+            return
 
-    # Servers might support projections that are not used in the area covered by a source
-    # Keep only EPSG codes that are used in the area covered by the sources geometry
-    if source['geometry'] is not None:
-        epsg_outside_area_of_use = set()
-        for epsg in source['properties']['available_projections']:
-            try:
-                if epsg == 'CRS:84':
+        # Test if selected projections work despite not being advertised
+        for EPSG in {'EPSG:3857', 'EPSG:4326'}:
+            if EPSG not in result['available_projections']:
+                epsg_image_hash = await get_image(url=result['url'],
+                                                  available_projections=[EPSG],
+                                                  lon=pt.x,
+                                                  lat=pt.y,
+                                                  zoom=test_zoom_level,
+                                                  session=session,
+                                                  messages=[])
+                if epsg_image_hash == image_hash:
+                    result['available_projections'].add(EPSG)
+
+        # Download image for updated url
+        new_img_messages = []
+        new_image_hash = await get_image(url=result['url'],
+                                         available_projections=result['available_projections'],
+                                         lon=pt.x,
+                                         lat=pt.y,
+                                         zoom=test_zoom_level,
+                                         session=session,
+                                         messages=new_img_messages)
+
+        if new_image_hash is None:
+            logging.warning("Could not download new image: {}".format(" || ".join(new_img_messages)))
+            return
+
+        # Only sources are updated where the new query returns the same image
+        if not image_hash == new_image_hash:
+            logging.info(
+                "Image hash not the same for: {}: '{}' vs '{}' | {} | {}".format(filename,
+                                                                                 image_hash,
+                                                                                 new_image_hash,
+                                                                                 " || ".join(original_img_messages),
+                                                                                 " || ".join(new_img_messages)))
+
+        # Servers might support projections that are not used in the area covered by a source
+        # Keep only EPSG codes that are used in the area covered by the sources geometry
+        if source['geometry'] is not None:
+            epsg_outside_area_of_use = set()
+            for epsg in result["available_projections"]:
+                try:
+                    if epsg == 'CRS:84':
+                        continue
+                    crs = CRS.from_string(epsg)
+                    area_of_use = crs.area_of_use
+                    crs_box = box(
+                        area_of_use.west,
+                        area_of_use.south,
+                        area_of_use.east,
+                        area_of_use.north,
+                    )
+                    if not crs_box.intersects(geom):
+                        epsg_outside_area_of_use.add(epsg)
+                except Exception as e:
+                    logging.exception("Could not check area of use for projection {}: {}".format(epsg, str(e)))
                     continue
-                crs = CRS.from_string(epsg)
-                area_of_use = crs.area_of_use
-                crs_box = box(
-                    area_of_use.west,
-                    area_of_use.south,
-                    area_of_use.east,
-                    area_of_use.north,
-                )
-                if not crs_box.intersects(geom):
-                    epsg_outside_area_of_use.add(epsg)
-            except Exception as e:
-                logging.exception("Could not check area of use for projection {}: {}".format(epsg, str(e)))
-                continue
-        if len(result["available_projections"]) == len(epsg_outside_area_of_use):
-            logging.error("{}: epsg_outside_area_of_use filter removes all EPSG".format(filename))
-        result["available_projections"] = [epsg for epsg in result["available_projections"]
-                                           if epsg not in epsg_outside_area_of_use]
+            if len(result["available_projections"]) == len(epsg_outside_area_of_use):
+                logging.error("{}: epsg_outside_area_of_use filter removes all EPSG".format(filename))
+            result["available_projections"] -= epsg_outside_area_of_use
 
-    # Servers that report a lot of projection may be configured wrongly
-    # Check for CRS:84, EPSG:3857, EPSG:4326 and keep existing projections if still advertised
-    if len(result['available_projections']) > 15:
-        filtered_projs = set()
-        for proj in ['CRS:84', 'EPSG:3857', 'EPSG:4326']:
-            if proj in result['available_projections']:
-                filtered_projs.add(proj)
-        for proj in source['properties']['available_projections']:
-            if proj in result['available_projections']:
-                filtered_projs.add(proj)
-        result['available_projections'] = filtered_projs
+        # Servers that report a lot of projection may be configured wrongly
+        # Check for CRS:84, EPSG:3857, EPSG:4326 and keep existing projections if still advertised
+        if len(result['available_projections']) > 15:
+            filtered_projs = set()
+            for proj in ['CRS:84', 'EPSG:3857', 'EPSG:4326']:
+                if proj in result['available_projections']:
+                    filtered_projs.add(proj)
+            for proj in source['properties']['available_projections']:
+                if proj in result['available_projections']:
+                    filtered_projs.add(proj)
+            result['available_projections'] = filtered_projs
 
-    # Filter alias projections
-    if 'EPSG:3857' in result['available_projections']:
-        for epsg in epsg_3857_alias:
-            if epsg in result['available_projections']:
-                result['available_projections'].remove(epsg)
+        # Filter alias projections
+        if 'EPSG:3857' in result['available_projections']:
+            result['available_projections'] -= epsg_3857_alias
 
-    # Filter deprecated projections
-    result["available_projections"] = [
-        epsg for epsg in result["available_projections"]
-        if epsg == "CRS:84" or (epsg in valid_epsgs and epsg not in epsg_3857_alias)
-    ]
+        # Filter deprecated projections
+        result["available_projections"] = [
+            epsg for epsg in result["available_projections"]
+            if epsg == "CRS:84" or (epsg in valid_epsgs and epsg not in epsg_3857_alias)
+        ]
 
-    # Check if only formatting has changes
-    url_has_changed = not compare_urls(source['properties']['url'], result['url'])
-    projections_have_changed = not compare_projs(source['properties']['available_projections'],
-                                                 result['available_projections'])
+        # Check if only formatting has changed
+        url_has_changed = not compare_urls(source['properties']['url'], result['url'])
+        projections_have_changed = not compare_projs(source['properties']['available_projections'],
+                                                     result['available_projections'])
 
-    if url_has_changed:
-        source['properties']['url'] = result['url']
-    if projections_have_changed:
-        source['properties']['available_projections'] = list(
-            sorted(result['available_projections'], key=lambda x: (x.split(':')[0], int(x.split(':')[1]))))
+        if url_has_changed:
+            source['properties']['url'] = result['url']
+        if projections_have_changed:
+            source['properties']['available_projections'] = list(
+                sorted(result['available_projections'], key=lambda x: (x.split(':')[0], int(x.split(':')[1]))))
 
-    if url_has_changed or projections_have_changed:
-        with open(filename, 'w', encoding='utf-8') as out:
-            json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
-            out.write("\n")
+        if url_has_changed or projections_have_changed:
+            with open(filename, 'w', encoding='utf-8') as out:
+                json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
+                out.write("\n")
+    except Exception as e:
+        logging.exception("Failed to check source {}: {}".format(filename, str(e)))
 
 
 async def start_processing(sources_directory):
