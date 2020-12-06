@@ -7,11 +7,9 @@
         "url": "https://wms.geonorge.no/skwms1/wms.historiskekart?LAYERS=amt1&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "NO",
         "available_projections": [
+            "EPSG:3034",
             "EPSG:3857",
             "EPSG:4326",
-            "EPSG:3034",
-            "EPSG:25829",
-            "EPSG:25830",
             "EPSG:25831",
             "EPSG:25832",
             "EPSG:25833",
