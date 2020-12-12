@@ -605,11 +605,11 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
 for filename in arguments.path:
 
     if not filename.lower()[-8:] == '.geojson':
-        logger.debug("{} is not a geojson file, skip".format(filename))
+        logger.info(f"{filename} is not a geojson file, skip")
         continue
 
     if not os.path.exists(filename):
-        logger.debug("{} does not exist, skip".format(filename))
+        logger.info(f"{filename} does not exist, skip")
         continue
 
     try:

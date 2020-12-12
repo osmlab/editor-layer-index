@@ -1,0 +1,63 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: [ubuntu-20.04]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install -U pip wheel
+          python -m pip install -r requirements.txt
+
+      - name: Install xmllint
+        run: sudo apt-get install libxml2-utils
+
+      - name: Check input
+        run: python scripts/check.py sources
+
+      - name: Delete old imagery files
+        run: rm imagery.*
+
+      - name: Create GeoJSON
+        run: python scripts/concat_geojson.py sources
+
+      - name: Create legacy JSON
+        run: python scripts/convert_geojson_to_legacyjson.py sources
+
+      - name: Create XML
+        run: |
+          python scripts/convert_xml.py sources
+          xmllint --schema scripts/maps.xsd imagery.xml --noout
+
+      - name: Create deploy folder
+        run: |
+          mkdir deploy
+          cp imagery.* deploy
+          cp -r i18n deploy
+          cp -r sources deploy
+          cp -r site deploy
+          cp *.md deploy
+          cp *json deploy
+          cp LICENSE deploy
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: deploy # The folder the action should deploy.
+          CLEAN: false
