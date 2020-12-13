@@ -711,6 +711,17 @@ async def process_source(filename, session: ClientSession):
         # Filter alias projections
         if "EPSG:3857" in result["available_projections"]:
             result["available_projections"] -= epsg_3857_alias
+        else:
+            # if EPSG:3857 not present but alias, keep only alias with highest number to be consistent
+            result_epsg_3857_alias = result["available_projections"] & epsg_3857_alias
+            result_epsg_3857_alias_sorted = list(
+                sorted(
+                    result_epsg_3857_alias,
+                    key=lambda x: (x.split(":")[0], int(x.split(":")[1])),
+                    reverse=True,
+                )
+            )
+            result["available_projections"] -= set(result_epsg_3857_alias_sorted[1:])
 
         # Filter deprecated projections
         result["available_projections"].intersection_update(valid_epsgs)
