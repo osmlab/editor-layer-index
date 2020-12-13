@@ -44,6 +44,9 @@ jobs:
           python scripts/convert_xml.py sources
           xmllint --schema scripts/maps.xsd imagery.xml --noout
 
+      - name: Create i18n/en.yaml
+        run: python scripts/extract_i18n.py i18n/en.yaml sources
+
       - name: Create deploy folder
         run: |
           mkdir deploy

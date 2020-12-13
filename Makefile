@@ -1,28 +1,26 @@
 ALL = imagery.geojson imagery.json imagery.xml i18n/en.yaml
-SOURCES := $(shell find sources -type f -name '*.geojson')
-SOURCES_QUOTED := $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
 TX := $(shell which tx)
 
 all: $(ALL)
 
-check: scripts/check.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED)
+check:
+	@$(PYTHON) scripts/check.py sources
 
 clean:
 	rm -f $(ALL)
 
-imagery.xml: scripts/convert_xml.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED)
+imagery.xml:
+	@$(PYTHON) scripts/convert_xml.py sources
 
-imagery.json: scripts/convert_geojson_to_legacyjson.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
+imagery.json:
+	@$(PYTHON) scripts/convert_geojson_to_legacyjson.py sources
 
-imagery.geojson: scripts/concat_geojson.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
+imagery.geojson:
+	@$(PYTHON) scripts/concat_geojson.py sources
 
-i18n/en.yaml: scripts/extract_i18n.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
+i18n/en.yaml:
+	@$(PYTHON) scripts/extract_i18n.py i18n/en.yaml sources
 
 txpush: i18n/en.yaml
 ifeq (, $(TX))
