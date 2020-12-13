@@ -4,10 +4,11 @@
         "id": "nve-nettanlegg",
         "name": "NVE Electricity Network overlay",
         "type": "wms",
-        "url": "https://gis3.nve.no/map/services/Nettanlegg2/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Sentralnett,Regionalnett,Distribusjonsnett,Sjokabler,Master og stolper,Transformatorstasjoner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis3.nve.no/map/services/Nettanlegg2/MapServer/WmsServer?LAYERS=Sentralnett,Regionalnett,Distribusjonsnett,Sjokabler,Master og stolper,Transformatorstasjoner&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
+            "CRS:84",
             "EPSG:3857",
             "EPSG:4326",
             "EPSG:25831",
