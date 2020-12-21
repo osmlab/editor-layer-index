@@ -1,6 +1,10 @@
 # OSM Editor Layer Index
 [![Build Status](https://travis-ci.org/osmlab/editor-layer-index.svg?branch=gh-pages)](https://travis-ci.org/osmlab/editor-layer-index)
 
+| :exclamation:  Please create new PRs against the `develop` branch.   |
+|----------------------------------------------------------------------|
+
+
 The goal of this project is to maintain a canonical representation of the layers available to [OpenStreetMap](https://www.openstreetmap.org/) editors such as:
 
 * [iD](https://github.com/openstreetmap/iD)

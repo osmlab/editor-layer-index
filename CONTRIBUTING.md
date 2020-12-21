@@ -73,7 +73,7 @@ start of `2013`. Note that this is the opposite of what we did before, and layer
 
 ### Submitting your modifications
 
-Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `gh-pages`.
+Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `develop`.
 
 After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test as it would appear in the iD editor you can try at https://ideditor.github.io/imagery-index/index.html.
 
