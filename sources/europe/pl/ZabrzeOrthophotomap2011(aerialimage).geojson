@@ -4,11 +4,12 @@
         "id": "Zabrze-2011",
         "name": "Zabrze: Orthophotomap 2011 (aerial image)",
         "type": "wms",
-        "url": "http://siot.um.zabrze.pl/arcgis/services/UMZ_Ortofoto_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://siot.um.zabrze.pl/arcgis/services/UMZ_Ortofoto_2011/MapServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2011",
         "end_date": "2011",
         "country_code": "PL",
         "available_projections": [
+            "CRS:84",
             "EPSG:2177",
             "EPSG:4326"
         ],
