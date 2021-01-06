@@ -64,6 +64,7 @@ spacesave = 0
 
 headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)'}
 
+tested_sources_count = 0
 for filename in arguments.path:
 
     if not filename.lower()[-8:] == '.geojson':
@@ -157,12 +158,14 @@ for filename in arguments.path:
                 ValidationError("{} should have null geometry".format(filename))
             elif source['geometry'] != None:
                 ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
-
+        tested_sources_count += 1
     except ValidationError as e:
         borkenbuild = True
         logger.exception("Error in {} : {}".format(filename, e))
 if spacesave > 0:
     logger.warning("Disembedding all icons would save {} KB".format(round(spacesave/1024.0, 2)))
-if borkenbuild:
+
+print(f"Checked {tested_sources_count} sources.")
+if borkenbuild or tested_sources_count == 0:
     raise SystemExit(1)
 
