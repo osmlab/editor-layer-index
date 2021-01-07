@@ -1,53 +1,181 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
-        "id": "mainzlatestaerialimagery", 
-        "name": "Mainz latest aerial imagery", 
-        "type": "wms", 
+        "id": "mainzlatestaerialimagery",
+        "name": "Mainz latest aerial imagery",
+        "type": "wms",
         "category": "photo",
-        "url": "https://geodaten.mainz.de/map/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2018&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "country_code": "DE", 
+        "url": "https://geodaten.mainz.de/map/service?LAYERS=Orthophoto&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "country_code": "DE",
         "available_projections": [
             "EPSG:3857",
-            "EPSG:4326", 
-            "EPSG:25832", 
-            "EPSG:4258", 
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:25832",
             "EPSG:31467"
-        ], 
+        ],
         "attribution": {
-            "url": "https://www.mainz.de/vv/oe/100140100000035141.php#tab-infos", 
-            "text": "Vermessung und Geoinformation Mainz", 
+            "url": "https://www.mainz.de/vv/oe/100140100000035141.php#tab-infos",
+            "text": "Vermessung und Geoinformation Mainz",
             "required": true
-        }, 
-        "icon": "https://www.mainz.de/configuration.inc.php.media/27432/Logo-72px.png", 
-        "min_zoom": 12, 
-        "license_url": "https://wiki.openstreetmap.org/wiki/Mainz/amtliche_Daten_f%C3%BCr_OSM"
+        },
+        "icon": "https://www.mainz.de/configuration.inc.php.media/27432/Logo-72px.png",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Mainz/amtliche_Daten_f%C3%BCr_OSM",
+        "privacy_policy_url": "https://mainz.de/service/datenschutz-nutzungsbedingungen.php"
     },
-	"geometry": {
+    "geometry": {
         "type": "Polygon",
         "coordinates": [
-          [
             [
-              8.10355,
-              49.865
-            ],
-            [
-              8.38356,
-              49.865
-            ],
-            [
-              8.38356,
-              50.0466
-            ],
-            [
-              8.10355,
-              50.0466
-            ],
-            [
-              8.10355,
-              49.865
+                [
+                    8.125766985893286,
+                    49.98820146928203
+                ],
+                [
+                    8.128509521484373,
+                    49.97220361039795
+                ],
+                [
+                    8.127140177046126,
+                    49.9524164864703
+                ],
+                [
+                    8.168016037380477,
+                    49.94919789579317
+                ],
+                [
+                    8.171772135053946,
+                    49.9245821410305
+                ],
+                [
+                    8.18317982322411,
+                    49.92245880621279
+                ],
+                [
+                    8.184818499565164,
+                    49.89188579776018
+                ],
+                [
+                    8.191683586842522,
+                    49.88437703768501
+                ],
+                [
+                    8.238371778210507,
+                    49.8843771189465
+                ],
+                [
+                    8.243571174383165,
+                    49.888211156000416
+                ],
+                [
+                    8.261206966755305,
+                    49.89057673932312
+                ],
+                [
+                    8.268669486083628,
+                    49.88834936388067
+                ],
+                [
+                    8.322827789483533,
+                    49.88835338591029
+                ],
+                [
+                    8.326704951999117,
+                    49.89722208786025
+                ],
+                [
+                    8.351665727118446,
+                    49.89763144339704
+                ],
+                [
+                    8.35366514808322,
+                    49.905955949920696
+                ],
+                [
+                    8.359905111039808,
+                    49.90867680077918
+                ],
+                [
+                    8.359905101952062,
+                    49.97891767871954
+                ],
+                [
+                    8.351827995258615,
+                    49.9818267690062
+                ],
+                [
+                    8.35166534756239,
+                    49.995265002845194
+                ],
+                [
+                    8.33946222988236,
+                    49.99849808878016
+                ],
+                [
+                    8.33793244570207,
+                    50.004542949124435
+                ],
+                [
+                    8.32545870225621,
+                    50.00753509251416
+                ],
+                [
+                    8.324199544633556,
+                    50.01602995432077
+                ],
+                [
+                    8.31222054973782,
+                    50.01618173452335
+                ],
+                [
+                    8.30909334346168,
+                    50.02398262444645
+                ],
+                [
+                    8.29593294542027,
+                    50.0252076927934
+                ],
+                [
+                    8.294673787797613,
+                    50.04077159471171
+                ],
+                [
+                    8.291242593012258,
+                    50.04209693986987
+                ],
+                [
+                    8.269288706627597,
+                    50.042166954814505
+                ],
+                [
+                    8.265067696533544,
+                    50.04696095138683
+                ],
+                [
+                    8.153920533837546,
+                    50.04695706287673
+                ],
+                [
+                    8.152223190700793,
+                    50.0333866252213
+                ],
+                [
+                    8.140873087202383,
+                    50.031051664558134
+                ],
+                [
+                    8.137970021094189,
+                    50.02456517419204
+                ],
+                [
+                    8.127826822553935,
+                    50.022657179425494
+                ],
+                [
+                    8.125766985893286,
+                    49.98820146928203
+                ]
             ]
-          ]
         ]
-	}
+    }
 }
