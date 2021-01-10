@@ -4,27 +4,25 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
         "id": "Czech_CUZK-KM",
         "overlay": true,
-        "url": "https://wms.cuzk.cz/wms.asp?service=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&FORMAT=image/png&transparent=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://wms.cuzk.cz/wms.asp?LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
         "name": "Czech CUZK:KM",
         "country_code": "CZ",
         "available_projections": [
-            "EPSG:5514",
-            "EPSG:102066",
-            "EPSG:102067",
-            "EPSG:32633",
-            "EPSG:32634",
-            "EPSG:5221",
-            "EPSG:4326",
-            "EPSG:4258",
             "EPSG:3034",
             "EPSG:3035",
             "EPSG:3045",
-            "EPSG:3046",
-            "EPSG:3857",
             "EPSG:3835",
-            "EPSG:3836"
-        ]
+            "EPSG:3836",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:5221",
+            "EPSG:5514",
+            "EPSG:32633",
+            "EPSG:32634"
+        ],
+        "category": "other"
     },
     "geometry": {
         "type": "Polygon",

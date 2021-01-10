@@ -1,88 +1,90 @@
-        {
-            "type": "Feature",
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "\u00a9 Espoon, Helsingin ja Vantaan kaupungit, Kirkkonummen ja Nurmij\u00e4rven kunnat sek\u00e4 HSL ja HSY",
-                    "url": "https://hri.fi/data/en_GB/dataset/paakaupunkiseudun-ortokuva-2017"
-                },
-                "available_projections": [
-                    "EPSG:3857",
-                    "EPSG:4326",
-                    "EPSG:3879"
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© Espoon, Helsingin ja Vantaan kaupungit, Kirkkonummen ja Nurmijärven kunnat sekä HSL ja HSY",
+            "url": "https://hri.fi/data/en_GB/dataset/paakaupunkiseudun-ortokuva-2017"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:3879",
+            "EPSG:4326"
+        ],
+        "best": true,
+        "country_code": "FI",
+        "description": "Ortophotos from the municipalities of Espoo, Helsinki, Vantaa, Kirkkonummi and Nurmijärvi + HSL and HSY",
+        "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/fi/hri_logo.png",
+        "id": "hri-orto",
+        "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
+        "max_zoom": 19,
+        "name": "Helsinki region orthophoto",
+        "type": "wms",
+        "url": "https://kartta.hsy.fi/geoserver/ows?LAYERS=taustakartat_ja_aluejaot:Ortoilmakuva_2017&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    24.2694848,
+                    59.8592993
                 ],
-                "best": true,
-                "country_code": "FI",
-                "description": "Ortophotos from the municipalities of Espoo, Helsinki, Vantaa, Kirkkonummi and Nurmijärvi + HSL and HSY",
-                "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/fi/hri_logo.png",
-                "id": "hri-orto",
-                "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
-                "max_zoom": 19,
-                "name": "Helsinki region orthophoto",
-                "type": "wms",
-                "url": "https://kartta.hsy.fi/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=taustakartat_ja_aluejaot:Ortoilmakuva_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            24.2694848,
-                            59.8592993
-                        ], 
-                        [
-                            24.2667376,
-                            60.2254939
-                        ], 
-                        [
-                            24.5530687,
-                            60.3670349
-                        ], 
-                        [
-                            24.5036303,
-                            60.4903811
-                        ], 
-                        [
-                            24.7638689,
-                            60.6007908
-                        ], 
-                        [
-                            25.0062548,
-                            60.5417499
-                        ], 
-                        [
-                            24.9005114,
-                            60.3819697
-                        ], 
-                        [
-                            24.988402,
-                            60.3507345
-                        ], 
-                        [
-                            25.0694262, 
-                            60.4409633
-                        ], 
-                        [
-                            25.1751696, 
-                            60.4524782
-                        ], 
-                        [
-                            25.1806627,
-                            60.3412222
-                        ], 
-                        [
-                            25.2795397,
-                            60.2942995
-                        ],
-                        [
-                            25.1957689,
-                            60.0881331
-                        ],
-                        [
-                            24.2694848,
-                            59.8592993
-                        ]
-                    ]
+                [
+                    24.2667376,
+                    60.2254939
+                ],
+                [
+                    24.5530687,
+                    60.3670349
+                ],
+                [
+                    24.5036303,
+                    60.4903811
+                ],
+                [
+                    24.7638689,
+                    60.6007908
+                ],
+                [
+                    25.0062548,
+                    60.5417499
+                ],
+                [
+                    24.9005114,
+                    60.3819697
+                ],
+                [
+                    24.988402,
+                    60.3507345
+                ],
+                [
+                    25.0694262,
+                    60.4409633
+                ],
+                [
+                    25.1751696,
+                    60.4524782
+                ],
+                [
+                    25.1806627,
+                    60.3412222
+                ],
+                [
+                    25.2795397,
+                    60.2942995
+                ],
+                [
+                    25.1957689,
+                    60.0881331
+                ],
+                [
+                    24.2694848,
+                    59.8592993
                 ]
-            }
-        }
+            ]
+        ]
+    }
+}

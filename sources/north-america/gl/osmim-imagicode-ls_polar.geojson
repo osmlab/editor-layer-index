@@ -1,80 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -85.76109385682587,
-                    81.39333391115835
-                ],
-                [
-                    -89.83015512094161,
-                    82.14951616258433
-                ],
-                [
-                    -89.83152841195212,
-                    82.24404688557661
-                ],
-                [
-                    -84.99342418195555,
-                    82.73098798225534
-                ],
-                [
-                    -79.95207288240479,
-                    83.13107965605444
-                ],
-                [
-                    -74.55641250214465,
-                    83.46266728201661
-                ],
-                [
-                    -69.35850602739671,
-                    83.70450775086888
-                ],
-                [
-                    -28.207840897721187,
-                    83.70450775086888
-                ],
-                [
-                    -23.06623935440381,
-                    83.46532469372944
-                ],
-                [
-                    -17.96583654140148,
-                    83.15518123848051
-                ],
-                [
-                    -17.96720983241198,
-                    82.72386035102944
-                ],
-                [
-                    -22.781968115230015,
-                    81.44190408358111
-                ],
-                [
-                    -85.76109385682587,
-                    81.39333391115835
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -85.761093856825866, 81.393333911158351 ], [ -89.830155120941612, 82.149516162584334 ], [ -89.831528411952121, 82.244046885576608 ], [ -84.993424181955547, 82.730987982255343 ], [ -79.952072882404792, 83.131079656054439 ], [ -74.556412502144653, 83.462667282016611 ], [ -69.358506027396714, 83.704507750868885 ], [ -28.207840897721187, 83.704507750868885 ], [ -23.066239354403809, 83.465324693729443 ], [ -17.96583654140148, 83.155181238480509 ], [ -17.967209832411982, 82.723860351029444 ], [ -22.781968115230015, 81.441904083581107 ], [ -85.761093856825866, 81.393333911158351 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "historicphoto",
         "country_code": "GL",
-        "description": "First available image north of the regular Landsat limit, mostly with seasonal snow cover so difficult to interpret (true color)",
+        "description": "First available image north of the regular Landsat limit, mostly with seasonal snow cover so difficult to interpret, superseeded by newer images (true color)",
         "end_date": "2013-05-17",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-ls_polar",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 10,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: May 2013 off-nadir Landsat",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2013-05-17",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=ls_polar&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=ls_polar&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

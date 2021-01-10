@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ -180.0, -85.0511 ], [ -180.0, -83.9976 ], [ -156.0059, -76.9946 ], [ -152.0068, -75.9944 ], [ -141.0205, -73.9947 ], [ -75.52, -70.9947 ], [ 157.9834, -68.9968 ], [ 162.0044, -68.9968 ], [ 168.0249, -69.9971 ], [ 171.5186, -70.9947 ], [ 180.0, -82.9967 ], [ 179.978, -85.0511 ], [ -180.0, -85.0511 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "map",
+        "country_code": "AQ",
+        "description": "USGS Antarctica 1:250k Reconnaissance Series topographic maps",
+        "end_date": "1979",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-usgs_250k_ant",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: USGS 250k Topos Antarctica",
+        "max_zoom": 11,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "1950",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=usgs_250k_ant&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

@@ -1,131 +1,132 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "kartverket-fjellskygge",
-    "name": "Kartverket Hillshade overlay",
-    "type": "tms",
-    "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=fjellskygge&zoom={zoom}&x={x}&y={y}",
-    "overlay": true,
-    "country_code": "NO",
-    "attribution": {
-      "text": "© Kartverket",
-      "url": "https://kartkatalog.geonorge.no/metadata/kartverket/fjellskygge-cache/cca7c129-fe66-4c96-9091-40d92290dd81"
+    "type": "Feature",
+    "properties": {
+        "id": "kartverket-fjellskygge",
+        "name": "Kartverket Hillshade overlay",
+        "type": "tms",
+        "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=fjellskygge&zoom={zoom}&x={x}&y={y}",
+        "overlay": true,
+        "country_code": "NO",
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://kartkatalog.geonorge.no/metadata/kartverket/fjellskygge-cache/cca7c129-fe66-4c96-9091-40d92290dd81"
+        },
+        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
+        "max_zoom": 15,
+        "min_zoom": 9,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+        "description": "Hillshade for Norway",
+        "category": "elevation"
     },
-    "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
-    "max_zoom": 15,
-    "min_zoom": 9,
-    "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
-    "description": "Hillshade for Norway"
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          31.904253,
-          70.4368136
-        ],
-        [
-          28.4765186,
-          71.3289643
-        ],
-        [
-          23.6865015,
-          71.2514263
-        ],
-        [
-          16.8090601,
-          70.0730823
-        ],
-        [
-          11.1620655,
-          67.5253903
-        ],
-        [
-          9.975542,
-          64.811576
-        ],
-        [
-          4.2187061,
-          62.1449966
-        ],
-        [
-          4.3725367,
-          59.1871966
-        ],
-        [
-          6.1743055,
-          57.8915032
-        ],
-        [
-          7.932118,
-          57.7393554
-        ],
-        [
-          10.777577,
-          58.8649103
-        ],
-        [
-          11.7224012,
-          58.762509
-        ],
-        [
-          12.722157,
-          60.1141506
-        ],
-        [
-          13.0517469,
-          61.3493518
-        ],
-        [
-          12.5243921,
-          63.6169922
-        ],
-        [
-          14.2382593,
-          63.9856094
-        ],
-        [
-          15.1171656,
-          65.9016624
-        ],
-        [
-          18.6987085,
-          68.3749083
-        ],
-        [
-          20.0610132,
-          68.2612583
-        ],
-        [
-          21.0058375,
-          68.7841518
-        ],
-        [
-          25.2465601,
-          68.3506025
-        ],
-        [
-          26.9384546,
-          69.8472011
-        ],
-        [
-          28.7621851,
-          69.6112133
-        ],
-        [
-          28.5864039,
-          68.8556004
-        ],
-        [
-          31.069314,
-          69.5191547
-        ],
-        [
-          31.904253,
-          70.4368136
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    31.904253,
+                    70.4368136
+                ],
+                [
+                    28.4765186,
+                    71.3289643
+                ],
+                [
+                    23.6865015,
+                    71.2514263
+                ],
+                [
+                    16.8090601,
+                    70.0730823
+                ],
+                [
+                    11.1620655,
+                    67.5253903
+                ],
+                [
+                    9.975542,
+                    64.811576
+                ],
+                [
+                    4.2187061,
+                    62.1449966
+                ],
+                [
+                    4.3725367,
+                    59.1871966
+                ],
+                [
+                    6.1743055,
+                    57.8915032
+                ],
+                [
+                    7.932118,
+                    57.7393554
+                ],
+                [
+                    10.777577,
+                    58.8649103
+                ],
+                [
+                    11.7224012,
+                    58.762509
+                ],
+                [
+                    12.722157,
+                    60.1141506
+                ],
+                [
+                    13.0517469,
+                    61.3493518
+                ],
+                [
+                    12.5243921,
+                    63.6169922
+                ],
+                [
+                    14.2382593,
+                    63.9856094
+                ],
+                [
+                    15.1171656,
+                    65.9016624
+                ],
+                [
+                    18.6987085,
+                    68.3749083
+                ],
+                [
+                    20.0610132,
+                    68.2612583
+                ],
+                [
+                    21.0058375,
+                    68.7841518
+                ],
+                [
+                    25.2465601,
+                    68.3506025
+                ],
+                [
+                    26.9384546,
+                    69.8472011
+                ],
+                [
+                    28.7621851,
+                    69.6112133
+                ],
+                [
+                    28.5864039,
+                    68.8556004
+                ],
+                [
+                    31.069314,
+                    69.5191547
+                ],
+                [
+                    31.904253,
+                    70.4368136
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

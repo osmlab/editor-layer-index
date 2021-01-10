@@ -2,9 +2,9 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-          "url": "http://www.torokbalint.hu/",
-          "text": "Törökbálint",
-          "required": true
+            "url": "http://www.torokbalint.hu/",
+            "text": "Törökbálint",
+            "required": true
         },
         "name": "Törökbálint orthophoto 2018",
         "available_projections": [
@@ -12,7 +12,7 @@
             "EPSG:23700",
             "EPSG:3857"
         ],
-        "url": "https://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=TBORTO_2018&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
+        "url": "https://terkep.torokbalint.hu/mapproxy/service?LAYERS=TBORTO_2018&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#T.C3.B6r.C3.B6kb.C3.A1lint",
         "privacy_policy_url": "https://www.torokbalint.hu/app/cms/TorokbalintApp/index?id=52",
         "start_date": "2018",

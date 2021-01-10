@@ -1,122 +1,123 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
-        "id": "npd-offshore", 
-        "name": "NPD Offshore Installations overlay", 
-        "type": "wms", 
-        "url": "https://gis.npd.no/ogc/factmaps/2_0?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fclFixed,pplAll,fldByStatus&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}", 
-        "overlay": true, 
-        "country_code": "NO", 
+        "id": "npd-offshore",
+        "name": "NPD Offshore Installations overlay",
+        "type": "wms",
+        "url": "https://gis.npd.no/ogc/factmaps/2_0?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fclFixed,pplAll,fldByStatus&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "overlay": true,
+        "country_code": "NO",
         "available_projections": [
-            "EPSG:4326", 
-            "EPSG:3857", 
-            "EPSG:3034", 
-            "EPSG:4230", 
-            "EPSG:23029", 
-            "EPSG:23030", 
-            "EPSG:23031", 
-            "EPSG:23032", 
-            "EPSG:23033", 
-            "EPSG:23034", 
-            "EPSG:23035", 
-            "EPSG:23036", 
-            "EPSG:32629", 
-            "EPSG:32630", 
-            "EPSG:32631", 
-            "EPSG:32632", 
-            "EPSG:32633", 
-            "EPSG:32634", 
-            "EPSG:32635", 
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:3034",
+            "EPSG:4230",
+            "EPSG:23029",
+            "EPSG:23030",
+            "EPSG:23031",
+            "EPSG:23032",
+            "EPSG:23033",
+            "EPSG:23034",
+            "EPSG:23035",
+            "EPSG:23036",
+            "EPSG:32629",
+            "EPSG:32630",
+            "EPSG:32631",
+            "EPSG:32632",
+            "EPSG:32633",
+            "EPSG:32634",
+            "EPSG:32635",
             "EPSG:32636"
-        ], 
+        ],
         "attribution": {
-            "url": "https://www.npd.no/no/Kart/Faktakart/", 
+            "url": "https://www.npd.no/no/Kart/Faktakart/",
             "text": "© Oljedirektoratet"
-        }, 
-        "icon": "https://register.geonorge.no/data/organizations/870917732_od_liten.png", 
-        "max_zoom": 20, 
-        "min_zoom": 6, 
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006333.html", 
-        "description": "Production platforms and oil/natural gas fields on the Norwegian continental shelf"
-    }, 
+        },
+        "icon": "https://register.geonorge.no/data/organizations/870917732_od_liten.png",
+        "max_zoom": 20,
+        "min_zoom": 6,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006333.html",
+        "description": "Production platforms and oil/natural gas fields on the Norwegian continental shelf",
+        "category": "other"
+    },
     "geometry": {
-        "type": "Polygon", 
+        "type": "Polygon",
         "coordinates": [
             [
                 [
-                    8.519892, 
+                    8.519892,
                     57.6454037
-                ], 
+                ],
                 [
-                    3.2519477, 
+                    3.2519477,
                     56.0873656
-                ], 
+                ],
                 [
-                    2.6118493, 
+                    2.6118493,
                     56.5943375
-                ], 
+                ],
                 [
-                    1.9632053, 
+                    1.9632053,
                     57.9048163
-                ], 
+                ],
                 [
-                    1.481781, 
+                    1.481781,
                     58.4293586
-                ], 
+                ],
                 [
-                    1.9830268, 
+                    1.9830268,
                     60.3106301
-                ], 
+                ],
                 [
-                    1.7880246, 
+                    1.7880246,
                     61.3565888
-                ], 
+                ],
                 [
-                    -0.4906083, 
+                    -0.4906083,
                     63.8872489
-                ], 
+                ],
                 [
-                    1.3622608, 
+                    1.3622608,
                     67.0160266
-                ], 
+                ],
                 [
-                    14.9977099, 
+                    14.9977099,
                     74.5008179
-                ], 
+                ],
                 [
-                    36.9937107, 
+                    36.9937107,
                     74.5015522
-                ], 
+                ],
                 [
-                    36.9998926, 
+                    36.9998926,
                     73.6863323
-                ], 
+                ],
                 [
-                    32.0690891, 
+                    32.0690891,
                     70.2742907
-                ], 
+                ],
                 [
-                    23.972146, 
+                    23.972146,
                     70.4735603
-                ], 
+                ],
                 [
-                    16.2597437, 
+                    16.2597437,
                     68.5844732
-                ], 
+                ],
                 [
-                    12.1288843, 
+                    12.1288843,
                     64.8115667
-                ], 
+                ],
                 [
-                    5.3832789, 
+                    5.3832789,
                     61.9286229
-                ], 
+                ],
                 [
-                    5.7678003, 
+                    5.7678003,
                     58.853553
-                ], 
+                ],
                 [
-                    8.519892, 
+                    8.519892,
                     57.6454037
                 ]
             ]
