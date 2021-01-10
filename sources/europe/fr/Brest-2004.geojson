@@ -1,0 +1,47 @@
+{
+    "type":"Feature",
+    "properties":{
+        "id":"Brest_2004",
+        "name":"Brest - 2004",
+        "type":"tms",
+        "url":"https://wms.openstreetmap.fr/tms/1.0.0/brest_2004/{zoom}/{x}/{y}",
+        "category":"historicphoto",
+        "start_date":"2004",
+        "end_date":"2004",
+        "country_code":"FR",
+        "attribution":{
+            "text":"Brest M\u00e9tropole - 2004",
+            "url":"https://geo.pays-de-brest.fr/zapp/Pages/Photo-aerienne.aspx",
+            "required":true
+        },
+        "max_zoom":20,
+        "license_url":"https://wiki.openstreetmap.org/wiki/Brest#Donn.C3.A9es_de_la_Communaut.C3.A9_Urbaine"
+    },
+    "geometry":{
+        "type":"Polygon",
+        "coordinates":[
+            [
+                [
+                    -4.6644393,
+                    48.4656114
+                ],
+                [
+                    -4.6420206,
+                    48.3038452
+                ],
+                [
+                    -4.3055549,
+                    48.3244403
+                ],
+                [
+                    -4.3279736,
+                    48.4861412
+                ],
+                [
+                    -4.6644393,
+                    48.4656114
+                ]
+            ]
+        ]
+    }
+}
