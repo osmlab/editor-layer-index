@@ -116,7 +116,7 @@
     },
     "properties": {
         "attribution": {
-            "text": "Miasto Przemy\u015bl"
+            "text": "Miasto Przemyśl"
         },
         "available_projections": [
             "EPSG:2179",
@@ -127,9 +127,10 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png",
         "id": "przemysl-aerial",
         "max_zoom": 23,
-        "name": "Przemy\u015bl: Ortophotomap (aerial image)",
+        "name": "Przemyśl: Ortophotomap (aerial image)",
         "type": "wms",
-        "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo"
     },
     "type": "Feature"
 }

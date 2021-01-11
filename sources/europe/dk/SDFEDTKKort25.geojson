@@ -659,7 +659,8 @@
         "max_zoom": 19,
         "name": "SDFE DTK Kort25",
         "type": "wms",
-        "url": "https://kortforsyningen.kms.dk/topo25?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=topo25_klassisk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://kortforsyningen.kms.dk/topo25?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=topo25_klassisk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "map"
     },
     "type": "Feature"
 }

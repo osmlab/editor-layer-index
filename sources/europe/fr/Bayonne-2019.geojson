@@ -1,0 +1,135 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Bayonne_2019",
+        "name": "Bayonne - Petit et Grand Bayonne 2019",
+        "type": "wms",
+        "url": "https://wms.openstreetmap.fr/wms?LAYERS=bayonne_2019&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "end_date": "2019",
+        "start_date": "2019",
+        "country_code": "FR",
+        "available_projections": [
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3943",
+            "EPSG:3944",
+            "EPSG:4326",
+            "EPSG:27563",
+            "EPSG:32630"
+        ],
+        "attribution": {
+            "text": "Ville de Bayonne - 2019",
+            "required": true
+        },
+        "max_zoom": 20,
+        "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -1.48262,
+                    43.49176
+                ],
+                [
+                    -1.48223,
+                    43.48637
+                ],
+                [
+                    -1.481,
+                    43.48642
+                ],
+                [
+                    -1.48087,
+                    43.48462
+                ],
+                [
+                    -1.47099,
+                    43.485
+                ],
+                [
+                    -1.47106,
+                    43.4859
+                ],
+                [
+                    -1.46858,
+                    43.486
+                ],
+                [
+                    -1.46865,
+                    43.48689
+                ],
+                [
+                    -1.46742,
+                    43.48694
+                ],
+                [
+                    -1.46781,
+                    43.49234
+                ],
+                [
+                    -1.46905,
+                    43.49229
+                ],
+                [
+                    -1.46911,
+                    43.49319
+                ],
+                [
+                    -1.47158,
+                    43.49309
+                ],
+                [
+                    -1.47165,
+                    43.49399
+                ],
+                [
+                    -1.47288,
+                    43.49395
+                ],
+                [
+                    -1.47295,
+                    43.49484
+                ],
+                [
+                    -1.47418,
+                    43.4948
+                ],
+                [
+                    -1.47425,
+                    43.49569
+                ],
+                [
+                    -1.47918,
+                    43.4955
+                ],
+                [
+                    -1.47913,
+                    43.4946
+                ],
+                [
+                    -1.48035,
+                    43.49455
+                ],
+                [
+                    -1.48029,
+                    43.49366
+                ],
+                [
+                    -1.48152,
+                    43.49361
+                ],
+                [
+                    -1.48139,
+                    43.49181
+                ],
+                [
+                    -1.48262,
+                    43.49176
+                ]
+            ]
+        ]
+    }
+}

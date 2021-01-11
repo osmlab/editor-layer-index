@@ -15,6 +15,33 @@ function updateOpacity(value) {
     testLayer.setOpacity(value);
 }
 
+function josmURL(d) {
+    var params = {
+        title: d.properties.name,
+        type: d.properties.type,
+        min_zoom: d.properties.min_zoom,
+        max_zoom: d.properties.max_zoom,
+        url: d.properties.url
+    };
+
+    Object.keys(params).forEach(function (key) {
+        if (params[key] === undefined) {
+            delete params[key];
+        }
+    });
+
+    return 'http://127.0.0.1:8111/imagery?' + (new URLSearchParams(params)).toString();
+}
+
+function idURL(d) {
+    var params = {
+        editor: 'id',
+        background: 'custom:' + d.properties.url
+    };
+
+    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString();
+}
+
 d3.json("imagery.geojson", function(error, imagery) {
     imagery.features = imagery.features.sort(function(a,b) {
         // sort by country code, then alphabetically
@@ -43,7 +70,9 @@ d3.json("imagery.geojson", function(error, imagery) {
         map.openPopup(
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
-                return match.feature.properties.name;
+                return match.feature.properties.name +
+                    ` [<a href="${idURL(match.feature)}" title="Add to iD">iD</a>] ` +
+                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );
@@ -61,7 +90,7 @@ d3.json("imagery.geojson", function(error, imagery) {
             return d.properties.best === true;
         });
 
-    var imagery_links = divs.append('a')
+    var imagery_links = divs.append('span').append('a')
         .text(function(d) {
             return (d.properties['country_code'] || 'world') + ' / ' + d.properties.name + (d.properties.best ? '*' : '');
         })
@@ -149,6 +178,22 @@ d3.json("imagery.geojson", function(error, imagery) {
             else
                 return d.properties.type;
         });
+
+    var josmLink = divs.append('span')
+        .classed('remote-control', true)
+        .append('a')
+        .text('JOSM')
+        .attr('href', josmURL)
+        .attr('title', 'Add to JOSM')
+        .attr('target', '_blank')
+
+    var idLink = divs.append('span')
+        .classed('remote-control', true)
+        .append('a')
+        .text('iD')
+        .attr('href', idURL)
+        .attr('title', 'Add to iD')
+        .attr('target', '_blank')
 
     var meta = divs.append('div')
         .classed('meta', true);

@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ -68.9971, -73.0747 ], [ -72.0726, -72.1629 ], [ -72.3142, -70.6072 ], [ -72.3142, -70.2615 ], [ -64.7792, -64.9187 ], [ -58.2107, -64.9187 ], [ -58.2107, -65.3528 ], [ -59.5727, -66.8905 ], [ -60.4075, -67.7459 ], [ -61.484, -68.7709 ], [ -62.6922, -69.8191 ], [ -64.0103, -70.8465 ], [ -65.7018, -72.0346 ], [ -67.3714, -73.0683 ], [ -67.3934, -73.0747 ], [ -68.9971, -73.0747 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "Recent mostly cloud free Sentinel-2 image of the central and southern part of the Antarctic Peninsula including the eastern part of Alexander Island (true color)",
+        "end_date": "2020-01-19",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-S2B_R095_S6X_20200119T131859",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Antarctic Peninsula",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "2020-01-19",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R095_S6X_20200119T131859&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

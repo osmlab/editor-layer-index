@@ -10,12 +10,14 @@
         "end_date": "2017-04-09",
         "url": "https://{switch:wmts1,wmts2}.geoportail.lu/opendata/wmts/ortho_10cm_proto_lidar/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 21,
+        "min_zoom": 6,
         "start_date": "2017-04-09",
         "license_url": "https://data.public.lu/en/datasets/lidar-projet-pilote-dun-releve-3d-du-territoire-luxembourgeois",
         "country_code": "LU",
         "type": "tms",
         "id": "lu.geoportail.opendata.ortho_10cm_proto_lidar",
-        "icon": "https://www.geoportail.lu/static/img/lion.png"
+        "icon": "https://www.geoportail.lu/static/img/lion.png",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",
@@ -29,7 +31,7 @@
                     6.049789364226169,
                     49.91165980309075
                 ],
-                              [
+                [
                     6.18901175543688,
                     49.91171720394339
                 ],
@@ -37,7 +39,6 @@
                     6.188971338193781,
                     49.821811209128995
                 ],
-
                 [
                     6.050007108761704,
                     49.82175399016297

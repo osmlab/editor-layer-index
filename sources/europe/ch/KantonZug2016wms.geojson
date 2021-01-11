@@ -7,9 +7,10 @@
         },
         "available_projections": [
             "EPSG:21781",
+            "EPSG:2056",
+            "CRS:84",
             "EPSG:3857",
-            "EPSG:4326",
-            "EPSG:2056"
+            "EPSG:4326"
         ],
         "best": true,
         "country_code": "CH",
@@ -20,9 +21,10 @@
         "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
         "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
         "type": "wms",
-        "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2016_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "min_zoom": 10,
-        "max_zoom": 21
+        "category": "photo",
+        "description": "Orthofoto fuer den Nordteil des Kantons Zug. Geflogen am 20.04.2016. 10cm Aufloesung per Pixel. Abdeckung: Gemeinden Cham, Steinhausen und Baar, sowie Teile von Zug Befliegung vor Laubaustrieb, ohne Schneeabdeckung.",
+        "url": "https://services.geo.zg.ch/ows/Orthofotos?LAYERS=zg.orthofoto_2016_kt_zg&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 10
     },
     "geometry": {
         "type": "Polygon",

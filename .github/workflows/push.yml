@@ -1,0 +1,51 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: [ubuntu-20.04]
+    if: "!contains(github.event.head_commit.message, 'Deploy') && github.repository == 'osmlab/editor-layer-index'"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install -U pip wheel
+          python -m pip install -r requirements.txt
+
+      - name: Basic check
+        run: find sources -name \*.geojson | xargs python scripts/check.py
+
+      - name: Delete old imagery files
+        run: make clean
+
+      - name: Generate imagery files
+        run: make all
+
+      - name: Select files to deploy
+        run: |
+          mkdir deploy
+          mkdir deploy/i18n
+          cp imagery.* deploy
+          cp i18n/en.yaml deploy/i18n
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: deploy # The folder the action should deploy.
+          CLEAN: false # Automatically remove deleted files from the deploy branch

@@ -1,11 +1,12 @@
 # OSM Editor Layer Index
-[![Build Status](https://travis-ci.org/osmlab/editor-layer-index.svg?branch=gh-pages)](https://travis-ci.org/osmlab/editor-layer-index)
+
+[![Build Status](https://github.com/osmlab/editor-layer-index/workflows/Deploy/badge.svg?branch=gh-pages)](https://github.com/osmlab/editor-layer-index/actions?query=branch%3Agh-pages+workflow%3ADeploy)
 
 The goal of this project is to maintain a canonical representation of the layers available to [OpenStreetMap](https://www.openstreetmap.org/) editors such as:
 
 * [iD](https://github.com/openstreetmap/iD)
-* [Vespucci](http://vespucci.io/)
-* [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!)
+* [Vespucci](http://vespucci.io/) (historically)
+* [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!) (historically)
 * [Potlatch 2](https://github.com/systemed/potlatch2) and
 * [JOSM](https://josm.openstreetmap.de/) (optional)
 
@@ -20,7 +21,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for info on how to contribute new sources
 
 ## Using this index
 
-If you are using iD, Potlatch 2, Vespucci or Go Map!!, you are already using this index!
+If you are using iD or Potlatch 2 you are already using this index!
 
 For JOSM you can add `https://osmlab.github.io/editor-layer-index/imagery.xml` to the preference key `imagery.layers.sites` in advanced preferences. You probably want to remove the `https://josm.openstreetmap.de/maps` entry or you'll get the same layers listed twice.
 

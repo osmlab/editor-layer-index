@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ 30.0359, -72.8301 ], [ 30.0359, -72.2248 ], [ 32.3599, -72.2248 ], [ 32.3595, -72.7236 ], [ 31.7635, -72.8301 ], [ 30.0359, -72.8301 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "Landsat 8 evening image of the Belgica Mountains showing a different lighting compared to the daytime image (true color)",
+        "end_date": "2019-12-12",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-LC80691332019346LGN01",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Belgica Mountains evening",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "2019-12-12",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80691332019346LGN01&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

@@ -1,45 +1,46 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "PrahaIPRlatestorthophoto",
-    "name": "Praha IPR latest orthophoto",
-    "type": "wms",
-    "url": "http://giswa1.mag.mepnet.cz/arcgis/services/MAP/letecke_snimky_posledni_snimkovani_cache/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "country_code": "CZ",
-    "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#Ortofotomapy_IPR_Praha",
-    "available_projections": [
-      "EPSG:4326",
-      "EPSG:5514",
-      "EPSG:102067"
-    ],
-    "max_zoom": 20,
-    "min_zoom": 1
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          14.8123155,
-          49.930893
+    "type": "Feature",
+    "properties": {
+        "id": "PrahaIPRlatestorthophoto",
+        "name": "Praha IPR latest orthophoto",
+        "type": "wms",
+        "url": "http://giswa1.mag.mepnet.cz/arcgis/services/MAP/letecke_snimky_posledni_snimkovani_cache/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "country_code": "CZ",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#Ortofotomapy_IPR_Praha",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:5514"
         ],
-        [
-          14.1875458,
-          49.8768727
-        ],
-        [
-          14.1202546,
-          50.1988154
-        ],
-        [
-          14.7450243,
-          50.2524746
-        ],
-        [
-          14.8123155,
-          49.930893
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    14.8123155,
+                    49.930893
+                ],
+                [
+                    14.1875458,
+                    49.8768727
+                ],
+                [
+                    14.1202546,
+                    50.1988154
+                ],
+                [
+                    14.7450243,
+                    50.2524746
+                ],
+                [
+                    14.8123155,
+                    49.930893
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

@@ -1,0 +1,130 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© Turun kaupunki",
+            "url": "https://www.turku.fi/turku-tieto/kartat-ja-paikkatieto"
+        },
+        "available_projections": [
+            "EPSG:2391",
+            "EPSG:3067",
+            "EPSG:3129",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "best": true,
+        "country_code": "FI",
+        "description": "Ortophotos from the city of Turku",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Turku.vaakuna.svg/200px-Turku.vaakuna.svg.png",
+        "id": "turku-orto-2018-true",
+        "license_url": "https://dev.turku.fi/openstreetmap-lupa.pdf",
+        "privacy_policy_url": "https://www.turku.fi/turku-tieto/tietosuoja/kayttotiedot-ja-evasteet",
+        "max_zoom": 20,
+        "min_zoom": 4,
+        "start_date": "2018-07-14",
+        "end_date": "2018-07-14",
+        "name": "City of Turku ortophoto - 2018 True ortho",
+        "type": "wms",
+        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva 2018 True ortho&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    22.20773,
+                    60.48192
+                ],
+                [
+                    22.18898,
+                    60.46167
+                ],
+                [
+                    22.15111,
+                    60.4647
+                ],
+                [
+                    22.11991,
+                    60.46316
+                ],
+                [
+                    22.11448,
+                    60.44459
+                ],
+                [
+                    22.12533,
+                    60.43892
+                ],
+                [
+                    22.14443,
+                    60.43815
+                ],
+                [
+                    22.20536,
+                    60.44335
+                ],
+                [
+                    22.20443,
+                    60.43465
+                ],
+                [
+                    22.14808,
+                    60.41251
+                ],
+                [
+                    22.14125,
+                    60.40444
+                ],
+                [
+                    22.17104,
+                    60.38313
+                ],
+                [
+                    22.2254,
+                    60.38328
+                ],
+                [
+                    22.28446,
+                    60.39091
+                ],
+                [
+                    22.27423,
+                    60.40519
+                ],
+                [
+                    22.30929,
+                    60.41024
+                ],
+                [
+                    22.36908,
+                    60.43517
+                ],
+                [
+                    22.37033,
+                    60.44067
+                ],
+                [
+                    22.33819,
+                    60.47484
+                ],
+                [
+                    22.34456,
+                    60.48065
+                ],
+                [
+                    22.36,
+                    60.47545
+                ],
+                [
+                    22.37127,
+                    60.48301
+                ],
+                [
+                    22.20773,
+                    60.48192
+                ]
+            ]
+        ]
+    }
+}

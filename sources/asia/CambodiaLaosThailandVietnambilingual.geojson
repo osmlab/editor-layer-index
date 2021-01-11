@@ -4,14 +4,16 @@
         "id": "osm-cambodia_laos_thailand_vietnam-bilingual",
         "url": "https://{switch:a,b,c,d}.tile.osm-tools.org/osm/{zoom}/{x}/{y}.png",
         "attribution": {
-            "url": "http://www.osm-tools.org",
+            "url": "https://www.osm-tools.org",
             "text": "© osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
             "required": true
         },
         "country_code": "ZZ",
         "max_zoom": 20,
         "type": "tms",
-        "name": "Cambodia, Laos, Thailand, Vietnam, Malaysia, Myanmar bilingual"
+        "name": "Cambodia, Laos, Thailand, Vietnam, Malaysia, Myanmar bilingual",
+        "category": "osmbasedmap",
+        "privacy_policy_url": "https://www.osm-tools.org"
     },
     "geometry": {
         "type": "Polygon",
