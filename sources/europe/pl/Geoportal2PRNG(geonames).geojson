@@ -4,16 +4,17 @@
         "id": "Geoportal2-PL-prng",
         "name": "Geoportal 2: PRNG (geo names)",
         "type": "wms",
-        "url": "https://mapy.geoportal.gov.pl/wss/service/pub/guest/G2_PRNG_WMS/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=PozostaleObiektyFizjograficzne,Hydrografia,PozostaleMiejscowosci,Wies,UksztaltowanieTerenu&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}{header(User-Agent,Mozilla/5.0 (JOSM)}",
+        "url": "https://mapy.geoportal.gov.pl/wss/service/pub/guest/G2_PRNG_WMS/MapServer/WMSServer?LAYERS=PozostaleObiektyFizjograficzne,Hydrografia,PozostaleMiejscowosci,Wies,UksztaltowanieTerenu&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "overlay": true,
         "country_code": "PL",
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:2180",
+            "CRS:84",
             "EPSG:2176",
             "EPSG:2177",
             "EPSG:2178",
-            "EPSG:2179"
+            "EPSG:2179",
+            "EPSG:2180",
+            "EPSG:4326"
         ],
         "attribution": {
             "text": "Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej",
@@ -21,6 +22,11 @@
         },
         "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
         "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
+        "custom-http-headers": {
+            "header-name": "User-Agent",
+            "header-value": "Mozilla/5.0 (JOSM)"
+        },
+        "privacy_policy_url": "https://www.geoportal.gov.pl/ciasteczka-cookies-",
         "category": "other"
     },
     "geometry": {

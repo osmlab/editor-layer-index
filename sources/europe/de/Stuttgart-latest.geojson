@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "Stuttgart-latest",
-        "url": "https://gis5.stuttgart.de/arcgis/services/1_Base/WMS_Luftbilder_aktuell/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis5.stuttgart.de/arcgis/services/1_Base/WMS_Luftbilder_aktuell/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
         "name": "Stuttgart Luftbild Stadtmessungsamt 2017",
         "country_code": "DE",
@@ -13,8 +13,11 @@
         "license_url": "https://lists.openstreetmap.de/pipermail/stuttgart/2018-September/000882.html",
         "best": true,
         "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
             "EPSG:25832",
-            "EPSG:3857"
+            "EPSG:31467"
         ],
         "icon": "https://www.stuttgart.de/favicon.ico"
     },

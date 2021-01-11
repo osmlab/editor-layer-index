@@ -1,0 +1,79 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "UkraineDonAndriivskaOTG2020",
+        "name": "Ukraine - Andriivska OTG 2020",
+        "type": "tms",
+        "url": "https://otgportal.com.ua//arcgis/rest/services/don_andriivska/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BE%D1%80%D1%82%D0%BE/MapServer/tile/{zoom}/{y}/{x}",
+        "category": "photo",
+        "permission_osm": "implicit",
+        "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+        "privacy_policy_url": "https://zakon.rada.gov.ua/laws/show/3792-12",
+        "start_date": "2020",
+        "end_date": "2020",
+        "country_code": "UA",
+        "best": true,
+        "max_zoom": 19,
+        "min_zoom": 11,
+        "attribution": {
+            "text": "Геопортал Андріївської громади",
+            "url": "http://andriivska.gromada.org.ua/",
+            "required": true
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    37.3003,
+                    48.7113
+                ],
+                [
+                    37.4479,
+                    48.7115
+                ],
+                [
+                    37.4455,
+                    48.6653
+                ],
+                [
+                    37.4197,
+                    48.6120
+                ],
+                [
+                    37.3847,
+                    48.5866
+                ],
+                [
+                    37.2577,
+                    48.5629
+                ],
+                [
+                    37.2467,
+                    48.5959
+                ],
+                [
+                    37.2003,
+                    48.5990
+                ],
+                [
+                    37.1894,
+                    48.6174
+                ],
+                [
+                    37.2165,
+                    48.6639
+                ],
+                [
+                    37.2642,
+                    48.6533
+                ],
+                [
+                    37.3003,
+                    48.7113
+                ]
+            ]
+        ]
+    }
+}

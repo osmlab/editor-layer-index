@@ -1,0 +1,95 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "UkraineLubetskaOTG2020",
+        "name": "Ukraine - Lubetska OTG 2020",
+        "type": "tms",
+        "url": "https://otgportal.com.ua/arcgis/rest/services/chern_lubecka/Lubecka_ortho1000_2020/MapServer/WMTS/tile/1.0.0/chern_lubecka_Lubecka_ortho1000_2020/default/GoogleMapsCompatible/{zoom}/{y}/{x}",
+        "category": "photo",
+        "permission_osm": "implicit",
+        "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+        "privacy_policy_url": "https://zakon.rada.gov.ua/laws/show/3792-12",
+        "start_date": "2020",
+        "end_date": "2020",
+        "country_code": "UA",
+        "best": true,
+        "max_zoom": 20,
+        "min_zoom": 11,
+        "attribution": {
+            "text": "Map data: © Геоінформаційна система Любецької громади",
+            "required": true
+        },
+        "icon": "https://gromada.org.ua/favicon-32x32.png"
+    },
+    "geometry": {
+		"type": "Polygon",
+		"coordinates": [
+            [
+                [
+                    30.9471,
+                    51.6608
+                ],
+                [
+                    30.8925,
+                    51.5920
+                ],
+                [
+                    30.8372,
+                    51.5811
+                ],
+                [
+                    30.8142,
+                    51.5834
+                ],
+                [
+                    30.7517,
+                    51.6135
+                ],
+                [
+                    30.6690,
+                    51.6810
+                ],
+                [
+                    30.5945,
+                    51.6642
+                ],
+                [
+                    30.5577,
+                    51.7027
+                ],
+                [
+                    30.6686,
+                    51.7610
+                ],
+                [
+                    30.6985,
+                    51.8016
+                ],
+                [
+                    30.7452,
+                    51.7905
+                ],
+                [
+                    30.7342,
+                    51.7703
+                ],
+                [
+                    30.8135,
+                    51.7425
+                ],
+                [
+                    30.85856,
+                    51.68214
+                ],
+                [
+                    30.9261,
+                    51.67366
+                ],
+                [
+                    30.9471,
+                    51.6608
+                ]
+            ]
+		]
+	}
+}

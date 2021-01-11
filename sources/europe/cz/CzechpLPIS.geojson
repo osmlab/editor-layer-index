@@ -4,13 +4,13 @@
         "id": "Czech_pLPIS",
         "name": "Czech pLPIS",
         "type": "wms",
-        "url": "https://eagri.cz/public/app/wms/public_DPB_PB_OPV.fcgi?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DPB_UCINNE,DPB_UCINNE_KOD&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
+        "url": "https://eagri.cz/public/app/wms/public_DPB_PB_OPV.fcgi?LAYERS=DPB_UCINNE,DPB_UCINNE_KOD&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "CZ",
         "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#pLPIS_-_ve.C5.99ejn.C3.BD_registr_p.C5.AFdy",
         "available_projections": [
-            "EPSG:102067",
-            "EPSG:32633",
-            "EPSG:4326"
+            "EPSG:4326",
+            "EPSG:5514",
+            "EPSG:32633"
         ],
         "category": "other"
     },

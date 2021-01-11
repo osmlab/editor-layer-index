@@ -4,18 +4,25 @@
         "id": "Gliwice-2013",
         "name": "Gliwice: Orthophotomap 2013 (aerial image)",
         "type": "wms",
-        "url": "http://185.60.246.14:9090/isdp/gs/ows?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://msip-mapa.um.gliwice.pl:9090/isdp/gs/ows/wms2?LAYERS=default:orto_2013&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2013",
         "end_date": "2013",
         "country_code": "PL",
         "available_projections": [
-            "EPSG:2177"
+            "CRS:84",
+            "EPSG:2175",
+            "EPSG:2177",
+            "EPSG:2180",
+            "EPSG:4326",
+            "EPSG:900913"
         ],
         "attribution": {
             "text": "Urząd Miasta Gliwice"
         },
-        "max_zoom": 23,
-        "category": "photo"
+        "min_zoom": 14,
+        "category": "historicphoto",
+        "privacy_policy_url": "https://gliwice.eu/polityka-prywatnosci",
+        "license_url": "https://msip.gliwice.eu/portal-planistyczny/otwarte-dane.html"
     },
     "geometry": {
         "type": "Polygon",
