@@ -47,16 +47,12 @@ RequestResult = namedtuple(
 
 ZOOM_LEVEL = 14
 
-
 # Before adding a new WMS version, it should be checked if every consumer supports it!
 supported_wms_versions = ["1.3.0", "1.1.1", "1.1.0", "1.0.0"]
 
 
 epsg_3857_alias = set(
-    [
-        "EPSG:{}".format(epsg)
-        for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]
-    ]
+    [f"EPSG:{epsg}" for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]]
 )
 
 # List of not deprecated EPSG codes
@@ -64,7 +60,7 @@ valid_epsgs = set(["CRS:84"])
 for pj_type in pyproj.enums.PJType:
     valid_epsgs.update(
         map(
-            lambda x: "EPSG:{}".format(x),
+            lambda x: f"EPSG:{x}",
             pyproj.get_codes("EPSG", pj_type, allow_deprecated=False),
         )
     )
@@ -151,7 +147,7 @@ async def get_url(
     """
     o = urlparse(url)
     if len(o.netloc) == 0:
-        return RequestResult(exception="Could not parse URL: {}".format(url))
+        return RequestResult(exception=f"Could not parse URL: {url}")
 
     async with domain_lock:
         if o.netloc not in domain_locks:
@@ -162,7 +158,7 @@ async def get_url(
         if url not in response_cache:
             for i in range(3):
                 try:
-                    logging.debug("GET {}".format(url))
+                    logging.debug(f"GET {url}")
                     async with session.request(
                         method="GET", url=url, ssl=False, headers=headers
                     ) as response:
@@ -183,19 +179,17 @@ async def get_url(
                         else:
                             response_cache[url] = RequestResult(status=status)
                 except asyncio.TimeoutError:
-                    response_cache[url] = RequestResult(
-                        exception="Timeout for: {}".format(url)
-                    )
+                    response_cache[url] = RequestResult(exception=f"Timeout for: {url}")
                 except Exception as e:
-                    logging.debug("Error for: {} ({})".format(url, str(e)))
+                    logging.debug(f"Error for: {url} ({e})")
                     response_cache[url] = RequestResult(
-                        exception="Exception {} for: {}".format(str(e), url)
+                        exception=f"Exception {e} for: {url}"
                     )
                 if RequestResult.exception is None:
                     break
                 await asyncio.sleep(5)
         else:
-            logging.debug("Cached {}".format(url))
+            logging.debug(f"Cached {url}")
 
         return response_cache[url]
 
@@ -253,7 +247,7 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
         bbox = ",".join(map(str, bounds))
 
     formatted_url = url.format(proj=proj, width=512, height=512, bbox=bbox)
-    messages.append("Image URL: {}".format(formatted_url))
+    messages.append(f"Image URL: {formatted_url}")
     for i in range(3):
         try:
             # Download image
@@ -263,13 +257,82 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
                 data = await response.read()
                 img = Image.open(io.BytesIO(data))
                 img_hash = imagehash.average_hash(img)
-                messages.append("ImageHash: {}".format(img_hash))
+                messages.append(f"ImageHash: {img_hash}")
                 return img_hash
         except Exception as e:
-            messages.append("Could not download image in try {}: {}".format(i, str(e)))
+            messages.append(f"Could not download image in try {i}: {e}")
         await asyncio.sleep(5)
 
     return None
+
+
+async def check_proj(url, proj, lon, lat, zoom, session, messages):
+    """Check if image is returned
+
+    Parameters
+    ----------
+    url : str
+    projection : str
+    lon : float
+    lat : float
+    zoom : int
+    session : ClientSession
+    messages : list
+
+    Returns
+    -------
+    ImageHash or None
+
+    """
+    tile = list(mercantile.tiles(lon, lat, lon, lat, zooms=zoom))[0]
+    bounds = list(mercantile.bounds(tile))
+
+    if proj in {"EPSG:4326", "CRS:84"}:
+        if proj == "EPSG:4326" and "=1.3.0" in url:
+            bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
+        else:
+            bbox = ",".join(map(str, bounds))
+    else:
+        try:
+            CRS.from_string(proj)
+        except:
+            messages.append(f"Projection {proj} could not be parsed by pyproj.")
+            return False
+
+        crs_from = CRS.from_string("epsg:4326")
+        crs_to = CRS.from_string(proj)
+        transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
+        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
+            transformer.transform(bounds[2], bounds[3])
+        )
+
+        # WMS < 1.3.0 assumes x,y coordinate ordering.
+        # WMS 1.3.0 expects coordinate ordering defined in CRS.
+        #
+        if crs_to.axis_info[0].direction == "north" and "=1.3.0" in url:
+            bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
+        else:
+            bbox = ",".join(map(str, bounds))
+
+    formatted_url = url.format(proj=proj, width=256, height=256, bbox=bbox)
+    messages.append("Image URL: {}".format(formatted_url))
+    try:
+        # Download image
+        async with session.request(
+            method="GET", url=formatted_url, ssl=False
+        ) as response:
+            data = await response.read()
+            # Test if PIL can open returned data
+            try:
+                Image.open(io.BytesIO(data))
+                return True
+            except:
+                return False
+    except Exception as e:
+        messages.append(f"Could not download image in try: {e}")
+
+    # Network error do not indicate that the server does not support projection
+    return True
 
 
 def parse_wms(xml):
@@ -600,10 +663,9 @@ async def process_source(filename, session: ClientSession):
         if max_count(str(image_hash)) == 16:
             # These image hashes indicate that the downloaded image is not useful to determine
             # if the updated query returns the same image
+            error_msgs = "\n\t".join(original_img_messages)
             logging.info(
-                "ImageHash {} not useful for: {} || {}".format(
-                    str(image_hash), filename, " || ".join(original_img_messages)
-                )
+                f"ImageHash {image_hash} not useful for: {filename}: \n\t{error_msgs}"
             )
             return
 
@@ -611,10 +673,9 @@ async def process_source(filename, session: ClientSession):
         wms_messages = []
         result = await update_wms(source["properties"]["url"], session, wms_messages)
         if result is None:
+            error_msgs = "\n\t".join(wms_messages)
             logging.info(
-                "Not possible to update wms url for {}: {}".format(
-                    filename, " || ".join(wms_messages)
-                )
+                f"Not possible to update wms url for {filename}:\n\t{error_msgs}"
             )
             return
 
@@ -653,14 +714,10 @@ async def process_source(filename, session: ClientSession):
 
         # Only sources are updated where the new query returns the same image
         if not image_hash == new_image_hash:
+            error_original_img_messages = "\n\t".join(original_img_messages)
+            error_new_img_messages = "\n\t".join(new_img_messages)
             logging.info(
-                "Image hash not the same for: {}: '{}' vs '{}' | {} | {}".format(
-                    filename,
-                    image_hash,
-                    new_image_hash,
-                    " || ".join(original_img_messages),
-                    " || ".join(new_img_messages),
-                )
+                f"Image hash not the same for: {filename}: '{image_hash}' vs '{new_image_hash}' \n\t{error_original_img_messages} \n\t{error_new_img_messages}"
             )
 
         # Servers might support projections that are not used in the area covered by a source
@@ -683,16 +740,12 @@ async def process_source(filename, session: ClientSession):
                         epsg_outside_area_of_use.add(epsg)
                 except Exception as e:
                     logging.exception(
-                        "Could not check area of use for projection {}: {}".format(
-                            epsg, str(e)
-                        )
+                        f"Could not check area of use for projection {epsg}: {e}"
                     )
                     continue
             if len(result["available_projections"]) == len(epsg_outside_area_of_use):
                 logging.error(
-                    "{}: epsg_outside_area_of_use filter removes all EPSG".format(
-                        filename
-                    )
+                    f"{filename}: epsg_outside_area_of_use filter removes all EPSG"
                 )
             result["available_projections"] -= epsg_outside_area_of_use
 
@@ -726,6 +779,26 @@ async def process_source(filename, session: ClientSession):
         # Filter deprecated projections
         result["available_projections"].intersection_update(valid_epsgs)
 
+        # Check if projections are supported by server
+        not_supported_projections = set()
+        for proj in result["available_projections"]:
+            proj_messages = []
+            if not await check_proj(
+                url=result["url"],
+                proj=proj,
+                lon=pt.x,
+                lat=pt.y,
+                zoom=test_zoom_level,
+                session=session,
+                messages=proj_messages,
+            ):
+                # err_msgs = "\n".join(proj_messages)
+                # logging.info(
+                #     f"{filename}: Proj {proj} not supported by server: {err_msgs}"
+                # )
+                not_supported_projections.add(proj)
+        result["available_projections"] -= not_supported_projections
+
         # Check if only formatting has changed
         url_has_changed = not compare_urls(source["properties"]["url"], result["url"])
         projections_have_changed = not compare_projs(
@@ -748,14 +821,16 @@ async def process_source(filename, session: ClientSession):
                 json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
                 out.write("\n")
     except Exception as e:
-        logging.exception("Failed to check source {}: {}".format(filename, str(e)))
+        logging.exception(f"Failed to check source {filename}: {e}")
 
 
 async def start_processing(sources_directory):
     headers = {"User-Agent": "Mozilla/5.0 (compatible; MSIE 6.0; ELI WMS sync )"}
     timeout = aiohttp.ClientTimeout(total=180)
-
-    async with ClientSession(headers=headers, timeout=timeout) as session:
+    conn = aiohttp.TCPConnector(limit_per_host=2)
+    async with ClientSession(
+        headers=headers, timeout=timeout, connector=conn
+    ) as session:
         jobs = []
         files = glob.glob(
             os.path.join(sources_directory, "**", "*.geojson"), recursive=True
