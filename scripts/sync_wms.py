@@ -194,6 +194,46 @@ async def get_url(
         return response_cache[url]
 
 
+def wms_version_from_url(url):
+    """ Extract wms version from url"""
+    u = urlparse(url.lower())
+    qsl = dict(parse_qsl(u.query))
+    if "version" not in qsl:
+        return None
+    else:
+        return qsl["version"]
+
+
+def _get_bbox(proj, bounds, wms_version):
+    """ Build wms bbox parameter for GetMap request"""
+    if proj in {"EPSG:4326", "CRS:84"}:
+        if proj == "EPSG:4326" and wms_version == "1.3.0":
+            bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
+        else:
+            bbox = ",".join(map(str, bounds))
+    else:
+        try:
+            CRS.from_string(proj)
+        except:
+            return None
+
+        crs_from = CRS.from_string("epsg:4326")
+        crs_to = CRS.from_string(proj)
+        transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
+        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
+            transformer.transform(bounds[2], bounds[3])
+        )
+
+        # WMS < 1.3.0 assumes x,y coordinate ordering.
+        # WMS 1.3.0 expects coordinate ordering defined in CRS.
+        #
+        if crs_to.axis_info[0].direction == "north" and wms_version == "1.3.0":
+            bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
+        else:
+            bbox = ",".join(map(str, bounds))
+    return bbox
+
+
 async def get_image(url, available_projections, lon, lat, zoom, session, messages):
     """Download image (tms tile for coordinate lon,lat on level zoom and calculate image hash
 
@@ -231,20 +271,11 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
         messages.append("No projection left: {}".format(available_projections))
         return None
 
-    crs_from = CRS.from_string("epsg:4326")
-    crs_to = CRS.from_string(proj)
-    if not proj == "EPSG:4326":
-        transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
-        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
-            transformer.transform(bounds[2], bounds[3])
-        )
-
-    # WMS < 1.3.0 assumes x,y coordinate ordering.
-    # WMS 1.3.0 expects coordinate ordering defined in CRS.
-    if crs_to.axis_info[0].direction == "north" and "=1.3.0" in url:
-        bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
-    else:
-        bbox = ",".join(map(str, bounds))
+    wms_version = wms_version_from_url(url)
+    bbox = _get_bbox(proj, bounds, wms_version)
+    if bbox is None:
+        messages.append(f"Projection {proj} could not be parsed by pyproj.")
+        return None
 
     formatted_url = url.format(proj=proj, width=512, height=512, bbox=bbox)
     messages.append(f"Image URL: {formatted_url}")
@@ -286,33 +317,11 @@ async def check_proj(url, proj, lon, lat, zoom, session, messages):
     """
     tile = list(mercantile.tiles(lon, lat, lon, lat, zooms=zoom))[0]
     bounds = list(mercantile.bounds(tile))
-
-    if proj in {"EPSG:4326", "CRS:84"}:
-        if proj == "EPSG:4326" and "=1.3.0" in url:
-            bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
-        else:
-            bbox = ",".join(map(str, bounds))
-    else:
-        try:
-            CRS.from_string(proj)
-        except:
-            messages.append(f"Projection {proj} could not be parsed by pyproj.")
-            return False
-
-        crs_from = CRS.from_string("epsg:4326")
-        crs_to = CRS.from_string(proj)
-        transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
-        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
-            transformer.transform(bounds[2], bounds[3])
-        )
-
-        # WMS < 1.3.0 assumes x,y coordinate ordering.
-        # WMS 1.3.0 expects coordinate ordering defined in CRS.
-        #
-        if crs_to.axis_info[0].direction == "north" and "=1.3.0" in url:
-            bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
-        else:
-            bbox = ",".join(map(str, bounds))
+    wms_version = wms_version_from_url(url)
+    bbox = _get_bbox(proj, bounds, wms_version)
+    if bbox is None:
+        messages.append(f"Projection {proj} could not be parsed by pyproj.")
+        return False
 
     formatted_url = url.format(proj=proj, width=256, height=256, bbox=bbox)
     messages.append("Image URL: {}".format(formatted_url))
@@ -644,6 +653,8 @@ async def process_source(filename, session: ClientSession):
         test_zoom_level = ZOOM_LEVEL
         if "min_zoom" in source["properties"]:
             test_zoom_level = max(source["properties"]["min_zoom"], test_zoom_level)
+        if "max_zoom" in source["properties"]:
+            test_zoom_level = min(source["properties"]["max_zoom"], test_zoom_level)
 
         # Get existing image hash
         original_img_messages = []
@@ -682,6 +693,7 @@ async def process_source(filename, session: ClientSession):
         # Test if selected projections work despite not being advertised
         for EPSG in {"EPSG:3857", "EPSG:4326"}:
             if EPSG not in result["available_projections"]:
+                epsg_check_messages = []
                 epsg_image_hash = await get_image(
                     url=result["url"],
                     available_projections=[EPSG],
@@ -689,10 +701,25 @@ async def process_source(filename, session: ClientSession):
                     lat=pt.y,
                     zoom=test_zoom_level,
                     session=session,
-                    messages=[],
+                    messages=epsg_check_messages,
                 )
-                if epsg_image_hash == image_hash:
+
+                if epsg_image_hash is None:
+                    continue
+
+                # Relax similarity constraint to account for differences due to reprojection
+                hash_diff = abs(image_hash - epsg_image_hash)
+                org_hash_msgs = "\n\t".join(original_img_messages)
+                epsg_check_msgs = "\n\t".join(epsg_check_messages)
+                if hash_diff < 5:
                     result["available_projections"].add(EPSG)
+                    logging.info(
+                        f"{filename}: Add {EPSG} despite not being advertised  : {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                    )
+                elif epsg_image_hash is not None:
+                    logging.info(
+                        f"{filename}: Do not add {EPSG} Difference : {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                    )
 
         # Download image for updated url
         new_img_messages = []
@@ -792,10 +819,6 @@ async def process_source(filename, session: ClientSession):
                 session=session,
                 messages=proj_messages,
             ):
-                # err_msgs = "\n".join(proj_messages)
-                # logging.info(
-                #     f"{filename}: Proj {proj} not supported by server: {err_msgs}"
-                # )
                 not_supported_projections.add(proj)
         result["available_projections"] -= not_supported_projections
 
