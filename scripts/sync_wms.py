@@ -21,6 +21,8 @@ from pyproj.crs import CRS
 import aiofiles
 from aiohttp import ClientSession
 from shapely.ops import cascaded_union
+import magic
+
 
 logging.basicConfig(level=logging.INFO)
 
@@ -46,6 +48,8 @@ RequestResult = namedtuple(
 )
 
 ZOOM_LEVEL = 14
+IMAGE_SIZE = 256
+
 
 # Before adding a new WMS version, it should be checked if every consumer supports it!
 supported_wms_versions = ["1.3.0", "1.1.1", "1.1.0", "1.0.0"]
@@ -105,16 +109,13 @@ def compare_projs(old_projs, new_projs):
 
 def compare_urls(old_url, new_url):
     """Compare URLs. Returns True if the urls contain the same parameters.
-
     Parameters
     ----------
     old_url : str
     new_url : str
-
     Returns
     -------
     bool
-
     """
     old_parameters = parse_qsl(urlparse(old_url.lower()).query, keep_blank_values=True)
     new_parameters = parse_qsl(urlparse(new_url.lower()).query, keep_blank_values=True)
@@ -213,16 +214,14 @@ def _get_bbox(proj, bounds, wms_version):
             bbox = ",".join(map(str, bounds))
     else:
         try:
-            CRS.from_string(proj)
+            crs_from = CRS.from_string("epsg:4326")
+            crs_to = CRS.from_string(proj)
+            transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
+            bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
+                transformer.transform(bounds[2], bounds[3])
+            )
         except:
             return None
-
-        crs_from = CRS.from_string("epsg:4326")
-        crs_to = CRS.from_string(proj)
-        transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
-        bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
-            transformer.transform(bounds[2], bounds[3])
-        )
 
         # WMS < 1.3.0 assumes x,y coordinate ordering.
         # WMS 1.3.0 expects coordinate ordering defined in CRS.
@@ -277,7 +276,9 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
         messages.append(f"Projection {proj} could not be parsed by pyproj.")
         return None
 
-    formatted_url = url.format(proj=proj, width=512, height=512, bbox=bbox)
+    formatted_url = url.format(
+        proj=proj, width=IMAGE_SIZE, height=IMAGE_SIZE, bbox=bbox
+    )
     messages.append(f"Image URL: {formatted_url}")
     for i in range(3):
         try:
@@ -323,22 +324,42 @@ async def check_proj(url, proj, lon, lat, zoom, session, messages):
         messages.append(f"Projection {proj} could not be parsed by pyproj.")
         return False
 
-    formatted_url = url.format(proj=proj, width=256, height=256, bbox=bbox)
+    formatted_url = url.format(
+        proj=proj, width=IMAGE_SIZE, height=IMAGE_SIZE, bbox=bbox
+    )
     messages.append("Image URL: {}".format(formatted_url))
-    try:
-        # Download image
-        async with session.request(
-            method="GET", url=formatted_url, ssl=False
-        ) as response:
-            data = await response.read()
-            # Test if PIL can open returned data
-            try:
-                Image.open(io.BytesIO(data))
-                return True
-            except:
-                return False
-    except Exception as e:
-        messages.append(f"Could not download image in try: {e}")
+    for i in range(3):
+        try:
+            # Download image
+            async with session.request(
+                method="GET", url=formatted_url, ssl=False
+            ) as response:
+                if response.status == 200:
+                    data = await response.read()
+                    # Test if PIL can open returned data
+                    try:
+                        Image.open(io.BytesIO(data))
+                        return True
+                    except:
+                        filetype = magic.from_buffer(data)
+                        messages.append(
+                            f"Could not open recieved data as image (Recieved filetype: {filetype} {formatted_url})"
+                        )
+                        return False
+                # 400: HTTP Bad Request
+                # 404: Not found
+                elif response.status in {400, 404}:
+                    messages.append(
+                        f"Request recieved status code {response.status} {formatted_url}"
+                    )
+                    return True
+                else:
+                    logging.info(
+                        f"check_proj: HTTP Code {response.status} {formatted_url}"
+                    )
+        except Exception as e:
+            messages.append(f"Could not download image in try {i}: {e}")
+        await asyncio.sleep(5)
 
     # Network error do not indicate that the server does not support projection
     return True
@@ -690,6 +711,31 @@ async def process_source(filename, session: ClientSession):
             )
             return
 
+        # Download image for updated url
+        new_img_messages = []
+        new_image_hash = await get_image(
+            url=result["url"],
+            available_projections=result["available_projections"],
+            lon=pt.x,
+            lat=pt.y,
+            zoom=test_zoom_level,
+            session=session,
+            messages=new_img_messages,
+        )
+
+        if new_image_hash is None:
+            error_msgs = "\n\t".join(new_img_messages)
+            logging.warning(f"Could not download new image: \n\t{error_msgs}")
+            return
+
+        # Only sources are updated where the new query returns the same image
+        if not image_hash == new_image_hash:
+            error_original_img_messages = "\n\t".join(original_img_messages)
+            error_new_img_messages = "\n\t".join(new_img_messages)
+            logging.info(
+                f"Image hash not the same for: {filename}: '{image_hash}' vs '{new_image_hash}' \n\t{error_original_img_messages} \n\t{error_new_img_messages}"
+            )
+
         # Test if selected projections work despite not being advertised
         for EPSG in {"EPSG:3857", "EPSG:4326"}:
             if EPSG not in result["available_projections"]:
@@ -711,41 +757,15 @@ async def process_source(filename, session: ClientSession):
                 hash_diff = abs(image_hash - epsg_image_hash)
                 org_hash_msgs = "\n\t".join(original_img_messages)
                 epsg_check_msgs = "\n\t".join(epsg_check_messages)
-                if hash_diff < 5:
+                if hash_diff < 6:
                     result["available_projections"].add(EPSG)
                     logging.info(
-                        f"{filename}: Add {EPSG} despite not being advertised  : {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                        f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
                     )
                 elif epsg_image_hash is not None:
                     logging.info(
-                        f"{filename}: Do not add {EPSG} Difference : {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                        f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
                     )
-
-        # Download image for updated url
-        new_img_messages = []
-        new_image_hash = await get_image(
-            url=result["url"],
-            available_projections=result["available_projections"],
-            lon=pt.x,
-            lat=pt.y,
-            zoom=test_zoom_level,
-            session=session,
-            messages=new_img_messages,
-        )
-
-        if new_image_hash is None:
-            logging.warning(
-                "Could not download new image: {}".format(" || ".join(new_img_messages))
-            )
-            return
-
-        # Only sources are updated where the new query returns the same image
-        if not image_hash == new_image_hash:
-            error_original_img_messages = "\n\t".join(original_img_messages)
-            error_new_img_messages = "\n\t".join(new_img_messages)
-            logging.info(
-                f"Image hash not the same for: {filename}: '{image_hash}' vs '{new_image_hash}' \n\t{error_original_img_messages} \n\t{error_new_img_messages}"
-            )
 
         # Servers might support projections that are not used in the area covered by a source
         # Keep only EPSG codes that are used in the area covered by the sources geometry
@@ -819,8 +839,17 @@ async def process_source(filename, session: ClientSession):
                 session=session,
                 messages=proj_messages,
             ):
+                err_msgs = "\n".join(proj_messages)
+                logging.info(
+                    f"{filename}: Proj {proj} not supported by server: {err_msgs}"
+                )
                 not_supported_projections.add(proj)
-        result["available_projections"] -= not_supported_projections
+        if len(not_supported_projections) > 0:
+            removed_projections = ",".join(not_supported_projections)
+            logging.info(
+                f"{filename}: remove projections that are advertised but do not return an image: {removed_projections}"
+            )
+            result["available_projections"] -= not_supported_projections
 
         # Check if only formatting has changed
         url_has_changed = not compare_urls(source["properties"]["url"], result["url"])
