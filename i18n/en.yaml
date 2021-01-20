@@ -80,9 +80,6 @@ en:
       name: SPW(allonie) most recent aerial imagery
     SPW_PICC:
       name: SPW(allonie) PICC numerical imagery
-    US-TIGER-Roads-2014:
-      description: At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2017
@@ -172,11 +169,26 @@ en:
         text: © Gothenburg municipality, CC0
       description: The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.
       name: Gothenburg City map
+    gothenburg-dtm-2017:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Web map service presenting hillshade and slope based on the 2017 elevation model for City of Gothenburg. Resolution 0.5 meters per pixel.
+      name: Gothenburg Hillshade
     gothenburg-ortho:
       attribution:
         text: © Gothenburg municipality, CC0
       description: Orthophoto for Gothenburg municipality
-      name: Gothenburg Orthophoto
+      name: Gothenburg Orthophoto 2015
+    gothenburg-ortho_2017:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto 2017
+    gothenburg-ortho_2019:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto 2019
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
