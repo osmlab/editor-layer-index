@@ -4,11 +4,20 @@
         "id": "Ortofotos_2018-2019_IDEuy",
         "name": "Ortofotos 2018-2019 (IDEuy)",
         "icon": "https://www.gub.uy/infraestructura-datos-espaciales/sites/infraestructura-datos-espaciales/files/inline-images/ideuy_compacto_rgb_473px_0.png",
-        "url": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTOFOTOS_2019&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTOFOTOS_2019&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "best": true,
         "start_date": "2018",
         "end_date": "2019",
         "country_code": "UY",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:31467",
+            "EPSG:31468"
+        ],
         "attribution": {
             "text": "Infraestructura de Datos Espaciales, Licencia de Datos Abiertos – Uruguay, Ortofotos 2018-2019 (IDEuy)",
             "required": true,
