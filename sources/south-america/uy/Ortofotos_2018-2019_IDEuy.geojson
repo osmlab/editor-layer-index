@@ -4,7 +4,7 @@
         "id": "Ortofotos_2018-2019_IDEuy",
         "name": "Ortofotos 2018-2019 (IDEuy)",
         "icon": "https://www.gub.uy/infraestructura-datos-espaciales/sites/infraestructura-datos-espaciales/files/inline-images/ideuy_compacto_rgb_473px_0.png",
-        "url": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTOFOTOS_2019&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTOFOTOS_2019&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "best": true,
         "start_date": "2018",
         "end_date": "2019",
