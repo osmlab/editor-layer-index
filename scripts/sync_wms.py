@@ -51,6 +51,11 @@ ZOOM_LEVEL = 14
 IMAGE_SIZE = 256
 
 
+def image_similar(hash_a, hash_b, zoom):
+    """ Returns Ture if hash_a is considered similar to hash_b for zoom level zoom"""
+    return hash_a - hash_b < 6
+
+
 # Before adding a new WMS version, it should be checked if every consumer supports it!
 supported_wms_versions = ["1.3.0", "1.1.1", "1.1.0", "1.0.0"]
 
@@ -72,6 +77,14 @@ for pj_type in pyproj.enums.PJType:
 # EPSG:3857 alias are valid if server does not support EPSG:3857
 valid_epsgs.update(epsg_3857_alias)
 
+
+transformers = {}
+def get_transformer(crs_from, crs_to):
+    """ Cache transformer objects"""
+    key = (crs_from, crs_to)
+    if key not in transformers:
+        transformers[key] = Transformer.from_crs(crs_from, crs_to, always_xy=True)
+    return transformers[key]
 
 def parse_eli_geometry(geometry):
     """ELI currently uses a geometry encoding not compatible with geojson.
@@ -216,7 +229,7 @@ def _get_bbox(proj, bounds, wms_version):
         try:
             crs_from = CRS.from_string("epsg:4326")
             crs_to = CRS.from_string(proj)
-            transformer = Transformer.from_crs(crs_from, crs_to, always_xy=True)
+            transformer = get_transformer(crs_from, crs_to)
             bounds = list(transformer.transform(bounds[0], bounds[1])) + list(
                 transformer.transform(bounds[2], bounds[3])
             )
@@ -296,73 +309,6 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
         await asyncio.sleep(5)
 
     return None
-
-
-async def check_proj(url, proj, lon, lat, zoom, session, messages):
-    """Check if image is returned
-
-    Parameters
-    ----------
-    url : str
-    projection : str
-    lon : float
-    lat : float
-    zoom : int
-    session : ClientSession
-    messages : list
-
-    Returns
-    -------
-    ImageHash or None
-
-    """
-    tile = list(mercantile.tiles(lon, lat, lon, lat, zooms=zoom))[0]
-    bounds = list(mercantile.bounds(tile))
-    wms_version = wms_version_from_url(url)
-    bbox = _get_bbox(proj, bounds, wms_version)
-    if bbox is None:
-        messages.append(f"Projection {proj} could not be parsed by pyproj.")
-        return False
-
-    formatted_url = url.format(
-        proj=proj, width=IMAGE_SIZE, height=IMAGE_SIZE, bbox=bbox
-    )
-    messages.append("Image URL: {}".format(formatted_url))
-    for i in range(3):
-        try:
-            # Download image
-            async with session.request(
-                method="GET", url=formatted_url, ssl=False
-            ) as response:
-                if response.status == 200:
-                    data = await response.read()
-                    # Test if PIL can open returned data
-                    try:
-                        Image.open(io.BytesIO(data))
-                        return True
-                    except:
-                        filetype = magic.from_buffer(data)
-                        messages.append(
-                            f"Could not open recieved data as image (Recieved filetype: {filetype} {formatted_url})"
-                        )
-                        return False
-                # 400: HTTP Bad Request
-                # 404: Not found
-                elif response.status in {400, 404}:
-                    messages.append(
-                        f"Request recieved status code {response.status} {formatted_url}"
-                    )
-                    return True
-                else:
-                    logging.info(
-                        f"check_proj: HTTP Code {response.status} {formatted_url}"
-                    )
-        except Exception as e:
-            messages.append(f"Could not download image in try {i}: {e}")
-        await asyncio.sleep(5)
-
-    # Network error do not indicate that the server does not support projection
-    return True
 
 
 def parse_wms(xml):
@@ -575,6 +521,9 @@ async def update_wms(wms_url, session: ClientSession, messages):
     if wms_args["version"] == "1.3.0":
         wms_args.pop("srs", None)
         wms_args["crs"] = "{proj}"
+    else:
+        wms_args.pop("crs", None)
+        wms_args["srs"] = "{proj}"
     if "styles" not in wms_args:
         wms_args["styles"] = ""
 
@@ -664,6 +613,8 @@ async def process_source(filename, session: ClientSession):
         if "geometry" not in source:
             return
 
+        category = source["properties"].get("category", None)
+
         if source["geometry"] is None:
             geom = box(-180, -90, 180, 90)
             pt = Point(7.44, 46.56)
@@ -693,11 +644,20 @@ async def process_source(filename, session: ClientSession):
             return
 
         if max_count(str(image_hash)) == 16:
+
+            if (
+                "category" in source["properties"]
+                and "photo" in source["properties"]["category"]
+            ):
+                logging.warning(
+                    f"{filename} has category {category} but image hash is {image_hash}"
+                )
+
             # These image hashes indicate that the downloaded image is not useful to determine
             # if the updated query returns the same image
             error_msgs = "\n\t".join(original_img_messages)
-            logging.info(
-                f"ImageHash {image_hash} not useful for: {filename}: \n\t{error_msgs}"
+            logging.warning(
+                f"Image hash {image_hash} not useful for: {filename} ({category}): \n\t{error_msgs}"
             )
             return
 
@@ -710,12 +670,15 @@ async def process_source(filename, session: ClientSession):
                 f"Not possible to update wms url for {filename}:\n\t{error_msgs}"
             )
             return
+        new_url = result["url"]
+        new_projections = result["available_projections"]
+        del result
 
         # Download image for updated url
         new_img_messages = []
         new_image_hash = await get_image(
-            url=result["url"],
-            available_projections=result["available_projections"],
+            url=new_url,
+            available_projections=new_projections,
             lon=pt.x,
             lat=pt.y,
             zoom=test_zoom_level,
@@ -729,19 +692,20 @@ async def process_source(filename, session: ClientSession):
             return
 
         # Only sources are updated where the new query returns the same image
-        if not image_hash == new_image_hash:
+        if not image_similar(image_hash, new_image_hash, test_zoom_level):
             error_original_img_messages = "\n\t".join(original_img_messages)
             error_new_img_messages = "\n\t".join(new_img_messages)
             logging.info(
-                f"Image hash not the same for: {filename}: '{image_hash}' vs '{new_image_hash}' \n\t{error_original_img_messages} \n\t{error_new_img_messages}"
+                f"Image hash not the same for: {filename}: {image_hash} - {new_image_hash}: {image_hash - new_image_hash}\n\t{error_original_img_messages} \n\t{error_new_img_messages}"
             )
+            return
 
         # Test if selected projections work despite not being advertised
         for EPSG in {"EPSG:3857", "EPSG:4326"}:
-            if EPSG not in result["available_projections"]:
+            if EPSG not in new_projections:
                 epsg_check_messages = []
                 epsg_image_hash = await get_image(
-                    url=result["url"],
+                    url=new_url,
                     available_projections=[EPSG],
                     lon=pt.x,
                     lat=pt.y,
@@ -755,23 +719,29 @@ async def process_source(filename, session: ClientSession):
 
                 # Relax similarity constraint to account for differences due to reprojection
                 hash_diff = abs(image_hash - epsg_image_hash)
-                org_hash_msgs = "\n\t".join(original_img_messages)
-                epsg_check_msgs = "\n\t".join(epsg_check_messages)
-                if hash_diff < 6:
-                    result["available_projections"].add(EPSG)
+                # org_hash_msgs = "\n\t".join(original_img_messages)
+                # epsg_check_msgs = "\n\t".join(epsg_check_messages)
+                if image_similar(image_hash, epsg_image_hash, test_zoom_level):
+                    new_projections.add(EPSG)
+                    # logging.info(
+                    #     f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                    # )
                     logging.info(
-                        f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                        f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}"
                     )
                 elif epsg_image_hash is not None:
+                    # logging.info(
+                    #     f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                    # )
                     logging.info(
-                        f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
+                        f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}"
                     )
 
         # Servers might support projections that are not used in the area covered by a source
         # Keep only EPSG codes that are used in the area covered by the sources geometry
         if source["geometry"] is not None:
             epsg_outside_area_of_use = set()
-            for epsg in result["available_projections"]:
+            for epsg in new_projections:
                 try:
                     if epsg == "CRS:84":
                         continue
@@ -790,30 +760,30 @@ async def process_source(filename, session: ClientSession):
                         f"Could not check area of use for projection {epsg}: {e}"
                     )
                     continue
-            if len(result["available_projections"]) == len(epsg_outside_area_of_use):
+            if len(new_projections) == len(epsg_outside_area_of_use):
                 logging.error(
                     f"{filename}: epsg_outside_area_of_use filter removes all EPSG"
                 )
-            result["available_projections"] -= epsg_outside_area_of_use
+            new_projections -= epsg_outside_area_of_use
 
         # Servers that report a lot of projection may be configured wrongly
         # Check for CRS:84, EPSG:3857, EPSG:4326 and keep existing projections if still advertised
-        if len(result["available_projections"]) > 15:
+        if len(new_projections) > 15:
             filtered_projs = set()
             for proj in ["CRS:84", "EPSG:3857", "EPSG:4326"]:
-                if proj in result["available_projections"]:
+                if proj in new_projections:
                     filtered_projs.add(proj)
             for proj in source["properties"]["available_projections"]:
-                if proj in result["available_projections"]:
+                if proj in new_projections:
                     filtered_projs.add(proj)
-            result["available_projections"] = filtered_projs
+            new_projections = filtered_projs
 
         # Filter alias projections
-        if "EPSG:3857" in result["available_projections"]:
-            result["available_projections"] -= epsg_3857_alias
+        if "EPSG:3857" in new_projections:
+            new_projections -= epsg_3857_alias
         else:
             # if EPSG:3857 not present but alias, keep only alias with highest number to be consistent
-            result_epsg_3857_alias = result["available_projections"] & epsg_3857_alias
+            result_epsg_3857_alias = new_projections & epsg_3857_alias
             result_epsg_3857_alias_sorted = list(
                 sorted(
                     result_epsg_3857_alias,
@@ -821,49 +791,63 @@ async def process_source(filename, session: ClientSession):
                     reverse=True,
                 )
             )
-            result["available_projections"] -= set(result_epsg_3857_alias_sorted[1:])
+            new_projections -= set(result_epsg_3857_alias_sorted[1:])
 
         # Filter deprecated projections
-        result["available_projections"].intersection_update(valid_epsgs)
+        new_projections.intersection_update(valid_epsgs)
 
         # Check if projections are supported by server
         not_supported_projections = set()
-        for proj in result["available_projections"]:
+        image_hashes = {}
+        for proj in new_projections:
             proj_messages = []
-            if not await check_proj(
-                url=result["url"],
-                proj=proj,
+            image_hashes[proj] = await get_image(
+                url=new_url,
+                available_projections=[proj],
                 lon=pt.x,
                 lat=pt.y,
                 zoom=test_zoom_level,
                 session=session,
                 messages=proj_messages,
-            ):
-                err_msgs = "\n".join(proj_messages)
-                logging.info(
-                    f"{filename}: Proj {proj} not supported by server: {err_msgs}"
-                )
+            )
+
+            if image_hashes[proj] is None:
                 not_supported_projections.add(proj)
+
         if len(not_supported_projections) > 0:
             removed_projections = ",".join(not_supported_projections)
             logging.info(
                 f"{filename}: remove projections that are advertised but do not return an image: {removed_projections}"
             )
-            result["available_projections"] -= not_supported_projections
+            new_projections -= not_supported_projections
+
+        # Check for
+        if (
+            "EPSG:3857" in image_hashes
+            and "EPSG:4326" in image_hashes
+            and image_hashes["EPSG:3857"] is not None
+            and image_hashes["EPSG:4326"] is not None
+        ):
+            if not image_similar(
+                image_hashes["EPSG:3857"], image_hashes["EPSG:4326"], test_zoom_level
+            ):
+                logging.warning(
+                    f"{filename}: ({category}) ImageHash for EPSG:3857 and EPSG:4326 not similiar: {image_hashes['EPSG:3857']} - {image_hashes['EPSG:4326']}: {image_hashes['EPSG:3857']-image_hashes['EPSG:4326']}"
+                )
 
         # Check if only formatting has changed
-        url_has_changed = not compare_urls(source["properties"]["url"], result["url"])
+        url_has_changed = not compare_urls(source["properties"]["url"], new_url)
         projections_have_changed = not compare_projs(
             source["properties"]["available_projections"],
-            result["available_projections"],
+            new_projections,
         )
 
         if url_has_changed:
-            source["properties"]["url"] = result["url"]
+            source["properties"]["url"] = new_url
         if projections_have_changed:
             source["properties"]["available_projections"] = list(
                 sorted(
-                    result["available_projections"],
+                    new_projections,
                     key=lambda x: (x.split(":")[0], int(x.split(":")[1])),
                 )
             )
