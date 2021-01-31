@@ -22,6 +22,10 @@ import aiofiles
 from aiohttp import ClientSession
 from shapely.ops import cascaded_union
 import magic
+from enum import Enum
+
+ZOOM_LEVEL = 14
+IMAGE_SIZE = 256
 
 
 logging.basicConfig(level=logging.INFO)
@@ -47,8 +51,8 @@ RequestResult = namedtuple(
     "RequestResultCache", ["status", "text", "exception"], defaults=[None, None, None]
 )
 
-ZOOM_LEVEL = 14
-IMAGE_SIZE = 256
+
+ImageHashStatus = Enum("ImageHashStatus", "SUCCESS IMAGE_ERROR NETWORK_ERROR OTHER")
 
 
 def image_similar(hash_a, hash_b, zoom):
@@ -79,12 +83,15 @@ valid_epsgs.update(epsg_3857_alias)
 
 
 transformers = {}
+
+
 def get_transformer(crs_from, crs_to):
     """ Cache transformer objects"""
     key = (crs_from, crs_to)
     if key not in transformers:
         transformers[key] = Transformer.from_crs(crs_from, crs_to, always_xy=True)
     return transformers[key]
+
 
 def parse_eli_geometry(geometry):
     """ELI currently uses a geometry encoding not compatible with geojson.
@@ -267,6 +274,9 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
     tile = list(mercantile.tiles(lon, lat, lon, lat, zooms=zoom))[0]
     bounds = list(mercantile.bounds(tile))
 
+    img_hash = None
+    status = ImageHashStatus.OTHER
+
     proj = None
     if "EPSG:4326" in available_projections:
         proj = "EPSG:4326"
@@ -281,13 +291,13 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
             break
     if proj is None:
         messages.append("No projection left: {}".format(available_projections))
-        return None
+        return status, img_hash
 
     wms_version = wms_version_from_url(url)
     bbox = _get_bbox(proj, bounds, wms_version)
     if bbox is None:
         messages.append(f"Projection {proj} could not be parsed by pyproj.")
-        return None
+        return status, img_hash
 
     formatted_url = url.format(
         proj=proj, width=IMAGE_SIZE, height=IMAGE_SIZE, bbox=bbox
@@ -299,16 +309,30 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
             async with session.request(
                 method="GET", url=formatted_url, ssl=False
             ) as response:
-                data = await response.read()
-                img = Image.open(io.BytesIO(data))
-                img_hash = imagehash.average_hash(img)
-                messages.append(f"ImageHash: {img_hash}")
-                return img_hash
+                if response.status == 200:
+                    data = await response.read()
+                    try:
+                        img = Image.open(io.BytesIO(data))
+                        img_hash = imagehash.average_hash(img)
+                        status = ImageHashStatus.SUCCESS
+                        messages.append(f"ImageHash: {img_hash}")
+                        return status, img_hash
+                    except Exception as e:
+                        status = ImageHashStatus.IMAGE_ERROR
+                        messages.append(str(e))
+                        filetype = magic.from_buffer(data)
+                        messages.append(
+                            f"Could not open recieved data as image (Recieved filetype: {filetype} {formatted_url})"
+                        )
+                else:
+                    status = ImageHashStatus.NETWORK_ERROR
+
         except Exception as e:
+            status = ImageHashStatus.NETWORK_ERROR
             messages.append(f"Could not download image in try {i}: {e}")
         await asyncio.sleep(5)
 
-    return None
+    return status, img_hash
 
 
 def parse_wms(xml):
@@ -628,18 +652,21 @@ async def process_source(filename, session: ClientSession):
         if "max_zoom" in source["properties"]:
             test_zoom_level = min(source["properties"]["max_zoom"], test_zoom_level)
 
+        old_url = source["properties"]["url"]
+        old_projections = source["properties"]["available_projections"]
+
         # Get existing image hash
         original_img_messages = []
-        image_hash = await get_image(
-            url=source["properties"]["url"],
-            available_projections=source["properties"]["available_projections"],
+        status, image_hash = await get_image(
+            url=old_url,
+            available_projections=old_projections,
             lon=pt.x,
             lat=pt.y,
             zoom=test_zoom_level,
             session=session,
             messages=original_img_messages,
         )
-        if image_hash is None:
+        if not status == ImageHashStatus.SUCCESS or image_hash is None:
             # We are finished if it was not possible to get the image
             return
 
@@ -649,8 +676,9 @@ async def process_source(filename, session: ClientSession):
                 "category" in source["properties"]
                 and "photo" in source["properties"]["category"]
             ):
+                msgs = "\n\t".join(original_img_messages)
                 logging.warning(
-                    f"{filename} has category {category} but image hash is {image_hash}"
+                    f"{filename} has category {category} but image hash is {image_hash}:\n\t{msgs}"
                 )
 
             # These image hashes indicate that the downloaded image is not useful to determine
@@ -663,7 +691,7 @@ async def process_source(filename, session: ClientSession):
 
         # Update wms
         wms_messages = []
-        result = await update_wms(source["properties"]["url"], session, wms_messages)
+        result = await update_wms(old_url, session, wms_messages)
         if result is None:
             error_msgs = "\n\t".join(wms_messages)
             logging.info(
@@ -676,7 +704,7 @@ async def process_source(filename, session: ClientSession):
 
         # Download image for updated url
         new_img_messages = []
-        new_image_hash = await get_image(
+        new_status, new_image_hash = await get_image(
             url=new_url,
             available_projections=new_projections,
             lon=pt.x,
@@ -686,9 +714,11 @@ async def process_source(filename, session: ClientSession):
             messages=new_img_messages,
         )
 
-        if new_image_hash is None:
+        if not new_status == ImageHashStatus.SUCCESS or new_image_hash is None:
             error_msgs = "\n\t".join(new_img_messages)
-            logging.warning(f"Could not download new image: \n\t{error_msgs}")
+            logging.warning(
+                f"Could not download new image: {new_status}\n\t{error_msgs}"
+            )
             return
 
         # Only sources are updated where the new query returns the same image
@@ -704,7 +734,7 @@ async def process_source(filename, session: ClientSession):
         for EPSG in {"EPSG:3857", "EPSG:4326"}:
             if EPSG not in new_projections:
                 epsg_check_messages = []
-                epsg_image_hash = await get_image(
+                epsg_image_status, epsg_image_hash = await get_image(
                     url=new_url,
                     available_projections=[EPSG],
                     lon=pt.x,
@@ -714,11 +744,11 @@ async def process_source(filename, session: ClientSession):
                     messages=epsg_check_messages,
                 )
 
-                if epsg_image_hash is None:
+                if not epsg_image_status == ImageHashStatus.SUCCESS:
                     continue
 
                 # Relax similarity constraint to account for differences due to reprojection
-                hash_diff = abs(image_hash - epsg_image_hash)
+                hash_diff = image_hash - epsg_image_hash
                 # org_hash_msgs = "\n\t".join(original_img_messages)
                 # epsg_check_msgs = "\n\t".join(epsg_check_messages)
                 if image_similar(image_hash, epsg_image_hash, test_zoom_level):
@@ -773,7 +803,7 @@ async def process_source(filename, session: ClientSession):
             for proj in ["CRS:84", "EPSG:3857", "EPSG:4326"]:
                 if proj in new_projections:
                     filtered_projs.add(proj)
-            for proj in source["properties"]["available_projections"]:
+            for proj in old_projections:
                 if proj in new_projections:
                     filtered_projs.add(proj)
             new_projections = filtered_projs
@@ -801,7 +831,7 @@ async def process_source(filename, session: ClientSession):
         image_hashes = {}
         for proj in new_projections:
             proj_messages = []
-            image_hashes[proj] = await get_image(
+            proj_status, proj_image_hash = await get_image(
                 url=new_url,
                 available_projections=[proj],
                 lon=pt.x,
@@ -810,9 +840,23 @@ async def process_source(filename, session: ClientSession):
                 session=session,
                 messages=proj_messages,
             )
+            image_hashes[proj] = {
+                "status": proj_status,
+                "hash": proj_image_hash,
+                "logs": proj_messages,
+            }
 
-            if image_hashes[proj] is None:
+            if proj_status == ImageHashStatus.IMAGE_ERROR:
                 not_supported_projections.add(proj)
+                # msgs = "\n\t".join(proj_messages)
+                # logging.info(f"{filename} {proj}: {proj_status}:\n\t{msgs}")
+            # elif proj_status == ImageHashStatus.SUCCESS and max_count(str(proj_image_hash)) == 16 and not max_count(str(image_hash)) == 16:
+            #     # Empty images indicate that server does not support this projection correctly
+            #     not_supported_projections.add(proj)
+            elif proj_status == ImageHashStatus.NETWORK_ERROR:
+                # If not sucessfull status do not add if not previously addedd
+                if proj not in old_projections:
+                    not_supported_projections.add(proj)
 
         if len(not_supported_projections) > 0:
             removed_projections = ",".join(not_supported_projections)
@@ -821,18 +865,22 @@ async def process_source(filename, session: ClientSession):
             )
             new_projections -= not_supported_projections
 
-        # Check for
+        # Check if EPSG:3857 and EPSG:4326 are similar
         if (
             "EPSG:3857" in image_hashes
             and "EPSG:4326" in image_hashes
-            and image_hashes["EPSG:3857"] is not None
-            and image_hashes["EPSG:4326"] is not None
+            and image_hashes["EPSG:3857"]["status"] == ImageHashStatus.SUCCESS
+            and image_hashes["EPSG:4326"]["status"] == ImageHashStatus.SUCCESS
         ):
-            if not image_similar(
-                image_hashes["EPSG:3857"], image_hashes["EPSG:4326"], test_zoom_level
-            ):
+            img_hash_3857 = image_hashes["EPSG:3857"]["hash"]
+            img_hash_4326 = image_hashes["EPSG:4326"]["hash"]
+            if not image_similar(img_hash_3857, img_hash_4326, test_zoom_level):
+                msgs = "\n\t".join(
+                    image_hashes["EPSG:3857"]["logs"]
+                    + image_hashes["EPSG:4326"]["logs"]
+                )
                 logging.warning(
-                    f"{filename}: ({category}) ImageHash for EPSG:3857 and EPSG:4326 not similiar: {image_hashes['EPSG:3857']} - {image_hashes['EPSG:4326']}: {image_hashes['EPSG:3857']-image_hashes['EPSG:4326']}"
+                    f"{filename}: ({category}) ImageHash for EPSG:3857 and EPSG:4326 not similiar: {img_hash_3857} - {img_hash_4326}: {img_hash_3857-img_hash_4326}:\n\t{msgs}"
                 )
 
         # Check if only formatting has changed
