@@ -35,7 +35,7 @@ jobs:
 
       - name: Echo file changes
         run: |
-          echo Changed files: ${{ steps.get_file_changes.outputs.files }}
+          echo "Changed files: ${{ steps.get_file_changes.outputs.files }}"
 
       - name: Strict check
         run: |
