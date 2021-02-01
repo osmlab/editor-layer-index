@@ -4,7 +4,7 @@
         "id": "LV_ORTOFOTO_C6",
         "name": "Orthophoto (2016–2018), 1:5000, Latvia",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?width={width}&height={height}&bbox={bbox}&format=image/vnd.jpeg-png8&request=GetMap&service=WMS&styles=&transparent=true&version=1.1.1&srs={proj}&layers=public:Orto_LKS",
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:Orto_LKS&STYLES=&FORMAT=image/vnd.jpeg-png8&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
