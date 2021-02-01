@@ -359,10 +359,6 @@ async def process_source(filename):
             # Check against source if we found at least one image
             if selected_min_zoom is not None:
 
-                # zoom 0 is equal to when no min_zoom level is set
-                if selected_min_zoom == 0:
-                    selected_min_zoom = None
-
                 original_min_zoom = None
                 if "min_zoom" in source["properties"]:
                     original_min_zoom = source["properties"]["min_zoom"]
@@ -376,8 +372,7 @@ async def process_source(filename):
                             original_min_zoom,
                         )
                     )
-
-                    if min_zoom is None:
+                    if selected_min_zoom is None or selected_min_zoom == 0:
                         source["properties"].pop("min_zoom", None)
                     else:
                         source["properties"]["min_zoom"] = selected_min_zoom
