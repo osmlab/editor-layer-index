@@ -6,7 +6,6 @@ import logging
 import os
 import re
 import io
-import tempfile
 from collections import namedtuple
 from urllib.parse import urlparse
 import aiohttp
@@ -52,7 +51,10 @@ def max_count(elements):
     return max(counts.items(), key=lambda x: x[1])[1]
 
 
-outdir = tempfile.mkdtemp(prefix="minzoom_checker_")
+outdir = "min_zoom_results"
+if not os.path.exists(outdir):
+    os.mkdir(outdir)
+
 logging.info("Tmp outdirectory: {}".format(outdir))
 
 ImageStatus = Enum("ImageStatus", "SUCCESS IMAGE_ERROR NETWORK_ERROR OTHER")
@@ -227,11 +229,6 @@ async def process_source(filename):
         else:
             centroid = Point(0, 0)
 
-        if not "country_code" in source["properties"] or not source["properties"][
-            "country_code"
-        ] in {"CH"}:
-            return
-
         async def test_zoom(zoom):
             tile = mercantile.tile(centroid.x, centroid.y, zoom)
 
@@ -354,6 +351,11 @@ async def process_source(filename):
                 title += " ELI "
 
             ax.set_title(title)
+            if (
+                "attribution" in source["properties"]
+                and "text" in source["properties"]["attribution"]
+            ):
+                plt.figtext(0.01, 0.01, source["properties"]["attribution"]["text"])
 
         def update_source(selected_min_zoom, source, filename):
             # Check against source if we found at least one image
