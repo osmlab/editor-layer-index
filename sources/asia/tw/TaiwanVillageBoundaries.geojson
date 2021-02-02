@@ -89,7 +89,8 @@
         "name": "Taiwan Village Boundaries",
         "type": "wms",
         "url": "https://wms.nlsc.gov.tw/wms?LAYERS=Village&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
-        "category": "other"
+        "category": "other",
+        "min_zoom": 6
     },
     "type": "Feature"
 }
