@@ -215,6 +215,13 @@ async def process_source(filename):
         headers=headers, timeout=timeout, connector=conn
     ) as session:
 
+        out_image = os.path.join(
+            outdir, os.path.basename(filename).replace(".geojson", ".png")
+        )
+
+        if os.path.exists(out_image):
+            return
+
         async with aiofiles.open(filename, mode="r", encoding="utf-8") as f:
             contents = await f.read()
         source = json.loads(contents)
@@ -304,9 +311,6 @@ async def process_source(filename):
                 min_zoom = zoom
                 break
 
-        out_image = os.path.join(
-            outdir, os.path.basename(filename).replace(".geojson", ".png")
-        )
         fig, axs = plt.subplots(2, 10, figsize=(15, 5))
         for z in range(20):
             if z < 10:
@@ -361,11 +365,15 @@ async def process_source(filename):
             # Check against source if we found at least one image
             if selected_min_zoom is not None:
 
-                original_min_zoom = None
+                original_min_zoom = 0
                 if "min_zoom" in source["properties"]:
                     original_min_zoom = source["properties"]["min_zoom"]
 
                 # Do nothing if existing value is same as tested value
+                if (
+                    selected_min_zoom is None or selected_min_zoom == 0
+                ) and "min_zoom" not in source["properties"]:
+                    return
                 if not selected_min_zoom == original_min_zoom:
                     logging.info(
                         "Update {}: {}, previously: {}".format(
@@ -384,8 +392,6 @@ async def process_source(filename):
                             source, out, indent=4, sort_keys=False, ensure_ascii=False
                         )
                         out.write("\n")
-
-        selected_min_zoom = None
 
         def on_click(event):
             try:
@@ -432,10 +438,14 @@ async def process_source(filename):
 
 
 def start_processing(sources_directory):
-    for filename in glob.glob(
-        os.path.join(sources_directory, "**", "*.geojson"), recursive=True
-    ):
-        asyncio.run(process_source(filename))
+
+    if os.path.isfile(sources_directory):
+        asyncio.run(process_source(sources_directory))
+    elif os.path.isdir(sources_directory):
+        for filename in glob.glob(
+            os.path.join(sources_directory, "**", "*.geojson"), recursive=True
+        ):
+            asyncio.run(process_source(filename))
 
 
 start_processing(sources_directory)
