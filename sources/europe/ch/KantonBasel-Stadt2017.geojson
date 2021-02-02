@@ -1,26 +1,26 @@
 {
-    "type":"Feature",
-    "properties":{
-        "id":"KTBASELSTADT2017",
-        "name":"Kanton Basel-Stadt 2017",
-        "type":"tms",
-        "url":"https://mapproxy.osm.ch/tiles/KTBASELSTADT2017/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
-        "start_date":"2017",
-        "end_date":"2017",
-        "best":true,
-        "country_code":"CH",
-        "attribution":{
-            "text":"Kanton Basel-Stadt OF 2017",
-            "required":true
+    "type": "Feature",
+    "properties": {
+        "id": "KTBASELSTADT2017",
+        "name": "Kanton Basel-Stadt 2017",
+        "type": "tms",
+        "url": "https://mapproxy.osm.ch/tiles/KTBASELSTADT2017/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "start_date": "2017",
+        "end_date": "2017",
+        "best": true,
+        "country_code": "CH",
+        "attribution": {
+            "text": "Kanton Basel-Stadt OF 2017",
+            "required": true
         },
-        "max_zoom":21,
-        "min_zoom":8,
-        "description":"This imagery is provided via a proxy operated by https://sosm.ch/",
+        "max_zoom": 21,
+        "min_zoom": 7,
+        "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
         "privacy_policy_url": "https://sosm.ch/about/terms-of-service/"
     },
-    "geometry":{
-        "type":"Polygon",
-        "coordinates":[
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     7.6713752,
