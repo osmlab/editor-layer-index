@@ -21,7 +21,8 @@
             "EPSG:4326",
             "EPSG:6527"
         ],
-        "url": "https://img.nj.gov/imagerywms/Natural2015?LAYERS=Natural2015&STYLES=&FORMAT=image/png&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap"
+        "url": "https://img.nj.gov/imagerywms/Natural2015?LAYERS=Natural2015&STYLES=&FORMAT=image/png&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 3
     },
     "geometry": {
         "coordinates": [
