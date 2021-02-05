@@ -278,10 +278,10 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
     status = ImageHashStatus.OTHER
 
     proj = None
-    if "EPSG:4326" in available_projections:
-        proj = "EPSG:4326"
-    elif "EPSG:3857" in available_projections:
+    if "EPSG:3857" in available_projections:
         proj = "EPSG:3857"
+    elif "EPSG:4326" in available_projections:
+        proj = "EPSG:4326"
     else:
         for proj in sorted(available_projections):
             try:
@@ -828,6 +828,8 @@ async def process_source(filename, session: ClientSession):
 
         # Check if projections are supported by server
         not_supported_projections = set()
+        projections_empty_image = set()
+        not_similar = set()
         image_hashes = {}
         for proj in new_projections:
             proj_messages = []
@@ -846,15 +848,32 @@ async def process_source(filename, session: ClientSession):
                 "logs": proj_messages,
             }
 
+            # Remove projection where no image is returned
             if proj_status == ImageHashStatus.IMAGE_ERROR:
                 not_supported_projections.add(proj)
-                # msgs = "\n\t".join(proj_messages)
-                # logging.info(f"{filename} {proj}: {proj_status}:\n\t{msgs}")
-            # elif proj_status == ImageHashStatus.SUCCESS and max_count(str(proj_image_hash)) == 16 and not max_count(str(image_hash)) == 16:
-            #     # Empty images indicate that server does not support this projection correctly
-            #     not_supported_projections.add(proj)
+            # Remove projection where only an empty image is returned
+            elif (
+                "photo" in source["properties"].get("category", "None")
+                and proj_status == ImageHashStatus.SUCCESS
+                and max_count(str(proj_image_hash)) == 16
+                and not max_count(str(image_hash)) == 16
+                
+            ):
+                projections_empty_image.add(proj)
+                msgs = "\n\t".join(original_img_messages + image_hashes[proj]["logs"])
+                logging.info(f"{filename} EMPTY {proj}: {proj_status}:\n\t{msgs}")
+            # Remove projection where returned image is not similar to reference image
+            elif (
+                "photo" in source["properties"].get("category", "None")
+                and proj_status == ImageHashStatus.SUCCESS
+                and not max_count(str(image_hash)) == 16
+                and not image_similar(image_hash, proj_image_hash, test_zoom_level)
+            ):
+                not_similar.add(proj)
+                msgs = "\n\t".join(original_img_messages + image_hashes[proj]["logs"])
+                logging.info(f"{filename} NOTSIMILIAR {proj}: {proj_status}:\n\t{msgs}")
+            # In case of a network error keep previous state
             elif proj_status == ImageHashStatus.NETWORK_ERROR:
-                # If not sucessfull status do not add if not previously addedd
                 if proj not in old_projections:
                     not_supported_projections.add(proj)
 
@@ -864,6 +883,18 @@ async def process_source(filename, session: ClientSession):
                 f"{filename}: remove projections that are advertised but do not return an image: {removed_projections}"
             )
             new_projections -= not_supported_projections
+        if len(projections_empty_image) > 0:
+            removed_projections = ",".join(projections_empty_image)
+            logging.info(
+                f"{filename}: remove projections that return only an empty image: {removed_projections}"
+            )
+            new_projections -= projections_empty_image
+        if len(not_similar) > 0:
+            removed_projections = ",".join(not_similar)
+            logging.info(
+                f"{filename}: remove projections that return not a similiar image: {removed_projections}"
+            )
+            new_projections -= not_similar
 
         # Check if EPSG:3857 and EPSG:4326 are similar
         if (
