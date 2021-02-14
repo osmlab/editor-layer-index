@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "Berlin-2011",
-        "name": "Berlin aerial photography 2011",
+        "name": "Berlin/Geoportal DOP20RGB (2011)",
         "type": "wms",
         "category": "historicphoto",
         "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2011_20?LAYERS=0&STYLES=default&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
@@ -18,10 +18,11 @@
             "EPSG:4258"
         ],
         "attribution": {
-            "text": "Geoportal Berlin/Digitale farbige Orthophotos 2011",
+            "text": "Geoportal Berlin/Digitale farbige Orthophotos 2011 (DOP20RGB)",
             "required": true
         },
-        "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583"
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf", 
+    "privacy_policy_url": "https://www.stadtentwicklung.berlin.de/geoinformation/fis-broker/datenschutz/index.shtml",
     },
     "geometry": {
         "type": "Polygon",
