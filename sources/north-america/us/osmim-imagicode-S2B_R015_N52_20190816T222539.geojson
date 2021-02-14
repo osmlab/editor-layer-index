@@ -2,28 +2,7 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -168.5059,
-                    53.7714
-                ],
-                [
-                    -168.5059,
-                    54.0751
-                ],
-                [
-                    -167.8205,
-                    54.0751
-                ],
-                [
-                    -167.8205,
-                    53.7714
-                ],
-                [
-                    -168.5059,
-                    53.7714
-                ]
-            ]
+            [ [ -168.5059, 53.7714 ], [ -168.5059, 54.0751 ], [ -167.8205, 54.0751 ], [ -167.8205, 53.7714 ], [ -168.5059, 53.7714 ] ]
         ]
     },
     "properties": {
@@ -45,8 +24,7 @@
         "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2019-08-16",
         "type": "tms",
-        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R015_N52_20190816T222539&z={zoom}&x={x}&y={-y}",
-        "min_zoom": 4
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R015_N52_20190816T222539&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
