@@ -2,19 +2,19 @@
     "type": "Feature",
     "properties": {
         "id": "Mapa-Educativo-wms",
-        "name": "Educational map (WMS)",
+        "name": "National Education Map (WMS)",
         "type": "wms_endpoint",
-        "url": "http://www.mapaeducativo.edu.ar/geoserver/ogc/wms?SERVICE=WMS&",
+        "url": "http://mapa.educacion.gob.ar/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
         "country_code": "AR",
         "available_projections": [
             "EPSG:4326",
             "EPSG:3857"
         ],
         "attribution": {
-            "text": "Mapa Educativo",
+            "text": "Mapa Educativo Nacional",
             "url": "http://mapa.educacion.gob.ar/"
         },
-        "icon": "http://mapa.educacion.gob.ar/wp-content/themes/sitio_nuevo/img/men_icon.png",
+        "icon": "http://mapa.educacion.gob.ar/img/sistemaeducativo.png",
         "max_zoom": 20,
         "min_zoom": 1,
         "license_url": "https://datos.gob.ar/acerca/marco-legal",
