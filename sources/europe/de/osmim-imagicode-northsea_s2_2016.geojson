@@ -1,57 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    5.1562,
-                    52.8755
-                ],
-                [
-                    5.1615,
-                    53.0325
-                ],
-                [
-                    6.4155,
-                    55.7379
-                ],
-                [
-                    9.8813,
-                    55.7459
-                ],
-                [
-                    9.8813,
-                    53.2428
-                ],
-                [
-                    9.6846,
-                    52.8877
-                ],
-                [
-                    5.1562,
-                    52.8755
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 5.1562, 52.8755 ], [ 5.1615, 53.0325 ], [ 6.4155, 55.7379 ], [ 9.8813, 55.7459 ], [ 9.8813, 53.2428 ], [ 9.6846, 52.8877 ], [ 5.1562, 52.8755 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "historicphoto",
         "country_code": "DE",
-        "description": "Up-to-date low tide imagery of the coast for updating mapping of tidalflats and shoals (true color)",
+        "description": "Up-to-date low tide imagery of the coast for updating mapping of tidalflats and shoals (superseeded by newer image) (true color)",
         "end_date": "2016-09-25",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-northsea_s2_2016",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: North Sea Coast 2016",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-09-25",
         "type": "tms",
-        "category": "historicphoto",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=northsea_s2_2016&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=northsea_s2_2016&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

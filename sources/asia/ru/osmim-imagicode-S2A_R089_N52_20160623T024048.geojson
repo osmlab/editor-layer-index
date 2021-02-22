@@ -1,48 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    126.36143429881301,
-                    51.375528375017275
-                ],
-                [
-                    126.34804471141064,
-                    52.33932231282816
-                ],
-                [
-                    128.60762341624462,
-                    52.340895519845674
-                ],
-                [
-                    128.6117432892915,
-                    51.375528375017275
-                ],
-                [
-                    126.36143429881301,
-                    51.375528375017275
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 126.361434298813009, 51.375528375017275 ], [ 126.348044711410637, 52.339322312828159 ], [ 128.607623416244621, 52.340895519845674 ], [ 128.611743289291496, 51.375528375017275 ], [ 126.361434298813009, 51.375528375017275 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "historicphoto",
         "country_code": "RU",
-        "description": "Recent image showing newest features (true color)",
+        "description": "Recent image showing newest features (superseeded by newer image) (true color)",
         "end_date": "2016-06-23",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R089_N52_20160623T024048",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Vostochny Cosmodrome",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2016-06-23",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=S2A_R089_N52_20160623T024048&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R089_N52_20160623T024048&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

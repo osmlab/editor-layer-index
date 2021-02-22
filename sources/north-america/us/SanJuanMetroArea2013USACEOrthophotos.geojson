@@ -1,73 +1,75 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "SanJuanMetroAreaUSACEOrthophotos",
-    "name": "San Juan Metro Area: 2013 USACE Orthophotos",
-    "type": "tms",
-    "url": "http://imagery-pr-usace-2013.s3-website-us-east-1.amazonaws.com/tiles/{zoom}/{x}/{y}.jpg",
-    "start_date": "2013-03-13",
-    "end_date": "2013-03-15",
-    "country_code": "US",
-    "max_zoom": 20,
-    "license_url": "https://wiki.openstreetmap.org/wiki/Puerto_Rico_Imagery#Recommended_imagery_for_the_San_Juan_Metro_Area:_2013_USACE_Orthophotos"
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          -66.1500667,
-          18.3500219
-        ],
-        [
-          -66.0333737,
-          18.3500219
-        ],
-        [
-          -66.033282,
-          18.4563375
-        ],
-        [
-          -66.0546373,
-          18.456357
-        ],
-        [
-          -66.0546281,
-          18.4654158
-        ],
-        [
-          -66.0830291,
-          18.4654417
-        ],
-        [
-          -66.0830199,
-          18.4745097
-        ],
-        [
-          -66.1303419,
-          18.474553
-        ],
-        [
-          -66.1303368,
-          18.4796035
-        ],
-        [
-          -66.1398259,
-          18.4796121
-        ],
-        [
-          -66.1398402,
-          18.4655666
-        ],
-        [
-          -66.1499493,
-          18.4655758
-        ],
-        [
-          -66.1500667,
-          18.3500219
+    "type": "Feature",
+    "properties": {
+        "id": "SanJuanMetroAreaUSACEOrthophotos",
+        "name": "San Juan Metro Area: 2013 USACE Orthophotos",
+        "type": "tms",
+        "url": "http://imagery-pr-usace-2013.s3-website-us-east-1.amazonaws.com/tiles/{zoom}/{x}/{y}.jpg",
+        "start_date": "2013-03-13",
+        "end_date": "2013-03-15",
+        "country_code": "US",
+        "max_zoom": 20,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Puerto_Rico_Imagery#Recommended_imagery_for_the_San_Juan_Metro_Area:_2013_USACE_Orthophotos",
+        "category": "photo",
+        "min_zoom": 7
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -66.1500667,
+                    18.3500219
+                ],
+                [
+                    -66.0333737,
+                    18.3500219
+                ],
+                [
+                    -66.033282,
+                    18.4563375
+                ],
+                [
+                    -66.0546373,
+                    18.456357
+                ],
+                [
+                    -66.0546281,
+                    18.4654158
+                ],
+                [
+                    -66.0830291,
+                    18.4654417
+                ],
+                [
+                    -66.0830199,
+                    18.4745097
+                ],
+                [
+                    -66.1303419,
+                    18.474553
+                ],
+                [
+                    -66.1303368,
+                    18.4796035
+                ],
+                [
+                    -66.1398259,
+                    18.4796121
+                ],
+                [
+                    -66.1398402,
+                    18.4655666
+                ],
+                [
+                    -66.1499493,
+                    18.4655758
+                ],
+                [
+                    -66.1500667,
+                    18.3500219
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

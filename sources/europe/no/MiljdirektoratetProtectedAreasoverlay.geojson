@@ -1,218 +1,218 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "miljodirektoratet-vern",
-    "name": "Miljødirektoratet Protected Areas overlay",
-    "type": "wms",
-    "url": "https://kart.miljodirektoratet.no/arcgis/services/vern/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=naturvern_klasser_omrade&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-    "overlay": true,
-    "country_code": "NO",
-    "available_projections": [
-      "EPSG:4326",
-      "EPSG:3857",
-      "EPSG:4267",
-      "EPSG:4269",
-      "EPSG:25831",
-      "EPSG:25832",
-      "EPSG:25833",
-      "EPSG:25834",
-      "EPSG:25835",
-      "EPSG:25836",
-      "EPSG:32631",
-      "EPSG:32632",
-      "EPSG:32633",
-      "EPSG:32634",
-      "EPSG:32635",
-      "EPSG:32636"
-    ],
-    "attribution": {
-      "text": "© Miljødirektoratet",
-      "url": "https://kart.naturbase.no"
+    "type": "Feature",
+    "properties": {
+        "id": "miljodirektoratet-vern",
+        "name": "Miljødirektoratet Protected Areas overlay",
+        "type": "wms",
+        "url": "https://kart.miljodirektoratet.no/arcgis/services/vern/MapServer/WmsServer?LAYERS=naturvern_klasser_omrade&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "overlay": true,
+        "country_code": "NO",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:25831",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:25834",
+            "EPSG:25835",
+            "EPSG:25836",
+            "EPSG:32631",
+            "EPSG:32632",
+            "EPSG:32633",
+            "EPSG:32634",
+            "EPSG:32635",
+            "EPSG:32636"
+        ],
+        "attribution": {
+            "text": "© Miljødirektoratet",
+            "url": "https://kart.naturbase.no"
+        },
+        "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
+        "max_zoom": 22,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
+        "description": "Norwegian national parks, nature reserves and other protected areas and objects from Naturbase, including Svalbard/Spitsbergen",
+        "category": "other"
     },
-    "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
-    "max_zoom": 22,
-    "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
-    "description": "Norwegian national parks, nature reserves and other protected areas and objects from Naturbase, including Svalbard/Spitsbergen"
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          -10.9572532,
-          71.6096445
-        ],
-        [
-          -6.1676466,
-          71.6209459
-        ],
-        [
-          -6.1375611,
-          70.3099123
-        ],
-        [
-          -10.9271677,
-          70.2978357
-        ],
-        [
-          -10.9572532,
-          71.6096445
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -10.9572532,
+                    71.6096445
+                ],
+                [
+                    -6.1676466,
+                    71.6209459
+                ],
+                [
+                    -6.1375611,
+                    70.3099123
+                ],
+                [
+                    -10.9271677,
+                    70.2978357
+                ],
+                [
+                    -10.9572532,
+                    71.6096445
+                ]
+            ],
+            [
+                [
+                    16.8194725,
+                    74.9482002
+                ],
+                [
+                    21.2577105,
+                    74.9421329
+                ],
+                [
+                    21.2371243,
+                    73.8917962
+                ],
+                [
+                    16.7988863,
+                    73.898276
+                ],
+                [
+                    16.8194725,
+                    74.9482002
+                ]
+            ],
+            [
+                [
+                    4.0428809,
+                    79.9359337
+                ],
+                [
+                    20.654209,
+                    81.5441722
+                ],
+                [
+                    36.6503028,
+                    80.4010774
+                ],
+                [
+                    26.7626514,
+                    75.8129038
+                ],
+                [
+                    13.8866749,
+                    75.7913468
+                ],
+                [
+                    4.0428809,
+                    79.9359337
+                ]
+            ],
+            [
+                [
+                    31.904253,
+                    70.4368136
+                ],
+                [
+                    28.4765187,
+                    71.3289643
+                ],
+                [
+                    23.6865015,
+                    71.2514263
+                ],
+                [
+                    16.8090601,
+                    70.0730823
+                ],
+                [
+                    11.1620655,
+                    67.5253904
+                ],
+                [
+                    9.9755421,
+                    64.811576
+                ],
+                [
+                    4.2187061,
+                    62.1449966
+                ],
+                [
+                    4.3725368,
+                    59.1871966
+                ],
+                [
+                    6.1743055,
+                    57.8915033
+                ],
+                [
+                    7.932118,
+                    57.7393555
+                ],
+                [
+                    10.777577,
+                    58.8649103
+                ],
+                [
+                    11.7224012,
+                    58.7625091
+                ],
+                [
+                    12.7221571,
+                    60.1141506
+                ],
+                [
+                    13.0517469,
+                    61.3493518
+                ],
+                [
+                    12.5243921,
+                    63.6169922
+                ],
+                [
+                    14.2382594,
+                    63.9856094
+                ],
+                [
+                    15.1171656,
+                    65.9016625
+                ],
+                [
+                    18.6987085,
+                    68.3749083
+                ],
+                [
+                    20.0610133,
+                    68.2612583
+                ],
+                [
+                    21.0058375,
+                    68.7841518
+                ],
+                [
+                    25.2465602,
+                    68.3506025
+                ],
+                [
+                    26.9384546,
+                    69.8472011
+                ],
+                [
+                    28.7621851,
+                    69.6112133
+                ],
+                [
+                    28.5864039,
+                    68.8556004
+                ],
+                [
+                    31.069314,
+                    69.5191547
+                ],
+                [
+                    31.904253,
+                    70.4368136
+                ]
+            ]
         ]
-      ],
-      [
-        [
-          16.8194725,
-          74.9482002
-        ],
-        [
-          21.2577105,
-          74.9421329
-        ],
-        [
-          21.2371243,
-          73.8917962
-        ],
-        [
-          16.7988863,
-          73.898276
-        ],
-        [
-          16.8194725,
-          74.9482002
-        ]
-      ],
-      [
-        [
-          4.0428809,
-          79.9359337
-        ],
-        [
-          20.654209,
-          81.5441722
-        ],
-        [
-          36.6503028,
-          80.4010774
-        ],
-        [
-          26.7626514,
-          75.8129038
-        ],
-        [
-          13.8866749,
-          75.7913468
-        ],
-        [
-          4.0428809,
-          79.9359337
-        ]
-      ],
-      [
-        [
-          31.904253,
-          70.4368136
-        ],
-        [
-          28.4765187,
-          71.3289643
-        ],
-        [
-          23.6865015,
-          71.2514263
-        ],
-        [
-          16.8090601,
-          70.0730823
-        ],
-        [
-          11.1620655,
-          67.5253904
-        ],
-        [
-          9.9755421,
-          64.811576
-        ],
-        [
-          4.2187061,
-          62.1449966
-        ],
-        [
-          4.3725368,
-          59.1871966
-        ],
-        [
-          6.1743055,
-          57.8915033
-        ],
-        [
-          7.932118,
-          57.7393555
-        ],
-        [
-          10.777577,
-          58.8649103
-        ],
-        [
-          11.7224012,
-          58.7625091
-        ],
-        [
-          12.7221571,
-          60.1141506
-        ],
-        [
-          13.0517469,
-          61.3493518
-        ],
-        [
-          12.5243921,
-          63.6169922
-        ],
-        [
-          14.2382594,
-          63.9856094
-        ],
-        [
-          15.1171656,
-          65.9016625
-        ],
-        [
-          18.6987085,
-          68.3749083
-        ],
-        [
-          20.0610133,
-          68.2612583
-        ],
-        [
-          21.0058375,
-          68.7841518
-        ],
-        [
-          25.2465602,
-          68.3506025
-        ],
-        [
-          26.9384546,
-          69.8472011
-        ],
-        [
-          28.7621851,
-          69.6112133
-        ],
-        [
-          28.5864039,
-          68.8556004
-        ],
-        [
-          31.069314,
-          69.5191547
-        ],
-        [
-          31.904253,
-          70.4368136
-        ]
-      ]
-    ]
-  }
+    }
 }

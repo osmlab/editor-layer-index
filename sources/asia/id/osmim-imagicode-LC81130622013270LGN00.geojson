@@ -1,56 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    120.84382442048364,
-                    -3.595452324350203
-                ],
-                [
-                    120.84382442048364,
-                    -3.159848173206955
-                ],
-                [
-                    120.98184016755395,
-                    -2.514681686347053
-                ],
-                [
-                    122.62618449738794,
-                    -2.514681686347053
-                ],
-                [
-                    122.62618449738794,
-                    -3.002148034113534
-                ],
-                [
-                    122.5007000308352,
-                    -3.595452324350203
-                ],
-                [
-                    120.84382442048364,
-                    -3.595452324350203
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ 120.843824420483642, -3.595452324350203 ], [ 120.843824420483642, -3.159848173206955 ], [ 120.981840167553955, -2.514681686347053 ], [ 122.626184497387939, -2.514681686347053 ], [ 122.626184497387939, -3.002148034113534 ], [ 122.500700030835205, -3.595452324350203 ], [ 120.843824420483642, -3.595452324350203 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "ID",
         "description": "Missing islands and coarse coastline due to cloud cover in Bing, lakes could also use additional detail (true color)",
         "end_date": "2013-09-27",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC81130622013270LGN00",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 13,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Southeastern Sulawesi",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2013-09-27",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81130622013270LGN00&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }

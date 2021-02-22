@@ -10,7 +10,9 @@
         "best": true,
         "url": "https://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Benin:cotonou_pleiade_2016&STYLE=&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}",
         "license_url": "http://taches.francophonelibre.org/project/6",
-        "country_code": "BJ"
+        "country_code": "BJ",
+        "category": "photo",
+        "min_zoom": 6
     },
     "geometry": {
         "type": "Polygon",

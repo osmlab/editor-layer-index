@@ -1,94 +1,96 @@
 {
-  "geometry": {
-    "coordinates": [
-      [
-        [
-          121.2237,
-          25.76997
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    121.2237,
+                    25.76997
+                ],
+                [
+                    122.2251,
+                    26.60305
+                ],
+                [
+                    122.9312,
+                    22.57058
+                ],
+                [
+                    120.6771,
+                    20.72799
+                ],
+                [
+                    118.2509,
+                    23.26265
+                ],
+                [
+                    118.3036,
+                    23.30751
+                ],
+                [
+                    118.1978,
+                    24.34453
+                ],
+                [
+                    118.1036,
+                    24.36172
+                ],
+                [
+                    118.2283,
+                    24.49486
+                ],
+                [
+                    118.4416,
+                    24.55302
+                ],
+                [
+                    118.6024,
+                    24.46068
+                ],
+                [
+                    120.0474,
+                    25.38843
+                ],
+                [
+                    119.8935,
+                    25.78169
+                ],
+                [
+                    119.787,
+                    26.2048
+                ],
+                [
+                    120.4578,
+                    26.53253
+                ],
+                [
+                    121.2237,
+                    25.76997
+                ]
+            ]
         ],
-        [
-          122.2251,
-          26.60305
-        ],
-        [
-          122.9312,
-          22.57058
-        ],
-        [
-          120.6771,
-          20.72799
-        ],
-        [
-          118.2509,
-          23.26265
-        ],
-        [
-          118.3036,
-          23.30751
-        ],
-        [
-          118.1978,
-          24.34453
-        ],
-        [
-          118.1036,
-          24.36172
-        ],
-        [
-          118.2283,
-          24.49486
-        ],
-        [
-          118.4416,
-          24.55302
-        ],
-        [
-          118.6024,
-          24.46068
-        ],
-        [
-          120.0474,
-          25.38843
-        ],
-        [
-          119.8935,
-          25.78169
-        ],
-        [
-          119.787,
-          26.2048
-        ],
-        [
-          120.4578,
-          26.53253
-        ],
-        [
-          121.2237,
-          25.76997
-        ]
-      ]
-    ],
-    "type": "Polygon"
-  },
-  "properties": {
-    "attribution": {
-      "required": true,
-      "text": "\u00a9 National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
-      "url": "https://maps.nlsc.gov.tw/"
+        "type": "Polygon"
     },
-    "available_projections": [
-      "EPSG:3857",
-      "EPSG:4326",
-      "EPSG:3826",
-      "EPSG:3825"
-    ],
-    "country_code": "TW",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
-    "id": "TW_NLSC_WMS_Village",
-    "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
-    "name": "Taiwan Village Boundaries",
-    "type": "wms",
-    "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
-  },
-  "type": "Feature"
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
+            "url": "https://maps.nlsc.gov.tw/"
+        },
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:3826",
+            "EPSG:3825"
+        ],
+        "country_code": "TW",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+        "id": "TW_NLSC_WMS_Village",
+        "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
+        "name": "Taiwan Village Boundaries",
+        "type": "wms",
+        "url": "https://wms.nlsc.gov.tw/wms?LAYERS=Village&STYLES=&FORMAT=image/jpeg&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "category": "other",
+        "min_zoom": 6
+    },
+    "type": "Feature"
 }

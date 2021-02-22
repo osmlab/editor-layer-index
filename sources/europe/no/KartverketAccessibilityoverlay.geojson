@@ -1,153 +1,154 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "kartverket-tilgjengelighet",
-    "name": "Kartverket Accessibility overlay",
-    "type": "wms_endpoint",
-    "url": "https://openwms.statkart.no/skwms1/wms.tilgjengelighet2?request=GetCapabilities&service=WMS",
-    "overlay": true,
-    "country_code": "NO",
-    "available_projections": [
-      "EPSG:3034",
-      "EPSG:4258",
-      "EPSG:4326",
-      "EPSG:25831",
-      "EPSG:25832",
-      "EPSG:25833",
-      "EPSG:25834",
-      "EPSG:25835",
-      "EPSG:25836",
-      "EPSG:27394",
-      "EPSG:27395",
-      "EPSG:27396",
-      "EPSG:27397",
-      "EPSG:27398",
-      "EPSG:32631",
-      "EPSG:32632",
-      "EPSG:32633",
-      "EPSG:32634",
-      "EPSG:32635",
-      "EPSG:32636"
-    ],
-    "attribution": {
-      "text": "© Kartverket",
-      "url": "https://www.kartverket.no/geodataarbeid/Universell-utforming/"
+    "type": "Feature",
+    "properties": {
+        "id": "kartverket-tilgjengelighet",
+        "name": "Kartverket Accessibility overlay",
+        "type": "wms_endpoint",
+        "url": "https://openwms.statkart.no/skwms1/wms.tilgjengelighet2?request=GetCapabilities&service=WMS",
+        "overlay": true,
+        "country_code": "NO",
+        "available_projections": [
+            "EPSG:3034",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:25831",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:25834",
+            "EPSG:25835",
+            "EPSG:25836",
+            "EPSG:27394",
+            "EPSG:27395",
+            "EPSG:27396",
+            "EPSG:27397",
+            "EPSG:27398",
+            "EPSG:32631",
+            "EPSG:32632",
+            "EPSG:32633",
+            "EPSG:32634",
+            "EPSG:32635",
+            "EPSG:32636"
+        ],
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://www.kartverket.no/geodataarbeid/Universell-utforming/"
+        },
+        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
+        "max_zoom": 20,
+        "min_zoom": 7,
+        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+        "description": "Accessibility for the visually impaired, wheelchairs and electrical wheelchairs.",
+        "category": "other"
     },
-    "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
-    "max_zoom": 20,
-    "min_zoom": 7,
-    "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
-    "description": "Accessibility for the visually impaired, wheelchairs and electrical wheelchairs."
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          31.904253,
-          70.4368136
-        ],
-        [
-          28.4765186,
-          71.3289643
-        ],
-        [
-          23.6865015,
-          71.2514263
-        ],
-        [
-          16.8090601,
-          70.0730823
-        ],
-        [
-          11.1620655,
-          67.5253903
-        ],
-        [
-          9.975542,
-          64.811576
-        ],
-        [
-          4.2187061,
-          62.1449966
-        ],
-        [
-          4.3725367,
-          59.1871966
-        ],
-        [
-          6.1743055,
-          57.8915032
-        ],
-        [
-          7.932118,
-          57.7393554
-        ],
-        [
-          10.777577,
-          58.8649103
-        ],
-        [
-          11.7224012,
-          58.762509
-        ],
-        [
-          12.722157,
-          60.1141506
-        ],
-        [
-          13.0517469,
-          61.3493518
-        ],
-        [
-          12.5243921,
-          63.6169922
-        ],
-        [
-          14.2382593,
-          63.9856094
-        ],
-        [
-          15.1171656,
-          65.9016624
-        ],
-        [
-          18.6987085,
-          68.3749083
-        ],
-        [
-          20.0610132,
-          68.2612583
-        ],
-        [
-          21.0058375,
-          68.7841518
-        ],
-        [
-          25.2465601,
-          68.3506025
-        ],
-        [
-          26.9384546,
-          69.8472011
-        ],
-        [
-          28.7621851,
-          69.6112133
-        ],
-        [
-          28.5864039,
-          68.8556004
-        ],
-        [
-          31.069314,
-          69.5191547
-        ],
-        [
-          31.904253,
-          70.4368136
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    31.904253,
+                    70.4368136
+                ],
+                [
+                    28.4765186,
+                    71.3289643
+                ],
+                [
+                    23.6865015,
+                    71.2514263
+                ],
+                [
+                    16.8090601,
+                    70.0730823
+                ],
+                [
+                    11.1620655,
+                    67.5253903
+                ],
+                [
+                    9.975542,
+                    64.811576
+                ],
+                [
+                    4.2187061,
+                    62.1449966
+                ],
+                [
+                    4.3725367,
+                    59.1871966
+                ],
+                [
+                    6.1743055,
+                    57.8915032
+                ],
+                [
+                    7.932118,
+                    57.7393554
+                ],
+                [
+                    10.777577,
+                    58.8649103
+                ],
+                [
+                    11.7224012,
+                    58.762509
+                ],
+                [
+                    12.722157,
+                    60.1141506
+                ],
+                [
+                    13.0517469,
+                    61.3493518
+                ],
+                [
+                    12.5243921,
+                    63.6169922
+                ],
+                [
+                    14.2382593,
+                    63.9856094
+                ],
+                [
+                    15.1171656,
+                    65.9016624
+                ],
+                [
+                    18.6987085,
+                    68.3749083
+                ],
+                [
+                    20.0610132,
+                    68.2612583
+                ],
+                [
+                    21.0058375,
+                    68.7841518
+                ],
+                [
+                    25.2465601,
+                    68.3506025
+                ],
+                [
+                    26.9384546,
+                    69.8472011
+                ],
+                [
+                    28.7621851,
+                    69.6112133
+                ],
+                [
+                    28.5864039,
+                    68.8556004
+                ],
+                [
+                    31.069314,
+                    69.5191547
+                ],
+                [
+                    31.904253,
+                    70.4368136
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

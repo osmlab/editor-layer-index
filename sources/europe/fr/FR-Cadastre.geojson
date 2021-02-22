@@ -3,7 +3,7 @@
     "properties": {
         "attribution": {
             "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
-            "text": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2020",
+            "text": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2021",
             "required": true
         },
         "description": "French land registry",
@@ -11,11 +11,13 @@
         "min_zoom": 12,
         "max_zoom": 22,
         "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
+        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/",
         "country_code": "FR",
         "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
         "type": "tms",
         "id": "Cadastre",
-        "name": "Cadastre"
+        "name": "Cadastre",
+        "category": "map"
     },
     "geometry": {
         "type": "Polygon",

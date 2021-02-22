@@ -1,0 +1,57 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "gothenburg-citymap",
+        "name": "Gothenburg City map",
+        "country_code": "SE",
+        "i18n": true,
+        "description": "The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
+        "license_url": "https://catalog.goteborg.se/catalog/6/datasets/718",
+        "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziTYzcDQy9TAy9LVyDXA0CLcJ8A70sDQ3cLcz1wwkpiAJKG-AAjgb6BbmhigA2cFOY/dz/d5/L2dBISEvZ0FBIS9nQSEh/#collapse-012212692658198088",
+        "type": "wms",
+        "url": "https://opengeodata.goteborg.se/services/stadskarta/wms/v4?LAYERS=stadskarta&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "max_zoom": 21,
+        "min_zoom": 5,
+        "attribution": {
+            "required": true,
+            "text": "© Gothenburg municipality, CC0",
+            "url": "https://catalog.goteborg.se/catalog/6/datasets/718"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3006",
+            "EPSG:3007",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "category": "map"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    12.590940414903043,
+                    57.40210992542442
+                ],
+                [
+                    12.590940414903043,
+                    57.94354118415678
+                ],
+                [
+                    11.155826181027384,
+                    57.94354118415678
+                ],
+                [
+                    11.155826181027384,
+                    57.40210992542442
+                ],
+                [
+                    12.590940414903043,
+                    57.40210992542442
+                ]
+            ]
+        ]
+    }
+}

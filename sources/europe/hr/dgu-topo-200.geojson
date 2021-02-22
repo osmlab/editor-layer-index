@@ -7,19 +7,21 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png",
         "start_date": "1982",
         "end_date": "1986",
-        "url": "https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tk:TK200&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoportal.dgu.hr/services/tk/ows?LAYERS=tk:TK200&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "permission_osm": "explicit",
         "license_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html",
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "country_code": "HR",
         "type": "wms",
         "attribution": {
-        	"required": true,
-        	"text": "Sadrži podatke Državne geodetske uprave",
-        	"url": "https://dgu.gov.hr/"
-        	},
+            "required": true,
+            "text": "Sadrži podatke Državne geodetske uprave",
+            "url": "https://dgu.gov.hr/"
+        },
         "available_projections": [
+            "CRS:84",
             "EPSG:3765",
+            "EPSG:3857",
             "EPSG:4326"
         ]
     },
@@ -27,8 +29,8 @@
         "type": "Polygon",
         "coordinates": [
             [
-				[
-                    16.24740452230,
+                [
+                    16.2474045223,
                     42.50051798696
                 ],
                 [
@@ -80,7 +82,7 @@
                     44.49736250026
                 ],
                 [
-                    14.29690352440,
+                    14.2969035244,
                     44.50023984195
                 ],
                 [
@@ -116,7 +118,7 @@
                     46.29666263208
                 ],
                 [
-                    13.41430629730,
+                    13.4143062973,
                     46.30472694469
                 ],
                 [
@@ -152,7 +154,7 @@
                     46.51918668662
                 ],
                 [
-                    13.96499496460,
+                    13.9649949646,
                     46.50217442881
                 ],
                 [
@@ -181,7 +183,7 @@
                 ],
                 [
                     19.49472410202,
-                    46.50028302210
+                    46.5002830221
                 ],
                 [
                     19.49489559174,
@@ -232,7 +234,7 @@
                     42.33520006245
                 ],
                 [
-                    16.24740452230,
+                    16.2474045223,
                     42.50051798696
                 ]
             ]

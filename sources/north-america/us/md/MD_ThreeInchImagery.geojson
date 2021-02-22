@@ -7,18 +7,24 @@
             "required": false
         },
         "name": "MD Three Inch Aerial Imagery",
-        "url": "https://geodata.md.gov/imap/services/Imagery/MD_ThreeInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=MD_ThreeInchImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geodata.md.gov/imap/services/Imagery/MD_ThreeInchImagery/MapServer/WmsServer?LAYERS=MD_ThreeInchImagery&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "id": "geodata.md.gov-MD_ThreeInchImagery",
         "max_zoom": 20,
         "country_code": "US",
         "type": "wms",
         "available_projections": [
+            "CRS:84",
             "EPSG:2248",
+            "EPSG:2893",
             "EPSG:3857",
             "EPSG:4326",
+            "EPSG:6487",
+            "EPSG:6488",
             "EPSG:26985"
         ],
-        "description": "Three Inch Resolution Imagery for the cities of Rockville, Gaithersburg and Annapolis"
+        "description": "Three Inch Resolution Imagery for the cities of Rockville, Gaithersburg and Annapolis",
+        "category": "photo",
+        "min_zoom": 8
     },
     "geometry": {
         "type": "Polygon",

@@ -1,131 +1,135 @@
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        [
-                            16.2847266,
-                            56.7082703
-                        ],
-                        [
-                            16.3885552,
-                            56.7079764
-                        ],
-                        [
-                            16.4084324,
-                            56.7614988
-                        ],
-                        [
-                            16.4626935,
-                            56.7567167
-                        ],
-                        [
-                            16.4775315,
-                            56.7602315
-                        ],
-                        [
-                            16.488152,
-                            56.7702329
-                        ],
-                        [
-                            16.4875388,
-                            56.7923138
-                        ],
-                        [
-                            16.4825418,
-                            56.7954749
-                        ],
-                        [
-                            16.4766651,
-                            56.8222983
-                        ],
-                        [
-                            16.4687043,
-                            56.8261423
-                        ],
-                        [
-                            16.4858383,
-                            56.8627102
-                        ],
-                        [
-                            16.488094,
-                            56.8736876
-                        ],
-                        [
-                            16.4569401,
-                            56.877862
-                        ],
-                        [
-                            16.4628839,
-                            56.8876862
-                        ],
-                        [
-                            16.4269611,
-                            56.8875734
-                        ],
-                        [
-                            16.3980938,
-                            56.8960379
-                        ],
-                        [
-                            16.3679096,
-                            56.8952007
-                        ],
-                        [
-                            16.367172,
-                            56.859848
-                        ],
-                        [
-                            16.3643127,
-                            56.8463582
-                        ],
-                        [
-                            16.3600078,
-                            56.8365686
-                        ],
-                        [
-                            16.3442257,
-                            56.8253204
-                        ],
-                        [
-                            16.3267511,
-                            56.7928352
-                        ],
-                        [
-                            16.2611416,
-                            56.7442216
-                        ],
-                        [
-                            16.2847266,
-                            56.7082703
-                        ]
-                    ]
+{
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    16.2847266,
+                    56.7082703
                 ],
-                "type": "Polygon"
-            },
-            "properties": {
-                "attribution": {
-                    "required": true,
-                    "text": "\u00a9 Kalmar municipality",
-                    "url": "http://data-kalmar.opendata.arcgis.com/"
-                },
-                "available_projections": [
-                    "EPSG:3011",
-                    "EPSG:4326"
+                [
+                    16.3885552,
+                    56.7079764
                 ],
-                "best": true,
-                "country_code": "SE",
-                "description": "Orthophotos for the north coast of the municipality of Kalmar 2014",
-                "i18n": true,
-                "end_date": "2014",
-                "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png",
-                "id": "kalmar-orto-2014",
-                "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/Kalmar_permission.pdf",
-                "max_zoom": 22,
-                "min_zoom": 9,
-                "name": "Kalmar North Orthophoto 2014",
-                "start_date": "2014",
-                "type": "wms",
-                "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2014/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
-            },
-            "type": "Feature"
-        }
+                [
+                    16.4084324,
+                    56.7614988
+                ],
+                [
+                    16.4626935,
+                    56.7567167
+                ],
+                [
+                    16.4775315,
+                    56.7602315
+                ],
+                [
+                    16.488152,
+                    56.7702329
+                ],
+                [
+                    16.4875388,
+                    56.7923138
+                ],
+                [
+                    16.4825418,
+                    56.7954749
+                ],
+                [
+                    16.4766651,
+                    56.8222983
+                ],
+                [
+                    16.4687043,
+                    56.8261423
+                ],
+                [
+                    16.4858383,
+                    56.8627102
+                ],
+                [
+                    16.488094,
+                    56.8736876
+                ],
+                [
+                    16.4569401,
+                    56.877862
+                ],
+                [
+                    16.4628839,
+                    56.8876862
+                ],
+                [
+                    16.4269611,
+                    56.8875734
+                ],
+                [
+                    16.3980938,
+                    56.8960379
+                ],
+                [
+                    16.3679096,
+                    56.8952007
+                ],
+                [
+                    16.367172,
+                    56.859848
+                ],
+                [
+                    16.3643127,
+                    56.8463582
+                ],
+                [
+                    16.3600078,
+                    56.8365686
+                ],
+                [
+                    16.3442257,
+                    56.8253204
+                ],
+                [
+                    16.3267511,
+                    56.7928352
+                ],
+                [
+                    16.2611416,
+                    56.7442216
+                ],
+                [
+                    16.2847266,
+                    56.7082703
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© Kalmar municipality",
+            "url": "http://data-kalmar.opendata.arcgis.com/"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3010",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "best": true,
+        "country_code": "SE",
+        "description": "Orthophotos for the north coast of the municipality of Kalmar 2014",
+        "i18n": true,
+        "end_date": "2014",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kalmar_vapen.svg",
+        "id": "kalmar-orto-2014",
+        "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/Kalmar_permission.pdf",
+        "max_zoom": 22,
+        "min_zoom": 9,
+        "name": "Kalmar North Orthophoto 2014",
+        "start_date": "2014",
+        "type": "wms",
+        "url": "https://karta.kalmar.se/ims/services/Ortofoto/Norra_Kalmar_2014/ImageServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "photo",
+        "privacy_policy_url": "https://kalmar.se/integritetspolicy"
+    },
+    "type": "Feature"
+}

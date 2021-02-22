@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "USSR-Latvia",
-        "url": "http://www.gisnet.lv/cgi-bin/topo?FORMAT=image/jpeg&VERSION=1.1.1&service=WMS&REQUEST=GetMap&LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&SRS={proj}&WIDTH={width}&height={height}&BBOX={bbox}",
+        "url": "http://www.gisnet.lv/cgi-bin/topo?LAYERS=DTO,DTC,DIVDPTC,PD,VS,DS,PS,M&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
         "available_projections": [
             "EPSG:3857",
@@ -12,7 +12,8 @@
             "EPSG:25884"
         ],
         "name": "USSR - Latvia",
-        "country_code": "LV"
+        "country_code": "LV",
+        "category": "historicmap"
     },
     "geometry": {
         "type": "Polygon",

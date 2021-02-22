@@ -1,0 +1,175 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LV_ORTOFOTO_C1",
+        "name": "Orthophoto (1994–1999), B&W, 1:30000, Latvia",
+        "type": "wms",
+        "url": "https://services.lgia.gov.lv/arcfree/services/WMS_Ortofoto_v1/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "country_code": "LV",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3059",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "description": "Made in 1994-1999 in cooperation with the Swedish company Swedesurvey Oy. In 1995, aerial photography of Daugavpils city and district was performed in cooperation with the Danish Ministry of Agriculture, aerial photography works are performed by the company 'Kampsax-Geoplan', and orthophoto maps are produced by the State Land Service (VZD) with a resolution of 1 meter. Aerial photography was performed with analog cameras to obtain black and white aerial at 1:30,000 scale. Satellite images of the Eastern border of Latvia were purchased in 2000-2001 from ICONOSS. <a href='https://services.lgia.gov.lv/arcfree/rest/services/WMS_Ortofoto_v1/MapServer'>ArcGIS service</a> description.",
+        "license_url": "https://www.lgia.gov.lv/en/black-and-white-orthophoto-map-1994-1999-cycle-1",
+        "attribution": {
+            "text": "LĢIA (Latvian Geospatial Information Agency) provided these open data (CC0) and WMS service."
+        },
+        "start_date": "1994-01-01",
+        "end_date": "2001-12-31",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    27.6641527,
+                    55.7535368
+                ],
+                [
+                    27.6847521,
+                    55.9331897
+                ],
+                [
+                    28.2670275,
+                    56.1908005
+                ],
+                [
+                    28.2368151,
+                    56.4982726
+                ],
+                [
+                    27.8275743,
+                    56.9488566
+                ],
+                [
+                    27.9099718,
+                    57.370372
+                ],
+                [
+                    27.5831285,
+                    57.5638671
+                ],
+                [
+                    26.9321886,
+                    57.6359802
+                ],
+                [
+                    26.5202013,
+                    57.5859578
+                ],
+                [
+                    26.0368029,
+                    57.8719176
+                ],
+                [
+                    25.1990953,
+                    58.1048668
+                ],
+                [
+                    24.3174425,
+                    57.9025786
+                ],
+                [
+                    24.3174425,
+                    57.1966884
+                ],
+                [
+                    23.9356676,
+                    56.9788036
+                ],
+                [
+                    23.5511461,
+                    56.9847901
+                ],
+                [
+                    23.2380358,
+                    57.1028266
+                ],
+                [
+                    23.144652,
+                    57.3733338
+                ],
+                [
+                    22.6063219,
+                    57.602149
+                ],
+                [
+                    22.6008287,
+                    57.7695253
+                ],
+                [
+                    21.6669908,
+                    57.5668133
+                ],
+                [
+                    21.4005724,
+                    57.2962485
+                ],
+                [
+                    21.3840929,
+                    57.0176987
+                ],
+                [
+                    21.0462633,
+                    56.8002643
+                ],
+                [
+                    20.9913317,
+                    56.3661503
+                ],
+                [
+                    21.054503,
+                    56.0392025
+                ],
+                [
+                    21.2879625,
+                    56.0560762
+                ],
+                [
+                    21.2989488,
+                    56.1908005
+                ],
+                [
+                    22.1174303,
+                    56.4193582
+                ],
+                [
+                    24.4437853,
+                    56.244253
+                ],
+                [
+                    24.8118273,
+                    56.3996039
+                ],
+                [
+                    25.15515,
+                    56.1693987
+                ],
+                [
+                    25.5808702,
+                    56.1296207
+                ],
+                [
+                    26.5366808,
+                    55.6614622
+                ],
+                [
+                    26.9129625,
+                    55.6676589
+                ],
+                [
+                    27.080504,
+                    55.8099123
+                ],
+                [
+                    27.6641527,
+                    55.7535368
+                ]
+            ]
+        ]
+    }
+}

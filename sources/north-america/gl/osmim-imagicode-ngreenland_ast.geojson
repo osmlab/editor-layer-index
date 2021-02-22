@@ -1,68 +1,30 @@
 {
     "geometry": {
+        "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -52.49221819430999,
-                    82.48971755550389
-                ],
-                [
-                    -52.49221819430999,
-                    82.94294978186194
-                ],
-                [
-                    -49.28695697579964,
-                    83.47311821807558
-                ],
-                [
-                    -44.52850362441216,
-                    83.7321400994933
-                ],
-                [
-                    -29.525299334683975,
-                    83.7321400994933
-                ],
-                [
-                    -25.263977329098022,
-                    83.58271128961059
-                ],
-                [
-                    -21.183929736898254,
-                    83.39775984253468
-                ],
-                [
-                    -21.183929736898254,
-                    82.74312310369845
-                ],
-                [
-                    -23.404541300879075,
-                    82.48971755550389
-                ],
-                [
-                    -52.49221819430999,
-                    82.48971755550389
-                ]
-            ]
-        ],
-        "type": "Polygon"
+            [ [ -52.492218194309991, 82.489717555503887 ], [ -52.492218194309991, 82.942949781861941 ], [ -49.28695697579964, 83.473118218075584 ], [ -44.52850362441216, 83.732140099493293 ], [ -29.525299334683975, 83.732140099493293 ], [ -25.263977329098022, 83.582711289610586 ], [ -21.183929736898254, 83.397759842534683 ], [ -21.183929736898254, 82.743123103698451 ], [ -23.404541300879075, 82.489717555503887 ], [ -52.492218194309991, 82.489717555503887 ] ]
+        ]
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "url": "http://maps.imagico.de/#osmim",
             "text": "imagico.de OSM images for mapping",
-            "url": "http://maps.imagico.de/#osmim"
+            "required": true
         },
+        "category": "photo",
         "country_code": "GL",
         "description": "Assembled from mostly 2012 ASTER imagery, some 2005 images mainly in the northeast (true color with estimated blue)",
         "end_date": "2012-08-13",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode-LC81800982013291LGN00.png",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-ngreenland_ast",
-        "license_url": "http://imagico.de/map/osmim_tiles.php",
-        "max_zoom": 10,
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
         "name": "imagico.de: Northern Greenland ASTER",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
         "start_date": "2005-06-21",
         "type": "tms",
-        "url": "http://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&z={zoom}&x={x}&y={-y}"
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&z={zoom}&x={x}&y={-y}"
     },
     "type": "Feature"
 }
