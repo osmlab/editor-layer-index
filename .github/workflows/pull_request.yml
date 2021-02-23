@@ -31,7 +31,7 @@ jobs:
         id: get_file_changes
         uses: trilom/file-changes-action@v1.2.4
         with:
-          output: ' '
+          output: '" "'
 
       - name: Echo file changes
         run: |
@@ -39,4 +39,4 @@ jobs:
 
       - name: Strict check
         run: |
-          python scripts/strict_check.py ${{ steps.get_file_changes.outputs.files }}
+          python scripts/strict_check.py "${{ steps.get_file_changes.outputs.files }}"
