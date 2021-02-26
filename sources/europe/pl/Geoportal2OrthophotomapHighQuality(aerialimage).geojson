@@ -1,25 +1,30 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "Geoportal2-PL-HighResolution-aerial_image",
+    "id": "Geoportal2-PL-HighResolution-aerial_image_WMS",
     "name": "Geoportal 2: High Resolution Orthophotomap (aerial image)",
+    "description": "Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.",
     "type": "wms",
     "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?LAYERS=Raster&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
     "privacy_policy_url": "https://www.geoportal.gov.pl/ciasteczka-cookies-",
-	"best": false,
+	  "best": true,
     "country_code": "PL",
     "available_projections": [
-		"CRS:84",
-        "EPSG:2180",
-        "EPSG:4326"
+		  "CRS:84",
+      "EPSG:2180",
+      "EPSG:4326"
     ],
     "attribution": {
       "text": "Główny Urząd Geodezji i Kartografii",
-      "url": "https://geoportal.gov.pl/web/guest/regulamin"
+      "url": "https://www.geoportal.gov.pl/",
+      "required": true
     },
     "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
+    "terms-of-use-text": "https://geoportal.gov.pl/web/guest/regulamin",
+    "i18n" : true,
     "max_zoom": 23,
-    "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl"
+    "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
+    "category": "photo"
   },
   "geometry": {
     "type": "Polygon",
