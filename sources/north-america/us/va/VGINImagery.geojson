@@ -4,7 +4,7 @@
         "id": "VGIN-Imagery_WM",
         "name": "Virginia Imagery Service - Most Recent",
         "end_date": "2018-08",
-        "url": "https://tileify-ags.herokuapp.com/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vita.virginia.gov%2Farcgis%2Frest%2Fservices%2FMostRecentImagery%2FMostRecentImagery_WGS%2FMapServer&transparent=true&layers=show%3A0",
+        "url": "https://ags-proxy.openstreetmap.us/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vdem.virginia.gov%2Farcgis%2Frest%2Fservices%2FVBMP_Imagery%2FMostRecentImagery_WGS%2FMapServer",
         "max_zoom": 20,
         "country_code": "US",
         "attribution": {
@@ -17,7 +17,8 @@
         "best": false,
         "description": "The most recently available VBMP orthoimagery for all of Virginia.",
         "license_url": "http://data.virginia.gov/#opendata",
-        "category": "photo"
+        "category": "photo",
+        "min_zoom": 2
     },
     "geometry": {
         "type": "Polygon",

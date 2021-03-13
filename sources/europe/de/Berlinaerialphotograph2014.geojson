@@ -2,7 +2,7 @@
   "type": "Feature",
   "properties": {
     "id": "Berlin-2014",
-    "name": "Berlin aerial photography 2014",
+    "name": "Berlin/Geoportal DOP20RGB (2014)",
     "type": "tms",
     "category": "historicphoto",
     "url": "https://tiles.codefor.de/berlin-2014/{zoom}/{x}/{y}.png",
@@ -10,10 +10,11 @@
     "end_date": "2014",
     "country_code": "DE",
     "attribution": {
-      "text": "Geoportal Berlin/Digitale farbige Orthophotos 2014",
+      "text": "Geoportal Berlin/Digitale farbige Orthophotos 2014 (DOP20RGB) (codefor.de mirror)",
       "required": true
     },
-    "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
+    "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf", 
+    "privacy_policy_url": "https://codefor.de/datenschutz/",
     "max_zoom": 18
   },
   "geometry": {

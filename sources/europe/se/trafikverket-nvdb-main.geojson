@@ -7,7 +7,7 @@
         "id": "trafikverket-vagnat",
         "country_code": "SE",
         "description": "Swedish NVDB road network",
-        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vagtrafiknat,Funkvagklass,Farjeled&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo?LAYERS=Vagtrafiknat,Funkvagklass,Farjeled&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
         "min_zoom": 13,
         "max_zoom": 20,
@@ -19,8 +19,7 @@
         "license_url": "https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667",
         "overlay": true,
         "available_projections": [
-            "EPSG:3857",
-            "EPSG:4326",
+            "CRS:84",
             "EPSG:3006",
             "EPSG:3007",
             "EPSG:3008",
@@ -40,7 +39,9 @@
             "EPSG:3045",
             "EPSG:3046",
             "EPSG:3047",
+            "EPSG:3857",
             "EPSG:4258",
+            "EPSG:4326",
             "EPSG:4619"
         ],
         "category": "other"

@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://wiki.openstreetmap.org/wiki/Permission_City_of_Berne_Orthophotos",
+        "privacy_policy_url": "https://www.bern.ch/disclaimer",
+        "start_date": "2020",
+        "end_date": "2020",
+        "id": "Bern-bern2020-wms",
+        "attribution": {
+            "url": "https://www.bern.ch/themen/planen-und-bauen/geodaten-und-plane/nutzungsbedingungengeodaten/nutzungsbedingungen",
+            "text": "Geodaten Stadt Bern",
+            "required": true
+        },
+        "name": "Stadt Bern 10cm (2020)",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2056",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:21781"
+        ],
+        "url": "https://map.bern.ch/wms/OpenData/proxy.php?LAYERS=luftbild_2020&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "country_code": "CH",
+        "type": "wms",
+        "category": "photo",
+        "best": true,
+        "min_zoom": 4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    7.29506422439276,
+                    46.9914806162625
+                ],
+                [
+                    7.49656924680483,
+                    46.9914806162625
+                ],
+                [
+                    7.49656924680483,
+                    46.9203153398633
+                ],
+                [
+                    7.29506422439276,
+                    46.9203153398633
+                ],
+                [
+                    7.29506422439276,
+                    46.9914806162625
+                ]
+            ]
+        ]
+    }
+}
