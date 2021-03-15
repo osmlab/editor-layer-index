@@ -10,7 +10,7 @@
         "available_projections": [
             "EPSG:4326"
         ],
-        "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kaart.maaamet.ee/wms/alus-geo?LAYERS=pohi_vr2&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
         "country_code": "EE",
         "type": "wms"

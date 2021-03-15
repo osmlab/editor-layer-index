@@ -2,26 +2,30 @@
     "type": "Feature",
     "properties": {
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
-	"privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
+        "privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
         "id": "MCGIS-County-NAIP-Imagery-2017",
         "type": "wms",
         "name": "Mesa County GIS NAIP 2017",
-        "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/NAIP_2017/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/NAIP_2017/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 13,
         "permission_osm": "implicit",
         "country_code": "US",
         "start_date": "2017-08-26",
         "end_date": "2017-10-24",
         "available_projections": [
-            "EPSG:4326",
-            "EPSG:3742"
+            "CRS:84",
+            "EPSG:3742",
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "attribution": {
             "url": "https://gis.mesacounty.us/",
             "text": "Mesa County GIS",
             "required": true
         },
-        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
+        "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
+        "category": "historicphoto",
+        "min_zoom": 8
     },
     "geometry": {
         "type": "Polygon",

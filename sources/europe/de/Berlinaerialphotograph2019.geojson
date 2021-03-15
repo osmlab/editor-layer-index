@@ -2,19 +2,20 @@
   "type": "Feature",
   "properties": {
     "id": "Berlin-2019",
-    "name": "Berlin aerial photography 2019",
+    "name": "Berlin/Geoportal DOP20RGB (2019)",
     "type": "tms",
-    "category": "photo",
+    "category": "historicphoto",
     "url": "https://tiles.codefor.de/berlin-2019/{zoom}/{x}/{y}.png",
     "start_date": "2019-04-01",
     "end_date": "2019-04-06",
     "country_code": "DE",
-    "best": true,
+    "best": false,
     "attribution": {
-      "text": "Geoportal Berlin/Digitale farbige Orthophotos 2019 (DOP20RGB)",
+      "text": "Geoportal Berlin/Digitale farbige Orthophotos 2019 (DOP20RGB) (codefor.de mirror)",
       "required": true
     },
     "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf",
+    "privacy_policy_url": "https://codefor.de/datenschutz/",
     "max_zoom": 18
   },
   "geometry": {

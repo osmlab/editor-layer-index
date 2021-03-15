@@ -123,7 +123,7 @@
                     45.43241
                 ],
                 [
-                    13.3800,
+                    13.38,
                     45.5666
                 ],
                 [
@@ -717,7 +717,7 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Copyright \u00a92019 Ministrstvo za kmetijstvo, gozdarstvo in prehrano (mkgp.gov.si). Some rights reserved.",
+            "text": "Copyright ©2019 Ministrstvo za kmetijstvo, gozdarstvo in prehrano (mkgp.gov.si). Some rights reserved.",
             "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ"
         },
         "country_code": "SI",
@@ -729,7 +729,8 @@
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
         "type": "tms",
-        "url": "https://wms.openstreetmap.de/tms/RABA/{zoom}/{x}/{y}.png"
+        "url": "https://wms.openstreetmap.de/tms/RABA/{zoom}/{x}/{y}.png",
+        "category": "other"
     },
     "type": "Feature"
 }

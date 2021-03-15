@@ -4,22 +4,25 @@
         "id": "CRAIG-Auvergne-2016_mirror1",
         "name": "Auvergne 2016 25cm CRAIG",
         "type": "wms",
-        "url": "https://tiles.craig.fr/ortho/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://tiles.craig.fr/ortho/service?LAYERS=ortho_2016&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "end_date": "2016",
         "start_date": "2016",
         "country_code": "FR",
         "attribution": {
-            "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/e37c057b-5884-429b-8bec-5db0baef0ee",
+            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
             "text": "CRAIG - IGN -TopoGEODIS - Feder Auvergne-Rh\u00f4ne-Alpes 2016",
             "required": true
         },
         "available_projections": [
+            "CRS:84",
             "EPSG:2154",
-            "EPSG:4326",
+            "EPSG:3857",
             "EPSG:4258",
-            "EPSG:3857"
+            "EPSG:4326"
         ],
-        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+        "category": "photo",
+        "privacy_policy_url": "https://www.craig.fr/fr/contenu/13-mentions-legales"
     },
     "geometry": {
         "type": "Polygon",

@@ -538,10 +538,13 @@
         "max_zoom": 22,
         "name": "TIGER Roads 2019",
         "overlay": true,
+        "license_url": "https://wiki.openstreetmap.org/wiki/TIGER",
         "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
         "start_date": "2019",
         "type": "tms",
-        "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/openstreetmapus/ck0dxfa7602e61cmjk7p86749/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcHVzIiwiYSI6ImNpcnF4Ym43dDBoOXZmYW04bWhlNWdrY2EifQ.4SFexuTUuKkZeerO3dgtmw"
+        "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/openstreetmapus/ck0dxfa7602e61cmjk7p86749/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcHVzIiwiYSI6ImNpcnF4Ym43dDBoOXZmYW04bWhlNWdrY2EifQ.4SFexuTUuKkZeerO3dgtmw",
+        "category": "qa",
+        "min_zoom": 4
     },
     "type": "Feature"
 }

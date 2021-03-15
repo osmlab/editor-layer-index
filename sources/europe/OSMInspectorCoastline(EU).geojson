@@ -1111,7 +1111,10 @@
         "name": "OSM Inspector: Coastline (EU)",
         "overlay": true,
         "type": "wms_endpoint",
-        "url": "https://tools.geofabrik.de/osmi/views/boundaries/wxs?service=wms&request=getCapabilities"
+        "url": "https://tools.geofabrik.de/osmi/views/coastline/wxs?service=wms&request=getCapabilities",
+        "privacy_policy_url": "https://www.geofabrik.de/geofabrik/imprint.html",
+        "license_url": "https://tools.geofabrik.de/osmi/",
+        "category": "qa"
     },
     "type": "Feature"
 }

@@ -3,12 +3,13 @@
     "properties": {
         "id": "tirol.gv.at-orthofoto-cir",
         "attribution": {
-        	"url": "https://tiris.tirol.gv.at",
+            "url": "https://tiris.tirol.gv.at",
             "text": "tiris.tirol.gv.at",
             "required": false
         },
         "name": "Tiris: orthophoto infrared",
         "available_projections": [
+            "CRS:84",
             "EPSG:3035",
             "EPSG:3044",
             "EPSG:3045",
@@ -19,20 +20,19 @@
             "EPSG:25833",
             "EPSG:31254",
             "EPSG:31255",
-            "EPSG:31256",
             "EPSG:31257",
             "EPSG:31258",
-            "EPSG:31259",
             "EPSG:31287",
             "EPSG:32632",
             "EPSG:32633"
         ],
-        "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/orthofoto/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Aktuell_CIR&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/orthofoto/MapServer/WmsServer?LAYERS=Image_Aktuell_CIR&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "permission_osm": "explicit",
         "license_url": "https://www.data.gv.at/katalog/dataset/35691b6c-9ed7-4517-b4b3-688b0569729a",
         "country_code": "AT",
         "type": "wms",
-        "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif"
+        "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",

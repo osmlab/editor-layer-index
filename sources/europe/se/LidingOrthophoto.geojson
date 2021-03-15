@@ -1,0 +1,77 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "lidingo-orto",
+        "name": "Lidingö Orthophoto",
+        "type": "wms",
+        "url": "https://karta.lidingo.se/wms?LAYERS=theme-ortofoto2012&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&servicename=wms_ortofoto_2012",
+        "best": true,
+        "country_code": "SE",
+        "available_projections": [
+            "EPSG:3011",
+            "EPSG:4326"
+        ],
+        "attribution": {
+            "text": "© Lidingö municipality, CC0",
+            "url": "https://www.lidingo.se/oppnadata/oppnadata.4.3f8c1a7415bf516a427a636.html"
+        },
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Lidingö_kommunvapen_-_Riksarkivet_Sverige.png/207px-Lidingö_kommunvapen_-_Riksarkivet_Sverige.png",
+        "max_zoom": 21,
+        "min_zoom": 5,
+        "license_url": "https://lidingo.entryscape.net/catalog/1/datasets/90/",
+        "description": "Orthophotos from the municipality of Lidingö 2012, CC0 license",
+        "category": "photo",
+        "privacy_policy_url": "https://www.lidingo.se/sidfotslankar/omwebbplatsen/kakorcookiespawebbplatsen.4.284b5eb41353a0854c28000148.html"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    18.0882596,
+                    59.3820101
+                ],
+                [
+                    18.1000613,
+                    59.3939858
+                ],
+                [
+                    18.1387709,
+                    59.4034672
+                ],
+                [
+                    18.162546,
+                    59.3898341
+                ],
+                [
+                    18.30348,
+                    59.3726539
+                ],
+                [
+                    18.2951545,
+                    59.3666191
+                ],
+                [
+                    18.2596205,
+                    59.3591834
+                ],
+                [
+                    18.1752062,
+                    59.3239074
+                ],
+                [
+                    18.1140517,
+                    59.3576086
+                ],
+                [
+                    18.1036662,
+                    59.3744029
+                ],
+                [
+                    18.0882596,
+                    59.3820101
+                ]
+            ]
+        ]
+    }
+}

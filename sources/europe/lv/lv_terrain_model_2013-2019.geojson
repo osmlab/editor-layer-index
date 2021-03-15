@@ -1,0 +1,175 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LV_TERRAIN_LIDAR_LGIA",
+        "name": "Digital terrain model (2013–2019), LĢIA, Latvia",
+        "type": "wms",
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?width={width}&height={height}&bbox={bbox}&format=image/vnd.jpeg-png8&request=GetMap&service=WMS&styles=&transparent=true&version=1.3.0&crs={proj}&layers=public:ZemeLKS",
+        "country_code": "LV",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3059",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "attribution": {
+            "text": "LĢIA (Latvian Geospatial Information Agency) provided these open data (CC0). WMS service is provided by LVM (Latvian State Forestry)."
+        },
+        "license_url": "https://www.lgia.gov.lv/en/Digitālais reljefa modelis",
+        "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
+        "best": false,
+        "description": "The data were obtained by aerial laser scanning method. LIDAR point cloud with resolution of 1 m has been used for the development of this service and for better visualization relief shading has been used. The total density of points obtained shall be not less than 4 p/m² and the mean density of points characterizing the surface shall be not less than 1.5 p/m². WMS service is freely provided by LVM (Latvian State Forestry, https://lvmgeo.lv/en/data/services/digital-terrain-model).",
+        "category": "elevation"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    27.6641527,
+                    55.7535368
+                ],
+                [
+                    27.6847521,
+                    55.9331897
+                ],
+                [
+                    28.2670275,
+                    56.1908005
+                ],
+                [
+                    28.2368151,
+                    56.4982726
+                ],
+                [
+                    27.8275743,
+                    56.9488566
+                ],
+                [
+                    27.9099718,
+                    57.370372
+                ],
+                [
+                    27.5831285,
+                    57.5638671
+                ],
+                [
+                    26.9321886,
+                    57.6359802
+                ],
+                [
+                    26.5202013,
+                    57.5859578
+                ],
+                [
+                    26.0368029,
+                    57.8719176
+                ],
+                [
+                    25.1990953,
+                    58.1048668
+                ],
+                [
+                    24.3174425,
+                    57.9025786
+                ],
+                [
+                    24.3174425,
+                    57.1966884
+                ],
+                [
+                    23.9356676,
+                    56.9788036
+                ],
+                [
+                    23.5511461,
+                    56.9847901
+                ],
+                [
+                    23.2380358,
+                    57.1028266
+                ],
+                [
+                    23.144652,
+                    57.3733338
+                ],
+                [
+                    22.6063219,
+                    57.602149
+                ],
+                [
+                    22.6008287,
+                    57.7695253
+                ],
+                [
+                    21.6669908,
+                    57.5668133
+                ],
+                [
+                    21.4005724,
+                    57.2962485
+                ],
+                [
+                    21.3840929,
+                    57.0176987
+                ],
+                [
+                    21.0462633,
+                    56.8002643
+                ],
+                [
+                    20.9913317,
+                    56.3661503
+                ],
+                [
+                    21.054503,
+                    56.0392025
+                ],
+                [
+                    21.2879625,
+                    56.0560762
+                ],
+                [
+                    21.2989488,
+                    56.1908005
+                ],
+                [
+                    22.1174303,
+                    56.4193582
+                ],
+                [
+                    24.4437853,
+                    56.244253
+                ],
+                [
+                    24.8118273,
+                    56.3996039
+                ],
+                [
+                    25.15515,
+                    56.1693987
+                ],
+                [
+                    25.5808702,
+                    56.1296207
+                ],
+                [
+                    26.5366808,
+                    55.6614622
+                ],
+                [
+                    26.9129625,
+                    55.6676589
+                ],
+                [
+                    27.080504,
+                    55.8099123
+                ],
+                [
+                    27.6641527,
+                    55.7535368
+                ]
+            ]
+        ]
+    }
+}

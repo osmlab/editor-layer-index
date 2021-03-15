@@ -1,0 +1,42 @@
+name: Check PR
+
+on:
+  pull_request:
+    branches:
+      - gh-pages
+
+jobs:
+  check:
+    name: Check PR
+    runs-on: [ubuntu-20.04]
+    if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install -U pip wheel
+          python -m pip install -r requirements.txt
+
+      - name: Basic check
+        run: find sources -name \*.geojson | xargs python scripts/check.py
+
+      - name: Get file changes
+        id: get_file_changes
+        uses: trilom/file-changes-action@v1.2.4
+        with:
+          output: '" "'
+
+      - name: Echo file changes
+        run: |
+          echo "Changed files: ${{ steps.get_file_changes.outputs.files }}"
+
+      - name: Strict check
+        run: |
+          python scripts/strict_check.py "${{ steps.get_file_changes.outputs.files }}"

@@ -1,0 +1,128 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "sollentuna-orto",
+        "name": "Sollentuna Orthophoto",
+        "type": "wms",
+        "url": "https://kartor.sollentuna.se/bios/wms/site/web/WMS_ORTOFOTO2016?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=p_40137&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo",
+        "best": true,
+        "country_code": "SE",
+        "available_projections": [
+            "EPSG:3006",
+            "EPSG:3011",
+            "EPSG:3015",
+            "EPSG:3152",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:5850",
+            "EPSG:25833",
+            "EPSG:32633"
+        ],
+        "attribution": {
+            "text": "© Solentuna municipality",
+            "url": "https://www.sollentuna.se/"
+        },
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sollentuna_kommunvapen_-_Riksarkivet_Sverige.png/207px-Sollentuna_kommunvapen_-_Riksarkivet_Sverige.png",
+        "max_zoom": 20,
+        "min_zoom": 5,
+        "license_url": "https://www.sollentuna.se/kommun--politik/kvalitet-och-utveckling/oppna-data-i-sollentuna/",
+        "description": "Orthophotos from the municipality of Sollentuna 2016, open data",
+        "privacy_policy_url": "https://www.sollentuna.se/om-webbplatsen/Kakor-cookies-pa-webbplatsen/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    17.8218412,
+                    59.4694138
+                ],
+                [
+                    17.8316687,
+                    59.475256
+                ],
+                [
+                    17.8623961,
+                    59.481533
+                ],
+                [
+                    17.8666877,
+                    59.4923842
+                ],
+                [
+                    17.888832,
+                    59.491992
+                ],
+                [
+                    17.9066848,
+                    59.4850197
+                ],
+                [
+                    17.9114913,
+                    59.4987016
+                ],
+                [
+                    17.9232501,
+                    59.4985709
+                ],
+                [
+                    17.9948329,
+                    59.4621752
+                ],
+                [
+                    18.007965,
+                    59.4438535
+                ],
+                [
+                    18.0113983,
+                    59.4270936
+                ],
+                [
+                    18.0060767,
+                    59.3998847
+                ],
+                [
+                    17.9793406,
+                    59.3922378
+                ],
+                [
+                    17.909603,
+                    59.4256092
+                ],
+                [
+                    17.9135512,
+                    59.4352127
+                ],
+                [
+                    17.89793,
+                    59.438355
+                ],
+                [
+                    17.8915786,
+                    59.4241248
+                ],
+                [
+                    17.8773307,
+                    59.4270936
+                ],
+                [
+                    17.8677174,
+                    59.4529284
+                ],
+                [
+                    17.8429126,
+                    59.4539753
+                ],
+                [
+                    17.843685,
+                    59.4607796
+                ],
+                [
+                    17.8218412,
+                    59.4694138
+                ]
+            ]
+        ]
+    }
+}

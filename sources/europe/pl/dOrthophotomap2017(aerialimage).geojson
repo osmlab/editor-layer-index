@@ -228,22 +228,24 @@
     },
     "properties": {
         "attribution": {
-            "text": "Urz\u0105d Miasta \u0141odzi"
+            "text": "Urząd Miasta Łodzi"
         },
         "available_projections": [
-            "EPSG:4326",
+            "CRS:84",
             "EPSG:2177",
-            "EPSG:2180"
+            "EPSG:2180",
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "country_code": "PL",
         "end_date": "2017",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/dOrthophotomap2017(aerialimage).png",
         "id": "Lodz-2017",
         "max_zoom": 22,
-        "name": "\u0141\u00f3d\u017a: Orthophotomap 2017 (aerial image)",
+        "name": "Łódź: Orthophotomap 2017 (aerial image)",
         "start_date": "2017",
         "type": "wms",
-        "url": "https://mapa.lodz.pl/3/services/OGC/Ortofotomapa/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://mapa.lodz.pl/3/services/OGC/Ortofotomapa/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }

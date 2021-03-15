@@ -7,8 +7,9 @@
         "name": "NC Latest Orthoimagery",
         "country_code": "US",
         "type": "wms",
-        "url": "https://services.nconemap.gov/secure/services/Imagery/Orthoimagery_Latest/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",        "available_projections": [
-            "EPSG:2264",
+        "url": "https://services.nconemap.gov/secure/services/Imagery/Orthoimagery_Latest/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "available_projections": [
+            "CRS:84",
             "EPSG:2264",
             "EPSG:3358",
             "EPSG:3404",
@@ -20,7 +21,9 @@
             "EPSG:32019",
             "EPSG:32119"
         ],
-        "description": "Most recent true color imagery for the state of North Carolina. The imagery has a pixel resolution of 6 inches and is comprised of imagery flown in 2010, 2012, 2013, and 2014"
+        "description": "Most recent true color imagery for the state of North Carolina. The imagery has a pixel resolution of 6 inches and is comprised of imagery flown in 2010, 2012, 2013, and 2014",
+        "category": "photo",
+        "min_zoom": 2
     },
     "geometry": {
         "type": "Polygon",

@@ -1,23 +1,24 @@
 {
-    "type": "Feature", 
+    "type": "Feature",
     "properties": {
-        "id": "Bayonne_2016", 
-        "name": "Bayonne 2016", 
-        "type": "tms", 
-        "url": "https://wms.openstreetmap.fr/tms/1.0.0/bayonne_2016/{zoom}/{x}/{y}", 
+        "id": "Bayonne_2016",
+        "name": "Bayonne 2016",
+        "type": "tms",
+        "url": "https://wms.openstreetmap.fr/tms/1.0.0/bayonne_2016/{zoom}/{x}/{y}",
         "end_date": "2016",
         "start_date": "2016",
-        "country_code": "FR", 
+        "country_code": "FR",
         "attribution": {
-            "text": "Ville de Bayonne, Communaut\u00e9 d'Agglomt\u00e9ration Pays Basque - 2016", 
+            "text": "Ville de Bayonne, Communauté d'Agglomtération Pays Basque - 2016",
             "required": true
-        }, 
+        },
         "max_zoom": 20,
         "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
-        "privacy_policy_url": "https://www.data.gouv.fr/fr/datasets/orthophotographie-bayonne-2016-1/"
-    }, 
+        "privacy_policy_url": "https://www.data.gouv.fr/fr/datasets/orthophotographie-bayonne-2016-1/",
+        "category": "photo"
+    },
     "geometry": {
-        "type": "Polygon", 
+        "type": "Polygon",
         "coordinates": [
             [
                 [

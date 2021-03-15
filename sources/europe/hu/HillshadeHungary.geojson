@@ -1,42 +1,43 @@
 {
-  "type": "Feature",
-  "properties": {
-    "id": "hu-hillshade",
-    "name": "Hillshade Hungary",
-    "type": "tms",
-    "url": "https://{switch:a,b,c}.map.turistautak.hu/tiles/shading/{zoom}/{x}/{y}.png",
-    "overlay": true,
-    "country_code": "HU",
-    "attribution": {
-      "text": "SRTM"
+    "type": "Feature",
+    "properties": {
+        "id": "hu-hillshade",
+        "name": "Hillshade Hungary",
+        "type": "tms",
+        "url": "https://{switch:a,b,c}.map.turistautak.hu/tiles/shading/{zoom}/{x}/{y}.png",
+        "overlay": true,
+        "country_code": "HU",
+        "attribution": {
+            "text": "SRTM"
+        },
+        "max_zoom": 18,
+        "category": "elevation"
     },
-    "max_zoom": 18
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          15.0,
-          45.0
-        ],
-        [
-          24.0,
-          45.0
-        ],
-        [
-          24.0,
-          49.0
-        ],
-        [
-          15.0,
-          49.0
-        ],
-        [
-          15.0,
-          45.0
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    15.0,
+                    45.0
+                ],
+                [
+                    24.0,
+                    45.0
+                ],
+                [
+                    24.0,
+                    49.0
+                ],
+                [
+                    15.0,
+                    49.0
+                ],
+                [
+                    15.0,
+                    45.0
+                ]
+            ]
         ]
-      ]
-    ]
-  }
+    }
 }

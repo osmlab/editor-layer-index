@@ -2,21 +2,22 @@
     "type": "Feature",
     "properties": {
         "id": "orthophoto_lyon",
-        "name": "Lyon Orthophoto 8cm",
+        "name": "Lyon Orthophoto 2015 (8cm)",
         "type": "tms",
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/lyon/{zoom}/{x}/{y}",
-        "end_date": "2018",
+        "end_date": "2015-05",
         "start_date": "2015-05",
         "country_code": "FR",
         "max_zoom": 22,
         "min_zoom": 2,
         "attribution": {
-            "url": "https://data.grandlyon.com/imagerie/orthophotographie-2015-du-grand-lyon/",
+            "url": "https://data.beta.grandlyon.com/fr/jeux-de-donnees/orthophotographie-2015-metropole-lyon-format-ecw/info",
             "text": "M\u00e9tropole de Lyon DINSI",
             "required": true
         },
         "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
-        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales"
+        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",

@@ -659,7 +659,8 @@
         "max_zoom": 20,
         "name": "SDFE Cadastral Parcels INSPIRE View",
         "type": "wms",
-        "url": "https://kortforsyningen.kms.dk/cp_inspire?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=CP.CadastralParcel&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://kortforsyningen.kms.dk/cp_inspire?LAYERS=CP.CadastralParcel&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LOGIN=OpenStreetMapDK2015&PASSWORD=Gall4Peters",
+        "category": "other"
     },
     "type": "Feature"
 }

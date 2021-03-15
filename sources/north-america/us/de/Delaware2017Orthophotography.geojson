@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "name": "Delaware 2017 Orthophotography",
-        "url": "https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2017/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2017/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2017",
         "end_date": "2017",
         "id": "Delaware2017Orthophotography",
@@ -14,9 +14,12 @@
             "text": "Digital Aerial Solutions, LLC"
         },
         "available_projections": [
-                                  "EPSG:3857",
-                                  "EPSG:4326"
-                                  ]
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "category": "photo",
+        "min_zoom": 4
     },
     "geometry": {
         "type": "Polygon",
@@ -28,7 +31,7 @@
                 ],
                 [
                     -75.74173524589,
-                    38.44995811450
+                    38.4499581145
                 ],
                 [
                     -75.80699639658,
@@ -40,7 +43,7 @@
                 ],
                 [
                     -75.64692187603,
-                    39.85638156160
+                    39.8563815616
                 ],
                 [
                     -75.47114773904,
@@ -52,7 +55,7 @@
                 ],
                 [
                     -75.48746302671,
-                    39.67181155090
+                    39.6718115509
                 ],
                 [
                     -75.50901151986,
@@ -67,7 +70,7 @@
                     39.01666513594
                 ],
                 [
-                    -75.19317217740,
+                    -75.1931721774,
                     38.82218696272
                 ],
                 [

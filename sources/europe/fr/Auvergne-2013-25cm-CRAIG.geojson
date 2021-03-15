@@ -3,19 +3,27 @@
     "properties": {
         "id": "CRAIG-Auvergne-2013",
         "attribution": {
-            "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/8cabc987-829c-4c9f-943b-6a0e255cd73",
+            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
             "text": "Orthophotographie CRAIG/Sintegra/IGN 2013",
             "required": true
         },
         "name": "Auvergne 2013 25cm CRAIG",
-        "url": "https://tiles.craig.fr/osm/wmts/1.0.0/ortho_2013/webmercator/{zoom}/{x}/{y}.jpeg",
-
+        "url": "https://tiles.craig.fr/ortho/service?LAYERS=ortho_2013&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "FR",
         "start_date": "2013",
         "end_date": "2013",
-        "type": "tms",
+        "type": "wms",
         "max_zoom": 21,
-        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG"
+        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326"
+        ],
+        "category": "photo",
+        "privacy_policy_url": "https://www.craig.fr/fr/contenu/13-mentions-legales"
     },
     "geometry": {
         "type": "Polygon",

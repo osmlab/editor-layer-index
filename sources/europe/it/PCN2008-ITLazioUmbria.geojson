@@ -4,15 +4,30 @@
         "start_date": "2008",
         "end_date": "2008",
         "id": "PCN-Lazio_Umbria-2008",
-        "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_08.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2008.33&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://wms.pcn.minambiente.it/ogc?MAP=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_08.map&LAYERS=OI.ORTOIMMAGINI.2008.33&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
         "category": "historicphoto",
         "name": "PCN 2008 - IT Lazio+Umbria",
         "country_code": "IT",
         "available_projections": [
+            "EPSG:3003",
+            "EPSG:3004",
+            "EPSG:3035",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4265",
             "EPSG:4326",
-            "EPSG:3857"
-        ]
+            "EPSG:4806",
+            "EPSG:32632",
+            "EPSG:32633"
+        ],
+        "attribution": {
+            "text": "© Ministero dell'Ambiente e della Tutela del Territorio e del Mare - Geoportale nazionale",
+            "url": "http://www.sitr.regione.sicilia.it",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/Italy/PCN",
+        "privacy_policy_url": "http://www.pcn.minambiente.it/mattm/en/legal-notice/"
     },
     "geometry": {
         "type": "Polygon",

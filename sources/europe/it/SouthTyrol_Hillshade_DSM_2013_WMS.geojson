@@ -6,7 +6,11 @@
             "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC0-1.0",
             "required": true
         },
+<<<<<<< HEAD
         "license_url": "https://geoservices.buergernetz.bz.it/geokatalog",
+=======
+        "license_url": "http://geoservices.buergernetz.bz.it/geonetwork/srv/ger/pdf?uuid=p_bz:625ee1fc-59f1-4a9d-af62-c6633adb1e4a",
+>>>>>>> upstream/gh-pages
         "privacy_policy_url": "http://geoportal.buergernetz.bz.it/privacy.asp",
         "description": "Schummerung errechnet aus dem DSM)",
         "available_projections": [
@@ -66,8 +70,12 @@
             "EPSG:3838",
             "EPSG:3857",
             "EPSG:4258",
+<<<<<<< HEAD
             "EPSG:4326",
             "EPSG:900913"
+=======
+            "EPSG:4326"
+>>>>>>> upstream/gh-pages
         ],
         "url": "http://geoservices.buergernetz.bz.it/geoserver/p_bz-elevation/ows?LAYERS=DSM_Hillshade_SolarTirol_3857&STYLES=DSM_Hillshade_SolarTirol_3857&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "IT",
