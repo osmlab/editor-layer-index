@@ -2,8 +2,8 @@ name: ELI WMS sync
 
 on:
   schedule:
-  # - cron: '0 0 * * *' # daily
-    - cron: '0 0 * * 0' # weekly
+    - cron: "0 0 * * *" # daily
+    # - cron: '0 0 * * 0' # weekly
 
 jobs:
   wms_sync:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - name: Install Python dependencies
         run: |
