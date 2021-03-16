@@ -1,0 +1,64 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "UkraineCherkasy2015",
+        "name": "Ukraine - Cherkasy 2015",
+        "type": "tms",
+        "url": "https://mgis.chmr.gov.ua/server/rest/services/base_map/orthophoto_2015/MapServer/tile/{zoom}/{y}/{x}",
+        "category": "photo",
+        "permission_osm": "implicit",
+        "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+        "privacy_policy_url": "https://zakon.rada.gov.ua/laws/show/3792-12",
+        "start_date": "2015-04",
+        "end_date": "2015-05",
+        "country_code": "UA",
+        "best": true,
+        "max_zoom": 21,
+        "min_zoom": 14,
+        "attribution": {
+            "text": "© Геопортал містобудівного кадастру міста Черкаси",
+            "url": "https://mgis.chmr.gov.ua/portal/home/",
+            "required": true
+        },
+        "icon": "https://commons.wikimedia.org/wiki/File:COA_Cherkasy,_Cherkaska,_Ukraine.svg#/media/Файл:COA_Cherkasy,_Cherkaska,_Ukraine.svg"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    32.0529,
+                    49.4897
+                ],
+                [
+                    31.9774,
+                    49.5026
+                ],
+                [
+                    31.9606,
+                    49.4902
+                ],
+                [
+                    31.9691,
+                    49.4504
+                ],
+                [
+                    31.9434,
+                    49.4069
+                ],
+                [
+                    32.0649,
+                    49.3566
+                ],
+                [
+                    32.1473,
+                    49.4096
+                ],
+                [
+                    32.0529,
+                    49.4897
+                ]
+            ]
+        ]
+    }
+}
