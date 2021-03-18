@@ -1,20 +1,20 @@
 {
-    "type":"Feature",
-    "properties":{
-        "name":"swisstopo SWISSALTI3D",
-        "type":"wms",
-        "url":"http://wms.geo.admin.ch?LAYERS=ch.swisstopo.swissalti3d-reliefschattierung&STYLES=&FORMAT=image/vnd.jpeg-png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "license_url":"https://www.swisstopo.admin.ch/en/swisstopo/free-geodata.html",
-        "privacy_policy_url":"https://www.admin.ch/gov/en/start/terms-and-conditions.html",
-        "id":"swisstopo_swissalti3d",
-        "description":"Die Reliefschattierung ist ein Derivat aus dem digitalen H\u00f6henmodell swissALTI3D. Es erlaubt die Visualisierung des Reliefs der Schweiz und des F\u00fcrstentums Liechtenstein. Die Reliefschattierung ist ein digitales Schummerungsbild bei einem oder mehreren berechneten Lichteinf\u00e4llen. F\u00fcr die Darstellung der vorliegenden Reliefschattierung aus swissALTI3D wurden sechs verschiedene Sonnenst\u00e4nde kombiniert. Der mittlere Sonnenstand befindet sich im Nordwesten.",
-        "country_code":"CH",
-        "best":false,
-        "icon":"https://upload.wikimedia.org/wikipedia/commons/b/b4/Coat_of_Arms_of_Switzerland_%28Pantone%29.svg",
-        "start_date":"2012",
-        "end_date":"2019",
-        "category":"elevation",
-        "available_projections":[
+    "type": "Feature",
+    "properties": {
+        "name": "swisstopo SWISSALTI3D",
+        "type": "wms",
+        "url": "http://wms.geo.admin.ch?LAYERS=ch.swisstopo.swissalti3d-reliefschattierung&STYLES=&FORMAT=image/vnd.jpeg-png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "license_url": "https://www.swisstopo.admin.ch/en/swisstopo/free-geodata.html",
+        "privacy_policy_url": "https://www.admin.ch/gov/en/start/terms-and-conditions.html",
+        "id": "swisstopo_swissalti3d",
+        "description": "Die Reliefschattierung ist ein Derivat aus dem digitalen Höhenmodell swissALTI3D. Es erlaubt die Visualisierung des Reliefs der Schweiz und des Fürstentums Liechtenstein. Die Reliefschattierung ist ein digitales Schummerungsbild bei einem oder mehreren berechneten Lichteinfällen. Für die Darstellung der vorliegenden Reliefschattierung aus swissALTI3D wurden sechs verschiedene Sonnenstände kombiniert. Der mittlere Sonnenstand befindet sich im Nordwesten.",
+        "country_code": "CH",
+        "best": false,
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Coat_of_Arms_of_Switzerland_%28Pantone%29.svg",
+        "start_date": "2012",
+        "end_date": "2019",
+        "category": "elevation",
+        "available_projections": [
             "EPSG:2056",
             "EPSG:3034",
             "EPSG:3035",
@@ -23,20 +23,18 @@
             "EPSG:4326",
             "EPSG:21781",
             "EPSG:25832",
-            "EPSG:25833",
             "EPSG:31287",
             "EPSG:31467",
-            "EPSG:32632",
-            "EPSG:32633"
+            "EPSG:32632"
         ],
-        "attribution":{
-            "text":"Federal Office of Topography swisstopo",
-            "required":true
+        "attribution": {
+            "text": "Federal Office of Topography swisstopo",
+            "required": true
         }
     },
-    "geometry":{
-        "type":"Polygon",
-        "coordinates":[
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
             [
                 [
                     5.95012375,
