@@ -175,7 +175,7 @@ async def get_url(
                     )
                 if RequestResult.exception is None:
                     break
-                await asyncio.sleep(5)
+                await asyncio.sleep(15)
         else:
             logging.debug(f"Cached {url}")
 
@@ -219,7 +219,7 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
                 continue
             break
     if proj is None:
-        messages.append("No projection left: {}".format(available_projections))
+        messages.append(f"No projection left: {available_projections}")
         return status, img_hash
 
     wms_version = wmshelper.wms_version_from_url(url)
@@ -238,6 +238,7 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
             async with session.request(
                 method="GET", url=formatted_url, ssl=False
             ) as response:
+                messages.append(f"Try: {i}: HTTP CODE {response.status}")
                 if response.status == 200:
                     data = await response.read()
                     try:
@@ -256,10 +257,13 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
                 else:
                     status = ImageHashStatus.NETWORK_ERROR
 
+                if response.status == 503: # 503 Service Unavailable
+                    asyncio.sleep(60)
+
         except Exception as e:
             status = ImageHashStatus.NETWORK_ERROR
             messages.append(f"Could not download image in try {i}: {e}")
-        await asyncio.sleep(5)
+        await asyncio.sleep(15)
 
     return status, img_hash
 
@@ -297,12 +301,11 @@ async def update_wms(wms_url, session: ClientSession, messages):
             wms_getcapabilites_url = wmshelper.get_getcapabilities_url(
                 wms_url, wmsversion
             )
+            messages.append(f"WMS url: {wms_getcapabilites_url}")
             resp = await get_url(wms_getcapabilites_url, session, with_text=True)
             if resp.exception is not None:
                 messages.append(
-                    "Could not download GetCapabilites URL for {}: {}".format(
-                        wmsversion, resp.exception
-                    )
+                    f"Could not download GetCapabilites URL for {wms_getcapabilites_url}: {resp.exception}"
                 )
                 continue
             xml = resp.text
@@ -319,11 +322,7 @@ async def update_wms(wms_url, session: ClientSession, messages):
             if wms is not None:
                 break
         except Exception as e:
-            messages.append(
-                "Could not get GetCapabilites URL for {} in try: {}".format(
-                    wmsversion, str(e)
-                )
-            )
+            messages.append(f"Could not get GetCapabilites URL for {wmsversion}: {e}")
 
     if wms is None:
         # Could not request GetCapabilities
@@ -331,10 +330,20 @@ async def update_wms(wms_url, session: ClientSession, messages):
         return None
 
     # Abort if a layer is not advertised by WMS server
+    # If layer name exists but case does not match update to layer name advertised by server
+    layers_advertised = wms["layers"]
+    layers_advertised_lower_case = { layer.lower():layer for layer in layers_advertised}
+    updated_layers = []
     for layer in layers:
-        if layer not in wms["layers"]:
-            messages.append("Layer {} not advertised by server".format(layer))
+        layer_lower = layer.lower()
+        if layer_lower not in layers_advertised_lower_case:
+            messages.append(
+                f"Layer {layer} not advertised by server {wms_getcapabilites_url}"
+            )
             return None
+        else:
+            updated_layers.append(layers_advertised_lower_case[layer_lower])
+    layers = updated_layers
 
     wms_args["version"] = wms["version"]
     if wms_args["version"] == "1.3.0":
@@ -474,14 +483,14 @@ async def process_source(filename, session: ClientSession):
             ):
                 msgs = "\n\t".join(original_img_messages)
                 logging.warning(
-                    f"{filename} has category {category} but image hash is {image_hash}:\n\t{msgs}"
+                    f"{filename}: has category {category} but image hash is {image_hash}:\n\t{msgs}"
                 )
 
             # These image hashes indicate that the downloaded image is not useful to determine
             # if the updated query returns the same image
             error_msgs = "\n\t".join(original_img_messages)
             logging.warning(
-                f"Image hash {image_hash} not useful for: {filename} ({category}): \n\t{error_msgs}"
+                f"{filename}: Image hash {image_hash} not useful ({category}): \n\t{error_msgs}"
             )
             ignored_sources[
                 filename
@@ -493,9 +502,7 @@ async def process_source(filename, session: ClientSession):
         result = await update_wms(old_url, session, wms_messages)
         if result is None:
             error_msgs = "\n\t".join(wms_messages)
-            logging.info(
-                f"Not possible to update wms url for {filename}:\n\t{error_msgs}"
-            )
+            logging.info(f"{filename}: Not possible to update wms url:\n\t{error_msgs}")
             ignored_sources[filename] = "Not possible to update wms url"
             return
         new_url = result["url"]
@@ -517,7 +524,7 @@ async def process_source(filename, session: ClientSession):
         if not new_status == ImageHashStatus.SUCCESS or new_image_hash is None:
             error_msgs = "\n\t".join(new_img_messages)
             logging.warning(
-                f"Could not download image with updated url: {new_status}\n\t{error_msgs}"
+                f"{filename}: Could not download image with updated url: {new_status}\n\t{error_msgs}"
             )
             ignored_sources[filename] = "Could not download image with updated url"
             return
@@ -527,7 +534,7 @@ async def process_source(filename, session: ClientSession):
             error_original_img_messages = "\n\t".join(original_img_messages)
             error_new_img_messages = "\n\t".join(new_img_messages)
             logging.info(
-                f"ImageHash not the same for: {filename}: {image_hash} - {new_image_hash}: {image_hash - new_image_hash}\n\t{error_original_img_messages} \n\t{error_new_img_messages}"
+                f"{filename}: ImageHash not the same for: {filename}: {image_hash} - {new_image_hash}: {image_hash - new_image_hash}\n\t{error_original_img_messages} \n\t{error_new_img_messages}"
             )
             ignored_sources[
                 filename
@@ -553,21 +560,15 @@ async def process_source(filename, session: ClientSession):
 
                 # Relax similarity constraint to account for differences due to reprojection
                 hash_diff = image_hash - epsg_image_hash
-                # org_hash_msgs = "\n\t".join(original_img_messages)
-                # epsg_check_msgs = "\n\t".join(epsg_check_messages)
                 if image_similar(image_hash, epsg_image_hash, test_zoom_level):
                     new_projections.add(EPSG)
-                    added_projections[filename]["Projection returns similar image despite not advertised"].append(EPSG)
-                    # logging.info(
-                    #     f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
-                    # )
+                    added_projections[filename][
+                        "Projection returns similar image despite not advertised"
+                    ].append(EPSG)
                     logging.info(
                         f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}"
                     )
                 elif epsg_image_hash is not None:
-                    # logging.info(
-                    #     f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}\n\t{org_hash_msgs}\n\t{epsg_check_msgs}"
-                    # )
                     logging.info(
                         f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}"
                     )
@@ -592,7 +593,7 @@ async def process_source(filename, session: ClientSession):
                         epsg_outside_area_of_use.add(epsg)
                 except Exception as e:
                     logging.exception(
-                        f"Could not check area of use for projection {epsg}: {e}"
+                        f"{filename}: Could not check area of use for projection {epsg}: {e}"
                     )
                     continue
             if len(new_projections) == len(epsg_outside_area_of_use):
@@ -600,9 +601,17 @@ async def process_source(filename, session: ClientSession):
                     f"{filename}: epsg_outside_area_of_use filter removes all EPSG"
                 )
             if len(epsg_outside_area_of_use) > 0:
-                removed_projections[filename]["EPSG outside area of use"].extend(
-                list(epsg_outside_area_of_use)
-            )
+
+                if len(epsg_outside_area_of_use) <= 10:
+                    removed_projections[filename]["EPSG outside area of use"].extend(
+                        list(epsg_outside_area_of_use)
+                    )
+                else:
+                    removed_projections[filename]["EPSG outside area of use"].extend(
+                        list(epsg_outside_area_of_use)[:10]
+                        + ["...", f"+ {len(epsg_outside_area_of_use)-10} more"]
+                    )
+
             new_projections -= epsg_outside_area_of_use
 
         # Servers that report a lot of projection may be configured wrongly
@@ -672,11 +681,15 @@ async def process_source(filename, session: ClientSession):
 
             if proj_status == ImageHashStatus.IMAGE_ERROR:
                 not_supported_projections.add(proj)
-                removed_projections[filename]["Projection check: does not return an image"].append(proj)
+                removed_projections[filename][
+                    "Projection check: does not return an image"
+                ].append(proj)
             elif proj_status == ImageHashStatus.NETWORK_ERROR:
                 # If not sucessfull status do not add if not previously addedd
                 if proj not in old_projections:
-                    removed_projections[filename]["Projection check: network error and previously not included"].append(proj)
+                    removed_projections[filename][
+                        "Projection check: network error and previously not included"
+                    ].append(proj)
                     not_supported_projections.add(proj)
 
             # Log if status is not success
@@ -733,15 +746,15 @@ async def process_source(filename, session: ClientSession):
                 json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
                 out.write("\n")
     except Exception as e:
-        logging.exception(f"Failed to check source {filename}: {e}")
+        logging.exception(f"{filename}: Error occured while processing source: {e}")
 
 
 async def start_processing(sources_directory):
     headers = {
         "User-Agent": "Mozilla/5.0 (compatible; WMSsync; +https://github.com/osmlab/editor-layer-index)"
     }
-    timeout = aiohttp.ClientTimeout(total=360)
-    conn = aiohttp.TCPConnector(limit_per_host=2)
+    timeout = aiohttp.ClientTimeout(total=600)
+    conn = aiohttp.TCPConnector(limit_per_host=1)
     async with ClientSession(
         headers=headers, timeout=timeout, connector=conn
     ) as session:
@@ -772,5 +785,6 @@ async def start_processing(sources_directory):
         for reason in added_projections[filename]:
             projs_str = ",".join(added_projections[filename][reason])
             print(f"\t{filename}: {reason}: {projs_str}")
+
 
 asyncio.run(start_processing(sources_directory))
