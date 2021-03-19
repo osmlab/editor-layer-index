@@ -33,14 +33,20 @@ function josmURL(d) {
     return 'http://127.0.0.1:8111/imagery?' + (new URLSearchParams(params)).toString();
 }
 
-function idURL(d) {
+function idURL(d, e) {
+    let position = '';
+    if (e && e.latlng) {
+        const pt = e.latlng;
+        const zoom = map.getZoom();
+        position = `#map=${zoom}/${pt.lat.toFixed(5)}/${pt.lng.toFixed(5)}`
+    } 
     var params = {
         editor: 'id',
         background: 'custom:' + d.properties.url
     };
-
-    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString();
+    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString() + position;
 }
+
 
 d3.json("imagery.geojson", function(error, imagery) {
     imagery.features = imagery.features.sort(function(a,b) {
@@ -71,7 +77,7 @@ d3.json("imagery.geojson", function(error, imagery) {
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
                 return match.feature.properties.name +
-                    ` [<a href="${idURL(match.feature)}" title="Add to iD">iD</a>] ` +
+                    ` [<a href="${idURL(match.feature, e)}" title="Add to iD">iD</a>] ` +
                     ` [<a href="${josmURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
@@ -179,7 +185,8 @@ d3.json("imagery.geojson", function(error, imagery) {
                 return d.properties.type;
         });
 
-    var josmLink = divs.append('span')
+    // Josm link
+    divs.append('span')
         .classed('remote-control', true)
         .append('a')
         .text('JOSM')
@@ -187,7 +194,8 @@ d3.json("imagery.geojson", function(error, imagery) {
         .attr('title', 'Add to JOSM')
         .attr('target', '_blank')
 
-    var idLink = divs.append('span')
+    // iD link
+     divs.append('span')
         .classed('remote-control', true)
         .append('a')
         .text('iD')
