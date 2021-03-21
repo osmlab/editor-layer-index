@@ -239,28 +239,45 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
                 method="GET", url=formatted_url, ssl=False
             ) as response:
                 messages.append(f"Try: {i}: HTTP CODE {response.status}")
+                for header in response.headers:
+                    messages.append(f"{header}: {response.headers[header]}")
                 if response.status == 200:
                     data = await response.read()
-                    try:
-                        img = Image.open(io.BytesIO(data))
-                        img_hash = imagehash.average_hash(img)
-                        status = ImageHashStatus.SUCCESS
-                        messages.append(f"ImageHash: {img_hash}")
-                        return status, img_hash
-                    except Exception as e:
-                        status = ImageHashStatus.IMAGE_ERROR
-                        messages.append(str(e))
-                        filetype = magic.from_buffer(data)
+                    data_length = len(data)
+                    if data_length == 0:
                         messages.append(
-                            f"Could not open recieved data as image (Recieved filetype: {filetype} {formatted_url})"
+                            f"Retrieved empty body, treat as NETWORK_ERROR: {data_length}"
                         )
+                        status = ImageHashStatus.NETWORK_ERROR
+                    else:
+                        messages.append(f"len(data): {data_length}")
+                        if "Content-Length" in response.headers:
+                            advertised_length = int(response.headers["Content-Length"])
+                            if not data_length == advertised_length:
+                                messages.append(
+                                    f"Body not same size as advertised: {data_length} vs {advertised_length}"
+                                )
+                        try:
+                            img = Image.open(io.BytesIO(data))
+                            img_hash = imagehash.average_hash(img)
+                            status = ImageHashStatus.SUCCESS
+                            messages.append(f"ImageHash: {img_hash}")
+                            return status, img_hash
+                        except Exception as e:
+                            status = ImageHashStatus.IMAGE_ERROR
+                            messages.append(str(e))
+                            filetype = magic.from_buffer(data)
+                            messages.append(
+                                f"Could not open recieved data as image (Recieved filetype: {filetype} Length: {data_length} {formatted_url})"
+                            )
                 else:
                     status = ImageHashStatus.NETWORK_ERROR
 
-                if response.status == 503: # 503 Service Unavailable
-                    asyncio.sleep(60)
+                if response.status == 503:  # 503 Service Unavailable
+                    await asyncio.sleep(30)
 
         except Exception as e:
+            print(str(e))
             status = ImageHashStatus.NETWORK_ERROR
             messages.append(f"Could not download image in try {i}: {e}")
         await asyncio.sleep(15)
@@ -332,7 +349,7 @@ async def update_wms(wms_url, session: ClientSession, messages):
     # Abort if a layer is not advertised by WMS server
     # If layer name exists but case does not match update to layer name advertised by server
     layers_advertised = wms["layers"]
-    layers_advertised_lower_case = { layer.lower():layer for layer in layers_advertised}
+    layers_advertised_lower_case = {layer.lower(): layer for layer in layers_advertised}
     updated_layers = []
     for layer in layers:
         layer_lower = layer.lower()
@@ -421,7 +438,6 @@ async def update_wms(wms_url, session: ClientSession, messages):
 
 
 async def process_source(filename, session: ClientSession):
-
     try:
         async with aiofiles.open(filename, mode="r", encoding="utf-8") as f:
             contents = await f.read()
@@ -770,7 +786,7 @@ async def start_processing(sources_directory):
     print("")
     print("Report")
     print("")
-    print("Ignored sources:")
+    print(f"Ignored sources:")
     for filename in ignored_sources:
         print(f"\t{filename}: {ignored_sources[filename]}")
     print("")
