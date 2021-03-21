@@ -6,6 +6,7 @@ from pyproj import Transformer
 from pyproj.crs import CRS
 import mercantile
 import validators
+import regex
 
 
 epsg_3857_alias = set(
@@ -74,6 +75,7 @@ def wms_version_from_url(url):
     else:
         return qsl["version"]
 
+
 def wms_layers_from_url(url):
     """ Extract layers from url"""
     u = urlparse(url.lower())
@@ -129,10 +131,11 @@ def get_getcapabilities_url(wms_url, wms_version=None):
 
 
 def parse_wms(xml):
-    """ Rudimentary parsing of WMS Layers from GetCapabilites Request
-    
+    """Rudimentary parsing of WMS Layers from GetCapabilites Request
+
     This function aims at only parsing relevant layer metadata
     """
+
     wms = {}
     # Remove prefixes to make parsing easier
     # From https://stackoverflow.com/questions/13412496/python-elementtree-module-how-to-ignore-the-namespace-of-xml-files-to-locate-ma
@@ -226,10 +229,10 @@ def parse_wms(xml):
     # Parse access constraints and fees
     constraints = []
     for es in root.findall(".//AccessConstraints"):
-        constraints.append(es.text)
+        constraints.append(regex.sub(r"\p{C}+", " ", es.text))
     fees = []
     for es in root.findall(".//Fees"):
-        fees.append(es.text)
+        fees.append(regex.sub(r"\p{C}+", " ", es.text))
     wms["Fees"] = fees
     wms["AccessConstraints"] = constraints
 
