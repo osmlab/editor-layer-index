@@ -229,10 +229,10 @@ def parse_wms(xml):
     # Parse access constraints and fees
     constraints = []
     for es in root.findall(".//AccessConstraints"):
-        constraints.append(regex.sub(r"\p{C}+", " ", es.text))
+        constraints.append(regex.sub(r"\p{C}+", "", es.text))
     fees = []
     for es in root.findall(".//Fees"):
-        fees.append(regex.sub(r"\p{C}+", " ", es.text))
+        fees.append(regex.sub(r"\p{C}+", "", es.text))
     wms["Fees"] = fees
     wms["AccessConstraints"] = constraints
 
