@@ -32,7 +32,7 @@ IMAGE_SIZE = 256
 ignored_sources = {}
 added_projections = defaultdict(lambda: defaultdict(list))
 removed_projections = defaultdict(lambda: defaultdict(list))
-
+processed_sources = set()
 
 logging.basicConfig(level=logging.INFO)
 
@@ -232,7 +232,7 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
         proj=proj, width=IMAGE_SIZE, height=IMAGE_SIZE, bbox=bbox
     )
     messages.append(f"Image URL: {formatted_url}")
-    for i in range(3):
+    for i in range(2):
         try:
             # Download image
             async with session.request(
@@ -268,7 +268,7 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
                             messages.append(str(e))
                             filetype = magic.from_buffer(data)
                             messages.append(
-                                f"Could not open recieved data as image (Recieved filetype: {filetype} Length: {data_length} {formatted_url})"
+                                f"Could not open received data as image (Received filetype: {filetype} Body Length: {data_length} {formatted_url})"
                             )
                 else:
                     status = ImageHashStatus.NETWORK_ERROR
@@ -277,7 +277,6 @@ async def get_image(url, available_projections, lon, lat, zoom, session, message
                     await asyncio.sleep(30)
 
         except Exception as e:
-            print(str(e))
             status = ImageHashStatus.NETWORK_ERROR
             messages.append(f"Could not download image in try {i}: {e}")
         await asyncio.sleep(15)
@@ -456,6 +455,7 @@ async def process_source(filename, session: ClientSession):
             return
         if "geometry" not in source:
             return
+        processed_sources.add(filename)
 
         category = source["properties"].get("category", None)
 
@@ -784,9 +784,13 @@ async def start_processing(sources_directory):
 
     print("")
     print("")
-    print("Report")
+    print("Report:")
     print("")
-    print(f"Ignored sources:")
+    print(f"Processed {len(processed_sources)} sources")
+    print("")
+    print(
+        f"Ignored sources: ({len(ignored_sources)} / {round(len(ignored_sources)/ len(processed_sources) * 100, 1)}%)"
+    )
     for filename in ignored_sources:
         print(f"\t{filename}: {ignored_sources[filename]}")
     print("")
