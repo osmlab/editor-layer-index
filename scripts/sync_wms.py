@@ -571,6 +571,13 @@ async def process_source(filename, session: ClientSession):
                     messages=epsg_check_messages,
                 )
 
+                epsg_check_messages_str = "\n\t".join(epsg_check_messages)
+                logging.info(
+                    f"{filename}: Test if projection {EPSG} works despite not advertised:\n\t{epsg_check_messages_str}"
+                )
+
+
+
                 if not epsg_image_status == ImageHashStatus.SUCCESS:
                     continue
 
@@ -579,7 +586,7 @@ async def process_source(filename, session: ClientSession):
                 if image_similar(image_hash, epsg_image_hash, test_zoom_level):
                     new_projections.add(EPSG)
                     added_projections[filename][
-                        "Projection returns similar image despite not advertised"
+                        "Projection returns similar image despite not advertised."
                     ].append(EPSG)
                     logging.info(
                         f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}"
@@ -587,6 +594,10 @@ async def process_source(filename, session: ClientSession):
                 elif epsg_image_hash is not None:
                     logging.info(
                         f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}"
+                    )
+                else:
+                    logging.info(
+                        f"{filename}: Do not add {EPSG} No image returned."
                     )
 
         # Servers might support projections that are not used in the area covered by a source
