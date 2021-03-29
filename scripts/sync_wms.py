@@ -576,29 +576,33 @@ async def process_source(filename, session: ClientSession):
                     f"{filename}: Test if projection {EPSG} works despite not advertised:\n\t{epsg_check_messages_str}"
                 )
 
+                if epsg_image_status == ImageHashStatus.NETWORK_ERROR:
+                    if EPSG in old_projections and EPSG not in new_projections:
+                        new_projections.add(EPSG)
+                        added_projections[filename][
+                            "Network error, but projection was previously included."
+                        ].append(EPSG)
 
+                elif epsg_image_status == ImageHashStatus.SUCCESS:
 
-                if not epsg_image_status == ImageHashStatus.SUCCESS:
-                    continue
-
-                # Relax similarity constraint to account for differences due to reprojection
-                hash_diff = image_hash - epsg_image_hash
-                if image_similar(image_hash, epsg_image_hash, test_zoom_level):
-                    new_projections.add(EPSG)
-                    added_projections[filename][
-                        "Projection returns similar image despite not advertised."
-                    ].append(EPSG)
-                    logging.info(
-                        f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}"
-                    )
-                elif epsg_image_hash is not None:
-                    logging.info(
-                        f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}"
-                    )
-                else:
-                    logging.info(
-                        f"{filename}: Do not add {EPSG} No image returned."
-                    )
+                    # Relax similarity constraint to account for differences due to reprojection
+                    hash_diff = image_hash - epsg_image_hash
+                    if image_similar(image_hash, epsg_image_hash, test_zoom_level):
+                        new_projections.add(EPSG)
+                        added_projections[filename][
+                            "Projection returns similar image despite not advertised."
+                        ].append(EPSG)
+                        logging.info(
+                            f"{filename}: Add {EPSG} despite not being advertised: {epsg_image_hash} - {image_hash}: {hash_diff}"
+                        )
+                    elif epsg_image_hash is not None:
+                        logging.info(
+                            f"{filename}: Do not add {EPSG} Difference: {epsg_image_hash} - {image_hash}: {hash_diff}"
+                        )
+                    else:
+                        logging.info(
+                            f"{filename}: Do not add {EPSG} No image returned."
+                        )
 
         # Servers might support projections that are not used in the area covered by a source
         # Keep only EPSG codes that are used in the area covered by the sources geometry
@@ -706,6 +710,11 @@ async def process_source(filename, session: ClientSession):
                 "logs": proj_messages,
             }
 
+            msgs = "\n\t".join(proj_messages)
+            logging.info(
+                f"{filename} Projection check: {proj}: {proj_status}:\n\t{msgs}"
+            )
+
             if proj_status == ImageHashStatus.IMAGE_ERROR:
                 not_supported_projections.add(proj)
                 removed_projections[filename][
@@ -718,13 +727,6 @@ async def process_source(filename, session: ClientSession):
                         "Projection check: network error and previously not included"
                     ].append(proj)
                     not_supported_projections.add(proj)
-
-            # Log if status is not success
-            if not proj_status == ImageHashStatus.SUCCESS:
-                msgs = "\n\t".join(proj_messages)
-                logging.info(
-                    f"{filename} Projection check: {proj}: {proj_status}:\n\t{msgs}"
-                )
 
         if len(not_supported_projections) > 0:
             removed = ",".join(not_supported_projections)
