@@ -1,23 +1,24 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Ministerio-de-Energia-y-Mineria-wms",
-        "name": "Ministry of Energy and Mining (WMS)",
+        "id": "Agroindustria-wms",
+        "name": "Ministerio de Agricultura, Ganadería y Pesca (WMS)",
         "type": "wms_endpoint",
-        "url": "https://sig.se.gob.ar/cgi-bin/mapserv6?map=/var/www/html/visor/geofiles/map/mapase.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",
+        "url": "https://geoadmin.agroindustria.gob.ar/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
         "country_code": "AR",
         "available_projections": [
             "EPSG:4326",
             "EPSG:3857"
         ],
         "attribution": {
-            "text": "Ministerio de Energía y Minería",
-            "url": "https://sig.se.gob.ar/geoportal"
+            "text": "Ministerio de Agricultura, Ganadería y Pesca",
+            "url": "https://www.argentina.gob.ar/agricultura"
         },
         "max_zoom": 20,
         "min_zoom": 1,
-        "license_url": "https://datos.gob.ar/acerca/marco-legal",
-        "category": "map"
+        "license_url": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+        "privacy_policy_url": "https://www.argentina.gob.ar/terminos-y-condiciones",
+        "category": "other"
     },
     "geometry": {
         "type": "Polygon",

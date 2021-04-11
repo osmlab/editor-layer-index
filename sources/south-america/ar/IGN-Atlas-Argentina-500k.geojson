@@ -1,19 +1,22 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "ign-topografico-tms",
-    "name": "IGN topographical map (TMS)",
+    "id": "ign-atlas-argentina-500k",
+    "name": "National Geographic Institute Atlas Argentina 500k (TMS)",
     "type": "tms",
-    "url": "https://ide.ign.gob.ar/geoservicios/rest/services/Mapas_IGN/mapa_topografico/MapServer/tile/{zoom}/{y}/{x}",
+    "description": "Atlas Argentina escala 1:500.000",
+    "url": "https://imagenes.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/atlas_argentina_500k%3Aatlas_argentina_500k@EPSG%3A3857@png/{zoom}/{x}/{-y}.png",
     "country_code": "AR",
     "attribution": {
+      "required": true,
       "text": "Instituto Geográfico Nacional de la República Argentina",
       "url": "https://www.ign.gob.ar/"
     },
     "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
-    "max_zoom": 19,
-    "min_zoom": 1,
-    "license_url": "https://www.ign.gob.ar/descargas/tyc1.html"
+    "max_zoom": 12,
+    "license_url": "https://datos.gob.ar/acerca/seccion/Marco%20legal",
+    "privacy_policy_url": "https://www.argentina.gob.ar/terminos-y-condiciones",
+    "category": "map"
   },
   "geometry": {
     "type": "Polygon",
