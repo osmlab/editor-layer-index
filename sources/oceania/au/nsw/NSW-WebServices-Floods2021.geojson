@@ -12,6 +12,8 @@
         "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 21,
         "min_zoom": 1,
+        "start_date": "2021-03-24",
+        "end_date": "2021-04-10",
         "country_code": "AU",
         "type": "wms",
         "id": "DCS_NSW_Floods2021",
