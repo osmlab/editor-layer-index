@@ -9,7 +9,7 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/File:DCS_NSW_Floods_CIR_2021_Data_license.pdf",
         "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
         "name": "DCS NSW Floods 2021",
-        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo=proj",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 21,
         "min_zoom": 1,
         "country_code": "AU",
