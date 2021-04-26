@@ -10,15 +10,18 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/File:EnvironmentCanterbury_AerialimagerywaiversfortracingforOpenStreetMap.pdf",
         "privacy_policy_url": "https://ecan.govt.nz/info/privacy/",
         "name": "Environment Canterbury Imagery",
-        "url": "https://gisbasemap.ecan.govt.nz/arcgis/rest/services/Imagery/Imagery_basemap_WGS84_4/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://gisbasemap.ecan.govt.nz/arcgis/rest/services/Imagery/MapServer/export?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
         "min_zoom": 0,
         "max_zoom": 23,
         "country_code": "NZ",
-        "type": "tms",
+        "type": "wms",
         "category": "photo",
         "permission_osm": "explicit",
         "id": "Environment_Canterbury_Imagery",
-        "icon": "https://ecan.govt.nz/favicon.ico"
+        "icon": "https://ecan.govt.nz/favicon.ico",
+        "available_projections": [
+            "EPSG:3857"
+        ]
     },
     "geometry": {
         "type": "Polygon",
