@@ -6,7 +6,7 @@ usage: strict_check.py [-h] path [path ...]
 Checks new ELI sources for validity and common errors
 
 """
-
+import urllib3
 import json
 import io
 import re
@@ -26,6 +26,8 @@ from shapely.geometry import shape, Point, box
 from libeli import wmshelper
 from libeli import eliutils
 
+# Disable InsecureRequestWarning: Unverified HTTPS request is being made to host warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -80,11 +82,11 @@ def get_http_headers(source):
 
 def test_url(url, headers):
     try:
-        r = requests.get(url, headers=headers)
+        r = requests.get(url, headers=headers, verify=False)
         if r.status_code == 200:
             return True
-    except:
-        pass
+    except Exception as e:
+        logger.exception(f"Could not retrieve url: {url}: {e}")
     return False
 
 
@@ -573,16 +575,10 @@ for filename in arguments.path:
         if "attribution" in source["properties"]:
             if "url" in source["properties"]["attribution"]:
                 url = source["properties"]["attribution"]["url"]
-                try:
-                    r = requests.get(url, headers=headers)
-                    if not r.status_code == 200:
-                        error_msgs.append(
-                            f"{filename}: attribution url {url} is not reachable: HTTP code: {r.status_code}"
-                        )
 
-                except Exception as e:
+                if not test_url(url, headers):
                     error_msgs.append(
-                        f"{filename}: attribution url {url} is not reachable: {e}"
+                        f"{filename}: could not retrieve attribution url {url}."
                     )
 
         # Check icon url exists
@@ -609,18 +605,9 @@ for filename in arguments.path:
             )
         else:
             # Check if privacy url exists
-            try:
-                r = requests.get(
-                    source["properties"]["privacy_policy_url"], headers=headers
-                )
-                if not r.status_code == 200:
-                    error_msgs.append(
-                        f"{filename}: privacy policy url {source['properties']['privacy_policy_url']} is not reachable: HTTP code: {r.status_code}"
-                    )
-
-            except Exception as e:
+            if not test_url(source["properties"]["privacy_policy_url"], headers):
                 error_msgs.append(
-                    f"{filename}: privacy policy url {source['properties']['privacy_policy_url']} is not reachable: {e}"
+                    f"{filename}: could not retrieve privacy policy url {url}."
                 )
 
         # Check for big fat embedded icons
