@@ -494,9 +494,10 @@
     },
     "properties": {
         "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:31370",
-            "EPSG:3857"
+            "EPSG:31370"
         ],
         "category": "elevation",
         "country_code": "BE",
@@ -507,7 +508,7 @@
         "name": "SPW(allonie) shaded relief",
         "start_date": "2013",
         "type": "wms",
-        "url": "https://geoservices.wallonie.be/arcgis/services/RELIEF/WALLONIE_MNT_2013_2014_HILLSHADE/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://geoservices.wallonie.be/arcgis/services/RELIEF/WALLONIE_MNT_2013_2014_HILLSHADE/MapServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }

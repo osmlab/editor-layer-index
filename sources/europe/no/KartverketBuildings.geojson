@@ -1,0 +1,151 @@
+        {
+            "type": "Feature",
+            "properties": {
+                "attribution": {
+                    "required": true,
+                    "text": "\u00a9 Kartverket",
+                    "url": "https://www.kartverket.no/"
+                },
+                "available_projections": [
+                    "EPSG:3857",
+                    "EPSG:4326",
+                    "EPSG:25831",
+                    "EPSG:25832",
+                    "EPSG:25833",
+                    "EPSG:25834",
+                    "EPSG:25835",
+                    "EPSG:25836",
+                    "EPSG:32631",
+                    "EPSG:32632",
+                    "EPSG:32633",
+                    "EPSG:32634",
+                    "EPSG:32635",
+                    "EPSG:32636"
+                ],
+                "category": "other",
+                "country_code": "NO",
+                "description": "INSPIRE buildings for Norway.",
+                "icon": "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjczNnB0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiB2aWV3Qm94PSIwIDAgNzM2IDczNiIgd2lkdGg9IjczNnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xNDMuNSAzYy0xMi4xIDMuOS0yMS43IDEzLjYtMjUuNSAyNS43LTIgNi40LTIgOS0yIDEzOC45IDAgNzIuOC4yIDEzMi40LjUgMTMyLjRzNC45LTMuMyAxMC4yLTcuNGMzNC40LTI2IDYwLjEtMzYuOSA5Mi4zLTM5LjIgMTguOC0xLjMgNDYuOCAzLjMgNjUuNSAxMC43IDE5LjcgNy45IDMxLjYgMTYuMiA2NSA0NS40IDM3LjQgMzIuOSA2My42IDUxLjggOTcuMyA3MC42IDQ4LjUgMjcgOTUuNiAyMy43IDE2MC0xMS40bDEzLjItNy4yLS4yLTE2NS0uMy0xNjUtMi4yLTUuM2MtNC42LTExLjItMTMuOC0xOS43LTI1LTIzLjItNi40LTItOS4yLTItMjI0LjctMS45LTIxMS45IDAtMjE4LjMuMS0yMjQuMSAxLjl6IiBmaWxsPSIjMDA5ODNhIi8+PHBhdGggZD0ibTIwNiAzNjkuNWMtMjQuNiAzLjktNTAuMiAxMy4yLTc4LjcgMjguN2wtMTEuMyA2LjEuMiAxNTEuMS4zIDE1MS4xIDMuMiA2LjdjNCA4LjUgMTAuNiAxNS4xIDE5LjEgMTkuMWw2LjcgMy4yaDIyMi41IDIyMi41bDYuNy0zLjJjOC41LTQgMTUuMS0xMC42IDE5LjEtMTkuMWwzLjItNi43LjMtMTIzLjhjLjEtNjggMC0xMjMuNy0uMy0xMjMuNy0uMiAwLTYuNiAzLjQtMTQuMiA3LjYtNTUuOSAzMS05Ni4yIDM5LjUtMTM3LjggMjguOS0yMi40LTUuNy0zOS0xNS40LTgxLjUtNDguMS00Ny45LTM2LjctOTQuNC02NS4yLTExOS42LTczLjMtMTguNC01LjgtNDEuMi03LjYtNjAuNC00LjZ6IiBmaWxsPSIjMDA0ZjlkIi8+PC9zdmc+",
+                "id": "kartverket-bygninger",
+                "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=71994",
+                "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
+                "max_zoom": 20,
+                "min_zoom": 14,
+                "name": "Kartverket Buildings overlay",
+                "overlay": true,
+                "i18n": true,
+                "type": "wms",
+                "url": "https://openwms.statkart.no/skwms1/wms.inspire_bu?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=BU.Building&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            31.904253,
+                            70.4368136
+                        ],
+                        [
+                            28.4765186,
+                            71.3289643
+                        ],
+                        [
+                            23.6865015,
+                            71.2514263
+                        ],
+                        [
+                            16.8090601,
+                            70.0730823
+                        ],
+                        [
+                            11.1620655,
+                            67.5253903
+                        ],
+                        [
+                            9.975542,
+                            64.811576
+                        ],
+                        [
+                            4.2187061,
+                            62.1449966
+                        ],
+                        [
+                            4.3725367,
+                            59.1871966
+                        ],
+                        [
+                            6.1743055,
+                            57.8915032
+                        ],
+                        [
+                            7.932118,
+                            57.7393554
+                        ],
+                        [
+                            10.777577,
+                            58.8649103
+                        ],
+                        [
+                            11.7224012,
+                            58.762509
+                        ],
+                        [
+                            12.722157,
+                            60.1141506
+                        ],
+                        [
+                            13.0517469,
+                            61.3493518
+                        ],
+                        [
+                            12.5243921,
+                            63.6169922
+                        ],
+                        [
+                            14.2382593,
+                            63.9856094
+                        ],
+                        [
+                            15.1171656,
+                            65.9016624
+                        ],
+                        [
+                            18.6987085,
+                            68.3749083
+                        ],
+                        [
+                            20.0610132,
+                            68.2612583
+                        ], 
+                        [
+                            21.0058375,
+                            68.7841518
+                        ],
+                        [
+                            25.2465601,
+                            68.3506025
+                        ],
+                        [
+                            26.9384546,
+                            69.8472011
+                        ],
+                        [
+                            28.7621851,
+                            69.6112133
+                        ],
+                        [
+                            28.5864039,
+                            68.8556004
+                        ],
+                        [
+                            31.069314,
+                            69.5191547
+                        ],
+                        [
+                            31.904253,
+                            70.4368136
+                        ]
+                    ]
+                ]
+            }
+        }

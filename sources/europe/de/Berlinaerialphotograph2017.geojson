@@ -2,7 +2,7 @@
   "type": "Feature",
   "properties": {
     "id": "Berlin-2017",
-    "name": "Berlin aerial photography 2017",
+    "name": "Berlin/Geoportal DOP20RGB (2017)",
     "type": "tms",
     "category": "historicphoto",
     "url": "https://tiles.codefor.de/berlin-2017/{zoom}/{x}/{y}.png",
@@ -10,10 +10,11 @@
     "end_date": "2017-03-28",
     "country_code": "DE",
     "attribution": {
-      "text": "Geoportal Berlin/Digitale farbige Orthophotos 2017",
+      "text": "Geoportal Berlin/Digitale farbige Orthophotos 2017 (DOP20RGB) (codefor.de mirror)",
       "required": true
     },
-    "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
+    "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf", 
+    "privacy_policy_url": "https://codefor.de/datenschutz/",
     "max_zoom": 18
   },
   "geometry": {

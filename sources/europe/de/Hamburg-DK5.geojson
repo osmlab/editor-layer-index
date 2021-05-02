@@ -2,9 +2,9 @@
     "type": "Feature",
     "properties": {
         "id": "Hamburg-DK5",
-        "url": "https://geodienste.hamburg.de/HH_WMS_DK5?FORMAT=image/png&TRANSPARENT=false&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geodienste.hamburg.de/HH_WMS_DK5?LAYERS=1&STYLES=&FORMAT=image/png&TRANSPARENT=false&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
-        "name": "Hamburg (DK5)",
+        "name": "Hamburg DK5 (HH LGV DK5 2021)",
         "attribution": {
             "url": "https://www.hamburg.de/bsw/landesbetrieb-geoinformation-und-vermessung",
             "text": "Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung",
@@ -12,17 +12,20 @@
         },
         "country_code": "DE",
         "available_projections": [
-            "EPSG:31467",
-            "EPSG:25832",
+            "CRS:84",
             "EPSG:3034",
             "EPSG:3035",
             "EPSG:3044",
             "EPSG:3857",
             "EPSG:4258",
+            "EPSG:4326",
             "EPSG:4647",
-            "EPSG:4326"
+            "EPSG:25832",
+            "EPSG:31467"
         ],
-        "category": "map"
+        "category": "map",
+        "privacy_policy_url": "https://www.hamburg.de/datenschutz/",
+        "license_url": "https://metaver.de/trefferanzeige?docuuid=84BF7263-E92C-45BE-9D4D-21CB48AD5D88&plugid=/ingrid-group:ige-iplug-hmdk.metaver&docid=84BF7263-E92C-45BE-9D4D-21CB48AD5D88"
     },
     "geometry": {
         "coordinates": [
@@ -510,3 +513,4 @@
         "type": "Polygon"
     }
 }
+

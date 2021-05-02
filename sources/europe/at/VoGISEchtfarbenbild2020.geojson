@@ -1,0 +1,161 @@
+{
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    9.5436683,
+                    47.4847893
+                ],
+                [
+                    9.6145139,
+                    47.4505807
+                ],
+                [
+                    9.6135938,
+                    47.3827196
+                ],
+                [
+                    9.4424603,
+                    47.2479843
+                ],
+                [
+                    9.4461405,
+                    47.0959963
+                ],
+                [
+                    9.4286592,
+                    47.0891059
+                ],
+                [
+                    9.4249789,
+                    47.0151345
+                ],
+                [
+                    9.8528128,
+                    47.0019594
+                ],
+                [
+                    9.8574132,
+                    46.898956
+                ],
+                [
+                    9.9669019,
+                    46.889525
+                ],
+                [
+                    10.0451081,
+                    46.849897
+                ],
+                [
+                    10.1582771,
+                    46.833534
+                ],
+                [
+                    10.1591972,
+                    46.8920401
+                ],
+                [
+                    10.1471804,
+                    46.8924787
+                ],
+                [
+                    10.1511549,
+                    46.9433055
+                ],
+                [
+                    10.1631717,
+                    46.9428673
+                ],
+                [
+                    10.1646986,
+                    46.9623816
+                ],
+                [
+                    10.1785187,
+                    46.9668098
+                ],
+                [
+                    10.1757585,
+                    47.1035121
+                ],
+                [
+                    10.2291227,
+                    47.1022595
+                ],
+                [
+                    10.2208421,
+                    47.2436121
+                ],
+                [
+                    10.2613253,
+                    47.4126142
+                ],
+                [
+                    10.1242344,
+                    47.4057648
+                ],
+                [
+                    10.093872,
+                    47.4779493
+                ],
+                [
+                    10.0046249,
+                    47.5071683
+                ],
+                [
+                    9.9862234,
+                    47.5612116
+                ],
+                [
+                    9.8436121,
+                    47.5624533
+                ],
+                [
+                    9.8408519,
+                    47.6071356
+                ],
+                [
+                    9.539988,
+                    47.6065153
+                ],
+                [
+                    9.5436683,
+                    47.4847893
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "available_projections": [
+            "EPSG:2056",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:21781",
+            "EPSG:25832",
+            "EPSG:31254",
+            "EPSG:31257",
+            "EPSG:31284",
+            "EPSG:31287",
+            "EPSG:31467",
+            "EPSG:32632"
+        ],
+        "country_code": "AT",
+        "end_date": "2020",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
+        "id": "vogis.cnv.at-ef2020_10cm",
+        "attribution": {
+            "text": "Datenquelle: Land Vorarlberg – data.vorarlberg.gv.at",
+            "url": "https://vorarlberg.at/-/wms-dienste"
+        },
+        "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
+        "privacy_policy_url": "https://vorarlberg.at/-/geodaten-des-vorarlberger-geografischen-informationssystems-vogis-nutzen?article_id=327499",
+        "name": "VoGIS: Echtfarbenbild 2020 (10cm)",
+        "permission_osm": "explicit",
+        "start_date": "2020",
+        "type": "wms",
+        "category": "photo",
+        "url": "https://vogis.cnv.at/mapserver/mapserv?MAP=i_luftbilder_r_wms.map&LAYERS=ef2020_10cm&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    },
+    "type": "Feature"
+}

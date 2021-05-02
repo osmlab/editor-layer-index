@@ -1,0 +1,84 @@
+{
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    11.71898,
+                    57.54716
+                ],
+                [
+                    12.01767,
+                    57.56411
+                ],
+                [
+                    11.95862,
+                    57.66818
+                ],
+                [
+                    12.09595,
+                    57.68177
+                ],
+                [
+                    12.06574,
+                    57.73166
+                ],
+                [
+                    12.1138,
+                    57.77086
+                ],
+                [
+                    12.24289,
+                    57.79466
+                ],
+                [
+                    12.16187,
+                    57.86704
+                ],
+                [
+                    11.95519,
+                    57.86631
+                ],
+                [
+                    11.68534,
+                    57.72396
+                ],
+                [
+                    11.71898,
+                    57.54716
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© Gothenburg municipality, CC0",
+            "url": "https://catalog.goteborg.se/catalog/6/datasets/892"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3006",
+            "EPSG:3007",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "start_date": "2019",
+        "end_date": "2019",
+        "best": true,
+        "category": "photo",
+        "country_code": "SE",
+        "description": "Orthophoto for Gothenburg municipality",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
+        "id": "gothenburg-ortho_2019",
+        "i18n": true,
+        "license_url": "https://catalog.goteborg.se/catalog/6/datasets/892",
+        "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/",
+        "max_zoom": 20,
+        "min_zoom": 6,
+        "name": "Gothenburg Orthophoto 2019",
+        "type": "wms",
+        "url": "https://opengeodata.goteborg.se/services/ortofoto/wms/v1?LAYERS=orto_2019&STYLES=raster&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+    },
+    "type": "Feature"
+}

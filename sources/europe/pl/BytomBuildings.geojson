@@ -4,10 +4,20 @@
         "id": "Bytom-buildings",
         "name": "Bytom: Buildings",
         "type": "wms",
-        "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adr_osie_ulic,adr_punkty_adresowe,eg_budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?LAYERS=adr_osie_ulic,adr_punkty_adresowe,eg_budynki&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "PL",
         "available_projections": [
-            "EPSG:2177"
+            "CRS:84",
+            "EPSG:2174",
+            "EPSG:2175",
+            "EPSG:2177",
+            "EPSG:2180",
+            "EPSG:3120",
+            "EPSG:3330",
+            "EPSG:3334",
+            "EPSG:4326",
+            "EPSG:32634",
+            "EPSG:900913"
         ],
         "attribution": {
             "text": "Urząd Miasta Bytomia"

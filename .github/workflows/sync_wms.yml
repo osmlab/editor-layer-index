@@ -2,21 +2,21 @@ name: ELI WMS sync
 
 on:
   schedule:
-    - cron: '0 0 * * 6'
+    - cron: "0 0 * * *" # daily
+    # - cron: '0 0 * * 0' # weekly
 
 jobs:
-  build:
+  wms_sync:
     name: WMS_sync_cron
-
+    if: github.repository == 'osmlab/editor-layer-index'
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - name: Install Python dependencies
         run: |

@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "license_url": "https://wiki.openstreetmap.org/wiki/Switzerland/AGIS",
-        "description": "This imagery is provided via a proxy operated by https://sosm.ch/", 
+        "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
         "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
         "id": "Aargau-AGIS-2019",
         "attribution": {
@@ -14,11 +14,10 @@
         "start_date": "2019",
         "end_date": "2019",
         "max_zoom": 19,
-        "min_zoom": 8,
+        "min_zoom": 4,
         "country_code": "CH",
         "type": "tms",
-        "category": "photo",
-        "best": true
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",
