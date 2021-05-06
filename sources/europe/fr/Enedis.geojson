@@ -9,9 +9,12 @@
         "category":"photo",
         "start_date": "2018",
         "end_date": "2018",
-        "imagery:attribution-text": "Enedis 2018",
+        "attribution":{
+            "text":"Enedis 2018",
+            "required":true
+        },
         "country_code": "FR",
-        "max_zoom": "21"
+        "max_zoom": 21
     },
     "geometry": {
         "type": "Polygon",
