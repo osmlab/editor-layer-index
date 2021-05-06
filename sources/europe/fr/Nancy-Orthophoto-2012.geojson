@@ -1,0 +1,47 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "GrandNancy_Orthophotographie_2012",
+        "name": "Nancy - Orthophoto - 2012",
+        "type": "tms",
+        "default": "false",
+        "url": "https://wms.openstreetmap.fr/tms/1.0.0/nancy_2012/{zoom}/{x}/{y}",
+        "category":"historicphoto",
+        "start_date": "2012",
+        "end_date": "2012",
+        "attribution":{
+            "text":"GrandNancy Orthophotographie 2012",
+            "url":"https://wiki.openstreetmap.org/wiki/Nancy/Orthophotographie",
+            "required":true
+        },
+        "country_code": "FR",
+        "max_zoom": "22"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    6.0606603,
+                    48.6055445
+                ],
+                [
+                    6.2971711,
+                    48.5992259
+                ],
+                [
+                    6.3061115,
+                    48.7407682
+                ],
+                [
+                    6.0689601,
+                    48.7471033
+                ],
+                [
+                    6.0606603,
+                    48.6055445
+                ]
+            ]
+        ]
+    }
+}
