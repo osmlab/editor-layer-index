@@ -2,10 +2,10 @@
     "type": "Feature",
     "properties": {
         "id": "Geolittoral-Sentiers",
-        "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l_metropole_outremer&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
-            "text": "Ortho littorale 2000",
+            "url": "http://www.geocatalogue.fr/Detail.do?fileIdentifier=0fb2abdf-2809-4c2f-9323-f016ccc116aa",
+            "text": "© Typologie et usage - sentier du littoral français (métropole et outre-mer) - Ministère en charge de l’environnement - 2020",
             "required": true
         },
         "available_projections": [
@@ -16,6 +16,7 @@
         "name": "Géolittoral - Sentiers",
         "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
         "country_code": "FR",
+        "overlay": true,
         "category": "map"
     },
     "geometry": {
