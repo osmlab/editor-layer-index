@@ -1,141 +1,24 @@
 {
     "type": "Feature",
     "properties": {
-        "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
-            "text": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2021",
-            "required": true
-        },
-        "description": "French land registry",
-        "url": "https://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png",
-        "min_zoom": 12,
-        "max_zoom": 22,
-        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
-        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/",
-        "country_code": "FR",
-        "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
+        "id": "osmfr_volta",
+        "name": "Volta",
         "type": "tms",
-        "id": "Cadastre",
-        "name": "Cadastre",
-        "category": "map"
+        "default": "false",
+        "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/volta/{zoom}/{x}/{y}.png",
+        "category":"map",
+        "attribution":{
+            "text":"Tiles © cquest@Openstreetmap France, data © Enedis - RTE France, LO/OL",
+            "url":"https://www.enedis.fr/open-data",
+            "required":true
+        },
+        "country_code": "FR",
+        "max_zoom": 20,
+        "min_zoom": 6
     },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    55.088162,
-                    -20.7793549
-                ],
-                [
-                    55.9595858,
-                    -20.7728126
-                ],
-                [
-                    55.9657599,
-                    -21.4900002
-                ],
-                [
-                    55.0943361,
-                    -21.496511
-                ],
-                [
-                    55.088162,
-                    -20.7793549
-                ]
-            ],
-            [
-                [
-                    -53.8934381,
-                    6.0040017
-                ],
-                [
-                    -52.4652154,
-                    5.4464962
-                ],
-                [
-                    -51.5203912,
-                    4.5107197
-                ],
-                [
-                    -51.5368707,
-                    4.1163329
-                ],
-                [
-                    -52.2345025,
-                    3.1021264
-                ],
-                [
-                    -52.6409967,
-                    2.251623
-                ],
-                [
-                    -52.9266412,
-                    2.0759672
-                ],
-                [
-                    -53.7286431,
-                    2.2186891
-                ],
-                [
-                    -54.2010552,
-                    2.0320501
-                ],
-                [
-                    -54.8053033,
-                    2.2735786
-                ],
-                [
-                    -54.3109185,
-                    2.8058902
-                ],
-                [
-                    -54.3164117,
-                    3.2008538
-                ],
-                [
-                    -54.124151,
-                    3.4640797
-                ],
-                [
-                    -54.1296441,
-                    3.5956655
-                ],
-                [
-                    -54.4207818,
-                    4.0012658
-                ],
-                [
-                    -54.5800836,
-                    4.9596205
-                ],
-                [
-                    -53.8934381,
-                    6.0040017
-                ]
-            ],
-            [
-                [
-                    44.9205447,
-                    -12.5736261
-                ],
-                [
-                    45.3482619,
-                    -12.5702887
-                ],
-                [
-                    45.3527389,
-                    -13.116298
-                ],
-                [
-                    44.9250218,
-                    -13.1196281
-                ],
-                [
-                    44.9205447,
-                    -12.5736261
-                ]
-            ],
             [
                 [
                     -2.7,
@@ -2392,50 +2275,6 @@
                 [
                     -2.7,
                     43.9
-                ]
-            ],
-            [
-                [
-                    -61.9280191,
-                    16.5861823
-                ],
-                [
-                    -61.9268639,
-                    15.7393966
-                ],
-                [
-                    -60.8812792,
-                    15.7407152
-                ],
-                [
-                    -60.8824344,
-                    16.5874955
-                ],
-                [
-                    -61.9280191,
-                    16.5861823
-                ]
-            ],
-            [
-                [
-                    -61.2750098,
-                    14.9021787
-                ],
-                [
-                    -60.7236843,
-                    14.9010106
-                ],
-                [
-                    -60.7248947,
-                    14.3668637
-                ],
-                [
-                    -61.2762202,
-                    14.3680347
-                ],
-                [
-                    -61.2750098,
-                    14.9021787
                 ]
             ]
         ]
