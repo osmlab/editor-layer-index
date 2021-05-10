@@ -1,23 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "attribution": {
-            "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
-            "text": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2021",
-            "required": true
-        },
-        "description": "French land registry",
-        "url": "https://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png",
-        "min_zoom": 12,
-        "max_zoom": 22,
-        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
-        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/",
-        "country_code": "FR",
-        "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
+        "id": "fr.ign.bdtopo",
+        "name": "BD Topo",
         "type": "tms",
-        "id": "Cadastre",
-        "name": "Cadastre",
-        "category": "map"
+        "default": false,
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.fr/bdtopo/{zoom}/{x}/{y}.png",
+        "category":"map",
+        "attribution":{
+            "text":"Tiles © cquest@Openstreetmap France, data © IGN BD Topo, LO/OL",
+            "url":"https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html",
+            "required":true
+        },
+        "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+        "country_code": "FR",
+        "overlay": true,
+        "max_zoom": 20,
+        "min_zoom": 3
     },
     "geometry": {
         "type": "Polygon",
@@ -116,6 +115,28 @@
             ],
             [
                 [
+                    -56.45874,
+                    47.17105
+                ],
+                [
+                    -56.44363,
+                    46.76621
+                ],
+                [
+                    -55.9671,
+                    46.70221
+                ],
+                [
+                    -56.21154,
+                    47.17852
+                ],
+                [
+                    -56.45874,
+                    47.17105
+                ]
+            ],
+            [
+                [
                     44.9205447,
                     -12.5736261
                 ],
@@ -134,6 +155,32 @@
                 [
                     44.9205447,
                     -12.5736261
+                ]
+            ],
+            [
+                [
+                    -62.95273,
+                    18.1339
+                ],
+                [
+                    -62.7182,
+                    17.92256
+                ],
+                [
+                    -62.82463,
+                    17.81212
+                ],
+                [
+                    -63.18897,
+                    18.04343
+                ],
+                [
+                    -63.09453,
+                    18.13388
+                ],
+                [
+                    -62.95273,
+                    18.1339
                 ]
             ],
             [
