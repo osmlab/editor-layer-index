@@ -5,7 +5,7 @@
         "name": "Enedis",
         "type": "tms",
         "default": false,
-        "url": "https://wms.openstreetmap.fr/tms/1.0.0/enedis/{zoom}/{x}/{y}}",
+        "url": "https://wms.openstreetmap.fr/tms/1.0.0/enedis/{zoom}/{x}/{y}",
         "category":"photo",
         "start_date": "2018",
         "end_date": "2018",
@@ -13,6 +13,7 @@
             "text":"Enedis 2018",
             "required":true
         },
+        "license_url": "https://www.enedis.fr/sites/default/files/field/documents/communique-presse-open-data-enedis-et-openstreetmap-france-lancent-une-demarche-participative-de-cartographie-du-reseau-de-distribution-delectricite.pdf",
         "country_code": "FR",
         "max_zoom": 21
     },
