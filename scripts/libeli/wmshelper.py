@@ -1,45 +1,14 @@
+from .eliutils import get_transformer
 import xml.etree.ElementTree as ET
 from io import StringIO
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
-import pyproj
-from pyproj import Transformer
 from pyproj.crs import CRS
-import mercantile
 import validators
 import regex
 
 
-epsg_3857_alias = set(
-    [f"EPSG:{epsg}" for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]]
-)
-
-# List of not deprecated EPSG codes
-valid_epsgs = set(["CRS:84"])
-for pj_type in pyproj.enums.PJType:
-    valid_epsgs.update(
-        map(
-            lambda x: f"EPSG:{x}",
-            pyproj.get_codes("EPSG", pj_type, allow_deprecated=False),
-        )
-    )
-
-# EPSG:3857 alias are valid if server does not support EPSG:3857
-valid_epsgs.update(epsg_3857_alias)
-
-
-transformers = {}
-
-
-def get_transformer(crs_from, crs_to):
-    """ Cache transformer objects"""
-    key = (crs_from, crs_to)
-    if key not in transformers:
-        transformers[key] = Transformer.from_crs(crs_from, crs_to, always_xy=True)
-    return transformers[key]
-
-
 def get_bbox(proj, bounds, wms_version):
-    """ Build wms bbox parameter for a GetMap request"""
+    """Build wms bbox parameter for a GetMap request"""
     if proj in {"EPSG:4326", "CRS:84"}:
         if proj == "EPSG:4326" and wms_version == "1.3.0":
             bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
@@ -67,7 +36,7 @@ def get_bbox(proj, bounds, wms_version):
 
 
 def wms_version_from_url(url):
-    """ Extract wms version from url"""
+    """Extract wms version from url"""
     u = urlparse(url.lower())
     qsl = dict(parse_qsl(u.query))
     if "version" not in qsl:
@@ -77,7 +46,7 @@ def wms_version_from_url(url):
 
 
 def wms_layers_from_url(url):
-    """ Extract layers from url"""
+    """Extract layers from url"""
     u = urlparse(url.lower())
     qsl = dict(parse_qsl(u.query))
     if "layers" not in qsl:
@@ -87,7 +56,7 @@ def wms_layers_from_url(url):
 
 
 def parse_wms_parameters(wms_url):
-    """ Parse wms argumentes from url """
+    """Parse wms argumentes from url"""
     wms_args = {}
     u = urlparse(wms_url)
     for k, v in parse_qsl(u.query, keep_blank_values=True):
@@ -242,7 +211,7 @@ def parse_wms(xml):
 
 
 def validate_wms_getmap_url(wms_url):
-    """ Validate a wms GetMap url as used typically for a wms type in ELI"""
+    """Validate a wms GetMap url as used typically for a wms type in ELI"""
     wms_args = parse_wms_parameters(wms_url)
     url_parts = list(urlparse(wms_url))
     url_parts_without_layers = "&".join(
