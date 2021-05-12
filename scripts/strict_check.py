@@ -6,12 +6,12 @@ usage: strict_check.py [-h] path [path ...]
 Checks new ELI sources for validity and common errors
 
 """
+from requests.api import head
 import urllib3
 import json
 import io
 import re
 import warnings
-from io import StringIO
 from argparse import ArgumentParser
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import xml.etree.ElementTree as ET
@@ -23,11 +23,11 @@ import requests
 import os
 from owslib.wmts import WebMapTileService
 from shapely.geometry import shape, Point, box
-from libeli import wmshelper
-from libeli import eliutils
+from libeli import wmshelper, eliutils, tmshelper
 
 # Disable InsecureRequestWarning: Unverified HTTPS request is being made to host warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -70,7 +70,7 @@ logger.warning(
 
 
 def get_http_headers(source):
-    """ Extract http headers from source"""
+    """Extract http headers from source"""
     custom_headers = {}
     custom_headers.update(headers)
     if "custom-http-headers" in source["properties"]:
@@ -476,6 +476,34 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
             min_zoom = int(source["properties"]["min_zoom"])
         if "max_zoom" in source["properties"]:
             max_zoom = int(source["properties"]["max_zoom"])
+
+        # Check if we find a TileMap_Resource
+        # Not all tms sources follow the Tile Map Service Specification
+        tilemap_resource_url = tmshelper.get_tilemap_resource_url(tms_url)
+        for tilemap_url in [
+            tilemap_resource_url,
+            tilemap_resource_url + "/tilemapresource.xml",
+        ]:
+            try:
+                r = requests.get(
+                    tilemap_url.format(**parameters),
+                    headers=headers,
+                    verify=False,
+                )
+                if r.status_code == 200:
+                    tilemap_metadata = tmshelper.parse_tilemap_resource(r.content)
+                    if tilemap_metadata:
+                        if not min_zoom == tilemap_metadata["min_zoom"]:
+                            error_msgs.append(
+                                f"min_zoom level ({min_zoom}) not the same as specified in TileMap ({tilemap_metadata['min_zoom']}): {tilemap_url}"
+                            )
+                        if not max_zoom == tilemap_metadata["max_zoom"]:
+                            error_msgs.append(
+                                f"max_zoom level ({max_zoom}) not the same as specified in TileMap ({tilemap_metadata['max_zoom']}): {tilemap_url}"
+                            )
+                        break
+            except Exception as e:
+                pass
 
         zoom_failures = []
         zoom_success = []
