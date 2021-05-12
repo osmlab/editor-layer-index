@@ -120,8 +120,9 @@ for filename in arguments.path:
 
         ### tms
         if source['properties']['type'] == "tms":
-            if not 'max_zoom' in source['properties']:
-                warnings.warn(f"Missing max_zoom parameter in {filename}")
+            if 'max_zoom' in source['properties']:
+                if source['properties']['max_zoom'] == 20:
+                    logger.warning(f"Useless max_zoom parameter in {filename}")
             if 'available_projections' in source['properties']:
                 warnings.warn(f"Senseless available_projections parameter in {filename}")
             if 'min_zoom' in source['properties']:
@@ -134,6 +135,16 @@ for filename in arguments.path:
             if not 'available_projections' in source['properties']:
                 raise ValidationError(f"Missing available_projections parameter in {filename}")
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
+        
+        ### wmts: 
+        if source['properties']['type'] == "wmts":
+            for tms_url_parameter in ["{zoom}", "{x}", "{y}", "{-y}"]:
+                if tms_url_parameter in source["properties"]["url"]:
+                    raise ValidationError(f"wmts URL should not contain parameter in {tms_url_parameter}")
+            if not 'available_projections' in source['properties']:
+                raise ValidationError(f"Missing available_projections parameter in {filename}")
+            if 'available_projections' in source['properties'] and 'EPSG:3857' in source['properties']['available_projections']:
+                logger.warning(f"WMTS source supports EPSG:3857, could this be tms? {filename}")
 
         missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}")]
         if missingparams:
