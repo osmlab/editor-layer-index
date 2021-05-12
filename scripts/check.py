@@ -131,10 +131,6 @@ for filename in arguments.path:
 
         ### wms: {proj}, {bbox}, {width}, {height}
         elif source['properties']['type'] == "wms":
-            if 'min_zoom' in source['properties']:
-                warnings.warn(f"Senseless min_zoom parameter in {filename}")
-            if 'max_zoom' in source['properties']:
-                warnings.warn(f"Senseless max_zoom parameter in {filename}")
             if not 'available_projections' in source['properties']:
                 raise ValidationError(f"Missing available_projections parameter in {filename}")
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
