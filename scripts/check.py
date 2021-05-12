@@ -140,7 +140,7 @@ for filename in arguments.path:
         if source['properties']['type'] == "wmts":
             for tms_url_parameter in ["{zoom}", "{x}", "{y}", "{-y}"]:
                 if tms_url_parameter in source["properties"]["url"]:
-                    raise ValidationError(f"wmts URL should not contain parameter in {tms_url_parameter}")
+                    raise ValidationError(f"wmts URL should not contain tms parameter {tms_url_parameter} in URL")
             if not 'available_projections' in source['properties']:
                 raise ValidationError(f"Missing available_projections parameter in {filename}")
             if 'available_projections' in source['properties'] and 'EPSG:3857' in source['properties']['available_projections']:
