@@ -494,8 +494,9 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
                     tilemap_metadata = tmshelper.parse_tilemap_resource(r.content)
                     if tilemap_metadata:
                         if not min_zoom == tilemap_metadata["min_zoom"]:
-                            error_msgs.append(
-                                f"min_zoom level ({min_zoom}) not the same as specified in TileMap ({tilemap_metadata['min_zoom']}): {tilemap_url}"
+                            warning_msgs.append(
+                                f"min_zoom level ({min_zoom}) not the same as specified in TileMap ({tilemap_metadata['min_zoom']}): {tilemap_url}. "
+                                "Some server timeout for low zoom levels."
                             )
                         if not max_zoom == tilemap_metadata["max_zoom"]:
                             error_msgs.append(
