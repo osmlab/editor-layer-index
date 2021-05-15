@@ -1,9 +1,9 @@
 from .eliutils import get_transformer
-import xml.etree.ElementTree as ET
-from io import StringIO
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 from pyproj.crs import CRS
 import validators
+import xml.etree.ElementTree as ET
+from io import StringIO
 import regex
 
 
@@ -100,9 +100,21 @@ def get_getcapabilities_url(wms_url, wms_version=None):
 
 
 def parse_wms(xml):
-    """Rudimentary parsing of WMS Layers from GetCapabilites Request
+    """Rudimentary parsing of WMS layers from GetCapabilites request
 
-    This function aims at only parsing relevant layer metadata
+    Note: only the relevant parts of the data included in the GetCapabilites response is parsed
+
+
+    Parameters
+    ----------
+    xml : str
+        The XML of the response ot the GetCapabilites request
+
+    Returns
+    -------
+    dict
+        The parsed data
+
     """
 
     wms = {}
@@ -135,14 +147,18 @@ def parse_wms(xml):
     def parse_layer(element, crs=set(), styles={}, bbox=None):
         new_layer = {"CRS": crs, "Styles": {}, "BBOX": bbox}
         new_layer["Styles"].update(styles)
+
         for tag in ["Name", "Title", "Abstract"]:
             e = element.find("./{}".format(tag))
             if e is not None:
                 new_layer[e.tag] = e.text
+
         for tag in ["CRS", "SRS"]:
             es = element.findall("./{}".format(tag))
             for e in es:
-                new_layer["CRS"].add(e.text.upper())
+                if e.text is not None:
+                    new_layer["CRS"].add(e.text.upper())
+
         for tag in ["Style"]:
             es = element.findall("./{}".format(tag))
             for e in es:
@@ -152,6 +168,7 @@ def parse_wms(xml):
                     if el is not None:
                         new_style[styletag] = el.text
                 new_layer["Styles"][new_style["Name"]] = new_style
+
         # WMS Version 1.3.0
         e = element.find("./EX_GeographicBoundingBox")
         if e is not None:
@@ -165,6 +182,7 @@ def parse_wms(xml):
                 ]
             ]
             new_layer["BBOX"] = bbox
+
         # WMS Version < 1.3.0
         e = element.find("./LatLonBoundingBox")
         if e is not None:
