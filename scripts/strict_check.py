@@ -636,7 +636,7 @@ for filename in arguments.path:
             # Check if privacy url exists
             if not test_url(source["properties"]["privacy_policy_url"], headers):
                 error_msgs.append(
-                    f"{filename}: could not retrieve privacy policy url {url}."
+                    f"{filename}: could not retrieve privacy policy url {source['properties']['privacy_policy_url']}."
                 )
 
         # Check for big fat embedded icons
