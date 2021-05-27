@@ -3,7 +3,7 @@
     "properties": {
         "id": "OS-OpenMap_Local_2016_04",
         "name": "OS OpenMap Local (April 2021)",
-        "url": "https://{s}.os.openstreetmap.org/layer/gb_os_om_local_2021_04/{z}/{x}/{y}.png",
+        "url": "https://{switch:a,b,c}.os.openstreetmap.org/layer/gb_os_om_local_2021_04/{zoom}/{x}/{y}.png",
         "max_zoom": 18,
         "min_zoom": 1,
         "end_date": "2021-04",
