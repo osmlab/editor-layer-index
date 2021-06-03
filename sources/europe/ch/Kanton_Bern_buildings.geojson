@@ -6,10 +6,16 @@
         "name": "Kanton Bern: Gebäudegrundrisse",
         "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
         "license_url": "https://wiki.openstreetmap.org/wiki/Canton_Berne_Building_Polygons",
+        "description": "Gebäudegrundrisse aus MOPUBE: Amtliche Vermessung vereinfacht des Kantons Bern",
         "type": "tms",
         "overlay": true,
         "category": "other",
-        "url": "https://tile.osm.ch/bbe/{zoom}/{x}/{y}.png"
+        "url": "https://tile.osm.ch/bbe/{zoom}/{x}/{y}.png",
+        "attribution": {
+            "text": "Amtliche Vermessung vereinfacht © Amt für Geoinformation des Kantons Bern",
+            "url": "http://www.geo.apps.be.ch/de/geodaten/suche-nach-geodaten.html?view=sheet&guid=c71b255f-67cf-4e25-bc1b-ae4dc6e7d546",
+            "required": true
+        }
     },
     "geometry": {
         "type": "Polygon",
@@ -92,11 +98,11 @@
                     46.96
                 ],
                 [
-                    7.0,
+                    7,
                     46.96
                 ],
                 [
-                    7.0,
+                    7,
                     47.08
                 ],
                 [
@@ -108,11 +114,11 @@
                     47.2
                 ],
                 [
-                    7.0,
+                    7,
                     47.2
                 ],
                 [
-                    7.0,
+                    7,
                     47.24
                 ],
                 [
@@ -172,16 +178,16 @@
                     47.04
                 ],
                 [
-                    8.0,
+                    8,
                     47.04
                 ],
                 [
-                    8.0,
-                    47.0
+                    8,
+                    47
                 ],
                 [
                     7.96,
-                    47.0
+                    47
                 ],
                 [
                     7.96,
@@ -252,11 +258,11 @@
                     46.52
                 ],
                 [
-                    8.0,
+                    8,
                     46.52
                 ],
                 [
-                    8.0,
+                    8,
                     46.48
                 ],
                 [
