@@ -4,13 +4,14 @@
         "id": "osm-hu-ortho",
         "name": "openstreetmap.hu orthophotos",
         "type": "tms",
-        "url": "http://adam.openstreetmap.hu/mapproxy/tiles/1.0.0/openstreetmap.hu.orthophotos/mercator/{zoom}/{x}/{y}.png",
+        "url": "http://wms.openstreetmap.hu/mapproxy/tiles/1.0.0/openstreetmap.hu.orthophotos/mercator/{zoom}/{x}/{y}.jpeg",
         "country_code": "HU",
         "attribution": {
             "text": "openstreetmap.hu"
         },
         "max_zoom": 21,
-        "category": "photo"
+        "category": "photo",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Hungary/Ortofot%C3%B3k#K.C3.B6z.C3.B6ss.C3.A9gi_dr.C3.B3nos_ortofot.C3.B3k"
     },
     "geometry": {
         "type": "Polygon",
