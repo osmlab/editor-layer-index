@@ -7,9 +7,8 @@
             "text": "Fototerkep.hu",
             "required": true
         },
-        "url": "http://adam.openstreetmap.hu/mapproxy/tiles/1.0.0/Soskut-Tarnok-Pusztazamor-Diosd/mercator/{zoom}/{x}/{y}.png",
-        "min_zoom": 11,
-        "max_zoom": 20,
+        "url": "http://wms.openstreetmap.hu/mapproxy/tiles/1.0.0/Soskut-Tarnok-Pusztazamor-Diosd/mercator/{zoom}/{x}/{y}.png",
+        "max_zoom": 21,
         "start_date": "2017-03",
         "end_date": "2017-03",
         "best": true,
@@ -17,7 +16,8 @@
         "type": "tms",
         "description": "5 cm resolution bald image of 4 settlement",
         "id": "Soskut_Pusztazamor_Tarnok_Diosd_orto_2017",
-        "category": "photo"
+        "category": "photo",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Hungary/Ortofot%C3%B3k#S.C3.B3sk.C3.BAt.2C_Pusztaz.C3.A1mor.2C_T.C3.A1rnok.2C_Di.C3.B3sd_ortofot.C3.B3_2017"
     },
     "geometry": {
         "type": "Polygon",
