@@ -2,9 +2,9 @@
     "type": "Feature",
     "properties": {
         "id": "Torokbalint-orthophoto-2021",
-        "name": "T\u00f6r\u00f6kb\u00e1lint orthophoto 2021",
+        "name": "Törökbálint orthophoto 2021",
         "type": "wms",
-        "url": "https://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=TBORTO_2021&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
+        "url": "https://terkep.torokbalint.hu/mapproxy/service?LAYERS=TBORTO_2021&STYLES=&FORMAT=image/jpeg&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "category": "photo",
         "start_date": "2021",
         "end_date": "2021",
@@ -16,7 +16,7 @@
             "EPSG:3857"
         ],
         "attribution": {
-            "text": "T\u00f6r\u00f6kb\u00e1lint",
+            "text": "Törökbálint",
             "url": "https://www.torokbalint.hu/",
             "required": true
         },
