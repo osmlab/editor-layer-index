@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS Imagery 1984",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1984/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW DCS SS Imagery 1984",
+        "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    151.01325920105,
+                    -33.49044350121
+                ],
+                [
+                    150.73997428894,
+                    -33.48643487833
+                ],
+                [
+                    150.73585441589,
+                    -33.86756432382
+                ],
+                [
+                    150.49003532410,
+                    -33.86072235863
+                ],
+                [
+                    150.48385551453,
+                    -34.00998048300
+                ],
+                [
+                    151.01325920105,
+                    -34.01510302077
+                ],
+                [
+                    151.01325920105,
+                    -33.49044350121
+                ]
+            ]
+        ]
+    }
+}

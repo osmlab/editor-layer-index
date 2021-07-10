@@ -1,0 +1,80 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS Imagery 2004",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2004/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW DCS SS Imagery 2004",
+        "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    150.49758773804,
+                    -33.49216085300
+                ],
+                [
+                    151.44515853882,
+                    -33.49445136591
+                ],
+                [
+                    151.25839096069,
+                    -34.00258014696
+                ],
+                [
+                    151.01669174194,
+                    -33.99802612381
+                ],
+                [
+                    151.01669174194,
+                    -34.22088583875
+                ],
+                [
+                    150.92468124390,
+                    -34.49976515687
+                ],
+                [
+                    150.89034896851,
+                    -34.51560840693
+                ],
+                [
+                    150.48660140991,
+                    -34.51108207139
+                ],
+                [
+                    150.49072128296,
+                    -34.17999645079
+                ],
+                [
+                    150.87798934937,
+                    -34.18340465718
+                ],
+                [
+                    150.87936264038,
+                    -34.00941072387
+                ],
+                [
+                    150.48522811890,
+                    -34.00144166406
+                ],
+                [
+                    150.49758773804,
+                    -33.49216085300
+                ]
+            ]
+        ]
+    }
+}
