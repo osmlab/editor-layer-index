@@ -1,24 +1,21 @@
 ## What imagery licenses are compatible with this index?
 
 - :white_check_mark: "Public Domain" or [Creative Commons (CC0)](https://creativecommons.org/share-your-work/public-domain/cc0/)
-imagery sources are directly compatible with tracing on OpenStreetMap and do not
-require any additional permission.  Attribution of a Public Domain source is
+imagery sources are directly compatible with tracing on OpenHistoricalMap. Attribution of a Public Domain source is
 not required, but is encouraged, to appear in the .geojson source file.
 
 - :white_check_mark: [Open Government Licence (OGL)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
 imagery sources are also compatible with tracing and do not require any additional
 permission.  Attribution of an OGL source is required to appear in the .geojson source file.
 
-- :question: [Creative Commons with condition (CC BY, CC BY-NC, CC BY-SA)](https://creativecommons.org/share-your-work/licensing-types-examples/) imagery sources are most likely compatible with tracing on
-OpenStreetMap, but to ensure no objection, we ask you confirm with the owning
-organization by using the [creative commons waiver](#where-can-i-find-an-imagery-license-waiver).
+- :question: [Creative Commons with condition (CC BY, CC BY-NC, CC BY-SA)](https://creativecommons.org/share-your-work/licensing-types-examples/) imagery sources are directly compatible with tracing on
+OpenHistoricalMap. Attribution of Creative Commons sources is required.
 
 - :question: For any other imagery sources - open an issue and we will look into it!
 There may be language in the imagery metadata or elsewhere on the owning organizations's
 website that makes things clear.  In situations where the license is unclear, you
 can also request the owning organization to grant permission using the
 [general waiver](#where-can-i-find-an-imagery-license-waiver).
-
 
 ## Where can I find an imagery license waiver?
 

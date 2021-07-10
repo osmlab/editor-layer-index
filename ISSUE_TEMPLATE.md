@@ -11,10 +11,10 @@ When **requesting the addition of an imagery layer**, please provide the followi
 
 ## License
 (required)<br/>
-See FAQ at https://github.com/osmlab/editor-layer-index/blob/gh-pages/FAQ.md#what-imagery-licenses-are-compatible-with-this-index for information
+See FAQ at https://github.com/openhistoricalmap/ohm-editor-layer-index/blob/gh-pages/FAQ.md#what-imagery-licenses-are-compatible-with-this-index for information
 about which licenses are compatible with this index.
 
-## Is the license compatible with OSM?
+## Is the license compatible with OHM?
 (required)
 
 ## Attribution (text, URL, required?)

@@ -53,7 +53,7 @@ Alternatively, polygons can be created based on administrative boundaries using 
 
 ##### Imagery Dates
 
-Valid imagery dates may be defined with `start_date` and `end_date` properties:
+Valid imagery dates should be defined with `start_date` and `end_date` properties:
 ```js
     "start_date": "2012",
     "end_date": "2014",
@@ -84,15 +84,6 @@ We previously required contributors to run local checks with `make check`, and r
 Imagery sources optionally support localization of the name, description, and
 attribution text. To set an imagery source as being translatable, include the
 property `i18n: true`.
-
-Translations are managed using the
-[Transifex](https://www.transifex.com/projects/p/id-editor/) platform.
-After signing up, you can go to [iD's project page](https://www.transifex.com/projects/p/id-editor/),
-select a language and click **Translate** to start translating.
-
-The translation strings for this project are located in a resource called
-[**imagery**](https://www.transifex.com/openstreetmap/id-editor/imagery/).
-
 
 #### Working with translation files
 
