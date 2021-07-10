@@ -10,7 +10,7 @@ The goal of this project is to maintain a canonical representation of the layers
 
 Both imagery and other raster data that is useful for mapping are within scope of the project.
 
-This list is purely targeted at OpenHistorical and does not include OpenStreetMap layers.
+This list is purely targeted at OpenHistoricalMap and does not include layers only allow for use in OpenStreetMap.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for info on how to contribute new sources to this index.
 
@@ -19,7 +19,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for info on how to contribute new sources
 
 If you are using iD or Potlatch 2 you are already using this index!
 
-For JOSM you can add `https://openhistoricalmap.github.io/ohm-editor-layer-index/imagery.xml` to the preference key `imagery.layers.sites` in advanced preferences. You probably want to remove the `https://josm.openstreetmap.de/maps` entry or you'll get the same layers listed twice.
+For JOSM you can add `https://openhistoricalmap.github.io/ohm-editor-layer-index/imagery.xml` to the preference key `imagery.layers.sites` in advanced preferences. If you're running a separate JOSM profile for OHM, you probably want to remove the `https://josm.openstreetmap.de/maps` entry.
 
 For QGIS, [use the layer index converter script](https://github.com/andrewharvey/osm-editor-layer-index-qgis). You must check yourself whether the license allows you to use the layer(s) you are interested in.
 
