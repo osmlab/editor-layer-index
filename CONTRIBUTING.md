@@ -76,32 +76,3 @@ start of `2013`. Note that this is the opposite of what we did before, and layer
 Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `main`.
 
 After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test as it would appear in the iD editor you can try at https://ideditor.github.io/imagery-index/index.html.
-
-### Translations
-
-Imagery sources optionally support localization of the name, description, and
-attribution text. To set an imagery source as being translatable, include the
-property `i18n: true`.
-
-#### Working with translation files
-
-To work with translation files,
-[install the Transifex Client](https://docs.transifex.com/client/introduction) software.
-
-The Transifex Client uses a file
-[`~/.transifex.rc`](https://docs.transifex.com/client/client-configuration#-transifexrc)
-to store your username and password.
-
-Note that you can also use a
-[Transifex API Token](https://docs.transifex.com/api/introduction#authentication)
-in place of your username and password.  In this usage, the username is `api`
-and the password is the generated API token.
-
-Once you have installed the client and setup the `~/.transifex.rc` file, you can
-use the following commands:
-
-* `tx push -s`  - upload latest source `/i18n/en.yaml` file to Transifex
-* `tx pull -a`  - download latest translation files to `/i18n/<lang>.yaml`
-
-For convenience you can also run these commands as `make txpush` or `make txpull`.
-
