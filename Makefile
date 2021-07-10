@@ -12,15 +12,15 @@ clean:
 	rm -f $(ALL)
 
 dist/imagery.xml: scripts/convert_xml.py $(SOURCES)
-    mkdir -p dist
+	mkdir -p dist
 	@$(PYTHON) $< $(SOURCES_QUOTED)
 
 dist/imagery.json: scripts/convert_geojson_to_legacyjson.py $(SOURCES)
-    mkdir -p dist
+	mkdir -p dist
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
 
 dist/imagery.geojson: scripts/concat_geojson.py $(SOURCES)
-    mkdir -p dist
+	mkdir -p dist
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
 
 # $@ The file name of the target of the rule.
