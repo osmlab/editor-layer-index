@@ -38,9 +38,7 @@ jobs:
       - name: Select files to deploy
         run: |
           mkdir deploy
-          mkdir deploy/i18n
           cp imagery.* deploy
-          cp i18n/en.yaml deploy/i18n
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1

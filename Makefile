@@ -1,8 +1,7 @@
-ALL = imagery.geojson imagery.json imagery.xml i18n/en.yaml
+ALL = imagery.geojson imagery.json imagery.xml
 SOURCES := $(shell find sources -type f -name '*.geojson')
 SOURCES_QUOTED := $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
-TX := $(shell which tx)
 
 all: $(ALL)
 
@@ -20,23 +19,6 @@ imagery.json: scripts/convert_geojson_to_legacyjson.py $(SOURCES)
 
 imagery.geojson: scripts/concat_geojson.py $(SOURCES)
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
-
-i18n/en.yaml: scripts/extract_i18n.py $(SOURCES)
-	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
-
-txpush: i18n/en.yaml
-ifeq (, $(TX))
-	@echo "Transifex not installed"
-else
-	$(TX) push -s
-endif
-
-txpull:
-ifeq (, $(TX))
-	@echo "Transifex not installed"
-else
-	$(TX) pull -a
-endif
 
 # $@ The file name of the target of the rule.
 # $< The name of the first prerequisite.
