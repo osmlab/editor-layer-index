@@ -39,12 +39,12 @@ function idURL(d, e) {
         const pt = e.latlng;
         const zoom = map.getZoom();
         position = `#map=${zoom}/${pt.lat.toFixed(5)}/${pt.lng.toFixed(5)}`
-    } 
+    }
     var params = {
         editor: 'id',
         background: 'custom:' + d.properties.url
     };
-    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString() + position;
+    return 'https://www.openhistoricalmap.org/edit?' + (new URLSearchParams(params)).toString() + position;
 }
 
 
