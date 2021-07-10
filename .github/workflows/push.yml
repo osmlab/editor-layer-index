@@ -40,6 +40,7 @@ jobs:
           mkdir deploy
           cp dist/imagery.* deploy
           cp index.html deploy
+          cp -r site deploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
