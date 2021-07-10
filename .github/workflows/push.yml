@@ -3,13 +3,13 @@ name: Deploy
 on:
   push:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   deploy:
     name: Deploy
     runs-on: [ubuntu-20.04]
-    if: "!contains(github.event.head_commit.message, 'Deploy') && github.repository == 'osmlab/editor-layer-index'"
+    if: "github.repository == 'openhistoricalmap/ohm-editor-layer-index'"
     steps:
       - name: Checkout
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
@@ -38,12 +38,12 @@ jobs:
       - name: Select files to deploy
         run: |
           mkdir deploy
-          cp imagery.* deploy
+          cp dist/imagery.* deploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
+          BRANCH: dist # The branch the action should deploy to.
           FOLDER: deploy # The folder the action should deploy.
           CLEAN: false # Automatically remove deleted files from the deploy branch

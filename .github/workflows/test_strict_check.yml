@@ -31,4 +31,4 @@ jobs:
       # Rudimentary check if strict_check.py works by applying it to a small subset of sources
       - name: Strict check
         run: |
-          python scripts/strict_check.py sources/europe/ch/*
+          python scripts/strict_check.py sources/oceania/au/*

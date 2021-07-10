@@ -3,7 +3,7 @@ name: Check PR
 on:
   pull_request:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   check:
