@@ -114,5 +114,5 @@ for source in sources:
         pass
 
 tree = ET.ElementTree(root)
-with io.open("imagery.xml", mode='wb') as f:
+with io.open("dist/imagery.xml", mode='wb') as f:
     tree.write(f, encoding='utf-8', xml_declaration=True)
