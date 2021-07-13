@@ -68,15 +68,6 @@
                     "type": "integer",
                     "minimum": 1
                 },
-                "permission_osm": {
-                    "description": "explicit/implicit permission by the owner for use in OSM",
-                    "type": "string",
-                    "enum": [
-                        "explicit",
-                        "implicit",
-                        "no"
-                    ]
-                },
                 "license_url": {
                     "description": "A URL for the license or permissions for the imagery",
                     "type": "string"
