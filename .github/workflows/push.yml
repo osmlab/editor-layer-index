@@ -38,8 +38,10 @@ jobs:
       - name: Select files to deploy
         run: |
           mkdir deploy
+          mkdir deploy/i18n
           cp package.json deploy
           cp dist/imagery.* deploy
+          cp i18n/en.yaml deploy/i18n
           cp index.html deploy
           cp -r site deploy
 

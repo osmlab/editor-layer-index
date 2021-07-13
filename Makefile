@@ -1,4 +1,4 @@
-ALL = dist/imagery.geojson dist/imagery.json dist/imagery.xml
+ALL = dist/imagery.geojson dist/imagery.json dist/imagery.xml i18n/en.yaml
 SOURCES := $(shell find sources -type f -name '*.geojson')
 SOURCES_QUOTED := $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
@@ -21,6 +21,10 @@ dist/imagery.json: scripts/convert_geojson_to_legacyjson.py $(SOURCES)
 
 dist/imagery.geojson: scripts/concat_geojson.py $(SOURCES)
 	mkdir -p dist
+	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
+
+i18n/en.yaml: scripts/extract_i18n.py $(SOURCES)
+	mkdir -p i18n
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
 
 # $@ The file name of the target of the rule.
