@@ -38,6 +38,7 @@ jobs:
       - name: Select files to deploy
         run: |
           mkdir deploy
+          cp package.json deploy
           cp dist/imagery.* deploy
           cp index.html deploy
           cp -r site deploy
