@@ -1,27 +1,28 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "COS2010_v1.0",
-        "name": "Carta de Uso do Solo 2010 (WMS)",
+        "id": "COS2018",
+        "name":"Land Use and Soil Occupation Charter of mainland Portugal - 2018 (DGT)",
         "type": "wms",
-        "url": "http://mapas.dgterritorio.pt/wms-inspire/cos2010v1?LAYERS=COS2010_v1.0&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LANGUAGE=por",
-        "start_date": "2010",
-        "end_date": "2010",
+        "url": "http://mapas.dgterritorio.pt/wms-inspire/cos2018v1?LAYERS=COS2018v1&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "start_date": "2018",
+        "end_date": "2018",
         "country_code": "PT",
         "available_projections": [
             "EPSG:3763",
+            "EPSG:3857",
             "EPSG:4258",
-            "EPSG:4326",
-            "EPSG:3857"
+            "EPSG:4326"
         ],
         "attribution": {
-            "text": "Direcção-Geral do Território",
-            "url": "http://www.dgterritorio.pt/dados_abertos/cos/"
+            "text": "Informação geográfica cedida pela Direção-Geral do Território",
+            "url": "https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/metadata/b498e89c-1093-4793-ad22-63516062891b",
+            "required": true
         },
-        "icon": "http://www.igeo.pt/favicon.ico",
         "max_zoom": 18,
-        "min_zoom": 14,
-        "license_url": "http://www.dgterritorio.pt/dados_abertos/cos/",
+        "min_zoom": 13,
+        "license_url": "https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/metadata/b498e89c-1093-4793-ad22-63516062891b",
+        "privacy_policy_url": "https://snig.dgterritorio.gov.pt/informacoes-sobre-cookies",
         "category": "other"
     },
     "geometry": {

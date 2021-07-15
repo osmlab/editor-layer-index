@@ -660,7 +660,7 @@ async def process_source(filename, session: ClientSession):
         # Filter alias projections
         if "EPSG:3857" in new_projections:
             included_alias_projections = new_projections.intersection(
-                wmshelper.epsg_3857_alias
+                eliutils.epsg_3857_alias
             )
             if len(included_alias_projections) > 0:
                 removed_projections[filename]["Alias projections"].extend(
@@ -669,7 +669,7 @@ async def process_source(filename, session: ClientSession):
                 new_projections -= included_alias_projections
         else:
             # if EPSG:3857 not present but alias, keep only alias with highest number to be consistent
-            result_epsg_3857_alias = new_projections & wmshelper.epsg_3857_alias
+            result_epsg_3857_alias = new_projections & eliutils.epsg_3857_alias
             result_epsg_3857_alias_sorted = list(
                 sorted(
                     result_epsg_3857_alias,
@@ -684,11 +684,11 @@ async def process_source(filename, session: ClientSession):
             new_projections -= set(result_epsg_3857_alias_sorted[1:])
 
         # Filter deprecated projections
-        if len(new_projections - wmshelper.valid_epsgs) > 0:
+        if len(new_projections - eliutils.valid_epsgs) > 0:
             removed_projections[filename]["Deprecated projections"].extend(
-                list(new_projections - wmshelper.valid_epsgs)
+                list(new_projections - eliutils.valid_epsgs)
             )
-        new_projections.intersection_update(wmshelper.valid_epsgs)
+        new_projections.intersection_update(eliutils.valid_epsgs)
 
         # Check if projections are supported by server
         not_supported_projections = set()
@@ -801,23 +801,24 @@ async def start_processing(sources_directory):
     print("")
     print(f"Processed {len(processed_sources)} sources")
     print("")
-    print(
-        f"Ignored sources: ({len(ignored_sources)} / {round(len(ignored_sources)/ len(processed_sources) * 100, 1)}%)"
-    )
-    for filename in ignored_sources:
-        print(f"\t{filename}: {ignored_sources[filename]}")
-    print("")
-    print("Removed projections:")
-    for filename in removed_projections:
-        for reason in removed_projections[filename]:
-            projs_str = ",".join(removed_projections[filename][reason])
-            print(f"\t{filename}: {reason}: {projs_str}")
-    print("")
-    print("Added projections:")
-    for filename in added_projections:
-        for reason in added_projections[filename]:
-            projs_str = ",".join(added_projections[filename][reason])
-            print(f"\t{filename}: {reason}: {projs_str}")
+    if(len(processed_sources)) > 0:
+        print(
+            f"Ignored sources: ({len(ignored_sources)} / {round(len(ignored_sources)/ len(processed_sources) * 100, 1)}%)"
+        )
+        for filename in ignored_sources:
+            print(f"\t{filename}: {ignored_sources[filename]}")
+        print("")
+        print("Removed projections:")
+        for filename in removed_projections:
+            for reason in removed_projections[filename]:
+                projs_str = ",".join(removed_projections[filename][reason])
+                print(f"\t{filename}: {reason}: {projs_str}")
+        print("")
+        print("Added projections:")
+        for filename in added_projections:
+            for reason in added_projections[filename]:
+                projs_str = ",".join(added_projections[filename][reason])
+                print(f"\t{filename}: {reason}: {projs_str}")
 
 
 asyncio.run(start_processing(sources_directory))

@@ -4,15 +4,12 @@
         "description": "2020 Ortophotos, Centre part of Moldova, Scale 1:5000, 20cm, true colours, covers the center part of Moldova. [Moldova-map.md server]",
         "id": "MoldovaMap-2020_ortofoto_moldova_centru",
         "name": "Moldova Ortophoto, Center part (2020)",
-        "type": "wmts",
+        "type": "tms",
         "url": "https://moldova-map.md/geoserver/gwc/service/wmts?layer=orthophoto:2020_ortofoto_moldova_centru&style=&tilematrixset=EPSG:900913&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=EPSG:900913:{zoom}&TileCol={x}&TileRow={y}",
         "country_code": "MD",
         "icon": "http://geoportalinds.gov.md/geonetwork/images/logos/dac139d4-147d-49a2-8ebe-370d6d603327.png",
         "best": true,
         "permission_osm": "explicit",
-        "available_projections": [
-            "EPSG:900913"
-        ],
         "end_date": "2020-06",
         "category": "photo",
 		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a28e04a5-b575-4281-a19c-5b83ef84ac74",
