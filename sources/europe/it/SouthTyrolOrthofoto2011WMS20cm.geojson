@@ -10,9 +10,20 @@
         "privacy_policy_url": "http://geoportal.buergernetz.bz.it/privacy.asp",
         "description": "Orthophoto of South Tyrol from 2011 with up to 20cm resolution (larger valleys)",
         "available_projections": [
-            "EPSG:3857"
+            "CRS:84",
+            "EPSG:3034",
+            "EPSG:3035",
+            "EPSG:3044",
+            "EPSG:3857",
+            "EPSG:4230",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:23032",
+            "EPSG:25832",
+            "EPSG:31254",
+            "EPSG:32632"
         ],
-        "url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&REQUEST=GetMap&LAYERS=p_bz-orthoimagery:P_BZ_OF_2011,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoservices.buergernetz.bz.it/geoserver/ows?LAYERS=p_bz-orthoimagery:P_BZ_OF_2011,P_BZ_OF_2011_20cm_EPSG3857&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "IT",
         "type": "wms",
         "category": "historicphoto",
