@@ -317,21 +317,25 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Realized by means of Brussels UrbIS\u00ae\u00a9 - Distribution & Copyright CIRB"
+            "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
         },
         "available_projections": [
-            "EPSG:3857"
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:31370"
         ],
+        "best": false,
         "category": "map",
         "country_code": "BE",
-        "end_date": "2013",
+        "i18n": true,
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/UrbIS.png",
-        "id": "URBISfr2013",
-        "name": "URBISfr numerical imagery (2013)",
+        "id": "UrbisAdmFRNL",
         "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf",
-        "start_date": "2013",
+        "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
+        "name": "UrbisAdm FR/NL",
         "type": "wms",
-        "url": "https://gis.irisnet.be/arcgis/rest/services/basemap/urbisFR/MapServer/export?f=image&format=png8&transparent=False&SRS={proj}&bboxSR=3857&imageSR=3857&bbox={bbox}&size={width},{height}"
+        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=urbisFRNL&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}"
     },
     "type": "Feature"
 }
