@@ -3,34 +3,19 @@
     "properties": {
         "attribution": {
             "url": "https://geoservices.buergernetz.bz.it/geokatalog",
-            "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC0-1.0",
+            "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano",
             "required": true
         },
-        "license_url": "http://geoservices.buergernetz.bz.it/geonetwork/srv/ger/pdf?uuid=p_bz:280ef207-6acf-442a-b35b-4477e96ef5db",
-        "privacy_policy_url": "http://geoportal.buergernetz.bz.it/privacy.asp",
-        "description": "Schummerung errechnet aus dem DTM",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:3034",
-            "EPSG:3035",
-            "EPSG:3044",
-            "EPSG:3857",
-            "EPSG:4230",
-            "EPSG:4258",
-            "EPSG:4326",
-            "EPSG:23032",
-            "EPSG:25832",
-            "EPSG:31254",
-            "EPSG:32632"
-        ],
-        "url": "http://geoservices.buergernetz.bz.it/geoserver/p_bz-elevation/ows?LAYERS=DTM-2p5m_Hillshade&STYLES=DTM-2p5m_Hillshade&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "license_url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+        "privacy_policy_url": "https://geoportal.buergernetz.bz.it/privacy.asp",
+        "description": "Topographical basemap of South Tyrol",
+        "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
+        "max_zoom": 20,
         "country_code": "IT",
-        "type": "wms",
-        "category": "elevation",
-        "start_date": "2013",
-        "end_date": "2013",
-        "id": "South-Tyrol-DTM_2013_2_5m",
-        "name": "South Tyrol DTM Hillshade 2013 (2.5 m)"
+        "type": "tms",
+        "category": "map",
+        "id": "South-Tyrol-Topomap",
+        "name": "South Tyrol Topomap"
     },
     "geometry": {
         "type": "Polygon",

@@ -3,19 +3,20 @@
     "properties": {
         "attribution": {
             "url": "https://geoservices.buergernetz.bz.it/geokatalog",
-            "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano",
+            "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 4.0",
             "required": true
         },
         "license_url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
-        "privacy_policy_url": "http://geoportal.buergernetz.bz.it/privacy.asp",
-        "description": "Topographical basemap of South Tyrol",
-        "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
-        "max_zoom": 20,
+        "privacy_policy_url": "https://geoportal.buergernetz.bz.it/privacy.asp",
+        "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_OF_2014_2015_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
+        "max_zoom": 18,
         "country_code": "IT",
         "type": "tms",
-        "category": "map",
-        "id": "South-Tyrol-Topomap",
-        "name": "South Tyrol Topomap"
+        "category": "historicphoto",
+        "id": "South-Tyrol-Orthofoto-2014-2015",
+        "name": "South Tyrol Orthofoto 2014/2015",
+        "start_date": "2014-07",
+        "end_date": "2015-11"
     },
     "geometry": {
         "type": "Polygon",
