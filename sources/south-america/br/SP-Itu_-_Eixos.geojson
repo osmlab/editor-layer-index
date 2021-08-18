@@ -4,13 +4,16 @@
     "id" : "SP_Itu_-_Eixos",
     "url" : "https://urbigis.com/geoproxy/4ac1cd2049d8857b21d9ff38339f7c1SERVICE=WMS&REQUEST=GETMAP&FORMAT=image/png8&VERSION=1.3.0&LAYERS=6139ca97-1bc9-4952-a441-b68957ab222c&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "type" : "wms",
+    "category" : "map",
     "country_code": "BR",
     "name" : "Itu - Eixos",
     "license_url": "https://wiki.openstreetmap.org/wiki/Itu,_S%C3%A3o_Paulo/Fontes_de_Dados#Cadastro",
+    "privacy_policy_url": "https://info.urbigis.com/legal/",
     "end_date": "2019",
     "start_date": "2019",
     "min_zoom": 10,
     "max_zoom": 22,
+    "overlay": true,
     "attribution": {
       "url": "https://itu.sp.gov.br/planejamento/",
       "text": "Prefeitura da Estância Turística de Itu, SP"
