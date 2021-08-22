@@ -8,32 +8,24 @@
         "type": "wms",
         "category": "photo",
         "url": "https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=lsa_lvermgeo_dop20_2&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "eula": "https://wiki.openstreetmap.org/wiki/DE:Permissions/Geobasisdaten_Sachsen-Anhalt", 
+        "eula": "https://wiki.openstreetmap.org/wiki/DE:Permissions/Geobasisdaten_Sachsen-Anhalt",
         "best": true,
         "valid-georeference": true,
         "country_code": "DE",
         "available_projections": [
-            "EPSG:4647",
-            "EPSG:31468",
-            "EPSG:31467",
-            "EPSG:31469",
-            "EPSG:25833",
-            "EPSG:25832",
-            "EPSG:4326",
-            "EPSG:2397",
             "EPSG:2398",
-            "EPSG:2399",
-            "EPSG:2166",
-            "EPSG:2167",
-            "EPSG:2168",
-            "EPSG:3857"
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:4647",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:31468"
         ],
         "attribution": {
             "text": "© GeoBasis-DE/LVermGeo LSA",
             "url": "https://www.lvermgeo.sachsen-anhalt.de/de/kostenfreie_geobasisdaten_lvermgeo.html"
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/DE:Permissions/Geobasisdaten_Sachsen-Anhalt"
-        
     },
     "geometry": {
         "type": "Polygon",
@@ -285,5 +277,5 @@
                 ]
             ]
         ]
-    }        
+    }
 }
