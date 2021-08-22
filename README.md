@@ -32,4 +32,4 @@ For any other usage, use https://osmlab.github.io/editor-layer-index/imagery.geo
 ## Layer Overview
 
 An interactive list of all layers (with a live map preview for most of them) is available at
-https://osmlab.github.com/editor-layer-index.
+https://osmlab.github.io/editor-layer-index.

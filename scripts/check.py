@@ -24,6 +24,7 @@ from argparse import ArgumentParser
 from jsonschema import ValidationError, RefResolver, Draft4Validator
 import colorlog
 import os
+import warnings
 
 from shapely.geometry import shape
 
@@ -37,6 +38,7 @@ def dict_raise_on_duplicates(ordered_pairs):
         else:
             d[k] = v
     return d
+
 
 
 parser = ArgumentParser(description='Checks ELI sourcen for validity and common errors')
@@ -76,6 +78,14 @@ for filename in arguments.path:
         continue
 
     try:
+        ## dict_raise_on_duplicates raises error on duplicate keys in geojson
+        source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
+    except Exception as e:
+        logger.exception(f"Could not parse file: {filename}: {e}")
+        raise ValidationError(f"Could not parse file: {filename}: {e}")
+
+
+    try:
 
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding='utf-8'), object_pairs_hook=dict_raise_on_duplicates)
@@ -103,31 +113,38 @@ for filename in arguments.path:
             if source['properties']['icon'].startswith("data:"):
                 iconsize = len(source['properties']['icon'].encode('utf-8'))
                 spacesave += iconsize
-                logger.debug("{} icon should be disembedded to save {} KB".format(filename, round(iconsize/1024.0, 2)))
+                warnings.warn(f"{filename} icon should be disembedded to save {round(iconsize/1024.0, 2)} KB")
 
         ## Validate that url has the tokens we expect
         params = []
 
         ### tms
         if source['properties']['type'] == "tms":
-            if not 'max_zoom' in source['properties']:
-                ValidationError("Missing max_zoom parameter in {}".format(filename))
+            if 'max_zoom' in source['properties']:
+                if source['properties']['max_zoom'] == 20:
+                    logger.warning(f"Useless max_zoom parameter in {filename}")
             if 'available_projections' in source['properties']:
-                ValidationError("Senseless available_projections parameter in {}".format(filename))
+                warnings.warn(f"Senseless available_projections parameter in {filename}")
             if 'min_zoom' in source['properties']:
                 if source['properties']['min_zoom'] == 0:
-                    logger.warning("Useless min_zoom parameter in {}".format(filename))
+                    logger.warning(f"Useless min_zoom parameter in {filename}")
             params = ["{zoom}", "{x}", "{y}"]
 
         ### wms: {proj}, {bbox}, {width}, {height}
         elif source['properties']['type'] == "wms":
-            if 'min_zoom' in source['properties']:
-                ValidationError("Senseless min_zoom parameter in {}".format(filename))
-            if 'max_zoom' in source['properties']:
-                ValidationError("Senseless max_zoom parameter in {}".format(filename))
             if not 'available_projections' in source['properties']:
-                ValidationError("Missing available_projections parameter in {}".format(filename))
+                raise ValidationError(f"Missing available_projections parameter in {filename}")
             params = ["{proj}", "{bbox}", "{width}", "{height}"]
+        
+        ### wmts: 
+        if source['properties']['type'] == "wmts":
+            for tms_url_parameter in ["{zoom}", "{x}", "{y}", "{-y}"]:
+                if tms_url_parameter in source["properties"]["url"]:
+                    raise ValidationError(f"wmts URL should not contain tms parameter {tms_url_parameter} in URL")
+            if not 'available_projections' in source['properties']:
+                raise ValidationError(f"Missing available_projections parameter in {filename}")
+            if 'available_projections' in source['properties'] and 'EPSG:3857' in source['properties']['available_projections']:
+                logger.warning(f"WMTS source supports EPSG:3857, could this be tms? {filename}")
 
         missingparams = [x for x in params if x not in source['properties']['url'].replace("{-y}", "{y}")]
         if missingparams:
@@ -155,9 +172,9 @@ for filename in arguments.path:
                                       "".format(filename, ",".join(map(str, [min_lon, min_lat, max_lon, max_lat]))))
         else:
             if 'geometry' not in source:
-                ValidationError("{} should have null geometry".format(filename))
+                raise ValidationError("{} should have null geometry".format(filename))
             elif source['geometry'] != None:
-                ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
+                raise ValidationError("{} should have null geometry but it is {}".format(filename, source['geometry']))
         tested_sources_count += 1
     except ValidationError as e:
         borkenbuild = True
