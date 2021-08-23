@@ -8,7 +8,7 @@
             "required": false
         },
         "name": "Rhode Island Aerial Photo (Fall 2020)",
-        "url": "https://maps.edc.uri.edu/rigis/services/IMG/RI_202009_RGB_3in_web/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=1&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "url": "https://maps.edc.uri.edu/rigis/services/IMG/RI_202009_RGB_3in_web/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "max_zoom": 14,
         "license_url": "https://wiki.openstreetmap.org/wiki/Rhode_Island#Data_Sources",
         "country_code": "US",
@@ -22,7 +22,7 @@
         "end_date": "2020",
         "description": "Aerial Photo for the State of Rhode Island",
         "category": "photo",
-        "privacy_policy_url": "https://www.ri.gov/policies/privacy/"
+        "privacy_policy_url": "https://web.uri.edu/enrollment/gdpr-privacy-notice/"
     },
     "geometry": {
         "type": "Polygon",
