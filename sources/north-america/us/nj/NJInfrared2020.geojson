@@ -9,22 +9,24 @@
         },
         "name": "NJGIN Orthoimagery 2020 - Infrared (1ft leaf off)",
         "url": "https://img.nj.gov/imagerywms/Infrared2020?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/jpeg&TRANSPARENT=TRUE&STYLES=&VERSION=1.1.1&LAYERS=Infrared2020&WIDTH={width}&HEIGHT={height}&SRS={proj}&BBOX={bbox}",
-        "max_zoom": 12,
+        "max_zoom": 25,
         "license_url": "https://newjersey.maps.arcgis.com/sharing/rest/content/items/e376465de35f42228043b64bb874c7e3/info/metadata/metadata.xml?format=default&output=html",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
+            "EPSG:2959",
             "EPSG:3424",
             "EPSG:3616",
             "EPSG:3857",
+            "EPSG:4269",
             "EPSG:4326",
-            "EPSG:6527",
-            "EPSG:104711"
+            "EPSG:6527"
         ],
         "start_date": "2020",
         "end_date": "2020",
         "description": "Infrared orthoimagery for the state of New Jersey (2020)",
         "category": "photo",
+        "valid-georeference": "true",
         "privacy_policy_url": "https://www.nj.gov/nj/privacy.html"
     },
     "geometry": {
