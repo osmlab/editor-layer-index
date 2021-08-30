@@ -21,9 +21,8 @@ from jsonschema import ValidationError, RefResolver, Draft4Validator
 import colorlog
 import requests
 import os
-from owslib.wmts import WebMapTileService
 from shapely.geometry import shape, Point, box
-from libeli import wmshelper, eliutils, tmshelper
+from libeli import wmshelper, eliutils, tmshelper, wmtshelper
 
 # Disable InsecureRequestWarning: Unverified HTTPS request is being made to host warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -58,9 +57,7 @@ validator = Draft4Validator(schema, resolver=resolver)
 borkenbuild = False
 spacesave = 0
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)"
-}
+headers = {"User-Agent": "Mozilla/5.0 (compatible; MSIE 6.0; OpenStreetMap Editor Layer Index CI check)"}
 
 
 logger.warning(
@@ -112,9 +109,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
     params = ["{proj}", "{bbox}", "{width}", "{height}"]
     missingparams = [p for p in params if p not in wms_url]
     if len(missingparams) > 0:
-        error_msgs.append(
-            f"The following values are missing in the URL: {','.join(missingparams)}"
-        )
+        error_msgs.append(f"The following values are missing in the URL: {','.join(missingparams)}")
 
     wms_args = {}
     u = urlparse(wms_url)
@@ -127,11 +122,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
         Layers and styles can contain whitespaces. Ignore them here. They are checked against GetCapabilities later.
         """
         url_parts_without_layers = "&".join(
-            [
-                f"{key}={value}"
-                for key, value in wms_args.items()
-                if key not in {"layers", "styles"}
-            ]
+            [f"{key}={value}" for key, value in wms_args.items() if key not in {"layers", "styles"}]
         )
         parts = url_parts.copy()
         parts[4] = url_parts_without_layers
@@ -168,27 +159,19 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
         if "crs" not in wms_args:
             missing_request_parameters.add("crs")
         if "srs" in wms_args:
-            error_msgs.append(
-                f"WMS {wms_args['version']} urls should not contain SRS parameter."
-            )
+            error_msgs.append(f"WMS {wms_args['version']} urls should not contain SRS parameter.")
     elif "version" in wms_args and not wms_args["version"] == "1.3.0":
         if "srs" not in wms_args:
             missing_request_parameters.add("srs")
         if "crs" in wms_args:
-            error_msgs.append(
-                f"WMS {wms_args['version']} urls should not contain CRS parameter."
-            )
+            error_msgs.append(f"WMS {wms_args['version']} urls should not contain CRS parameter.")
     if len(missing_request_parameters) > 0:
         missing_request_parameters_str = ",".join(missing_request_parameters)
-        error_msgs.append(
-            f"Parameter '{missing_request_parameters_str}' is missing in url."
-        )
+        error_msgs.append(f"Parameter '{missing_request_parameters_str}' is missing in url.")
         return
     # Styles is mandatory according to the WMS specification, but some WMS servers seems not to care
     if "styles" not in wms_args:
-        warning_msgs.append(
-            "Parameter 'styles' is missing in url. 'STYLES=' can be used to request default style."
-        )
+        warning_msgs.append("Parameter 'styles' is missing in url. 'STYLES=' can be used to request default style.")
 
     # We first send a service=WMS&request=GetCapabilities request to server
     # According to the WMS Specification Section 6.2 Version numbering and negotiation, the server should return
@@ -203,9 +186,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
             wmsversion_str = wmsversion
 
         try:
-            wms_getcapabilites_url = wmshelper.get_getcapabilities_url(
-                wms_url, wmsversion
-            )
+            wms_getcapabilites_url = wmshelper.get_getcapabilities_url(wms_url, wmsversion)
             r = requests.get(wms_getcapabilites_url, headers=source_headers)
             xml = r.text
             wms = wmshelper.parse_wms(xml)
@@ -240,8 +221,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                 not_found_layers.append(layer_name)
         if len(not_found_layers) > 0:
             error_msgs.append(
-                f"Layers '{','.join(not_found_layers)}' not advertised by WMS GetCapabilities "
-                "request."
+                f"Layers '{','.join(not_found_layers)}' not advertised by WMS GetCapabilities " "request."
             )
 
         # Check source geometry against layer bounding box
@@ -259,7 +239,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
             # 5% is an arbitrary chosen value and should be adapted as needed
             if max_outside > 5.0:
                 error_msgs.append(
-                    f"{round(area_outside_bbox, 2)}% of geometry is outside of the layers bounding box. "
+                    f"{round(max_outside, 2)}% of geometry is outside of the layers bounding box. "
                     "Geometry should be checked"
                 )
 
@@ -279,9 +259,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                             and layer_name in wms["layers"]
                             and style not in wms["layers"][layer_name]["Styles"]
                         ):
-                            error_msgs.append(
-                                f"Layer '{layer_name}' does not support style '{style}'"
-                            )
+                            error_msgs.append(f"Layer '{layer_name}' does not support style '{style}'")
 
         # Check CRS
         crs_should_included_if_available = {"EPSG:4326", "EPSG:3857", "CRS:84"}
@@ -311,18 +289,14 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
                             supported_but_not_included.add(crs)
 
                     if len(supported_but_not_included) > 0:
-                        supported_but_not_included_str = ",".join(
-                            supported_but_not_included
-                        )
+                        supported_but_not_included_str = ",".join(supported_but_not_included)
                         warning_msgs.append(
                             f"Layer '{layer_name}': CRS '{supported_but_not_included_str}' not included in available_projections but "
                             "supported by server."
                         )
 
     if wms_args["version"] < wms["version"]:
-        warning_msgs.append(
-            f"Query requests WMS version '{wms_args['version']}', server supports '{wms['version']}'"
-        )
+        warning_msgs.append(f"Query requests WMS version '{wms_args['version']}', server supports '{wms['version']}'")
 
     # Check formats
     imagery_format = wms_args["format"]
@@ -330,10 +304,7 @@ def check_wms(source, info_msgs, warning_msgs, error_msgs):
     if imagery_format not in wms["formats"]:
         error_msgs.append(f"Format '{imagery_format}' not in '{imagery_formats_str}'.")
 
-    if (
-        "category" in source["properties"]
-        and "photo" in source["properties"]["category"]
-    ):
+    if "category" in source["properties"] and "photo" in source["properties"]["category"]:
         if "jpeg" not in imagery_format and "jpeg" in imagery_formats_str:
             warning_msgs.append(
                 f"Server supports JPEG, but '{imagery_format}' is used. "
@@ -409,9 +380,25 @@ def check_wmts(source, info_msgs, warning_msgs, error_msgs):
         wmts_url = source["properties"]["url"]
         if not validators.url(wmts_url):
             error_msgs.append(f"URL validation error: {wmts_url}")
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            WebMapTileService(wmts_url)
+
+        r = requests.get(wmts_url)
+
+        try:
+            wmts = wmtshelper.WMTS.fromstring(r.text)
+        except:
+            error_msgs.append(f"Could not parse WMTS: {wmts_url}")
+            return
+
+        # Check if wmts layer would support urn:ogc:def:crs:EPSG:6.18.3:3857, which could be added as tms
+        for layer_identifer, layer in wmts.layers.items():
+            for tile_matrix_set_key in layer.tile_matrix_set_keys:
+                tms = wmts.tile_matrix_sets[tile_matrix_set_key]
+                if tms.supported_crs == "urn:ogc:def:crs:EPSG:6.18.3:3857":
+                    error_msgs.append(
+                        f"Layer {layer_identifer} supports {tms.supported_crs}. "
+                        "If added as tms source, more editors could access the imagery."
+                    )
+
     except Exception as e:
         error_msgs.append(f"Exception: {e}")
 
@@ -444,11 +431,7 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
         source_headers = get_http_headers(source)
 
         def validate_url():
-            url = (
-                re.sub(r"switch:?([^}]*)", "switch", tms_url)
-                .replace("{", "")
-                .replace("}", "")
-            )
+            url = re.sub(r"switch:?([^}]*)", "switch", tms_url).replace("{", "").replace("}", "")
             return validators.url(url)
 
         if not validate_url():
@@ -466,9 +449,10 @@ def check_tms(source, info_msgs, warning_msgs, error_msgs):
             return
         if "{switch:" in tms_url:
             match = re.search(r"switch:?([^}]*)", tms_url)
-            switches = match.group(1).split(",")
-            tms_url = tms_url.replace(match.group(0), "switch")
-            parameters["switch"] = switches[0]
+            if match is not None:
+                switches = match.group(1).split(",")
+                tms_url = tms_url.replace(match.group(0), "switch")
+                parameters["switch"] = switches[0]
 
         min_zoom = 0
         max_zoom = 22
@@ -606,21 +590,15 @@ for filename in arguments.path:
                 url = source["properties"]["attribution"]["url"]
 
                 if not test_url(url, headers):
-                    error_msgs.append(
-                        f"{filename}: could not retrieve attribution url {url}."
-                    )
+                    error_msgs.append(f"{filename}: could not retrieve attribution url {url}.")
 
         # Check icon url exists
-        if "icon" in source["properties"] and source["properties"]["icon"].startswith(
-            "http"
-        ):
+        if "icon" in source["properties"] and source["properties"]["icon"].startswith("http"):
             url = source["properties"]["icon"]
             try:
                 r = requests.get(url, headers=headers)
                 if not r.status_code == 200:
-                    error_msgs.append(
-                        f"{filename}: icon url {url} is not reachable: HTTP code: {r.status_code}"
-                    )
+                    error_msgs.append(f"{filename}: icon url {url} is not reachable: HTTP code: {r.status_code}")
 
             except Exception as e:
                 error_msgs.append(f"{filename}: icon url {url} is not reachable: {e}")
@@ -644,9 +622,7 @@ for filename in arguments.path:
             if source["properties"]["icon"].startswith("data:"):
                 iconsize = len(source["properties"]["icon"].encode("utf-8"))
                 spacesave += iconsize
-                logger.warning(
-                    f"{filename} icon should be disembedded to save {round(iconsize / 1024.0, 2)} KB"
-                )
+                logger.warning(f"{filename} icon should be disembedded to save {round(iconsize / 1024.0, 2)} KB")
 
         # Check for category
         if "category" not in source["properties"]:
@@ -656,9 +632,7 @@ for filename in arguments.path:
         # The geometry itself is validated by jsonschema
         if "world" not in filename:
             if "type" not in source["geometry"]:
-                error_msgs.append(
-                    f"{filename} should have a valid geometry or be global"
-                )
+                error_msgs.append(f"{filename} should have a valid geometry or be global")
             if source["geometry"]["type"] != "Polygon":
                 error_msgs.append(f"{filename} should have a Polygon geometry")
             if "country_code" not in source["properties"]:
@@ -667,9 +641,7 @@ for filename in arguments.path:
             if "geometry" not in source:
                 error_msgs.append(f"{filename} should have null geometry")
             elif source["geometry"] is not None:
-                error_msgs.append(
-                    f"{filename} should have null geometry but it is {source['geometry']}"
-                )
+                error_msgs.append(f"{filename} should have null geometry but it is {source['geometry']}")
 
         # Check if URL encodes HTTP headers
         if "user-agent" in source["properties"]["url"].lower():
@@ -685,9 +657,7 @@ for filename in arguments.path:
         elif source["properties"]["type"] == "wmts":
             check_wmts(source, info_msgs, warning_msgs, error_msgs)
         else:
-            warning_msgs.append(
-                f"Imagery type { source['properties']['type']} is currently not checked."
-            )
+            warning_msgs.append(f"Imagery type { source['properties']['type']} is currently not checked.")
 
         for msg in info_msgs:
             logger.info(msg)
@@ -704,8 +674,6 @@ for filename in arguments.path:
     except Exception as e:
         logger.exception(f"Failed: {e}")
 if spacesave > 0:
-    logger.warning(
-        f"Disembedding all icons would save {round(spacesave / 1024.0, 2)} KB"
-    )
+    logger.warning(f"Disembedding all icons would save {round(spacesave / 1024.0, 2)} KB")
 if borkenbuild:
     raise SystemExit(1)
