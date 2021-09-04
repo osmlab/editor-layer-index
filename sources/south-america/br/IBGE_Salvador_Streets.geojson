@@ -8,6 +8,14 @@
         "max_zoom": 20,
         "country_code": "BR",
         "type": "tms",
+         "attribution": {
+            "url": "https://www.ibge.gov.br/",
+            "text": "IBGE",
+            "required": true
+        },
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+        "privacy_policy_url": "https://www.ibge.gov.br/np_download/novoportal/documentos_institucionais/PoliticaPrivacidade.pdf",
         "description": "Streets geometry and names of Salvador, Bahia. Source: Faces de Logradouro - IBGE.",
         "category": "other"
     },
