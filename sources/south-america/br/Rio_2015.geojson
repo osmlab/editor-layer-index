@@ -8,19 +8,20 @@
         "type": "wms",
         "min_zoom": 4,
         "country_code": "BR",
-        "name": "Rio Mosaic 2015",
+        "name": "Rio Mosaico 2015",
         "license_url": "http://data.rio/about",
         "attribution": {
-            "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2015_UTM/MapServer",
+            "url": "https://www.rio.rj.gov.br/web/ipp",
             "text": "Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro."
         },
+        "privacy_policy_url": "https://www.rio.rj.gov.br/politica-de-privacidade",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
             "EPSG:4326",
             "EPSG:29193"
         ],
-        "category": "photo"
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",
