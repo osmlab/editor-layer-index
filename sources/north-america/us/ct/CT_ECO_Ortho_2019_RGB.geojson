@@ -8,18 +8,11 @@
             "required": false
         },
         "name": "CT ECO Orthoimagery (2019)",
-        "url": "https://cteco.uconn.edu/ctraster/services/images/Ortho_2019/ImageServer/WMSServer?format=image/jpeg&version=1.3.0&service=wms&request=getmap&layers=ortho_2019:ortho2019&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
-        "max_zoom": 19,
+        "url": "https://cteco.uconn.edu/ctraster/rest/services/images/Ortho_2019_tiled/ImageServer/WMTS/tile/1.0.0/images_Ortho_2019_tiled/default/default028mm/{zoom}/{y}/{x}",
+        "max_zoom": 23,
         "license_url": "https://cteco.uconn.edu/metadata/dep/document/ortho_2019_fgdc_plus.htm",
         "country_code": "US",
-        "type": "wms",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:2234",
-            "EPSG:3857",
-            "EPSG:4326",
-            "EPSG:6433"
-        ],
+        "type": "tms",
         "start_date": "2019-03-24",
         "end_date": "2019-04-25",
         "description": "The 2019 6-inch 4-band orthoimagery for the State of Connecticut in natural color",
