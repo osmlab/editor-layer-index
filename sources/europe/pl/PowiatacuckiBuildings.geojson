@@ -124,7 +124,7 @@
         "id": "lancucki-buildings",
         "max_zoom": 19,
         "name": "Powiat łańcucki: Buildings",
-        "i18n": "true",
+        "i18n": true,
         "type": "wms",
         "url": "https://lancut.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,budynki,adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "other"
