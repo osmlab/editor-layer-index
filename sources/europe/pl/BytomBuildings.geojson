@@ -3,6 +3,7 @@
     "properties": {
         "id": "Bytom-buildings",
         "name": "Bytom: Buildings",
+        "i18n": "true",
         "type": "wms",
         "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?LAYERS=adr_osie_ulic,adr_punkty_adresowe,eg_budynki&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "PL",

@@ -3,6 +3,7 @@
     "properties": {
         "id": "Geoportal2-PL-buildings_WMS",
         "name": "Geoportal 2: Ewidencja budynków WMS",
+        "i18n": "true",
         "description": "Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.",
         "type": "wms",
         "url": "https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow?LAYERS=budynki&STYLES=default&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",

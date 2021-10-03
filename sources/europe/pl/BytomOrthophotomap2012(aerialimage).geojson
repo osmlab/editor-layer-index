@@ -3,6 +3,7 @@
     "properties": {
         "id": "Bytom-2012",
         "name": "Bytom: Orthophotomap 2012 (aerial image)",
+        "i18n": "true",
         "type": "wms",
         "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tiff_ortofoto_2012&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "start_date": "2012",
