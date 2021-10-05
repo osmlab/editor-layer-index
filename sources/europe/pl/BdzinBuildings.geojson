@@ -3,6 +3,7 @@
     "properties": {
         "id": "Bedzin-PL-buildings",
         "name": "Będzin: Buildings",
+        "i18n": true,
         "type": "wms",
         "url": "http://www.geo.powiat.bedzin.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=eg_budynki_geo,pkt_adr&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "PL",
