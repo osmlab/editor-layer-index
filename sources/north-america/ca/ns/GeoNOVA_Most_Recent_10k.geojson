@@ -1,0 +1,192 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "GeoNOVA_Most_Recent_10k",
+        "attribution": {
+            "url": "https://geonova.novascotia.ca/",
+            "text": "Department of Service Nova Scotia and Internal Services",
+            "required": false
+        },
+        "name": "Nova Scotia Orthophotomap - Most Recent (60cm)",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/ca/ns/geonova-logo.png",
+        "url": "https://nsgiwa.novascotia.ca/arcgis/services/BASE/BASE_NSODB_10k_WM84/MapServer/WmsServer?format=image/jpeg&version=1.3.0&service=wms&request=getmap&layers=0&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "min_zoom": 7,
+        "max_zoom": 19,
+        "license_url": "https://nsgiwa.novascotia.ca/documents/licenses/unrestricted/unrestrictedLicense.pdf",
+        "privacy_policy_url": "https://beta.novascotia.ca/privacy",
+        "country_code": "CA",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "start_date": "2019",
+        "end_date": "2020",
+        "i18n": true,
+        "description": "Most current ISD 1:10000 (60 cm) Orthophotomap that covers the entire province of N.S.",
+        "category": "photo",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -60.06294284812,
+                    43.92114279019
+                ],
+                [
+                    -60.17692600241,
+                    43.97058097766
+                ],
+                [
+                    -60.17555271140,
+                    43.98985072589
+                ],
+                [
+                    -60.06191287986,
+                    43.94191183693
+                ],
+                [
+                    -59.84287296286,
+                    43.94660859170
+                ],
+                [
+                    -59.63619266501,
+                    44.07624054744
+                ],
+                [
+                    -59.60701023093,
+                    44.05502500442
+                ],
+                [
+                    -59.83566318503,
+                    43.92188466674
+                ],
+                [
+                    -60.06294284812,
+                    43.92114279019
+                ]
+            ],
+            [
+                [
+                    -64.92302009573,
+                    45.44134493288
+                ],
+                [
+                    -64.50073310843,
+                    45.69562953374
+                ],
+                [
+                    -64.50056093206,
+                    45.77279165963
+                ],
+                [
+                    -64.44459932318,
+                    45.77434818965
+                ],
+                [
+                    -64.44494264593,
+                    45.79637441709
+                ],
+                [
+                    -64.43275468817,
+                    45.79673346826
+                ],
+                [
+                    -64.43344133368,
+                    45.80092222763
+                ],
+                [
+                    -64.40013902655,
+                    45.80152059612
+                ],
+                [
+                    -64.30006044378,
+                    45.85116277899
+                ],
+                [
+                    -64.30109041205,
+                    45.95019498776
+                ],
+                [
+                    -64.19998186102,
+                    45.95103045461
+                ],
+                [
+                    -64.20084016790,
+                    46.00006221710
+                ],
+                [
+                    -64.09990327826,
+                    46.00137390622
+                ],
+                [
+                    -64.10041826239,
+                    46.01889985806
+                ],
+                [
+                    -63.99913804999,
+                    46.01997269512
+                ],
+                [
+                    -63.99913804999,
+                    46.00006221710
+                ],
+                [
+                    -63.89545457831,
+                    46.00006221710
+                ],
+                [
+                    -63.72156160345,
+                    45.88092683959
+                ],
+                [
+                    -62.09472930904,
+                    45.86323946559
+                ],
+                [
+                    -60.35064971920,
+                    47.33510191890
+                ],
+                [
+                    -59.91668975826,
+                    47.21770449209
+                ],
+                [
+                    -59.47723663326,
+                    45.97787982761
+                ],
+                [
+                    -61.28174102779,
+                    45.05606318295
+                ],
+                [
+                    -64.02557647701,
+                    44.30223204424
+                ],
+                [
+                    -65.41534698482,
+                    43.34715435735
+                ],
+                [
+                    -66.10748565670,
+                    43.33117356103
+                ],
+                [
+                    -66.45904815670,
+                    44.25897216839
+                ],
+                [
+                    -66.10473907467,
+                    44.60220370470
+                ],
+                [
+                    -64.92302009573,
+                    45.44134493288
+                ]
+            ]
+        ]
+    }
+}
