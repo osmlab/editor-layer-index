@@ -1,17 +1,18 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "UkraineCherkasy2015",
-        "name": "Ukraine - Cherkasy 2015",
+        "id": "UkraineCherkasy2021",
+        "name": "Ukraine - Cherkasy 2021",
         "type": "tms",
-        "url": "https://mgis.chmr.gov.ua/server/rest/services/base_map/orthophoto_2015/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://mgis.chmr.gov.ua/server/rest/services/base_map/orthophoto_2021/MapServer/tile/{zoom}/{y}/{x}",
         "category": "photo",
         "permission_osm": "implicit",
         "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
         "privacy_policy_url": "https://zakon.rada.gov.ua/laws/show/3792-12",
-        "start_date": "2015-04",
-        "end_date": "2015-05",
+        "start_date": "2021-04",
+        "end_date": "2021-05",
         "country_code": "UA",
+        "best": true,
         "max_zoom": 21,
         "min_zoom": 14,
         "attribution": {
