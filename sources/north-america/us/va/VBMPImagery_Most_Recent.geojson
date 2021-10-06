@@ -1,8 +1,8 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "VGIN-Imagery_WM",
-        "name": "Virginia Imagery Service - Most Recent",
+        "id": "VBMPImagery_Most_Recent",
+        "name": "VBMP Most Recent Imagery",
         "start_date": "2017",
         "end_date": "2020",
         "url": "https://gismaps.vdem.virginia.gov/arcgis/rest/services/VBMP_Imagery/MostRecentImagery_WGS/MapServer/WMTS/tile/1.0.0/VBMP_Imagery_MostRecentImagery_WGS/default/default028mm/{zoom}/{y}/{x}.jpg",
@@ -18,7 +18,7 @@
         "best": false,
         "valid-georeference": true,
         "description": "The most recently available VBMP orthoimagery for the Commonwealth of Virginia. Most areas were collected at a 1-ft ground sample distance (GSD), with some urban areas upgraded to 6-inch and 3-inch GSD.",
-        "license_url": "https://www.vaemergency.gov/media/vitavirginiagov/integrated-services/pdf/VBMP-Products-Use-and-Restrictions_revised_June2010.pdf",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Virginia/VBMP",
         "privacy_policy_url": "https://www.virginia.gov/privacy-policy/",
         "category": "photo"
     },
