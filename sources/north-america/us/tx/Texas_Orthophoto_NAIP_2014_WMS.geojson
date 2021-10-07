@@ -1,0 +1,132 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://data.tnris.org/collection/e7d2ccee-5288-4257-85bc-e4a2babf91ee",
+        "id": "texas_naip_2014_wms",
+        "type": "wms",
+        "name": "Texas NAIP Imagery 2014",
+        "url": "https://imagery.tnris.org/server/services/NAIP/NAIP14_NCCIR_1m/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2014",
+        "end_date": "2014",
+        "country_code": "US",
+        "attribution": {
+            "url": "https://data.tnris.org/collection/e7d2ccee-5288-4257-85bc-e4a2babf91ee",
+            "text": "United States Department of Agriculture (USDA). Texas NAIP Imagery, 2014-10-31",
+            "required": false
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "category": "historicphoto",
+        "privacy_policy_url": "https://tnris.org/site-policies/#privacy-and-security-policy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -99.99854390000,
+                    34.56018340000
+                ],
+                [
+                    -95.55654502453,
+                    33.99257450647
+                ],
+                [
+                    -93.89679027134,
+                    33.61039304449
+                ],
+                [
+                    -93.98468089634,
+                    32.04103124103
+                ],
+                [
+                    -93.41613841587,
+                    31.02505269211
+                ],
+                [
+                    -93.74531484297,
+                    29.57268254375
+                ],
+                [
+                    -96.50492070332,
+                    28.23158511753
+                ],
+                [
+                    -97.36942054453,
+                    26.95467452634
+                ],
+                [
+                    -97.04866958924,
+                    25.80530249434
+                ],
+                [
+                    -99.07341778890,
+                    26.32559221139
+                ],
+                [
+                    -100.76599193149,
+                    29.02531904433
+                ],
+                [
+                    -102.33154368930,
+                    29.84338922630
+                ],
+                [
+                    -103.13354564242,
+                    28.88112103669
+                ],
+                [
+                    -104.28878742220,
+                    29.28831477845
+                ],
+                [
+                    -104.72697839350,
+                    29.94815782859
+                ],
+                [
+                    -104.72696778796,
+                    30.23535241761
+                ],
+                [
+                    -106.53450082091,
+                    31.78456647831
+                ],
+                [
+                    -106.75767043939,
+                    31.78457253947
+                ],
+                [
+                    -106.75766067978,
+                    32.04385536686
+                ],
+                [
+                    -106.61848436611,
+                    32.04385159755
+                ],
+                [
+                    -103.11949492759,
+                    32.04375683439
+                ],
+                [
+                    -103.09544343487,
+                    36.50045758762
+                ],
+                [
+                    -103.05798056071,
+                    36.54268645422
+                ],
+                [
+                    -100.00042146824,
+                    36.54222227302
+                ],
+                [
+                    -99.99854390000,
+                    34.56018340000
+                ]
+            ]
+        ]
+    }
+}

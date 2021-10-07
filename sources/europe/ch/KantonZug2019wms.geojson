@@ -1,0 +1,72 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "GIS Kanton Zug",
+            "required": true
+        },
+        "available_projections": [
+            "EPSG:3857",
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:21781",
+            "EPSG:2056"
+        ],
+        "best": true,
+        "country_code": "CH",
+        "start_date": "2019",
+        "end_date": "2019",
+        "id": "Zug-2019-wms",
+        "name": "Kanton Zug (Walchwil und Zug (Alpli)) 2019",
+        "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
+        "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
+        "type": "wms",
+        "description": "Orthofoto für das Gebiet von Walchwil und Zug (Alpli). Die Befliegung für das genannte Orthofoto fand am 29. März 2019 statt.",
+        "category": "photo",
+        "url": "https://services.geo.zg.ch/ows/Orthofotos?LAYERS=zg.orthofoto_2019_kt_zg&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 6
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.493873,
+                    47.115287
+                ],
+                [
+                    8.512098,
+                    47.133727
+                ],
+                [
+                    8.555821,
+                    47.129004
+                ],
+                [
+                    8.586553,
+                    47.079537
+                ],
+                [
+                    8.573994,
+                    47.07633
+                ],
+                [
+                    8.518619,
+                    47.085072
+                ],
+                [
+                    8.518619,
+                    47.085072
+                ],
+                [
+                    8.518386,
+                    47.085318
+                ],
+                [
+                    8.493873,
+                    47.115287
+                ]
+            ]
+        ]
+    }
+}

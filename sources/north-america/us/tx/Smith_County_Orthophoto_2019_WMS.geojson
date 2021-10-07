@@ -1,0 +1,146 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://data.tnris.org/collection/38f1b2e7-6fc7-4357-80a4-1ee33d7abaaf",
+        "id": "smith_county_2019_wms",
+        "type": "wms",
+        "name": "TX: Smith County Imagery 2019",
+        "url": "https://imagery.tnris.org/server/services/Smith_County/SmithCo_2020_NCCIR_6in/ImageServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "start_date": "2019",
+        "end_date": "2019",
+        "country_code": "US",
+        "best": true,
+        "attribution": {
+            "url": "https://data.tnris.org/collection/38f1b2e7-6fc7-4357-80a4-1ee33d7abaaf",
+            "text": "Smith County (Smith). Smith County Imagery, 2019-12-11",
+            "required": false
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "category": "photo",
+        "privacy_policy_url": "https://tnris.org/site-policies/#privacy-and-security-policy",
+        "min_zoom": 3
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -94.98,
+                    32.19
+                ],
+                [
+                    -94.98,
+                    32.13
+                ],
+                [
+                    -95.49,
+                    32.13
+                ],
+                [
+                    -95.49,
+                    32.28
+                ],
+                [
+                    -95.46,
+                    32.28
+                ],
+                [
+                    -95.46,
+                    32.34
+                ],
+                [
+                    -95.49,
+                    32.34
+                ],
+                [
+                    -95.49,
+                    32.37
+                ],
+                [
+                    -95.52,
+                    32.37
+                ],
+                [
+                    -95.52,
+                    32.4
+                ],
+                [
+                    -95.55,
+                    32.4
+                ],
+                [
+                    -95.55,
+                    32.43
+                ],
+                [
+                    -95.58,
+                    32.43
+                ],
+                [
+                    -95.58,
+                    32.46
+                ],
+                [
+                    -95.61,
+                    32.46
+                ],
+                [
+                    -95.61,
+                    32.7
+                ],
+                [
+                    -95.55,
+                    32.7
+                ],
+                [
+                    -95.55,
+                    32.67
+                ],
+                [
+                    -95.52,
+                    32.67
+                ],
+                [
+                    -95.52,
+                    32.64
+                ],
+                [
+                    -95.43,
+                    32.64
+                ],
+                [
+                    -95.43,
+                    32.61
+                ],
+                [
+                    -95.28,
+                    32.61
+                ],
+                [
+                    -95.28,
+                    32.58
+                ],
+                [
+                    -95.07,
+                    32.58
+                ],
+                [
+                    -95.07,
+                    32.55
+                ],
+                [
+                    -94.98,
+                    32.55
+                ],
+                [
+                    -94.98,
+                    32.19
+                ]
+            ]
+        ]
+    }
+}

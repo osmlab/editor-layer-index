@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Zuerich-zh_luftbild2013-wms",
+    "name": "Stadt Zürich Luftbild 2013",
+    "type": "wms",
+    "category": "photo",
+    "license_url": "https://data.stadt-zuerich.ch/dataset/geo_orthofoto_2013_stadt_zuerich___fruehling",
+    "privacy_policy_url": "https://www.stadt-zuerich.ch/portal/de/index/footer/rechtliche_hinweise.html",
+    "url": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Orthofoto_2013_Stadt_Zuerich___Fruehling?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OP_2013_STZH.tif&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "start_date": "2013",
+    "end_date": "2013",
+    "country_code": "CH",
+    "available_projections": [
+      "CRS:84",
+      "EPSG:3857",
+      "EPSG:2056",
+      "EPSG:4326"
+    ],
+    "attribution": {
+      "text": "Stadt Zürich Open Government Data"
+    },
+    "max_zoom": 21
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          8.446241,
+          47.4414285
+        ],
+        [
+          8.6317826,
+          47.4396756
+        ],
+        [
+          8.6289506,
+          47.3137707
+        ],
+        [
+          8.4438079,
+          47.3155484
+        ],
+        [
+          8.446241,
+          47.4414285
+        ]
+      ]
+    ]
+  }
+}

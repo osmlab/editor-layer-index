@@ -1,0 +1,194 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://ge.ch/sitg/media/sitg/files/documents/conditions_generales_dutilisation_des_donnees_et_produits_du_sitg_en_libre_acces_-_revision_09.2020.pdf",
+        "privacy_policy_url": "https://ge.ch/sitg/conditions-utilisation",
+        "start_date": "2016",
+        "end_date": "2016",
+        "id": "Geneve-orthophoto-2016",
+        "url": "https://ge.ch/sitgags2/services/RASTER/ORTHOPHOTOS_2016/MapServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "attribution": {
+            "text": "Système d'information du territoire à Genève (SITG)",
+            "required": true
+        },
+        "type": "wms",
+        "best": false,
+        "category": "photo",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2056",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "name": "Canton de Génève, Orthophoto 2016 (5cm) (SITG)",
+        "country_code": "CH",
+        "min_zoom": 5
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    6.12,
+                    46.12
+                ],
+                [
+                    6.08,
+                    46.12
+                ],
+                [
+                    6.08,
+                    46.14
+                ],
+                [
+                    6.06,
+                    46.14
+                ],
+                [
+                    6.06,
+                    46.12
+                ],
+                [
+                    5.94,
+                    46.12
+                ],
+                [
+                    5.94,
+                    46.16
+                ],
+                [
+                    5.96,
+                    46.16
+                ],
+                [
+                    5.96,
+                    46.18
+                ],
+                [
+                    5.94,
+                    46.18
+                ],
+                [
+                    5.94,
+                    46.22
+                ],
+                [
+                    5.96,
+                    46.22
+                ],
+                [
+                    5.96,
+                    46.24
+                ],
+                [
+                    6.02,
+                    46.24
+                ],
+                [
+                    6.02,
+                    46.26
+                ],
+                [
+                    6.08,
+                    46.26
+                ],
+                [
+                    6.08,
+                    46.3
+                ],
+                [
+                    6.1,
+                    46.3
+                ],
+                [
+                    6.1,
+                    46.34
+                ],
+                [
+                    6.14,
+                    46.34
+                ],
+                [
+                    6.14,
+                    46.32
+                ],
+                [
+                    6.16,
+                    46.32
+                ],
+                [
+                    6.16,
+                    46.38
+                ],
+                [
+                    6.22,
+                    46.38
+                ],
+                [
+                    6.22,
+                    46.36
+                ],
+                [
+                    6.26,
+                    46.36
+                ],
+                [
+                    6.26,
+                    46.28
+                ],
+                [
+                    6.32,
+                    46.28
+                ],
+                [
+                    6.32,
+                    46.22
+                ],
+                [
+                    6.3,
+                    46.22
+                ],
+                [
+                    6.3,
+                    46.2
+                ],
+                [
+                    6.26,
+                    46.2
+                ],
+                [
+                    6.26,
+                    46.18
+                ],
+                [
+                    6.22,
+                    46.18
+                ],
+                [
+                    6.22,
+                    46.16
+                ],
+                [
+                    6.2,
+                    46.16
+                ],
+                [
+                    6.2,
+                    46.14
+                ],
+                [
+                    6.16,
+                    46.14
+                ],
+                [
+                    6.16,
+                    46.12
+                ],
+                [
+                    6.12,
+                    46.12
+                ]
+            ]
+        ]
+    }
+}
