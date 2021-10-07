@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ -120.615, -85.0511 ], [ -121.0602, -84.7506 ], [ -115.2085, -84.1075 ], [ -93.6269, -84.0855 ], [ -85.4314, -84.0794 ], [ -85.0513, -84.2365 ], [ -87.4598, -85.0511 ], [ -120.615, -85.0511 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "http://maps.imagico.de/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "ASTER imagery from 2001-2009 from the Ohio Range, positional accuracy in parts is bad (true color with estimated blue)",
+        "end_date": "2009",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-aster_anti2",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Ohio Range",
+        "max_zoom": 10,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "start_date": "2001",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti2&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

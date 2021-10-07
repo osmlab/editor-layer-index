@@ -1,0 +1,49 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://data.stadt-zuerich.ch/dataset/geo_orthofoto_2011_stadt_zuerich___fruehling",
+        "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
+        "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+        "start_date": "2011",
+        "end_date": "2011",
+        "id": "Zuerich-zh_luftbild2011-tms",
+        "url": "https://mapproxy.osm.ch/tiles/zh_luftbild2011/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+        "attribution": {
+            "text": "Stadt Zürich Luftbild 2011",
+            "required": false
+        },
+        "type": "tms",
+        "category": "photo",
+        "name": "Stadt Zürich Luftbild 2011",
+        "country_code": "CH",
+        "max_zoom": 21,
+        "min_zoom": 4
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.446241,
+                    47.4414285
+                ],
+                [
+                    8.6317826,
+                    47.4396756
+                ],
+                [
+                    8.6289506,
+                    47.3137707
+                ],
+                [
+                    8.4438079,
+                    47.3155484
+                ],
+                [
+                    8.446241,
+                    47.4414285
+                ]
+            ]
+        ]
+    }
+}

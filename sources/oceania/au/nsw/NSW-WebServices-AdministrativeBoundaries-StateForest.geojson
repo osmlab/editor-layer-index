@@ -1,0 +1,188 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LPI_NSW_Administrative_Boundaries_StateForest",
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Administrative Boundaries State Forest",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
+        ],
+        "url": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=2&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE",
+        "overlay": true,
+        "max_zoom": 21,
+        "min_zoom": 6,
+        "country_code": "AU",
+        "type": "wms",
+        "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico",
+        "category": "other"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    159.0033934,
+                    -31.4876656
+                ],
+                [
+                    159.0378887,
+                    -31.7055793
+                ],
+                [
+                    159.3109766,
+                    -31.8595241
+                ],
+                [
+                    159.3727807,
+                    -31.7789183
+                ],
+                [
+                    159.1744327,
+                    -31.4373999
+                ],
+                [
+                    159.0033934,
+                    -31.4876656
+                ]
+            ],
+            [
+                [
+                    140.998648,
+                    -28.9989332
+                ],
+                [
+                    148.9451961,
+                    -28.9948656
+                ],
+                [
+                    149.4856226,
+                    -28.5615019
+                ],
+                [
+                    150.2991369,
+                    -28.5337256
+                ],
+                [
+                    151.0954036,
+                    -28.7179218
+                ],
+                [
+                    151.3943629,
+                    -28.9797786
+                ],
+                [
+                    151.9894069,
+                    -28.7355674
+                ],
+                [
+                    151.9290401,
+                    -28.4983634
+                ],
+                [
+                    152.4924635,
+                    -28.2353023
+                ],
+                [
+                    153.5790657,
+                    -28.1415563
+                ],
+                [
+                    153.6969246,
+                    -28.6498321
+                ],
+                [
+                    153.2584694,
+                    -30.9735401
+                ],
+                [
+                    152.7543708,
+                    -32.508492
+                ],
+                [
+                    151.9087862,
+                    -33.0553457
+                ],
+                [
+                    151.2583364,
+                    -34.3808144
+                ],
+                [
+                    151.0144178,
+                    -35.1156752
+                ],
+                [
+                    150.4615355,
+                    -36.1202975
+                ],
+                [
+                    150.4127518,
+                    -36.6178579
+                ],
+                [
+                    149.9784687,
+                    -37.5069984
+                ],
+                [
+                    148.2013511,
+                    -36.805656
+                ],
+                [
+                    148.0791803,
+                    -36.8171632
+                ],
+                [
+                    147.8854228,
+                    -36.0901856
+                ],
+                [
+                    147.6902879,
+                    -36.0441802
+                ],
+                [
+                    146.828442,
+                    -36.188678
+                ],
+                [
+                    145.2348401,
+                    -35.9849909
+                ],
+                [
+                    144.8445703,
+                    -36.2149218
+                ],
+                [
+                    144.5193454,
+                    -36.1295974
+                ],
+                [
+                    143.2021846,
+                    -35.1317425
+                ],
+                [
+                    142.4785593,
+                    -34.811943
+                ],
+                [
+                    140.9937045,
+                    -34.070169
+                ],
+                [
+                    141.0025961,
+                    -34.0197399
+                ],
+                [
+                    140.998648,
+                    -28.9989332
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "Kanton Schaffhausen, Relief 2013",
+        "i18n": false,
+        "type": "wms",
+        "url": "https://wms.geo.sh.ch/raster?LAYERS=Relief_2013&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 10,
+        "license_url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-252309-DE.html",
+        "privacy_policy_url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Impressum/Datenschutz-1711122-DE.html",
+        "id": "Kanton-Schaffhausen-DSM-2013",
+        "country_code": "CH",
+        "default": false,
+        "best": false,
+        "start_date": "2013",
+        "end_date": "2013",
+        "category": "elevation",
+        "available_projections": [
+            "EPSG:2056",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:21781"
+        ],
+        "attribution": {
+            "text": "Kanton Schaffhausen, Relief 2013",
+            "required": true
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.6,
+                    47.56
+                ],
+                [
+                    8.6,
+                    47.52
+                ],
+                [
+                    8.52,
+                    47.52
+                ],
+                [
+                    8.52,
+                    47.6
+                ],
+                [
+                    8.44,
+                    47.6
+                ],
+                [
+                    8.44,
+                    47.64
+                ],
+                [
+                    8.36,
+                    47.64
+                ],
+                [
+                    8.36,
+                    47.72
+                ],
+                [
+                    8.4,
+                    47.72
+                ],
+                [
+                    8.4,
+                    47.76
+                ],
+                [
+                    8.44,
+                    47.76
+                ],
+                [
+                    8.44,
+                    47.8
+                ],
+                [
+                    8.52,
+                    47.8
+                ],
+                [
+                    8.52,
+                    47.84
+                ],
+                [
+                    8.68,
+                    47.84
+                ],
+                [
+                    8.68,
+                    47.8
+                ],
+                [
+                    8.76,
+                    47.8
+                ],
+                [
+                    8.76,
+                    47.76
+                ],
+                [
+                    8.88,
+                    47.76
+                ],
+                [
+                    8.88,
+                    47.72
+                ],
+                [
+                    8.92,
+                    47.72
+                ],
+                [
+                    8.92,
+                    47.64
+                ],
+                [
+                    8.76,
+                    47.64
+                ],
+                [
+                    8.76,
+                    47.68
+                ],
+                [
+                    8.68,
+                    47.68
+                ],
+                [
+                    8.68,
+                    47.64
+                ],
+                [
+                    8.64,
+                    47.64
+                ],
+                [
+                    8.64,
+                    47.56
+                ],
+                [
+                    8.6,
+                    47.56
+                ]
+            ]
+        ]
+    }
+}
