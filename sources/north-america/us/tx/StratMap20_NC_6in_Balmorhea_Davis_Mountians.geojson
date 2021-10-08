@@ -15,6 +15,11 @@
         "privacy_policy_url": "https://www.tnris.org/site-policies/#privacy-and-security-policy",
         "country_code": "US",
         "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
         "start_date": "2020-01-05",
         "end_date": "2020-01-05",
         "description": "StratMap lidar & orthoimagery project covers the Balmorhea & Davis Mountain State Parks and their surrounding areas in the state of Texas",
@@ -62,7 +67,7 @@
                     30.64153064307
                 ]
             ],
-			[
+            [
                 [
                     -103.74921815872,
                     30.95199699716
