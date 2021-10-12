@@ -1,16 +1,16 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "RIGIS_Aerial_Photo_Latest",
+        "id": "RIGIS_Aerial_Photo_21s",
         "attribution": {
             "url": "http://www.planning.ri.gov/planning-areas/demographics/aerial-photographs.php",
             "text": "RIGIS",
             "required": false
         },
-        "name": "Rhode Island Aerial Photo (Fall 2020)",
-        "url": "https://maps.edc.uri.edu/rigis/services/IMG/RI_202009_RGB_3in_web/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
-        "max_zoom": 14,
-        "license_url": "https://wiki.openstreetmap.org/wiki/Rhode_Island#Data_Sources",
+        "name": "Rhode Island Aerial Photo (Spring 2021)",
+        "url": "https://maps.edc.uri.edu/rigis/rest/services/IMG/RI_202103_RGB_3in_web/ImageServer/exportImage?f=image&format=jpgpng&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Rhode_Island/RIGIS_Aerial_Photo",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
@@ -18,11 +18,13 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "start_date": "2020",
-        "end_date": "2020",
-        "description": "Aerial Photo for the State of Rhode Island",
+        "start_date": "2021-03-12",
+        "end_date": "2021-04-26",
+        "description": "Aerial Photo for the State of Rhode Island (Spring 2021)",
         "category": "photo",
-        "privacy_policy_url": "https://web.uri.edu/enrollment/gdpr-privacy-notice/"
+        "privacy_policy_url": "https://web.uri.edu/enrollment/gdpr-privacy-notice/",
+        "logo-image": "http://data.rigis.org/assets/docs/Logos/RIGIS_logo_200x72.gif",
+        "valid-georeference": false
     },
     "geometry": {
         "type": "Polygon",
