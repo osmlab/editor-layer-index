@@ -5,9 +5,10 @@
         "attribution": {
             "url": "https://hub-cookcountyil.opendata.arcgis.com/",
             "text": "Cook County GIS",
-            "required": false
+            "required": true
         },
         "name": "Cook County Orthoimagery 2020",
+        "icon": "https://www.cookcountyil.gov/sites/g/files/ywwepo161/files/cook_county_logo_0.png",
         "url": "https://gis.cookcountyil.gov/imagery/rest/services/CookOrtho2020/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Illinois/Cook_Central",

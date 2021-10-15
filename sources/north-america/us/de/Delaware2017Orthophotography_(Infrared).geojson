@@ -3,11 +3,12 @@
     "properties": {
         "id": "DE_Orthophotography_2017_Infrared",
         "attribution": {
-            "url": "https://www.arcgis.com/home/item.html?id=d01dd7a445034b37aea4d55031c98005",
+            "url": "https://firstmap.delaware.gov",
             "text": "Surdex Corp, FirstMap",
-            "required": false
+            "required": true
         },
         "name": "Delaware 2017 Orthophotography (Infrared)",
+        "icon": "https://firstmap.delaware.gov/CLF4/agency/img/logo/agencyLogoSquare.png",
         "url": "https://imagery.firstmap.delaware.gov/imagery/services/DE_Imagery/DE_Imagery_2017/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=DE_Imagery_2017:Infrared&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "min_zoom": 4,
         "max_zoom": 19,
