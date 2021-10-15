@@ -3,6 +3,7 @@
   "properties": {
     "id": "MassGIS-LIDAR-Shaded-Relief",
     "name": "MassGIS LIDAR Shaded Relief",
+    "icon": "https://www.mass.gov/files/styles/organization_logo/public/2017-05/massgis_logo_401x300.png",
     "category": "elevation",
     "type": "tms",
     "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/Shaded_Relief_LiDAR/MapServer/tile/{zoom}/{y}/{x}",
@@ -11,8 +12,8 @@
     "min_zoom": 6,
     "max_zoom": 19,
     "attribution": {
-        "url": "https://docs.digital.mass.gov/dataset/massgis-data-lidar-terrain-data",
-        "text": "MassGIS LIDAR",
+        "url": "https://www.mass.gov/info-details/massgis-data-lidar-terrain-data",
+        "text": "MassGIS",
         "required": false
     },
     "valid-georeference": true,

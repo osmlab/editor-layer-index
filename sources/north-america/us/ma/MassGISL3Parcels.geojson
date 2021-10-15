@@ -3,6 +3,7 @@
     "properties": {
         "id": "MassGIS-L3-Parcels",
         "name": "MassGIS L3 Parcels",
+        "icon": "https://www.mass.gov/files/styles/organization_logo/public/2017-05/massgis_logo_401x300.png",
         "type": "tms",
         "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGIS_Level3_Parcels/MapServer/tile/{zoom}/{y}/{x}",
         "country_code": "US",
@@ -10,8 +11,8 @@
         "min_zoom": 15,
         "max_zoom": 20,
         "attribution": {
-          "url": "https://docs.digital.mass.gov/dataset/massgis-data-standardized-assessors-parcels",
-          "text": "MassGIS L3 Parcels",
+          "url": "https://www.mass.gov/info-details/massgis-data-property-tax-parcels",
+          "text": "MassGIS",
           "required": false
         },
         "valid-georeference": true,
