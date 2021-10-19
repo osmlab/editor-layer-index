@@ -2,17 +2,14 @@
     "type": "Feature",
     "properties": {
         "description": "2016 Ortophotos, Moldova, Scale 1:5000, 20cm, true colours, covers practically the entire territory of the Republic of Moldova, except some areas from the east part of Moldova. [Moldova-map.md server]",
-        "id": "MoldovaMap-2020_Ortofoto_2016_RM",
+        "id": "MoldovaMap-2016_Ortofoto_Moldova",
         "name": "Moldova Ortophoto (2016)",
-        "type": "wmts",
-        "url": "https://moldova-map.md/geoserver/gwc/service/wmts?layer=orthophoto:Ortofoto_2016_RM&style=&tilematrixset=EPSG:900913&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=EPSG:900913:{zoom}&TileCol={x}&TileRow={y}",
+        "type": "tms",
+        "url": "http://moldova-map.md/geoserver/gwc/service/wmts?layer=orthophoto:Ortofoto_2016_RM&style=&tilematrixset=EPSG:900913&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=EPSG:900913:{zoom}&TileCol={x}&TileRow={y}",
         "country_code": "MD",
         "icon": "http://geoportalinds.gov.md/geonetwork/images/logos/dac139d4-147d-49a2-8ebe-370d6d603327.png",
         "best": true,
         "permission_osm": "explicit",
-        "available_projections": [
-            "EPSG:900913"
-        ],
         "end_date": "2016",
         "category": "photo",
 		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/e3bfccb6-259a-4753-bb56-545d277f9bc3",
