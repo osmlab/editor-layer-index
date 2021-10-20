@@ -13,7 +13,9 @@
         "name": "OpenStreetMap (German Style)",
         "type": "tms",
         "category": "osmbasedmap",
-        "url": "https://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png"
+        "url": "https://{switch:a,b,c,d}.tile.openstreetmap.de/{zoom}/{x}/{y}.png",
+        "license_url": "https://openstreetmap.de/faq.html#wie_daten_nutzen",
+        "privacy_policy_url": "https://www.fossgis.de/datenschutzerkl%C3%A4rung/"
     },
     "type": "Feature"
 }
