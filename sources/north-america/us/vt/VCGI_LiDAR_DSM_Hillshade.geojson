@@ -1,71 +1,34 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "VT_Best_CLR",
+        "id": "VCGI_LiDAR_DSM_Hillshade",
         "attribution": {
-            "url": "https://vcgi.vermont.gov/data-and-programs/imagery-program",
-            "text": "Vermont Imagery Program, Vermont Center for Geographic Information",
+            "url": "https://vcgi.vermont.gov/data-and-programs/lidar-program",
+            "text": "Vermont Center for Geographic Information",
             "required": false
         },
-        "name": "VIP Orthoimagery - Best of Color",
-        "icon": "https://vcgi.vermont.gov/sites/vcgiupdate/files/images//medium_header_logo2_1200x514_web.jpg",
-        "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/EGC_services/IMG_VCGI_CLR_WM_CACHE/ImageServer/WMTS/tile/1.0.0/EGC_services_IMG_VCGI_CLR_WM_CACHE/default/default028mm/{zoom}/{y}/{x}",
+        "name": "VCGI LiDAR - DSM Hillshade",
+        "icon": "https://vcgi.vermont.gov/sites/vcgiupdate/files/images/medium_header_logo2_1200x514_web.jpg",
+        "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/EGC_services/IMG_VCGI_LIDARDSMHILLSHD_SP_CACHE_v1/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 20,
         "license_url": "https://maps.vcgi.vermont.gov/opendata/VT_Open_GeoData_Policy_final1.0.pdf",
         "country_code": "US",
-        "type": "tms",
-        "start_date": "2016",
-        "end_date": "2020",
-        "description": "The latest available natural color orthoimagery for the State of Vermont",
-        "category": "photo",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:32145"
+        ],
+        "start_date": "2013",
+        "end_date": "2017",
+        "description": "Vermont statewide hillshade composite of the earth's surface from the digital surface model. Sun angle is multidirectional",
+        "category": "elevation",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.vermont.gov/policies/privacy"
     },
     "geometry": {
         "type": "Polygon",
             "coordinates": [
-            [
-                [
-                    -71.43517614926,
-                    45.06333663444
-                ],
-                [
-                    -73.40589166140,
-                    45.06383677888
-                ],
-                [
-                    -73.40325770784,
-                    45.15867400909
-                ],
-                [
-                    -72.68816471558,
-                    45.16299180766
-                ],
-                [
-                    -72.61703791570,
-                    45.16461823240
-                ],
-                [
-                    -72.61741878938,
-                    45.15914876070
-                ],
-                [
-                    -72.38790750964,
-                    45.15960266722
-                ],
-                [
-                    -72.00006009671,
-                    45.15006206648
-                ],
-                [
-                    -71.43516538475,
-                    45.16351754572
-                ],
-                [
-                    -71.43517614926,
-                    45.06333663444
-                ]
-            ],
             [
                 [
                     -73.35653901553,
