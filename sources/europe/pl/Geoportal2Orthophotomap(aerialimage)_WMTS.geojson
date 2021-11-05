@@ -1,24 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Geoportal2-PL-aerial_image_WMS",
-        "name": "Geoportal 2: Orthophotomap (latest aerial imagery)",
+        "id": "Geoportal2-PL-aerial_image_WMTS",
+        "name": "Geoportal 2: Orthophotomap (latest aerial imagery) (WMTS)",
         "i18n": true,
-        "description": "Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.",
-        "type": "wms",
-        "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?LAYERS=Raster&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "description": "Usługa przeglądania (Web Map Tile Service,WMTS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych.",
+        "type": "tms",
+        "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMTS/StandardResolution?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTOFOTOMAPA&STYLE=default&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}",
         "best": true,
         "country_code": "PL",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:2176",
-            "EPSG:2177",
-            "EPSG:2178",
-            "EPSG:2179",
-            "EPSG:2180",
-            "EPSG:3857",
-            "EPSG:4326"
-        ],
         "attribution": {
             "text": "Główny Urząd Geodezji i Kartografii",
             "url": "https://www.geoportal.gov.pl/",
@@ -28,10 +18,6 @@
         "terms-of-use-text": "https://geoportal.gov.pl/web/guest/regulamin",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
-        "custom-http-headers": {
-            "header-name": "User-Agent",
-            "header-value": "Mozilla/5.0 (JOSM)"
-        },
         "privacy_policy_url": "https://www.geoportal.gov.pl/ciasteczka-cookies-",
         "category": "photo"
     },
