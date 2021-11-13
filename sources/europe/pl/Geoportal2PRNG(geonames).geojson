@@ -3,6 +3,7 @@
     "properties": {
         "id": "Geoportal2-PL-prng",
         "name": "Geoportal 2: PRNG (geo names)",
+        "i18n": true,
         "type": "wms",
         "url": "https://mapy.geoportal.gov.pl/wss/service/pub/guest/G2_PRNG_WMS/MapServer/WMSServer?LAYERS=PozostaleObiektyFizjograficzne,Hydrografia,PozostaleMiejscowosci,Wies,UksztaltowanieTerenu&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "overlay": true,

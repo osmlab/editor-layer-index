@@ -3,6 +3,7 @@
     "properties": {
         "id": "Siemianowice_Slaskie-buildings",
         "name": "Siemianowice Śląskie: Buildings",
+        "i18n": true,
         "type": "wms",
         "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,drogi,adresy,ulice&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "PL",

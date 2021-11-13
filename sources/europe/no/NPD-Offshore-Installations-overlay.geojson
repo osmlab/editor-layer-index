@@ -4,13 +4,11 @@
         "id": "npd-offshore",
         "name": "NPD Offshore Installations overlay",
         "type": "wms",
-        "url": "https://gis.npd.no/ogc/factmaps/2_0?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fclFixed,pplAll,fldByStatus&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://factmaps.npd.no/arcgis/services/FactMaps_ogc/3_0_WGS84_z32/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=30,55,58&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
             "EPSG:4326",
-            "EPSG:3857",
-            "EPSG:3034",
             "EPSG:4230",
             "EPSG:23029",
             "EPSG:23030",
@@ -20,23 +18,17 @@
             "EPSG:23034",
             "EPSG:23035",
             "EPSG:23036",
-            "EPSG:32629",
-            "EPSG:32630",
-            "EPSG:32631",
-            "EPSG:32632",
-            "EPSG:32633",
-            "EPSG:32634",
-            "EPSG:32635",
-            "EPSG:32636"
+            "EPSG:32632"
         ],
         "attribution": {
-            "url": "https://www.npd.no/no/Kart/Faktakart/",
+            "url": "https://www.npd.no/en/",
             "text": "© Oljedirektoratet"
         },
         "icon": "https://register.geonorge.no/data/organizations/870917732_od_liten.png",
         "max_zoom": 20,
         "min_zoom": 6,
         "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006333.html",
+        "privacy_policy_url": "https://www.npd.no/en/about-us/privacy-policy/",
         "description": "Production platforms and oil/natural gas fields on the Norwegian continental shelf",
         "category": "other"
     },

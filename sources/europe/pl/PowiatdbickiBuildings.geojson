@@ -97,6 +97,7 @@
         "id": "debicki-buildings",
         "max_zoom": 19,
         "name": "Powiat dębicki: Buildings",
+        "i18n": true,
         "type": "wms",
         "url": "https://debica.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,adresy,EBU,EBT,S&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "other"

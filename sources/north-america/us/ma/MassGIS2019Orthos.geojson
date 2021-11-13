@@ -3,6 +3,7 @@
   "properties": {
     "id": "MassGIS-2019-Orthos",
     "name": "MassGIS 2019 Orthos",
+    "icon": "https://www.mass.gov/files/styles/organization_logo/public/2017-05/massgis_logo_401x300.png",
     "category": "photo",
     "type": "tms",
     "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/USGS_Orthos_2019/MapServer/tile/{zoom}/{y}/{x}",
@@ -11,8 +12,8 @@
     "min_zoom": 7,
     "max_zoom": 20,    	      
     "attribution": {
-        "url": "https://docs.digital.mass.gov/dataset/massgis-data-usgs-color-ortho-imagery-2019",
-        "text": "MassGIS 2019 Orthos, 2019-04",
+        "url": "https://www.mass.gov/info-details/massgis-data-2019-aerial-imagery",
+        "text": "MassGIS",
         "required": false
     },
     "valid-georeference": true,
