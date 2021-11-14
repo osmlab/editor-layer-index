@@ -1,0 +1,93 @@
+{
+    "type": "Feature",
+    "properties": {
+        "description": "2011 Moldova Linemap Orthophoto, Scale 1:5000, 20cm, true colours, created for the experimental Linemap 2011 project, covers the central territory of the Republic of Moldova, including Chișinău Municipality.",
+        "id": "MoldovaMap-2011_Ortofoto_Linemap",
+        "name": "Moldova Linemap Orthophoto (2011)",
+        "type": "wms",
+        "url": "https://moldova-map.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:Orto_Linemap_2011&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "MD",
+        "icon": "http://geoportalinds.gov.md/geonetwork/images/logos/dac139d4-147d-49a2-8ebe-370d6d603327.png",
+        "permission_osm": "explicit",
+        "end_date": "2011",
+        "category": "historicphoto",
+		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/9cdd5e99-8c84-4be1-9d43-ba74cfdc8d7b",
+		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=126192",
+        "attribution": {
+            "url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/9cdd5e99-8c84-4be1-9d43-ba74cfdc8d7b",
+            "text": "© Agenţia Relaţii Funciare şi Cadastru a Republicii Moldova / Geoportal INDS / Chișinău Municipality Orthophoto 2014",
+            "required": true
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                        28.22887205134,
+                        46.59867883507
+                    ],
+                    [
+                        28.27926213750,
+                        46.59151493195
+                    ],
+                    [
+                        28.89958147412,
+                        46.76616285776
+                    ],
+                    [
+                        29.22103547208,
+                        46.85060145184
+                    ],
+                    [
+                        29.50426250813,
+                        46.91592052497
+                    ],
+                    [
+                        28.99514887892,
+                        47.68770224110
+                    ],
+                    [
+                        28.50862390902,
+                        47.54245834995
+                    ],
+                    [
+                        28.75188639397,
+                        47.19175398226
+                    ],
+                    [
+                        28.72234737794,
+                        47.18939238305
+                    ],
+                    [
+                        28.07770179283,
+                        46.98590166751
+                    ],
+                    [
+                        28.06032590105,
+                        46.95863176569
+                    ],
+                    [
+                        28.08117697119,
+                        46.87911410029
+                    ],
+                    [
+                        28.10724080886,
+                        46.80066787481
+                    ],
+                    [
+                        28.14720535996,
+                        46.78044347811
+                    ],
+                    [
+                        28.21323374873,
+                        46.61598769117
+                    ],
+                    [
+                        28.22887205134,
+                        46.59867883507
+                ]
+            ]
+        ]
+    }
+}
