@@ -12,8 +12,11 @@
         "name": "OpenTopoMap",
         "type": "tms",
         "category": "osmbasedmap",
-        "url": "https://{switch:a,b,c}.tile.opentopomap.org/{zoom}/{x}/{y}.png"
+        "url": "https://{switch:a,b,c}.tile.opentopomap.org/{zoom}/{x}/{y}.png",
+        "license_url": "https://opentopomap.org/about#verwendung",
+        "privacy_policy_url": "false"
     },
     "type": "Feature",
     "geometry": null
 }
+
