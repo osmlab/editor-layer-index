@@ -1,0 +1,107 @@
+{
+    "type": "Feature",
+    "properties": {
+        "category": "historicphoto",
+        "id": "gis-rijeka-2005",
+        "name": "gis-rijeka: Rijeka 2005 aerial imagery",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/rijeka.png",
+        "start_date": "2005",
+        "end_date": "2005",
+        "url": "http://gis01.rijeka.hr/geoserver/CKAN/wms?service=WMS&version=1.1.0&request=GetMap&layers=CKAN:Ortofoto_2005&styles=&bbox={bbox}&width={width}&height={height}&srs={proj}&format=image/png",
+        "permission_osm": "explicit",
+        "license_url": "http://opendefinition.org/licenses/cc-by/",
+        "privacy_policy_url": "https://www.rijeka.hr/teme-za-gradane/aktivno-gradanstvo/zastita-osobnih-podataka/",
+        "max_zoom": 20,
+        "best": false,
+        "country_code": "HR",
+        "type": "wms",
+        "attribution": {
+        	"required": true,
+            "text": "Sadrži podatke Geografskog informacijskog sustava Grada Rijeke",
+            "url": "http://data.rijeka.hr/hr/dataset/gis-grad-rijeka"
+        	}
+    },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.46934393876,
+                        45.39190427114
+                    ],
+                    [
+                        14.39233585541,
+                        45.39054005590
+                    ],
+                    [
+                        14.39261097008,
+                        45.37269965890
+                    ],
+                    [
+                        14.31688860610,
+                        45.37111015540
+                    ],
+                    [
+                        14.31817993432,
+                        45.33512336623
+                    ],
+                    [
+                        14.35642570193,
+                        45.33581799245
+                    ],
+                    [
+                        14.35669516283,
+                        45.32596621292
+                    ],
+                    [
+                        14.38485734698,
+                        45.32688199764
+                    ],
+                    [
+                        14.38472259969,
+                        45.31832357009
+                    ],
+                    [
+                        14.42564081597,
+                        45.31913686578
+                    ],
+                    [
+                        14.42568577665,
+                        45.31387014996
+                    ],
+                    [
+                        14.43368078267,
+                        45.31393332149
+                    ],
+                    [
+                        14.43426468761,
+                        45.30113965066
+                    ],
+                    [
+                        14.54911429668,
+                        45.30325633381
+                    ],
+                    [
+                        14.54785661037,
+                        45.33932260287
+                    ],
+                    [
+                        14.50940871621,
+                        45.33862802358
+                    ],
+                    [
+                        14.50824095126,
+                        45.37467171311
+                    ],
+                    [
+                        14.47001763592,
+                        45.37400911984
+                    ],
+                    [
+                        14.46934393876,
+                        45.39190427114
+                    ]
+                ]
+            }
+        }
+    ]
+}
