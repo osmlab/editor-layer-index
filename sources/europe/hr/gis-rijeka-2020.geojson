@@ -7,7 +7,7 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/rijeka.png",
         "start_date": "2020",
         "end_date": "2020",
-        "url": "http://gis01.rijeka.hr/geoserver/CKAN/wms?service=WMS&version=1.3.0&request=GetMap&layers=Ortofoto_2020&styles=&bbox={bbox}&width={width}&height={height}&format=image/jpeg",
+        "url": "http://gis01.rijeka.hr/geoserver/CKAN/wms?LAYERS=Ortofoto_2020&STYLES=raster&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "permission_osm": "explicit",
         "license_url": "https://imamopravoznati.org/request/grad_rijeka_koristenje_podataka#incoming-8517",
         "privacy_policy_url": "https://www.rijeka.hr/teme-za-gradane/aktivno-gradanstvo/zastita-osobnih-podataka/",
