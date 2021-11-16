@@ -19,7 +19,14 @@
             "required": true,
             "text": "Sadrži podatke Geografskog informacijskog sustava Grada Rijeke",
             "url": "http://data.rijeka.hr/hr/dataset/gis-grad-rijeka"
-        }
+        },
+        "available_projections": [
+            "EPSG:3035",
+            "EPSG:3765",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326"
+        ]
     },
     "geometry": {
         "type": "Polygon",
