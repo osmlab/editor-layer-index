@@ -4,12 +4,13 @@
         "id": "Ukraine-orto10000-2012",
         "name": "Ukraine - Orthophotomaps 2012",
         "type": "tms",
-        "url": "http://212.26.144.110/tile2/orto_10000/{zoom}/{x}/{-y}.jpg",
+        "url": "https://m{switch:1,2}.land.gov.ua/map/ortho10k_all/{zoom}/{x}/{-y}.jpg",
         "start_date": "2012",
         "end_date": "2012",
         "country_code": "UA",
-        "max_zoom": 16,
-        "description": "Works only from within Ukraine or with an Ukrainian proxy server.",
+        "min_zoom": 5,
+        "max_zoom": 15,
+        "description": "Orthophotomaps provided by the State Service of Ukraine for Geodesy, Cartography and Cadastre (StateGeoCadastre).",
         "category": "photo"
     },
     "geometry": {

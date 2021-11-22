@@ -97,6 +97,7 @@
         "available_projections": [
             "EPSG:2178",
             "EPSG:2180",
+            "EPSG:3857",
             "EPSG:4326"
         ],
         "country_code": "PL",
@@ -104,6 +105,7 @@
         "id": "stalowowolski-buildings",
         "max_zoom": 19,
         "name": "Powiat stalowowolski: Buildings",
+        "i18n": true,
         "type": "wms",
         "url": "https://stalowawola.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,adresy,budynki,centroidy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "other"
