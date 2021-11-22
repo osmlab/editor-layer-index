@@ -1,0 +1,131 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "Sobral Ortofoto 2017",
+        "type": "wms",
+        "category": "photo",
+        "url": "http://geoserver.sobral.ce.gov.br:80/geoserver/Ceara/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=prdAracatiacu,prdJaibaras,prdSobral,prdTaperuaba&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_Dados_Sobral.png",
+        "id": "Sobral_Ortophoto_2017",
+        "description": "Aerial imagery in Sobral (main city and Aracatiaçu, Jaibaras, and Taperuaba districts).",
+        "country_code": "BR",
+        "start_date": "2017",
+        "end_date": "2017",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:31984"
+        ],
+        "attribution": {
+            "url": "http://seuma.sobral.ce.gov.br/",
+            "text": "Prefeitura Municipal de Sobral"
+        },
+        "best": true,
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",       
+        "coordinates": [
+            [
+                [
+                  -40.50980765904,
+                  -3.77468332569
+                ],
+                [
+                  -40.50252389045,
+                  -3.79200086921
+                ],
+                [
+                  -40.49770468512,
+                  -3.79281131625
+                ],
+                [
+                  -40.48340951426,
+                  -3.76906490356
+                ],
+                [
+                  -40.48798505191,
+                  -3.76544480179
+                ],
+                [
+                  -40.49759638837,
+                  -3.76385087161
+                ],
+                [
+                  -40.43429710107,
+                  -3.67993565196
+                ],
+                [
+                  -40.35718981584,
+                  -3.73094485693
+                ],
+                [
+                  -40.31701161369,
+                  -3.73310630687
+                ],
+                [
+                  -40.29881775987,
+                  -3.67820658303
+                ],
+                [
+                  -40.07826236073,
+                  -3.831444051
+                ],
+                [
+                  -40.0336260418,
+                  -3.86326325654
+                ],
+                [
+                  -40.03736309186,
+                  -3.878821599
+                ],
+                [
+                  -40.0084478599,
+                  -3.91220797943
+                ],
+                [
+                  -39.97233046094,
+                  -4.03094069934
+                ],
+                [
+                  -39.98375620114,
+                  -4.0663594521
+                ],
+                [
+                  -39.96171781274,
+                  -4.08624914766
+                ],
+                [
+                  -39.91428383671,
+                  -4.09964369539
+                ],
+                [
+                  -39.966265843,
+                  -4.03050858384
+                ],
+                [
+                  -40.00785179459,
+                  -3.90475331541
+                ],
+                [
+                  -40.00893519527,
+                  -3.87687672054
+                ],
+                [
+                  -40.03373811429,
+                  -3.86237531059
+                ],
+                [
+                  -40.38754062951,
+                  -3.61060319939
+                ],
+                [
+                  -40.50980765904,
+                  -3.77468332569
+                ]
+            ]
+        ]
+    }
+}
