@@ -32,11 +32,11 @@ he:
       attribution:
         text: תנאים ומשוב
       description: ESRI תצלומי אוויר.
-      name: ESRI תצלומי אוויר
+      name: תצלומי אוויר ESRI
     EsriWorldImageryClarity:
       attribution:
         text: תנאים ומשוב
-      description: מידע מESRI שיתכן ויותר ברור ומדיוק משכבת הבררת מחדל
+      description: תמונות ארכיון מ־Esri שעשויות להיות ברורות ומדויקות יותר משכבת בררת המחדל.
       name: ESRI תצלומי אוויר (Clarity Beta)
     MAPNIK:
       attribution:
@@ -50,7 +50,7 @@ he:
       name: Mapbox לווייני
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‮ CC-BY-SA
+        text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‏ CC-BY-SA
       name: 'חוקר OSM: כתובות'
     OSM_Inspector-Geometry:
       attribution:
@@ -74,39 +74,33 @@ he:
       name: 'חוקר OSM: ניתוב'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, תורמי OpenStreetMap,‮ CC-BY-SA
+        text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‏ CC-BY-SA
       name: 'חוקר OSM: תיוג'
     SPW_ORTHO_LAST:
       name: הצילום האווירי העדכני ביותר של SPW(allonie)
     SPW_PICC:
       name: SPW(allonie) צילום PICC אלפא נומרי
-    US-TIGER-Roads-2014:
-      description: מידע ממשלתי מבוסס על המיפקד אוכלוסין מ2006. תוויות מופיעות ברמות תקריב של 16 ומעלה.
-      name: מידע טופולוגי ארה"ב  2014
     US-TIGER-Roads-2017:
-      description: 'צהוב = מידע ציבורי מממשלת ארה"ב
-
-        אדום = מידע שלא נמצא בOSM'
+      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא ב־OpenStreetMap
       name: מידע טופולוגי ארה"ב  2017
     US-TIGER-Roads-2018:
-      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא בOSM
+      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא ב־OpenStreetMap
       name: TIGER Roads 2018
     US-TIGER-Roads-2019:
       description: צהוב = נתונים לרשות הציבור באדיבות משרד האוכלוסין של ארה״ב. אדום = לא נמצאו נתונים ב־OpenStreetMap
       name: דרכי TIGER‏ 2019
     USDA-NAIP:
-      description: צילומי ה־DOQQ העדכניים ביותר מבית תכנית הצילום החקלאית הלאומית (NAIP) לגבולותיה של כל מדינה בארה״ב.
       name: תכנית הצילום החקלאית הלאומית
     US_Forest_Service_roads_overlay:
       description: 'כביש מהיר: תחימה ירוקה = ללא סיווג. תחימה חומה = מסלול. פני שטח: חצץ = מילוי חום בהיר, אספלט = שחור, מרוצף = אפור, אדמה =לבן, בטון = כחול, דשא = ירוק. עונתי = פסים לבנים'
       name: שכבת דרכי יערות בארה״ב
     UrbISOrtho2016:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       attribution:
@@ -118,11 +112,11 @@ he:
       name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -138,7 +132,7 @@ he:
       name: 'שבילים מסומנים: אופני הרים'
     Waymarked_Trails-Skating:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: החלקה'
     Waymarked_Trails-Winter_Sports:
       attribution:
@@ -147,7 +141,7 @@ he:
     basemap.at:
       attribution:
         text: basemap.at
-      description: ' מפת אוסטריה מבוסס על מידע ממשלתי'
+      description: מפת אוסטריה המבוססת על מידע ממשלתי.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
@@ -162,7 +156,7 @@ he:
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
-      description: צילומית עם תיאוג גאו-מרחבי מ1940 ע"י  Balaton Limnological Institute.
+      description: צילומית עם תיאוג גאו-מרחבי מ1940 ע״י Balaton Limnological Institute.
       name: EUFAR Balaton אורטפוטו
     finds.jp_KBN_2500:
       attribution:
@@ -178,7 +172,6 @@ he:
       attribution:
         text: © עיריית גותנבורג, CC0
       description: אורתופוטו לעיריית גותנברג
-      name: אורתופוטו של גותנברג
     gsi.go.jp_airphoto:
       attribution:
         text: GSI יפן
@@ -192,13 +185,8 @@ he:
     gsi.go.jp_std_map:
       attribution:
         text: GSI יפן
-      description: יפן GSI מפת סטנדרט, כיסוי נרחב
-      name: יפן GSI מפת סטנדרט
-    helsingborg-orto:
-      attribution:
-        text: מחוז הלסינגבורג
-      description: אורתופוטו ממחוז הלסינגבורג 2015, CC0 רישיון
-      name: אורתופוטו של הלסינגבורג
+      description: מפה תקנית של GSI יפן. עם כיסוי נרחב.
+      name: מפה תקנית של GSI יפן
     kalmar-orto-2014:
       attribution:
         text: © עיריית קלמר
@@ -206,14 +194,14 @@ he:
       name: Kalmar אורטופוטו צפוני 2018
     kalmar-orto-2016:
       attribution:
-        text: © Kalmar municipality
+        text: © עיריית Kalmar
       description: Kalmar אורטופוטו חוף דרומי 2018
       name: Kalmar אורטופוטו דרומי 2018
     kalmar-orto-2018:
       attribution:
-        text: © Kalmar municipality
+        text: © עיריית Kalmar
       description: Kalmar אורטופוטו עירוני2018
-      name: Kalmar אורטופוטו עירוני2018
+      name: Kalmar אורטופוטו עירוני 2018
     kelkkareitit:
       attribution:
         text: ‎© Kelkkareitit.fi
@@ -222,7 +210,7 @@ he:
     lantmateriet-orto1960:
       attribution:
         text: ‎© Lantmäteriet, CC0
-      description: פסיפס של אורטופוטו שוודי מ1955-1965, יתכן ויש תמונות יותר חדשות או ישנות
+      description: פסיפס של אורטופוטו שוודי מ־1955-1965, חלק מהתמונות עשויות להיות יותר חדשות או ישנות.
       name: סריקה של מפה כלכלית 1960
     lantmateriet-orto1975:
       attribution:
@@ -276,11 +264,6 @@ he:
       attribution:
         text: מתנדבי ‎© OpenStreetMap,‏ CC-BY-SA
       name: OpenStreetMap (סגנון גרמני)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: סריקה של ´מפות כלכליות´ סביב 1950-1980
-      name: סריקה של ´מפות כלכליות´ סביב 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, נתונים באדיבות מתנדבי ©OpenStreetMap
@@ -301,7 +284,6 @@ he:
     stockholm-orto:
       attribution:
         text: מחוז שטוקהולם CC0
-      description: צילומי אורתופוטו מעיריית שטוקהולם 2016, רישיון CC0
       name: אורתופוטו שטוקהולם
     susono_shizuoka_jp_orthophoto:
       attribution:
@@ -340,11 +322,6 @@ he:
         text: ‎© Trafikverket, CC0
       description: 'פרטים מורחבים של NVDB השבדית: סימון כבישים ראשיים, האטת תנועה, אזור מנוחה, תחנת אוטובוס, גשר, מנהרה, מצלמת מהירות'
       name: תוספות לרשת כבישים Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: ‎© Trafikverket, CC0
-      description: שמות רחובות שוודיים NVDB
-      name: שמות רחובות Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: ‎© Trafikverket, CC0

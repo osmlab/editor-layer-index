@@ -80,9 +80,6 @@ ru:
       name: Самые свежие аэрофото SPW(allonie)
     SPW_PICC:
       name: Цифровые аэрофото SPW(allonie)
-    US-TIGER-Roads-2014:
-      description: На масштабах 16+ — общедостпуные картографические данные от US Census. На меньших масштабах — только изменения с 2006 за вычетом изменений, включённых в OpenStreetMap
-      name: Дороги TIGER 2014
     US-TIGER-Roads-2017:
       description: Жёлтым = общедоступные картографические данные от US Census. Красным = данные, отсутствующие в OpenStreetMap
       name: Дороги TIGER 2017
@@ -93,7 +90,6 @@ ru:
       description: Жёлтым = общедоступные картографические данные от US Census. Красным = данные, отсутствующие в OpenStreetMap
       name: TIGER Roads 2019
     USDA-NAIP:
-      description: Последние DOQQ (цифровые ортофото) от National Agriculture Imagery Program (NAIP) для всех штатов США.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Дороги: зелёный контур = без классификации; коричневый = просёлочные. Покрытие: гравий = светло-коричневый цвет; асфальт = чёрный; другое покрытие = серый; земля = белый; бетон = синий; трава = зелёный. Сезонные дороги = белые штрихи'
@@ -169,14 +165,13 @@ ru:
       name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
-        text: © Gothenburg municipality, CC0
+        text: © Администрация Гётеборга, CC0
       description: Обзорная карта Гётеборга. Содержит обобщенные данные о землепользовании, коммуникациях, гидрографии, зданиях, названия улиц и адреса, а также административное деление.
-      name: Gothenburg City map
+      name: Карта города Гётеборга
     gothenburg-ortho:
       attribution:
-        text: © Gothenburg municipality, CC0
-      description: Ортофото для Gothenburg
-      name: Ортофотоплан Гётеборга
+        text: © Администрация Гётеборга, CC0
+      description: Ортофото для администрации Гётеборга
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -192,11 +187,6 @@ ru:
         text: GSI Japan
       description: Стандартная карта Japan GSI. Большое покрытие.
       name: Стандартная карта Japan GSI
-    helsingborg-orto:
-      attribution:
-        text: © Муниципалитет Helsingborg
-      description: Ортофотопланы от муниципалитета Helsingborg 2016, общественное достояние
-      name: Ортофотоплан Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © Муниципалитет Kalmar
@@ -274,11 +264,6 @@ ru:
       attribution:
         text: © Участники OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (немецкий стиль)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Сканы "Economic maps" ca. 1950–1980
-      name: Экономическая карта Lantmäteriet 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, данные © участники OpenStreetMap
@@ -299,7 +284,6 @@ ru:
     stockholm-orto:
       attribution:
         text: © Муниципалитет Стокгольма, CC0
-      description: Ортофотопланы от муниципалитета Стокгольма 2016, лицензия CC0
       name: Ортофотоплан Стокгольма
     susono_shizuoka_jp_orthophoto:
       attribution:
@@ -338,11 +322,6 @@ ru:
         text: © Trafikverket, CC0
       description: 'Шведский NVDB расширенный: Дорожная разметка, места для отдыха, остановки общественного транспорта, мосты, тоннели, камеры контроля скорости'
       name: Trafikverket Дорожная сеть расширенный
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Шведский NVDB названия улиц
-      name: Названия улиц Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
