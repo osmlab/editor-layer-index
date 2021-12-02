@@ -1,14 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "NC_Latest_Ortho_Natural",
+        "id": "NC_Latest_Ortho_CIR",
         "attribution": {
             "url": "https://www.nconemap.gov/pages/imagery",
             "text": "NCCGIA, NC911 Board",
             "required": false
         },
-        "name": "NC OneMap Latest Orthoimagery (Natural Color)",
-        "url": "https://services.nconemap.gov/secure/rest/services/Imagery/Orthoimagery_latest_cached/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "name": "NC OneMap Latest Orthoimagery (Infrared)",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/nc/NCOneMap.png",
+        "url": "https://services.nconemap.gov/secure/rest/services/Imagery/Orthoimagery_CIR/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "min_zoom": 2,
         "max_zoom": 20,
         "license_url": "https://www.arcgis.com/sharing/rest/content/items/e95636c37a0e4a47994e42cb2409be9f/info/metadata/metadata.xml?format=default&output=html",
@@ -18,9 +19,9 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2021",
+        "start_date": "2018",
         "end_date": "2021",
-        "description": "The most recent 6-inch resolution natural color orthoimagery for the State of North Carolina",
+        "description": "The most recent 6-inch resolution infrared orthoimagery for the State of North Carolina",
         "category": "photo",
         "privacy_policy_url": "https://www.nconemap.gov/pages/terms",
         "best": true,
