@@ -39,6 +39,8 @@ it:
       description: Le immagini ESRI potrebbero essere migliori e più precise di quelle impostate di default.
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
+      attribution:
+        text: © collaboratori OpenStreetMap, CC-BY-SA
       description: Il livello base di OpenStreetMap.
       name: OpenStreetMap (Standard)
     Mapbox:
@@ -78,9 +80,6 @@ it:
       name: SPW(allonie) le immagini aeree più recenti
     SPW_PICC:
       name: SPW(allonie) PICC  immagini numeriche
-    US-TIGER-Roads-2014:
-      description: A livelli di zoom maggiori di 16, dati in pubblico dominio di US Census. A zoom minori solo cambiamenti a partire dal 2006 meno le modifiche già incorporate in OpenStreetMap
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Giallo = Dati pubblici forniti da enti statali Statunitensi.
       name: TIGER Roads 2017
@@ -91,7 +90,6 @@ it:
       description: Giallo = Dati delle mappe di dominio pubblico dal US Census. Rosso = Dati non trovati in OpenStreetMap
       name: TIGER Roads 2019
     USDA-NAIP:
-      description: L’anno più recente di DOQQs dal programma nazionale delle immagini per l’agricoltura (NAIP) per ciascuno stato degli Stati Uniti contigui.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Strada: bordo verde = non classificata. Bordo marrone = carrareccia. Manto in ghiaia = colore diriempimento marrone chiaro, asfaltato = nero, pavimentato = grigio, terra = bianco,  cemento = blu, erboso = verde. Stagionale = con barre bianche'
@@ -155,16 +153,6 @@ it:
         text: basemap.at
       description: Annotazioni sovrapposte fornite da basemap.at.
       name: Sovrimpresso basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Livello superficie fornito da basemap.at.
-      name: Superficie basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Livello terreno fornito da basemap.at.
-      name: Terreno basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR di Balaton 2010
@@ -173,8 +161,17 @@ it:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Buono per la tracciatura ma un po’ vecchio.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Buone per il tracciamento ma un po’ più vecchie
       name: GSI KIBAN 2500 Giappone
+    gothenburg-citymap:
+      attribution:
+        text: © comune di Göteborg, CC0
+      description: La mappa della città è una mappa panoramica che descrive Göteborg. Contiene informazioni generali su terreni, comunicazioni, idrografia, edifici, nomi di strada e numeri civici, divisione amministrativa e altro testo di orientamento.
+      name: Mappa della città di Göteborg
+    gothenburg-ortho:
+      attribution:
+        text: © comune di Göteborg, CC0
+      description: Ortofoto del comune di Göteborg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI del Giappone
@@ -190,11 +187,6 @@ it:
         text: GSI Giappone
       description: GSI Giappone mappa standard. Ampia copertura.
       name: GSI Giappone mappa standard
-    helsingborg-orto:
-      attribution:
-        text: © comune di Helsingborg
-      description: Ortofoto del comune di Helsingborg del 2016, pubblico dominio
-      name: Ortofoto di Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © comune di Kalmar
@@ -244,6 +236,21 @@ it:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenPT Map (sovrapposta)
+    openrailwaymap:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Immagini sovrapposte che mostrano l'infrastruttura ferroviaria basata sui dati OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Immagini sovrapposte che mostrano i limiti di velocità ferroviaria basati sui dati OpenStreetMap
+      name: OpenRailwayMap limiti di velocità
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Immagini sovrapposte che mostrano segnali ferroviari basati su dati OpenStreetMap
+      name: OpenRailwayMap segnali ferroviari
     osm-gps:
       attribution:
         text: © OpenStreetMap contributors
@@ -257,11 +264,6 @@ it:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenStreetMap (Stile tedesco)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Digitalizzazione di “Economic maps” ca. 1950–1980
-      name: Cartina economica Lantmäteriet 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
@@ -282,8 +284,12 @@ it:
     stockholm-orto:
       attribution:
         text: © comune di Stoccolma, CC0
-      description: Ortofoto del comune di Stoccolma del 2016, licenza CC0
       name: Ortofoto di Stoccolma
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofoto della città di Susono
+      description: Le foto aeree rilasciate come open data dalla Città di Susono.
+      name: Ortofoto della città di Susono
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
@@ -292,6 +298,10 @@ it:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Mappe © Thunderforest, Data © OpenStreetMap contributors
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -312,13 +322,12 @@ it:
         text: © Trafikverket, CC0
       description: 'Dettagli extra su NVDB svedese: numero di riferimento della strada, fermata autobus, tunnel, autovelox'
       name: Rete stradale extra di Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Nomi delle strade NVDB della Svezia
-      name: Nomi stradali di Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Rete stradale NVDB svedese con diverse opzioni per gli strati della mappa
       name: Opzioni della rete stradale di Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Comune di Breslavia
+      name: 'Breslavia: mappe ortofoto 2018 (immagini aeree)'
