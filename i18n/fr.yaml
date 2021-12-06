@@ -40,12 +40,12 @@ fr:
       name: Images mondiales Esri (clarifiées) bêta
     MAPNIK:
       attribution:
-        text: © Les contributeurs et contributrices OpenStreetMap, CC-BY-SA 2.0
+        text: © contributeurs OpenStreetMap, CC-BY-SA 2.0
       description: Couche OpenStreetMap par défaut
       name: OpenStreetMap (Standard)
     Mapbox:
       attribution:
-        text: Images satellite DigitalGlobe premium
+        text: Termes et commentaires
       description: Images satellite et aérienne
       name: 'Satellite Mapbox '
     OSM_Inspector-Addresses:
@@ -55,7 +55,7 @@ fr:
     OSM_Inspector-Geometry:
       attribution:
         text: © Geofabrik GmbH, contributeurs OpenStreetMap, CC-BY-SA
-      name: 'OSM Inspector: Geometrie'
+      name: 'OSM Inspector: Géométrie'
     OSM_Inspector-Highways:
       attribution:
         text: © Geofabrik GmbH, contributeurs OpenStreetMap, CC-BY-SA
@@ -80,9 +80,6 @@ fr:
       name: Imagerie aérienne SPW(allonie) la plus récente
     SPW_PICC:
       name: Imagerie numérique PICC SPW(allonie)
-    US-TIGER-Roads-2014:
-      description: Au niveau de zoom 16+, carte du domaine public issue du recensement américain. A des niveaux de zooms inférieur, les changements depuis 2006, moins les changements déjà incorporés dans OpenStreetMap
-      name: Données géographiques et topologiques intégrées et encodées 2014
     US-TIGER-Roads-2017:
       description: Le jaune correspond aux données des cartes du domaine public issues du recensement américain, le rouge à des données non trouvées dans OpenStreetMap
       name: Données géographiques et topologiques intégrées et encodées 2017
@@ -93,34 +90,33 @@ fr:
       description: Jaune = données cartographiques du domaine public issues du recensement américain. Rouge = données non présentes dans OpenStreetMap
       name: TIGER Roads 2019
     USDA-NAIP:
-      description: L'année la plus récente de DOQQ du programme d'imagerie nationale pour l'agriculture (NAIP) pour chaque état des États-Unis contigus.
       name: Programme d'imagerie national pour l'agriculture
     US_Forest_Service_roads_overlay:
       description: 'Voies : en vert route non classifiée, en marron piste. Surface : les graviers sont représentés par un remplissage marron, l''asphalte par du noir, les pavés par du gris, la terre par du blanc, le béton par du bleu, l''herbe par du vert. Les voies saisonnières ont des barres blanches.'
       name: Surcouche des routes forestières états-uniennes
     UrbISOrtho2016:
       attribution:
-        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: Réalisé avec Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: Réalisé avec Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       attribution:
-        text: Réalisé avec les moyens de Brussels UrbIS®© - Distribution & droits CIRB
+        text: Réalisé avec Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2018
     UrbISOrtho2019:
       attribution:
-        text: Réalisé avec les moyens d'UrbIS®© Bruxelles - Distribution & Droits CIRB
+        text: Réalisé avec Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
-        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: Réalisé avec Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
       attribution:
-        text: Financé par Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: Réalisé avec Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -157,16 +153,6 @@ fr:
         text: basemap.at
       description: Surcouche d'annotations fournie par basemap.at.
       name: Surcouche basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Couche de surface fournie par basemap.at.
-      name: Surface basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Couche terrain fournie par basemap.at.
-      name: Terrain basemap.at
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -175,13 +161,17 @@ fr:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Bonnes données pour tracer des routes, mais un peu vieilles.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Bonnes données pour tracer des routes, mais un peu vieilles.
       name: GSI KIBAN 2500 japonais
     gothenburg-citymap:
       attribution:
         text: © Municipalité de Göteborg, CC0
       description: La carte décrit de manière globale la ville de Göteborg. Elle contient des informations générales sur le terrain, les communications, l'hydrographie, les bâtiments, les adresses et les noms de rues, les divisions administratives.
       name: Carte de la ville de Göteborg
+    gothenburg-ortho:
+      attribution:
+        text: © Municipalité de Göteborg, CC0
+      description: Orthophoto pour la municipalité de Göteborg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japon
@@ -197,11 +187,6 @@ fr:
         text: GSI Japon
       description: Carte GSI standard du Japon. Bonne couverture.
       name: Carte GSI standard du Japon
-    helsingborg-orto:
-      attribution:
-        text: © Municipalité d'Helsingborg
-      description: Orthophotos de la municipalité d'Helsingborg 2016, domaine public
-      name: Orthophoto d'Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © Kalmar municipality
@@ -251,6 +236,21 @@ fr:
       attribution:
         text: © contributeurs OpenStreetMap, CC-BY-SA
       name: OpenPT Map (couche)
+    openrailwaymap:
+      attribution:
+        text: 'Rendu : OpenRailwayMap, © données : contributeurs OpenStreetMap'
+      description: Surcouche d'imagerie montrant l'infrastructure des voies ferrées dans les données OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendu : OpenRailwayMap, © données : contributeurs OpenStreetMap'
+      description: Surcouche d'imagerie montrant les limites de vitesse des voies ferrées à partir des données OpenStreetMap
+      name: Vitesses maximums autorisées basées sur OpenRailwayMap
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendu : OpenRailwayMap, © données : contributeurs OpenStreetMap'
+      description: Surcouche d'imagerie montrant la signalisation ferrée à partir des données OpenStreetMap
+      name: Signalisation ferroviaire basée sur OpenRailwayMap
     osm-gps:
       attribution:
         text: © contributeurs OpenStreetMap
@@ -264,11 +264,6 @@ fr:
       attribution:
         text: © contributeurs OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (style allemand)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Numérisation de « Economic maps » de 1950-1980
-      name: Carte économique (historique) de Lantmäteriet entre 1950 et 1980
     qa_no_address:
       attribution:
         text: Simon Poole, données © contributeurs OpenStreetMap
@@ -289,16 +284,24 @@ fr:
     stockholm-orto:
       attribution:
         text: © Municipalité de Stockholm, CC0
-      description: Orthophotos de la municipalité de Stockholm 2016, licence CC0
       name: Orthophoto de Stockholm
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Orthophoto de la ville de Susono
+      description: Les photos aériennes ont été publiées en données ouvertes par la Ville de Susono.
+      name: Orthophoto de la ville de Susono
     tf-cycle:
       attribution:
-        text: Maps © Thunderforest, Data © OpenStreetMap contributors
+        text: Maps © Thunderforest, data © contributeurs OpenStreetMap
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: Cartes © Thunderforest, données © contributeurs OpenStreetMap
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Cartes © Thunderforest, données © contributeurs OpenStreetMap
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -319,13 +322,12 @@ fr:
         text: © Trafikverket, CC0
       description: 'Détails supplémentaires pour la NVDB suédoise : numérotation des routes, ralentisseurs, aires de repos, arrêts de bus, tunnels, radars'
       name: Suppléments au réseau routier Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Noms des rues de la NVDB suédoise
-      name: Noms des rues du Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Réseau routier de la NVDB suédoise avec plusieurs possibilités pour les couches
       name: Options pour le réseau routier Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław : Ortho 2018 (imagerie aérienne)'

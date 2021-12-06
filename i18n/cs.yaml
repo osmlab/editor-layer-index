@@ -7,6 +7,7 @@ cs:
     AGIV10cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
+      name: 10cm letecké snímky Vlámska od AIV 2013–2015
     AGIVFlandersGRB:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -14,12 +15,19 @@ cs:
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
+      name: Digitální výškový model AIV II s mnohosměrovým stínováním svahů 0,25 m
     AIV_DHMV_II_SVF_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
+      name: Digitální výškový model AIV II s faktorem zobrazení 0,25 m
     Bing:
       description: Satelitní a letecké snímky.
       name: Letecké snímky Bing
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 bez mraků – https://s2maps.eu – od společnosti EOX IT Services GmbH (obsahuje upravená data Copernicus Sentinel 2017 a 2018)
+      description: Dodatečně upravené snímky satelitu Sentinel.
+      name: eox.at 2018 bez mraků
     EsriWorldImagery:
       attribution:
         text: Podmínky použití a zpětná vazba
@@ -31,6 +39,8 @@ cs:
       description: Archivní snímky Esri, které mohou být čistší a přesnější jak výchozí vrstva.
       name: Světové snímky Esri (Clarity) Beta
     MAPNIK:
+      attribution:
+        text: © Přispěvatelé OpenStreetMap, CC-BY-SA 2.0
       description: Výchozí vrstva OpenStreetMap.
       name: OpenStreetMap (standardní)
     Mapbox:
@@ -65,20 +75,22 @@ cs:
     OSM_Inspector-Tagging:
       attribution:
         text: © Geofabrik GmbH, přispěvatelé OpenStreetMap, CC-BY-SA
-      name: 'OSM Inspektor: Štítkování'
+      name: 'OSM Inspektor: Značkování'
     SPW_ORTHO_LAST:
       name: Nejaktuálnější snímky SPW(allonie)
     SPW_PICC:
       name: PICC numerické snímky SPW(allonie)
-    US-TIGER-Roads-2014:
-      description: Na úrovni zvětšení 16+ získáte údaje o mapě ve veřejné doméně z amerického sčítání lidu. Při nižších přiblíženích dochází pouze k změnám od roku 2006, beze změn již zahrnutých do OpenStreetMap
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Žlutá = data z veřejně dostupné mapy z amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
       description: Žlutá = Veřejně přístupná data ze sčítání USA. Červená = Data nenalezena v OpenStreetMap
       name: Silnice TIGER 2018
+    US-TIGER-Roads-2019:
+      description: Žlutá = data z veřejně dostupné mapy amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
+      name: Silnice TIGER 2019
+    USDA-NAIP:
+      name: Národní program snímkování zemědělství
     US_Forest_Service_roads_overlay:
       description: 'Vozovka: Zelené okraje = neklasifikovaná. Hnědé okraje = cesta. Povrch: Štěrk = světle hnědá výplň, asfalt = černá, dlažba = šedá, zemina = bílá, beton = modrá, tráva = zelená. Sezónní = bílé čáry'
       name: Vrstva lesních cest USA
@@ -94,6 +106,10 @@ cs:
       attribution:
         text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Realizováno Brussels UrbIS®© - Distribuce & Copyright CIRB
@@ -130,50 +146,110 @@ cs:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Vrstva ortofoto poskytnuta basemap.at. "Následník" geoimage.at.
+      description: Vrstva ortofoto poskytnuta basemap.at. „Následník“ geoimage.at.
       name: Ortofoto basemap.at
     basemap.at-overlay:
       attribution:
         text: basemap.at
       description: Překrytí anotací poskytuje basemap.at.
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
+      name: Překryv basemap.at
     eufar-balaton:
       attribution:
         text: Ortofoto EUFAR Balaton 2010
+      description: Fotografie se zeměpisnými souřadnicemi od Balaton Limnological Institute z roku 1940.
       name: Ortofoto EUFAR Balaton
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 přes finds.jp. Dobrá pro odvozování dat, ale trochu starší.
       name: GSI KIBAN 2500 Japonsko
+    gothenburg-citymap:
+      attribution:
+        text: © oblast Gothenburg, licence CC0
+      description: Plán města je přehledová mapa popisující Gothenburg. Obsahuje základní informace o oblasti, komunikacích, hydrologii, budovách, adresách a názvech ulic, administrativních částech a další orientační text.
+      name: Plán města Gothenburg
+    gothenburg-ortho:
+      attribution:
+        text: © oblast Gothenburg, licence CC0
+      description: Letecké snímky oblasti Gothenburg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
+      description: Letecké snímky Japonska od GSI. Ne zcela vyladěné, ale trochu novější, případně  s jiným pokrytím než snímky Japonska (GSI).
+      name: Letecké snímky Japonska (GSI)
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Bezešvé fotosnímky Japonska (GSI)
+      description: Bezešvé snímky japonska od GSI. Kolekce nejnovějších snímků GSI, po neštěstí a další.
+      name: Bezešvé snímky Japonska (GSI)
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japonsko
+      description: Standardní mapa Japonska (GSI). Rozsáhlé pokrytí.
+      name: Standardní mapa Japonska (GSI)
+    kalmar-orto-2014:
+      attribution:
+        text: © oblast Kalmar
+      description: Letecké snímky severního pobřeží oblasti Kalmar 2014
+      name: Letecké snímky Kalmar sever 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © oblast Kalmar
+      description: Letecké snímky jižního pobřeží oblasti Kalmar 2016
+      name: Letecké snímky Kalmar jih 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © oblast Kalmar
+      description: Letecké snímky urbanizované oblasti Kalmar 2018
+      name: Letecké snímky města Kalmar 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
+      description: Nordické cesty pro sněžné skůtry z OSM  – Kelkkareitit.fi
+      name: Překryv nordických cest pro sněžné skůtry
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
+      description: Mozaika Švédských leteckých snímků z období 1955–1965. Může místy obsahovat starší, či novější snímky.
+      name: Historické letecké snímky Lantmäteriet z roku 1960
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
+      description: Mozaika Švédských leteckých snímků z období 1970–1980. V přípravě.
+      name: Historické letecké snímky Lantmäteriet z roku 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, licence CC0
+      description: Topografická mapa Švédska 1:50 000
+      name: Topografická mapa Lantmäteriet
+    linkoping-orto:
+      attribution:
+        text: © Oblast Linköping
+      description: Letecké snímky oblasti Linköping z roku 2010, otevřená data
+      name: Letecké snímky Linköping
     mapbox_locator_overlay:
       attribution:
         text: Podmínky použití a zpětná vazba
+      description: Zobrazuje významné prvky, které Vám pomohou s orientací.
       name: Překryv lokátoru
     openpt_map:
       attribution:
         text: © přispěvatelé OpenStreetMap, CC-BY-SA
       name: OpenPT Map (překryv)
+    openrailwaymap:
+      attribution:
+        text: 'Zobrazení: OpenRailwayMap, © Mapová data přispěvatelé OpenStreetMap'
+      description: Překryvná vrstva zobrazuje železniční infrastrukturu podle dat OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Zobrazení: OpenRailwayMap, © Mapová data přispěvatelé OpenStreetMap'
+      description: Překryvná vrstva zobrazuje železniční rychlostní limity podle dat OpenStreetMap
+      name: Maximální rychlosti OpenRailwayMap
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Zobrazení: OpenRailwayMap, © Mapová data přispěvatelé OpenStreetMap'
+      description: Překryvná vrstva zobrazuje železniční návěsti podle dat OpenStreetMap
+      name: Návěstidla OpenRailwayMap
     osm-gps:
       attribution:
         text: © Přispěvatelé OpenStreetMap
@@ -187,12 +263,10 @@ cs:
       attribution:
         text: © Přispěvatelé OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (německý styl)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
     qa_no_address:
       attribution:
         text: Simon Poole, data © přispěvatelé OpenStreetMap
+      name: QA Žádná adresa
     skobbler:
       attribution:
         text: '© Dlaždice: skobbler, mapová data: přispěvatelé OpenStreetMap'
@@ -200,11 +274,15 @@ cs:
     skoterleder:
       attribution:
         text: © Skoterleder.org
+      description: Cesty pro sněžné skůtry
+      name: Mapa Švédska pro sněžné skůtry
     stamen-terrain-background:
       attribution:
         text: Mapové dlaždice od Stamen Design pod CC BY 3.0. Data od OpenStreetMap, pod ODbL
       name: Terén Stamen
     stockholm-orto:
+      attribution:
+        text: © oblast Stockholmu, licence CC0
       name: Ortofotomapy Stockholmu
     tf-cycle:
       attribution:
@@ -214,25 +292,36 @@ cs:
       attribution:
         text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
+      description: Švédská železniční síť, včetně vleček
       name: Železniční síť Trafikverket
     trafikverket-baninfo-option:
       attribution:
         text: © Trafikverket, CC0
+      description: Švédská železniční síť s několika možnostmi mapových vrstev
+      name: Volby železniční sítě Trafikverket
     trafikverket-vagnat:
       attribution:
         text: © Trafikverket, CC0
+      description: Švédská síť cest NVDB
       name: Silniční síť Trafikverket
     trafikverket-vagnat-extra:
       attribution:
         text: © Trafikverket, CC0
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      name: Názvy ulic Trafikverket
+      description: 'Švédská detailní mapa NVDB: dálnice, zklidňování dopravy, odpočivadla, autobusové zastávky, mosty, tunely, rychlostní radary'
+      name: Silniční síť Trafikverket extra
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
+      description: Švédská síť cest NVDB s několika možnostmi mapových vrstev
       name: Volby silniční sítě Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Magistrát města Vratislav
+      name: 'Vratislav: letecké snímky 2018'

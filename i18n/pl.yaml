@@ -22,7 +22,7 @@ pl:
       name: Cyfrowy model wysokościowy Flandrii AIV, 25 cm, widok z góry
     Bing:
       description: Zdjęcia satelitarne i lotnicze Bing.
-      name: Zdjęcia lotnicze Bing
+      name: Bing
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 bezchmurne – https://s2maps.eu, EOX IT Services GmbH (zawiera zmodyfikowane dane Copernicus Sentinel 2017 i 2018)
@@ -47,7 +47,7 @@ pl:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Mapbox.
-      name: Mapbox Satellite (satelitarne)
+      name: Mapbox (satelitarne i lotnicze)
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -80,9 +80,6 @@ pl:
       name: Najświeższe zdjęcia lotnicze SPW(allonie)
     SPW_PICC:
       name: Obrazowanie numeryczne SPW(allonie) PICC
-    US-TIGER-Roads-2014:
-      description: Na poziomie powiększenia 16+ są dane public domain od US Census. Na niższych poziomach powiększenia są tylko zmiany od 2006, ale bez zmian już włączonych do OpenStreetMap
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2017
@@ -93,7 +90,6 @@ pl:
       description: Żółty = Dane public domain z US Census Bureau. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2019
     USDA-NAIP:
-      description: Najnowszy rok DOQQ z Krajowego Programu Obrazowania Rolnictwa (NAIP) dla każdego sąsiadującego stanu w Stanach Zjednoczonych.
       name: Krajowy Program Obrazowania Rolnictwa
     US_Forest_Service_roads_overlay:
       description: 'Drogi:  Zielone obramowanie = czwartorzędna. Brązowe obramowanie = polna/leśna. Nawierzchnia: żwir = jasno-brązowe wypełnienie, asfalt = czarny, twarda = szary, grunt = biały, beton = niebieski, trawa = zielony. Dostępna sezonowo = białe paski'
@@ -150,23 +146,13 @@ pl:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Warstwa ortofotomapy dostarczana przez basemap.at. "Następca" obrazowania z serwisu geoimage.at.
+      description: Warstwa ortofotomapy dostarczana przez basemap.at. „Następca” zdjęć z serwisu geoimage.at.
       name: Ortofotomapa basemap.at
     basemap.at-overlay:
       attribution:
         text: basemap.at
       description: Nakładka z adnotacjami dostarczona przez basemap.at
       name: Nakładka basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Warstwa dostarczona przez basemap.at.
-      name: basemap.at (powierzchnia)
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Warstwa dostarczona przez basemap.at.
-      name: basemap.at (model wysokościowy)
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -175,26 +161,32 @@ pl:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 przez finds.jp. Dobra do odrysowywania, ale trochę starsza.
-      name: Japońska GSI KIBAN 2500
+      description: GSI Kiban 2500 przez aginfo.cgk.affrc.go.jp. Dobra do odrysowywania, ale trochę starsza.
+      name: Japan GSI – KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Gmina Göteborg, CC0
       description: Mapa miasta to mapa przeglądowa Göteborga. Zawiera ogólne informacje o gruntach, komunikacji, hydrografii, budynkach, adresach, nazwach ulic i podziale administracyjnym.
       name: Mapa Göteborga
+    gothenburg-ortho:
+      attribution:
+        text: © Gmina Göteborg, CC0
+      description: Ortofotomapa dla gminy Göteborg
     gsi.go.jp_airphoto:
       attribution:
-        text: GSI Japonia
+        text: GSI Japonia (国土地理院)
+      description: Zdjęcia lotnicze GSI (Urzędu ds. Informacji Geoprzestrzennej w Japonii). Nie w pełni zortorektyfikowane, ale trochę nowsze i różne od Ortofotomapy GSI.
+      name: Japan GSI – Zdjęcia lotnicze
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japonia (国土地理院)
+      description: Ortofotomapa GSI (Urzędu ds. Informacji Geoprzestrzennej w Japonii). Zbiór najnowszych zdjęć lotniczych, ortofotomap, zdjęć pokatastroficznych i innych.
+      name: Japan GSI – Ortofotomapa
     gsi.go.jp_std_map:
       attribution:
-        text: GSI Japonia
+        text: GSI Japonia (国土地理院)
       description: Standardowa mapa japońskiego GSI. Duże pokrycie.
-      name: Standardowa mapa japońskiego GSI
-    helsingborg-orto:
-      attribution:
-        text: © Urząd miasta Helsingborg
-      description: Ortofotografie z urzędu miejskiego Helsingborgu 2016, domena publiczna
-      name: Ortofotografia Helsingborga
+      name: Japan GSI – Standardowa mapa
     kalmar-orto-2014:
       attribution:
         text: © Urząd miasta Kalmar
@@ -244,6 +236,21 @@ pl:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
       name: Mapa OpenPT (nakładka)
+    openrailwaymap:
+      attribution:
+        text: 'Wykonanie: OpenRailwayMap, © Dane mapy: autorzy OpenStreetMap'
+      description: Nakładka z infrastrukturą kolejową na podstawie danych OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Wykonanie: OpenRailwayMap, © Dane mapy: autorzy OpenStreetMap'
+      description: Nakładka z ograniczeniami prędkości kolei na podstawie danych OpenStreetMap
+      name: OpenRailwayMap – prędkości maksymalne
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Wykonanie: OpenRailwayMap, © Dane mapy: autorzy OpenStreetMap'
+      description: Nakładka z sygnałami kolejowymi na podstawie danych OpenStreetMap
+      name: OpenRailwayMap – sygnalizacja
     osm-gps:
       attribution:
         text: © autorzy OpenStreetMap
@@ -257,11 +264,6 @@ pl:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Styl niemiecki)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Skany "Economic maps" ok. 1950-1980
-      name: Mapa ekonomiczna Lantmäteriet 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, Dane © autorzy OpenStreetMap
@@ -282,8 +284,12 @@ pl:
     stockholm-orto:
       attribution:
         text: © Urząd miasta Sztokholm, CC0
-      description: Ortofotografie z urzędu miejskiego Sztokholmu 2016, licencja CC0
       name: Ortofotografia Sztokholmu
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofotomapa Susono
+      description: Zdjęcia lotnicze wydane przez miasto Susono jako otwarte dane.
+      name: Ortofotomapa Susono
     tf-cycle:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap
@@ -292,6 +298,10 @@ pl:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap
       name: Thunderforest Krajobraz
+    tf-outdoors:
+      attribution:
+        text: Mapy © Thunderforest; Data © autorzy OpenStreetMap
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -312,13 +322,12 @@ pl:
         text: © Trafikverket, CC0
       description: 'Dodatkowe szczegóły szwedzkiej NVDB: numery dróg, uspokojenia ruchu, miejsca odpoczynku, przystanki autobusowe, mosty, tunele, fotoradary'
       name: Dodatki sieci drogowej Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Szwedzkie nazwy ulic NVDB
-      name: Nazwy ulic Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Szwedzka sieć drogowa NVDV z kilkoma wariantami warstw mapy
       name: Opcje sieci drogowej Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Ortofotomapa Wrocławia 2018'
