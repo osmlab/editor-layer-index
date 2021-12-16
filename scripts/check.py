@@ -150,6 +150,10 @@ for filename in arguments.path:
         if missingparams:
             raise ValidationError("Missing parameter in {}: {}".format(filename, missingparams))
 
+        # Check for double brackets
+        if "{{" in source["properties"]["url"] or "}}" in source["properties"]["url"]:
+            raise ValidationError(f"{filename}: Double {{{{ or }}}} in URL: {source['properties']['url']}")
+
         # If we're not global we must have a geometry.
         # The geometry itself is validated by jsonschema
         if 'world' not in filename:
