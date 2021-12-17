@@ -633,7 +633,7 @@
         "max_zoom": 21,
         "name": "AIV Flanders preliminary aerial imagery",
         "type": "wms",
-        "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/ofw/wms?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OFW&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/ofw/wms?FORMAT=image/png&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OFW&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "available_projections": [
             "CRS:84",
             "EPSG:4326",
