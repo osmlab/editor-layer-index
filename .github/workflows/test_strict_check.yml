@@ -29,7 +29,7 @@ jobs:
 
       - name: Pytest libeli
         run: |
-          cd scripts && python -m pytest --cov=libeli tests
+          cd scripts && python -m pytest --cov-report term-missing --cov=libeli tests
 
       - name: Basic check
         run: find sources -name \*.geojson | xargs python scripts/check.py
