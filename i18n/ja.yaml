@@ -80,9 +80,6 @@ ja:
       name: SPW(allonie) 最新航空画像
     SPW_PICC:
       name: SPW(allonie) PICC numerical imagery
-    US-TIGER-Roads-2014:
-      description: ズームレベル16+ではUS Censusのパブリックドメインの地図データ。それ以下では2006年以降のOpenStreetmapに未投入の変更分のみ。
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
       name: TIGER Roads 2017
@@ -93,7 +90,6 @@ ja:
       description: 黄 = US Censusからのパブリックドメインの地図データ。赤 = penStreetMapに無いデータ。
       name: TIGER Roads 2019
     USDA-NAIP:
-      description: The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Highway: 緑枠 = unclassified.ブラウン枠 = track. Surface: gravel = ライトブラウン, Asphalt = 黒, paved = グレイ, ground =白, concrete = 青, grass = 緑. Seasonal = 白棒'
@@ -157,16 +153,6 @@ ja:
         text: basemap.at
       description: Annotation overlay provided by basemap.at.
       name: basemap.at Overlay
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Surface layer provided by basemap.at.
-      name: basemap.at Surface
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Terrain layer provided by basemap.at.
-      name: basemap.at Terrain
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -182,10 +168,14 @@ ja:
         text: © Gothenburg municipality, CC0
       description: The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.
       name: Gothenburg City map
+    gothenburg-ortho:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
     gsi.go.jp_airphoto:
       attribution:
         text: 国土地理院 簡易空中写真
-      description: 航空レーザー測量点検用写真をつなぎ合わせたもので、地理院オルソ画像とは撮影時期やカバー範囲が少し異なる部分もあるため、オルソ画像の代替として有用な場合がある。
+      description: 航空レーザー測量点検用写真をつなぎ合わせたもので、地理院シームレス画像の一部ではあるが、撮影時期やカバー範囲が少し異なる部分もあるため代替として有用な場合がある。
       name: 国土地理院 簡易空中写真
     gsi.go.jp_seamlessphoto:
       attribution:
@@ -197,11 +187,6 @@ ja:
         text: 国土地理院 標準地図
       description: ズームレベル5～18の日本全国とその周辺地域をカバー。地図画像なのでトレースしやすく、概してBingより位置精度が高いが、やや古い場合がある。
       name: 国土地理院 標準地図
-    helsingborg-orto:
-      attribution:
-        text: © Helsingborg municipality
-      description: Orthophotos from the municipality of Helsingborg 2016, public domain
-      name: Helsingborg Orthophoto
     kalmar-orto-2014:
       attribution:
         text: © Kalmar municipality
@@ -251,6 +236,21 @@ ja:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenPT Map (オーバーレイ)
+    openrailwaymap:
+      attribution:
+        text: 'レンダリング: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: OpenStreetMapデータをベースに鉄道インフラを表示するオーバーレイ画像
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'レンダリング: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: OpenStreetMapデータをベースに鉄道の速度制限を表示するオーバーレイ画像
+      name: OpenRailwayMap 最高速度
+    openrailwaymap-signalling:
+      attribution:
+        text: 'レンダリング: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: OpenStreetMapデータをベースに鉄道信号機を表示するオーバーレイ画像
+      name: OpenRailwayMap 鉄道信号機
     osm-gps:
       attribution:
         text: © OpenStreetMap contributors
@@ -264,11 +264,6 @@ ja:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenStreetMap (ドイツスタイル)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Scan of "Economic maps" ca. 1950–1980
-      name: Lantmäteriet Economic Map 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
@@ -289,8 +284,12 @@ ja:
     stockholm-orto:
       attribution:
         text: © Stockholm municipality, CC0
-      description: Orthophotos from the municipality of Stockholm 2016, CC0 license
       name: Stockholm Orthophoto
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: 裾野市オルソ写真
+      description: 裾野市によりオープンデータとして公開されている航空写真
+      name: 裾野市オルソ写真
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
@@ -299,6 +298,10 @@ ja:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
       name: Thunderforest Landscape
+    tf-outdoors:
+      attribution:
+        text: Maps © Thunderforest, Data © OpenStreetMap contributors
+      name: Thunderforest アウトドア
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -319,13 +322,12 @@ ja:
         text: © Trafikverket, CC0
       description: 'Swedish NVDB extra details: Highway reference, traffic calming, rest area, bus stop, bridge, tunnel, speed camera'
       name: Trafikverket Road Network extra
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Swedish NVDB street names
-      name: Trafikverket Street Names
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Swedish NVDB road network with several options for map layers
       name: Trafikverket Road Network options
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Orthophotomap 2018 (aerial image)'

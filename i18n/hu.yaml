@@ -7,7 +7,7 @@ hu:
     AGIV10cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 10cm-es légifelvétel
+      name: AIV Flanders 2013-2015 10 cm-es légifelvétel
     AGIVFlandersGRB:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -19,6 +19,7 @@ hu:
     AIV_DHMV_II_SVF_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
+      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Műholdképek és légifelvételek
       name: Bing légifelvételek
@@ -38,6 +39,8 @@ hu:
       description: Az Esri archív felvételek élesebbek és pontosabbak lehetnek, mint az alapértelmezett réteg.
       name: Esri World felvételek (Clarity) béta
     MAPNIK:
+      attribution:
+        text: © OpenStreetMap közreműködők, CC-BY-SA 2.0
       description: 'Alapértelmezett OpenStreetMap-réteg:'
       name: OpenStreetMap (standard)
     Mapbox:
@@ -77,9 +80,6 @@ hu:
       name: SPW(allonie) legfrissebb légifelvétel
     SPW_PICC:
       name: SPW(allonie) PICC numerikus felvétel
-    US-TIGER-Roads-2014:
-      description: 16-os, és afeletti nagyítási szintű szabad felhasználású térkép, az USA népszámlálási irodájától. Alacsonyabb nagyítási szinteken a 2006 előtti változások már részei az OpenStreetMapnek.
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Sárga = Közkincsű térképadatok az USA népszámlálási irodájától. Vörös = Az adatok nem találhatóak meg az OpenStreetMapben.
       name: TIGER Roads 2017
@@ -87,7 +87,10 @@ hu:
       description: Sárga = Közkincsű térképadatok az USA népszámlálási irodájától. Vörös = Az adatok nem találhatóak meg az OpenStreetMapben.
       name: TIGER Roads 2018
     US-TIGER-Roads-2019:
+      description: Sárga = Közkincsű térképadatok az USA népszámlálási irodájától. Vörös = Az adatok nem találhatóak meg az OpenStreetMapben.
       name: TIGER Roads 2019
+    USDA-NAIP:
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Utak: Zöld keret = besorolatlan. Barna keret = földút. Felület: murva = halvány barna kitöltés, aszfalt = fekete, kikövezett = szürke, föld = fehér, beton = kék, fű = zöld. Évszakos = fehér sávok'
       name: U.S.A. erdei útjainak rétege
@@ -103,6 +106,10 @@ hu:
       attribution:
         text: 'Készítette a brüsszeli UrbIS®© - Disztribúció és szerzői jogok: CIRB'
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: 'Készítette a brüsszeli UrbIS®© - Disztribúció és szerzői jogok: CIRB'
@@ -146,16 +153,6 @@ hu:
         text: basemap.at
       description: A megnevezéseket a basemap.at biztosítja.
       name: basemap.at térképelőtér
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: A felületi réteget a basemap.at biztosítja.
-      name: basemap.at felület
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: A domborzati réteget a basemap.at biztosítja.
-      name: basemap.at domborzat
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -164,39 +161,52 @@ hu:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 a finds.jp jóvoltából. Rajzoláshoz jó, de kicsit régebbi.
+      description: GSI Kiban 2500 az aginfo.cgk.affrc.go.jp jóvoltából. Rajzoláshoz jó, de kicsit régebbi.
       name: Japán GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: © Göteborg település, CC0
+      description: A várostérkép egy áttekintő térkép, amely leírja Göteborgot. Általános információkat tartalmaz a területről, a kommunikációról, a vízrajzról, az épületekről, a házszámokról és utcanevekről, a közigazgatási felosztásról és egyéb tájékozódási szövegekről.
+      name: Göteborg várostérkép
+    gothenburg-ortho:
+      attribution:
+        text: © Göteborg település, CC0
+      description: Göteborg település ortofotója
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japán
+      description: Japán GSI légi felvétel. Nem teljesen igazított. Valamivel újabb és más lefedettséget mutat, mint a GSI ortofotó.
       name: Japán GSI légifotó
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japan seamless photo
+      description: Japán GSI seamless photo képek. A GSI legújabb orto, airphoto, katasztrófa utáni és egyéb képek gyűjteménye.
+      name: Japan GSI seamlessphoto Imagery
     gsi.go.jp_std_map:
       attribution:
         text: GSI Japán
       description: Japán GSI standard térkép. Nagyrészt mindent lefed.
       name: Japán GSI standard térkép.
-    helsingborg-orto:
-      attribution:
-        text: © Helsingborg község
-      description: 2016-os ortofotók Helsingborg községből, közkincs
-      name: Helsingborg ortofotó
     kalmar-orto-2014:
       attribution:
         text: © Kalmar község
       description: Kalmar község északi partjának ortofotói, 2014
+      name: Kalmar North Orthophoto 2014
     kalmar-orto-2016:
       attribution:
         text: © Kalmar község
       description: Kalmar község déli partjának ortofotói, 2016
+      name: Kalmar South Orthophoto 2016
     kalmar-orto-2018:
       attribution:
         text: © Kalmar község
       description: Kalmar község városi területeinek ortofotói, 2018
+      name: Kalmar Urban Orthophoto 2018
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
       description: Kelkkareitit.fi motoros szán nyomvonalak az OSM-ről (skandináv lefedettség)
-      name: Skandináv motoros szán réteg
+      name: Skandináv motorosszánréteg
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
@@ -226,6 +236,21 @@ hu:
       attribution:
         text: © OpenStreetMap-közreműködők, CC-BY-SA
       name: OpenPT Map (réteg) – tömegközlekedés
+    openrailwaymap:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Overlay imagery showing railway infrastructure based on OpenStreetMap data
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Overlay imagery showing railway speed limits based on OpenStreetMap data
+      name: OpenRailwayMap Maxspeeds
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+      description: Overlay imagery showing railway signals based on OpenStreetMap data
+      name: OpenRailwayMap Signalling
     osm-gps:
       attribution:
         text: © OpenStreetMap-közreműködők
@@ -239,11 +264,6 @@ hu:
       attribution:
         text: © OpenStreetMap-közreműködők, CC-BY-SA
       name: OpenStreetMap (német stílusú)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Szkennelt gazdasági térképek 1950–1980 között
-      name: Lantmäteriet gazdasági térkép 1950–1980
     qa_no_address:
       attribution:
         text: 'Simon Poole, adatok: ©OpenStreetMap-közreműködők'
@@ -262,19 +282,30 @@ hu:
         text: Térképcsempék a Stamen Design által, CC BY 3.0 szerint, adatok OpenStreetMap, ODbL alatt.
       name: Stamen Terrain (terep)
     stockholm-orto:
+      attribution:
+        text: © Stockholm municipality, CC0
       name: Stockholm ortofotó
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Susono city orthophoto
+      description: Susono városa által nyílt adatként közzétett légi felvételek.
+      name: Susono city orthophoto
     tf-cycle:
       attribution:
-        text: 'Térképk: © Thunderforest, adatok: © OpenStreetMap-közreműködők'
+        text: 'Térképek: © Thunderforest, adatok: © OpenStreetMap-közreműködők'
       name: Thunderforest OpenCycleMap (kerékpárostérkép)
     tf-landscape:
       attribution:
         text: 'Térképek: © Thunderforest, adatok: © OpenStreetMap contributors'
       name: Thunderforest Landscape (táj)
+    tf-outdoors:
+      attribution:
+        text: Maps © Thunderforest, Data © OpenStreetMap contributors
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
-      description: Svéd vasúti hálózat, mellékvágányokkal együtt
+      description: Svéd vasúthálózat, mellékvágányokkal együtt
       name: Trafikverket vasúthálózat
     trafikverket-baninfo-option:
       attribution:
@@ -291,13 +322,12 @@ hu:
         text: © Trafikverket, CC0
       description: 'Svéd NVDB extra részletek: közút referencia, forgalomcsillapító, pihenőhely, buszmegálló, híd, alagút, traffipax'
       name: Trafikverket úthálózat extra
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Svéd NVDB utcanevek
-      name: Trafikverket utcanevek
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Svéd NVDB úthálózat néhány térkép felület opcióval.
       name: Trafikverket úthálózat opciók
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Orthophotomap 2018 (aerial image)'

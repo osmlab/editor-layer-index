@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "Hamburg-DK5",
-        "url": "https://geodienste.hamburg.de/HH_WMS_DK5?LAYERS=1&STYLES=&FORMAT=image/png&TRANSPARENT=false&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://geodienste.hamburg.de/HH_WMS_DK5?LAYERS=DK5&STYLES=&FORMAT=image/png&TRANSPARENT=false&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
         "name": "Hamburg DK5 (HH LGV DK5 2021)",
         "attribution": {
@@ -19,7 +19,6 @@
             "EPSG:3857",
             "EPSG:4258",
             "EPSG:4326",
-            "EPSG:4647",
             "EPSG:25832",
             "EPSG:31467"
         ],
@@ -513,4 +512,3 @@
         "type": "Polygon"
     }
 }
-
