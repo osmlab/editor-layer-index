@@ -1,0 +1,103 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Warszawa-Orthophotomap-2021-aerial_image",
+    "name": "Warszawa: Orthophotomap 2021 (aerial image)",
+    "best": true,
+    "i18n": true,
+    "description": "Fotoplan z 2021 roku z pikselem 5cm dla zakresu skal od 0 do 1:30000",
+    "type": "wms",
+    "url": "https://wms.um.warszawa.pl/serwis?LAYERS=RASTER_FOTOPLAN_2021&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+    "privacy_policy_url": "https://um.warszawa.pl/polityka-prywatnosci",
+    "country_code": "PL",
+    "available_projections": [
+      "CRS:84",
+      "EPSG:2178",
+      "EPSG:2180"
+    ],
+    "attribution": {
+      "text": "Biuro Geodezji i Katastru",
+      "url": "https://mapa.um.warszawa.pl/BGIK/",
+      "required": true
+    },
+    "icon": "https://mapa.um.warszawa.pl/img/utilImages/herb.png",
+    "terms-of-use-text": "https://mapa.um.warszawa.pl/warunki.html", 
+    "license_url": "https://mapa.um.warszawa.pl/warunki.html",
+    "category": "photo"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          21.18753,
+          52.27039
+        ],
+        [
+          21.28129,
+          52.27021
+        ],
+        [
+          21.28044,
+          52.13539
+        ],
+        [
+          21.18696,
+          52.13557
+        ],
+        [
+          21.18677,
+          52.09064
+        ],
+        [
+          20.95331,
+          52.09078
+        ],
+        [
+          20.95326,
+          52.13572
+        ],
+        [
+          20.90652,
+          52.13569
+        ],
+        [
+          20.90645,
+          52.17164
+        ],
+        [
+          20.83628,
+          52.17156
+        ],
+        [
+          20.83569,
+          52.33334
+        ],
+        [
+          20.90611,
+          52.33342
+        ],
+        [
+          20.90601,
+          52.37835
+        ],
+        [
+          21.11749,
+          52.37833
+        ],
+        [
+          21.11728,
+          52.29745
+        ],
+        [
+          21.18764,
+          52.29745
+        ],
+        [
+          21.18753,
+          52.27039
+        ]
+      ]
+    ]
+  }
+}
