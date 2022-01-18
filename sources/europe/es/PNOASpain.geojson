@@ -7,7 +7,7 @@
             "required": true
         },
         "name": "PNOA Spain",
-        "url": "https://www.idee.es/wms/PNOA/PNOA?LAYERS=PNOA&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "http://www.ign.es/wms-inspire/pnoa-ma?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.OrthoimageCoverage&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "ES",
         "type": "wms",
         "available_projections": [
