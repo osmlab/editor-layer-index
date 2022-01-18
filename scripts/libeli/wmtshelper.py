@@ -3,6 +3,8 @@ import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from io import StringIO
 from typing import List, Optional, Set, Tuple
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+import re
 
 from .eliutils import (
     BoundingBox,
@@ -354,3 +356,52 @@ class WMTSCapabilities:
 
         urls = set(map(lambda url: url.format(**replacement_parameters), urls))
         return urls
+
+
+class WMTSURL:
+
+    def __init__(self, url: str) -> None:
+        self._url = urlparse(url)
+        self._qsl = parse_qsl(self._url.query)
+        self._qsl_norm = {k.lower(): v for k, v in parse_qsl(self._url.query)}
+
+
+    def is_kvp(self) -> bool:
+        return self._qsl_norm.get("service", "").lower() == "wmts"
+
+    def is_rest(self) -> bool:
+        return "1.0.0/" in self._url.path
+
+    def layer(self) -> Optional[str]:
+        if self.is_kvp():
+            return self._qsl_norm.get("layer", None)
+        elif self.is_rest():
+            rest_parts = self._url.path.rsplit("1.0.0/", 1)[-1].split("/")
+            if len(rest_parts) >= 4:
+                return rest_parts[0]
+        return None
+
+    def tilematrixset(self) -> Optional[str]:
+        if self.is_kvp():
+            return self._qsl_norm.get("tilematrixset", None)
+        elif self.is_rest():
+            # The following order is recommended but not required!: style, firstDimension, ..., lastDimension, TileMatrixSet, TileMatrix, TileRow and TileCol
+            path_parts = self._url.path.split("/")
+            if len(path_parts) < 5:
+                return None
+            else:
+                return path_parts[-4]
+
+
+    def get_capabilities_url(self) -> Optional[str]:
+        if self.is_kvp():
+            args = {"service": "WMTS", "version": "1.0.0", "request": "WMTS"}
+            query = urlencode(list([(k.upper(), v) for k, v in args.items()]))
+            url_parts = list(self._url)
+            url_parts[4] = query
+            return urlunparse(url_parts)
+        elif self.is_rest():
+            match = re.match(r"(http.*\d.\d.\d/)", urlunparse(self._url))
+            if match is not None:
+                return match.group(1) + "WMTSCapabilities.xml"
+        return None

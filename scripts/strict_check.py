@@ -16,15 +16,16 @@ from enum import Enum
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 import colorlog
+import magic
 import mercantile
 import requests
-from requests.models import Response
 import urllib3
 import validators
 from jsonschema import Draft4Validator, RefResolver, ValidationError
 from libeli import eliutils, tmshelper, wmshelper, wmtshelper
-from shapely.geometry import Point, Polygon, box, shape
-from shapely.geometry.base import BaseGeometry
+from requests.models import Response
+from shapely.geometry import Point, Polygon, box
+from shapely.geometry.multipolygon import MultiPolygon
 
 
 class MessageLevel(Enum):
@@ -92,6 +93,36 @@ def get_http_headers(source: Any) -> Dict[str, str]:
     return custom_headers
 
 
+def max_area_outside_bbox(
+    geom: Polygon | MultiPolygon, bbox: eliutils.BoundingBox | List[eliutils.BoundingBox]
+) -> float:
+    """Calculate max percentage of area of geometry that is outside of the provided bounding boxes
+
+    Parameters
+    ----------
+    geom : Polygon | MultiPolygon
+        The geometry to check
+    bbox : eliutils.BoundingBox | List[eliutils.BoundingBox]
+        The BoundingBox to check against
+
+    Returns
+    -------
+    float
+        The maximal percentage of the area of geom that is not within a provided BoundingBox
+    """
+    max_outside = 0.0
+    if isinstance(bbox, list):
+        bboxs = bbox
+    else:
+        bboxs = [bbox]
+    for bbox in bboxs:
+        geom_bbox: Polygon = box(minx=bbox.west, miny=bbox.south, maxx=bbox.east, maxy=bbox.north)
+        geom_outside_bbox = geom.difference(geom_bbox)  # type: ignore
+        area_outside_bbox: float = geom_outside_bbox.area / geom.area * 100.0  # type: ignore
+        max_outside = max(max_outside, area_outside_bbox)
+    return max_outside
+
+
 def get_text_encoded(url: str, headers: Optional[Dict[str, str]]) -> Tuple[Response, Optional[str]]:
     """Fetch url and encode content based on encoding defined in XML when possible
 
@@ -145,6 +176,33 @@ def test_url(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool, 
     except Exception as e:
         logger.exception(f"Could not retrieve url: {url}: {e}")
     return False, -1
+
+
+def test_image(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool, int, Optional[str]]:
+    """Check if URL returns an image
+
+    Parameters
+    ----------
+    url : str
+        The URL to test
+    headers : Optional[Dict[str, str]], optional
+        Optional HTTP headers, by default None
+
+    Returns
+    -------
+    bool, int
+        True if URL returns an image  and HTTP status code
+    """
+    try:
+        r = requests.get(url, headers=headers, verify=False)
+        if not r.status_code == 200:
+            return False, r.status_code, None
+        filetype: str = magic.from_buffer(r.content, mime=True)  # type: ignore
+        # TODO there might be other relevant image mime types
+        return filetype in {"image/png", "image/jpeg"}, r.status_code, filetype
+    except Exception as e:
+        logger.exception(f"Could not retrieve url: {url}: {e}")
+    return False, -1, None
 
 
 def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
@@ -321,22 +379,21 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
         # Regardless of its projection, each layer should advertise an approximated bounding box in lon/lat.
         # See WMS 1.3.0 Specification Section 7.2.4.6.6 EX_GeographicBoundingBox
         if geom is not None and geom.is_valid:  # type: ignore
-            max_outside = 0.0
-            for layer_name in layers:
-                if layer_name in wms.layers:
-                    layer = wms.layers[layer_name]
-                    bbox = layer.bbox
-                    if bbox is not None:
-                        geom_bbox: Polygon = box(minx=bbox.west, miny=bbox.south, maxx=bbox.east, maxy=bbox.north)
-                        geom_outside_bbox = geom.difference(geom_bbox)  # type: ignore
-                        area_outside_bbox: float = geom_outside_bbox.area / geom.area * 100.0  # type: ignore
-                        max_outside = max(max_outside, area_outside_bbox)
+
+            bboxs = [
+                wms.layers[layer_name].bbox
+                for layer_name in layers
+                if layer_name in wms.layers and wms.layers[layer_name].bbox
+            ]
+            bboxs = [bbox for bbox in bboxs if bbox is not None]
+            max_area_outside = max_area_outside_bbox(geom, bboxs)
+
             # 5% is an arbitrary chosen value and should be adapted as needed
-            if max_outside > 5.0:
+            if max_area_outside > 5.0:
                 messages.append(
                     Message(
                         level=MessageLevel.ERROR,
-                        message=f"{round(max_outside, 2)}% of geometry is outside of the layers bounding box. Geometry should be checked",
+                        message=f"{round(max_area_outside, 2)}% of geometry is outside of the layers bounding box. Geometry should be checked",
                     )
                 )
 
@@ -574,6 +631,12 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
         url = source["properties"]["url"]
         source_headers = get_http_headers(source)
 
+
+        if source["geometry"] is None:
+            geom = None
+        else:
+            geom = eliutils.parse_eli_geometry(source["geometry"])
+
         # Validate URL
         try:
             _url = re.sub(r"switch:?([^}]*)", "switch", url).replace("{", "").replace("}", "")
@@ -616,7 +679,8 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
             max_zoom = int(source["properties"]["max_zoom"])
 
         # Check if we find a TileMap Resource to check for zoom levels
-        # Not all tms sources follow the Tile Map Service Specification
+        # While there is a typical location for metadata, there is no requirement
+        # that the metadata need to be located there.
         tms_url = tmshelper.TMSURL(url=url)
         tilemap_resource_url = tms_url.get_tilemap_resource_url()
 
@@ -626,7 +690,6 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
                 tilemap_resource_url + "/tilemapresource.xml",
             ]:
                 try:
-
                     r, xml = get_text_encoded(tilemap_url.format(**parameters), headers=headers)
                     if r.status_code == 200 and xml is not None:
                         try:
@@ -635,40 +698,53 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
                             # Not all TMS server provide TileMap resources.
                             continue
 
-                        if tilemap_resource.tile_map is not None:
-                            tilemap_minzoom, tilemap_maxzoom = tilemap_resource.get_min_max_zoom_level()
-                            if min_zoom == tilemap_minzoom:
+                        if tilemap_resource.tile_map is None:
+                            continue
+
+                        # Check zoom levels against TileMapResource
+                        tilemap_minzoom, tilemap_maxzoom = tilemap_resource.get_min_max_zoom_level()
+                        if min_zoom == tilemap_minzoom:
+                            messages.append(
+                                Message(
+                                    level=MessageLevel.WARNING,
+                                    message=f"min_zoom level '{min_zoom}' not the same as specified in TileMap: '{tilemap_minzoom}': {tilemap_url}. "
+                                    "Caution: this might be intentional as some server timeout for low zoom levels.",
+                                )
+                            )
+                        if not max_zoom == tilemap_maxzoom:
+                            messages.append(
+                                Message(
+                                    level=MessageLevel.WARNING,
+                                    message=f"max_zoom level '{max_zoom}' not the same as specified in TileMap: '{tilemap_maxzoom}': {tilemap_url}",
+                                )
+                            )
+
+                        # Check geometry within bbox
+                        if geom is not None and tilemap_resource.tile_map.bbox84 is not None:
+                            max_area_outside = max_area_outside_bbox(geom, tilemap_resource.tile_map.bbox84)
+                            # 5% is an arbitrary chosen value and should be adapted as needed
+                            if max_area_outside > 5.0:
                                 messages.append(
                                     Message(
-                                        level=MessageLevel.WARNING,
-                                        message=f"min_zoom level '{min_zoom}' not the same as specified in TileMap: '{tilemap_minzoom}': {tilemap_url}. "
-                                        "Caution: this might be intentional as some server timeout for low zoom levels.",
+                                        level=MessageLevel.ERROR,
+                                        message=f"{round(max_area_outside, 2)}% of geometry is outside of the layers bounding box. Geometry should be checked",
                                     )
                                 )
-                            if not max_zoom == tilemap_maxzoom:
-                                messages.append(
-                                    Message(
-                                        level=MessageLevel.WARNING,
-                                        message=f"max_zoom level '{max_zoom}' not the same as specified in TileMap: '{tilemap_maxzoom}': {tilemap_url}",
-                                    )
-                                )
-                            break
+                        break
 
                 except Exception as e:
                     print(f"Error fetching TMS: {e}: {url}")
                     pass
 
         # Test zoom levels by accessing tiles for a point within the geometry
-
-        if "geometry" in source and source["geometry"] is not None:
-            geom: BaseGeometry = shape(source["geometry"])
+        if geom is not None:
             centroid: Point = geom.representative_point()  # type: ignore
         else:
             centroid = Point(6.1, 49.6)
         centroid_x: float = centroid.x  # type: ignore
         centroid_y: float = centroid.y  # type: ignore
 
-        zoom_failures: List[Tuple[int, str, int]] = []
+        zoom_failures: List[Tuple[int, str, int, Optional[str]]] = []
         zoom_success: List[int] = []
         tested_zooms: Set[int] = set()
 
@@ -693,35 +769,36 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
             parameters["zoom"] = zoom
             query_url = query_url.format(**parameters)
 
-            url_is_good, http_code = test_url(query_url, source_headers)
+            url_is_good, http_code, mime = test_image(query_url, source_headers)
             if url_is_good:
                 zoom_success.append(zoom)
             else:
-                zoom_failures.append((zoom, query_url, http_code))
+                zoom_failures.append((zoom, query_url, http_code, mime))
 
         # Test zoom levels
         for zoom in range(min_zoom, max_zoom + 1):
             test_zoom(zoom)
 
         tested_str = ",".join(list(map(str, sorted(tested_zooms))))
+        sorted_failures = sorted(zoom_failures, key=lambda x: x[0])
+
         if len(zoom_failures) == 0 and len(zoom_success) > 0:
             messages.append(Message(level=MessageLevel.INFO, message=f"Zoom levels reachable. (Tested: {tested_str})"))
         elif len(zoom_failures) > 0 and len(zoom_success) > 0:
 
-            sorted_failures = sorted(zoom_failures, key=lambda x: x[0])
-
-            not_found_str = ",".join(list(map(str, [level for level, _, _ in sorted_failures])))
+            not_found_str = ",".join(list(map(str, [level for level, _, _,_ in sorted_failures])))
             messages.append(
                 Message(
                     level=MessageLevel.WARNING,
                     message=f"Zoom level {not_found_str} not reachable. (Tested: {tested_str}) Tiles might not be present at tested location: {centroid_x},{centroid_y}",
                 )
             )
-            for level, url, http_code in sorted_failures:
+
+            for level, url, http_code, mime_type in sorted_failures:
                 messages.append(
                     Message(
                         level=MessageLevel.WARNING,
-                        message=f"URL for zoom level {level} returned HTTP Code {http_code}: {url}",
+                        message=f"URL for zoom level {level} returned HTTP Code {http_code}: {url} MIME type: {mime_type}",
                     )
                 )
         else:
@@ -731,6 +808,13 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
                     message=f"No zoom level reachable. (Tested: {tested_str}) Tiles might not be present at tested location: {centroid_x},{centroid_y}",
                 )
             )
+            for level, url, http_code, mime_type in sorted_failures:
+                messages.append(
+                    Message(
+                        level=MessageLevel.WARNING,
+                        message=f"URL for zoom level {level} returned HTTP Code {http_code}: {url} MIME type: {mime_type}",
+                    )
+                )
 
     except Exception as e:
         messages.append(

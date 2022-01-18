@@ -327,7 +327,7 @@ class WMSURL:
         Returns
         -------
         Optional[bool]
-            True/Galse if GetMap includes a transparent parameter, None otherwise
+            True/false if GetMap includes a transparent parameter, None otherwise
         """
         if "transparent" not in self._qsl_norm:
             return None
