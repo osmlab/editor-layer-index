@@ -423,7 +423,7 @@ async def update_wms(url: str, session: ClientSession, messages: List[str]) -> O
         format = "image/jpeg"
 
     transparent = wms_url.is_transparent()
-    # Keep transparent if foramt is png or gif, remove otherwise
+    # Keep transparent if format is png or gif, remove otherwise
     if transparent and not ("png" in format.lower() or "gif" in format.lower()):
         transparent = None
 
