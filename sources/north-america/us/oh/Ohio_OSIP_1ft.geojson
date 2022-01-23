@@ -3,7 +3,7 @@
     "properties": {
         "name": "OSIP 1ft Imagery Most Current Available",
         "type": "wms",
-        "url": "https://geo1.oit.ohio.gov/arcgis/services/OSIP/osip_best_avail_1ft/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://geo1.oit.ohio.gov/arcgis/services/OSIP/osip_best_avail_1ft/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "min_zoom": 8,
         "max_zoom": 20,
         "permission_osm": "implicit",
