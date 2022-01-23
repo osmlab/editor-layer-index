@@ -332,7 +332,7 @@ class WMSURL:
         if "transparent" not in self._qsl_norm:
             return None
         else:
-            return bool(self._qsl_norm["transparent"])
+            return self._qsl_norm["transparent"].lower() == "true"
 
     def get_parameters(self) -> List[Tuple[str, str]]:
         """The parameters of the URL.
