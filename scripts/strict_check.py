@@ -631,7 +631,6 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
         url = source["properties"]["url"]
         source_headers = get_http_headers(source)
 
-
         if source["geometry"] is None:
             geom = None
         else:
@@ -786,7 +785,7 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
             messages.append(Message(level=MessageLevel.INFO, message=f"Zoom levels reachable. (Tested: {tested_str})"))
         elif len(zoom_failures) > 0 and len(zoom_success) > 0:
 
-            not_found_str = ",".join(list(map(str, [level for level, _, _,_ in sorted_failures])))
+            not_found_str = ",".join(list(map(str, [level for level, _, _, _ in sorted_failures])))
             messages.append(
                 Message(
                     level=MessageLevel.WARNING,
@@ -847,7 +846,15 @@ for filename in arguments.path:
         )
 
         # jsonschema validate
-        validator.validate(source, schema)
+        try:
+            validator.validate(source, schema)
+        except Exception as e:
+            messages.append(
+                Message(
+                    level=MessageLevel.ERROR,
+                    message=f"{filename} JSON validation error: {e}",
+                )
+            )
 
         logger.info(f"Type: {source['properties']['type']}")
 
@@ -925,12 +932,25 @@ for filename in arguments.path:
                 )
             )
         else:
-            # Check if privacy url exists
-            if not test_url(source["properties"]["privacy_policy_url"], headers):
+
+            if isinstance(source["properties"]["privacy_policy_url"], str):
+                # Check if privacy url exists
+                if not test_url(source["properties"]["privacy_policy_url"], headers):
+                    messages.append(
+                        Message(
+                            level=MessageLevel.ERROR,
+                            message=f"{filename}: could not retrieve privacy policy url {source['properties']['privacy_policy_url']}.",
+                        )
+                    )
+            elif not isinstance(source["properties"]["privacy_policy_url"], str) and not (
+                isinstance(source["properties"]["privacy_policy_url"], bool)
+                and not source["properties"]["privacy_policy_url"]
+            ):
+                # If the privacy_policy_url is not an URL it must be False
                 messages.append(
                     Message(
                         level=MessageLevel.ERROR,
-                        message=f"{filename}: could not retrieve privacy policy url {source['properties']['privacy_policy_url']}.",
+                        message=f"{filename}: privacy_policy_url can either be an URL or false, not: '{source['properties']['privacy_policy_url']}'.",
                     )
                 )
 
