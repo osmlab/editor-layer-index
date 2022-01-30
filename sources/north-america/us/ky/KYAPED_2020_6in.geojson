@@ -3,7 +3,7 @@
     "properties": {
         "name": "KyFromAbove 2020 6in",
         "type": "wms",
-        "url": "https://kyraster.ky.gov/arcgis/services/ImageServices/Ky_KYAPED_2020_6IN/ImageServer/WMSServer?LAYERS=Ky_KYAPED_2020_6IN:None&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://kyraster.ky.gov/arcgis/services/ImageServices/Ky_KYAPED_2020_6IN/ImageServer/WMSServer?LAYERS=Ky_KYAPED_2020_6IN:None&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "min_zoom": 2,
         "max_zoom": 20,
         "permission_osm": "implicit",
