@@ -1,15 +1,16 @@
 {
   "type": "Feature",
   "properties": {
-    "name": "OSIP 6in Imagery Most Current Available",
+    "name": "Ohio Statewide Imagery Program 6-Inch",
     "type": "wms",
     "url": "https://geo1.oit.ohio.gov/arcgis/services/OSIP/OSIP_6in_best_avail/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "min_zoom": 8,
     "max_zoom": 20,
     "permission_osm": "implicit",
     "license_url": "https://ogrip.oit.ohio.gov/Portals/0/PDFs/OSIP%20Program%20Description.pdf#page=2",
+    "i18n": true,
     "id": "OSIP_6in",
-    "description": "Most recent available 6-inch orthoimagery from the Ohio Statewide Imagery Program.",
+    "description": "Ohio Statewide Imagery Program III orthoimagery of 40 counties captured at 6-inch resolution in 2017 and 2018, plus OSIP I and OSIP II imagery in 16 more counties from 2010 through 2014.",
     "country_code": "US",
     "attribution": {
       "url": "https://ogrip.oit.ohio.gov/ProjectsInitiatives/StatewideImagery.aspx",
