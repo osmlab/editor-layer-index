@@ -36,7 +36,9 @@
             "url": "https://hvbg.hessen.de",
             "text": "Geobasisdaten © Hessische Verwaltung für Bodenmanagement und Geoinformation: Digitale Orthophotos",
             "required": true
-        }
+        },
+        "min_zoom": 16,
+        "max_zoom": 19
     },
     "geometry": {
         "type": "Polygon",
