@@ -6,7 +6,7 @@
             "required": true
         },
         "name": "PNOA Spain",
-        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/jpeg&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
+        "url": "https://tms-pnoa-ma.idee.es/1.0.0/pnoa-ma/{zoom}/{x}/{-y}.jpeg",
         "country_code": "ES",
         "type": "tms",
         "id": "PNOA-Spain-TMS",
