@@ -659,7 +659,9 @@
         "max_zoom": 20,
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "type": "wms",
-        "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://api.dataforsyningen.dk/dhm_DAF?service=WMS&request=GetMap&token=52065b2ec5fda5a46a50b451f3f24473&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://download.kortforsyningen.dk/content/om-kortforsyningendownload",
+        "privacy_policy_url": "https://dataforsyningen.dk/Persondata",
         "category": "elevation"
     },
     "type": "Feature"

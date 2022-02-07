@@ -659,7 +659,9 @@
         "max_zoom": 19,
         "name": "SDFE Skærmkort",
         "type": "wms",
-        "url": "https://kortforsyningen.kms.dk/topo_skaermkort?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=dtk_skaermkort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://services.datafordeler.dk/DKskaermkort/topo_skaermkort/1.0.0/Wms?username=OPFFZDPOAS&password=tRmWsq8p9LW2-pf&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=dtk_skaermkort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://download.kortforsyningen.dk/content/om-kortforsyningendownload",
+        "privacy_policy_url": "https://dataforsyningen.dk/Persondata",
         "category": "map"
     },
     "type": "Feature"
