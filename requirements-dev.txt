@@ -18,13 +18,13 @@ py==1.11.0
     # via pytest
 pyparsing==3.0.6
     # via packaging
-pytest==6.2.5
+pytest==7.0.0
     # via
     #   -r requirements-dev.in
     #   pytest-cov
 pytest-cov==3.0.0
     # via -r requirements-dev.in
-toml==0.10.2
-    # via pytest
 tomli==2.0.0
-    # via coverage
+    # via
+    #   coverage
+    #   pytest
