@@ -2,7 +2,7 @@ import os
 from typing import Any, Dict, List, Optional
 
 import pytest
-from libeli.eliutils import BoundingBox, clean_projections, parse_eli_geometry, search_encoding
+from libeli.eliutils import BoundingBox, clean_projections, search_encoding
 
 
 @pytest.mark.parametrize(
@@ -42,30 +42,6 @@ def test_clean_projections(
     clean_codes = clean_projections(epsg_codes, bbox)
     assert len(clean_codes) == len(expected_clean_codes)
     assert set(clean_codes) == set(expected_clean_codes)
-
-
-@pytest.mark.parametrize(
-    "in_geojson,expected_wkt",
-    [
-        (
-            {"type": "Polygon", "coordinates": (((10.0, 0.0), (10.0, 10.0), (0.0, 10.0), (0.0, 0.0), (10.0, 0.0)),)},
-            "POLYGON ((10 0, 10 10, 0 10, 0 0, 10 0))",
-        ),
-        (
-            {
-                "type": "Polygon",
-                "coordinates": (
-                    ((10.0, 0.0), (10.0, 10.0), (0.0, 10.0), (0.0, 0.0), (10.0, 0.0)),
-                    ((200.0, 100.0), (200.0, 200.0), (100.0, 200.0), (100.0, 100.0), (200.0, 100.0)),
-                ),
-            },
-            "MULTIPOLYGON (((0 0, 0 10, 10 10, 10 0, 0 0)), ((100 100, 100 200, 200 200, 200 100, 100 100)))",
-        ),
-    ],
-)
-def test_parse_eli_geometry(in_geojson: Dict[str, Any], expected_wkt: str):
-    """Test conversion of "ELI" geometries to Geojson compatible geometries"""
-    assert parse_eli_geometry(in_geojson).wkt == expected_wkt  # type: ignore
 
 
 def test_search_encoding():

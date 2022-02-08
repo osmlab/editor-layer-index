@@ -29,26 +29,6 @@ class BoundingBox:
         return self._geom
 
 
-def parse_eli_geometry(geometry: Dict[str, Any]) -> Polygon | MultiPolygon:
-    """Convert ELI geometries to GeoJSON compatbile geometries.
-
-    Parameters
-    ----------
-    geometry : Dict[str, Any]
-        The geometry in ELI format
-
-    Returns
-    -------
-    BaseGeometry
-        The geometry as shapely geometry object
-    """
-    _geom = shape(geometry)  # type: ignore
-    geoms = [Polygon(_geom.exterior.coords)]  # type: ignore
-    for ring in _geom.interiors:  # type: ignore
-        geoms.append(Polygon(ring.coords))  # type: ignore
-    return unary_union(geoms)  # type: ignore
-
-
 epsg_3857_alias = set(
     [f"EPSG:{epsg}" for epsg in [900913, 3587, 54004, 41001, 102113, 102100, 3785]]
     + ["OSGEO:41001", "ESRI:102113", "ESRI:102100"]

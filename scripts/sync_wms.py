@@ -29,7 +29,8 @@ import imagehash
 import magic
 import mercantile
 from aiohttp import ClientSession
-from imagehash import ImageHash  # type: ignore
+from imagehash import ImageHash
+from shapely.geometry.geo import shape  # type: ignore
 from libeli import eliutils, wmshelper
 from PIL import Image
 from pyproj.crs.crs import CRS
@@ -489,7 +490,7 @@ async def process_source(filename: str, session: ClientSession):
             geom: MultiPolygon | Polygon = box(-180, -90, 180, 90)
             pt: Point = Point(7.44, 46.56)
         else:
-            geom = eliutils.parse_eli_geometry(source["geometry"])
+            geom = shape(source["geometry"])
             pt: Point = geom.representative_point()  # type: ignore
 
         test_zoom_level = ZOOM_LEVEL

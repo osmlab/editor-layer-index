@@ -19,6 +19,7 @@ import colorlog
 import magic
 import mercantile
 import requests
+from shapely.geometry.geo import shape
 import urllib3
 import validators
 from jsonschema import Draft4Validator, RefResolver, ValidationError
@@ -358,7 +359,7 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
     if source["geometry"] is None:
         geom = None
     else:
-        geom = eliutils.parse_eli_geometry(source["geometry"])
+        geom = shape(source["geometry"])
 
     # Check layers
     if "layers" in wms_args:
@@ -634,7 +635,7 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
         if source["geometry"] is None:
             geom = None
         else:
-            geom = eliutils.parse_eli_geometry(source["geometry"])
+            geom = shape(source["geometry"])
 
         # Validate URL
         try:
