@@ -1,5 +1,8 @@
-import json, sys, string, util, io
+import json
+import sys
+import io
 import xml.etree.cElementTree as ET
+from shapely.geometry import shape, Polygon, MultiPolygon
 
 root = ET.Element("imagery")
 
@@ -93,27 +96,36 @@ def add_source(source):
         def coord_str(coord):
             return "{0:.6f}".format(coord)
 
-        bounds = ET.SubElement(entry, "bounds")
-        lons = [p[0] for ring in geometry["coordinates"] for p in ring]
-        lats = [p[1] for ring in geometry["coordinates"] for p in ring]
-        bounds.set("min-lon", coord_str(min(lons)))
-        bounds.set("min-lat", coord_str(min(lats)))
-        bounds.set("max-lon", coord_str(max(lons)))
-        bounds.set("max-lat", coord_str(max(lats)))
+        geom = shape(geometry)
 
-        for ring in geometry["coordinates"]:
-            shape = ET.SubElement(bounds, "shape")
-            for p in ring:
-                point = ET.SubElement(shape, "point")
-                point.set("lon", coord_str(p[0]))
-                point.set("lat", coord_str(p[1]))
+        bounds = ET.SubElement(entry, "bounds")
+        minx, miny, maxx, maxy = geom.bounds
+        bounds.set("min-lon", coord_str(minx))
+        bounds.set("min-lat", coord_str(miny))
+        bounds.set("max-lon", coord_str(maxx))
+        bounds.set("max-lat", coord_str(maxy))
+
+        if isinstance(geom, Polygon):
+            shape_element = ET.SubElement(bounds, "shape")
+            for lon, lat in geom.exterior.coords:
+                point = ET.SubElement(shape_element, "point")
+                point.set("lon", coord_str(lon))
+                point.set("lat", coord_str(lat))
+
+        if isinstance(geom, MultiPolygon):
+            for poly in geom.geoms:
+                shape_element = ET.SubElement(bounds, "shape")
+                for lon, lat in poly.exterior.coords:
+                    point = ET.SubElement(shape_element, "point")
+                    point.set("lon", coord_str(lon))
+                    point.set("lat", coord_str(lat))
 
 
 for source in sources:
     try:
         add_source(source)
-    except Exception:
-        print("Failed to convert %s" % source)
+    except Exception as e:
+        print(f"Failed to convert {source}: {e}")
         pass
 
 tree = ET.ElementTree(root)
