@@ -19,6 +19,7 @@ import colorlog
 import magic
 import mercantile
 import requests
+from shapely.geometry.geo import shape
 import urllib3
 import validators
 from jsonschema import Draft4Validator, RefResolver, ValidationError
@@ -358,7 +359,7 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
     if source["geometry"] is None:
         geom = None
     else:
-        geom = eliutils.parse_eli_geometry(source["geometry"])
+        geom = shape(source["geometry"])
 
     # Check layers
     if "layers" in wms_args:
@@ -634,7 +635,7 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
         if source["geometry"] is None:
             geom = None
         else:
-            geom = eliutils.parse_eli_geometry(source["geometry"])
+            geom = shape(source["geometry"])
 
         # Validate URL
         try:
@@ -980,11 +981,11 @@ for filename in arguments.path:
                         message=f"{filename} should have a valid geometry or be global",
                     )
                 )
-            if source["geometry"]["type"] != "Polygon":
+            if source["geometry"]["type"] not in {"Polygon", "MultiPolygon"}:
                 messages.append(
                     Message(
                         level=MessageLevel.ERROR,
-                        message=f"{filename} Geometry should be a Polygon",
+                        message=f"{filename} Geometry should be a Polygon or MultiPolygon",
                     )
                 )
             if "country_code" not in source["properties"]:

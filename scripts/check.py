@@ -27,6 +27,7 @@ from argparse import ArgumentParser
 import colorlog
 from jsonschema import Draft4Validator, RefResolver, ValidationError
 from shapely.geometry import shape
+from shapely.validation import explain_validity
 
 
 def dict_raise_on_duplicates(ordered_pairs):
@@ -165,11 +166,17 @@ for filename in arguments.path:
         if "world" not in filename:
             if not "type" in source["geometry"]:
                 raise ValidationError("{} should have a valid geometry or be global".format(filename))
-            if source["geometry"]["type"] != "Polygon":
-                raise ValidationError("{} should have a Polygon geometry".format(filename))
+            if source["geometry"]["type"] not in {"Polygon", "MultiPolygon"}:
+                raise ValidationError("{} should have a Polygon or MultiPolygon geometry".format(filename))
             if not "country_code" in source["properties"]:
                 raise ValidationError("{} should have a country or be global".format(filename))
-            min_lon, min_lat, max_lon, max_lat = shape(source["geometry"]).bounds
+
+            geom = shape(source["geometry"])
+             # Check validity of geometries
+            if not geom.is_valid:
+                raise ValidationError(f"{filename} geometry is not valid: {explain_validity(geom)}")
+
+            min_lon, min_lat, max_lon, max_lat = geom.bounds
             within_bounds = True
             for lon in [min_lon, max_lon]:
                 if lon < -180.0 or lon > 180.0:
