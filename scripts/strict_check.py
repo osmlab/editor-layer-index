@@ -19,14 +19,15 @@ import colorlog
 import magic
 import mercantile
 import requests
-from shapely.geometry.geo import shape
 import urllib3
 import validators
 from jsonschema import Draft4Validator, RefResolver, ValidationError
 from libeli import eliutils, tmshelper, wmshelper, wmtshelper
 from requests.models import Response
 from shapely.geometry import Point, Polygon, box
+from shapely.geometry.geo import mapping, shape
 from shapely.geometry.multipolygon import MultiPolygon
+from shapely.validation import explain_validity, make_valid
 
 
 class MessageLevel(Enum):
@@ -757,7 +758,7 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
 
             query_url = url
             if "{-y}" in url:
-                y = 2 ** zoom - 1 - tile_y
+                y = 2**zoom - 1 - tile_y
                 query_url = query_url.replace("{-y}", str(y))
             elif "{!y}" in url:
                 y = 2 ** (zoom - 1) - 1 - tile_y
@@ -858,6 +859,29 @@ for filename in arguments.path:
             )
 
         logger.info(f"Type: {source['properties']['type']}")
+
+        # Check geometry
+        if "geometry" in source:
+            geom = shape(source["geometry"])
+            if not geom.is_valid:
+                try:
+                    reason = explain_validity(geom)
+                    messages.append(
+                        Message(
+                            level=MessageLevel.ERROR,
+                            message=f"{filename} invalid geometry: {reason}",
+                        )
+                    )
+                    valid_geom = make_valid(geom)
+                    valid_geom_json = json.dumps(mapping(valid_geom), sort_keys=False, ensure_ascii=False)
+                    messages.append(
+                        Message(
+                            level=MessageLevel.ERROR,
+                            message=f"{filename} please consider using corrected geometry: {valid_geom_json}",
+                        )
+                    )
+                except Exception as e:
+                    logger.warning("Geometry check failed: {e}")
 
         # Check for license url
         # There can be sources without license_url, but failing this test brings to attention to i
