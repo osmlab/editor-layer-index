@@ -27,6 +27,7 @@ from requests.models import Response
 from shapely.geometry import Point, Polygon, box
 from shapely.geometry.geo import mapping, shape
 from shapely.geometry.multipolygon import MultiPolygon
+from shapely.ops import unary_union
 from shapely.validation import explain_validity, make_valid
 
 
@@ -112,17 +113,14 @@ def max_area_outside_bbox(
     float
         The maximal percentage of the area of geom that is not within a provided BoundingBox
     """
-    max_outside = 0.0
     if isinstance(bbox, list):
-        bboxs = bbox
+        geoms: List[Polygon] = [box(minx=bb.west, miny=bb.south, maxx=bb.east, maxy=bb.north) for bb in bbox]
+        bbox_geom = unary_union(geoms)  # type: ignore
     else:
-        bboxs = [bbox]
-    for bbox in bboxs:
-        geom_bbox: Polygon = box(minx=bbox.west, miny=bbox.south, maxx=bbox.east, maxy=bbox.north)
-        geom_outside_bbox = geom.difference(geom_bbox)  # type: ignore
-        area_outside_bbox: float = geom_outside_bbox.area / geom.area * 100.0  # type: ignore
-        max_outside = max(max_outside, area_outside_bbox)
-    return max_outside
+        bbox_geom: Polygon = box(minx=bbox.west, miny=bbox.south, maxx=bbox.east, maxy=bbox.north)
+
+    geom_outside_bbox = geom.difference(bbox_geom)  # type: ignore
+    return geom_outside_bbox.area / geom.area * 100.0  # type: ignore
 
 
 def get_text_encoded(url: str, headers: Optional[Dict[str, str]]) -> Tuple[Response, Optional[str]]:
@@ -360,7 +358,7 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
     if source["geometry"] is None:
         geom = None
     else:
-        geom = shape(source["geometry"])
+        geom = shape(source["geometry"])  # type: ignore
 
     # Check layers
     if "layers" in wms_args:
@@ -388,7 +386,7 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
                 if layer_name in wms.layers and wms.layers[layer_name].bbox
             ]
             bboxs = [bbox for bbox in bboxs if bbox is not None]
-            max_area_outside = max_area_outside_bbox(geom, bboxs)
+            max_area_outside = max_area_outside_bbox(geom, bboxs)  # type: ignore
 
             # 5% is an arbitrary chosen value and should be adapted as needed
             if max_area_outside > 5.0:

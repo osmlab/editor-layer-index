@@ -1,13 +1,13 @@
 import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
-from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
+from typing import Dict, Iterable, List, Optional, Set, Tuple
 
 from pyproj.crs.crs import CRS
 from pyproj.database import get_codes
 from pyproj.enums import PJType
 from pyproj.transformer import Transformer
-from shapely.geometry import Polygon, box, shape
+from shapely.geometry import Polygon, box
 from shapely.geometry.multipolygon import MultiPolygon
 from shapely.ops import unary_union
 
