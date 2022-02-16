@@ -9,6 +9,7 @@ from pyproj.enums import PJType
 from pyproj.transformer import Transformer
 from shapely.geometry import Polygon, box
 from shapely.geometry.multipolygon import MultiPolygon
+from shapely.geometry.polygon import orient
 from shapely.ops import unary_union
 
 
@@ -180,3 +181,29 @@ def find_attr_optional(element: ET.Element, attribute: str) -> Optional[str]:
 def findall_text(element: ET.Element, path: str) -> List[str]:
     es = element.findall(path)
     return [e.text for e in es if e.text is not None]
+
+
+def orient_geometry_rfc7946(geometry: Polygon | MultiPolygon) -> Polygon | MultiPolygon:
+    """ Converts orientation of geometry according to the GeoJSON RFC7946
+
+    Parameters
+    ----------
+    geometry : Polygon | MultiPolygon
+        The geometry to orient
+
+    Returns
+    -------
+    Polygon | MultiPolygon
+        The oriented geometry
+
+    Raises
+    ------
+    ValueError
+        If not a Polygon or MultiPolygon was passed
+    """    
+
+    if isinstance(geometry, Polygon):
+        return orient(geometry, sign=1.0) # type: ignore
+    elif isinstance(geometry, MultiPolygon): # type: ignore
+        return MultiPolygon([orient(geom, sign=1.0) for geom in geometry.geoms]) # type: ignore
+    raise ValueError(f"Only Polygon or MultiPolygon types are supported, not {type(geometry)}")

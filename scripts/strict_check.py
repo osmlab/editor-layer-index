@@ -860,26 +860,50 @@ for filename in arguments.path:
 
         # Check geometry
         if "geometry" in source:
-            geom = shape(source["geometry"])
-            if not geom.is_valid:
+            geom = shape(source["geometry"])  # type: ignore
+
+            # Check if geometry is a valid (e.g. no intersection etc.)
+            if not geom.is_valid:  # type: ignore
                 try:
-                    reason = explain_validity(geom)
+                    reason = explain_validity(geom)  # type: ignore
                     messages.append(
                         Message(
                             level=MessageLevel.ERROR,
                             message=f"{filename} invalid geometry: {reason}",
                         )
                     )
-                    valid_geom = make_valid(geom)
-                    valid_geom_json = json.dumps(mapping(valid_geom), sort_keys=False, ensure_ascii=False)
+                    valid_geom = make_valid(geom)  # type: ignore
+                    valid_geom = eliutils.orient_geometry_rfc7946(valid_geom)  # type: ignore
+                    valid_geom_json = json.dumps(mapping(valid_geom), sort_keys=False, ensure_ascii=False)  # type: ignore
                     messages.append(
                         Message(
                             level=MessageLevel.ERROR,
                             message=f"{filename} please consider using corrected geometry: {valid_geom_json}",
                         )
                     )
+                    geom = valid_geom  # type: ignore
                 except Exception as e:
                     logger.warning("Geometry check failed: {e}")
+
+            # Check ring orientation to correspond with GeoJSON rfc7946:
+            # A linear ring MUST follow the right-hand rule with respect to the
+            # area it bounds, i.e., exterior rings are counterclockwise, and
+            # holes are clockwise.
+            oriented_geom = eliutils.orient_geometry_rfc7946(geom)  # type: ignore  # type: ignore
+            if not json.dumps(mapping(geom)) == json.dumps(mapping(oriented_geom)):  # type: ignore
+                messages.append(
+                    Message(
+                        level=MessageLevel.ERROR,
+                        message=f"{filename} ring orientation does not correspond to GeoJSON RFC7946",
+                    )
+                )
+                oriented_geom_json = json.dumps(mapping(oriented_geom), sort_keys=False, ensure_ascii=False,)  # type: ignore
+                messages.append(
+                    Message(
+                        level=MessageLevel.ERROR,
+                        message=f"{filename} please consider using corrected geometry: {oriented_geom_json}",
+                    )
+                )
 
         # Check for license url
         # There can be sources without license_url, but failing this test brings to attention to i
