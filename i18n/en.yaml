@@ -12,6 +12,10 @@ en:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders preliminary aerial imagery
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -30,7 +34,7 @@ en:
       name: 'Będzin: Buildings'
     Bing:
       description: Satellite and aerial imagery.
-      name: Bing aerial imagery
+      name: Bing Maps Aerial
     Bytom-2012:
       attribution:
         text: Urząd Miasta Bytomia
@@ -86,6 +90,11 @@ en:
         text: Terms & Feedback
       description: Esri archive imagery that may be clearer and more accurate than the default layer.
       name: Esri World Imagery (Clarity) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Stadtvermessungsamt Frankfurt am Main
+      description: Aerial imagery of Frankfurt am Main, photographed on 16 April 2019
+      name: Frankfurt am Main Luftbild 2019
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -153,13 +162,18 @@ en:
     LSA-DOP20:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
-      description: areal image of the state saxony-anhalt, 20cm resolution
+      description: aerial image of the state Saxony-Anhalt, 20 cm resolution
       name: © GeoBasis-DE/LVermGeo LSA, DOP20
     LSA-DVG:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Vector recording of administrative boundaries. The boundaries of the federal state, district, municipality and parts of the municipality are given. '
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Contains public sector information licensed under the Open Government Licence v3.0.
+      description: Public rights of way data released by local authorities, as collated at rowmaps.com
+      name: Public Rights of Way
     Lodz-2015:
       attribution:
         text: Urząd Miasta Łodzi
@@ -182,6 +196,21 @@ en:
         text: Terms & Feedback
       description: Satellite and aerial imagery.
       name: Mapbox Satellite
+    OSIPIII_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III orthoimagery of 41 counties captured at 6-inch resolution in 2019 and 2020.
+      name: Ohio Statewide Imagery Program III 6-Inch
+    OSIP_1ft:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program II orthoimagery of all 88 counties at 1-foot resolution from 2011 through 2014.
+      name: Ohio Statewide Imagery Program II 1-Foot
+    OSIP_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III orthoimagery of 40 counties captured at 6-inch resolution in 2017 and 2018, plus OSIP I and OSIP II imagery in 16 more counties from 2010 through 2014.
+      name: Ohio Statewide Imagery Program 6-Inch
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Contains public sector information licensed under the Open Government Licence v3.0.
@@ -243,6 +272,9 @@ en:
     US-TIGER-Roads-2020:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2020
+    US-TIGER-Roads-2021:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
+      name: TIGER Roads 2021
     USDA-NAIP:
       attribution:
         text: U.S. Department of Agriculture

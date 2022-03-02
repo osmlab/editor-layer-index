@@ -1,0 +1,71 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "saitama_fukaya_orthophoto_2017",
+        "attribution": {
+            "url": "http://www.city.fukaya.saitama.jp/shisei/tokei/open_date/1450169094962.html",
+            "text": "FukayaOrtho",
+            "required": true
+        },
+        "name": "Saitama Fukaya-shi Imagery 2017",
+        "url": "http://nyampire.conohawing.com/ortho-fukaya-shi/{zoom}/{x}/{-y}.png",
+        "min_zoom": 12,
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Fukaya_ortho",
+        "country_code": "JP",
+        "type": "tms",
+        "start_date": "2017-01-01",
+        "end_date": "2017-12-31",
+        "permission_osm": "explicit",
+        "description": "Open Data Orthoimagery from Fukaya-shi, 2018",
+        "category": "photo",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    139.24072231293,
+                    36.25368719125
+                ],
+                [
+                    139.18510402679,
+                    36.21962627181
+                ],
+                [
+                    139.16725124359,
+                    36.12872463362
+                ],
+                [
+                    139.20295681,
+                    36.11153015921
+                ],
+                [
+                    139.24381221771,
+                    36.11180751932
+                ],
+                [
+                    139.25685848236,
+                    36.09544159706
+                ],
+                [
+                    139.31076015472,
+                    36.09571901397
+                ],
+                [
+                    139.34783901215,
+                    36.16864565512
+                ],
+                [
+                    139.34783901215,
+                    36.25313347385
+                ],
+                [
+                    139.24072231293,
+                    36.25368719125
+                ]
+            ]
+        ]
+    }
+}
