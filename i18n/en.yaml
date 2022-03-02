@@ -12,6 +12,10 @@ en:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders preliminary aerial imagery
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,9 +24,57 @@ en:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
+    Bedzin-PL-aerial_image:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Orthophotomap 2013 (aerial image)'
+    Bedzin-PL-buildings:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Buildings'
     Bing:
       description: Satellite and aerial imagery.
-      name: Bing aerial imagery
+      name: Bing Maps Aerial
+    Bytom-2012:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2012 (aerial image)'
+    Bytom-2014:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Fotoplan 2014 (aerial image)'
+    Bytom-buildings:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Buildings'
+    Czestochowa-2011:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2011 (aerial image)'
+    Czestochowa-2013:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2013 (aerial image)'
+    Czestochowa-2014:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2014 (aerial image)'
+    Czestochowa-2015:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2015 (aerial image)'
+    Czestochowa-2016:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2016 (aerial image)'
+    Czestochowa-2017:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2017 (aerial image)'
+    Czestochowa-buildings:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Buildings'
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
@@ -38,11 +90,16 @@ en:
         text: Terms & Feedback
       description: Esri archive imagery that may be clearer and more accurate than the default layer.
       name: Esri World Imagery (Clarity) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Stadtvermessungsamt Frankfurt am Main
+      description: Aerial imagery of Frankfurt am Main, photographed on 16 April 2019
+      name: Frankfurt am Main Luftbild 2019
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
       description: Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.
-      name: 'Geoportal 2: High Resolution Orthophotomap, may be old and outdated (aerial image)'
+      name: 'Geoportal 2: High Resolution Orthophotomap (aerial image) (WMS)'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -57,12 +114,46 @@ en:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
-      name: 'Geoportal 2: Orthophotomap (latest aerial imagery)'
+      name: 'Geoportal 2: Orthophotomap (latest aerial imagery) (WMS)'
+    Geoportal2-PL-aerial_image_WMTS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Tile Service,WMTS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych.
+      name: 'Geoportal 2: Orthophotomap (latest aerial imagery) (WMTS)'
     Geoportal2-PL-buildings_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
       name: 'Geoportal 2: Ewidencja budynków WMS'
+    Geoportal2-PL-plot_boundaries_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
+      name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-prng:
+      attribution:
+        text: Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej
+      name: 'Geoportal 2: PRNG (geo names)'
+    Gliwice-2013:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2013 (aerial image)'
+    Gliwice-2017:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2017 (aerial image)'
+    Gliwice-2018:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2018 (aerial image)'
+    Gliwice-2020:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2020 (aerial image)'
+    Gliwice-buildings:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Buildings'
     LSA-ATKIS_BU:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
@@ -71,13 +162,30 @@ en:
     LSA-DOP20:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
-      description: areal image of the state saxony-anhalt, 20cm resolution
+      description: aerial image of the state Saxony-Anhalt, 20 cm resolution
       name: © GeoBasis-DE/LVermGeo LSA, DOP20
     LSA-DVG:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Vector recording of administrative boundaries. The boundaries of the federal state, district, municipality and parts of the municipality are given. '
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Contains public sector information licensed under the Open Government Licence v3.0.
+      description: Public rights of way data released by local authorities, as collated at rowmaps.com
+      name: Public Rights of Way
+    Lodz-2015:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Orthophotomap 2015 (aerial image)'
+    Lodz-2017:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Orthophotomap 2017 (aerial image)'
+    Lodz-buildings:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Buildings'
     MAPNIK:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA 2.0
@@ -88,6 +196,21 @@ en:
         text: Terms & Feedback
       description: Satellite and aerial imagery.
       name: Mapbox Satellite
+    OSIPIII_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III orthoimagery of 41 counties captured at 6-inch resolution in 2019 and 2020.
+      name: Ohio Statewide Imagery Program III 6-Inch
+    OSIP_1ft:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program II orthoimagery of all 88 counties at 1-foot resolution from 2011 through 2014.
+      name: Ohio Statewide Imagery Program II 1-Foot
+    OSIP_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III orthoimagery of 40 counties captured at 6-inch resolution in 2017 and 2018, plus OSIP I and OSIP II imagery in 16 more counties from 2010 through 2014.
+      name: Ohio Statewide Imagery Program 6-Inch
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Contains public sector information licensed under the Open Government Licence v3.0.
@@ -121,10 +244,22 @@ en:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
       name: 'OSM Inspector: Tagging'
+    Ruda_Slaska-aerial_image:
+      attribution:
+        text: Urząd Miasta Ruda Śląska
+      name: 'Ruda Śląska: Orthophotomap (aerial image)'
     SPW_ORTHO_LAST:
       name: SPW(allonie) most recent aerial imagery
     SPW_PICC:
       name: SPW(allonie) PICC numerical imagery
+    Siemianowice_Slaskie-aerial_image:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Orthophotomap (aerial image)'
+    Siemianowice_Slaskie-buildings:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Buildings'
     US-TIGER-Roads-2017:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2017
@@ -137,8 +272,13 @@ en:
     US-TIGER-Roads-2020:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2020
+    US-TIGER-Roads-2021:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
+      name: TIGER Roads 2021
     USDA-NAIP:
-      description: The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
+      attribution:
+        text: U.S. Department of Agriculture
+      description: The most recent year of 60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars'
@@ -199,6 +339,10 @@ en:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
       name: 'Waymarked Trails: Winter Sports'
+    Zabrze-2011:
+      attribution:
+        text: Urząd Miasta Zabrza
+      name: 'Zabrze: Orthophotomap 2011 (aerial image)'
     basemap.at:
       attribution:
         text: basemap.at
@@ -214,6 +358,15 @@ en:
         text: basemap.at
       description: Annotation overlay provided by basemap.at.
       name: basemap.at Overlay
+    cyclosm:
+      attribution:
+        text: 'Rendering: CyclOSM (hosted by OpenStreetMap France) © Map data OpenStreetMap contributors'
+      description: CyclOSM is a map style designed with cycling in mind. It leverages OpenStreetMap data to create a beautiful and practical cycling map!
+      name: CyclOSM
+    debicki-buildings:
+      attribution:
+        text: Powiat dębicki
+      name: 'Powiat dębicki: Buildings'
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -294,6 +447,10 @@ en:
         text: © Kelkkareitit.fi
       description: Kelkkareitit.fi snowmobile trails from OSM (Nordic coverage)
       name: Nordic snowmobile overlay
+    lancucki-buildings:
+      attribution:
+        text: Powiat łańcucki
+      name: 'Powiat łańcucki: Buildings'
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
@@ -314,6 +471,10 @@ en:
         text: © Linköping municipality
       description: Orthophotos from the municipality of Linköping 2010, open data
       name: Linköping Orthophoto
+    lubaczowski-buildings:
+      attribution:
+        text: Powiat lubaczowski
+      name: 'Powiat lubaczowski: Buildings'
     mapbox_locator_overlay:
       attribution:
         text: Terms & Feedback
@@ -351,10 +512,38 @@ en:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenStreetMap (German Style)
+    poznan-ortofotomapa2014:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Orthophotomap 2014 (aerial image)'
+    poznan-ortofotomapa2016:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Orthophotomap 2016 (aerial image)'
+    poznan-ortofotomapaBiezaca:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Orthophotomap Bieżąca (aerial image)'
+    przemysl-aerial:
+      attribution:
+        text: Miasto Przemyśl
+      name: 'Przemyśl: Ortophotomap (aerial image)'
+    przemysl-buildings:
+      attribution:
+        text: Miasto Przemyśl
+      name: 'Przemyśl: Buildings'
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
       name: QA No Address
+    rzeszowski-aerial:
+      attribution:
+        text: Powiat rzeszowski
+      name: 'Powiat rzeszowski: Orthophotomap (aerial image)'
+    rzeszowski-buildings:
+      attribution:
+        text: Powiat rzeszowski
+      name: 'Powiat rzeszowski: Buildings'
     skobbler:
       attribution:
         text: '© Tiles: skobbler Map data: OpenStreetMap contributors'
@@ -364,6 +553,14 @@ en:
         text: © Skoterleder.org
       description: Snowmobile trails
       name: Snowmobile map Sweden
+    sropczyce-buildings:
+      attribution:
+        text: Powiat ropczycko-sędziszowski
+      name: 'Powiat ropczycko-sędziszowski: Buildings'
+    stalowowolski-buildings:
+      attribution:
+        text: Powiat stalowowolski
+      name: 'Powiat stalowowolski: Buildings'
     stamen-terrain-background:
       attribution:
         text: Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL
@@ -415,6 +612,10 @@ en:
         text: © Trafikverket, CC0
       description: Swedish NVDB road network with several options for map layers
       name: Trafikverket Road Network options
+    wroclaw-orto2015:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Orthophotomap 2015 (aerial image)'
     wroclaw-orto2018:
       attribution:
         text: Urząd Miasta Wrocław

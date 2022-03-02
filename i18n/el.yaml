@@ -14,6 +14,8 @@ el:
       description: Οι εικόνες του αρχείου Esri μπορούν να είναι πιο ευδιάκριτες και ακριβέστερες από το προεπιλεγμένηο επίπεδο.
       name: Παγκόσμια Eικόνα Esri (Διαύγεια) Beta
     MAPNIK:
+      attribution:
+        text: © Συνεισφέροντες OpenStreetMap, CC-BY-SA 2.0
       description: Η προεπιλεγμένη στρώση του OpenStreetMap.
       name: OpenStreetMap (Τυπικό)
     Mapbox:
@@ -23,35 +25,32 @@ el:
       name: Δορυφορική εικόνα Mapbox
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Διευθύνσεις'
     OSM_Inspector-Geometry:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Γεωμετρία'
     OSM_Inspector-Highways:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Δρόμοι'
     OSM_Inspector-Multipolygon:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Περιοχή'
     OSM_Inspector-Places:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Τοποθεσίες'
     OSM_Inspector-Routing:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Δρομολόγηση'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Προσθήκη Ετικέτας'
-    US-TIGER-Roads-2014:
-      description: Στο επίπεδο εστίασης 16+, είναι τα δεδομένα χάρτη του δημόσιων ιδιοκτησιών από την απογραφή των ΗΠΑ. Στις χαμηλότερες εστιάσεις, μόνο αλλαγές από το 2006 εκτός από αλλαγές που έχουν ήδη ενσωματωθεί στο OpenStreetMap
-      name: Δρόμοι TIGER 2014
     US-TIGER-Roads-2017:
       description: Κίτρινο = Δεδομένα χάρτη δημόσιων ιδιοκτησιών από την απογραφή των ΗΠΑ. Κόκκινο = Δεδομένα που δεν βρέθηκαν στο OpenStreetMap
       name: Δρόμοι TIGER 2017
@@ -76,7 +75,7 @@ el:
       name: 'Σηματοδοτημένες Διαδρομές: Σκέϊτ'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, συνεισφέροντες στο OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Συνεισφέροντες OpenStreetMap, CC by-SA 3.0
       name: 'Σηματοδοτημένες Διαδρομές: Χειμερινά Σπορ'
     basemap.at:
       attribution:
@@ -95,28 +94,28 @@ el:
       name: Επικάλυψη Εντοπισμού
     openpt_map:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: Χάρτης OpenPT (επικάλυψη)
     osm-gps:
       attribution:
-        text: © OpenStreetMap contributors
+        text: © Συνεισφέροντες OpenStreetMap
       description: Δημόσια ίχνη GPS που έχουν μεταφορτωθεί στο OpenStreetMap.
       name: Ίχνη GPS OpenStreetMap.
     osm-mapnik-black_and_white:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Τυπικό Ασπρόμαυρο)
     osm-mapnik-german_style:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Γερμανικό Στυλ)
     qa_no_address:
       attribution:
-        text: Simon Poole, Δεδομένα © OpenStreetMap contributors
+        text: Simon Poole, Δεδομένα © Συνεισφέροντες OpenStreetMap
       name: QA Καμία Διεύθυνση
     skobbler:
       attribution:
-        text: '© Πλακίδια: skobbler Δεδομένα χάρτη: OpenStreetMap contributors'
+        text: '© Πλακίδια: skobbler Δεδομένα χάρτη: Συνεισφέροντες OpenStreetMap'
       name: skobbler
     stamen-terrain-background:
       attribution:
@@ -124,9 +123,12 @@ el:
       name: Stamen Εδαφικό
     tf-cycle:
       attribution:
-        text: Χάρτες © Thunderforest, Δεδομένα © OpenStreetMap contributors
+        text: Χάρτες © Thunderforest, Δεδομένα © Συνεισφέροντες OpenStreetMap
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
-        text: Χάρτες © Thunderforest, Δεδομένα © OpenStreetMap contributors
+        text: Χάρτες © Thunderforest, Δεδομένα © Συνεισφέροντες OpenStreetMap
       name: Thunderforest Τοπίο
+    tf-outdoors:
+      attribution:
+        text: Χάρτες © Thunderforest, Δεδομένα © Συνεισφέροντες OpenStreetMap

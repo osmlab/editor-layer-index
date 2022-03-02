@@ -4,7 +4,7 @@
         "id": "LV_ORTOFOTO_C1",
         "name": "Orthophoto (1994–1999), B&W, 1:30000, Latvia",
         "type": "wms",
-        "url": "https://services.lgia.gov.lv/arcfree/services/WMS_Ortofoto_v1/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://servisi.lgia.gov.lv/lksopen/services/ORTO/Ortofoto_v1/MapServer/WMSServer?LAYERS=1&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
@@ -14,6 +14,7 @@
         ],
         "description": "Made in 1994-1999 in cooperation with the Swedish company Swedesurvey Oy. In 1995, aerial photography of Daugavpils city and district was performed in cooperation with the Danish Ministry of Agriculture, aerial photography works are performed by the company 'Kampsax-Geoplan', and orthophoto maps are produced by the State Land Service (VZD) with a resolution of 1 meter. Aerial photography was performed with analog cameras to obtain black and white aerial at 1:30,000 scale. Satellite images of the Eastern border of Latvia were purchased in 2000-2001 from ICONOSS. <a href='https://services.lgia.gov.lv/arcfree/rest/services/WMS_Ortofoto_v1/MapServer'>ArcGIS service</a> description.",
         "license_url": "https://www.lgia.gov.lv/en/black-and-white-orthophoto-map-1994-1999-cycle-1",
+        "privacy_policy_url": "https://www.lgia.gov.lv/en/node/1033",
         "attribution": {
             "text": "LĢIA (Latvian Geospatial Information Agency) provided these open data (CC0) and WMS service."
         },

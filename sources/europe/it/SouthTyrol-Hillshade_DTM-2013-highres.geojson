@@ -6,7 +6,7 @@
             "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC0-1.0",
             "required": true
         },
-        "license_url": "https://geoservices.buergernetz.bz.it/geonetwork/srv/ger/pdf?uuid=p_bz:a060f1bf-1149-4c57-bdb7-400464e112d5",
+        "license_url": "https://geoservices.buergernetz.bz.it/geonetwork/srv/ger/pdf?uuid=p_bz:Elevation:DigitalTerrainModel-0.5m",
         "privacy_policy_url": "https://geoportal.buergernetz.bz.it/privacy.asp",
         "description": "Schummerung errechnet aus dem DTM",
         "available_projections": [
@@ -18,12 +18,14 @@
             "EPSG:4230",
             "EPSG:4258",
             "EPSG:4326",
+            "EPSG:6875",
+            "EPSG:7791",
             "EPSG:23032",
             "EPSG:25832",
             "EPSG:31254",
             "EPSG:32632"
         ],
-        "url": "https://geoservices.buergernetz.bz.it/geoserver/p_bz-elevation/ows?LAYERS=DTM_Hillshade_SolarTirol_3857&STYLES=DTM_Hillshade_SolarTirol_3857&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://geoservices1.civis.bz.it/geoserver/p_bz-Elevation/wms?LAYERS=DigitalTerrainModel-0.5m-Hillshade&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "IT",
         "type": "wms",
         "category": "elevation",

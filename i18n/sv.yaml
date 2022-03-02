@@ -20,9 +20,57 @@ sv:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
+    Bedzin-PL-aerial_image:
+      attribution:
+        text: Poviat Starosty i Będzin
+      name: 'Będzin: Orthophotomap 2013 (flygbild)'
+    Bedzin-PL-buildings:
+      attribution:
+        text: Poviat Starosty i Będzin
+      name: 'Będzin: Byggnader'
     Bing:
       description: Satellit- eller flygfoton.
       name: Bing-flygfoto
+    Bytom-2012:
+      attribution:
+        text: Bytoms stadshus
+      name: 'Bytom: Orthophotomap 2012 (flygbild)'
+    Bytom-2014:
+      attribution:
+        text: Bytoms stadshus
+      name: 'Bytom: Fotoplan 2014 (flygbild)'
+    Bytom-buildings:
+      attribution:
+        text: Bytoms stadshus
+      name: 'Bytom: Byggnader'
+    Czestochowa-2011:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Orthophotomap 2011 (flygbild)'
+    Czestochowa-2013:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Ortofotokarta 2013 (flygfoto)'
+    Czestochowa-2014:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Ortophotomap 2014 (flygfoto)'
+    Czestochowa-2015:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Orthophotomap 2015 (flygbild)'
+    Czestochowa-2016:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Ortofotokarta 2016 (flygfoto)'
+    Czestochowa-2017:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Ortofotokarta 2017 (flygfoto)'
+    Czestochowa-buildings:
+      attribution:
+        text: Częstochowa stadshus
+      name: 'Częstochowa: Byggnader'
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu av EOX IT Services GmbH (Innehåller modifierad data från Copernicus Sentinel 2017 & 2018)
@@ -38,6 +86,92 @@ sv:
         text: Villkor & återkoppling
       description: Arkivbilder från Esri som kan vara tydligare och mer korrekta än det normala lagret.
       name: Esri världsflygfoto (Clarity) Beta
+    Geoportal2-PL-HighResolution-aerial_image_WMS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: Ortofotomap med en upplösning på 10 cm eller mer. Uppgifterna sorteras efter upplösning och sedan enligt nyheter, t.ex. skickar ett ark från 2012 med en upplösning på 8 cm ett ark från 2019 med en upplösning på 10 cm.
+      name: 'Geoportal 2: Orthophotomap med hög upplösning, kan vara utdaterat (flygbild)'
+    Geoportal2-PL-Streets_WMS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: WMS-surfningstjänst National Address Numbering Integration möjliggör nedladdning av kartbilder skapade på grundval av rumsliga data från det statliga gränsregistret inom gatu- och adressposter.
+      name: Geoportal 2 Gatunamn
+    Geoportal2-PL-addres_points_WMS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: WMS-surfningstjänst National Address Numbering Integration möjliggör nedladdning av kartbilder skapade på grundval av rumsliga data från det statliga gränsregistret inom gatu- och adressposter.
+      name: 'Geoportal 2: Adresspunkter'
+    Geoportal2-PL-aerial_image_WMS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: Bläddringstjänst (Web Map Service, WMS) som låter dig se ortofoton för området i Polen. Uppgifterna som tillhandahålls genom denna tjänst är en ortofotokarta gjord av flygfoton. Tjänsten erbjuder stöd för WMS 1.3.0-gränssnittet.
+      name: 'Geoportal 2: Orthophotomap (senaste flygbild) (WMS)'
+    Geoportal2-PL-aerial_image_WMTS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: Bläddringstjänst (Web Map Tile Service, WMTS) som gör det möjligt att bläddra i ortofoton för Polens område. Data som tillhandahålls genom denna tjänst är en ortofotokarta gjord av flygfoton.
+      name: 'Geoportal 2: Ortofotokarta (senaste flygbilder) (WMTS)'
+    Geoportal2-PL-buildings_WMS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: Tjänsten National Integration of Land Records är en kollektiv tjänst för presentation av registreringsdata som kommer direkt från enheterna på poviatnivå. Tjänsten innehåller endast data från de enheter som har WMS-tjänsten med lämpliga parametrar och har beslutat att inkludera deras WMS-tjänst i kollektivtjänsten "KrajowaIntegracjaEwidycjiGruntow".
+      name: 'Geoportal 2: Byggnadsregister-WMS'
+    Geoportal2-PL-plot_boundaries_WMS:
+      attribution:
+        text: Huvudkontoret för geodesi och kartografi
+      description: Tjänsten National Integration of Land Records är en samlad tjänst för presentation av registreringsdata direkt från enheter på distriktsnivå. Tjänsten innehåller endast data från de enheter som har WMS-tjänsten med lämpliga parametrar och har beslutat att inkludera sin WMS-tjänst i kollektivtjänst Nationell integration av fastighetsregistret.
+      name: 'Geoportal 2: Plottgränser'
+    Geoportal2-PL-prng:
+      attribution:
+        text: Centralt geodetiskt och kartografiskt dokumentationscenter
+      name: 'Geoportal 2: PRNG (geografiska namn)'
+    Gliwice-2013:
+      attribution:
+        text: Gliwice stadshus
+      name: 'Gliwice: Ortophotomap 2013 (flygfoto)'
+    Gliwice-2017:
+      attribution:
+        text: Gliwice stadshus
+      name: 'Gliwice: Ortophotomap 2017 (flygfoto)'
+    Gliwice-2018:
+      attribution:
+        text: Gliwice stadshus
+      name: 'Gliwice: Ortophotomap 2018 (flygfoto)'
+    Gliwice-2020:
+      attribution:
+        text: Gliwice stadshus
+      name: 'Gliwice: Ortophotomap 2020 (flygfoto)'
+    Gliwice-buildings:
+      attribution:
+        text: Gliwice stadshus
+      name: 'Gliwice: Byggnader'
+    LSA-ATKIS_BU:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Form av byggnader i Sachsen-Anhalt
+      name: © GeoBasis-DE/LVermGeo LSA, ATKIS_BU
+    LSA-DOP20:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: flygfoton över delstaten Sachsen-anhalt, 20 cm upplösning
+      name: © GeoBasis-DE/LVermGeo LSA, DOP20
+    LSA-DVG:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: 'Vektordata över administrativa gränser. Gränserna för förbundsstaten, distriktet, kommunen och delar av kommunen ges.'
+      name: © GeoBasis-DE/LVermGeo LSA, DVG
+    Lodz-2015:
+      attribution:
+        text: Stadskontoret i Łódź
+      name: 'Łódź: Ortofotokarta 2015 (flygfoto)'
+    Lodz-2017:
+      attribution:
+        text: Stadskontoret i Łódź
+      name: 'Łódź: Ortophotomap 2017 (flygfoto)'
+    Lodz-buildings:
+      attribution:
+        text: Stadskontoret i Łódź
+      name: 'Łódź: Byggnader'
     MAPNIK:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA 2.0
@@ -48,6 +182,11 @@ sv:
         text: Villkor & återkoppling
       description: Satellit- eller flygfoton.
       name: Mapbox satellit
+    OSMUK-Cadastral-Parcels:
+      attribution:
+        text: Innehåller information från den offentliga sektorn licensierad under Open Government License v3.0.
+      description: Perfekt justerade kataster (fastighetsregistret) i Storbritannien
+      name: OSMUK Cadastral Parcels
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMaps bidragsgivare, CC-BY-SA
@@ -76,13 +215,22 @@ sv:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMaps bidragsgivare, CC-BY-SA
       name: 'OSM Inspector: Taggning'
+    Ruda_Slaska-aerial_image:
+      attribution:
+        text: Stadshuset i Ruda Śląska
+      name: 'Ruda Śląska: Ortofotokarta (flygfoto)'
     SPW_ORTHO_LAST:
       name: SPW(allonie) mest aktuella flygfoton
     SPW_PICC:
       name: SPW(allonie) PICC numerisk bild
-    US-TIGER-Roads-2014:
-      description: Vid zoomnivå 16+, fritt tillgänglig kartdata (public domain) från US Census. Vid lägre zoomnivåer, enbart ändringar sedan 2006 minus ändringar redan införlivats i OpenStreetMap.
-      name: TIGER Roads 2014
+    Siemianowice_Slaskie-aerial_image:
+      attribution:
+        text: Siemianowice Śląskie stadshus
+      name: 'Siemianowice Śląskie: Ortofotomap (flygbild)'
+    Siemianowice_Slaskie-buildings:
+      attribution:
+        text: Siemianowice Śląskie stadshus
+      name: 'Siemianowice Śląskie: Byggnader'
     US-TIGER-Roads-2017:
       description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
       name: TIGER Roads 2017
@@ -92,35 +240,52 @@ sv:
     US-TIGER-Roads-2019:
       description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
       name: TIGER Roads 2019
+    US-TIGER-Roads-2020:
+      description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
+      name: TIGER Roads 2020
     USDA-NAIP:
-      description: Det senaste året av DOQQs från National Agriculture Imagery Program (NAIP) för varje stat i USA.
+      attribution:
+        text: U.S. Department of Agriculture
+      description: Det senaste året av 60 cm 4-band DOQQs från National Agriculture Imagery Program (NAIP) för varje stat i USA.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Väg: Grön ram = oklassificerad. Brun ram = bruksväg. Underlag: grus = ljusbrun fyllning, asfalt = svart, belagd = grå, mark = vit, betong = blå, gräs = grön. Säsongsöppen = vita streck'
       name: Bildlager för Skogsvägar i USA
+    UrbISOrtho:
+      attribution:
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
+      name: CIRB/CIBG mest aktuella flygfoton
     UrbISOrtho2016:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
       name: UrbIS-Ortho 2018
     UrbISOrtho2019:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
       name: UrbIS-Ortho 2019
+    UrbISOrtho2020:
+      attribution:
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
+      name: UrbIS-Ortho 2020
     UrbisAdmFR:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
       name: UrbisAdm FR
+    UrbisAdmFRNL:
+      attribution:
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
+      name: UrbisAdm FR/NL
     UrbisAdmNL:
       attribution:
-        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Copyright CIRB
+        text: Realiserad med hjälp från Bryssel UrbIS®© – Distribution & Upphovsrätt CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
@@ -142,6 +307,10 @@ sv:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMaps bidragsgivare, CC by-SA 3.0
       name: 'Waymarked Trails: Vintersport'
+    Zabrze-2011:
+      attribution:
+        text: Zabrze stadshus
+      name: 'Zabrze: Ortophotomap 2011 (flygfoto)'
     basemap.at:
       attribution:
         text: basemap.at
@@ -157,16 +326,15 @@ sv:
         text: basemap.at
       description: Noteringsöverdrag tillhandahållen av basemap.at.
       name: basemap.at Överdrag
-    basemap.at-surface:
+    cyclosm:
       attribution:
-        text: basemap.at
-      description: Ytlager tillhandahållen av basemap.at.
-      name: basemap.at Yta
-    basemap.at-terrain:
+        text: 'Visning: CyclOSM (tillhandahållet av OpenStreetMap Frankrike) © Kartdata OpenStreetMaps bidragsgivare'
+      description: CyclOSM är en kartstil designad med cykling i åtanke. Den utnyttjar OpenStreetMap-data för att skapa en vacker och praktisk cykelkarta!
+      name: CyclOSM
+    debicki-buildings:
       attribution:
-        text: basemap.at
-      description: Terränglager tillhandahållen av basemap.at.
-      name: basemap.at Terräng
+        text: Powiat dębicki
+      name: 'Dębica poviat: Byggnader'
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofoto 2010
@@ -175,13 +343,33 @@ sv:
     finds.jp_KBN_2500:
       attribution:
         text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. Bra för kartläggning, men lite gammal.
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Bra för kartläggning, men lite gammal.
       name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Göteborgs Stad, CC0
       description: Stadskartan är en översiktlig karta som beskriver Göteborg. Den innehåller generell information om mark, kommunikation, hydrografi, byggnader, adressnummer och gatunamn, administrativ indelning och övrig orienterande text.
       name: Göteborg Stadskarta
+    gothenburg-dtm-2017:
+      attribution:
+        text: © Göteborgs Stad, CC0
+      description: Webbkartstjänst som presenterar höjder och lutningar baserad på höjdmodellen 2017 för Göteborgs stad. Upplösning 0,5 meter per pixel.
+      name: Göteborg höjdmodell
+    gothenburg-ortho:
+      attribution:
+        text: © Göteborgs Stad, CC0
+      description: Flygfoto för Göteborgs Stad
+      name: Flygfoton Göteborg 2015
+    gothenburg-ortho_2017:
+      attribution:
+        text: © Göteborgs Stad, CC0
+      description: Flygfoto för Göteborgs Stad
+      name: Flygfoton Göteborg 2017
+    gothenburg-ortho_2019:
+      attribution:
+        text: © Göteborgs Stad, CC0
+      description: Flygfoto för Göteborgs Stad
+      name: Flygfoton Göteborg 2019
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -197,11 +385,6 @@ sv:
         text: GSI Japan
       description: Japan GSI standardkarta. Stor täckning.
       name: Japan GSI standardkarta
-    helsingborg-orto:
-      attribution:
-        text: © Helsingborgs kommun
-      description: Flygfoton från Helsingborgs kommun 2016, allmänt tillgängligt
-      name: Flygfoton Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © Kalmar kommun
@@ -217,11 +400,25 @@ sv:
         text: © Kalmar kommun
       description: Flygfoton över tätorter i Kalmar kommun 2018
       name: Kalmar tätort, flygfoton 2018
+    kalmar-orto-2020:
+      attribution:
+        text: © Kalmar kommun
+      description: Flygfoton över tätorter i Kalmar kommun 2020
+      name: Kalmar tätort, flygfoton 2020
+    kartverket-bygninger:
+      attribution:
+        text: © Kartverket
+      description: INSPIRE byggnader i Norge.
+      name: Kartverket Byggnadsbildlager
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
       description: Kelkkareitit.fi snöskoterleder från OSM (Nordisk täckning)
       name: Bildlager med nordiska skoterleder
+    lancucki-buildings:
+      attribution:
+        text: Łańcut-distriktet
+      name: 'Łańcut-distriktet: Byggnader'
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
@@ -242,6 +439,10 @@ sv:
         text: © Linköpings kommun
       description: Flygfoton från Linköpings kommun 2010, allmänt tillgängligt
       name: Flygfoton Linköping
+    lubaczowski-buildings:
+      attribution:
+        text: Lubaczów-distriktet
+      name: 'Lubaczów-distriktet: Byggnader'
     mapbox_locator_overlay:
       attribution:
         text: Villkor & återkoppling
@@ -251,6 +452,21 @@ sv:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA
       name: OpenPT-karta (bildlager)
+    openrailwaymap:
+      attribution:
+        text: 'Visning: OpenRailwayMap, © Kartdata OpenStreetMaps bidragsgivare'
+      description: Bildlager som visar järnvägsinfrastruktur baserat på data från OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Visning: OpenRailwayMap, © Kartdata OpenStreetMaps bidragsgivare'
+      description: Bildlager som visar hastighetsgränser för järnväg baserat på data från OpenStreetMap
+      name: OpenRailwayMap hastighetsgränser
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Visning: OpenRailwayMap, © Kartdata OpenStreetMaps bidragsgivare'
+      description: Bildlager som visar järnvägssignaler baserat på data från OpenStreetMap
+      name: OpenRailwayMap signaler
     osm-gps:
       attribution:
         text: © OpenStreetMaps bidragsgivare
@@ -264,24 +480,55 @@ sv:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA
       name: OpenStreetMap (Tysk stil)
-    osmse-ekonomiska:
+    poznan-ortofotomapa2014:
       attribution:
-        text: © Lantmäteriet
-      description: Inskanning av "Ekonomisk karta" från ungefär 1950–1980
-      name: Lantmäteriets Ekonomiska karta 1950–1980
+        text: Styrelsen för geodesi och stadsregistret GEOPOZ
+      name: 'Poznań: Ortophotomap 2014 (flygfoto)'
+    poznan-ortofotomapa2016:
+      attribution:
+        text: Styrelsen för geodesi och stadsregistret GEOPOZ
+      name: 'Poznań: Ortophotomap 2016 (flygfoto)'
+    poznan-ortofotomapaBiezaca:
+      attribution:
+        text: Styrelsen för geodesi och stadsregistret GEOPOZ
+      name: 'Poznań: Aktuell ortofotokarta (flygfoto)'
+    przemysl-aerial:
+      attribution:
+        text: Staden Przemyśl
+      name: 'Przemyśl: Ortophotomap (flygbild)'
+    przemysl-buildings:
+      attribution:
+        text: Staden Przemyśl
+      name: 'Przemyśl: Byggnader'
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMaps bidragsgivare
       name: QA Ingen adress
+    rzeszowski-aerial:
+      attribution:
+        text: Rzeszów-distriktet
+      name: 'Rzeszów-distriktet: Ortofotokarta (flygfoto)'
+    rzeszowski-buildings:
+      attribution:
+        text: Rzeszów-distriktet
+      name: 'Rzeszów-distriktet: Byggnader'
     skobbler:
       attribution:
-        text: '© Plattor: skobbler Kartdata: OpenStreetMaps contributors'
+        text: '© Plattor: skobbler Kartdata: OpenStreetMaps bidragsgivare'
       name: skobbler
     skoterleder:
       attribution:
         text: © Skoterleder.org
       description: Snöskoterleder
       name: Snöskoterkarta, Sverige
+    sropczyce-buildings:
+      attribution:
+        text: Ropczyce-Sędziszów-distriktet
+      name: 'Ropczycko-Sędziszów-distriktet: Byggnader'
+    stalowowolski-buildings:
+      attribution:
+        text: Stalowa Wola-distriktet
+      name: 'Stalowa Wola-distriktet: Byggnader'
     stamen-terrain-background:
       attribution:
         text: 'Kartplattor av Stamen Design, under CC BY 3.0. Data från OpenStreetMap, under ODbL '
@@ -289,8 +536,13 @@ sv:
     stockholm-orto:
       attribution:
         text: © Stockholms kommun, CC0
-      description: Flygfoton från Stockholms kommun 2016, CC0-licens
+      description: Flygfoton från Stockholms kommun 2018, CC0-licens
       name: Flygfoton Stockholm
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Flygfoton Susono city
+      description: Flygfotona släppta av Susono City som öppen data.
+      name: Flygfoton Susono City
     tf-cycle:
       attribution:
         text: Kartor © Thunderforest, Data © OpenStreetMaps bidragsgivare
@@ -299,6 +551,10 @@ sv:
       attribution:
         text: Kartor © Thunderforest, Data © OpenStreetMaps bidragsgivare
       name: Thunderforest landskap
+    tf-outdoors:
+      attribution:
+        text: Kartor © Thunderforest, Data © OpenStreetMaps bidragsgivare
+      name: Thunderforest utomhus
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -319,13 +575,16 @@ sv:
         text: © Trafikverket, CC0
       description: 'Svenska nationella vägdatabasen, NVDB, med extra detaljer: Vägreferenser, hastighetsdämpare, busshållplatser, broar, tunnlar, fartkameror.'
       name: Trafikverkets vägnätverk extra
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Svenska nationella vägdatabasen, NVDB – Gatunamn
-      name: Trafikverkets gaturnamn
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Svenska nationella vägdatabasen, NVDB, med flera kartlager att välja
       name: Trafikverkets vägdatabas anpassningsbar
+    wroclaw-orto2015:
+      attribution:
+        text: Wrocławs stadshus
+      name: 'Wrocław: Orthophotomap 2015 (flygbild)'
+    wroclaw-orto2018:
+      attribution:
+        text: Wrocław stadshus
+      name: 'Wrocław: Flygfoton 2018'

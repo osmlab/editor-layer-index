@@ -1,92 +1,228 @@
 tr:
   imagery:
     AGIV:
-      name: AIV Flanders'ın en son uydu görüntüleri
+      attribution:
+        text: © agentschap Flanders Hakkında Bilgi
+      name: AIV Flanders'ın en güncel uydu görüntüleri
+    AGIV10cm:
+      attribution:
+        text: © agentschap Flanders Hakkında Bilgi
+      name: AIV Flanders 2013-2015 uydu görüntüleri 10cm
+    AGIVFlandersGRB:
+      attribution:
+        text: © agentschap Flanders Hakkında Bilgi
+      name: AIV Flanders GRB
+    AIV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © agentschap Flanders Hakkında Bilgi
+    AIV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © agentschap Flanders Hakkında Bilgi
     Bing:
-      description: Uydu görüntüleri.
-      name: Bing Uydu Görüntüleri
+      description: Uydu ve hava görüntüleri.
+      name: Bing uydu görüntüsü
+    EOXAT2018CLOUDLESS:
+      description: İşlenmiş Sentinel Uydu görüntüleri
+      name: eox.at 2018 bulutsuz
     EsriWorldImagery:
       attribution:
-        text: Şartlar ve Geri Bildirim
-      description: Esri Uydu Görüntüleri
-      name: Esri Uydu Görüntüleri
+        text: Şartlar & Geri Bildirim
+      description: Esri uydu Görüntüsü.
+      name: Esri Uydu Görüntüsü
     EsriWorldImageryClarity:
       attribution:
-        text: Şartlar ve Geri Bildirim
-      name: Esri Uydu Görüntüleri (Net) Beta
+        text: Şartlar & Geri Bildirim
+      description: Esri, varsayılan katmandan daha net ve daha doğru olabilecek görüntüleri arşivler.
+      name: Esri Uydu Görüntüsü (Net) Beta
     MAPNIK:
+      attribution:
+        text: © OpenStreetMap katılımcıları, CC-BY-SA 2.0
       description: Varsayılan OpenStreetMap katmanı.
-      name: OpenStreetMap (Klasik)
+      name: OpenStreetMap (Standart)
     Mapbox:
       attribution:
         text: Şartlar & Geri Bildirim
-      description: Uydu görüntüleri.
-      name: Mapbox Uydu Görüntüleri
+      description: Uydu ve hava görüntüleri.
+      name: Mapbox Uydu Görüntüsü
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Adresler'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Adresler'
     OSM_Inspector-Geometry:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Geometri'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Geometri'
     OSM_Inspector-Highways:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Karayolları'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Karayolları'
     OSM_Inspector-Multipolygon:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Alan'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Alan'
     OSM_Inspector-Places:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Yerler'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Mekanlar'
     OSM_Inspector-Routing:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Rota'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Rotalama'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap destekçileri, CC-BY-SA
-      name: 'OSM Müfettişi: Etiketleme'
+        text: © Geofabrik GmbH, OpenStreetMap katılımcıları, CC-BY-SA
+      name: 'OSM Inspector: Etiketleme'
     SPW_ORTHO_LAST:
-      name: SPW(allonie)'nin en son havadan görüntüleri
-    US-TIGER-Roads-2014:
-      description: 16'dan büyük ölçekte, US Census verileri. Daha küçük ölçeklerde, 2006'dan bu yana yapılmış güncellemeler - OpenStreetMap güncellemeleri hariç
-      name: TIGER Roads 2014
+      name: SPW(allonie)'nin en güncel hava görüntüleri
+    SPW_PICC:
+      name: SPW(allonie) PICC sayısal görüntüler
     US-TIGER-Roads-2017:
-      description: Sarı = US Census harita verileri. Kırmızı = OpenStreetMap'te yer almayan veriler.
-      name: TIGER Roads 2017
+      description: Sarı = Genel kullanıma açık US Census harita verileri. Kırmızı = OpenStreetMap'te bulunmayan veriler
+      name: TIGER Yolları 2017
+    US-TIGER-Roads-2018:
+      description: Sarı = Genel kullanıma açık US Census harita verileri. Kırmızı = OpenStreetMap'te bulunmayan veriler
+      name: TIGER Yolları 2018
+    US-TIGER-Roads-2019:
+      description: Sarı = Genel kullanıma açık US Census harita verileri. Kırmızı = OpenStreetMap'te bulunmayan veriler
+      name: TIGER Yolları 2019
+    USDA-NAIP:
+      name: Ulusal Tarım Görüntü Programı
+    US_Forest_Service_roads_overlay:
+      description: 'Karayolu: Yeşil kaplama = sınıflandırılmamış. Kahverengi kaplama = iz. Yüzey: çakıl = açık kahverengi dolgu, Asfalt = siyah, asfaltlanmış = gri, zemin = beyaz, beton = mavi, çimen = yeşil. Mevsimsel = beyaz çubuklar'
+      name: ABD Orman Yolları Yerleşimi
+    UrbISOrtho2016:
+      attribution:
+        text: Brussels UrbIS®© ile uygulandı - Dağıtım & Telif Hakkı CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: Brussels UrbIS®© ile uygulandı - Dağıtım & Telif Hakkı CIRB
+      name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Brussels UrbIS®© ile uygulandı - Dağıtım & Telif Hakkı CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Brussels UrbIS®© ile uygulandı - Dağıtım & Telif Hakkı CIRB
+      name: UrbIS-Ortho 2019
+    UrbisAdmFR:
+      attribution:
+        text: Brussels UrbIS®© ile uygulandı - Dağıtım & Telif Hakkı CIRB
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      attribution:
+        text: Brussels UrbIS®© ile uygulandı - Dağıtım & Telif Hakkı CIRB
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap destekçileri, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap katılımcıları, CC by-SA 3.0
       name: 'Waymarked Trails: Bisiklet'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap destekçileri, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap katılımcıları, CC by-SA 3.0
       name: 'Waymarked Trails: Yürüyüş'
     Waymarked_Trails-MTB:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap destekçileri, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap katılımcıları, CC by-SA 3.0
       name: 'Waymarked Trails: Dağ Bisikleti'
     Waymarked_Trails-Skating:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap destekçileri, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap katılımcıları, CC by-SA 3.0
       name: 'Waymarked Trails: Kaykay'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap destekçileri, CC by-SA 3.0
+        text: © waymarkedtrails.org, OpenStreetMap katılımcıları, CC by-SA 3.0
       name: 'Waymarked Trails: Kış Sporları'
     basemap.at:
       attribution:
         text: basemap.at
+      description: Hükümet verilerine dayanan Avusturya'nın temel haritası.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
       description: basemap.at - daha önce geoimage.at - tarafından sağlanan Orthofoto katmanı.
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: 'basemap.at tarafından sağlanan ek açıklama yerleşimi '
+      name: basemap.at Şablon
+    eufar-balaton:
+      attribution:
+        text: EUFAR Balaton ortofoto 2010
+      description: Balaton Limnoloji Enstitüsü'nden 1940 jeo-etiketli fotoğraflama.
+      name: EUFAR Balaton ortofotoları
+    finds.jp_KBN_2500:
+      attribution:
+        text: GSI KIBAN 2500
+      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. İz sürmek için iyi ama biraz daha eski.
+      name: Japonya GSI KIBAN 2500
+    gothenburg-citymap:
+      attribution:
+        text: Göteborg Belediyesi, CC0
+      description: Şehir haritası, Göteborg'u tanımlayan bir genel bakış haritasıdır. Arazi, iletişim, hidrografi, binalar, adres numaraları ve cadde adları, idari bölüm ve diğer yönlendirme metinleri hakkında genel bilgiler içerir.
+      name: Göteborg Şehir haritası
+    gothenburg-ortho:
+      attribution:
+        text: Göteborg Belediyesi, CC0
+      description: Göteborg belediyesi için Ortofoto
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japonya
+      description: Japonya GSI hava fotoğrafı görüntüleri. Tamamen ortorektifize edilmemiş, ancak biraz daha yeni ve / veya GSI ortogörüntülerinden farklı bir şekilde kaplanmıştır.
+      name: Japonya GSI hava fotoğrafı görüntüleri
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japonya kesintisiz fotoğraf
+      description: Japonya GSI sorunsuz fotoğraf görüntüleri. GSI orto, hava fotoğrafı, afet sonrası ve diğerlerinin en son görüntülerinin koleksiyonu.
+      name: Japonya GSI sorunsuz fotoğraf görüntüleri
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japonya
+      description: Japonya GSI Standart Haritası. Geniş kapsamlı.
+      name: Japonya GSI Standart Harita
+    kalmar-orto-2014:
+      attribution:
+        text: © Kalmar belediyesi
+      description: Kalmar belediyesinin kuzey kesimi için ortofotolar 2014
+      name: Kalmar Kuzey Ortofotosu 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Kalmar belediyesi
+      description: Kalmar Belediyesi'nin güney sahili için Ortofotolar 2016
+      name: Kalmar Güney Ortofoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Kalmar Belediyesi
+      description: Kalmar belediyesinin kentsel alanları için Ortofotolar 2018
+      name: Kalmar Kentsel Ortofoto 2018
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: OSM'den Kelkkareitit.fi kar arabası parkurları (İskandinav kapsamı)
+      name: İskandinav kar arabası yerleşimi
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: 1955–1965 dönemine ait İsveç ortofotolarından oluşan mozaik. Daha eski ve daha genç resimler ortaya çıkabilir.
+      name: Lantmäteriet Tarihi Ortofoto 1980
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: 1970-1980 dönemine ait İsveç ortofotoları mozaiği. Yapım aşamasındadır.
+      name: Lantmäteriet Tarihi Ortofoto 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: İsveç topografik haritası 1:50 000
+      name: Lantmäteriet Topografik Haritası
+    linkoping-orto:
+      attribution:
+        text: © Linköping Belediyesi
+      description: Linköping belediyesinden ortofotolar 2010 , açık veri
+      name: Linköping Ortofoto
     mapbox_locator_overlay:
       attribution:
         text: Şartlar & Geri Bildirim
@@ -94,31 +230,60 @@ tr:
       name: Yer Belirleyici Yerleşimi
     openpt_map:
       attribution:
-        text: © OpenStreetMap katkıda bulunan kullanıcılar, CC-BY-SA
+        text: © OpenStreetMap katılımcıları, CC-BY-SA
       name: OpenPT Map (katman)
+    openrailwaymap:
+      attribution:
+        text: 'Görselleştirme: Açık Demiryolu hartiası © Harita verisi OpenStreetMap katılımcıları'
+      description: OpenStreetMap verilerine dayalı demiryolu altyapısını gösteren yükleme görüntüleri
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Görselleştirme: Açık Demiryolu hartiası © Harita verisi OpenStreetMap katılımcıları'
+      description: OpenStreetMap verilerine dayalı demiryolu hız sınırlarını gösteren yükleme görüntüleri
+      name: OpenRailwayMap Maksimum Hızları
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Görselleştirme: Açık Demiryolu hartiası © Harita verisi OpenStreetMap katılımcıları'
+      description: OpenStreetMap verilerine dayalı demiryolu sinyallerini gösteren yükleme görüntüleri
+      name: OpenRailwayMap Sinyali
     osm-gps:
       attribution:
-        text: © OpenStreetMap destekçileri
-      description: OpenStreetMap'e yüklenmiş GPS rotaları
-      name: OpenStreetMap GPS rotaları
+        text: © OpenStreetMap katılımcıları
+      description: OpenStreetMap'e yüklenmiş GPS izleri.
+      name: OpenStreetMap GPS izleri
     osm-mapnik-black_and_white:
       attribution:
-        text: © OpenStreetMap destekçileri, CC-BY-SA
-      name: OpenStreetMap (Siyah & Beyaz)
+        text: © OpenStreetMap katılımcıları, CC-BY-SA
+      name: OpenStreetMap (Standart Siyah & Beyaz)
     osm-mapnik-german_style:
       attribution:
-        text: © OpenStreetMap destekçileri, CC-BY-SA
+        text: © OpenStreetMap katılımcıları, CC-BY-SA
       name: OpenStreetMap (Alman Stil)
     qa_no_address:
       attribution:
-        text: Simon Poole, Veriler © OpenStreetMap destekçileri
+        text: Simon Poole, Veriler © OpenStreetMap katılımcıları
       name: Adres Yok
     skobbler:
       attribution:
         text: 'Harita © skobbler, Veriler © OpenStreetMap destekçileri'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Kar arabası yolları
+      name: İsveç kar arabası haritası
     stamen-terrain-background:
       name: Stamen Arazi
+    stockholm-orto:
+      attribution:
+        text: © Stokholm belediyesi, CC0
+      name: Stokholm Ortofoto
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Susono ortofotosu
+      description: Susono  tarafından açık veri olarak yayınlanan hava fotoğrafları.
+      name: Susono şehir ortofotosu
     tf-cycle:
       attribution:
         text: Harita © Thunderforest, Veriler © OpenStreetMap destekçileri
@@ -127,3 +292,36 @@ tr:
       attribution:
         text: Harita © Thunderforest, Veriler © OpenStreetMap destekçileri
       name: Thunderforest Arazi
+    tf-outdoors:
+      attribution:
+        text: haritalar © Thunderforest, veri © OpenStreetMap katkıda bulunanlar
+      name: Thunderforest Açık Hava
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      description: İsveç demiryolu ağı, yan hatlar dahil
+      name: Trafikverket Demiryolu Ağı
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Harita katmanları için çeşitli seçeneklere sahip İsveç demiryolu ağı
+      name: Trafikverket Demiryolu Ağı Seçenekleri
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      description: İsveç NVDB yol ağı
+      name: Trafikverket Yol Ağı
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+      description: 'İsveç NVDB ekstra ayrıntılar: Otoyol referansı, trafiği sakinleştirme, dinlenme alanı, otobüs durağı, köprü, tünel, hız kamerası'
+      name: Trafikverket Yol Ağı extra
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Harita katmanları için çeşitli seçeneklere sahip İsveç NVDB yol ağı
+      name: Trafikverket Yol Ağı Seçenekleri
+    wroclaw-orto2018:
+      attribution:
+        text: Wroclaw Belediye Binası
+      name: 'Wroclaw: Ortofoto haritası 2018 (havadan görüntü)'

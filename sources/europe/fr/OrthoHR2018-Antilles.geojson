@@ -6,18 +6,18 @@
         "type": "tms",
         "default": false,
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/orthohr_2018_antilles/{zoom}/{x}/{y}",
-        "category":"photo",
+        "category": "photo",
         "start_date": "2018",
         "end_date": "2018",
-        "attribution":{
-            "text":"IGN",
-            "url":"https://geoservices.ign.fr/documentation/diffusion/documentation-offre.html#bdortho_orthohr",
-            "required":true
+        "attribution": {
+            "text": "IGN",
+            "url": "https://geoservices.ign.fr/documentation/diffusion/documentation-offre.html#bdortho_orthohr",
+            "required": true
         },
         "country_code": "FR",
         "max_zoom": 21,
         "min_zoom": 3,
-        "license_url":"https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#donn%C3%A9es-ortho-hr-sous-licence-ouverte"
+        "license_url": "https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#donn%C3%A9es-ortho-hr-sous-licence-ouverte"
     },
     "geometry": {
         "type": "Polygon",
@@ -28,20 +28,20 @@
                     18.1339
                 ],
                 [
-                    -62.7182,
-                    17.92256
-                ],
-                [
-                    -62.82463,
-                    17.81212
+                    -63.09453,
+                    18.13388
                 ],
                 [
                     -63.18897,
                     18.04343
                 ],
                 [
-                    -63.09453,
-                    18.13388
+                    -62.82463,
+                    17.81212
+                ],
+                [
+                    -62.7182,
+                    17.92256
                 ],
                 [
                     -62.95273,

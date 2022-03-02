@@ -4,7 +4,7 @@
         "id": "nve-vannkraft",
         "name": "NVE Hydropower Plants overlay",
         "type": "wms",
-        "url": "https://gis3.nve.no/map/services/Vannkraft1/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vannkraftverk,Vannvei,Dam&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://nve.geodataonline.no/arcgis/services/Vannkraft1/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vannkraftverk,Vannvei,Dam&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
@@ -31,6 +31,7 @@
         "max_zoom": 22,
         "min_zoom": 6,
         "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
+        "privacy_policy_url": "https://www.nve.no/om-nve/nves-personvernerklaering/",
         "description": "Hydropower plants including waterways (tunnel, canal, pipeline) and dams",
         "category": "other"
     },
