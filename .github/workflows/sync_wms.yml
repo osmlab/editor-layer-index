@@ -32,7 +32,7 @@ jobs:
           python scripts/check.py $(find sources -type f -name '*.geojson')
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4.0.1
         with:
           commit-message: Sync WMS sources [skip travis]
           delete-branch: true
