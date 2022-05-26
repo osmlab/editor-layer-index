@@ -2,7 +2,8 @@
     "type": "Feature",
     "properties": {
         "id": "Maaamet-Estonia_Cadastre",
-        "name": "Estonia Cadastre (Maaamet)",
+        "name": "Maa-amet Cadastral Map",
+        "i18n": true,
         "type": "wms",
         "url": "https://kaart.maaamet.ee/wms/alus-geo?LAYERS=of10000,TOPOYKSUS_6569,TOPOYKSUS_6573&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "EE",
@@ -11,7 +12,7 @@
             "EPSG:4326"
         ],
         "attribution": {
-            "text": "Maa-Ameti katastrikaart ortofoto alusel",
+            "text": "Maa-ameti katastrikaart ortofoto alusel",
             "required": true
         },
         "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",

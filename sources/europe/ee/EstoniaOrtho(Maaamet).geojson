@@ -2,16 +2,17 @@
     "type": "Feature",
     "properties": {
         "id": "Maaamet-Estonia_Ortho",
-        "name": "Estonia Ortho (Maaamet)",
+        "name": "Maa-amet Ortho (WMS)",
+        "i18n": true,
         "type": "wms",
-        "url": "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "EE",
         "available_projections": [
             "EPSG:3857",
             "EPSG:4326"
         ],
         "attribution": {
-            "text": "Maa-Ameti ortofoto",
+            "text": "Maa-ameti ortofoto",
             "required": true
         },
         "best": true,
