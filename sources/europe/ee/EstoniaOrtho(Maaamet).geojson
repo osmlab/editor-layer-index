@@ -5,7 +5,7 @@
         "name": "Maa-amet Ortho (WMS)",
         "i18n": true,
         "type": "wms",
-        "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&STYLES=&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "EE",
         "available_projections": [
             "EPSG:3857",
@@ -19,6 +19,7 @@
         "max_zoom": 21,
         "min_zoom": 15,
         "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+        "privacy_policy_url": "https://maaamet.ee/asutus-uudised-ja-kontakt/organisatsioon/isikuandmete-tootlemine",
         "category": "photo"
     },
     "geometry": {
