@@ -8,7 +8,7 @@
             "required": false
         },
         "name": "Manatee County Orthoimagery (2021)",
-        "url": "https://www.mymanatee.org/lizardtech/iserv/ows?LAYERS=2021_webmercator&FORMAT=image%2Fjpeg&PROJECTION={proj}&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
+        "url": "https://www.mymanatee.org/lizardtech/iserv/ows?LAYERS=2021_webmercator&STYLES=&SRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -41,10 +41,10 @@
                 ],
                 [
                     -82.23431827784,
-                    27.20838111200
+                    27.208381112
                 ],
                 [
-                    -82.26513149500,
+                    -82.265131495,
                     27.20836202863
                 ],
                 [
@@ -52,7 +52,7 @@
                     27.37341558252
                 ],
                 [
-                    -82.45037557840,
+                    -82.4503755784,
                     27.37296779791
                 ],
                 [
@@ -72,7 +72,7 @@
                     27.37249143823
                 ],
                 [
-                    -82.57371429920,
+                    -82.5737142992,
                     27.38624843034
                 ],
                 [
@@ -104,7 +104,7 @@
                     27.64764779101
                 ],
                 [
-                    -82.04986812830,
+                    -82.0498681283,
                     27.64869307052
                 ],
                 [
