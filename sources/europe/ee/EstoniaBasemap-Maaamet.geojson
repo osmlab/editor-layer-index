@@ -3,18 +3,21 @@
     "properties": {
         "id": "maaamet.ee-pohi_vr2",
         "attribution": {
-            "text": "Maa-Ameti põhikaart",
+            "text": "Maa-ameti põhikaart",
             "required": true
         },
-        "name": "Estonia Basemap (Maaamet)",
+        "name": "Maa-amet Basic Map",
+        "i18n": true,
         "available_projections": [
             "EPSG:3857",
             "EPSG:4326"
         ],
         "url": "https://kaart.maaamet.ee/wms/alus-geo?LAYERS=pohi_vr2&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+        "privacy_policy_url": "https://maaamet.ee/asutus-uudised-ja-kontakt/organisatsioon/isikuandmete-tootlemine",
         "country_code": "EE",
-        "type": "wms"
+        "type": "wms",
+        "category": "map"
     },
     "geometry": {
         "type": "MultiPolygon",

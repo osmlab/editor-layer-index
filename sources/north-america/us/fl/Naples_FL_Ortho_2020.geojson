@@ -1,0 +1,77 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Naples_FL_Ortho_2020",
+        "attribution": {
+            "url": "https://g.naplesgov.com/cityofnaplesgis2/",
+            "text": "Collier County Property Appraiser’s Office, Naples GIS",
+            "required": false
+        },
+        "name": "City of Naples Orthoimagery (2020)",
+        "url": "https://g.naplesgov.com/arcgis/rest/services/Imagery/NAPLES_2020/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:6438"
+        ],
+        "start_date": "2020",
+        "end_date": "2020",
+        "description": "The 2020 orthoimagery for the city of Naples in the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -81.89578259916,
+                    26.42447294236
+                ],
+                [
+                    -81.52919489447,
+                    26.42630767208
+                ],
+                [
+                    -81.52850087442,
+                    26.27909190930
+                ],
+                [
+                    -81.51477250286,
+                    26.27917716382
+                ],
+                [
+                    -81.51437321993,
+                    26.19255204564
+                ],
+                [
+                    -81.52802554349,
+                    26.19244967419
+                ],
+                [
+                    -81.52620027727,
+                    25.82107201796
+                ],
+                [
+                    -81.83073455867,
+                    25.81983966265
+                ],
+                [
+                    -81.83225570892,
+                    26.09501968091
+                ],
+                [
+                    -81.89279748914,
+                    26.09488307152
+                ],
+                [
+                    -81.89578259916,
+                    26.42447294236
+                ]
+            ]
+        ]
+    }
+}

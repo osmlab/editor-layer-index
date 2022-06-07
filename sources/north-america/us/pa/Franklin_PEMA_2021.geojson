@@ -9,7 +9,7 @@
         },
         "name": "PEMA Orthoimagery - Franklin County (2021)",
         "icon": "https://www.pema.pa.gov/PublishingImages/logo.svg",
-        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PEMAImagery_FranklinCounty2021/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=2&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PEMAImagery_FranklinCounty2021/MapServer/WmsServer?LAYERS=2&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Pennsylvania/PEMA_Orthoimagery",
         "country_code": "US",
@@ -47,7 +47,7 @@
                     39.77211537956
                 ],
                 [
-                    -78.06495719790,
+                    -78.0649571979,
                     39.79956539151
                 ],
                 [
@@ -71,7 +71,7 @@
                     39.93706343815
                 ],
                 [
-                    -77.95878526390,
+                    -77.9587852639,
                     39.99196658065
                 ],
                 [
@@ -104,11 +104,11 @@
                 ],
                 [
                     -77.81623993635,
-                    40.21174433070
+                    40.2117443307
                 ],
                 [
                     -77.78043579876,
-                    40.21176174130
+                    40.2117617413
                 ],
                 [
                     -77.78044853926,
@@ -120,7 +120,7 @@
                 ],
                 [
                     -77.74462763786,
-                    40.26666683150
+                    40.2666668315
                 ],
                 [
                     -77.70879868984,
@@ -128,7 +128,7 @@
                 ],
                 [
                     -77.70877454996,
-                    40.29410983860
+                    40.2941098386
                 ],
                 [
                     -77.63708714962,
@@ -164,11 +164,11 @@
                 ],
                 [
                     -77.56590028167,
-                    40.10181620260
+                    40.1018162026
                 ],
                 [
                     -77.56604646206,
-                    40.04691414680
+                    40.0469141468
                 ],
                 [
                     -77.53034089565,
