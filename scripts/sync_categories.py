@@ -19,7 +19,7 @@ xml = r.text
 try:
     it = ET.iterparse(io.StringIO(xml))
     for _, el in it:
-        _, _, el.tag = el.tag.rpartition('}')
+        _, _, el.tag = el.tag.rpartition("}")
     root = it.root
 except:
     raise RuntimeError("Could not parse XML.")
@@ -46,18 +46,18 @@ for entry in root.findall(".//entry"):
     josm_categories[(id, country_code)] = category
 
 # Iterate over all ELI entries. If and ELI id matches with a JSOM id, and not category in ELI is set, use the JOSM id
-for filename in glob.glob(os.path.join(eli_path, '**', '*.geojson'), recursive=True):
+for filename in glob.glob(os.path.join(eli_path, "**", "*.geojson"), recursive=True):
     path_split = filename.split(os.sep)
     sources_index = path_split.index("sources")
 
-    path = path_split[sources_index + 1:]
-    with open(filename, mode='r') as f:
-        source = json.load(io.open(filename, encoding='utf-8'))
-        if 'country_code' in source['properties']:
-            country_code = source['properties']['country_code']
-            source_id = source['properties']['id']
-            if 'category' in source['properties']:
-                category = source['properties']['category']
+    path = path_split[sources_index + 1 :]
+    with open(filename, mode="r") as f:
+        source = json.load(io.open(filename, encoding="utf-8"))
+        if "country_code" in source["properties"]:
+            country_code = source["properties"]["country_code"]
+            source_id = source["properties"]["id"]
+            if "category" in source["properties"]:
+                category = source["properties"]["category"]
             else:
                 category = None
 
@@ -70,11 +70,15 @@ for filename in glob.glob(os.path.join(eli_path, '**', '*.geojson'), recursive=T
                     print("{}: Same category: {}".format(filename, category))
                     continue
                 elif category is not None and not josm_category == category:
-                    print("{}: Different category: ELI: {}, JOSM: {}. Do nothing.".format(filename, category, josm_category))
+                    print(
+                        "{}: Different category: ELI: {}, JOSM: {}. Do nothing.".format(
+                            filename, category, josm_category
+                        )
+                    )
                     continue
                 else:
                     print("{}: No ELI category, use JOSM category: {}".format(filename, josm_category))
-                    source['properties']['category'] = josm_category
+                    source["properties"]["category"] = josm_category
 
                     out_dir = os.path.join(out_path, *path[:-1])
                     if not os.path.exists(out_dir):
@@ -82,8 +86,6 @@ for filename in glob.glob(os.path.join(eli_path, '**', '*.geojson'), recursive=T
 
                     out_file = os.path.join(out_path, *path)
 
-                    with open(out_file, 'w', encoding='utf-8') as out:
+                    with open(out_file, "w", encoding="utf-8") as out:
                         json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
                         out.write("\n")
-
-

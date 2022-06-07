@@ -5,8 +5,9 @@ import requests
 import argparse
 import re
 
-switch = re.compile('{switch:([^,]*),[^}]*}')
+switch = re.compile("{switch:([^,]*),[^}]*}")
 verbose = False
+
 
 def check_url(url):
     if url.startswith(("IRS", "data", "SPOT", "bing")):
@@ -14,7 +15,7 @@ def check_url(url):
         return True
 
     # on switch parameter, e.g. a.tile, b.tile, just use the first one.
-    url = switch.sub(r'\1', url)
+    url = switch.sub(r"\1", url)
     if not url.startswith("http"):
         print("Whoa, url is weird: " + url)
         return False
@@ -33,27 +34,28 @@ def check_url(url):
         print(response.status_code, response.url)
         print("--")
     if url.startswith("http://"):
-        urls = url.replace("http://","https://",1)
+        urls = url.replace("http://", "https://", 1)
         try:
             response2 = requests.get(urls, timeout=5)
             if response.text == response2.text:
-                print("It looks like {} can be converted to https".format( url.encode('ascii')))
+                print("It looks like {} can be converted to https".format(url.encode("ascii")))
                 print("--")
         except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError):
             pass
 
+
 # check_url("http://github.com")
 
-parser = argparse.ArgumentParser(description='Check all urls in geojson for redirects and possible https conversions')
-parser.add_argument('files', metavar='F', nargs='+', help='file(s) to process')
-parser.add_argument('-v', dest='verbose', action='store_true', help="List servers that can't be reached")
+parser = argparse.ArgumentParser(description="Check all urls in geojson for redirects and possible https conversions")
+parser.add_argument("files", metavar="F", nargs="+", help="file(s) to process")
+parser.add_argument("-v", dest="verbose", action="store_true", help="List servers that can't be reached")
 
 
 args = parser.parse_args()
 
 features = []
 for file in args.files:
-    with open(file, 'r') as f:
+    with open(file, "r") as f:
         data = json.load(f)
         for feature in data["features"]:
             try:

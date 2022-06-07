@@ -63,7 +63,7 @@ transformers = {}
 
 
 def get_transformer(crs_from, crs_to):
-    """ Cache transformer objects"""
+    """Cache transformer objects"""
     key = (crs_from, crs_to)
     if key not in transformers:
         transformers[key] = Transformer.from_crs(crs_from, crs_to, always_xy=True)
@@ -71,7 +71,7 @@ def get_transformer(crs_from, crs_to):
 
 
 def get_http_headers(source):
-    """ Extract http headers from source"""
+    """Extract http headers from source"""
     headers = {}
     if "custom-http-headers" in source["properties"]:
         key = source["properties"]["custom-http-headers"]["header-name"]
@@ -113,7 +113,7 @@ async def get_tms_image(tile, source, session):
 
 
 def wms_version_from_url(url):
-    """ Extract wms version from url"""
+    """Extract wms version from url"""
     u = urlparse(url.lower())
     qsl = dict(parse_qsl(u.query))
     if "version" not in qsl:
@@ -123,7 +123,7 @@ def wms_version_from_url(url):
 
 
 def _get_bbox(proj, bounds, wms_version):
-    """ Build wms bbox parameter for GetMap request"""
+    """Build wms bbox parameter for GetMap request"""
     if proj in {"EPSG:4326", "CRS:84"}:
         if proj == "EPSG:4326" and wms_version == "1.3.0":
             bbox = ",".join(map(str, [bounds[1], bounds[0], bounds[3], bounds[2]]))
@@ -211,13 +211,9 @@ async def process_source(filename):
     headers = {"User-Agent": "Mozilla/5.0 (compatible; MSIE 6.0; ELI WMS sync )"}
     timeout = aiohttp.ClientTimeout(total=10)
     conn = aiohttp.TCPConnector(limit_per_host=2)
-    async with ClientSession(
-        headers=headers, timeout=timeout, connector=conn
-    ) as session:
+    async with ClientSession(headers=headers, timeout=timeout, connector=conn) as session:
 
-        out_image = os.path.join(
-            outdir, os.path.basename(filename).replace(".geojson", ".png")
-        )
+        out_image = os.path.join(outdir, os.path.basename(filename).replace(".geojson", ".png"))
 
         if os.path.exists(out_image):
             return
@@ -251,9 +247,7 @@ async def process_source(filename):
                 if status == ImageStatus.SUCCESS:
                     image_hash = imagehash.average_hash(img)
                     pal_image = Image.new("P", (1, 1))
-                    pal_image.putpalette(
-                        (0, 0, 0, 0, 255, 0, 255, 0, 0, 255, 255, 0) + (0, 0, 0) * 252
-                    )
+                    pal_image.putpalette((0, 0, 0, 0, 255, 0, 255, 0, 0, 255, 255, 0) + (0, 0, 0) * 252)
                     img_comp = img.convert("RGB").quantize(palette=pal_image)
                     colors = img_comp.getcolors(1000)
                     max_pixel_count = max([count for count, color in colors])
@@ -292,8 +286,7 @@ async def process_source(filename):
             if zoom + 1 < 20:
                 if (
                     image_hashes[zoom + 1] is None
-                    or max_count(str(image_hashes[zoom + 1]).upper().replace("F", "O"))
-                    == 16
+                    or max_count(str(image_hashes[zoom + 1]).upper().replace("F", "O")) == 16
                 ):
                     return True
             return False
@@ -339,9 +332,7 @@ async def process_source(filename):
             if image_hashes[z] is None:
                 ax.set_xlabel("")
             else:
-                ax.set_xlabel(
-                    str(image_hashes[z]) + "\n" + str(max_pixel_counts[z] - 256 * 256)
-                )
+                ax.set_xlabel(str(image_hashes[z]) + "\n" + str(max_pixel_counts[z] - 256 * 256))
             ax.set_ylabel(z)
             title = "Zoom: {}".format(z)
 
@@ -349,16 +340,12 @@ async def process_source(filename):
                 title += " <== "
 
             if ("min_zoom" not in source["properties"] and z == 0) or (
-                "min_zoom" in source["properties"]
-                and source["properties"]["min_zoom"] == z
+                "min_zoom" in source["properties"] and source["properties"]["min_zoom"] == z
             ):
                 title += " ELI "
 
             ax.set_title(title)
-            if (
-                "attribution" in source["properties"]
-                and "text" in source["properties"]["attribution"]
-            ):
+            if "attribution" in source["properties"] and "text" in source["properties"]["attribution"]:
                 plt.figtext(0.01, 0.01, source["properties"]["attribution"]["text"])
 
         def update_source(selected_min_zoom, source, filename):
@@ -370,9 +357,7 @@ async def process_source(filename):
                     original_min_zoom = source["properties"]["min_zoom"]
 
                 # Do nothing if existing value is same as tested value
-                if (
-                    selected_min_zoom is None or selected_min_zoom == 0
-                ) and "min_zoom" not in source["properties"]:
+                if (selected_min_zoom is None or selected_min_zoom == 0) and "min_zoom" not in source["properties"]:
                     return
                 if not selected_min_zoom == original_min_zoom:
                     logging.info(
@@ -388,9 +373,7 @@ async def process_source(filename):
                         source["properties"]["min_zoom"] = selected_min_zoom
 
                     with open(filename, "w", encoding="utf-8") as out:
-                        json.dump(
-                            source, out, indent=4, sort_keys=False, ensure_ascii=False
-                        )
+                        json.dump(source, out, indent=4, sort_keys=False, ensure_ascii=False)
                         out.write("\n")
 
         def on_click(event):
@@ -442,9 +425,7 @@ def start_processing(sources_directory):
     if os.path.isfile(sources_directory):
         asyncio.run(process_source(sources_directory))
     elif os.path.isdir(sources_directory):
-        for filename in glob.glob(
-            os.path.join(sources_directory, "**", "*.geojson"), recursive=True
-        ):
+        for filename in glob.glob(os.path.join(sources_directory, "**", "*.geojson"), recursive=True):
             asyncio.run(process_source(filename))
 
 
