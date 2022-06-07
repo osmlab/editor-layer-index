@@ -5,7 +5,7 @@
             "url": "https://www.ibge.gov.br/",
             "text": "IBGE"
         },
-        "name": "IBGE-BCIM-Estações Geradoras de Energia Elétrica",
+        "name": "IBGE BC250 - Estações Geradoras de Energia Elétrica",
         "overlay": true,
         "available_projections": [
             "EPSG:3857",
@@ -13,13 +13,15 @@
             "EPSG:5396",
             "EPSG:22525"
         ],
-        "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BCIM_Est_Gerad_Energia_Eletrica_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_2021_Est_Gerad_Energia_Eletrica_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
         "privacy_policy_url": "https://www.ibge.gov.br/np_download/novoportal/documentos_institucionais/PoliticaPrivacidade.pdf",
         "country_code": "BR",
         "type": "wms",
         "id": "IBGE_BCIM_Gerador_Eletrica",
+        "start_date": "2021",
+        "end_date": "2021",
         "category": "other"
     },
     "geometry": {
