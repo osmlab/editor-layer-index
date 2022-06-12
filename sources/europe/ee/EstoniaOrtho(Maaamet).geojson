@@ -5,7 +5,7 @@
         "name": "Maa-amet Ortho (WMS)",
         "i18n": true,
         "type": "wms",
-        "url": "https://kaart.maaamet.ee/wms/alus-geo?VERSION=1.1.1&REQUEST=GetMap&LAYERS=of10000&STYLES=&SRS={proj}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kaart.maaamet.ee/wms/alus-geo?LAYERS=of10000&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "EE",
         "available_projections": [
             "EPSG:3857",

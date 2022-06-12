@@ -437,7 +437,7 @@
         "name": "AIV Wegenregister",
         "type": "wms",
         "privacy_policy_url": "https://www.vlaanderen.be/over-vlaanderenbe/disclaimer",
-        "url": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/Wegenregister/wms?LAYERS=LABELS%2CAARDEWEG%2CWANDFIETS%2CPLLWEG%2CVENTWEG%2COPAFGGKR%2COPAFOGKR%2CVERKPLEIN%2CSPECSIT%2CROT%2CDIENSTWEG%2CWEGEEN%2CWEGGESCH%2CAUTOSWEG&WIDTH={width}&HEIGHT={height}&VERSION=1.1.1&&TRANSPARENT=false&FORMAT=image%2Fpng&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&BBOX={bbox}"
+        "url": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/Wegenregister/wms?LAYERS=LABELS,AARDEWEG,WANDFIETS,PLLWEG,VENTWEG,OPAFGGKR,OPAFOGKR,VERKPLEIN,SPECSIT,ROT,DIENSTWEG,WEGEEN,WEGGESCH,AUTOSWEG&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }
