@@ -252,7 +252,11 @@
                 "minimum-tile-expire": {
                     "description": "minimum expiry time for tiles in seconds. The larger the value, the longer entry in cache will be considered valid",
                     "type": "integer"
-                }                            
+                },
+                "support_cors": {
+                    "description": "Whether the imagery server support CORS or not",
+                    "type": "boolean"
+                }
             }
         }
     }
