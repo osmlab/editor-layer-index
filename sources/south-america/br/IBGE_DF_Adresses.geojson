@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "IBGE_DF_Addresses",
-        "name": "IBGE Distrito Federal",
+        "name": "IBGE Endereços Distrito Federal",
         "overlay": true,
         "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoiY2t1dm4xYmF2NmEzdDMycTY3MjJtNmRwMiJ9._3qoS2hLLiJEkIDsVO4DoA",
         "privacy_policy_url": "https://www.mapbox.com/legal/privacy",
@@ -11,8 +11,11 @@
         "max_zoom": 20,
         "country_code": "BR",
         "attribution": {
-            "text": "IBGE, OSM Brasil"
+            "url": "https://www.ibge.gov.br/",
+            "text": "IBGE, OSM Brasil",
+            "required": true
         },
+        "permission_osm": "explicit",
         "type": "tms",
         "description": "Addresses data from IBGE",
         "category": "other"
