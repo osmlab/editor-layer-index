@@ -1,13 +1,13 @@
 # Libeli
-pyproj==3.3.0
-shapely==1.8.1.post1
-regex==2022.1.18
-validators==0.18.2
+pyproj==3.3.1
+shapely==1.8.2
+regex==2022.7.25
+validators==0.20.0
 
 # Common
 colorlog==6.6.0
-jsonschema==4.4.0
-certifi==2021.10.8
+jsonschema==4.9.1
+certifi==2022.6.15
 
 # Check
 #shapely
@@ -15,9 +15,9 @@ certifi==2021.10.8
 
 # Strict check
 mercantile==1.2.1
-requests==2.27.1
-urllib3==1.26.8
-validators==0.18.2
+requests==2.28.1
+urllib3==1.26.11
+validators==0.20.0
 #jsonschema
 #shapely
 
@@ -25,8 +25,8 @@ validators==0.18.2
 aiofiles==0.8.0
 aiohttp[speedups]==3.8.1
 imagehash==4.2.1
-python-magic==0.4.25
+python-magic==0.4.27
 mercantile==1.2.1
-pillow==9.0.1
+pillow==9.2.0
 #shapely
 #pyproj

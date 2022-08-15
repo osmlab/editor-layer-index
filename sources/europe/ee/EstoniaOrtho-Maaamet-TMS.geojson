@@ -2,17 +2,20 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "text": "Maa-Ameti ortofoto",
+            "text": "Maa-ameti ortofoto",
             "required": true
         },
-        "name": "Estonia Ortho (Maaamet)",
+        "name": "Maa-amet Ortho (TMS)",
+        "i18n": true,
         "url": "https://tiles.maaamet.ee/tm/tms/1.0.0/foto@GMC/{zoom}/{x}/{-y}.png",
         "id": "maaamet.ee-orto",
         "min_zoom": 6,
         "max_zoom": 18,
         "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+        "privacy_policy_url": "https://maaamet.ee/asutus-uudised-ja-kontakt/organisatsioon/isikuandmete-tootlemine",
         "country_code": "EE",
-        "type": "tms"
+        "type": "tms",
+        "category": "photo"
     },
     "geometry": {
         "type": "MultiPolygon",
