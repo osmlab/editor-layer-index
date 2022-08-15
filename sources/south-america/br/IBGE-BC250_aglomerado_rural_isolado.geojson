@@ -2,9 +2,10 @@
     "type": "Feature",
     "properties": {
         "attribution": {
+            "url": "https://www.ibge.gov.br/",
             "text": "IBGE"
         },
-        "name": "IBGE-BC250-Aglomerado Rural Isolado",
+        "name": "IBGE BC250 - Aglomerado Rural Isolado",
         "overlay": true,
         "available_projections": [
             "EPSG:3857",
@@ -12,11 +13,15 @@
             "EPSG:5396",
             "EPSG:22525"
         ],
-        "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Aglomerado_Rural_Isolado_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
-        "license_url": "http://dados.gov.br",
+        "url": "https://geoservicos.ibge.gov.br/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=CCAR:BC250_2021_Aglomerado_Rural_Isolado_P&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Pt:Brazilian_data_sources",
+        "privacy_policy_url": "https://www.ibge.gov.br/np_download/novoportal/documentos_institucionais/PoliticaPrivacidade.pdf",
         "country_code": "BR",
         "type": "wms",
         "id": "IBGE_BC250_Aglomerado_Rural",
+        "start_date": "2021",
+        "end_date": "2021",
         "category": "other"
     },
     "geometry": {

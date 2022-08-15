@@ -1,0 +1,175 @@
+{
+    "type": "Feature",
+    "properties": {
+        "category": "photo",
+        "id": "gis-rijeka-2020",
+        "name": "gis-rijeka: Rijeka 2020 aerial imagery",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/rijeka.png",
+        "start_date": "2020",
+        "end_date": "2020",
+        "url": "http://gis01.rijeka.hr/geoserver/CKAN/wms?LAYERS=Ortofoto_2020&STYLES=raster&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "permission_osm": "explicit",
+        "license_url": "https://imamopravoznati.org/request/grad_rijeka_koristenje_podataka#incoming-8517",
+        "privacy_policy_url": "https://www.rijeka.hr/teme-za-gradane/aktivno-gradanstvo/zastita-osobnih-podataka/",
+        "max_zoom": 20,
+        "best": true,
+        "country_code": "HR",
+        "type": "wms",
+        "attribution": {
+            "required": true,
+            "text": "Sadrži podatke Geografskog informacijskog sustava Grada Rijeke",
+            "url": "http://data.rijeka.hr/hr/dataset/gis-grad-rijeka"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3035",
+            "EPSG:3765",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326"
+        ]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    14.5255,
+                    45.3043
+                ],
+                [
+                    14.5329,
+                    45.3081
+                ],
+                [
+                    14.5334,
+                    45.3108
+                ],
+                [
+                    14.5378,
+                    45.3148
+                ],
+                [
+                    14.5270,
+                    45.3200
+                ],
+                [
+                    14.4918,
+                    45.3338
+                ],
+                [
+                    14.4865,
+                    45.3382
+                ],
+                [
+                    14.4855,
+                    45.3417
+                ],
+                [
+                    14.4780,
+                    45.3490
+                ],
+                [
+                    14.4736,
+                    45.3608
+                ],
+                [
+                    14.4474,
+                    45.3657
+                ],
+                [
+                    14.4444,
+                    45.3731
+                ],
+                [
+                    14.4426,
+                    45.3815
+                ],
+                [
+                    14.4323,
+                    45.3874
+                ],
+                [
+                    14.4161,
+                    45.3781
+                ],
+                [
+                    14.4099,
+                    45.3767
+                ],
+                [
+                    14.3924,
+                    45.3637
+                ],
+                [
+                    14.3810,
+                    45.3660
+                ],
+                [
+                    14.3725,
+                    45.3716
+                ],
+                [
+                    14.3635,
+                    45.3685
+                ],
+                [
+                    14.3633,
+                    45.3644
+                ],
+                [
+                    14.3344,
+                    45.3623
+                ],
+                [
+                    14.3259,
+                    45.3528
+                ],
+                [
+                    14.3301,
+                    45.3496
+                ],
+                [
+                    14.3674,
+                    45.3385
+                ],
+                [
+                    14.4108,
+                    45.3298
+                ],
+                [
+                    14.4176,
+                    45.3246
+                ],
+                [
+                    14.4265,
+                    45.3226
+                ],
+                [
+                    14.4390,
+                    45.3189
+                ],
+                [
+                    14.4611,
+                    45.3155
+                ],
+                [
+                    14.4723,
+                    45.3092
+                ],
+                [
+                    14.4762,
+                    45.3092
+                ],
+                [
+                    14.4902,
+                    45.3150
+                ],
+                [
+                    14.5255,
+                    45.3043
+                ]
+            ]
+        ]
+    }
+}

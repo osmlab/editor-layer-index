@@ -22,7 +22,7 @@ brotli==1.0.9
     # via aiohttp
 cchardet==2.1.7
     # via aiohttp
-certifi==2022.5.18.1
+certifi==2022.6.15
     # via
     #   -r requirements.in
     #   pyproj
@@ -49,7 +49,7 @@ idna==3.3
     #   yarl
 imagehash==4.2.1
     # via -r requirements.in
-jsonschema==4.6.0
+jsonschema==4.9.1
     # via -r requirements.in
 mercantile==1.2.1
     # via -r requirements.in
@@ -57,16 +57,16 @@ multidict==5.2.0
     # via
     #   aiohttp
     #   yarl
-numpy==1.21.5
+numpy==1.22.0
     # via
     #   imagehash
     #   pywavelets
     #   scipy
-pillow==9.1.1
+pillow==9.2.0
     # via
     #   -r requirements.in
     #   imagehash
-pycares==4.1.2
+pycares==4.2.0
     # via aiodns
 pycparser==2.21
     # via cffi
@@ -74,13 +74,13 @@ pyproj==3.3.1
     # via -r requirements.in
 pyrsistent==0.18.0
     # via jsonschema
-python-magic==0.4.26
+python-magic==0.4.27
     # via -r requirements.in
 pywavelets==1.2.0
     # via imagehash
-regex==2022.6.2
+regex==2022.7.25
     # via -r requirements.in
-requests==2.27.1
+requests==2.28.1
     # via -r requirements.in
 scipy==1.7.3
     # via imagehash
@@ -88,7 +88,7 @@ shapely==1.8.2
     # via -r requirements.in
 six==1.16.0
     # via imagehash
-urllib3==1.26.9
+urllib3==1.26.11
     # via
     #   -r requirements.in
     #   requests
