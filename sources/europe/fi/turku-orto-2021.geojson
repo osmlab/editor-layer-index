@@ -43,7 +43,8 @@
         "end_date": "2021-04-01",
         "name": "City of Turku ortophoto - 2021",
         "type": "wms",
-        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva 2021&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva 2021&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",
