@@ -47,7 +47,7 @@ idna==3.3
     # via
     #   requests
     #   yarl
-imagehash==4.2.1
+imagehash==4.3.0
     # via -r requirements.in
 jsonschema==4.14.0
     # via -r requirements.in
@@ -86,8 +86,6 @@ scipy==1.7.3
     # via imagehash
 shapely==1.8.4
     # via -r requirements.in
-six==1.16.0
-    # via imagehash
 urllib3==1.26.12
     # via
     #   -r requirements.in
