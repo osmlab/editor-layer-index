@@ -1,29 +1,26 @@
 {
-  "type":"FeatureCollection",
-  "features":[
-	{
-	  "type":"Feature",
-	  "properties":{
-		"attribution": {
-            "required": true,
-            "text": "Kadaster / Beeldmateriaal.nl, CC BY 4.0",
-            "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance"
-        },
-        "best": true,
-        "country_code": "NL",
-        "description": "Nationwide data set 8cm resolution color aerial imagery of the most recent year.",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/nl/PDOK-Luchtfoto-Beeldmateriaal-25cm-latest.png",
-        "id": "Actueel_orthoHR_WMTS",
-        "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
-        "privacy_policy_url": "https://www.pdok.nl/privacy",
-        "max_zoom": 21,
-        "name": "PDOK aerial imagery Beeldmateriaal.nl 8cm (WMTS) latest",
-        "type": "tms",
-        "url": "https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Actueel_orthoHR&STYLE=&FORMAT=image/jpeg&tileMatrixSet=OGC:1.0:GoogleMapsCompatible&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
-        "category": "photo"
-	  },
-	  "geometry":{
-		"type":"Polygon",
+  "type":"Feature",
+  "properties":{
+	"attribution": {
+           "required": true,
+           "text": "Kadaster / Beeldmateriaal.nl, CC BY 4.0",
+           "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance"
+    },
+    "best": true,
+    "country_code": "NL",
+    "description": "Nationwide data set 8cm resolution color aerial imagery of the most recent year.",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/nl/PDOK-Luchtfoto-Beeldmateriaal-25cm-latest.png",
+    "id": "Actueel_orthoHR_WMTS",
+    "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
+    "privacy_policy_url": "https://www.pdok.nl/privacy",
+    "max_zoom": 21,
+    "name": "PDOK aerial imagery Beeldmateriaal.nl 8cm (WMTS) latest",
+    "type": "tms",
+    "url": "https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Actueel_orthoHR&STYLE=&FORMAT=image/jpeg&tileMatrixSet=OGC:1.0:GoogleMapsCompatible&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
+    "category": "photo"
+  },
+  "geometry":{
+    "type":"Polygon",
 		"coordinates":[
 	      [
 			[
@@ -828,7 +825,5 @@
 			]
 		  ]
 		]
-	  }
-	}
-  ]
+  }
 }
