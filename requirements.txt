@@ -8,7 +8,7 @@ aiodns==3.0.0
     # via aiohttp
 aiofiles==22.1.0
     # via -r requirements.in
-aiohttp[speedups]==3.8.1
+aiohttp[speedups]==3.8.3
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
@@ -19,8 +19,6 @@ attrs==21.2.0
     #   aiohttp
     #   jsonschema
 brotli==1.0.9
-    # via aiohttp
-cchardet==2.1.7
     # via aiohttp
 certifi==2022.9.24
     # via
