@@ -1,11 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Bytom-buildings",
-        "name": "Bytom: Buildings",
+        "id": "Bytom-2021",
+        "name": "Bytom: Orthophotomap 2021 (aerial image)",
         "i18n": true,
         "type": "wms",
-        "url": "https://sitplan.um.bytom.pl/isdp/gs/ows/wms?LAYERS=default:eg_budynki_g&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://sitplan.um.bytom.pl/isdp/gs/ows/wms?LAYERS=default:orto_2021_4&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "start_date": "2021",
+        "end_date": "2021",
         "country_code": "PL",
         "available_projections": [
             "CRS:84",
@@ -17,9 +19,9 @@
             "html": "https://www.bytom.pl/",
             "required": true
         },
-        "category": "other",
-        "overlay": true,
-        "transparent": true,
+        "best": true,
+        "max_zoom": 23,
+        "category": "photo",
         "privacy_policy_url": "https://www.bytom.pl/main/polityka-prywatnosci",
         "license_url": "https://www.bytom.pl/main/zastrzezenia"
     },
