@@ -47,6 +47,18 @@ en:
       attribution:
         text: Urząd Miasta Bytomia
       name: 'Bytom: Fotoplan 2014 (aerial image)'
+    Bytom-2016:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2016 (aerial image)'
+    Bytom-2018:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2018 (aerial image)'
+    Bytom-2021:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2021 (aerial image)'
     Bytom-buildings:
       attribution:
         text: Urząd Miasta Bytomia
@@ -92,7 +104,7 @@ en:
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
-      description: Esri world imagery.
+      description: Esri World Imagery
       name: Esri World Imagery
     EsriWorldImageryClarity:
       attribution:
@@ -104,6 +116,16 @@ en:
         text: Stadtvermessungsamt Frankfurt am Main
       description: Aerial imagery of Frankfurt am Main, photographed on 16 April 2019
       name: Frankfurt am Main Luftbild 2019
+    Geoportal2-PL-City-boundaries_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: City boundaries WMS'
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.
+      name: 'Geoportal 2: High Resolution Orthophotomap (archival imagery) (WMS)'
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -119,6 +141,11 @@ en:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
       name: 'Geoportal 2: Punkty adresowe'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap archiwalnych dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2: Orthophotomap (archival imagery) (WMS)'
     Geoportal2-PL-aerial_image_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -129,20 +156,83 @@ en:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa przeglądania (Web Map Tile Service,WMTS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych.
       name: 'Geoportal 2: Orthophotomap (latest aerial imagery) (WMTS)'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Borders of communes WMS'
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Borders of counties WMS'
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Borders of provinces WMS'
     Geoportal2-PL-buildings_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
       name: 'Geoportal 2: Ewidencja budynków WMS'
+    Geoportal2-PL-gas-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: gas pipes WMS'
+    Geoportal2-PL-heat-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: heat pipes WMS'
     Geoportal2-PL-plot_boundaries_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
       name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-power-cord_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: power cord WMS'
     Geoportal2-PL-prng:
       attribution:
         text: Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej
       name: 'Geoportal 2: PRNG (geo names)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: sewer pipes WMS'
+    Geoportal2-PL-squares-and-housing-estates_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2: Squares and housing estates'
+    Geoportal2-PL-state-borders_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: State borders WMS'
+    Geoportal2-PL-telecommunications-cable_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: telecommunications cables WMS'
+    Geoportal2-PL-water-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: water pipes WMS'
+    Gliwice-2003:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2003 (aerial image)'
+    Gliwice-2009:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2009 (aerial image)'
     Gliwice-2013:
       attribution:
         text: Urząd Miasta Gliwice
@@ -159,6 +249,10 @@ en:
       attribution:
         text: Urząd Miasta Gliwice
       name: 'Gliwice: Orthophotomap 2020 (aerial image)'
+    Gliwice-2021:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2021 (aerial image)'
     Gliwice-buildings:
       attribution:
         text: Urząd Miasta Gliwice
@@ -211,7 +305,7 @@ en:
     Mapbox:
       attribution:
         text: Terms & Feedback
-      description: Satellite and aerial imagery.
+      description: Mapbox-provided raster tileset that includes a global basemap of high resolution satellite and aerial imagery
       name: Mapbox Satellite
     OSIPIII_6in:
       attribution:
@@ -261,10 +355,6 @@ en:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
       name: 'OSM Inspector: Tagging'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Urząd Miasta Ruda Śląska
-      name: 'Ruda Śląska: Orthophotomap (aerial image)'
     SPW_ORTHO_LAST:
       name: SPW(allonie) most recent aerial imagery
     SPW_PICC:

@@ -1,3 +1,4 @@
+import logging
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
 from dataclasses import dataclass
@@ -47,7 +48,8 @@ class Layer:
     """Representation of a Layer element."""
 
     name: Optional[str]
-    title: str
+    # Title is mandatory for all layers. But some WMS server implementations allow not having a title.
+    title: Optional[str]
     abstract: Optional[str]
     styles: Dict[str, Style]
     crs: Set[str]
@@ -435,10 +437,17 @@ class WMSCapabilities:
         version = root.attrib["version"]
         self.version = version
 
-        def parse_styles(element: ET.Element) -> List[Style]:
+        def parse_styles(element: ET.Element, layer_name: Optional[str]) -> List[Style]:
             result: List[Style] = []
             for e in element.findall("./Style"):
-                name = find_text(e, "./Name")
+                name = find_text_optional(e, "./Name")
+                # Style must have a name that is used as parameter for STYLES
+                # See WMS 1.3.0 specification 7.2.4.6.5 Style
+                # However, there are WMS server that contain styles without name
+                # We ignore them
+                if name is None:
+                    logging.warning(f"Layer '{layer_name}' has style without name. This style is ignored.")
+                    continue
                 title = find_text_optional(e, "./Title")
                 result.append(Style(name=name, title=title))
             return result
@@ -495,7 +504,7 @@ class WMSCapabilities:
         ):
             # Parse metadata
             name = find_text_optional(element, "./Name")
-            title = find_text(element, "./Title")
+            title = find_text_optional(element, "./Title")
             abstract = find_text_optional(element, "./Abstract")
 
             # Parse CRS
@@ -509,7 +518,7 @@ class WMSCapabilities:
 
             # Parse styles
             styles = parent_styles.copy()
-            for style in parse_styles(element):
+            for style in parse_styles(element, name):
                 styles[style.name] = style
 
             # Parse bounding box. If none present, use parents bounding box
