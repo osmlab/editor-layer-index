@@ -6,9 +6,9 @@
 #
 aiodns==3.0.0
     # via aiohttp
-aiofiles==0.8.0
+aiofiles==22.1.0
     # via -r requirements.in
-aiohttp[speedups]==3.8.1
+aiohttp[speedups]==3.8.3
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
@@ -20,9 +20,7 @@ attrs==21.2.0
     #   jsonschema
 brotli==1.0.9
     # via aiohttp
-cchardet==2.1.7
-    # via aiohttp
-certifi==2021.10.8
+certifi==2022.9.24
     # via
     #   -r requirements.in
     #   pyproj
@@ -35,7 +33,7 @@ charset-normalizer==2.0.9
     #   requests
 click==8.0.3
     # via mercantile
-colorlog==6.6.0
+colorlog==6.7.0
     # via -r requirements.in
 decorator==5.1.0
     # via validators
@@ -47,9 +45,9 @@ idna==3.3
     # via
     #   requests
     #   yarl
-imagehash==4.2.1
+imagehash==4.3.1
     # via -r requirements.in
-jsonschema==4.4.0
+jsonschema==4.16.0
     # via -r requirements.in
 mercantile==1.2.1
     # via -r requirements.in
@@ -57,44 +55,40 @@ multidict==5.2.0
     # via
     #   aiohttp
     #   yarl
-numpy==1.21.5
+numpy==1.22.0
     # via
     #   imagehash
     #   pywavelets
     #   scipy
-pillow==9.0.1
+pillow==9.2.0
     # via
     #   -r requirements.in
     #   imagehash
-pycares==4.1.2
+pycares==4.2.0
     # via aiodns
 pycparser==2.21
     # via cffi
-pyproj==3.3.0
+pyproj==3.4.0
     # via -r requirements.in
 pyrsistent==0.18.0
     # via jsonschema
-python-magic==0.4.25
+python-magic==0.4.27
     # via -r requirements.in
 pywavelets==1.2.0
     # via imagehash
-regex==2022.3.2
+regex==2022.9.13
     # via -r requirements.in
-requests==2.27.1
+requests==2.28.1
     # via -r requirements.in
 scipy==1.7.3
     # via imagehash
-shapely==1.8.1.post1
+shapely==1.8.4
     # via -r requirements.in
-six==1.16.0
-    # via
-    #   imagehash
-    #   validators
-urllib3==1.26.8
+urllib3==1.26.12
     # via
     #   -r requirements.in
     #   requests
-validators==0.18.2
+validators==0.20.0
     # via -r requirements.in
 yarl==1.7.2
     # via aiohttp

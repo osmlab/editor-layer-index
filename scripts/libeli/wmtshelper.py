@@ -1,10 +1,10 @@
 import math
+import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from io import StringIO
 from typing import List, Optional, Set, Tuple
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
-import re
 
 from .eliutils import (
     BoundingBox,
@@ -93,11 +93,12 @@ def is_googlemaps_compatible(tile_matrix_set: TileMatrixSet) -> bool:
         "urn:ogc:def:crs:EPSG:3857",
         "urn:ogc:def:crs:EPSG:6.18:3:3857",
         "urn:ogc:def:crs:EPSG::3857",
+        "EPSG:3857",
     }:
         return False
 
     def calc_scale_denominator(level: int) -> float:
-        return 559082264.0287178 / 2 ** level
+        return 559082264.0287178 / 2**level
 
     for tile_matrix in tile_matrix_set.tile_matrix:
 
@@ -346,7 +347,12 @@ class WMTSCapabilities:
                     urls.add(resource_url.template)
 
         # Convert URLs in ELI format
-        replacement_parameters = {"TileMatrix": "{zoom}", "TileCol": "{x}", "TileRow": "{y}"}
+        replacement_parameters = {
+            "TileMatrix": "{zoom}",
+            "TileCol": "{x}",
+            "TileRow": "{y}",
+            "TileMatrixSet": "{TileMatrixSet}",
+        }
         for dimension in self.layers[layer].dimensions:
             if dimension.default is not None:
                 value = dimension.default
@@ -359,12 +365,10 @@ class WMTSCapabilities:
 
 
 class WMTSURL:
-
     def __init__(self, url: str) -> None:
         self._url = urlparse(url)
         self._qsl = parse_qsl(self._url.query)
         self._qsl_norm = {k.lower(): v for k, v in parse_qsl(self._url.query)}
-
 
     def is_kvp(self) -> bool:
         return self._qsl_norm.get("service", "").lower() == "wmts"
@@ -391,7 +395,6 @@ class WMTSURL:
                 return None
             else:
                 return path_parts[-4]
-
 
     def get_capabilities_url(self) -> Optional[str]:
         if self.is_kvp():
