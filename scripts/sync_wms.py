@@ -5,6 +5,7 @@ import io
 import json
 import logging
 import os
+import ssl
 from asyncio.events import AbstractEventLoop
 from collections import defaultdict
 from dataclasses import dataclass
@@ -30,11 +31,11 @@ import magic
 import mercantile
 from aiohttp import ClientSession
 from imagehash import ImageHash
-from shapely.geometry.geo import shape  # type: ignore
 from libeli import eliutils, wmshelper
 from PIL import Image
 from pyproj.crs.crs import CRS
 from shapely.geometry import MultiPolygon, Point, Polygon, box
+from shapely.geometry.geo import shape  # type: ignore
 
 ZOOM_LEVEL = 14
 IMAGE_SIZE = 256
@@ -58,6 +59,14 @@ parser.add_argument(
 
 args = parser.parse_args()
 sources_directory = str(args.sources)
+
+
+# We ignore SSL issues as best we can
+# See https://github.com/aio-libs/aiohttp/issues/7018
+nossl_sslcontext = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+nossl_sslcontext.check_hostname = False
+nossl_sslcontext.verify_mode = ssl.CERT_NONE
+nossl_sslcontext.set_ciphers("ALL")
 
 
 @dataclass
@@ -193,7 +202,7 @@ async def get_url(url: str, session: ClientSession, headers: Any = None) -> Requ
             for _ in range(3):
                 try:
                     logging.debug(f"GET {url}")
-                    async with session.request(method="GET", url=url, ssl=False, headers=headers) as response:
+                    async with session.request(method="GET", url=url, ssl=nossl_sslcontext, headers=headers) as response:
                         status = response.status
 
                         text = None
@@ -304,7 +313,7 @@ async def get_image(
     for i in range(2):
         try:
             # Download image
-            async with session.request(method="GET", url=formatted_url, ssl=False) as response:
+            async with session.request(method="GET", url=formatted_url, ssl=nossl_sslcontext) as response:
                 messages.append(f"Try: {i}: HTTP CODE {response.status}")
                 for header in response.headers:
                     messages.append(f"{header}: {response.headers[header]}")
