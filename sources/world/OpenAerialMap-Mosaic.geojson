@@ -1,0 +1,21 @@
+{
+    "geometry": null,
+    "properties": {
+        "category": "photo",
+        "default": true,
+        "description": "OpenAerialMap all images as mosaic.",
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenAerialMap.png",
+        "id": "OpenAerialMapMosaic",
+        "permission_osm": "explicit",
+        "license_url": "http://openaerialmap.org/legal/",
+        "privacy_policy_url": false,
+        "min_zoom": 1,
+        "max_zoom": 22,
+        "name": "OpenAerialMap Mosaic",
+        "overlay": true,
+        "type": "tms",
+        "url": "https://disaster.ninja/raster-tiler/oam-mosaic/{zoom}/{x}/{y}.png"
+    },
+    "type": "Feature"
+}
