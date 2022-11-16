@@ -63,21 +63,21 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "start_date": "2019",
-        "end_date": "2019",
+        "start_date": "2021",
+        "end_date": "2021",
         "category": "photo",
         "country_code": "SE",
         "description": "Orthophoto for Gothenburg municipality",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
-        "id": "gothenburg-ortho_2019",
+        "id": "gothenburg-ortho_2021",
         "i18n": true,
         "license_url": "https://catalog.goteborg.se/catalog/6/datasets/892",
         "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/",
         "max_zoom": 20,
         "min_zoom": 6,
-        "name": "Gothenburg Orthophoto 2019",
+        "name": "Gothenburg Orthophoto 2021",
         "type": "wms",
-        "url": "https://opengeodata.goteborg.se/services/ortofoto/wms/v1?LAYERS=orto_2019&STYLES=raster&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+        "url": "https://opengeodata.goteborg.se/services/ortofoto/wms/v1?LAYERS=orto_2021&STYLES=raster&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }
