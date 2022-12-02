@@ -40,7 +40,7 @@ ifeq (, $(TX))
 else ifeq (0, $(TXVERSION))
 	@echo "Installed Transifex CLI client too old: Upgrade to https://github.com/transifex/cli"
 else
-	$(TX) pull -a
+	$(TX) pull -a --use-git-timestamps
 endif
 
 # $@ The file name of the target of the rule.
