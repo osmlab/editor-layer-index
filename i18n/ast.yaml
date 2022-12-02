@@ -22,7 +22,6 @@ ast:
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Vista aérea factor 0,25 m
     Bing:
       description: Imáxenes aerees y de satélite.
-      name: Imáxenes aerees de Bing.
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 ensin nubes - https://s2maps.eu por EOX IT Services GmbH (Contien datos tresformaos de Copernicus Sentinel 2017 & 2018)
@@ -31,7 +30,6 @@ ast:
     EsriWorldImagery:
       attribution:
         text: 'Términos y comentarios '
-      description: Imáxenes mundiales Esri.
       name: Imáxenes mundiales Esri
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +37,11 @@ ast:
       description: Imáxenes del archivu Esri que puen se más clares y más precises que la capa predeterminada.
       name: Imáxenes mundiales Esri (Clarity) Beta
     MAPNIK:
-      attribution:
-        text: © collaboradores d'OpenStreetMap, CC-BY-SA 2.0
       description: La capa predeterminada d'OpenStreetMap.
       name: OpenStreetMap (Estándar)
     Mapbox:
       attribution:
         text: 'Términos y comentarios '
-      description: Imáxenes aerees y de satélite.
       name: Mapbox Satélite
     OSM_Inspector-Addresses:
       attribution:
@@ -179,10 +174,6 @@ ast:
         text: © collaboradores d'OpenStreetMap
       description: Traces GPS públiques xubíes a OpenStreetMap.
       name: Traces GPS d'OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © collaboradores d'OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Estándar Blancu y Negru)
     osm-mapnik-german_style:
       attribution:
         text: © collaboradores d'OpenStreetMap, CC-BY-SA

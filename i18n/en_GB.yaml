@@ -12,6 +12,10 @@ en_GB:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders preliminary aerial imagery
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,9 +24,55 @@ en_GB:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
+    AIV_Wegenregister:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Path Register
+    Bedzin-PL-aerial_image:
+      attribution:
+        text: District Starost Office in Będzin
+      name: 'Będzin: Orthophotomap 2013 (aerial image)'
+    Bedzin-PL-buildings:
+      attribution:
+        text: District Starost Office in Będzin
+      name: 'Będzin: Buildings'
     Bing:
       description: Satellite and aerial imagery.
-      name: Bing aerial imagery
+      name: Bing Maps Aerial
+    Bytom-2012:
+      attribution:
+        text: Bytom City Council
+      name: 'Bytom: Orthophotomap 2012 (aerial image)'
+    Bytom-2014:
+      attribution:
+        text: Bytom City Council
+      name: 'Bytom: Fotoplan 2014 (aerial image)'
+    Bytom-buildings:
+      attribution:
+        text: Bytom City Council
+      name: 'Bytom: Buildings'
+    Czestochowa-2011:
+      attribution:
+        text: Częstochowa City Council
+      name: 'Częstochowa: Orthophotomap 2011 (aerial image)'
+    Czestochowa-2013:
+      attribution:
+        text: Częstochowa City Council
+      name: 'Częstochowa: Orthophotomap 2013 (aerial image)'
+    Czestochowa-2014:
+      attribution:
+        text: Częstochowa City Council
+      name: 'Częstochowa: Orthophotomap 2014 (aerial image)'
+    Czestochowa-2015:
+      attribution:
+        text: Częstochowa City Council
+    Czestochowa-buildings:
+      name: 'Częstochowa: Buildings'
+    Dourados_Ortofotos:
+      attribution:
+        text: Dourados City Hall - GeoDourados
+      description: Dourados (2018) and several districts (2020) high-resolution aerial imagery.
+      name: Dourados Ortofotos
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
@@ -31,7 +81,6 @@ en_GB:
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
-      description: Esri world imagery.
       name: Esri World Imagery
     EsriWorldImageryClarity:
       attribution:
@@ -44,7 +93,6 @@ en_GB:
     Mapbox:
       attribution:
         text: Terms & Feedback
-      description: Satellite and aerial imagery.
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
       attribution:
@@ -128,10 +176,6 @@ en_GB:
         text: © OpenStreetMap contributors
       description: Public GPS traces uploaded to OpenStreetMap.
       name: OpenStreetMap GPS traces
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
-      name: OpenStreetMap (Standard Black & White)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA

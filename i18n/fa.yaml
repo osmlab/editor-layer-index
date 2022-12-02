@@ -1,70 +1,69 @@
 fa:
   imagery:
+    Bedzin-PL-aerial_image:
+      name: 'Będzin: Orthophotomap 2013 (تصویر هوایی)'
+    Bedzin-PL-buildings:
+      name: 'Będzin: ساختمان‌ها'
     Bing:
-      description: تصویر هوایی و ماهواره‌ای.
-      name: 'تصاویر هوایی بینگ
-
-        Bing'
+      description: تصاویر هوایی و ماهواره‌ای.
     EOXAT2018CLOUDLESS:
-      description: تصاویر پس‌پردازش‌شدهٔ Sentinel Satellite
+      description: تصاویر ماهواره‌ای Sentinel پس از پردازش.
     EsriWorldImagery:
       attribution:
         text: قوانین و بازخورد
-      description: تصاویر جهانی Esri.
-      name: 'تصاویر جهانی ایزری
-
-        Esri'
+      name: تصاویر جهانی Esri
     EsriWorldImageryClarity:
       attribution:
         text: قوانین و بازخورد
-      description: تصاویر بایگانی Esri که معمولاً واضح‌تر و درست‌تر از لایهٔ پیشفرض است.
-      name: Esri World Imagery (Clarity) Beta
+      description: تصاویر بایگانی Esri که معمولاً واضح‌تر و درست‌تر از لایه پیشفرض است.
+      name: تصاویر جهانی Esri ‏(Clarity) نسخه بتا
+    Gliwice-buildings:
+      name: 'گلیویس: ساختمان‌ها'
     MAPNIK:
-      description: لایهٔ پیشفرض اوپن‌استریت‌مپ.
-      name: OpenStreetMap (Standard)
+      description: لایه پیشفرض اوپن‌استریت‌مپ.
+      name: اوپن‌استریت‌مپ (استاندارد)
     Mapbox:
       attribution:
         text: قوانین و بازخورد
-      description: تصاویر هوایی و ماهواره‌ای.
-      name: Mapbox Satellite
+      name: ماهواره Mapbox
     OSM_Inspector-Addresses:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Addresses'
+      name: 'OSM Inspector: آدرس‌ها'
     OSM_Inspector-Geometry:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Geometry'
+      name: 'OSM Inspector: هندسه'
     OSM_Inspector-Highways:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Highways'
+      name: 'OSM Inspector: بزرگراه‌ها'
     OSM_Inspector-Multipolygon:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Area'
+      name: 'OSM Inspector: منطقه'
     OSM_Inspector-Places:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Places'
+      name: 'OSM Inspector: مکان‌ها'
     OSM_Inspector-Routing:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Routing'
+      name: 'OSM Inspector: مسیریابی'
     OSM_Inspector-Tagging:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Tagging'
+      name: 'OSM Inspector: برچسب زدن'
     US-TIGER-Roads-2017:
-      description: 'زرد = داده‌های دولتی سرشماری آمریکا. قرمز: داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد'
+      description: زرد = داده‌های دولتی سرشماری آمریکا. قرمز = داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
-      description: 'زرد = داده‌های دولتی سرشماری آمریکا. قرمز: داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد'
+      description: زرد = داده‌های دولتی سرشماری آمریکا. قرمز = داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد
       name: TIGER Roads 2018
     USDA-NAIP:
-      name: برنامه ملی تصویر کشاورزی
+      name: برنامه ملی تصویربرداری کشاورزی
     US_Forest_Service_roads_overlay:
-      description: 'معبر: سبزرنگ = دسته‌بندی‌نشده. قهوه‌ای‌رنگ = رد چرخ. سطح: شن‌ریزه = قهوه‌ای روشن توپر، آسفالت = سیاه، روسازی‌شده = خاکستری، زمین = سفید، بتن = آبی، چمن = سبز. فصلی = سفید'
+      description: 'بزرگراه: سبزرنگ = دسته‌بندی‌نشده. پوشش قهوه‌ای‌رنگ = مسیر. سطح: سنگریزه = قهوه‌ای روشن توپر، آسفالت = سیاه، سنگفرش = خاکستری، زمین = سفید، بتن = آبی، چمن = سبز. فصلی = میله‌های سفید'
     UrbISOrtho2016:
       name: UrbIS-Ortho 2016
     Waymarked_Trails-Cycling:
@@ -74,7 +73,7 @@ fa:
     Waymarked_Trails-Hiking:
       attribution:
         text: © waymarkedtrails.org، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC by-SA 3.0
-      name: 'Waymarked Trails: پیاده‌گردی'
+      name: 'Waymarked Trails: پیاده‌روی'
     Waymarked_Trails-MTB:
       attribution:
         text: © waymarkedtrails.org، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC by-SA 3.0
@@ -126,10 +125,6 @@ fa:
         text: '© مشارکت‌کنندگان اوپن‌استریت‌مپ '
       description: ردهای عمومی جی‌پی‌اس که در اوپن‌استریت‌مپ آپلود شده است.
       name: OpenStreetMap GPS traces
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: OpenStreetMap (سیاه و سفید استاندارد)
     osm-mapnik-german_style:
       attribution:
         text: © مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA

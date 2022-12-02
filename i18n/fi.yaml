@@ -2,11 +2,9 @@ fi:
   imagery:
     Bing:
       description: Satelliitti- ja ilmakuvat
-      name: Bing-ilmakuvat
     EsriWorldImagery:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Kansainväliset Esri-satelliittikuvat
       name: Kansainväliset Esri-satelliittikuvat
     EsriWorldImageryClarity:
       attribution:
@@ -19,7 +17,6 @@ fi:
     Mapbox:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Satelliitti- ja ilmakuvat
       name: Mapbox-satelliittikuvat
     OSM_Inspector-Addresses:
       attribution:
@@ -129,10 +126,6 @@ fi:
         text: © OpenStreetMapin tekijät
       description: OpenStreetMapiin tallennetut julkiset GPS-jäljet
       name: OpenStreetMapin GPS-jäljet
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMapin tekijät, CC-BY-SA
-      name: OpenStreetMap (oletusnäkymä mustavalkoisena)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA

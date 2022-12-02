@@ -2,9 +2,7 @@ et:
   imagery:
     Bing:
       description: Satelliidi- ja aerofotod.
-      name: Bingi aerofotod
     EsriWorldImagery:
-      description: Esri Worldi pildimaterjal.
       name: Esri Worldi pildimaterjal
     EsriWorldImageryClarity:
       attribution:
@@ -14,11 +12,20 @@ et:
     MAPNIK:
       description: OpenStreetMapi vaikekiht.
       name: OpenStreetMap (standard)
+    Maaamet-Estonia_Cadastre:
+      name: Maa-ameti katastrikaart
+    Maaamet-Estonia_Ortho:
+      name: Maa-ameti ortofoto (WMS)
     Mapbox:
       attribution:
         text: Kasutustingimused ja tagasiside
-      description: Satelliidi- ja aerofotod.
       name: Mapboxi satelliidifotod
+    maaamet.ee-cir_ngr:
+      name: Maa-ameti metsanduslik ortofoto
+    maaamet.ee-orto:
+      name: Maa-ameti ortofoto (TMS)
+    maaamet.ee-pohi_vr2:
+      name: Maa-ameti põhikaart
     mapbox_locator_overlay:
       attribution:
         text: Kasutustingimused ja tagasiside

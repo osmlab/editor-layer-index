@@ -12,6 +12,10 @@ pl:
       attribution:
         text: © Agentschap Informatie Vlaanderen
       name: AGIV Flandria GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: Najnowsze zdjęcia lotnicze AIV Flandria
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © Agentschap Informatie Vlaanderen
@@ -20,9 +24,32 @@ pl:
       attribution:
         text: © Agentschap Informatie Vlaanderen
       name: Cyfrowy model wysokościowy Flandrii AIV, 25 cm, widok z góry
+    AIV_Wegenregister:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: AIV Wegenregister
+    Bedzin-PL-aerial_image:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Ortofotomapa 2013 (zdjęcia lotnicze)'
+    Bedzin-PL-buildings:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Budynki'
     Bing:
       description: Zdjęcia satelitarne i lotnicze Bing.
-      name: Bing
+      name: Mapy Bing z lotu ptaka
+    Bytom-2012:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Ortofotomapa 2012 (zdjęcia lotnicze)'
+    Bytom-2014:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Fotoplan 2014 (aerofotografia)'
+    Bytom-buildings:
+      attribution:
+        text: Urząd Miasta Bytomia
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 bezchmurne – https://s2maps.eu, EOX IT Services GmbH (zawiera zmodyfikowane dane Copernicus Sentinel 2017 i 2018)
@@ -31,22 +58,55 @@ pl:
     EsriWorldImagery:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne i lotnicze Esri.
+      description: Zdjęcia satelitarne i lotnicze Esri
       name: Esri (satelitarne i lotnicze)
     EsriWorldImageryClarity:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Esri, które mogą być czytelniejsze i dokładniejsze niż standardowy podkład.
       name: Esri Beta (satelitarne i lotnicze)
+    Geoportal2-PL-City-boundaries_WMS:
+      name: 'Geoportal 2: Granice miejscowości WMS'
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      name: 'Geoportal 2: Ortofotomapa wysokiej rozdzielczości (zdjęcia archiwalne) (WMS)'
+    Geoportal2-PL-HighResolution-aerial_image_WMS:
+      name: 'Geoportal 2: Ortofotomapa wysokiej rozdzielczości (WMS)'
+    Geoportal2-PL-Streets_WMS:
+      name: Geoportal 2 Nazwy ulic
+    Geoportal2-PL-addres_points_WMS:
+      name: 'Geoportal 2: Punkty adresowe'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      name: 'Geoportal 2: Ortofotomapa (zdjęcia archiwalne) (WMS)'
+    Geoportal2-PL-aerial_image_WMS:
+      name: 'Geoportal 2: Ortofotomapa (najnowsze zdjęcia lotnicze) (WMS)'
+    Geoportal2-PL-aerial_image_WMTS:
+      name: 'Geoportal 2: Ortofotomapa (najnowsze zdjęcia lotnicze) (WMTS)'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      name: 'Geoportal 2: Granice gminne WMS'
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      name: 'Geoportal 2: Granice powiatów WMS'
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      name: 'Geoportal 2: Granice wojewódzkie WMS'
+    Geoportal2-PL-buildings_WMS:
+      name: 'Geoportal 2: Ewidencja budynków WMS'
+    Geoportal2-PL-gas-pipe_WMS:
+      name: 'Geoportal 2: Rury gazowe WMS'
+    Geoportal2-PL-plot_boundaries_WMS:
+      name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-prng:
+      name: 'Geoportal 2: PRNG (nazwy geograficzne)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      name: 'Geoportal 2: Rury kanalizacyjne WMS'
+    Geoportal2-PL-state-borders_WMS:
+      name: 'Geoportal 2: Granice państwa WMS'
     MAPNIK:
       attribution:
-        text: © autorzy OpenStreetMap, CC BY-SA 2.0
+        text: © Współtwórcy OpenStreetMap, ODbL 1.0
       description: Domyślny podkład OpenStreetMap
       name: OpenStreetMap (Standard)
     Mapbox:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne i lotnicze Mapbox.
       name: Mapbox (satelitarne i lotnicze)
     OSM_Inspector-Addresses:
       attribution:
@@ -256,10 +316,6 @@ pl:
         text: © autorzy OpenStreetMap
       description: Publiczne ślady GPS przesłane do OpenStreetMap.
       name: Ślady GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © autorzy OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Standard Czarno-Biała)
     osm-mapnik-german_style:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
@@ -284,6 +340,7 @@ pl:
     stockholm-orto:
       attribution:
         text: © Urząd miasta Sztokholm, CC0
+      description: Ortofotografie z urzędu miejskiego Sztokholmu 2018, licencja CC0
       name: Ortofotografia Sztokholmu
     susono_shizuoka_jp_orthophoto:
       attribution:

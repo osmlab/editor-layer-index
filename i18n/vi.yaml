@@ -12,6 +12,10 @@ vi:
       attribution:
         text: © Cơ quan Thông tin Vlaanderen
       name: AIV Vlaanderen GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: AIV Vlaanderen không ảnh sơ bộ
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © Cơ quan Thông tin Vlaanderen
@@ -20,6 +24,10 @@ vi:
       attribution:
         text: © Cơ quan Thông tin Vlaanderen
       name: AIV Mô hình Chiều cao Số Vlaanderen II, hệ số Skyview 0,25 m
+    AIV_Wegenregister:
+      attribution:
+        text: © Cơ quan Thông tin Vlaanderen
+      name: Sổ Đường sá Cơ quan Thông tin Vlaanderen
     Bedzin-PL-aerial_image:
       attribution:
         text: Giám đốc Huyện tại Będzin
@@ -30,7 +38,7 @@ vi:
       name: 'Będzin: Tòa nhà'
     Bing:
       description: Hình ảnh vệ tinh và không ảnh.
-      name: Bing không ảnh
+      name: Bing Bản đồ Không ảnh
     Bytom-2012:
       attribution:
         text: Văn phòng Thành phố Bytom
@@ -71,6 +79,11 @@ vi:
       attribution:
         text: Văn phòng Thành phố Częstochowa
       name: 'Częstochowa: Tòa nhà'
+    Dourados_Ortofotos:
+      attribution:
+        text: Tòa thị chánh Dourados – GeoDourados
+      description: Không hình độ phân giải cao Dourados (2018) và vài khu phố (2020).
+      name: Dourados Hình trực giao
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 không có mây – https://s2maps.eu bởi EOX IT Services GmbH (Chứa dữ liệu Copernicus Sentinel đã sửa đổi 2017 & 2018)
@@ -79,18 +92,23 @@ vi:
     EsriWorldImagery:
       attribution:
         text: Điều khoản & Phản hồi
-      description: Hình ảnh thế giới Esri.
+      description: Esri Hình ảnh Thế giới
       name: Esri Hình ảnh Thế giới
     EsriWorldImageryClarity:
       attribution:
         text: Điều khoản & Phản hồi
       description: Hình ảnh lưu trữ Esri có thể rõ hơn và chính xác hơn lớp mặc định.
       name: Esri Hình ảnh Thế giới (Clarity) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Văn phòng Khảo sát Thành phố Frankfurt am Main
+      description: Không ảnh Frankfurt am Main được chụp ngày 16 tháng 4 năm 2019
+      name: Không ảnh Frankfurt am Main 2019
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Văn phòng Chính vì Trắc địa và Bản đồ học
       description: Bản đồ hình trực giao có độ phân giải 10 cm trở lên. Dữ liệu được sắp xếp theo độ phân giải rồi theo độ tươi, ví dụ mảng chụp năm 2012 có độ phân giải 8 cm sẽ phủ mảng chụp năm 2019 có độ phân giải 10 cm.
-      name: 'Geoportal 2: Bản đồ Hình trực giao Độ phân giải cao, có thể lỗi thời (không ảnh)'
+      name: 'Geoportal 2: Bản đồ Hình trực giao Độ phân giải cao (WMS không ảnh)'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: Văn phòng Chính vì Trắc địa và Bản đồ học
@@ -156,6 +174,11 @@ vi:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Các biên giới hành chính liên bang, bang, huyện, xã, và phần xã dưới dạng vectơ.'
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Chứa thông tin khu vực công được phát hành theo Giấy phép Chính phủ Mở v3.0.
+      description: Dữ liệu lối ra vào công cộng do chính quyền địa phương phát hành và rowmaps.com sưu tập
+      name: Lối Ra vào Công cộng
     Lodz-2015:
       attribution:
         text: Văn phòng Thành phố Łódź
@@ -170,14 +193,37 @@ vi:
       name: 'Łódź: Tòa nhà'
     MAPNIK:
       attribution:
-        text: © những người đóng góp vào OpenStreetMap, CC BY-SA 2.0
+        text: © những người đóng góp vào OpenStreetMap, ODbL 1.0
       description: Lớp OpenStreetMap mặc định.
       name: OpenStreetMap (Chuẩn)
+    Maaamet-Estonia_Cadastre:
+      attribution:
+        text: Cơ sở Hình trực giao Địa chính Ban Đất đai
+      name: Bản đồ Địa chính Ban Đất đai
+    Maaamet-Estonia_Ortho:
+      attribution:
+        text: Hình trực giao Ban Đất đai
+      name: Trực giao Ban Đất đai (WMS)
     Mapbox:
       attribution:
         text: Điều khoản & Phản hồi
-      description: Hình ảnh vệ tinh không ảnh.
+      description: Bộ mảnh raster của Mapbox chứa lớp hình ảnh chụp từ vệ tinh và trên không trung
       name: Mapbox Vệ tinh
+    OSIPIII_6in:
+      attribution:
+        text: Chương trình Hình ảnh Toàn tiểu bang Ohio
+      description: Hình ảnh trực giao 41 quận do Chương trình Hình ảnh Toàn tiểu bang Ohio III (OSIP III) chụp với độ phân giải 6 inch từ 2019 đến 2020.
+      name: Chương trình Hình ảnh Toàn tiểu bang Ohio III 6 Inch
+    OSIP_1ft:
+      attribution:
+        text: Chương trình Hình ảnh Toàn tiểu bang Ohio
+      description: Hình ảnh trực giao tất cả 88 quận do Chương trình Hình ảnh Toàn tiểu bang Ohio II (OSIP II) chụp với độ phân giải 1 bộ từ 2011 đến 2014.
+      name: Chương trình Hình ảnh Toàn tiểu bang Ohio III 1 Bộ
+    OSIP_6in:
+      attribution:
+        text: Chương trình Hình ảnh Toàn tiểu bang Ohio
+      description: Hình ảnh trực giao 40 quận do Chương trình Hình ảnh Toàn tiểu bang Ohio III (OSIP III) chụp với độ phân giải 6 inch từ 2017 đến 2018, cộng thêm hình ảnh 16 quận từ OSIP I và OSIP II từ 2010 đến 2014.
+      name: Chương trình Hình ảnh Toàn tiểu bang Ohio 6 Inch
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Chứa thông tin khu vực công được phát hành theo Giấy phép Chính phủ Mở v3.0.
@@ -211,10 +257,6 @@ vi:
       attribution:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
       name: 'Trình kiểm tra OSM: Thẻ'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Văn phòng Thành phố Ruda Śląska
-      name: 'Ruda Śląska: Bản đồ Hình trực giao (không ảnh)'
     SPW_ORTHO_LAST:
       name: SPW Wallonie không ảnh mới nhất
     SPW_PICC:
@@ -228,17 +270,20 @@ vi:
         text: Văn phòng Thành phố Siemianowice Śląskie
       name: 'Siemianowice Śląskie: Tòa nhà'
     US-TIGER-Roads-2017:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: TIGER Đường sá 2017
     US-TIGER-Roads-2018:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: TIGER Đường sá 2018
     US-TIGER-Roads-2019:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: TIGER Đường sá 2019
     US-TIGER-Roads-2020:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
-      name: Đường sá TIGER 2020
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      name: TIGER Đường sá 2020
+    US-TIGER-Roads-2021:
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      name: TIGER Đường sá 2021
     USDA-NAIP:
       attribution:
         text: Bộ Nông nghiệp Hoa Kỳ
@@ -443,6 +488,18 @@ vi:
       attribution:
         text: Huyện Lubaczowski
       name: 'Huyện Lubaczowski: Tòa nhà'
+    maaamet.ee-cir_ngr:
+      attribution:
+        text: Hình trực giao Lâm nghiệp Ban Đất đai
+      name: Lâm nghiệp Ban Đất đai
+    maaamet.ee-orto:
+      attribution:
+        text: Hình trực giao Ban Đất đai
+      name: Trực giao Ban Đất đai (TMS)
+    maaamet.ee-pohi_vr2:
+      attribution:
+        text: Bản đồ gốc Ban Đất đai
+      name: Bản đồ gốc Ban Đất đai
     mapbox_locator_overlay:
       attribution:
         text: Điều khoản & Phản hồi
@@ -472,10 +529,6 @@ vi:
         text: © những người đóng góp vào OpenStreetMap
       description: Tuyến GPS công khai được tải lên OpenStreetMap
       name: Tuyến GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © những người đóng góp vào OpenStreetMap, CC BY-SA
-      name: OpenStreetMap (Chuẩn Trắng đen)
     osm-mapnik-german_style:
       attribution:
         text: © những người đóng góp vào OpenStreetMap, CC BY-SA

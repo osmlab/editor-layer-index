@@ -2,7 +2,7 @@ de:
   imagery:
     AGIV:
       attribution:
-        text: © agentschap Informatie Vlaanderen
+        text: © Agentur Information Flandern
       name: AIV Flandern aktuellste Luftbilder
     AGIV10cm:
       attribution:
@@ -12,6 +12,10 @@ de:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flandern GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flanders preliminary aerial imagery
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,9 +24,78 @@ de:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitales Höhenmodell Vlaanderen II, Skyview-Faktor 0,25 m
+    AIV_Wegenregister:
+      attribution:
+        text: © Agentur Information Flandern
+      name: AIV Flandern Straßenregister
+    Bedzin-PL-aerial_image:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Orthophotomap 2013 (Luftbild)'
+    Bedzin-PL-buildings:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Gebäude'
     Bing:
       description: Satelliten- und Luftbilder
-      name: Bing Luftbilder
+      name: Bing Maps Luftbild
+    Bytom-2012:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2012 (Luftbild)'
+    Bytom-2014:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Fotoplan 2014 (Luftbild)'
+    Bytom-2016:
+      attribution:
+        text: Stadtrat von Bytom
+      name: 'Bytom: Orthophotokarte 2016 (Luftbild)'
+    Bytom-2018:
+      attribution:
+        text: Stadtrat von Bytom
+      name: 'Bytom: Orthophotokarte 2018 (Luftbild)'
+    Bytom-2021:
+      attribution:
+        text: Stadtrat von Bytom
+      name: 'Bytom: Orthophotokarte 2021 (Luftbild)'
+    Bytom-buildings:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Gebäude'
+    Czestochowa-2011:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2011 (Luftbild)'
+    Czestochowa-2013:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2013 (Luftbild)'
+    Czestochowa-2014:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2014 (Luftbild)'
+    Czestochowa-2015:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2015 (Luftbild)'
+    Czestochowa-2016:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2016 (Luftbild)'
+    Czestochowa-2017:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Orthophotomap 2017 (Luftbild)'
+    Czestochowa-buildings:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Gebäude'
+    Dourados_Ortofotos:
+      attribution:
+        text: Gemeindeverwaltung von Dourados - GeoDourados
+      description: Hochauflösende Luftbilder von Dourados (2018) und mehreren Bezirken (2020).
+      name: Dourados Orthofotos
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 wolkenfrei - https://s2maps.eu by EOX IT Services GmbH (enthält modofizierte Copernicus Sentinel Daten 2017 & 2018)
@@ -38,16 +111,222 @@ de:
         text: Bedingungen & Feedback
       description: Esri Archiv-Bilder (kann klarer und genauer als Esri Weltbilder sein)
       name: Esri Weltbilder (Klarheit) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Stadtvermessungsamt Frankfurt am Main
+      description: Luftbild von Frankfurt am Main, aufgenommen am 16. April 2019
+      name: Frankfurt am Main Luftbild 2019
+    Geoportal2-PL-City-boundaries_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: WMS-Dienst zur Veröffentlichung von Einheiten der territorialen Aufteilung Polens, einschließlich Verwaltungseinheiten
+      name: 'Geoportal 2: Stadtgrenzen WMS'
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: Orthophotokarte mit einer Auflösung von 10 cm oder mehr. Die Daten werden nach Auflösung und dann nach Aktualität sortiert, z. B. wird ein Orthophoto aus dem Jahr 2012 mit einer Auflösung von 8 cm statt einem Ortophoto aus dem Jahr 2019 mit einer Auflösung von 10 cm verwendet.
+      name: 'Geoportal 2: Hochauflösende Orthophotokarte (Archivbilder) (WMS)'
+    Geoportal2-PL-HighResolution-aerial_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.
+      name: 'Geoportal 2: Hoch auflösenden Orthofotos (Luftbilder) (WMS)'
+    Geoportal2-PL-Streets_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: Geoportal 2 Nazwy ulic
+    Geoportal2-PL-addres_points_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2: Punkty adresowe'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: Ansichtsdienst (Web Map Service, WMS), der die Ansicht der für das Gebiet Polens archivierten Orthofotokarten ermöglicht. Bei den über diesen Dienst zur Verfügung gestellten Daten handelt es sich um Orthofotokarten, die aus Luftbildern erstellt wurden. Der Dienst bietet Unterstützung für die Schnittstelle WMS 1.3.0.
+      name: 'Geoportal 2: Orthophotokarte (Archivbilder) (WMS)'
+    Geoportal2-PL-aerial_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2: Orthophotomap (aktuellste Luftbilder) (WMS)'
+    Geoportal2-PL-aerial_image_WMTS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Tile Service,WMTS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych.
+      name: 'Geoportal 2: Orthophotomap (aktuellste Luftbilder) (WMTS)'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: WMS-Dienst zur Veröffentlichung von Einheiten der territorialen Aufteilung Polens, einschließlich Verwaltungseinheiten
+      name: 'Geoportal 2: Grenzen der Gemeinden WMS'
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: WMS-Dienst zur Veröffentlichung von Einheiten der territorialen Aufteilung Polens, einschließlich Verwaltungseinheiten
+      name: 'Geoportal 2: Grenzen der Bezirke WMS'
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: WMS-Dienst zur Veröffentlichung von Einheiten der territorialen Aufteilung Polens, einschließlich Verwaltungseinheiten
+      name: 'Geoportal 2: Grenzen der Provinzen WMS'
+    Geoportal2-PL-buildings_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
+      name: 'Geoportal 2: Gebäuderegister WMS'
+    Geoportal2-PL-gas-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: gas pipes WMS'
+    Geoportal2-PL-heat-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: heat pipes WMS'
+    Geoportal2-PL-plot_boundaries_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
+      name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-power-cord_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: power cord WMS'
+    Geoportal2-PL-prng:
+      attribution:
+        text: Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej
+      name: 'Geoportal 2: PRNG (geo names)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: sewer pipes WMS'
+    Geoportal2-PL-squares-and-housing-estates_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2: Squares and housing estates'
+    Geoportal2-PL-state-borders_WMS:
+      attribution:
+        text: Zentralamt für Geodäsie und Kartographie
+      description: WMS-Dienst zur Veröffentlichung von Einheiten der territorialen Aufteilung Polens, einschließlich Verwaltungseinheiten
+      name: 'Geoportal 2: Staatsgrenzen WMS'
+    Geoportal2-PL-telecommunications-cable_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: telecommunications cables WMS'
+    Geoportal2-PL-water-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: water pipes WMS'
+    Gliwice-2003:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2003 (Luftbild)'
+    Gliwice-2009:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2009 (Luftbild)'
+    Gliwice-2013:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2013 (Luftbild)'
+    Gliwice-2017:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2017 (Luftbild)'
+    Gliwice-2018:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2018 (Luftbild)'
+    Gliwice-2020:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2020 (Luftbild)'
+    Gliwice-2021:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Orthophotomap 2021 (Luftbild)'
+    Gliwice-buildings:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Gebäude'
+    LSA-ATKIS_BU:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Gebäudeumrisse in Sachsen-Anhalt
+      name: © GeoBasis-DE/LVermGeo LSA, ATKIS_BU
+    LSA-DOP20:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Luftbild des Landes Sachsen-Anhalt, 20 cm Auflösung
+      name: © GeoBasis-DE/LVermGeo LSA, DOP20
+    LSA-DVG:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: 'Vektorisierte Erfassung von Verwaltungsgrenzen. Angegeben sind die Grenzen des Bundeslandes, des Kreises, der Gemeinde und der Gemeindeteile.'
+      name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Enthält Informationen des öffentlichen Sektors, die unter der Open Government License v3.0 lizenziert sind.
+      description: Daten über öffentliche Wegerechte, die von den lokalen Behörden freigegeben wurden und auf rowmaps.com zusammengestellt sind
+      name: Öffentliche Wegerechte
+    Lodz-2015:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Orthophotomap 2017 (Luftbild)'
+    Lodz-2017:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Orthophotomap 2017 (Luftbild)'
+    Lodz-buildings:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Gebäude'
     MAPNIK:
       attribution:
-        text: © OpenStreetMap-Mitwirkende, CC-BY-SA 2.0
+        text: © OpenStreetMap-Mitwirkende, ODbL 1.0
       description: Standard OpenStreetMap Kartenansicht
       name: OpenStreetMap (Standard)
+    Maaamet-Estonia_Cadastre:
+      attribution:
+        text: Maa-ameti katastrikaart ortofoto alusel
+      name: Maa-amet Cadastral Map
+    Maaamet-Estonia_Ortho:
+      attribution:
+        text: Maa-ameti ortofoto
+      name: Maa-amet Ortho (WMS)
     Mapbox:
       attribution:
         text: Bedingungen & Feedback
-      description: Satellitenbilder und Luftbilder
+      description: Von Mapbox bereitgestellte, globale Basiskarte mit hochauflösenden Satelliten- und Luftbildern.
       name: Mapbox Satellit
+    OSIPIII_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III orthoimagery of 41 counties captured at 6-inch resolution in 2019 and 2020.
+      name: Ohio Statewide Imagery Program III 6-Inch
+    OSIP_1ft:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program II orthoimagery of all 88 counties at 1-foot resolution from 2011 through 2014.
+      name: Ohio Statewide Imagery Program II 1-Foot
+    OSIP_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III orthoimagery of 40 counties captured at 6-inch resolution in 2017 and 2018, plus OSIP I and OSIP II imagery in 16 more counties from 2010 through 2014.
+      name: Ohio Statewide Imagery Program 6-Inch
+    OSMUK-Cadastral-Parcels:
+      attribution:
+        text: Enthält Informationen des öffentlichen Sektors, die unter der Open Government License v3.0 lizenziert sind.
+      description: Perfekt ausgerichtete Katasterpakete (Grundbuch) in Großbritannien
+      name: OSMUK Katasterpakete
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap-Mitwirkende, CC BY-SA
@@ -76,10 +355,21 @@ de:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap-Mitwirkende, CC-BY-SA
       name: 'OSM-Objekteditor: Attribute'
+    OpenAerialMapMosaic:
+      description: Alle OpenAerialMap-Bilder in einer gemeinsamen Ebene, von Kontur.io
+      name: OpenAerialMap Mosaik, von Kontur.io
     SPW_ORTHO_LAST:
       name: öffentlicher Dienst Wallonien aktuelle Luftbilder
     SPW_PICC:
       name: öffentlicher Dienst Wallonien PICC Hintergrund 'numerical'
+    Siemianowice_Slaskie-aerial_image:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Orthophotomap (Luftbild)'
+    Siemianowice_Slaskie-buildings:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Gebäude'
     US-TIGER-Roads-2017:
       description: Gelb = Freie Kartendaten von der US-Volkszählung. Rot = Daten sind nicht in OpenStreetMap
       name: TIGER Straßen 2017
@@ -89,11 +379,24 @@ de:
     US-TIGER-Roads-2019:
       description: Gelb = Freie Kartendaten von der US-Volkszählung. Rot = Daten sind nicht in OpenStreetMap
       name: TIGER Straßen 2019
+    US-TIGER-Roads-2020:
+      description: Gelb = Freie Kartendaten von der US-Volkszählung. Rot = Daten sind nicht in OpenStreetMap
+      name: TIGER Straßen 2020
+    US-TIGER-Roads-2021:
+      description: Gelb = Öffentliche Daten der US-Zensusbehörde. Rot = Daten nicht in OpenStreetMap gefunden
+      name: TIGER Straßen 2021
     USDA-NAIP:
+      attribution:
+        text: U.S. Department of Agriculture
+      description: 60cm 4-Band DOQQs des letzten Jahres aus dem National Agriculture Imagery Program (NAIP) für jeden Staat der zusammenhängenden Vereinigten Staaten.
       name: Programm für Nationale Landwirtschafts-Luftbilder (National Agriculture Imagery Program, NAIP)
     US_Forest_Service_roads_overlay:
       description: 'Straße: Grüner Rand = Nebenstraße. Brauner Rand = Feldweg/Waldweg. Oberfläche: Schotter = hellbraune Füllung, Asphalt = schwarz, befestigt = grau, ground = weiß, Beton = blau, Gras = grün. Saisonal = weißes Gitter'
       name: U.S.A. Forststraßen Overlay
+    UrbISOrtho:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: CIRB/CIBG aktuellstes Luftbild
     UrbISOrtho2016:
       attribution:
         text: Realisiert mit Hilfe von Brüssel UrbIS®© - Verteilung & Copyright CIRB
@@ -110,10 +413,18 @@ de:
       attribution:
         text: Realisiert mit Hilfe von Brüssel UrbIS®© - Verteilung & Copyright CIRB
       name: UrbIS-Ortho 2019
+    UrbISOrtho2020:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2020
     UrbisAdmFR:
       attribution:
         text: Realisiert mit Hilfe von Brüssel UrbIS®© - Verteilung & Copyright CIRB
       name: UrbisAdm FR
+    UrbisAdmFRNL:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm FR/NL
     UrbisAdmNL:
       attribution:
         text: Realisiert mit Hilfe von Brüssel UrbIS®© - Verteilung & Copyright CIRB
@@ -138,6 +449,10 @@ de:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap-Mitwirkende, CC BY-SA 3.0
       name: 'Markierte Wege: Wintersport'
+    Zabrze-2011:
+      attribution:
+        text: Urząd Miasta Zabrza
+      name: 'Zabrze: Orthophotomap 2011 (aerial image)'
     basemap.at:
       attribution:
         text: basemap.at
@@ -153,6 +468,15 @@ de:
         text: basemap.at
       description: Anmerkungsüberlagerung von basemap.at
       name: basemap.at Überlagerung
+    cyclosm:
+      attribution:
+        text: 'Rendering: CyclOSM ( bereitgestellt von OpenStreetMap France) © Kartendaten von OpenStreetMap-Mitwirkenden.'
+      description: CyclOSM ist ein Kartenstil, der speziell für das Radfahren entwickelt wurde. Er nutzt OpenStreetMap-Daten, um eine schöne und funktionale Fahrradkarte zu erstellen!
+      name: CyclOSM
+    debicki-buildings:
+      attribution:
+        text: Powiat dębicki
+      name: 'Powiat dębicki: Gebäude'
     eufar-balaton:
       attribution:
         text: EUFAR Balaton Orthofoto 2010
@@ -168,10 +492,26 @@ de:
         text: © Gemeinde Gothenburg, CC0
       description: Die Karte der Gemeinde ist eine Überblickskarte die Gothenburg zeigt. Sie enthält Informationen über Flächennutzung, Kommunikation, Hydrgraphie, Gebäude, Adressen und Straßennamen. administrative Gliederung und Orientierungstexte.
       name: Karte der Gemeinde Gothenburg
+    gothenburg-dtm-2017:
+      attribution:
+        text: © Gemeinde Göteborg, CC0
+      description: Web map service presenting hillshade and slope based on the 2017 elevation model for City of Gothenburg. Resolution 0.5 meters per pixel.
+      name: Gothenburg Hillshade
     gothenburg-ortho:
       attribution:
         text: © Gemeinde Gothenburg, CC0
       description: Orthofoto für Gemeinde Gothenburg
+      name: Gothenburg Orthophoto 2015
+    gothenburg-ortho_2017:
+      attribution:
+        text: © Gemeinde Göteborg, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto 2017
+    gothenburg-ortho_2019:
+      attribution:
+        text: © Gemeinde Göteborg, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto 2019
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -202,11 +542,25 @@ de:
         text: © Gemeinde Kalmar
       description: Orthofotos der städtischen Gebiete der Gemeinde Kalmar 2018
       name: Kalmar Städtisches Orthofoto 2018
+    kalmar-orto-2020:
+      attribution:
+        text: © Kalmar municipality
+      description: Orthophotos for urban areas of the municipality of Kalmar 2020
+      name: Kalmar Urban Orthophoto 2020
+    kartverket-bygninger:
+      attribution:
+        text: © Kartverket
+      description: INSPIRE Gebäude für Norwegen.
+      name: Kartverket Buildings overlay
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
       description: Kelkkareitit.fi Schneemobil Spuren von OSM (Nordische Abdeckung)
       name: Nordisches Schneemobil Overlay
+    lancucki-buildings:
+      attribution:
+        text: Powiat łańcucki
+      name: 'Powiat łańcucki: Gebäude'
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
@@ -227,6 +581,22 @@ de:
         text: © Gemeinde Linköping
       description: Orthofotos von der Gemeinde Linköping 2010, open data
       name: Linköping Orthofoto
+    lubaczowski-buildings:
+      attribution:
+        text: Powiat lubaczowski
+      name: 'Powiat lubaczowski: Gebäude'
+    maaamet.ee-cir_ngr:
+      attribution:
+        text: Maa-ameti metsanduslik ortofoto
+      name: Maa-amet Forestry
+    maaamet.ee-orto:
+      attribution:
+        text: Maa-ameti ortofoto
+      name: Maa-amet Ortho (TMS)
+    maaamet.ee-pohi_vr2:
+      attribution:
+        text: Maa-ameti põhikaart
+      name: Maa-amet Basic Map
     mapbox_locator_overlay:
       attribution:
         text: Bedingungen & Feedback
@@ -256,18 +626,42 @@ de:
         text: © OpenStreetMap-Mitwirkende
       description: Öffentliche GPS Tracks hochgeladen von OpenStreetMap-Mitwirkenden
       name: OpenStreetMap GPS Tracks
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap-Mitwirkende, CC-BY-SA
-      name: OpenStreetMap (Standard Schwarz & Weiss)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap-Mitwirkende, CC-BY-SA
       name: OpenStreetMap (Deutscher Stil)
+    poznan-ortofotomapa2014:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Orthophotomap 2014 (Luftbild)'
+    poznan-ortofotomapa2016:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Orthophotomap 2016 (Luftbild)'
+    poznan-ortofotomapaBiezaca:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Orthophotomap Bieżąca (Luftbild)'
+    przemysl-aerial:
+      attribution:
+        text: Miasto Przemyśl
+      name: 'Przemyśl: Ortophotomap (Luftbild)'
+    przemysl-buildings:
+      attribution:
+        text: Miasto Przemyśl
+      name: 'Przemyśl: Gebäude'
     qa_no_address:
       attribution:
         text: Kacheln © Simon Poole, Kartendaten © OpenStreetMap-Mitwirkende, ODbL 1.0
       name: 'Qualitätssicherung: Keine Adresse'
+    rzeszowski-aerial:
+      attribution:
+        text: Powiat rzeszowski
+      name: 'Powiat rzeszowski: Orthophotomap (Luftbild)'
+    rzeszowski-buildings:
+      attribution:
+        text: Powiat rzeszowski
+      name: 'Powiat rzeszowski: Gebäude'
     skobbler:
       attribution:
         text: 'Kacheln © skobbler, Kartendaten © OpenStreetMap-Mitwirkende, ODbL 1.0'
@@ -277,6 +671,14 @@ de:
         text: © Skoterleder.org
       description: Schneemobil-Spuren
       name: Schneemobil Karte von Schweden
+    sropczyce-buildings:
+      attribution:
+        text: Powiat ropczycko-sędziszowski
+      name: 'Powiat ropczycko-sędziszowski: Gebäude'
+    stalowowolski-buildings:
+      attribution:
+        text: Powiat stalowowolski
+      name: 'Powiat stalowowolski: Gebäude'
     stamen-terrain-background:
       attribution:
         text: Kacheln © Stamen Design, CC BY 3.0, Kartendaten © OpenStreetMap-Mitwirkende, ODbL 1.0
@@ -284,6 +686,7 @@ de:
     stockholm-orto:
       attribution:
         text: © Gemeinde Stockholm, CC0
+      description: Orthofotos von der Gemeinde Stockholm 2018, CC0 Lizenz
       name: Stockholm Orthofoto
     susono_shizuoka_jp_orthophoto:
       attribution:
@@ -327,6 +730,10 @@ de:
         text: © Trafikverket, CC0
       description: Schwedisches NVDB Straßen-Netzwerk mit mehreren Optionen für Karten-Layer
       name: Trafikverket Straßen-Netzwerk Optionen
+    wroclaw-orto2015:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Orthophotomap 2015 (Luftbild)'
     wroclaw-orto2018:
       attribution:
         text: Stadtverwaltung Wrocław
