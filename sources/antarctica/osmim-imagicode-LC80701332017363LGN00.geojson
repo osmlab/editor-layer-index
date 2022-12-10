@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ 26.7545, -73.3831 ], [ 24.1768, -71.8278 ], [ 29.0777, -71.0152 ], [ 31.9438, -72.5073 ], [ 29.373, -72.9701 ], [ 26.7545, -73.3831 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "https://imagico.de/maps/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "Landsat 8 evening image of the Sør Rondane Mountains (east) showing a different lighting compared to the daytime image (true color)",
+        "end_date": "2017-12-29",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-LC80701332017363LGN00",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Sør Rondane Mountains east evening",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
+        "start_date": "2017-12-29",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80701332017363LGN00&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

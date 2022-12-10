@@ -2,37 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    67.96839858817646,
-                    22.36264542957619
-                ],
-                [
-                    71.48986007499286,
-                    22.36264542957619
-                ],
-                [
-                    71.48986007499286,
-                    24.886930816927297
-                ],
-                [
-                    67.86231185721942,
-                    24.886930816927297
-                ],
-                [
-                    67.86231185721942,
-                    22.38391650007107
-                ],
-                [
-                    67.96839858817646,
-                    22.36264542957619
-                ]
-            ]
+            [ [ 67.968398588176456, 22.36264542957619 ], [ 67.862311857219424, 22.38391650007107 ], [ 67.862311857219424, 24.886930816927297 ], [ 71.489860074992862, 24.886930816927297 ], [ 71.489860074992862, 22.36264542957619 ], [ 67.968398588176456, 22.36264542957619 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -46,7 +21,7 @@
         "name": "imagico.de: Rann of Kutch",
         "max_zoom": 12,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81510432015030LGN00&z={zoom}&x={x}&y={-y}"

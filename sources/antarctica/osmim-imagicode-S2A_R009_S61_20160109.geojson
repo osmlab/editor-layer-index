@@ -2,37 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -56.13476090727487,
-                    -61.63471600102006
-                ],
-                [
-                    -53.72343354521433,
-                    -61.63471600102006
-                ],
-                [
-                    -53.72343354521433,
-                    -60.83981613078141
-                ],
-                [
-                    -55.83263688383738,
-                    -60.84015069906498
-                ],
-                [
-                    -56.13476090727487,
-                    -61.199363166283845
-                ],
-                [
-                    -56.13476090727487,
-                    -61.63471600102006
-                ]
-            ]
+            [ [ -56.134760907274867, -61.63471600102006 ], [ -56.134760907274867, -61.199363166283845 ], [ -55.832636883837381, -60.840150699064978 ], [ -53.723433545214327, -60.839816130781408 ], [ -53.723433545214327, -61.63471600102006 ], [ -56.134760907274867, -61.63471600102006 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -46,7 +21,7 @@
         "name": "imagico.de: Elephant Island/Clarence Island",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-01-09",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R009_S61_20160109&z={zoom}&x={x}&y={-y}"

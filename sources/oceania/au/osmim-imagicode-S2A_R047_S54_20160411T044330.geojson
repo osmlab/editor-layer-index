@@ -2,37 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    73.06896521028185,
-                    -53.270590689700434
-                ],
-                [
-                    74.08863378938341,
-                    -53.270590689700434
-                ],
-                [
-                    74.08863378938341,
-                    -52.94950473139763
-                ],
-                [
-                    73.67338491853381,
-                    -52.87673289134188
-                ],
-                [
-                    73.06896521028185,
-                    -52.875489636268725
-                ],
-                [
-                    73.06896521028185,
-                    -53.270590689700434
-                ]
-            ]
+            [ [ 73.068965210281846, -53.270590689700434 ], [ 73.068965210281846, -52.875489636268725 ], [ 73.673384918533813, -52.876732891341881 ], [ 74.088633789383408, -52.949504731397631 ], [ 74.088633789383408, -53.270590689700434 ], [ 73.068965210281846, -53.270590689700434 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -46,7 +21,7 @@
         "name": "imagico.de: Heard Island coast",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-04-12",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R047_S54_20160411T044330&z={zoom}&x={x}&y={-y}"

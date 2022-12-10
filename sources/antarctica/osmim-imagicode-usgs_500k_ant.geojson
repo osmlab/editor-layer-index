@@ -2,57 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -180.0,
-                    -85.0511
-                ],
-                [
-                    180.0,
-                    -85.0511
-                ],
-                [
-                    179.978,
-                    -76.9945
-                ],
-                [
-                    170.9912,
-                    -68.9887
-                ],
-                [
-                    120.0146,
-                    -63.9935
-                ],
-                [
-                    97.4927,
-                    -63.9935
-                ],
-                [
-                    -69.0161,
-                    -67.9898
-                ],
-                [
-                    -160.0269,
-                    -73.4964
-                ],
-                [
-                    -179.7144,
-                    -77.0979
-                ],
-                [
-                    -180.0,
-                    -77.4846
-                ],
-                [
-                    -180.0,
-                    -85.0511
-                ]
-            ]
+            [ [ -180.0, -85.0511 ], [ -180.0, -77.4846 ], [ -179.7144, -77.0979 ], [ -160.0269, -73.4964 ], [ -69.0161, -67.9898 ], [ 97.4927, -63.9935 ], [ 120.0146, -63.9935 ], [ 170.9912, -68.9887 ], [ 179.978, -76.9945 ], [ 180.0, -85.0511 ], [ -180.0, -85.0511 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -66,7 +21,7 @@
         "name": "imagico.de: USGS 500k Antarctica maps",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "1950",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=usgs_500k_ant&z={zoom}&x={x}&y={-y}"

@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ -9.5902, -73.0826 ], [ -12.8796, -73.0724 ], [ -3.5275, -68.2377 ], [ 3.2248, -69.4085 ], [ 2.1332, -70.3079 ], [ 0.9177, -71.2239 ], [ -0.5656, -72.227 ], [ -1.9657, -73.0808 ], [ -9.5902, -73.0826 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "https://imagico.de/maps/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "Sentinel-2 image from Fimbul Ice Shelf and Jelbart Ice Shelf and areas further southwest (true color)",
+        "end_date": "2022-02-09",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-S2B_R121_SXX_20220209T085949",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Fimbul and Jelbart Ice Shelf",
+        "max_zoom": 13,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
+        "start_date": "2022-02-09",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R121_SXX_20220209T085949&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

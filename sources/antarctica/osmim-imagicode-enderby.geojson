@@ -2,45 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    45.4547,
-                    -68.5091
-                ],
-                [
-                    67.088,
-                    -68.5091
-                ],
-                [
-                    67.3735,
-                    -68.2581
-                ],
-                [
-                    67.3735,
-                    -67.3449
-                ],
-                [
-                    59.2693,
-                    -65.7176
-                ],
-                [
-                    49.7155,
-                    -65.7176
-                ],
-                [
-                    45.4547,
-                    -67.5724
-                ],
-                [
-                    45.4547,
-                    -68.5091
-                ]
-            ]
+            [ [ 45.4547, -68.5091 ], [ 45.4547, -67.5724 ], [ 49.7155, -65.7176 ], [ 59.2693, -65.7176 ], [ 67.3735, -67.3449 ], [ 67.3735, -68.2581 ], [ 67.088, -68.5091 ], [ 45.4547, -68.5091 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -54,7 +21,7 @@
         "name": "imagico.de: Enderby Land and Kemp Coast",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2017-01-25",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=enderby&z={zoom}&x={x}&y={-y}"

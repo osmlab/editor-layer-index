@@ -2,41 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -53.20921946177197,
-                    -84.12524693598144
-                ],
-                [
-                    -44.51354078327688,
-                    -84.12524693598144
-                ],
-                [
-                    -44.52178052933989,
-                    -82.43683433550413
-                ],
-                [
-                    -48.72405102147429,
-                    -82.29987186164387
-                ],
-                [
-                    -60.615377881406225,
-                    -82.29968785439104
-                ],
-                [
-                    -60.615377881406225,
-                    -83.78609327915953
-                ],
-                [
-                    -53.20921946177197,
-                    -84.12524693598144
-                ]
-            ]
+            [ [ -53.209219461771973, -84.125246935981437 ], [ -60.615377881406225, -83.78609327915953 ], [ -60.615377881406225, -82.299687854391038 ], [ -48.724051021474288, -82.299871861643865 ], [ -44.521780529339892, -82.43683433550413 ], [ -44.513540783276881, -84.125246935981437 ], [ -53.209219461771973, -84.125246935981437 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -50,7 +21,7 @@
         "name": "imagico.de: Pensacola Mountains",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-02-02",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81511242016033LGN00&z={zoom}&x={x}&y={-y}"

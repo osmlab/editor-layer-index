@@ -2,41 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    96.1197,
-                    -67.6542
-                ],
-                [
-                    103.3017,
-                    -67.6542
-                ],
-                [
-                    105.1028,
-                    -65.7224
-                ],
-                [
-                    105.1028,
-                    -65.044
-                ],
-                [
-                    98.7331,
-                    -65.044
-                ],
-                [
-                    96.1201,
-                    -67.1899
-                ],
-                [
-                    96.1197,
-                    -67.6542
-                ]
-            ]
+            [ [ 96.1197, -67.6542 ], [ 96.1201, -67.1899 ], [ 98.7331, -65.044 ], [ 105.1028, -65.044 ], [ 105.1028, -65.7224 ], [ 103.3017, -67.6542 ], [ 96.1197, -67.6542 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -50,7 +21,7 @@
         "name": "imagico.de: Bunger Hills",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2017-02-23",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R017_S67_20170223T022551&z={zoom}&x={x}&y={-y}"

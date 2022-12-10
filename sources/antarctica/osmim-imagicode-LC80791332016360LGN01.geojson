@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ 12.866, -73.3831 ], [ 10.2945, -71.8268 ], [ 15.19, -71.0151 ], [ 18.0557, -72.5071 ], [ 15.5082, -72.9661 ], [ 12.866, -73.3831 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "https://imagico.de/maps/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "Landsat 8 evening image of the Hoel Mountains 2016 showing a different lighting compared to the daytime image (true color)",
+        "end_date": "2016-12-25",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-LC80791332016360LGN01",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Hoel Mountains 2016 evening",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
+        "start_date": "2016-12-25",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80791332016360LGN01&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}

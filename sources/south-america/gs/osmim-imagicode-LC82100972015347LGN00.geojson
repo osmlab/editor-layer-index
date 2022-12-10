@@ -2,33 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -42.12874872458635,
-                    -53.72050213468143
-                ],
-                [
-                    -41.6558216310805,
-                    -53.70871763480476
-                ],
-                [
-                    -41.67573435080706,
-                    -53.445862233424414
-                ],
-                [
-                    -42.14625818503558,
-                    -53.45782244664258
-                ],
-                [
-                    -42.12874872458635,
-                    -53.72050213468143
-                ]
-            ]
+            [ [ -42.128748724586352, -53.720502134681432 ], [ -42.146258185035578, -53.457822446642581 ], [ -41.675734350807062, -53.445862233424414 ], [ -41.655821631080499, -53.708717634804763 ], [ -42.128748724586352, -53.720502134681432 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -42,7 +21,7 @@
         "name": "imagico.de: Shag Rocks",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-12-13",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC82100972015347LGN00&z={zoom}&x={x}&y={-y}"

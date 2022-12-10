@@ -1,0 +1,30 @@
+{
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [ [ -1.0382, -73.3831 ], [ -3.6111, -71.8279 ], [ 1.2926, -71.0147 ], [ 4.1552, -72.5074 ], [ 1.5175, -72.9815 ], [ -1.0382, -73.3831 ] ]
+        ]
+    },
+    "properties": {
+        "attribution": {
+            "url": "https://imagico.de/maps/#osmim",
+            "text": "imagico.de OSM images for mapping",
+            "required": true
+        },
+        "category": "photo",
+        "country_code": "AQ",
+        "description": "Landsat 8 evening image of the Gburek Peaks showing a different lighting compared to the daytime image (true color)",
+        "end_date": "2017-12-11",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
+        "id": "osmim-imagicode-LC80881332017345LGN00",
+        "license_url": "https://imagico.de/map/osmim_tiles.php",
+        "name": "imagico.de: Gburek Peaks evening",
+        "max_zoom": 12,
+        "permission_osm": "explicit",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
+        "start_date": "2017-12-11",
+        "type": "tms",
+        "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80881332017345LGN00&z={zoom}&x={x}&y={-y}"
+    },
+    "type": "Feature"
+}
