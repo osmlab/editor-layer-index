@@ -312,6 +312,16 @@ en:
         text: Terms & Feedback
       description: Mapbox-provided raster tileset that includes a global basemap of high resolution satellite and aerial imagery
       name: Mapbox Satellite
+    Naturvardsverket-protected:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Swedish national parks, nature reserves and other protected areas and objects
+      name: Environmental Protection Agency - Protected Areas
+    Naturvardsverket-trails:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Daily updated trails in or around nature reserves as recorded by Swedish Environmental Protection Agency
+      name: Environmental Protection Agency - Trails
     OSIPIII_6in:
       attribution:
         text: Ohio Statewide Imagery Program
@@ -363,6 +373,26 @@ en:
     OpenAerialMapMosaic:
       description: All OpenAerialMap images in one mosaic layer, by Kontur.io
       name: OpenAerialMap Mosaic, by Kontur.io
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © Riksantikvariämbetet, CCO
+      description: Ancient and historical remains and monuments
+      name: Riksantikvariämbetet - Archaeological Sites and Monuments
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © Riksantikvariämbetet, CCO
+      description: Heritage buildings and churches
+      name: Riksantikvariämbetet - Heritage buildings
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © Riksantikvariämbetet, CCO
+      description: Protected areas for heritage buildings and religious heritage sites
+      name: Riksantikvariämbetet - Protected Heritage Areas
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © Riksantikvariämbetet, CCO
+      description: Ruins of cultural-historical interst
+      name: Riksantikvariämbetet - Ruins
     SPW_ORTHO_LAST:
       name: SPW(allonie) most recent aerial imagery
     SPW_PICC:
@@ -517,6 +547,16 @@ en:
         text: © Gothenburg municipality, CC0
       description: Orthophoto for Gothenburg municipality
       name: Gothenburg Orthophoto 2019
+    gothenburg-ortho_2021:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto 2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto latest
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -667,10 +707,35 @@ en:
       attribution:
         text: Powiat rzeszowski
       name: 'Powiat rzeszowski: Buildings'
+    scb-industrial:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Geographically delimited areas which are characterized by large-scale and industrial land use
+      name: SCB - Industrial zones
+    scb-settlements:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Contiguous areas of buildings with 50-199 inhabitants and no more than 150 metres between houses
+      name: SCB - Small Settlements
+    scb-urban:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Human settlements of at least 200 people with less than 500 meters between households
+      name: SCB - Urban Areas
+    scb-vacation:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Contiguous areas that consist mainly of holiday homes; a collection of at least 50 holiday homes, where the distance between them does not exceed 150 metres
+      name: SCB - Vacation Home Areas
     skobbler:
       attribution:
         text: '© Tiles: skobbler Map data: OpenStreetMap contributors'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © Skolverket
+      description: Swedish schools.
+      name: Skolverket - Schools
     skoterleder:
       attribution:
         text: © Skoterleder.org
@@ -698,6 +763,11 @@ en:
         text: Susono city orthophoto
       description: The aerial photos released by Susono City as open data.
       name: Susono city orthophoto
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: Swedish transmission network for electricity.
+      name: SVK - Electricity Network
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors
