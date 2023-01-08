@@ -3,6 +3,7 @@
     "properties": {
         "id": "Czech_pLPIS",
         "name": "Czech pLPIS",
+        "overlay": true,
         "type": "wms",
         "url": "https://eagri.cz/public/app/wms/public_DPB_PB_OPV.fcgi?LAYERS=DPB_UCINNE,DPB_UCINNE_KOD&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "CZ",
