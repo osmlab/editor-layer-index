@@ -8,8 +8,6 @@ attrs==21.2.0
     # via pytest
 coverage[toml]==6.2
     # via pytest-cov
-exceptiongroup==1.0.0
-    # via pytest
 iniconfig==1.1.1
     # via pytest
 packaging==21.3
@@ -18,13 +16,11 @@ pluggy==1.0.0
     # via pytest
 pyparsing==3.0.6
     # via packaging
-pytest==7.2.0
+pytest==7.2.1
     # via
     #   -r requirements-dev.in
     #   pytest-cov
 pytest-cov==4.0.0
     # via -r requirements-dev.in
 tomli==2.0.0
-    # via
-    #   coverage
-    #   pytest
+    # via coverage
