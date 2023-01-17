@@ -6,7 +6,7 @@
         "i18n": true,
         "description": "Aerial imagery of Frankfurt am Main, photographed on 16 April 2019",
         "type": "wms",
-        "url": "https://geoserver.frankfurt.de/mapproxy/opendata_luftbilder_2019/service?LAYERS=opendata_luftbilder_2019&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://geowebdienste.frankfurt.de/OD_Luftbilder_2019?REQUEST=GetMap&VERSION=1.3.0&SERVICE=WMS&CRS={proj}&FORMAT=image/jpeg&STYLES=&bbox={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=opendata_luftbilder_2019",
         "privacy_policy_url": "https://geoportal.frankfurt.de/info/datenschutz.html",
         "country_code": "DE",
         "best": false,
