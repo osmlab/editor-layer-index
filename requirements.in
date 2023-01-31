@@ -1,13 +1,13 @@
 # Libeli
-pyproj==3.4.0
+pyproj==3.4.1
 shapely==1.8.5.post1
 regex==2022.10.31
 validators==0.20.0
 
 # Common
 colorlog==6.7.0
-jsonschema==4.16.0
-certifi==2022.9.24
+jsonschema==4.17.3
+certifi>=2022.12.07
 
 # Check
 #shapely
@@ -15,8 +15,8 @@ certifi==2022.9.24
 
 # Strict check
 mercantile==1.2.1
-requests==2.28.1
-urllib3==1.26.12
+requests==2.28.2
+urllib3==1.26.14
 validators==0.20.0
 #jsonschema
 #shapely
@@ -27,6 +27,6 @@ aiohttp[speedups]==3.8.3
 imagehash==4.3.1
 python-magic==0.4.27
 mercantile==1.2.1
-pillow==9.3.0
+pillow==9.4.0
 #shapely
 #pyproj
