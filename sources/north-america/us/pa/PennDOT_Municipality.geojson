@@ -1,17 +1,17 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "PennDOT_County",
+        "id": "PennDOT_Municipality",
         "attribution": {
-            "url": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=24",
+            "url": "https://data.pa.gov/Geospatial-Data/Pennsylvania-Municipality-Boundaries/xfdy-ds3u",
             "text": "Pennsylvania Department of Transportation",
             "required": false
         },
-        "name": "Pennsylvania County Boundaries",
+        "name": "Pennsylvania Municipality Boundaries",
         "icon": "https://gis.penndot.gov/gishub/images/PennDOT_Logo.png",
-        "url": "https://mapservices.pasda.psu.edu/server/rest/services/pasda/PennDOT/MapServer/export?LAYERS=show%3A7&TRANSPARENT=true&FORMAT=jpeg&BBOX={bbox}&SIZE={width},{height}&F=image&BBOXSR={wkid}&IMAGESR={wkid}&foo={proj}",
+        "url": "https://mapservices.pasda.psu.edu/server/rest/services/pasda/PennDOT/MapServer/export?LAYERS=show:7,10&TRANSPARENT=true&FORMAT=jpeg&BBOX={bbox}&SIZE={width},{height}&F=image&BBOXSR={wkid}&IMAGESR={wkid}&foo={proj}",
         "max_zoom": 20,
-        "license_url": "https://gis-hub-pennshare.hub.arcgis.com/datasets/PennShare::pennsylvania-county-boundaries/",
+        "license_url": "https://data.pa.gov/Geospatial-Data/Pennsylvania-Municipality-Boundaries/xfdy-ds3u",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
@@ -19,7 +19,7 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "description": "County boundaries within Pennsylvania (PennDOT Type 10)",
+        "description": "Municipality boundaries within Pennsylvania (PennDOT Type 10)",
         "category": "other",
         "overlay": true,
         "transparent": true,
