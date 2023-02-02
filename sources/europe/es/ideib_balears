@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "id": "IDEIB",
+    "attribution": {
+      "text": "Infraestructura de Dades Espacials de les Illes Balears",
+      "required": true
+    },
+    "name": "IDEIB - Ortofoto 2021 (SITIBSA - scne.es)",
+    "url": "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Orto_IB/MapServer/WMSServer",
+    "country_code": "ES",
+    "type": "wms",
+    "available_projections": [
+      "EPSG:25831"],
+    "best": true,
+    "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+    "privacy_policy_url": "https://www.caib.es/sites/sitibsa/ca/aviso_legal-66839/",
+    "category": "photo"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.208491,
+              38.05675
+            ],
+            [
+              0.615229,
+              39.05332
+            ],
+            [
+              1.845698,
+              40.02341
+            ],
+            [
+              4.284662,
+              40.7098
+            ],
+            [
+              4.938349,
+              39.71987
+            ],
+            [
+              3.284907,
+              38.90386
+            ],
+            [
+              1.208491,
+              38.05675
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
