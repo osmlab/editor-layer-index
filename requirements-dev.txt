@@ -4,8 +4,6 @@
 #
 #    pip-compile requirements-dev.in
 #
-attrs==21.2.0
-    # via pytest
 coverage[toml]==6.2
     # via pytest-cov
 iniconfig==1.1.1
@@ -16,7 +14,7 @@ pluggy==1.0.0
     # via pytest
 pyparsing==3.0.6
     # via packaging
-pytest==7.2.2
+pytest==7.3.1
     # via
     #   -r requirements-dev.in
     #   pytest-cov
