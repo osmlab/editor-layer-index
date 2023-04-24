@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "DE_Orthophotography_2017_NC",
+        "id": "Delaware_FirstMap_2021",
         "attribution": {
             "url": "https://firstmap.delaware.gov",
-            "text": "Surdex Corp, FirstMap",
+            "text": "Hexagon, FirstMap",
             "required": true
         },
-        "name": "Delaware 2017 Orthophotography (Natural Color)",
-        "icon": "https://firstmap.delaware.gov/CLF4/agency/img/logo/agencyLogoSquare.png",
-        "url": "https://imagery.firstmap.delaware.gov/imagery/services/DE_Imagery/DE_Imagery_2017/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "name": "Delaware FirstMap 2021",
+        "icon": "https://firstmap.delaware.gov/contentFolder/images/FirstmapLogo.jpg",
+        "url": "https://imagery.firstmap.delaware.gov/imagery/rest/services/DE_Imagery/DE_Imagery_2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "min_zoom": 4,
         "max_zoom": 19,
         "license_url": "https://firstmap.delaware.gov/pdfs/public/DEImageryMetadata.pdf",
@@ -17,13 +17,12 @@
         "type": "wms",
         "available_projections": [
             "CRS:84",
-            "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:3857"
         ],
-        "start_date": "2017-03-05",
-        "end_date": "2017-03-29",
-        "description": "This data set consists of 0.25-meter pixel resolution (approximately 0.82-foot), 4-band natural color orthoimages covering the entire State of Delaware at 2017.",
-        "category": "historicphoto",
+        "start_date": "2021-06-29",
+        "end_date": "2021-10-19",
+        "description": "4-band natural color orthoimagery covering the entire State of Delaware in 2021",
+        "category": "photo",
         "privacy_policy_url": "https://delaware.gov/privacy-policy/",
         "valid-georeference": true
     },
