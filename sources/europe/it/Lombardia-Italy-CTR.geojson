@@ -10,8 +10,9 @@
         "name": "Lombardia - Italy (C.T.R. 10000 - 1980-94)",
         "available_projections": [
             "CRS:84",
-            "EPSG:32632",
-            "EPSG:4326"
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:32632"
         ],
         "category": "map",
         "url": "https://www.cartografia.servizirl.it/arcgis/services/wms/ctr_wms/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=C.T.R._10000_-_1980-9427122&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
