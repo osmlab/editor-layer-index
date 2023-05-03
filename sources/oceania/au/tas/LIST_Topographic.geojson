@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "properties": {
+    "attribution": {
+      "url": "http://www.thelist.tas.gov.au",
+      "text": "the LIST © State of Tasmania",
+      "required": true
+    },
+    "license_url": "https://wiki.openstreetmap.org/wiki/File:Land_Tasmania_Signed_Waivers.pdf",
+    "privacy_policy_url": null,
+    "name": "LIST Topographic",
+    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Basemaps/Topographic/MapServer/tile/{zoom}/{y}/{x}",
+    "max_zoom": 18,
+    "min_zoom": 0,
+    "country_code": "AU",
+    "type": "tms",
+    "id": "LIST_Topographic",
+    "icon": "https://listdata.thelist.tas.gov.au/images/header-list-logo.png",
+    "category": "map"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          146.96869703709893,
+          -39.160344561888074
+        ],
+        [
+          143.54047244334225,
+          -39.44486853344905
+        ],
+        [
+          145.05204704221825,
+          -43.915625519393316
+        ],
+        [
+          148.2762960675139,
+          -43.90352727720324
+        ],
+        [
+          149.33841956496775,
+          -39.356861590894006
+        ],
+        [
+          146.96869703709893,
+          -39.160344561888074
+        ]
+      ]
+    ]
+  }
+}
