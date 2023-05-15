@@ -29,7 +29,7 @@
         "country_code": "AT",
         "type": "wms",
         "category": "photo",
-        "url": "https://kataster.bev.gv.at/ortho/ows?SERVICE=WMS&REQUEST=GetMap&VERSION=2.0.0&FORMAT=image/jpeg&LAYERS=bev:RGB&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+        "url": "https://kataster.bev.gv.at/ortho/ows?SERVICE=WMS&REQUEST=GetMap&VERSION=2.0.0&FORMAT=image/jpeg&LAYERS=bev:RGB&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
     },
     "geometry": {
         "type": "Polygon",
