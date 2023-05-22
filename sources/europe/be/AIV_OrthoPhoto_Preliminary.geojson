@@ -621,7 +621,7 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "© agentschap Informatie Vlaanderen"
+            "text": "© Digitaal Vlaanderen"
         },
         "category": "photo",
         "country_code": "BE",
@@ -630,9 +630,9 @@
         "id": "AGIVwerkbestand",
         "license_url": "https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/711f82cf-1b68-238c-ae04-4cda-d1cf-deb1-66f6d3d7",
         "privacy_policy_url": "https://overheid.vlaanderen.be/Webdiensten-Gebruiksrecht",
-        "name": "AIV Flanders preliminary aerial imagery",
+        "name": "Digitaal Vlaanderen preliminary aerial imagery",
         "type": "wms",
-        "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/ofw/wms?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OFW&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geo.api.vlaanderen.be/ofw/wms?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=OFW&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "available_projections": [
             "CRS:84",
             "EPSG:3035",
