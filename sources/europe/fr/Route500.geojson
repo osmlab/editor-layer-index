@@ -2,8 +2,10 @@
     "type": "Feature",
     "properties": {
         "id": "route500",
+        "i18n": true,
         "name": "Route 500",
-        "description": "Routes du réseau classé (autoroutes, nationales, départementales)",
+        "description": "Routes of the classified network (highways, nationals, departmentals)",
+        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/",
         "type": "tms",
         "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500/{zoom}/{x}/{y}.png",
         "country_code": "FR",
