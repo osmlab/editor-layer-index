@@ -413,7 +413,7 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "© agentschap Informatie Vlaanderen"
+            "text": "© Digitaal Vlaanderen"
         },
         "available_projections": [
             "CRS:84",
@@ -434,10 +434,10 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/AIV.png",
         "id": "AGIV10cm",
         "license_url": "https://download.agiv.be/Producten/Detail?id=1209&title=Orthofotomozaiek_grootschalig_winteropnamen_kleur_2013_2015_Vlaanderen",
-        "name": "AIV Flanders 2013-2015 aerial imagery 10cm",
+        "name": "Digitaal Vlaanderen 2013-2015 aerial imagery 10cm",
         "start_date": "2013",
         "type": "wms",
-        "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/OGW/wms?LAYERS=OGWRGB13_15VL&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+        "url": "https://geo.api.vlaanderen.be/OGW/wms?LAYERS=OGWRGB13_15VL&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "type": "Feature"
 }
