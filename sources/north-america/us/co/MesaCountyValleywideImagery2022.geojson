@@ -3,17 +3,20 @@
     "properties": {
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
         "privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
-        "id": "MCGIS-County-Valleywide-Imagery-2018",
-        "type": "wmts",
-        "name": "Mesa County GIS Valleywide 2018",
-        "url": "https://mcgis.mesacounty.us/imagery/rest/services/Mosaic_Datasets/City_Color_2018/ImageServer/WMTS/1.0.0/WMTSCapabilities.xml",
+        "id": "MCGIS-County-Valleywide-Imagery-2022",
+        "type": "wms",
+        "name": "Mesa County GIS Valleywide 2022",
+        "url": "https://mcgis.mesacounty.us/imagery/rest/services/Mosaic_Datasets/Airphoto_2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 20,
         "permission_osm": "implicit",
         "country_code": "US",
-        "start_date": "2018",
-        "end_date": "2018",
+        "start_date": "2022",
+        "end_date": "2022",
         "available_projections": [
-            "EPSG:3742"
+            "CRS:84",
+            "EPSG:3742",
+            "EPSG:3857",
+            "EPSG:4326"
         ],
         "attribution": {
             "url": "https://gis.mesacounty.us/",
@@ -21,7 +24,7 @@
             "required": true
         },
         "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
-        "category": "historicphoto",
+        "category": "photo",
         "min_zoom": 5
     },
     "geometry": {
