@@ -632,7 +632,7 @@
         "privacy_policy_url": "https://overheid.vlaanderen.be/Webdiensten-Gebruiksrecht",
         "name": "Digitaal Vlaanderen preliminary aerial imagery",
         "type": "tms",
-        "url": "https://geo.api.vlaanderen.be/ofw/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ofw&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
+        "url": "https://geo.api.vlaanderen.be/OFW/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ofw&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
         "available_projections": [
             "CRS:84",
             "EPSG:3035",
