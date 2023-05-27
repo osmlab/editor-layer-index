@@ -630,6 +630,7 @@
         "id": "DV_OrthoPhoto_Preliminary",
         "license_url": "https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/711f82cf-1b68-238c-ae04-4cda-d1cf-deb1-66f6d3d7",
         "privacy_policy_url": "https://overheid.vlaanderen.be/Webdiensten-Gebruiksrecht",
+        "max_zoom": 21,
         "name": "Digitaal Vlaanderen preliminary aerial imagery",
         "type": "tms",
         "url": "https://geo.api.vlaanderen.be/OFW/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ofw&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
