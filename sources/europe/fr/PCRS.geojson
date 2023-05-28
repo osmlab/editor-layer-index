@@ -5,7 +5,11 @@
         "name": "PCRS raster",
         "type": "wms",
         "url": "https://wxs.ign.fr/ortho/geoportail/r/wms?LAYERS=PCRS.LAMB93&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "available_projections": ["EPSG:3857","EPSG:4326"],
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
         "best": true,
         "country_code": "FR",
         "attribution": {
