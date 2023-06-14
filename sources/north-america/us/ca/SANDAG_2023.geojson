@@ -1,17 +1,17 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "SANDAG_2020",
+        "id": "SANDAG_2023",
         "attribution": {
             "url": "https://www.sangis.org/",
             "text": "San Diego Association of Governments",
             "required": false
         },
-        "name": "SANDAG 2020 Aerial Imagery",
+        "name": "SANDAG 2023 Aerial Imagery",
         "icon": "https://gis.sandag.org/images/sandag_sangis_combo_logo.png",
-        "url": "https://gis.sandag.org/sdgis/services/Imagery/SD2020/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis.sandag.org/sdgis/services/Imagery/SD2023_9inch/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 18,
-        "license_url": "https://gis.sandag.org/sdgis/rest/services/Imagery/SD2020/ImageServer/info/metadata",
+        "license_url": "https://gis.sandag.org/sdgis/rest/services/Imagery/SD2023_9inch/ImageServer/info/metadata",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
@@ -20,10 +20,10 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "start_date": "2019-12-22",
-        "end_date": "2020-01-11",
-        "description": "2020 9-inch resolution imagery for the San Diego region of the State of California. Imagery was acquired as part of the San Diego regional aerial imagery acquisition partnership",
-        "category": "historicphoto",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "2023 9-inch resolution imagery for the San Diego region of the State of California. Imagery was acquired as part of the San Diego regional aerial imagery acquisition partnership",
+        "category": "photo",
         "privacy_policy_url": "https://www.sandag.org/index.asp?fuseaction=utility.privacy"
     },
     "geometry": {
