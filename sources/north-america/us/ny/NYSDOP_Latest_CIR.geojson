@@ -1359,7 +1359,7 @@
         ]
     },
     "properties": {
-        "id": "NYSDOP_Latest",
+        "id": "NYSDOP_Latest_CIR",
         "attribution": {
             "required": false,
             "text": "New York State Statewide Digital Orthoimagery Program",
@@ -1371,15 +1371,15 @@
             "EPSG:4326"
         ],
         "country_code": "US",
-        "description": "The latest high resolution natural color orthoimagery for the state of New York at approximately 12 inch resolution",
+        "description": "The latest high resolution color infrared orthoimagery for the state of New York at approximately 12 inch resolution",
         "start_date": "2018",
         "end_date": "2022",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ny/NYS_Orthos_Online.png",
         "license_url": "https://www.fgdc.gov/grants/2011CAP/InterimFinalReports/056-11-5-NY-FinalReport.pdf",
         "max_zoom": 19,
-        "name": "NYSDOP Latest Orthoimagery (Natural Color)",
+        "name": "NYSDOP Latest Orthoimagery (Infrared)",
         "type": "wms",
-        "url": "https://orthos.its.ny.gov/arcgis/services/wms/Latest/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://orthos.its.ny.gov/arcgis/services/wms/Latest_cir/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "privacy_policy_url": "https://its.ny.gov/its-internet-security-and-privacy-policy",
         "category": "photo",
         "valid-georeference": true
