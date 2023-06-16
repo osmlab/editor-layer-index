@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Cattaraugus_NY_2020",
+        "id": "Cattaraugus_NY_2023",
         "attribution": {
             "url": "https://www.cattco.org/real-property-and-gis",
             "text": "Cattaraugus County Real Property Services",
             "required": false
         },
-        "name": "Cattaraugus County Orthoimagery (2020)",
+        "name": "Cattaraugus County Orthoimagery (2023)",
         "icon": "https://www.cattco.org/sites/default/files/inline-images/cattcoseal_0.png",
-        "url": "https://maps2.cattco.org/arcgiswebadaptor/rest/services/AerialPhotos/MapServer/export?f=image&format=jpg&layers=show:12&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://maps2.cattco.org/arcgiswebadaptor/rest/services/AerialPhotos/MapServer/export?f=image&format=jpg&layers=show:44&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 21,
         "license_url": "https://wiki.openstreetmap.org/wiki/New_York_(state)/Cattaraugus_County_Orthoimagery",
         "permission_osm": "explicit",
@@ -19,10 +19,10 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2020",
-        "end_date": "2020",
-        "description": "Spring 2020 3-inch resolution orthoimagery for Cattaraugus County in the State of New York",
-        "category": "historicphoto",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "Spring 2023 9-inch resolution orthoimagery for Cattaraugus County in the State of New York",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.cattco.org/legal/privacy-policy"
     },
