@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Delaware_FirstMap_2021",
+        "id": "Delaware_FirstMap_2022",
         "attribution": {
             "url": "https://firstmap.delaware.gov",
-            "text": "Hexagon, FirstMap",
+            "text": "Sanborn Map Company, FirstMap",
             "required": true
         },
-        "name": "Delaware FirstMap 2021",
+        "name": "Delaware FirstMap 2022",
         "icon": "https://firstmap.delaware.gov/contentFolder/images/FirstmapLogo.jpg",
-        "url": "https://imagery.firstmap.delaware.gov/imagery/rest/services/DE_Imagery/DE_Imagery_2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://imagery.firstmap.delaware.gov/imagery/rest/services/DE_Imagery/DE_Imagery_2022/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "min_zoom": 4,
         "max_zoom": 19,
         "license_url": "https://firstmap.delaware.gov/pdfs/public/DEImageryMetadata.pdf",
@@ -19,10 +19,10 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2021-06-29",
-        "end_date": "2021-10-19",
-        "description": "4-band natural color orthoimagery covering the entire State of Delaware in 2021",
-        "category": "historicphoto",
+        "start_date": "2022-03-11",
+        "end_date": "2022-03-29",
+        "description": "4-band natural color 6-inch resolution orthoimagery covering the entire State of Delaware in 2022",
+        "category": "photo",
         "privacy_policy_url": "https://delaware.gov/privacy-policy/",
         "valid-georeference": true
     },
