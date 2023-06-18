@@ -9,15 +9,15 @@
         },
         "name": "IndianaMap Orthoimagery - Latest Available",
         "icon": "https://www.arcgis.com/sharing/rest/content/items/c470d38a730b4a5d839602174ed97d5c/resources/ingov-logo-white.png",
-        "url": "https://imagery.gis.in.gov/arcgis/rest/services/Imagery/BestAvailableTiles/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://imagery.gis.in.gov/arcgis/rest/services/Imagery/BestAvailable/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
-        "license_url": "https://www.in.gov/gis/files/Sanborn-Ortho-Presentation-1_8_2021_.pdf",
+        "license_url": "https://www.in.gov/idoa/proc/bids/RFP-20-051/051_Att%20H%20-%20Summary%20Scope%20of%20Work.docx",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
             "EPSG:3857"
         ],
-        "start_date": "2016",
+        "start_date": "2017",
         "end_date": "2021",
         "description": "The latest available orthoimagery for the entire State of Indiana",
         "category": "photo",
