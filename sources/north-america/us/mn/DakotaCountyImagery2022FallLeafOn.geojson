@@ -222,7 +222,7 @@
         "attribution": {
             "required": false,
             "text": "Dakota County GIS",
-            "url": "https://dakotacounty.us"
+            "url": "https://www.co.dakota.mn.us/"
         },
         "available_projections": [
             "CRS:84",
@@ -241,7 +241,7 @@
         "name": "Dakota County GIS 2022 Fall Leaf-On 6-Inch",
         "start_date": "2022",
         "type": "wms",
-        "url": "https://gisimg.co.dakota.mn.us/arcgis/rest/services/AerialPhotography/2022AirPhotoLeafOn6Inch_Fall/ImageServer/WMSServer?LAYERS=2022AirPhotoLeafOff6Inch_Spring:default&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gisimg.co.dakota.mn.us/arcgis/services/AerialPhotography/2022AirPhotoLeafOn6Inch_Fall/ImageServer/WMSServer?LAYERS=2022AirPhotoLeafOn6inch_Fall:RGBDefault_6Inch&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "category": "photo"
     },
     "type": "Feature"
