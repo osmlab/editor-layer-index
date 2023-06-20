@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Los_Alamos_3in_2018",
+        "id": "Los_Alamos_3in_2022",
         "attribution": {
             "url": "https://www.losalamosnm.us/government/departments/administrative_services/information_management/geographic_information_system_services",
             "text": "Los Alamos County GIS Services",
             "required": false
         },
-        "name": "Los Alamos County Orthoimagery 2018 (3in)",
+        "name": "Los Alamos County Orthoimagery 2022 (3in)",
         "icon": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6435726/Templates/Images/logo.png",
-        "url": "https://gis.losalamosnm.us/securegis/rest/services/imagery/Orthoimagery_pictometry_3in_2018/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://gis.losalamosnm.us/securegis/rest/services/imagery/Orthoimagery_pictometry_3in_2022/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 20,
         "license_url": "https://wiki.openstreetmap.org/wiki/New_Mexico/Los_Alamos_County_Orthoimagery",
         "permission_osm": "explicit",
@@ -19,12 +19,12 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2018-08",
-        "end_date": "2018-08",
-        "description": "3-inch pixel resolution drone orthoimagery captured in 2018 for selected areas within Los Alamos County of the state of New Mexico",
-        "category": "historicphoto",
+        "start_date": "2022-08",
+        "end_date": "2022-08",
+        "description": "3-inch pixel resolution drone orthoimagery captured in 2022 for selected areas within Los Alamos County of the state of New Mexico",
+        "category": "photo",
         "valid-georeference": true,
-        "best": false,
+        "best": true,
         "privacy_policy_url": "https://losalamosnm.us/cms/one.aspx?pageId=6505271"
     },
     "geometry": {
