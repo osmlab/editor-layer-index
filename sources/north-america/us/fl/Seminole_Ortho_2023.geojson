@@ -1,27 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Seminole_Ortho_2021",
+        "id": "Seminole_Ortho_2023",
         "attribution": {
             "url": "https://maps2.scpafl.org/SCPAExternal/",
             "text": "Seminole County GIS",
             "required": false
         },
-        "name": "Seminole County Orthoimagery (2021)",
-        "url": "https://maps2.scpafl.org/arcgis/rest/services/Aerials2021/MapServer/export?f=image&format=jpg&layers=show,0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
-        "max_zoom": 19,
+        "name": "Seminole County Orthoimagery (2023)",
+        "url": "https://seminolearcgis.seminolecountyfl.gov:6443/arcgis/rest/services/Aerials2023/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
-        "type": "wms",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:2236",
-            "EPSG:3857"
-        ],
-        "start_date": "2021",
-        "end_date": "2021",
-        "description": "The 2021 orthoimagery for Seminole County of the State of Florida",
-        "category": "historicphoto",
+        "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "The 2023 orthoimagery for Seminole County of the State of Florida",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.scpafl.org/Privacy"
     },
