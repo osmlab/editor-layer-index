@@ -9,7 +9,7 @@
         },
         "name": "Wisconsin Leaf-Off Orthophotography (DNR)",
         "icon": "https://dnr.wisconsin.gov/sites/default/files/dnr-circle-logo-no-text-heavy-border.png",
-        "url": "https://dnrmaps.wi.gov/arcgis_image/rest/services/DW_Image/EN_Image_Basemap_Leaf_Off/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://dnrmaps.wi.gov/arcgis_image/rest/services/DW_Imagery/EN_Image_Basemap_Latest_Leaf_Off/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
         "license_url": "https://dnr.wisconsin.gov/legal",
         "country_code": "US",
@@ -18,9 +18,9 @@
             "EPSG:3857",
             "EPSG:6438"
         ],
-        "start_date": "2015",
-        "end_date": "2020",
-        "description": "WROC orthoimagery (2018-2020) and SEWRPC orthoimagery (2015) covering the entire State of Wisconsin",
+        "start_date": "2018",
+        "end_date": "2021",
+        "description": "WROC orthoimagery (2018-2020) and Door County orthoimagery (2021) covering the entire State of Wisconsin",
         "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://dnr.wisconsin.gov/legal/privacy"
