@@ -1,22 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Marco_Island_FL_Ortho_2021",
+        "id": "Marco_Island_FL_Ortho_Pre-Ian_2022",
         "attribution": {
             "url": "https://www.cityofmarcoisland.com/info-tech/page/gis-servicesmaps",
             "text": "Collier County Property Appraiser’s Office, City of Marco Island",
             "required": false
         },
-        "name": "City of Marco Island Orthoimagery (2021)",
-        "url": "https://t3.cityofmarcoisland.com:6443/cmi/rest/services/General/Aerial_2021/MapServer/WMTS/tile/1.0.0/General_Aerial_2021/default/default028mm/{zoom}/{y}/{x}",
+        "name": "City of Marco Island Orthoimagery Pre-Ian (2022)",
+        "url": "https://gis.cityofmarcoisland.com:6443/arcgis/rest/services/General/Aerial_2022/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
         "type": "tms",
-        "start_date": "2021",
-        "end_date": "2021",
-        "description": "The 2021 orthoimagery for the city of Marco Island in the State of Florida",
-        "category": "photo",
+        "start_date": "2021-12",
+        "end_date": "2021-12",
+        "description": "The 2022 (Pre-Ian) orthoimagery for the city of Marco Island in the State of Florida",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.cityofmarcoisland.com/community/page/disclaimers"
     },
@@ -26,23 +26,23 @@
             [
                 [
                     -81.77081116664,
-                    25.98505172530
-                ],
-                [
-                    -81.64884575832,
-                    25.98590041542
-                ],
-                [
-                    -81.64828781819,
-                    25.87555794801
+                    25.9850517253
                 ],
                 [
                     -81.76999573445,
                     25.87505598022
                 ],
                 [
+                    -81.64828781819,
+                    25.87555794801
+                ],
+                [
+                    -81.64884575832,
+                    25.98590041542
+                ],
+                [
                     -81.77081116664,
-                    25.98505172530
+                    25.9850517253
                 ]
             ]
         ]
