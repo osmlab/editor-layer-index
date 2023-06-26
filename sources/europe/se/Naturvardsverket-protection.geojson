@@ -7,7 +7,7 @@
         "id": "Naturvardsverket-protected",
         "country_code": "SE",
         "description": "Swedish national parks, nature reserves and other protected areas and objects",
-        "url": "http://gis-services.metria.se/arcgis/rest/services/nv/InspireNV_NVR/MapServer/exts/InspireView/SWE/service?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=PS.OBO,PS.DVO,PS.IF,PS.KR,PS.NP,PS.POINT,PS.NM,PS.NR,PS.NVO,PS.SBO,PS.VSO&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geodata.naturvardsverket.se/inspire/ps-nvr/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=PS.ProtectedSites.OBO,PS.ProtectedSites.DVO,PS.ProtectedSites.IF,PS.ProtectedSites.KR,PS.ProtectedSites.NP,PS.ProtectedSites.NM,PS.ProtectedSites.NM.Punkter,PS.ProtectedSites.NM.Ytor,PS.ProtectedSites.NR,PS.ProtectedSites.NVO,PS.ProtectedSites.SBO,PS.ProtectedSites.VSO&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://commons.wikimedia.org/wiki/File:Naturv%C3%A5rdsverket_vapen.svg",
         "min_zoom": 13,
         "max_zoom": 24,
