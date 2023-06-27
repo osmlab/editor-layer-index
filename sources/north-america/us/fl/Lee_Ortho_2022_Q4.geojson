@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Lee_Ortho_2021",
+        "id": "Lee_Ortho_2022_Q4",
         "attribution": {
             "url": "https://www.leegov.com/gis/data/aerials",
             "text": "Lee County GIS",
             "required": false
         },
-        "name": "Lee County Orthoimagery (2021)",
+        "name": "Lee County Orthoimagery (2022 Q4)",
         "icon": "https://www.arcgis.com/sharing/rest/content/items/ccd6da9acc7143ce822661ba11ee2017/resources/Lee-County-icon.png",
-        "url": "https://gissvr4.leepa.org/gissvr/rest/services/AP2021Pict/MapServer/export?f=image&format=jpg&layers=0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gissvr4.leepa.org/gissvr/rest/services/AP2022q4Pict/MapServer/export?f=image&format=jpg&layers=0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -19,9 +19,9 @@
             "EPSG:2237",
             "EPSG:3857"
         ],
-        "start_date": "2021-01-01",
-        "end_date": "2021-03-08",
-        "description": "The 2021 orthoimagery for Lee County of the State of Florida",
+        "start_date": "2022-10-01",
+        "end_date": "2022-12-31",
+        "description": "The 2022 Q4 orthoimagery for Lee County of the State of Florida",
         "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.leepa.org/PrivacyPolicy.aspx"
