@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Broward_Ortho_2021",
+        "id": "Broward_Ortho_2022",
         "attribution": {
             "url": "https://gisweb-adapters.bcpa.net/bcpawebmap_ex/bcpawebmap.aspx",
             "text": "Broward County Property Appraiser’s Office",
             "required": false
         },
-        "name": "Broward County Orthoimagery (2021)",
+        "name": "Broward County Orthoimagery (2022)",
         "icon": "https://www.broward.org/Style%20Library/V7/img/Broward_logo_white2.png",
-        "url": "https://gisweb-adapters.bcpa.net/arcgis/rest/services/BCPA_WEB_BASE_21/MapServer/export?f=image&format=jpg&layers=show,3&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gisweb-adapters.bcpa.net/arcgis/rest/services/BCPA_WEB_BASE_22/MapServer/export?f=image&format=jpg&layers=show,3&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -18,9 +18,9 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2021",
-        "end_date": "2021",
-        "description": "The 2021 orthoimagery for Broward County of the State of Florida",
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "The 2022 orthoimagery for Broward County of the State of Florida",
         "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://web.bcpa.net/legal"
