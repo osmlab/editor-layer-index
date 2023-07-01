@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Brevard_Ortho_2021",
+        "id": "Brevard_Ortho_2022",
         "attribution": {
             "url": "https://www.brevardfl.gov/GISMapsAndApplications",
             "text": "Brevard County Board of County Commissioners",
             "required": false
         },
-        "name": "Brevard County Orthoimagery (2021)",
+        "name": "Brevard County Orthoimagery (2022)",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/1/15/Logo_of_Brevard_County%2C_Florida.png",
-        "url": "https://gis.brevardfl.gov/gissrv/rest/services/Aerial_Photo/Y2021/MapServer/export?f=image&format=jpg&layers=show,0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gis.brevardfl.gov/gissrv/rest/services/Aerial_Photo/Y2022/MapServer/export?f=image&format=jpg&layers=show,0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -19,9 +19,9 @@
             "EPSG:2881",
             "EPSG:3857"
         ],
-        "start_date": "2021",
-        "end_date": "2021",
-        "description": "The 2021 orthoimagery for Brevard County of the State of Florida",
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "The 2022 orthoimagery for Brevard County of the State of Florida",
         "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.brevardfl.gov/PrivacyStatement"
