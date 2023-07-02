@@ -6,7 +6,6 @@ ca:
     EsriWorldImagery:
       attribution:
         text: Termes i comentaris
-      description: Imatges aèries d'Esri
       name: Imatges aèries d'Esri
     EsriWorldImageryClarity:
       attribution:
@@ -14,12 +13,13 @@ ca:
       description: ' L''arxiu Esri pot ser més clar i acurat que la capa per defecte.'
       name: Imatges aèries d'Esri (Claredat) Beta
     MAPNIK:
+      attribution:
+        text: © col·laboradors d'OpenStreetMap, ODbL 1.0
       description: La capa d'OpenStreetMap predeterminada.
       name: OpenStreetMap (Estàndard)
     Mapbox:
       attribution:
         text: Termes i comentaris
-      description: Imatges aèries i de satèl·lit.
       name: 'Satèl·lit Mapbox '
     OSM_Inspector-Addresses:
       attribution:
@@ -132,15 +132,13 @@ ca:
       attribution:
         text: © col·laboradors d'OpenStreetMap, CC-BY-SA
       name: OpenPT Map (superposat)
+    openrailwaymap:
+      name: OpenRailwayMap
     osm-gps:
       attribution:
         text: © col·laboradors d'OpenStreetMap
       description: Traces GPS públiques pujades a OpenStreetMap.
       name: Traces GPS d'OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © col·laboradors d'OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Estàndard Blanc i Negre)
     osm-mapnik-german_style:
       attribution:
         text: © col·laboradors d'OpenStreetMap, CC-BY-SA
@@ -162,6 +160,8 @@ ca:
       attribution:
         text: Tessel·les del mapa de Stamen Design, sota CC BY 3.0. Dades d'OpenStreetMap, sota ODbL
       name: Stamen Terrain
+    stockholm-orto:
+      name: Ortofotografia d'Estocolm
     tf-cycle:
       attribution:
         text: Mapes © Thunderforest, Dades © col·laboradors d'OpenStreetMap

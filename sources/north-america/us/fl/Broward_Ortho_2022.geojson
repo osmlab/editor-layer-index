@@ -1,0 +1,119 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Broward_Ortho_2022",
+        "attribution": {
+            "url": "https://gisweb-adapters.bcpa.net/bcpawebmap_ex/bcpawebmap.aspx",
+            "text": "Broward County Property Appraiser’s Office",
+            "required": false
+        },
+        "name": "Broward County Orthoimagery (2022)",
+        "icon": "https://www.broward.org/Style%20Library/V7/img/Broward_logo_white2.png",
+        "url": "https://gisweb-adapters.bcpa.net/arcgis/rest/services/BCPA_WEB_BASE_22/MapServer/export?f=image&format=jpg&layers=show,3&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "The 2022 orthoimagery for Broward County of the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://web.bcpa.net/legal"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.10267021418,
+                    25.97515626009
+                ],
+                [
+                    -80.07116630808,
+                    26.33617351345
+                ],
+                [
+                    -80.21876692906,
+                    26.33456655317
+                ],
+                [
+                    -80.21867037356,
+                    26.3490368085
+                ],
+                [
+                    -80.26740074426,
+                    26.34916179042
+                ],
+                [
+                    -80.26732028067,
+                    26.36364463853
+                ],
+                [
+                    -80.29686749518,
+                    26.36378883298
+                ],
+                [
+                    -80.29765608072,
+                    26.18933143324
+                ],
+                [
+                    -80.3298425889,
+                    26.18944696222
+                ],
+                [
+                    -80.32992841959,
+                    26.17498569467
+                ],
+                [
+                    -80.34597875834,
+                    26.17504346629
+                ],
+                [
+                    -80.34602167368,
+                    26.16034929635
+                ],
+                [
+                    -80.36222221613,
+                    26.16040707522
+                ],
+                [
+                    -80.3622436738,
+                    26.14592294353
+                ],
+                [
+                    -80.42654157758,
+                    26.14587477886
+                ],
+                [
+                    -80.42647720456,
+                    26.16038780597
+                ],
+                [
+                    -80.45889974713,
+                    26.16050336364
+                ],
+                [
+                    -80.45599224329,
+                    25.95686781917
+                ],
+                [
+                    -80.29480221033,
+                    25.95680993985
+                ],
+                [
+                    -80.29472709775,
+                    25.97032397992
+                ],
+                [
+                    -80.10267021418,
+                    25.97515626009
+                ]
+            ]
+        ]
+    }
+}

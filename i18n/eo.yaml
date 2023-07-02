@@ -12,6 +12,10 @@ eo:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: 'AIV Flandrujo: GRB'
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: 'AIV Flandrujo: antaŭprepara fotaro'
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -79,18 +83,22 @@ eo:
     EsriWorldImagery:
       attribution:
         text: Kondiĉoj kaj rimarkoj
-      description: Tutmonda fotaro de Esri.
       name: Tutmonda fotaro de Esri
     EsriWorldImageryClarity:
       attribution:
         text: Kondiĉoj kaj rimarkoj
       description: Arĥivita fotaro de Esri, kiu povas esti pli klara kaj akurata ol la norma tavolo.
       name: Tutmonda fotaro de Esri (pli klara) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Geodezia ofico de la urbo Frankfurto ĉe Majno
+      description: Aera fotaro pri Frankfurto ĉe Majno, farita je 2019-04-16.
+      name: 'Frankfurto ĉe Majno: aerfotaro 2019'
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Ĉefa ofico de geodezio kaj kartografio en Polujo
       description: 'Ortfotmapo je distingivo 10 cm aŭ pli bona. Datumoj ordigitaj unue laŭ distingivo (kvalito) kaj sekve laŭ aktualeco; ekzemplo: fotaro de 2012 je distingivo 8 cm estos montrata anstataŭ fotaro de 2019 je distingivo 10 cm.'
-      name: 'Geoportal 2: altkvalita ortfotmapo (eble neaktuala aera fotaro)'
+      name: 'Geoportal 2: altkvalita ortfotmapo (aera fotaro) (WMS)'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: Ĉefa ofico de geodezio kaj kartografio en Polujo
@@ -160,6 +168,11 @@ eo:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Vektora registro de administraj limoj. Liveras limojn de federaciaj landoj, distriktoj, komunumoj kaj partojn de komunumoj.'
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Enhavas datumojn de la publika sektoro eldonitajn laŭ la permesilo Open Government Licence v3.0.
+      description: Datumoj pri alipermesoj de malĉefaj vojoj liverataj de lokaj aŭtoritatoj kaj kolektitaj de rowmaps.com.
+      name: Alirpermesoj de vojoj
     Lodz-2015:
       attribution:
         text: Magistrato de la urbo Lodzo
@@ -174,14 +187,28 @@ eo:
       name: 'Lodzo: konstruaĵoj'
     MAPNIK:
       attribution:
-        text: © OpenStreetMap-kontribuintoj, CC BY-SA 2.0
+        text: © OpenStreetMap-kontribuantoj, ODbL 1.0
       description: Norma map-tavolo de OpenStreetMap.
       name: OpenStreetMap (norma mapo)
     Mapbox:
       attribution:
         text: Kondiĉoj kaj rimarkoj
-      description: Satelita kaj aera fotaroj.
       name: Mapbox Satellite
+    OSIPIII_6in:
+      attribution:
+        text: Fotara programo de subŝtato Ohio (OSIP)
+      description: 'Fotara programo de la subŝtato Ohio (OSIP), 3-a versio: aera fotaro de 41 kantonoj je distingivo 6 coloj (15 cm) farita dum la jaroj 2019/2020.'
+      name: Fotara programo de subŝtato Ohio v3 (15 cm)
+    OSIP_1ft:
+      attribution:
+        text: Fotara programo de subŝtato Ohio (OSIP)
+      description: 'Fotara programo de la subŝtato Ohio (OSIP), 2-a versio: aera fotaro de ĉiuj 88 kantonoj je distingivo 1 futo (30 cm) farita dum la jaroj 2011-2014.'
+      name: Fotara programo de subŝtato Ohio v2 (30 cm)
+    OSIP_6in:
+      attribution:
+        text: Fotara programo de subŝtato Ohio (OSIP)
+      description: 'Fotara programo de la subŝtato Ohio (OSIP), 3-a versio: aera fotaro de 40 kantonoj je distingivo 6 coloj (15 cm) farita dum la jaroj 2017/2018; kaj ankaŭ fotaro de OSIP v1 k OSIP v2 de 16 pliaj kantonoj farita dum la jaroj 2010-2014.'
+      name: Fotara programo de subŝtato Ohio (15 cm)
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Enhavas datumojn de la publika sektoro eldonitajn laŭ la permesilo Open Government Licence v3.0.
@@ -215,10 +242,6 @@ eo:
       attribution:
         text: © Geofabrik GmbH, kontribuintoj de OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: etikedado'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Magistrato de la urbo Ruda Śląska
-      name: 'Ruda Śląska: ortfotmapo (aera fotaro)'
     SPW_ORTHO_LAST:
       name: Plej aktuala aera fotaro de SPW(allonie)
     SPW_PICC:
@@ -243,10 +266,13 @@ eo:
     US-TIGER-Roads-2020:
       description: Flave = publikaj map-datumoj de Usona popolnombrado. Ruĝe = datumoj ne trovitaj en OpenStreetMap
       name: TIGER Roads 2020
+    US-TIGER-Roads-2021:
+      description: Flave = publikaj map-datumoj de Usona popolnombrado. Ruĝe = datumoj ne trovitaj en OpenStreetMap
+      name: TIGER Roads 2021
     USDA-NAIP:
       attribution:
         text: Usona Ministerio de Terkulturo
-      description: Nunjara 60cm 4-benda ortfotmapo DOQQ de «National Agriculture Imagery Program» (NAIP) por ĉiu kontinenta subŝtato de Usono.
+      description: Nunjara 60 cm 4-benda ortfotmapo DOQQ de «National Agriculture Imagery Program» (NAIP) por ĉiu kontinenta subŝtato de Usono.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Vojo: verda rando = neklasifikita, bruna rando = kampa vojo. Pavimo: helbruna plenigo = sablego, nigra = asfalto, griza = pavimita, blanka = tera, blua = betono, verda = herbo. Blankaj strioj = sezona vojo.'
@@ -472,10 +498,6 @@ eo:
         text: © OpenStreetMap-kontribuintoj
       description: Publikaj GPS-spuroj alŝutitaj al OpenStreetMap.
       name: OpenStreetMap GPS-spuroj
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap-kontribuintoj, CC BY-SA
-      name: OpenStreetMap (norma blank-nigra)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap-kontribuintoj, CC BY-SA

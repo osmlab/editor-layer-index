@@ -1,0 +1,163 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Maine_2021",
+        "attribution": {
+            "url": "https://www.maine.gov/geolib/programs/ortho/index.html",
+            "text": "Maine Orthoimagery Program",
+            "required": false
+        },
+        "name": "Maine Orthoimagery Program (2021)",
+        "icon": "https://www.maine.gov/geolib/images/GeoPortal_GlobewBlue.jpg",
+        "url": "https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoRegional2021/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 21,
+        "license_url": "https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoRegional2021/ImageServer/info/iteminfo",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:6348"
+        ],
+        "start_date": "2021",
+        "end_date": "2021",
+        "description": "High-resolution aerial imagery for the State of Maine, regional capture of year 2021",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.maine.gov/portal/policies/privacy.html"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        -70.56336173058,
+                        43.87407637106
+                    ],
+                    [
+                        -70.51848833621,
+                        43.87401447164
+                    ],
+                    [
+                        -70.51830594063,
+                        43.86727773126
+                    ],
+                    [
+                        -70.48102859974,
+                        43.86773408992
+                    ],
+                    [
+                        -70.47969826698,
+                        43.81322484531
+                    ],
+                    [
+                        -70.563726511,
+                        43.81279129549
+                    ],
+                    [
+                        -70.56336173058,
+                        43.87407637106
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        -70.23821227446,
+                        43.63767378081
+                    ],
+                    [
+                        -70.25187939674,
+                        43.62402870986
+                    ],
+                    [
+                        -70.27497061729,
+                        43.61700557676
+                    ],
+                    [
+                        -70.28375753403,
+                        43.59328337292
+                    ],
+                    [
+                        -70.26503697172,
+                        43.58673251775
+                    ],
+                    [
+                        -70.27868413568,
+                        43.57307017043
+                    ],
+                    [
+                        -70.27825364113,
+                        43.55450441905
+                    ],
+                    [
+                        -70.23357874632,
+                        43.5331182773
+                    ],
+                    [
+                        -70.1890755558,
+                        43.56254363988
+                    ],
+                    [
+                        -70.20641335487,
+                        43.62327736445
+                    ],
+                    [
+                        -70.22201165691,
+                        43.63784940151
+                    ],
+                    [
+                        -70.23821227446,
+                        43.63767378081
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        -70.35347376823,
+                        43.80181233172
+                    ],
+                    [
+                        -70.2939877367,
+                        43.85314843822
+                    ],
+                    [
+                        -70.18055678487,
+                        43.78011111061
+                    ],
+                    [
+                        -70.16251155853,
+                        43.72949185145
+                    ],
+                    [
+                        -70.22988797307,
+                        43.68500491058
+                    ],
+                    [
+                        -70.27668312259,
+                        43.69802910064
+                    ],
+                    [
+                        -70.28642893106,
+                        43.71817704505
+                    ],
+                    [
+                        -70.3190047887,
+                        43.71780515036
+                    ],
+                    [
+                        -70.36630549908,
+                        43.7510249839
+                    ],
+                    [
+                        -70.35347376823,
+                        43.80181233172
+                    ]
+                ]
+            ]
+        ]
+    }
+}

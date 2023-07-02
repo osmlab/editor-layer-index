@@ -12,6 +12,10 @@ zh_CN:
       attribution:
         text: © 法兰德斯新闻社
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © 法兰德斯新闻社
+      name: AIV Flanders 初级航空影像
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © 法兰德斯新闻社
@@ -20,6 +24,9 @@ zh_CN:
       attribution:
         text: © 法兰德斯新闻社
       name: AIV 法兰德斯数字高程模型 II，0.25 米天空视角
+    AIV_Wegenregister:
+      attribution:
+        text: © 法兰德斯新闻社
     Bedzin-PL-aerial_image:
       attribution:
         text: Starostwo Powiatowe w Będzinie
@@ -39,6 +46,18 @@ zh_CN:
       attribution:
         text: Bytomia 市政府
       name: 'Bytom: Fotoplan 2014 (航空影像)'
+    Bytom-2016:
+      attribution:
+        text: Bytomia 市政府
+      name: 'Bytom: Orthophotomap 2016 (航空影像)'
+    Bytom-2018:
+      attribution:
+        text: Bytomia 市政府
+      name: 'Bytom: Orthophotomap 2018 (航空影像)'
+    Bytom-2021:
+      attribution:
+        text: Bytomia 市政府
+      name: 'Bytom: Orthophotomap 2021 (航空影像)'
     Bytom-buildings:
       attribution:
         text: Bytomia 市政府
@@ -79,18 +98,29 @@ zh_CN:
     EsriWorldImagery:
       attribution:
         text: 条款 & 反馈
-      description: Esri 世界影像。
+      description: Esri 世界影像
       name: Esri 世界影像
     EsriWorldImageryClarity:
       attribution:
         text: 条款 & 反馈
       description: 比默认图层或许更为清晰准确的 Esri 归档影像。
       name: Esri 清晰世界影像 (测试版)
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: 美因河畔法兰克福市测量局
+      description: 美因河畔法兰克福的航空影像，拍摄于2019年4月16日
+      name: 美因河畔法兰克福航空影像2019
+    Geoportal2-PL-City-boundaries_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: 波兰大地测量与制图总局
       description: 分辨率为10厘米或更高的正射影像。数据按分辨率排序，再按时效性排序，比如2012年的一张分辨率为8厘米的影像，2019年就会优先于一张分辨率为10厘米的影像。
-      name: 'Geoportal 2：高分辨率正射影像，可能陈旧或过时（航空影像）'
+      name: 'Geoportal 2：高解析度正射影像（航照圖）'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: 波兰大地测量与制图总局
@@ -101,6 +131,9 @@ zh_CN:
         text: 波兰大地测量与制图总局
       description: 整合了国家地址编号的 WMS 浏览服务，可以下载根据街道和地址记录领域的国境边防局的空间数据建立的地图影像。
       name: 'Geoportal 2：地址点'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
     Geoportal2-PL-aerial_image_WMS:
       attribution:
         text: 波兰大地测量与制图总局
@@ -111,36 +144,81 @@ zh_CN:
         text: 波兰大地测量与制图总局
       description: 基于WMTS的地图浏览服务允许您查看波兰地区的正射影像。 通过该服务提供的数据是由航空照片组成的正射影像图。
       name: 'Geoportal 2: 最新正射航空影像 （WMTS）'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
     Geoportal2-PL-buildings_WMS:
       attribution:
         text: 波兰大地测量与制图总局
       description: 国家土地记录综合服务是一项集体服务，用于显示直接来自 poviat 级别单位的注册数据。该服务仅包含具有 WMS 服务并带有适当参数的单位的数据，并已决定将其WMS服务包括在“ KrajowaIntegracjaEwidycjiGruntow” 集体服务中。
       name: 'Geoportal 2：WMS 建筑物纪录'
+    Geoportal2-PL-gas-pipe_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-heat-pipe_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
     Geoportal2-PL-plot_boundaries_WMS:
       attribution:
         text: 波兰大地测量与制图总局
       description: 国家土地记录综合服务是一项集体服务，用于显示直接来自 poviat 级别单位的注册数据。该服务仅包含具有 WMS 服务并带有适当参数的单位的数据，并已决定将其WMS服务包括在“ KrajowaIntegracjaEwidycjiGruntow” 集体服务中。
       name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-power-cord_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
     Geoportal2-PL-prng:
       attribution:
         text: 波兰中央大地测量和制图文献中心
       name: 'Geoportal 2: PRNG (geo names)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-squares-and-housing-estates_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-state-borders_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-telecommunications-cable_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Geoportal2-PL-water-pipe_WMS:
+      attribution:
+        text: 波兰大地测量与制图总局
+    Gliwice-2003:
+      attribution:
+        text: Gliwice 市政府
+      name: 'Gliwice：正射影像地图2003 (航空影像)'
+    Gliwice-2009:
+      attribution:
+        text: Gliwice 市政府
+      name: 'Gliwice：正射影像地图2009 (航空影像)'
     Gliwice-2013:
       attribution:
         text: Gliwice 市政府
-      name: 'Gliwice: Orthophotomap 2013 (航空影像)'
+      name: 'Gliwice：正射影像地图2013 (航空影像)'
     Gliwice-2017:
       attribution:
         text: Gliwice 市政府
-      name: 'Gliwice: Orthophotomap 2017 (航空影像)'
+      name: 'Gliwice：正射影像地图2017 (航空影像)'
     Gliwice-2018:
       attribution:
         text: Gliwice 市政府
-      name: 'Gliwice: Orthophotomap 2018 (航空影像)'
+      name: 'Gliwice：正射影像地图2018 (航空影像)'
     Gliwice-2020:
       attribution:
         text: Gliwice 市政府
-      name: 'Gliwice: Orthophotomap 2020 (航空影像)'
+      name: 'Gliwice：正射影像地图2020 (航空影像)'
+    Gliwice-2021:
+      attribution:
+        text: Gliwice 市政府
+      name: 'Gliwice：正射影像地图2021 (航空影像)'
     Gliwice-buildings:
       attribution:
         text: Gliwice 市政府
@@ -153,13 +231,18 @@ zh_CN:
     LSA-DOP20:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
-      description: saxony-anhalt邦的航空影像，分辨率为20cm
+      description: 萨克森-安哈尔特州的航空影像，分辨率为20cm
       name: © GeoBasis-DE/LVermGeo LSA, DOP20
     LSA-DVG:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
       description: '行政边界的向量纪录。包含了邦、郡、市镇或郡的一部分。'
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: 包含了以 Open Government Licence v3.0 授权的公共部门信息。
+      description: 地方当局发布的公共通行权数据，在 rowmaps.com 上进行了整理
+      name: 公共通行权
     Lodz-2015:
       attribution:
         text: Łodzi 市政府
@@ -173,15 +256,27 @@ zh_CN:
         text: Łodzi 市政府
       name: 'Łódź：建筑'
     MAPNIK:
-      attribution:
-        text: © OpenStreetMap 贡献者, 署名-相同方式共享 2.0
       description: 默认的 OpenStreetMap 图层。
       name: OpenStreetMap（标准）
     Mapbox:
       attribution:
         text: 条款 & 反馈
-      description: 卫星和航空影像
       name: Mapbox 卫星
+    OSIPIII_6in:
+      attribution:
+        text: 俄亥俄州全州影像计划
+      description: 2019年及2020年以6英寸分辨率拍摄的41个县的俄亥俄州全州影像计划三期正射影像。
+      name: 6英寸俄亥俄州全州影像计划三期
+    OSIP_1ft:
+      attribution:
+        text: 俄亥俄州全州影像计划
+      description: 2011年至2014年以1英尺分辨率拍摄的全88个县的俄亥俄州全州影像计划二期正射影像。
+      name: 1英尺俄亥俄州全州影像计划二期
+    OSIP_6in:
+      attribution:
+        text: 俄亥俄州全州影像计划
+      description: 2017年及2018年以6英寸分辨率拍摄的40个县的俄亥俄州全州影像计划三期正射影像，以及2010年至2014年在另外16个县的俄亥俄州全州影像计划一期及二期影像。
+      name: 6英寸俄亥俄州全州影像计划
     OSMUK-Cadastral-Parcels:
       attribution:
         text: 包含了以 Open Government Licence v3.0 授权的公共部门信息。
@@ -215,10 +310,6 @@ zh_CN:
       attribution:
         text: © Geofabrik 有限公司, OpenStreetMap 贡献者, 署名-相同方式共享
       name: 'OSM 查看器：标签'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Ruda Śląska 市政府
-      name: 'Ruda Śląska: Orthophotomap (航空影像)'
     SPW_ORTHO_LAST:
       name: SPW(allonie) 最新航空影像
     SPW_PICC:
@@ -242,7 +333,10 @@ zh_CN:
       name: TIGER 道路 2019
     US-TIGER-Roads-2020:
       description: 黄 = 来自美国人口普查的公有领域地图数据。红 = 在OpenStreetMap上找不到的资料
-      name: TIGER Roads 2020
+      name: TIGER 道路 2020
+    US-TIGER-Roads-2021:
+      description: 黄色 = 来自美国人口调查局的公共领域地图数据。红色 = 在 OpenStreetMap 中找不到数据。
+      name: TIGER 道路 2021
     USDA-NAIP:
       attribution:
         text: 美利坚合众国农业部
@@ -472,10 +566,6 @@ zh_CN:
         text: © OpenStreetMap 贡献者
       description: 上传至 OpenStreetMap 的公开 GPS 轨迹
       name: OpenStreetMap GPS轨迹
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap 贡献者, 署名-相同方式共享
-      name: OpenStreetMap（黑白标准）
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap 贡献者, 署名-相同方式共享

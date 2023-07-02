@@ -2,11 +2,15 @@ ko:
   imagery:
     Bing:
       description: 위성 및 항공 영상
-      name: Bing 항공 영상
+      name: Bing 위성 지도
+    Bytom-2012:
+      attribution:
+        text: 바이토미아 시청
+      name: 'Bytom: Orthophotomap 2012 (항공사진)'
     EsriWorldImagery:
       attribution:
         text: 이용 약관
-      description: Esri 세계 이미지.
+      description: Esri 세계 이미지
       name: Esri 세계 이미지
     EsriWorldImageryClarity:
       attribution:
@@ -14,14 +18,12 @@ ko:
       description: Esri archive 이미지는 기본 레이어보다 명확하고 정확할 수 있습니다.
       name: Esri (선명한) 세계 이미지 베타
     MAPNIK:
-      attribution:
-        text: © OpenStreetMap 기여자, CC-BY-SA 2.0
       description: 기본 OpenStreetMap 레이어
       name: OpenStreetMap (일반)
     Mapbox:
       attribution:
         text: 이용 약관
-      description: 위성 및 항공 이미지
+      description: 고해상도 위성, 항공사진의 글로벌 기본 지도를 포함한 Mapbox 제공 래스터 타일셋
       name: Mapbox 위성
     OSM_Inspector-Addresses:
       attribution:
@@ -85,24 +87,25 @@ ko:
         text: basemap.at
       description: Orthofoto 층은 basemap.at에서 제공합니다. geoimage.at 형상의 "계승".
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
     mapbox_locator_overlay:
       attribution:
         text: 이용 약관
-      description: 당신을 돕기위한 주요 기능을 보여줍니다.
-      name: Locator Overlay
+      description: 당신을 돕기 위한 주요 기능을 보여줍니다.
+      name: 도로 오버레이
     openpt_map:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
       name: OpenPT Map (오버레이)
+    openrailwaymap:
+      name: OpenRailwayMap
     osm-gps:
       attribution:
         text: © OpenStreetMap 기여자
       description: 공용 GPS 추적을 OpenStreetMap에 업로드했습니다.
       name: OpenStreetMap GPS 추적들
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap 기여자, CC-BY-SA
-      name: OpenStreetMap (표준 흑백)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA

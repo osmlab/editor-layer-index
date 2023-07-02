@@ -9,7 +9,7 @@
         "default": true,
         "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
         "permission_osm": "explicit",
-        "description": "Satellite and aerial imagery.",
+        "description": "Mapbox-provided raster tileset that includes a global basemap of high resolution satellite and aerial imagery",
         "i18n": true,
         "icon": "https://osmlab.github.io/editor-layer-index/sources/world/MapBoxSatellite.png",
         "id": "Mapbox",
@@ -18,7 +18,7 @@
         "name": "Mapbox Satellite",
         "type": "tms",
         "category": "photo",
-        "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/mapbox.satellite/{zoom}/{x}/{y}.jpg?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJja2w5YWt5bnYwNjZmMnFwZjhtbHk1MnA1In0.eq2aumBK6JuRoIuBMm6Gew"
+        "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/mapbox.satellite/{zoom}/{x}/{y}.jpg?access_token={apikey}"
     },
     "type": "Feature"
 }

@@ -2,11 +2,9 @@ ms:
   imagery:
     Bing:
       description: Imejan satelit dan udara.
-      name: Imejan udara Bing
     EsriWorldImagery:
       attribution:
         text: Terma & Maklum Balas
-      description: Imejan sejagat Esri.
       name: Esri World Imagery
     EsriWorldImageryClarity:
       attribution:
@@ -17,7 +15,6 @@ ms:
     Mapbox:
       attribution:
         text: Terma & Maklum Balas
-      description: Imejan satelit dan udara.
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
       attribution:
@@ -83,10 +80,6 @@ ms:
         text: © Penyumbang-penyumbang OpenStreetMap
       description: Jejak GPS awam dimuat naik ke OpenStreetMap
       name: Jejak GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Penyumbang-penyumbang OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Standard Hitam & Putih)
     osm-mapnik-german_style:
       attribution:
         text: © Penyumbang-penyumbang OpenStreetMap, CC-BY-SA

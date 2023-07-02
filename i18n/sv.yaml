@@ -12,6 +12,10 @@ sv:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Flandern preliminära flygbilder
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,6 +24,9 @@ sv:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
+    AIV_Wegenregister:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
     Bedzin-PL-aerial_image:
       attribution:
         text: Poviat Starosty i Będzin
@@ -79,18 +86,22 @@ sv:
     EsriWorldImagery:
       attribution:
         text: Villkor & återkoppling
-      description: Esri världsflygfoto.
       name: Esri världsflygfoto
     EsriWorldImageryClarity:
       attribution:
         text: Villkor & återkoppling
       description: Arkivbilder från Esri som kan vara tydligare och mer korrekta än det normala lagret.
       name: Esri världsflygfoto (Clarity) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Stadsmäterikontoret Frankfurt am Main
+      description: Flygbilder över Frankfurt am Main, fotograferade den 16 april 2019
+      name: Frankfurt am Main flygfoto 2019
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Huvudkontoret för geodesi och kartografi
       description: Ortofotomap med en upplösning på 10 cm eller mer. Uppgifterna sorteras efter upplösning och sedan enligt nyheter, t.ex. skickar ett ark från 2012 med en upplösning på 8 cm ett ark från 2019 med en upplösning på 10 cm.
-      name: 'Geoportal 2: Orthophotomap med hög upplösning, kan vara utdaterat (flygbild)'
+      name: 'Geoportal 2: Orthophotomap med hög upplösning (flygbild) (WMS)'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: Huvudkontoret för geodesi och kartografi
@@ -114,7 +125,7 @@ sv:
     Geoportal2-PL-buildings_WMS:
       attribution:
         text: Huvudkontoret för geodesi och kartografi
-      description: Tjänsten National Integration of Land Records är en kollektiv tjänst för presentation av registreringsdata som kommer direkt från enheterna på poviatnivå. Tjänsten innehåller endast data från de enheter som har WMS-tjänsten med lämpliga parametrar och har beslutat att inkludera deras WMS-tjänst i kollektivtjänsten "KrajowaIntegracjaEwidycjiGruntow".
+      description: Tjänsten National Integration of Land Records är en samlad tjänst för presentation av registreringsdata direkt från enheter på distriktsnivå. Tjänsten innehåller endast data från de enheter som har WMS-tjänsten med lämpliga parametrar och har beslutat att inkludera sin WMS-tjänst i kollektivtjänst Nationell integration av fastighetsregistret.
       name: 'Geoportal 2: Byggnadsregister-WMS'
     Geoportal2-PL-plot_boundaries_WMS:
       attribution:
@@ -153,13 +164,18 @@ sv:
     LSA-DOP20:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
-      description: flygfoton över delstaten Sachsen-anhalt, 20 cm upplösning
+      description: flygfoton över delstaten Sachsen-Anhalt, 20 cm upplösning
       name: © GeoBasis-DE/LVermGeo LSA, DOP20
     LSA-DVG:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Vektordata över administrativa gränser. Gränserna för förbundsstaten, distriktet, kommunen och delar av kommunen ges.'
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Innehåller information från den offentliga sektorn licensierad under Open Government License v3.0.
+      description: Allmän rättigheter till väg-data släppt av lokala myndigheter, insamlat från rowmaps.com
+      name: Allmänna rättigheter till väg
     Lodz-2015:
       attribution:
         text: Stadskontoret i Łódź
@@ -174,14 +190,28 @@ sv:
       name: 'Łódź: Byggnader'
     MAPNIK:
       attribution:
-        text: © OpenStreetMaps bidragsgivare, CC-BY-SA 2.0
+        text: © OpenStreetMaps bidragsgivare, ODbL 1.0
       description: Standardlagret på OpenStreetMap.
       name: OpenStreetMap (standard)
     Mapbox:
       attribution:
         text: Villkor & återkoppling
-      description: Satellit- eller flygfoton.
       name: Mapbox satellit
+    OSIPIII_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III ortobilder av 41 counties tagna i 6-tums upplösning 2019 och 2020.
+      name: Ohio Statewide Imagery Program III 6 tum
+    OSIP_1ft:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program II ortobilder av alla 88 counties med 1-tums upplösning från 2011 till 2014.
+      name: Ohio Statewide Imagery Program II 1 tum
+    OSIP_6in:
+      attribution:
+        text: Ohio Statewide Imagery Program
+      description: Ohio Statewide Imagery Program III ortobilder av 40 counties  tagna med 6-tums upplösning 2017 och 2018, plus OSIP I- och OSIP II-bilder i ytterligare 16 counties från 2010 till 2014.
+      name: Ohio Statewide Imagery Program 6 tum
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Innehåller information från den offentliga sektorn licensierad under Open Government License v3.0.
@@ -215,10 +245,6 @@ sv:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMaps bidragsgivare, CC-BY-SA
       name: 'OSM Inspector: Taggning'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Stadshuset i Ruda Śląska
-      name: 'Ruda Śląska: Ortofotokarta (flygfoto)'
     SPW_ORTHO_LAST:
       name: SPW(allonie) mest aktuella flygfoton
     SPW_PICC:
@@ -243,9 +269,12 @@ sv:
     US-TIGER-Roads-2020:
       description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
       name: TIGER Roads 2020
+    US-TIGER-Roads-2021:
+      description: Gul = Fritt tillgänglig kartdata (public domain) från US Census. Röd = Data ej hittad i OpenStreetMap
+      name: TIGER Roads 2021
     USDA-NAIP:
       attribution:
-        text: U.S. Department of Agriculture
+        text: USA:s jordbruksdepartement
       description: Det senaste året av 60 cm 4-band DOQQs från National Agriculture Imagery Program (NAIP) för varje stat i USA.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
@@ -328,8 +357,8 @@ sv:
       name: basemap.at Överdrag
     cyclosm:
       attribution:
-        text: 'Visning: CyclOSM (tillhandahållet av OpenStreetMap Frankrike) © Kartdata OpenStreetMaps bidragsgivare'
-      description: CyclOSM är en kartstil designad med cykling i åtanke. Den utnyttjar OpenStreetMap-data för att skapa en vacker och praktisk cykelkarta!
+        text: 'Rendering: CyclOSM (tillhandahållet av OpenStreetMap Frankrike) © Kartdata OpenStreetMaps bidragsgivare'
+      description: 'CyclOSM är en kartstil särskilt utformad för cykling. Den använder OpenStreetMap-data för att skapa snygga och praktiska cykelkartor! '
       name: CyclOSM
     debicki-buildings:
       attribution:
@@ -353,23 +382,23 @@ sv:
     gothenburg-dtm-2017:
       attribution:
         text: © Göteborgs Stad, CC0
-      description: Webbkartstjänst som presenterar höjder och lutningar baserad på höjdmodellen 2017 för Göteborgs stad. Upplösning 0,5 meter per pixel.
-      name: Göteborg höjdmodell
+      description: Webbkartstjänst som visar terrängskuggning och lutning baserad på höjdmodellen 2017 för Göteborgs Stad. Upplösning 0,5 meter per pixel.
+      name: Göteborg terrängmodell
     gothenburg-ortho:
       attribution:
         text: © Göteborgs Stad, CC0
       description: Flygfoto för Göteborgs Stad
-      name: Flygfoton Göteborg 2015
+      name: Göteborg Ortofoto 2015
     gothenburg-ortho_2017:
       attribution:
         text: © Göteborgs Stad, CC0
-      description: Flygfoto för Göteborgs Stad
-      name: Flygfoton Göteborg 2017
+      description: Ortofoto Göteborgs Stad 2017
+      name: Göteborg Ortofoto 2017
     gothenburg-ortho_2019:
       attribution:
         text: © Göteborgs Stad, CC0
-      description: Flygfoto för Göteborgs Stad
-      name: Flygfoton Göteborg 2019
+      description: Ortofoto Göteborgs Stad
+      name: Göteborg Ortofoto 2019
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -403,13 +432,13 @@ sv:
     kalmar-orto-2020:
       attribution:
         text: © Kalmar kommun
-      description: Flygfoton över tätorter i Kalmar kommun 2020
-      name: Kalmar tätort, flygfoton 2020
+      description: Ortofoton över tätorter i Kalmar kommun 2020
+      name: Kalmar Ortofoto 2020
     kartverket-bygninger:
       attribution:
         text: © Kartverket
       description: INSPIRE byggnader i Norge.
-      name: Kartverket Byggnadsbildlager
+      name: Kartverket Byggnader
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -472,10 +501,6 @@ sv:
         text: © OpenStreetMaps bidragsgivare
       description: Publika GPS-spår uppladdade till OpenStreetMap.
       name: GPS-spår på OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMaps bidragsgivare, CC-BY-SA
-      name: OpenStreetMap (Standard svartvit)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMaps bidragsgivare, CC-BY-SA
@@ -536,7 +561,7 @@ sv:
     stockholm-orto:
       attribution:
         text: © Stockholms kommun, CC0
-      description: Flygfoton från Stockholms kommun 2018, CC0-licens
+      description: Ortofoton från Stockholms stad 2018, CC0-licens
       name: Flygfoton Stockholm
     susono_shizuoka_jp_orthophoto:
       attribution:

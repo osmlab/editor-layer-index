@@ -12,6 +12,10 @@ uk:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: GRB Фландрія AIV
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: Попередні аерофотознімки Фландрії від AIV
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,6 +24,10 @@ uk:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Цифрова модель висот Фландрії II, коефіцієнт Skyview 0,25 м
+    AIV_Wegenregister:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: AIV Реєстр маршрутів
     Bedzin-PL-aerial_image:
       attribution:
         text: Старостати в повіті Бендзин
@@ -30,7 +38,7 @@ uk:
       name: 'Бендзин: Будинки'
     Bing:
       description: Супутникові та аерофотознімки.
-      name: Bing, аерофото
+      name: Bing Maps, аерофото
     Bytom-2012:
       attribution:
         text: Уряд міста Битом
@@ -39,6 +47,18 @@ uk:
       attribution:
         text: Уряд міста Битом
       name: 'Битом: Фотоплан 2014 (аерофото)'
+    Bytom-2016:
+      attribution:
+        text: Уряд міста Битом
+      name: 'Битом: Ортофотомапа 2016 (аерофото)'
+    Bytom-2018:
+      attribution:
+        text: Уряд міста Битом
+      name: 'Битом: Ортофотомапа 2018 (аерофото)'
+    Bytom-2021:
+      attribution:
+        text: Уряд міста Битом
+      name: 'Битом: Ортофотомапа 2021 (аерофото)'
     Bytom-buildings:
       attribution:
         text: Уряд міста Битом
@@ -71,6 +91,11 @@ uk:
       attribution:
         text: Уряд міста Ченстохова
       name: 'Ченстохова: Будинки'
+    Dourados_Ortofotos:
+      attribution:
+        text: Префектура Дорадус - GeoDourados
+      description: Дорадус (2018) та інші райони (2020), аерофото у високій роздільній здатності.
+      name: Дорадус, ортофото
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 безхмарні знімки - https://s2maps.eu від EOX IT Services GmbH (Містить модифіковані дані Copernicus Sentinel 2017 та 2018)
@@ -79,18 +104,33 @@ uk:
     EsriWorldImagery:
       attribution:
         text: Умови використання та Відгуки
-      description: Знімки Esri.
+      description: Знімки Esri
       name: Esri, знімки світу
     EsriWorldImageryClarity:
       attribution:
         text: Умови використання та Відгуки
       description: Архівні знімки Esri які можуть бути чіткішими та більш точними ніж знімки зі звичайного шару.
       name: Esri, знімки світу (очищені) бета
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Міська геодезична служба, Франкфурт-на-Майні
+      description: Аерофото Франкфурта-на-Майні, від 16 квітня 2019
+      name: Франкфурт-на-Майні, аерофото, 2019
+    Geoportal2-PL-City-boundaries_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Сервіс WMS, що показує польські територіальні одиниці, включно з адміністративними одиницями
+      name: 'Geoportal 2: межі міст WMS'
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Ортофотомапа з роздільною здатністю 10 см або більше. Дані впорядковані за роздільною здатністю та актуальністю, наприклад, аркуш 2012 року з роздільною здатністю 8 см перекриває аркуш 2019 року з роздільною здатністю 10 см.
+      name: 'Geoportal 2: Ортофото (архів) з високою роздільною здатністю (WMS)'
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: Головне управління геодезії та картографії
       description: Ортофотомапа з роздільною здатністю 10 см або більше. Дані впорядковані за роздільною здатністю та актуальністю, наприклад, аркуш 2012 року з роздільною здатністю 8 см перекриває аркуш 2019 року з роздільною здатністю 10 см.
-      name: 'Geoportal 2: Ортофотомапа з високою роздільною здатністю, може бути застарілою (аерофото)'
+      name: 'Geoportal 2: Ортофото з високою роздільною здатністю (WMS)'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: Головне управління геодезії та картографії
@@ -101,6 +141,11 @@ uk:
         text: Головне управління геодезії та картографії
       description: Служба перегляду WMS Національна інтеграція нумерації адрес дозволяє завантажувати зображення мапи, створені на основі просторових даних з Державного реєстру кордонів у з розділу адресних записів.
       name: 'Geoportal 2: Адреси'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Сервіс перегляду (Web Map Service, WMS), що дозволяє переглядати ортофото Польщі. Дані, що надаються за допомогою цієї послуги, є ортофотомапами, зробленими з аерофотознімків. Сервіс підтримує WMS 1.3.0.
+      name: 'Geoportal 2: Ортофото (архів) (WMS)'
     Geoportal2-PL-aerial_image_WMS:
       attribution:
         text: Головне управління геодезії та картографії
@@ -111,20 +156,83 @@ uk:
         text: Головне управління геодезії та картографії
       description: Сервіс перегляду (Web Map Tile Service – WMTS), що дозволяє переглядати ортофото Польщі. Дані, що надаються за допомогою цієї послуги, є ортофотомапами, зробленими з аерофотознімків.
       name: 'Geoportal 2: Ортофото (найсвіжіші) (WMTS)'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Сервіс WMS, що показує польські територіальні одиниці, включно з адміністративними одиницями
+      name: 'Geoportal 2: межі громад WMS'
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Сервіс WMS, що показує польські територіальні одиниці, включно з адміністративними одиницями
+      name: 'Geoportal 2: межі округів WMS'
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Сервіс WMS, що показує польські територіальні одиниці, включно з адміністративними одиницями
+      name: 'Geoportal 2: межі провінцій WMS'
     Geoportal2-PL-buildings_WMS:
       attribution:
         text: Головне управління геодезії та картографії
       description: Служба національної інтеграції земельного реєстру - це служба представлення реєстраційних даних, що надходять безпосередньо від підрозділів районного рівня. Послуга містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами і вирішили включити свою службу WMS до спільного сервісу національного реєстру.
       name: 'Geoportal 2: Земельний реєстр, WMS'
+    Geoportal2-PL-gas-pipe_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба «Krajowa Integracja Uzbrojenia Terenu» — це колективна служба для представлення даних про комунальні послуги, що надходять безпосередньо від підрозділів повітового рівня. Сервіс містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами та вирішили включити свій сервіс WMS до сервісу Krajowa Integracja Uzbrojenia Terenu.
+      name: 'Geoportal 2: газопроводи WMS'
+    Geoportal2-PL-heat-pipe_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба «Krajowa Integracja Uzbrojenia Terenu» — це колективна служба для представлення даних про комунальні послуги, що надходять безпосередньо від підрозділів повітового рівня. Сервіс містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами та вирішили включити свій сервіс WMS до сервісу Krajowa Integracja Uzbrojenia Terenu.
+      name: 'Geoportal 2: тепломережі WMS'
     Geoportal2-PL-plot_boundaries_WMS:
       attribution:
         text: Головне управління геодезії та картографії
       description: Служба національної інтеграції земельного реєстру - це служба представлення реєстраційних даних, що надходять безпосередньо від підрозділів районного рівня. Послуга містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами і вирішили включити свою службу WMS до спільного сервісу національного реєстру.
       name: 'Geoportal 2: Межі кадастрових ділянок'
+    Geoportal2-PL-power-cord_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба «Krajowa Integracja Uzbrojenia Terenu» — це колективна служба для представлення даних про комунальні послуги, що надходять безпосередньо від підрозділів повітового рівня. Сервіс містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами та вирішили включити свій сервіс WMS до сервісу Krajowa Integracja Uzbrojenia Terenu.
+      name: 'Geoportal 2: електропостачання WMS'
     Geoportal2-PL-prng:
       attribution:
         text: Центральний орган геодезичної та картографічної документації
       name: 'Geoportal 2: PRNG (топоніми)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба «Krajowa Integracja Uzbrojenia Terenu» — це колективна служба для представлення даних про комунальні послуги, що надходять безпосередньо від підрозділів повітового рівня. Сервіс містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами та вирішили включити свій сервіс WMS до сервісу Krajowa Integracja Uzbrojenia Terenu.
+      name: 'Geoportal 2: каналізація та водовідведення WMS'
+    Geoportal2-PL-squares-and-housing-estates_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба перегляду WMS Національна інтеграція нумерації адрес дозволяє завантажувати зображення мапи, створені на основі просторових даних з Державного реєстру кордонів у з розділу адресних записів.
+      name: 'Geoportal 2: Сквери та житлові масиви'
+    Geoportal2-PL-state-borders_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Сервіс WMS, що показує польські територіальні одиниці, включно з адміністративними одиницями
+      name: 'Geoportal 2: державні кордони WMS'
+    Geoportal2-PL-telecommunications-cable_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба «Krajowa Integracja Uzbrojenia Terenu» — це колективна служба для представлення даних про комунальні послуги, що надходять безпосередньо від підрозділів повітового рівня. Сервіс містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами та вирішили включити свій сервіс WMS до сервісу Krajowa Integracja Uzbrojenia Terenu.
+      name: 'Geoportal 2: телекомунікаційні мережі WMS'
+    Geoportal2-PL-water-pipe_WMS:
+      attribution:
+        text: Головне управління геодезії та картографії
+      description: Служба «Krajowa Integracja Uzbrojenia Terenu» — це колективна служба для представлення даних про комунальні послуги, що надходять безпосередньо від підрозділів повітового рівня. Сервіс містить лише дані тих підрозділів, які мають сервіс WMS з відповідними параметрами та вирішили включити свій сервіс WMS до сервісу Krajowa Integracja Uzbrojenia Terenu.
+      name: 'Geoportal 2: водопостачання WMS'
+    Gliwice-2003:
+      attribution:
+        text: Уряд міста Глівіце
+      name: 'Глівіце: Ортофотомапа 2003 (аерофото)'
+    Gliwice-2009:
+      attribution:
+        text: Уряд міста Глівіце
+      name: 'Глівіце: Ортофотомапа 2009 (аерофото)'
     Gliwice-2013:
       attribution:
         text: Уряд міста Глівіце
@@ -141,6 +249,10 @@ uk:
       attribution:
         text: Уряд міста Глівіце
       name: 'Глівіце: Ортофотомапа 2020 (аерофото)'
+    Gliwice-2021:
+      attribution:
+        text: Уряд міста Глівіце
+      name: 'Глівіце: Ортофотомапа 2021 (аерофото)'
     Gliwice-buildings:
       attribution:
         text: Уряд міста Глівіце
@@ -160,6 +272,11 @@ uk:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Адміністративні межі (векторні дані) федеральної землі, районів, муніципалітетів та складових муніципалітетів.'
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Містить інформацію про державний сектор, ліцензія Open Government Licence v3.0.
+      description: Дані про дозволи на пересування, опубліковані місцевими органами влади, зібрані на сайті rowmaps.com
+      name: Дозволи на пересування
     Lodz-2015:
       attribution:
         text: Уряд міста Лодзь
@@ -174,14 +291,37 @@ uk:
       name: 'Лодзь: Будинки'
     MAPNIK:
       attribution:
-        text: © Учасники OpenStreetMap, CC-BY-SA 2.0
+        text: © Учасники OpenStreetMap, ODbL 1.0
       description: Типовий шар OpenStreetMap.
       name: OpenStreetMap (Стандартний)
+    Maaamet-Estonia_Cadastre:
+      attribution:
+        text: Maa-amet, земельна рада кадастрова карта на основі ортофото
+      name: Maa-amet Кадастрова мапа
+    Maaamet-Estonia_Ortho:
+      attribution:
+        text: Maa-amet ортофото
+      name: Maa-amet Ortho (WMS)
     Mapbox:
       attribution:
         text: Умови використання та Відгуки
-      description: Супутникові та аерофотознімки.
+      description: Набір растрових тайлів, наданий Mapbox, який включає глобальне покриття супутниковими та аерофотознімками високої роздільної здатності
       name: 'Mapbox, супутникові знімки '
+    OSIPIII_6in:
+      attribution:
+        text: Програма знімання штату Огайо
+      description: Ортофото 41 округу Огайо були зроблені в рамках Програми створення зображень штату Огайо III із роздільною здатністю 6 дюймів у 2019-2020 роках.
+      name: Програма знімання штату Огайо III, 6 дюймів
+    OSIP_1ft:
+      attribution:
+        text: Програма знімання штату Огайо
+      description: Ортофото 88 округів Огайо були зроблені в рамках Програми створення зображень штату Огайо II із роздільною здатністю 1 фут впродовж 2011-2014 років.
+      name: Програма знімання штату Огайо II, 1 фут
+    OSIP_6in:
+      attribution:
+        text: Програма знімання штату Огайо
+      description: Ортофото 40 округів Огайо були зроблені в рамках Програми створення зображень штату Огайо III із роздільною здатністю 6 дюймів у 2017-2018 роках, а також знімки OSIP I та OSIP II ще 16 округів зроблені впродовж 2010-2014 років.
+      name: Програма знімання штату Огайо, 6 дюймів
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Містить інформацію про державний сектор, ліцензія Open Government Licence v3.0.
@@ -215,10 +355,9 @@ uk:
       attribution:
         text: © Geofabrik GmbH, Учасники OpenStreetMap, CC-BY-SA
       name: 'OSM Інспектор: Теґи'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Уряд міста Руда-Шльонська
-      name: 'Руда Шльонська: Ортофотомапа (аерофото)'
+    OpenAerialMapMosaic:
+      description: Всі знімки OpenAerialMap у вигляді мозаїки підготовленої Kontur.io
+      name: OpenAerialMap Mosaic, від Kontur.io
     SPW_ORTHO_LAST:
       name: SPW (allonie) найновіші аерофотознімки
     SPW_PICC:
@@ -243,6 +382,9 @@ uk:
     US-TIGER-Roads-2020:
       description: Жовтий = Дані, що розповсюджуються US Census на умовах суспільного надбання. Червоний = Дані, відсутні в OpenStreetMap
       name: TIGER Roads 2020
+    US-TIGER-Roads-2021:
+      description: Жовтий = Дані, що розповсюджуються US Census на умовах суспільного надбання. Червоний = Дані, відсутні в OpenStreetMap
+      name: TIGER Roads 2021
     USDA-NAIP:
       attribution:
         text: Міністерство сільського господарства США
@@ -352,7 +494,7 @@ uk:
       name: Мапа міста Гетеборг
     gothenburg-dtm-2017:
       attribution:
-        text: © Муніципалітет Гетеборг, CC0
+        text: © Муніципалітет Гетеборга, CC0
       description: Мапа, що представляє рельєф на основі моделі висоти міста Гетеборг 2017 Роздільна здатність 0,5 метра на піксель.
       name: Рельєф, Гетеборг
     gothenburg-ortho:
@@ -443,6 +585,18 @@ uk:
       attribution:
         text: Любачівський повіт
       name: 'Любачівський повіт: Будинки'
+    maaamet.ee-cir_ngr:
+      attribution:
+        text: Maa-amet ортофото Земельного управління
+      name: Maa-amet Лісництва
+    maaamet.ee-orto:
+      attribution:
+        text: Maa-amet ортофото
+      name: Maa-amet Ortho (TMS)
+    maaamet.ee-pohi_vr2:
+      attribution:
+        text: Maa-amet базова мапа
+      name: Maa-amet Базова мапа
     mapbox_locator_overlay:
       attribution:
         text: Умови використання та Відгуки
@@ -472,10 +626,6 @@ uk:
         text: © Учасники OpenStreetMap
       description: Публічні треки GPS завантажені до OpenStreetMap.
       name: OpenStreetMap GPS треки
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Учасники OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Стандартний Ч/Б)
     osm-mapnik-german_style:
       attribution:
         text: © Учасники OpenStreetMap, CC-BY-SA

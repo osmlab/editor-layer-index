@@ -5,7 +5,7 @@
         "name": "Bytom: Fotoplan 2014 (aerial image)",
         "i18n": true,
         "type": "wms",
-        "url": "http://sitplan.um.bytom.pl:11180/isdp/gs/wms?LAYERS=default:fotoplan_2014&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://sitplan.um.bytom.pl/isdp/gs/ows/wms?LAYERS=default:fotoplan_2014&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2014",
         "end_date": "2014",
         "country_code": "PL",
@@ -17,9 +17,13 @@
             "EPSG:4326"
         ],
         "attribution": {
-            "text": "Urząd Miasta Bytomia"
+            "text": "Urząd Miasta Bytomia",
+            "html": "https://www.bytom.pl/",
+            "required": true
         },
-        "category": "photo"
+        "category": "photo",
+        "privacy_policy_url": "https://www.bytom.pl/main/polityka-prywatnosci",
+        "license_url": "https://www.bytom.pl/main/zastrzezenia"
     },
     "geometry": {
         "type": "Polygon",

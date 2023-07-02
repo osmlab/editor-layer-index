@@ -4,19 +4,16 @@
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
         "privacy_policy_url": "https://www.mesacounty.us/contact-us/copyrightdisclaimerprivacy/",
         "id": "MCGIS-County-Valleywide-Imagery-2018",
-        "type": "wms",
+        "type": "wmts",
         "name": "Mesa County GIS Valleywide 2018",
-        "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/City_Color_2018/ImageServer/WMSServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://mcgis.mesacounty.us/imagery/rest/services/Mosaic_Datasets/City_Color_2018/ImageServer/WMTS/1.0.0/WMTSCapabilities.xml",
         "max_zoom": 20,
         "permission_osm": "implicit",
         "country_code": "US",
         "start_date": "2018",
         "end_date": "2018",
         "available_projections": [
-            "CRS:84",
-            "EPSG:3742",
-            "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:3742"
         ],
         "attribution": {
             "url": "https://gis.mesacounty.us/",

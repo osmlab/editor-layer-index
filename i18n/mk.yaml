@@ -22,7 +22,6 @@ mk:
       name: AIV Дигитален висински модел на Фландрија II, Skyview фактор 0,25 м
     Bing:
       description: Сателитски и воздушни снимки
-      name: Воздушни слики од Bing
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 безоблачно — https://s2maps.eu од EOX IT Services GmbH (содржи податоци од Copernicus Sentinel 2017 и 2018)
@@ -31,7 +30,6 @@ mk:
     EsriWorldImagery:
       attribution:
         text: Услови и мислења
-      description: Светски снимки на Esri
       name: Светски снимки на Esri
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +37,11 @@ mk:
       description: Архивски снимки на Esri кои може да се појасни и поточни од вообичаениот слој.
       name: Светски снимки на Esri (Clarity) Бета
     MAPNIK:
-      attribution:
-        text: © Учесници на OpenStreetMap, CC-BY-SA 2.0
       description: Вообичаениот слој на OpenStreetMap.
       name: OpenStreetMap (стандардна)
     Mapbox:
       attribution:
         text: Услови и мислења
-      description: Сателитски и воздушни снимки.
       name: Mapbox Сателитски
     OSM_Inspector-Addresses:
       attribution:
@@ -256,10 +251,6 @@ mk:
         text: © Учесници на OpenStreetMap
       description: Јавни ГПС-траги подигнати на OpenStreetMap.
       name: ГПС-траги на OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Учесници на OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (стандардна црно-бела)
     osm-mapnik-german_style:
       attribution:
         text: © Учесници на OpenStreetMap, CC-BY-SA

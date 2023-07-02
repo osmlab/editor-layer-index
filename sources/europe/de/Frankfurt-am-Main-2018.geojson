@@ -5,14 +5,16 @@
         "name": "Frankfurt am Main Luftbild 2018",
         "description": "aerial imagery of Frankfurt am Main, photographed on 08.04.2018 and 14.04.2018",
         "type": "wms",
-        "url": "https://geoinfo.frankfurt.de/opendata/luftbild-2018.exe?LAYERS=wms_opendata_luftbilder_2018&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "privacy_policy_url": "https://geoinfo.frankfurt.de/impressum/datenschutz.html",
+        "url": "https://geowebdienste.frankfurt.de/OD_Luftbilder_2018?REQUEST=GetMap&VERSION=1.3.0&SERVICE=WMS&CRS={proj}&FORMAT=image/jpeg&STYLES=&bbox={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=opendata_luftbilder_2018",
+        "privacy_policy_url": "https://geoportal.frankfurt.de/info/datenschutz.html",
         "start_date": "2018-04-08",
         "end_date": "2018-04-14",
         "country_code": "DE",
         "available_projections": [
+            "CRS:84",
             "EPSG:3857",
             "EPSG:4326",
+            "EPSG:4647",
             "EPSG:25832",
             "EPSG:31467"
         ],
