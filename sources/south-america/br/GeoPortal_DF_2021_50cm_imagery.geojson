@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "GeoPortal_DF_2019",
-        "name": "GeoPortal DF 2019",
+        "id": "GeoPortal_DF_2021_50cm",
+        "name": "GeoPortal DF 2021 50 cm",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/DistritoFederal.png",
-        "url": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/SENTINEL_2019/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/2021_50CM/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "min_zoom": 10,
         "max_zoom": 22,
-        "start_date": "2019",
-        "end_date": "2019",
+        "start_date": "2021",
+        "end_date": "2021",
         "country_code": "BR",
-        "best": true,
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
@@ -23,7 +23,7 @@
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Pt:GeoPortalDFBrasilia",
         "type": "wms",
-        "category": "historicphoto",
+        "category": "photo",
         "privacy_policy_url": "https://www.gov.br/pt-br/termos-de-uso"
     },
     "geometry": {
