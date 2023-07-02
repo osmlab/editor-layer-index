@@ -1,28 +1,27 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Kansas_NG911_2014",
+        "id": "Kansas_NG911_2021",
         "attribution": {
             "url": "https://www.kansas911.org/",
             "text": "Kansas 911 Coordinating Council",
             "required": false
         },
-        "name": "Kansas NG911 Orthoimagery (2014)",
+        "name": "Kansas NG911 Orthoimagery (2021)",
         "icon": "https://www.kansas911.org/wp-content/uploads/2022/03/10TH_Anniversary_Logo_RGB.png",
-        "url": "https://services.kansasgis.org/arcgis7/rest/services/IMAGERY_STATEWIDE/Kansas_HRO_2014_Color/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://services.kansasgis.org/arcgis7/rest/services/IMAGERY_STATEWIDE/NG911_Imagery_2021/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 19,
-        "license_url": "https://www.kansas911.org/wp-content/uploads/2020/09/KSNG911GISUserGroup_2020_Q3.pdf#page=4",
+        "license_url": "https://portal.kansas911.org/portal_doc.cfm?kid=7446#page=3",
         "privacy_policy_url": "https://www.kansas911.org/privacy-policy/",
-        "country_code": "US",
-        "type": "wms",
         "available_projections": [
-            "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2014",
-        "end_date": "2014",
-        "description": "The 2014 orthoimagery for the State of Kansas provided by Kansas 911 Coordinating Council",
-        "category": "historicphoto",
+        "country_code": "US",
+        "type": "wms",
+        "start_date": "2021",
+        "end_date": "2021",
+        "description": "The 2021 orthoimagery for the State of Kansas provided by Kansas 911 Coordinating Council",
+        "category": "photo",
         "valid-georeference": true
     },
     "geometry": {
