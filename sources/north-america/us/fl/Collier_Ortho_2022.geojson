@@ -1,0 +1,78 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Collier_Ortho_2022",
+        "attribution": {
+            "url": "https://hub-collierbcc.opendata.arcgis.com/",
+            "text": "Collier County Information Technology GIS Team",
+            "required": false
+        },
+        "name": "Collier County Orthoimagery (2022)",
+        "url": "https://ags2.colliercountyfl.gov/imagery/rest/services/Orthos2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 22,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "The 2022 orthoimagery for Collier County in the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.colliercountyfl.gov/government/county-attorney-s-office/privacy-policy-and-disclaimer"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.857067829250738,
+                    26.316978177626787
+                ],
+                [
+                    -81.224021168718664,
+                    26.316653372679422
+                ],
+                [
+                    -81.224447531062808,
+                    26.5370429515627
+                ],
+                [
+                    -81.59118941325741,
+                    26.53600083535126
+                ],
+                [
+                    -81.590786339222831,
+                    26.481238659960102
+                ],
+                [
+                    -81.712921153645652,
+                    26.480625795482066
+                ],
+                [
+                    -81.712337821829152,
+                    26.425754720996562
+                ],
+                [
+                    -81.895945199369365,
+                    26.424770472378736
+                ],
+                [
+                    -81.76935986830307,
+                    25.76544539446077
+                ],
+                [
+                    -80.857730999699626,
+                    25.76873560376724
+                ],
+                [
+                    -80.857067829250738,
+                    26.316978177626787
+                ]
+            ]
+        ]
+    }
+}

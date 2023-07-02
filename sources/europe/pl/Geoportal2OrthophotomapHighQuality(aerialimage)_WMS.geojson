@@ -7,7 +7,6 @@
         "description": "Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.",
         "type": "wms",
         "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?LAYERS=Raster&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "privacy_policy_url": "https://www.geoportal.gov.pl/ciasteczka-cookies-",
         "country_code": "PL",
         "available_projections": [
             "CRS:84",
@@ -23,6 +22,11 @@
         "terms-of-use-text": "https://geoportal.gov.pl/web/guest/regulamin",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
+        "custom-http-headers": {
+            "header-name": "User-Agent",
+            "header-value": "Mozilla/5.0 (JOSM)"
+        },
+        "privacy_policy_url": "https://www.geoportal.gov.pl/ciasteczka-cookies-",
         "category": "photo"
     },
     "geometry": {

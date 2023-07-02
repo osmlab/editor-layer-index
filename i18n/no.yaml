@@ -22,7 +22,6 @@
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview faktor 0,25 m
     Bing:
       description: Flyfoto og satellitt-ortofoto.
-      name: Bing ortofoto
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu av EOX IT Services GmbH (Inneholder modifisert Copernicus Sentinel data 2017 & 2018)
@@ -31,7 +30,6 @@
     EsriWorldImagery:
       attribution:
         text: Vilkår og tilbakemelding
-      description: Esri World ortofoto.
       name: Esri World ortofoto
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +37,11 @@
       description: Esri arkivbilder som kan være klarere og mer nøyaktige enn det forhåndsvalgte laget.
       name: Esri World ortofoto (skarphet) beta
     MAPNIK:
-      attribution:
-        text: © OpenStreetMap-bidragsytere, CC-BY-SA 2.0
       description: Standard OpenStreerMap-laget.
       name: OpenStreetMap (standard)
     Mapbox:
       attribution:
         text: Vilkår og tilbakemelding
-      description: Flyfoto- og satellitt-ortofoto.
       name: Mapbox Satellitt
     OSM_Inspector-Addresses:
       attribution:
@@ -240,10 +235,6 @@
         text: © OpenStreetMap bidragsytere
       description: Offentlige GPS-spor lastet opp til OpenStreetMap.
       name: OpenStreetMap GPS spor
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap bidragsytere, CC-BY-SA
-      name: OpenStreetMap (Standard Svart & Hvitt)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap bidragsytere, CC-BY-SA

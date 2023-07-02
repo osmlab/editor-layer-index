@@ -12,6 +12,10 @@ nl:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Vlaanderen GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV Vlaanderen preliminaire luchtfotografie
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -22,7 +26,7 @@ nl:
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
     Bing:
       description: Satelliet- en luchtfotografie.
-      name: Bing-luchtfotografie
+      name: Bing Maps-luchtfoto
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 onbewolkt - https://s2maps.eu door EOX IT Services GmbH (Bevat aangepaste gegevens van Copernicus Sentinel 2017 & 2018)
@@ -31,22 +35,29 @@ nl:
     EsriWorldImagery:
       attribution:
         text: Voorwaarden & Terugkoppeling
-      description: Esri world-fotografie.
       name: Esri World-fotografie
     EsriWorldImageryClarity:
       attribution:
         text: Gebruiksvoorwaarden & feedback
       description: Esri-archiefbeelden kunnen duidelijker en accurater zijn dan de standaard achtergrondbeelden.
       name: Esri World-fotografie (helder) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Stadsonderzoekscommissie Frankfurt am Main
+      description: Luchtfoto's van Frankfurt am Main, genomen op 16 april 2019
+      name: Frankfurt am Main-luchtfoto 2019
+    Gliwice-buildings:
+      name: 'Gliwice: gebouwen'
+    LocalAuthorities_RightsOfWay:
+      name: Recht van overpad
     MAPNIK:
       attribution:
-        text: © OpenStreetMap-bijdragers, CC-BY-SA 2.0
+        text: © OpenStreetMap-bijdragers, ODbL 1.0
       description: De standaard OpenStreetMap-laag
       name: OpenStreetMap (Standaard)
     Mapbox:
       attribution:
         text: Gebruiksvoorwaarden & feedback
-      description: Satelliet- en luchtfotografie.
       name: Mapbox-satellietbeelden
     OSM_Inspector-Addresses:
       attribution:
@@ -256,10 +267,6 @@ nl:
         text: © OpenStreetMap-bijdragers
       description: Publieke GPS-traces die door gebruikers naar OpenStreetMap geüpload zijn.
       name: GPS-traces van OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap-bijdragers, CC-BY-SA
-      name: OpenStreetMap (Standaard Zwart & Wit)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap-bijdragers, CC-BY-SA

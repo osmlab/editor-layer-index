@@ -31,7 +31,6 @@ ru:
     EsriWorldImagery:
       attribution:
         text: Условия и обратная связь
-      description: Всемирные снимки Esri.
       name: Всемирные снимки Esri
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +38,11 @@ ru:
       description: Архивная подложка Esri, может быть чище и аккуратнее, чем актуальная.
       name: Всемирные снимки Esri (Clarity)
     MAPNIK:
-      attribution:
-        text: © Участники OpenStreetMap, CC-BY-SA 2.0
       description: Слой OpenStreetMap по умолчанию.
       name: OpenStreetMap (стандартный)
     Mapbox:
       attribution:
         text: Условия и обратная связь
-      description: Спутниковые и аэрофотоснимки.
       name: Спутниковые снимки Mapbox
     OSM_Inspector-Addresses:
       attribution:
@@ -153,6 +149,8 @@ ru:
         text: basemap.at
       description: Слой подписей предоставлен basemap.at.
       name: Наложение basemap.at
+    cyclosm:
+      name: CyclOSM
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -256,10 +254,6 @@ ru:
         text: © Участники OpenStreetMap
       description: Публичные GPS треки, загруженные в OpenStreetMap.
       name: GPS треки OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Участники OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (стандартный черно-белый)
     osm-mapnik-german_style:
       attribution:
         text: © Участники OpenStreetMap, CC-BY-SA

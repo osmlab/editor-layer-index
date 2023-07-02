@@ -1,4 +1,25 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Copyright ©2019 Ministrstvo za kmetijstvo, gozdarstvo in prehrano (mkgp.gov.si). Some rights reserved.",
+            "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ"
+        },
+        "country_code": "SI",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/si/RABA-KGZSloveniafarmlanduse.png",
+        "id": "RABA-KGZ-3000",
+        "overlay": true,
+        "max_zoom": 19,
+        "min_zoom": 8,
+        "name": "RABA-KGZ: Slovenia built-up areas",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
+        "privacy_policy_url": "https://fossgis.de/datenschutzerkl%C3%A4rung",
+        "type": "tms",
+        "url": "https://wms.openstreetmap.de/tms/RABA3000/{zoom}/{x}/{y}.png",
+        "category": "other"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -713,24 +734,5 @@
                 ]
             ]
         ]
-    },
-    "properties": {
-        "attribution": {
-            "required": true,
-            "text": "Copyright ©2019 Ministrstvo za kmetijstvo, gozdarstvo in prehrano (mkgp.gov.si). Some rights reserved.",
-            "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ"
-        },
-        "country_code": "SI",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/si/RABA-KGZSloveniafarmlanduse.png",
-        "id": "RABA-KGZ-3000",
-        "max_zoom": 19,
-        "min_zoom": 8,
-        "name": "RABA-KGZ: Slovenia built-up areas",
-        "permission_osm": "explicit",
-        "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
-        "type": "tms",
-        "url": "https://wms.openstreetmap.de/tms/RABA3000/{zoom}/{x}/{y}.png",
-        "category": "other"
-    },
-    "type": "Feature"
+    }
 }

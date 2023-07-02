@@ -3,7 +3,7 @@ it:
     AGIV:
       attribution:
         text: © agentschap Informatie Vlaanderen
-      name: Le più recenti immagini aeree AIV delle Fiandre
+      name: AIV Fiandre - immagini più recenti
     AGIV10cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -22,7 +22,6 @@ it:
       name: AIV Digitaal Hoogtemodel Vlaanderen II, fattore Skyview 0,25 m
     Bing:
       description: Immagini satellitari e aeree.
-      name: Immagini aeree Bing
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu di EOX IT Services GmbH (contiene dati modificati di Copernicus Sentinel del 2017-2018)
@@ -31,7 +30,6 @@ it:
     EsriWorldImagery:
       attribution:
         text: Termini & Feedback
-      description: Esri world imagery.
       name: Esri world imagery
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +37,11 @@ it:
       description: Le immagini ESRI potrebbero essere migliori e più precise di quelle impostate di default.
       name: Esri World Imagery (Clarity) Beta
     MAPNIK:
-      attribution:
-        text: © collaboratori OpenStreetMap, CC-BY-SA
       description: Il livello base di OpenStreetMap.
       name: OpenStreetMap (Standard)
     Mapbox:
       attribution:
         text: Termini & Feedback
-      description: Immagini satellitari e aeree.
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
       attribution:
@@ -77,30 +72,42 @@ it:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
       name: 'OSM Inspector: Etichette'
     SPW_ORTHO_LAST:
-      name: SPW(allonie) le immagini aeree più recenti
+      name: SPW(allonie) - immagini aeree più recenti
     SPW_PICC:
-      name: SPW(allonie) PICC  immagini numeriche
+      name: SPW(allonie) PICC - immagini digitali
     US-TIGER-Roads-2017:
-      description: Giallo = Dati pubblici forniti da enti statali Statunitensi.
+      description: Giallo = dati cartografici di pubblico dominio dal censimento USA. Rosso = dati non presenti in OpenStreetMap
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
-      description: Giallo = dati della mappa di pubblico dominio del censimento US. Rosso = dati non presenti in OpenStreetMap
+      description: Giallo = dati cartografici di pubblico dominio dal censimento USA. Rosso = dati non presenti in OpenStreetMap
       name: TIGER Roads 2018
     US-TIGER-Roads-2019:
-      description: Giallo = Dati delle mappe di dominio pubblico dal US Census. Rosso = Dati non trovati in OpenStreetMap
+      description: Giallo = dati cartografici di pubblico dominio dal censimento USA. Rosso = dati non presenti in OpenStreetMap
       name: TIGER Roads 2019
+    US-TIGER-Roads-2020:
+      description: Giallo = dati cartografici di pubblico dominio dal censimento USA. Rosso = dati non presenti in OpenStreetMap
+      name: TIGER Roads 2020
+    US-TIGER-Roads-2021:
+      description: Giallo = dati cartografici di pubblico dominio dal censimento USA. Rosso = dati non presenti in OpenStreetMap
+      name: TIGER Roads 2021
     USDA-NAIP:
+      attribution:
+        text: Dipartimento dell'Agricoltura degli Stati Uniti d'America
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Strada: bordo verde = non classificata. Bordo marrone = carrareccia. Manto in ghiaia = colore diriempimento marrone chiaro, asfaltato = nero, pavimentato = grigio, terra = bianco,  cemento = blu, erboso = verde. Stagionale = con barre bianche'
       name: Strade forestali U.S. (sovrapposta)
+    UrbISOrtho:
+      attribution:
+        text: Realizzazione tramite UrbIS®© Bruxelles - Copyright e distribuzione CIRB/CIBG
+      name: CIRB/CIBG - immagini più recenti
     UrbISOrtho2016:
       attribution:
-        text: Realizzato con i mezzi di Bruxelles UrbIS®© - Distribuzione & Copyright CIRB
+        text: Realizzazione tramite UrbIS®© Bruxelles - Copyright e distribuzione CIRB/CIBG
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: Realizzato con i mezzi di Bruxelles UrbIS®© - Distribuzione & Copyright CIRB
+        text: Realizzazione tramite UrbIS®© Bruxelles - Copyright e distribuzione CIRB/CIBG
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       attribution:
@@ -256,10 +263,6 @@ it:
         text: © OpenStreetMap contributors
       description: Tracce GPS pubbliche caricate su OpenStreetMap.
       name: Tracce GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
-      name: OpenStreetMap (Standard bianco e nero)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA

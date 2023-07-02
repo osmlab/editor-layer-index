@@ -7,7 +7,7 @@
         "type": "wmts",
         "best": true,
         "name": "Mesa County GIS NAIP 2019",
-        "url": "https://mcgis.mesacounty.us/image/rest/services/Mosaic_Datasets/MesaCounty_2019/ImageServer/WMTS/1.0.0/WMTSCapabilities.xml",
+        "url": "https://mcgis.mesacounty.us/imagery/rest/services/Mosaic_Datasets/MesaCounty_2019/ImageServer/WMTS/1.0.0/WMTSCapabilities.xml",
         "max_zoom": 12,
         "permission_osm": "implicit",
         "country_code": "US",
@@ -21,6 +21,7 @@
             "text": "Mesa County GIS",
             "required": true
         },
+        "category": "historicphoto",
         "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
     },
     "geometry": {

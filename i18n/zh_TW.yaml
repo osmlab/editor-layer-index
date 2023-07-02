@@ -12,6 +12,10 @@ zh_TW:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informatie Vlaanderen
+      name: AIV 法蘭德斯初步空照圖
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,57 +24,78 @@ zh_TW:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺 Skyview
+    AIV_Wegenregister:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: AIV Wegenregister
     Bedzin-PL-aerial_image:
       attribution:
         text: Starostwo Powiatowe w Będzinie
-      name: 'Będzin: Orthophotomap 2013 (航照圖)'
+      name: 'Będzin: Orthophotomap 2013 (空照圖)'
     Bedzin-PL-buildings:
       attribution:
         text: Starostwo Powiatowe w Będzinie
-      name: 'Będzin：建築'
+      name: 'Będzin: 建築'
     Bing:
       description: 衛星與空照圖
-      name: Bing 空照圖
+      name: Bing Maps 航照圖
     Bytom-2012:
       attribution:
         text: Urząd Miasta Bytomia
-      name: 'Bytom: Orthophotomap 2012 (航照圖)'
+      name: 'Bytom: Orthophotomap 2012 (空照圖)'
     Bytom-2014:
       attribution:
         text: Urząd Miasta Bytomia
-      name: 'Bytom: Fotoplan 2014 (航照圖)'
+      name: 'Bytom: Fotoplan 2014 (空照圖)'
+    Bytom-2016:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2016（空照圖）'
+    Bytom-2018:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2018（空照圖）'
+    Bytom-2021:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomap 2021（空照圖）'
     Bytom-buildings:
       attribution:
         text: Urząd Miasta Bytomia
-      name: 'Bytom：建築'
+      name: 'Bytom: 建築'
     Czestochowa-2011:
       attribution:
         text: Urząd Miasta Częstochowy
-      name: 'Częstochowa: Orthophotomap 2011 (航照圖)'
+      name: 'Częstochowa: Orthophotomap 2011 (空照圖)'
     Czestochowa-2013:
       attribution:
         text: Urząd Miasta Częstochowy
-      name: 'Częstochowa: Orthophotomap 2013 (航照圖)'
+      name: 'Częstochowa: Orthophotomap 2013 (空照圖)'
     Czestochowa-2014:
       attribution:
         text: Urząd Miasta Częstochowy
-      name: 'Częstochowa: Orthophotomap 2014 (航照圖)'
+      name: 'Częstochowa: Orthophotomap 2014 (空照圖)'
     Czestochowa-2015:
       attribution:
         text: Urząd Miasta Częstochowy
-      name: 'Częstochowa: Orthophotomap 2015 (航照圖)'
+      name: 'Częstochowa: Orthophotomap 2015 (空照圖)'
     Czestochowa-2016:
       attribution:
         text: Urząd Miasta Częstochowy
-      name: 'Częstochowa: Orthophotomap 2016 (航照圖)'
+      name: 'Częstochowa: Orthophotomap 2016 (空照圖)'
     Czestochowa-2017:
       attribution:
         text: Urząd Miasta Częstochowy
-      name: 'Częstochowa: Orthophotomap 2017 (航照圖)'
+      name: 'Częstochowa: Orthophotomap 2017 (空照圖)'
     Czestochowa-buildings:
       attribution:
         text: Urząd Miasta Częstochowy
       name: 'Częstochowa：建築'
+    Dourados_Ortofotos:
+      attribution:
+        text: 多拉杜斯市政廳 - GeoDourados
+      description: 多拉杜斯 (2018) 與許多行政區 (2020) 的高解析度航照圖。
+      name: 多拉杜斯正射影像
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2017 & 2018)
@@ -79,18 +104,33 @@ zh_TW:
     EsriWorldImagery:
       attribution:
         text: 使用條款與回饋
-      description: Esri 世界衛星圖。
+      description: Esri 世界衛星圖
       name: Esri 世界衛星圖
     EsriWorldImageryClarity:
       attribution:
         text: 使用條款與意見回饋
       description: Ersi 的封存衛星圖可能比預設的圖層更清晰且更精確。
       name: Esri 世界衛星圖（清晰版）Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: 美茵河畔法蘭克福市測量局
+      description: 美茵河畔法蘭克福的航照圖，拍攝於2019年4月16日
+      name: 美茵河畔法蘭克福航照圖2019
+    Geoportal2-PL-City-boundaries_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 發佈波蘭領土劃分單位，包括行政單位的 WMS 服務
+      name: 'Geoportal 2：城市邊界 WMS'
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 解析度為 10 公分或更高的正射影像。資料按解析度排序，然後才按年份排序，例如2012年的 8 公分解析度影像會優先於2019年的 10 公分解析度影像。
+      name: 'Geoportal 2：高解析度正射影像（封存影像）(WMS)'
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
       description: 解析度為 10 公分或更高的正射影像。資料按解析度排序，然後才按年份排序，例如2012年的 8 公分解析度影像會優先於2019年的 10 公分解析度影像。
-      name: 'Geoportal 2：高解析度正射影像，可能會有點過時（航照圖）'
+      name: 'Geoportal 2：高解析度正射影像（航照圖）(WMS)'
     Geoportal2-PL-Streets_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
@@ -101,6 +141,11 @@ zh_TW:
         text: 波蘭大地測量與製圖總局
       description: 整合了國家地址編號的 WMS 瀏覽服務，可以下載根據街道和地址記錄領域的國境邊防局的空間數據建立的地圖影像。
       name: 'Geoportal 2：地址點'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: WMS 讓您可以檢視波蘭的封存正射影像。透過此服務提供的資料是由航照圖組成的正射影像。此服務提供對 WMS 1.3.0 介面的支援。
+      name: 'Geoportal 2：正射影像（封存影像）（WMS）'
     Geoportal2-PL-aerial_image_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
@@ -111,20 +156,83 @@ zh_TW:
         text: 波蘭大地測量與製圖總局
       description: WMTS 讓您可以檢視波蘭的正射影像。透過此服務提供的資料是由航照圖組成的正射影像。
       name: 'Geoportal 2：正射影像（最新航照圖）（WMTS）'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 發佈波蘭領土劃分單位，包括行政單位的 WMS 服務
+      name: 'Geoportal 2：社區邊界 WMS'
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 發佈波蘭領土劃分單位，包括行政單位的 WMS 服務
+      name: 'Geoportal 2：縣邊界 WMS'
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 發佈波蘭領土劃分單位，包括行政單位的 WMS 服務
+      name: 'Geoportal 2：省邊界 WMS'
     Geoportal2-PL-buildings_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
-      description: '國家土地記錄綜合服務是一項集體服務，用於顯示直接來自 poviat 級別單位的註冊數據。 該服務僅包含具有 WMS 服務並帶有適當參數的單位的數據，並已決定將其WMS服務包括在“ KrajowaIntegracjaEwidycjiGruntow” 集體服務中。 '
+      description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
       name: 'Geoportal 2：WMS 建築物紀錄'
+    Geoportal2-PL-gas-pipe_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
+      name: 'Geoportal 2：天然氣管道 WMS'
+    Geoportal2-PL-heat-pipe_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
+      name: 'Geoportal 2：熱力管道 WMS'
     Geoportal2-PL-plot_boundaries_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
       description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
       name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-power-cord_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
+      name: 'Geoportal 2：電纜 WMS'
     Geoportal2-PL-prng:
       attribution:
         text: Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej
       name: 'Geoportal 2: PRNG (geo names)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
+      name: 'Geoportal 2：下水道 WMS'
+    Geoportal2-PL-squares-and-housing-estates_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 整合了國家地址編號的 WMS 瀏覽服務，可以下載根據街道和地址記錄領域的國境邊防局的空間數據建立的地圖影像。
+      name: 'Geoportal 2：廣場與住宅區'
+    Geoportal2-PL-state-borders_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 發佈波蘭領土劃分單位，包括行政單位的 WMS 服務
+      name: 'Geoportal 2：州邊界 WMS'
+    Geoportal2-PL-telecommunications-cable_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
+      name: 'Geoportal 2：電信電纜 WMS'
+    Geoportal2-PL-water-pipe_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
+      name: 'Geoportal 2：水管 WMS'
+    Gliwice-2003:
+      attribution:
+        text: 格利維採市政廳
+      name: '格利維採：2003年正射影像 (空照圖)'
+    Gliwice-2009:
+      attribution:
+        text: 格利維採市政廳
+      name: '格利維採：2009年正射影像 (空照圖)'
     Gliwice-2013:
       attribution:
         text: Urząd Miasta Gliwice
@@ -141,6 +249,10 @@ zh_TW:
       attribution:
         text: Urząd Miasta Gliwice
       name: 'Gliwice: Orthophotomap 2020 (航照圖)'
+    Gliwice-2021:
+      attribution:
+        text: 格利維採市政廳
+      name: '格利維採：2021年正射影像 (空照圖)'
     Gliwice-buildings:
       attribution:
         text: Urząd Miasta Gliwice
@@ -160,33 +272,61 @@ zh_TW:
         text: © GeoBasis-DE/LVermGeo LSA
       description: '行政邊界的向量紀錄。包含了邦、郡、市鎮或郡的一部分。'
       name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: 包含了以 Open Government Licence v3.0 授權的公部門資訊。
+      description: 地方當局發布的公共通行權資料，在 rowmaps.com 上進行了整理
+      name: 公共通行權
     Lodz-2015:
       attribution:
         text: Urząd Miasta Łodzi
-      name: 'Łódź: Orthophotomap 2015 (航照圖)'
+      name: 'Łódź: Orthophotomap 2015 (空照圖)'
     Lodz-2017:
       attribution:
         text: Urząd Miasta Łodzi
-      name: 'Łódź: Orthophotomap 2017 (航照圖)'
+      name: 'Łódź: Orthophotomap 2017 (空照圖)'
     Lodz-buildings:
       attribution:
         text: Urząd Miasta Łodzi
       name: 'Łódź：建築'
     MAPNIK:
       attribution:
-        text: © OpenStreetMap 貢獻者，CC-BY-SA 2.0
+        text: © OpenStreetMap 貢獻者, ODbL 1.0
       description: 預設的 OpenStreetMap 圖層
       name: OpenStreetMap（標準）
+    Maaamet-Estonia_Cadastre:
+      attribution:
+        text: 以正射影像為基礎的土地局地籍圖
+      name: Maa-amet 地籍圖
+    Maaamet-Estonia_Ortho:
+      attribution:
+        text: Maa-ameti ortofoto
+      name: Maa-amet Ortho (WMS)
     Mapbox:
       attribution:
         text: 使用條款與意見回饋
-      description: 衛星與空照圖
+      description: Mapbox 提供的點陣圖磚集，包含了高解析度衛星與航空影像的全球底圖
       name: Mapbox 衛星圖
+    OSIPIII_6in:
+      attribution:
+        text: 俄亥俄州全州影像計劃
+      description: 2019年與2020年以 6 英吋解析度拍攝的 41 個縣的俄亥俄州全州影像計劃 III 正射影像。
+      name: 俄亥俄州全州影像計劃 III 6 英吋
+    OSIP_1ft:
+      attribution:
+        text: 俄亥俄州全州影像計劃
+      description: 2011年至2014年間以 1 英呎解析度拍攝的全部 88 個縣的俄亥俄州全州影像計劃 II 正射影像。
+      name: 俄亥俄州全州影像計劃 II 1 英呎
+    OSIP_6in:
+      attribution:
+        text: 俄亥俄州全州影像計劃
+      description: 2017年與2018年以 6 英吋解析度拍攝的 40 個縣的俄亥俄州全州影像計劃 III 正射影像，以及2010年至2014年在另外 16 個縣拍攝的 OSIP I 和 OSIP II 影像。
+      name: 俄亥俄州全州影像計劃 6 英吋
     OSMUK-Cadastral-Parcels:
       attribution:
         text: 包含了以 Open Government Licence v3.0 授權的公部門資訊。
       description: 在英國完全對齊的地籍（土地註冊）的地圖
-      name: OSMUK 地籍包
+      name: OSMUK Cadastral Parcels
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 貢獻者，CC-BY-SA
@@ -215,10 +355,9 @@ zh_TW:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 貢獻者，CC-BY-SA
       name: 'OSM 檢查器：標籤'
-    Ruda_Slaska-aerial_image:
-      attribution:
-        text: Urząd Miasta Ruda Śląska
-      name: 'Ruda Śląska: Orthophotomap (航照圖)'
+    OpenAerialMapMosaic:
+      description: 一個拼貼圖層中的所有 OpenAerialMap 影像，由 Kontur.io 提供
+      name: OpenAerialMap 拼貼，由 Kontur.io 提供
     SPW_ORTHO_LAST:
       name: SPW(allonie) 最新空照圖
     SPW_PICC:
@@ -243,6 +382,9 @@ zh_TW:
     US-TIGER-Roads-2020:
       description: 黃 = 從美國人口普查而來的公有領域資料。紅 = 在開放街圖中找不到的資料
       name: TIGER 道路 2020
+    US-TIGER-Roads-2021:
+      description: 黃 = 從美國人口普查而來的公有領域資料。紅 = 在開放街圖中找不到的資料
+      name: TIGER 道路 2021
     USDA-NAIP:
       attribution:
         text: 美國農業部
@@ -443,6 +585,18 @@ zh_TW:
       attribution:
         text: Powiat lubaczowski
       name: 'Powiat lubaczowski：建築'
+    maaamet.ee-cir_ngr:
+      attribution:
+        text: Maa-ameti metsanduslik ortofoto
+      name: Maa-amet Forestry
+    maaamet.ee-orto:
+      attribution:
+        text: Maa-ameti ortofoto
+      name: Maa-amet Ortho (TMS)
+    maaamet.ee-pohi_vr2:
+      attribution:
+        text: Maa-ameti põhikaart
+      name: Maa-amet 基本地圖
     mapbox_locator_overlay:
       attribution:
         text: 使用條款與意見回饋
@@ -472,10 +626,6 @@ zh_TW:
         text: © OpenStreetMap 貢獻者
       description: 上傳至開放街圖的公開 GPS 軌跡。
       name: OpenStreetMap GPS 軌跡
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap 貢獻者，CC-BY-SA
-      name: OpenStreetMap（標準黑與白）
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap 貢獻者，CC-BY-SA

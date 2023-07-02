@@ -12,6 +12,10 @@ pt_BR:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Flanders GRB
+    AGIVwerkbestand:
+      attribution:
+        text: © agentschap Informações da Flandres
+      name: AIV Flanders - imagens áreas preliminares
     AIV_DHMV_II_HILL_25cm:
       attribution:
         text: © agentschap Informatie Vlaanderen
@@ -20,9 +24,24 @@ pt_BR:
       attribution:
         text: © agentschap Informatie Vlaanderen
       name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
+    AIV_Wegenregister:
+      attribution:
+        text: © Agentschap Informatie Vlaanderen
+      name: AIV Wegenregister
+    Bedzin-PL-aerial_image:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Ortofotomapa 2013 (imagens aéreas)'
+    Bedzin-PL-buildings:
+      attribution:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Edifícios'
     Bing:
       description: Imagens aéreas e de satélite.
-      name: Imagens aéreas do Bing
+      name: Imagens Aéreas Bing
+    Bytom-2012:
+      attribution:
+        text: Urząd Miasta Bytomia
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contém dados Copernicus Sentinel modificados 2017 e 2018)
@@ -31,7 +50,6 @@ pt_BR:
     EsriWorldImagery:
       attribution:
         text: Termos e Comentários
-      description: Imagens globais da Esri.
       name: Imagens globais da Esri
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +57,11 @@ pt_BR:
       description: Arquivo de imagens da Esri que podem ser mais claras e precisas do que a camada padrão.
       name: Imagens globais da Esri (Clareadas) Beta
     MAPNIK:
-      attribution:
-        text: © Colaboradores do OpenStreetMap, CC-BY-SA 2.0
       description: A camada padrão do OpenStreetMap.
       name: OpenStreetMap (Padrão)
     Mapbox:
       attribution:
         text: Termos e Comentários
-      description: Imagens aéreas e de satélite.
       name: Imagens de satélite Mapbox
     OSM_Inspector-Addresses:
       attribution:
@@ -153,6 +168,11 @@ pt_BR:
         text: basemap.at
       description: Sobreposição de anotação fornecida por basemap.at.
       name: Anotação do basemap.at
+    cyclosm:
+      attribution:
+        text: 'Renderização: CyclOSM (hospedado por OpenStreetMap France) © Dados do mapa por colaboradores do OpenStreetMap'
+      description: O CyclOSM é um estilo de mapa desenhado com o ciclismo em mente, que alavanca os dados do OpenStreetMap para criar um mapa de ciclismo bonito e prático!
+      name: CyclOSM
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
@@ -168,10 +188,24 @@ pt_BR:
         text: © Município de Gotemburgo, CC0
       description: O mapa da cidade é um mapa geral que descreve Gotemburgo. Ele contém informações gerais sobre terrenos, comunicações, hidrografia, edifícios, números de endereços e nomes de ruas, divisão administrativa e outro texto de orientação.
       name: Mapa da cidade de Gotemburgo 
+    gothenburg-dtm-2017:
+      description: Serviço de mapa da web apresentando sombreamento e declive com base no modelo de elevação de 2017 para a cidade de Gotemburgo. Resolução de 0,5 metro por pixel.
+      name: Sombras de relevo de Gothenburg
     gothenburg-ortho:
       attribution:
         text: © Município de Gotemburgo, CC0
       description: Ortofoto para o município de Gotemburgo
+      name: Ortofotos de Gotemburgo 2015
+    gothenburg-ortho_2017:
+      attribution:
+        text: © Município de Gotemburgo, CC0
+      description: Ortofotos do município de Gotemburgo
+      name: Ortofotos de Gotemburgo 2017
+    gothenburg-ortho_2019:
+      attribution:
+        text: © Município de Gotemburgo, CC0
+      description: Ortofotos do município de Gotemburgo
+      name: Ortofotos de Gotemburgo 2019
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japão
@@ -256,10 +290,6 @@ pt_BR:
         text: © Colaboradores do OpenStreetMap
       description: Trilhas de GPS públicas enviadas ao OpenStreetMap.
       name: Trilhas de GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Colaboradores do OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Padrão Preto & Branco)
     osm-mapnik-german_style:
       attribution:
         text: © Colaboradores do OpenStreetMap, CC-BY-SA
@@ -327,6 +357,8 @@ pt_BR:
         text: © Trafikverket, CC0
       description: Rede rodoviária sueca NVDB com várias opções para camadas de mapa
       name: Opções da Rede Rodoviária Trafikverket
+    wroclaw-orto2015:
+      name: 'Breslávia: Ortofotomapa 2015 (imagens aéreas)'
     wroclaw-orto2018:
       attribution:
         text: Prefeitura de Wroclaw

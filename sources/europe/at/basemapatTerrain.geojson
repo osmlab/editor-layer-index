@@ -1,4 +1,24 @@
 {
+    "type": "Feature",
+    "properties": {
+        "id": "basemap.at-terrain",
+        "name": "basemap.at Terrain",
+        "attribution": {
+            "required": true,
+            "text": "basemap.at",
+            "url": "https://basemap.at"
+        },
+        "description": "Terrain layer provided by basemap.at.",
+        "url": "https://mapsneu.wien.gv.at/basemap/bmapgelaende/grau/google3857/{zoom}/{y}/{x}.jpeg",
+        "license_url": "https://wiki.openstreetmap.org/w/images/1/1d/Permission_to_Incorporate_basemap.at_Into_OpenStreetMap_.pdf",
+        "country_code": "AT",
+        "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
+        "type": "tms",
+        "category": "elevation",
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "privacy_policy_url": "https://basemap.at"
+    },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -769,25 +789,5 @@
                 ]
             ]
         ]
-    },
-    "properties": {
-        "attribution": {
-            "required": true,
-            "text": "basemap.at",
-            "url": "https://basemap.at"
-        },
-        "category": "elevation",
-        "country_code": "AT",
-        "description": "Terrain layer provided by basemap.at.",
-        "icon": "https://basemap.at/wp-content/uploads/sites/53/2019/06/logo-basemap-trans-3-e1561616417483.png",
-        "id": "basemap.at-terrain",
-        "license_url": "https://wiki.openstreetmap.org/w/images/1/1d/Permission_to_Incorporate_basemap.at_Into_OpenStreetMap_.pdf",
-        "max_zoom": 19,
-        "min_zoom": 1,
-        "name": "basemap.at Terrain",
-        "type": "tms",
-        "url": "https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmapgelaende/grau/google3857/{zoom}/{y}/{x}.jpeg",
-        "privacy_policy_url": "https://basemap.at"
-    },
-    "type": "Feature"
+    }
 }

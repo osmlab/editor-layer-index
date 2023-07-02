@@ -1,33 +1,5 @@
 en:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders most recent aerial imagery
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 aerial imagery 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AGIVwerkbestand:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders preliminary aerial imagery
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
-    AIV_Wegenregister:
-      attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: AIV Wegenregister
     Bedzin-PL-aerial_image:
       attribution:
         text: Starostwo Powiatowe w Będzinie
@@ -91,6 +63,34 @@ en:
       attribution:
         text: Urząd Miasta Częstochowy
       name: 'Częstochowa: Buildings'
+    DV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, multidirectional hillshade 0,25 m
+    DV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, Skyview factor 0,25 m
+    DV_GRB:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen GRB
+    DV_OrthoPhoto:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen most recent aerial imagery
+    DV_OrthoPhoto_20132015_10cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen 2013-2015 aerial imagery 10cm
+    DV_OrthoPhoto_Preliminary:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen preliminary aerial imagery
+    DV_Wegenregister:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen Wegenregister
     Dourados_Ortofotos:
       attribution:
         text: Prefeitura Municipal de Dourados - GeoDourados
@@ -205,6 +205,11 @@ en:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: sewer pipes WMS'
+    Geoportal2-PL-shaded_relief_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie cieniowania NMT w siatce 1m x 1m. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2: Shaded relief (WMS)'
     Geoportal2-PL-squares-and-housing-estates_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -307,6 +312,16 @@ en:
         text: Terms & Feedback
       description: Mapbox-provided raster tileset that includes a global basemap of high resolution satellite and aerial imagery
       name: Mapbox Satellite
+    Naturvardsverket-protected:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Swedish national parks, nature reserves and other protected areas and objects
+      name: Environmental Protection Agency - Protected Areas
+    Naturvardsverket-trails:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Daily updated trails in or around nature reserves as recorded by Swedish Environmental Protection Agency
+      name: Environmental Protection Agency - Trails
     OSIPIII_6in:
       attribution:
         text: Ohio Statewide Imagery Program
@@ -355,6 +370,29 @@ en:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
       name: 'OSM Inspector: Tagging'
+    OpenAerialMapMosaic:
+      description: All OpenAerialMap images in one mosaic layer, by Kontur.io
+      name: OpenAerialMap Mosaic, by Kontur.io
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Ancient and historical remains and monuments
+      name: Riksantikvarieämbetet - Archaeological Sites and Monuments
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Heritage buildings and churches
+      name: Riksantikvarieämbetet - Heritage buildings
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Protected areas for heritage buildings and religious heritage sites
+      name: Riksantikvarieämbetet - Protected Heritage Areas
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Ruins of cultural-historical interest
+      name: Riksantikvarieämbetet - Ruins
     SPW_ORTHO_LAST:
       name: SPW(allonie) most recent aerial imagery
     SPW_PICC:
@@ -382,10 +420,13 @@ en:
     US-TIGER-Roads-2021:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2021
+    US-TIGER-Roads-2022:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
+      name: TIGER Roads 2022
     USDA-NAIP:
       attribution:
         text: U.S. Department of Agriculture
-      description: The most recent year of 60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
+      description: The most recent year of 30/60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.
       name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars'
@@ -479,11 +520,6 @@ en:
         text: EUFAR Balaton ortofotó 2010
       description: 1940 geo-tagged photography from Balaton Limnological Institute.
       name: EUFAR Balaton orthophotos
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Good for tracing, but a bit older.
-      name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Gothenburg municipality, CC0
@@ -509,6 +545,16 @@ en:
         text: © Gothenburg municipality, CC0
       description: Orthophoto for Gothenburg municipality
       name: Gothenburg Orthophoto 2019
+    gothenburg-ortho_2021:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto 2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © Gothenburg municipality, CC0
+      description: Orthophoto for Gothenburg municipality
+      name: Gothenburg Orthophoto latest
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -651,6 +697,11 @@ en:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
       name: QA No Address
+    route500:
+      attribution:
+        text: Tiles © cquest@Openstreetmap France, data © IGN, LO/OL
+      description: Routes of the classified network (highways, nationals, departmentals)
+      name: Route 500
     rzeszowski-aerial:
       attribution:
         text: Powiat rzeszowski
@@ -659,10 +710,35 @@ en:
       attribution:
         text: Powiat rzeszowski
       name: 'Powiat rzeszowski: Buildings'
+    scb-industrial:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Geographically delimited areas which are characterized by large-scale and industrial land use
+      name: SCB - Industrial zones
+    scb-settlements:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Contiguous areas of buildings with 50-199 inhabitants and no more than 150 metres between houses
+      name: SCB - Small Settlements
+    scb-urban:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Human settlements of at least 200 people with less than 500 meters between households
+      name: SCB - Urban Areas
+    scb-vacation:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Contiguous areas that consist mainly of holiday homes; a collection of at least 50 holiday homes, where the distance between them does not exceed 150 metres
+      name: SCB - Vacation Home Areas
     skobbler:
       attribution:
         text: '© Tiles: skobbler Map data: OpenStreetMap contributors'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © Skolverket
+      description: Swedish schools.
+      name: Skolverket - Schools
     skoterleder:
       attribution:
         text: © Skoterleder.org
@@ -690,6 +766,11 @@ en:
         text: Susono city orthophoto
       description: The aerial photos released by Susono City as open data.
       name: Susono city orthophoto
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: Swedish transmission network for electricity.
+      name: SVK - Electricity Network
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, Data © OpenStreetMap contributors

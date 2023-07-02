@@ -2,11 +2,9 @@ hr:
   imagery:
     Bing:
       description: Satelitske i zračne snimke.
-      name: Bing zračne snimke
     EsriWorldImagery:
       attribution:
         text: Uvjeti i povratne informacije
-      description: Esri snimke svijeta.
       name: Esri World snimke
     EsriWorldImageryClarity:
       attribution:
@@ -17,7 +15,6 @@ hr:
     Mapbox:
       attribution:
         text: Uvjeti i povratne informacije
-      description: Satelitske i zračne snimke.
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
       attribution:
@@ -82,10 +79,6 @@ hr:
         text: © OpenStreetMap doprinositelji
       description: Javni GNSS tragovi postavljeni na OpenStreetMap.
       name: OpenStreetMap GNSS tragovi
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap doprinositelji, CC-BY-SA
-      name: OpenStreetMap (Standardni Crno Bijelo)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap doprinositelji, CC-BY-SA

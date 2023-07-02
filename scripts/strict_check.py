@@ -199,7 +199,7 @@ def test_image(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool
             return False, r.status_code, None
         filetype: str = magic.from_buffer(r.content, mime=True)  # type: ignore
         # TODO there might be other relevant image mime types
-        return filetype in {"image/png", "image/jpeg"}, r.status_code, filetype
+        return filetype in {"image/png", "image/jpeg", "image/webp"}, r.status_code, filetype
     except Exception as e:
         logger.exception(f"Could not retrieve url: {url}: {e}")
     return False, -1, None
