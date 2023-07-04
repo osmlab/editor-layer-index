@@ -1,14 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Martin_Ortho_2021",
+        "id": "Martin_Ortho_2023",
         "attribution": {
             "url": "https://data-mcgov.opendata.arcgis.com/datasets/2021-imagery",
             "text": "Martin County",
             "required": false
         },
-        "name": "Martin County Orthoimagery (2021)",
-        "url": "https://geoweb.martin.fl.us/raster/services/2021_Imagery/ImageServer/WMSServer?format=image/jpeg&version=1.3.0&service=wms&request=getmap&layers=0&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "name": "Martin County Orthoimagery (2023)",
+        "url": "https://geoweb.martin.fl.us/raster/services/2023_Imagery/ImageServer/WMSServer?format=image/jpeg&version=1.3.0&service=wms&request=getmap&layers=0&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "min_zoom": 5,
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
@@ -20,10 +20,10 @@
             "EPSG:4326",
             "EPSG:6438"
         ],
-        "start_date": "2020-12-18",
-        "end_date": "2021-01-05",
-        "description": "The 2021 orthoimagery for Martin County of the State of Florida",
-        "category": "historicphoto",
+        "start_date": "2023-01-06",
+        "end_date": "2023-01-06",
+        "description": "The 2023 orthoimagery for Martin County of the State of Florida",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.martin.fl.us/privacy-policy"
     },
