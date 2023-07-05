@@ -1,0 +1,72 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Pinellas_Ortho_2023",
+        "attribution": {
+            "url": "https://new-pinellas-egis.opendata.arcgis.com/",
+            "text": "Pinellas County",
+            "required": false
+        },
+        "name": "Pinellas County Orthoimagery (2023)",
+        "icon": "https://pinellas.gov/wp-content/uploads/2020/10/cropped-favicon@4x-192x192.png",
+        "url": "https://egis.pinellas.gov/gis/rest/services/Aerials/Aerials2023/ImageServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "permission_osm": "explicit",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "The 2023 orthoimagery for Pinellas County of the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://pinellas.gov/privacy-and-security-notice/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.77538855510261,
+                    27.56428328994619
+                ],
+                [
+                    -82.60567931263625,
+                    27.578685943004373
+                ],
+                [
+                    -82.56087078631559,
+                    27.86766782820746
+                ],
+                [
+                    -82.56114955406784,
+                    27.936351398879708
+                ],
+                [
+                    -82.62382770324254,
+                    27.963766200107415
+                ],
+                [
+                    -82.62298691120652,
+                    27.97733243279461
+                ],
+                [
+                    -82.63901947879074,
+                    28.004884297533224
+                ],
+                [
+                    -82.6399840866188,
+                    28.183527751659682
+                ],
+                [
+                    -82.96373033996835,
+                    28.182284848875952
+                ],
+                [
+                    -82.77538855510261,
+                    27.56428328994619
+                ]
+            ]
+        ]
+    }
+}
