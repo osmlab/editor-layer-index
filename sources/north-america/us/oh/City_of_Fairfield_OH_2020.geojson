@@ -9,7 +9,7 @@
         },
         "name": "City of Fairfield Orthoimagery (2020)",
         "icon": "https://www.fairfield-city.org/ImageRepository/Document?documentID=6061",
-        "url": "http://gis.fairfield-city.org/maps/rest/services/Imagery_2020/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://gis.fairfield-city.org/cofgis/rest/services/Imagery_2020_WGS/MapServer/export?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 21,
         "license_url": "http://gis.fairfield-city.org/maps/rest/services/Imagery_2020/ImageServer/",
         "country_code": "US",
