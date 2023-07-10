@@ -14,10 +14,11 @@ aiosignal==1.2.0
     # via aiohttp
 async-timeout==4.0.2
     # via aiohttp
-attrs==21.2.0
+attrs==23.1.0
     # via
     #   aiohttp
     #   jsonschema
+    #   referencing
 brotli==1.0.9
     # via aiohttp
 certifi==2022.12.7
@@ -47,8 +48,10 @@ idna==3.3
     #   yarl
 imagehash==4.3.1
     # via -r requirements.in
-jsonschema==4.17.3
+jsonschema==4.18.0
     # via -r requirements.in
+jsonschema-specifications==2023.6.1
+    # via jsonschema
 mercantile==1.2.1
     # via -r requirements.in
 multidict==5.2.0
@@ -70,16 +73,22 @@ pycparser==2.21
     # via cffi
 pyproj==3.4.1
     # via -r requirements.in
-pyrsistent==0.18.0
-    # via jsonschema
 python-magic==0.4.27
     # via -r requirements.in
 pywavelets==1.2.0
     # via imagehash
+referencing==0.29.1
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
 regex==2023.6.3
     # via -r requirements.in
 requests==2.31.0
     # via -r requirements.in
+rpds-py==0.8.10
+    # via
+    #   jsonschema
+    #   referencing
 scipy==1.10.0
     # via imagehash
 shapely==1.8.5.post1
