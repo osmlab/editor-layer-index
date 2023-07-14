@@ -63,6 +63,7 @@ numpy==1.22.0
     #   imagehash
     #   pywavelets
     #   scipy
+    #   shapely
 pillow==10.0.0
     # via
     #   -r requirements.in
@@ -91,7 +92,7 @@ rpds-py==0.8.10
     #   referencing
 scipy==1.10.0
     # via imagehash
-shapely==1.8.5.post1
+shapely==2.0.1
     # via -r requirements.in
 urllib3==1.26.14
     # via
