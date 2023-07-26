@@ -2,41 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    59.198977223476454,
-                    64.8920468958533
-                ],
-                [
-                    64.21646761043934,
-                    64.9195663902952
-                ],
-                [
-                    67.7329509173241,
-                    67.748828729217
-                ],
-                [
-                    67.7329509173241,
-                    68.44327026354412
-                ],
-                [
-                    60.733286610683486,
-                    68.44289182710118
-                ],
-                [
-                    59.198977223476454,
-                    66.91656046303187
-                ],
-                [
-                    59.198977223476454,
-                    64.8920468958533
-                ]
-            ]
+            [ [ 59.199, 64.892 ], [ 64.2165, 64.9196 ], [ 67.733, 67.7488 ], [ 67.733, 68.4433 ], [ 60.7333, 68.4429 ], [ 59.199, 66.9166 ], [ 59.199, 64.892 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -50,7 +21,7 @@
         "name": "imagico.de: Northern and Polar Ural mountains August 2016",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-08-12",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=ural_s2_2016&z={zoom}&x={x}&y={-y}"

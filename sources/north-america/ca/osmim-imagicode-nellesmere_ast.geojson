@@ -2,41 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -81.62923243782096,
-                    82.45969864814401
-                ],
-                [
-                    -65.8116665788654,
-                    82.45969864814401
-                ],
-                [
-                    -65.65785798568925,
-                    83.03232446260982
-                ],
-                [
-                    -72.80309111332822,
-                    83.09567468670448
-                ],
-                [
-                    -83.03136255954291,
-                    83.05876272004272
-                ],
-                [
-                    -83.03136255954291,
-                    82.47985512217643
-                ],
-                [
-                    -81.62923243782096,
-                    82.45969864814401
-                ]
-            ]
+            [ [ -81.6292, 82.4597 ], [ -65.8117, 82.4597 ], [ -65.6579, 83.0323 ], [ -72.8031, 83.0957 ], [ -83.0314, 83.0588 ], [ -83.0314, 82.4799 ], [ -81.6292, 82.4597 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -50,7 +21,7 @@
         "name": "imagico.de: Northern Ellesmere Island",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2012-07-09",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=nellesmere_ast&z={zoom}&x={x}&y={-y}"
