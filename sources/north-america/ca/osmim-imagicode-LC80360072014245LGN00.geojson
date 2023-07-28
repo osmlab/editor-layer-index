@@ -2,33 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -84.34798733886554,
-                    74.38945823827667
-                ],
-                [
-                    -79.14870755370929,
-                    74.38945823827667
-                ],
-                [
-                    -79.14870755370929,
-                    75.89030323920836
-                ],
-                [
-                    -84.34798733886554,
-                    75.89030323920836
-                ],
-                [
-                    -84.34798733886554,
-                    74.38945823827667
-                ]
-            ]
+            [ [ -84.348, 74.3895 ], [ -79.1487, 74.3895 ], [ -79.1487, 75.8903 ], [ -84.348, 75.8903 ], [ -84.348, 74.3895 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -42,7 +21,7 @@
         "name": "imagico.de: Eastern Devon Island coast",
         "max_zoom": 11,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2014-09-02",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80360072014245LGN00&z={zoom}&x={x}&y={-y}"

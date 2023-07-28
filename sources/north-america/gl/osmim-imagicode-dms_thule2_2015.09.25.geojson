@@ -2,49 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -68.74291885235837,
-                    76.52635852412212
-                ],
-                [
-                    -68.71977675297786,
-                    76.52636602351234
-                ],
-                [
-                    -68.71853220799495,
-                    76.5292079974043
-                ],
-                [
-                    -68.72017371991207,
-                    76.5577475347327
-                ],
-                [
-                    -68.72275936940244,
-                    76.56022393334496
-                ],
-                [
-                    -68.7461482320123,
-                    76.56016657973251
-                ],
-                [
-                    -68.74806869366695,
-                    76.54938731810256
-                ],
-                [
-                    -68.74446380475094,
-                    76.52840070669755
-                ],
-                [
-                    -68.74291885235837,
-                    76.52635852412212
-                ]
-            ]
+            [ [ -68.7429, 76.5264 ], [ -68.7198, 76.5264 ], [ -68.7185, 76.5292 ], [ -68.7202, 76.5577 ], [ -68.7228, 76.5602 ], [ -68.7461, 76.5602 ], [ -68.7481, 76.5494 ], [ -68.7445, 76.5284 ], [ -68.7429, 76.5264 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -58,7 +21,7 @@
         "name": "imagico.de: Thule Airbase DMS low altitude overflight September 2015",
         "max_zoom": 17,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-09-25",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=dms_thule2_2015.09.25&z={zoom}&x={x}&y={-y}"

@@ -2,37 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    153.0613810625655,
-                    -11.789228234021259
-                ],
-                [
-                    154.41201277643268,
-                    -11.789228234021259
-                ],
-                [
-                    154.41201277643268,
-                    -11.072292520575749
-                ],
-                [
-                    153.10927458673538,
-                    -11.072292520575749
-                ],
-                [
-                    153.0613810625655,
-                    -11.288690822294749
-                ],
-                [
-                    153.0613810625655,
-                    -11.789228234021259
-                ]
-            ]
+            [ [ 153.0614, -11.7892 ], [ 154.412, -11.7892 ], [ 154.412, -11.0723 ], [ 153.1093, -11.0723 ], [ 153.0614, -11.2887 ], [ 153.0614, -11.7892 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -46,7 +21,7 @@
         "name": "imagico.de: Vanatinai",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2014-12-24",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80910682014358LGN00&z={zoom}&x={x}&y={-y}"

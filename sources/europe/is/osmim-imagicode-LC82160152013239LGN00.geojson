@@ -2,33 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -13.047005598725303,
-                    64.2110895294821
-                ],
-                [
-                    -13.043572371186242,
-                    64.80359943673454
-                ],
-                [
-                    -15.168053572358117,
-                    64.81572800422087
-                ],
-                [
-                    -15.164963667572959,
-                    64.22408122727819
-                ],
-                [
-                    -13.047005598725303,
-                    64.2110895294821
-                ]
-            ]
+            [ [ -13.047, 64.2111 ], [ -13.0436, 64.8036 ], [ -15.1681, 64.8157 ], [ -15.165, 64.2241 ], [ -13.047, 64.2111 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -42,7 +21,7 @@
         "name": "imagico.de: Eastern Iceland",
         "max_zoom": 12,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2013-08-27",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC82160152013239LGN00&z={zoom}&x={x}&y={-y}"
