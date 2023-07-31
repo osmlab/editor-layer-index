@@ -661,7 +661,8 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Geodatastyrelsen og Danske Kommuner"
+            "text": "Geodatastyrelsen og Styrelsen for Dataforsyning og Infrastruktur",
+            "url": "https://dataforsyningen.dk/asset/PDF/rettigheder_vilkaar/Vilk%C3%A5r%20for%20brug%20af%20data%20fra%20GST.pdf"
         },
         "available_projections": [
             "EPSG:4326",
@@ -685,8 +686,8 @@
         "i18n": true,
         "type": "wms",
         "url": "https://kortforsyningen.kms.dk/cp_inspire?LAYERS=CP.CadastralParcel&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LOGIN=OpenStreetMapDK2015&PASSWORD=Gall4Peters",
-        "license_url": "https://download.kortforsyningen.dk/content/om-kortforsyningendownload",
-        "privacy_policy_url": "https://dataforsyningen.dk/Persondata",
+        "license_url": "https://dataforsyningen.dk/Vilkaar",
+        "privacy_policy_url": "https://dataforsyningen.dk/Privatlivspolitik",
         "category": "other"
     },
     "type": "Feature"
