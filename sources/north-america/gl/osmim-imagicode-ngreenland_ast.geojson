@@ -2,53 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -52.49221819430999,
-                    82.48971755550389
-                ],
-                [
-                    -23.404541300879075,
-                    82.48971755550389
-                ],
-                [
-                    -21.183929736898254,
-                    82.74312310369845
-                ],
-                [
-                    -21.183929736898254,
-                    83.39775984253468
-                ],
-                [
-                    -25.263977329098022,
-                    83.58271128961059
-                ],
-                [
-                    -29.525299334683975,
-                    83.7321400994933
-                ],
-                [
-                    -44.52850362441216,
-                    83.7321400994933
-                ],
-                [
-                    -49.28695697579964,
-                    83.47311821807558
-                ],
-                [
-                    -52.49221819430999,
-                    82.94294978186194
-                ],
-                [
-                    -52.49221819430999,
-                    82.48971755550389
-                ]
-            ]
+            [ [ -52.4922, 82.4897 ], [ -23.4045, 82.4897 ], [ -21.1839, 82.7431 ], [ -21.1839, 83.3978 ], [ -25.264, 83.5827 ], [ -29.5253, 83.7321 ], [ -44.5285, 83.7321 ], [ -49.287, 83.4731 ], [ -52.4922, 82.9429 ], [ -52.4922, 82.4897 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -62,7 +21,7 @@
         "name": "imagico.de: Northern Greenland ASTER",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2005-06-21",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=ngreenland_ast&z={zoom}&x={x}&y={-y}"

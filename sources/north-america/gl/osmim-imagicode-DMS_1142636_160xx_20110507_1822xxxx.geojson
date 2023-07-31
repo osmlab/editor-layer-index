@@ -2,41 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [
-                [
-                    -68.93976917529807,
-                    76.51132557714853
-                ],
-                [
-                    -68.67897262836203,
-                    76.51193618208278
-                ],
-                [
-                    -68.50743999744161,
-                    76.51611959755911
-                ],
-                [
-                    -68.50992908740743,
-                    76.55175699880375
-                ],
-                [
-                    -68.76634826923117,
-                    76.55175699880375
-                ],
-                [
-                    -68.93976917529807,
-                    76.54990046497333
-                ],
-                [
-                    -68.93976917529807,
-                    76.51132557714853
-                ]
-            ]
+            [ [ -68.9398, 76.5113 ], [ -68.679, 76.5119 ], [ -68.5074, 76.5161 ], [ -68.5099, 76.5518 ], [ -68.7663, 76.5518 ], [ -68.9398, 76.5499 ], [ -68.9398, 76.5113 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -50,7 +21,7 @@
         "name": "imagico.de: Thule Air Base",
         "max_zoom": 15,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2011-05-07",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=DMS_1142636_160xx_20110507_1822xxxx&z={zoom}&x={x}&y={-y}"
