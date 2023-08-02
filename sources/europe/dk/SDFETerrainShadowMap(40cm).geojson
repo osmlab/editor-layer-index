@@ -661,7 +661,8 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Geodatastyrelsen og Danske Kommuner"
+            "text": "Styrelsen for Dataforsyning og Infrastruktur",
+            "url": "https://dataforsyningen.dk/asset/PDF/rettigheder_vilkaar/Vilk%C3%A5r%20for%20brug%20af%20frie%20geografiske%20data.pdf"
         },
         "available_projections": [
             "EPSG:4326",
@@ -681,11 +682,12 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png",
         "id": "SDFE_Terraen_Skyggekort_40cm",
         "max_zoom": 20,
-        "name": "SDFE Terrain Shadow Map (40 cm)",
+        "name": "SDFI Terrain Shadow Map (40 cm)",
+        "i18n": true,
         "type": "wms",
-        "url": "https://api.dataforsyningen.dk/dhm_DAF?service=WMS&request=GetMap&token=52065b2ec5fda5a46a50b451f3f24473&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "license_url": "https://download.kortforsyningen.dk/content/om-kortforsyningendownload",
-        "privacy_policy_url": "https://dataforsyningen.dk/Persondata",
+        "url": "https://api.dataforsyningen.dk/dhm_DAF?service=WMS&request=GetMap&token=52065b2ec5fda5a46a50b451f3f24473&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&Layers=dhm_terraen_skyggekort&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://dataforsyningen.dk/Vilkaar",
+        "privacy_policy_url": "https://dataforsyningen.dk/Privatlivspolitik",
         "category": "elevation"
     },
     "type": "Feature"

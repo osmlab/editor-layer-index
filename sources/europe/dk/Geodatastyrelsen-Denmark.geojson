@@ -661,17 +661,20 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Geodatastyrelsen og Danske Kommuner",
-            "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser"
+            "text": "Styrelsen for Dataforsyning og Infrastruktur",
+            "url": "https://dataforsyningen.dk/asset/PDF/rettigheder_vilkaar/Vilk%C3%A5r%20for%20brug%20af%20frie%20geografiske%20data.pdf"
         },
         "best": true,
         "country_code": "DK",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png",
         "id": "Geodatastyrelsen_Denmark",
         "max_zoom": 21,
-        "name": "SDFE aerial imagery",
+        "name": "SDFI Aerial Imagery",
+        "i18n": true,
         "type": "tms",
         "url": "https://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg",
+        "license_url": "https://dataforsyningen.dk/Vilkaar",
+        "privacy_policy_url": "https://dataforsyningen.dk/Privatlivspolitik",
         "category": "photo"
     },
     "type": "Feature"
