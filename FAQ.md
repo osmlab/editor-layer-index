@@ -11,7 +11,7 @@ permission.  Attribution of an OGL source is required to appear in the .geojson 
 
 - :white_check_mark: [Data licence Germany - Zero - Version 2.0 (dl-zero-de/2.0)](https://www.govdata.de/dl-de/zero-2-0)
 imagery sources are directly compatible with tracing on OpenStreetMap and do not
-require any additional permission.  Attribution of a Public Domain source is
+require any additional permission.  Attribution of such a source is
 not required, but is encouraged, to appear in the .geojson source file.
 
 - :question: [Creative Commons with condition (CC BY, CC BY-NC, CC BY-SA)](https://creativecommons.org/share-your-work/licensing-types-examples/) imagery sources are most likely compatible with tracing on
