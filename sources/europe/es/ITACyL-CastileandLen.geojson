@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "ITACyL-Castile-and-Leon",
-        "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://orto.wms.itacyl.es/WMS?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=Ortofoto_CyL&SRS={proj}&STYLES=default&LANGUAGE=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "attribution": {
             "text": "ITACyL",
             "required": true
@@ -19,9 +19,10 @@
             "EPSG:32629",
             "EPSG:32630"
         ],
-        "name": "ITACyL - Castile and León",
+        "name": "ITACyL - Castilla y León",
         "country_code": "ES",
-        "category": "photo"
+        "category": "photo",
+        "best": true,
     },
     "geometry": {
         "type": "Polygon",
