@@ -36,8 +36,6 @@ click==8.0.3
     # via mercantile
 colorlog==6.7.0
     # via -r requirements.in
-decorator==5.1.0
-    # via validators
 frozenlist==1.2.0
     # via
     #   aiohttp
@@ -98,7 +96,7 @@ urllib3==2.0.4
     # via
     #   -r requirements.in
     #   requests
-validators==0.20.0
+validators==0.21.2
     # via -r requirements.in
 yarl==1.7.2
     # via aiohttp
