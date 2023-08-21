@@ -4,7 +4,7 @@
         "id": "orthophoto_lyon_2018",
         "name": "Lyon Orthophoto 2018 (8cm)",
         "type": "wms",
-        "url": "https://download.data.grandlyon.com/wms/grandlyon?LAYERS=Ortho2018_Dalle_unique_8cm_CC46&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://imagerie.data.grandlyon.com/wms?LAYERS=grandlyon:ortho_2018&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "best": true,
         "end_date": "2018-04-20",
         "start_date": "2018-04-17",
