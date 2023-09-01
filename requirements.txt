@@ -6,7 +6,7 @@
 #
 aiodns==3.0.0
     # via aiohttp
-aiofiles==23.1.0
+aiofiles==23.2.1
     # via -r requirements.in
 aiohttp[speedups]==3.8.5
     # via -r requirements.in
@@ -36,8 +36,6 @@ click==8.0.3
     # via mercantile
 colorlog==6.7.0
     # via -r requirements.in
-decorator==5.1.0
-    # via validators
 frozenlist==1.2.0
     # via
     #   aiohttp
@@ -48,7 +46,7 @@ idna==3.3
     #   yarl
 imagehash==4.3.1
     # via -r requirements.in
-jsonschema==4.18.4
+jsonschema==4.19.0
     # via -r requirements.in
 jsonschema-specifications==2023.6.1
     # via jsonschema
@@ -82,7 +80,7 @@ referencing==0.29.1
     # via
     #   jsonschema
     #   jsonschema-specifications
-regex==2023.6.3
+regex==2023.8.8
     # via -r requirements.in
 requests==2.31.0
     # via -r requirements.in
@@ -98,7 +96,7 @@ urllib3==2.0.4
     # via
     #   -r requirements.in
     #   requests
-validators==0.20.0
+validators==0.21.2
     # via -r requirements.in
 yarl==1.7.2
     # via aiohttp
