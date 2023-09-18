@@ -4,24 +4,20 @@
         "id": "orthophoto_lyon_2012",
         "name": "Lyon Orthophoto 2012-03 10cm",
         "type": "wms",
-        "url": "https://download.data.grandlyon.com/wms/grandlyon?LAYERS=Ortho2012_vue_ensemble_20cm_CC46&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://imagerie.data.grandlyon.com/geoserver/grandlyon/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2012&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "end_date": "2012-03",
         "start_date": "2012-03",
         "country_code": "FR",
-        "description": "Orthophotographie 2012 du Grand Lyon",
+        "description": "Orthophotographie 2012 de la Métropole de Lyon",
         "available_projections": [
-            "EPSG:27572",
-            "EPSG:27562",
-            "EPSG:2154",
-            "EPSG:3857",
             "EPSG:4326",
-            "EPSG:3946",
-            "EPSG:4171"
+            "EPSG:2154",
+            "EPSG:3946"
         ],
         "attribution": {
-            "url": "https://data.grandlyon.com/jeux-de-donnees/orthophotographie-2012-metropole-lyon/info",
-            "text": "Grand Lyon Smart Data DSIT",
-            "required": false
+            "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/orthophotographie-2012-metropole-lyon/info",
+            "text": "Grand Lyon Smart Data DSIT 2012",
+            "required": true
         },
         "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
         "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
