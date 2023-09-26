@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "name": "NRW Orthophoto",
+        "name": "NRW vDOP",
         "type": "wms",
-        "url": "https://www.wms.nrw.de/geobasis/wms_nw_dop?LAYERS=nw_dop_rgb&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://www.wms.nrw.de/geobasis/wms_nw_vdop?LAYERS=nw_vdop_rgb&STYLES=default&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "https://www.bezreg-koeln.nrw.de/system/files/media/document/file/lizenzbedingungen_geobasis_nrw.pdf",
         "privacy_policy_url": "https://www.land.nrw/de/datenschutzhinweise",
-        "id": "nrw_ortho_wms",
-        "description": "RGB-/Colorbild - Normale farbliche Darstellung.",
+        "id": "nrw_vdop_wms",
+        "description": "10cm Bodenauflösung, Zwischenergebnisse aus dem Herstellungsprozess der Digitalen Orthophotos (DOP)",
         "country_code": "DE",
-        "best": false,
+        "best": true,
         "category": "photo",
         "available_projections": [
             "EPSG:3034",
