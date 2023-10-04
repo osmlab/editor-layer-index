@@ -10,13 +10,13 @@ ko:
     EsriWorldImagery:
       attribution:
         text: 이용 약관
-      description: Esri 세계 이미지
-      name: Esri 세계 이미지
+      description: Esri 전세계 항공 지도
+      name: Esri 전세계 항공 지도
     EsriWorldImageryClarity:
       attribution:
         text: 약관 & 피드백
       description: Esri archive 이미지는 기본 레이어보다 명확하고 정확할 수 있습니다.
-      name: Esri (선명한) 세계 이미지 베타
+      name: Esri 전세계 항공 지도 (고화질) Beta
     MAPNIK:
       description: 기본 OpenStreetMap 레이어
       name: OpenStreetMap (일반)
@@ -24,7 +24,12 @@ ko:
       attribution:
         text: 이용 약관
       description: 고해상도 위성, 항공사진의 글로벌 기본 지도를 포함한 Mapbox 제공 래스터 타일셋
-      name: Mapbox 위성
+      name: Mapbox 위성 지도
+    OSIP:
+      name: 미국 오하이오 주 항공 지도
+    OSIP_1ft:
+      attribution:
+        text: 미국 오하이오 주 항공 지도
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
@@ -57,6 +62,14 @@ ko:
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
       name: TIGER Roads 2018
+    US-TIGER-Roads-2020:
+      name: TIGER 미국 도로 레이어 (2020년 기준)
+    US-TIGER-Roads-2021:
+      name: TIGER 미국 도로 레이어 (2021년 기준)
+    US-TIGER-Roads-2022:
+      name: TIGER 미국 도로 레이어 (2022년 기준)
+    USDA-NAIP:
+      name: 국가 농업 이미지 프로그램
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap 기여자, CC by-SA 3.0
@@ -90,6 +103,14 @@ ko:
     basemap.at-overlay:
       attribution:
         text: basemap.at
+    gsi.go.jp_airphoto:
+      attribution:
+        text: 일본 국토지리원
+      name: 일본 국토지리원 항공 사진
+    gsi.go.jp_std_map:
+      attribution:
+        text: 일본 국토지리원
+      name: 일본 국토지리원 표준 지도
     mapbox_locator_overlay:
       attribution:
         text: 이용 약관
@@ -100,7 +121,16 @@ ko:
         text: © OpenStreetMap 기여자, CC-BY-SA
       name: OpenPT Map (오버레이)
     openrailwaymap:
+      attribution:
+        text: '렌더링: OpenRailwayMap, © 지도 데이터 OpenStreetMap 기여자'
+      description: 오픈스트리트맵 데이터에 기반한 철도 시설물을 보여주는 오버레이 이미지
       name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: '렌더링: OpenRailwayMap, © 지도 데이터 OpenStreetMap 기여자'
+      description: 오픈스트리트맵 데이터에 기반한 철도의 제한 속도를 보여주는 오버레이 이미지
+    openrailwaymap-signalling:
+      description: 오픈스트리트맵 데이터에 기반한 철도 신호를 보여주는 오버레이 이미지
     osm-gps:
       attribution:
         text: © OpenStreetMap 기여자
