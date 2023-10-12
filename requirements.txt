@@ -8,7 +8,7 @@ aiodns==3.0.0
     # via aiohttp
 aiofiles==23.2.1
     # via -r requirements.in
-aiohttp[speedups]==3.8.5
+aiohttp[speedups]==3.8.6
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
@@ -46,7 +46,7 @@ idna==3.3
     #   yarl
 imagehash==4.3.1
     # via -r requirements.in
-jsonschema==4.19.0
+jsonschema==4.19.1
     # via -r requirements.in
 jsonschema-specifications==2023.6.1
     # via jsonschema
@@ -62,7 +62,7 @@ numpy==1.22.0
     #   pywavelets
     #   scipy
     #   shapely
-pillow==10.0.0
+pillow==10.0.1
     # via
     #   -r requirements.in
     #   imagehash
@@ -70,7 +70,7 @@ pycares==4.3.0
     # via aiodns
 pycparser==2.21
     # via cffi
-pyproj==3.6.0
+pyproj==3.6.1
     # via -r requirements.in
 python-magic==0.4.27
     # via -r requirements.in
@@ -92,7 +92,7 @@ scipy==1.10.0
     # via imagehash
 shapely==2.0.1
     # via -r requirements.in
-urllib3==2.0.4
+urllib3==2.0.6
     # via
     #   -r requirements.in
     #   requests
