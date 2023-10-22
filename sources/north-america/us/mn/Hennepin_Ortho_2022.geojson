@@ -9,7 +9,7 @@
         },
         "name": "Hennepin County Orthoimagery (2022)",
         "icon": "https://www.hennepin.us/branding-assets/img/h-logo-blue.png",
-        "url": "https://gis.hennepin.us/arcgis/services/Imagery/UTM_Aerial_2022/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis.hennepin.us/arcgis/services/Imagery/UTM_Aerial_2022/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
         "license_url": "https://metrogis.org/getmedia/3847b6d1-9609-4223-8f1c-591a7780fabb/HennepinCountyResolution_2014_02_11.pdf.aspx",
         "country_code": "US",
@@ -24,7 +24,7 @@
         "description": "True color, leaf-off orthoimagery for Hennepin County of the State of Minnesota captured in 2022 Spring",
         "category": "photo",
         "valid-georeference": true,
-        "privacy_policy_url": "https://www.hennepin.us/your-government/open-government/accessibility-privacy-security"
+        "privacy_policy_url": "https://www.hennepin.us/your-government/open-government/website-privacy-security"
     },
     "geometry": {
         "type": "Polygon",
