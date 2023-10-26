@@ -1,20 +1,20 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Rennes_2020",
-        "name": "Rennes - 2020",
+        "id": "rennes_ortho_2020_osmfr",
+        "name": "Rennes orthophotographie 2020 (20 cm) via OSM France",
         "type": "tms",
         "default": false,
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/rennes_2020/{zoom}/{x}/{y}",
-        "category": "photo",
+        "category": "historicphoto",
         "start_date": "2020-08-07",
         "end_date": "2020-09-14",
         "attribution": {
-            "text": "Rennes M\u00e9tropole - IGNF - 2020",
-            "url": "https://data.rennesmetropole.fr/explore/dataset/orthophotographie-2020/information/",
+            "text": "Ortho Express 2020 - IGNF",
+            "url": "https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/329859b4-84cd-497e-af48-4bd35c8ea209",
             "required": true
         },
-        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
         "country_code": "FR",
         "max_zoom": 21
     },
