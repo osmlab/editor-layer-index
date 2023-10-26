@@ -1,0 +1,49 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "rennes_ortho_2020_tms",
+        "name": "Rennes orthophotographie 2020 (20 cm)",
+        "type": "tms",
+        "default": false,
+        "url": "https://public.sig.rennesmetropole.fr/geowebcache/service/tms/1.0.0/raster:ortho2020@EPSG:3857@jpeg/{z}/{x}/{-y}.jpg",
+        "category": "historicphoto",
+        "start_date": "2020-08-07",
+        "end_date": "2020-09-14",
+        "attribution": {
+            "text": "Ortho Express 2020 - IGNF",
+            "url": "https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/329859b4-84cd-497e-af48-4bd35c8ea209",
+            "required": true
+        },
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
+        "country_code": "FR",
+        "max_zoom": 20,
+        "min_zoom": 12,
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+        [
+            [
+                -2.02016000000,
+                48.32275000000
+            ],
+            [
+                -1.97926000000,
+                47.90091000000
+            ],
+            [
+                -1.42076000000,
+                47.92383000000
+            ],
+            [
+                -1.45624000000,
+                48.34589000000
+            ],
+            [
+                -2.02016000000,
+                48.32275000000
+            ]
+        ]
+        ]
+    }
+}
