@@ -7,10 +7,12 @@
             "required": true
         },
         "name": "ICGC - Topogràfic de Catalunya ",
-        "url": "https://geoserveis.icgc.cat/icc_mapesmultibase/utm/wms/service?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=topo&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoserveis.icgc.cat/icc_mapesmultibase/utm/wms/service?LAYERS=topo&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
         "type": "wms",
         "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
             "EPSG:23031",
             "EPSG:25831",
             "EPSG:32631"
