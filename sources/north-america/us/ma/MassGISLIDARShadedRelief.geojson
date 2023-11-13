@@ -6,10 +6,10 @@
         "icon": "https://www.mass.gov/files/styles/organization_logo/public/2017-05/massgis_logo_401x300.png",
         "category": "elevation",
         "type": "tms",
-        "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/LiDAR_ShadedRelief/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/LiDAR_ShadedRelief_18Nant_21EC/MapServer/tile/{zoom}/{y}/{x}",
         "country_code": "US",
         "best": false,
-        "min_zoom": 6,
+        "min_zoom": 7,
         "max_zoom": 19,
         "attribution": {
             "url": "https://www.mass.gov/info-details/massgis-data-lidar-terrain-data",
@@ -17,8 +17,8 @@
             "required": false
         },
         "valid-georeference": true,
-        "start_date": "2010-12-02",
-        "end_date": "2015-12-31",
+        "start_date": "2013-11-16",
+        "end_date": "2021-04-24",
         "license_url": "https://wiki.openstreetmap.org/wiki/MassGIS#Right_to_Use",
         "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
     },
