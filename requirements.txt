@@ -8,7 +8,7 @@ aiodns==3.0.0
     # via aiohttp
 aiofiles==23.2.1
     # via -r requirements.in
-aiohttp[speedups]==3.8.6
+aiohttp[speedups]==3.9.0
     # via
     #   -r requirements.in
     #   aiohttp
@@ -31,9 +31,7 @@ certifi==2023.11.17
 cffi==1.15.1
     # via pycares
 charset-normalizer==2.0.9
-    # via
-    #   aiohttp
-    #   requests
+    # via requests
 click==8.0.3
     # via mercantile
 colorlog==6.7.0
