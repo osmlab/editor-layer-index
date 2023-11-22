@@ -1,13 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "orthophoto_lyon",
+        "id": "orthophoto_lyon_2015",
         "name": "Lyon Orthophoto 2015 (8cm)",
         "type": "tms",
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/lyon/{zoom}/{x}/{y}",
         "end_date": "2015-05",
         "start_date": "2015-05",
         "country_code": "FR",
+        "description": "Orthophotographie 2015 de la Métropole de Lyon",
         "max_zoom": 23,
         "min_zoom": 2,
         "attribution": {
@@ -15,8 +16,8 @@
             "text": "Métropole de Lyon DINSI 2015",
             "required": true
         },
-        "license_url": "https://download.data.grandlyon.com/files/grandlyon/LicenceOuverte.pdf",
-        "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
+        "license_url": "https://data.grandlyon.com/portail/fr/assets/licences/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "privacy_policy_url": "https://data.grandlyon.com/portail/en/donnees-personnelles",
         "category": "historicphoto"
     },
     "geometry": {
