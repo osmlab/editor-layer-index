@@ -29,6 +29,7 @@ Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
 
 Supported WMS tokens:
 - `{proj}` - requested projection (e.g. EPSG:3857)
+- `{wkid}` - same as proj, but without the prefix (e.g. 3857)
 - `{width}`, `{height}` - requested image dimensions (e.g. 256, 512)
 - `{bbox}` - requested bounding box
 

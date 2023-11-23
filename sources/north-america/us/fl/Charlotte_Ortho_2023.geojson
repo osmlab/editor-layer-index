@@ -1,0 +1,106 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Charlotte_Ortho_2023",
+        "attribution": {
+            "url": "https://www.charlottecountyfl.gov/gis/",
+            "text": "Charlotte County Geographic Information Systems",
+            "required": false
+        },
+        "name": "Charlotte County Orthoimagery (2023)",
+        "url": "https://agis.charlottecountyfl.gov/arcgis/rest/services/Aerials/Aerials2023/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 22,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "The 2023 orthoimagery for Charlotte County in the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.charlottecountyfl.gov/website-policies/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.264505026179449,
+                    26.947009935840335
+                ],
+                [
+                    -82.388094160065393,
+                    26.946046566785935
+                ],
+                [
+                    -82.26122586612874,
+                    26.699424088852989
+                ],
+                [
+                    -82.064758789591934,
+                    26.768295713080359
+                ],
+                [
+                    -82.003621907291844,
+                    26.7684624500321
+                ],
+                [
+                    -82.003621907291844,
+                    26.795974047067144
+                ],
+                [
+                    -81.988226528748996,
+                    26.795918468083233
+                ],
+                [
+                    -81.9882821077329,
+                    26.823430065118277
+                ],
+                [
+                    -81.972886729190051,
+                    26.823430065118277
+                ],
+                [
+                    -81.972858939698085,
+                    26.837213653127755
+                ],
+                [
+                    -81.957519140139141,
+                    26.837185863635796
+                ],
+                [
+                    -81.957463561155208,
+                    26.878453259188358
+                ],
+                [
+                    -81.94222102481811,
+                    26.878536627664218
+                ],
+                [
+                    -81.942151551088202,
+                    26.9885135420745
+                ],
+                [
+                    -81.988254318240848,
+                    26.98844406834462
+                ],
+                [
+                    -81.988166318183048,
+                    27.043476525578704
+                ],
+                [
+                    -82.264704184205073,
+                    27.043300525462982
+                ],
+                [
+                    -82.264505026179449,
+                    26.947009935840335
+                ]
+            ]
+        ]
+    }
+}
