@@ -5,7 +5,7 @@
         "attribution": {
             "url": "http://actmapi.act.gov.au/terms.html",
             "text": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
-            "required":true
+            "required": true
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
         "privacy_policy_url": "https://www.planning.act.gov.au/about-us/privacy",
@@ -16,12 +16,12 @@
         "url": "https://data4.actmapi.act.gov.au/arcgis/rest/services/ACT_IMAGERY/imagery202112gda2020/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
         "start_date": "2021-12",
         "end_date": "2021-12",
-        "max_zoom":21,
+        "max_zoom": 21,
         "country_code": "AU",
         "type": "wms",
         "icon": "https://actmapi.act.gov.au/img/apple-touch-icon.png",
         "category": "photo",
-        "min_zoom":5
+        "min_zoom": 5
     },
     "geometry": {
         "type": "Polygon",
