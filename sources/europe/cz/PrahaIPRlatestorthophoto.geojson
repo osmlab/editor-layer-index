@@ -1,17 +1,22 @@
 {
     "type": "Feature",
     "properties": {
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/cz/IPR_Praha.png",
         "id": "PrahaIPRlatestorthophoto",
         "name": "Praha IPR latest orthophoto",
+        "description": "Yearly IPR Praha orthophotos, usually taken in summer months when vegetation is fully grown",
         "type": "wms",
-        "url": "http://giswa1.mag.mepnet.cz/arcgis/services/MAP/letecke_snimky_posledni_snimkovani_cache/MapServer/WmsServer?LAYERS=0&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gs-pub.praha.eu/imgs/services/ort/letecke_snimkovani/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "CZ",
-        "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#Ortofotomapy_IPR_Praha",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Cs:%C4%8Cesko/freemap#Mapov%C3%A9_podklady_IPR_Praha",
+        "privacy_policy_url": "https://iprpraha.cz/stranka/95/informace-o-zpracovani-osobnich-udaju",
         "available_projections": [
             "CRS:84",
             "EPSG:4326",
             "EPSG:5514"
         ],
+        "valid-georeference": true,
         "max_zoom": 20,
         "min_zoom": 1,
         "category": "photo"
@@ -21,24 +26,160 @@
         "coordinates": [
             [
                 [
-                    14.8123155,
-                    49.930893
+                    14.3045424,
+                    49.9953812
                 ],
                 [
-                    14.7450243,
-                    50.2524746
+                    14.3160437,
+                    49.9420515
                 ],
                 [
-                    14.1202546,
-                    50.1988154
+                    14.3499984,
+                    49.9450826
                 ],
                 [
-                    14.1875458,
-                    49.8768727
+                    14.3538387,
+                    49.9272636
                 ],
                 [
-                    14.8123155,
-                    49.930893
+                    14.4238532,
+                    49.9335155
+                ],
+                [
+                    14.4200902,
+                    49.9509734
+                ],
+                [
+                    14.4886545,
+                    49.9570928
+                ],
+                [
+                    14.4847904,
+                    49.9750112
+                ],
+                [
+                    14.5538599,
+                    49.9811726
+                ],
+                [
+                    14.5501177,
+                    49.9985169
+                ],
+                [
+                    14.584554,
+                    50.0015874
+                ],
+                [
+                    14.5882961,
+                    49.9842442
+                ],
+                [
+                    14.6916813,
+                    49.9934647
+                ],
+                [
+                    14.6763364,
+                    50.0645274
+                ],
+                [
+                    14.7127886,
+                    50.0677732
+                ],
+                [
+                    14.7011537,
+                    50.1215811
+                ],
+                [
+                    14.6647015,
+                    50.118339
+                ],
+                [
+                    14.6610032,
+                    50.1354309
+                ],
+                [
+                    14.6275529,
+                    50.1324566
+                ],
+                [
+                    14.6196534,
+                    50.1689466
+                ],
+                [
+                    14.5854274,
+                    50.1659055
+                ],
+                [
+                    14.5816292,
+                    50.1834417
+                ],
+                [
+                    14.4077627,
+                    50.1679956
+                ],
+                [
+                    14.4115609,
+                    50.1504537
+                ],
+                [
+                    14.3776485,
+                    50.1474393
+                ],
+                [
+                    14.3737956,
+                    50.1652351
+                ],
+                [
+                    14.3389282,
+                    50.1621367
+                ],
+                [
+                    14.3427811,
+                    50.1443398
+                ],
+                [
+                    14.2736793,
+                    50.1381964
+                ],
+                [
+                    14.2774903,
+                    50.1205846
+                ],
+                [
+                    14.2087996,
+                    50.1144748
+                ],
+                [
+                    14.2128882,
+                    50.0955707
+                ],
+                [
+                    14.2465629,
+                    50.0985672
+                ],
+                [
+                    14.2541738,
+                    50.0633589
+                ],
+                [
+                    14.2198706,
+                    50.0603042
+                ],
+                [
+                    14.2236965,
+                    50.0425948
+                ],
+                [
+                    14.2579997,
+                    50.0456506
+                ],
+                [
+                    14.2695265,
+                    49.9922586
+                ],
+                [
+                    14.3045424,
+                    49.9953812
                 ]
             ]
         ]
