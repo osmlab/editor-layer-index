@@ -3,16 +3,20 @@
     "properties": {
         "id": "stamen-terrain-background",
         "name": "Stamen Terrain",
+        "description": "A background layer focused on terrain types (via OSM and ESA data) and elevation (hillshading of open elevation datasets via Joerd).",
         "i18n": true,
         "attribution": {
-            "url": "http://maps.stamen.com/#terrain",
-            "text": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL",
+            "text": "© Stadia Maps © Stamen Design © OpenMapTiles © OpenStreetMap contributors",
+            "html": "&copy; <a href=\"https://stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/about/\" target=\"_blank\">OpenStreetMap contributors</a>",
+            "url": "http://stadiamaps.com/",
             "required": true
         },
-        "url": "https://stamen-tiles-{switch:a,b,c,d}.a.ssl.fastly.net/terrain-background/{zoom}/{x}/{y}.jpg",
+        "permission_osm": "explicit",
+        "license_url": "https://stadiamaps.com/attribution/",
+        "privacy_policy_url": "https://stadiamaps.com/privacy/",
+        "url": "https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.png",
         "icon": "https://stamen.com/wp-content/uploads/2016/07/stamen_compass_rose_small-01.png",
-        "max_zoom": 18,
-        "min_zoom": 4,
+        "max_zoom": 20,
         "type": "tms",
         "category": "elevation"
     },
