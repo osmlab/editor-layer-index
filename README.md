@@ -5,7 +5,7 @@
 The goal of this project is to maintain a canonical representation of the layers available to [OpenStreetMap](https://www.openstreetmap.org/) editors such as:
 
 * [iD](https://github.com/openstreetmap/iD)
-* [Vespucci](http://vespucci.io/) (historically)
+* [Vespucci](http://vespucci.io/)
 * [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!)
 * [Potlatch 2](https://github.com/systemed/potlatch2) and
 * [JOSM](https://josm.openstreetmap.de/) (optional)
