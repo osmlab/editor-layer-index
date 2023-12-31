@@ -7,7 +7,7 @@
             "required": true
         },
         "name": "ICGC - Ortofoto de Catalunya Provisional",
-        "url": "http://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofoto_color_provisional&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms?LAYERS=ortofoto_color_provisional&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
         "type": "wms",
         "available_projections": [
@@ -16,7 +16,6 @@
             "EPSG:4258",
             "EPSG:4326",
             "EPSG:23031",
-            "EPSG:25830",
             "EPSG:25831",
             "EPSG:32631"
         ],
