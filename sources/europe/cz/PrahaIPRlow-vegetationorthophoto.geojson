@@ -6,13 +6,14 @@
         "name": "Praha IPR low-vegetation orthophoto",
         "description": "Yearly IPR Praha orthophotos, taken after the leaves are fallen from the trees",
         "type": "wms",
-        "url": "https://gs-pub.praha.eu/imgs/services/ort/mimovegetacni_letecke_snimkovani/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gs-pub.praha.eu/imgs/services/ort/mimovegetacni_letecke_snimkovani/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "CZ",
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Cs:%C4%8Cesko/freemap#Mapov%C3%A9_podklady_IPR_Praha",
         "privacy_policy_url": "https://iprpraha.cz/stranka/95/informace-o-zpracovani-osobnich-udaju",
         "available_projections": [
             "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
             "EPSG:5514"
         ],
