@@ -1,22 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Franklin_OH_2019",
+        "id": "Franklin_OH_2021",
         "attribution": {
             "url": "https://auditor-fca.opendata.arcgis.com/",
             "text": "Franklin County Auditor, State of Ohio",
             "required": false
         },
-        "name": "Franklin County Orthoimagery (2019)",
-        "icon": "https://maps.franklincountyauditor.com/assets/Icons/50x50FCAstar.png",
-        "url": "https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2019/MapServer/WMTS/tile/1.0.0/Imagery_Imagery2019/default/default028mm/{zoom}/{y}/{x}",
+        "name": "Franklin County Orthoimagery (2021)",
+        "icon": "https://commissioners.franklincountyohio.gov/COMM-website/media/Assets/seal-franklin-county.png",
+        "url": "https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2021/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 21,
-        "license_url": "https://auditor-fca.opendata.arcgis.com/datasets/fca::2019-aerial-photography",
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
         "country_code": "US",
         "type": "tms",
-        "start_date": "2019",
-        "end_date": "2019",
-        "description": "Spring 2019 orthoimagery for Franklin County in the State of Ohio",
+        "start_date": "2021",
+        "end_date": "2021",
+        "description": "Spring 2021 orthoimagery for Franklin County in the State of Ohio",
         "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.columbus.gov/Privacy/"
