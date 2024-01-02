@@ -1,0 +1,68 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Vicmap-address_no",
+        "attribution": {
+            "url": "https://discover.data.vic.gov.au/dataset/vicmap-address-address-point",
+            "text": "The State of Victoria Department of Energy, Environment and Climate Action 2023",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
+        "privacy_policy_url": "https://www.data.vic.gov.au/privacy-vicgovau",
+        "name": "Vicmap Address - Address Point",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&request=getmap&format=image%2Fpng8&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:address&styles=open-data-platform:address_no",
+        "overlay": true,
+        "max_zoom": 22,
+        "country_code": "AU",
+        "type": "wms",
+        "icon": "https://discover.data.vic.gov.au/favicon.ico",
+        "category": "other"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    140.78981612554276,
+                    -33.87149474359404
+                ],
+                [
+                    142.59568205297808,
+                    -33.87149474359404
+                ],
+                [
+                    144.6901566902764,
+                    -35.65298580958766
+                ],
+                [
+                    148.48329973420329,
+                    -35.65298580958766
+                ],
+                [
+                    148.48329973420329,
+                    -36.737646052025596
+                ],
+                [
+                    150.4953147401128,
+                    -37.5199801204954
+                ],
+                [
+                    150.4953147401128,
+                    -39.32226904642633
+                ],
+                [
+                    140.78981612554276,
+                    -39.32226904642633
+                ],
+                [
+                    140.78981612554276,
+                    -33.87149474359404
+                ]
+            ]
+        ]
+    }
+}
