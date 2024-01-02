@@ -12,7 +12,8 @@
         "name": "Vicmap Address - Address Point",
         "available_projections": [
             "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:4326",
+            "CRS:84"
         ],
         "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng8&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:address&styles=open-data-platform:address_no",
         "overlay": true,
