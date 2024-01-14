@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA_Micronesia_2023",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "USDA Micronesia Imagery (2023)",
+        "type": "wms",
+        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/micronesia_vivid_2023_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=micronesia_vivid_2023_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2016-11-11",
+        "end_date": "2023-08-03",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "FM",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    163.373429275922462,
+                    5.98505344128734
+                ],
+                [
+                    136.569223497932114,
+                    13.303997896401635
+                ],
+                [
+                    136.774521388045969,
+                    7.552230748292314
+                ],
+                [
+                    163.514571575375726,
+                    -2.535897507641291
+                ],
+                [
+                    163.373429275922462,
+                    5.98505344128734
+                ]
+            ]
+        ]
+    }
+}
