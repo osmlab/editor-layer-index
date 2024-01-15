@@ -11,9 +11,19 @@
         "privacy_policy_url": "https://www.data.vic.gov.au/privacy-vicgovau",
         "name": "Vicmap Hydro - Watercourse Line",
         "available_projections": [
+            "CRS:84",
+            "EPSG:3111",
             "EPSG:3857",
+            "EPSG:4283",
             "EPSG:4326",
-            "CRS:84"
+            "EPSG:7844",
+            "EPSG:7854",
+            "EPSG:7855",
+            "EPSG:7856",
+            "EPSG:7899",
+            "EPSG:28354",
+            "EPSG:28355",
+            "EPSG:28356"
         ],
         "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:hy_watercourse&styles=line",
         "overlay": true,
