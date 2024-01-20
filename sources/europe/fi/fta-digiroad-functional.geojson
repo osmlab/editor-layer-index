@@ -2,11 +2,11 @@
     "type": "Feature",
     "properties": {
         "type": "wms",
-        "name": "FTIA Road Networkk",
+        "name": "FTIA Road Network",
         "id": "fta-digiroad-functional",
         "country_code": "FI",
         "description": "Digiroad national road network from the Finnish Transport Agency, functional road classes.",
-        "url": "https://julkinen.vayla.fi/inspirepalvelu/wms?LAYERS=digiroad:dr_tielinkki_toim_lk&STYLES=digiroad:DR_Tielinkki_toiminnallinen_luokka_2018&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://avoinapi.vaylapilvi.fi/vaylatiedot/digiroad/ows?LAYERS=digiroad:dr_tielinkki_toim_lk&STYLES=digiroad:DR_Tielinkki_toiminnallinen_luokka&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/V%C3%A4yl%C3%A4virasto_logo.svg/200px-V%C3%A4yl%C3%A4virasto_logo.svg.png",
         "min_zoom": 3,
         "max_zoom": 20,
