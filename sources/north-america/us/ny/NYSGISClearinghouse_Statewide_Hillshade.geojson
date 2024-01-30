@@ -1379,7 +1379,7 @@
         "max_zoom": 19,
         "name": "NYSDOP Latest Orthoimagery (Natural Color)",
         "type": "wms",
-        "url": "https://elevation.its.ny.gov/arcgis/rest/services/NYS_Statewide_Hillshade/MapServer/export?format=png8&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width}%2C{height}&f=image",
+        "url": "https://elevation.its.ny.gov/arcgis/rest/services/NYS_Statewide_Hillshade/MapServer/export?format=png8&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width}%2C{height}&f=image&foo={proj",
         "privacy_policy_url": "https://its.ny.gov/its-internet-security-and-privacy-policy",
         "category": "photo",
         "valid-georeference": true
