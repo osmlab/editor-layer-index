@@ -7,16 +7,18 @@
         "description": "Fotografía aérea tomada en el año 2017",
         "url": "https://servicios.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/fotografias_aereas_2017_caba_3857@GoogleMapsCompatible/{zoom}/{x}/{-y}.png",
         "country_code": "AR",
+        "end_date": "2017",
+        "start_date": "2017",
         "attribution": {
             "text": "Gobierno de la Ciudad de Buenos Aires",
             "url": "https://data.buenosaires.gob.ar/dataset/tiles-fotografia-aerea"
         },
         "icon": "https://buenosaires.gob.ar/inicio/favicon.ico",
+        "min_zoom": 9,
         "max_zoom": 18,
         "available_projections": [
             "EPSG:3857"
         ],
-        "min_zoom": 9,
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/File:Solicitud-de-permiso-para-usar-datos-de-BA-Data-en-OpenStreetMap.png",
         "privacy_policy_url": "https://buenosaires.gob.ar/inicio/privacidad",
