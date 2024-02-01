@@ -6,7 +6,7 @@
         "id": "fta-digiroad-functional",
         "country_code": "FI",
         "description": "Digiroad national road network from the Finnish Transport Agency, functional road classes.",
-        "url": "https://avoinapi.vaylapilvi.fi/vaylatiedot/digiroad/ows?LAYERS=digiroad:dr_tielinkki_toim_lk&STYLES=digiroad:DR_Tielinkki_toiminnallinen_luokka&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://avoinapi.vaylapilvi.fi/vaylatiedot/digiroad/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=dr_tielinkki_toim_lk&STYLES=DR_Tielinkki_toiminnallinen_luokka&WIDTH={width}&HEIGHT={height}&CRS={proj}&BBOX={bbox}",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/V%C3%A4yl%C3%A4virasto_logo.svg/200px-V%C3%A4yl%C3%A4virasto_logo.svg.png",
         "min_zoom": 3,
         "max_zoom": 20,
