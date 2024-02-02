@@ -14,6 +14,9 @@
           "url": "https://geoservices.ign.fr/services-web-experts-ortho",
           "required": true
         },
+        "available_projections": [
+            "EPSG:4326",
+        ],
         "country_code": "FR",
         "max_zoom": 21,
         "min_zoom": 3,
