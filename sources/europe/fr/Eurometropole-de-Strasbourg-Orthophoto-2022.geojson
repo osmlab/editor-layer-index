@@ -14,6 +14,11 @@
             "url": "https://data.strasbourg.eu/explore/dataset/service-wms-des-orthophotographies/information/",
             "required": true
         },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3948"
+        ],
         "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
         "country_code": "FR",
         "max_zoom": 22,
