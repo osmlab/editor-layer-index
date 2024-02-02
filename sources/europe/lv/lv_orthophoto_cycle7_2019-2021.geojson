@@ -1,10 +1,10 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LV_ORTOFOTO_C6",
-        "name": "Orthophoto (2016–2018), 1:5000, Latvia",
+        "id": "LV_ORTOFOTO_C7",
+        "name": "Orthophoto (2019–2021), 1:5000, Latvia",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:Orto_6cikls&STYLES=&FORMAT=image/vnd.jpeg-png8&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:Orto_7cikls&STYLES=&FORMAT=image/vnd.jpeg-png8&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
@@ -15,13 +15,13 @@
         "attribution": {
             "text": "LĢIA (Latvian Geospatial Information Agency) provided these open data (CC0). WMS service is provided by LVM (Latvian State Forestry)."
         },
-        "license_url": "https://www.lgia.gov.lv/en/color-orthophoto-map-2016-2018-cycle-6",
+        "license_url": "https://www.lgia.gov.lv/en/node/857",
         "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
-        "best": false,
-        "description": "This service includes a color orthophoto map for the entire territory of Latvia with a resolution of 0.25 meters, obtained from aerial photography data for the years 2016-2018. The orthophoto map is linked to the LKS-92 TM coordinate system. The map sheet breakdown corresponds to the TKS-93 M 1:5000 map sheet nomenclature breakdown. WMS service is freely provided by LVM (Latvian State Forestry, https://lvmgeo.lv/en/data).",
-        "start_date": "2016-01-01",
-        "end_date": "2018-12-31",
-        "category": "historicphoto"
+        "best": true,
+        "description": "This service includes a color orthophoto map for the entire territory of Latvia with a resolution of 0.25 meters, obtained from aerial photography data for the years 2019-2021. For the first time for the entire territory of Latvia, the longitudinal coverage between scenes will be 80% (previously 60%), which ensures the preparation of a high-resolution digital surface model. Delivered aerial photography images will be in multispectral (RGBI) and black and white (PAN) color spectrums. The orthophoto map is linked to the LKS-92 TM coordinate system. The map sheet breakdown corresponds to the TKS-93 M 1:5000 map sheet nomenclature breakdown. WMS service is freely provided by LVM (Latvian State Forestry, https://lvmgeo.lv/en/data).",
+        "start_date": "2019-01-01",
+        "end_date": "2021-12-31",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",
