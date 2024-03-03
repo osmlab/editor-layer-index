@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "DC_From_Above_Ortho_2021",
+        "id": "DC_From_Above_Ortho_2023",
         "attribution": {
             "url": "https://opendata.dc.gov/datasets/aerial-photography-image-service-orthophoto-2021/",
             "text": "OCTO, DCGIS",
             "required": false
         },
-        "name": "DC From Above Orthophoto 2021",
+        "name": "DC From Above Orthophoto 2023",
         "icon": "https://octo.dc.gov/sites/default/files/styles/callout_interior_graphic/public/dc/sites/octo/agency_content/images/OCTO-logo_Lead.png",
-        "url": "https://imagery.dcgis.dc.gov/dcgis/services/Ortho/Ortho_2021/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "url": "https://imagery.dcgis.dc.gov/dcgis/services/Ortho/Ortho_2023/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "max_zoom": 21,
         "license_url": "https://wiki.openstreetmap.org/wiki/Washington_DC/DC_From_Above",
         "country_code": "US",
@@ -21,11 +21,12 @@
             "EPSG:4326",
             "EPSG:26985"
         ],
-        "start_date": "2021-03-11",
-        "end_date": "2021-03-11",
+        "start_date": "2023-05-06",
+        "end_date": "2023-05-10",
         "description": "4-band digital orthophotography with a 3 inch/0.08 meter pixel resolution covering the District of Columbia at 2021",
-        "category": "historicphoto",
+        "category": "photo",
         "privacy_policy_url": "https://dc.gov/page/privacy-and-security",
+        "best": true,
         "valid-georeference": true
     },
     "geometry": {
