@@ -9,7 +9,7 @@
         },
         "name": "Snohomish County Orthoimagery (2020)",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Seal_of_Snohomish_County%2C_Washington.svg/320px-Seal_of_Snohomish_County%2C_Washington.svg.png",
-        "url": "https://maps.snoco.org/gisimagery/rest/services/imagery/2020_orthophotos/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gis.snoco.org/img/rest/services/Imagery/Aerial_2020/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
         "min_zoom": 8,
         "max_zoom": 20,
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/wa/Snohomish.pdf",
