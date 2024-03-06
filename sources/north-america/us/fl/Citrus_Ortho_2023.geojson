@@ -1,14 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Citrus_Ortho_2020",
+        "id": "Citrus_Ortho_2023",
         "attribution": {
             "url": "https://www.citruspa.org/",
             "text": "Citrus County Property Appraiser's Office",
             "required": false
         },
-        "name": "Citrus County Orthoimagery (2020)",
-        "url": "https://gis.citruspa.org/arcgisweb/rest/services/Tyler/2020_Aerials/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "name": "Citrus County Orthoimagery (2023)",
+        "url": "https://gis.citruspa.org/arcgisweb/rest/services/Tyler/2023_Aerials/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 22,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -17,10 +17,10 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2019-12",
-        "end_date": "2020-02",
-        "description": "The 2020 orthoimagery for Citrus County in the State of Florida",
-        "category": "historicphoto",
+        "start_date": "2023-01",
+        "end_date": "2023-02",
+        "description": "The 2023 orthoimagery for Citrus County in the State of Florida",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.citruspa.org/_dnn/Privacy/"
     },
