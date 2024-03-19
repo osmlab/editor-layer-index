@@ -1,0 +1,60 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA-NAIP-PR",
+        "attribution": {
+            "url": "https://naip-usdaonline.hub.arcgis.com/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "National Agriculture Imagery Program (PR/USVI)",
+        "type": "tms",
+        "url": "https://gis.apfo.usda.gov/arcgis/rest/services/NonCONUS/PR/ImageServer/tile/{zoom}/{y}/{x}",
+        "start_date": "2021",
+        "end_date": "2023",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "US",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "description": "The most recent year of 60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for Puerto Rico and the United States Virgin Islands.",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -64.38690940838258,
+                    17.59969693169515
+                ],
+                [
+                    -64.63899556512364,
+                    18.362855458380274
+                ],
+                [
+                    -64.86255303711461,
+                    18.39567679855855
+                ],
+                [
+                    -64.98334069099755,
+                    18.648073669757864
+                ],
+                [
+                    -67.97369786466294,
+                    18.61988614333039
+                ],
+                [
+                    -67.97369786466294,
+                    17.596283266693405
+                ],
+                [
+                    -64.38690940838258,
+                    17.59969693169515
+                ]
+            ]
+        ]
+    }
+}
