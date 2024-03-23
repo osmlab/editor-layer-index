@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA_Palau_2022",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "USDA Palau Imagery (2022)",
+        "type": "wms",
+        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/rest/services/ortho_imagery/palau_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&f={proj}",
+        "start_date": "2019-03-06",
+        "end_date": "2022-06-18",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "PW",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    130.1638068601765,
+                    3.134514351724011
+                ],
+                [
+                    132.50035869076507,
+                    2.305112123054847
+                ],
+                [
+                    135.35828985545194,
+                    8.43509824667162
+                ],
+                [
+                    134.43863464113969,
+                    8.456586790104325
+                ],
+                [
+                    130.1638068601765,
+                    3.134514351724011
+                ]
+            ]
+        ]
+    }
+}
