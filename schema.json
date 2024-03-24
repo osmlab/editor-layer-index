@@ -221,6 +221,50 @@
                     },
                     "additionalProperties": false
                 },
+                "mirror": {
+                    "description": "A different mirror of the data, e.g. a TMS for WMS servers. Supports `type`, `id`, `url`, `available_projections`, `min-zoom`, `max-zoom` and `privacy_policy_url` properties.",
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "tms",
+                                "wms",
+                                "wms_endpoint",
+                                "wmts"
+                            ]
+                        },
+                        "id": {
+                            "description": "A unique identifier for the source; used in imagery_used changeset tag",
+                            "pattern": "^[-_.A-Za-z0-9]+$",
+                            "type": "string"
+                        },
+                        "url": {
+                            "description": "A URL template for imagery tiles",
+                            "type": "string"
+                        },
+                        "available_projections": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "min_zoom": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "default": 0
+                        },
+                        "max_zoom": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "privacy_policy_url": {
+                            "description": "A URL for the privacy policy of the operator",
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
                "default-layers": {
                    "description": "Default layer to open (when using WMS_ENDPOINT type). Contains list of layer tag with two attributes - name and style, e.g. `\"default-layers\": [\"layer\": { name=\"Basisdata_NP_Basiskart_JanMayen_WMTS_25829\" \"style\":\"default\" } ]` (not allowed in `mirror` attribute)",
                     "type": "array",
