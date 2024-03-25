@@ -1,21 +1,21 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Rennes_2014",
-        "name": "Rennes - 2014",
+        "id": "rennes_ortho_2014_osmfr",
+        "name": "Rennes orthophotographie 2014 (20 cm) via OSM France",
         "type": "tms",
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/rennes_2014/{zoom}/{x}/{y}",
         "category": "historicphoto",
-        "start_date": "2014",
-        "end_date": "2014",
+        "start_date": "2014-07-02",
+        "end_date": "2014-09-11",
         "country_code": "FR",
         "attribution": {
-            "text": "Rennes M\u00e9tropole 2014",
-            "url": "https://data.rennesmetropole.fr/explore/dataset/orthophotographie-2014/information/",
+            "text": "Mégalis Bretagne et Collectivités Territoriales Bretonnes",
+            "url": "https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/02a468e1-a970-40bc-9ffa-72e1beef74e6",
             "required": true
         },
         "max_zoom": 20,
-        "license_url": "https://data.rennesmetropole.fr/page/licence/"
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf"
     },
     "geometry": {
         "type": "Polygon",
