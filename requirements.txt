@@ -9,9 +9,7 @@ aiodns==3.0.0
 aiofiles==23.2.1
     # via -r requirements.in
 aiohttp[speedups]==3.9.3
-    # via
-    #   -r requirements.in
-    #   aiohttp
+    # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
 async-timeout==4.0.2
@@ -96,7 +94,7 @@ urllib3==2.2.1
     # via
     #   -r requirements.in
     #   requests
-validators==0.22.0
+validators==0.24.0
     # via -r requirements.in
 yarl==1.7.2
     # via aiohttp
