@@ -14,6 +14,10 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/New_Hampshire#Usage_grant_for_NH_GRANIT_imagery",
         "country_code": "US",
         "type": "wms",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:26919"
+        ],
         "start_date": "2011",
         "end_date": "2020",
         "description": "LiDAR-derived bare earth hillshaded terrain (illumination from the northeast) for New Hampshire. Generated from 7 separate LiDAR collections that covered the state as of 2022.  Collection dates range from 2011 to 2020.  Generally imagery is older in the north and newer in the south.",

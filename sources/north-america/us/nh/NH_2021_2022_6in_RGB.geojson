@@ -14,6 +14,13 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/New_Hampshire#Usage_grant_for_NH_GRANIT_imagery",
         "country_code": "US",
         "type": "wms",
+        "available_projections": [
+            "EPSG:3437",
+            "EPSG:3445",
+            "EPSG:3726",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
         "start_date": "2021",
         "end_date": "2022",
         "description": "Statewide 2021/2022 6-inch Orthophotography for New Hampshire",
