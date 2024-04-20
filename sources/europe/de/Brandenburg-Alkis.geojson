@@ -12,17 +12,18 @@
         "country_code": "DE",
         "description": "Amtliches Liegenschaftskatasterinformationssystem (ALKIS), verschiedene Datenlayer.",
         "available_projections": [
-            "CRS:84",
+            "EPSG:25833",
+            "EPSG:25832",
+            "EPSG:4326",
+            "EPSG:4258",
             "EPSG:3034",
             "EPSG:3035",
+            "EPSG:3044",
             "EPSG:3045",
             "EPSG:3857",
-            "EPSG:4258",
-            "EPSG:4326",
             "EPSG:4839",
             "EPSG:5650",
-            "EPSG:25832",
-            "EPSG:25833"
+            "EPSG:4647",
         ],
         "attribution": {
             "text": "GeoBasis-DE/LGB / Alkis, dl-de/by-2-0",
