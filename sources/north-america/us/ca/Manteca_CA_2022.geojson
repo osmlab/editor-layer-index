@@ -1,0 +1,54 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Manteca_CA_2022",
+        "attribution": {
+            "url": "https://www.manteca.gov/",
+            "text": "City of Manteca",
+            "required": false
+        },
+        "name": "City of Manteca Orthoimagery (2022)",
+        "icon": "https://www.manteca.gov/home/showpublishedimage/906/637945998633470000",
+        "url": "https://gisweb.ci.manteca.ca.us/arcgis/rest/services/Basemaps/2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "2022 3-inch resolution imagery for Manteca in the State of California",
+        "category": "photo",
+        "privacy_policy_url": false
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -121.41550348472899,
+                    37.8730238755394
+                ],
+                [
+                    -121.41384257952743,
+                    37.741701246382405
+                ],
+                [
+                    -121.10884147607669,
+                    37.74366080651181
+                ],
+                [
+                    -121.10986691138486,
+                    37.87500858041713
+                ],
+                [
+                    -121.41550348472899,
+                    37.8730238755394
+                ]
+            ]
+        ]
+    }
+}
