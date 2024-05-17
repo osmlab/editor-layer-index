@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Mecklenburg_NC_2021",
+        "id": "Mecklenburg_NC_2024",
         "attribution": {
             "url": "https://www.mecknc.gov/LUESA/GIS/Pages/GIS-Data-Center.aspx",
             "text": "Mecklenburg County GIS",
             "required": false
         },
-        "name": "Mecklenburg County Orthoimagery (2021)",
+        "name": "Mecklenburg County Orthoimagery (2024)",
         "icon": "https://blog.mecknc.gov/wp-content/uploads/2017/11/Blue_Wide_Logo-768x766.jpg",
-        "url": "https://maps.mecklenburgcountync.gov/agsadaptor/rest/services/aerial2021/MapServer/export?f=image&format=jpg&layers=&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://polaris2.mecklenburgcountync.gov/server/rest/services/Aerial2024/MapServer/export?f=image&format=jpg&layers=&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 21,
         "license_url": "https://maps.mecknc.gov/openmapping/data.html",
         "country_code": "US",
@@ -18,10 +18,10 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2021-01-30",
-        "end_date": "2021-03-04",
-        "description": "Winter 2021 orthoimagery for Mecklenburg County in the State of North Carolina",
-        "category": "historicphoto",
+        "start_date": "2023-12-31",
+        "end_date": "2024-01-02",
+        "description": "Winter 2024 orthoimagery for Mecklenburg County in the State of North Carolina",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.mecknc.gov/admin/Pages/PrivacyNotice.aspx"
     },
