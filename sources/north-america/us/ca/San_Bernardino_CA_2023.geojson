@@ -9,7 +9,7 @@
         },
         "name": "San Bernardino County Orthoimagery (2023)",
         "icon": "https://www.sbcounty.gov/uploads/cao/OpenData/SBCoLOGO-White.png",
-        "url": "https://maps.sbcounty.gov/arcgis/rest/services/2023_PUA_Cache/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://maps.sbcounty.gov/arcgis/rest/services/Y2023_pua_cache/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
