@@ -1,13 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "name": "NRW Orthophoto",
+        "name": "NRW Orthophoto (RGB)",
         "type": "wms",
         "url": "https://www.wms.nrw.de/geobasis/wms_nw_dop?LAYERS=nw_dop_rgb&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "https://www.bezreg-koeln.nrw.de/system/files/media/document/file/lizenzbedingungen_geobasis_nrw.pdf",
         "privacy_policy_url": "https://www.land.nrw/de/datenschutzhinweise",
         "id": "nrw_ortho_wms",
-        "description": "RGB-/Colorbild - Normale farbliche Darstellung.",
+        "description": "RGB-/Colorbild - Aus Punktwolke gerechnetes True Orthophoto, Bodenauflösung 10cm",
         "country_code": "DE",
         "best": true,
         "category": "photo",
