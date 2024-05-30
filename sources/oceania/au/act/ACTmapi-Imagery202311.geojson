@@ -1,27 +1,27 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "ACT202004",
+        "id": "ACT202311",
         "attribution": {
             "url": "http://actmapi.act.gov.au/terms.html",
             "text": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
             "required": true
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
-        "privacy_policy_url": "https://www.planning.act.gov.au/about-us/privacy",
-        "name": "ACTmapi Imagery Apr 2020",
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview",
+        "name": "ACTmapi Imagery Nov 2023",
         "available_projections": [
-            "EPSG:3857"
+            "EPSG:7855"
         ],
-        "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/ACT_IMAGERY/imagery202004gda2020/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
-        "start_date": "2020-04-23",
-        "end_date": "2020-04-23",
+        "url": "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202311/MapServer/WMTS/1.0.0/WMTSCapabilities.xml",
+        "start_date": "2023-11",
+        "end_date": "2023-11",
         "max_zoom": 21,
         "country_code": "AU",
-        "type": "wms",
+        "type": "wmts",
         "icon": "https://actmapi.act.gov.au/img/apple-touch-icon.png",
         "category": "photo",
-        "min_zoom": 5
+        "min_zoom": 10
     },
     "geometry": {
         "type": "Polygon",

@@ -1,27 +1,25 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "ACT202104",
+        "id": "ACT202402",
         "attribution": {
             "url": "http://actmapi.act.gov.au/terms.html",
             "text": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
             "required": true
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
-        "privacy_policy_url": "https://www.planning.act.gov.au/about-us/privacy",
-        "name": "ACTmapi Imagery Apr 2021",
-        "available_projections": [
-            "EPSG:3857"
-        ],
-        "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/ACT_IMAGERY/imagery202104gda2020/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
-        "start_date": "2021-04",
-        "end_date": "2021-04",
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview",
+        "name": "ACTmapi Imagery Feb 2024",
+        "url": "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202402_AGOL_Compatible/MapServer/tile/{zoom}/{y}/{x}",
+        "best": true,
+        "start_date": "2024-02",
+        "end_date": "2024-02",
         "max_zoom": 21,
         "country_code": "AU",
-        "type": "wms",
+        "type": "tms",
         "icon": "https://actmapi.act.gov.au/img/apple-touch-icon.png",
         "category": "photo",
-        "min_zoom": 5
+        "min_zoom": 10
     },
     "geometry": {
         "type": "Polygon",
@@ -40,19 +38,19 @@
                     -35.26310894964
                 ],
                 [
-                    149.00464444300,
+                    149.004644443,
                     -35.42537149995
                 ],
                 [
                     149.02605664466,
-                    -35.42492087730
+                    -35.4249208773
                 ],
                 [
                     149.02718389714,
                     -35.46048033878
                 ],
                 [
-                    149.04892943340,
+                    149.0489294334,
                     -35.46002290059
                 ],
                 [
@@ -64,7 +62,7 @@
                     -35.51247634235
                 ],
                 [
-                    149.15954740180,
+                    149.1595474018,
                     -35.44057233536
                 ],
                 [
@@ -73,7 +71,7 @@
                 ],
                 [
                     149.26752683832,
-                    -35.36627472310
+                    -35.3662747231
                 ],
                 [
                     149.37743313428,
@@ -117,10 +115,10 @@
                 ],
                 [
                     149.26338620793,
-                    -35.24026344690
+                    -35.2402634469
                 ],
                 [
-                    149.26224509210,
+                    149.2622450921,
                     -35.20416833114
                 ],
                 [
@@ -168,8 +166,8 @@
                     -35.13531613335
                 ],
                 [
-                    149.04200616280,
-                    -35.15256131870
+                    149.0420061628,
+                    -35.1525613187
                 ],
                 [
                     148.99696410379,
