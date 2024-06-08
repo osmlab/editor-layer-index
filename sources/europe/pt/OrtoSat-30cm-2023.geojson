@@ -1,13 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "ORTOS_DGT_2023_RGB",
-        "name": "OrtoSat - Portugal Continental - 30cm - 2023 (RGB)",
+        "id": "ORTOSAT_DGT_2023_RGB",
+        "name": "OrtoSat - Portugal Central - 30cm - 2023 (DGT)",
         "type": "wms",
         "url": "https://ortos.dgterritorio.gov.pt/wms/ortosat2023?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortoSat2023-CorVerdadeira&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "photo",
-        "start_date": "2023",
-        "end_date": "2023",
+        "start_date": "2023-05",
+        "end_date": "2023-10",
         "country_code": "PT",
         "available_projections": [
             "EPSG:3763",
@@ -15,6 +15,7 @@
             "EPSG:4258",
             "EPSG:4326"
         ],
+        "best": true,
         "attribution": {
             "text": "Informação geográfica cedida pela Direção-Geral do Território",
             "url": "https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/metadata/b2a1ca02-779b-4189-b895-85d10fff610f",
