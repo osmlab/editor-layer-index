@@ -1,21 +1,23 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Fairfax_VA_Current",
+        "id": "Fairfax_VA_2023",
         "attribution": {
             "url": "https://www.fairfaxcounty.gov/maps/aerial-photography",
             "text": "Government of Fairfax County, Virginia",
             "required": true
         },
-        "name": "Fairfax County Orthoimagery (Current)",
-        "url": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/CurrentAerialPhotographyCached/ImageServer/tile/{zoom}/{y}/{x}",
+        "name": "Fairfax County Orthoimagery (2023)",
+        "url": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2023AerialPhotographyCached/ImageServer/tile/{zoom}/{y}/{x}",
         "min_zoom": 9,
         "max_zoom": 23,
         "license_url": "https://www.fairfaxcounty.gov/maps/disclaimer",
         "country_code": "US",
         "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
         "best": true,
-        "description": "The most current orthoimagery for Fairfax County of the Commonwealth of Virginia",
+        "description": "The 2023 orthoimagery for Fairfax County of the Commonwealth of Virginia",
         "category": "photo",
         "privacy_policy_url": "https://www.fairfaxcounty.gov/topics/copyright-privacy"
     },
