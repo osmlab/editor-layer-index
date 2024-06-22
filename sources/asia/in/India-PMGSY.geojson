@@ -10,7 +10,7 @@
         },
         "name": "PMGSY GeoSadak - India Rural Roads Open Data",
         "type": "wmts",
-        "url": "https://api.mapbox.com/styles/v1/planemad/cknj1leps0ywv17lrj8d16vnj/wmts?access_token=pk.eyJ1IjoicGxhbmVtYWQiLCJhIjoiY2l2eDhnNzNpMDAwNzJ5cGowcnpiMXJkdyJ9.NljuPglsRA3mTGf-4CLIEg",
+        "url": "https://api.mapbox.com/styles/v1/planemad/cknj1leps0ywv17lrj8d16vnj/wmts?access_token=pk.eyJ1Ijoib3NtaW5kaWEiLCJhIjoiY2x4bm44YTVsMDR5bzJyczY5MjBoa2Q5aSJ9.r1MPugHw49L3kViEaWhBWA",
         "start_date": "2022",
         "end_date": "2022",
         "license_url": "https://geosadak-pmgsy.nic.in/MsFiles/TnC.html",
@@ -18,7 +18,10 @@
         "description": "PMGSY Rural Connectivity Dataset from Ministry of Rural Development published under India’s Government Open Data License",
         "permission_osm": "explicit",
         "privacy_policy_url": "https://www.mapbox.com/legal/privacy",
-        "category": "map"
+        "category": "map",
+        "available_projections": [
+            "EPSG:3857"
+        ]
     },
     "geometry": {
         "type": "Polygon",
