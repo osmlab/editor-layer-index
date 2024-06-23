@@ -16,7 +16,15 @@
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf",
         "privacy_policy_url": "https://www.berlin.de/sen/sbw/datenschutzerklaerung.1246132.php",
-        "max_zoom": 20
+        "max_zoom": 20,
+        "available_projections": [
+            "EPSG:25833",
+            "EPSG:25832",
+            "EPSG:4326",
+            "EPSG:4258",
+            "EPSG:3857",
+            "CRS:84"
+        ]
     },
     "geometry": {
         "type": "Polygon",
