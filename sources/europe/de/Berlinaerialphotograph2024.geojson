@@ -1,21 +1,21 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Berlin-2023",
-        "name": "Berlin/Geoportal DOP20RGBI (2023)",
-        "type": "tms",
+        "id": "Berlin-2024",
+        "name": "Berlin/Geoportal DOP20RGBI (2024)",
+        "type": "wms",
         "category": "photo",
-        "url": "https://tiles.codefor.de/berlin-2023-dop20rgbi/{zoom}/{x}/{y}.png",
-        "start_date": "2023",
-        "end_date": "2023",
+        "url": "https://gdi.berlin.de/services/wms/truedop_2024?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=truedop_2024&SINGLETILE=true&CRS={proj}&STYLES=&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2024",
+        "end_date": "2024",
         "country_code": "DE",
-        "best": false,
+        "best": true,
         "attribution": {
-            "text": "Geoportal Berlin/Digitale farbige TrueOrthophotos 2023 (DOP20RGBI) (codefor.de mirror)",
+            "text": "Geoportal Berlin/Digitale farbige TrueOrthophotos 2024 (DOP20RGBI)",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf",
-        "privacy_policy_url": "https://codefor.de/datenschutz/",
+        "privacy_policy_url": "https://www.berlin.de/sen/sbw/datenschutzerklaerung.1246132.php",
         "max_zoom": 20
     },
     "geometry": {
