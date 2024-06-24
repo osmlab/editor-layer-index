@@ -1,22 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Manatee_Ortho_CID_2022",
+        "id": "Manatee_Ortho_2023_RGB",
         "attribution": {
             "url": "https://www.mymanatee.org/departments/information_technology_services/geographic_information_systems",
             "text": "Manatee County GIS",
             "required": false
         },
-        "name": "Manatee County Orthoimagery Infrared (2022)",
-        "url": "https://www.mymanatee.org/gisimg/rest/services/2022/AERIAL_2022_CIR/ImageServer/tile/{zoom}/{y}/{x}",
+        "name": "Manatee County Orthoimagery (2023)",
+        "url": "https://www.mymanatee.org/gisimg/rest/services/2023/AERIAL_2023_RGB/ImageServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
         "type": "tms",
-        "start_date": "2022",
-        "end_date": "2022",
-        "description": "The 2022 color infrared orthoimagery for Manatee County of the State of Florida",
-        "category": "photo",
+        "start_date": "2022-11-18",
+        "end_date": "2023-03-16",
+        "description": "The 2023 orthoimagery for Manatee County of the State of Florida",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.mymanatee.org/government/policies___disclaimers"
     },
