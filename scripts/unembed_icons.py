@@ -1,10 +1,11 @@
+# NOTE: do NOT import any modules outside the standard library
 import re
 from base64 import b64decode
 import mimetypes
 from pathlib import Path
 import json
 import logging
-import tkinter.filedialog as fd
+import tkinter.filedialog as fd # TODO: handle if not present
 
 host = "https://osmlab.github.io/editor-layer-index/"
 
