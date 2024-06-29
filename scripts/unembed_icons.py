@@ -50,6 +50,7 @@ def findFile(parent_path, data, mime): # returns: Path or None upon none found
 		glob = "*[{}]".format("][".join(extensions))
 	else:
 		logging.warning("invalid mime-type")
+		return None # TODO: remove when `TODO: force only match files (not including directories)' is done
 		glob = "*"
 	
 	logging.info("walking `{}' with glob: `{}'".format(parent_path, glob))
