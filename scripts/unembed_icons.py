@@ -7,7 +7,7 @@ import json
 import logging
 import tkinter.filedialog as fd # TODO: handle if not present
 
-host = "https://osmlab.github.io/editor-layer-index/"
+host = "https://osmlab.github.io/editor-layer-index/" # TODO: ideally load this from a common config/etc file
 
 root_path = None
 
@@ -139,7 +139,7 @@ def single(geojson_path):
 	save(geojson_path, True, geojson_binary_new)
 
 def main():
-	logging.getLogger().setLevel(logging.DEBUG)
+	logging.getLogger().setLevel(logging.DEBUG) # TODO: add color
 	
 	geojson_path = fd.askopenfilename(filetypes=[("GeoJSON", ".geojson")], initialdir=root_path / "sources")
 	single(Path(geojson_path))
