@@ -26,10 +26,10 @@ def decodeLines(data):
 	except:
 		pass
 	if isinstance(data_text, str):
-		logging.info("data is text")
+		logging.debug("data is text")
 		return data_text.splitlines()
 	else:
-		logging.info("data is binary")
+		logging.debug("data is binary")
 		return None
 
 def findFile(parent_path, data, mime): # returns: Path or None upon none found
@@ -53,8 +53,9 @@ def findFile(parent_path, data, mime): # returns: Path or None upon none found
 		glob = "*"
 	
 	logging.info("walking `{}' with glob: `{}'".format(parent_path, glob))
-	
+	check_count = 0
 	for file_path in parent_path.rglob(glob): # OPTIMIZE: ignore hidden files (especially .git) # TODO: force only match files (not including directories)
+		check_count += 1
 		logging.debug("checking against file: `{}'".format(file_path))
 		file = None
 		file_size = file_path.stat().st_size
@@ -77,6 +78,7 @@ def findFile(parent_path, data, mime): # returns: Path or None upon none found
 				logging.info("found text match: `{}'".format(file_path))
 				return file_path
 				break
+	logging.warning("no match found in {} checked files".format(check_count))
 	return None
 
 def main():
