@@ -56,6 +56,7 @@ def findFile(parent_path, data, mime): # returns: Path or None upon none found
 	
 	for file_path in parent_path.rglob(glob): # OPTIMIZE: ignore hidden files (especially .git) # TODO: force only match files (not including directories)
 		logging.debug("checking against file: `{}'".format(file_path))
+		file = None
 		file_size = file_path.stat().st_size
 		if file_size == data_size:
 			# OPTIMIZE: could be optimized by using buffering
@@ -67,10 +68,10 @@ def findFile(parent_path, data, mime): # returns: Path or None upon none found
 				return file_path
 				break
 		if(data_istext):
-			# TODO: deduplicate reading file
-			file_handle = open(file_path, "rb")
-			file = file_handle.read()
-			file_handle.close()
+			if file == None:
+				file_handle = open(file_path, "rb")
+				file = file_handle.read()
+				file_handle.close()
 			file_lines = decodeLines(file)
 			if file_lines == data_lines:
 				logging.info("found text match: `{}'".format(file_path))
