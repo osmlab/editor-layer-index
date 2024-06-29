@@ -1,4 +1,4 @@
-# NOTE: do NOT import any modules outside the standard library
+# NOTE: please do not import any modules outside of the standard library
 import re
 from base64 import b64decode
 import mimetypes
@@ -146,9 +146,11 @@ def main():
 	
 	# TODO: handle more than one GeoJSON (should take in a folder too (rglob that), and multiple files, or a mix of both)
 	# OPTIMIZE: use a cache of hashes if doing multiple files
-	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing --no-write (for testing) + log-level stuff
+	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing --no-write (for testing) + log-level stuff; specify input file(s) (and possible output if inputting only one geojson) + force cli file selectors + force save (i.e. skip checking for existing icon files)
 	# TODO: maybe duplicate the old version's interface as much as possible?
 
 if __name__ == "__main__":
 	root_path = Path(__file__).parents[1] # get repository's root_path
 	main()
+
+# NOTE: one of the goals is for it to also be usable as a module
