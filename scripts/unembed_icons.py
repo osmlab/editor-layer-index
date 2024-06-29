@@ -131,6 +131,7 @@ def single(geojson_path):
 	new_url = host + icon_path.relative_to(root_path).as_posix() # TODO: make sure it is underneath
 	logging.info("new URL: `{}'".format(new_url))
 	
+	# NOTE: It is done this way (binary search and replace) to preserve the formatting of the file. Yes I know this could cause issues normally, because escaped characters and such, but data URLs shouldn't have that.
 	geojson_binary_handle = open(geojson_path, "rb")
 	geojson_binary = geojson_binary_handle.read()
 	geojson_binary_new = geojson_binary.replace(bytes(url, encoding="utf8"), bytes(new_url, encoding="utf8")) # IMPROVEMENT: utf8 should be safe, though really you would want it following the input GeoJSON's detected encoding (I now force utf8, so this is invalid).
