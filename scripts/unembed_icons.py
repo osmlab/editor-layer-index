@@ -148,9 +148,11 @@ def main():
 	# OPTIMIZE: use a cache of hashes if doing multiple files
 	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing --no-write (for testing) + log-level stuff; specify input file(s) (and possible output if inputting only one geojson) + force cli file selectors + force save (i.e. skip checking for existing icon files)
 	# TODO: maybe duplicate the old version's interface as much as possible?
+	# TODO: write a help text on how to use it and how it operates
 
 if __name__ == "__main__":
 	root_path = Path(__file__).parents[1] # get repository's root_path
 	main()
 
 # NOTE: one of the goals is for it to also be usable as a module
+# TODO: be clear about what file(s) you're now supposed to be selecting
