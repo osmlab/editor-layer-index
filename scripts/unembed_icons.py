@@ -51,7 +51,7 @@ def findFile(parent_path, mime, data): # returns: Path or None upon none found
 	if len(extensions) == 1:
 		glob = "*{}".format(extensions[0])
 	elif len(extensions) > 1:
-		glob = "*[{}]".format("][".join(extensions)) # IMPROVEMENT: separate out the dot, instead of having all.
+		glob = "*[{}]".format("][".join(extensions)) # IMPROVEMENT: separate out the dot, instead of having it in every [].
 	else:
 		logging.warning("invalid mime-type")
 		return None # TODO: remove when `TODO: force only match files (not including directories)' is done
@@ -99,7 +99,7 @@ def saveAs(directory, mime):
 
 def save(path, binary, data):
 	# TODO: confirm with user first, and show if it will be replacing something, their relative sizes, plus of course honor command line arguments
-	mode = None # TODO: maybe just require input to be binary, actually?
+	mode = None # TODO: maybe just require input to be binary, actually? or rewrite this functionality general, maybe not as a function at all?
 	if binary == True:
 		mode = "wb"
 		mode_str = "bytes"
@@ -132,6 +132,7 @@ def single(geojson_path):
 	logging.info("new URL: `{}'".format(new_url))
 	
 	# NOTE: It is done this way (binary search and replace) to preserve the formatting of the file. Yes I know this could cause issues normally, because escaped characters and such, but data URLs shouldn't have that.
+	# TODO: gracefully continue if there's an error. alternatively, perform a traditional json dumps (with an argument to disable it).
 	geojson_binary_handle = open(geojson_path, "rb")
 	geojson_binary = geojson_binary_handle.read()
 	geojson_binary_new = geojson_binary.replace(bytes(url, encoding="utf8"), bytes(new_url, encoding="utf8")) # IMPROVEMENT: utf8 should be safe, though really you would want it following the input GeoJSON's detected encoding (I now force utf8, so this is invalid).
@@ -146,7 +147,7 @@ def main():
 	
 	# TODO: handle more than one GeoJSON (should take in a folder too (rglob that), and multiple files, or a mix of both)
 	# OPTIMIZE: use a cache of hashes if doing multiple files
-	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing --no-write (for testing) + log-level stuff; specify input file(s) (and possible output if inputting only one geojson) + force cli file selectors + force save (i.e. skip checking for existing icon files)
+	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing --no-write (for testing) + log-level stuff; specify input file(s) (and possible output if inputting only one geojson) + force cli file selectors + force save (i.e. skip checking for existing icon files) + override root_path
 	# TODO: maybe duplicate the old version's interface as much as possible?
 	# TODO: write a help text on how to use it and how it operates
 
