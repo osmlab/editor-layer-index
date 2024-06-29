@@ -90,14 +90,14 @@ def saveAs(directory, mime):
 	exts_mod = []
 	for ext in exts:
 		exts_mod.append((ext[1:].upper(), ext))
-	logging.info("waiting for Save As dialog")
+	logging.info("(waiting for user to finish Save As dialog)") # TODO: rewrite the english
 	output_path = Path(fd.asksaveasfilename(filetypes=exts_mod, defaultextension=exts_mod[0], initialdir=directory))
 	# TODO: backup input for terminal interfaces (dumb input(); check if parent is at least valid; relative to repo root_path; list recommended extensions; make sure the import failure is dealt with)
 	
 	return output_path
 
 def save(path, binary, data):
-	# TODO: confirm with user first, and show if it will be replacing something, and of course honor command line arguments
+	# TODO: confirm with user first, and show if it will be replacing something, their relative sizes, plus of course honor command line arguments
 	mode = None # TODO: maybe just require input to be binary, actually?
 	if binary == True:
 		mode = "wb"
@@ -111,8 +111,11 @@ def save(path, binary, data):
 	file_handle.close()
 
 def single(geojson_path):
-	geojson_handle = open(geojson_path)
-	geojson = json.load(geojson_handle)
+	logging.info("operating on `{}'".format(geojson_path))
+	
+	# TODO: clean this up
+	geojson_handle = open(geojson_path, "r", encoding='utf8')
+	geojson = json.loads(geojson_handle.read())
 	geojson_handle.close()
 	
 	url = geojson["properties"]["icon"]
@@ -121,11 +124,17 @@ def single(geojson_path):
 	
 	icon_path = findFile(root_path, url_mime, url_data)
 	if icon_path == None:
+		logging.info("will now be saving it, since couldn't find existing") # TODO: rewrite the english
 		icon_path = saveAs(geojson_path.parent, url_mime) # TODO: handle cancel
 		save(icon_path, True, url_data)
 	new_url = host + icon_path.relative_to(root_path).as_posix() # TODO: make sure it is underneath
 	logging.info("new URL: `{}'".format(new_url))
-	# TODO: handle replacing url in the GeoJSON: do a search and replace of the icon url as to preserve formatting of file (check it can find it at the beginning, to present a warning to the user (that it wont be able to replace)). (yes I know this method could cause issues normally, because escaped chars, but data URLs shouldn't have that)
+	
+	geojson_binary_handle = open(geojson_path, "rb")
+	geojson_binary = geojson_binary_handle.read()
+	geojson_binary_new = geojson_binary.replace(bytes(url, encoding="utf8"), bytes(new_url, encoding="utf8")) # IMPROVEMENT: utf8 should be safe, though really you would want it following the input GeoJSON's detected encoding (I now force utf8, so this is invalid).
+	geojson_binary_handle.close()
+	save(geojson_path, True, geojson_binary_new)
 
 def main():
 	logging.getLogger().setLevel(logging.DEBUG)
@@ -135,7 +144,7 @@ def main():
 	
 	# TODO: handle more than one GeoJSON (should take in a folder too (rglob that), and multiple files, or a mix of both)
 	# OPTIMIZE: use a cache of hashes if doing multiple files
-	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing + log level stuff
+	# TODO: posix interface with these options: --confirm-all --no-confirm-overwrite --only-existing --no-write (for testing) + log-level stuff
 	# TODO: maybe duplicate the old version's interface as much as possible?
 
 if __name__ == "__main__":
