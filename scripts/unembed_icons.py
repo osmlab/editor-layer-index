@@ -19,27 +19,29 @@ def getData(url): # returns: [mime, data] or None upon error
 		logging.error("URL isn't a data-URL")
 	return None
 
-def findFile(parent_path, data, mime): # returns: Path or None upon none found
-	# NOTE: all the extra stuff with text data is to compensate for git changing newlines
-	
-	found_path = None
-	
-	data_size = len(data)
-	extensions = mimetypes.guess_all_extensions(mime, strict=False)
-	
-	data_istext = False
+def decodeLines(data):
 	data_text = None
-	data_lines = None
 	try:
 		data_text = data.decode()
 	except:
 		pass
 	if isinstance(data_text, str):
 		logging.info("data is text")
-		data_istext = True
-		data_lines = data_text.splitlines()
+		return data_text.splitlines()
 	else:
 		logging.info("data is binary")
+		return None
+
+def findFile(parent_path, data, mime): # returns: Path or None upon none found
+	# NOTE: all the extra stuff with text data is to compensate for git changing newlines
+	
+	data_size = len(data)
+	extensions = mimetypes.guess_all_extensions(mime, strict=False)
+	
+	data_istext = False
+	data_lines = decodeLines(data)
+	if data_lines != None:
+		data_istext = True
 	
 	glob = None
 	if len(extensions) == 1:
@@ -52,29 +54,33 @@ def findFile(parent_path, data, mime): # returns: Path or None upon none found
 	
 	logging.info("walking `{}' with glob: `{}'".format(parent_path, glob))
 	
-	for file_path in parent_path.rglob(glob): # OPTIMIZE: ignore hidden files (especially .git)
+	for file_path in parent_path.rglob(glob): # OPTIMIZE: ignore hidden files (especially .git) # TODO: force only match files (not including directories)
 		logging.debug("checking against file: `{}'".format(file_path))
-		if(data_istext == False):
-			file_size = file_path.stat().st_size
-			if file_size == data_size:
-				# OPTIMIZE: could be optimized by using buffering
-				file_handle = open(file_path, "rb")
-				file = file_handle.read()
-				file_handle.close()
-				if file == data:
-					logging.info("found match: `{}'".format(file_path))
-					found_path = file_path
-					break
-		# TODO: handle text data
-	
-	if found_path != None:
-		return found_path
-	else:
-		return None
+		file_size = file_path.stat().st_size
+		if file_size == data_size:
+			# OPTIMIZE: could be optimized by using buffering
+			file_handle = open(file_path, "rb")
+			file = file_handle.read()
+			file_handle.close()
+			if file == data:
+				logging.info("found binary match: `{}'".format(file_path))
+				return file_path
+				break
+		if(data_istext):
+			# TODO: deduplicate reading file
+			file_handle = open(file_path, "rb")
+			file = file_handle.read()
+			file_handle.close()
+			file_lines = decodeLines(file)
+			if file_lines == data_lines:
+				logging.info("found text match: `{}'".format(file_path))
+				return file_path
+				break
+	return None
 
 def main():
 	pass # TODO
 
 if __name__ == "__main__":
-	root = Path(__file__).parents[1]
+	root = Path(__file__).parents[1] # get repository's root
 	main()
