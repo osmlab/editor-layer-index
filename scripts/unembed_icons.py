@@ -135,7 +135,12 @@ def single(geojson_path):
 	
 	url = geojson["properties"]["icon"]
 	
-	url_mime, url_data = getData(url) # TODO: gracefully quit if it returns None
+	url_all = getData(url)
+	
+	if url_all == None:
+		return None
+	
+	url_mime, url_data = url_all
 	
 	icon_path = findFile(root_path, url_mime, url_data)
 	if icon_path == None:
