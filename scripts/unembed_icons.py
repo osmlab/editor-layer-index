@@ -164,7 +164,7 @@ def single(geojson_path):
 		icon_path = saveAs(geojson_path.parent, url_mime)
 		if save(icon_path, True, url_data) == False:
 			logging.warning("canceled saving of icon, and subsequent modification of the GeoJSON, because no output path was selected, or writing was canceled")
-			return
+			return False
 	new_url = host + icon_path.relative_to(root_path).as_posix() # TODO: make sure it is underneath
 	logging.info("new URL: `{}'".format(new_url))
 	
@@ -174,7 +174,7 @@ def single(geojson_path):
 	geojson_binary = geojson_binary_handle.read()
 	geojson_binary_new = geojson_binary.replace(bytes(url, encoding="utf8"), bytes(new_url, encoding="utf8")) # IMPROVEMENT: utf8 should be safe, though really you would want it following the input GeoJSON's detected encoding (I now force utf8, so this is invalid).
 	geojson_binary_handle.close()
-	save(geojson_path, True, geojson_binary_new)
+	save(geojson_path, True, geojson_binary_new) # TODO: maybe return result of this
 
 def main():
 	logging.getLogger().setLevel(logging.DEBUG) # TODO: add color
@@ -183,7 +183,7 @@ def main():
 	
 	if len(geojson_path) <= 0:
 		logging.info("exited because nothing selected for input")
-		return
+		return False
 	
 	single(Path(geojson_path))
 	
