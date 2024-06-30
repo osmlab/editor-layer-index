@@ -99,14 +99,19 @@ def saveAs(directory, mime):
 		exts_mod.append((ext[1:].upper(), ext))
 	logging.info("(waiting for user to finish Save As dialog)") # TODO: rewrite the english
 	if len(exts_mod) > 0:
-		output_path = Path(fd.asksaveasfilename(filetypes=exts_mod, defaultextension=exts_mod[0], initialdir=directory))
+		output_path = fd.asksaveasfilename(filetypes=exts_mod, defaultextension=exts_mod[0], initialdir=directory)
 	else:
-		output_path = Path(fd.asksaveasfilename(initialdir=directory))
+		output_path = fd.asksaveasfilename(initialdir=directory)
 	# TODO: backup input for terminal interfaces (dumb input(); check if parent is at least valid; relative to repo root_path; list recommended extensions; make sure the import failure is dealt with)
 	
-	return output_path
+	if len(output_path) <= 0:
+		return None
+	return Path(output_path)
 
 def save(path, binary, data):
+	if path == None:
+		logging.warning("not saving, as None passed as path")
+		return None
 	# TODO: confirm with user first, and show if it will be replacing something, their relative sizes, plus of course honor command line arguments
 	mode = None # TODO: maybe just require input to be binary, actually? or rewrite this functionality general, maybe not as a function at all?
 	if binary == True:
@@ -135,7 +140,10 @@ def single(geojson_path):
 	icon_path = findFile(root_path, url_mime, url_data)
 	if icon_path == None:
 		logging.info("will now be saving it, since couldn't find existing") # TODO: rewrite the english
-		icon_path = saveAs(geojson_path.parent, url_mime) # TODO: handle cancel
+		icon_path = saveAs(geojson_path.parent, url_mime)
+		if icon_path == None:
+			logging.warning("canceled saving of icon, and subsequent modification of the GeoJSON, because not output path was selected")
+			return
 		save(icon_path, True, url_data)
 	new_url = host + icon_path.relative_to(root_path).as_posix() # TODO: make sure it is underneath
 	logging.info("new URL: `{}'".format(new_url))
@@ -152,6 +160,11 @@ def main():
 	logging.getLogger().setLevel(logging.DEBUG) # TODO: add color
 	
 	geojson_path = fd.askopenfilename(filetypes=[("GeoJSON", ".geojson")], initialdir=root_path / "sources")
+	
+	if len(geojson_path) <= 0:
+		logging.info("exited because nothing selected for input")
+		return
+	
 	single(Path(geojson_path))
 	
 	# TODO: handle more than one GeoJSON (should take in a folder too (rglob that), and multiple files, or a mix of both)
