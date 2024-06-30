@@ -11,7 +11,7 @@ host = "https://osmlab.github.io/editor-layer-index/" # TODO: ideally load this 
 
 root_path = None
 
-def getData(url): # returns: [mime, data] or None upon error
+def getData(url): # returns: [mime, data] or False upon error
 	data_re = re.search(r"^data:(.*);base64,(.*)$", url)
 	if data_re:
 		mime = data_re.group(1)
@@ -21,7 +21,7 @@ def getData(url): # returns: [mime, data] or None upon error
 		logging.error("unsupported data-URL variation")
 	else:
 		logging.error("URL isn't a data-URL")
-	return None
+	return False
 
 def decodeLines(data):
 	data_text = None
@@ -34,9 +34,9 @@ def decodeLines(data):
 		return data_text.splitlines()
 	else:
 		logging.debug("data is binary")
-		return None
+		return False
 
-def findFile(parent_path, mime, data): # returns: Path or None upon none found
+def findFile(parent_path, mime, data): # returns: Path or False upon none found
 	# NOTE: all the extra stuff with text data is to compensate for git changing newlines
 	
 	data_size = len(data)
@@ -89,7 +89,7 @@ def findFile(parent_path, mime, data): # returns: Path or None upon none found
 				return file_path
 				break
 	logging.warning("no match found in {} checked files".format(check_count))
-	return None
+	return False
 
 def saveAs(directory, mime):
 	exts = mimetypes.guess_all_extensions(mime, strict=True)
@@ -105,7 +105,7 @@ def saveAs(directory, mime):
 	# TODO: backup input for terminal interfaces (dumb input(); check if parent is at least valid; relative to repo root_path; list recommended extensions; make sure the import failure is dealt with)
 	
 	if len(output_path) <= 0:
-		return None
+		return False
 	return Path(output_path)
 
 def confirm(string):
@@ -116,16 +116,16 @@ def confirm(string):
 	return answer == "y"
 
 def save(path, binary, data):
-	if path == None:
-		logging.warning("not saving, as None passed as path")
-		return None
+	if path == False:
+		logging.warning("not saving, as False passed as path")
+		return False
 	if path.is_dir():
 		logging.warning("not saving, as directory passed as path")
-		return None
+		return False
 	if path.exists():
 		if not confirm("would you like to overwrite `{}'?".format(path)):
 			logging.warning("not saving, as file exists, and got confirmation that it is not okay to overwrite") # TODO: rewrite the english
-			return None
+			return False
 		logging.warning("saving, file exists, but got confirmation that it is okay to overwrite") # TODO: rewrite the english
 	
 	# TODO: confirm with user first, and show if it will be replacing something, their relative sizes, plus of course honor command line arguments
@@ -153,16 +153,16 @@ def single(geojson_path):
 	
 	url_all = getData(url)
 	
-	if url_all == None:
-		return None
+	if url_all == False:
+		return False
 	
 	url_mime, url_data = url_all
 	
 	icon_path = findFile(root_path, url_mime, url_data)
-	if icon_path == None:
+	if icon_path == False:
 		logging.info("will now be saving it, since couldn't find existing") # TODO: rewrite the english
 		icon_path = saveAs(geojson_path.parent, url_mime)
-		if save(icon_path, True, url_data) == None:
+		if save(icon_path, True, url_data) == False:
 			logging.warning("canceled saving of icon, and subsequent modification of the GeoJSON, because no output path was selected, or writing was canceled")
 			return
 	new_url = host + icon_path.relative_to(root_path).as_posix() # TODO: make sure it is underneath
@@ -199,3 +199,4 @@ if __name__ == "__main__":
 
 # NOTE: one of the goals is for it to also be usable as a module
 # TODO: be clear about what file(s) you're now supposed to be selecting
+# TODO: use exceptions instead of bools
