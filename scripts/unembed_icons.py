@@ -108,10 +108,26 @@ def saveAs(directory, mime):
 		return None
 	return Path(output_path)
 
+def confirm(string):
+	# TODO: honor command line arguments
+	answer = ""
+	while answer not in ["y", "n"]: # TODO: inform user when invalid input
+		answer = input("{} [Y/n]: ".format(string)).lower()
+	return answer == "y"
+
 def save(path, binary, data):
 	if path == None:
 		logging.warning("not saving, as None passed as path")
 		return None
+	if path.is_dir():
+		logging.warning("not saving, as directory passed as path")
+		return None
+	if path.exists():
+		if not confirm("would you like to overwrite `{}'?".format(path)):
+			logging.warning("not saving, as file exists, and got confirmation that it is not okay to overwrite") # TODO: rewrite the english
+			return None
+		logging.warning("saving, file exists, but got confirmation that it is okay to overwrite") # TODO: rewrite the english
+	
 	# TODO: confirm with user first, and show if it will be replacing something, their relative sizes, plus of course honor command line arguments
 	mode = None # TODO: maybe just require input to be binary, actually? or rewrite this functionality general, maybe not as a function at all?
 	if binary == True:
@@ -146,10 +162,9 @@ def single(geojson_path):
 	if icon_path == None:
 		logging.info("will now be saving it, since couldn't find existing") # TODO: rewrite the english
 		icon_path = saveAs(geojson_path.parent, url_mime)
-		if icon_path == None:
-			logging.warning("canceled saving of icon, and subsequent modification of the GeoJSON, because not output path was selected")
+		if save(icon_path, True, url_data) == None:
+			logging.warning("canceled saving of icon, and subsequent modification of the GeoJSON, because no output path was selected, or writing was canceled")
 			return
-		save(icon_path, True, url_data)
 	new_url = host + icon_path.relative_to(root_path).as_posix() # TODO: make sure it is underneath
 	logging.info("new URL: `{}'".format(new_url))
 	
