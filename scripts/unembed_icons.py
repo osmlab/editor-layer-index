@@ -54,12 +54,17 @@ def findFile(parent_path, mime, data): # returns: Path or None upon none found
 		glob = "*[{}]".format("][".join(extensions)) # IMPROVEMENT: separate out the dot, instead of having it in every [].
 	else:
 		logging.warning("invalid mime-type")
-		return None # TODO: remove when `TODO: force only match files (not including directories)' is done
 		glob = "*"
 	
 	logging.info("walking `{}' with glob: `{}'".format(parent_path, glob))
 	check_count = 0
-	for file_path in parent_path.rglob(glob): # TODO: ignore hidden files (especially .git) and only match files (i.e. not including directories)
+	for file_path in parent_path.rglob(glob):
+		if not file_path.is_file():
+			logging.debug("`{}' is a directory, skipping..".format(file_path))
+			continue
+		if re.search(r"/\.", file_path.relative_to(parent_path).as_posix()):
+			logging.debug("`{}' is hidden, skipping..".format(file_path))
+			continue
 		check_count += 1
 		logging.debug("checking against file: `{}'".format(file_path))
 		file = None
@@ -88,11 +93,15 @@ def findFile(parent_path, mime, data): # returns: Path or None upon none found
 
 def saveAs(directory, mime):
 	exts = mimetypes.guess_all_extensions(mime, strict=True)
+	logging.debug("opening Save As dialog in `{}', with the mime type `{}' which means the extensions: {}".format(directory, mime, exts)) 
 	exts_mod = []
 	for ext in exts:
 		exts_mod.append((ext[1:].upper(), ext))
 	logging.info("(waiting for user to finish Save As dialog)") # TODO: rewrite the english
-	output_path = Path(fd.asksaveasfilename(filetypes=exts_mod, defaultextension=exts_mod[0], initialdir=directory))
+	if len(exts_mod) > 0:
+		output_path = Path(fd.asksaveasfilename(filetypes=exts_mod, defaultextension=exts_mod[0], initialdir=directory))
+	else:
+		output_path = Path(fd.asksaveasfilename(initialdir=directory))
 	# TODO: backup input for terminal interfaces (dumb input(); check if parent is at least valid; relative to repo root_path; list recommended extensions; make sure the import failure is dealt with)
 	
 	return output_path
