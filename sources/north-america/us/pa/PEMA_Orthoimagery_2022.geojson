@@ -7,7 +7,7 @@
             "text": "Pennsylvania Emergency Management Agency",
             "required": false
         },
-        "name": "PEMA Orthoimagery (Western) [2022]",
+        "name": "PEMA Orthoimagery - Western [2022]",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/pa/PEMA.svg",
         "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PEMAImagery2022/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=8,2&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
@@ -16,12 +16,12 @@
         "type": "wms",
         "available_projections": [
             "CRS:84",
-            "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:4326",
+            "EPSG:3857"
         ],
         "start_date": "2022",
         "end_date": "2022",
-        "description": "Orthoimagery of Western PA, including Cambria County.",
+        "description": "Orthoimagery of Western Pennsylvania, captured in 2022 at 6-inch resolution, encompassing the following counties: Allegheny, Beaver, Cambria, Crawford, Erie, Forest, Greene, Lawrence, Mercer, Warren, Washington. It was captured by NV5 Geospatial for the Pennsylvania Emergency Management Agency and is hosted by PASDA at https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=5177.",
         "category": "photo",
         "valid-georeference": true,
         "best": true,
