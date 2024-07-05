@@ -283,7 +283,7 @@
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
         "name": "CIRB/CIBG most recent aerial imagery",
         "type": "wms",
-        "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=Urbis:Ortho&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}"
+        "url": "https://geoservices-urbis.irisnet.be/geoserver/urbisgrid/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=Ortho&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}"
     },
     "type": "Feature"
 }
