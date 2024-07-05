@@ -1,23 +1,23 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "King_WA_2021",
+        "id": "King_WA_2023",
         "attribution": {
             "url": "https://kingcounty.gov/services/gis.aspx",
             "text": "King County Geographic Information System",
             "required": false
         },
-        "name": "King County Orthoimagery (2021)",
-        "icon": "https://kingcounty.gov/img/KClogo-horiz-black-lg.gif",
-        "url": "https://gismaps.kingcounty.gov/arcgis/rest/services/BaseMaps/KingCo_Aerial_2021/MapServer/WMTS/tile/1.0.0/BaseMaps_KingCo_Aerial_2021/default/default028mm/{zoom}/{y}/{x}",
+        "name": "King County Orthoimagery (2023)",
+        "icon": "https://cds.kingcounty.gov/KClogo-black.gif",
+        "url": "https://gismaps.kingcounty.gov/arcgis/rest/services/BaseMaps/KingCo_Aerial_2023/MapServer/WMTS/tile/1.0.0/BaseMaps_KingCo_Aerial_2023/default/default028mm/{zoom}/{y}/{x}",
         "max_zoom": 20,
         "license_url": "https://kingcounty.gov/services/gis/Maps/terms-of-use.aspx",
         "country_code": "US",
         "type": "tms",
-        "start_date": "2021",
-        "end_date": "2021",
-        "description": "2021 orthoimagery for King County in the State of Washington",
-        "category": "historicphoto",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "2023 orthoimagery for King County in the State of Washington",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://kingcounty.gov/about/website/privacy.aspx"
     },
