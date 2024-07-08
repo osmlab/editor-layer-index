@@ -27,6 +27,9 @@ def add_source(source):
 
     url = ET.SubElement(entry, "url")
     url.text = props["url"]
+    
+    category = ET.SubElement(entry, "category")
+    category.text = props["category"]
 
     if props.get("overlay"):
         entry.set("overlay", "true")
