@@ -91,7 +91,7 @@ def add_source(source):
 
     if "max_zoom" in props:
         max_zoom = ET.SubElement(entry, "max-zoom")
-        max_zoom.text = str(props["max_zoom"])
+        max_zoom.text = str(min(24, props["max_zoom"]))
 
     geometry = source.get("geometry")
     if geometry:
