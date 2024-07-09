@@ -73,7 +73,7 @@ def add_source(source):
         icon = ET.SubElement(entry, "icon")
         icon.text = props["icon"]
 
-    if "country_code" in props:
+    if "country_code" in props and props["country_code"].upper() != "ZZ":
         country_code = ET.SubElement(entry, "country-code")
         country_code.text = props["country_code"]
 
