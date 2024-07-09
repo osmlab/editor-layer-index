@@ -3,7 +3,7 @@ import sys
 import io
 import xml.etree.cElementTree as ET
 from shapely.geometry import shape, Polygon, MultiPolygon
-from shapely import get_num_geometries
+from shapely import get_num_geometries, get_num_coordinates
 
 root = ET.Element("imagery", {"xmlns" :"http://josm.openstreetmap.de/maps-1.0"})
 
@@ -113,14 +113,18 @@ def add_source(source):
         bounds.set("max-lon", coord_str(maxx))
         bounds.set("max-lat", coord_str(maxy))
 
-        if isinstance(geom, Polygon):
+        if isinstance(geom, Polygon) and get_num_coordinates(geom) <= 999:
             shape_element = ET.SubElement(bounds, "shape")
             for lon, lat in geom.exterior.coords:
                 point = ET.SubElement(shape_element, "point")
                 point.set("lon", coord_str(lon))
                 point.set("lat", coord_str(lat))
 
-        if isinstance(geom, MultiPolygon):
+        if isinstance(geom, MultiPolygon) and get_num_geometries(geom) <= 100:
+            # check size of polygons first
+            for poly in geom.geoms:
+                if get_num_coordinates(poly) > 999:
+                    return
             for poly in geom.geoms:
                 shape_element = ET.SubElement(bounds, "shape")
                 for lon, lat in poly.exterior.coords:
