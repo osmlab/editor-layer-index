@@ -84,6 +84,7 @@ def add_source(source):
     if "description" in props:
         description = ET.SubElement(entry, "description")
         description.text = props["description"]
+        description.set("lang", "en")
 
     if "min_zoom" in props:
         min_zoom = ET.SubElement(entry, "min-zoom")
