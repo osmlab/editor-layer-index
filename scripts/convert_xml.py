@@ -3,6 +3,7 @@ import sys
 import io
 import xml.etree.cElementTree as ET
 from shapely.geometry import shape, Polygon, MultiPolygon
+from shapely import get_num_geometries
 
 root = ET.Element("imagery", {"xmlns" :"http://josm.openstreetmap.de/maps-1.0"})
 
@@ -29,7 +30,10 @@ def add_source(source):
     url.text = props["url"]
     
     category = ET.SubElement(entry, "category")
-    category.text = props["category"]
+    if "category" in props:
+        category.text = props["category"]
+    else:
+        category.text = "photo"
 
     if props.get("overlay"):
         entry.set("overlay", "true")
