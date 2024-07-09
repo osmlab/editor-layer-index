@@ -4,7 +4,7 @@ import io
 import xml.etree.cElementTree as ET
 from shapely.geometry import shape, Polygon, MultiPolygon
 
-root = ET.Element("imagery")
+root = ET.Element("imagery", {"xmlns" :"http://josm.openstreetmap.de/maps-1.0"})
 
 sources = []
 for file in sys.argv[1:]:
