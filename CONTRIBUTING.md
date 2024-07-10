@@ -25,7 +25,7 @@ Supported TMS tokens:
 - `{switch:a,b,c}` for DNS server multiplexing
 - `{apikey}` for an app specific apikey
 
-Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
+Example: `https://tile.openstreetmap.org/{zoom}/{x}/{y}.png`
 
 Supported WMS tokens:
 - `{proj}` - requested projection (e.g. EPSG:3857)
