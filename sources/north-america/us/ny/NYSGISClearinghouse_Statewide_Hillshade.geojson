@@ -1377,11 +1377,11 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ny/NYS_Orthos_Online.png",
         "license_url": "https://www.fgdc.gov/grants/2011CAP/InterimFinalReports/056-11-5-NY-FinalReport.pdf",
         "max_zoom": 19,
-        "name": "NYSDOP Latest Orthoimagery (Natural Color)",
+        "name": "NYS Hillshade",
         "type": "wms",
         "url": "https://elevation.its.ny.gov/arcgis/rest/services/NYS_Statewide_Hillshade/MapServer/export?format=png8&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width}%2C{height}&f=image&foo={proj}",
         "privacy_policy_url": "https://its.ny.gov/its-internet-security-and-privacy-policy",
-        "category": "photo",
+        "category": "elevation",
         "valid-georeference": true
     },
     "type": "Feature"
