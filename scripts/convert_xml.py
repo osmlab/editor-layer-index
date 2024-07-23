@@ -20,8 +20,8 @@ def add_source(source):
     name = ET.SubElement(entry, "name")
     name.text = props["name"]
 
-    name = ET.SubElement(entry, "id")
-    name.text = props["id"]
+    id = ET.SubElement(entry, "id")
+    id.text = props["id"]
 
     type = ET.SubElement(entry, "type")
     type.text = props["type"]
