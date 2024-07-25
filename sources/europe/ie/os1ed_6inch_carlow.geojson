@@ -1,0 +1,49 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-6.94679, 52.45643],
+                [-6.83761, 52.44765],
+                [-6.74732, 52.61223],
+                [-6.68243, 52.61973],
+                [-6.60038, 52.68617],
+                [-6.62303, 52.73692],
+                [-6.66423, 52.79633],
+                [-6.55334, 52.79467],
+                [-6.49395, 52.81107],
+                [-6.49017, 52.86478],
+                [-6.46614, 52.89897],
+                [-6.72809, 52.9263],
+                [-6.931, 52.90187],
+                [-7.01168, 52.85691],
+                [-7.09579, 52.8036],
+                [-7.13012, 52.73048],
+                [-7.02335, 52.67951],
+                [-7, 52.62786],
+                [-6.97734, 52.54317],
+                [-6.94679, 52.45643]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os1ed_6inch_carlow",
+        "name": "OS 1st Ed. 6-inch. Carlow, Ireland (1840s-1880s) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/carlow/{zoom}/{x}/{y}.png",
+        "start_date": "1840",
+        "end_date": "1880",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

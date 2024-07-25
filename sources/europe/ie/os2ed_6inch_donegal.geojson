@@ -1,0 +1,53 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-8.86116, 54.65537],
+                [-8.69705, 54.61106],
+                [-8.46256, 54.55654],
+                [-8.25485, 54.57664],
+                [-8.38256, 54.47543],
+                [-8.32145, 54.43611],
+                [-8.15048, 54.43691],
+                [-7.83668, 54.50594],
+                [-7.65197, 54.58082],
+                [-7.51876, 54.7044],
+                [-7.42469, 54.85093],
+                [-7.24136, 55.03865],
+                [-7.10746, 55.12826],
+                [-6.92825, 55.18083],
+                [-6.83624, 55.23921],
+                [-7.29972, 55.42162],
+                [-7.68081, 55.30219],
+                [-8.0722, 55.27638],
+                [-8.26309, 55.29633],
+                [-8.63388, 55.00519],
+                [-8.57688, 54.90228],
+                [-8.68469, 54.79119],
+                [-8.86013, 54.727],
+                [-8.86116, 54.65537]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_donegal",
+        "name": "OS 2nd Ed. 6-inch. Donegal, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/donegal_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}
