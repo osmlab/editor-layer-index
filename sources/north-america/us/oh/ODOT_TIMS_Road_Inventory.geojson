@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "id": "ODOT_TIMS_Road_Inventory",
-        "name": "ODOT (Ohio) Road Inventory",
+        "name": "ODOT Road Inventory",
         "description": "Ohio Department of Transportation (ODOT) - Transportation Information Mapping System (TIMS) Road Inventory published June 2024.",
         "type": "tms",
         "url": "https://tiles.mblaine.com/ohio/{zoom}/{x}/{y}.png",
@@ -14,7 +14,7 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/ODOT_TIMS#Right_to_Use",
         "privacy_policy_url": "https://www.transportation.ohio.gov/help-center/privacy-notice-and-policies",
         "permission_osm": "implicit",
-        "icon": "https://dam.assets.ohio.gov/image/upload/transportation.ohio.gov/assets/Logo_Assets/ODOT_Zephyr-HORZ-RGB.png",
+        "icon": "https://www.transportation.ohio.gov/wps/wcm/connect/gov/2ac66df0-55c6-4360-9f44-ff1435bbd068/favicon-ODOT.png?MOD=AJPERES",
         "i18n": true,
         "country_code": "US",
         "attribution": {
@@ -32,7 +32,6 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [
-         [
           [
             -84.8065816,
             41.6965771
@@ -1485,7 +1484,6 @@
             -84.8065816,
             41.6965771
           ]
-         ]
         ]
       }
     }
