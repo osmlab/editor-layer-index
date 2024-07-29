@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Roseville_CA_2023",
+        "id": "Roseville_CA_2024",
         "attribution": {
             "url": "https://www.roseville.ca.us/",
             "text": "City of Roseville",
             "required": false
         },
-        "name": "City of Roseville Orthoimagery (2023)",
+        "name": "City of Roseville Orthoimagery (2024)",
         "icon": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/Roseville-230.png",
-        "url": "https://ags.roseville.ca.us/arcgis/rest/services/PublicServices/CityOrtho2023/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://ags.roseville.ca.us/arcgis/rest/services/PublicServices/CityOrtho2024/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
@@ -18,10 +18,10 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2023",
-        "end_date": "2023",
-        "description": "2023 3-inch resolution imagery for Roseville in the State of California",
-        "category": "historicphoto",
+        "start_date": "2024",
+        "end_date": "2024",
+        "description": "2024 3-inch resolution imagery for Roseville in the State of California",
+        "category": "photo",
         "privacy_policy_url": "https://www.roseville.ca.us/cms/One.aspx?portalId=7964922&pageId=10722460"
     },
     "geometry": {
