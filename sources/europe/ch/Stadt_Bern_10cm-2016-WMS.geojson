@@ -1,7 +1,7 @@
 {
     "type": "Feature",
     "properties": {
-        "license_url": "http://lists.openstreetmap.ch/pipermail/talk-ch/2016-November/003868.html",
+        "license_url": "https://lists.openstreetmap.ch/archives/list/talk-ch@openstreetmap.ch/thread/VU6MYNYQT7BXJKSR6MQH4BYREDI2GBDN/",
         "privacy_policy_url": "https://www.bern.ch/disclaimer",
         "start_date": "2016",
         "end_date": "2016",
@@ -15,14 +15,12 @@
         "available_projections": [
             "CRS:84",
             "EPSG:2056",
-            "EPSG:3857",
-            "EPSG:4326",
-            "EPSG:21781"
+            "EPSG:4326"
         ],
-        "url": "https://map.bern.ch/wms/OpenData/proxy.php?LAYERS=luftbild_2016&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://map.bern.ch/arcgis/services/Geoportal/Orthofoto_2016/MapServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "CH",
         "type": "wms",
-        "category": "photo",
+        "category": "historicphoto",
         "best": false,
         "min_zoom": 2
     },
