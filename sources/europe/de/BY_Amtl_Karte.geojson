@@ -1,28 +1,21 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "bavaria-80cm",
-        "name": "Bavaria (80 cm)",
-        "type": "wms",
-        "category": "photo",
-        "url": "https://geoservices.bayern.de/wms/v2/ogc_dop80_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop80c&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "best": true,
+        "id": "BY_Amtl_Karte",
+        "name": "Bayern Beschriftungen",
+        "type": "tms",
+        "category": "map",
+        "url": "https://wmtsod{switch:1,2,3,4,5,6,7,8,9}.bayernwolke.de/wmts/by_amtl_karte/smerc/{zoom}/{x}/{y}",
         "country_code": "DE",
-        "available_projections": [
-            "EPSG:3857",
-            "EPSG:4258",
-            "EPSG:4326",
-            "EPSG:25832",
-            "EPSG:25833",
-            "EPSG:31467",
-            "EPSG:31468"
-        ],
+        "license_url": "https://wiki.openstreetmap.org/w/images/b/bc/20230526_Nutzung_der_OpenData-Produkte_der_Bayer._Vermessungsverwaltung.pdf",
         "attribution": {
             "text": "Bayerische Vermessungsverwaltung",
-            "url": "https://www.ldbv.bayern.de/"
+            "url": "https://www.ldbv.bayern.de/",
+            "required": true
         },
-        "max_zoom": 18,
-        "min_zoom": 7
+        "max_zoom": 22,
+        "min_zoom": 7,
+        "privacy_policy_url": "https://www.ldbv.bayern.de/datenschutz.html"
     },
     "geometry": {
         "type": "Polygon",
