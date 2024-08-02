@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Zuerich-zh_luftbild2021-22-wms",
+        "name": "Stadt Zürich Luftbild Frühjahr (2021-22)",
+        "type": "wms",
+        "category": "photo",
+        "license_url": "https://data.stadt-zuerich.ch/dataset/ktzh_orthofoto_fruehjahr_rgb_infrarot_2021_22__ogd_",
+        "privacy_policy_url": "https://www.stadt-zuerich.ch/portal/de/index/footer/rechtliche_hinweise.html",
+        "url": "https://wms.zh.ch/OrthoZHWMS?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_w&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2021",
+        "end_date": "2022",
+        "country_code": "CH",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:2056",
+            "EPSG:4326",
+            "EPSG:4258",
+            "EPSG:21780",
+            "EPSG:21781",
+            "EPSG:21782",
+            "EPSG:31297"
+        ],
+        "attribution": {
+            "text": "Stadt Zürich Open Government Data"
+        },
+        "max_zoom": 21
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.446241,
+                    47.4414285
+                ],
+                [
+                    8.4438079,
+                    47.3155484
+                ],
+                [
+                    8.6289506,
+                    47.3137707
+                ],
+                [
+                    8.6317826,
+                    47.4396756
+                ],
+                [
+                    8.446241,
+                    47.4414285
+                ]
+            ]
+        ]
+    }
+}
