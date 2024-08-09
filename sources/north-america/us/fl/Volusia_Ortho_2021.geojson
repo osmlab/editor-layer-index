@@ -8,8 +8,9 @@
             "required": false
         },
         "name": "Volusia County Orthoimagery (2021)",
-        "url": "https://maps2.vcgov.org/arcgis/rest/services/Aerial_2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
-        "max_zoom": 19,
+        "url": "https://maps5.vcgov.org/arcgis/services/Aerials/2021_Aerial/ImageServer/WMSServer?format=image/jpeg&version=1.3.0&service=wms&request=getmap&layers=0&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "min_zoom": 12,
+        "max_zoom": 22,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
         "type": "wms",
@@ -21,7 +22,7 @@
         "start_date": "2021",
         "end_date": "2021",
         "description": "The 2021 orthoimagery for Volusia County of the State of Florida",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.volusia.org/government/privacy-policy.stml"
     },
