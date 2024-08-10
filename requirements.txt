@@ -4,11 +4,13 @@
 #
 #    pip-compile requirements.in
 #
-aiodns==3.0.0
+aiodns==3.2.0
     # via aiohttp
 aiofiles==24.1.0
     # via -r requirements.in
-aiohttp[speedups]==3.9.5
+aiohappyeyeballs==2.3.4
+    # via aiohttp
+aiohttp[speedups]==3.10.1
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
