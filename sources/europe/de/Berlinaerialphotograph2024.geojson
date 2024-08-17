@@ -1,22 +1,21 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Berlin-2023",
-        "name": "Berlin/Geoportal DOP20RGBI (2023)",
+        "id": "Berlin-2024",
+        "name": "Berlin/Geoportal DOP20RGBI (2024)",
         "type": "tms",
         "category": "photo",
-        "url": "https://tiles.codefor.de/berlin-2023-dop20rgbi/{zoom}/{x}/{y}.png",
-        "start_date": "2023",
-        "end_date": "2023",
+        "url": "https://tiles.codefor.de/berlin-2024-dop20rgbi/{zoom}/{x}/{y}.png",
+        "start_date": "2024",
+        "end_date": "2024",
         "country_code": "DE",
-        "best": false,
+        "best": true,
         "attribution": {
-            "text": "Geoportal Berlin/Digitale farbige TrueOrthophotos 2023 (DOP20RGBI) (codefor.de mirror)",
+            "text": "Geoportal Berlin/Digitale farbige TrueOrthophotos 2024 (DOP20RGBI) (codefor.de mirror)",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf",
-        "privacy_policy_url": "https://codefor.de/datenschutz/",
-        "max_zoom": 20
+        "privacy_policy_url": "https://codefor.de/datenschutz/"
     },
     "geometry": {
         "type": "Polygon",
