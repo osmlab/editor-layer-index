@@ -1,0 +1,154 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "MSB_Aerial_2023",
+        "attribution": {
+            "url": "https://data1-msb.opendata.arcgis.com/pages/msb-aerial-imagery",
+            "text": "Matanuska-Susitna Borough GIS Division",
+            "required": false
+        },
+        "name": "MSB Aerial Imagery - Area 2 (2023)",
+        "url": "https://maps.matsugov.us/imagery/rest/services/Imagery/AerialMosaic_2023_SP_Dyn/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&f={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Alaska/Matanuska-Susitna_Borough/MSB_Aerial_Imagery",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "4-band orthoimagery with 6-in pixel resolution for 22 sq mi and 1-ft pixel resolution (or less) for 1,014 sq mi within Mat-Su Borough (2023)",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": false
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -150.15375145912,
+                    61.59868146861
+                ],
+                [
+                    -150.15426670074,
+                    61.57340067556
+                ],
+                [
+                    -150.07015262604,
+                    61.58565571354
+                ],
+                [
+                    -149.93763004303,
+                    61.62908120903
+                ],
+                [
+                    -149.5699313736,
+                    61.66658050548
+                ],
+                [
+                    -149.56684146881,
+                    61.80249964889
+                ],
+                [
+                    -149.84115634918,
+                    61.80363519751
+                ],
+                [
+                    -149.84149967194,
+                    62.10050925774
+                ],
+                [
+                    -149.81575046539,
+                    62.10034860906
+                ],
+                [
+                    -149.81472049713,
+                    62.20234951936
+                ],
+                [
+                    -149.74605594635,
+                    62.20266973504
+                ],
+                [
+                    -149.74502597809,
+                    62.22667623853
+                ],
+                [
+                    -149.79274784088,
+                    62.2269961963
+                ],
+                [
+                    -149.79274784088,
+                    62.38591415224
+                ],
+                [
+                    -149.98569522858,
+                    62.38639155303
+                ],
+                [
+                    -149.98569522858,
+                    62.58006329351
+                ],
+                [
+                    -150.14259372711,
+                    62.57974708561
+                ],
+                [
+                    -150.1419070816,
+                    62.61861542693
+                ],
+                [
+                    -150.28438602448,
+                    62.6190891172
+                ],
+                [
+                    -150.28335605621,
+                    62.56108486473
+                ],
+                [
+                    -150.35854373932,
+                    62.56140127114
+                ],
+                [
+                    -150.3654101944,
+                    62.19834653684
+                ],
+                [
+                    -150.25177036285,
+                    62.19834653684
+                ],
+                [
+                    -150.18756875038,
+                    62.13494862226
+                ],
+                [
+                    -150.18722568512,
+                    62.02458845903
+                ],
+                [
+                    -150.28232608795,
+                    62.024266357
+                ],
+                [
+                    -150.28266923904,
+                    61.96647438851
+                ],
+                [
+                    -150.22241609573,
+                    61.96671642397
+                ],
+                [
+                    -150.21881112099,
+                    61.59876311828
+                ],
+                [
+                    -150.15375145912,
+                    61.59868146861
+                ]
+            ]
+        ]
+    }
+}

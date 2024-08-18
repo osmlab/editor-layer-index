@@ -10,8 +10,8 @@
         "name": "Suan Juan County Aerials (2022)",
         "icon": "https://www.sanjuancountywa.gov/ImageRepository/Document?documentID=21774",
         "url": "https://gis.sanjuancountywa.gov/arcgis/rest/services/Basemaps/Aerials_2022/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
-        "min_zoom": 10,
-        "max_zoom": 19,
+        "min_zoom": 9,
+        "max_zoom": 22,
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/wa/SanJuan.pdf",
         "permission_osm": "explicit",
         "country_code": "US",
@@ -24,10 +24,9 @@
         "start_date": "2022",
         "end_date": "2022",
         "description": "2022 aerial imagery for San Juan County, Washington",
-        "category": "photo",
+        "category": "historicphoto",
         "privacy_policy_url": "https://www.sanjuanco.com/124/Privacy-Policy",
-        "valid-georeference": true,
-        "best": true
+        "valid-georeference": true
     },
     "geometry": {
         "type": "MultiPolygon",

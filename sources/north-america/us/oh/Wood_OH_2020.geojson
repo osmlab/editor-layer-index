@@ -3,12 +3,12 @@
     "properties": {
         "id": "Wood_OH_2020",
         "attribution": {
-            "url": "https://www.co.wood.oh.us/",
+            "url": "https://www.woodcountyohio.gov",
             "text": "Wood County, State of Ohio",
             "required": false
         },
         "name": "Wood County Orthoimagery (2020)",
-        "icon": "https://www.co.wood.oh.us/images/logo.png",
+        "icon": "https://www.woodcountyohio.gov/ImageRepository/Document?documentID=70",
         "url": "https://engineergis.co.wood.oh.us/arcgis/rest/services/Imagery/Wood_2020_rgb_20x/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
         "max_zoom": 21,
         "license_url": "https://engineergis.co.wood.oh.us/arcgis/rest/services/Imagery/Wood_2020_rgb_20x/ImageServer",
@@ -21,8 +21,9 @@
         "start_date": "2020",
         "end_date": "2020",
         "description": "Spring 2020 orthoimagery for Wood County in the State of Ohio",
-        "category": "photo",
-        "valid-georeference": true
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.woodcountyohio.gov/privacy"
     },
     "geometry": {
         "type": "Polygon",

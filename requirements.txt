@@ -4,11 +4,13 @@
 #
 #    pip-compile requirements.in
 #
-aiodns==3.0.0
+aiodns==3.2.0
     # via aiohttp
 aiofiles==24.1.0
     # via -r requirements.in
-aiohttp[speedups]==3.9.5
+aiohappyeyeballs==2.3.4
+    # via aiohttp
+aiohttp[speedups]==3.10.1
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
@@ -78,7 +80,7 @@ referencing==0.29.1
     # via
     #   jsonschema
     #   jsonschema-specifications
-regex==2024.5.15
+regex==2024.7.24
     # via -r requirements.in
 requests==2.32.3
     # via -r requirements.in
@@ -88,13 +90,13 @@ rpds-py==0.8.10
     #   referencing
 scipy==1.10.0
     # via imagehash
-shapely==2.0.4
+shapely==2.0.5
     # via -r requirements.in
 urllib3==2.2.2
     # via
     #   -r requirements.in
     #   requests
-validators==0.29.0
+validators==0.33.0
     # via -r requirements.in
 yarl==1.7.2
     # via aiohttp

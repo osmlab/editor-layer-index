@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Monroe_Ortho_2022",
+        "id": "Monroe_Ortho_2023",
         "attribution": {
             "url": "https://www.monroecounty-fl.gov/174/GIS",
             "text": "Monroe County",
             "required": false
         },
-        "name": "Monroe County Orthoimagery (2022)",
+        "name": "Monroe County Orthoimagery (2023)",
         "icon": "https://www.arcgis.com/sharing/rest/community/groups/8587bed3e2fc4ea9be860a1b9e6d7f30/info/MC_Seal_65x65.png",
-        "url": "https://mcgis4.monroecounty-fl.gov/public/rest/services/Images/Orthos2022/ImageServer/exportImage?f=image&format=jpg&layers=show,6&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://mcgis4.monroecounty-fl.gov/public/rest/services/Images/Orthos2023/ImageServer/exportImage?f=image&format=jpg&layers=show,6&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "min_zoom": 10,
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
@@ -20,11 +20,12 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2022",
-        "end_date": "2022",
-        "description": "The 2022 orthoimagery for Monroe County of the State of Florida",
-        "category": "photo",
-        "valid-georeference": true
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "The 2023 orthoimagery for Monroe County of the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": false
     },
     "geometry": {
         "type": "MultiPolygon",

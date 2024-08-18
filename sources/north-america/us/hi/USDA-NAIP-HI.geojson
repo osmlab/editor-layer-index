@@ -1,0 +1,52 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA-NAIP-HI",
+        "attribution": {
+            "url": "https://naip-usdaonline.hub.arcgis.com/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "National Agriculture Imagery Program (HI)",
+        "type": "tms",
+        "url": "https://gis.apfo.usda.gov/arcgis/rest/services/NonCONUS/HI/ImageServer/tile/{zoom}/{y}/{x}",
+        "start_date": "2021",
+        "end_date": "2023",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "US",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "description": "The most recent year of 60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for Hawaii.",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -160.33912875649403,
+                    22.31879602313053
+                ],
+                [
+                    -160.33912875649403,
+                    18.845042487146173
+                ],
+                [
+                    -154.73744714701988,
+                    18.845042487146173
+                ],
+                [
+                    -154.73744714701988,
+                    22.31879602313053
+                ],
+                [
+                    -160.33912875649403,
+                    22.31879602313053
+                ]
+            ]
+        ]
+    }
+}
