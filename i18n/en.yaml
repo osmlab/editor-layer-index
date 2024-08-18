@@ -131,6 +131,11 @@ en:
         text: Terms & Feedback
       description: Esri archive imagery that may be clearer and more accurate than the default layer.
       name: Esri World Imagery (Clarity) Beta
+    FOMI_2011_2014:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for the entire country. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2011-2014 (WEBP)
     Frankfurt-am-Main-2019:
       attribution:
         text: Stadtvermessungsamt Frankfurt am Main
@@ -569,6 +574,11 @@ en:
         text: EUFAR Balaton ortofotó 2010
       description: 1940 geo-tagged photography from Balaton Limnological Institute.
       name: EUFAR Balaton orthophotos
+    geoscribble-latest:
+      attribution:
+        text: GeoScribble contributors
+      description: Geometric survey notes from Every Door editor, aged three weeks at most
+      name: GeoScribble latest notes
     gothenburg-citymap:
       attribution:
         text: © Gothenburg municipality, CC0
