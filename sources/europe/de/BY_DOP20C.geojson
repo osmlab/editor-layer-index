@@ -5,7 +5,7 @@
         "name": "Bayern Orthophoto 20cm (Farbe)",
         "type": "wms",
         "category": "photo",
-        "url": "https://geoservices.bayern.de/od/wms/dop/v1/dop20?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop20c&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoservices.bayern.de/od/wms/dop/v1/dop20?LAYERS=by_dop20c&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "best": true,
         "country_code": "DE",
         "available_projections": [
