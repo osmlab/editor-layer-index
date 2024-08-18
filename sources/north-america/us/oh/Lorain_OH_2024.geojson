@@ -1,0 +1,83 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Lorain_OH_2024",
+        "attribution": {
+            "url": "https://www.loraincountyohio.gov/",
+            "text": "Lorain County, State of Ohio",
+            "required": false
+        },
+        "name": "Lorain County Orthoimagery (2024)",
+        "icon": "https://www.loraincountyauditor.com/gis/images/auditordisplayseal2014.png",
+        "url": "https://tiles.arcgis.com/tiles/vGBb7WYV10mOJRNM/arcgis/rest/services/2024_Spring_Aerials/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/oh/Lorain.pdf",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2024",
+        "end_date": "2024",
+        "description": "Spring 2024 orthoimagery for Lorain County in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.35034971553335,
+                    41.06267409792375
+                ],
+                [
+                    -82.158175369126,
+                    41.06254541862134
+                ],
+                [
+                    -82.15789917969396,
+                    41.1351073901256
+                ],
+                [
+                    -82.06250361063664,
+                    41.13504695669184
+                ],
+                [
+                    -82.0618855529425,
+                    41.19239145649229
+                ],
+                [
+                    -81.96559521744075,
+                    41.19218324148903
+                ],
+                [
+                    -81.96504200872793,
+                    41.264809972976764
+                ],
+                [
+                    -81.86930506595903,
+                    41.26439400329511
+                ],
+                [
+                    -81.86847497686051,
+                    41.35127406339984
+                ],
+                [
+                    -81.96448861599582,
+                    41.35168947916608
+                ],
+                [
+                    -81.96325455181713,
+                    41.55262900830496
+                ],
+                [
+                    -82.34943459342958,
+                    41.43978437331293
+                ],
+                [
+                    -82.35034971553335,
+                    41.06267409792375
+                ]
+            ]
+        ]
+    }
+}
