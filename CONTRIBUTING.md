@@ -8,10 +8,10 @@ about which licenses are compatible with this index.
 The 'source' documents for this project are the .geojson files in `sources`. To add
 a new imagery source, add a new file to this directory.
 
-Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, `url`, and `category` properties.
+Each source must be a GeoJSON `Feature` and must minimally have `name`, `type`, `url`, `privacy_policy_url`, `license_url` and `category` properties.
 To improve readability, the keys of the GeoJSON document should be ordered consistently: `type`, `properties`, then `geometry`.
 
-We further recommend to add the licence related and `privacy_policy_url` properties.
+We further recommend to add the licence related properties.
 
 See [schema.json](schema.json) for the full list of available properties.
 
@@ -25,10 +25,11 @@ Supported TMS tokens:
 - `{switch:a,b,c}` for DNS server multiplexing
 - `{apikey}` for an app specific apikey
 
-Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
+Example: `https://tile.openstreetmap.org/{zoom}/{x}/{y}.png`
 
 Supported WMS tokens:
 - `{proj}` - requested projection (e.g. EPSG:3857)
+- `{wkid}` - same as proj, but without the prefix (e.g. 3857)
 - `{width}`, `{height}` - requested image dimensions (e.g. 256, 512)
 - `{bbox}` - requested bounding box
 
@@ -71,11 +72,33 @@ To specify imagery taken sometime in 2019, use `"start_date": "2019"`,
 Implementations *must not* round down the end date (e.g. consider `2013` the same as the
 start of `2013`. Note that this is the opposite of what we did before, and layers before 2015 could have overly wide date ranges.
 
+
+##### Categories
+
+Sources should be classified into one of the following categories of different types of layers:
+
+* `photo` – For satellite and aerial imagery.
+* `historicphoto` – Same as above, but for `photo` layers which are either quite old[^1] or when there exists a more recent `photo` source for the same region from the same imagery provider.
+* `map` – A map which is not mostly based on OSM data.
+* `historicmap` – Same as above, but for `map` layers which are either quite old[^1] or when there exists a more recent version of the map for the same region from the same provider.
+* `elevation` – A map focused on displaying terrain cartography, such as elevation contour lines or shaded relief maps.
+* `osmbasedmap` – A map which is mostly based on OSM data.
+* `qa` – A map or overlay with the main intent to help with quality assurance of OSM data.
+* `other` – Imagery layers wich don't fit into any of the above categories.
+
+[^1]: Imagery sources should be considered by their usability from a mapping perspective: If the map or imagery is significantly older than available alternatives (such as the default global background layers), it should be put in the corresponding "historic" category.
+
+
+##### Icon
+
+An imagery source can have an icon by setting the `icon` property to a URL of an image. This image should be sized such that it can be displayed also at a small scale, e.g. in the list of imagery layers next to the name.
+
+
 ### Submitting your modifications
 
 Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `gh-pages`.
 
-After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test as it would appear in the iD editor you can try at https://ideditor.github.io/imagery-index/index.html.
+After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test as it would appear in the iD editor you can try at https://rapideditor.github.io/imagery-index/index.html.
 
 We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
 

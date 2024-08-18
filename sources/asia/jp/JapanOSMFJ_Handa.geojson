@@ -1,0 +1,92 @@
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osmfj-handa-2020",
+        "attribution": {
+          "url": "https://www.city.handa.lg.jp/kikaku/shise/johoseisaku/opendata/data_kokupict_2020.html",
+          "text": "OSMFJ_Ortho",
+          "required": true
+        },
+        "name": "Aich Handa Imagery 2020",
+        "url": "https://tiles.osmf.jp/handa-shi/{zoom}/{x}/{y}.png",
+        "min_zoom": 10,
+        "max_zoom": 18,
+        "license_url": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+        "country_code": "JP",
+        "type": "tms",
+        "start_date": "2020-05-07",
+        "end_date": "2020-05-07",
+        "permission_osm": "explicit",
+        "description": "Open Data Orthoimagery from Handa-shi, 2020",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              136.93530472984,
+              34.94672584229
+            ],
+            [
+              136.93531566304,
+              34.93450106259
+            ],
+            [
+              136.92191500792,
+              34.93449300837
+            ],
+            [
+              136.92192618793,
+              34.92199037355
+            ],
+            [
+              136.85803521697,
+              34.92195196719
+            ],
+            [
+              136.85808996591,
+              34.86069855804
+            ],
+            [
+              136.93530790602,
+              34.86074501018
+            ],
+            [
+              136.93531246195,
+              34.85564575615
+            ],
+            [
+              136.95213860292,
+              34.8556558789
+            ],
+            [
+              136.95212741197,
+              34.86818084906
+            ],
+            [
+              136.97171649416,
+              34.86819263223
+            ],
+            [
+              136.97168831111,
+              34.89972680532
+            ],
+            [
+              136.98099313302,
+              34.89973240018
+            ],
+            [
+              136.98095108893,
+              34.94675327311
+            ],
+            [
+              136.93530472984,
+              34.94672584229
+            ]
+          ]
+        ]
+      }
+    }

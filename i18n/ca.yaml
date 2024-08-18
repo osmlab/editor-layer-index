@@ -14,12 +14,13 @@ ca:
       description: ' L''arxiu Esri pot ser més clar i acurat que la capa per defecte.'
       name: Imatges aèries d'Esri (Claredat) Beta
     MAPNIK:
+      attribution:
+        text: © col·laboradors d'OpenStreetMap, ODbL 1.0
       description: La capa d'OpenStreetMap predeterminada.
       name: OpenStreetMap (Estàndard)
     Mapbox:
       attribution:
         text: Termes i comentaris
-      description: Imatges aèries i de satèl·lit.
       name: 'Satèl·lit Mapbox '
     OSM_Inspector-Addresses:
       attribution:
@@ -53,9 +54,6 @@ ca:
       name: imatgeria aèria més recent de SPW (Valònia)
     SPW_PICC:
       name: imatgeria numèrica PICC de SPW (Valònia)
-    US-TIGER-Roads-2014:
-      description: Al nivell de zoom 16+, les dades del mapa són del domini públic del US Census. A zooms més baixos, només canvis d'ençà de 2006, els canvis menors incorporats a OpenStreetMap
-      name: Carreteres TIGER 2014
     US-TIGER-Roads-2017:
       description: Groc = Dades de mapa del domini públic del US Census. Vermell = No es troben dades a OpenStreetMap
       name: Carreteres TIGER 2017
@@ -135,31 +133,24 @@ ca:
       attribution:
         text: © col·laboradors d'OpenStreetMap, CC-BY-SA
       name: OpenPT Map (superposat)
+    openrailwaymap:
+      name: OpenRailwayMap
     osm-gps:
       attribution:
         text: © col·laboradors d'OpenStreetMap
       description: Traces GPS públiques pujades a OpenStreetMap.
       name: Traces GPS d'OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © col·laboradors d'OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Estàndard Blanc i Negre)
     osm-mapnik-german_style:
       attribution:
         text: © col·laboradors d'OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Estil alemany)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Escaneig de «mapes econòmics» ca. 1950–1980
-      name: Mapa econòmic de Lantmäteriet 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Dades ©OpenStreetMap col·laboradors
       name: QA Sense adreça
     skobbler:
       attribution:
-        text: '© Quadrícules: skobbler Dades del mapa: col·laboradors d''OpenStreetMap'
+        text: '© Tessel·les: skobbler Dades del mapa: col·laboradors d''OpenStreetMap'
       name: skobbler
     skoterleder:
       attribution:
@@ -168,8 +159,10 @@ ca:
       name: Mapa de motoneu de Suècia
     stamen-terrain-background:
       attribution:
-        text: Quadrícula de mapes de Stamen Design, sota CC BY 3.0. Dades d'OpenStreetMap, sota ODbL
+        text: Tessel·les del mapa de Stamen Design, sota CC BY 3.0. Dades d'OpenStreetMap, sota ODbL
       name: Stamen Terrain
+    stockholm-orto:
+      name: Ortofotografia d'Estocolm
     tf-cycle:
       attribution:
         text: Mapes © Thunderforest, Dades © col·laboradors d'OpenStreetMap
@@ -198,11 +191,6 @@ ca:
         text: © Trafikverket, CC0
       description: 'Detalls addicionals del NVDB suec: referències d''autopistes, reductors de velocitat, àrees de descans, parades d''autobús, ponts, túnels, càmeres de velocitat'
       name: Xarxa viària extra de Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Noms de carrer suecs de NVDB
-      name: Noms de carrer de Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0

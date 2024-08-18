@@ -1,0 +1,138 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "StratMap20_NC_6in_Balmorhea_Davis_Mountians",
+        "attribution": {
+            "url": "https://tnris.org/stratmap/",
+            "text": "Strategic Mapping Program (StratMap). Balmorhea & Davis Mountain State Parks Imagery/Lidar",
+            "required": false
+        },
+        "name": "StratMap Balmorhea & Davis Mountain State Parks Imagery (2020)",
+        "icon": "https://cdn.tnris.org/images/tnris_logo.svg",
+        "url": "https://imagery.tnris.org/server/rest/services/StratMap/StratMap20_NC_6in_Balmorhea_Davis_Mountians/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://data.tnris.org/collection?c=80846f36-8db1-4140-8a08-32fda77b0f89",
+        "privacy_policy_url": "https://www.tnris.org/site-policies/#privacy-and-security-policy",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "start_date": "2020-01-05",
+        "end_date": "2020-01-05",
+        "description": "StratMap lidar & orthoimagery project covers the Balmorhea & Davis Mountain State Parks and their surrounding areas in the state of Texas",
+        "category": "photo",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        -103.9048291111,
+                        30.62587394113
+                    ],
+                    [
+                        -103.90525826454,
+                        30.64197372041
+                    ],
+                    [
+                        -103.97057541847,
+                        30.64153064307
+                    ],
+                    [
+                        -103.96954545021,
+                        30.57696737136
+                    ],
+                    [
+                        -103.87358674049,
+                        30.57778021998
+                    ],
+                    [
+                        -103.87435921669,
+                        30.6105840567
+                    ],
+                    [
+                        -103.88912209511,
+                        30.61014083564
+                    ],
+                    [
+                        -103.8898945713,
+                        30.62616937405
+                    ],
+                    [
+                        -103.9048291111,
+                        30.62587394113
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        -103.86062639236,
+                        30.92048746418
+                    ],
+                    [
+                        -103.74853151321,
+                        30.92137105053
+                    ],
+                    [
+                        -103.74921815872,
+                        30.95199699716
+                    ],
+                    [
+                        -103.73308198929,
+                        30.95243864576
+                    ],
+                    [
+                        -103.73359697342,
+                        30.96760067584
+                    ],
+                    [
+                        -103.71746080399,
+                        30.96833663546
+                    ],
+                    [
+                        -103.71780412674,
+                        31.00130180504
+                    ],
+                    [
+                        -103.76741426468,
+                        31.00086038249
+                    ],
+                    [
+                        -103.76672761917,
+                        30.98526214071
+                    ],
+                    [
+                        -103.78269212723,
+                        30.98496780975
+                    ],
+                    [
+                        -103.7821771431,
+                        30.96995572664
+                    ],
+                    [
+                        -103.79831331253,
+                        30.96980853767
+                    ],
+                    [
+                        -103.79814165115,
+                        30.95464685813
+                    ],
+                    [
+                        -103.86079805374,
+                        30.95420521974
+                    ],
+                    [
+                        -103.86062639236,
+                        30.92048746418
+                    ]
+                ]
+            ]
+        ]
+    }
+}

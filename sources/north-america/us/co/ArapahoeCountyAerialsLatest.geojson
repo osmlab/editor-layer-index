@@ -1,0 +1,129 @@
+{
+    "type": "Feature",
+    "properties": {
+        "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Arapahoe.pdf",
+        "privacy_policy_url": "https://www.arapahoeco.gov/your_county/county_departments/information_technology/privacy_policy.php",
+        "id": "Arapahoe-County-Aerials-Latest",
+        "type": "wms",
+        "name": "Arapahoe County Aerials Latest",
+        "url": "https://gis.arapahoegov.com/arcgis/rest/services/Aerials/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 22,
+        "permission_osm": "implicit",
+        "country_code": "US",
+        "start_date": "2024",
+        "end_date": "2024",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2232",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "attribution": {
+            "url": "https://gis.arapahoegov.com/",
+            "text": "Arapahoe County GIS",
+            "required": false
+        },
+        "icon": "https://files.arapahoeco.gov/_assets_/images/logo.png",
+        "category": "photo",
+        "min_zoom": 9
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -103.704448850539691,
+                    39.564465294108643
+                ],
+                [
+                    -103.699793663508885,
+                    39.745597674803953
+                ],
+                [
+                    -103.859381613938268,
+                    39.747918394150034
+                ],
+                [
+                    -103.859532452839616,
+                    39.740659272022953
+                ],
+                [
+                    -104.291346517655967,
+                    39.745919778707254
+                ],
+                [
+                    -104.291421937106634,
+                    39.738566382266839
+                ],
+                [
+                    -104.892250990876548,
+                    39.743298952796444
+                ],
+                [
+                    -104.892477249228548,
+                    39.714300174013459
+                ],
+                [
+                    -104.948796724017072,
+                    39.714582996953482
+                ],
+                [
+                    -104.949126684113708,
+                    39.671113111073034
+                ],
+                [
+                    -104.996065864725026,
+                    39.671301659699687
+                ],
+                [
+                    -104.995952735549025,
+                    39.685819903953842
+                ],
+                [
+                    -105.033398492807123,
+                    39.685970742855183
+                ],
+                [
+                    -105.033587041433819,
+                    39.65697196407222
+                ],
+                [
+                    -105.043019186483335,
+                    39.657014387513208
+                ],
+                [
+                    -105.043096962791864,
+                    39.642524425553063
+                ],
+                [
+                    -105.061862264861887,
+                    39.642595131288047
+                ],
+                [
+                    -105.062337171716536,
+                    39.562875200690826
+                ],
+                [
+                    -104.285331816464975,
+                    39.557484281205952
+                ],
+                [
+                    -104.28510555811296,
+                    39.564649129019685
+                ],
+                [
+                    -103.835681051564919,
+                    39.559181218846042
+                ],
+                [
+                    -103.835567922388918,
+                    39.566383776385109
+                ],
+                [
+                    -103.704448850539691,
+                    39.564465294108643
+                ]
+            ]
+        ]
+    }
+}

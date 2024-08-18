@@ -4,7 +4,7 @@
         "id": "fiskeridir-akvakultur",
         "name": "Fiskeridirektoratet Aquaculture overlay",
         "type": "wms",
-        "url": "https://ogc.fiskeridir.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_262&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gis.fiskeridir.no/server/services/fiskeridirWMS_akva/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=flate_ihht_akvakulturregisteret,akvakultur_lokaliteter&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
@@ -27,8 +27,9 @@
         ],
         "attribution": {
             "text": "© Fiskeridirektoratet",
-            "url": "https://www.fiskeridir.no/Kart"
+            "url": "https://www.fiskeridir.no/"
         },
+        "privacy_policy_url": "https://www.fiskeridir.no/Om-oss/Personvern/",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png",
         "max_zoom": 22,
         "min_zoom": 3,

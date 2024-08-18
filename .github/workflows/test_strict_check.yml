@@ -3,8 +3,9 @@ name: Check strict_check.py
 on:
   pull_request:
     paths:
-      - 'scripts/strict_check.py'
-      - 'requirements.txt'
+      - "scripts/libeli/*"
+      - "scripts/*.py"
+      - "requirements*.txt"
 
 jobs:
   check:
@@ -13,22 +14,24 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.8
+          python-version: "3.10"
 
       - name: Install Python dependencies
         run: |
           python -m pip install -U pip wheel
           python -m pip install -r requirements.txt
 
-      - name: Basic check
-        run: find sources -name \*.geojson | xargs python scripts/check.py
-
-      # Rudimentary check if strict_check.py works by applying it to a small subset of sources
+      # Rudimentary check if strict_check.py works by applying it to a small subset of sources.
+      # This is expected to fail as sources might fail the strict check.
+      # However, there should be no Python errors or obvious wrong checks present.
       - name: Strict check
         run: |
           python scripts/strict_check.py sources/europe/ch/*
+
+      - name: Basic check
+        run: find sources -name \*.geojson | xargs python scripts/check.py

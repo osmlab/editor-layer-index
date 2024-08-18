@@ -1,0 +1,134 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "City_of_Wooster_OH_2021",
+        "attribution": {
+            "url": "https://www.woosteroh.com/",
+            "text": "City of Wooster, State of Ohio",
+            "required": false
+        },
+        "name": "City of Wooster Orthoimagery (2022)",
+        "icon": "https://www.woosteroh.com/sites/default/files/footer-logo.png",
+        "url": "https://utility.arcgis.com/usrsvcs/servers/a9c2a83a20ea4a4ea4a910b9766329b4/rest/services/Imagery/Ortho_2021/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "start_date": "2021",
+        "end_date": "2021",
+        "description": "1.5-inch resolution 2021 orthoimagery for City of Wooster in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -81.9843234502508,
+                    40.80804684404583
+                ],
+                [
+                    -81.98477445597756,
+                    40.74976302706064
+                ],
+                [
+                    -81.97129054117502,
+                    40.749647384566615
+                ],
+                [
+                    -81.97126741267621,
+                    40.746224366743675
+                ],
+                [
+                    -81.9396738833104,
+                    40.746062467252045
+                ],
+                [
+                    -81.93958136931519,
+                    40.75982392404022
+                ],
+                [
+                    -81.92605119751505,
+                    40.759731410045
+                ],
+                [
+                    -81.92605119751505,
+                    40.76662370268849
+                ],
+                [
+                    -81.907918454453,
+                    40.76648493169567
+                ],
+                [
+                    -81.90775655496137,
+                    40.790538570451474
+                ],
+                [
+                    -81.89418012616363,
+                    40.79046918495506
+                ],
+                [
+                    -81.894076047919,
+                    40.804195948995016
+                ],
+                [
+                    -81.88503280488678,
+                    40.8041034349998
+                ],
+                [
+                    -81.88450084941427,
+                    40.85903361965848
+                ],
+                [
+                    -81.90258733547871,
+                    40.8591145694043
+                ],
+                [
+                    -81.90247169298468,
+                    40.869418315621324
+                ],
+                [
+                    -81.91603655753302,
+                    40.86947035474363
+                ],
+                [
+                    -81.91600186478482,
+                    40.87288759044188
+                ],
+                [
+                    -81.92956672933316,
+                    40.87296854018769
+                ],
+                [
+                    -81.92958985783197,
+                    40.86955708661415
+                ],
+                [
+                    -81.9702613229782,
+                    40.869730550355186
+                ],
+                [
+                    -81.970400093971,
+                    40.84570004009819
+                ],
+                [
+                    -81.97495640823531,
+                    40.845723168597
+                ],
+                [
+                    -81.97529177146797,
+                    40.808000587048234
+                ],
+                [
+                    -81.9843234502508,
+                    40.80804684404583
+                ]
+            ]
+        ]
+    }
+}

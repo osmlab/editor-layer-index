@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -80.016535617662228, 8.848981570244637 ], [ -80.016535617662228, 9.41480707574399 ], [ -79.468592502427853, 9.41480707574399 ], [ -79.468592502427853, 8.848981570244637 ], [ -80.016535617662228, 8.848981570244637 ] ]
+            [ [ -80.0165, 8.849 ], [ -79.4686, 8.849 ], [ -79.4686, 9.4148 ], [ -80.0165, 9.4148 ], [ -80.0165, 8.849 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "PA",
-        "description": "Images of the new locks (but partly cloudy) (true color)",
+        "description": "Images of the new locks (but partly cloudy, somewhat outdated) (true color)",
         "end_date": "2016-06-07",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R111_N09_20160604T154554",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Panama Canal",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-06-07",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R111_N09_20160604T154554&z={zoom}&x={x}&y={-y}"

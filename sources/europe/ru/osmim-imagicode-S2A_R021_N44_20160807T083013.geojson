@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 35.932588577270494, 44.962368729350388 ], [ 35.932588577270494, 45.559256426515695 ], [ 37.369909286499016, 45.559256426515695 ], [ 37.369909286499016, 44.962368729350388 ], [ 35.932588577270494, 44.962368729350388 ] ]
+            [ [ 35.9326, 44.9624 ], [ 37.3699, 44.9624 ], [ 37.3699, 45.5593 ], [ 35.9326, 45.5593 ], [ 35.9326, 44.9624 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "RU",
-        "description": "State of bridge construction in August 2016 (true color)",
+        "description": "State of bridge construction in August 2016, outdated (true color)",
         "end_date": "2016-08-07",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R021_N44_20160807T083013",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Kerch Strait",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-08-07",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R021_N44_20160807T083013&z={zoom}&x={x}&y={-y}"

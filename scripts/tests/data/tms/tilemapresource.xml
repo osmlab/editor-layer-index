@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
+    <Title>VMAP0 World Map</Title>
+    <Abstract>A map of the world built from the NGA VMAP0 vector data set.</Abstract>
+    <KeywordList></KeywordList>
+    <Metadata type="TC211" mime-type="text/xml" href="http://www.org" />
+    <Attribution>
+        <Title>National Geospatial Intelligence Agency</Title>
+        <Logo width="10" height="10" href="http://nga.mil/logo.gif" mime-type="image/gif" />
+    </Attribution>
+    <WebMapContext href="http://wms.org" />
+    <Face>0</Face>
+    <SRS>EPSG:4326</SRS>
+    <BoundingBox minx="-180" miny="-90" maxx="180" maxy="90" />
+    <Origin x="-180" y="-90" />
+    <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg" />
+    <TileSets profile="global-geodetic">
+        <TileSet href="http://tms.osgeo.org/1.0.0/vmap0/0" units-per-pixel="0.703125" order="0" />
+        <TileSet href="http://tms.osgeo.org/1.0.0/vmap0/1" units-per-pixel="0.3515625" order="1" />
+        <TileSet href="http://tms.osgeo.org/1.0.0/vmap0/2" units-per-pixel="0.17578125" order="2" />
+        <TileSet href="http://tms.osgeo.org/1.0.0/vmap0/3" units-per-pixel="0.08789063" order="3" />
+    </TileSets>
+</TileMap>

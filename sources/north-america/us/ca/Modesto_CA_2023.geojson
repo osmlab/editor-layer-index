@@ -1,0 +1,82 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Modesto_CA_2023",
+        "attribution": {
+            "url": "https://www.modestogov.com/",
+            "text": "City of Modesto",
+            "required": false
+        },
+        "name": "City of Modesto Orthoimagery (2023)",
+        "icon": "https://www.modestogov.com/ImageRepository/Document?documentID=15610",
+        "url": "https://gis.modestogov.com/hosting/rest/services/ExternalServices/City_of_Modesto_2023_Aerial/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "2023 3-inch resolution imagery for Modesto in the State of California",
+        "category": "photo",
+        "privacy_policy_url": "https://www.modestogov.com/privacy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -121.0992342157356,
+                    37.72528069428424
+                ],
+                [
+                    -121.09818120585834,
+                    37.59434789746501
+                ],
+                [
+                    -121.08134249542607,
+                    37.580354408900504
+                ],
+                [
+                    -120.87941956866305,
+                    37.58117948041918
+                ],
+                [
+                    -120.8800839626202,
+                    37.71168772702269
+                ],
+                [
+                    -120.89833964544704,
+                    37.71162949844235
+                ],
+                [
+                    -120.89841386766116,
+                    37.72612615614371
+                ],
+                [
+                    -120.98969736536142,
+                    37.7257830994355
+                ],
+                [
+                    -120.9899832909424,
+                    37.7692861623982
+                ],
+                [
+                    -121.0265215698199,
+                    37.76912899101326
+                ],
+                [
+                    -121.02621163720488,
+                    37.72562679123544
+                ],
+                [
+                    -121.0992342157356,
+                    37.72528069428424
+                ]
+            ]
+        ]
+    }
+}

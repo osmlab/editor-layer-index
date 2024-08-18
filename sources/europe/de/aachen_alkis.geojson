@@ -1,0 +1,54 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "Aachen Liegenschaftskataster",
+        "type": "wms",
+        "url": "https://geodienste.staedteregion-aachen.de/cgi-bin/qgis_mapserv.fcgi?MAP=/home/geonet/inkasserver/QMAPS/ALKIS/ALKIS_LK_Inkas.qgs&LAYERS=alkis_lk_inkas&FORMAT=image/png&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "license_url": "https://www.staedteregion-aachen.de/de/navigation/staedteregion/geoportal/administration-impressum-datenschutz-nutzung/nutzungsbedingungen",
+        "privacy_policy_url": "https://www.staedteregion-aachen.de/de/navigation/staedteregion/geoportal/administration-impressum-datenschutz-nutzung/datenschutz",
+        "id": "aachen_alkis_wms",
+        "description": "Amtliches Liegenschaftskatasterinformationssystem (ALKIS). Zeigt Gebäude- und Flurstücksdaten (tagesaktuell)",
+        "country_code": "DE",
+        "best": true,
+        "category": "other",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:25832"
+        ]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    6.2,
+                    50.48
+                ],
+                [
+                    6.36,
+                    50.49
+                ],
+                [
+                    6.43,
+                    50.6
+                ],
+                [
+                    6.31,
+                    50.95
+                ],
+                [
+                    6.11,
+                    50.95
+                ],
+                [
+                    5.96,
+                    50.79
+                ],
+                [
+                    6.2,
+                    50.48
+                ]
+            ]
+        ]
+    }
+}

@@ -40,11 +40,12 @@
                         "bing",
                         "scanex",
                         "wms_endpoint",
-                        "wmts"
+                        "wmts",
+                        "pmt3"
                     ]
                 },
                 "category": {
-                    "description": "A rough categorisation of different types of layers",
+                    "description": "A rough categorisation of different types of layers. See https://github.com/osmlab/editor-layer-index/blob/gh-pages/CONTRIBUTING.md#categories for a description of the individual categories.",
                     "type": "string",
                     "enum": [
                         "photo",
@@ -84,8 +85,8 @@
                     "type": "string"
                 },
                 "privacy_policy_url": {
-                    "description": "A URL for the privacy policy of the operator",
-                    "type": "string"
+                    "description": "A URL for the privacy policy of the operator or false if there is no existing privacy policy for tis imagery.",
+                    "type":  ["string", "boolean"]
                 },
                 "id": {
                     "description": "A unique identifier for the source; used in imagery_used changeset tag",
@@ -171,6 +172,7 @@
                     "additionalProperties": false
                 },
                 "icon": {
+                    "description": "A URL for an image, that can be displayed in the list of imagery layers next to the name",
                     "type": "string"
                 },
                 "eula": {

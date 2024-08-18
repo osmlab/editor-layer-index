@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 79.017791748046847, 8.827572266651268 ], [ 79.014015197753892, 9.64678471986339 ], [ 80.176420211791978, 9.650423231331946 ], [ 80.177278518676744, 8.831304063493132 ], [ 79.017791748046847, 8.827572266651268 ] ]
+            [ [ 79.0178, 8.8276 ], [ 80.1773, 8.8313 ], [ 80.1764, 9.6504 ], [ 79.014, 9.6468 ], [ 79.0178, 8.8276 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Adams Bridge",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-03-27",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R119_N09_20160327T050917&z={zoom}&x={x}&y={-y}"

@@ -3,6 +3,7 @@
     "properties": {
         "id": "img.nj.gov-Natural2015",
         "name": "NJ 2015 Aerial Imagery (Natural Color)",
+        "icon": "https://njgin.nj.gov/njgin/assets/slices/njgin_logo.png",
         "description": "Digital orthophotography of New Jersey, Natural Color, 1 foot resolution",
         "attribution": {
             "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId=188471FF-2803-4145-A5AD-605DE86D3B4D",
@@ -11,9 +12,12 @@
         },
         "start_date": "2015-03-29",
         "end_date": "2015-05-03",
+        "category": "historicphoto",
         "max_zoom": 20,
         "country_code": "US",
         "type": "wms",
+        "license_url": "https://newjersey.maps.arcgis.com/sharing/rest/content/items/3c1090054fee4a498514659d57bfe4ae/info/metadata/metadata.xml?format=default&output=html",
+        "privacy_policy_url": "https://www.nj.gov/nj/privacy.html",
         "available_projections": [
             "EPSG:3424",
             "EPSG:3616",

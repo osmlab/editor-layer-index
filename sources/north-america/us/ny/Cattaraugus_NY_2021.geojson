@@ -1,0 +1,160 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Cattaraugus_NY_2021",
+        "attribution": {
+            "url": "https://www.cattco.org/real-property-and-gis",
+            "text": "Cattaraugus County Real Property Services",
+            "required": false
+        },
+        "name": "Cattaraugus County Orthoimagery (2021)",
+        "icon": "https://www.cattco.org/sites/default/files/inline-images/cattcoseal_0.png",
+        "url": "https://maps2.cattco.org/arcgiswebadaptor/rest/services/AerialPhotos/MapServer/export?f=image&format=jpg&layers=show:8&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 21,
+        "license_url": "https://wiki.openstreetmap.org/wiki/New_York_(state)/Cattaraugus_County_Orthoimagery",
+        "permission_osm": "explicit",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2021",
+        "end_date": "2021",
+        "description": "Spring 2021 1-foot resolution orthoimagery for Cattaraugus County in the State of New York",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.cattco.org/legal/privacy-policy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -79.06185508043,
+                    42.54680071638
+                ],
+                [
+                    -79.06173974544,
+                    41.99621890313
+                ],
+                [
+                    -78.29557478696,
+                    41.99625079733
+                ],
+                [
+                    -78.29550236732,
+                    42.53231655787
+                ],
+                [
+                    -78.45273345977,
+                    42.53234225249
+                ],
+                [
+                    -78.45270931989,
+                    42.54680269243
+                ],
+                [
+                    -78.49202245742,
+                    42.54681850084
+                ],
+                [
+                    -78.49204391509,
+                    42.53231260485
+                ],
+                [
+                    -78.5509559539,
+                    42.53232446391
+                ],
+                [
+                    -78.55096668273,
+                    42.5178290396
+                ],
+                [
+                    -78.62955004245,
+                    42.51782706263
+                ],
+                [
+                    -78.62953663141,
+                    42.50335200368
+                ],
+                [
+                    -78.66884976894,
+                    42.50334409398
+                ],
+                [
+                    -78.66882831126,
+                    42.48887161472
+                ],
+                [
+                    -78.74745190412,
+                    42.48885381376
+                ],
+                [
+                    -78.74741435319,
+                    42.47439776455
+                ],
+                [
+                    -78.80639613211,
+                    42.47436413472
+                ],
+                [
+                    -78.80634785235,
+                    42.45991661059
+                ],
+                [
+                    -78.84570122302,
+                    42.45988099219
+                ],
+                [
+                    -78.84564221442,
+                    42.44544200107
+                ],
+                [
+                    -78.88487220347,
+                    42.44539449889
+                ],
+                [
+                    -78.8849419409,
+                    42.45993244098
+                ],
+                [
+                    -78.92416120112,
+                    42.45988099219
+                ],
+                [
+                    -78.9242275811,
+                    42.47442842735
+                ],
+                [
+                    -78.94379228622,
+                    42.47436808942
+                ],
+                [
+                    -78.94387275249,
+                    42.50340539416
+                ],
+                [
+                    -78.96343142062,
+                    42.50334013913
+                ],
+                [
+                    -78.96352261573,
+                    42.51789230254
+                ],
+                [
+                    -78.9830732359,
+                    42.51782706164
+                ],
+                [
+                    -78.98316443235,
+                    42.54687580628
+                ],
+                [
+                    -79.06185508043,
+                    42.54680071638
+                ]
+            ]
+        ]
+    }
+}

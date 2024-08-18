@@ -1,0 +1,130 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "DC_From_Above_Ortho_2019",
+        "attribution": {
+            "url": "https://opendata.dc.gov/datasets/aerial-photography-image-service-orthophoto-2019/",
+            "text": "OCTO, DCGIS",
+            "required": false
+        },
+        "name": "DC From Above Orthophoto 2019",
+        "icon": "https://octo.dc.gov/sites/default/files/styles/callout_interior_graphic/public/dc/sites/octo/agency_content/images/OCTO-logo_Lead.png",
+        "url": "https://maps2.dcgis.dc.gov/dcgis/services/DCGIS_DATA/Ortho2019/MapServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Washington_DC/DC_From_Above",
+        "country_code": "US",
+        "permission_osm": "explicit",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:26985"
+        ],
+        "start_date": "2019-04-23",
+        "end_date": "2019-04-23",
+        "description": "4-band digital orthophotography with a 3 inch/0.08 meter pixel resolution covering the District of Columbia at 2019",
+        "category": "historicphoto",
+        "privacy_policy_url": "https://dc.gov/page/privacy-and-security",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -77.11972653865814,
+                    38.93491887578436
+                ],
+                [
+                    -77.11856245994568,
+                    38.93365034303527
+                ],
+                [
+                    -77.11698532104492,
+                    38.931730809549016
+                ],
+                [
+                    -77.11560130119324,
+                    38.92839236670401
+                ],
+                [
+                    -77.11169600486755,
+                    38.92441941497729
+                ],
+                [
+                    -77.10582733154297,
+                    38.91982019511209
+                ],
+                [
+                    -77.10288763046265,
+                    38.91581337221498
+                ],
+                [
+                    -77.10213661193848,
+                    38.91292498039268
+                ],
+                [
+                    -77.09361791610718,
+                    38.90704765839583
+                ],
+                [
+                    -77.08359718322754,
+                    38.903624561978546
+                ],
+                [
+                    -77.07278251647948,
+                    38.9031236071953
+                ],
+                [
+                    -77.06863045692444,
+                    38.901236645780585
+                ],
+                [
+                    -77.06705868244171,
+                    38.89934128449783
+                ],
+                [
+                    -77.06655979156494,
+                    38.897036724213834
+                ],
+                [
+                    -77.06278324127197,
+                    38.8906737455889
+                ],
+                [
+                    -77.05587387084961,
+                    38.88759225580099
+                ],
+                [
+                    -77.03776359558105,
+                    38.87309326352928
+                ],
+                [
+                    -77.03012466430664,
+                    38.86139837295783
+                ],
+                [
+                    -77.02643394470215,
+                    38.85214133863762
+                ],
+                [
+                    -77.0317554473877,
+                    38.797175879046264
+                ],
+                [
+                    -76.9092857837677,
+                    38.892849079970304
+                ],
+                [
+                    -77.04088300466537,
+                    38.99591934335781
+                ],
+                [
+                    -77.11972653865814,
+                    38.93491887578436
+                ]
+            ]
+        ]
+    }
+}

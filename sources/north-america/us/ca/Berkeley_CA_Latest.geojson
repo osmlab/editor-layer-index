@@ -1,0 +1,70 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Berkeley_CA_Latest",
+        "attribution": {
+            "url": "https://berkeleyca.gov/",
+            "text": "City of Berkeley",
+            "required": false
+        },
+        "name": "City of Berkeley Orthoimagery (Latest)",
+        "icon": "https://berkeleyca.gov/themes/custom/berkeley_zurb/logo.svg",
+        "url": "https://gis.cityofberkeley.info/arcgis3/rest/services/Imagery/Orthophoto/MapServer/export?f=image&format=jpg&layers=show:4&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "Latest 3-inch resolution imagery for Berkeley in the State of California",
+        "category": "photo",
+        "privacy_policy_url": "https://berkeleyca.gov/privacy-policy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -122.33113846925272,
+                    37.91366496341743
+                ],
+                [
+                    -122.32928674377968,
+                    37.8339591449722
+                ],
+                [
+                    -122.20121554529302,
+                    37.83573590307002
+                ],
+                [
+                    -122.20233303982292,
+                    37.88658207554451
+                ],
+                [
+                    -122.23899061218174,
+                    37.88614507769651
+                ],
+                [
+                    -122.23927524986635,
+                    37.90047605560002
+                ],
+                [
+                    -122.25759556776691,
+                    37.900286970283716
+                ],
+                [
+                    -122.25792823339424,
+                    37.914773298310024
+                ],
+                [
+                    -122.33113846925272,
+                    37.91366496341743
+                ]
+            ]
+        ]
+    }
+}

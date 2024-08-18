@@ -1,0 +1,67 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Seneca_OH_2023",
+        "attribution": {
+            "url": "https://senecacountyohio.gov/",
+            "text": "Seneca County, State of Ohio",
+            "required": false
+        },
+        "name": "Seneca County Orthoimagery (2023)",
+        "icon": "https://senecacountyauditor.org/images/seals/oh/senecaoh.png",
+        "url": "https://tiles.arcgis.com/tiles/b8eHPJ5KRnX3dHNa/arcgis/rest/services/2023_Orth_Map/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 20,
+        "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/oh/Seneca.pdf",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "Spring 2023 orthoimagery for Seneca County in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -83.42037027014318,
+                    40.988999825966204
+                ],
+                [
+                    -82.82747083570963,
+                    40.99241688365015
+                ],
+                [
+                    -82.82880665860115,
+                    41.260431416334484
+                ],
+                [
+                    -83.03043094381025,
+                    41.25961211837222
+                ],
+                [
+                    -83.03058366848741,
+                    41.27407627352167
+                ],
+                [
+                    -83.0786919417867,
+                    41.27384670878351
+                ],
+                [
+                    -83.07853921710957,
+                    41.259382502775026
+                ],
+                [
+                    -83.4243460629233,
+                    41.257327990910284
+                ],
+                [
+                    -83.42037027014318,
+                    40.988999825966204
+                ]
+            ]
+        ]
+    }
+}

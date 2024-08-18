@@ -1,28 +1,61 @@
 vi:
   imagery:
-    AGIV:
+    Bedzin-PL-aerial_image:
       attribution:
-        text: © Cơ quan Thông tin Vlaanderen
-      name: AIV hình ảnh Vlaanderen mới nhất
-    AGIV10cm:
+        text: Giám đốc Huyện tại Będzin
+      name: 'Będzin: bản đồ hình trực giao 2013 (không ảnh)'
+    Bedzin-PL-buildings:
       attribution:
-        text: © Cơ quan Thông tin Vlaanderen
-      name: AIV hình ảnh trên không 10 cm 2013–2015
-    AGIVFlandersGRB:
-      attribution:
-        text: © Cơ quan Thông tin Vlaanderen
-      name: AIV Vlaanderen GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © Cơ quan Thông tin Vlaanderen
-      name: AIV Mô hình Chiều cao Số Vlaanderen II, bóng đồi đa chiều 0,25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © Cơ quan Thông tin Vlaanderen
-      name: AIV Mô hình Chiều cao Số Vlaanderen II, hệ số Skyview 0,25 m
+        text: Giám đốc Huyện tại Będzin
+      name: 'Będzin: Tòa nhà'
     Bing:
-      description: Hình ảnh chụp từ vệ tinh và trên không trung.
-      name: Bing hình ảnh trên không
+      description: Hình ảnh vệ tinh và không ảnh.
+      name: Bing Bản đồ Không ảnh
+    Bytom-2012:
+      attribution:
+        text: Văn phòng Thành phố Bytom
+      name: 'Bytom: bản đồ hình trực giao 2012 (không ảnh)'
+    Bytom-2014:
+      attribution:
+        text: Văn phòng Thành phố Bytom
+      name: 'Bytom: Fotoplan 2014 (không ảnh)'
+    Bytom-buildings:
+      attribution:
+        text: Văn phòng Thành phố Bytom
+      name: 'Bytom: Tòa nhà'
+    Czestochowa-2011:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: bản đồ hình trực giao 2011 (không ảnh)'
+    Czestochowa-2013:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: bản đồ hình trực giao 2013 (không ảnh)'
+    Czestochowa-2014:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: bản đồ hình trực giao 2014 (không ảnh)'
+    Czestochowa-2015:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: bản đồ hình trực giao 2015 (không ảnh)'
+    Czestochowa-2016:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: bản đồ hình trực giao 2016 (không ảnh)'
+    Czestochowa-2017:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: bản đồ hình trực giao 2017 (không ảnh)'
+    Czestochowa-buildings:
+      attribution:
+        text: Văn phòng Thành phố Częstochowa
+      name: 'Częstochowa: Tòa nhà'
+    Dourados_Ortofotos:
+      attribution:
+        text: Tòa thị chánh Dourados – GeoDourados
+      description: Không hình độ phân giải cao Dourados (2018) và vài khu phố (2020).
+      name: Dourados Hình trực giao
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 không có mây – https://s2maps.eu bởi EOX IT Services GmbH (Chứa dữ liệu Copernicus Sentinel đã sửa đổi 2017 & 2018)
@@ -31,21 +64,137 @@ vi:
     EsriWorldImagery:
       attribution:
         text: Điều khoản & Phản hồi
-      description: Hình ảnh thế giới Esri.
+      description: Esri Hình ảnh Thế giới
       name: Esri Hình ảnh Thế giới
     EsriWorldImageryClarity:
       attribution:
         text: Điều khoản & Phản hồi
       description: Hình ảnh lưu trữ Esri có thể rõ hơn và chính xác hơn lớp mặc định.
       name: Esri Hình ảnh Thế giới (Clarity) Beta
+    Frankfurt-am-Main-2019:
+      attribution:
+        text: Văn phòng Khảo sát Thành phố Frankfurt am Main
+      description: Không ảnh Frankfurt am Main được chụp ngày 16 tháng 4 năm 2019
+      name: Không ảnh Frankfurt am Main 2019
+    Geoportal2-PL-HighResolution-aerial_image_WMS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      description: Bản đồ hình trực giao có độ phân giải 10 cm trở lên. Dữ liệu được sắp xếp theo độ phân giải rồi theo độ tươi, ví dụ mảng chụp năm 2012 có độ phân giải 8 cm sẽ phủ mảng chụp năm 2019 có độ phân giải 10 cm.
+      name: 'Geoportal 2: Bản đồ Hình trực giao Độ phân giải cao (WMS không ảnh)'
+    Geoportal2-PL-Streets_WMS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      description: WMS Đánh số Địa chỉ Hợp nhất Quốc gia để tải về các hình ảnh bản đồ dựa vào dữ liệu không gian từ các hồ sơ đường sá và địa chỉ của Sổ bộ Biên giới Quốc gia.
+      name: 'Geoportal 2: Tên đường'
+    Geoportal2-PL-addres_points_WMS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      description: WMS Đánh số Địa chỉ Hợp nhất Quốc gia để tải về các hình ảnh bản đồ dựa vào dữ liệu không gian từ các hồ sơ đường sá và địa chỉ của Sổ bộ Biên giới Quốc gia.
+      name: 'Geoportal 2: Điểm địa chỉ'
+    Geoportal2-PL-aerial_image_WMS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      name: 'Geoportal 2: Bản đồ Hình trực giao (không ảnh mới nhất) (WMS)'
+    Geoportal2-PL-aerial_image_WMTS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      name: 'Geoportal 2: Bản đồ Hình trực giao (không ảnh mới nhất) (WMTS)'
+    Geoportal2-PL-buildings_WMS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      name: 'Geoportal 2: Hồ sơ tòa nhà WMS'
+    Geoportal2-PL-plot_boundaries_WMS:
+      attribution:
+        text: Văn phòng Chính vì Trắc địa và Bản đồ học
+      name: 'Geoportal 2: Miếng đất Granice'
+    Geoportal2-PL-prng:
+      attribution:
+        text: Trung tâm Tài liệu Trắc địa và Bản đồ
+      name: 'Geoportal 2: Cơ sở dữ liệu Địa danh Ba Lan'
+    Gliwice-2013:
+      attribution:
+        text: Văn phòng Thành phố Gliwice
+      name: 'Gliwice: bản đồ hình trực giao 2013 (không ảnh)'
+    Gliwice-2017:
+      attribution:
+        text: Văn phòng Thành phố Gliwice
+      name: 'Gliwice: bản đồ hình trực giao 2017 (không ảnh)'
+    Gliwice-2018:
+      attribution:
+        text: Văn phòng Thành phố Gliwice
+      name: 'Gliwice: bản đồ hình trực giao 2018 (không ảnh)'
+    Gliwice-2020:
+      attribution:
+        text: Văn phòng Thành phố Gliwice
+      name: 'Gliwice: bản đồ hình trực giao 2020 (không ảnh)'
+    Gliwice-buildings:
+      attribution:
+        text: Văn phòng Thành phố Gliwice
+      name: 'Gliwice: Tòa nhà'
+    LSA-ATKIS_BU:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Hình dạng các tòa nhà tại Sachsen-Anhalt
+      name: © GeoBasis-DE/LVermGeo LSA, ATKIS_BU
+    LSA-DOP20:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Không ảnh tại bang Sachsen-Anhalt, độ phân giải 20 cm
+      name: © GeoBasis-DE/LVermGeo LSA, DOP20
+    LSA-DVG:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: 'Các biên giới hành chính liên bang, bang, huyện, xã, và phần xã dưới dạng vectơ.'
+      name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Chứa thông tin khu vực công được phát hành theo Giấy phép Chính phủ Mở v3.0.
+      description: Dữ liệu lối ra vào công cộng do chính quyền địa phương phát hành và rowmaps.com sưu tập
+      name: Lối Ra vào Công cộng
+    Lodz-2015:
+      attribution:
+        text: Văn phòng Thành phố Łódź
+      name: 'Łódź: bản đồ hình trực giao 2015 (không ảnh)'
+    Lodz-2017:
+      attribution:
+        text: Văn phòng Thành phố Łódź
+      name: 'Łódź: bản đồ hình trực giao 2017 (không ảnh)'
+    Lodz-buildings:
+      attribution:
+        text: Văn phòng Thành phố Łódź
+      name: 'Łódź: Tòa nhà'
     MAPNIK:
+      attribution:
+        text: © những người đóng góp vào OpenStreetMap, ODbL 1.0
       description: Lớp OpenStreetMap mặc định.
       name: OpenStreetMap (Chuẩn)
+    Maaamet-Estonia_Cadastre:
+      attribution:
+        text: Cơ sở Hình trực giao Địa chính Ban Đất đai
+      name: Bản đồ Địa chính Ban Đất đai
+    Maaamet-Estonia_Ortho:
+      attribution:
+        text: Hình trực giao Ban Đất đai
+      name: Trực giao Ban Đất đai (WMS)
     Mapbox:
       attribution:
         text: Điều khoản & Phản hồi
-      description: Hình ảnh chụp từ vệ tinh và trên không trung.
+      description: Bộ mảnh raster của Mapbox chứa lớp hình ảnh chụp từ vệ tinh và trên không trung
       name: Mapbox Vệ tinh
+    OSIP_1ft:
+      attribution:
+        text: Chương trình Hình ảnh Toàn tiểu bang Ohio
+      description: Hình ảnh trực giao tất cả 88 quận do Chương trình Hình ảnh Toàn tiểu bang Ohio II (OSIP II) chụp với độ phân giải 1 bộ từ 2011 đến 2014.
+    OSIP_6in:
+      attribution:
+        text: Chương trình Hình ảnh Toàn tiểu bang Ohio
+      description: Hình ảnh trực giao 40 quận do Chương trình Hình ảnh Toàn tiểu bang Ohio III (OSIP III) chụp với độ phân giải 6 inch từ 2017 đến 2018, cộng thêm hình ảnh 16 quận từ OSIP I và OSIP II từ 2010 đến 2014.
+      name: Chương trình Hình ảnh Toàn tiểu bang Ohio 6 Inch
+    OSMUK-Cadastral-Parcels:
+      attribution:
+        text: Chứa thông tin khu vực công được phát hành theo Giấy phép Chính phủ Mở v3.0.
+      description: Mảnh đất địa chính tại đảo Anh được chỉnh lại hoàn hảo
+      name: OSM Anh Mảnh đất Địa chính
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
@@ -75,23 +224,35 @@ vi:
         text: © Geofabrik GmbH, những người đóng góp vào OpenStreetMap, CC BY-SA
       name: 'Trình kiểm tra OSM: Thẻ'
     SPW_ORTHO_LAST:
-      name: SPW hình chụp trên không Wallonie mới nhất
+      name: SPW Wallonie không ảnh mới nhất
     SPW_PICC:
       name: SPW hình ảnh số PICC Wallonie
-    US-TIGER-Roads-2014:
-      description: Ở các mức thu phóng 16+, dữ liệu bản đồ thuộc phạm vi công cộng từ Điều tra dân số Hoa Kỳ. Ở các mức nhỏ hơn, chỉ các thay đổi từ 2006 trở về sau trừ các thay đổi đã được nhập vào OpenStreetMap.
-      name: TIGER Đường sá 2014
+    Siemianowice_Slaskie-aerial_image:
+      attribution:
+        text: Văn phòng Thành phố Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Bản đồ Hình trực giao (không ảnh)'
+    Siemianowice_Slaskie-buildings:
+      attribution:
+        text: Văn phòng Thành phố Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Tòa nhà'
     US-TIGER-Roads-2017:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: TIGER Đường sá 2017
     US-TIGER-Roads-2018:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: TIGER Đường sá 2018
     US-TIGER-Roads-2019:
-      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Điều tra dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
       name: TIGER Đường sá 2019
+    US-TIGER-Roads-2020:
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      name: TIGER Đường sá 2020
+    US-TIGER-Roads-2021:
+      description: Màu vàng là dữ liệu bản đồ thuộc phạm vi công cộng do Cục Thống kê Dân số Hoa Kỳ cung cấp. Màu đỏ là dữ liệu chưa xuất hiện trong OpenStreetMap.
+      name: TIGER Đường sá 2021
     USDA-NAIP:
-      description: Các phần tư tứ giác hình ảnh trực giao số (DOQQ) vào năm gần đây nhất của Chương trình Hình ảnh Nông nghiệp Quốc gia (NAIP) cho mỗi tiểu bang Hoa Kỳ tiếp giáp nhau.
+      attribution:
+        text: Bộ Nông nghiệp Hoa Kỳ
       name: Chương trình Hình ảnh Nông nghiệp Quốc gia
     US_Forest_Service_roads_overlay:
       description: 'Đường sá: vỏ xanh là ngõ; vỏ nâu là đường mòn.
@@ -100,6 +261,10 @@ vi:
 
         Tùy mùa có vạch màu trắng.'
       name: Lớp phủ Đường Lâm nghiệp Hoa Kỳ
+    UrbISOrtho:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: CIRB/CIBG không ảnh mới nhất
     UrbISOrtho2016:
       attribution:
         text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
@@ -116,10 +281,18 @@ vi:
       attribution:
         text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
       name: UrbIS trực giao 2019
+    UrbISOrtho2020:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbIS trực giao 2020
     UrbisAdmFR:
       attribution:
         text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
       name: UrbisAdm Pháp
+    UrbisAdmFRNL:
+      attribution:
+        text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
+      name: UrbisAdm Pháp/Hà Lan
     UrbisAdmNL:
       attribution:
         text: UrbIS®© Bruxelles thực hiện; CIRB phân phát và giữ bản quyền
@@ -144,6 +317,10 @@ vi:
       attribution:
         text: © waymarkedtrails.org, những người đóng góp vào OpenStreetMap, CC BY-SA 3.0
       name: 'Waymarked Trails: Thể thao Mùa đông'
+    Zabrze-2011:
+      attribution:
+        text: Văn phòng Thành phố Zabrze
+      name: 'Zabrze: bản đồ hình trực giao 2011 (không ảnh)'
     basemap.at:
       attribution:
         text: basemap.at
@@ -159,31 +336,45 @@ vi:
         text: basemap.at
       description: Lớp phủ chú thích do basemap.at cung cấp.
       name: basemap.at Lớp phủ
-    basemap.at-surface:
+    cyclosm:
       attribution:
-        text: 'basemap.at '
-      description: Lớp mặt đất do basemap.at cung cấp.
-      name: basemap.at Mặt đất
-    basemap.at-terrain:
+        text: 'Kết xuất: CyclOSM (do OpenStreetMap Pháp phục vụ), dữ liệu bản đồ © những người đóng góp vào OpenStreetMap'
+      description: CyclOSM là kiểu bản đồ được thiết kế dành cho người đi xe đạp. Nó sử dụng dữ liệu OpenStreetMap để kết xuất bản đồ xe đạp đẹp đẽ tiện ích!
+      name: CyclOSM
+    debicki-buildings:
       attribution:
-        text: basemap.at
-      description: Lớp địa hình do basemap.at cung cấp.
-      name: basemap.at Địa hình
+        text: Huyện Dębicki
+      name: 'Huyện Dębicki: Tòa nhà'
     eufar-balaton:
       attribution:
         text: Hình ảnh trực giao EUFAR Balaton 2010
       description: Hình chụp gắn thẻ địa lý năm 1940 do Viện nghiên cứu hồ Balaton cung cấp.
       name: EUFAR hình ảnh trực giao Balaton
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 theo finds.jp. Có ích trong việc vẽ nhưng hơi cũ hơn.
-      name: GSI Nhật Bản KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © đô thị Göteborg, CC0
       description: Bản đồ Göteborg tả thành phố nhìn chung. Nó bao gồm thông tin tổng quát về đất đai, viễn thông, thủy văn, tòa nhà, số nhà, tên đường, phân cấp hành chính, và các nhãn định hướng khác.
       name: Bản đồ Thành phố Göteborg
+    gothenburg-dtm-2017:
+      attribution:
+        text: © đô thị Göteborg, CC0
+      description: Dịch vụ bản đồ Web hiển thị hình ảnh bóng đồi và dốc theo mô hình độ cao 2017 của Thành phố Göteborg. Có độ phân giải 0,5 mét trên điểm ảnh.
+      name: Hình bóng đồi Göteborg
+    gothenburg-ortho:
+      attribution:
+        text: © đô thị Göteborg, CC0
+      description: Hình ảnh trực giao đô thị Gothenburg
+      name: Hình trực giao Göteborg 2015
+    gothenburg-ortho_2017:
+      attribution:
+        text: © đô thị Göteborg, CC0
+      description: Hình ảnh trực giao đô thị Göteborg
+      name: Hình trực giao Göteborg 2017
+    gothenburg-ortho_2019:
+      attribution:
+        text: © đô thị Göteborg, CC0
+      description: Hình ảnh trực giao đô thị Göteborg
+      name: Hình trực giao Göteborg 2019
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Nhật Bản
@@ -199,11 +390,6 @@ vi:
         text: GIS Nhật Bản
       description: Bản đồ chuẩn GIS Nhật Bản. Có phạm vi rộng rãi.
       name: GIS Nhật Bản Bản đồ Chuẩn
-    helsingborg-orto:
-      attribution:
-        text: © đô thị Helsingborg
-      description: Hình ảnh trực giao từ đô thị Helsingborg năm 2016 thuộc phạm vi công cộng
-      name: Hình trực giao Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © đô thị Kalmar
@@ -219,11 +405,25 @@ vi:
         text: © đô thị Kalmar
       description: Hình ảnh trực giao các vùng đô thị của đô thị Kalmar năm 2018
       name: Hình trực giao vùng đô thị Kalmar 2018
+    kalmar-orto-2020:
+      attribution:
+        text: © đô thị Kalmar
+      description: Hình ảnh trực giao các vùng đô thị của đô thị Kalmar năm 2020
+      name: Hình trực giao vùng đô thị Kalmar 2020
+    kartverket-bygninger:
+      attribution:
+        text: © Kartverket
+      description: Các tòa nhà Na Uy của INSPIRE.
+      name: Kartverket Lớp phủ Tòa nhà
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
       description: Đường xe máy trượt tuyết Kelkkareitit.fi từ OSM (Bắc Âu)
       name: Lớp phủ xe máy trượt tuyết Bắc Âu
+    lancucki-buildings:
+      attribution:
+        text: Huyện Łańcucki
+      name: 'Huyện Łańcucki: Tòa nhà'
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
@@ -244,6 +444,22 @@ vi:
         text: © đô thị Linköping
       description: Hình ảnh trực giao từ đô thị Linköping năm 2010 là dữ liệu mở
       name: Hình ảnh trực giao Linköping
+    lubaczowski-buildings:
+      attribution:
+        text: Huyện Lubaczowski
+      name: 'Huyện Lubaczowski: Tòa nhà'
+    maaamet.ee-cir_ngr:
+      attribution:
+        text: Hình trực giao Lâm nghiệp Ban Đất đai
+      name: Lâm nghiệp Ban Đất đai
+    maaamet.ee-orto:
+      attribution:
+        text: Hình trực giao Ban Đất đai
+      name: Trực giao Ban Đất đai (TMS)
+    maaamet.ee-pohi_vr2:
+      attribution:
+        text: Bản đồ gốc Ban Đất đai
+      name: Bản đồ gốc Ban Đất đai
     mapbox_locator_overlay:
       attribution:
         text: Điều khoản & Phản hồi
@@ -253,28 +469,62 @@ vi:
       attribution:
         text: © những người đóng góp vào OpenStreetMap, CC BY-SA
       name: Bản đồ OpenPT (lớp phủ)
+    openrailwaymap:
+      attribution:
+        text: 'Kết xuất: OpenRailwayMap, dữ liệu bản đồ © những người đóng góp vào OpenStreetMap'
+      description: Lớp hình phủ cơ sở hạ tầng đường sắt theo dữ liệu OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Kết xuất: OpenRailwayMap, dữ liệu bản đồ © những người đóng góp vào OpenStreetMap'
+      description: Lớp hình phủ các tốc độ tối đa trên đường sắt theo dữ liệu OpenStreetMap
+      name: OpenRailwayMap Tốc độ Tối đa
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Kết xuất: OpenRailwayMap, dữ liệu bản đồ © những người đóng góp vào OpenStreetMap'
+      description: Lớp hình phủ đèn báo trên đường sắt theo dữ liệu OpenStreetMap
+      name: OpenRailwayMap Đèn báo
     osm-gps:
       attribution:
         text: © những người đóng góp vào OpenStreetMap
       description: Tuyến GPS công khai được tải lên OpenStreetMap
       name: Tuyến GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © những người đóng góp vào OpenStreetMap, CC BY-SA
-      name: OpenStreetMap (Chuẩn Trắng đen)
     osm-mapnik-german_style:
       attribution:
         text: © những người đóng góp vào OpenStreetMap, CC BY-SA
       name: OpenStreetMap (Kiểu Đức)
-    osmse-ekonomiska:
+    poznan-ortofotomapa2014:
       attribution:
-        text: © Lantmäteriet
-      description: Hình quét các “bản đồ kinh tế” những năm 1950–1980
-      name: Lantmäteriet Bản đồ Kinh tế 1950–1980
+        text: Ban Trắc địa và Địa chính Thành phố GEOPOZ
+      name: 'Poznań: bản đồ hình trực giao 2014 (không ảnh)'
+    poznan-ortofotomapa2016:
+      attribution:
+        text: Ban Trắc địa và Địa chính Thành phố GEOPOZ
+      name: 'Poznań: bản đồ hình trực giao 2016 (không ảnh)'
+    poznan-ortofotomapaBiezaca:
+      attribution:
+        text: Ban Trắc địa và Địa chính Thành phố GEOPOZ
+      name: 'Poznań: bản đồ hình trực giao hiện tại (không ảnh)'
+    przemysl-aerial:
+      attribution:
+        text: Thị trấn Przemyśl
+      name: 'Przemyśl: Bản đồ Hình trực giao (không ảnh)'
+    przemysl-buildings:
+      attribution:
+        text: Thị trấn Przemyśl
+      name: 'Przemyśl: Tòa nhà'
     qa_no_address:
       attribution:
         text: Simon Poole, Dữ liệu © những người đóng góp vào OpenStreetMap
       name: 'Bảo đảm Chất lượng: Không Địa chỉ'
+    rzeszowski-aerial:
+      attribution:
+        text: Huyện Rzeszowski
+      name: 'Huyện Rzeszowski: Bản đồ Hình trực giao (không ảnh)'
+    rzeszowski-buildings:
+      attribution:
+        text: Huyện Rzeszowski
+      name: 'Huyện Rzeszowski: Tòa nhà'
     skobbler:
       attribution:
         text: '© Hình bản đồ: skobbler Dữ liệu bản đồ: những người đóng góp vào OpenStreetMap'
@@ -284,6 +534,14 @@ vi:
         text: © Skoterleder.org
       description: Đường xe máy trượt tuyết
       name: Bản đồ xe máy trượt tuyết Thụy Điển
+    sropczyce-buildings:
+      attribution:
+        text: Huyện Ropczycko-Sędziszowski
+      name: 'Huyện Ropczycko-Sędziszowski: Tòa nhà'
+    stalowowolski-buildings:
+      attribution:
+        text: Huyện Stalowowolski
+      name: 'Huyện Stalowowolski: Tòa nhà'
     stamen-terrain-background:
       attribution:
         text: Hình bản đồ do Stamen Design cung cấp dưới CC BY 3.0. Dữ liệu do OpenStreetMap cung cấp dưới ODbL.
@@ -291,8 +549,13 @@ vi:
     stockholm-orto:
       attribution:
         text: © đô thị Stockholm, CC0
-      description: Hình ảnh trực giao từ đô thị Stockholm năm 2016 được phát hành theo CC0
+      description: Hình ảnh trực giao từ đô thị Stockholm năm 2018 được phát hành theo CC0
       name: Hình trực giao Stockholm
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Hình trực giao thành phố Susono
+      description: Không ảnh do thành phố Susono phát hành như dữ liệu mở.
+      name: Hình trực giao thành phố Susono
     tf-cycle:
       attribution:
         text: Bản đồ © Thunderforest, dữ liệu © những người đóng góp vào OpenStreetMap
@@ -301,6 +564,10 @@ vi:
       attribution:
         text: Bản đồ © Thunderforest, dữ liệu © những người đóng góp vào OpenStreetMap
       name: Thunderforest Phong cảnh
+    tf-outdoors:
+      attribution:
+        text: Bản đồ © Thunderforest, dữ liệu © những người đóng góp vào OpenStreetMap
+      name: Thunderforest Ngoài trời
     trafikverket-baninfo:
       attribution:
         text: © Bộ Giao thông Thụy Điển, CC0
@@ -321,13 +588,16 @@ vi:
         text: © Bộ Giao thông Thụy Điển, CC0
       description: 'Chi tiết bổ sung từ NVDB Thụy Điển: số đường, thiết bị điều hòa giao thông, trạm dừng nghỉ, trạm xe buýt, cầu, đường hầm, camera giám sát tốc độ'
       name: Hệ thống Đường bộ Bộ Giao thông Thụy Điển bổ sung
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Bộ Giao thông Thụy Điển, CC0
-      description: Tên Đường NVDB Thụy Điển
-      name: Tên Đường Bộ Giao thông Thụy Điển
     trafikverket-vagnat-option:
       attribution:
         text: © Bộ Giao thông Thụy Điển, CC0
       description: Hệ thống đường bộ Thụy Điển có vài lớp bản đồ để lựa chọn
       name: Hệ thống Đường bộ Bộ Giao thông Thụy Điển có tùy chọn
+    wroclaw-orto2015:
+      attribution:
+        text: Văn phòng Thành phố Wrocław
+      name: 'Wrocław: bản đồ hình trực giao 2015 (không ảnh)'
+    wroclaw-orto2018:
+      attribution:
+        text: Văn phòng Thành phố Wrocław
+      name: 'Wrocław: bản đồ hình trực giao 2018 (không ảnh)'

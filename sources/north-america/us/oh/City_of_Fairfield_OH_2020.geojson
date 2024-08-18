@@ -1,0 +1,153 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "City_of_Fairfield_OH_2020",
+        "attribution": {
+            "url": "https://www.fairfield-city.org/",
+            "text": "City of Fairfield, State of Ohio",
+            "required": false
+        },
+        "name": "City of Fairfield Orthoimagery (2020)",
+        "icon": "https://www.fairfield-city.org/ImageRepository/Document?documentID=6061",
+        "url": "https://gis.fairfield-city.org/cofgis/services/Imagery_2020_WGS/MapServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "max_zoom": 21,
+        "min_zoom": 12,
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "start_date": "2020",
+        "end_date": "2020",
+        "description": "Spring 2020 orthoimagery for City of Fairfield in the State of Ohio",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.fairfield-city.org/privacy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -84.57318307042,
+                    39.37494745684
+                ],
+                [
+                    -84.5729684937,
+                    39.36807179963
+                ],
+                [
+                    -84.59064961553,
+                    39.36774002582
+                ],
+                [
+                    -84.59044576764,
+                    39.36088024926
+                ],
+                [
+                    -84.59930778623,
+                    39.36071434547
+                ],
+                [
+                    -84.59886790395,
+                    39.34701762904
+                ],
+                [
+                    -84.60772992253,
+                    39.34684339549
+                ],
+                [
+                    -84.60709692121,
+                    39.32625588862
+                ],
+                [
+                    -84.64244846821,
+                    39.32563346401
+                ],
+                [
+                    -84.64180473804,
+                    39.30501480625
+                ],
+                [
+                    -84.60646391988,
+                    39.30567892299
+                ],
+                [
+                    -84.60627080083,
+                    39.29882135712
+                ],
+                [
+                    -84.53562141001,
+                    39.30007502597
+                ],
+                [
+                    -84.53541756749,
+                    39.29322521845
+                ],
+                [
+                    -84.47359800875,
+                    39.29428801688
+                ],
+                [
+                    -84.47398961127,
+                    39.3080075157
+                ],
+                [
+                    -84.46514905035,
+                    39.30815279101
+                ],
+                [
+                    -84.46574450612,
+                    39.32875393025
+                ],
+                [
+                    -84.47456360936,
+                    39.3285962492
+                ],
+                [
+                    -84.47494984746,
+                    39.34231317063
+                ],
+                [
+                    -84.46609855771,
+                    39.34246252339
+                ],
+                [
+                    -84.46650625348,
+                    39.35619331561
+                ],
+                [
+                    -84.47533608556,
+                    39.35603569645
+                ],
+                [
+                    -84.47592080176,
+                    39.37663101466
+                ],
+                [
+                    -84.51128304541,
+                    39.3760256005
+                ],
+                [
+                    -84.51108724147,
+                    39.36916041513
+                ],
+                [
+                    -84.52877641797,
+                    39.36885975609
+                ],
+                [
+                    -84.52898026586,
+                    39.37571874889
+                ],
+                [
+                    -84.57318307042,
+                    39.37494745684
+                ]
+            ]
+        ]
+    }
+}

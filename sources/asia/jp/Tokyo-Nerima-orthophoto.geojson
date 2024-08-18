@@ -1,0 +1,115 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "tokyo_nerima_orthophoto_2016",
+        "attribution": {
+            "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/koku-shashin.html",
+            "text": "NerimaOrtho",
+            "required": true
+        },
+        "name": "Tokyo Nerima-ku Imagery 2016",
+        "url": "http://nyampire.conohawing.com/ortho-nerima-ku/{zoom}/{x}/{y}.png",
+        "min_zoom": 10,
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Nerima_ortho",
+        "country_code": "JP",
+        "type": "tms",
+        "start_date": "2016-06-02",
+        "end_date": "2016-07-31",
+        "permission_osm": "explicit",
+        "description": "Open Data Orthoimagery from Nerima-ku, 2016",
+        "category": "photo",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+          [
+            139.62014846092,
+            35.78331567674
+          ],
+          [
+            139.62021372959,
+            35.77502729812
+          ],
+          [
+            139.61093726548,
+            35.7749792166
+          ],
+          [
+            139.61088163464,
+            35.78204375913
+          ],
+          [
+            139.60155827359,
+            35.7819954388
+          ],
+          [
+            139.58438954661,
+            35.78190645811
+          ],
+          [
+            139.5576152286,
+            35.76574010442
+          ],
+          [
+            139.55799254533,
+            35.71780264594
+          ],
+          [
+            139.57477292176,
+            35.70907794493
+          ],
+          [
+            139.59176889775,
+            35.70916611093
+          ],
+          [
+            139.61351274965,
+            35.72479071246
+          ],
+          [
+            139.63389820601,
+            35.72489644041
+          ],
+          [
+            139.63392733648,
+            35.72119459291
+          ],
+          [
+            139.67126764532,
+            35.72138826482
+          ],
+          [
+            139.67123194869,
+            35.72592449364
+          ],
+          [
+            139.684913531,
+            35.72599545135
+          ],
+          [
+            139.68460947974,
+            35.76462293791
+          ],
+          [
+            139.6693643817,
+            35.77421374798
+          ],
+          [
+            139.63412121063,
+            35.77403107452
+          ],
+          [
+            139.63404753015,
+            35.78338771045
+          ],
+          [
+            139.62014846092,
+            35.78331567674
+            ]
+          ]
+        ]
+    }
+}

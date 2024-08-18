@@ -1,28 +1,7 @@
 mk:
   imagery:
-    AGIV:
-      attribution:
-        text: © Информативна агенција на Фландрија
-      name: AIV Фландрија најскорешни воздушни снимки
-    AGIV10cm:
-      attribution:
-        text: © Информативна агенција на Фландрија
-      name: AIV Фландрија 2013-2015 воздушни снимки 10 см
-    AGIVFlandersGRB:
-      attribution:
-        text: © Информативна агенција на Фландрија
-      name: AIV Фландрија GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © Информативна агенција на Фландрија
-      name: AIV Дигитален висински модел на Фландрија II, повеќенасочно релјефно сенчање 0,25 м
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © Информативна агенција на Фландрија
-      name: AIV Дигитален висински модел на Фландрија II, Skyview фактор 0,25 м
     Bing:
       description: Сателитски и воздушни снимки
-      name: Воздушни слики од Bing
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 безоблачно — https://s2maps.eu од EOX IT Services GmbH (содржи податоци од Copernicus Sentinel 2017 и 2018)
@@ -31,7 +10,6 @@ mk:
     EsriWorldImagery:
       attribution:
         text: Услови и мислења
-      description: Светски снимки на Esri
       name: Светски снимки на Esri
     EsriWorldImageryClarity:
       attribution:
@@ -39,14 +17,11 @@ mk:
       description: Архивски снимки на Esri кои може да се појасни и поточни од вообичаениот слој.
       name: Светски снимки на Esri (Clarity) Бета
     MAPNIK:
-      attribution:
-        text: © Учесници на OpenStreetMap, CC-BY-SA 2.0
       description: Вообичаениот слој на OpenStreetMap.
       name: OpenStreetMap (стандардна)
     Mapbox:
       attribution:
         text: Услови и мислења
-      description: Сателитски и воздушни снимки.
       name: Mapbox Сателитски
     OSM_Inspector-Addresses:
       attribution:
@@ -80,9 +55,6 @@ mk:
       name: Најскорешни воздушни снимки од Јавната служба на Валонија (SPW )
     SPW_PICC:
       name: Бројчени снимки PICC од Јавната служба на Валонија (SPW )
-    US-TIGER-Roads-2014:
-      description: При степен на приближеност од барем 16, картогарфски податоци од пописот на САД . При помала приближеност се прикажуваат само промени од 2006 г. наваму, без оние веќе внесени во OpenStreetMap
-      name: TIGER Патишта 2014
     US-TIGER-Roads-2017:
       description: Жолто = Картографски податоци од пописот на САД во јавна сопственост. Црвено = Податоци кои не е присутни на OpenStreetMap
       name: TIGER Патишта 2017
@@ -93,7 +65,6 @@ mk:
       description: Жолто = Картографски податоци од пописот на САД во јавна сопственост. Црвено = Податоци кои не е присутни на OpenStreetMap
       name: TIGER Патишта 2019
     USDA-NAIP:
-      description: Најновата година на DOQQ од Националната програма за земјоделски снимки (NAIP) за секоја континентална сојузна држава на САД.
       name: Национална програма за земјоделски снимки
     US_Forest_Service_roads_overlay:
       description: 'Пат: Зелена обраба = некласификувано. Кафеава обраба = козја патека. Површина: Чакал = светлокафеава полнетица, Асфалт = црно, поплочено = сиво, земја = бело, бетон = сино, трева = зелено. Сезонски = бели пруги'
@@ -157,31 +128,20 @@ mk:
         text: basemap.at
       description: Прибележна облога на basemap.at.
       name: basemap.at Облога
-    basemap.at-surface:
-      attribution:
-        text: 'basemap.at    '
-      description: Површинска облога на basemap.at.
-      name: basemap.at Површинска
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Теренска облога на basemap.at.
-      name: basemap.at Теренска
     eufar-balaton:
       attribution:
         text: EUFAR Балатон ортофото 2010
       description: Геоозначени слики од Балатонскиот лимнолошки институт, 1940 г.
       name: EUFAR Балатонски ортоснимки
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 преку finds.jp. Добра за исцртување траги, но малку постара.
-      name: GSI Јапонија KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Општина Гетеборг, CC0
       description: Градската карта дава описен преглед на Гетеборг. Содржи општи информации а земјиштето, врските, хидрографијата, градбите, адресните броеви и имињата на улиците, управната поделба и друг текст за насочување.
       name: Градска карта на Гетеборг
+    gothenburg-ortho:
+      attribution:
+        text: © Општина Гетеборг, CC0
+      description: Ортоснимки за Општина Гетеборг
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Јапонија
@@ -197,11 +157,6 @@ mk:
         text: GSI Јапонија
       description: Стандардна карта на GSI Јапонија. Широк опфат.
       name: Стандардна карта на GSI Јапонија
-    helsingborg-orto:
-      attribution:
-        text: © Општина Хелсингборг
-      description: Ортоснимки од општината Хелсингборг, 2016 г., јавна сопственост
-      name: Хелсингборшки ортоснимки
     kalmar-orto-2014:
       attribution:
         text: © Општина Калмар
@@ -251,24 +206,30 @@ mk:
       attribution:
         text: © Учесници на OpenStreetMap, CC-BY-SA
       name: Карта OpenPT (облога)
+    openrailwaymap:
+      attribution:
+        text: 'Испис: OpenRailwayMap, © Картог. податоци: Учесници на OpenStreetMap'
+      description: Обложната слика со железничка инфраструктура се заснова на податоци од OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Испис: OpenRailwayMap, © Картог. податоци: Учесници на OpenStreetMap'
+      description: Обложната слика со дозволените брзини на пругите се заснова на податоци од OpenStreetMap
+      name: OpenRailwayMap Дозволени брзини
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Испис: OpenRailwayMap, © Картог. податоци: Учесници на OpenStreetMap'
+      description: Обложната слика со железничка сигнализација се заснова на податоци од OpenStreetMap
+      name: OpenRailwayMap Сигнализација
     osm-gps:
       attribution:
         text: © Учесници на OpenStreetMap
       description: Јавни ГПС-траги подигнати на OpenStreetMap.
       name: ГПС-траги на OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Учесници на OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (стандардна црно-бела)
     osm-mapnik-german_style:
       attribution:
         text: © Учесници на OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (германски стил)
-    osmse-ekonomiska:
-      attribution:
-        text: © Земјомерен завод на Шведска
-      description: Отсликано од „Стопански карти“, 1950 – 1980 г.
-      name: Стопанска карта на Земјомерниот завод на Шведска, 1950 – 1980 г.
     qa_no_address:
       attribution:
         text: 'Сајмон Пул; податоци: © учесници на OpenStreetMap'
@@ -289,8 +250,12 @@ mk:
     stockholm-orto:
       attribution:
         text: © Општина Стокхолм, CC0
-      description: Ортоснимки од општината Стокхолм, 2016 г., лиценца CC0
       name: Стокхолмски ортоснимки
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ортоснимки на Сусоно
+      description: Воздушните фотографии објавени од градот Сусоно како отворени податоци.
+      name: Ортоснимки на Сусоно
     tf-cycle:
       attribution:
         text: Карти © Thunderforest, Податоци © учесници на OpenStreetMap
@@ -299,6 +264,10 @@ mk:
       attribution:
         text: карти © Thunderforest, податоци © учесници на OpenStreetMap
       name: Thunderforest Пределна
+    tf-outdoors:
+      attribution:
+        text: Карти © Thunderforest, Податоци © учесници на OpenStreetMap
+      name: Thunderforest Активности во природа
     trafikverket-baninfo:
       attribution:
         text: © Сообраќајна управа на Шведска, CC0
@@ -319,13 +288,12 @@ mk:
         text: © Сообраќајна управа на Шведска, CC0
       description: 'Дополнителни поединости за Националната патна база на Шведска (NVDB): Број на  автопатот, забавување на сообраќајот, одморишни места, автобуски постојки, мост, тунел, сообраќајна камера'
       name: Патна мрежа на Сообраќајната управа на Шведска — екстра
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Сообраќајна управа на Шведска, CC0
-      description: Улични имиња во Шведска по NVDB
-      name: Улични имиња во Шведска според Сообраќајната управа
     trafikverket-vagnat-option:
       attribution:
         text: © Сообраќајна управа на Шведска, CC0
       description: Шведска железничка мрежа на NVDB со неколку можности за слоеви
       name: Можности за патната мрежа на Сообраќајната управа на Шведска
+    wroclaw-orto2018:
+      attribution:
+        text: Управа на Град Вроцлав
+      name: 'Вроцлав: Ортофотокарта 2018 (воздушна снимка)'

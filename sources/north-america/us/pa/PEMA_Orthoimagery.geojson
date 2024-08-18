@@ -1,15 +1,16 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "PEMA_Orthoimagery_2018_2020",
+        "id": "PEMA_Orthoimagery",
         "attribution": {
-            "url": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=5158",
-            "text": "PASDA",
+            "url": "https://www.pema.pa.gov/911-Program/Partners/NG911-GIS/Aerial-Imagery/Pages/default.aspx",
+            "text": "Pennsylvania Emergency Management Agency",
             "required": false
         },
-        "name": "PEMA Orthoimagery (6in)",
-        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PEMAImagery2018_2020/MapServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=1&styles=&format=image/png&crs={proj}&width={width}&height={height}&bbox={bbox}",
-        "max_zoom": 20,
+        "name": "PEMA Orthoimagery (2018-2020)",
+        "icon": "https://www.pema.pa.gov/PublishingImages/logo.svg",
+        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PEMAImagery2018_2020/MapServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=1&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Pennsylvania/PEMA_Orthoimagery",
         "country_code": "US",
         "type": "wms",
@@ -20,8 +21,8 @@
         ],
         "start_date": "2018",
         "end_date": "2020",
-        "description": "High resolution orthoimagery for the Commonwealth of Pennsylvania",
-        "category": "photo",
+        "description": "High resolution orthoimagery for the Commonwealth of Pennsylvania captured between 2018-2020",
+        "category": "historicphoto",
         "privacy_policy_url": "https://www.psu.edu/legal-statements"
     },
     "geometry": {

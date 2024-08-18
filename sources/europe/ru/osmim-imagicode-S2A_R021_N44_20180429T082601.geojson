@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 35.8787, 45.0348 ], [ 35.8787, 45.6095 ], [ 36.9208, 45.6095 ], [ 36.9208, 45.0348 ], [ 35.8787, 45.0348 ] ]
+            [ [ 35.8787, 45.0348 ], [ 36.9208, 45.0348 ], [ 36.9208, 45.6095 ], [ 35.8787, 45.6095 ], [ 35.8787, 45.0348 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Kerch Strait 2018",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2018-04-29",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R021_N44_20180429T082601&z={zoom}&x={x}&y={-y}"

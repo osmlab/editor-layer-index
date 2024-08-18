@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -50.7519, 66.9996 ], [ -50.7555, 67.0023 ], [ -50.7555, 67.0033 ], [ -50.6395, 67.0297 ], [ -50.6162, 67.0339 ], [ -50.6097, 67.0281 ], [ -50.6331, 67.022 ], [ -50.7323, 66.9996 ], [ -50.7519, 66.9996 ] ]
+            [ [ -50.7519, 66.9996 ], [ -50.7323, 66.9996 ], [ -50.6331, 67.022 ], [ -50.6097, 67.0281 ], [ -50.6162, 67.0339 ], [ -50.6395, 67.0297 ], [ -50.7555, 67.0033 ], [ -50.7555, 67.0023 ], [ -50.7519, 66.9996 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Kangerlussuaq Spring",
         "max_zoom": 18,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-05-18",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=dms_kangerlussuaq_20160518&z={zoom}&x={x}&y={-y}"

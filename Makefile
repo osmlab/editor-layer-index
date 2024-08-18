@@ -3,6 +3,7 @@ SOURCES := $(shell find sources -type f -name '*.geojson')
 SOURCES_QUOTED := $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
 TX := $(shell which tx)
+TXVERSION := $(shell tx --version | cut -c1-1)
 
 all: $(ALL)
 
@@ -27,6 +28,8 @@ i18n/en.yaml: scripts/extract_i18n.py $(SOURCES)
 txpush: i18n/en.yaml
 ifeq (, $(TX))
 	@echo "Transifex not installed"
+else ifeq (0, $(TXVERSION))
+	@echo "Installed Transifex CLI client too old: Upgrade to https://github.com/transifex/cli"
 else
 	$(TX) push -s
 endif
@@ -34,8 +37,10 @@ endif
 txpull:
 ifeq (, $(TX))
 	@echo "Transifex not installed"
+else ifeq (0, $(TXVERSION))
+	@echo "Installed Transifex CLI client too old: Upgrade to https://github.com/transifex/cli"
 else
-	$(TX) pull -a
+	$(TX) pull -a --use-git-timestamps
 endif
 
 # $@ The file name of the target of the rule.

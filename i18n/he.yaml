@@ -1,28 +1,8 @@
 he:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: צילומי האוויר העדכניים ביותר של AIV Flanders
-    AGIV10cm:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Flanders‏ 2013-‎2015 צילום אווירי 10 ס״מ
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, הצללה ממגוון כיוונים 0.25 מטר
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, גורם מבט אווירי 0.25 מטר
     Bing:
       description: צילומי אוויר ולוויין.
-      name: צילומי אוויר של Bing
+      name: Bing מפות אוויר
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 נטול עננים - https://s2maps.eu מבית שירותי EOX IT GmbH (מכיל נתונים ערוכים מתוך Copernicus Sentinel 2017 & 2018)
@@ -31,26 +11,24 @@ he:
     EsriWorldImagery:
       attribution:
         text: תנאים ומשוב
-      description: ESRI תצלומי אוויר.
-      name: ESRI תצלומי אוויר
+      name: תצלומי אוויר ESRI
     EsriWorldImageryClarity:
       attribution:
         text: תנאים ומשוב
-      description: מידע מESRI שיתכן ויותר ברור ומדיוק משכבת הבררת מחדל
+      description: תמונות ארכיון מ־Esri שעשויות להיות ברורות ומדויקות יותר משכבת בררת המחדל.
       name: ESRI תצלומי אוויר (Clarity Beta)
     MAPNIK:
       attribution:
-        text: מתנדבי © OpenStreetMap,‏ CC-BY-SA
+        text: מתנדבי ‎© OpenStreetMap,‏ ODbL 1.0
       description: שכבת בררת המחדל של OpenStreetMap.
       name: OpenStreetMap (רגיל)
     Mapbox:
       attribution:
         text: תנאים ומשוב
-      description: צילומי אוויר ולוויין.
       name: Mapbox לווייני
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‮ CC-BY-SA
+        text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‏ CC-BY-SA
       name: 'חוקר OSM: כתובות'
     OSM_Inspector-Geometry:
       attribution:
@@ -74,39 +52,33 @@ he:
       name: 'חוקר OSM: ניתוב'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, תורמי OpenStreetMap,‮ CC-BY-SA
+        text: © Geofabrik GmbH, מתנדבי OpenStreetMap,‏ CC-BY-SA
       name: 'חוקר OSM: תיוג'
     SPW_ORTHO_LAST:
       name: הצילום האווירי העדכני ביותר של SPW(allonie)
     SPW_PICC:
       name: SPW(allonie) צילום PICC אלפא נומרי
-    US-TIGER-Roads-2014:
-      description: מידע ממשלתי מבוסס על המיפקד אוכלוסין מ2006. תוויות מופיעות ברמות תקריב של 16 ומעלה.
-      name: מידע טופולוגי ארה"ב  2014
     US-TIGER-Roads-2017:
-      description: 'צהוב = מידע ציבורי מממשלת ארה"ב
-
-        אדום = מידע שלא נמצא בOSM'
+      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא ב־OpenStreetMap
       name: מידע טופולוגי ארה"ב  2017
     US-TIGER-Roads-2018:
-      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא בOSM
+      description: צהוב = מידע ציבורי לפי מפקד אוכלוסין. אדום = מידע שלא נמצא ב־OpenStreetMap
       name: TIGER Roads 2018
     US-TIGER-Roads-2019:
       description: צהוב = נתונים לרשות הציבור באדיבות משרד האוכלוסין של ארה״ב. אדום = לא נמצאו נתונים ב־OpenStreetMap
       name: דרכי TIGER‏ 2019
     USDA-NAIP:
-      description: צילומי ה־DOQQ העדכניים ביותר מבית תכנית הצילום החקלאית הלאומית (NAIP) לגבולותיה של כל מדינה בארה״ב.
       name: תכנית הצילום החקלאית הלאומית
     US_Forest_Service_roads_overlay:
       description: 'כביש מהיר: תחימה ירוקה = ללא סיווג. תחימה חומה = מסלול. פני שטח: חצץ = מילוי חום בהיר, אספלט = שחור, מרוצף = אפור, אדמה =לבן, בטון = כחול, דשא = ירוק. עונתי = פסים לבנים'
       name: שכבת דרכי יערות בארה״ב
     UrbISOrtho2016:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2016
     UrbISOrtho2017:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       attribution:
@@ -118,72 +90,61 @@ he:
       name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm FR
     UrbisAdmNL:
       attribution:
-        text: מומש ע"י Brussels UrbIS®© - Distribution & Copyright CIRB
+        text: מומש ע״י Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: אופניים'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: טיול רגל'
     Waymarked_Trails-MTB:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: אופני הרים'
     Waymarked_Trails-Skating:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: החלקה'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0
+        text: © waymarkedtrails.org, מתנדבי OpenStreetMap,‏ CC by-SA 3.0
       name: 'שבילים מסומנים: ספורט חורף'
     basemap.at:
       attribution:
         text: basemap.at
-      description: ' מפת אוסטריה מבוסס על מידע ממשלתי'
+      description: מפת אוסטריה המבוססת על מידע ממשלתי.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: אורטופוטו basemap.at
+      description: שכבת האורתופוטו סופקה על ידי basemap.at. „תכנית ההמשך” של צילומי geoimage.at.
       name: אורטופוטו basemap.at
     basemap.at-overlay:
       attribution:
         text: basemap.at
       description: שכבת הערות שמסופקת על ידי basemap.at.
       name: שכבת basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: שכבת משטח שמסופקת על ידי basemap.at.
-      name: משטח של basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: שכבת תוואי שטח שמסופקת על ידי basemap.at.
-      name: תוואי שטח של basemap.at
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
-      description: צילומית עם תיאוג גאו-מרחבי מ1940 ע"י  Balaton Limnological Institute.
+      description: צילומית עם תיאוג גאו-מרחבי מ1940 ע״י Balaton Limnological Institute.
       name: EUFAR Balaton אורטפוטו
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via finds.jp. טוב לשרטוט, אבל ישן.
-      name: יפן GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © עיריית גותנבורג, CC0
-      description: מפת העיר היא מפה סיקורית שמתארת את גותנברת. היא מכילה פרטים כלליים על קרקע, תקשורת, תשתיות מים, בניינים, מספרי כתובות ושמות רחובות, חלוקה מנהלית וטקסט שמסייע בהתמצאות.
+      description: מפת העיר היא מפה סיקורית שמתארת את גותנבורג. היא מכילה פרטים כלליים על קרקע, תקשורת, תשתיות מים, בניינים, מספרי כתובות ושמות רחובות, חלוקה מנהלית וטקסט שמסייע בהתמצאות.
       name: מפת העיר גותנבורג
+    gothenburg-ortho:
+      attribution:
+        text: © עיריית גותנבורג, CC0
+      description: אורתופוטו לעיריית גותנברג
     gsi.go.jp_airphoto:
       attribution:
         text: GSI יפן
@@ -197,28 +158,23 @@ he:
     gsi.go.jp_std_map:
       attribution:
         text: GSI יפן
-      description: יפן GSI מפת סטנדרט, כיסוי נרחב
-      name: יפן GSI מפת סטנדרט
-    helsingborg-orto:
-      attribution:
-        text: מחוז הלסינגבורג
-      description: אורטופוטו ממחוז הלסינגבורג 2015, CC0 רישיון
-      name: אורטופוטו הלסינגבורג
+      description: מפה תקנית של GSI יפן. עם כיסוי נרחב.
+      name: מפה תקנית של GSI יפן
     kalmar-orto-2014:
       attribution:
-        text: © Kalmar municipality
+        text: © עיריית קלמר
       description: Kalmar אורטופוטו חוף צפוני 2018
       name: Kalmar אורטופוטו צפוני 2018
     kalmar-orto-2016:
       attribution:
-        text: © Kalmar municipality
+        text: © עיריית Kalmar
       description: Kalmar אורטופוטו חוף דרומי 2018
       name: Kalmar אורטופוטו דרומי 2018
     kalmar-orto-2018:
       attribution:
-        text: © Kalmar municipality
+        text: © עיריית Kalmar
       description: Kalmar אורטופוטו עירוני2018
-      name: Kalmar אורטופוטו עירוני2018
+      name: Kalmar אורטופוטו עירוני 2018
     kelkkareitit:
       attribution:
         text: ‎© Kelkkareitit.fi
@@ -227,7 +183,7 @@ he:
     lantmateriet-orto1960:
       attribution:
         text: ‎© Lantmäteriet, CC0
-      description: פסיפס של אורטופוטו שוודי מ1955-1965, יתכן ויש תמונות יותר חדשות או ישנות
+      description: פסיפס של אורטופוטו שוודי מ־1955-1965, חלק מהתמונות עשויות להיות יותר חדשות או ישנות.
       name: סריקה של מפה כלכלית 1960
     lantmateriet-orto1975:
       attribution:
@@ -253,24 +209,30 @@ he:
       attribution:
         text: תורמי ‎© OpenStreetMap,‏ CC-BY-SA
       name: מפת OpenPT (שכבת על)
+    openrailwaymap:
+      attribution:
+        text: 'עיבוד: OpenRailwayMap, © נתוני המפה מאת מתנדבי OpenStreetMap'
+      description: שכבת תמונות שמציגה את תשתית מסילות הרבת על בסיס נתוני OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'עיבוד: OpenRailwayMap, © נתוני המפה מאת מתנדבי OpenStreetMap'
+      description: שכבת תמונות שמציגה מיהרויות מרביות על מסילות רכבת בהתאם לנתונים של OpenStreetMap
+      name: מהירויות מרביות על OpenRailwayMap
+    openrailwaymap-signalling:
+      attribution:
+        text: 'עיבוד: OpenRailwayMap, © נתוני המפה בחסות מתנדבי OpenStreetMap'
+      description: שכבת תמונות שמציגה איתות של מסילות רכבת בהתאם לנתונים של OpenStreetMap
+      name: איתות ב־OpenRailwayMap
     osm-gps:
       attribution:
         text: תורמי ‎© OpenStreetMap
       description: עקבות GPS ציבוריות שהועלו ל־OpenStreetMap.
       name: עקבות GPS של OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: תורמי ‎© OpenStreetMap,‏ CC-BY-SA
-      name: OpenStreetMap (שחור ולבן תקני)
     osm-mapnik-german_style:
       attribution:
         text: מתנדבי ‎© OpenStreetMap,‏ CC-BY-SA
       name: OpenStreetMap (סגנון גרמני)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: סריקה של ´מפות כלכליות´ סביב 1950-1980
-      name: סריקה של ´מפות כלכליות´ סביב 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, נתונים באדיבות מתנדבי ©OpenStreetMap
@@ -290,17 +252,26 @@ he:
       name: תווי שטח מסטודיו Stamen
     stockholm-orto:
       attribution:
-        text: מחוז סטוקהולם CC0
-      description: צילומי אורתופוטו מעיריית שטוקהולם 2016, רישיון CC0
-      name: אורטופוטו סטוקהולם
+        text: מחוז שטוקהולם CC0
+      description: צילומי אורתופוטו מעיריית שטוקהולם 2018, רישיון CC0
+      name: אורתופוטו שטוקהולם
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: צילום אוויר של העיר סוסונו
+      description: הצילומים האוויריים ששוחררו על ידי העיר סוסונו כנתונים פתוחים.
+      name: צילום אוויר של העיר סוסונו
     tf-cycle:
       attribution:
-        text: מפות  מThunderforest
+        text: מפות מ־Thunderforest
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
         text: מפות © Thunderforest, נתונים באדיבות מתנדבי © OpenStreetMap
-      name: תווי שטח מThunderforest
+      name: תוואי שטח מ־Thunderforest
+    tf-outdoors:
+      attribution:
+        text: מפות © Thunderforest, נתונים מתנדבי © OpenStreetMap
+      name: יערות מ־Thunderforest
     trafikverket-baninfo:
       attribution:
         text: ‎© Trafikverket, CC0
@@ -321,13 +292,12 @@ he:
         text: ‎© Trafikverket, CC0
       description: 'פרטים מורחבים של NVDB השבדית: סימון כבישים ראשיים, האטת תנועה, אזור מנוחה, תחנת אוטובוס, גשר, מנהרה, מצלמת מהירות'
       name: תוספות לרשת כבישים Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: ‎© Trafikverket, CC0
-      description: שמות רחובות שוודיים NVDB
-      name: שמות רחובות Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: ‎© Trafikverket, CC0
       description: רשת הכבישים של NVDB השבדית עם מגוון אפשרויות לשכבות מפה
       name: אפשרויות רשת כבישים Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: עיריית ורוצלב
+      name: 'ורוצלב: מפת אורתופוטו 2018 (תצלום אווירי)'

@@ -5,8 +5,8 @@
 The goal of this project is to maintain a canonical representation of the layers available to [OpenStreetMap](https://www.openstreetmap.org/) editors such as:
 
 * [iD](https://github.com/openstreetmap/iD)
-* [Vespucci](http://vespucci.io/) (historically)
-* [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!) (historically)
+* [Vespucci](http://vespucci.io/)
+* [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!)
 * [Potlatch 2](https://github.com/systemed/potlatch2) and
 * [JOSM](https://josm.openstreetmap.de/) (optional)
 
@@ -33,3 +33,7 @@ For any other usage, use https://osmlab.github.io/editor-layer-index/imagery.geo
 
 An interactive list of all layers (with a live map preview for most of them) is available at
 https://osmlab.github.io/editor-layer-index.
+
+## Similar Projects
+
+- The [JOSM Imagery souces wiki](https://josm.openstreetmap.de/wiki/Maps) is a similar project to ELI

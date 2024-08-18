@@ -2,11 +2,11 @@ is:
   imagery:
     Bing:
       description: Gervihnatta- og loftmyndir.
-      name: Loftmyndir frá Bing
+    EOXAT2018CLOUDLESS:
+      name: eox.at 2018 án skýjahulu
     EsriWorldImagery:
       attribution:
         text: Skilmálar og umsagnir
-      description: Heimsmyndir frá Esri.
       name: Heimsmyndir frá Esri
     EsriWorldImageryClarity:
       attribution:
@@ -19,7 +19,6 @@ is:
     Mapbox:
       attribution:
         text: Skilmálar og umsagnir
-      description: Gervihnatta- og loftmyndir.
       name: Mapbox gervihnattamyndir
     OSM_Inspector-Addresses:
       attribution:
@@ -53,15 +52,15 @@ is:
       name: Nýjustu loftmyndir frá SPW(allonie)
     SPW_PICC:
       name: SPW(allonie) PICC stafrænar loftmyndir
-    US-TIGER-Roads-2014:
-      description: Við aðdráttarstig 16+ birtast kortagögn í almenningseigu frá US Census þjóðskránni. Við lægri aðdrátt birtast einungis breytingar síðan 2006 mínus þær breytingar sem þegar hafa verið settar inn í OpenStreetMap
-      name: TIGER vegir 2014
     US-TIGER-Roads-2017:
       description: Gult = Kortagögn í almenningseigu frá US Census þjóðskránni. Rautt = Gögn fundust ekki í OpenStreetMap
       name: TIGER vegir 2017
     US-TIGER-Roads-2018:
       description: Gult = Kortagögn í almenningseigu frá US Census. Rautt = Gögn sem ekki finnast á OpenStreetMap
       name: TIGER vegir 2018
+    US-TIGER-Roads-2019:
+      description: Gult = Kortagögn í almenningseigu frá US Census. Rautt = Gögn sem ekki finnast á OpenStreetMap
+      name: TIGER vegir 2019
     US_Forest_Service_roads_overlay:
       description: 'Vegur: Grænn útjaðar = óflokkað. Brúnn útjaðar = slóði. Yfirborð: möl = ljósbrún fylling, malbik = svart, hellur = grátt, jarðvegur = hvítt, steypa = blátt, gras = grænt. Árstíðabundið = hvítar rendur'
       name: U.S. Forest vegayfirlag
@@ -77,6 +76,10 @@ is:
       attribution:
         text: Gert með tilstilli Brussels UrbIS®© - Dreifing & höfundarréttur CIRB
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Gert með tilstilli Brussels UrbIS®© - Dreifing & höfundarréttur CIRB
+      name: UrbIS-Ortho 2019
     UrbisAdmFR:
       attribution:
         text: Framkvæmt með tilstilli Brussels UrbIS®© - Dreifing & höfundarréttur CIRB
@@ -115,16 +118,22 @@ is:
         text: basemap.at
       description: Orthofoto lag frá basemap.at. "Arftaki" myndefnis frá geoimage.at.
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      name: basemap.at þekja
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
       description: Landfæðilega merktar ljósmyndir í kringum 1940 frá Balaton Limnological Institute.
       name: EUFAR Balaton - orthophoto uppréttar loftmyndir
-    finds.jp_KBN_2500:
+    gothenburg-citymap:
       attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 í gegnum finds.jp. Gott til að teikna eftir, en dálítið eldra.
-      name: Japan GSI KIBAN 2500
+        text: © Sveitarfélagið Gautaborg, CC0
+      name: Borgarkort Gautaborgar
+    gothenburg-ortho:
+      attribution:
+        text: © Sveitarfélagið Gautaborg, CC0
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
@@ -135,11 +144,6 @@ is:
         text: GSI Japan
       description: Japanskt GSI staðalkort. Mikil þekja.
       name: Japan GSI staðalkort
-    helsingborg-orto:
-      attribution:
-        text: © Sveitarfélagið Helsingborg
-      description: Orthophoto uppréttar loftmyndir frá sveitarfélaginu Helsingborg 2016, gögn í almenningseigu
-      name: Helsingborg - orthophoto uppréttar loftmyndir
     kalmar-orto-2014:
       attribution:
         text: © Sveitarfélagið Kalmar
@@ -189,24 +193,17 @@ is:
       attribution:
         text: © Þátttakendur í OpenStreetMap, CC-BY-SA
       name: OpenPT kort (yfirlagsþekja)
+    openrailwaymap:
+      name: OpenRailwayMap
     osm-gps:
       attribution:
         text: © Þátttakendur í OpenStreetMap
       description: Opinberir GPS-ferlar sendir inn á OpenStreetMap.
       name: OpenStreetMap GPS-ferlar
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Þátttakendur í OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (staðlað svart/hvítt)
     osm-mapnik-german_style:
       attribution:
         text: © Þátttakendur í OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (þýskur stíll)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Skönnun á "Hagfræðikortum" u.þ.b. 1950-1980
-      name: Lantmäteriet hagfræðikort 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, gögn eru með © þátttakendur í OpenStreetMap
@@ -236,6 +233,9 @@ is:
       attribution:
         text: Kort © Thunderforest, gögn eru með © þátttakendur í OpenStreetMap
       name: Thunderforest landslag
+    tf-outdoors:
+      attribution:
+        text: Kort © Thunderforest, gögn eru með © þátttakendur í OpenStreetMap
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -256,13 +256,11 @@ is:
         text: © Trafikverket, CC0
       description: 'Sænskt ítarefni fyrir NVDB: Tilvísanir þjóðvega, umferðartakmarkanir, hvíldarstæði, stoppistoðvar almenningsfarartækja, brýr, göng, hraðamyndavélar'
       name: Viðbætur fyrir Trafikverket vegakerfið
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Götuheiti sænska NVDB
-      name: Götuheiti fyrir Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Sænska vegakerfið með ýmsum valkostum fyrir kortalög
       name: Valkostir fyrir Trafikverket vegakerfið
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław

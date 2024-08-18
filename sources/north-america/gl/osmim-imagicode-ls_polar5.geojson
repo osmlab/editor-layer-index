@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -82.9935, 81.9147 ], [ -84.4409, 82.1649 ], [ -84.4409, 82.9562 ], [ -78.3559, 83.4863 ], [ -71.9, 83.8983 ], [ -28.3104, 83.8983 ], [ -22.3489, 83.5611 ], [ -16.7075, 83.1347 ], [ -16.7075, 81.9147 ], [ -82.9935, 81.9147 ] ]
+            [ [ -82.9935, 81.9147 ], [ -16.7075, 81.9147 ], [ -16.7075, 83.1347 ], [ -22.3489, 83.5611 ], [ -28.3104, 83.8983 ], [ -71.9, 83.8983 ], [ -78.3559, 83.4863 ], [ -84.4409, 82.9562 ], [ -84.4409, 82.1649 ], [ -82.9935, 81.9147 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Landsat off-nadir late July 2020",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2020-07-12",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=ls_polar5&z={zoom}&x={x}&y={-y}"

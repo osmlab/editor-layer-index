@@ -1,0 +1,107 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Mercer_OH_2021",
+        "attribution": {
+            "url": "https://www.mercercountyohio.org/",
+            "text": "Mercer County, State of Ohio",
+            "required": false
+        },
+        "name": "Mercer County Orthoimagery (2021)",
+        "icon": "https://www.mercercountyohio.org/wp-content/uploads/2018/09/Mercer-County-Govt-Logo.png",
+        "url": "https://gis.mercercountyohio.org/arcgis/rest/services/aerials/2021Aerials/ImageServer/WMTS/tile/1.0.0/aerials_2021Aerials/default/default028mm/{zoom}/{y}/{x}",
+        "max_zoom": 23,
+        "license_url": "https://gis.mercercountyohio.org/arcgis/rest/services/aerials/2021Aerials/ImageServer",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2021",
+        "end_date": "2021",
+        "description": "Spring 2021 orthoimagery for Mercer County in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.mercercountyohio.org/disclaimer/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -84.80423931821,
+                    40.73457591115
+                ],
+                [
+                    -84.80284450111,
+                    40.69341886018
+                ],
+                [
+                    -84.81186074537,
+                    40.69323684495
+                ],
+                [
+                    -84.80399789124,
+                    40.46686194958
+                ],
+                [
+                    -84.81307991969,
+                    40.46673549037
+                ],
+                [
+                    -84.80896000608,
+                    40.34988024895
+                ],
+                [
+                    -84.71926697719,
+                    40.35184261198
+                ],
+                [
+                    -84.71892365443,
+                    40.34490878599
+                ],
+                [
+                    -84.42306535708,
+                    40.35046905151
+                ],
+                [
+                    -84.42323701846,
+                    40.35727149634
+                ],
+                [
+                    -84.44126146304,
+                    40.35714068657
+                ],
+                [
+                    -84.44143312442,
+                    40.36381166153
+                ],
+                [
+                    -84.45018785464,
+                    40.36355006711
+                ],
+                [
+                    -84.45482271182,
+                    40.50766524735
+                ],
+                [
+                    -84.44538133609,
+                    40.50805679846
+                ],
+                [
+                    -84.45259128558,
+                    40.73477124977
+                ],
+                [
+                    -84.76810489642,
+                    40.72800703576
+                ],
+                [
+                    -84.76827630031,
+                    40.73548646016
+                ],
+                [
+                    -84.80423931821,
+                    40.73457591115
+                ]
+            ]
+        ]
+    }
+}

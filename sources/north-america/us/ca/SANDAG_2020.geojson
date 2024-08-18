@@ -1,0 +1,168 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "SANDAG_2020",
+        "attribution": {
+            "url": "https://www.sangis.org/",
+            "text": "San Diego Association of Governments",
+            "required": false
+        },
+        "name": "SANDAG 2020 Aerial Imagery",
+        "icon": "https://gis.sandag.org/images/sandag_sangis_combo_logo.png",
+        "url": "https://gis.sandag.org/sdgis/services/Imagery/SD2020/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 18,
+        "license_url": "https://gis.sandag.org/sdgis/rest/services/Imagery/SD2020/ImageServer/info/metadata",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2230",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "start_date": "2019-12-22",
+        "end_date": "2020-01-11",
+        "description": "2020 9-inch resolution imagery for the San Diego region of the State of California. Imagery was acquired as part of the San Diego regional aerial imagery acquisition partnership",
+        "category": "historicphoto",
+        "privacy_policy_url": "https://www.sandag.org/index.asp?fuseaction=utility.privacy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -116.07609274149,
+                    33.43362602965
+                ],
+                [
+                    -117.2313312149,
+                    33.43461117526
+                ],
+                [
+                    -117.23158438325,
+                    33.45823678711
+                ],
+                [
+                    -117.23781984899,
+                    33.4581724525
+                ],
+                [
+                    -117.23786879897,
+                    33.46290345693
+                ],
+                [
+                    -117.2491541934,
+                    33.46280863798
+                ],
+                [
+                    -117.24918503881,
+                    33.46578209967
+                ],
+                [
+                    -117.26629853815,
+                    33.46565008472
+                ],
+                [
+                    -117.26637598693,
+                    33.47212976761
+                ],
+                [
+                    -117.27746893287,
+                    33.47203579777
+                ],
+                [
+                    -117.27752358288,
+                    33.47676296959
+                ],
+                [
+                    -117.28880663037,
+                    33.47666704717
+                ],
+                [
+                    -117.28882808805,
+                    33.479966941
+                ],
+                [
+                    -117.31841285348,
+                    33.47971861438
+                ],
+                [
+                    -117.31854428172,
+                    33.49059621891
+                ],
+                [
+                    -117.3340984118,
+                    33.49046424177
+                ],
+                [
+                    -117.33413462162,
+                    33.49408850707
+                ],
+                [
+                    -117.35322387099,
+                    33.49392798905
+                ],
+                [
+                    -117.35347633123,
+                    33.51393592334
+                ],
+                [
+                    -117.52062422097,
+                    33.51234590233
+                ],
+                [
+                    -117.51997951984,
+                    33.46982635849
+                ],
+                [
+                    -117.54255530298,
+                    33.4695597945
+                ],
+                [
+                    -117.5424563992,
+                    33.4630779638
+                ],
+                [
+                    -117.5875929451,
+                    33.46259491624
+                ],
+                [
+                    -117.58746923089,
+                    33.45491477968
+                ],
+                [
+                    -117.59312869191,
+                    33.45483421811
+                ],
+                [
+                    -117.59254404545,
+                    33.41703370259
+                ],
+                [
+                    -117.60378378868,
+                    33.41691835967
+                ],
+                [
+                    -117.68005508423,
+                    32.48196429063
+                ],
+                [
+                    -116.09443905115,
+                    32.61371306457
+                ],
+                [
+                    -116.09363437772,
+                    33.06961560085
+                ],
+                [
+                    -116.07247710496,
+                    33.06959536469
+                ],
+                [
+                    -116.07609274149,
+                    33.43362602965
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Wood_OH_2020",
+        "attribution": {
+            "url": "https://www.woodcountyohio.gov",
+            "text": "Wood County, State of Ohio",
+            "required": false
+        },
+        "name": "Wood County Orthoimagery (2020)",
+        "icon": "https://www.woodcountyohio.gov/ImageRepository/Document?documentID=70",
+        "url": "https://engineergis.co.wood.oh.us/arcgis/rest/services/Imagery/Wood_2020_rgb_20x/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 21,
+        "license_url": "https://engineergis.co.wood.oh.us/arcgis/rest/services/Imagery/Wood_2020_rgb_20x/ImageServer",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2020",
+        "end_date": "2020",
+        "description": "Spring 2020 orthoimagery for Wood County in the State of Ohio",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.woodcountyohio.gov/privacy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -83.41347099423,
+                    41.62214760951
+                ],
+                [
+                    -83.58192461014,
+                    41.62083239555
+                ],
+                [
+                    -83.61831682205,
+                    41.575645612
+                ],
+                [
+                    -83.64526765823,
+                    41.57538877853
+                ],
+                [
+                    -83.71770875931,
+                    41.51988881483
+                ],
+                [
+                    -83.71719377518,
+                    41.49224955055
+                ],
+                [
+                    -83.73590486526,
+                    41.49212096827
+                ],
+                [
+                    -83.78946321487,
+                    41.45018954081
+                ],
+                [
+                    -83.85297792435,
+                    41.42213437493
+                ],
+                [
+                    -83.88919838905,
+                    41.41840128749
+                ],
+                [
+                    -83.88404829025,
+                    41.16469846556
+                ],
+                [
+                    -83.41620683938,
+                    41.16581319799
+                ],
+                [
+                    -83.41347099423,
+                    41.62214760951
+                ]
+            ]
+        ]
+    }
+}

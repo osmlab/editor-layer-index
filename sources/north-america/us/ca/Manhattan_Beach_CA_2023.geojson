@@ -1,0 +1,118 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Manhattan_Beach_CA_2023",
+        "attribution": {
+            "url": "https://www.manhattanbeach.gov/",
+            "text": "City of Manhattan Beach",
+            "required": false
+        },
+        "name": "City of Manhattan Beach Orthoimagery (2023)",
+        "url": "https://permitmaps.citymb.info/arcgis/rest/services/MBGISInfo_Imagery2017_1071/MapServer/export?f=image&format=jpg&layers=show:4&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "min_zoom": 16,
+        "max_zoom": 22,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "2023 3-inch resolution imagery for Manhattan Beach in the State of California",
+        "category": "photo",
+        "privacy_policy_url": "https://www.manhattanbeach.gov/departments/terms-and-conditions"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -118.475818717667622,
+                    33.888185249267792
+                ],
+                [
+                    -118.455860718669584,
+                    33.861622239929446
+                ],
+                [
+                    -118.407198813192778,
+                    33.877742861911671
+                ],
+                [
+                    -118.406908393837114,
+                    33.877236915152565
+                ],
+                [
+                    -118.405965721174525,
+                    33.877557084934573
+                ],
+                [
+                    -118.405918111444095,
+                    33.87747407806939
+                ],
+                [
+                    -118.404856414455381,
+                    33.877849584673072
+                ],
+                [
+                    -118.404527907315412,
+                    33.877153907975966
+                ],
+                [
+                    -118.40312818124066,
+                    33.877640091718995
+                ],
+                [
+                    -118.402775869235441,
+                    33.87706694799008
+                ],
+                [
+                    -118.40203315744067,
+                    33.877304111379246
+                ],
+                [
+                    -118.401771303923283,
+                    33.877090664358654
+                ],
+                [
+                    -118.395977199729401,
+                    33.877122286173176
+                ],
+                [
+                    -118.395943872918096,
+                    33.872797894281454
+                ],
+                [
+                    -118.380027940033969,
+                    33.872845329384717
+                ],
+                [
+                    -118.380046983926178,
+                    33.880070968885605
+                ],
+                [
+                    -118.378694867581842,
+                    33.880094684419298
+                ],
+                [
+                    -118.378704389527883,
+                    33.901843005837996
+                ],
+                [
+                    -118.417553929562217,
+                    33.901953650025739
+                ],
+                [
+                    -118.419705889377852,
+                    33.90618173104027
+                ],
+                [
+                    -118.475818717667622,
+                    33.888185249267792
+                ]
+            ]
+        ]
+    }
+}

@@ -2,23 +2,34 @@ ko:
   imagery:
     Bing:
       description: 위성 및 항공 영상
-      name: Bing 항공 영상
+      name: Bing 위성 지도
+    Bytom-2012:
+      attribution:
+        text: 바이토미아 시청
+      name: 'Bytom: Orthophotomap 2012 (항공사진)'
     EsriWorldImagery:
       attribution:
         text: 이용 약관
-      description: Esri 세계 이미지.
-      name: Esri 세계 이미지
+      description: Esri 전세계 항공 지도
+      name: Esri 전세계 항공 지도
     EsriWorldImageryClarity:
+      attribution:
+        text: 약관 & 피드백
       description: Esri archive 이미지는 기본 레이어보다 명확하고 정확할 수 있습니다.
-      name: Esri (선명한) 세계 이미지 베타
+      name: Esri 전세계 항공 지도 (고화질) Beta
     MAPNIK:
       description: 기본 OpenStreetMap 레이어
       name: OpenStreetMap (일반)
     Mapbox:
       attribution:
         text: 이용 약관
-      description: 위성 및 항공 이미지
-      name: Mapbox 위성
+      description: 고해상도 위성, 항공사진의 글로벌 기본 지도를 포함한 Mapbox 제공 래스터 타일셋
+      name: Mapbox 위성 지도
+    OSIP:
+      name: 미국 오하이오 주 항공 지도
+    OSIP_1ft:
+      attribution:
+        text: 미국 오하이오 주 항공 지도
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
@@ -47,13 +58,18 @@ ko:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap 기여자, CC-BY-SA
       name: 'OSM 검사기: 태그'
-    US-TIGER-Roads-2014:
-      description: 확대 수준 16 이상에서는 미국 센서스의 공개 도메인지도 데이터입니다. 더 낮은 줌에서는 2006 년 이후로 변경된 부분부터 OpenStreetMap에 이미 통합된 변경 사항을 뺀 부분만 변경됩니다.
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
       name: TIGER Roads 2018
+    US-TIGER-Roads-2020:
+      name: TIGER 미국 도로 레이어 (2020년 기준)
+    US-TIGER-Roads-2021:
+      name: TIGER 미국 도로 레이어 (2021년 기준)
+    US-TIGER-Roads-2022:
+      name: TIGER 미국 도로 레이어 (2022년 기준)
+    USDA-NAIP:
+      name: 국가 농업 이미지 프로그램
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, OpenStreetMap 기여자, CC by-SA 3.0
@@ -84,24 +100,42 @@ ko:
         text: basemap.at
       description: Orthofoto 층은 basemap.at에서 제공합니다. geoimage.at 형상의 "계승".
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+    gsi.go.jp_airphoto:
+      attribution:
+        text: 일본 국토지리원
+      name: 일본 국토지리원 항공 사진
+    gsi.go.jp_std_map:
+      attribution:
+        text: 일본 국토지리원
+      name: 일본 국토지리원 표준 지도
     mapbox_locator_overlay:
       attribution:
         text: 이용 약관
-      description: 당신을 돕기위한 주요 기능을 보여줍니다.
-      name: Locator Overlay
+      description: 당신을 돕기 위한 주요 기능을 보여줍니다.
+      name: 도로 오버레이
     openpt_map:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA
       name: OpenPT Map (오버레이)
+    openrailwaymap:
+      attribution:
+        text: '렌더링: OpenRailwayMap, © 지도 데이터 OpenStreetMap 기여자'
+      description: 오픈스트리트맵 데이터에 기반한 철도 시설물을 보여주는 오버레이 이미지
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: '렌더링: OpenRailwayMap, © 지도 데이터 OpenStreetMap 기여자'
+      description: 오픈스트리트맵 데이터에 기반한 철도의 제한 속도를 보여주는 오버레이 이미지
+    openrailwaymap-signalling:
+      description: 오픈스트리트맵 데이터에 기반한 철도 신호를 보여주는 오버레이 이미지
     osm-gps:
       attribution:
         text: © OpenStreetMap 기여자
       description: 공용 GPS 추적을 OpenStreetMap에 업로드했습니다.
       name: OpenStreetMap GPS 추적들
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap 기여자, CC-BY-SA
-      name: OpenStreetMap (표준 흑백)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap 기여자, CC-BY-SA

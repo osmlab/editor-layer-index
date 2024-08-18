@@ -1,0 +1,63 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "IDEIB",
+        "attribution": {
+            "text": "Infraestructura de Dades Espacials de les Illes Balears",
+            "required": true
+        },
+        "name": "IDEIB - Ortofoto més recent de les Illes Balears",
+        "url": "https://ideib.caib.es/geoserveis/services/imatges/GOIB_Orto_IB/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "ES",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4230",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:23031",
+            "EPSG:25831",
+            "EPSG:32631"
+        ],
+        "best": true,
+        "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+        "privacy_policy_url": "https://www.caib.es/sites/sitibsa/ca/aviso_legal-66839/",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    1.208491,
+                    38.05675
+                ],
+                [
+                    3.284907,
+                    38.90386
+                ],
+                [
+                    4.938349,
+                    39.71987
+                ],
+                [
+                    4.284662,
+                    40.7098
+                ],
+                [
+                    1.845698,
+                    40.02341
+                ],
+                [
+                    0.615229,
+                    39.05332
+                ],
+                [
+                    1.208491,
+                    38.05675
+                ]
+            ]
+        ]
+    }
+}

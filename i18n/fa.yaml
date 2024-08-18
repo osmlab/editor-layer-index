@@ -1,65 +1,78 @@
 fa:
   imagery:
+    Bedzin-PL-aerial_image:
+      name: 'Będzin: Orthophotomap 2013 (تصویر هوایی)'
+    Bedzin-PL-buildings:
+      name: 'Będzin: ساختمان‌ها'
     Bing:
-      description: تصاویر هوایی و ماهواره‌ای
-      name: Bing aerial imagery
+      description: تصاویر هوایی و ماهواره‌ای.
+    EOXAT2018CLOUDLESS:
+      description: تصاویر ماهواره‌ای Sentinel پس از پردازش.
     EsriWorldImagery:
       attribution:
         text: قوانین و بازخورد
-      description: تصاویر جهانی Esri.
-      name: Esri World Imagery
+      name: تصاویر جهانی Esri
     EsriWorldImageryClarity:
       attribution:
         text: قوانین و بازخورد
-      description: تصاویر بایگانی Esri که معمولاً واضح‌تر و دقیق‌تر از لایهٔ پیشفرض است
-      name: Esri World Imagery (Clarity) Beta
+      description: تصاویر بایگانی Esri که معمولاً واضح‌تر و درست‌تر از لایه پیشفرض است.
+      name: تصاویر جهانی Esri ‏(Clarity) نسخه بتا
+    Gliwice-buildings:
+      name: 'گلیویس: ساختمان‌ها'
     MAPNIK:
-      description: لایهٔ پیشفرض اوپن‌استریت‌مپ.
-      name: OpenStreetMap (Standard)
+      description: لایه پیشفرض اوپن‌استریت‌مپ.
+      name: اوپن‌استریت‌مپ (استاندارد)
     Mapbox:
       attribution:
         text: قوانین و بازخورد
-      description: تصاویر هوایی و ماهواره‌ای.
-      name: Mapbox Satellite
+      name: ماهواره Mapbox
+    OSIP_6in:
+      name: برنامه تصویربرداری 6 اینچی ایالت اوهایو
+    OSMUK-Cadastral-Parcels:
+      attribution:
+        text: حاوی اطلاعات بخش عمومی است که تحت مجوز دولت باز نسخه 3.0 مجوز دارد.
+      description: قطعات کاداستر (ثبت اسناد و املاک) در بریتانیای کبیر کاملا تراز شده است
+      name: بسته‌های کاداستر OSMUK
     OSM_Inspector-Addresses:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Addresses'
+      name: 'OSM Inspector: آدرس‌ها'
     OSM_Inspector-Geometry:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Geometry'
+      name: 'OSM Inspector: هندسه'
     OSM_Inspector-Highways:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Highways'
+      name: 'OSM Inspector: بزرگراه‌ها'
     OSM_Inspector-Multipolygon:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Area'
+      name: 'OSM Inspector: منطقه'
     OSM_Inspector-Places:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Places'
+      name: 'OSM Inspector: مکان‌ها'
     OSM_Inspector-Routing:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Routing'
+      name: 'OSM Inspector: مسیریابی'
     OSM_Inspector-Tagging:
       attribution:
         text: © شرکت Geofabrik GmbH، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: 'OSM Inspector: Tagging'
-    US-TIGER-Roads-2014:
-      description: در زوم ۱۶‎+‎، اطلاعات مالکیت عمومی از سرشماری آمریکا. در زوم‌های کمتر، فقط تغییراتی که از سال ۲۰۰۶ ایجاد شده منهای تغییراتی که قبلاً در اوپن‌استریت‌مپ آمده
-      name: TIGER Roads 2014
+      name: 'OSM Inspector: برچسب زدن'
     US-TIGER-Roads-2017:
-      description: 'زرد = داده‌های دولتی سرشماری آمریکا. قرمز: داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد'
+      description: زرد = داده‌های دولتی سرشماری آمریکا. قرمز = داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
-      description: 'زرد = داده‌های دولتی سرشماری آمریکا. قرمز: داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد'
+      description: زرد = داده‌های دولتی سرشماری آمریکا. قرمز = داده‌هایی که در اوپن‌استریت‌مپ پیدا نشد
       name: TIGER Roads 2018
+    USDA-NAIP:
+      name: برنامه ملی تصویربرداری کشاورزی
     US_Forest_Service_roads_overlay:
-      description: 'معبر: سبزرنگ = دسته‌بندی‌نشده. قهوه‌ای‌رنگ = رد چرخ. سطح: شن‌ریزه = قهوه‌ای روشن توپر، آسفالت = سیاه، روسازی‌شده = خاکستری، زمین = سفید، بتن = آبی، چمن = سبز. فصلی = سفید'
+      description: 'بزرگراه: سبزرنگ = دسته‌بندی‌نشده. پوشش قهوه‌ای‌رنگ = مسیر. سطح: سنگریزه = قهوه‌ای روشن توپر، آسفالت = سیاه، سنگفرش = خاکستری، زمین = سفید، بتن = آبی، چمن = سبز. فصلی = میله‌های سفید'
+    UrbISOrtho2016:
+      name: UrbIS-Ortho 2016
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC by-SA 3.0
@@ -67,7 +80,7 @@ fa:
     Waymarked_Trails-Hiking:
       attribution:
         text: © waymarkedtrails.org، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC by-SA 3.0
-      name: 'Waymarked Trails: پیاده‌گردی'
+      name: 'Waymarked Trails: پیاده‌روی'
     Waymarked_Trails-MTB:
       attribution:
         text: © waymarkedtrails.org، مشارکت‌کنندگان اوپن‌استریت‌مپ، CC by-SA 3.0
@@ -90,6 +103,47 @@ fa:
         text: basemap.at
       description: Orthofoto layer provided by basemap.at. "Successor" of geoimage.at imagery.
       name: basemap.at Orthofoto
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: پوشش حاشیه نویسی ارائه شده توسط basemap.at.
+    eufar-balaton:
+      description: عکاسی با برچسب جغرافیایی در سال 1940 از موسسه Limnological Balaton.
+    gothenburg-citymap:
+      name: نقشه شهر گوتنبرگ
+    gothenburg-ortho_2021:
+      name: گوتنبرگ ارتفتو 2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © شهرداری گوتنبرگ، CC0
+      description: عکس اورتوفوتو برای شهرداری گوتنبرگ
+      name: جدیدترین عکس‌های ارتوفتو گوتنبرگ
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI ژاپن
+      description: تصویربرداری ایرفوتو GSI ژاپن. به طور کامل تصحیح نشده است، اما کمی جدیدتر و پوشش متفاوتی نسبت به GSI ortho Imagery دارد.
+      name: تصویربرداری ایرفوتو GSI ژاپن
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: عکس بدون درز GSI ژاپن
+      description: تصاویر بدون درز عکس GSI ژاپن. مجموعه‌ای از جدیدترین تصاویر GSI ortho، airphoto، post dister و موارد دیگر.
+      name: تصاویر بدون درز عکس GSI ژاپن
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI ژاپن
+      description: نقشه استاندارد GSI ژاپن. به طور گسترده پوشش داده شده است.
+      name: نقشه استاندارد GSI ژاپن
+    kalmar-orto-2014:
+      attribution:
+        text: © شهرداری کالمار
+      description: عکس‌های اورتو برای ساحل شمالی شهرداری کالمار 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © شهرداری کالمار
+    kelkkareitit:
+      name: روکش اتومبیل برفی نوردیک
+    lantmateriet-orto1960:
+      description: موزاییک ارتو عکس سوئدی از دوره 1955-1965. ممکن است تصاویر قدیمی تر و جوانتر ظاهر شوند.
     mapbox_locator_overlay:
       attribution:
         text: قوانین و بازخورد
@@ -102,12 +156,8 @@ fa:
     osm-gps:
       attribution:
         text: '© مشارکت‌کنندگان اوپن‌استریت‌مپ '
-      description: مسیرهای جی‌پی‌اس عمومی که در اوپن‌استریت‌مپ آپلود شده
+      description: ردهای عمومی جی‌پی‌اس که در اوپن‌استریت‌مپ آپلود شده است.
       name: OpenStreetMap GPS traces
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
-      name: OpenStreetMap (سیاه و سفید استاندارد)
     osm-mapnik-german_style:
       attribution:
         text: © مشارکت‌کنندگان اوپن‌استریت‌مپ، CC-BY-SA
@@ -120,6 +170,9 @@ fa:
       attribution:
         text: '© کاشی‌ها: skobbler  داده‌های نقشه: مشارکت‌کنندگان اوپن‌استریت‌مپ '
       name: skobbler
+    skoterleder:
+      description: مسیرهای اتومبیل برفی
+      name: نقشه اتومبیل برفی سوئد
     stamen-terrain-background:
       attribution:
         text: کاشی‌های نقشه از Stamen Design، تحت مجوز CC BY 3.0. داده‌ها از OpenStreetMap، تحت مجوز ODbL
@@ -132,3 +185,5 @@ fa:
       attribution:
         text: 'نقشه‌ها © Thunderforest،‏ داده‌ها © مشارکت‌کنندگان اوپن‌استریت‌مپ '
       name: Thunderforest Landscape
+    trafikverket-vagnat:
+      name: شبکه جاده Trafikverket

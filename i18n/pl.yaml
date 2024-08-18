@@ -1,53 +1,281 @@
 pl:
   imagery:
-    AGIV:
+    Bedzin-PL-aerial_image:
       attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: Najnowsze zdjęcia lotnicze AIV Flandria
-    AGIV10cm:
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Ortofotomapa 2013 (zdjęcia lotnicze)'
+    Bedzin-PL-buildings:
       attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: AGIV Flandria, zdjęcia lotnicze 2013-2015, 10 cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: AGIV Flandria GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: Cyfrowy model wysokościowy Flandrii AIV, 25 cm, wielokierunkowe oświetlenie
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: Cyfrowy model wysokościowy Flandrii AIV, 25 cm, widok z góry
+        text: Starostwo Powiatowe w Będzinie
+      name: 'Będzin: Budynki'
     Bing:
       description: Zdjęcia satelitarne i lotnicze Bing.
-      name: Zdjęcia lotnicze Bing
+      name: Mapy Bing z lotu ptaka
+    Bytom-2012:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Ortofotomapa 2012 (zdjęcia lotnicze)'
+    Bytom-2014:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Fotoplan 2014 (aerofotografia)'
+    Bytom-2016:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomapa 2016 (zdjęcia lotnicze)'
+    Bytom-2018:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomapa 2018 (zdjęcia lotnicze)'
+    Bytom-2021:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Orthophotomapa 2021 (zdjęcia lotnicze)'
+    Bytom-buildings:
+      attribution:
+        text: Urząd Miasta Bytomia
+      name: 'Bytom: Budynki'
+    Czestochowa-2011:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Ortofotomapa 2011 (zdjęcia lotnicze)'
+    Czestochowa-2013:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Ortofotomapa 2013 (zdjęcia lotnicze)'
+    Czestochowa-2014:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Ortofotomapa 2014 (zdjęcia lotnicze)'
+    Czestochowa-2015:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Ortofotomapa 2015 (zdjęcia lotnicze)'
+    Czestochowa-2016:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Ortofotomapa 2016 (zdjęcia lotnicze)'
+    Czestochowa-2017:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Ortofotomapa 2017 (zdjęcia lotnicze)'
+    Czestochowa-buildings:
+      attribution:
+        text: Urząd Miasta Częstochowy
+      name: 'Częstochowa: Budynki'
+    Dourados_Ortofotos:
+      description: Dourados (2018) i kilka dystryktów (2020) zdjęcia lotnicze wysokiej rozdzielczości.
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 bezchmurne – https://s2maps.eu, EOX IT Services GmbH (zawiera zmodyfikowane dane Copernicus Sentinel 2017 i 2018)
       description: Przetworzone zdjęcia satelitarne Sentinel
       name: eox.at 2018 bezchmurne
+    EOXAT2019CLOUDLESS:
+      description: Przetworzone zdjęcia satelitarne Sentinel
     EsriWorldImagery:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne i lotnicze Esri.
+      description: Zdjęcia satelitarne i lotnicze Esri
       name: Esri (satelitarne i lotnicze)
     EsriWorldImageryClarity:
       attribution:
         text: Warunki użytkowania i opinia
       description: Zdjęcia satelitarne i lotnicze Esri, które mogą być czytelniejsze i dokładniejsze niż standardowy podkład.
       name: Esri Beta (satelitarne i lotnicze)
+    Frankfurt-am-Main-2019:
+      description: Zdjęcia lotnicze Frankfurtu nad Menem, sfotografowane 16 kwietnia 2019
+    Geoportal2-PL-City-boundaries_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Granice miast WMS'
+    Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.
+      name: 'Geoportal 2: Ortofotomapa wysokiej rozdzielczości (zdjęcia archiwalne) (WMS)'
+    Geoportal2-PL-HighResolution-aerial_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Ortofotomapa o rozdzielczości 10 cm lub większej. Dane posortowane są wg rozdzielczości a następnie wg aktualności, np. arkusz z 2012 roku o rozdzielczości 8 cm przysłania arkusz z 2019 roku o rozdzielczości 10 cm.
+      name: 'Geoportal 2: Ortofotomapa wysokiej rozdzielczości (zdjęcia lotnicze) (WMS)'
+    Geoportal2-PL-Streets_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2: Nazwy ulic'
+    Geoportal2-PL-addres_points_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2: Punkty adresowe'
+    Geoportal2-PL-aerial_archival_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap archiwalnych dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2: Ortofotomapa (zdjęcia archiwalne) (WMS)'
+    Geoportal2-PL-aerial_image_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2: Ortofotomapa (najnowsze zdjęcia lotnicze) (WMS)'
+    Geoportal2-PL-aerial_image_WMTS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Tile Service,WMTS) umożliwiająca przeglądanie ortofotomap dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych.
+      name: 'Geoportal 2: Ortofotomapa (najnowsze zdjęcia lotnicze) (WMTS)'
+    Geoportal2-PL-boundaries-of-communes_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Granice gmin WMS'
+    Geoportal2-PL-boundaries-of-counties_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Granice powiatów WMS'
+    Geoportal2-PL-boundaries-of-provinces_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Granice województw WMS'
+    Geoportal2-PL-buildings_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
+      name: 'Geoportal 2: Ewidencja budynków WMS'
+    Geoportal2-PL-gas-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: Sieć gazowa WMS'
+    Geoportal2-PL-heat-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: Sieć ciepłownicza WMS'
+    Geoportal2-PL-plot_boundaries_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Ewidencji Gruntów jest usługą zbiorczą prezentacji danych ewidencyjnych pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaEwidencjiGruntow.
+      name: 'Geoportal 2: Granice działek'
+    Geoportal2-PL-power-cord_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: Sieć elektroenergetyczna WMS'
+    Geoportal2-PL-prng:
+      attribution:
+        text: Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej
+      name: 'Geoportal 2: PRNG (nazwy geograficzne)'
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: Sieć kanalizacyjna WMS'
+    Geoportal2-PL-shaded_relief_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie cieniowania NMT w siatce 1m x 1m. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2: Cieniowanie (WMS)'
+    Geoportal2-PL-squares-and-housing-estates_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2: Place, skwery i osiedla'
+    Geoportal2-PL-state-borders_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
+      name: 'Geoportal 2: Granice państwa WMS'
+    Geoportal2-PL-telecommunications-cable_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: Sieć telekomunikacyjna WMS'
+    Geoportal2-PL-water-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
+      name: 'Geoportal 2: Sieć wodociągowa WMS'
+    Gliwice-2003:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2003 (zdjęcia lotnicze)'
+    Gliwice-2009:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2009 (zdjęcia lotnicze)'
+    Gliwice-2013:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2013 (zdjęcia lotnicze)'
+    Gliwice-2017:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2017 (zdjęcia lotnicze)'
+    Gliwice-2018:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2018 (zdjęcia lotnicze)'
+    Gliwice-2020:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2020 (zdjęcia lotnicze)'
+    Gliwice-2021:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Ortofotomapa 2021 (zdjęcia lotnicze)'
+    Gliwice-buildings:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Budynki'
+    LSA-ATKIS_BU:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Kształty budynków w Saksonii-Anhalt
+      name: © GeoBasis-DE/LVermGeo LSA, ATKIS_BU
+    LSA-DOP20:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: zdjęcie lotnicze kraju związkowego Saksonia-Anhalt, rozdzielczość 20 cm
+      name: © GeoBasis-DE/LVermGeo LSA, DOP20
+    LSA-DVG:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      name: © GeoBasis-DE/LVermGeo LSA, DVG
+    LocalAuthorities_RightsOfWay:
+      attribution:
+        text: Zawiera informacje z sektora publicznego na licencji Open Government Licence v3.0.
+      description: Dane dotyczące dróg publicznych (Public Rights of Way) udostępnione przez władze lokalne, zawarte na stronie rowmaps.com
+    Lodz-2015:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Ortofotomapa 2015 (zdjęcia lotnicze)'
+    Lodz-2017:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Ortofotomapa 2017 (zdjęcia lotnicze)'
+    Lodz-buildings:
+      attribution:
+        text: Urząd Miasta Łodzi
+      name: 'Łódź: Budynki'
     MAPNIK:
       attribution:
-        text: © autorzy OpenStreetMap, CC BY-SA 2.0
+        text: © Współtwórcy OpenStreetMap, ODbL 1.0
       description: Domyślny podkład OpenStreetMap
       name: OpenStreetMap (Standard)
     Mapbox:
       attribution:
         text: Warunki użytkowania i opinia
-      description: Zdjęcia satelitarne i lotnicze Mapbox.
-      name: Mapbox Satellite (satelitarne)
+      name: Mapbox (satelitarne i lotnicze)
+    Naturvardsverket-protected:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Szwedzkie parki narodowe, rezerwaty przyrody i inne obszary i obiekty chronione
+    Naturvardsverket-trails:
+      attribution:
+        text: © Naturvårdsverket, CC0
     OSM_Inspector-Addresses:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
@@ -76,13 +304,30 @@ pl:
       attribution:
         text: © Geofabrik GmbH, autorzy OpenStreetMap, CC-BY-SA
       name: 'Inspektor OSM: Tagowanie'
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
     SPW_ORTHO_LAST:
       name: Najświeższe zdjęcia lotnicze SPW(allonie)
     SPW_PICC:
       name: Obrazowanie numeryczne SPW(allonie) PICC
-    US-TIGER-Roads-2014:
-      description: Na poziomie powiększenia 16+ są dane public domain od US Census. Na niższych poziomach powiększenia są tylko zmiany od 2006, ale bez zmian już włączonych do OpenStreetMap
-      name: TIGER Roads 2014
+    Siemianowice_Slaskie-aerial_image:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Ortofotomapa (zdjęcia lotnicze)'
+    Siemianowice_Slaskie-buildings:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Budynki'
     US-TIGER-Roads-2017:
       description: Żółty = Dane public domain od US Census. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2017
@@ -93,7 +338,6 @@ pl:
       description: Żółty = Dane public domain z US Census Bureau. Czerwony = Brak danych w OpenStreetMap
       name: TIGER Roads 2019
     USDA-NAIP:
-      description: Najnowszy rok DOQQ z Krajowego Programu Obrazowania Rolnictwa (NAIP) dla każdego sąsiadującego stanu w Stanach Zjednoczonych.
       name: Krajowy Program Obrazowania Rolnictwa
     US_Forest_Service_roads_overlay:
       description: 'Drogi:  Zielone obramowanie = czwartorzędna. Brązowe obramowanie = polna/leśna. Nawierzchnia: żwir = jasno-brązowe wypełnienie, asfalt = czarny, twarda = szary, grunt = biały, beton = niebieski, trawa = zielony. Dostępna sezonowo = białe paski'
@@ -142,6 +386,10 @@ pl:
       attribution:
         text: © waymarkedtrails.org, autorzy OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Szlaki sportów zimowych'
+    Zabrze-2011:
+      attribution:
+        text: Urząd Miasta Zabrza
+      name: 'Zabrze: Ortofotomapa 2011 (zdjęcia lotnicze)'
     basemap.at:
       attribution:
         text: basemap.at
@@ -150,51 +398,57 @@ pl:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
-      description: Warstwa ortofotomapy dostarczana przez basemap.at. "Następca" obrazowania z serwisu geoimage.at.
+      description: Warstwa ortofotomapy dostarczana przez basemap.at. „Następca” zdjęć z serwisu geoimage.at.
       name: Ortofotomapa basemap.at
     basemap.at-overlay:
       attribution:
         text: basemap.at
       description: Nakładka z adnotacjami dostarczona przez basemap.at
       name: Nakładka basemap.at
-    basemap.at-surface:
+    cyclosm:
+      name: CyclOSM
+    debicki-buildings:
       attribution:
-        text: basemap.at
-      description: Warstwa dostarczona przez basemap.at.
-      name: basemap.at (powierzchnia)
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Warstwa dostarczona przez basemap.at.
-      name: basemap.at (model wysokościowy)
+        text: Powiat dębicki
+      name: 'Powiat dębicki: Budynki'
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
       description: Geotagowane zdjęcia z 1940 od Balaton Limnological Institute.
       name: Ortofotomapy EUFAR Balaton
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 przez finds.jp. Dobra do odrysowywania, ale trochę starsza.
-      name: Japońska GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Gmina Göteborg, CC0
       description: Mapa miasta to mapa przeglądowa Göteborga. Zawiera ogólne informacje o gruntach, komunikacji, hydrografii, budynkach, adresach, nazwach ulic i podziale administracyjnym.
       name: Mapa Göteborga
+    gothenburg-dtm-2017:
+      description: Serwis mapowy przedstawiający rzeźbę terenu metodą cieniowania na podstawie modelu wysokościowego Göteborga z 2017 roku. Rozdzielczość 0,5 metra na piksel.
+    gothenburg-ortho:
+      attribution:
+        text: © Gmina Göteborg, CC0
+      description: Ortofotomapa dla gminy Göteborg
+      name: Ortofotomapa Göteborga 2015
+    gothenburg-ortho_2017:
+      name: Ortofotomapa Göteborga 2017
+    gothenburg-ortho_2019:
+      name: Ortofotomapa Göteborga 2019
+    gothenburg-ortho_2021:
+      name: Ortofotomapa Göteborga 2021
     gsi.go.jp_airphoto:
       attribution:
-        text: GSI Japonia
+        text: GSI Japonia (国土地理院)
+      description: Zdjęcia lotnicze GSI (Urzędu ds. Informacji Geoprzestrzennej w Japonii). Nie w pełni zortorektyfikowane, ale trochę nowsze i różne od Ortofotomapy GSI.
+      name: Japan GSI – Zdjęcia lotnicze
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI Japonia (国土地理院)
+      description: Ortofotomapa GSI (Urzędu ds. Informacji Geoprzestrzennej w Japonii). Zbiór najnowszych zdjęć lotniczych, ortofotomap, zdjęć pokatastroficznych i innych.
+      name: Japan GSI – Ortofotomapa
     gsi.go.jp_std_map:
       attribution:
-        text: GSI Japonia
+        text: GSI Japonia (国土地理院)
       description: Standardowa mapa japońskiego GSI. Duże pokrycie.
-      name: Standardowa mapa japońskiego GSI
-    helsingborg-orto:
-      attribution:
-        text: © Urząd miasta Helsingborg
-      description: Ortofotografie z urzędu miejskiego Helsingborgu 2016, domena publiczna
-      name: Ortofotografia Helsingborga
+      name: Japan GSI – Standardowa mapa
     kalmar-orto-2014:
       attribution:
         text: © Urząd miasta Kalmar
@@ -210,11 +464,18 @@ pl:
         text: © Urząd miasta Kalmar
       description: Ortofotografie obszaru miejskiego z urzędu miasta Kalmar 2018
       name: Ortofoto Kalmar Miasto 2018
+    kartverket-bygninger:
+      attribution:
+        text: © Kartverket
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
       description: Szlaki skuterów śnieżnych Kelkkareitit.fi z OSM (kraje nordyckie)
       name: Nakładka nordycka dla skuterów śnieżnych
+    lancucki-buildings:
+      attribution:
+        text: Powiat łańcucki
+      name: 'Powiat łańcucki: Budynki'
     lantmateriet-orto1960:
       attribution:
         text: © Lantmäteriet, CC0
@@ -235,6 +496,10 @@ pl:
         text: © Urząd miasta Linköping
       description: Ortofotografie z urzędu miejskiego Linköpingu 2010, dane otwarte
       name: Ortofotografia Linköpingu
+    lubaczowski-buildings:
+      attribution:
+        text: Powiat lubaczowski
+      name: 'Powiat lubaczowski: Budynki'
     mapbox_locator_overlay:
       attribution:
         text: Warunki użytkowania i opinia
@@ -244,37 +509,94 @@ pl:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
       name: Mapa OpenPT (nakładka)
+    openrailwaymap:
+      attribution:
+        text: 'Wykonanie: OpenRailwayMap, © Dane mapy: autorzy OpenStreetMap'
+      description: Nakładka z infrastrukturą kolejową na podstawie danych OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Wykonanie: OpenRailwayMap, © Dane mapy: autorzy OpenStreetMap'
+      description: Nakładka z ograniczeniami prędkości kolei na podstawie danych OpenStreetMap
+      name: OpenRailwayMap – prędkości maksymalne
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Wykonanie: OpenRailwayMap, © Dane mapy: autorzy OpenStreetMap'
+      description: Nakładka z sygnałami kolejowymi na podstawie danych OpenStreetMap
+      name: OpenRailwayMap – sygnalizacja
     osm-gps:
       attribution:
         text: © autorzy OpenStreetMap
       description: Publiczne ślady GPS przesłane do OpenStreetMap.
       name: Ślady GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © autorzy OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Standard Czarno-Biała)
     osm-mapnik-german_style:
       attribution:
         text: © autorzy OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Styl niemiecki)
-    osmse-ekonomiska:
+    poznan-ortofotomapa2014:
       attribution:
-        text: © Lantmäteriet
-      description: Skany "Economic maps" ok. 1950-1980
-      name: Mapa ekonomiczna Lantmäteriet 1950-1980
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Ortofotomapa 2014 (zdjęcia lotnicze)'
+    poznan-ortofotomapa2016:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Ortofotomapa 2016 (zdjęcia lotnicze)'
+    poznan-ortofotomapaBiezaca:
+      attribution:
+        text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ
+      name: 'Poznań: Ortofotomapa bieżąca (zdjęcia lotnicze)'
+    przemysl-aerial:
+      attribution:
+        text: Miasto Przemyśl
+      name: 'Przemyśl: Ortofotomapa (zdjęcia lotnicze)'
+    przemysl-buildings:
+      attribution:
+        text: Miasto Przemyśl
+      name: 'Przemyśl: Budynki'
     qa_no_address:
       attribution:
         text: Simon Poole, Dane © autorzy OpenStreetMap
       name: QA Bez Adresu
+    rzeszowski-aerial:
+      attribution:
+        text: Powiat rzeszowski
+      name: 'Powiat rzeszowski: Ortofotomapa (zdjęcia lotnicze)'
+    rzeszowski-buildings:
+      attribution:
+        text: Powiat rzeszowski
+      name: 'Powiat rzeszowski: Budynki'
+    scb-industrial:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+    scb-settlements:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+    scb-urban:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+    scb-vacation:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
     skobbler:
       attribution:
         text: '© Podkład: skobbler Dane mapy: autorzy OpenStreetMap'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © Skolverket
     skoterleder:
       attribution:
         text: © Skoterleder.org
       description: Szlaki skuterów śnieżnych
       name: Mapa Szwecji dla skuterów śnieżnych
+    sropczyce-buildings:
+      attribution:
+        text: Powiat ropczycko-sędziszowski
+      name: 'Powiat ropczycko-sędziszowski: Budynki'
+    stalowowolski-buildings:
+      attribution:
+        text: Powiat stalowowolski
+      name: 'Powiat stalowowolski: Budynki'
     stamen-terrain-background:
       attribution:
         text: Kafle mapy od Stamen Design, licencja CC BY 3.0. Dane z OpenStreetMap, licencja ODbL
@@ -282,8 +604,17 @@ pl:
     stockholm-orto:
       attribution:
         text: © Urząd miasta Sztokholm, CC0
-      description: Ortofotografie z urzędu miejskiego Sztokholmu 2016, licencja CC0
+      description: Ortofotografie z urzędu miejskiego Sztokholmu 2018, licencja CC0
       name: Ortofotografia Sztokholmu
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofotomapa Susono
+      description: Zdjęcia lotnicze wydane przez miasto Susono jako otwarte dane.
+      name: Ortofotomapa Susono
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: Szwedzka sieć elektroenergetyczna
     tf-cycle:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap
@@ -292,6 +623,10 @@ pl:
       attribution:
         text: Mapa © Thunderforest, dane © autorzy OpenStreetMap
       name: Thunderforest Krajobraz
+    tf-outdoors:
+      attribution:
+        text: Mapy © Thunderforest; Data © autorzy OpenStreetMap
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
@@ -312,13 +647,16 @@ pl:
         text: © Trafikverket, CC0
       description: 'Dodatkowe szczegóły szwedzkiej NVDB: numery dróg, uspokojenia ruchu, miejsca odpoczynku, przystanki autobusowe, mosty, tunele, fotoradary'
       name: Dodatki sieci drogowej Trafikverket
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Szwedzkie nazwy ulic NVDB
-      name: Nazwy ulic Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Szwedzka sieć drogowa NVDV z kilkoma wariantami warstw mapy
       name: Opcje sieci drogowej Trafikverket
+    wroclaw-orto2015:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Ortofotomapa 2015 (zdjęcia lotnicze)'
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław
+      name: 'Wrocław: Ortofotomapa 2018 (zdjęcia lotnicze)'

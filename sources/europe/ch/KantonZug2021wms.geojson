@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "text": "GIS Kanton Zug",
+            "required": true
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2056",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:21781"
+        ],
+        "best": true,
+        "country_code": "CH",
+        "start_date": "2021",
+        "end_date": "2021",
+        "id": "Zug-2021-wms",
+        "name": "Kanton Zug Menzingen 2021 6.5 cm",
+        "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
+        "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
+        "type": "wms",
+        "description": "Orthofoto der Gemeinde Menzingen.",
+        "category": "photo",
+        "url": "https://services.geo.zg.ch/ows/Orthofotos?LAYERS=zg.orthofoto_2021_kt_zg&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 6
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.666816,
+                    47.147032
+                ],
+                [
+                    8.666816,
+                    47.205748
+                ],
+                [
+                    8.553708,
+                    47.205748
+                ],
+                [
+                    8.553708,
+                    47.147032
+                ],
+                [
+                    8.666816,
+                    47.147032
+                ]
+            ]
+        ]
+    }
+}

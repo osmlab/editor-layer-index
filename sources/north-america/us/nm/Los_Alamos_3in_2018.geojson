@@ -1,0 +1,83 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Los_Alamos_3in_2018",
+        "attribution": {
+            "url": "https://www.losalamosnm.us/Services/Property-and-Taxes/GIS-and-Maps/Geographic-Information-System-Services",
+            "text": "Los Alamos County GIS Services",
+            "required": false
+        },
+        "name": "Los Alamos County Orthoimagery 2018 (3in)",
+        "icon": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6435726/Templates/Images/logo.png",
+        "url": "https://gis.losalamosnm.us/securegis/rest/services/imagery/Orthoimagery_pictometry_3in_2018/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 20,
+        "license_url": "https://wiki.openstreetmap.org/wiki/New_Mexico/Los_Alamos_County_Orthoimagery",
+        "permission_osm": "explicit",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2018-08",
+        "end_date": "2018-08",
+        "description": "3-inch pixel resolution drone orthoimagery captured in 2018 for selected areas within Los Alamos County of the state of New Mexico",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "best": false,
+        "privacy_policy_url": "https://losalamosnm.us/cms/one.aspx?pageId=6505271"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        -106.15418583423,
+                        35.77479395775
+                    ],
+                    [
+                        -106.15410805285,
+                        35.8400728785
+                    ],
+                    [
+                        -106.25207841933,
+                        35.84010331933
+                    ],
+                    [
+                        -106.25208646327,
+                        35.7748244236
+                    ],
+                    [
+                        -106.15418583423,
+                        35.77479395775
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        -106.18972242013,
+                        35.86184594929
+                    ],
+                    [
+                        -106.18967212804,
+                        35.92712331586
+                    ],
+                    [
+                        -106.40368759766,
+                        35.92703806708
+                    ],
+                    [
+                        -106.40355214611,
+                        35.86176443371
+                    ],
+                    [
+                        -106.18972242013,
+                        35.86184594929
+                    ]
+                ]
+            ]
+        ]
+    }
+}

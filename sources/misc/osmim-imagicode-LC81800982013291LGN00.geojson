@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 3.246529403113632, -54.470469931671111 ], [ 3.246529403113632, -54.375391687979096 ], [ 3.463852706336288, -54.375391687979096 ], [ 3.463852706336288, -54.470469931671111 ], [ 3.246529403113632, -54.470469931671111 ] ]
+            [ [ 3.2465, -54.4705 ], [ 3.4639, -54.4705 ], [ 3.4639, -54.3754 ], [ 3.2465, -54.3754 ], [ 3.2465, -54.4705 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Bouvet Island",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2013-10-18",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81800982013291LGN00&z={zoom}&x={x}&y={-y}"

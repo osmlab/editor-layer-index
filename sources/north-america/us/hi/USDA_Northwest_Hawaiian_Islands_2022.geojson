@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA_Northwest_Hawaiian_Islands_2022",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "USDA Northwest Hawaiian Islands Imagery (2022)",
+        "type": "wms",
+        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/northwest_hawaiian_islands_2022_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=northwest_hawaiian_islands_2022_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2020-05-29",
+        "end_date": "2022-06-30",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "US",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -178.79629342259264,
+                    27.39866602007675
+                ],
+                [
+                    -162.1411202500087,
+                    21.87262404328549
+                ],
+                [
+                    -161.47491332310534,
+                    23.210214682340474
+                ],
+                [
+                    -178.6297416908668,
+                    29.171296555558747
+                ],
+                [
+                    -178.79629342259264,
+                    27.39866602007675
+                ]
+            ]
+        ]
+    }
+}

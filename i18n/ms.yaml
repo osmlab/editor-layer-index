@@ -2,22 +2,31 @@ ms:
   imagery:
     Bing:
       description: Imejan satelit dan udara.
-      name: Imejan udara Bing
+    DV_GRB:
+      attribution:
+        text: © Digitaal Vlaanderen
     EsriWorldImagery:
       attribution:
         text: Terma & Maklum Balas
-      description: Imejan sejagat Esri.
       name: Esri World Imagery
     EsriWorldImageryClarity:
       attribution:
         text: Terma & Maklum Balas
+    Geoportal2-PL-sewer-pipe_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+    Lodz-2015:
+      attribution:
+        text: Urząd Miasta Łodzi
+    Lodz-2017:
+      attribution:
+        text: Urząd Miasta Łodzi
     MAPNIK:
       description: Lapisan OpenStreetMap tersedia.
       name: OpenStreetMap (Standard)
     Mapbox:
       attribution:
         text: Terma & Maklum Balas
-      description: Imejan satelit dan udara.
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
       attribution:
@@ -47,9 +56,6 @@ ms:
       attribution:
         text: © Geofabrik GmbH, penyumbang-penyumbang OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Penandaan'
-    US-TIGER-Roads-2014:
-      description: Pada tahap zum 16+, data peta domain awam dari Banci AS. Pada tahap zum yang lebih rendah, hanya perubahan sejak 2006 tanpa perubahan yang telah dimasukkan ke dalam OpenStreetMap
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Kuning = Data peta domain awam daripada Banci AS. Merah = Data tidak ditemui dalam OpenStreetMap
       name: TIGER Roads 2017
@@ -72,6 +78,9 @@ ms:
         text: basemap.at
       description: Lapisan Ortofoto disediakan oleh basemap.at. "Pengganti" imejan geoimage.at.
       name: Orthofoto basemap.at
+    maaamet.ee-pohi_vr2:
+      attribution:
+        text: Maa-ameti põhikaart
     mapbox_locator_overlay:
       attribution:
         text: Terma & Maklum Balas
@@ -86,10 +95,6 @@ ms:
         text: © Penyumbang-penyumbang OpenStreetMap
       description: Jejak GPS awam dimuat naik ke OpenStreetMap
       name: Jejak GPS OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Penyumbang-penyumbang OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Standard Hitam & Putih)
     osm-mapnik-german_style:
       attribution:
         text: © Penyumbang-penyumbang OpenStreetMap, CC-BY-SA
@@ -98,6 +103,12 @@ ms:
       attribution:
         text: Simon Poole, Data © penyumbang-penyumbang OpenStreetMap
       name: QA Tiada Alamat
+    scb-settlements:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+    scb-urban:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
     skobbler:
       attribution:
         text: '© Tiles: data Peta skobbler: penyumbang-penyumbang OpenStreetMap'
@@ -112,3 +123,9 @@ ms:
       attribution:
         text: Peta © Thunderforest, Data © penyumbang-penyumbang OpenStreetMap
       name: Landskap Thunderforest
+    wroclaw-orto2015:
+      attribution:
+        text: Urząd Miasta Wrocław
+    wroclaw-orto2018:
+      attribution:
+        text: Urząd Miasta Wrocław

@@ -4,7 +4,7 @@
         "id": "nve-vindkraft",
         "name": "NVE Wind Power Plants overlay",
         "type": "wms",
-        "url": "https://gis3.nve.no/map/services/Vindkraft2/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vindkraft_konsesjon_gitt_ikke_utbygd,Vindkraft_under_bygging,Vindkraft_utbygd,Vindkraftomrade,Vindturbin&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://nve.geodataonline.no/arcgis/services/Vindkraft2/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vindkraft_konsesjon_gitt_ikke_utbygd,Vindkraft_under_bygging,Vindkraft_utbygd,Vindkraftomrade,Vindturbin&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
@@ -31,6 +31,7 @@
         "max_zoom": 22,
         "min_zoom": 6,
         "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
+        "privacy_policy_url": "https://www.nve.no/om-nve/nves-personvernerklaering/",
         "description": "Wind power turbines, farms and concession areas (blue: planned, light green: construction, dark green: built).",
         "category": "other"
     },

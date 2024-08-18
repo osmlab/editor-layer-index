@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -180.0, -67.426345200785804 ], [ -180.0, -67.325443372764568 ], [ -179.824733734130803, -67.325377197841902 ], [ -179.824733734130803, -67.426345200785804 ], [ -180.0, -67.426345200785804 ] ]
+            [ [ -180.0, -67.4263 ], [ -179.8247, -67.4263 ], [ -179.8247, -67.3254 ], [ -180.0, -67.3254 ], [ -180.0, -67.4263 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Scott Island",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2014-02-05",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80611072014036LGN00&z={zoom}&x={x}&y={-y}"

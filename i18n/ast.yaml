@@ -2,19 +2,26 @@ ast:
   imagery:
     Bing:
       description: Imáxenes aerees y de satélite.
-      name: Imáxenes aerees de Bing.
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 ensin nubes - https://s2maps.eu por EOX IT Services GmbH (Contien datos tresformaos de Copernicus Sentinel 2017 & 2018)
+      description: Imáxenes de satélite Sentinel post-procesaes.
+      name: eox.at 2018 ensin nubes
     EsriWorldImagery:
       attribution:
         text: 'Términos y comentarios '
-      description: Imáxenes mundiales Esri.
       name: Imáxenes mundiales Esri
+    EsriWorldImageryClarity:
+      attribution:
+        text: 'Términos y comentarios '
+      description: Imáxenes del archivu Esri que puen se más clares y más precises que la capa predeterminada.
+      name: Imáxenes mundiales Esri (Clarity) Beta
     MAPNIK:
       description: La capa predeterminada d'OpenStreetMap.
       name: OpenStreetMap (Estándar)
     Mapbox:
       attribution:
         text: 'Términos y comentarios '
-      description: Imáxenes aerees y de satélite.
       name: Mapbox Satélite
     OSM_Inspector-Addresses:
       attribution:
@@ -44,31 +51,91 @@ ast:
       attribution:
         text: © Geofabrik GmbH, collaboradores d'OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Etiquetáu'
-    US-TIGER-Roads-2014:
-      description: A nivel d'ampliación 16+, datos del mapa de dominiu públicu dende US Census. A nivel d'ampliación menor, sólo los cambios dende 2006 menos los cambios yá incorporaos a OpenStreetMap
-      name: Estraes TIGER 2014
+    SPW_ORTHO_LAST:
+      name: Imáxenes aérees más nueves de SPW(allonie)
+    SPW_PICC:
+      name: Imáxenes dixitales PICC de SPW(allonie)
     US-TIGER-Roads-2017:
       description: Mariellu = Datos del mapa de dominiu públicu dende US Census. Bermeyu = Datos que nun s'alcuentren n'OpenStreetMap
       name: Estraes TIGER 2017
+    US-TIGER-Roads-2018:
+      description: Mariellu = Datos del mapa de dominiu públicu del US Census. Bermeyu = Datos que nun s'alcuentren n'OpenStreetMap
+      name: Estraes TIGER 2018
+    US-TIGER-Roads-2019:
+      description: Mariellu = Datos del mapa de dominiu públicu del US Census. Bermeyu = Datos que nun s'alcuentren n'OpenStreetMap
+      name: Estraes TIGER 2019
+    US_Forest_Service_roads_overlay:
+      name: Capa d'estraes de U.S. Forest
+    UrbISOrtho2016:
+      attribution:
+        text: Fecho por mediu de Brussels UrbIS®© - Distribución & Copyright CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: Fecho por mediu de Brussels UrbIS®© - Distribución & Copyright CIRB
+      name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Fecho por mediu de Brussels UrbIS®© - Distribución & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Fecho por mediu de Brussels UrbIS®© - Distribución & Copyright CIRB
+      name: UrbIS-Ortho 2019
+    UrbisAdmFR:
+      attribution:
+        text: Fecho por mediu de Brussels UrbIS®© - Distribución & Copyright CIRB
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      attribution:
+        text: Fecho por mediu de Brussels UrbIS®© - Distribución & Copyright CIRB
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
+      attribution:
+        text: © waymarkedtrails.org, Collaboradores d'OpenStreetMap, CC by-SA 3.0
       name: 'Rutes marcaes: Ciclismu'
     Waymarked_Trails-Hiking:
+      attribution:
+        text: © waymarkedtrails.org, Collaboradores d'OpenStreetMap, CC by-SA 3.0
       name: 'Rutes marcaes: Escursionismu'
     Waymarked_Trails-MTB:
+      attribution:
+        text: © waymarkedtrails.org, Collaboradores d'OpenStreetMap, CC by-SA 3.0
       name: 'Rutes marcaes: BTT'
     Waymarked_Trails-Skating:
+      attribution:
+        text: © waymarkedtrails.org, Collaboradores d'OpenStreetMap, CC by-SA 3.0
       name: 'Rutes marcaes: Patinaxe'
     Waymarked_Trails-Winter_Sports:
+      attribution:
+        text: © waymarkedtrails.org, Collaboradores d'OpenStreetMap, CC by-SA 3.0
       name: 'Rutes marcaes: Deportes d''iviernu'
     basemap.at:
       attribution:
         text: basemap.at
+      description: Mapa base d 'Austria, basáu en datos gubernamentales.
       name: basemap.at
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
       description: Capa d'ortofotos proporcionada por basemap.at «Socesor» de les imáxenes de geoimage.at.
       name: Ortofoto de basemap.at
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+      description: Capa d'anotaciones proporcionada por basemap.at.
+      name: Capa basemap.at
+    eufar-balaton:
+      attribution:
+        text: Ortofotó EUFAR Balaton 2010
+    gothenburg-citymap:
+      attribution:
+        text: © conceyu de Gotemburgu, CC0
+      description: El mapa de la ciudá ye un mapa de supervisión que describe Gotemburgu. Contien información xeneral sobro'l terrén, comunicaciones, hidrografía, edificios, númberos de direición y nomes de calles, divisiones alministratives y otros testos d'orientación.
+      name: Mapa de la Ciudá de Gotemburgu
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Xapón
     mapbox_locator_overlay:
       attribution:
         text: 'Términos y comentarios '
@@ -83,10 +150,6 @@ ast:
         text: © collaboradores d'OpenStreetMap
       description: Traces GPS públiques xubíes a OpenStreetMap.
       name: Traces GPS d'OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © collaboradores d'OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Estándar Blancu y Negru)
     osm-mapnik-german_style:
       attribution:
         text: © collaboradores d'OpenStreetMap, CC-BY-SA

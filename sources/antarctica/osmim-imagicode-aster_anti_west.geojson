@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -179.9988, -83.9364 ], [ -165.5249, -84.1526 ], [ -162.7266, -85.0511 ], [ -179.9988, -85.0511 ], [ -179.9988, -83.9364 ] ]
+            [ [ -179.9988, -83.9364 ], [ -179.9988, -85.0511 ], [ -162.7266, -85.0511 ], [ -165.5249, -84.1526 ], [ -179.9988, -83.9364 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Far southern Transantarctic Mnts. west",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2001",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti_west&z={zoom}&x={x}&y={-y}"

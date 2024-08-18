@@ -1,0 +1,106 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Roseville_CA_2024",
+        "attribution": {
+            "url": "https://www.roseville.ca.us/",
+            "text": "City of Roseville",
+            "required": false
+        },
+        "name": "City of Roseville Orthoimagery (2024)",
+        "icon": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/Roseville-230.png",
+        "url": "https://ags.roseville.ca.us/arcgis/rest/services/PublicServices/CityOrtho2024/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2024",
+        "end_date": "2024",
+        "description": "2024 3-inch resolution imagery for Roseville in the State of California",
+        "category": "photo",
+        "privacy_policy_url": "https://www.roseville.ca.us/cms/One.aspx?portalId=7964922&pageId=10722460"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -121.4532940596862,
+                    38.80123514038797
+                ],
+                [
+                    -121.40461362683712,
+                    38.80102659452527
+                ],
+                [
+                    -121.40501912872867,
+                    38.75049895898417
+                ],
+                [
+                    -121.32391586443867,
+                    38.74999366885356
+                ],
+                [
+                    -121.32425378671155,
+                    38.7225810195244
+                ],
+                [
+                    -121.21402990518916,
+                    38.71457064375406
+                ],
+                [
+                    -121.2134502834289,
+                    38.775253472400664
+                ],
+                [
+                    -121.25299535907385,
+                    38.77542041379482
+                ],
+                [
+                    -121.2624350903856,
+                    38.780709888678075
+                ],
+                [
+                    -121.26232897165883,
+                    38.797129549614425
+                ],
+                [
+                    -121.29538369562192,
+                    38.79732989900461
+                ],
+                [
+                    -121.29517470671203,
+                    38.81163467683717
+                ],
+                [
+                    -121.31457621488975,
+                    38.81183638797617
+                ],
+                [
+                    -121.31431082892198,
+                    38.831815196150046
+                ],
+                [
+                    -121.32758998639322,
+                    38.83193969490864
+                ],
+                [
+                    -121.32773602158402,
+                    38.82607270081803
+                ],
+                [
+                    -121.4530937586083,
+                    38.82674390470106
+                ],
+                [
+                    -121.4532940596862,
+                    38.80123514038797
+                ]
+            ]
+        ]
+    }
+}

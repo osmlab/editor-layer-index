@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -68.742918852358372, 76.526358524122116 ], [ -68.744463804750936, 76.528400706697553 ], [ -68.748068693666951, 76.549387318102561 ], [ -68.746148232012303, 76.56016657973251 ], [ -68.722759369402439, 76.560223933344957 ], [ -68.720173719912069, 76.557747534732698 ], [ -68.718532207994954, 76.529207997404299 ], [ -68.719776752977864, 76.526366023512338 ], [ -68.742918852358372, 76.526358524122116 ] ]
+            [ [ -68.7429, 76.5264 ], [ -68.7198, 76.5264 ], [ -68.7185, 76.5292 ], [ -68.7202, 76.5577 ], [ -68.7228, 76.5602 ], [ -68.7461, 76.5602 ], [ -68.7481, 76.5494 ], [ -68.7445, 76.5284 ], [ -68.7429, 76.5264 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Thule Airbase DMS low altitude overflight September 2015",
         "max_zoom": 17,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-09-25",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=dms_thule2_2015.09.25&z={zoom}&x={x}&y={-y}"

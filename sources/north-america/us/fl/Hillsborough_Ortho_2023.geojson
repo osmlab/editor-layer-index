@@ -1,0 +1,75 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Hillsborough_Ortho_2023",
+        "attribution": {
+            "url": "https://www.hillsboroughcounty.org/en/about-hillsborough/open-data/geospatial-services",
+            "text": "Hillsborough County Zoning Information & Counseling",
+            "required": false
+        },
+        "name": "Hillsborough County Orthoimagery (2023)",
+        "icon": "https://www.hillsboroughcounty.org/library/hillsborough/system/logos/hc-logo-horizontal-rgb_drkbgrd.png",
+        "url": "https://maps.hillsboroughcounty.org/arcgis/rest/services/Aerials/HC_Aerials_2023_WGS/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2022-11-02",
+        "end_date": "2023-01-06",
+        "description": "The 2023 orthoimagery for Hillsborough County of the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.hillsboroughcounty.org/en/about-hillsborough/open-data/privacy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.55954479201,
+                    27.63385319012
+                ],
+                [
+                    -82.04993564255,
+                    27.63497262204
+                ],
+                [
+                    -82.05018927693,
+                    28.18509637995
+                ],
+                [
+                    -82.65550819758,
+                    28.18353660940
+                ],
+                [
+                    -82.65442194223,
+                    28.00476492135
+                ],
+                [
+                    -82.56568977344,
+                    27.83786234512
+                ],
+                [
+                    -82.68224733340,
+                    27.60901754663
+                ],
+                [
+                    -82.77555593478,
+                    27.60757237417
+                ],
+                [
+                    -82.77523943412,
+                    27.56407271159
+                ],
+                [
+                    -82.55954479201,
+                    27.63385319012
+                ]
+            ]
+        ]
+    }
+}

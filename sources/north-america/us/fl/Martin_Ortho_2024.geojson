@@ -1,0 +1,81 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Martin_Ortho_2024",
+        "attribution": {
+            "url": "https://data-mcgov.opendata.arcgis.com/datasets/2024-imagery",
+            "text": "Martin County",
+            "required": false
+        },
+        "name": "Martin County Orthoimagery (2024)",
+        "url": "https://geoweb.martin.fl.us/raster/rest/services/2024_Imagery/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "min_zoom": 5,
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:6438"
+        ],
+        "start_date": "2023-12-15",
+        "end_date": "2024-03-15",
+        "description": "The 2024 orthoimagery for Martin County of the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.martin.fl.us/privacy-policy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.68053604245,
+                    27.20827614388
+                ],
+                [
+                    -80.68076135874,
+                    27.1257195078
+                ],
+                [
+                    -80.69612505198,
+                    27.1257768003
+                ],
+                [
+                    -80.61145306706,
+                    26.94670945431
+                ],
+                [
+                    -80.12878418505,
+                    26.94456709561
+                ],
+                [
+                    -80.12866616786,
+                    26.95832909719
+                ],
+                [
+                    -80.06726504445,
+                    26.95792745513
+                ],
+                [
+                    -80.19337179422,
+                    27.27515288089
+                ],
+                [
+                    -80.29553177118,
+                    27.2756106061
+                ],
+                [
+                    -80.29600383997,
+                    27.2068925992
+                ],
+                [
+                    -80.68053604245,
+                    27.20827614388
+                ]
+            ]
+        ]
+    }
+}

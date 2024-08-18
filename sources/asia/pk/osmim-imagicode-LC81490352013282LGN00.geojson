@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 75.983643437305687, 34.978509823184709 ], [ 73.961644078174828, 35.369571889640852 ], [ 74.442810917774437, 37.093914004681579 ], [ 76.506009007374047, 36.7026732100855 ], [ 75.983643437305687, 34.978509823184709 ] ]
+            [ [ 75.9836, 34.9785 ], [ 76.506, 36.7027 ], [ 74.4428, 37.0939 ], [ 73.9616, 35.3696 ], [ 75.9836, 34.9785 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "PK",
-        "description": "Represents approximately minimum snow cover so can be well used for glacier mapping (true color)",
+        "description": "Represents approximately minimum snow cover so can be well used for glacier mapping (somewhat outdated) (true color)",
         "end_date": "2013-10-09",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC81490352013282LGN00",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Western Karakoram",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2013-10-09",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81490352013282LGN00&z={zoom}&x={x}&y={-y}"

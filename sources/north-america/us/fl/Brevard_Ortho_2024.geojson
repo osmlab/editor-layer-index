@@ -1,0 +1,152 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Brevard_Ortho_2024",
+        "attribution": {
+            "url": "https://www.brevardfl.gov/GISMapsAndApplications",
+            "text": "Brevard County Board of County Commissioners",
+            "required": false
+        },
+        "name": "Brevard County Orthoimagery (2024)",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/1/15/Logo_of_Brevard_County%2C_Florida.png",
+        "url": "https://gis.brevardfl.gov/gissrv/rest/services/Aerial_Photo/Y2024/MapServer/export?f=image&format=jpg&layers=show,0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2881",
+            "EPSG:3857"
+        ],
+        "start_date": "2024",
+        "end_date": "2024",
+        "description": "The 2024 orthoimagery for Brevard County of the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.brevardfl.gov/PrivacyStatement"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.97241017409,
+                    28.79009867604
+                ],
+                [
+                    -80.97250147733,
+                    28.5839184036
+                ],
+                [
+                    -80.95684884119,
+                    28.58387833114
+                ],
+                [
+                    -80.95684884119,
+                    28.57013257716
+                ],
+                [
+                    -80.94119620505,
+                    28.57021273253
+                ],
+                [
+                    -80.94128747406,
+                    28.52896472833
+                ],
+                [
+                    -80.92558920341,
+                    28.52888454155
+                ],
+                [
+                    -80.92554356891,
+                    28.51509150834
+                ],
+                [
+                    -80.91007351643,
+                    28.51513164708
+                ],
+                [
+                    -80.9101191053,
+                    28.41885100643
+                ],
+                [
+                    -80.89464900719,
+                    28.41881087124
+                ],
+                [
+                    -80.89474027621,
+                    28.36389168633
+                ],
+                [
+                    -80.87917890908,
+                    28.36389168633
+                ],
+                [
+                    -80.87925873524,
+                    28.34505682128
+                ],
+                [
+                    -80.86261354856,
+                    28.34515722905
+                ],
+                [
+                    -80.86268200032,
+                    28.08484389234
+                ],
+                [
+                    -80.86923054647,
+                    28.08478852826
+                ],
+                [
+                    -80.86856885181,
+                    27.82238447271
+                ],
+                [
+                    -80.49306538505,
+                    27.82206167006
+                ],
+                [
+                    -80.49292841307,
+                    27.8402822676
+                ],
+                [
+                    -80.47752676672,
+                    27.8402822676
+                ],
+                [
+                    -80.44647250705,
+                    27.85394073004
+                ],
+                [
+                    -80.44624433451,
+                    27.89516789072
+                ],
+                [
+                    -80.58369547171,
+                    28.40444149433
+                ],
+                [
+                    -80.6770065914,
+                    28.40475756633
+                ],
+                [
+                    -80.67667575833,
+                    28.50101592322
+                ],
+                [
+                    -80.76961059299,
+                    28.50165772563
+                ],
+                [
+                    -80.83176465558,
+                    28.79148847515
+                ],
+                [
+                    -80.97241017409,
+                    28.79009867604
+                ]
+            ]
+        ]
+    }
+}

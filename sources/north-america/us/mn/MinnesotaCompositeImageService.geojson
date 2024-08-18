@@ -809,17 +809,17 @@
             "EPSG:26915"
         ],
         "country_code": "US",
-        "end_date": "2017",
+        "end_date": "2020",
         "icon": "https://gisdata.mn.gov/agencyLogos/mnLogo.jpg",
         "id": "Minnesota-Composite-Image-Service",
-        "license_url": "ftp://ftp.gisdata.mn.gov/pub/gdrs/data/pub/us_mn_state_mngeo/base_mn_composite_image_service/metadata/metadata.html",
+        "license_url": "https://resources.gisdata.mn.gov/pub/gdrs/data/pub/us_mn_state_mngeo/base_mn_composite_image_service/metadata/metadata.html",
         "privacy_policy_url": "https://www.co.dakota.mn.us/Policies/Pages/default.aspx",
         "max_zoom": 20,
         "min_zoom": 3,
         "name": "Minnesota Composite Image Service",
-        "start_date": "2008",
+        "start_date": "2014",
         "type": "wms",
-        "url": "https://imageserver.gisdata.mn.gov/cgi-bin/mncomp?LAYERS=mncomp&STYLES=&FORMAT=image/jpeg&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://imageserver.gisdata.mn.gov/cgi-bin/mncomp?LAYERS=mncomp&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "category": "photo"
     },
     "type": "Feature"

@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 7.63567991501593, 53.280273397749284 ], [ 7.63567991501593, 53.668108215882938 ], [ 8.494330122535461, 55.502457780526001 ], [ 9.207754805152648, 55.481062689089121 ], [ 9.207754805152648, 53.280273397749284 ], [ 7.63567991501593, 53.280273397749284 ] ]
+            [ [ 7.6357, 53.2803 ], [ 9.2078, 53.2803 ], [ 9.2078, 55.4811 ], [ 8.4943, 55.5025 ], [ 7.6357, 53.6681 ], [ 7.6357, 53.2803 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Northern German west coast tidalflats (infrared)",
         "max_zoom": 12,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-08-21",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81960222015233LGN00ir&z={zoom}&x={x}&y={-y}"

@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -168.5059, 53.7714 ], [ -168.5059, 54.0751 ], [ -167.8205, 54.0751 ], [ -167.8205, 53.7714 ], [ -168.5059, 53.7714 ] ]
+            [ [ -168.5059, 53.7714 ], [ -167.8205, 53.7714 ], [ -167.8205, 54.0751 ], [ -168.5059, 54.0751 ], [ -168.5059, 53.7714 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Bogoslof Island 2019",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2019-08-16",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2B_R015_N52_20190816T222539&z={zoom}&x={x}&y={-y}"

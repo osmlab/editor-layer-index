@@ -1,0 +1,19 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "osmfr-occitan",
+        "name": "OpenStreetMap (Occitan Style)",
+        "type": "tms",
+        "default": false,
+        "url": "https://tile.openstreetmap.bzh/oc/{zoom}/{x}/{y}.png",
+        "category": "osmbasedmap",
+        "country_code": "FR",
+        "attribution": {
+            "text": "Tiles © OpenStreetMap France, data © OpenStreetMap contributors, ODbL",
+            "url": "https://www.openstreetmap.org/",
+            "required": true
+        },
+        "max_zoom": 20
+    },
+    "geometry": null
+}

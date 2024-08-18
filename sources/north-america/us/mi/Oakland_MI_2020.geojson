@@ -1,0 +1,151 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Oakland_MI_2020",
+        "attribution": {
+            "url": "https://accessoakland-oakgov.opendata.arcgis.com/",
+            "text": "Oakland County",
+            "required": false
+        },
+        "name": "Oakland County Orthoimagery (2020)",
+        "icon": "https://oaklandcountyblog.com/wp-content/uploads/2014/10/oakland-county-2_trees-logo.png",
+        "url": "https://gisservices.oakgov.com/arcgis/rest/services/ImageServices/EnterpriseOrthoTC2020ImageService/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 21,
+        "license_url": "https://www.oakgov.com/government/open-data-agreement",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2020",
+        "end_date": "2020",
+        "description": "The 2020 orthoimagery for Oakland County of the State of Michigan",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.oakgov.com/government/terms-of-use"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -83.08824778676,
+                    42.89703959308
+                ],
+                [
+                    -83.27542992326,
+                    42.89897881548
+                ],
+                [
+                    -83.27555716172,
+                    42.89173601881
+                ],
+                [
+                    -83.46273377672,
+                    42.89336800986
+                ],
+                [
+                    -83.46283704311,
+                    42.88612541413
+                ],
+                [
+                    -83.62046242297,
+                    42.88725740426
+                ],
+                [
+                    -83.62053215772,
+                    42.88000917438
+                ],
+                [
+                    -83.69934082568,
+                    42.88049661101
+                ],
+                [
+                    -83.7015295136,
+                    42.67765569539
+                ],
+                [
+                    -83.69169117093,
+                    42.67763992015
+                ],
+                [
+                    -83.6930215466,
+                    42.55447128139
+                ],
+                [
+                    -83.68324757695,
+                    42.55441595873
+                ],
+                [
+                    -83.68458868146,
+                    42.43126496616
+                ],
+                [
+                    -83.67481471181,
+                    42.43119369676
+                ],
+                [
+                    -83.67488444388,
+                    42.42395150769
+                ],
+                [
+                    -83.48910928041,
+                    42.42267245443
+                ],
+                [
+                    -83.48901272357,
+                    42.42991478929
+                ],
+                [
+                    -83.29344751596,
+                    42.42822407443
+                ],
+                [
+                    -83.29333484709,
+                    42.43548159063
+                ],
+                [
+                    -83.0781868127,
+                    42.43324463331
+                ],
+                [
+                    -83.07803660899,
+                    42.44048574475
+                ],
+                [
+                    -83.06825995713,
+                    42.44037687694
+                ],
+                [
+                    -83.0666291821,
+                    42.52006693317
+                ],
+                [
+                    -83.07639242291,
+                    42.52016577795
+                ],
+                [
+                    -83.07338834882,
+                    42.66504211897
+                ],
+                [
+                    -83.08319450498,
+                    42.6651525679
+                ],
+                [
+                    -83.08005095601,
+                    42.81725128536
+                ],
+                [
+                    -83.0898839289,
+                    42.8173693294
+                ],
+                [
+                    -83.08824778676,
+                    42.89703959308
+                ]
+            ]
+        ]
+    }
+}

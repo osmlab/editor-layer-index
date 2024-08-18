@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 127.5631, 51.3587 ], [ 127.5338, 52.3414 ], [ 129.1417, 52.3464 ], [ 129.1403, 51.3632 ], [ 127.5631, 51.3587 ] ]
+            [ [ 127.5631, 51.3587 ], [ 129.1403, 51.3632 ], [ 129.1417, 52.3464 ], [ 127.5338, 52.3414 ], [ 127.5631, 51.3587 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Vostochny Cosmodrome 2020",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2020-09-30",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R089_N52_20200930T023551&z={zoom}&x={x}&y={-y}"

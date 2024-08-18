@@ -6,7 +6,7 @@
         "id": "kartverket-vegnett",
         "country_code": "NO",
         "description": "Norwegian road network from the National Road database (NVDB). Colours represent national, county, municipal, private and forest roads + footways/cycleways.",
-        "url": "https://openwms.statkart.no/skwms1/wms.vegnett?LAYERS=all&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://openwms.statkart.no/skwms1/wms.vegnett2?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=vegnett2&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
         "min_zoom": 3,
         "max_zoom": 24,
@@ -16,6 +16,7 @@
             "url": "https://www.kartverket.no/data/kartdata/vegdata/"
         },
         "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
         "overlay": true,
         "available_projections": [
             "EPSG:3007",

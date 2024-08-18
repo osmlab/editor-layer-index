@@ -1,0 +1,112 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Lee_Ortho_2023",
+        "attribution": {
+            "url": "https://www.leegov.com/gis/data/aerials",
+            "text": "Lee County GIS",
+            "required": false
+        },
+        "name": "Lee County Orthoimagery (2023)",
+        "icon": "https://www.arcgis.com/sharing/rest/content/items/ccd6da9acc7143ce822661ba11ee2017/resources/Lee-County-icon.png",
+        "url": "https://gissvr4.leepa.org/gissvr/rest/services/AP2023Pict/MapServer/export?f=image&format=jpg&layers=0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2237",
+            "EPSG:3857"
+        ],
+        "start_date": "2023-01-05",
+        "end_date": "2023-01-29",
+        "description": "The 2023 orthoimagery for Lee County of the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.leepa.org/PrivacyPolicy.aspx"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -81.5590856111,
+                    26.78139853176
+                ],
+                [
+                    -82.20292190266,
+                    26.78198410385
+                ],
+                [
+                    -82.20286485953,
+                    26.79578366281
+                ],
+                [
+                    -82.27953083247,
+                    26.79578366281
+                ],
+                [
+                    -82.27818562701,
+                    26.69713011899
+                ],
+                [
+                    -82.23278879903,
+                    26.61736796087
+                ],
+                [
+                    -82.22553956734,
+                    26.58889074729
+                ],
+                [
+                    -82.20807010736,
+                    26.56391422516
+                ],
+                [
+                    -82.19880059798,
+                    26.47980432756
+                ],
+                [
+                    -82.09980699143,
+                    26.41128001004
+                ],
+                [
+                    -82.03777258252,
+                    26.42820207011
+                ],
+                [
+                    -81.93663985842,
+                    26.42873417009
+                ],
+                [
+                    -81.84513316329,
+                    26.32812367787
+                ],
+                [
+                    -81.82037157423,
+                    26.32814913776
+                ],
+                [
+                    -81.82039439148,
+                    26.31438861677
+                ],
+                [
+                    -81.65248413229,
+                    26.31408012905
+                ],
+                [
+                    -81.65219893088,
+                    26.41039863687
+                ],
+                [
+                    -81.56061620675,
+                    26.41004103464
+                ],
+                [
+                    -81.5590856111,
+                    26.78139853176
+                ]
+            ]
+        ]
+    }
+}

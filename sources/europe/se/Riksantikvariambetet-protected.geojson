@@ -1,0 +1,118 @@
+{
+    "type": "Feature",
+    "properties": {
+        "type": "wms",
+        "name": "Riksantikvarieämbetet - Protected Heritage Areas",
+        "i18n": true,
+        "id": "Riksantikvariambetet-protected",
+        "country_code": "SE",
+        "description": "Protected areas for heritage buildings and religious heritage sites",
+        "url": "https://inspire-raa.metria.se/geoserver/Kulturarv/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=PS.ProtectedSite&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "icon": "https://www.raa.se/app/themes/raa-external/assets/images/favicon/raa-favicon-32.png",
+        "min_zoom": 5,
+        "max_zoom": 24,
+        "attribution": {
+            "required": true,
+            "text": "© Riksantikvarieämbetet, CC0",
+            "url": "https://www.raa.se/"
+        },
+        "license_url": "https://www.raa.se/hitta-information/information-tillganglig-for-vidareutnyttjande/",
+		"privacy_policy_url": "https://www.raa.se/aktuellt/information-enligt-dataskyddsforordningen/",
+        "overlay": true,
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:3006",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:4619",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:25834",
+            "EPSG:25835"
+        ],
+        "category": "other"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    12.8018162,
+                    55.1961173
+                ],
+                [
+                    14.2272895,
+                    55.2728604
+                ],
+                [
+                    18.4460395,
+                    56.6924447
+                ],
+                [
+                    19.7424207,
+                    57.9848139
+                ],
+                [
+                    20.0061008,
+                    59.5371045
+                ],
+                [
+                    19.083938,
+                    60.1930844
+                ],
+                [
+                    20.4949924,
+                    63.2497044
+                ],
+                [
+                    24.2523085,
+                    65.5743697
+                ],
+                [
+                    23.8183485,
+                    67.9251447
+                ],
+                [
+                    23.2360731,
+                    68.346545
+                ],
+                [
+                    20.4345594,
+                    69.1703766
+                ],
+                [
+                    18.0834852,
+                    68.5644031
+                ],
+                [
+                    16.5014539,
+                    67.8838194
+                ],
+                [
+                    14.4360242,
+                    66.1427472
+                ],
+                [
+                    11.8212781,
+                    63.3077531
+                ],
+                [
+                    12.2003119,
+                    60.3106301
+                ],
+                [
+                    10.6237739,
+                    58.5481974
+                ],
+                [
+                    12.6425144,
+                    56.0306237
+                ],
+                [
+                    12.8018162,
+                    55.1961173
+                ]
+            ]
+        ]
+    }
+}

@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 126.361434298813009, 51.375528375017275 ], [ 126.348044711410637, 52.339322312828159 ], [ 128.607623416244621, 52.340895519845674 ], [ 128.611743289291496, 51.375528375017275 ], [ 126.361434298813009, 51.375528375017275 ] ]
+            [ [ 126.3614, 51.3755 ], [ 128.6117, 51.3755 ], [ 128.6076, 52.3409 ], [ 126.348, 52.3393 ], [ 126.3614, 51.3755 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Vostochny Cosmodrome",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-06-23",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R089_N52_20160623T024048&z={zoom}&x={x}&y={-y}"
