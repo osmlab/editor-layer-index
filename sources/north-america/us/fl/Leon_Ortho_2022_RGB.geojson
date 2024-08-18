@@ -1,28 +1,24 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Leon_Ortho_CID_2022",
+        "id": "Leon_Ortho_2022_RGB",
         "attribution": {
             "url": "https://cms.leoncountyfl.gov/Home/Departments/MIS-GIS/Tallahassee-Leon-County-GIS",
             "text": "Tallahassee - Leon County GIS, Leon County Property Appraiser’s Office, Leon County Board of County Commissioners",
             "required": false
         },
-        "name": "Tallahassee - Leon County Orthoimagery (2022 Infrared)",
-        "url": "https://interraster.leoncountyfl.gov/interraster/rest/services/ImageryServices/TLC_Imagery2022_CID_D_WM/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "name": "Tallahassee - Leon County Orthoimagery (2022 RGB)",
+        "url": "https://tiles.arcgis.com/tiles/ptvDyBs1KkcwzQNJ/arcgis/rest/services/Imagery_2022_RGB/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
-        "type": "wms",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:3857"
-        ],
-        "start_date": "2022",
-        "end_date": "2022",
-        "description": "The 2022 color infrared orthoimagery for Leon County of the State of Florida",
-        "category": "photo",
+        "type": "tms",
+        "start_date": "2022-02",
+        "end_date": "2022-02",
+        "description": "The 2022 6-inch resolution RGB orthoimagery for Leon County of the State of Florida",
+        "category": "historicphoto",
         "valid-georeference": true,
-        "privacy_policy_url": "https://cms.leoncountyfl.gov/home/Privacy-Policy"
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
     },
     "geometry": {
         "type": "Polygon",
