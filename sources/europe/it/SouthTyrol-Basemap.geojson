@@ -13,6 +13,11 @@
         "max_zoom": 20,
         "country_code": "IT",
         "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:25832"
+        ],
         "category": "map",
         "id": "South-Tyrol-Basemap",
         "name": "South Tyrol Basemap"
