@@ -8,10 +8,15 @@
         },
         "license_url": "http://geoservices.buergernetz.bz.it/geonetwork1/srv/api/records/p_bz:Orthoimagery:Aerial-2017-RGB/formatters/xsl-view?output=pdf",
         "privacy_policy_url": "https://geoportal.buergernetz.bz.it/privacy.asp",
-        "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=p_bz-orthoimagery:P_BZ_OF_2017_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
+        "url": "https://geoservices.buergernetz.bz.it/mapproxy/p_bz-Orthoimagery/wms?LAYERS=Aerial-2017-RGB&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 20,
         "country_code": "IT",
-        "type": "tms",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:25832"
+        ],
         "category": "historicphoto",
         "id": "South-Tyrol-Orthofoto-2017",
         "name": "South Tyrol Orthofoto 2017",
