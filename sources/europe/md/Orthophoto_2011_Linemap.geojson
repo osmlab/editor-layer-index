@@ -1,24 +1,24 @@
 {
     "type": "Feature",
     "properties": {
-        "description": "2011 Moldova Linemap Orthophoto, Scale 1:5000, 20cm, true colours, created for the experimental Linemap 2011 project, covers the central territory of the Republic of Moldova, including Chișinău Municipality.",
-        "id": "MoldovaMap-2011_Ortofoto_Linemap",
+        "description": "2011 Moldova Linemap Orthophoto, Executed by Hansa Luftbild & Astec Consortium, scale 1:5000, 20cm, precision 0.4m, true colours, created for the experimental Linemap 2011 project, covers the central territory of the Republic of Moldova, including Chișinău Municipality.",
+        "id": "Geodata-Gov-2011_Ortofoto_Linemap",
         "name": "Moldova Linemap Orthophoto (2011)",
         "type": "wms",
-        "url": "https://moldova-map.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:Orto_Linemap_2011&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:Orto_Linemap_2011&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "MD",
-        "icon": "http://geoportalinds.gov.md/geonetwork/images/logos/dac139d4-147d-49a2-8ebe-370d6d603327.png",
+        "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "permission_osm": "explicit",
 		"available_projections": [
             "EPSG:4026"
 			],
         "end_date": "2011",
         "category": "historicphoto",
-		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/9cdd5e99-8c84-4be1-9d43-ba74cfdc8d7b",
-		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=126192",
+		"license_url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/f9d32b88-8c03-4428-8c1b-fd9505500615",
+		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=143076",
         "attribution": {
-            "url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/9cdd5e99-8c84-4be1-9d43-ba74cfdc8d7b",
-            "text": "© Agenţia Relaţii Funciare şi Cadastru a Republicii Moldova / Geoportal INDS / Chișinău Municipality Orthophoto 2014",
+            "url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/f9d32b88-8c03-4428-8c1b-fd9505500615",
+            "text": "© Agenţia Geodezie, Cartografie şi Cadastru / Geoportal INDS / Chișinău Linemap Orthophoto 2011",
             "required": true
         }
     },

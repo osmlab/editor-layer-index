@@ -1,21 +1,21 @@
 {
     "type": "Feature",
     "properties": {
-        "description": "2011 Chișinău Orthophoto, that covers the entire territory of the City of Chișinău, except its suburban area.",
-        "id": "MoldovaMap-2011_Ortofoto_Chisinau",
+        "description": "2011 Chișinău Orthophoto, 1:5000, true colors, covers the entire territory of the City of Chișinău, except its suburban area.",
+        "id": "Geodata-Gov-2011_Ortofoto_Chisinau",
         "name": "Chișinău Orthophoto (2011)",
         "type": "wms",
-        "url": "http://moldova-map.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:ortochis_2011&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:chisinau_2011&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "MD",
-        "icon": "http://geoportalinds.gov.md/geonetwork/images/logos/dac139d4-147d-49a2-8ebe-370d6d603327.png",
+        "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "permission_osm": "explicit",
         "end_date": "2011",
         "category": "historicphoto",
 		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a959bbff-0489-4985-92ee-5e74b583cd8e",
-		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=126192",
+		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=143076",
         "attribution": {
             "url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a959bbff-0489-4985-92ee-5e74b583cd8e",
-            "text": "© Primăria Municipiului Chișinău, Agenţia Relaţii Funciare şi Cadastru a Republicii Moldova / Geoportal INDS / Chișinău Municipality Orthophoto 2014",
+            "text": "© Primăria Municipiului Chișinău, Agenţia Geodezie, Cartografie şi Cadastru / Geoportal INDS / Chișinău Municipality Orthophoto 2011",
             "required": true
         }
     },
