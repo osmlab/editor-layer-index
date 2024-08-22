@@ -1,0 +1,206 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Delaware_Boundaries",
+        "attribution": {
+            "url": "https://firstmap.delaware.gov",
+            "text": "FirstMap",
+            "required": false
+        },
+        "name": "Delaware Boundaries",
+        "icon": "https://firstmap.delaware.gov/contentFolder/images/FirstmapLogo.jpg",
+        "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/export?f=image&format=jpg&layers=&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}&transparent=true",
+        "max_zoom": 21,
+        "license_url": "https://www.arcgis.com/home/item.html?id=346fa5b8f19148f8a323b8fb3db64245",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "description": "Delaware boundaries data which consist of Boundary Monuments, Communities, Municipal Annexations, Municipalities, State and County Boundaries",
+        "category": "other",
+        "overlay": true,
+        "transparent": true,
+        "privacy_policy_url": "https://delaware.gov/privacy-policy/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                -75.421485,
+                38.451437
+                ],
+                [
+                -75.025978,
+                38.450227
+                ],
+                [
+                -75.053414,
+                38.808755
+                ],
+                [
+                -75.193172,
+                38.822186
+                ],
+                [
+                -75.307071,
+                39.016665
+                ],
+                [
+                -75.393265,
+                39.277840
+                ],
+                [
+                -75.561904,
+                39.463764
+                ],
+                [
+                -75.546627,
+                39.582539
+                ],
+                [
+                -75.588684,
+                39.618912
+                ],
+                [
+                -75.514183,
+                39.696356
+                ],
+                [
+                -75.463371,
+                39.775297
+                ],
+                [
+                -75.412302,
+                39.800953
+                ],
+                [
+                -75.428309,
+                39.809887
+                ],
+                [
+                -75.446891,
+                39.818227
+                ],
+                [
+                -75.463199,
+                39.824160
+                ],
+                [
+                -75.480966,
+                39.829565
+                ],
+                [
+                -75.491137,
+                39.832070
+                ],
+                [
+                -75.504570,
+                39.834838
+                ],
+                [
+                -75.520491,
+                39.837244
+                ],
+                [
+                -75.539374,
+                39.839188
+                ],
+                [
+                -75.557270,
+                39.839715
+                ],
+                [
+                -75.575466,
+                39.839353
+                ],
+                [
+                -75.584821,
+                39.838644
+                ],
+                [
+                -75.597331,
+                39.837359
+                ],
+                [
+                -75.612974,
+                39.835102
+                ],
+                [
+                -75.626825,
+                39.832358
+                ],
+                [
+                -75.638358,
+                39.829516
+                ],
+                [
+                -75.649881,
+                39.826335
+                ],
+                [
+                -75.669622,
+                39.819051
+                ],
+                [
+                -75.680866,
+                39.814074
+                ],
+                [
+                -75.693912,
+                39.807448
+                ],
+                [
+                -75.708417,
+                39.798645
+                ],
+                [
+                -75.718846,
+                39.791259
+                ],
+                [
+                -75.731806,
+                39.780607
+                ],
+                [
+                -75.742835,
+                39.769854
+                ],
+                [
+                -75.750732,
+                39.761047
+                ],
+                [
+                -75.758543,
+                39.750687
+                ],
+                [
+                -75.766954,
+                39.737290
+                ],
+                [
+                -75.774035,
+                39.722306
+                ],
+                [
+                -75.789173,
+                39.722248
+                ],
+                [
+                -75.789527,
+                39.653284
+                ],
+                [
+                -75.695457,
+                38.459234
+                ],
+                [
+                -75.421485,
+                38.451437
+                ]
+            ]
+        ]
+    }
+}

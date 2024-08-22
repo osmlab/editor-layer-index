@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -34.17701089820909, -55.296927511832081 ], [ -35.19599283180284, -55.282851769908206 ], [ -35.166638736343849, -54.720973521488197 ], [ -34.125169162369247, -54.73465315976587 ], [ -34.140103702164168, -55.296927511832081 ], [ -34.17701089820909, -55.296927511832081 ] ]
+            [ [ -34.177, -55.2969 ], [ -34.1401, -55.2969 ], [ -34.1252, -54.7347 ], [ -35.1666, -54.721 ], [ -35.196, -55.2829 ], [ -34.177, -55.2969 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Clerke Rocks",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-12-10",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC82050982015344LGN00&z={zoom}&x={x}&y={-y}"

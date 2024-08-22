@@ -2,11 +2,9 @@ sr:
   imagery:
     Bing:
       description: Сателитске и висинске слике.
-      name: Бинг висинске слике
     EsriWorldImagery:
       attribution:
         text: Услови коришћења и повратне информације
-      description: Есри слике света
       name: Есри слике света
     MAPNIK:
       description: Подразумевани Опенстритмап слој.
@@ -14,7 +12,6 @@ sr:
     Mapbox:
       attribution:
         text: Услови коришћења и повратне информације
-      description: Сателитске и висинске слике.
       name: Мапбокс сателит
     OSM_Inspector-Addresses:
       name: 'ОСМ инспектор: Адресе'
@@ -37,6 +34,8 @@ sr:
     basemap.at-orthofoto:
       attribution:
         text: basemap.at
+    gothenburg-citymap:
+      description: Мапа града је прегледна мапа која описује Гетебург. Садржи опште информације о земљишту, комуникацијама, хидрографији, зградама,  адресама и називима улица, административној подели и другим текстом за оријентацију.
     mapbox_locator_overlay:
       attribution:
         text: Услови коришћења и повратне информације
@@ -46,9 +45,6 @@ sr:
     osm-gps:
       attribution:
         text: © Опенстритмап доприносиоци
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Опенстритмап доприносиоци, CC-BY-SA
     osm-mapnik-german_style:
       attribution:
         text: © Опенстритмап доприносиоци, CC-BY-SA

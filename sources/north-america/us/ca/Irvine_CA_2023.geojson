@@ -1,0 +1,54 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Irvine_CA_2023",
+        "attribution": {
+            "url": "https://www.cityofirvine.org/",
+            "text": "City of Irvine",
+            "required": false
+        },
+        "name": "City of Irvine Orthoimagery (2023)",
+        "icon": "https://www.cityofirvine.org/sites/all/themes/irvine_theme/assets/images/city-of-irvine-logo.svg",
+        "url": "https://gis.cityofirvine.org/arcgis/rest/services/Aerial/Aerial_2023/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "2023 3-inch resolution imagery for Irvine in the State of California",
+        "category": "photo",
+        "privacy_policy_url": false
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -117.77420622594306,
+                    33.81053048244394
+                ],
+                [
+                    -117.91866238528655,
+                    33.65860657045842
+                ],
+                [
+                    -117.76133454181827,
+                    33.55400478000975
+                ],
+                [
+                    -117.61676125986554,
+                    33.70577355782481
+                ],
+                [
+                    -117.77420622594306,
+                    33.81053048244394
+                ]
+            ]
+        ]
+    }
+}

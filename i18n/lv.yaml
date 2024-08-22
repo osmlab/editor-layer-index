@@ -1,33 +1,16 @@
 lv:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders vissjaunākie aerofotoattēli.
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AGIV Flanders 2013-2015 aerofotoattēli 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AGIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
     Bing:
       description: Satelītu un aerofotoattēli.
-      name: Bing aerofotoattēli
+      name: Bing karte Satelītattēls
+    Czestochowa-buildings:
+      name: 'Čenstohova: ēkas'
     EOXAT2018CLOUDLESS:
       description: Apstrādāti Sentinel Satalītattēli.
       name: eox.at 2018 bez-mākoņu
     EsriWorldImagery:
       attribution:
         text: Noteikumi un atsauksmes
-      description: Esri pasaules attēli.
       name: Esri pasaules attēli
     EsriWorldImageryClarity:
       attribution:
@@ -40,7 +23,6 @@ lv:
     Mapbox:
       attribution:
         text: Noteikumi un atsauksmes
-      description: Satelītattēli un Aerofotografēšana
       name: MapBox Satelīts
     OSM_Inspector-Addresses:
       attribution:
@@ -74,9 +56,6 @@ lv:
       name: SPW(allonie) vissjaunākie aerofotoattēli.
     SPW_PICC:
       name: SPW(allonie) PICC skaitliskā attēlošana
-    US-TIGER-Roads-2014:
-      description: 'Pie palielinājuma līmeņa 16+, publiska domēna karšu dati no ASV tautskaitīšanas. Zemākos līmeņos tikai izmaiņas kopš 2006. gada, izņemot izmaiņas, kas jau ir OpenStreetMap '
-      name: TIGER Ceļi 2014
     US-TIGER-Roads-2017:
       description: Dzeltens = Publiska domēna kartes dati no ASV tautskaites. Sarkans = Dati, kas nav atrodami OpenStreetMap
       name: TIGER Ceļi 2017
@@ -147,24 +126,16 @@ lv:
       attribution:
         text: basemap.at
       name: basemap.at Pārklājs
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Apvidus datu slāni nodrošina basemap.at.
-      name: basemap.at Apvidus Dati
     eufar-balaton:
       attribution:
         text: EUFAR Balton ortofoto 2010
       description: 1940 ģeotagota fotogrāfēšana no Balatonas Limnoloģiskā Institūta
       name: EUFAR Balaton ortofotogrāfijas
-    finds.jp_KBN_2500:
+    gothenburg-citymap:
+      name: Gēteborgas pilsētas karte
+    gothenburg-dtm-2017:
       attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 caur finds,jp. Labs trasēšanai, bet nedaudz novecojis,
-      name: Japānas GSI KIBAN 2500
+        text: © Gēterborgas pašvaldība, CC0
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japāna
@@ -177,11 +148,6 @@ lv:
         text: GSI Japāna
       description: Japānas GSI Standarta Karte. Plaši pārklāta.
       name: Japānas GSI Standarta karte
-    helsingborg-orto:
-      attribution:
-        text: © Helsingborjas pašvaldība
-      description: 2016. gada Helsingborjas Ortofoto no Helsingborjas pašvaldības, publiska domēna dati
-      name: Helsingborjas Ortofoto
     kalmar-orto-2014:
       attribution:
         text: © Kalmaras pašvaldība
@@ -236,19 +202,10 @@ lv:
         text: © OpenStreetMap ieguldītāji
       description: Publiskas GPS trases, augšupielādētas uz OpenStreetMap.
       name: OpenStreetMap GPS trases
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap ieguldītāji, CC-BY-SA
-      name: OpenStreetMap (Standarta Melnbalta)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap ieguldītāji, CC-BY-SA
       name: OpenStreetMap (Vācijas Izskata)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Skenējums no "Economic maps" ca 1950–1980
-      name: Lantmäteriet Ekonomiskā karte 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, Dati ©OpenStreetMap ieguldītāji
@@ -298,11 +255,6 @@ lv:
         text: © Trafikverket, CC0
       description: 'Zviedru NVDB papildu detaļas: Automaģistrāles atsauces, satiksmes, atpūtas pieturas, tilti, tuneļi, fotoradari  '
       name: Trafikverket Ceļu Tīkls Extra
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Zviedru NVDB ielu nosaukumi
-      name: Trafikverket Ielu Nosaukumi
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0

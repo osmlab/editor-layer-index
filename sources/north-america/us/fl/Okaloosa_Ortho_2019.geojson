@@ -1,0 +1,73 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Okaloosa_Ortho_2019",
+        "attribution": {
+            "url": "https://myokaloosa.com/gis_homepage",
+            "text": "Okaloosa County, FL GIS",
+            "required": false
+        },
+        "name": "Okaloosa County Orthoimagery (2019)",
+        "url": "https://ags.myokaloosa.com/arcgis/rest/services/imagery/Aerial2019/MapServer/WMTS/tile/1.0.0/imagery_Aerial2019/default/default028mm/{zoom}/{y}/{x}.jpg",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2013",
+        "end_date": "2019",
+        "description": "The 2019 orthoimagery for Okaloosa County in the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -86.79553286836988,
+                    31.00315160652293
+                ],
+                [
+                    -86.79162366814897,
+                    30.83611018187667
+                ],
+                [
+                    -86.80524491465644,
+                    30.835803134199463
+                ],
+                [
+                    -86.80031981001237,
+                    30.487680665049083
+                ],
+                [
+                    -86.80869898969564,
+                    30.48751958327166
+                ],
+                [
+                    -86.80721170561998,
+                    30.423352833340072
+                ],
+                [
+                    -86.81146224972703,
+                    30.42328275156711
+                ],
+                [
+                    -86.81073079854222,
+                    30.3823884662116
+                ],
+                [
+                    -86.38213291321007,
+                    30.375110657439173
+                ],
+                [
+                    -86.37831311257852,
+                    31.007623782874205
+                ],
+                [
+                    -86.79553286836988,
+                    31.00315160652293
+                ]
+            ]
+        ]
+    }
+}

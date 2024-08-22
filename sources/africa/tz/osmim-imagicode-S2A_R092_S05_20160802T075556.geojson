@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 37.247686386108391, -3.229213650135676 ], [ 37.247686386108391, -2.968155849006605 ], [ 37.615814208984361, -2.968155849006605 ], [ 37.615814208984361, -3.229213650135676 ], [ 37.247686386108391, -3.229213650135676 ] ]
+            [ [ 37.2477, -3.2292 ], [ 37.6158, -3.2292 ], [ 37.6158, -2.9682 ], [ 37.2477, -2.9682 ], [ 37.2477, -3.2292 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Mount Kilimanjaro 2016",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-08-02",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R092_S05_20160802T075556&z={zoom}&x={x}&y={-y}"

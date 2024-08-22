@@ -1,0 +1,51 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "osmfj-nagahama-2021",
+    "attribution": {
+      "text": "OSMFJ_Ortho",
+      "required": true
+    },
+    "name": "Nagahama city Imagery 2021",
+    "url": "https://tiles.osmf.jp/nagahama-shi/{zoom}/{x}/{y}.png",
+    "min_zoom": 10,
+    "max_zoom": 18,
+    "license_url": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "country_code": "JP",
+    "type": "tms",
+    "start_date": "2021-09-01",
+    "end_date": "2022-01-31",
+    "permission_osm": "explicit",
+    "description": "Kokyo Sokuryo Orthoimagery from Nagahama-shi, 2021",
+    "category": "photo",
+    "valid-georeference": true,
+    "privacy_policy_url": false
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          136.08709195866,
+          35.70850057219
+        ],
+        [
+          136.08751323723,
+          35.33854627289
+        ],
+        [
+          136.37384416805,
+          35.33876274532
+        ],
+        [
+          136.37342288948,
+          35.70871604904
+        ],
+        [
+          136.08709195866,
+          35.70850057219
+        ]
+      ]
+    ]
+  }
+}

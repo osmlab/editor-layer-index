@@ -1,28 +1,7 @@
 be:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders найноўшыя аэрафотаздымкі
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 аэрафотаздымкі 10см
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, разрозненне 0,25 м
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, разрозненне 0,25 м
     Bing:
       description: Спадарожнікавыя і аэрафотаздымкі.
-      name: Bing аэрафотаздымкі
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 яснае надвор'е - https://s2maps.eu ад EOX IT Services GmbH (Утрымлівае змененыя даныя Copernicus Sentinel 2017 і 2018)
@@ -31,7 +10,6 @@ be:
     EsriWorldImagery:
       attribution:
         text: Умовы і зваротная сувязь
-      description: Сусветныя здымкі Esri.
       name: Сусветныя здымкі Esri.
     EsriWorldImageryClarity:
       attribution:
@@ -44,7 +22,6 @@ be:
     Mapbox:
       attribution:
         text: Умовы і зваротная сувязь
-      description: Спадарожнікавыя і аэрафотаздымкі.
       name: Спадарожнікавыя здымкі Mapbox
     OSM_Inspector-Addresses:
       attribution:
@@ -78,9 +55,6 @@ be:
       name: SPW(allonie) апошнія аэрафотаздымкі
     SPW_PICC:
       name: SPW(allonie) лічбавыя аэрафотаздымкі
-    US-TIGER-Roads-2014:
-      description: На маштабах 16+, даныя, якія распаўсюджваюцца US Census з'яўляюцца агульнадаступнымі. На менш дакладных маштабах, толькі змены з 2006 за выключэннем даных, якія ўжо перанесены ў OpenStreetMap.
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Жоўты = даныя, якія распаўсюджаныя US Census ў адкрытым доступе. Чырвоны = даныя недаступныя ў OpenStreetMap
       name: TIGER Roads 2017
@@ -88,7 +62,6 @@ be:
       description: Жоўты = даныя, якія распаўсюджаныя US Census ў адкрытым доступе. Чырвоны = даныя недаступныя ў OpenStreetMap
       name: TIGER Roads 2018
     USDA-NAIP:
-      description: Апошні год DOQQ ад Нацыянальнай праграмы земляробства (NAIP) для кожнага штата
       name: Здымкі Нацыянальнай праграмы земляробства
     US_Forest_Service_roads_overlay:
       description: 'Дарогі: Зялёны контур = unclassified. Карычневы контур = track. Пакрыццё: gravel = светла-карычневыя запаўненні, asphalt = чорнае, paved = шэрае, ground = белае, concrete = сіняе, grass = зялёны. Seasonal = белыя палосы'
@@ -148,30 +121,15 @@ be:
         text: basemap.at
       description: Слой з подпісамі ад basemap.at.
       name: basemap.at - дапаможны слой
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Паверхневы слой basemap.at.
-      name: basemap.at Паверхня
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Ландшафтны слой ад basemap.at.
-      name: basemap.at Ландшафт
     eufar-balaton:
       attribution:
         text: EUFAR Balaton ortofotó 2010
       description: Аэрафотаздымкі 1940 года з прывязкай ад Балатонскага ліманалагічнага інстытута.
       name: EUFAR Балатонскія ортаздымкі
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 ад find.jp. Падыходзіць для картаграфавання, але крыху састарэла.
-      name: Japan GSI KIBAN 2500
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japan
-      description: Japan GSI airphoto Imagery. Не цалкам ортарэктыфікаваныя але крыху больш новыя і/або з іншым пакццём, чым у GSI ortho Imagery.
+      description: Japan GSI airphoto Imagery. Не цалкам артарэктыфікаваныя але крыху больш новыя і/або з іншым пакрыццём, чым GSI ortho Imagery.
       name: Japan GSI airphoto Imagery
     gsi.go.jp_seamlessphoto:
       attribution:
@@ -183,25 +141,20 @@ be:
         text: GSI Japan
       description: Japan GSI Стандартная карта. Шырокае пакрыццё.
       name: Japan GSI Стандартная карта
-    helsingborg-orto:
-      attribution:
-        text: © Helsingborg municipality
-      description: Ортафота муніцыпалітэта Хельсінгборг, 2016, агульнадаступныя
-      name: Ортафота муніцыпалітэта Хельсінгбор
     kalmar-orto-2014:
       attribution:
         text: © Kalmar municipality
-      description: Ортафота муніцыпалітэта Кальмар, 2014, агульнадаступныя
-      name: Ортафота муніцыпалітэта Кальмар
+      description: Артафота муніцыпалітэта Кальмар, 2014, агульнадаступныя
+      name: Артафота муніцыпалітэта Кальмар
     kalmar-orto-2016:
       attribution:
         text: © Kalmar municipality
-      description: Ортафота паўднёвай часткі ўзбярэжжа муніцыпалітэта Кальмар, 2016, агульнадаступныя
-      name: Ортафота паўднёвай часткі муніцыпалітэта Кальмар, 2016
+      description: Артафота паўднёвай часткі ўзбярэжжа муніцыпалітэта Кальмар, 2016, агульнадаступныя
+      name: Артафота паўднёвай часткі муніцыпалітэта Кальмар, 2016
     kalmar-orto-2018:
       attribution:
         text: © Kalmar municipality
-      description: Ортофота гарадскіх раёнаў муніцыпалітэта Кальмар, 2018
+      description: Артафота гарадскіх раёнаў муніцыпалітэта Кальмар, 2018
       name: Гарадскія ортафота муніцыпалітэта Кальмар, 2018
     kelkkareitit:
       attribution:
@@ -216,8 +169,8 @@ be:
     lantmateriet-orto1975:
       attribution:
         text: © Lantmäteriet, CC0
-      description: Мазаіка шведскіх отафота за перыяд 1970-1980 гг. Могуць сустракацца як старыя, так і новыя выявы.
-      name: Гістарычныя отафота Швецыі 1975
+      description: Мазаіка шведскіх артафота за перыяд 1970-1980 гг. Могуць сустракацца як старыя, так і новыя выявы.
+      name: Гістарычныя артафота Швецыі 1975
     lantmateriet-topowebb:
       attribution:
         text: © Lantmäteriet, CC0
@@ -227,7 +180,7 @@ be:
       attribution:
         text: © Linköping municipality
       description: Ортафота муніцыпалітэта Лінчэпінг, 2010, агульнадаступныя
-      name: Ортафота муніцыпалітэта Лінчэпінг
+      name: Артафота муніцыпалітэта Лінчэпінг
     mapbox_locator_overlay:
       attribution:
         text: Умовы і зваротная сувязь
@@ -242,19 +195,10 @@ be:
         text: © OpenStreetMap contributors
       description: Публічныя трэкі GPS, загружаныя ў OpenStreetMap.
       name: OpenStreetMap GPS трэкі
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
-      name: OpenStreetMap (Стандартны чорны і белы)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenStreetMap (Нямецкі стыль)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Сканаванне "Economic maps" прыблізна. 1950–1980
-      name: Lantmäteriet Economic Map 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, Data ©OpenStreetMap contributors
@@ -275,7 +219,6 @@ be:
     stockholm-orto:
       attribution:
         text: © Stockholm municipality, CC0
-      description: 'Ортафота муніцыпалітэта Стакгольм, 2016, ліцэнзія CCO '
       name: Ортафота муніцыпалітэта Стакгольм
     tf-cycle:
       attribution:
@@ -305,11 +248,6 @@ be:
         text: © Trafikverket, CC0
       description: 'Дадатковыя даныя дарожнай сеткі Швецыі NVDB: нумары аўтастрад, рэгуляванне хуткасці, зоны адпачынку, аўтобусныя прыпынкі, масты і тунэлі, камеры хуткасці'
       name: Дарожная сетка Trafikverket, з дапаўненнямі
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Назвы вуліц Швецыі NVDB
-      name: Trafikverket назвы вуліц
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0

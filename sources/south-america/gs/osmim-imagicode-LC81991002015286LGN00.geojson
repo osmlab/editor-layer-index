@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -27.992928409215843, -56.734790609023328 ], [ -28.227761172887714, -56.732624892496354 ], [ -28.224156283971698, -56.600752537318456 ], [ -27.969754123327167, -56.602831356910627 ], [ -27.97318735086623, -56.734790609023328 ], [ -27.992928409215843, -56.734790609023328 ] ]
+            [ [ -27.9929, -56.7348 ], [ -27.9732, -56.7348 ], [ -27.9698, -56.6028 ], [ -28.2242, -56.6008 ], [ -28.2278, -56.7326 ], [ -27.9929, -56.7348 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Leskov Island Landsat",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-10-13",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81991002015286LGN00&z={zoom}&x={x}&y={-y}"

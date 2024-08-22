@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 104.001545701973583, -0.000078769115171 ], [ 104.001374040596616, 1.45099139170518 ], [ 104.910149370186474, 1.451162998032411 ], [ 104.910149370186474, -0.000078769115171 ], [ 104.001545701973583, -0.000078769115171 ] ]
+            [ [ 104.0015, -0.0001 ], [ 104.9101, -0.0001 ], [ 104.9101, 1.4512 ], [ 104.0014, 1.451 ], [ 104.0015, -0.0001 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "ID",
-        "description": "Missing Islands in OSM (true color)",
+        "description": "Missing Islands in OSM, somewhat outdated (true color)",
         "end_date": "2016",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC81250592016107LGN00",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Batam",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2014",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81250592016107LGN00&z={zoom}&x={x}&y={-y}"

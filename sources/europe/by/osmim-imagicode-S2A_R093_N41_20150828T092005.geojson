@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 23.808114560320394, 41.584878805945024 ], [ 22.992379697039144, 41.601953498117702 ], [ 23.011863263323328, 42.299837473602608 ], [ 23.994023831560629, 42.283393175568236 ], [ 23.965613873674886, 41.584878805945024 ], [ 23.808114560320394, 41.584878805945024 ] ]
+            [ [ 23.8081, 41.5849 ], [ 23.9656, 41.5849 ], [ 23.994, 42.2834 ], [ 23.0119, 42.2998 ], [ 22.9924, 41.602 ], [ 23.8081, 41.5849 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "BY",
-        "description": "Late summer imagery where usual sources are severely limited by clouds and snow (true color)",
+        "description": "Late summer imagery where usual sources are severely limited by clouds and snow, somewhat outdated (true color)",
         "end_date": "2015-08-28",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R093_N41_20150828T092005",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Rila and Pirin Mountains",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-08-28",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R093_N41_20150828T092005&z={zoom}&x={x}&y={-y}"

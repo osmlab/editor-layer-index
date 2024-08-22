@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -28.210747081406492, -56.721080481399383 ], [ -28.210747081406492, -56.624975043089115 ], [ -27.969562846787351, -56.624975043089115 ], [ -27.969562846787351, -56.721080481399383 ], [ -28.210747081406492, -56.721080481399383 ] ]
+            [ [ -28.2107, -56.7211 ], [ -27.9696, -56.7211 ], [ -27.9696, -56.625 ], [ -28.2107, -56.625 ], [ -28.2107, -56.7211 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Leskov Island ASTER",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2013-11-16",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00311162013112731_20150618142416_109190&z={zoom}&x={x}&y={-y}"

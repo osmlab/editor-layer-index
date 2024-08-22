@@ -1,0 +1,117 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Los_Alamos_NAIP_CIR_2022",
+        "attribution": {
+            "url": "https://www.losalamosnm.us/Services/Property-and-Taxes/GIS-and-Maps/Geographic-Information-System-Services",
+            "text": "Los Alamos County GIS Services",
+            "required": false
+        },
+        "name": "Northern New Mexico NAIP 2022 (Infrared)",
+        "icon": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6435726/Templates/Images/logo.png",
+        "url": "https://gis.losalamosnm.us/securegis/rest/services/imagery/Orthoimagery_pictometry_3in_2022/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "max_zoom": 20,
+        "license_url": "https://wiki.openstreetmap.org/wiki/New_Mexico/Los_Alamos_County_Orthoimagery",
+        "permission_osm": "explicit",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "2-foot color infrared orthoimagery captured in 2022 for the state of New Mexico",
+        "category": "photo",
+        "valid-georeference": true,
+        "best": false,
+        "privacy_policy_url": "https://losalamosnm.us/cms/one.aspx?pageId=6505271"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -107.19739965879668,
+                    35.21936813762794
+                ],
+                [
+                    -106.24479243879871,
+                    35.2154104267311
+                ],
+                [
+                    -106.23781593073214,
+                    34.996903289494625
+                ],
+                [
+                    -105.23501916589123,
+                    34.99479459018221
+                ],
+                [
+                    -105.23501916589123,
+                    35.17265616306625
+                ],
+                [
+                    -103.61976535605456,
+                    35.18421488081985
+                ],
+                [
+                    -103.62228350881357,
+                    35.4225179315613
+                ],
+                [
+                    -103.72318542241817,
+                    35.422598797162266
+                ],
+                [
+                    -103.97822627564642,
+                    35.80325917104713
+                ],
+                [
+                    -104.30773180715933,
+                    35.802017088987185
+                ],
+                [
+                    -104.43902415578606,
+                    36.26927341780413
+                ],
+                [
+                    -105.29486506269077,
+                    36.30523356812418
+                ],
+                [
+                    -105.22020567309383,
+                    36.995147075904555
+                ],
+                [
+                    -107.4212320984112,
+                    36.99995225295562
+                ],
+                [
+                    -107.61100839370347,
+                    36.8007428350613
+                ],
+                [
+                    -107.62588404112488,
+                    36.00055255404878
+                ],
+                [
+                    -107.30996631752829,
+                    35.99851012407814
+                ],
+                [
+                    -107.30653785134055,
+                    35.30223933905603
+                ],
+                [
+                    -107.23819204004302,
+                    35.303460746817834
+                ],
+                [
+                    -107.19739965879668,
+                    35.21936813762794
+                ]
+            ]
+        ]
+    }
+}

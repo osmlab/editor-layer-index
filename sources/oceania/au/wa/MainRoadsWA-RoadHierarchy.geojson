@@ -13,7 +13,7 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "url": "https://services.slip.wa.gov.au/public/services/SLIP_Public_Services/Transport/MapServer/WMSServer?LAYERS=8&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
+        "url": "https://mrgis.mainroads.wa.gov.au/arcgis/services/OpenData/RoadAssets_DataPortal/MapServer/WMSServer?request=GetMap&service=WMS&format=image/png&transparent=TRUE&version=1.3.0&layers=14&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "overlay": true,
         "max_zoom": 21,
         "country_code": "AU",

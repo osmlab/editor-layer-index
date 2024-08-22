@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 10.559062957763668, 45.95484945195885 ], [ 7.473964691162107, 45.955326823034838 ], [ 7.555847167968747, 46.270800151198529 ], [ 8.054695129394529, 47.664693710110839 ], [ 11.752452850341793, 47.664809318453564 ], [ 11.752452850341793, 46.813336457338615 ], [ 11.38423919677734, 45.955088138010865 ], [ 10.559062957763668, 45.95484945195885 ] ]
+            [ [ 10.5591, 45.9548 ], [ 11.3842, 45.9551 ], [ 11.7525, 46.8133 ], [ 11.7525, 47.6648 ], [ 8.0547, 47.6647 ], [ 7.5558, 46.2708 ], [ 7.474, 45.9553 ], [ 10.5591, 45.9548 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
         "category": "photo",
         "country_code": "CH",
-        "description": "Up-to-date image for glacier mapping - beware of some fresh snow at higher altitudes (true color)",
+        "description": "For glacier mapping - beware of some fresh snow at higher altitudes (true color)",
         "end_date": "2016-09-29",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R065_N47_20160929T102022",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Central Alps in late September 2016",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-09-29",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R065_N47_20160929T102022&z={zoom}&x={x}&y={-y}"

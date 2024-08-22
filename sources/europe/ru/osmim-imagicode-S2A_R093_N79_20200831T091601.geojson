@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 78.4585, 80.7264 ], [ 78.4585, 80.9099 ], [ 80.4889, 80.9099 ], [ 80.4889, 80.7264 ], [ 78.4585, 80.7264 ] ]
+            [ [ 78.4585, 80.7264 ], [ 80.4889, 80.7264 ], [ 80.4889, 80.9099 ], [ 78.4585, 80.9099 ], [ 78.4585, 80.7264 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Ushakov Island August 2020",
         "max_zoom": 12,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2020-08-31",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R093_N79_20200831T091601&z={zoom}&x={x}&y={-y}"

@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -72.866961052341907, -41.517411238779552 ], [ -72.866961052341907, -41.045274923011036 ], [ -72.23181395761533, -41.045274923011036 ], [ -71.875101616306736, -41.108294391413587 ], [ -72.000071098728611, -41.517411238779552 ], [ -72.866961052341907, -41.517411238779552 ] ]
+            [ [ -72.867, -41.5174 ], [ -72.0001, -41.5174 ], [ -71.8751, -41.1083 ], [ -72.2318, -41.0453 ], [ -72.867, -41.0453 ], [ -72.867, -41.5174 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "CL",
-        "description": "Image from after the 2015 eruption (true color)",
+        "description": "Image from after the 2015 eruption, somewhat outdated (true color)",
         "end_date": "2016-01-31",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-LC82330892016031LGN00",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Volcán Calbuco",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-01-31",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC82330892016031LGN00&z={zoom}&x={x}&y={-y}"

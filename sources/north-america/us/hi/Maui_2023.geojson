@@ -1,0 +1,54 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Maui_2023",
+        "attribution": {
+            "url": "https://mauicounty.maps.arcgis.com/home/index.html",
+            "text": "Maui County GIS",
+            "required": false
+        },
+        "name": "Maui County Orthoimagery (2023)",
+        "icon": "https://mauicounty.maps.arcgis.com/sharing/rest/portals/self/resources/home.logo1647299411920.png",
+        "url": "https://tiles.arcgis.com/tiles/fsrDo0QMPlK9CkZD/arcgis/rest/services/Pictometry2023_MauiCounty282/MapServer/tile/{zoom}/{y}/{x}",
+        "min_zoom": 2,
+        "max_zoom": 21,
+        "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/hi/Maui.pdf",
+        "permission_osm": "explicit",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2021",
+        "end_date": "2022",
+        "description": "The 2023 orthoimagery for Maui County of the State of Hawaii",
+        "category": "photo",
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview",
+        "best": true,
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                  -157.37227140354707,
+                  21.28683781933519
+                ],
+                [
+                  -157.37227140354707,
+                  20.453565772514807
+                ],
+                [
+                  -155.9227153173687,
+                  20.453565772514807
+                ],
+                [
+                  -155.9227153173687,
+                  21.28683781933519
+                ],
+                [
+                  -157.37227140354707,
+                  21.28683781933519
+                ]
+              ]
+        ]
+    }
+}

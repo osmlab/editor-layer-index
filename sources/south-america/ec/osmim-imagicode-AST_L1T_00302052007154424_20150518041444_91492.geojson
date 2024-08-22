@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -78.531997745431994, -1.805085317123331 ], [ -78.531997745431994, -1.608105565001241 ], [ -78.335617130197619, -1.608105565001241 ], [ -78.335617130197619, -1.805085317123331 ], [ -78.531997745431994, -1.805085317123331 ] ]
+            [ [ -78.532, -1.8051 ], [ -78.3356, -1.8051 ], [ -78.3356, -1.6081 ], [ -78.532, -1.6081 ], [ -78.532, -1.8051 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: El Altar",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2012-02-05",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=AST_L1T_00302052007154424_20150518041444_91492&z={zoom}&x={x}&y={-y}"

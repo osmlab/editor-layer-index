@@ -17,16 +17,15 @@
             "EPSG:3877",
             "EPSG:4326"
         ],
-        "best": true,
         "country_code": "FI",
         "description": "Ortophotos from the city of Turku",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Turku.vaakuna.svg/200px-Turku.vaakuna.svg.png",
+        "icon": "https://www.turku.fi/sites/default/files/styles/site_logo/public/sites/all/themes/custom/driveturku/images/sprites/logo.png",
         "id": "turku-orto",
         "license_url": "https://dev.turku.fi/openstreetmap-lupa.pdf",
         "privacy_policy_url": "https://www.turku.fi/turku-tieto/tietosuoja/kayttotiedot-ja-evasteet",
         "max_zoom": 20,
         "min_zoom": 4,
-        "name": "City of Turku ortophoto",
+        "name": "City of Turku ortophoto - 2018",
         "type": "wms",
         "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "photo"

@@ -3,8 +3,8 @@
     "properties": {
         "id": "GeoPortal_DF_2015",
         "name": "GeoPortal DF 2015",
-        "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
-        "url": "https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/FOTO_2015/ImageServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/DistritoFederal.png",
+        "url": "https://www.geoservicos.ide.df.gov.br/arcgis/services/Imagens/FOTO_2015/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
@@ -18,12 +18,12 @@
         "attribution": {
             "text": "GeoPortal DF",
             "required": false,
-            "url": "http://www.geoportal.segeth.df.gov.br"
+            "url": "https://www.geoportal.seduh.df.gov.br/"
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Pt:GeoPortalDFBrasilia",
         "type": "wms",
-        "description": "Satellite imagery",
         "category": "historicphoto",
+        "valid-georeference": true,
         "privacy_policy_url": "https://www.gov.br/pt-br/termos-de-uso"
     },
     "geometry": {

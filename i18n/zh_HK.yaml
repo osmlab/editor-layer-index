@@ -2,24 +2,33 @@ zh_HK:
   imagery:
     Bing:
       description: 衛星和航攝圖
-      name: Bing 航攝圖
     EsriWorldImagery:
       attribution:
         text: 條款和意見
-      description: Esri world 世界航攝圖
       name: Esri world 世界航攝圖
     EsriWorldImageryClarity:
       attribution:
         text: 條款和意見
       description: Esri 之前的航攝圖可能比預設圖層會更清楚和更準確。
       name: Esri World (Clarity) Beta 航攝圖
+    LSA-ATKIS_BU:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      name: © GeoBasis-DE/LVermGeo LSA, ATKIS_BU
+    LSA-DOP20:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      name: © GeoBasis-DE/LVermGeo LSA, DOP20
+    LSA-DVG:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      name: © GeoBasis-DE/LVermGeo LSA, DVG
     MAPNIK:
       description: 預設的 OpenStreetMap 圖層。
       name: OpenStreetMap（標準）
     Mapbox:
       attribution:
         text: 條款和意見
-      description: 衛星和航攝圖
       name: Mapbox 衛星圖
     OSM_Inspector-Addresses:
       attribution:
@@ -53,14 +62,15 @@ zh_HK:
       name: SPW(allonie) 最新空照圖
     SPW_PICC:
       name: SPW(allonie) PICC 數值圖
-    US-TIGER-Roads-2014:
-      description: 在縮放水平16以上，公共地圖數據乃來自美國人口普查。 在較低的縮放水平時，OpenStreetMap只包括自2006年之前的變更
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: 黃色 = 來自美國人口普查的公共地圖數據。紅色 = 在OpenStreetMap找不到數據
       name: TIGER Roads 2017
     US-TIGER-Roads-2018:
       name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      name: TIGER Roads 2019
+    US-TIGER-Roads-2020:
+      name: TIGER Roads 2020
     US_Forest_Service_roads_overlay:
       name: 美國森林道路圖層
     UrbISOrtho2016:
@@ -69,6 +79,10 @@ zh_HK:
       name: UrbIS-Ortho 2017
     UrbISOrtho2018:
       name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      name: UrbIS-Ortho 2019
+    UrbISOrtho2020:
+      name: UrbIS-Ortho 2020
     UrbisAdmFR:
       name: UrbisAdm FR
     UrbisAdmNL:
@@ -102,17 +116,21 @@ zh_HK:
         text: basemap.at
       description: 由 basemap.at 提供的 Orthofoto 圖層。geoimage.at 的 "繼承者"。
       name: basemap.at Orthofoto
-    finds.jp_KBN_2500:
+    basemap.at-overlay:
       attribution:
-        text: GSI KIBAN 2500
-      name: 日本 GSI KIBAN 2500
+        text: basemap.at
+    cyclosm:
+      name: CyclOSM
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI 日本
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: GSI 日本無縫照片
     gsi.go.jp_std_map:
       attribution:
         text: GSI 日本
-    helsingborg-orto:
-      attribution:
-        text: © Helsingborg municipality
-      name: Helsingborg Orthophoto
+      name: 日本 GSI 標準地圖
     kalmar-orto-2014:
       attribution:
         text: © Kalmar municipality
@@ -151,17 +169,10 @@ zh_HK:
         text: © OpenStreetMap 貢獻者
       description: 上傳至OpenStreetMap的公開 GPS 軌跡。
       name: OpenStreetMap GPS 軌跡
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap 貢獻者，CC-BY-SA
-      name: OpenStreetMap（標準黑與白）
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMap 貢獻者，CC-BY-SA
       name: OpenStreetMap（德國格式）
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
     qa_no_address:
       attribution:
         text: Simon Poole，資料 ©OpenStreetMap 貢獻者
@@ -206,11 +217,6 @@ zh_HK:
     trafikverket-vagnat-extra:
       attribution:
         text: © Trafikverket, CC0
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Swedish NVDB 街道名稱
-      name: Trafikverket Street Names
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0

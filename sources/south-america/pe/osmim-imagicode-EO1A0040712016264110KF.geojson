@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -72.759447097778306, -15.68684010813036 ], [ -72.759447097778306, -15.495701571360261 ], [ -72.744340896606431, -15.426295586903299 ], [ -72.412862777709947, -15.426295586903299 ], [ -72.412862777709947, -15.652957427428944 ], [ -72.424106597900376, -15.686674840407827 ], [ -72.759447097778306, -15.68684010813036 ] ]
+            [ [ -72.7594, -15.6868 ], [ -72.4241, -15.6867 ], [ -72.4129, -15.653 ], [ -72.4129, -15.4263 ], [ -72.7443, -15.4263 ], [ -72.7594, -15.4957 ], [ -72.7594, -15.6868 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Coropuna",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-09-21",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=EO1A0040712016264110KF&z={zoom}&x={x}&y={-y}"

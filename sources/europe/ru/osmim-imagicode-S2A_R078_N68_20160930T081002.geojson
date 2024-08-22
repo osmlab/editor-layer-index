@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 53.1802, 67.5344 ], [ 53.1821, 68.414 ], [ 54.2107, 69.3367 ], [ 55.3584, 70.2786 ], [ 59.004, 70.2786 ], [ 60.6947, 69.977 ], [ 61.9837, 69.7161 ], [ 61.9823, 68.9395 ], [ 59.9153, 67.5344 ], [ 53.1802, 67.5344 ] ]
+            [ [ 53.1802, 67.5344 ], [ 59.9153, 67.5344 ], [ 61.9823, 68.9395 ], [ 61.9837, 69.7161 ], [ 60.6947, 69.977 ], [ 59.004, 70.2786 ], [ 55.3584, 70.2786 ], [ 54.2107, 69.3367 ], [ 53.1821, 68.414 ], [ 53.1802, 67.5344 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Pechora Sea Coast",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-09-30",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R078_N68_20160930T081002&z={zoom}&x={x}&y={-y}"

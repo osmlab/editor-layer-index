@@ -1,0 +1,60 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "Belo Horizonte Ortofoto 2015",
+        "type": "wms",
+        "category": "historicphoto",
+        "url": "https://geoservicos.pbh.gov.br:443/ortofoto/ORTOFOTO/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortofoto2015&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:Autorização_BHGeo.png",
+        "privacy_policy_url": "https://prefeitura.pbh.gov.br/politica-de-privacidade",
+        "id": "BH_Ortofoto_2015",
+        "description": "2015 Orthophotos from Belo Horizonte",
+        "country_code": "BR",
+        "start_date": "2015",
+        "end_date": "2015",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:31983",
+            "EPSG:4326"
+        ],
+        "attribution": {
+            "url": "https://bhgeo.pbh.gov.br/",
+            "text": "Prefeitura de Belo Horizonte"
+        },
+        "best": true,
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                        -44.08157585053,
+                        -19.98957529047
+                    ],
+                    [
+                        -44.01816197810,
+                        -20.08433222331
+                    ],
+                    [
+                        -43.83876982100,
+                        -19.91409956083
+                    ],
+                    [
+                        -43.84100392937,
+                        -19.81290726643
+                    ],
+                    [
+                        -43.99897680897,
+                        -19.72878524938
+                    ],
+                    [
+                        -44.08157585053,
+                        -19.98957529047
+                    ]
+            ]
+        ]
+    }
+}

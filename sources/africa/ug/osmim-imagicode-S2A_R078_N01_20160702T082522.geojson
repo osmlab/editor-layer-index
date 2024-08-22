@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 29.8051357269287, 0.235862065771959 ], [ 29.8051357269287, 0.467085433008179 ], [ 30.02503395080565, 0.467085433008179 ], [ 30.02503395080565, 0.235862065771959 ], [ 29.8051357269287, 0.235862065771959 ] ]
+            [ [ 29.8051, 0.2359 ], [ 30.025, 0.2359 ], [ 30.025, 0.4671 ], [ 29.8051, 0.4671 ], [ 29.8051, 0.2359 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Rwenzori Mountains 2016",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-07-02",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R078_N01_20160702T082522&z={zoom}&x={x}&y={-y}"

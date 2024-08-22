@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 58.049, 43.2623 ], [ 58.049, 46.7189 ], [ 58.1014, 46.8645 ], [ 61.5524, 46.8629 ], [ 61.5524, 46.3896 ], [ 61.4675, 45.3416 ], [ 60.6317, 43.2623 ], [ 58.049, 43.2623 ] ]
+            [ [ 58.049, 43.2623 ], [ 60.6317, 43.2623 ], [ 61.4675, 45.3416 ], [ 61.5524, 46.3896 ], [ 61.5524, 46.8629 ], [ 58.1014, 46.8645 ], [ 58.049, 46.7189 ], [ 58.049, 43.2623 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Aral Sea (high water level)",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-03-03",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=aral2&z={zoom}&x={x}&y={-y}"

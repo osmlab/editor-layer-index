@@ -1,57 +1,93 @@
 el:
   imagery:
+    Bedzin-PL-buildings:
+      name: 'Będzin: Κτίρια'
     Bing:
       description: Δορυφορική και εναέρια εικόνα.
-      name: Εναέρια Εικόνα Bing
+    Bytom-buildings:
+      name: 'Bytom: Κτίρια'
+    Czestochowa-buildings:
+      name: 'Częstochowa: Κτίρια'
     EsriWorldImagery:
       attribution:
         text: Όροι και Σχόλια
-      description: Παγκόσμια εικόνα Esri
       name: Παγκόσμια Eικόνα Esri
     EsriWorldImageryClarity:
       attribution:
         text: Όροι και Σχόλια
       description: Οι εικόνες του αρχείου Esri μπορούν να είναι πιο ευδιάκριτες και ακριβέστερες από το προεπιλεγμένηο επίπεδο.
       name: Παγκόσμια Eικόνα Esri (Διαύγεια) Beta
+    Gliwice-2003:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-2009:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-2013:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-2017:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-2018:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-2020:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-2021:
+      attribution:
+        text: Urząd Miasta Gliwice
+    Gliwice-buildings:
+      attribution:
+        text: Urząd Miasta Gliwice
+      name: 'Gliwice: Κτίρια'
+    Lodz-buildings:
+      name: 'Łódź: Κτίρια'
     MAPNIK:
+      attribution:
+        text: © Συνεισφέροντες OpenStreetMap, ODbL 1.0
       description: Η προεπιλεγμένη στρώση του OpenStreetMap.
       name: OpenStreetMap (Τυπικό)
     Mapbox:
       attribution:
         text: Όροι και σχόλια
-      description: Δορυφορική και εναέρια εικόνα.
       name: Δορυφορική εικόνα Mapbox
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Διευθύνσεις'
     OSM_Inspector-Geometry:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Γεωμετρία'
     OSM_Inspector-Highways:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Δρόμοι'
     OSM_Inspector-Multipolygon:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Περιοχή'
     OSM_Inspector-Places:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Τοποθεσίες'
     OSM_Inspector-Routing:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Δρομολόγηση'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA
+        text: © Geofabrik GmbH, Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: 'Επιθεωρητής OSM: Προσθήκη Ετικέτας'
-    US-TIGER-Roads-2014:
-      description: Στο επίπεδο εστίασης 16+, είναι τα δεδομένα χάρτη του δημόσιων ιδιοκτησιών από την απογραφή των ΗΠΑ. Στις χαμηλότερες εστιάσεις, μόνο αλλαγές από το 2006 εκτός από αλλαγές που έχουν ήδη ενσωματωθεί στο OpenStreetMap
-      name: Δρόμοι TIGER 2014
+    Siemianowice_Slaskie-aerial_image:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+    Siemianowice_Slaskie-buildings:
+      attribution:
+        text: Urząd Miasta Siemianowice Śląskie
+      name: 'Siemianowice Śląskie: Κτίρια'
     US-TIGER-Roads-2017:
       description: Κίτρινο = Δεδομένα χάρτη δημόσιων ιδιοκτησιών από την απογραφή των ΗΠΑ. Κόκκινο = Δεδομένα που δεν βρέθηκαν στο OpenStreetMap
       name: Δρόμοι TIGER 2017
@@ -76,7 +112,7 @@ el:
       name: 'Σηματοδοτημένες Διαδρομές: Σκέϊτ'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, συνεισφέροντες στο OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Συνεισφέροντες OpenStreetMap, CC by-SA 3.0
       name: 'Σηματοδοτημένες Διαδρομές: Χειμερινά Σπορ'
     basemap.at:
       attribution:
@@ -88,45 +124,65 @@ el:
         text: basemap.at
       description: Ορθοφωτογραφική στρώση που παρέχεται από το basemap.at. "Διάδοχος" των εικόνων του geoimage.at.
       name: basemap.at Ορθοφωτογραφία
+    basemap.at-overlay:
+      attribution:
+        text: basemap.at
+    debicki-buildings:
+      name: 'Powiat dębicki: Κτίρια'
+    kartverket-bygninger:
+      name: Επικάλυψη Κτιρίων Kartverket
+    lancucki-buildings:
+      name: 'Powiat łańcucki: Κτίρια'
+    lubaczowski-buildings:
+      name: 'Powiat lubaczowski: Κτίρια'
     mapbox_locator_overlay:
       attribution:
         text: Όροι και σχόλια
-      description: Εμφάνιση σημαντικών χαρακτηριστικών για να σας βοηθήσει να σας προσανατολίσετε.
+      description: Εμφάνιση σημαντικών χαρακτηριστικών για να σας βοηθήσει να προσανατολιστείτε.
       name: Επικάλυψη Εντοπισμού
     openpt_map:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: Χάρτης OpenPT (επικάλυψη)
     osm-gps:
       attribution:
-        text: © OpenStreetMap contributors
+        text: © Συνεισφέροντες OpenStreetMap
       description: Δημόσια ίχνη GPS που έχουν μεταφορτωθεί στο OpenStreetMap.
-      name: Ίχνη GPS OpenStreetMap.
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
-      name: OpenStreetMap (Τυπικό Ασπρόμαυρο)
+      name: Ίχνη GPS OpenStreetMap
     osm-mapnik-german_style:
       attribution:
-        text: © OpenStreetMap contributors, CC-BY-SA
+        text: © Συνεισφέροντες OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Γερμανικό Στυλ)
+    przemysl-buildings:
+      name: 'Przemyśl: Κτίρια'
     qa_no_address:
       attribution:
-        text: Simon Poole, Δεδομένα © OpenStreetMap contributors
+        text: Simon Poole, Δεδομένα © Συνεισφέροντες OpenStreetMap
       name: QA Καμία Διεύθυνση
+    rzeszowski-buildings:
+      name: 'Powiat rzeszowski: Κτίρια'
     skobbler:
       attribution:
-        text: '© Πλακίδια: skobbler Δεδομένα χάρτη: OpenStreetMap contributors'
+        text: '© Πλακίδια: skobbler Δεδομένα χάρτη: Συνεισφέροντες OpenStreetMap'
       name: skobbler
+    sropczyce-buildings:
+      name: 'Powiat ropczycko-sędziszowski: Κτίρια'
+    stalowowolski-buildings:
+      name: 'Powiat stalowowolski: Κτίρια'
     stamen-terrain-background:
       attribution:
         text: Πλακίδιια χαρτών από το Stamen Design, κάτω από CC BY 3.0. Δεδομένα από το OpenStreetMap, κάτω από ODbL
       name: Stamen Εδαφικό
+    stockholm-orto:
+      description: Ορθοφωτογραφίες από το Δήμο Στοκχόλμης 2018, άδεια CC0
     tf-cycle:
       attribution:
-        text: Χάρτες © Thunderforest, Δεδομένα © OpenStreetMap contributors
+        text: Χάρτες © Thunderforest, Δεδομένα © Συνεισφέροντες OpenStreetMap
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
-        text: Χάρτες © Thunderforest, Δεδομένα © OpenStreetMap contributors
+        text: Χάρτες © Thunderforest, Δεδομένα © Συνεισφέροντες OpenStreetMap
       name: Thunderforest Τοπίο
+    tf-outdoors:
+      attribution:
+        text: Χάρτες © Thunderforest, Δεδομένα © Συνεισφέροντες OpenStreetMap

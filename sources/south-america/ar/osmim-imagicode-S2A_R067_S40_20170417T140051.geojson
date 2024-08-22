@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -62.9988, -40.7327 ], [ -62.9988, -37.9476 ], [ -61.7505, -37.9474 ], [ -61.7501, -40.7322 ], [ -62.9988, -40.7327 ] ]
+            [ [ -62.9988, -40.7327 ], [ -61.7501, -40.7322 ], [ -61.7505, -37.9474 ], [ -62.9988, -37.9476 ], [ -62.9988, -40.7327 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Bahía Blanca (high tide)",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2017-04-17",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R067_S40_20170417T140051&z={zoom}&x={x}&y={-y}"

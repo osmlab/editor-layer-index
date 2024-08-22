@@ -7,7 +7,7 @@
         "id": "trafikverket-vagnat",
         "country_code": "SE",
         "description": "Swedish NVDB road network",
-        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo?LAYERS=Vagtrafiknat,Funkvagklass,Farjeled&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo_1_5?LAYERS=Vagtrafiknat,Funkvagklass,Farjeled&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
         "min_zoom": 13,
         "max_zoom": 20,
@@ -16,7 +16,8 @@
             "text": "© Trafikverket, CC0",
             "url": "https://www.trafikverket.se"
         },
-        "license_url": "https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667",
+        "license_url": "https://api.trafikinfo.trafikverket.se/DynamicContent/ContentDetails/58e384810bb22118e8041667",
+        "privacy_policy_url": "https://bransch.trafikverket.se/en/startpage/about-us/Trafikverket/About-the-website/Legal-information/this-is-how-trafikverket-works-with-the-general-data-protection-ordinance-gdpr/",
         "overlay": true,
         "available_projections": [
             "CRS:84",

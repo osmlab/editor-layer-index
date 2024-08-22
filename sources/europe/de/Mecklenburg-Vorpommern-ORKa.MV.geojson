@@ -1,0 +1,86 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "orka.mv",
+    "name": "Offene Regionalkarte Mecklenburg-Vorpommern (ORKa.MV)",
+    "type": "tms",
+    "category": "osmbasedmap",
+    "url": "https://www.orka-mv.de/geodienste/orkamv/tiles/1.0.0/orkamv/GLOBAL_WEBMERCATOR/{zoom}/{x}/{y}.png",
+    "privacy_policy_url": "https://www.orka-mv.de/datenschutz.html",
+    "license_url": "https://www.orka-mv.de/nutzung.html#xyz",
+    "country_code": "DE",
+    "available_projections": [
+      "EPSG:3857",
+      "EPSG:4326"
+    ],
+    "attribution": {
+      "text": "ORKa.MV",
+      "url": "https://www.orka-mv.de/nutzung.html"
+    },
+    "max_zoom": 19,
+    "min_zoom": 12
+  },
+  "geometry": {
+    "coordinates": [
+      [
+        [
+          13.320191546067633,
+          54.722123296758355
+        ],
+        [
+          12.490014613684792,
+          54.60327065855893
+        ],
+        [
+          11.046109520069507,
+          54.03758042481408
+        ],
+        [
+          10.736505581590137,
+          53.87636946950386
+        ],
+        [
+          10.54745538906792,
+          53.36447179141609
+        ],
+        [
+          11.051589235794722,
+          53.14153998715227
+        ],
+        [
+          11.317355448471574,
+          53.10207842366347
+        ],
+        [
+          12.985928886824382,
+          53.13989647858034
+        ],
+        [
+          14.175027199213105,
+          53.21051057805303
+        ],
+        [
+          14.454492701203435,
+          53.30557346821445
+        ],
+        [
+          14.246263503642552,
+          53.93125113912237
+        ],
+        [
+          13.8106261034809,
+          54.51907165133261
+        ],
+        [
+          13.56129903798066,
+          54.69996386329959
+        ],
+        [
+          13.320191546067633,
+          54.722123296758355
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  }
+}

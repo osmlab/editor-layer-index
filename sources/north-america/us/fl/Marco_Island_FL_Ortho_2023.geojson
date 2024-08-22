@@ -1,0 +1,50 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Marco_Island_FL_Ortho_2023",
+        "attribution": {
+            "url": "https://www.cityofmarcoisland.com/info-tech/page/gis-servicesmaps",
+            "text": "Collier County Property Appraiser’s Office, City of Marco Island",
+            "required": false
+        },
+        "name": "City of Marco Island Orthoimagery (2023)",
+        "url": "https://gis.cityofmarcoisland.com:6443/arcgis/rest/services/General/Aerial_2023/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "The 2023 orthoimagery for the city of Marco Island in the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.cityofmarcoisland.com/community/page/disclaimers"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -81.77081116664,
+                    25.9850517253
+                ],
+                [
+                    -81.76999573445,
+                    25.87505598022
+                ],
+                [
+                    -81.64828781819,
+                    25.87555794801
+                ],
+                [
+                    -81.64884575832,
+                    25.98590041542
+                ],
+                [
+                    -81.77081116664,
+                    25.9850517253
+                ]
+            ]
+        ]
+    }
+}

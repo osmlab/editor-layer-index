@@ -1,0 +1,21 @@
+{
+    "geometry": null,
+    "properties": {
+        "category": "photo",
+        "default": true,
+        "description": "All OpenAerialMap images in one mosaic layer, by Kontur.io",
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenAerialMap.png",
+        "id": "OpenAerialMapMosaic",
+        "permission_osm": "explicit",
+        "license_url": "http://openaerialmap.org/legal/",
+        "privacy_policy_url": "https://www.kontur.io/privacy-policy/",
+        "min_zoom": 1,
+        "max_zoom": 31,
+        "name": "OpenAerialMap Mosaic, by Kontur.io",
+        "overlay": false,
+        "type": "tms",
+        "url": "https://apps.kontur.io/raster-tiler/oam/mosaic/{zoom}/{x}/{y}.png"
+    },
+    "type": "Feature"
+}

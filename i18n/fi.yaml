@@ -2,11 +2,9 @@ fi:
   imagery:
     Bing:
       description: Satelliitti- ja ilmakuvat
-      name: Bing-ilmakuvat
     EsriWorldImagery:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Kansainväliset Esri-satelliittikuvat
       name: Kansainväliset Esri-satelliittikuvat
     EsriWorldImageryClarity:
       attribution:
@@ -19,7 +17,6 @@ fi:
     Mapbox:
       attribution:
         text: Käyttöehdot ja palaute
-      description: Satelliitti- ja ilmakuvat
       name: Mapbox-satelliittikuvat
     OSM_Inspector-Addresses:
       attribution:
@@ -49,9 +46,6 @@ fi:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
       name: 'OSM Tarkastajat: Tagit'
-    US-TIGER-Roads-2014:
-      description: Suurennostasolla 16 ja sitä lähempänä käytetään Yhdysvaltain väestönlaskentaviranomaisen kartta-aineistoa. Kauempana näytetään vain muutokset vuodelta 2006 pois lukien jo OpenStreetMapiin yhdistetyt muutokset.
-      name: TIGER Roads 2014
     US-TIGER-Roads-2017:
       description: Keltainen = Tekijänoikeudeton kartta-aineisto Yhdysvaltain väestönlaskentaviranomaiselta. Punainen = Aineisto ei löydy OpenStreetMapista
       name: TIGER Roads 2017
@@ -86,12 +80,9 @@ fi:
       attribution:
         text: basemap.at
       name: basemap.at-ortokuva
-    helsingborg-orto:
-      description: Public domain -ortokuvat Helsingborgin kunnasta vuodelta 2016
-      name: Helsingborgin ortokuva
     kalmar-orto-2014:
       description: Ortokuvat Kalmarin kunnan pohjoisrannikosta vuodelta 2014
-      name: Pohjois-Kalmarin ortokuva 2016
+      name: Pohjois-Kalmarin ortokuva 2014
     kalmar-orto-2016:
       description: Ortokuvat Kalmarin kunnan etelärannikosta vuodelta 2016
       name: Etelä-Kalmarin ortokuva 2016
@@ -126,24 +117,19 @@ fi:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
       name: OpenPT-kartta (lisäkartta)
+    openrailwaymap-maxspeeds:
+      name: OpenRailwayMap nopeusrajoitukset
+    openrailwaymap-signalling:
+      name: OpenRailwayMap opasteet
     osm-gps:
       attribution:
         text: © OpenStreetMapin tekijät
       description: OpenStreetMapiin tallennetut julkiset GPS-jäljet
       name: OpenStreetMapin GPS-jäljet
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © OpenStreetMapin tekijät, CC-BY-SA
-      name: OpenStreetMap (oletusnäkymä mustavalkoisena)
     osm-mapnik-german_style:
       attribution:
         text: © OpenStreetMapin tekijät, CC-BY-SA
       name: OpenStreetMap (saksalainen tyyli)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Digitoitu talouskartta vuosilta 1950–1980
-      name: Ruotsin maanmittauslaitoksen talouskartta 1950–1980
     qa_no_address:
       attribution:
         text: Simon Poole, aineisto ©OpenStreetMapin tekijät
@@ -154,6 +140,8 @@ fi:
     skoterleder:
       description: Moottorikelkkareitit
       name: Ruotsin moottorikelkkareitit
+    stamen-terrain-background:
+      name: Stamen-maastokartta
     stockholm-orto:
       attribution:
         text: © Tukholman kunta, CC0
@@ -186,11 +174,6 @@ fi:
         text: © Ruotsin liikennevirasto, CC0
       description: 'Ruotsin kansallinen tiestötietokanta laajennettuna: valtatienumerointi, hidasteet, pysähdysalueet, linja-autopysäkit, sillat, tunnelit ja liikenteenvalvontakamerat'
       name: Ruotsin liikenneviraston laajennettu tieverkko
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Ruotsin liikennevirasto, CC0
-      description: Ruotsin kansallisen tiestötietokannan nimistö
-      name: Ruotsin liikenneviraston kadunnimikartta
     trafikverket-vagnat-option:
       attribution:
         text: © Ruotsin liikennevirasto, CC0

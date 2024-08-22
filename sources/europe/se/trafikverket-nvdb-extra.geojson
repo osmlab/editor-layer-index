@@ -7,7 +7,7 @@
         "id": "trafikverket-vagnat-extra",
         "country_code": "SE",
         "description": "Swedish NVDB extra details: Highway reference, traffic calming, rest area, bus stop, bridge, tunnel, speed camera",
-        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vagnummer,Vaghinder,Rastplats,Rastficka,Hallplats,Farthinder,BroTunnel,ATK_Matplats&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geo-netinfo.trafikverket.se/mapservice/wms.axd/NetInfo_1_5?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vagnummer,Vaghinder,Rastplats,Hallplats,Farthinder,BroTunnel,ATK_Matplats&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
         "min_zoom": 3,
         "max_zoom": 20,
@@ -16,7 +16,8 @@
             "text": "© Trafikverket, CC0",
             "url": "https://www.trafikverket.se"
         },
-        "license_url": "https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667",
+        "license_url": "https://api.trafikinfo.trafikverket.se/DynamicContent/ContentDetails/58e384810bb22118e8041667",
+        "privacy_policy_url": "https://bransch.trafikverket.se/en/startpage/about-us/Trafikverket/About-the-website/Legal-information/this-is-how-trafikverket-works-with-the-general-data-protection-ordinance-gdpr/",
         "overlay": true,
         "available_projections": [
             "EPSG:3857",

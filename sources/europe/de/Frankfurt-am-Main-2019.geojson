@@ -1,0 +1,59 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Frankfurt-am-Main-2019",
+        "name": "Frankfurt am Main Luftbild 2019",
+        "i18n": true,
+        "description": "Aerial imagery of Frankfurt am Main, photographed on 16 April 2019",
+        "type": "wms",
+        "url": "https://geowebdienste.frankfurt.de/OD_Luftbilder_2019?REQUEST=GetMap&VERSION=1.3.0&SERVICE=WMS&CRS={proj}&FORMAT=image/jpeg&STYLES=&bbox={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=opendata_luftbilder_2019",
+        "privacy_policy_url": "https://geoportal.frankfurt.de/info/datenschutz.html",
+        "country_code": "DE",
+        "best": false,
+        "start_date": "2019-04-16",
+        "end_date": "2019-04-16",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:4647",
+            "EPSG:25832",
+            "EPSG:31467"
+        ],
+        "attribution": {
+            "text": "Stadtvermessungsamt Frankfurt am Main",
+            "url": "https://www.offenedaten.frankfurt.de/dataset/wms-luftbilder-2019-frankfurt-am-main",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/Frankfurt_am_Main/amtliche_Daten_f%C3%BCr_OSM",
+        "permission_osm": "explicit",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    8.84647,
+                    50.0111
+                ],
+                [
+                    8.84647,
+                    50.22807
+                ],
+                [
+                    8.46726,
+                    50.22807
+                ],
+                [
+                    8.46726,
+                    50.0111
+                ],
+                [
+                    8.84647,
+                    50.0111
+                ]
+            ]
+        ]
+    }
+}

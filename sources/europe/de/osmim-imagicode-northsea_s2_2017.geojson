@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 5.1713, 53.0918 ], [ 6.477, 55.8973 ], [ 9.8813, 55.8973 ], [ 9.8813, 53.2761 ], [ 9.7789, 53.0918 ], [ 5.1713, 53.0918 ] ]
+            [ [ 5.1713, 53.0918 ], [ 9.7789, 53.0918 ], [ 9.8813, 53.2761 ], [ 9.8813, 55.8973 ], [ 6.477, 55.8973 ], [ 5.1713, 53.0918 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: North Sea Coast 2017",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2017-06-02",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=northsea_s2_2017&z={zoom}&x={x}&y={-y}"

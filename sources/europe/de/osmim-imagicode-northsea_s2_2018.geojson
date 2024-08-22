@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 5.3179, 53.0918 ], [ 5.322, 53.4418 ], [ 6.7023, 56.3572 ], [ 9.8813, 56.3578 ], [ 9.8813, 53.2819 ], [ 9.7758, 53.0921 ], [ 5.3179, 53.0918 ] ]
+            [ [ 5.3179, 53.0918 ], [ 9.7758, 53.0921 ], [ 9.8813, 53.2819 ], [ 9.8813, 56.3578 ], [ 6.7023, 56.3572 ], [ 5.322, 53.4418 ], [ 5.3179, 53.0918 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: North Sea Coast spring 2018",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2018-05-08",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=northsea_s2_2018&z={zoom}&x={x}&y={-y}"

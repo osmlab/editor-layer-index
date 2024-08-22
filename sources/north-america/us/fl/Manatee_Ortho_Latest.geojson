@@ -1,0 +1,110 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Manatee_Ortho_Latest",
+        "attribution": {
+            "url": "https://www.mymanatee.org/departments/information_technology_services/geographic_information_systems",
+            "text": "Manatee County GIS",
+            "required": false
+        },
+        "name": "Manatee County Orthoimagery (Latest)",
+        "url": "https://www.mymanatee.org/gisimg/rest/services/current/aerials/ImageServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023-12-15",
+        "end_date": "2024-02-07",
+        "description": "The most recent orthoimagery for Manatee County of the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.mymanatee.org/government/policies___disclaimers"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.04976083994,
+                    27.19483109578
+                ],
+                [
+                    -82.0498681283,
+                    27.64869307052
+                ],
+                [
+                    -82.57478731155,
+                    27.64764779101
+                ],
+                [
+                    -82.75966661453,
+                    27.55013346217
+                ],
+                [
+                    -82.71280305862,
+                    27.45466509131
+                ],
+                [
+                    -82.63370995045,
+                    27.37211033377
+                ],
+                [
+                    -82.61984833717,
+                    27.37222470336
+                ],
+                [
+                    -82.61993416786,
+                    27.39973704295
+                ],
+                [
+                    -82.58929261208,
+                    27.40011805223
+                ],
+                [
+                    -82.5737142992,
+                    27.38624843034
+                ],
+                [
+                    -82.57367138386,
+                    27.37249143823
+                ],
+                [
+                    -82.52740862131,
+                    27.37254858473
+                ],
+                [
+                    -82.52743007898,
+                    27.38640083375
+                ],
+                [
+                    -82.45041849375,
+                    27.38666757255
+                ],
+                [
+                    -82.4503755784,
+                    27.37296779791
+                ],
+                [
+                    -82.26550699353,
+                    27.37341558252
+                ],
+                [
+                    -82.265131495,
+                    27.20836202863
+                ],
+                [
+                    -82.23431827784,
+                    27.208381112
+                ],
+                [
+                    -82.23427536249,
+                    27.19464023872
+                ],
+                [
+                    -82.04976083994,
+                    27.19483109578
+                ]
+            ]
+        ]
+    }
+}

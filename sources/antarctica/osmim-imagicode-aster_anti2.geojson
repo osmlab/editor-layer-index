@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -120.615, -85.0511 ], [ -121.0602, -84.7506 ], [ -115.2085, -84.1075 ], [ -93.6269, -84.0855 ], [ -85.4314, -84.0794 ], [ -85.0513, -84.2365 ], [ -87.4598, -85.0511 ], [ -120.615, -85.0511 ] ]
+            [ [ -120.615, -85.0511 ], [ -87.4598, -85.0511 ], [ -85.0513, -84.2365 ], [ -85.4314, -84.0794 ], [ -93.6269, -84.0855 ], [ -115.2085, -84.1075 ], [ -121.0602, -84.7506 ], [ -120.615, -85.0511 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Ohio Range",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2001",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=aster_anti2&z={zoom}&x={x}&y={-y}"

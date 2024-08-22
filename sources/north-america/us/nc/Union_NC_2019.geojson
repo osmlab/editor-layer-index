@@ -1,0 +1,123 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Union_Ortho_2019",
+        "attribution": {
+            "url": "https://www.unioncountync.gov/government/departments-f-p/gis-mapping",
+            "text": "Union County GIS",
+            "required": false
+        },
+        "name": "Union County Orthoimagery (2019)",
+        "icon": "https://www.unioncountync.gov/Project/Contents/Main/_gfx/cmn/logo.svg",
+        "url": "https://gis-image1.unioncountync.gov/arcgis/rest/services/GoMapsOrthos/Orthos2019/MapServer/export?f=image&format=jpg&layers=show,0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 18,
+        "license_url": "https://wiki.openstreetmap.org/wiki/North_Carolina/Union_County_GIS",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2019",
+        "end_date": "2019",
+        "description": "The 2019 orthoimagery for Union County in the State of North Carolina",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.unioncountync.gov/government/privacy-policy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.30861040582,
+                    34.81355437326
+                ],
+                [
+                    -80.73073627207,
+                    34.80821414299
+                ],
+                [
+                    -80.73088646325,
+                    34.81546811299
+                ],
+                [
+                    -80.81004381569,
+                    34.81432302319
+                ],
+                [
+                    -80.81045153114,
+                    34.83605060161
+                ],
+                [
+                    -80.80171825859,
+                    34.83619149943
+                ],
+                [
+                    -80.80307011339,
+                    34.90148928621
+                ],
+                [
+                    -80.79427246782,
+                    34.90159487553
+                ],
+                [
+                    -80.78564648363,
+                    34.90891540388
+                ],
+                [
+                    -80.78624733913,
+                    34.93801512067
+                ],
+                [
+                    -80.84000953662,
+                    34.97348288749
+                ],
+                [
+                    -80.84099122512,
+                    35.01698873071
+                ],
+                [
+                    -80.53609643909,
+                    35.21713953938
+                ],
+                [
+                    -80.53582285377,
+                    35.20263408974
+                ],
+                [
+                    -80.47343748081,
+                    35.17438726564
+                ],
+                [
+                    -80.38510753021,
+                    35.17543450341
+                ],
+                [
+                    -80.27071753606,
+                    35.20570962466
+                ],
+                [
+                    -80.27023332584,
+                    35.16218978291
+                ],
+                [
+                    -80.27887356227,
+                    35.16209725653
+                ],
+                [
+                    -80.29265644522,
+                    34.91532031321
+                ],
+                [
+                    -80.31011758045,
+                    34.90784855752
+                ],
+                [
+                    -80.30861040582,
+                    34.81355437326
+                ]
+            ]
+        ]
+    }
+}

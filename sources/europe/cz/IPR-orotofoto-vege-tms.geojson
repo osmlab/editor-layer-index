@@ -1,14 +1,24 @@
 {
     "type": "Feature",
     "properties": {
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/cz/IPR_Praha.png",
         "id": "IPR-orotofoto-vege-tms",
-        "name": "IPR ortofoto Low-Vegetation (tmsproxy)",
+        "name": "Praha IPR low-vegetation orthophoto (TMS mirror)",
+        "description": "Yearly IPR Praha orthophotos, taken after the leaves are fallen from the trees. Same imagery as Praha IPR low-vegetation orthophoto but served from a TMS proxy",
+        "type": "tms",
         "url": "https://osm-{switch:a,b,c}.zby.cz/tiles_ipr_vege.php/{zoom}/{x}/{y}.jpg",
+        "country_code": "CZ",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Cs:%C4%8Cesko/freemap#Mapov%C3%A9_podklady_IPR_Praha",
+        "privacy_policy_url": "https://iprpraha.cz/stranka/95/informace-o-zpracovani-osobnich-udaju",
+        "attribution": {
+            "url": "https://iprpraha.cz/",
+            "text": "IPR Praha; OSM CZ"
+        },
+        "valid-georeference": true,
         "max_zoom": 20,
         "min_zoom": 2,
-        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-        "country_code": "CZ",
-        "type": "tms"
+        "category": "photo"
     },
     "geometry": {
 	    "type": "Polygon",

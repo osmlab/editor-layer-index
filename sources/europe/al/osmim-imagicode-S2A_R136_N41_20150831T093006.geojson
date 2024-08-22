@@ -2,18 +2,18 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 19.112325688609005, 42.153157632300598 ], [ 19.084259053477169, 43.080735319156332 ], [ 20.632987996348259, 43.096029780908921 ], [ 20.637880345591427, 42.167791043253985 ], [ 19.112325688609005, 42.153157632300598 ] ]
+            [ [ 19.1123, 42.1532 ], [ 20.6379, 42.1678 ], [ 20.633, 43.096 ], [ 19.0843, 43.0807 ], [ 19.1123, 42.1532 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
-        "category": "photo",
+        "category": "historicphoto",
         "country_code": "AL",
-        "description": "Late summer imagery where usual sources are severely limited by clouds and snow (true color)",
+        "description": "Late summer imagery where usual sources are severely limited by clouds and snow, somewhat outdated (true color)",
         "end_date": "2015-08-31",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/misc/osmim-imagicode.png",
         "id": "osmim-imagicode-S2A_R136_N41_20150831T093006",
@@ -21,7 +21,7 @@
         "name": "imagico.de: Prokletije Mountains",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-08-31",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R136_N41_20150831T093006&z={zoom}&x={x}&y={-y}"

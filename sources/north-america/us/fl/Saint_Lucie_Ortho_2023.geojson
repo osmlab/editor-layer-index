@@ -1,0 +1,58 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Saint_Lucie_Ortho_2023",
+        "attribution": {
+            "url": "https://www.paslc.gov/",
+            "text": "Saint Lucie County Property Appraiser’s Office",
+            "required": false
+        },
+        "name": "Saint Lucie County Orthoimagery (2023)",
+        "url": "https://tiles.arcgis.com/tiles/UZU5YYWrSlE9YWnx/arcgis/rest/services/2023_Aerial_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 20,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "The 2023 orthoimagery for Saint Lucie County in the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.69494484976,
+                    27.56590350034
+                ],
+                [
+                    -80.69595340147,
+                    27.19452574011
+                ],
+                [
+                    -80.28066161533,
+                    27.19288435422
+                ],
+                [
+                    -80.28030752267,
+                    27.24801974338
+                ],
+                [
+                    -80.18807173869,
+                    27.24747607191
+                ],
+                [
+                    -80.32276154657,
+                    27.56457198010
+                ],
+                [
+                    -80.69494484976,
+                    27.56590350034
+                ]
+            ]
+        ]
+    }
+}

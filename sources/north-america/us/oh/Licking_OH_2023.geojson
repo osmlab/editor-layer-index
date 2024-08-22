@@ -1,0 +1,111 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Licking_OH_2023",
+        "attribution": {
+            "url": "https://lickingcounty.gov/",
+            "text": "Licking County, State of Ohio",
+            "required": false
+        },
+        "name": "Licking County Orthoimagery (2023)",
+        "icon": "https://lickingcounty.gov/img/00/LC-logo.png",
+        "url": "https://apps.lickingcounty.gov/arcgis/rest/services/Basemaps/Imagery2023/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 23,
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "Spring 2023 orthoimagery for Licking County in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://lickingcounty.gov/disclaimer.htm"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.477519719805898,
+                    40.245750533561313
+                ],
+                [
+                    -82.476074006339616,
+                    40.264500325131408
+                ],
+                [
+                    -82.750715081437647,
+                    40.27695570268687
+                ],
+                [
+                    -82.773618519005083,
+                    39.976063807303447
+                ],
+                [
+                    -82.779406933306532,
+                    39.976380752178741
+                ],
+                [
+                    -82.782376206348786,
+                    39.939726355372663
+                ],
+                [
+                    -82.473327150753818,
+                    39.924980078016809
+                ],
+                [
+                    -82.463140431253095,
+                    39.930584997916775
+                ],
+                [
+                    -82.418456764272875,
+                    39.92744891178225
+                ],
+                [
+                    -82.418968324422451,
+                    39.922577969488245
+                ],
+                [
+                    -82.301209402159174,
+                    39.916138984126967
+                ],
+                [
+                    -82.234139418197586,
+                    39.913303161558552
+                ],
+                [
+                    -82.231637221813642,
+                    39.95129206310272
+                ],
+                [
+                    -82.198852888748007,
+                    39.950224459312253
+                ],
+                [
+                    -82.182838831891004,
+                    40.238655416703821
+                ],
+                [
+                    -82.28094717188587,
+                    40.240190097152599
+                ],
+                [
+                    -82.280936051013057,
+                    40.239300427327208
+                ],
+                [
+                    -82.328566749289919,
+                    40.239667416130175
+                ],
+                [
+                    -82.477519719805898,
+                    40.245750533561313
+                ]
+            ]
+        ]
+    }
+}

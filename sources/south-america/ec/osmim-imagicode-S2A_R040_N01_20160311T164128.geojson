@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -92.052163794295581, 1.321295617717369 ], [ -92.052163794295581, 1.72181118585353 ], [ -91.748494818465488, 1.72181118585353 ], [ -91.748494818465488, 1.321295617717369 ], [ -92.052163794295581, 1.321295617717369 ] ]
+            [ [ -92.0522, 1.3213 ], [ -91.7485, 1.3213 ], [ -91.7485, 1.7218 ], [ -92.0522, 1.7218 ], [ -92.0522, 1.3213 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Darwin and Wolf islands, Galapagos",
         "max_zoom": 14,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-03-11",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R040_N01_20160311T164128&z={zoom}&x={x}&y={-y}"

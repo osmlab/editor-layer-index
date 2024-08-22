@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -79.051745002517862, 81.914842890441832 ], [ -79.051745002517862, 83.433385567496231 ], [ -73.603899563858661, 83.802249877871446 ], [ -26.424486898081835, 83.802249877871446 ], [ -21.492998879371186, 83.503524154806172 ], [ -16.888354121159868, 83.150946327754525 ], [ -16.888354121159868, 81.914842890441832 ], [ -79.051745002517862, 81.914842890441832 ] ]
+            [ [ -79.0517, 81.9148 ], [ -16.8884, 81.9148 ], [ -16.8884, 83.1509 ], [ -21.493, 83.5035 ], [ -26.4245, 83.8022 ], [ -73.6039, 83.8022 ], [ -79.0517, 83.4334 ], [ -79.0517, 81.9148 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Landsat off-nadir July 2016",
         "max_zoom": 10,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-07-17",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=ls_polar2&z={zoom}&x={x}&y={-y}"

@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ -152.708729431478673, 62.303574439268111 ], [ -152.708386108724739, 62.581531769765533 ], [ -152.008351013509923, 63.546455388512669 ], [ -148.994320556966954, 63.533299454465862 ], [ -148.994320556966954, 62.303574439268111 ], [ -152.708729431478673, 62.303574439268111 ] ]
+            [ [ -152.7087, 62.3036 ], [ -148.9943, 62.3036 ], [ -148.9943, 63.5333 ], [ -152.0084, 63.5465 ], [ -152.7084, 62.5815 ], [ -152.7087, 62.3036 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Alaska Range",
         "max_zoom": 12,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2014-07-31",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC80700162014211LGN00&z={zoom}&x={x}&y={-y}"

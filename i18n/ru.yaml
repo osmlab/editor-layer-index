@@ -3,10 +3,14 @@ ru:
     Bing:
       description: Спутниковые и аэрофотоснимки.
       name: Aэрофотоснимки Bing
+    EOXAT2018CLOUDLESS:
+      attribution:
+        text: Sentinel-2 без облаков - https://s2maps.eu от EOX IT Services GmbH (Сожержит модифицированныеданные Copernicus Sentinel  2017 и 2018 годов)
+      description: Обработанные спутниковые снимки Sentinel.
+      name: eox.at 2018 cloudless
     EsriWorldImagery:
       attribution:
         text: Условия и обратная связь
-      description: Всемирные снимки Esri.
       name: Всемирные снимки Esri
     EsriWorldImageryClarity:
       attribution:
@@ -19,7 +23,6 @@ ru:
     Mapbox:
       attribution:
         text: Условия и обратная связь
-      description: Спутниковые и аэрофотоснимки.
       name: Спутниковые снимки Mapbox
     OSM_Inspector-Addresses:
       attribution:
@@ -49,17 +52,48 @@ ru:
       attribution:
         text: © Geofabrik GmbH, участники OpenStreetMap, CC-BY-SA
       name: 'OSM Inspector: Теги'
-    US-TIGER-Roads-2014:
-      description: На масштабах 16+ — общедостпуные картографические данные от US Census. На меньших масштабах — только изменения с 2006 за вычетом изменений, включённых в OpenStreetMap
-      name: Дороги TIGER 2014
+    SPW_ORTHO_LAST:
+      name: Самые свежие аэрофото SPW(allonie)
+    SPW_PICC:
+      name: Цифровые аэрофото SPW(allonie)
     US-TIGER-Roads-2017:
       description: Жёлтым = общедоступные картографические данные от US Census. Красным = данные, отсутствующие в OpenStreetMap
       name: Дороги TIGER 2017
     US-TIGER-Roads-2018:
       description: Жёлтым = общедоступные картографические данные от US Census. Красным = данные, отсутствующие в OpenStreetMap
+      name: TIGER Roads 2018
+    US-TIGER-Roads-2019:
+      description: Жёлтым = общедоступные картографические данные от US Census. Красным = данные, отсутствующие в OpenStreetMap
+      name: TIGER Roads 2019
+    USDA-NAIP:
+      name: National Agriculture Imagery Program
     US_Forest_Service_roads_overlay:
       description: 'Дороги: зелёный контур = без классификации; коричневый = просёлочные. Покрытие: гравий = светло-коричневый цвет; асфальт = чёрный; другое покрытие = серый; земля = белый; бетон = синий; трава = зелёный. Сезонные дороги = белые штрихи'
       name: Лесные дороги США
+    UrbISOrtho2016:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2016
+    UrbISOrtho2017:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2017
+    UrbISOrtho2018:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2018
+    UrbISOrtho2019:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2019
+    UrbisAdmFR:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm FR
+    UrbisAdmNL:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
         text: © waymarkedtrails.org, участники OpenStreetMap, CC by-SA 3.0
@@ -90,12 +124,82 @@ ru:
         text: basemap.at
       description: Слой Orthofoto предоставлен basemap.at. «Преемник» geoimage.at.
       name: basemap.at Orthofoto
-    basemap.at-surface:
+    basemap.at-overlay:
       attribution:
         text: basemap.at
-    basemap.at-terrain:
+      description: Слой подписей предоставлен basemap.at.
+      name: Наложение basemap.at
+    cyclosm:
+      name: CyclOSM
+    eufar-balaton:
       attribution:
-        text: basemap.at
+        text: EUFAR Balaton ortofotó 2010
+      description: Геопривязанные фотографии 1940 года от Balaton Limnological Institute.
+      name: Ортофото EUFAR Balaton
+    gothenburg-citymap:
+      attribution:
+        text: © Администрация Гётеборга, CC0
+      description: Обзорная карта Гётеборга. Содержит обобщенные данные о землепользовании, коммуникациях, гидрографии, зданиях, названия улиц и адреса, а также административное деление.
+      name: Карта города Гётеборга
+    gothenburg-ortho:
+      attribution:
+        text: © Администрация Гётеборга, CC0
+      description: Ортофото для администрации Гётеборга
+    gsi.go.jp_airphoto:
+      attribution:
+        text: GSI Japan
+      description: Аэрофото Japan GSI. Не полностью ортокорректированы, но новее и/или имеют другое покрытие чем ортофото от GSI.
+      name: Аэрофото Japan GSI
+    gsi.go.jp_seamlessphoto:
+      attribution:
+        text: Сшитые изображения GSI Japan
+      description: Сшитые изображения Japan GSI. Набор самых свежих ортофотоснимков GSI, аэрофотосъемка, последствия катастроф и другое.
+      name: Сшитые изображения GSI Japan
+    gsi.go.jp_std_map:
+      attribution:
+        text: GSI Japan
+      description: Стандартная карта Japan GSI. Большое покрытие.
+      name: Стандартная карта Japan GSI
+    kalmar-orto-2014:
+      attribution:
+        text: © Муниципалитет Kalmar
+      description: Ортофотопланы северного побережья муниципалитета Kalmar 2014
+      name: Kalmar North Orthophoto 2014
+    kalmar-orto-2016:
+      attribution:
+        text: © Муниципалитет Kalmar
+      description: Ортофотопланы южного побережья муниципалитета Kalmar 2016
+      name: Kalmar South Orthophoto 2016
+    kalmar-orto-2018:
+      attribution:
+        text: © Муниципалитет Kalmar
+      description: Ортофотопланы городских территорий муниципалитета Kalmar 2018
+      name: Kalmar Urban Orthophoto 2018
+    kelkkareitit:
+      attribution:
+        text: © Kelkkareitit.fi
+      description: Kelkkareitit.fi зимние дороги для снегоходов OSM (Северные регионы)
+      name: Наложение дорог для снегоходов
+    lantmateriet-orto1960:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Мозаика шведских ортофото за период 1955–1965. Есть снимки, сделанные раньше и позже.
+      name: Исторический ортофотоплан Lantmäteriet 1960
+    lantmateriet-orto1975:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Мозаика шведских ортофото за период 1970–1980. В разработке.
+      name: Исторический ортофотоплан Lantmäteriet 1975
+    lantmateriet-topowebb:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Топографическая карта Швеции 1:50 000
+      name: Топографическая карта Lantmäteriet
+    linkoping-orto:
+      attribution:
+        text: '© Мениципалитет Linköping '
+      description: Ортофотопланы от муниципалитета Linköping 2010, открытые данные
+      name: Ортофотоплан Linköping
     mapbox_locator_overlay:
       attribution:
         text: Условия и обратная связь
@@ -105,15 +209,26 @@ ru:
       attribution:
         text: © Участники OpenStreetMap, CC-BY-SA
       name: Карта OpenPT (наложение)
+    openrailwaymap:
+      attribution:
+        text: 'Изображения: OpenRailwayMap, Данные © участники OpenStreetMap'
+      description: Слой наложения с объектами инфраструктуры рельсового транспорта на основе данных OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Изображения: OpenRailwayMap, Данные © участники OpenStreetMap'
+      description: Слой наложения со скоростными режимами рельсового транспорта на основе данных OpenStreetMap
+      name: OpenRailwayMap Скорость
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Изображения: OpenRailwayMap, Данные © участники OpenStreetMap'
+      description: Слой наложения с объектами путевой сигнализации рельсового транспорта на основе данных OpenStreetMap
+      name: OpenRailwayMap Сигнализация
     osm-gps:
       attribution:
         text: © Участники OpenStreetMap
       description: Публичные GPS треки, загруженные в OpenStreetMap.
       name: GPS треки OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © Участники OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (стандартный черно-белый)
     osm-mapnik-german_style:
       attribution:
         text: © Участники OpenStreetMap, CC-BY-SA
@@ -126,10 +241,24 @@ ru:
       attribution:
         text: '© Тайлы: skobbler Картографические данные: участники OpenStreetMap'
       name: skobbler
+    skoterleder:
+      attribution:
+        text: © Skoterleder.org
+      description: Дороги для снегоходов
+      name: Карта дорог для снегоходов, Швеция
     stamen-terrain-background:
       attribution:
         text: 'Тайлы: Stamen Design, под CC BY 3.0. Данные: OpenStreetMap, под ODbL'
       name: Stamen Ландшафт
+    stockholm-orto:
+      attribution:
+        text: © Муниципалитет Стокгольма, CC0
+      name: Ортофотоплан Стокгольма
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Аэрофотосъёмка города Susono
+      description: Аэрофото, выпущенные Susono City под открытой лицензией.
+      name: Аэрофотосъёмка города Susono
     tf-cycle:
       attribution:
         text: Карты © Thunderforest, данные © участники OpenStreetMap
@@ -138,3 +267,36 @@ ru:
       attribution:
         text: Карты © Thunderforest, данные © участники OpenStreetMap
       name: Thunderforest Ландшафт
+    tf-outdoors:
+      attribution:
+        text: Карты © Thunderforest, данные © участники OpenStreetMap
+      name: Thunderforest Outdoors
+    trafikverket-baninfo:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Железные дороги Швеции, включая второстепенные
+      name: Trafikverket Железнодорожная сеть
+    trafikverket-baninfo-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Железные дороги Швеции, включая некоторые опции
+      name: Trafikverket Железнодорожная сеть дополнения
+    trafikverket-vagnat:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Шведский NVDB дорожная сеть
+      name: Trafikverket Дорожная сеть
+    trafikverket-vagnat-extra:
+      attribution:
+        text: © Trafikverket, CC0
+      description: 'Шведский NVDB расширенный: Дорожная разметка, места для отдыха, остановки общественного транспорта, мосты, тоннели, камеры контроля скорости'
+      name: Trafikverket Дорожная сеть расширенный
+    trafikverket-vagnat-option:
+      attribution:
+        text: © Trafikverket, CC0
+      description: Шведский NVDB Дорожная сеть в нескольких вариантах отображения
+      name: Trafikverket Дорожная сеть дополнения
+    wroclaw-orto2018:
+      attribution:
+        text: Мэрия Вроцлава
+      name: 'Вроцлав: Ортофотоплан 2018 (аэрофотосъёмка)'

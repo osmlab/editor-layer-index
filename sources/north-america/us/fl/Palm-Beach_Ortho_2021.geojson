@@ -1,0 +1,106 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Palm-Beach_Ortho_2021",
+        "attribution": {
+            "url": "http://maps.co.palm-beach.fl.us/cwgis/mygeonav.html",
+            "text": "Palm Beach County",
+            "required": false
+        },
+        "name": "Palm Beach County Orthoimagery (2021)",
+        "url": "https://maps.co.palm-beach.fl.us/arcgis/rest/services/Aerials/2021/MapServer/export?f=image&format=jpg&layers=show,0&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "max_zoom": 19,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2021-01-05",
+        "end_date": "2021-02-02",
+        "description": "The 2021 orthoimagery for Palm Beach County of the State of Florida",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://discover.pbcgov.org/Pages/Web-Site-Disclaimer.aspx"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -80.63509943458,
+                    26.98807568475
+                ],
+                [
+                    -80.63518526527,
+                    26.9742503866
+                ],
+                [
+                    -80.61977865669,
+                    26.9742503866
+                ],
+                [
+                    -80.62003614875,
+                    26.89170311738
+                ],
+                [
+                    -80.71234707567,
+                    26.78189743442
+                ],
+                [
+                    -80.75835228356,
+                    26.78199318225
+                ],
+                [
+                    -80.75839524004,
+                    26.74074317173
+                ],
+                [
+                    -80.85036815857,
+                    26.74085332704
+                ],
+                [
+                    -80.8503627816,
+                    26.7546161679
+                ],
+                [
+                    -80.86567283066,
+                    26.75463532837
+                ],
+                [
+                    -80.86565137299,
+                    26.78212727314
+                ],
+                [
+                    -80.89628219993,
+                    26.78217516271
+                ],
+                [
+                    -80.89671415189,
+                    26.31446299404
+                ],
+                [
+                    -80.05720143051,
+                    26.31134310441
+                ],
+                [
+                    -80.02462866278,
+                    26.5587621036
+                ],
+                [
+                    -80.02230048576,
+                    26.83381708124
+                ],
+                [
+                    -80.06715779038,
+                    26.98545610284
+                ],
+                [
+                    -80.63509943458,
+                    26.98807568475
+                ]
+            ]
+        ]
+    }
+}

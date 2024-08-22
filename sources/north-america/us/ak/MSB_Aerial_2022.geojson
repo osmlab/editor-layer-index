@@ -1,0 +1,142 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "MSB_Aerial_2022",
+    "attribution": {
+      "url": "https://data1-msb.opendata.arcgis.com/pages/msb-aerial-imagery",
+      "text": "Matanuska-Susitna Borough GIS Division",
+      "required": false
+    },
+    "name": "MSB Aerial Imagery - Core Area (2022)",
+    "url": "https://maps.matsugov.us/imagery/rest/services/Imagery/AerialMosaic_2022_SP_Dyn/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&f={proj}",
+    "max_zoom": 19,
+    "license_url": "https://wiki.openstreetmap.org/wiki/Alaska/Matanuska-Susitna_Borough/MSB_Aerial_Imagery",
+    "country_code": "US",
+    "type": "wms",
+    "available_projections": [
+      "CRS:84",
+      "EPSG:3857"
+    ],
+    "start_date": "2022",
+    "end_date": "2022",
+    "description": "4-band orthoimagery with 6-in pixel resolution from Big Lake to the Butte within Mat-Su Borough (2022)",
+    "category": "photo",
+    "valid-georeference": true,
+    "privacy_policy_url": false
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -150.02662384076015,
+          61.47388481148468
+        ],
+        [
+          -149.9414796756593,
+          61.47386878493654
+        ],
+        [
+          -149.74192633937486,
+          61.44803293306384
+        ],
+        [
+          -149.51557465977214,
+          61.51655990907693
+        ],
+        [
+          -149.46797167769014,
+          61.52452865051339
+        ],
+        [
+          -149.4298683508037,
+          61.53503603465188
+        ],
+        [
+          -149.3566519407418,
+          61.5413533480818
+        ],
+        [
+          -149.1218710564391,
+          61.54179382465733
+        ],
+        [
+          -149.10005323062177,
+          61.50904458339727
+        ],
+        [
+          -149.03488991116393,
+          61.50519001801945
+        ],
+        [
+          -148.97417012738214,
+          61.522166480732125
+        ],
+        [
+          -148.9679007456929,
+          61.7145894327127
+        ],
+        [
+          -149.24467660114993,
+          61.71627079604971
+        ],
+        [
+          -149.24507388293944,
+          61.70450309649627
+        ],
+        [
+          -149.34609089243068,
+          61.70509026373523
+        ],
+        [
+          -149.34665568453718,
+          61.67345285791586
+        ],
+        [
+          -149.4838122311327,
+          61.67401504081025
+        ],
+        [
+          -149.48391526241355,
+          61.66730970097427
+        ],
+        [
+          -149.57046483480212,
+          61.66753059722353
+        ],
+        [
+          -149.72018731580576,
+          61.65125242145254
+        ],
+        [
+          -149.72005965086075,
+          61.65693376372559
+        ],
+        [
+          -149.90479678020833,
+          61.65753656317585
+        ],
+        [
+          -149.9056561486954,
+          61.5827537987461
+        ],
+        [
+          -149.96154201342245,
+          61.58292830818212
+        ],
+        [
+          -149.9615993822024,
+          61.53961203423938
+        ],
+        [
+          -150.0263589446298,
+          61.539497554606356
+        ],
+        [
+          -150.02662384076015,
+          61.47388481148468
+        ]
+      ]
+    ]
+  }
+}

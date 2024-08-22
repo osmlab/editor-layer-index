@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 136.4226, -4.2853 ], [ 136.4226, -3.6447 ], [ 137.7971, -3.6447 ], [ 137.7971, -4.2853 ], [ 136.4226, -4.2853 ] ]
+            [ [ 136.4226, -4.2853 ], [ 137.7971, -4.2853 ], [ 137.7971, -3.6447 ], [ 136.4226, -3.6447 ], [ 136.4226, -4.2853 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Sudirman Range 2015",
         "max_zoom": 13,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2015-10-13",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=LC81030632015286LGN00&z={zoom}&x={x}&y={-y}"

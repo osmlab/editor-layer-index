@@ -1,28 +1,7 @@
 gl:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Imaxes aéreas máis recentes do AIV Flanders
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Imaxes aéreas do AIV Flandes 2013-2015 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Modelo de altura dixital AIV Flanders II, sombreado multidireccional 0.25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Modelo de altura dixital AIV Flanders II, factor Skyview 0.25 m
     Bing:
       description: Imaxes satelitais e aéreas.
-      name: Imaxes aéreas do Bing
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 sen nubes - https://s2maps.eu polo EOX IT Services GmbH (Contén os datos do Copernicus Sentinel modificados no 2017 e 2018)
@@ -31,22 +10,18 @@ gl:
     EsriWorldImagery:
       attribution:
         text: Termos e opinións
-      description: Imaxes mundiais do Esri.
       name: Imaxes mundiais do Esri
     EsriWorldImageryClarity:
       attribution:
         text: Termos e opinións
-      description: Arquivo de imaxes do Esri que pode que sexan máis craras e máis precisas que a súa capa por defecto.
+      description: Arquivo de imaxes do Esri que pode que sexan máis claras e máis precisas que a súa capa por defecto.
       name: Imaxes mundiais do Esri (Clarity) Beta
     MAPNIK:
-      attribution:
-        text: © Contribuíntes do OpenStreetMap, CC-BY-SA 2.0
       description: Capa OpenStreetMap por defecto.
       name: OpenStreetMap (Estándar)
     Mapbox:
       attribution:
         text: Termos e opinións
-      description: Imaxes satelitais e aéreas.
       name: Mapbox Satélite
     OSM_Inspector-Addresses:
       attribution:
@@ -80,9 +55,6 @@ gl:
       name: Imaxes aéreas máis recentes do SPW(allonie)
     SPW_PICC:
       name: Imaxes numéricas PICC do SPW(allonie)
-    US-TIGER-Roads-2014:
-      description: No nivel de achegamento de 16 ou máis, datos do mapa de dominio público dende o US Census. En achegamentos máis baixos, só hai mudanzas dende o 2006 agás as mudanzas xa engadidas no OpenStreetMap
-      name: Estradas do TIGER 2014
     US-TIGER-Roads-2017:
       description: Amarelo = Datos do mapa de dominio público dende o US Census. Vermello = Datos non atopados no OpenStreetMap
       name: Estradas do TIGER 2017
@@ -93,7 +65,6 @@ gl:
       description: Amarelo = Datos do mapa de dominio público do censo dos EE.UU. Vermello = Datos non atopados no OpenStreetMap
       name: Estradas TIGER 2019
     USDA-NAIP:
-      description: O ano máis recente de DOQQs do Programa Nacional de Imaxes de Agricultura (NAIP) para cada estado nos Estados Unidos adxacentes.
       name: Programa Nacional de Imaxes de Agricultura
     US_Forest_Service_roads_overlay:
       description: 'Estrada: marco verde = sen clasificar. marco marrón = pista. Superficie: grava = recheo marrón claro, asfalto = negro, pavimentado = gris, terra = branco, formigón = azul, herba/pasto = verde. Estacional = barras brancas'
@@ -157,31 +128,20 @@ gl:
         text: basemap.at
       description: Sobreposición de anotación fornecida por basemap.at.
       name: Sobreposición basemap.at
-    basemap.at-surface:
-      attribution:
-        text: basemap.at
-      description: Capa da superficie fornecida por basemap.at.
-      name: Superficie basemap.at
-    basemap.at-terrain:
-      attribution:
-        text: basemap.at
-      description: Capa do terreo fornecida por basemap.at.
-      name: Terreo basemap.at
     eufar-balaton:
       attribution:
         text: Ortofotos do EUFAR Balaton 2010
       description: Imaxe xeo-etiquetada do 1940 do Instituto Limnolóxico Balaton.
       name: Ortofotos do EUFAR Balaton
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 a través do finds.jp. Bo para rastrexar, pero un pouco máis vello.
-      name: Xapón GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Concello de Gotemburgo, CC0
       description: O mapa da cidade é un mapa xeral que describe Gotemburgo. Contén información xeral acerca dos terreos, comunicacións, hidrografía, edificios, números de enderezo, nomes de rúas, división administrativa e outros textos orientativos.
       name: Mapa da cidade de Gotemburgo
+    gothenburg-ortho:
+      attribution:
+        text: © Concello de Gotemburgo, CC0
+      description: Ortofoto para o concello de Gotemburgo
     gsi.go.jp_airphoto:
       attribution:
         text: Xapón GSI
@@ -197,11 +157,6 @@ gl:
         text: Xapón GSI
       description: Xapón GSI Mapa Estándar. Amplamente cuberto.
       name: Mapa estándar do Xapón GSI
-    helsingborg-orto:
-      attribution:
-        text: © Municipio de Helsingborg
-      description: Ortofotos do municipio de Helsingborg 2016, dominio público.
-      name: Ortofoto de Helsingborg
     kalmar-orto-2014:
       attribution:
         text: © Municipio de Kalmar
@@ -220,7 +175,7 @@ gl:
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
-      description: Kelkkareitit.fi camiños de motonieve do OSM (cobertura nórdica)
+      description: Kelkkareitit.fi camiños de motoneve do OSM (cobertura nórdica)
       name: Capa de transparencia motoneve nórdica
     lantmateriet-orto1960:
       attribution:
@@ -251,24 +206,30 @@ gl:
       attribution:
         text: © contribuíntes do OpenStreetMap, CC-BY-SA
       name: Mapa OpenPT (sobreposición)
+    openrailwaymap:
+      attribution:
+        text: 'Representación: OpenRailwayMap, Datos do mapa © Contribuíntes do OpenStreetMap'
+      description: Imaxes sobrepostas que amosan a infraestrutura ferroviaria baseada nos datos do OpenStreetMap
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      attribution:
+        text: 'Representación: OpenRailwayMap, Datos do mapa © Contribuíntes do OpenStreetMap'
+      description: Imaxes sobrepostas que amosan os límites de velocidade dos ferrocarrís baseados ​​nos datos do OpenStreetMap
+      name: Velocidades máximas do OpenRailwayMap
+    openrailwaymap-signalling:
+      attribution:
+        text: 'Representación: OpenRailwayMap, Datos do mapa © Contribuíntes do OpenStreetMap'
+      description: Imaxess sobrepostas que amosan sinais ferroviarios baseadas nos datos do OpenStreetMap
+      name: Sinalización do OpenRailwayMap
     osm-gps:
       attribution:
         text: © contribuíntes do OpenStreetMap
       description: Pistas GPS públicas subidas ó OpenStreetMap.
       name: Pistas GPS do OpenStreetMap
-    osm-mapnik-black_and_white:
-      attribution:
-        text: © contribuíntes do OpenStreetMap, CC-BY-SA
-      name: OpenStreetMap (Estándar Branco e Negro)
     osm-mapnik-german_style:
       attribution:
         text: © contribuíntes do OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (Estilo Alemá)
-    osmse-ekonomiska:
-      attribution:
-        text: © Lantmäteriet
-      description: Escaneo de "mapas económicos" ca. 1950-1980
-      name: Mapa económico de Lantmäteriet 1950-1980
     qa_no_address:
       attribution:
         text: Simon Poole, Datos ©contribuíntes do OpenStreetMap
@@ -289,8 +250,12 @@ gl:
     stockholm-orto:
       attribution:
         text: © Municipio de Estocolmo, CC0
-      description: Ortofotos do municipio de Estocolmo no 2016, licenza CC0.
       name: Ortofoto de Estocolmo
+    susono_shizuoka_jp_orthophoto:
+      attribution:
+        text: Ortofoto da cidade de Susono
+      description: Imaxes aéreas publicadas por Susono City coma datos abertos.
+      name: Ortofoto da cidade de Susono
     tf-cycle:
       attribution:
         text: Mapas © Thunderforest, Datos © contribuíntes do OpenStreetMap
@@ -299,16 +264,20 @@ gl:
       attribution:
         text: Mapas © Thunderforest, Datos © contribuíntes do OpenStreetMap
       name: Landscape de Thunderforest
+    tf-outdoors:
+      attribution:
+        text: Mapas © Thunderforest, Datos © contribuíntes do OpenStreetMap
+      name: Thunderforest Outdoors
     trafikverket-baninfo:
       attribution:
         text: © Trafikverket, CC0
-      description: Rede de trens de Suecia, incluíndo apeadoiros
-      name: Rede de trens de Trafikverket
+      description: Rede ferroviaria de Suecia, incluíndo apeadoiros
+      name: Rede ferroviaria de Trafikverket
     trafikverket-baninfo-option:
       attribution:
         text: © Trafikverket, CC0
-      description: Rede de trens de Suecia, con varias opcións de capas sobre o mapa
-      name: Opcións do Trafikverket Railway Network
+      description: Rede ferroviaria de Suecia con varias capas de mapa
+      name: Opcións da Rede ferroviaria de Trafikverket
     trafikverket-vagnat:
       attribution:
         text: © Trafikverket, CC0
@@ -317,15 +286,14 @@ gl:
     trafikverket-vagnat-extra:
       attribution:
         text: © Trafikverket, CC0
-      description: 'Detalles adicionais da NVDB sueca: referencia de autoestrada, redutores de tráfico, área de descanso, paraxe de autobús, ponte, túnel, cámara de velocidade'
+      description: 'Detalles adicionais da NVDB sueca: referencia de autoestrada, redutores de tráfico, área de descanso, parada de bus, ponte, túnel, cámara de velocidade'
       name: Trafikverket Road Network extra
-    trafikverket-vagnat-navn:
-      attribution:
-        text: © Trafikverket, CC0
-      description: Nomes de rúas suecas NVDB
-      name: Nomes de rúas de Trafikverket
     trafikverket-vagnat-option:
       attribution:
         text: © Trafikverket, CC0
       description: Rede de estradas suecas NVDB con varias opcións de capas de mapas
       name: Opcións da rede de estradas de Trafikverket
+    wroclaw-orto2018:
+      attribution:
+        text: Concello de Wrocław
+      name: 'Wrocław: Ortofoto 2018 (imaxe aérea)'

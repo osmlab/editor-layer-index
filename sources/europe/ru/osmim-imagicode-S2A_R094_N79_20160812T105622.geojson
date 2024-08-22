@@ -2,12 +2,12 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-            [ [ 78.458856914998989, 80.726434128609213 ], [ 78.458856914998989, 80.909897640435702 ], [ 80.488924358846631, 80.909897640435702 ], [ 80.488924358846631, 80.726434128609213 ], [ 78.458856914998989, 80.726434128609213 ] ]
+            [ [ 78.4589, 80.7264 ], [ 80.4889, 80.7264 ], [ 80.4889, 80.9099 ], [ 78.4589, 80.9099 ], [ 78.4589, 80.7264 ] ]
         ]
     },
     "properties": {
         "attribution": {
-            "url": "http://maps.imagico.de/#osmim",
+            "url": "https://imagico.de/maps/#osmim",
             "text": "imagico.de OSM images for mapping",
             "required": true
         },
@@ -21,7 +21,7 @@
         "name": "imagico.de: Ushakov Island August 2016",
         "max_zoom": 12,
         "permission_osm": "explicit",
-        "privacy_policy_url": "http://services.imagico.de/privacy.php",
+        "privacy_policy_url": "https://imagico.de/services/privacy.php",
         "start_date": "2016-08-12",
         "type": "tms",
         "url": "https://imagico.de/map/osmim_tiles.php?layer=S2A_R094_N79_20160812T105622&z={zoom}&x={x}&y={-y}"
