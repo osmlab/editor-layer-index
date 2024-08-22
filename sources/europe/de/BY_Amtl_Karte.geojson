@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "id": "BY_Amtl_Karte",
-        "name": "Bayern Beschriftungen",
+        "name": "Bayern Topographische Karten",
         "type": "tms",
         "category": "map",
         "url": "https://wmtsod{switch:1,2,3,4,5,6,7,8,9}.bayernwolke.de/wmts/by_amtl_karte/smerc/{zoom}/{x}/{y}",
@@ -13,7 +13,7 @@
             "url": "https://www.ldbv.bayern.de/",
             "required": true
         },
-        "max_zoom": 22,
+        "max_zoom": 17,
         "min_zoom": 7,
         "privacy_policy_url": "https://www.ldbv.bayern.de/datenschutz.html"
     },
