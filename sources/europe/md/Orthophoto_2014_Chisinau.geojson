@@ -10,9 +10,13 @@
         "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "best": true,
         "permission_osm": "explicit",
-		"available_projections": [
-            "EPSG:4026"
-		],
+        "available_projections": [
+            "EPSG:4026",
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:900913",
+            "CRS:84"
+        ],
         "end_date": "2014",
         "category": "historicphoto",
 		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a959bbff-0489-4985-92ee-5e74b583cd8e",

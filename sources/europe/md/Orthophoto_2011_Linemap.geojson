@@ -9,9 +9,13 @@
         "country_code": "MD",
         "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "permission_osm": "explicit",
-		"available_projections": [
-            "EPSG:4026"
-			],
+        "available_projections": [
+            "EPSG:4026",
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:900913",
+            "CRS:84"
+        ],
         "end_date": "2011",
         "category": "historicphoto",
 		"license_url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/f9d32b88-8c03-4428-8c1b-fd9505500615",
