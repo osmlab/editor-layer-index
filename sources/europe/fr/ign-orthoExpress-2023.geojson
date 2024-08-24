@@ -2,10 +2,10 @@
       "type": "Feature",
       "properties": {
         "id": "fr.ign.orthoexpress.2023",
-        "name": "Ortho Express IGN 2023 (20 cm)",
-        "type": "wms",
+        "name": "Ortho Express 2023 (20 cm)",
+        "type": "tms",
         "default": false,
-        "url": "https://wxs.ign.fr/ortho/geoportail/r/wms?VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fjpeg&TRANSPARENT=true&LAYERS=ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023&STYLES=&CRS={proj}&TILED=true&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023/{zoom}/{x}/{y}.jpeg",
         "category": "photo",
         "start_date": "2023",
         "end_date": "2023",
