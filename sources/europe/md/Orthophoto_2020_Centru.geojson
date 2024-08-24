@@ -1,22 +1,29 @@
 {
     "type": "Feature",
     "properties": {
-        "description": "2020 Ortophotos, Centre part of Moldova, Scale 1:5000, 20cm, true colours, covers the center part of Moldova. [Moldova-map.md server]",
-        "id": "MoldovaMap-2020_ortofoto_moldova_centru",
+        "description": "2020 Ortophotos, Centre part of Moldova, Executed by Primul Meridian SRL, scale 1:5000, 20cm, precision 0.2m, true colors, covers the center part of Moldova. [Moldova-map.md server]",
+        "id": "Geodata-Gov-2020_Ortofoto_Moldova_Centru",
         "name": "Moldova Ortophoto, Center part (2020)",
-        "type": "tms",
-        "url": "https://moldova-map.md/geoserver/gwc/service/wmts?layer=orthophoto:2020_ortofoto_moldova_centru&style=&tilematrixset=EPSG:900913&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=EPSG:900913:{zoom}&TileCol={x}&TileRow={y}",
+        "type": "wms",
+        "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:2020_ortofoto_moldova_centru&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "MD",
-        "icon": "http://geoportalinds.gov.md/geonetwork/images/logos/dac139d4-147d-49a2-8ebe-370d6d603327.png",
+        "available_projections": [
+            "EPSG:4026",
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:900913",
+            "CRS:84"
+        ],
+        "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "best": true,
         "permission_osm": "explicit",
         "end_date": "2020-06",
         "category": "photo",
-		"license_url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a28e04a5-b575-4281-a19c-5b83ef84ac74",
-		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=122546",
+		"license_url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a2f5ecbc-7ff0-4912-9606-9bff4dff1b4a",
+		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=143076",
         "attribution": {
-            "url": "http://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a28e04a5-b575-4281-a19c-5b83ef84ac74",
-            "text": "© Agenţia Relaţii Funciare şi Cadastru a Republicii Moldova / Geoportal INDS / Ortofoto Moldova, Centru 2020",
+            "url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/a2f5ecbc-7ff0-4912-9606-9bff4dff1b4a",
+            "text": "© Agenţia Geodezie, Cartografie şi Cadastru / Geoportal INDS / Ortofoto Moldova, Centru 2020",
             "required": true
         }
     },
