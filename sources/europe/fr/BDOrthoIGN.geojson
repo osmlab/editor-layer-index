@@ -4,18 +4,19 @@
         "id": "fr.ign.bdortho",
         "name": "BDOrtho IGN",
         "type": "tms",
-        "url": "https://proxy-ign.openstreetmap.fr/94GjiyqD/bdortho/{zoom}/{x}/{y}.jpg",
+        "url": "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS/{zoom}/{x}/{y}.jpeg",
         "best": true,
         "country_code": "FR",
         "attribution": {
-            "url": "https://openstreetmap.fr/bdortho",
+            "url": "https://geoservices.ign.fr/services-web-experts-ortho",
             "text": "BDOrtho IGN",
             "required": true
         },
         "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
         "max_zoom": 21,
         "min_zoom": 2,
-        "license_url": "https://openstreetmap.fr/bdortho",
+        "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "privacy_policy_url": "https://geoservices.ign.fr/mentions-legales",
         "category": "photo"
     },
     "geometry": {
