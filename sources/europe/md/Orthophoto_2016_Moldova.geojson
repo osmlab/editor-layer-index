@@ -8,19 +8,18 @@
         "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:Ortofoto_2016_RM&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "MD",
         "available_projections": [
-            "EPSG:4026",
-            "EPSG:4326",
+            "CRS:84",
             "EPSG:3857",
-            "EPSG:900913",
-            "CRS:84"
+            "EPSG:4026",
+            "EPSG:4326"
         ],
         "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "best": true,
         "permission_osm": "explicit",
         "end_date": "2016",
         "category": "photo",
-		"license_url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/409360c7-49fb-46ed-83a5-96a8bd0db77b",
-		"privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=143076",
+        "license_url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/409360c7-49fb-46ed-83a5-96a8bd0db77b",
+        "privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=143076",
         "attribution": {
             "url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/409360c7-49fb-46ed-83a5-96a8bd0db77b",
             "text": "© Agenţia Geodezie, Cartografie şi Cadastru / Geoportal INDS / Moldova Ortofoto 2016",
