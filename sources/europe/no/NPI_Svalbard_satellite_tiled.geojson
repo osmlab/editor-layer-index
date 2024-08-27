@@ -1,0 +1,55 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "npi-svalbard-landsat-tiled",
+          "name": "NPI Svalbard satellite (tiled)",
+          "type": "tms",
+          "url": "https://zabop.github.io/svalbard-xyz/tiles/{z}/{x}/{y}.jpg",
+          "country_code": "NO",
+          "available_projections": [
+            "EPSG:25833"
+          ],
+          "attribution": {
+            "url": "https://geodata.npolar.no/",
+            "text": "© Norwegian Polar Institute / USGS Landsat | loaded as tiles"
+          },
+          "icon": "https://www.npolar.no/npcms/export/sites/np/images/logos/NPI-logo-eng.png",
+          "min_zoom": 13,
+          "max_zoom": 18,
+          "license_url": "https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
+          "description": "Satellite imagery for Svalbard from the Norwegian Polar Institute/USGS Landsat",
+          "category": "photo"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                11.953125,
+                78.92927320597397
+              ],
+              [
+                11.953125,
+                78.92083162470739
+              ],
+              [
+                11.90917968749994,
+                78.92083162470739
+              ],
+              [
+                11.90917968749994,
+                78.92927320597397
+              ],
+              [
+                11.953125,
+                78.92927320597397
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
