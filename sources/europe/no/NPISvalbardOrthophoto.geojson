@@ -3,12 +3,9 @@
   "properties": {
     "id": "NPI-Svalbard-ortofoto",
     "name": "NPI Svalbard Orthophoto",
-    "type": "wmts",
-    "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Ortofoto_Svalbard_WMTS_25833/MapServer/WMTS/",
+    "type": "tms",
+    "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Ortofoto_Svalbard_WMTS_3857/MapServer/tile/{zoom}/{y}/{x}",
     "country_code": "NO",
-    "available_projections": [
-      "EPSG:25833"
-    ],
     "attribution": {
       "url": "https://geodata.npolar.no/",
       "text": "© Norwegian Polar Institute"
