@@ -1,0 +1,53 @@
+{
+    "geometry":
+    {
+        "coordinates":
+        [
+            [
+                [
+                    22.4511,
+                    51.297
+                ],
+                [
+                    22.4511,
+                    51.1393
+                ],
+                [
+                    22.6767,
+                    51.1393
+                ],
+                [
+                    22.6767,
+                    51.297
+                ],
+                [
+                    22.4511,
+                    51.297
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "properties":
+    {
+        "attribution":
+        {
+            "text": "Urząd Miasta Lublin"
+        },
+        "available_projections":
+        [
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "country_code": "PL",
+        "id": "Lublin-bdot500",
+        "name": "Lublin: BDOT500",
+        "i18n": true,
+        "type": "wms",
+        "license_url": "https://otwartedane.lublin.eu/dataset/dane-geodezyjne-w-ramach-iip",
+        "privacy_policy_url": "https://otwartedane.lublin.eu/pages/polityka-prywatnosci",
+        "url": "https://gis.lublin.eu/integracja/bdot500/?LAYERS=budynki,budowle,ogrodzenia,komunikacja,zagospodarowanie_terenu,sport_i_rekreacja,wody,rzezba_terenu&REQUEST=GetMap&SERVICE=WMS&FORMAT=image/png&STYLES=&HEIGHT={height}&VERSION=1.1.1&SRS={proj}&WIDTH={width}&BBOX={bbox}&TRANSPARENT=FALSE&EXCEPTIONS=application/vnd.ogc.se_xml",
+        "category": "other"
+    },
+    "type": "Feature"
+}
