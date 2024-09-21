@@ -3,6 +3,7 @@
     "properties": {
         "id": "Brandenburg-DGM",
         "name": "Brandenburg GeoBasis-DE/LGB (latest) / DGM 1m",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Brandenburg.png",
         "type": "wms",
         "category": "elevation",
         "url": "https://isk.geobasis-bb.de/mapproxy/dgm/service/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=TRUE&LAYERS=dgm&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

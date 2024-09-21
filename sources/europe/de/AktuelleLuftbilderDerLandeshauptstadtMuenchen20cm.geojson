@@ -3,6 +3,7 @@
     "properties": {
         "id": "AktuelleLuftbilderDerLandeshauptstadtMuenchen20cm",
         "name": "Aktuelle Luftbilder der Landeshauptstadt München 20cm",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/AktuelleLuftbilderDerLandeshauptstadtMuenchen20cm.png",
         "type": "wms",
         "category": "photo",
         "url": "https://geoportal.muenchen.de/geoserver/gsm/luftbild/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=luftbild&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -23,7 +24,6 @@
             "text": "Datenquelle: dl-de/by-2-0: Landeshauptstadt München – Kommunalreferat – GeodatenService – www.geodatenservice-muenchen.de",
             "required": true
         },
-        "icon": "https://stadt.muenchen.de/.imaging/mte/lhm/image-aspect-ratio-3-2-1216w/dam/Home/Stadtverwaltung/Kommunalreferat/geodatenservice/img/Bildmarken/Marke_geodatenservice_in.jpg/jcr:content/Marke_geodatenservice_in.jpg",
         "min_zoom": 11,
         "license_url": "https://lists.openstreetmap.de/pipermail/bayern/2017-March/001345.html",
         "privacy_policy_url": "https://stadt.muenchen.de/dam/jcr:ddf96b3b-a390-42dd-a716-15b025c1ef2b/Hinweis_DSGVO_GSM_2021_01.pdf"
