@@ -1,58 +1,125 @@
 {
-   "type": "Feature",
-   "properties": {
-      "id": "UY-2019-orthophotos",
-      "url": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTOFOTOS_2019&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-      "type": "wms",
-      "country_code": "UY",
-      "name": "Uruguay IDE.uy Ortofotos 2019",
-      "permission_osm": "explicit",
-      "license_url": "https://wiki.openstreetmap.org/wiki/File:AGESIC_confirmation_notice.png",
-      "attribution": {
-         "text": "AGESIC - Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento",
-         "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/"
-      },
-      "available_projections": [
-         "EPSG:3857",
-         "EPSG:4326"
-      ],
-      "start_date": "2019",
-      "end_date": "2019-06-17",
-      "best": true,
-      "description": "Ortophoto imagery from Uruguay AGESIC",
-      "icon": "https://www.gub.uy/infraestructura-datos-espaciales/sites/infraestructura-datos-espaciales/files/catalogo/IDE.jpg",
-      "privacy_policy_url": "https://www.gub.uy/infraestructura-datos-espaciales/politica-de-privacidad",
-      "max_zoom": 20,
-      "category": "photo",
-      "valid-georeference": true
-   },
-   "geometry" : {
-      "type": "Polygon",
+    "type": "Feature",
+    "properties": {
+        "id": "UY-2019-orthophotos",
+        "url": "https://mapas.ide.uy/geoserver-raster/ortofotos/ows?LAYERS=ORTOFOTOS_2019&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "type": "wms",
+        "country_code": "UY",
+        "name": "Uruguay IDE.uy Ortofotos 2019",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:AGESIC_confirmation_notice.png",
+        "attribution": {
+            "text": "AGESIC - Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento",
+            "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/"
+        },
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "start_date": "2019",
+        "end_date": "2019-06-17",
+        "best": true,
+        "description": "Ortophoto imagery from Uruguay AGESIC",
+        "icon": "https://www.gub.uy/infraestructura-datos-espaciales/sites/infraestructura-datos-espaciales/files/catalogo/IDE.jpg",
+        "privacy_policy_url": "https://www.gub.uy/infraestructura-datos-espaciales/politica-de-privacidad",
+        "max_zoom": 20,
+        "category": "photo",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
         "coordinates": [
-                            [
-                            [-57.83828114862, -30.0418159716],
-                            [-58.522892705, -33.03618653247],
-                            [-58.49121642252, -34.43409335874],
-                            [-56.26658725265, -34.99257822855],
-                            [-55.02366212617, -34.99964073474],
-                            [-55.02421169577, -35.06451733832],
-                            [-54.81823747895, -35.06568673038],
-                            [-54.81768790936, -35.00081105545],
-                            [-54.03625762187, -35.00525089606],
-                            [-53.32202479513, -33.7517281815],
-                            [-53.3232959389, -33.60681124195],
-                            [-53.4794618814, -33.60776060647],
-                            [-53.48502418558, -32.97077332928],
-                            [-53.27646695496, -32.96949617603],
-                            [-53.27828024757, -32.76083510804],
-                            [-53.13659055716, -32.75996538073],
-                            [-53.15597670769, -32.60236050587],
-                            [-53.6970523378, -32.0651190961],
-                            [-54.05008546543, -31.72910089293],
-                            [-55.77120673142, -30.78565077003],
-                            [-56.7775154642, -30.03511309745],
-                            [-57.83828114862, -30.0418159716]
-                            ]
+            [
+                [
+                    -57.83828114862,
+                    -30.0418159716
+                ],
+                [
+                    -58.522892705,
+                    -33.03618653247
+                ],
+                [
+                    -58.49121642252,
+                    -34.43409335874
+                ],
+                [
+                    -56.26658725265,
+                    -34.99257822855
+                ],
+                [
+                    -55.02366212617,
+                    -34.99964073474
+                ],
+                [
+                    -55.02421169577,
+                    -35.06451733832
+                ],
+                [
+                    -54.81823747895,
+                    -35.06568673038
+                ],
+                [
+                    -54.81768790936,
+                    -35.00081105545
+                ],
+                [
+                    -54.03625762187,
+                    -35.00525089606
+                ],
+                [
+                    -53.32202479513,
+                    -33.7517281815
+                ],
+                [
+                    -53.3232959389,
+                    -33.60681124195
+                ],
+                [
+                    -53.4794618814,
+                    -33.60776060647
+                ],
+                [
+                    -53.48502418558,
+                    -32.97077332928
+                ],
+                [
+                    -53.27646695496,
+                    -32.96949617603
+                ],
+                [
+                    -53.27828024757,
+                    -32.76083510804
+                ],
+                [
+                    -53.13659055716,
+                    -32.75996538073
+                ],
+                [
+                    -53.15597670769,
+                    -32.60236050587
+                ],
+                [
+                    -53.6970523378,
+                    -32.0651190961
+                ],
+                [
+                    -54.05008546543,
+                    -31.72910089293
+                ],
+                [
+                    -55.77120673142,
+                    -30.78565077003
+                ],
+                [
+                    -56.7775154642,
+                    -30.03511309745
+                ],
+                [
+                    -57.83828114862,
+                    -30.0418159716
+                ]
+            ]
         ]
     }
 }
