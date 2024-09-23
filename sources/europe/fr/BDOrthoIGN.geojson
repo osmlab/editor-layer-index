@@ -3,25 +3,52 @@
     "properties": {
         "id": "fr.ign.bdortho",
         "name": "BDOrtho IGN",
+        "description": "Combinaison des meilleures photographies aériennes (de 20 à 5 cm) et des images satellites à plus grande échelle. Mise à jour progressivement sur 1/3 des départements chaque année.",
         "type": "tms",
         "url": "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS/{zoom}/{x}/{y}.jpeg",
         "best": true,
+        "category": "photo",
+        "start_date": "2021",
+        "end_date": "2023",
+        "min_zoom": 2,
+        "max_zoom": 19,
         "country_code": "FR",
         "attribution": {
-            "url": "https://geoservices.ign.fr/services-web-experts-ortho",
             "text": "BDOrtho IGN",
+            "url": "https://geoservices.ign.fr/services-web-experts-ortho",
             "required": true
         },
         "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
-        "max_zoom": 21,
-        "min_zoom": 2,
         "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
-        "privacy_policy_url": "https://geoservices.ign.fr/mentions-legales",
-        "category": "photo"
+        "privacy_policy_url": "https://geoservices.ign.fr/mentions-legales"
     },
     "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
+            [
+                [
+                    [
+                        -56.45874,
+                        47.17105
+                    ],
+                    [
+                        -56.44363,
+                        46.76621
+                    ],
+                    [
+                        -55.9671,
+                        46.70221
+                    ],
+                    [
+                        -56.21154,
+                        47.17852
+                    ],
+                    [
+                        -56.45874,
+                        47.17105
+                    ]
+                ]
+            ],
             [
                 [
                     [

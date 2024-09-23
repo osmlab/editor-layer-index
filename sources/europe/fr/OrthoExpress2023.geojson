@@ -3,23 +3,21 @@
     "properties": {
         "id": "fr.ign.orthoexpress.2023",
         "name": "Ortho Express 2023 (20 cm)",
+        "description": "Photographies aériennes de 2023, couvrant 1/3 des départements, produite dans un délai très court grâce à un traitement massivement automatisé.",
         "type": "tms",
-        "default": false,
         "url": "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023/{zoom}/{x}/{y}.jpeg",
+        "default": false,
         "category": "photo",
         "start_date": "2023",
         "end_date": "2023",
+        "min_zoom": 2,
+        "max_zoom": 19,
+        "country_code": "FR",
         "attribution": {
             "text": "IGN",
             "url": "https://geoservices.ign.fr/services-web-experts-ortho",
             "required": true
         },
-        "available_projections": [
-            "EPSG:4326"
-        ],
-        "country_code": "FR",
-        "max_zoom": 21,
-        "min_zoom": 3,
         "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
         "privacy_policy_url": "https://www.ign.fr/institut/mentions-legales"
     },
