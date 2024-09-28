@@ -44,7 +44,7 @@ function idURL(d, e) {
         editor: 'id',
         background: 'custom:' + d.properties.url
     };
-    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString() + position;
+    return 'https://www.openstreetmap.org/edit?' + position + (new URLSearchParams(params)).toString();
 }
 
 
