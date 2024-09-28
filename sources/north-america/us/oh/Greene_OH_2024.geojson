@@ -1,17 +1,17 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Greene_OH_2023",
+        "id": "Greene_OH_2024",
         "attribution": {
             "url": "https://www.greenecountyohio.gov/",
             "text": "Greene County, State of Ohio",
             "required": false
         },
-        "name": "Greene County Orthoimagery (2023)",
+        "name": "Greene County Orthoimagery (2024)",
         "icon": "https://www.greenecountyohio.gov/ImageRepository/Document?documentId=29996",
-        "url": "https://gis.greenecountyohio.gov/webgis2/rest/services/Aerials/Aerial_2023/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gis.greenecountyohio.gov/webgis2/rest/services/Aerials/Aerial_2024/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
         "max_zoom": 23,
-        "license_url": "https://gis.greenecountyohio.gov/webgis2/rest/services/Aerials/Aerial_2023/MapServer",
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
@@ -19,10 +19,10 @@
             "EPSG:4326",
             "EPSG:3754"
         ],
-        "start_date": "2023",
-        "end_date": "2023",
-        "description": "3-inch resoution spring 2023 orthoimagery for Greene County in the State of Ohio",
-        "category": "historicphoto",
+        "start_date": "2024",
+        "end_date": "2024",
+        "description": "3-inch resoution spring 2024 orthoimagery for Greene County in the State of Ohio",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.greenecountyohio.gov/DocumentCenter/View/275"
     },
