@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "description": "German aerial imagery, done on 03.05.1944, covers the central part of City of Chisinau",
+        "id": "German-1944_Aerial",
+        "name": "German Aerial Imagery (1944)",
+        "type": "tms",
+        "url": "https://chronica.md/api/tiles/1940/data/v3/{zoom}/{x}/{y}.png",
+        "country_code": "MD",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "icon": "https://chronica.md/static/favicons/favicon-16x16.png",
+        "permission_osm": "explicit",
+        "end_date": "1944",
+        "category": "historicphoto",
+        "license_url": "https://i.imgur.com/ZTsZIuG.png",
+        "privacy_policy_url": "https://i.imgur.com/ZTsZIuG.png",
+        "attribution": {
+            "url": "https://i.imgur.com/ZTsZIuG.png",
+            "text": "© Simpals SRL, Bundesarchiv - Stabsbildabteilung",
+            "required": true
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    28.79026293218,
+                    47.02488420605
+                ],
+                [
+                    28.8249491787,
+                    47.00776759989
+                ],
+                [
+                    28.86807918012,
+                    46.98561014929
+                ],
+                [
+                    28.89851957291,
+                    47.01279704592
+                ],
+                [
+                    28.81755708575,
+                    47.05410151559
+                ],
+                [
+                    28.79026293218,
+                    47.02488420605
+                ]
+            ]
+        ]
+    }
+}
