@@ -1,0 +1,54 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-8.03684, 53.57906],
+                [-7.97435, 53.51746],
+                [-7.86483, 53.52909],
+                [-7.69111, 53.51644],
+                [-7.64373, 53.5297],
+                [-7.53868, 53.61044],
+                [-7.54039, 53.65685],
+                [-7.45079, 53.70078],
+                [-7.34882, 53.7544],
+                [-7.39997, 53.80167],
+                [-7.47139, 53.8665],
+                [-7.54795, 53.90697],
+                [-7.59567, 53.9468],
+                [-7.68219, 53.95165],
+                [-7.78827, 53.87521],
+                [-7.80029, 53.84362],
+                [-7.82466, 53.83045],
+                [-7.86312, 53.84078],
+                [-7.9335, 53.82518],
+                [-7.9256, 53.79234],
+                [-7.89573, 53.76678],
+                [-7.9541, 53.7412],
+                [-8.01212, 53.69996],
+                [-8.03581, 53.62897],
+                [-8.03684, 53.57906]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_longford",
+        "name": "OS 2nd Ed. 6-inch. Longford, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/longford_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

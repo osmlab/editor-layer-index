@@ -1,0 +1,54 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-6.9104, 52.10567],
+                [-6.76517, 52.15351],
+                [-6.599, 52.16004],
+                [-6.33911, 52.16383],
+                [-6.29036, 52.2358],
+                [-6.35215, 52.28371],
+                [-6.32675, 52.38357],
+                [-6.16607, 52.5438],
+                [-6.17637, 52.63098],
+                [-6.11114, 52.76373],
+                [-6.24298, 52.80837],
+                [-6.38649, 52.81563],
+                [-6.47712, 52.73048],
+                [-6.53823, 52.71883],
+                [-6.64741, 52.72632],
+                [-6.78062, 52.64307],
+                [-6.81736, 52.55883],
+                [-6.93168, 52.47149],
+                [-6.97219, 52.4286],
+                [-7, 52.37057],
+                [-7.02781, 52.29862],
+                [-7.01099, 52.26522],
+                [-6.94095, 52.19204],
+                [-6.95777, 52.12169],
+                [-6.9104, 52.10567]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_wexford",
+        "name": "OS 2nd Ed. 6-inch. Wexford, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/wexford_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}
