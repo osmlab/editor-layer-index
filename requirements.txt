@@ -10,7 +10,7 @@ aiofiles==24.1.0
     # via -r requirements.in
 aiohappyeyeballs==2.3.4
     # via aiohttp
-aiohttp[speedups]==3.10.4
+aiohttp[speedups]==3.10.8
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
@@ -23,7 +23,7 @@ attrs==23.1.0
     #   referencing
 brotli==1.0.9
     # via aiohttp
-certifi==2024.7.4
+certifi==2024.8.30
     # via
     #   -r requirements.in
     #   pyproj
@@ -90,13 +90,13 @@ rpds-py==0.8.10
     #   referencing
 scipy==1.10.0
     # via imagehash
-shapely==2.0.5
+shapely==2.0.6
     # via -r requirements.in
-urllib3==2.2.2
+urllib3==2.2.3
     # via
     #   -r requirements.in
     #   requests
 validators==0.34.0
     # via -r requirements.in
-yarl==1.7.2
+yarl==1.13.1
     # via aiohttp
