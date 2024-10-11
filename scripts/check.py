@@ -82,6 +82,9 @@ for filename in arguments.path:
         logger.debug("{} does not exist, skip".format(filename))
         continue
 
+    if ":" in filename:
+        raise ValidationError(f"Filename contains invalid \":\" character: {filename}")
+
     try:
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding="utf-8"), object_pairs_hook=dict_raise_on_duplicates)
