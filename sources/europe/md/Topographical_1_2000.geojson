@@ -5,14 +5,13 @@
         "id": "Geodata-Gov-Topographical-Map_Moldova_Orase_2000",
         "name": "USSR Topographical Map of 9 cities and towns in Moldova, 1:2000",
         "type": "wms",
-        "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=FALSE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=maps:Harti_topografice_2k&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geodata.gov.md/geoserver/ows?LAYERS=maps:Harti_topografice_2k&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "MD",
         "available_projections": [
-            "EPSG:4026",
-            "EPSG:4326",
+            "CRS:84",
             "EPSG:3857",
-            "EPSG:900913",
-            "CRS:84"
+            "EPSG:4026",
+            "EPSG:4326"
         ],
         "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "permission_osm": "explicit",

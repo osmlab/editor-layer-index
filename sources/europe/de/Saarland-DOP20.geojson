@@ -400,15 +400,12 @@
             "text": "© Saarländer Landesamt für Vermessung, Geoinformation und Landentwicklung - dl-de/by-2-0 (https://www.govdata.de/dl-de/by-2-0)"
         },
         "available_projections": [
+            "EPSG:3034",
             "EPSG:3857",
-            "EPSG:25832",
-            "EPSG:25833",
-            "EPSG:31466",
-            "EPSG:31467",
-            "EPSG:31468",
-            "EPSG:4326",
             "EPSG:4258",
-            "EPSG:3034"
+            "EPSG:4326",
+            "EPSG:25832",
+            "EPSG:31466"
         ],
         "best": true,
         "category": "photo",
@@ -422,7 +419,7 @@
         "min_zoom": 10,
         "name": "Saarland DOP20",
         "type": "wms",
-        "url": "https://geoportal.saarland.de/freewms/truedop?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=sl_dop20_rgb&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoportal.saarland.de/freewms/truedop?LAYERS=sl_dop20_rgb&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "valid-georeference": true
     },
     "type": "Feature"

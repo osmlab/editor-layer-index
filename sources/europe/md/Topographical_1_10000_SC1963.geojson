@@ -5,14 +5,13 @@
         "id": "Geodata-Gov-Topographical-Map_Moldova_10000_CS1963",
         "name": "USSR Topographical Map of Moldova 1:10000 1969-1988 (CS1963)",
         "type": "wms",
-        "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=FALSE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=caroiaj:Caroiaj_10K_GK63,maps:harta_topografica_10k_sc1963&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "http://geodata.gov.md/geoserver/ows?LAYERS=caroiaj:Caroiaj_10K_GK63,maps:harta_topografica_10k_sc1963&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "MD",
         "available_projections": [
-            "EPSG:4026",
-            "EPSG:4326",
+            "CRS:84",
             "EPSG:3857",
-            "EPSG:900913",
-            "CRS:84"
+            "EPSG:4026",
+            "EPSG:4326"
         ],
         "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "permission_osm": "explicit",
