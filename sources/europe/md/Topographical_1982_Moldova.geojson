@@ -8,11 +8,10 @@
         "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=maps:harta_topografica_50k_1982&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "MD",
         "available_projections": [
-            "EPSG:4026",
-            "EPSG:4326",
+            "CRS:84",
             "EPSG:3857",
-            "EPSG:900913",
-            "CRS:84"
+            "EPSG:4026",
+            "EPSG:4326"
         ],
         "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
         "permission_osm": "explicit",
@@ -37,7 +36,7 @@
                 ],
                 [
                     27.99737190977,
-                    46.71935316180
+                    46.7193531618
                 ],
                 [
                     27.99692520973,
@@ -65,11 +64,11 @@
                 ],
                 [
                     29.00021329149,
-                    45.99813360580
+                    45.9981336058
                 ],
                 [
                     29.25125871779,
-                    45.99875423110
+                    45.9987542311
                 ],
                 [
                     29.25036531769,
@@ -97,7 +96,7 @@
                 ],
                 [
                     29.99992799622,
-                    46.50101978250
+                    46.5010197825
                 ],
                 [
                     30.00082139631,
@@ -112,7 +111,7 @@
                     47.00173439787
                 ],
                 [
-                    29.75156277020,
+                    29.7515627702,
                     47.50051597367
                 ],
                 [
@@ -173,7 +172,7 @@
                 ],
                 [
                     26.74616485534,
-                    48.16471346580
+                    48.1647134658
                 ],
                 [
                     26.74661155539,
