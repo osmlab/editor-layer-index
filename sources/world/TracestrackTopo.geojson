@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Data: © OpenStreetMap contributors, SRTM, GEBCO, SONNY's LiDAR DTM, NASADEM, ESA WorldCover; Maps © Tracestrack",
+            "url": "https://www.tracestrack.com/information/"
+        },
+        "license_url": "https://www.tracestrack.com/tos/",
+        "icon": "https://www.tracestrack.com/img/logo_white.png",
+        "id": "TracestrackTopo",
+        "max_zoom": 19,
+        "min_zoom": 3,
+        "name": "Tracestrack Topo Universal",
+        "type": "tms",
+        "category": "osmbasedmap",
+        "url": "https://tile.tracestrack.com/topo__/{zoom}/{x}/{y}.png?key=7e1b3f4d479cfb3ccfef83f4e4fe6b4f"
+    },
+    "type": "Feature",
+    "geometry": null
+}
