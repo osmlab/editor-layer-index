@@ -4,7 +4,7 @@
         "id": "fr.pcrs",
         "name": "PCRS raster",
         "type": "wms",
-        "url": "https://wxs.ign.fr/ortho/geoportail/r/wms?LAYERS=PCRS.LAMB93&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://data.geopf.fr/wms-r/wms?LAYERS=PCRS.LAMB93&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
