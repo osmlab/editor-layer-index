@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Snohomish_WA_2022",
+        "id": "Snohomish_WA_2024",
         "attribution": {
             "url": "https://snohomishcountywa.gov/1402/Maps-GIS",
             "text": "Snohomish County GIS",
             "required": false
         },
-        "name": "Snohomish County Orthoimagery (2022)",
+        "name": "Snohomish County Orthoimagery (2024)",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Seal_of_Snohomish_County%2C_Washington.svg/320px-Seal_of_Snohomish_County%2C_Washington.svg.png",
-        "url": "https://gis.snoco.org/img/rest/services/Imagery/Aerial_2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gis.snoco.org/img/rest/services/Imagery/Aerial_2024/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
         "min_zoom": 8,
         "max_zoom": 20,
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/wa/Snohomish.pdf",
@@ -21,10 +21,10 @@
             "EPSG:3857",
             "EPSG:2285"
         ],
-        "start_date": "2022",
-        "end_date": "2022",
-        "description": "2022 orthoimagery for Snohomish County, Washington",
-        "category": "historicphoto",
+        "start_date": "2024",
+        "end_date": "2024",
+        "description": "2024 orthoimagery for Snohomish County, Washington",
+        "category": "photo",
         "privacy_policy_url": "https://snohomishcountywa.gov/privacy",
         "valid-georeference": true
     },
