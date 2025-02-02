@@ -8,17 +8,14 @@
             "required": true
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
-        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview",
+        "privacy_policy_url": "https://osmfoundation.org/wiki/Privacy_Policy",
         "name": "ACTmapi Imagery Nov 2023",
-        "available_projections": [
-            "EPSG:7855"
-        ],
-        "url": "https://tiles.arcgis.com/tiles/E5n4f1VY84i0xSjy/arcgis/rest/services/ACT_Aerial_Imagery_202311/MapServer/WMTS/1.0.0/WMTSCapabilities.xml",
+        "url": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202311/{zoom}/{x}/{y}.jpeg",
         "start_date": "2023-11",
         "end_date": "2023-11",
         "max_zoom": 21,
         "country_code": "AU",
-        "type": "wmts",
+        "type": "tms",
         "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
         "category": "photo",
         "min_zoom": 10
