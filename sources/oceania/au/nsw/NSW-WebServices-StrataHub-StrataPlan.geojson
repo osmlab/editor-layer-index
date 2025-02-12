@@ -1,0 +1,191 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LPI_NSW_StrataHub_StrataPlan",
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW StrataHub Strata Plan",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
+        ],
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/StrataHub/MapServer/export?layers=show%3A0&imageSR={wkid}&bbox={bbox}&bboxSR={wkid}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%0D%0A%7B%0D%0A%22id%22%3A0%2C%0D%0A%22source%22%3A%7B%0D%0A%22type%22%3A%22mapLayer%22%2C%0D%0A%22mapLayerId%22%3A0%0D%0A%7D%2C%0D%0A%22drawingInfo%22%3A%7B%0D%0A%22renderer%22%3A%7B%0D%0A%22type%22%3A%22simple%22%2C%0D%0A%22symbol%22%3A%7B%0D%0A%22type%22%3A%22esriSFS%22%2C%0D%0A%22style%22%3A%22esriSFSSolid%22%2C%0D%0A%22color%22%3A%5B201%2C242%2C252%2C128%5D%2C%0D%0A%22outline%22%3A%7B%0D%0A%22type%22%3A%22esriSLS%22%2C%0D%0A%22style%22%3A%22esriSLSolid%22%2C%0D%0A%22color%22%3A%5B110%2C110%2C110%2C255%5D%2C%0D%0A%22width%22%3A1%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%7D%0D%0A%5D%0D%0A",
+        "overlay": true,
+        "max_zoom": 21,
+        "country_code": "AU",
+        "type": "tms",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "other"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        149.4856226,
+                        -28.5615019
+                    ],
+                    [
+                        148.9451961,
+                        -28.9948656
+                    ],
+                    [
+                        140.998648,
+                        -28.9989332
+                    ],
+                    [
+                        141.0025961,
+                        -34.0197399
+                    ],
+                    [
+                        140.9937045,
+                        -34.070169
+                    ],
+                    [
+                        142.4785593,
+                        -34.811943
+                    ],
+                    [
+                        143.2021846,
+                        -35.1317425
+                    ],
+                    [
+                        144.5193454,
+                        -36.1295974
+                    ],
+                    [
+                        144.8445703,
+                        -36.2149218
+                    ],
+                    [
+                        145.2348401,
+                        -35.9849909
+                    ],
+                    [
+                        146.828442,
+                        -36.188678
+                    ],
+                    [
+                        147.6902879,
+                        -36.0441802
+                    ],
+                    [
+                        147.8854228,
+                        -36.0901856
+                    ],
+                    [
+                        148.0791803,
+                        -36.8171632
+                    ],
+                    [
+                        148.2013511,
+                        -36.805656
+                    ],
+                    [
+                        149.9784687,
+                        -37.5069984
+                    ],
+                    [
+                        150.4127518,
+                        -36.6178579
+                    ],
+                    [
+                        150.4615355,
+                        -36.1202975
+                    ],
+                    [
+                        151.0144178,
+                        -35.1156752
+                    ],
+                    [
+                        151.2583364,
+                        -34.3808144
+                    ],
+                    [
+                        151.9087862,
+                        -33.0553457
+                    ],
+                    [
+                        152.7543708,
+                        -32.508492
+                    ],
+                    [
+                        153.2584694,
+                        -30.9735401
+                    ],
+                    [
+                        153.6969246,
+                        -28.6498321
+                    ],
+                    [
+                        153.5790657,
+                        -28.1415563
+                    ],
+                    [
+                        152.4924635,
+                        -28.2353023
+                    ],
+                    [
+                        151.9290401,
+                        -28.4983634
+                    ],
+                    [
+                        151.9894069,
+                        -28.7355674
+                    ],
+                    [
+                        151.3943629,
+                        -28.9797786
+                    ],
+                    [
+                        151.0954036,
+                        -28.7179218
+                    ],
+                    [
+                        150.2991369,
+                        -28.5337256
+                    ],
+                    [
+                        149.4856226,
+                        -28.5615019
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        159.3727807,
+                        -31.7789183
+                    ],
+                    [
+                        159.1744327,
+                        -31.4373999
+                    ],
+                    [
+                        159.0033934,
+                        -31.4876656
+                    ],
+                    [
+                        159.0378887,
+                        -31.7055793
+                    ],
+                    [
+                        159.3109766,
+                        -31.8595241
+                    ],
+                    [
+                        159.3727807,
+                        -31.7789183
+                    ]
+                ]
+            ]
+        ]
+    }
+}
