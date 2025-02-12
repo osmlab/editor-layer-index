@@ -9,7 +9,7 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
         "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
         "name": "DCS NSW Floods 2021 Hawkesbury-Nepean Floods Central Sector 2021 03 15cm RGB",
-        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&layers=show:6&foo={proj}",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:6",
         "available_projections": [
             "EPSG:3857"
         ],

@@ -9,7 +9,7 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
         "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
         "name": "DCS NSW Floods Nov 2022 Coreen Flood 17112022 10cm RGBN P3",
-        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&layers=show:10&foo={proj}",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:10",
         "available_projections": [
             "EPSG:3857"
         ],

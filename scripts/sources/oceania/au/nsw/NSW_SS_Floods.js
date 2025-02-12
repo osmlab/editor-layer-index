@@ -58,7 +58,7 @@ const template = {
 
             const result = { ...template };
 
-            result.properties.url = `https://portal.spatial.nsw.gov.au/server/rest/services/${service}/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&layers=show:${id}&foo={proj}`;
+            result.properties.url = `https://portal.spatial.nsw.gov.au/server/rest/services/${service}/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:${id}`;
 
             let formattedDate;
             if (date && date.yyyy && date.mm && date.dd) {

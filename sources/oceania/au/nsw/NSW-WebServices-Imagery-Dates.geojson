@@ -13,7 +13,7 @@
         "available_projections": [
             "EPSG:3857"
         ],
-        "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery_Dates/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&layers=show:0&foo={proj}",
+        "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery_Dates/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0",
         "overlay": true,
         "max_zoom": 21,
         "country_code": "AU",
