@@ -1,13 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Santa_Clara_CA_2022",
+        "id": "Santa_Clara_County_22w",
         "attribution": {
             "url": "https://gis.sccgov.org/home",
             "text": "County of Santa Clara",
             "required": false
         },
-        "name": "Santa Clara County Orthoimagery (2022)",
+        "name": "Santa Clara County Orthoimagery (Winter 2022)",
         "icon": "https://files.santaclaracounty.gov/2023-07/county-seal-black_0.svg",
         "url": "https://mapimages.sccgov.org/arcgis/rest/services/imagery/OrthoImagery2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 23,
@@ -21,7 +21,7 @@
         "start_date": "2021-11-22",
         "end_date": "2022-03-11",
         "description": "2022 3-6 inch resolution imagery for Santa Clara County in the State of California",
-        "category": "photo",
+        "category": "historicphoto",
         "privacy_policy_url": "https://www.santaclaracounty.gov/privacy-policy"
     },
     "geometry": {
