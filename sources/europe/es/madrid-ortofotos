@@ -1,12 +1,12 @@
 {
   "type": "Feature",
   "properties": {
-    "id": "ortofotos-madrid-2023",
+    "id": "ortofotos-madrid",
     "attribution": {
-      "text": "Ayuntamiento de Madrid. A.G. Urbanismo, Medio Ambiente y Movilidad",
+      "text": "Ayuntamiento de Madrid",
       "required": true
     },
-    "name": "Ortofotos Madrid (mayo 2023)",
+    "name": "Ortofotos Madrid",
     "url": "https://servpub.madrid.es/georaster/ORTOFOTOS/ORTOFOTO_MADRID/ows?service=WMS&version=1.3.0&request=GetMap&layers=ORTOFOTO_MADRID&bbox={bbox}&width=256&height=256&srs=EPSG:3857&format=image/png",
     "country_code": "ES",
     "type": "wms",
@@ -17,7 +17,7 @@
     ],
     "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
     "privacy_policy_url": "https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default",
-    "category": "other"
+    "category": "map"
   },
   "geometry": {
     "type": "Polygon",
