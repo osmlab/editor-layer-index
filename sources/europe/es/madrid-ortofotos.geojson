@@ -7,7 +7,7 @@
       "required": true
     },
     "name": "Ortofotos Madrid (mayo 2023)",
-    "url": "https://servpub.madrid.es/georaster/ORTOFOTOS/ORTOFOTO_MADRID/ows?service=WMS&version=1.3.0&request=GetMap&layers=ORTOFOTO_MADRID&bbox={bbox}&width=256&height=256&srs=EPSG:3857&format=image/png",
+    "url": "https://servpub.madrid.es/georaster/ORTOFOTOS/ORTOFOTO_MADRID/ows?service=WMS&version=1.3.0&request=GetMap&layers=ORTOFOTO_MADRID&bbox={bbox}&width={width}&height={height}&srs={proj}&format=image/png",
     "country_code": "ES",
     "type": "wms",
     "start_date": "2023",
