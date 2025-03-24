@@ -1,38 +1,30 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Ontario_Mosaic_2018-2022",
+        "id": "Ontario_Mosaic_2018-2022_RGB",
         "attribution": {
             "url": "https://www.ontario.ca/page/open-government-licence-ontario",
             "text": "Contains information licensed under the Open Government Licence – Ontario",
             "required": true
         },
-        "name": "Ontario Orthophotography Mosaic 2018-2022",
-        "url": "https://ws.geoservices.lrc.gov.on.ca/arcgis5/services/AerialImagery/GEO_Imagery_Data_Service_2018to2022/ImageServer/WMSServer?request=GetCapabilities&service=WMS",
+        "name": "Ontario Orthophotography Mosaic 2018-2022 (RGB)",
+        "url": "https://ws.geoservices.lrc.gov.on.ca:443/arcgis5/services/AerialImagery/GEO_Imagery_Data_Service_2018to2022/ImageServer/WMSServer/?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=GEO_Imagery_Data_Service_2018to2022:None&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
         "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
         "permission_osm": "implicit",
         "country_code": "CA",
-        "type": "wms_endpoint",
+        "type": "wms",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "description": "Image mosaic covering all spring image acquisition areas in Ontario from 2018-2022",
+        "description": "Natural color image mosaic covering all spring image acquisition areas in Ontario from 2018-2022",
         "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.ontario.ca/page/privacy-statement",
         "start_date": "2018-03-22",
-        "end_date": "2022-11-02",
-        "default-layers": [
-            {
-                "layer": {
-                    "name": "GEO_Imagery_Data_Service_2018to2022",
-                    "style": "default"
-                }
-            }
-        ]
+        "end_date": "2022-11-02"
     },
     "geometry": {
         "type": "Polygon",

@@ -1,0 +1,132 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Ontario_Mosaic_2018-2022_CIR",
+        "attribution": {
+            "url": "https://www.ontario.ca/page/open-government-licence-ontario",
+            "text": "Contains information licensed under the Open Government Licence – Ontario",
+            "required": true
+        },
+        "name": "Ontario Orthophotography Mosaic 2018-2022 (CIR)",
+        "url": "https://ws.geoservices.lrc.gov.on.ca:443/arcgis5/services/AerialImagery/GEO_Imagery_Data_Service_2018to2022/ImageServer/WMSServer/?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=GEO_Imagery_Data_Service_2018to2022:NaturalResource_FalseColourComposite&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 20,
+        "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
+        "permission_osm": "implicit",
+        "country_code": "CA",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "description": "Color-infrared image mosaic covering all spring image acquisition areas in Ontario from 2018-2022",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.ontario.ca/page/privacy-statement",
+        "start_date": "2018-03-22",
+        "end_date": "2022-11-02"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -83.30731126331,
+                    41.96391883995
+                ],
+                [
+                    -82.68116886765,
+                    41.57546367267
+                ],
+                [
+                    -80.98899585111,
+                    42.39598097731
+                ],
+                [
+                    -78.88502612912,
+                    42.63829049506
+                ],
+                [
+                    -78.64625324949,
+                    43.70828910383
+                ],
+                [
+                    -76.84372136079,
+                    43.72354147205
+                ],
+                [
+                    -74.20160547413,
+                    45.0199468632
+                ],
+                [
+                    -74.19288561971,
+                    45.72134361398
+                ],
+                [
+                    -79.25476546549,
+                    46.73473223778
+                ],
+                [
+                    -79.24604561107,
+                    48.49789110776
+                ],
+                [
+                    -86.66664171522,
+                    50.57428674334
+                ],
+                [
+                    -90.32898056802,
+                    48.96376551372
+                ],
+                [
+                    -89.85169006347,
+                    47.73563274593
+                ],
+                [
+                    -87.40782934019,
+                    48.46899192132
+                ],
+                [
+                    -85.42842238879,
+                    47.71182754912
+                ],
+                [
+                    -84.59131636529,
+                    46.15794585975
+                ],
+                [
+                    -82.30957580566,
+                    45.52559633622
+                ],
+                [
+                    -81.46362854003,
+                    44.69209194679
+                ],
+                [
+                    -81.88110900878,
+                    44.20977652443
+                ],
+                [
+                    -81.8510955766,
+                    43.41712830707
+                ],
+                [
+                    -82.47238520342,
+                    43.10756679751
+                ],
+                [
+                    -82.80401318863,
+                    42.46685608612
+                ],
+                [
+                    -83.18305333795,
+                    42.36142339729
+                ],
+                [
+                    -83.30731126331,
+                    41.96391883995
+                ]
+            ]
+        ]
+    }
+}
