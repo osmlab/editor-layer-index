@@ -8,7 +8,7 @@
             "required": true
         },
         "name": "Ontario Orthophotography Mosaic 2018-2022 (CIR)",
-        "url": "https://ws.geoservices.lrc.gov.on.ca:443/arcgis5/services/AerialImagery/GEO_Imagery_Data_Service_2018to2022/ImageServer/WMSServer/?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=GEO_Imagery_Data_Service_2018to2022:NaturalResource_FalseColourComposite&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://ws.geoservices.lrc.gov.on.ca/arcgis5/services/AerialImagery/GEO_Imagery_Data_Service_2018to2022/ImageServer/WMSServer/?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=GEO_Imagery_Data_Service_2018to2022:NaturalResource_FalseColourComposite&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
         "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
         "permission_osm": "implicit",
