@@ -3,7 +3,7 @@
     "properties": {
         "id": "Brest_2023_2024",
         "name": "Brest Métropole Orthophoto 2023/2024",
-        "type": "wmts",
+        "type": "wms",
         "url": "https://geo.brest-metropole.fr/arcgis/rest/services/public/PhotoAerienne/MapServer/export?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
         "category": "photo",
         "start_date": "2023-04-08",
@@ -14,6 +14,9 @@
             "url": "https://geo.brest-metropole.fr/portal/apps/sites/#/geopaysdebrest/pages/donnees-photographies-aeriennes",
             "required": true
         },
+        "available_projections": [
+                    "EPSG:3857"
+        ],
         "max_zoom": 22,
         "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
         "description": "2023 for roughly the city of Brest, 2024 for the other cities of the area",
