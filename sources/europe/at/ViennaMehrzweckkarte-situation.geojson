@@ -7,6 +7,7 @@
             "text": "Stadt Wien",
             "required": true
         },
+        "overlay": true,
         "name": "Vienna: Mehrzweckkarte (situation)",
         "url": "https://stp.wien.gv.at/GeodatenviewerWMS?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=MZK_LINIE_L.DGMGKV1,MZK_LINIE_L.DGMGKV2,GRP__MZKSITUATION&CRS={proj}&STYLES=&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://digitales.wien.gv.at/ogd-nutzungsbedingungen",
