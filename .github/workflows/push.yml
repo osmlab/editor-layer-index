@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     name: Deploy
-    runs-on: [ubuntu-20.04]
+    runs-on: [ubuntu-24.04]
     if: "!contains(github.event.head_commit.message, 'Deploy') && github.repository == 'osmlab/editor-layer-index'"
     steps:
       - name: Checkout

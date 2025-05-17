@@ -6,7 +6,7 @@
             "text": "Budapest Főváros XI. Kerület Újbuda Önkormányzata",
             "required": true
         },
-        "name": "Budapest district XI orthophoto 2021",
+        "name": "Budapest district XI orthophoto 2025",
         "description": "5 cm resolution leaf-off imagery",
         "available_projections": [
             "CRS:84",
@@ -14,15 +14,16 @@
             "EPSG:4326",
             "EPSG:23700"
         ],
-        "url": "https://terinfo.ujbuda.hu/mapproxy/service?LAYERS=orto_2021&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://terinfo.ujbuda.hu/mapproxy/service?LAYERS=orto_2025&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "license_url": "https://wiki.openstreetmap.org/wiki/Hungary/Ortofot%C3%B3k#Budapest_XI._ker%C3%BClet",
         "privacy_policy_url": "https://kozigazgatas.ujbuda.hu/adatvedelem",
-        "start_date": "2021-03",
-        "end_date": "2021-03",
+        "start_date": "2025-03-19",
+        "end_date": "2025-03-19",
+        "best": true,
         "country_code": "HU",
         "type": "wms",
-        "id": "Budapest_XI_2021",
-        "category": "historicphoto"
+        "id": "Budapest_XI_2025",
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",
