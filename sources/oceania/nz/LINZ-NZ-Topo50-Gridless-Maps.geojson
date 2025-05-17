@@ -2,14 +2,15 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "url": "https://data.linz.govt.nz/layer/2343-nz-mainland-topo50-gridless-maps",
+            "url": "https://basemaps.linz.govt.nz/?style=topo-raster&i=topo-raster",
             "text": "CC BY 4.0 Land Information New Zealand",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
+        "privacy_policy_url": "https://www.linz.govt.nz/privacy",
         "name": "LINZ NZ Topo50 Gridless Maps",
         "category": "map",
-        "url": "https://map.cazzaserver.com/linz_topo/{zoom}/{x}/{y}.png",
+        "url": "https://basemaps.linz.govt.nz/v1/tiles/topo-raster/WebMercatorQuad/{zoom}/{x}/{y}.webp?api=d01egend5f8dv4zcbfj6z2t7rs3",
         "max_zoom": 21,
         "country_code": "NZ",
         "type": "tms",
