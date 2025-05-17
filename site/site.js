@@ -77,8 +77,8 @@ d3.json("imagery.geojson", function(error, imagery) {
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
                 return match.feature.properties.name +
-                    ` [<a href="${idURL(match.feature, e)}" title="Add to iD">iD</a>] ` +
-                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
+                    ` [<a href="${idURL(match.feature, e)}" title="Open in iD" target="_blank">iD</a>] ` +
+                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM" target="_blank">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );

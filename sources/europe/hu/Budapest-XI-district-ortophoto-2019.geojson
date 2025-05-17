@@ -3,11 +3,11 @@
     "properties": {
         "attribution": {
             "url": "https://terinfo.ujbuda.hu",
-            "text": "Budapest XI. kerület önkormányzata",
+            "text": "Budapest Főváros XI. Kerület Újbuda Önkormányzata",
             "required": true
         },
         "name": "Budapest district XI orthophoto 2019",
-        "description": "5 cm resolution bald image",
+        "description": "5 cm resolution leaf-off imagery",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
@@ -15,7 +15,7 @@
             "EPSG:23700"
         ],
         "url": "https://terinfo.ujbuda.hu/mapproxy/service?LAYERS=orto_2019&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofotók#Budapest_XI._ker.C3.BClet",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Hungary/Ortofot%C3%B3k#Budapest_XI._ker%C3%BClet",
         "privacy_policy_url": "https://kozigazgatas.ujbuda.hu/adatvedelem",
         "start_date": "2019-03",
         "end_date": "2019-03",

@@ -9,7 +9,7 @@
         "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
         "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
         "name": "DCS NSW Floods Mar 2022 Grafton Flood 2022 03 02 10cm P3",
-        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&layers=show:4&foo={proj}",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:4",
         "available_projections": [
             "EPSG:3857"
         ],

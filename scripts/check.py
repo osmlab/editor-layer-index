@@ -156,7 +156,8 @@ for filename in arguments.path:
             ):
                 logger.warning(f"WMTS source supports EPSG:3857, could this be tms? {filename}")
 
-        missingparams = [x for x in params if x not in source["properties"]["url"].replace("{-y}", "{y}")]
+        source_url_excl_synonyms = source["properties"]["url"].replace("{-y}", "{y}").replace("{wkid}", "{proj}")
+        missingparams = [x for x in params if x not in source_url_excl_synonyms]
         if missingparams:
             raise ValidationError("Missing parameter in {}: {}".format(filename, missingparams))
 

@@ -96,6 +96,11 @@ en:
         text: Prefeitura Municipal de Dourados - GeoDourados
       description: Dourados (2018) and several districts (2020) high-res aerial imagery.
       name: Dourados Ortofotos
+    EOXAT2017CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2017 cloudless
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
@@ -121,6 +126,16 @@ en:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2022)
       description: Post-processed Sentinel Satellite imagery.
       name: eox.at 2022 cloudless
+    EOXAT2023CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2023)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2023 cloudless
+    EOXAT2024CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2024 cloudless
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
@@ -136,6 +151,16 @@ en:
         text: Lechner Tudásközpont
       description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for the entire country. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
       name: FÖMI orthophoto 2011–2014 (WEBP)
+    FOMI_2015:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for the entire country. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2015 (WEBP)
+    FOMI_2015_leafoff_20cm:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-off orthophotos with 20 cm/pixel resolution for 6 districts. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2015 leaf-off 20cm (webp)
     Frankfurt-am-Main-2019:
       attribution:
         text: Stadtvermessungsamt Frankfurt am Main
@@ -399,16 +424,6 @@ en:
         text: Ohio Statewide Imagery Program
       description: Ohio Statewide Imagery Program III most current orthoimagery of every county at resolutions from 1 foot to 3 inches from 2017 through 2020.
       name: Ohio Statewide Imagery Program
-    OSIP_1ft:
-      attribution:
-        text: Ohio Statewide Imagery Program
-      description: Ohio Statewide Imagery Program II orthoimagery of all 88 counties at 1-foot resolution from 2011 through 2014.
-      name: Ohio Statewide Imagery Program 1-Foot
-    OSIP_6in:
-      attribution:
-        text: Ohio Statewide Imagery Program
-      description: Ohio Statewide Imagery Program III orthoimagery of 40 counties captured at 6-inch resolution in 2017 and 2018, plus OSIP I and OSIP II imagery in 16 more counties from 2010 through 2014.
-      name: Ohio Statewide Imagery Program 6-Inch
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Contains public sector information licensed under the Open Government Licence v3.0.

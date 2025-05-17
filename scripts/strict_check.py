@@ -221,7 +221,8 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
     source_headers = get_http_headers(source)
 
     params = ["{proj}", "{bbox}", "{width}", "{height}"]
-    missingparams = [p for p in params if p not in url]
+    source_url_excl_synonyms = source["properties"]["url"].replace("{wkid}", "{proj}")
+    missingparams = [p for p in params if p not in source_url_excl_synonyms]
     if len(missingparams) > 0:
         messages.append(
             Message(
