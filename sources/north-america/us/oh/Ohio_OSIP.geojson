@@ -2,8 +2,8 @@
     "type": "Feature",
     "properties": {
         "name": "Ohio Statewide Imagery Program",
-        "type": "wms",
-        "url": "https://geo1.oit.ohio.gov/arcgis/services/OSIP/OSIPIII_MostCurrent/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "type": "tms",
+        "url": "https://maps.ohio.gov/image/rest/services/osip_most_current_cache/MapServer/tile/{zoom}/{y}/{x}",
         "min_zoom": 8,
         "max_zoom": 20,
         "permission_osm": "implicit",
@@ -18,13 +18,8 @@
             "text": "Ohio Statewide Imagery Program",
             "required": false
         },
-        "available_projections": [
-            "CRS:84",
-            "EPSG:3857",
-            "EPSG:4326"
-        ],
         "start_date": "2017",
-        "end_date": "2020",
+        "end_date": "2024",
         "category": "photo"
     },
     "geometry": {
