@@ -1,14 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "NRCan-HRDEM-STM",
+        "id": "NRCan-HRDEM-DSM",
         "attribution": {
             "url": "https://open.canada.ca/en/open-government-licence-canada",
             "text": "Contains information licensed under the Open Government Licence – Canada",
             "required": true
         },
-        "name": "High Resolution Digital Elevation Model Mosaic (STM)",
-        "url": "https://datacube.services.geo.ca/wrapper/ogc/elevation-hrdem-mosaic?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=stm-hillshade&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "name": "High Resolution Digital Elevation Model Mosaic (DSM)",
+        "url": "https://datacube.services.geo.ca/wrapper/ogc/elevation-hrdem-mosaic?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=dsm-hillshade&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "type": "wms",
         "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
         "permission_osm": "implicit",
