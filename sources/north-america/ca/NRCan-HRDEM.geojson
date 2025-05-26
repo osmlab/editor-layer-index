@@ -1,0 +1,95 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "NRCan-HRDEM",
+        "attribution": {
+            "url": "https://open.canada.ca/en/open-government-licence-canada",
+            "text": "Contains information licensed under the Open Government Licence – Canada",
+            "required": true
+        },
+        "name": "High Resolution Digital Elevation Model Mosaic",
+        "url": "https://datacube.services.geo.ca/ows/elevation?service=wms&request=GetCapabilities",
+        "type": "wms_endpoint",
+        "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
+        "permission_osm": "implicit",
+        "country_code": "CA",
+        "available_projections": [
+            "EPSG:3978",
+            "EPSG:3979",
+            "EPSG:4617",
+            "EPSG:4269",
+            "EPSG:4326",
+            "EPSG:3857",
+            "EPSG:3413",
+            "EPSG:3571",
+            "EPSG:3572",
+            "EPSG:3573",
+            "EPSG:3574",
+            "EPSG:3575",
+            "EPSG:3576",
+            "EPSG:3154",
+            "EPSG:3155",
+            "EPSG:3156",
+            "EPSG:3157",
+            "EPSG:2955",
+            "EPSG:2956",
+            "EPSG:2957",
+            "EPSG:3158",
+            "EPSG:3159",
+            "EPSG:3160",
+            "EPSG:2958",
+            "EPSG:2959",
+            "EPSG:2960",
+            "EPSG:2961",
+            "EPSG:2962",
+            "EPSG:3761",
+            "EPSG:26907",
+            "EPSG:26908",
+            "EPSG:26909",
+            "EPSG:26910",
+            "EPSG:26911",
+            "EPSG:26912",
+            "EPSG:26913",
+            "EPSG:26914",
+            "EPSG:26915",
+            "EPSG:26916",
+            "EPSG:26917",
+            "EPSG:26918",
+            "EPSG:26919",
+            "EPSG:26920",
+            "EPSG:26921",
+            "EPSG:26922"
+        ],
+        "description": "The High Resolution Digital Elevation Model Mosaic provides a unique and continuous representation of the high resolution elevation data available across the country. The High Resolution Digital Elevation Model (HRDEM) product used is derived from airborne LiDAR data (mainly in the south) and satellite images in the north.",
+        "category": "elevation",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.canada.ca/en/transparency/privacy.html"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -178.63360765983734,
+                    33.66562694363264
+                ],
+                [
+                    -178.63360765983734,
+                    85.15906284040781
+                ],
+                [
+                    -8.526506997088148,
+                    85.15906284040781
+                ],
+                [
+                    -8.526506997088148,
+                    33.66562694363264
+                ],
+                [
+                    -178.63360765983734,
+                    33.66562694363264
+                ]
+            ]
+        ]
+    }
+}
