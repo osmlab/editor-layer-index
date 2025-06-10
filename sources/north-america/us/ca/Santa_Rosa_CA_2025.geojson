@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Santa_Rosa_CA_2022",
+        "id": "Santa_Rosa_CA_2025",
         "attribution": {
             "url": "https://www.srcity.org/",
             "text": "City of Santa Rosa",
             "required": false
         },
-        "name": "City of Santa Rosa Orthoimagery (2022)",
+        "name": "City of Santa Rosa Orthoimagery (2025)",
         "icon": "https://www.srcity.org/ImageRepository/Document?documentID=32",
-        "url": "https://ags2maps.srcity.org/arcgis/rest/services/Aerial_2022_SR/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "url": "https://ags2maps.srcity.org/arcgis/rest/services/Aerial_2025_SR/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
@@ -18,10 +18,10 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2022-09",
-        "end_date": "2022-09",
-        "description": "2022 3-inch resolution imagery for Santa Rosa in the State of California",
-        "category": "historicphoto",
+        "start_date": "2025",
+        "end_date": "2025",
+        "description": "2025 3-inch resolution imagery for Santa Rosa in the State of California",
+        "category": "photo",
         "privacy_policy_url": "https://www.srcity.org/124/Privacy-Policy"
     },
     "geometry": {
