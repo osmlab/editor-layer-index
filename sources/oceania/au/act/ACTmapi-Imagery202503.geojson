@@ -11,6 +11,9 @@
         "privacy_policy_url": "https://www.actmapi.act.gov.au/privacy",
         "name": "ACTmapi Imagery Mar 2025",
         "url": "https://data4.actmapi.act.gov.au/arcgis/rest/services/ACT_IMAGERY_MGA2020/2025_03_urban_75mm/ImageServer/exportImage?f=image&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&format=jpgpng",
+        "available_projections": [
+            "EPSG:3857"
+        ],
         "best": true,
         "start_date": "2025-03",
         "end_date": "2025-03",
