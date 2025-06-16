@@ -9,7 +9,7 @@
         },
         "name": "San Juan County Orthoimagery (2023)",
         "icon": "https://webmaps.sjcounty.net/portal/sharing/rest/portals/self/resources/home.logo1687127587650.gif",
-        "url": "https://webmaps.sjcounty.net/arcgis/services/Imagery/SJC2023Imagery/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://webmaps.sjcounty.net/arcgis/services/Imagery/SJC2023Imagery/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=SJC2023Imagery&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 21,
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/nm/San_Juan.pdf",
         "permission_osm": "explicit",
@@ -24,9 +24,8 @@
         "start_date": "2023-02",
         "end_date": "2023-05",
         "description": "3/6-inch pixel resolution orthoimagery captured in 2023 for San Juan County of the state of New Mexico",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
-        "best": true,
         "privacy_policy_url": false
     },
     "geometry": {
