@@ -1,10 +1,11 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Hamburg-DK5",
-        "url": "https://geodienste.hamburg.de/HH_WMS_DK5?LAYERS=DK5&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "id": "Hamburg-DOP20-belaubt",
+        "url": "https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt?LAYERS=dop_zeitreihe_belaubt&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "type": "wms",
-        "name": "Hamburg DK5 (HH LGV DK5 2024)",
+        "category": "photo",
+        "name": "Hamburg 20cm (HH LGV DOP20 belaubt 2024)",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Hamburg.png",
         "attribution": {
             "url": "https://www.hamburg.de/bsw/landesbetrieb-geoinformation-und-vermessung",
@@ -14,18 +15,16 @@
         "country_code": "DE",
         "available_projections": [
             "CRS:84",
-            "EPSG:3034",
-            "EPSG:3035",
             "EPSG:3044",
             "EPSG:3857",
             "EPSG:4258",
             "EPSG:4326",
+            "EPSG:4647",
             "EPSG:25832",
             "EPSG:31467"
         ],
-        "category": "map",
         "privacy_policy_url": "https://www.hamburg.de/datenschutz/",
-        "license_url": "https://metaver.de/trefferanzeige?docuuid=84BF7263-E92C-45BE-9D4D-21CB48AD5D88"
+        "license_url": "https://metaver.de/trefferanzeige?docuuid=cc0eaed8-cb36-44a0-9bda-153f28d9e7ba"
     },
     "geometry": {
         "type": "MultiPolygon",
