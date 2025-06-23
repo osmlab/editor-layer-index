@@ -1,20 +1,31 @@
 {
     "type": "Feature",
     "properties": {
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/cz/IPR_Praha.png",
         "id": "PrahaIPRlow-vegetationorthophoto",
         "name": "Praha IPR low-vegetation orthophoto",
+        "description": "Yearly IPR Praha orthophotos, taken after the leaves are fallen from the trees",
         "type": "wms",
-        "url": "https://giswas1.mepnet.cz/arcgis/services/MAP/mimovegetacni_snimkovani_cache/ImageServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gs-pub.praha.eu/imgs/services/ort/mimovegetacni_letecke_snimkovani/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "CZ",
-        "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#Ortofotomapy_IPR_Praha",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Cs:%C4%8Cesko/freemap#Mapov%C3%A9_podklady_IPR_Praha",
+        "privacy_policy_url": "https://iprpraha.cz/stranka/95/informace-o-zpracovani-osobnich-udaju",
         "available_projections": [
             "CRS:84",
+            "EPSG:3857",
             "EPSG:4326",
             "EPSG:5514"
         ],
+        "attribution": {
+            "url": "https://iprpraha.cz/",
+            "text": "IPR Praha"
+        },
+        "best": true,
+        "valid-georeference": true,
         "max_zoom": 20,
         "min_zoom": 1,
-        "category": "historicphoto"
+        "category": "photo"
     },
     "geometry": {
         "type": "Polygon",

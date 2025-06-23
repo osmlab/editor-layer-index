@@ -8,7 +8,7 @@
             "required": false
         },
         "name": "Citrus County Orthoimagery (2020)",
-        "url": "https://gis.citruspa.org/arcgisweb/rest/services/Tyler/2020_Aerials/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://gis.citruspa.org/arcgisweb/rest/services/Tyler/2020_Aerials/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 22,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -20,7 +20,7 @@
         "start_date": "2019-12",
         "end_date": "2020-02",
         "description": "The 2020 orthoimagery for Citrus County in the State of Florida",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.citruspa.org/_dnn/Privacy/"
     },

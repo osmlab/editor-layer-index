@@ -1,0 +1,59 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "City_of_Hilliard_OH_2023",
+        "attribution": {
+            "url": "https://hilliardohio.gov/",
+            "text": "City of Hilliard",
+            "required": false
+        },
+        "name": "City of Hilliard Orthoimagery (2023)",
+        "icon": "https://hilliardohio.gov/wp-content/uploads/2021/04/logo.svg",
+        "url": "https://maps.hilliardohio.gov/arcgis/rest/services/Hosted/City_of_Hilliard_2023_Aerial_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023-02-25",
+        "end_date": "2023-02-25",
+        "description": "Winter 2023 orthoimagery for the City of Hilliard in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://hilliardohio.gov/privacy-usage-policy/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -83.23075854359251,
+                    39.991679157398835
+                ],
+                [
+                    -83.07908113656204,
+                    39.992529816311816
+                ],
+                [
+                    -83.07978073338333,
+                    40.0765956575452
+                ],
+                [
+                    -83.21599532807137,
+                    40.07583630485502
+                ],
+                [
+                    -83.21576109451651,
+                    40.051830981514854
+                ],
+                [
+                    -83.2313619923585,
+                    40.051729683474065
+                ],
+                [
+                    -83.23075854359251,
+                    39.991679157398835
+                ]
+            ]
+        ]
+    }
+}

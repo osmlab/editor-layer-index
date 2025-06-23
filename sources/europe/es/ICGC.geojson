@@ -1,13 +1,13 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "ICGC-orto25c",
+        "id": "ICGC-orto",
         "attribution": {
             "text": "Institut Cartogràfic i Geològic de Catalunya",
             "required": true
         },
-        "name": "ICGC - Ortofoto de Catalunya 1:2.500 vigent",
-        "url": "https://geoserveis.icgc.cat/icc_mapesbase/wms/service?LAYERS=orto25c&STYLES=&SRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
+        "name": "ICGC - Ortofoto de Catalunya",
+        "url": "https://geoserveis.icgc.cat/servei/catalunya/mapa-base/wms?LAYERS=orto&STYLES=&SRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
         "type": "wms",
         "available_projections": [
@@ -15,9 +15,7 @@
             "EPSG:4230",
             "EPSG:4258",
             "EPSG:4326",
-            "EPSG:23031",
-            "EPSG:25831",
-            "EPSG:32631"
+            "EPSG:25831"
         ],
         "best": true,
         "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",

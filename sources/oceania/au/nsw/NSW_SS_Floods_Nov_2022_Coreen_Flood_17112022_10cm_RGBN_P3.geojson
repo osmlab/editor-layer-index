@@ -1,0 +1,61 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Nov 2022 Coreen Flood 17112022 10cm RGBN P3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:10",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-11-17",
+        "end_date": "2022-11-17",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Nov_2022_Coreen_Flood_17112022_10cm_RGBN_P3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    146.27199136696464,
+                    -35.688013068424326
+                ],
+                [
+                    146.5804260401187,
+                    -35.65387113236437
+                ],
+                [
+                    146.5786452394663,
+                    -35.61826696242565
+                ],
+                [
+                    146.3620998800227,
+                    -35.605816234983045
+                ],
+                [
+                    146.30689505977062,
+                    -35.61102840321692
+                ],
+                [
+                    146.26700512513673,
+                    -35.67094392584316
+                ],
+                [
+                    146.27199136696464,
+                    -35.688013068424326
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

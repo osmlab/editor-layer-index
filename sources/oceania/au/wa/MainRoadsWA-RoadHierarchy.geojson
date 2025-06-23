@@ -3,22 +3,25 @@
     "properties": {
         "id": "MainRoadsWA_Road_Hierarchy",
         "attribution": {
-            "url": "https://catalogue.data.wa.gov.au/dataset/clss-road-hierarchy",
+            "url": "https://portal-mainroads.opendata.arcgis.com/datasets/mainroads::road-hierarchy/about",
             "text": "Main Roads Western Australia",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#Main_Roads_.28state_government_agency.29",
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview",
         "name": "Main Roads WA Road Hierarchy",
         "available_projections": [
-            "EPSG:3857",
-            "EPSG:4326"
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:4283"
         ],
-        "url": "https://mrgis.mainroads.wa.gov.au/arcgis/services/OpenData/RoadAssets_DataPortal/MapServer/WMSServer?request=GetMap&service=WMS&format=image/png&transparent=TRUE&version=1.3.0&layers=14&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "url": "https://gisservices.mainroads.wa.gov.au/arcgis/services/OpenData/RoadAssets_DataPortal/MapServer/WMSServer?request=GetMap&service=WMS&format=image/png32&transparent=TRUE&version=1.3.0&layers=15&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "overlay": true,
         "max_zoom": 21,
         "country_code": "AU",
         "type": "wms",
-        "category": "other"
+        "category": "other",
+        "icon": "https://www.mainroads.wa.gov.au//static/favicons/favicon-32x32.png"
     },
     "geometry": {
         "type": "Polygon",

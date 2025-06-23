@@ -1,33 +1,5 @@
 zh_TW:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 最近的空照圖
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 的 10 公分空照圖
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AGIVwerkbestand:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV 法蘭德斯初步空照圖
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺多方向山體陰影圖
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, 0.25 公尺 Skyview
-    AIV_Wegenregister:
-      attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: AIV Wegenregister
     Bedzin-PL-aerial_image:
       attribution:
         text: Starostwo Powiatowe w Będzinie
@@ -91,6 +63,34 @@ zh_TW:
       attribution:
         text: Urząd Miasta Częstochowy
       name: 'Częstochowa：建築'
+    DV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, 0.25 公尺多方向山體陰影圖
+    DV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, 0.25 公尺 Skyview
+    DV_GRB:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen GRB
+    DV_OrthoPhoto:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen 最近的空照圖
+    DV_OrthoPhoto_20132015_10cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen 2013-2015 的 10 公分空照圖
+    DV_OrthoPhoto_Preliminary:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen 初步空照圖
+    DV_Wegenregister:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen Wegenregister
     Dourados_Ortofotos:
       attribution:
         text: 多拉杜斯市政廳 - GeoDourados
@@ -101,6 +101,21 @@ zh_TW:
         text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2017 & 2018)
       description: 後處理過的 Sentinel 衛星影像。
       name: eox.at 2018 無雲
+    EOXAT2019CLOUDLESS:
+      attribution:
+        text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2019)
+      description: 後處理過的 Sentinel 衛星影像。
+      name: eox.at 2019 無雲
+    EOXAT2020CLOUDLESS:
+      attribution:
+        text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2020)
+      description: 後處理過的 Sentinel 衛星影像。
+      name: eox.at 2020 無雲
+    EOXAT2021CLOUDLESS:
+      attribution:
+        text: Sentinel-2 無雲 - https://s2maps.eu by EOX IT Services GmbH (含有變動過的 Copernicus Sentinel 資料 2021)
+      description: 後處理過的 Sentinel 衛星影像。
+      name: eox.at 2021 無雲
     EsriWorldImagery:
       attribution:
         text: 使用條款與回饋
@@ -116,6 +131,22 @@ zh_TW:
         text: 美茵河畔法蘭克福市測量局
       description: 美茵河畔法蘭克福的航照圖，拍攝於2019年4月16日
       name: 美茵河畔法蘭克福航照圖2019
+    Geodatastyrelsen_Cadastral_Parcels_INSPIRE_View:
+      attribution:
+        text: Geodatastyrelsen og Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI Cadastral Parcels INSPIRE View
+    Geodatastyrelsen_DTK_Kort25:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI DTK Map25
+    Geodatastyrelsen_Denmark:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI 空照影像
+    Geodatastyrelsen_Skaermkort:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI Screenmap
     Geoportal2-PL-City-boundaries_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
@@ -205,6 +236,11 @@ zh_TW:
         text: 波蘭大地測量與製圖總局
       description: 國家地形武器整合服務是一項集體服務，用於展示直接來自地方級單位的公用事業資料。 該服務僅包含具有適當參數的 WMS 服務並已決定將其 WMS 服務包括在 KrajowaIntegracjaUzboszeniaTerenu 服務中的那些單位的資料。
       name: 'Geoportal 2：下水道 WMS'
+    Geoportal2-PL-shaded_relief_WMS:
+      attribution:
+        text: 波蘭大地測量與製圖總局
+      description: 瀏覽服務（網路地圖服務，WMS），在 1 公尺 x 1 公尺 的網格中檢視 NMT 陰影。該服務支援 WMS 1.3.0 介面。
+      name: 'Geoportal 2：地形陰影 (WMS)'
     Geoportal2-PL-squares-and-housing-estates_WMS:
       attribution:
         text: 波蘭大地測量與製圖總局
@@ -307,16 +343,26 @@ zh_TW:
         text: 使用條款與意見回饋
       description: Mapbox 提供的點陣圖磚集，包含了高解析度衛星與航空影像的全球底圖
       name: Mapbox 衛星圖
-    OSIPIII_6in:
+    Naturvardsverket-protected:
+      attribution:
+        text: © 瑞典環境保護局，CC0
+      description: 瑞典自然公園，自然保護區與其他保護區與物件
+      name: 環境保護局˙ - 保護區
+    Naturvardsverket-trails:
+      attribution:
+        text: © 瑞典環境保護局，CC0
+      description: 瑞典環境保護局記錄的自然保護區內或周圍的每日更新路徑
+      name: 環境保護局˙ - 路徑
+    OSIP:
       attribution:
         text: 俄亥俄州全州影像計劃
-      description: 2019年與2020年以 6 英吋解析度拍攝的 41 個縣的俄亥俄州全州影像計劃 III 正射影像。
-      name: 俄亥俄州全州影像計劃 III 6 英吋
+      description: 俄亥俄州全州影像計劃 III 2017年至2020年每個郡的最新正射影像，解析度為 1 英呎到 3 英吋。
+      name: 俄亥俄州全州影像計劃
     OSIP_1ft:
       attribution:
         text: 俄亥俄州全州影像計劃
       description: 2011年至2014年間以 1 英呎解析度拍攝的全部 88 個縣的俄亥俄州全州影像計劃 II 正射影像。
-      name: 俄亥俄州全州影像計劃 II 1 英呎
+      name: 俄亥俄州全州影像計劃 1 英呎
     OSIP_6in:
       attribution:
         text: 俄亥俄州全州影像計劃
@@ -358,6 +404,34 @@ zh_TW:
     OpenAerialMapMosaic:
       description: 一個拼貼圖層中的所有 OpenAerialMap 影像，由 Kontur.io 提供
       name: OpenAerialMap 拼貼，由 Kontur.io 提供
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © 瑞典文物管理局，CC0
+      description: 古代與歷史遺跡與紀念碑
+      name: 瑞典文物管理局 - 考古遺址與紀念碑
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © 瑞典文物管理局，CC0
+      description: 文物建築與教堂
+      name: 瑞典文物管理局 - 文物建築
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © 瑞典文物管理局，CC0
+      description: 文物建築與宗教遺址保護區
+      name: 瑞典文物管理局 - 文物保護區
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © 瑞典文物管理局，CC0
+      description: 文化歷史遺跡
+      name: 瑞典文物管理局 - 遺跡
+    SDFE_Overflade_Skyggekort_40cm:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI 表面陰影地圖（40 公分）
+    SDFE_Terraen_Skyggekort_40cm:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI 地形陰影地圖（40 公分）
     SPW_ORTHO_LAST:
       name: SPW(allonie) 最新空照圖
     SPW_PICC:
@@ -385,10 +459,13 @@ zh_TW:
     US-TIGER-Roads-2021:
       description: 黃 = 從美國人口普查而來的公有領域資料。紅 = 在開放街圖中找不到的資料
       name: TIGER 道路 2021
+    US-TIGER-Roads-2022:
+      description: 黃 = 從美國人口普查而來的公有領域資料。紅 = 在開放街圖中找不到的資料
+      name: TIGER 道路 2022
     USDA-NAIP:
       attribution:
         text: 美國農業部
-      description: 近年來自美國各州的國家農業影像計畫 (NAIP) 的 60 公分 4 頻段DOQQ。
+      description: 近年來自美國各州的國家農業影像計畫 (NAIP) 的 30/60 公分 4 頻段 DOQQ。
       name: 國家農業影像計畫
     US_Forest_Service_roads_overlay:
       description: '道路：綠色外框 = 非分類道路。棕色外框 = 土路。路面：碎石路 = 亮棕色實心填滿，柏油 = 黑色，有舖面 = 灰色，地面 = 白色，水泥 = 藍色，草地 = 綠色。季節性 = 白色條紋'
@@ -482,11 +559,6 @@ zh_TW:
         text: EUFAR 巴拉頓正射影像 2010
       description: 從巴拉頓湖沼學協會而來的 1940 有地理標記的照片。
       name: EUFAR 巴拉頓正射影像
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: 透過 aginfo.cgk.affrc.go.jp 而來的 GSI Kiban 2500。適合用於追蹤軌跡，但有點老舊。
-      name: 日本 GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © 哥特堡市, CC0
@@ -512,6 +584,16 @@ zh_TW:
         text: © 哥特堡市，CC0
       description: 哥特堡市的正射影像
       name: 哥特堡正射影像2019
+    gothenburg-ortho_2021:
+      attribution:
+        text: © 哥特堡市，CC0
+      description: 哥特堡市的正射影像
+      name: 哥特堡正射影像2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © 哥特堡市，CC0
+      description: 哥特堡市的正射影像
+      name: 最新哥特堡正射影像
     gsi.go.jp_airphoto:
       attribution:
         text: GSI 日本
@@ -654,6 +736,11 @@ zh_TW:
       attribution:
         text: Simon Poole，資料 ©OpenStreetMap 貢獻者
       name: QA 無地址
+    route500:
+      attribution:
+        text: 圖磚 © cquest@Openstreetmap France，資料 © IGN, LO/OL
+      description: 已分類網路的路線（公路、國家、部門）
+      name: 路線 500
     rzeszowski-aerial:
       attribution:
         text: Powiat rzeszowski
@@ -662,10 +749,35 @@ zh_TW:
       attribution:
         text: Powiat rzeszowski
       name: 'Powiat rzeszowski：建築'
+    scb-industrial:
+      attribution:
+        text: © 挪威統計局，CC0
+      description: 以大規模與工業用地為特徵的地理劃定區域
+      name: 挪威統計局 - 工業區
+    scb-settlements:
+      attribution:
+        text: © 挪威統計局，CC0
+      description: 居民人數為 50-199 人且房屋間距不超過 150 公尺的建築物的相連區域
+      name: 挪威統計局 - 小型定居點
+    scb-urban:
+      attribution:
+        text: © 挪威統計局，CC0
+      description: 居民人數為至少 200 人且房屋間距不超過 500 公尺的住宅區
+      name: 挪威統計局 - 都會區
+    scb-vacation:
+      attribution:
+        text: © 挪威統計局，CC0
+      description: 主要由別墅組成的相連區域；至少 50 間別墅的集合，它們之間的距離不超過 150 公尺
+      name: 挪威統計局 - 度假屋區
     skobbler:
       attribution:
         text: '© 圖磚：skobbler 圖資：OpenStreetMap 貢獻者'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © 瑞典教育局
+      description: 瑞典學校
+      name: 瑞典教育局 - 學校
     skoterleder:
       attribution:
         text: © Skoterleder.org
@@ -693,6 +805,11 @@ zh_TW:
         text: 裾野市正射影像
       description: 裾野市以開放資料形式釋出的航照圖
       name: 裾野市正射影像
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: 瑞典電力傳輸網路。
+      name: SVK - 電力網路
     tf-cycle:
       attribution:
         text: 地圖 © Thunderforest，資料 © OpenStreetMap 貢獻者

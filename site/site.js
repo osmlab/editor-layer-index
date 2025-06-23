@@ -3,7 +3,7 @@ var map = L.map('map', {
         maxZoom: 25
     }).fitWorld();
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
 }).addTo(map);
 
@@ -44,7 +44,7 @@ function idURL(d, e) {
         editor: 'id',
         background: 'custom:' + d.properties.url
     };
-    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString() + position;
+    return 'https://www.openstreetmap.org/edit?' + position + (new URLSearchParams(params)).toString();
 }
 
 
@@ -77,8 +77,8 @@ d3.json("imagery.geojson", function(error, imagery) {
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
                 return match.feature.properties.name +
-                    ` [<a href="${idURL(match.feature, e)}" title="Add to iD">iD</a>] ` +
-                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
+                    ` [<a href="${idURL(match.feature, e)}" title="Open in iD" target="_blank">iD</a>] ` +
+                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM" target="_blank">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );

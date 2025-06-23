@@ -1,0 +1,116 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 1996",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1996/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "1996",
+        "end_date": "1996",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_1996",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        150.93498161316,
+                        -33.8744057407
+                    ],
+                    [
+                        150.93772819519,
+                        -33.91715217027
+                    ],
+                    [
+                        151.1409752655,
+                        -34.00542685666
+                    ],
+                    [
+                        151.2549584198,
+                        -34.00542685666
+                    ],
+                    [
+                        151.29959037781,
+                        -33.89264683802
+                    ],
+                    [
+                        151.33048942566,
+                        -33.74775081896
+                    ],
+                    [
+                        151.35040214539,
+                        -33.62776968414
+                    ],
+                    [
+                        151.34765556335,
+                        -33.55112281906
+                    ],
+                    [
+                        151.43005302429,
+                        -33.52422309141
+                    ],
+                    [
+                        151.43348625183,
+                        -33.49674239083
+                    ],
+                    [
+                        150.99677970886,
+                        -33.49674239083
+                    ],
+                    [
+                        150.99403312683,
+                        -33.87497583402
+                    ],
+                    [
+                        150.93498161316,
+                        -33.8744057407
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        151.48906628154106,
+                        -33.202689321628334
+                    ],
+                    [
+                        151.63078979503308,
+                        -33.20345112380121
+                    ],
+                    [
+                        151.67585389179078,
+                        -33.0886770840082
+                    ],
+                    [
+                        151.73039950224228,
+                        -33.014180559590905
+                    ],
+                    [
+                        151.7334342669867,
+                        -32.99127433514426
+                    ],
+                    [
+                        151.49065308754479,
+                        -32.99051069190255
+                    ],
+                    [
+                        151.48906628154106,
+                        -33.202689321628334
+                    ]
+                ]
+            ]
+        ]
+    }
+}

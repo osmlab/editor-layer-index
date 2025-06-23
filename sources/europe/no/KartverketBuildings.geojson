@@ -27,7 +27,7 @@
                 "description": "INSPIRE buildings for Norway.",
                 "icon": "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjczNnB0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiB2aWV3Qm94PSIwIDAgNzM2IDczNiIgd2lkdGg9IjczNnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xNDMuNSAzYy0xMi4xIDMuOS0yMS43IDEzLjYtMjUuNSAyNS43LTIgNi40LTIgOS0yIDEzOC45IDAgNzIuOC4yIDEzMi40LjUgMTMyLjRzNC45LTMuMyAxMC4yLTcuNGMzNC40LTI2IDYwLjEtMzYuOSA5Mi4zLTM5LjIgMTguOC0xLjMgNDYuOCAzLjMgNjUuNSAxMC43IDE5LjcgNy45IDMxLjYgMTYuMiA2NSA0NS40IDM3LjQgMzIuOSA2My42IDUxLjggOTcuMyA3MC42IDQ4LjUgMjcgOTUuNiAyMy43IDE2MC0xMS40bDEzLjItNy4yLS4yLTE2NS0uMy0xNjUtMi4yLTUuM2MtNC42LTExLjItMTMuOC0xOS43LTI1LTIzLjItNi40LTItOS4yLTItMjI0LjctMS45LTIxMS45IDAtMjE4LjMuMS0yMjQuMSAxLjl6IiBmaWxsPSIjMDA5ODNhIi8+PHBhdGggZD0ibTIwNiAzNjkuNWMtMjQuNiAzLjktNTAuMiAxMy4yLTc4LjcgMjguN2wtMTEuMyA2LjEuMiAxNTEuMS4zIDE1MS4xIDMuMiA2LjdjNCA4LjUgMTAuNiAxNS4xIDE5LjEgMTkuMWw2LjcgMy4yaDIyMi41IDIyMi41bDYuNy0zLjJjOC41LTQgMTUuMS0xMC42IDE5LjEtMTkuMWwzLjItNi43LjMtMTIzLjhjLjEtNjggMC0xMjMuNy0uMy0xMjMuNy0uMiAwLTYuNiAzLjQtMTQuMiA3LjYtNTUuOSAzMS05Ni4yIDM5LjUtMTM3LjggMjguOS0yMi40LTUuNy0zOS0xNS40LTgxLjUtNDguMS00Ny45LTM2LjctOTQuNC02NS4yLTExOS42LTczLjMtMTguNC01LjgtNDEuMi03LjYtNjAuNC00LjZ6IiBmaWxsPSIjMDA0ZjlkIi8+PC9zdmc+",
                 "id": "kartverket-bygninger",
-                "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=71994",
+                "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
                 "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
                 "max_zoom": 20,
                 "min_zoom": 14,
@@ -35,7 +35,7 @@
                 "overlay": true,
                 "i18n": true,
                 "type": "wms",
-                "url": "https://openwms.statkart.no/skwms1/wms.inspire_bu?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=BU.Building&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+                "url": "https://wms.geonorge.no/skwms1/wms.inspire_bu?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=BU.Building&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
             },
             "geometry": {
                 "type": "Polygon",

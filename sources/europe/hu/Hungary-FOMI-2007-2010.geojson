@@ -1,7 +1,7 @@
 {
     "type": "Feature",
     "properties": {
-        "name": "FÖMI orthophoto 2007-2010",
+        "name": "FÖMI orthophoto 2007–2010",
         "id": "FOMI_2007_2010",
         "country_code": "HU",
         "attribution": {
@@ -11,11 +11,12 @@
         },
         "start_date": "2007",
         "end_date": "2010",
-        "url": "http://e.tile.openstreetmap.hu/ortofoto-2007-2010/{zoom}/{x}/{y}.jpg",
+        "url": "https://e.tile.openstreetmap.hu/ortofoto-2007-2010/{zoom}/{x}/{y}.jpg",
         "max_zoom": 18,
-        "license_url": "http://e.tile.openstreetmap.hu/ortofoto-2007-2010/license.txt",
+        "license_url": "https://e.tile.openstreetmap.hu/ortofoto-2007-2010/license.txt",
+        "privacy_policy_url": "https://lechnerkozpont.hu/oldal/adatvedelem",
         "type": "tms",
-        "category": "photo"
+        "category": "historicphoto"
     },
     "geometry": {
         "type": "Polygon",

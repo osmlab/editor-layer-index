@@ -1,0 +1,112 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA_Delta_Junction_2021",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "USDA Delta Junction Orthoimagery (2021)",
+        "type": "wms",
+        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/alaska_delta_junction_2021/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=alaska_delta_junction_2021:NaturalColor_4Band_Vivid_NoStretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2021",
+        "end_date": "2021",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "US",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -144.74911337007418,
+                    64.11792103233867
+                ],
+                [
+                    -145.50001036857506,
+                    64.12594287417905
+                ],
+                [
+                    -145.49895832374352,
+                    64.24903211946743
+                ],
+                [
+                    -145.74934499364645,
+                    64.25008416429895
+                ],
+                [
+                    -145.74881897123075,
+                    64.37448846562684
+                ],
+                [
+                    -146.2516964006997,
+                    64.37475147683469
+                ],
+                [
+                    -146.2511703782839,
+                    64.12489082934752
+                ],
+                [
+                    -145.99973166354943,
+                    64.12173469485295
+                ],
+                [
+                    -146.00078370838096,
+                    63.99969749439605
+                ],
+                [
+                    -145.75039703847804,
+                    63.99969749439605
+                ],
+                [
+                    -145.7525011281411,
+                    63.875556204276116
+                ],
+                [
+                    -145.5000103685751,
+                    63.873452114613066
+                ],
+                [
+                    -145.5010624134066,
+                    63.75246695898769
+                ],
+                [
+                    -144.74885035886626,
+                    63.74615468999854
+                ],
+                [
+                    -144.7509544485293,
+                    63.624117489541646
+                ],
+                [
+                    -144.49846368896334,
+                    63.62306544471012
+                ],
+                [
+                    -144.49846368896334,
+                    63.87555620427611
+                ],
+                [
+                    -144.7499024036978,
+                    63.870295980118485
+                ],
+                [
+                    -144.74911337007418,
+                    64.11792103233867
+                ]
+            ]
+        ]
+    }
+}

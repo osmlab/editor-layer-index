@@ -3,23 +3,23 @@
     "properties": {
         "id": "VGIN-BuildingFootprints_WM",
         "name": "Virginia Building Footprints",
-        "end_date": "2018-06",
-        "url": "https://ags-proxy.openstreetmap.us/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vdem.virginia.gov%2Farcgis%2Frest%2Fservices%2FVA_Base_Layers%2FVA_Building_Footprints%2FMapServer&transparent=true",
-        "max_zoom": 20,
+        "end_date": "2024-10-02",
+        "url": "https://vginmaps.vdem.virginia.gov/arcgis/rest/services/VA_Base_Layers/VA_Building_Footprints/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 19,
         "country_code": "US",
         "attribution": {
-            "url": "https://vgin.maps.arcgis.com/home/item.html?id=bcd049dfcdc342a7a08ec81644eeb339",
+            "url": "https://vgin.vdem.virginia.gov/",
             "text": "Virginia Geographic Information Network (VGIN)",
             "required": true
         },
         "type": "tms",
-        "start_date": "2015-05",
+        "start_date": "2016-03-29",
         "best": false,
         "description": "Virginia Building Footprint Map Service",
         "license_url": "http://data.virginia.gov/#opendata",
+        "privacy_policy_url": "https://www.virginia.gov/privacy-policy/",
         "overlay": true,
-        "category": "other",
-        "min_zoom": 1
+        "category": "other"
     },
     "geometry": {
         "type": "Polygon",

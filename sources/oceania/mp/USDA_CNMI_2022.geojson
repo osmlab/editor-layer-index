@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA_CNMI_2022",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "USDA Northern Mariana Islands Imagery (2022)",
+        "type": "wms",
+        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/cnmi_vivid_2022_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=cnmi_vivid_2022_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2012-03-12",
+        "end_date": "2022-06-03",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "MP",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    146.12702597824722,
+                    13.778116234735766
+                ],
+                [
+                    146.56472714761364,
+                    20.72551025530249
+                ],
+                [
+                    144.6658764863915,
+                    20.755608440209258
+                ],
+                [
+                    144.8750718982211,
+                    13.946847306335261
+                ],
+                [
+                    146.12702597824722,
+                    13.778116234735766
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Nov 2022 Derriwong Flood 22112022 10cm P3 RGBN P3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:9",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-11-22",
+        "end_date": "2022-11-22",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Nov_2022_Derriwong_Flood_22112022_10cm_P3_RGBN_P3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    147.30251524969793,
+                    -33.079058047545516
+                ],
+                [
+                    147.29284003029193,
+                    -33.11984978706279
+                ],
+                [
+                    147.3750000901631,
+                    -33.143359545607794
+                ],
+                [
+                    147.38166171663892,
+                    -33.1209125108662
+                ],
+                [
+                    147.3653248707571,
+                    -33.0977953666005
+                ],
+                [
+                    147.30251524969793,
+                    -33.079058047545516
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

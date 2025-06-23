@@ -4,16 +4,17 @@
         "id": "kartverket-sjokart",
         "name": "Kartverket Nautical Charts",
         "type": "tms",
-        "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=sjokartraster&zoom={zoom}&x={x}&y={y}",
+        "url": "https://cache.kartverket.no/v1/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=sjokartraster&STYLE=default&FORMAT=image/png&tileMatrixSet=webmercator&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
         "country_code": "NO",
         "attribution": {
             "text": "© Kartverket",
-            "url": "https://www.kartverket.no/Kart/Sjokart/"
+            "url": "https://www.kartverket.no/"
         },
-        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
-        "max_zoom": 20,
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
+        "max_zoom": 18,
         "min_zoom": 3,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
         "description": "Norwegian nautical charts (includes Spitsbergen/Svalbard and Antarctica). Raster representation of paper charts. Updated biweekly.",
         "category": "map"
     },

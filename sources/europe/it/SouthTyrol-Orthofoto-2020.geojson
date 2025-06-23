@@ -3,10 +3,10 @@
     "properties": {
         "attribution": {
             "url": "https://geoservices.buergernetz.bz.it/geokatalog",
-            "text": "© Autonome Provinz Bozen - Provincia Autonoma di Bolzano",
+            "text": "© Autonome Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 4.0",
             "required": false
         },
-        "license_url": "https://www.provinz.bz.it/natur-umwelt/natur-raum/downloads/Licence_CC0.pdf",
+        "license_url": "https://geoportal.buergernetz.bz.it/veroeffentlichungen.asp?publ_action=300&publ_image_id=394227",
         "privacy_policy_url": "http://geoportal.buergernetz.bz.it/privacy.asp",
         "url": "https://geoservices.buergernetz.bz.it/mapproxy/p_bz-Orthoimagery/wms?LAYERS=Aerial-2020-RGB&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 20,
@@ -23,7 +23,6 @@
         "type": "wms",
         "category": "photo",
         "id": "South-Tyrol-Orthofoto-2020",
-        "best": true,
         "name": "South Tyrol Orthofoto 2020",
         "start_date": "2020-10-13",
         "end_date": "2020-10-13"

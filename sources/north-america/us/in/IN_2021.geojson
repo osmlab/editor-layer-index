@@ -12,7 +12,7 @@
             "required": false
         },
         "type": "wms",
-        "url": "https://imagery.gis.in.gov/arcgis/rest/services/Imagery/2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "url": "https://imagery.gis.in.gov/arcgis/rest/services/Imagery/2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
         "min_zoom": 1,
         "max_zoom": 19,
         "permission_osm": "implicit",

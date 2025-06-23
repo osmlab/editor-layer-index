@@ -1,0 +1,103 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Toronto-Imagery-Most-Current-Year",
+        "attribution": {
+            "url": "https://open.toronto.ca/open-data-license/",
+            "text": "Contains information licensed under the Open Government Licence – Toronto",
+            "required": true
+        },
+        "name": "Toronto Latest Orthoimagery",
+        "url": "https://gis.toronto.ca/arcgis/services/basemap/cot_ortho/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 24,
+        "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
+        "permission_osm": "explicit",
+        "country_code": "CA",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+
+        ],
+        "description": "Latest 8 centimeter resolution orthoimagery for the City of Toronto in the Province of Ontario",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.toronto.ca/home/privacy/"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -79.60820047554,
+                    43.66669181335
+                ],
+                [
+                    -79.62838279951,
+                    43.64632003437
+                ],
+                [
+                    -79.59502718582,
+                    43.61499094490
+                ],
+                [
+                    -79.54930686221,
+                    43.56818407942
+                ],
+                [
+                    -79.49638380897,
+                    43.57915018797
+                ],
+                [
+                    -79.45276402888,
+                    43.61757583532
+                ],
+                [
+                    -79.38912460412,
+                    43.60060559501
+                ],
+                [
+                    -79.30530285540,
+                    43.60437717331
+                ],
+                [
+                    -79.29667653951,
+                    43.64325778233
+                ],
+                [
+                    -79.11405954805,
+                    43.76550890763
+                ],
+                [
+                    -79.09648106940,
+                    43.79817641747
+                ],
+                [
+                    -79.12870752071,
+                    43.81849649760
+                ],
+                [
+                    -79.13798487931,
+                    43.82237181955
+                ],
+                [
+                    -79.15930652801,
+                    43.86873872370
+                ],
+                [
+                    -79.65403786986,
+                    43.75751510770
+                ],
+                [
+                    -79.65293978144,
+                    43.74768007389
+                ],
+                [
+                    -79.60820047554,
+                    43.66669181335
+                ]
+            ]
+        ]
+    }
+}

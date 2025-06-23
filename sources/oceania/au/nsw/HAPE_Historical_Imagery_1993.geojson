@@ -1,0 +1,70 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 1993",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1993/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "1993",
+        "end_date": "1993",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_1993",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    151.47674491882,
+                    -33.00463213687
+                ],
+                [
+                    151.73320753098,
+                    -33.00636006925
+                ],
+                [
+                    151.77200300217,
+                    -32.94515714722
+                ],
+                [
+                    151.79843885422,
+                    -32.93002989263
+                ],
+                [
+                    151.80633476257,
+                    -32.91590835515
+                ],
+                [
+                    151.81869438171,
+                    -32.88362308287
+                ],
+                [
+                    152.02262809753,
+                    -32.79939545519
+                ],
+                [
+                    152.02194145203,
+                    -32.49528378933
+                ],
+                [
+                    151.47880485535,
+                    -32.4964420645
+                ],
+                [
+                    151.47674491882,
+                    -33.00463213687
+                ]
+            ]
+        ]
+    }
+}

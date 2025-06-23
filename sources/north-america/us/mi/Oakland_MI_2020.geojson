@@ -8,10 +8,10 @@
             "required": false
         },
         "name": "Oakland County Orthoimagery (2020)",
-        "icon": "https://www.oakgov.com/SiteCollectionImages/fb_logo.png",
-        "url": "https://gisservices.oakgov.com/arcgis/rest/services/ImageServices/EnterpriseOrthoTC2020ImageService/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
+        "icon": "https://oaklandcountyblog.com/wp-content/uploads/2014/10/oakland-county-2_trees-logo.png",
+        "url": "https://gisservices.oakgov.com/arcgis/rest/services/ImageServices/EnterpriseOrthoTC2020ImageService/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
         "max_zoom": 21,
-        "license_url": "https://www.oakgov.com/Pages/legal-disclaimer-opendata.html",
+        "license_url": "https://www.oakgov.com/government/open-data-agreement",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
@@ -21,9 +21,9 @@
         "start_date": "2020",
         "end_date": "2020",
         "description": "The 2020 orthoimagery for Oakland County of the State of Michigan",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
-        "privacy_policy_url": "https://www.oakgov.com/Pages/legal_disclaimers.aspx"
+        "privacy_policy_url": "https://www.oakgov.com/government/terms-of-use"
     },
     "geometry": {
         "type": "Polygon",

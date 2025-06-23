@@ -1,0 +1,89 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods 2021 Walgett flood 2021 04 14 15cm",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:1",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2021-04-14",
+        "end_date": "2021-04-14",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_2021_Walgett_flood_2021_04_14_15cm",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    148.1179388870733,
+                    -29.893444299151504
+                ],
+                [
+                    148.12167060370086,
+                    -29.913316213745645
+                ],
+                [
+                    148.11100855618025,
+                    -29.91285412121767
+                ],
+                [
+                    148.10887614667718,
+                    -29.929950116592863
+                ],
+                [
+                    148.0960816896535,
+                    -29.928564064179945
+                ],
+                [
+                    148.0960816896535,
+                    -29.947505109452088
+                ],
+                [
+                    148.0118515142534,
+                    -29.949814746301833
+                ],
+                [
+                    148.01291771900583,
+                    -29.992764210939747
+                ],
+                [
+                    147.99959015960587,
+                    -29.992764210939747
+                ],
+                [
+                    147.99959015960587,
+                    -30.137639058997472
+                ],
+                [
+                    148.234688307402,
+                    -30.133950613758216
+                ],
+                [
+                    148.23255589790307,
+                    -29.90869519198378
+                ],
+                [
+                    148.16591810090898,
+                    -29.893444299151504
+                ],
+                [
+                    148.1179388870733,
+                    -29.893444299151504
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

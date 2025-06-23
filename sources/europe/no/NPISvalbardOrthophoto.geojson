@@ -1,223 +1,33 @@
 {
-    "type": "Feature",
-    "properties": {
-        "id": "NPI-Svalbard-ortofoto",
-        "name": "NPI Svalbard Orthophoto",
-        "type": "wmts",
-        "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Ortofoto_Svalbard_WMTS_25833/MapServer/WMTS/",
-        "country_code": "NO",
-        "available_projections": [
-            "EPSG:25833"
-        ],
-        "attribution": {
-            "url": "https://geodata.npolar.no/",
-            "text": "© Norwegian Polar Institute"
-        },
-        "icon": "https://www.npolar.no/npcms/export/sites/np/images/logos/NPI-logo-eng.png",
-        "max_zoom": 17,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
-        "description": "Orthophoto for Svalbard/Spitsbergen from the Norwegian Polar Institute",
-        "category": "photo"
+  "type": "Feature",
+  "properties": {
+    "best": true,
+    "id": "NPI-Svalbard-ortofoto",
+    "name": "NPI Svalbard Orthophoto",
+    "type": "tms",
+    "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Ortofoto_Svalbard_WMTS_3857/MapServer/tile/{zoom}/{y}/{x}",
+    "country_code": "NO",
+    "attribution": {
+      "url": "https://geodata.npolar.no/",
+      "text": "© Norwegian Polar Institute"
     },
-    "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-            [
-                [
-                    [
-                        19.2201491,
-                        74.3580015
-                    ],
-                    [
-                        19.3134648,
-                        74.4680464
-                    ],
-                    [
-                        19.1489428,
-                        74.5302837
-                    ],
-                    [
-                        18.7282572,
-                        74.5028822
-                    ],
-                    [
-                        18.71014,
-                        74.4638171
-                    ],
-                    [
-                        19.0170892,
-                        74.3266816
-                    ],
-                    [
-                        19.0982844,
-                        74.3256773
-                    ],
-                    [
-                        19.2201491,
-                        74.3580015
-                    ]
-                ]
-            ],
-            [
-                [
-                    [
-                        24.7360641,
-                        76.4398246
-                    ],
-                    [
-                        24.965819,
-                        76.4123756
-                    ],
-                    [
-                        25.6626802,
-                        76.730284
-                    ],
-                    [
-                        25.4329253,
-                        76.7571025
-                    ],
-                    [
-                        24.7360641,
-                        76.4398246
-                    ]
-                ]
-            ],
-            [
-                [
-                    [
-                        14.8430727,
-                        78.1529715
-                    ],
-                    [
-                        13.7976731,
-                        78.1276011
-                    ],
-                    [
-                        13.4226177,
-                        78.0586026
-                    ],
-                    [
-                        13.4595114,
-                        77.8385718
-                    ],
-                    [
-                        13.7025155,
-                        77.6957284
-                    ],
-                    [
-                        15.1621137,
-                        77.7794971
-                    ],
-                    [
-                        16.8061736,
-                        77.8457036
-                    ],
-                    [
-                        17.4932219,
-                        77.9447625
-                    ],
-                    [
-                        17.9433701,
-                        78.0542815
-                    ],
-                    [
-                        17.5298897,
-                        78.1858842
-                    ],
-                    [
-                        17.6818445,
-                        78.2806382
-                    ],
-                    [
-                        17.5791366,
-                        78.4094427
-                    ],
-                    [
-                        17.169166,
-                        78.4254191
-                    ],
-                    [
-                        16.7237127,
-                        78.3634875
-                    ],
-                    [
-                        15.7742037,
-                        78.3808255
-                    ],
-                    [
-                        14.8430727,
-                        78.1529715
-                    ]
-                ]
-            ],
-            [
-                [
-                    [
-                        15.4548748,
-                        79.8987352
-                    ],
-                    [
-                        14.5187843,
-                        79.7998835
-                    ],
-                    [
-                        14.635578,
-                        79.3779535
-                    ],
-                    [
-                        12.0873421,
-                        79.3620974
-                    ],
-                    [
-                        11.1610094,
-                        78.977698
-                    ],
-                    [
-                        11.268669,
-                        78.7089959
-                    ],
-                    [
-                        12.8708025,
-                        78.1589481
-                    ],
-                    [
-                        14.0310778,
-                        78.1738761
-                    ],
-                    [
-                        15.2572262,
-                        78.4253358
-                    ],
-                    [
-                        19.4098652,
-                        78.486466
-                    ],
-                    [
-                        21.3569375,
-                        78.6144937
-                    ],
-                    [
-                        21.5394755,
-                        78.8545933
-                    ],
-                    [
-                        20.3103861,
-                        79.391819
-                    ],
-                    [
-                        16.8056559,
-                        80.0978248
-                    ],
-                    [
-                        15.9842348,
-                        80.1072375
-                    ],
-                    [
-                        15.4548748,
-                        79.8987352
-                    ]
-                ]
-            ]
-        ]
-    }
+    "icon": "https://www.npolar.no/wp-content/uploads/2022/05/NP-logo-skjerm.png",
+    "max_zoom": 17,
+    "license_url": "https://web.archive.org/web/20240114010212/https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
+    "privacy_policy_url": "https://www.npolar.no/en/privacy-policy/",
+    "description": "Orthophoto for Svalbard/Spitsbergen from the Norwegian Polar Institute",
+    "category": "photo"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [9, 74],
+        [34, 74],
+        [34, 81],
+        [9, 81],
+        [9, 74]
+      ]
+    ]
+  }
 }

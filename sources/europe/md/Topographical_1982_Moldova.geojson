@@ -1,0 +1,220 @@
+{
+    "type": "Feature",
+    "properties": {
+        "description": "USSR Topographical Map of Moldova, Executed by General Staff of the Armed Forces of the USSR. Scale 1:50000, Based on aerial orthophoto from 1957-1958, updated in 1979-1980, country border updated in 90's, 1942 Coordinate System, Baltic Heights System",
+        "id": "Geodata-Gov-Topographical-Map_Moldova_50000_1982",
+        "name": "USSR Topographical Map of Moldova, 1:50000, 1982 (1957-1980)",
+        "type": "wms",
+        "url": "http://geodata.gov.md/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=maps:harta_topografica_50k_1982&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "country_code": "MD",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4026",
+            "EPSG:4326"
+        ],
+        "icon": "https://geoportalinds.gov.md/geonetwork/images/logos/favicon.png",
+        "permission_osm": "explicit",
+        "start_date": "1957",
+        "end_date": "1980",
+        "category": "historicmap",
+        "license_url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/551bb51f-4d49-45ab-a2cb-bf6356b168c2",
+        "privacy_policy_url": "https://www.legis.md/cautare/getResults?doc_id=143076",
+        "attribution": {
+            "url": "https://geoportalinds.gov.md/geonetwork/srv/eng/catalog.search#/metadata/551bb51f-4d49-45ab-a2cb-bf6356b168c2",
+            "text": "© Agenţia Geodezie, Cartografie şi Cadastru / Geoportal INDS",
+            "required": true
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    27.99781860982,
+                    46.99914475291
+                ],
+                [
+                    27.99737190977,
+                    46.7193531618
+                ],
+                [
+                    27.99692520973,
+                    46.55572392286
+                ],
+                [
+                    27.99603158628,
+                    45.33164522184
+                ],
+                [
+                    28.74961456523,
+                    45.33164522184
+                ],
+                [
+                    28.75050796533,
+                    45.50910789025
+                ],
+                [
+                    28.75006126528,
+                    45.66447650889
+                ],
+                [
+                    29.00065999153,
+                    45.66478868831
+                ],
+                [
+                    29.00021329149,
+                    45.9981336058
+                ],
+                [
+                    29.25125871779,
+                    45.9987542311
+                ],
+                [
+                    29.25036531769,
+                    46.10570793322
+                ],
+                [
+                    29.24902555258,
+                    46.33264368836
+                ],
+                [
+                    29.66959353496,
+                    46.33210400478
+                ],
+                [
+                    30.14354228462,
+                    46.33256665713
+                ],
+                [
+                    30.25052694582,
+                    46.33225822266
+                ],
+                [
+                    30.25097342252,
+                    46.50040481451
+                ],
+                [
+                    29.99992799622,
+                    46.5010197825
+                ],
+                [
+                    30.00082139631,
+                    46.82230644338
+                ],
+                [
+                    30.00082139631,
+                    47.00021118211
+                ],
+                [
+                    29.75066937011,
+                    47.00173439787
+                ],
+                [
+                    29.7515627702,
+                    47.50051597367
+                ],
+                [
+                    29.24991861765,
+                    47.50051597367
+                ],
+                [
+                    29.25036531769,
+                    47.66442940507
+                ],
+                [
+                    29.50007064385,
+                    47.66412856442
+                ],
+                [
+                    29.50141074399,
+                    47.83442705613
+                ],
+                [
+                    29.24991861765,
+                    47.83502677012
+                ],
+                [
+                    29.25170541783,
+                    48.00058182804
+                ],
+                [
+                    29.00065999153,
+                    48.00147851216
+                ],
+                [
+                    29.00110669158,
+                    48.16799075736
+                ],
+                [
+                    28.75006126528,
+                    48.16858660605
+                ],
+                [
+                    28.75050796533,
+                    48.33455804827
+                ],
+                [
+                    28.00139198684,
+                    48.33485500462
+                ],
+                [
+                    28.00183868689,
+                    48.50087894492
+                ],
+                [
+                    26.49556612909,
+                    48.50087894492
+                ],
+                [
+                    26.49601282913,
+                    48.16530935257
+                ],
+                [
+                    26.74616485534,
+                    48.1647134658
+                ],
+                [
+                    26.74661155539,
+                    47.99729385295
+                ],
+                [
+                    26.99721028164,
+                    47.99759276843
+                ],
+                [
+                    26.99542348146,
+                    47.66382772204
+                ],
+                [
+                    27.24512880762,
+                    47.66262433518
+                ],
+                [
+                    27.24512880762,
+                    47.33154808317
+                ],
+                [
+                    27.49438743373,
+                    47.33124532915
+                ],
+                [
+                    27.49572753387,
+                    47.16446759777
+                ],
+                [
+                    27.74587956008,
+                    47.16446759777
+                ],
+                [
+                    27.74587956008,
+                    46.99838326587
+                ],
+                [
+                    27.99781860982,
+                    46.99914475291
+                ]
+            ]
+        ]
+    }
+}

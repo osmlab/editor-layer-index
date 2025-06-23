@@ -1,0 +1,53 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Mar 2022 Grafton Flood 2022 03 02 10cm P3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:4",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-03-02",
+        "end_date": "2022-03-02",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Mar_2022_Grafton_Flood_2022_03_02_10cm_P3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    152.89633230157784,
+                    -29.61311113398733
+                ],
+                [
+                    152.89647059591596,
+                    -29.742084040976607
+                ],
+                [
+                    152.98313237849356,
+                    -29.743095406004045
+                ],
+                [
+                    152.98369296949795,
+                    -29.61533897969298
+                ],
+                [
+                    152.89633230157784,
+                    -29.61311113398733
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

@@ -1,0 +1,191 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LPI_NSW_GeocodedAddressing",
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/products_and_services/web_services/access_web_services",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Geocoded Addressing",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
+        ],
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Geocoded_Addressing_Theme/MapServer/export?layers=&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A1%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSMS%22%2C%22style%22%3A%22esriSMSCircle%22%2C%22color%22%3A%5B50%2C147%2C77%2C255%5D%2C%22size%22%3A4%2C%22outline%22%3A%7B%22color%22%3A%5B0%2C0%2C0%2C255%5D%2C%22width%22%3A1.5%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22marker%22%3Anull%7D%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3A%22%5Bhousenumber%5D%22%2C%22useCodedValues%22%3Afalse%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPointLabelPlacementAboveCenter%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriTS%22%2C%22horizontalAlignment%22%3A%22left%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22haloColor%22%3A%5B0%2C0%2C0%2C255%5D%2C%22haloSize%22%3A1%2C%22font%22%3A%7B%22size%22%3A12%2C%22style%22%3A%22normal%22%2C%22variant%22%3A%22normal%22%2C%22decoration%22%3A%22normal%22%2C%22weight%22%3A%22bold%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%7D%2C%7B%22id%22%3A2%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A2%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%2C%22color%22%3A%5B48%2C142%2C108%2C255%5D%2C%22width%22%3A1%7D%7D%7D%7D%5D",
+        "overlay": true,
+        "max_zoom": 21,
+        "country_code": "AU",
+        "type": "wms",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "other"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        149.4856226,
+                        -28.5615019
+                    ],
+                    [
+                        148.9451961,
+                        -28.9948656
+                    ],
+                    [
+                        140.998648,
+                        -28.9989332
+                    ],
+                    [
+                        141.0025961,
+                        -34.0197399
+                    ],
+                    [
+                        140.9937045,
+                        -34.070169
+                    ],
+                    [
+                        142.4785593,
+                        -34.811943
+                    ],
+                    [
+                        143.2021846,
+                        -35.1317425
+                    ],
+                    [
+                        144.5193454,
+                        -36.1295974
+                    ],
+                    [
+                        144.8445703,
+                        -36.2149218
+                    ],
+                    [
+                        145.2348401,
+                        -35.9849909
+                    ],
+                    [
+                        146.828442,
+                        -36.188678
+                    ],
+                    [
+                        147.6902879,
+                        -36.0441802
+                    ],
+                    [
+                        147.8854228,
+                        -36.0901856
+                    ],
+                    [
+                        148.0791803,
+                        -36.8171632
+                    ],
+                    [
+                        148.2013511,
+                        -36.805656
+                    ],
+                    [
+                        149.9784687,
+                        -37.5069984
+                    ],
+                    [
+                        150.4127518,
+                        -36.6178579
+                    ],
+                    [
+                        150.4615355,
+                        -36.1202975
+                    ],
+                    [
+                        151.0144178,
+                        -35.1156752
+                    ],
+                    [
+                        151.2583364,
+                        -34.3808144
+                    ],
+                    [
+                        151.9087862,
+                        -33.0553457
+                    ],
+                    [
+                        152.7543708,
+                        -32.508492
+                    ],
+                    [
+                        153.2584694,
+                        -30.9735401
+                    ],
+                    [
+                        153.6969246,
+                        -28.6498321
+                    ],
+                    [
+                        153.5790657,
+                        -28.1415563
+                    ],
+                    [
+                        152.4924635,
+                        -28.2353023
+                    ],
+                    [
+                        151.9290401,
+                        -28.4983634
+                    ],
+                    [
+                        151.9894069,
+                        -28.7355674
+                    ],
+                    [
+                        151.3943629,
+                        -28.9797786
+                    ],
+                    [
+                        151.0954036,
+                        -28.7179218
+                    ],
+                    [
+                        150.2991369,
+                        -28.5337256
+                    ],
+                    [
+                        149.4856226,
+                        -28.5615019
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        159.3727807,
+                        -31.7789183
+                    ],
+                    [
+                        159.1744327,
+                        -31.4373999
+                    ],
+                    [
+                        159.0033934,
+                        -31.4876656
+                    ],
+                    [
+                        159.0378887,
+                        -31.7055793
+                    ],
+                    [
+                        159.3109766,
+                        -31.8595241
+                    ],
+                    [
+                        159.3727807,
+                        -31.7789183
+                    ]
+                ]
+            ]
+        ]
+    }
+}

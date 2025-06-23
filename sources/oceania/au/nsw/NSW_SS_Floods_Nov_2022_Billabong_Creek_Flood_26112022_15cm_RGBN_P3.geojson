@@ -1,0 +1,89 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Nov 2022 Billabong Creek Flood 26112022 15cm RGBN P3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:3",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-11-26",
+        "end_date": "2022-11-26",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Nov_2022_Billabong_Creek_Flood_26112022_15cm_RGBN_P3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    145.98812777676045,
+                    -35.34232406736682
+                ],
+                [
+                    146.09283772286545,
+                    -35.45177181014559
+                ],
+                [
+                    146.07679345693128,
+                    -35.48340821996026
+                ],
+                [
+                    146.19754766897245,
+                    -35.51778150360798
+                ],
+                [
+                    146.1933254937265,
+                    -35.530152284417746
+                ],
+                [
+                    146.4145674766247,
+                    -35.59678421210168
+                ],
+                [
+                    146.4238562621681,
+                    -35.58373696092289
+                ],
+                [
+                    146.62736510903295,
+                    -35.63728580485754
+                ],
+                [
+                    146.64847598526467,
+                    -35.56931384124639
+                ],
+                [
+                    146.58936553181746,
+                    -35.55557512244776
+                ],
+                [
+                    146.59612101221217,
+                    -35.539085551237
+                ],
+                [
+                    146.20430314936516,
+                    -35.423563652822374
+                ],
+                [
+                    146.06581580129057,
+                    -35.28030670073918
+                ],
+                [
+                    145.98812777676045,
+                    -35.34232406736682
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

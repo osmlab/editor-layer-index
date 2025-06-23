@@ -1,0 +1,130 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "rennes_ortho_2021_wms",
+        "name": "Rennes orthophotographie 2021 (5 cm)",
+        "type": "wms",
+        "default": false,
+        "url": "https://public.sig.rennesmetropole.fr/geoserver/raster/ows?LAYERS=ortho2021&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "photo",
+        "available_projections": [
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3948",
+            "EPSG:4326",
+            "EPSG:4258",
+            "CRS:84"
+        ],
+        "start_date": "2021-07-16",
+        "end_date": "2021-09-02",
+        "attribution": {
+            "text": "Rennes Ville et Métropole, IGN, SDE35, Megalis Bretagne",
+            "url": "https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/b5b958de-9407-4822-9ca5-abb1c57659b7",
+            "required": true
+        },
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "country_code": "FR",
+        "max_zoom": 22,
+        "min_zoom": 10,
+        "privacy_policy_url": "https://metropole.rennes.fr/protection-des-donnees-personnelles"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -1.9689309753,
+                    48.0726067077
+                ],
+                [
+                    -1.9663392967,
+                    48.0456799232
+                ],
+                [
+                    -1.7547754692,
+                    47.9374854183
+                ],
+                [
+                    -1.7272350771,
+                    47.92961348
+                ],
+                [
+                    -1.7138768738,
+                    47.930163857
+                ],
+                [
+                    -1.6738005667,
+                    47.9318056541
+                ],
+                [
+                    -1.6604412346,
+                    47.9323498085
+                ],
+                [
+                    -1.5551373004,
+                    47.954604529
+                ],
+                [
+                    -1.5299767417,
+                    47.9736214266
+                ],
+                [
+                    -1.5173895301,
+                    47.9831277842
+                ],
+                [
+                    -1.493762676,
+                    48.0200944518
+                ],
+                [
+                    -1.4598108703,
+                    48.0934932124
+                ],
+                [
+                    -1.4636952473,
+                    48.1383887074
+                ],
+                [
+                    -1.4644729339,
+                    48.1473677392
+                ],
+                [
+                    -1.4668076187,
+                    48.1743046962
+                ],
+                [
+                    -1.5529026549,
+                    48.2340000073
+                ],
+                [
+                    -1.6225132395,
+                    48.2582595548
+                ],
+                [
+                    -1.8149098541,
+                    48.2954427499
+                ],
+                [
+                    -1.8973282181,
+                    48.3099978901
+                ],
+                [
+                    -1.9107830686,
+                    48.3094261927
+                ],
+                [
+                    -1.9511458195,
+                    48.3077017021
+                ],
+                [
+                    -1.9637320901,
+                    48.2981486194
+                ],
+                [
+                    -1.9689309753,
+                    48.0726067077
+                ]
+            ]
+        ]
+    }
+}

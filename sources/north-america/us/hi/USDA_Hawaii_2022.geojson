@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA_Hawaii_2022",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "USDA Hawaii Imagery (2022)",
+        "type": "wms",
+        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/hawaii_vivid_2022_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=hawaii_vivid_2022_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "start_date": "2014-12-06",
+        "end_date": "2020-10-11",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "US",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -160.33912875649403,
+                    22.31879602313053
+                ],
+                [
+                    -160.33912875649403,
+                    18.845042487146173
+                ],
+                [
+                    -154.73744714701988,
+                    18.845042487146173
+                ],
+                [
+                    -154.73744714701988,
+                    22.31879602313053
+                ],
+                [
+                    -160.33912875649403,
+                    22.31879602313053
+                ]
+            ]
+        ]
+    }
+}

@@ -8,7 +8,7 @@
             "required": false
         },
         "name": "Collier County Orthoimagery (Latest)",
-        "url": "https://ags2.colliercountyfl.gov/imagery/rest/services/CurrentOrthos/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://ags2.colliercountyfl.gov/imagery/rest/services/CurrentOrthos/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 22,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -17,8 +17,8 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2023",
-        "end_date": "2023",
+        "start_date": "2024",
+        "end_date": "2024",
         "description": "The most recent orthoimagery for Collier County in the State of Florida",
         "category": "photo",
         "valid-georeference": true,

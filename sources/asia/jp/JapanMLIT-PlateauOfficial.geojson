@@ -1,30 +1,30 @@
 {
-   "type":"Feature",
-   "properties":{
-      "id":"Plateau_orthophoto_official",
-      "attribution":{
-         "url":"https://github.com/Project-PLATEAU/plateau-streaming-tutorial/blob/main/ortho/plateau-ortho-streaming.md",
-         "text":"MLIT_PLATEAU",
-         "required":true
+   "type": "Feature",
+   "properties": {
+      "id": "Plateau_orthophoto_official",
+      "attribution": {
+         "url": "https://github.com/Project-PLATEAU/plateau-streaming-tutorial/blob/main/ortho/plateau-ortho-streaming.md",
+         "text": "MLIT_PLATEAU",
+         "required": true
       },
-      "name":"MLIT Plateau Official",
-      "url":"https://gic-plateau.s3.ap-northeast-1.amazonaws.com/2020/ortho/tiles/{zoom}/{x}/{y}.png",
-      "min_zoom":10,
-      "max_zoom":19,
-      "license_url":"https://www.mlit.go.jp/plateau/site-policy/",
-      "privacy_policy_url":"https://aws.amazon.com/privacy/",
-      "country_code":"JP",
-      "type":"tms",
-      "start_date":"2014-10-01",
-      "end_date":"2020-11-31",
-      "permission_osm":"explicit",
-      "description":"Japan MLIT, Plateau project official tile distribution",
-      "category":"photo",
-      "valid-georeference":true
+      "name": "MLIT Plateau Official",
+      "url": "https://gic-plateau.s3.ap-northeast-1.amazonaws.com/2020/ortho/tiles/{zoom}/{x}/{y}.png",
+      "min_zoom": 10,
+      "max_zoom": 19,
+      "license_url": "https://www.mlit.go.jp/plateau/site-policy/",
+      "privacy_policy_url": "https://aws.amazon.com/privacy/",
+      "country_code": "JP",
+      "type": "tms",
+      "start_date": "2014-10-01",
+      "end_date": "2020-11-31",
+      "permission_osm": "explicit",
+      "description": "Japan MLIT, Plateau project official tile distribution",
+      "category": "photo",
+      "valid-georeference": true
    },
-   "geometry":{
-      "type":"MultiPolygon",
-      "coordinates":[
+   "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
          [
             [
                [

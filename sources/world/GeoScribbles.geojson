@@ -1,0 +1,29 @@
+{
+    "geometry": null,
+    "properties": {
+        "attribution": {
+            "required": false,
+            "text": "GeoScribble contributors",
+            "url": "https://wiki.openstreetmap.org/wiki/GeoScribble"
+        },
+        "description": "Geometric survey notes from Every Door editor, aged three weeks at most",
+        "i18n": true,
+        "id": "geoscribble-latest",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "max_zoom": 22,
+        "name": "GeoScribble latest notes",
+        "type": "wms",
+        "default": false,
+        "overlay": true,
+        "transparent": true,
+        "category": "other",
+        "valid-georeference": true,
+        "url": "https://geoscribble.osmz.ru/wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=latest&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://wiki.openstreetmap.org/wiki/GeoScribble#License",
+        "privacy_policy_url": false
+    },
+    "type": "Feature"
+}

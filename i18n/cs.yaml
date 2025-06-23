@@ -1,33 +1,5 @@
 cs:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Nejaktuálnější letecké snímky AIV Flanders
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: 10cm letecké snímky Vlámska od AIV 2013–2015
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AGIVwerkbestand:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Předběžné letecké snímky AIV Flanders
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Digitální výškový model AIV II s mnohosměrovým stínováním svahů 0,25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Digitální výškový model AIV II s faktorem zobrazení 0,25 m
-    AIV_Wegenregister:
-      attribution:
-        text: © Agentschap Informatie Vlaanderen
-      name: AIV Wegenregister
     Bedzin-PL-aerial_image:
       attribution:
         text: Starostwo Powiatowe w Będzinie
@@ -91,6 +63,34 @@ cs:
       attribution:
         text: Magistrát města Čenstochová
       name: 'Čenstochová: Budovy'
+    DV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II s mnohosměrovým stínováním svahů 0,25 m
+    DV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II s faktorem zobrazení 0,25 m
+    DV_GRB:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen GRB
+    DV_OrthoPhoto:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Nejaktuálnější letecké snímky Digitaal Vlaanderen
+    DV_OrthoPhoto_20132015_10cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: 10cm letecké snímky Vlámska od Digitaal Vlaanderen 2013–2015
+    DV_OrthoPhoto_Preliminary:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Předběžné letecké snímky Digitaal Vlaanderen
+    DV_Wegenregister:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen Wegenregister
     Dourados_Ortofotos:
       attribution:
         text: Prefeitura Municipal de Dourados - GeoDourados
@@ -101,6 +101,21 @@ cs:
         text: Sentinel-2 bez mraků – https://s2maps.eu – od společnosti EOX IT Services GmbH (obsahuje upravená data Copernicus Sentinel 2017 a 2018)
       description: Dodatečně upravené snímky satelitu Sentinel.
       name: eox.at 2018 bez mraků
+    EOXAT2019CLOUDLESS:
+      attribution:
+        text: Sentinel-2 bez mraků – https://s2maps.eu – od společnosti EOX IT Services GmbH (obsahuje upravená data Copernicus Sentinel 2019)
+      description: Dodatečně upravené snímky satelitu Sentinel.
+      name: eox.at 2019 bez mraků
+    EOXAT2020CLOUDLESS:
+      attribution:
+        text: Sentinel-2 bez mraků – https://s2maps.eu – od společnosti EOX IT Services GmbH (obsahuje upravená data Copernicus Sentinel 2020)
+      description: Dodatečně upravené snímky satelitu Sentinel.
+      name: eox.at 2020 bez mraků
+    EOXAT2021CLOUDLESS:
+      attribution:
+        text: Sentinel-2 bez mraků – https://s2maps.eu – od společnosti EOX IT Services GmbH (obsahuje upravená data Copernicus Sentinel 2021)
+      description: Dodatečně upravené snímky satelitu Sentinel.
+      name: eox.at 2021 bez mraků
     EsriWorldImagery:
       attribution:
         text: Podmínky použití a zpětná vazba
@@ -116,6 +131,22 @@ cs:
         text: Městský zeměměřický úřad Frankfurt nad Mohanem
       description: Letecké snímky města Frankfurt nad Mohanem, vyfocené 16. dubna 2019
       name: Letecký snímek Frankfurt nad Mohanem 2019
+    Geodatastyrelsen_Cadastral_Parcels_INSPIRE_View:
+      attribution:
+        text: Geodatastyrelsen og Styrelsen pro Dataforsyning og Infrastruktur
+      name: SDFI Cadastral Parcels INSPIRE View
+    Geodatastyrelsen_DTK_Kort25:
+      attribution:
+        text: Styrelsen pro Dataforsyning og Infrastruktur
+      name: SDFI DTK Map25
+    Geodatastyrelsen_Denmark:
+      attribution:
+        text: Styrelsen pro Dataforsyning og Infrastruktur
+      name: Letecké snímky SDFI
+    Geodatastyrelsen_Skaermkort:
+      attribution:
+        text: Styrelsen pro Dataforsyning og Infrastruktur
+      name: SDFI Screenmap
     Geoportal2-PL-City-boundaries_WMS:
       attribution:
         text: Ústřední úřad geodézie a kartografie
@@ -205,6 +236,11 @@ cs:
         text: Ústřední úřad geodézie a kartografie
       description: Služba Národní integrace terénní výzbroje je hromadná služba pro prezentaci dat o inženýrských sítích pocházejících přímo od útvarů okresní úrovně. Služba obsahuje pouze data těch jednotek, které mají službu WMS s odpovídajícími parametry a rozhodly se zařadit svou službu WMS do služby KrajowaIntegracjaUzboszeniaTerenu.
       name: 'Geoportál 2: kanalizační potrubí WMS'
+    Geoportal2-PL-shaded_relief_WMS:
+      attribution:
+        text: Ústřední úřad geodézie a kartografie
+      description: Služba prohlížení (Web Map Service, WMS) pro zobrazení stínování DMT v mřížce 1 m x 1 m. Služba nabízí podporu rozhraní WMS 1.3.0.
+      name: 'Geoportál 2: Stínovaný reliéf WMS'
     Geoportal2-PL-squares-and-housing-estates_WMS:
       attribution:
         text: Ústřední úřad geodézie a kartografie
@@ -307,16 +343,26 @@ cs:
         text: Podmínky použití & zpětná vazba
       description: Sada rastrových dlaždic poskytovaná společností Mapbox, která obsahuje globální základní mapu satelitních a leteckých snímků s vysokým rozlišením
       name: Satelitní snímky Mapbox
-    OSIPIII_6in:
+    Naturvardsverket-protected:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Švédské národní parky, přírodní rezervace a další chráněné oblasti a objekty
+      name: Agentura pro ochranu životního prostředí - Chráněné oblasti
+    Naturvardsverket-trails:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Denně aktualizované stezky v přírodních rezervacích nebo okolí zaznamenané švédskou agenturou pro ochranu životního prostředí
+      name: Agentura pro ochranu životního prostředí - Stezky
+    OSIP:
       attribution:
         text: Celostátní snímkovací program v Ohiu
-      description: Ortosnímky Celostátního snímkovacího programu v Ohiu III 41 okresů zachycené v 6palcovém rozlišení v letech 2019 a 2020.
-      name: Celostátní snímkovací program v Ohiu III 6palcový
+      description: Ohio celostátní snímky III nejprodávanější ortoimagery každého kraje při řešení od 1 stopy do 3 palců od roku 2017 do roku 2020.
+      name: Celostátní snímkovací program v Ohiu
     OSIP_1ft:
       attribution:
         text: Celostátní snímkovací program v Ohiu
       description: Ortosnímky Celostátního snímkovacího programu v Ohiu II všech 88 okresů v rozlišení jedné stopy v letech 2011 až 2014.
-      name: Celostátní snímkovací program v Ohiu II jednostopý
+      name: Celostátní snímkovací program v Ohiu jednostopý
     OSIP_6in:
       attribution:
         text: Celostátní snímkovací program v Ohiu
@@ -358,6 +404,34 @@ cs:
     OpenAerialMapMosaic:
       description: Všechny obrázky OpenAerialMap v jedné mozaikové vrstvě od Kontur.io
       name: Mozaika OpenAerialMap, od Kontur.io
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Starověké a historické pozůstatky a památky
+      name: Riksantikvarieämbetet - archeologická místa a památky
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Budovy a kostely dědictví
+      name: Riksantikvarieämbetet - Budovy dědictví
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Chráněné oblasti pro budovy dědictví a místa náboženského dědictví
+      name: Riksantikvarieämbetet - Chráněná místa dědictví
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Zříceniny kulturně-historického zájmu
+      name: Riksantikvarieämbetet - Zříceniny
+    SDFE_Overflade_Skyggekort_40cm:
+      attribution:
+        text: Styrelsen pro Dataforsyning og Infrastruktur
+      name: SDFI mapa povrchového stínu (40 cm)
+    SDFE_Terraen_Skyggekort_40cm:
+      attribution:
+        text: Styrelsen pro Dataforsyning og Infrastruktur
+      name: SDFI mapa stínového terénu (40 cm)
     SPW_ORTHO_LAST:
       name: Nejaktuálnější snímky SPW(allonie)
     SPW_PICC:
@@ -385,10 +459,13 @@ cs:
     US-TIGER-Roads-2021:
       description: Žlutá = data z veřejně dostupné mapy amerického sčítání lidu. Červená = data nejsou v OpenStreetMap nalezena
       name: Silnice TIGER 2021
+    US-TIGER-Roads-2022:
+      description: Žlutá = veřejně dostupná mapová data ze sčítání lidu USA. Červená = data nenalezená v OpenStreetMap
+      name: TIGER Roads 2022
     USDA-NAIP:
       attribution:
         text: Ministerstvo zemědělství USA
-      description: Poslední rok 60cm 4pásmových DOQQ z Národního programu pro snímkování zemědělství (NAIP) pro každý stát v sousedních Spojených státech.
+      description: Poslední rok 30/60cm 4pásmových DOQQ z Národního programu pro snímkování zemědělství (NAIP) pro každý stát v sousedních Spojených státech.
       name: Národní program snímkování zemědělství
     US_Forest_Service_roads_overlay:
       description: 'Vozovka: Zelené okraje = neklasifikovaná. Hnědé okraje = cesta. Povrch: Štěrk = světle hnědá výplň, asfalt = černá, dlažba = šedá, zemina = bílá, beton = modrá, tráva = zelená. Sezónní = bílé čáry'
@@ -482,11 +559,6 @@ cs:
         text: Ortofoto EUFAR Balaton 2010
       description: Fotografie se zeměpisnými souřadnicemi od Balaton Limnological Institute z roku 1940.
       name: Ortofoto EUFAR Balaton
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 přes aginfo.cgk.affrc.go.jp. Dobrá pro odvozování dat, ale trochu starší.
-      name: GSI KIBAN 2500 Japonsko
     gothenburg-citymap:
       attribution:
         text: © oblast Gothenburg, licence CC0
@@ -512,6 +584,16 @@ cs:
         text: © oblast Gothenburg, licence CC0
       description: Letecké snímky oblasti Gothenburg
       name: Letecké snímky Gothenburg 2019
+    gothenburg-ortho_2021:
+      attribution:
+        text: © oblast Gothenburg, licence CC0
+      description: Letecké snímky oblasti Gothenburg
+      name: Letecké snímky Gothenburg 2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © oblast Gothenburg, licence CC0
+      description: Letecké snímky oblasti Gothenburg
+      name: Nejnovější letecké snímky Gothenburg
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japonsko
@@ -654,6 +736,11 @@ cs:
       attribution:
         text: Simon Poole, data © přispěvatelé OpenStreetMap
       name: QA Žádná adresa
+    route500:
+      attribution:
+        text: Tiles © cquest@Openstreetmap Francie, data © IGN, LO/OL
+      description: Silnice klasifikované sítě (dálnice, státní, departementní)
+      name: Route 500
     rzeszowski-aerial:
       attribution:
         text: Okres Řešov
@@ -662,10 +749,35 @@ cs:
       attribution:
         text: Okres Řešov
       name: 'Okres Řešov: Budovy'
+    scb-industrial:
+      attribution:
+        text: © Statistika Centralbyrån, CC0
+      description: Geograficky vymezené oblasti, které se vyznačují rozsáhlým a průmyslovým využitím půdy
+      name: SCB - Průmyslové zóny
+    scb-settlements:
+      attribution:
+        text: © Statistika Centralbyrån, CC0
+      description: Sousední oblasti budov s 50-199 obyvateli a ne více než 150 metrů mezi domy
+      name: SCB - Malé osady
+    scb-urban:
+      attribution:
+        text: © Statistika Centralbyrån, CC0
+      description: Lidské osady nejméně 200 lidí s méně než 500 metrů mezi domácnostmi
+      name: SCB - Městské oblasti
+    scb-vacation:
+      attribution:
+        text: © Statistika Centralbyrån, CC0
+      description: Sousední oblasti, které se skládají hlavně z dovolených; Sbírka nejméně 50 rekreačních domů, kde vzdálenost mezi nimi nepřesahuje 150 metrů
+      name: SCB - Oblasti domácností pro dovolenou
     skobbler:
       attribution:
         text: '© Dlaždice: skobbler, mapová data: přispěvatelé OpenStreetMap'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © Skolverket
+      description: Švédské školy.
+      name: Skolverket - Školy
     skoterleder:
       attribution:
         text: © Skoterleder.org
@@ -693,6 +805,11 @@ cs:
         text: Letecké snímky města Susono
       description: Letecké snímky zveřejněné Susono City jako otevřená data.
       name: Letecké snímky města Susono
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: Švédská přenosová síť pro elektřinu.
+      name: SVK - Elektrická síť
     tf-cycle:
       attribution:
         text: Mapy © Thunderforest, data © přispěvatelé OpenStreetMap

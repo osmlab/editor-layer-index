@@ -1,0 +1,70 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 2001",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2001/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2001",
+        "end_date": "2001",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_2001",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    151.47623044968,
+                    -32.9993058959
+                ],
+                [
+                    151.73492414474,
+                    -33.00189729043
+                ],
+                [
+                    151.73629743576,
+                    -32.9764119389
+                ],
+                [
+                    151.8059919548,
+                    -32.92239324821
+                ],
+                [
+                    151.80393201828,
+                    -32.89587600866
+                ],
+                [
+                    151.91379529953,
+                    -32.82868270371
+                ],
+                [
+                    152.02262861252,
+                    -32.79448976349
+                ],
+                [
+                    152.02262861252,
+                    -32.49948290019
+                ],
+                [
+                    151.47889128685,
+                    -32.49760083149
+                ],
+                [
+                    151.47623044968,
+                    -32.9993058959
+                ]
+            ]
+        ]
+    }
+}

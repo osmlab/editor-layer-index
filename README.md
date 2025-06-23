@@ -1,13 +1,15 @@
 # OSM Editor Layer Index
 
-[![Build Status](https://github.com/osmlab/editor-layer-index/workflows/Deploy/badge.svg?branch=gh-pages)](https://github.com/osmlab/editor-layer-index/actions?query=branch%3Agh-pages+workflow%3ADeploy)
+[![Deploy](https://github.com/osmlab/editor-layer-index/actions/workflows/push.yml/badge.svg?branch=gh-pages)](https://github.com/osmlab/editor-layer-index/actions/workflows/push.yml)
 
 The goal of this project is to maintain a canonical representation of the layers available to [OpenStreetMap](https://www.openstreetmap.org/) editors such as:
 
 * [iD](https://github.com/openstreetmap/iD)
-* [Vespucci](http://vespucci.io/) (historically)
+* [Vespucci](http://vespucci.io/)
 * [Go Map!!](https://wiki.openstreetmap.org/wiki/Go_Map!!)
-* [Potlatch 2](https://github.com/systemed/potlatch2) and
+* [MapComplete](https://mapcomplete.org)
+* [Every Door](https://every-door.app/)
+* [Potlatch 3](https://www.systemed.net/potlatch/) and
 * [JOSM](https://josm.openstreetmap.de/) (optional)
 
 Both imagery and other raster data that is useful for mapping are within scope of the project.
@@ -33,3 +35,7 @@ For any other usage, use https://osmlab.github.io/editor-layer-index/imagery.geo
 
 An interactive list of all layers (with a live map preview for most of them) is available at
 https://osmlab.github.io/editor-layer-index.
+
+## Similar Projects
+
+- The [JOSM Imagery souces wiki](https://josm.openstreetmap.de/wiki/Maps) is a similar project to ELI

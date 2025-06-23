@@ -4,11 +4,13 @@
 #
 #    pip-compile requirements.in
 #
-aiodns==3.0.0
+aiodns==3.2.0
     # via aiohttp
-aiofiles==23.2.1
+aiofiles==24.1.0
     # via -r requirements.in
-aiohttp[speedups]==3.8.5
+aiohappyeyeballs==2.3.4
+    # via aiohttp
+aiohttp[speedups]==3.11.18
     # via -r requirements.in
 aiosignal==1.2.0
     # via aiohttp
@@ -21,7 +23,7 @@ attrs==23.1.0
     #   referencing
 brotli==1.0.9
     # via aiohttp
-certifi==2023.7.22
+certifi==2025.1.31
     # via
     #   -r requirements.in
     #   pyproj
@@ -29,24 +31,22 @@ certifi==2023.7.22
 cffi==1.15.1
     # via pycares
 charset-normalizer==2.0.9
-    # via
-    #   aiohttp
-    #   requests
+    # via requests
 click==8.0.3
     # via mercantile
-colorlog==6.7.0
+colorlog==6.9.0
     # via -r requirements.in
 frozenlist==1.2.0
     # via
     #   aiohttp
     #   aiosignal
-idna==3.3
+idna==3.7
     # via
     #   requests
     #   yarl
-imagehash==4.3.1
+imagehash==4.3.2
     # via -r requirements.in
-jsonschema==4.19.0
+jsonschema==4.23.0
     # via -r requirements.in
 jsonschema-specifications==2023.6.1
     # via jsonschema
@@ -62,15 +62,19 @@ numpy==1.22.0
     #   pywavelets
     #   scipy
     #   shapely
-pillow==10.0.0
+pillow==11.1.0
     # via
     #   -r requirements.in
     #   imagehash
+propcache==0.2.1
+    # via
+    #   aiohttp
+    #   yarl
 pycares==4.3.0
     # via aiodns
 pycparser==2.21
     # via cffi
-pyproj==3.6.0
+pyproj==3.7.0
     # via -r requirements.in
 python-magic==0.4.27
     # via -r requirements.in
@@ -80,9 +84,9 @@ referencing==0.29.1
     # via
     #   jsonschema
     #   jsonschema-specifications
-regex==2023.8.8
+regex==2024.11.6
     # via -r requirements.in
-requests==2.31.0
+requests==2.32.3
     # via -r requirements.in
 rpds-py==0.8.10
     # via
@@ -90,13 +94,13 @@ rpds-py==0.8.10
     #   referencing
 scipy==1.10.0
     # via imagehash
-shapely==2.0.1
+shapely==2.0.7
     # via -r requirements.in
-urllib3==2.0.4
+urllib3==2.3.0
     # via
     #   -r requirements.in
     #   requests
-validators==0.21.2
+validators==0.34.0
     # via -r requirements.in
-yarl==1.7.2
+yarl==1.18.3
     # via aiohttp

@@ -12,7 +12,21 @@
             "$ref": "http://json.schemastore.org/geojson#/properties/bbox"
         },
         "geometry": {
-            "$ref": "http://json.schemastore.org/geojson#/definitions/geometry"
+            "title": "Geometry",
+            "description": "A geometry is a GeoJSON object where the type member's value is one of the following strings: `Point`, `MultiPoint`, `LineString`, `MultiLineString`, `Polygon`, `MultiPolygon`, or `GeometryCollection`.",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "Point",
+                        "MultiPoint",
+                        "LineString",
+                        "MultiLineString",
+                        "Polygon",
+                        "MultiPolygon",
+                        "GeometryCollection"
+                    ]
+                }
+            }
         },
         "properties": {
             "type": "object",
@@ -40,7 +54,8 @@
                         "bing",
                         "scanex",
                         "wms_endpoint",
-                        "wmts"
+                        "wmts",
+                        "pmt3"
                     ]
                 },
                 "category": {
@@ -85,7 +100,10 @@
                 },
                 "privacy_policy_url": {
                     "description": "A URL for the privacy policy of the operator or false if there is no existing privacy policy for tis imagery.",
-                    "type":  ["string", "boolean"]
+                    "type": [
+                        "string",
+                        "boolean"
+                    ]
                 },
                 "id": {
                     "description": "A unique identifier for the source; used in imagery_used changeset tag",
@@ -220,13 +238,13 @@
                     },
                     "additionalProperties": false
                 },
-               "default-layers": {
-                   "description": "Default layer to open (when using WMS_ENDPOINT type). Contains list of layer tag with two attributes - name and style, e.g. `\"default-layers\": [\"layer\": { name=\"Basisdata_NP_Basiskart_JanMayen_WMTS_25829\" \"style\":\"default\" } ]` (not allowed in `mirror` attribute)",
+                "default-layers": {
+                    "description": "Default layer to open (when using WMS_ENDPOINT type). Contains list of layer tag with two attributes - name and style, e.g. `\"default-layers\": [\"layer\": { name=\"Basisdata_NP_Basiskart_JanMayen_WMTS_25829\" \"style\":\"default\" } ]` (not allowed in `mirror` attribute)",
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
-                            "layer" : {
+                            "layer": {
                                 "type": "object",
                                 "properties": {
                                     "layer-name": {
@@ -252,7 +270,7 @@
                 "minimum-tile-expire": {
                     "description": "minimum expiry time for tiles in seconds. The larger the value, the longer entry in cache will be considered valid",
                     "type": "integer"
-                }                            
+                }
             }
         }
     }

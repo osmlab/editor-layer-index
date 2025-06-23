@@ -1,0 +1,62 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "ACC_2018",
+    "name": "Athens-Clarke County Imagery (2018)",
+    "category": "historicphoto",
+    "type": "tms",
+    "url": "https://tiles.arcgis.com/tiles/xSEULKvB31odt3XQ/arcgis/rest/services/2018_Ortho_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+    "country_code": "US",
+    "min_zoom": 8,
+    "max_zoom": 20,    	      
+    "attribution": {
+        "url": "https://data-athensclarke.opendata.arcgis.com/",
+        "text": "Athens-Clarke County GIS",
+        "required": true
+    },
+    "valid-georeference": true,
+    "start_date": "2017",
+    "end_date": "2018",
+    "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ga/OSM_Imagery_Waiver_signed.pdf",
+    "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+            [
+              -83.3917236328125,
+              33.87269600798948
+            ],
+            [
+              -83.309326171875,
+              33.83506067707558
+            ],
+            [
+              -83.20632934570311,
+              33.86243347149933
+            ],
+            [
+              -83.25576782226562,
+              33.96386430820156
+            ],
+            [
+              -83.35739135742188,
+              34.0219331594475
+            ],
+            [
+              -83.45077514648438,
+              33.996888718429396
+            ],
+            [
+              -83.50433349609375,
+              33.92626920481366
+            ],
+            [
+              -83.3917236328125,
+              33.87269600798948
+            ]
+      ]
+    ]
+  }
+}

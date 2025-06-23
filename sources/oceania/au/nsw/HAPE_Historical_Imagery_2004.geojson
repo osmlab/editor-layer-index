@@ -1,0 +1,82 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 2004",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery2004/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2004",
+        "end_date": "2004",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_2004",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    150.49758773804,
+                    -33.492160853
+                ],
+                [
+                    150.4852281189,
+                    -34.00144166406
+                ],
+                [
+                    150.87936264038,
+                    -34.00941072387
+                ],
+                [
+                    150.87798934937,
+                    -34.18340465718
+                ],
+                [
+                    150.49072128296,
+                    -34.17999645079
+                ],
+                [
+                    150.48660140991,
+                    -34.51108207139
+                ],
+                [
+                    150.89034896851,
+                    -34.51560840693
+                ],
+                [
+                    150.9246812439,
+                    -34.49976515687
+                ],
+                [
+                    151.01669174194,
+                    -34.22088583875
+                ],
+                [
+                    151.14501786976064,
+                    -34.14431851284792
+                ],
+                [
+                    151.25839096069,
+                    -34.00258014696
+                ],
+                [
+                    151.44515853882,
+                    -33.49445136591
+                ],
+                [
+                    150.49758773804,
+                    -33.492160853
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

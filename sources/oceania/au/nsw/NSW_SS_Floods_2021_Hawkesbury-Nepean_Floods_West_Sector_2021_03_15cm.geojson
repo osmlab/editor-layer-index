@@ -1,0 +1,53 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods 2021 Hawkesbury-Nepean Floods West Sector 2021 03 15cm",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:7",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2021-03",
+        "end_date": "2021-03",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_2021_Hawkesbury-Nepean_Floods_West_Sector_2021_03_15cm",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    150.64405290490947,
+                    -33.533204105522564
+                ],
+                [
+                    150.64563172585372,
+                    -33.714397330239684
+                ],
+                [
+                    150.74436984423556,
+                    -33.71303491823862
+                ],
+                [
+                    150.7444288593863,
+                    -33.53261898811882
+                ],
+                [
+                    150.64405290490947,
+                    -33.533204105522564
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

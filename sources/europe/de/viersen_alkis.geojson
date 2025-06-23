@@ -1,0 +1,153 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "ALKIS Kreis Viersen",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/viersen_alkis.png",
+        "type": "wms",
+        "url": "https://gdi-niederrhein-geodienste.de/flurkarte_verb_sammeldienst/service?VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=FlurkarteNW_Viersen&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png",
+        "min_zoom": 16,
+        "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+        "privacy_policy_url": "https://www.krzn.de/datenschutzerklaerung",
+        "id": "viersen_alkis_wms",
+        "description": "Amtliches Liegenschaftskatasterinformationssystem (ALKIS). Zeigt Gebäude- und Flurstücksdaten (tagesaktuell)",
+        "country_code": "DE",
+        "best": true,
+        "category": "other",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:25831",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:4647",
+            "EPSG:900913",
+            "EPSG:5649",
+            "EPSG:5650",
+            "EPSG:5651",
+            "EPSG:5652",
+            "EPSG:5653",
+            "EPSG:5554",
+            "EPSG:5555",
+            "EPSG:5556",
+            "EPSG:28992",
+            "EPSG:3035",
+            "EPSG:31466",
+            "EPSG:31467"      ]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    6.064,
+                    51.22
+                ],
+                [
+                    6.07,
+                    51.17
+                ],
+                [
+                    6.211,
+                    51.164
+                ],
+                [
+                    6.321,
+                    51.179
+                ],
+                [
+                    6.34,
+                    51.22
+                ],
+                [
+                    6.35,
+                    51.22
+                ],
+                [
+                    6.37,
+                    51.21
+                ],
+                [
+                    6.43,
+                    51.22
+                ],
+                [
+                    6.46,
+                    51.24
+                ],
+                [
+                    6.523,
+                    51.216
+                ],
+                [
+                    6.64,
+                    51.25
+                ],
+                [
+                    6.59,
+                    51.29
+                ],
+                [
+                    6.514,
+                    51.293
+                ],
+                [
+                    6.52,
+                    51.33
+                ],
+                [
+                    6.5,
+                    51.35
+                ],
+                [
+                    6.49,
+                    51.4
+                ],
+                [
+                    6.52,
+                    51.39
+                ],
+                [
+                    6.54,
+                    51.4
+                ],
+                [
+                    6.53,
+                    51.43
+                ],
+                [
+                    6.47,
+                    51.42
+                ],
+                [
+                    6.46,
+                    51.41
+                ],
+                [
+                    6.4,
+                    51.42
+                ],
+                [
+                    6.35,
+                    51.38
+                ],
+                [
+                    6.222,
+                    51.368
+                ],
+                [
+                    6.17,
+                    51.337
+                ],
+                [
+                    6.07,
+                    51.24
+                ],
+                [
+                    6.064,
+                    51.22
+                ]
+            ]
+        ]
+    }
+}

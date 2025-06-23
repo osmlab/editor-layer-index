@@ -1,0 +1,84 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 1989",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1989/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "1989",
+        "end_date": "1989",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_1989",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        150.98888362885,
+                        -33.61175983572
+                    ],
+                    [
+                        150.98716701508,
+                        -33.75888370871
+                    ],
+                    [
+                        151.26113857269,
+                        -33.7628796756
+                    ],
+                    [
+                        151.26354183197,
+                        -33.61576264815
+                    ],
+                    [
+                        150.98888362885,
+                        -33.61175983572
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        151.23938049316,
+                        -33.86428623566
+                    ],
+                    [
+                        151.23667708397,
+                        -34.00151388702
+                    ],
+                    [
+                        151.25255550385,
+                        -34.00656557074
+                    ],
+                    [
+                        151.27246822357,
+                        -33.96728093668
+                    ],
+                    [
+                        151.28894771576,
+                        -33.89236213586
+                    ],
+                    [
+                        151.28843273163,
+                        -33.86478512666
+                    ],
+                    [
+                        151.23938049316,
+                        -33.86428623566
+                    ]
+                ]
+            ]
+        ]
+    }
+}

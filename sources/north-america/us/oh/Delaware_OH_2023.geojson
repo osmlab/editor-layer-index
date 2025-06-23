@@ -1,0 +1,108 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Delaware_OH_2023",
+        "attribution": {
+            "url": "https://co.delaware.oh.us/",
+            "text": "Delaware County, State of Ohio",
+            "required": false
+        },
+        "name": "Delaware County Orthoimagery (2023)",
+        "icon": "https://co.delaware.oh.us/wp-content/uploads/2017/11/logo.png",
+        "url": "https://tiles.arcgis.com/tiles/ziXVKVy3BiopMCCU/arcgis/rest/services/Imagery_2023/MapServer/tile/{zoom}/{y}/{x}",
+        "min_zoom": 10,
+        "max_zoom": 21,
+        "license_url": "https://gis1.oit.ohio.gov/OGRIPWeb/WebContent/OSIP/OSIP%20III%20RFP%200A1177.pdf#page=26",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023",
+        "end_date": "2023",
+        "description": "1-foot resolution spring 2023 orthoimagery for Delaware County in the State of Ohio",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -83.26485262082568,
+                    40.2405425745749
+                ],
+                [
+                    -83.17520945129812,
+                    40.241501781758956
+                ],
+                [
+                    -83.17393084204842,
+                    40.13144998713335
+                ],
+                [
+                    -82.94099588979542,
+                    40.13239460177218
+                ],
+                [
+                    -82.94150643485155,
+                    40.11892650843686
+                ],
+                [
+                    -82.74469131584787,
+                    40.11892650843686
+                ],
+                [
+                    -82.74612277434565,
+                    40.32488372956584
+                ],
+                [
+                    -82.7274905266888,
+                    40.32488372956584
+                ],
+                [
+                    -82.72767684916553,
+                    40.35243578462928
+                ],
+                [
+                    -82.78152404489339,
+                    40.35257777638304
+                ],
+                [
+                    -82.78152404489339,
+                    40.36620759266208
+                ],
+                [
+                    -82.92504750637478,
+                    40.365878678126904
+                ],
+                [
+                    -82.92536965470302,
+                    40.39320428633488
+                ],
+                [
+                    -82.90735487924418,
+                    40.39320428633488
+                ],
+                [
+                    -82.90756435337757,
+                    40.42095829422905
+                ],
+                [
+                    -83.01565300612887,
+                    40.42032039958548
+                ],
+                [
+                    -83.0150245837293,
+                    40.44790381628451
+                ],
+                [
+                    -83.26693141411045,
+                    40.44681839033257
+                ],
+                [
+                    -83.26485262082568,
+                    40.2405425745749
+                ]
+            ]
+        ]
+    }
+}

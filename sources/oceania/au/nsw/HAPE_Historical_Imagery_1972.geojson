@@ -1,0 +1,58 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 1972",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1972/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "1972",
+        "end_date": "1972",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_1972",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    150.4907219696,
+                    -33.99518030465
+                ],
+                [
+                    150.48660140991,
+                    -34.5020286627
+                ],
+                [
+                    150.9603868103,
+                    -34.50429210706
+                ],
+                [
+                    150.9800279797917,
+                    -34.27858904966711
+                ],
+                [
+                    151.15407559217266,
+                    -34.12529074122655
+                ],
+                [
+                    151.25777158499653,
+                    -33.99290312525
+                ],
+                [
+                    150.4907219696,
+                    -33.99518030465
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

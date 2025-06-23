@@ -1,25 +1,5 @@
 da:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders nyeste luftfoto
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 luftfoto 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview faktor 0,25 m
     Bing:
       description: Satellit og luftfoto.
     EOXAT2018CLOUDLESS:
@@ -34,12 +14,31 @@ da:
         text: Vilkår & tilbagemelding
       description: Esri arkivfotos som kan være af bedre kvalitet og mere præcise end standard-laget.
       name: Esri World fotos (Clarity) Beta
+    Geodatastyrelsen_Cadastral_Parcels_INSPIRE_View:
+      attribution:
+        text: Geodatastyrelsen og Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI matrikelkort INSPIRE visning
+    Geodatastyrelsen_DTK_Kort25:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI DTK Kort25
+    Geodatastyrelsen_Denmark:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI luftfoto
+    Geodatastyrelsen_Skaermkort:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI Skærmkort
     MAPNIK:
+      attribution:
+        text: © OpenStreetMap-bidragsydere, ODbL 1.0
       description: Standard-laget fra OpenStreetMap.
       name: OpenStreetMap (standard)
     Mapbox:
       attribution:
         text: Vilkår & tilbagemelding
+      description: Raster-fliser fra Mapbox med global dækning af satellit og luftfoto i høj opløsning
       name: Mapbox Satellite
     OSM_Inspector-Addresses:
       attribution:
@@ -69,6 +68,10 @@ da:
       attribution:
         text: © Geofabrik GmbH, OpenStreetMap bidragsydere, CC BY-SA
       name: 'OSM Inspector: Tagging'
+    SDFE_Overflade_Skyggekort_40cm:
+      name: SDFI overfladeskyggekort (40 cm)
+    SDFE_Terraen_Skyggekort_40cm:
+      name: SDFI terrænskyggekort (40 cm)
     SPW_ORTHO_LAST:
       name: SPW(allonie) mest nyeste luftfoto
     SPW_PICC:
@@ -150,10 +153,6 @@ da:
         text: EUFAR Balaton ortofotó 2010
       description: 1940 geotagget fotografi fra Balaton Limnological Institute.
       name: EUFAR Balaton ortofotos
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Göteborg Kommune, CC0

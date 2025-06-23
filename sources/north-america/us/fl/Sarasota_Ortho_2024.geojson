@@ -1,0 +1,67 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Sarasota_Ortho_2024",
+        "attribution": {
+            "url": "https://data-sarco.opendata.arcgis.com/",
+            "text": "Sarasota County GIS",
+            "required": false
+        },
+        "name": "Sarasota County Orthoimagery (2024)",
+        "url": "https://ags3.scgov.net/agsfed/rest/services/ImageServices/SC2024WM/ImageServer/WMTS/tile/1.0.0/ImageServices_SC2024WM/default/default028mm/{zoom}/{y}/{x}",
+        "min_zoom": 8,
+        "max_zoom": 20,
+        "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2023-12-06",
+        "end_date": "2024-01-03",
+        "description": "The 2024 3-inch resolution orthoimagery for Sarasota County in the State of Florida",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": false
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -82.234751149177,
+                    27.40096261036227
+                ],
+                [
+                    -82.65081755867413,
+                    27.39964220776652
+                ],
+                [
+                    -82.40257858262302,
+                    26.932928292620545
+                ],
+                [
+                    -82.24912170062727,
+                    26.933284783055853
+                ],
+                [
+                    -82.24933216095084,
+                    27.029567724739067
+                ],
+                [
+                    -82.03429616900803,
+                    27.029785523487348
+                ],
+                [
+                    -82.03436285025963,
+                    27.222347479701895
+                ],
+                [
+                    -82.23437539166588,
+                    27.222160290913862
+                ],
+                [
+                    -82.234751149177,
+                    27.40096261036227
+                ]
+            ]
+        ]
+    }
+}

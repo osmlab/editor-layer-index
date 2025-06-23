@@ -8,7 +8,7 @@
             "required": false
         },
         "name": "Seminole County Orthoimagery (2023)",
-        "url": "https://seminolearcgis.seminolecountyfl.gov:6443/arcgis/rest/services/Aerials2023/MapServer/tile/{zoom}/{y}/{x}",
+        "url": "https://seminolearcgis.seminolecountyfl.gov:6443/arcgis/rest/services/Aerials2023/MapServer/WMTS/tile/1.0.0/Aerials2023/default/GoogleMapsCompatible/{zoom}/{y}/{x}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
@@ -16,7 +16,7 @@
         "start_date": "2023",
         "end_date": "2023",
         "description": "The 2023 orthoimagery for Seminole County of the State of Florida",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.scpafl.org/Privacy"
     },

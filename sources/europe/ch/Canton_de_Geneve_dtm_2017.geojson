@@ -6,7 +6,7 @@
         "start_date": "2017",
         "end_date": "2017",
         "id": "Geneve-dtm-2017",
-        "url": "https://ge.ch/sitgags2/services/RASTER/MNA_RELIEF_TERRAIN_COLLECTION/MapServer/WMSServer?LAYERS=4&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://raster.sitg.ge.ch/arcgis/services/MNA_RELIEF_TERRAIN_COLLECTION/MapServer/WMSServer?LAYERS=4&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "attribution": {
             "text": "Système d'information du territoire à Genève (SITG)",
             "required": true
@@ -17,6 +17,7 @@
         "available_projections": [
             "CRS:84",
             "EPSG:2056",
+            "EPSG:2154",
             "EPSG:3857",
             "EPSG:4326"
         ],

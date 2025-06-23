@@ -4,7 +4,7 @@
         "id": "kartverket-hoydekurver",
         "name": "Kartverket Contour Lines overlay",
         "type": "wms",
-        "url": "https://openwms.statkart.no/skwms1/wms.topo4?LAYERS=hoydetall5linje,hoydetall5punkt,hoydepunkt,vannpunkt,hoydekurver_1m,hoydekurver_5m,N50Hoydekurver,N250Hoydekurver,N500Hoydekurver,N1000Hoydekurver,N2000Hoydekurver&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://wms.geonorge.no/skwms1/wms.topo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=hoydepunkt,Dybdepunkt,hoydetall5linje,hoydetall5punkt,N100Hoydekurver,hoydekurver_1m,hoydekurver_5m,N50Hoydekurver,N250Hoydekurver,N500Hoydekurver,N1000Hoydekurver,N2000Hoydekurver,Dybdekontur&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
@@ -72,12 +72,13 @@
         ],
         "attribution": {
             "text": "© Kartverket",
-            "url": "https://www.kartverket.no/Prosjekter/Nasjonal-detaljert-hoydemodell/"
+            "url": "https://www.kartverket.no/"
         },
-        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
         "max_zoom": 22,
         "min_zoom": 9,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
         "description": "Contours for Norway",
         "category": "elevation"
     },

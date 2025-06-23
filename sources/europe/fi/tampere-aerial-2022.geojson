@@ -1,0 +1,226 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "© City of Tampere",
+            "url": "https://www.tampere.fi/en"
+        },
+        "available_projections": [
+            "EPSG:2391",
+            "EPSG:3386",
+            "EPSG:2391",
+            "EPSG:2392",
+            "EPSG:2393",
+            "EPSG:2394",
+            "EPSG:2397",
+            "EPSG:4123",
+            "EPSG:3878",
+            "EPSG:3067",
+            "EPSG:3126",
+            "EPSG:3127",
+            "EPSG:3128",
+            "EPSG:3129",
+            "EPSG:3130",
+            "EPSG:3131",
+            "EPSG:3132",
+            "EPSG:3133",
+            "EPSG:3134",
+            "EPSG:3135",
+            "EPSG:3136",
+            "EPSG:3137",
+            "EPSG:3138",
+            "EPSG:3034",
+            "EPSG:3035",
+            "EPSG:3046",
+            "EPSG:3047",
+            "EPSG:3048",
+            "EPSG:4258",
+            "EPSG:4937",
+            "EPSG:4936",
+            "EPSG:5717",
+            "EPSG:4326",
+            "EPSG:3785",
+            "EPSG:3857",
+            "CRS:84"
+        ],
+        "best": true,
+        "country_code": "FI",
+        "description": "Orthorectified aerial imagery of Tampere (excl. Aitolahti and Teisko) and Pirkkala (excl. airport). Taken in May 2022, resolution of this layer is 12.5 cm.",
+        "icon": "https://www.tampere.fi/themes/custom/tampere/images/favicon-files/tre-favicon-96-x-96.png",
+        "id": "tampere-aerial-2022",
+        "license_url": "https://wiki.openstreetmap.org/w/images/5/5c/Tampere_wms_waiver.pdf",
+        "privacy_policy_url": "https://www.tampere.fi/en/data-protection-and-information-management",
+        "max_zoom": 20,
+        "min_zoom": 4,
+        "start_date": "2022-05-16",
+        "end_date": "2022-05-21",
+        "name": "Tampere aerial imagery 2022",
+        "type": "wms",
+        "url": "https://georaster.tampere.fi/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&STYLES&LAYERS=georaster%3Atampere_2022_3067_r0125&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    23.5334743,
+                    61.5348229
+                ],
+                [
+                    23.5347197,
+                    61.484419
+                ],
+                [
+                    23.5360262,
+                    61.4738439
+                ],
+                [
+                    23.5684204,
+                    61.4738319
+                ],
+                [
+                    23.5685305,
+                    61.4714858
+                ],
+                [
+                    23.5784744,
+                    61.4716762
+                ],
+                [
+                    23.5683259,
+                    61.4659001
+                ],
+                [
+                    23.6151985,
+                    61.4273277
+                ],
+                [
+                    23.740885,
+                    61.4305052
+                ],
+                [
+                    23.8079789,
+                    61.4270965
+                ],
+                [
+                    23.8505277,
+                    61.4278367
+                ],
+                [
+                    23.8505277,
+                    61.4278367
+                ],
+                [
+                    23.850686,
+                    61.4262957
+                ],
+                [
+                    23.8938741,
+                    61.4262813
+                ],
+                [
+                    23.9044875,
+                    61.4402168
+                ],
+                [
+                    23.9185825,
+                    61.4505664
+                ],
+                [
+                    23.9272059,
+                    61.4645489
+                ],
+                [
+                    23.9350574,
+                    61.4721356
+                ],
+                [
+                    23.9408825,
+                    61.487152
+                ],
+                [
+                    23.9510215,
+                    61.4854027
+                ],
+                [
+                    23.9649702,
+                    61.4857106
+                ],
+                [
+                    23.980905,
+                    61.5027069
+                ],
+                [
+                    23.9738936,
+                    61.522009
+                ],
+                [
+                    23.9967185,
+                    61.5466339
+                ],
+                [
+                    23.9218396,
+                    61.5441488
+                ],
+                [
+                    23.9117521,
+                    61.539364
+                ],
+                [
+                    23.9243652,
+                    61.5287369
+                ],
+                [
+                    23.9140318,
+                    61.5248229
+                ],
+                [
+                    23.903666,
+                    61.5250051
+                ],
+                [
+                    23.8967971,
+                    61.5280346
+                ],
+                [
+                    23.8480573,
+                    61.5281676
+                ],
+                [
+                    23.7393412,
+                    61.5262748
+                ],
+                [
+                    23.7324754,
+                    61.5335225
+                ],
+                [
+                    23.7165979,
+                    61.5404649
+                ],
+                [
+                    23.6710883,
+                    61.544308
+                ],
+                [
+                    23.6437925,
+                    61.5315788
+                ],
+                [
+                    23.5768518,
+                    61.525373
+                ],
+                [
+                    23.5439617,
+                    61.5349348
+                ],
+                [
+                    23.5334743,
+                    61.5348229
+                ]
+            ]
+        ]
+    }
+}

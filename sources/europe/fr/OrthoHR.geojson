@@ -6,8 +6,8 @@
         "type": "tms",
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/orthohr/{zoom}/{x}/{y}",
         "category": "photo",
-        "start_date": "2013",
-        "end_date": "2017",
+        "start_date": "2020",
+        "end_date": "2022",
         "country_code": "FR",
         "attribution": {
             "text": "IGN, CRAIG, Mégalis Bretagne",
@@ -16,7 +16,8 @@
         },
         "max_zoom": 21,
         "min_zoom": 3,
-        "license_url": "https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#donn%C3%A9es-ortho-hr-sous-licence-ouverte"
+        "license_url": "https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#donn%C3%A9es-ortho-hr-sous-licence-ouverte",
+        "privacy_policy_url": "https://www.openstreetmap.fr/mentions-legales/"
     },
     "geometry": {
         "type": "MultiPolygon",

@@ -8,20 +8,22 @@
             "required": false
         },
         "name": "Volusia County Orthoimagery (2021)",
-        "url": "https://maps2.vcgov.org/arcgis/rest/services/Aerial_2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&foo={proj}",
-        "max_zoom": 19,
+        "url": "https://maps5.vcgov.org/arcgis/services/Aerials/2021_Aerial/ImageServer/WMSServer?format=image/jpeg&version=1.3.0&service=wms&request=getmap&layers=0&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "min_zoom": 12,
+        "max_zoom": 22,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
+            "EPSG:4326",
             "EPSG:6438"
         ],
         "start_date": "2021",
         "end_date": "2021",
         "description": "The 2021 orthoimagery for Volusia County of the State of Florida",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.volusia.org/government/privacy-policy.stml"
     },
@@ -71,7 +73,7 @@
                 ],
                 [
                     -81.45898823261,
-                    29.39447732140
+                    29.3944773214
                 ],
                 [
                     -81.45898823261,
@@ -79,14 +81,14 @@
                 ],
                 [
                     -81.50601268888,
-                    29.38052034260
+                    29.3805203426
                 ],
                 [
-                    -81.50598051310,
+                    -81.5059805131,
                     29.36676719055
                 ],
                 [
-                    -81.56870128870,
+                    -81.5687012887,
                     29.36652408601
                 ],
                 [
@@ -127,7 +129,7 @@
                 ],
                 [
                     -81.50456432819,
-                    29.10552659430
+                    29.1055265943
                 ],
                 [
                     -81.50456432819,
@@ -139,7 +141,7 @@
                 ],
                 [
                     -81.47315033913,
-                    29.06434754710
+                    29.0643475471
                 ],
                 [
                     -81.45735749245,
@@ -147,15 +149,15 @@
                 ],
                 [
                     -81.45735749245,
-                    29.05076759280
+                    29.0507675928
                 ],
                 [
                     -81.44173630714,
-                    29.05076759280
+                    29.0507675928
                 ],
                 [
                     -81.44165047646,
-                    29.03711080820
+                    29.0371108082
                 ],
                 [
                     -81.42611512184,
@@ -187,26 +189,26 @@
                 ],
                 [
                     -81.37882241249,
-                    28.95483175710
+                    28.9548317571
                 ],
                 [
                     -81.36320122719,
-                    28.95483175710
+                    28.9548317571
                 ],
                 [
                     -81.36302956581,
                     28.89976737082
                 ],
                 [
-                    -81.37873658180,
-                    28.89954194490
+                    -81.3787365818,
+                    28.8995419449
                 ],
                 [
                     -81.37839325905,
                     28.85850627673
                 ],
                 [
-                    -81.36311539650,
+                    -81.3631153965,
                     28.85858144845
                 ],
                 [
@@ -222,7 +224,7 @@
                     28.83106497061
                 ],
                 [
-                    -81.23788837910,
+                    -81.2378883791,
                     28.83121531605
                 ],
                 [
@@ -254,7 +256,7 @@
                     28.79000227626
                 ],
                 [
-                    -81.12845429420,
+                    -81.1284542942,
                     28.78985183371
                 ],
                 [
@@ -295,14 +297,14 @@
                 ],
                 [
                     -81.03489884377,
-                    28.70752724530
+                    28.7075272453
                 ],
                 [
-                    -81.03464135170,
-                    28.66626532160
+                    -81.0346413517,
+                    28.6662653216
                 ],
                 [
-                    -81.01902016640,
+                    -81.0190201664,
                     28.66641594212
                 ],
                 [

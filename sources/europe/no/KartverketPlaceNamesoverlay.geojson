@@ -4,17 +4,18 @@
         "id": "kartverket-ssr2",
         "name": "Kartverket Place Names overlay",
         "type": "wms_endpoint",
-        "url": "https://openwms.statkart.no/skwms1/wms.ssr2?request=GetCapabilities&service=WMS",
+        "url": "https://wms.geonorge.no/skwms1/wms.ssr2?request=GetCapabilities&service=WMS",
         "overlay": true,
         "country_code": "NO",
         "attribution": {
             "text": "© Kartverket",
-            "url": "https://www.kartverket.no/kart/stedsnavn/"
+            "url": "https://www.kartverket.no/"
         },
-        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
         "max_zoom": 22,
         "min_zoom": 8,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
         "description": "Official Norwegian place names from the SSR database. Selectable categories.",
         "category": "other"
     },

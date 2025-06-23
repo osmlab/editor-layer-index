@@ -3,8 +3,9 @@ import sys
 import io
 import xml.etree.cElementTree as ET
 from shapely.geometry import shape, Polygon, MultiPolygon
+from shapely import get_num_geometries, get_num_coordinates
 
-root = ET.Element("imagery")
+root = ET.Element("imagery", {"xmlns" :"http://josm.openstreetmap.de/maps-1.0"})
 
 sources = []
 for file in sys.argv[1:]:
@@ -19,14 +20,20 @@ def add_source(source):
     name = ET.SubElement(entry, "name")
     name.text = props["name"]
 
-    name = ET.SubElement(entry, "id")
-    name.text = props["id"]
+    id = ET.SubElement(entry, "id")
+    id.text = props["id"]
 
     type = ET.SubElement(entry, "type")
     type.text = props["type"]
 
     url = ET.SubElement(entry, "url")
     url.text = props["url"]
+    
+    category = ET.SubElement(entry, "category")
+    if "category" in props:
+        category.text = props["category"]
+    else:
+        category.text = "photo"
 
     if props.get("overlay"):
         entry.set("overlay", "true")
@@ -70,7 +77,7 @@ def add_source(source):
         icon = ET.SubElement(entry, "icon")
         icon.text = props["icon"]
 
-    if "country_code" in props:
+    if "country_code" in props and props["country_code"].upper() not in ["XN", "ZZ"]:
         country_code = ET.SubElement(entry, "country-code")
         country_code.text = props["country_code"]
 
@@ -81,6 +88,7 @@ def add_source(source):
     if "description" in props:
         description = ET.SubElement(entry, "description")
         description.text = props["description"]
+        description.set("lang", "en")
 
     if "min_zoom" in props:
         min_zoom = ET.SubElement(entry, "min-zoom")
@@ -88,7 +96,7 @@ def add_source(source):
 
     if "max_zoom" in props:
         max_zoom = ET.SubElement(entry, "max-zoom")
-        max_zoom.text = str(props["max_zoom"])
+        max_zoom.text = str(min(24, props["max_zoom"]))
 
     geometry = source.get("geometry")
     if geometry:
@@ -105,14 +113,18 @@ def add_source(source):
         bounds.set("max-lon", coord_str(maxx))
         bounds.set("max-lat", coord_str(maxy))
 
-        if isinstance(geom, Polygon):
+        if isinstance(geom, Polygon) and get_num_coordinates(geom) <= 999:
             shape_element = ET.SubElement(bounds, "shape")
             for lon, lat in geom.exterior.coords:
                 point = ET.SubElement(shape_element, "point")
                 point.set("lon", coord_str(lon))
                 point.set("lat", coord_str(lat))
 
-        if isinstance(geom, MultiPolygon):
+        if isinstance(geom, MultiPolygon) and get_num_geometries(geom) <= 100:
+            # check size of polygons first
+            for poly in geom.geoms:
+                if get_num_coordinates(poly) > 999:
+                    return
             for poly in geom.geoms:
                 shape_element = ET.SubElement(bounds, "shape")
                 for lon, lat in poly.exterior.coords:

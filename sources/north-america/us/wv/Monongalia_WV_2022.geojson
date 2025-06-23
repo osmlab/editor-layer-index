@@ -3,7 +3,7 @@
     "properties": {
         "id": "Monongalia_WV_2022",
         "attribution": {
-            "url": "https://gis.morgantownwv.gov/portal/home/item.html?id=f2830b58cd894fa0a0712e2cc9537bba",
+            "url": "https://mmagic-monco.hub.arcgis.com/",
             "text": "Monongalia Morgantown Area Geospatial Information Consortium",
             "required": false
         },
@@ -11,7 +11,8 @@
         "icon": "https://www.morgantownwv.gov/ImageRepository/Document?documentID=2216",
         "url": "https://gis.morgantownwv.gov/image/services/Imagery/Monongalia_County_2022/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Monongalia_County_2022:None&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "license_url": "https://gis.morgantownwv.gov/portal/home/item.html?id=f2830b58cd894fa0a0712e2cc9537bba",
+        "license_url": "https://mmagic-monco.hub.arcgis.com/pages/arc-data",
+        "permission_osm": "explicit",
         "country_code": "US",
         "type": "wms",
         "available_projections": [
@@ -21,10 +22,9 @@
         ],
         "start_date": "2022-03",
         "end_date": "2022-03",
-        "description": "2022 Aerial Imagery for Monongalia County of the State of West Virginia",
-        "category": "photo",
+        "description": "Spring 2022 Aerial Imagery for Monongalia County of the State of West Virginia",
+        "category": "historicphoto",
         "privacy_policy_url": "https://morgantownwv.gov/privacy",
-        "best": true,
         "valid-georeference": true
     },
     "geometry": {

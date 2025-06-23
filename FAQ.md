@@ -9,9 +9,14 @@ not required, but is encouraged, to appear in the .geojson source file.
 imagery sources are also compatible with tracing and do not require any additional
 permission.  Attribution of an OGL source is required to appear in the .geojson source file.
 
-- :question: [Creative Commons with condition (CC BY, CC BY-NC, CC BY-SA)](https://creativecommons.org/share-your-work/licensing-types-examples/) imagery sources are most likely compatible with tracing on
-OpenStreetMap, but to ensure no objection, we ask you confirm with the owning
-organization by using the [creative commons waiver](#where-can-i-find-an-imagery-license-waiver).
+- :white_check_mark: [Data licence Germany - Zero - Version 2.0 (dl-zero-de/2.0)](https://www.govdata.de/dl-de/zero-2-0)
+imagery sources are directly compatible with tracing on OpenStreetMap and do not
+require any additional permission.  Attribution of such a source is
+not required, but is encouraged, to appear in the .geojson source file.
+
+- :question: [Creative Commons Attribution (CC BY 2.0, CC BY 3.0, CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) imagery sources are not compatible with tracing on
+OpenStreetMap without obtaining a waiver or premmission for the publishing organization
+by using the [OSMF's Creative Commons waiver](#where-can-i-find-an-imagery-license-waiver).
 
 - :question: For any other imagery sources - open an issue and we will look into it!
 There may be language in the imagery metadata or elsewhere on the owning organizations's
@@ -22,10 +27,7 @@ can also request the owning organization to grant permission using the
 
 ## Where can I find an imagery license waiver?
 
-Visit the link below and choose the link for "Template text for aerial imagery waivers".<br/>
-Within that document are variations for general and creative commons waivers.
-
-https://wiki.osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates
+Visit the [OpenStreetMap Foundation's Waiver and Permission Templates](https://wiki.osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates) choose one of the waiver templates.<br/>
 
 Completed imagery waivers should be stored in this repository in the same location
 as the corresponding .geojson source files.  Please save the completed waiver as

@@ -1,0 +1,50 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Burbank_CA_2021",
+        "attribution": {
+            "url": "https://gis.burbankca.gov/",
+            "text": "City of Burbank",
+            "required": false
+        },
+        "name": "City of Burbank Orthoimagery (2021)",
+        "icon": "https://www.burbankca.gov/o/gov-burbankca-theme/images/R1_Logo_Package_B-CoB_Color_Horizontal_2.svg",
+        "url": "https://mobilegis.burbankca.gov/burgis/rest/services/Ortho/Base_2021_3in_Webmerc_Notitles/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 23,
+        "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
+        "country_code": "US",
+        "type": "tms",
+        "start_date": "2021-02-04",
+        "end_date": "2021-03-16",
+        "description": "2021 3-inch resolution imagery for Burbank in the State of California",
+        "category": "historicphoto",
+        "privacy_policy_url": "https://www.burbankca.gov/privacy-policy-and-disclaimer"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -118.27124291074585,
+                    34.22771274648663
+                ],
+                [
+                    -118.37562248897011,
+                    34.22771274648663
+                ],
+                [
+                    -118.37562248897011,
+                    34.13312628812888
+                ],
+                [
+                    -118.27124291074585,
+                    34.13312628812888
+                ],
+                [
+                    -118.27124291074585,
+                    34.22771274648663
+                ]
+            ]
+        ]
+    }
+}
