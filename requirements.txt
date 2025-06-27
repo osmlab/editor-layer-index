@@ -23,7 +23,7 @@ attrs==23.1.0
     #   referencing
 brotli==1.0.9
     # via aiohttp
-certifi==2025.1.31
+certifi==2025.4.26
     # via
     #   -r requirements.in
     #   pyproj
@@ -62,7 +62,7 @@ numpy==1.22.0
     #   pywavelets
     #   scipy
     #   shapely
-pillow==11.1.0
+pillow==11.2.1
     # via
     #   -r requirements.in
     #   imagehash
@@ -70,7 +70,7 @@ propcache==0.2.1
     # via
     #   aiohttp
     #   yarl
-pycares==4.3.0
+pycares==4.9.0
     # via aiodns
 pycparser==2.21
     # via cffi
@@ -86,7 +86,7 @@ referencing==0.29.1
     #   jsonschema-specifications
 regex==2024.11.6
     # via -r requirements.in
-requests==2.32.3
+requests==2.32.4
     # via -r requirements.in
 rpds-py==0.8.10
     # via
@@ -94,13 +94,13 @@ rpds-py==0.8.10
     #   referencing
 scipy==1.10.0
     # via imagehash
-shapely==2.0.7
+shapely==2.1.1
     # via -r requirements.in
 urllib3==2.4.0
     # via
     #   -r requirements.in
     #   requests
-validators==0.34.0
+validators==0.35.0
     # via -r requirements.in
 yarl==1.18.3
     # via aiohttp

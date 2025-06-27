@@ -1,23 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "ortofotos-madrid-2023",
+        "id": "madrid-ayto-geoportal",
         "attribution": {
             "text": "Ayuntamiento de Madrid",
             "required": true
         },
-        "name": "Ortofotos Madrid (mayo 2023)",
+        "name": "Ayuntamiento de Madrid - Ortofoto actualizada",
         "url": "https://servpub.madrid.es/georaster/ORTOFOTOS/ORTOFOTO_MADRID/ows?LAYERS=ORTOFOTO_MADRID&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
         "type": "wms",
-        "start_date": "2023",
-        "end_date": "2023",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
             "EPSG:4326",
             "EPSG:25830"
         ],
+        "best": true,
         "license_url": "https://wiki.openstreetmap.org/wiki/ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a#Portal_de_Datos_Abiertos_del_Ayuntamiento_de_Madrid",
         "privacy_policy_url": "https://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default",
         "category": "photo"

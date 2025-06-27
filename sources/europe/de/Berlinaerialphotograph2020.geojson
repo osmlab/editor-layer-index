@@ -1,18 +1,18 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Berlin-2020-infrared",
-        "name": "Berlin/Geoportal DOP20CIR (2020 infrared)",
+        "id": "Berlin-2020",
+        "name": "Berlin/Geoportal DOP20RGB (2020)",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Berlin.png",
         "type": "tms",
         "category": "historicphoto",
-        "url": "https://tiles.codefor.de/berlin-2020-dop20cir/{zoom}/{x}/{y}.png",
+        "url": "https://tiles.codefor.de/berlin/geoportal/luftbilder/2020-truedop20rgb/{zoom}/{x}/{y}.png",
         "start_date": "2020-08",
         "end_date": "2020-08",
         "country_code": "DE",
         "best": false,
         "attribution": {
-            "text": "Geoportal Berlin/Digitale Color-Infrarot-Orthophotos 2020 (DOP20CIR) (codefor.de mirror)",
+            "text": "Geoportal Berlin/Digitale farbige TrueOrthophotos 2020 (DOP20RGB) (codefor.de mirror)",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/File:2019-06-03_Datenlizenz_Deutschland_Berlin_OSM.pdf",
