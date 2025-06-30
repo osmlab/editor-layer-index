@@ -13,14 +13,16 @@ iniconfig==1.1.1
 packaging==21.3
     # via pytest
 pluggy==1.5.0
-    # via pytest
+    # via
+    #   pytest
+    #   pytest-cov
 pyparsing==3.0.6
     # via packaging
 pytest==8.3.5
     # via
     #   -r requirements-dev.in
     #   pytest-cov
-pytest-cov==6.1.1
+pytest-cov==6.2.1
     # via -r requirements-dev.in
 tomli==2.0.0
     # via
