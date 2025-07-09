@@ -16,7 +16,13 @@
             "url": "https://www.maanmittauslaitos.fi/en"
         },
         "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
-        "category": "map"
+        "category": "map",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:900913",
+            "EPSG:3857",
+            "EPSG:3067"
+        ]
     },
     "geometry": {
         "type": "Polygon",
