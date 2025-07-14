@@ -4,15 +4,15 @@
 #
 #    pip-compile requirements.in
 #
-aiodns==3.2.0
+aiodns==3.5.0
     # via aiohttp
 aiofiles==24.1.0
     # via -r requirements.in
-aiohappyeyeballs==2.3.4
+aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp[speedups]==3.11.18
+aiohttp[speedups]==3.12.14
     # via -r requirements.in
-aiosignal==1.2.0
+aiosignal==1.4.0
     # via aiohttp
 async-timeout==4.0.2
     # via aiohttp
@@ -96,6 +96,8 @@ scipy==1.10.0
     # via imagehash
 shapely==2.1.1
     # via -r requirements.in
+typing-extensions==4.14.1
+    # via aiosignal
 urllib3==2.5.0
     # via
     #   -r requirements.in
