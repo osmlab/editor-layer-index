@@ -1,0 +1,38 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "ign-bl-slope",
+        "name": "IGN slope",
+        "description": "Slopes of Saint Barthélemy. The yellower the flatter.",
+        "type": "tms",
+        "url": "https://ps738.user.srcf.net/slope/fr-bl/{zoom}/{x}/{y}.webp",
+        "category": "elevation",
+        "min_zoom": 11,
+        "max_zoom": 16,
+        "country_code": "FR",
+        "attribution": {
+            "text": "IGN",
+            "url": "https://geoservices.ign.fr/rgealti"
+        },
+        "icon": "https://www.ign.fr/files/default/styles/thumbnail/public/2020-06/logoIGN_300x200.png",
+        "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+        "privacy_policy_url": "https://geoservices.ign.fr/mentions-legales"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-62.9297, 17.9788],
+                [-62.9297, 17.9711],
+                [-62.8962, 17.9259],
+                [-62.849, 17.8717],
+                [-62.8207, 17.8626],
+                [-62.7923, 17.8626],
+                [-62.7829, 17.8897],
+                [-62.7828, 17.9169],
+                [-62.8121, 17.9528],
+                [-62.9297, 17.9788]
+            ]
+        ]
+    }
+}

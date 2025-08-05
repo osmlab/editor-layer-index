@@ -1,0 +1,48 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "us-pr-slope",
+        "name": "USGS slope",
+        "description": "Slopes of Culebra, Puerto Rico. The yellower the flatter.",
+        "type": "tms",
+        "url": "https://ps738.user.srcf.net/slope/us-pr/{zoom}/{x}/{y}.webp",
+        "category": "elevation",
+        "min_zoom": 11,
+        "max_zoom": 16,
+        "country_code": "US",
+        "attribution": {
+            "text": "USGS",
+            "url": "https://data.usgs.gov/datacatalog/data/USGS:77ae0551-c61e-4979-aedd-d797abdcde0e"
+        },
+        "icon": "https://www.usgs.gov/themes/custom/usgs_tantalum/usgs_logo.png",
+        "license_url": "https://data.usgs.gov/datacatalog/data/USGS:77ae0551-c61e-4979-aedd-d797abdcde0e",
+        "privacy_policy_url": "https://help.uis.cam.ac.uk/cudn-rules"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-65.3415, 18.3098],
+                [-65.3396, 18.3003],
+                [-65.3286, 18.2926],
+                [-65.2866, 18.2756],
+                [-65.2553, 18.2913],
+                [-65.2534, 18.2979],
+                [-65.2512, 18.2985],
+                [-65.2512, 18.3004],
+                [-65.2541, 18.3005],
+                [-65.2552, 18.3025],
+                [-65.2337, 18.302],
+                [-65.22, 18.3097],
+                [-65.22, 18.3219],
+                [-65.2494, 18.3433],
+                [-65.2659, 18.3433],
+                [-65.2904, 18.3355],
+                [-65.3383, 18.3515],
+                [-65.3419, 18.3497],
+                [-65.3463, 18.3503],
+                [-65.3415, 18.3098]
+            ]
+        ]
+    }
+}

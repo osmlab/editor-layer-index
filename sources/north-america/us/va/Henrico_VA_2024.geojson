@@ -1,7 +1,7 @@
 {
   "type": "Feature",
   "properties": {
-    "url": "https://portal.henrico.us/mapping/rest/services/Imagery/AerialPhotos2024/ImageServer/exportImage?bbox={bbox}&bboxSR={wkid}&size={width},{height}&imageSR={wkid}&format=jpg&f=image",
+    "url": "https://portal.henrico.gov/mapping/rest/services/Imagery/AerialPhotosAll/MapServer/export?bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&dpi=96&format=jpg&transparent=true&layers=show:96,100&f=image",
     "name": "Henrico County Aerial Imagery (2024)",
     "type": "wms",
     "id": "Henrico_VA_2024",
@@ -9,7 +9,7 @@
     "start_date": "2024",
     "end_date": "2024",
     "min_zoom": 1,
-    "max_zoom": 20,
+    "max_zoom": 21,
     "country_code": "US",
     "attribution": {
       "url": "https://henrico.gov/it/gis/",

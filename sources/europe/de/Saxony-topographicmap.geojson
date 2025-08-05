@@ -1,4 +1,39 @@
 {
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Staatsbetrieb Geobasisinformation und Vermessung Sachsen",
+            "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=d6d24c6d-94ea-447d-8a0c-40afdedeb5c6"
+        },
+        "available_projections": [
+            "EPSG:2180",
+            "EPSG:3034",
+            "EPSG:3035",
+            "EPSG:3044",
+            "EPSG:3045",
+            "EPSG:3398",
+            "EPSG:3399",
+            "EPSG:3857",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:25832",
+            "EPSG:25833",
+            "EPSG:31466",
+            "EPSG:31467",
+            "EPSG:31468",
+            "EPSG:31469"
+        ],
+        "country_code": "DE",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/Saxony.png",
+        "id": "GEOSN-DTK",
+        "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
+        "privacy_policy_url": "https://geosn.sachsen.de/behoerdliche-datenschutzbeauftragte-4473.html",
+        "name": "Saxony topographic map",
+        "type": "wms",
+        "category": "map",
+        "url": "https://geodienste.sachsen.de/wms_geosn_dtk-pg-color/guest?FORMAT=image/png&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=sn_dtk_pg_color&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+    },
     "geometry": {
         "coordinates": [
             [
@@ -505,29 +540,5 @@
             ]
         ],
         "type": "Polygon"
-    },
-    "properties": {
-        "attribution": {
-            "required": true,
-            "text": "Staatsbetrieb Geobasisinformation und Vermessung Sachsen",
-            "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=cd01c334-7e32-482f-bd43-af286707178a"
-        },
-        "available_projections": [
-            "CRS:84",
-            "EPSG:3857",
-            "EPSG:4326",
-            "EPSG:25833",
-            "EPSG:31468"
-        ],
-        "best": true,
-        "country_code": "DE",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/SaxonyWebAtlasSN.png",
-        "id": "GEOSN-DOP-RGB",
-        "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "name": "Saxony latest aerial imagery",
-        "type": "wms",
-        "category": "photo",
-        "url": "https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?LAYERS=sn_dop_020&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
-    },
-    "type": "Feature"
+    }
 }
