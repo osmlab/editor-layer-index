@@ -1,12 +1,12 @@
 {
     "type": "Feature",
     "properties": {
-        "type": "tms",
+        "type": "wms",
         "name": "MML Background Map",
         "id": "mml-tausta",
         "country_code": "FI",
         "description": "Background map from the National Land Survey of Finland",
-        "url": "https://tiles.kartat.kapsi.fi/taustakartta/{zoom}/{x}/{y}.png",
+        "url": "https://tiles.kartat.kapsi.fi/taustakartta?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
         "min_zoom": 2,
         "max_zoom": 19,
@@ -16,7 +16,13 @@
             "url": "https://www.maanmittauslaitos.fi/en"
         },
         "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
-        "category": "map"
+        "category": "map",
+        "available_projections": [
+            "EPSG:4326",
+            "EPSG:900913",
+            "EPSG:3857",
+            "EPSG:3067"
+        ]
     },
     "geometry": {
         "type": "Polygon",

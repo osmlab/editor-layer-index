@@ -9,7 +9,7 @@
         },
         "name": "Mecklenburg County Orthoimagery (2024)",
         "icon": "https://blog.mecknc.gov/wp-content/uploads/2017/11/Blue_Wide_Logo-768x766.jpg",
-        "url": "https://polaris2.mecklenburgcountync.gov/server/rest/services/Aerial2024/MapServer/export?f=image&format=jpg&layers=&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "url": "https://meckaerial.mecklenburgcountync.gov/server/rest/services/aerial2024/MapServer/export?f=image&format=jpg&layers=&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 21,
         "license_url": "https://maps.mecknc.gov/openmapping/data.html",
         "country_code": "US",
@@ -21,7 +21,7 @@
         "start_date": "2023-12-31",
         "end_date": "2024-01-02",
         "description": "Winter 2024 orthoimagery for Mecklenburg County in the State of North Carolina",
-        "category": "photo",
+        "category": "historicphoto",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.mecknc.gov/admin/Pages/PrivacyNotice.aspx"
     },

@@ -1,12 +1,11 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "OS-OpenMap_Local_2024_10",
-        "name": "OS OpenMap Local (October 2024)",
-        "url": "https://{switch:a,b,c}.os.openstreetmap.org/layer/gb_os_om_local_2024_10/{zoom}/{x}/{y}.png",
+        "id": "OS-OpenMap_Local_latest",
+        "name": "OS OpenMap Local",
+        "url": "https://os.openstreetmap.org/om-local/{zoom}/{x}/{y}.png",
         "max_zoom": 18,
         "min_zoom": 1,
-        "end_date": "2024-10",
         "country_code": "GB",
         "type": "tms",
         "category": "map",
