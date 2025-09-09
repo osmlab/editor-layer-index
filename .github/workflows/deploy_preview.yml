@@ -1,0 +1,110 @@
+name: Deploy Preview
+
+on:
+  workflow_run:
+    workflows: ["Build Preview"]
+    types:
+      - completed
+
+jobs:
+  deploy-preview:
+    environment: pr-previews
+    runs-on: ubuntu-latest
+    if: ${{github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      
+      - run: npm clean-install
+
+      - name: Get pull request number
+        uses: actions/github-script@v7
+        id: pull-request-number
+        with:
+          result-encoding: string
+          script: |
+            const unzipper = require('unzipper');
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: ${{github.event.workflow_run.id}}
+            });
+            const artifact = artifacts.data.artifacts.filter(
+              artifact => artifact.name === 'pr'
+            )[0];
+            if (!artifact) {
+              throw new Error('No "pr" artifact found');
+            }
+            const download = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: artifact.id,
+              archive_format: 'zip'
+            });
+            const directory = await unzipper.Open.buffer(Buffer.from(download.data));
+            const file = directory.files.find(d => d.path === 'pr_number');
+            const content = await file.buffer();
+            return content.toString();
+      - uses: dawidd6/action-download-artifact@v8
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          workflow: build_preview.yml
+          pr: ${{steps.pull-request-number.outputs.result}}
+          name: preview
+          allow_forks: true
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_AUTH_TOKEN}}
+          NETLIFY_SITE_ID: ${{secrets.NETLIFY_SITE_ID}}
+        run: ./node_modules/.bin/netlify deploy --no-build --dir=. --alias=pr-${{steps.pull-request-number.outputs.result}}
+
+      - name: Add comment to pull request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pullRequestNumber = parseInt(${{steps.pull-request-number.outputs.result}}, 10);
+            const start = ':bento:';
+            const author = 'github-actions[bot]';
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pullRequestNumber
+            });
+            const commentExists = comments.data.some(
+              comment => comment.user.login === author && comment.body.startsWith(start)
+            );
+            if (!commentExists) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pullRequestNumber,
+                body: `${start} **[Your pull request preview is ready](https://pr-${pullRequestNumber}--arch0345-editor-layer-index.netlify.app/id/dist/#locale=en&map=17.00/14.65485/121.06466)**`
+              });
+            } else {
+              console.log(`Preview URL comment already added to PR #${pullRequestNumber}`);
+            }
+
+      - name: Clean up artifact
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: ${{github.event.workflow_run.id}}
+            });
+            const artifact = artifacts.data.artifacts.filter(
+              artifact => artifact.name === 'preview'
+            )[0];
+            if (!artifact) {
+              throw new Error('No "preview" artifact found');
+            }
+            await github.rest.actions.deleteArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: artifact.id
+            });
