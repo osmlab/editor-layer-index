@@ -25,7 +25,8 @@
             "required": true
         },
         "license_url": "https://www.agenziaentrate.gov.it/portale/cartografia-catastale-wfs",
-        "privacy_policy_url": "https://www.agenziaentrate.gov.it/portale/cartografia-catastale-wfs"
+        "privacy_policy_url": "https://www.agenziaentrate.gov.it/portale/cartografia-catastale-wfs",
+        "capabilities_url" : "https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
     },
     "geometry": {
         "type": "MultiPolygon",
