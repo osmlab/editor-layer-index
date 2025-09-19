@@ -44,13 +44,13 @@ You can use http://geojson.io to draw a polygon.
 Geojson.io will even let you add a tile-based imagery layer to the map.  This lets
 you see where the imagery is valid.
 
-1. Choose Meta -> Add map layer from the menu
+1. Choose Meta -> Add raster tile layer from the menu
 2. Enter the url, as you would if you were adding the source as a custom layer in iD.
 Note: you do need to use `{z}` instead of `{zoom}` on geojson.io
 
 Tips for drawing the polygon:
 
-1. Click "Draw A Polygon" button to get started - it looks like a pentagon shape.
+1. Click "Draw Polygon" button to get started - it looks like a pentagon shape.
 2. You don't need to be super detailed, just roughly trace around where the imagery is valid.
 3. Double click to stop drawing.
 4. If you want to change the shape, click the "Edit Layers" button - it looks like a square with pencil in it.
