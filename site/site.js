@@ -47,6 +47,26 @@ function idURL(d, e) {
     return 'https://www.openstreetmap.org/edit?' + position + (new URLSearchParams(params)).toString();
 }
 
+function uniqueArray(list) {
+    return list.reduce(function(accu, current) {
+        if (accu.at(-1) != current) {
+            accu.push(current);
+        }
+        return accu;
+    }, []);
+}
+
+function getStyle(feature) {
+    const filter_by = document.getElementById('country').value;
+    const cc = feature.properties.country_code;
+    return {
+        weight: 1,
+        color: feature.properties.best ? 'gold' : 'gray',
+        opacity: (filter_by == '' || filter_by == cc) ? 1 : 0,
+        fillOpacity: (filter_by == '' || filter_by == cc) ? 0.1 : 0,
+        fillRule: 'nonzero'
+    }
+}
 
 d3.json("imagery.geojson", function(error, imagery) {
     imagery.features = imagery.features.sort(function(a,b) {
@@ -60,15 +80,17 @@ d3.json("imagery.geojson", function(error, imagery) {
         return -1;
     })
 
+    const countryFilter = document.getElementById('country');
+    const countryList = uniqueArray(imagery.features.map( (f) => f.properties.country_code ));
+    for (var cc of countryList) {
+        var opt = document.createElement("option");
+        opt.textContent = cc;
+        opt.value = cc;
+        countryFilter.appendChild(opt);
+    }
+
     var imageryLayer = L.geoJson(imagery, {
-        style: function(feature) {
-            return {
-                weight: 1,
-                color: feature.properties.best ? 'gold' : 'gray',
-                fillOpacity: 0.1,
-                fillRule: 'nonzero'
-            }
-        }
+        style: getStyle
     })
     .on('click', function(e) {
         var matches = leafletPip.pointInLayer(e.latlng, imageryLayer, false);
@@ -85,6 +107,20 @@ d3.json("imagery.geojson", function(error, imagery) {
     })
     .addTo(map)
 
+    countryFilter.addEventListener('change', function(event) {
+        if (countryFilter.value == '') {
+            document.querySelectorAll("#wrap [data-cc]").forEach(
+                (el) => el.style.display = 'block'
+            );
+        } else {
+            const cc = countryFilter.value;
+            document.querySelectorAll("#wrap [data-cc]").forEach(
+                (el) => el.style.display = (el.dataset.cc == cc ? 'block' : 'none')
+            );
+        }
+        imageryLayer.setStyle(getStyle); // to refresh the rendering
+    });
+
     testLayer = L.geoJson(/* dummy */).addTo(map)
 
     var divs = d3.select('#wrap')
@@ -92,6 +128,7 @@ d3.json("imagery.geojson", function(error, imagery) {
         .data(imagery.features)
         .enter()
         .append('div')
+        .attr('data-cc', (d) => d.properties['country_code'] || 'world' )
         .classed('best', function(d) {
             return d.properties.best === true;
         });
