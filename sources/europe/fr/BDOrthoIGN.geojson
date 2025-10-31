@@ -3,15 +3,15 @@
     "properties": {
         "id": "fr.ign.bdortho",
         "name": "BD Ortho IGN",
-        "description": "Combinaison des meilleures photographies aériennes (de 20 à 5 cm) et des images satellites à plus grande échelle. Mise à jour progressivement sur 1/3 des départements chaque année.",
+        "description": "Combinaison des meilleures photographies aériennes (de 20 à 15 cm) et des images satellites à plus grande échelle. Mise à jour progressivement sur 1/3 des départements chaque année.",
         "type": "tms",
         "url": "https://data.geopf.fr/tms/1.0.0/ORTHOIMAGERY.ORTHOPHOTOS/{zoom}/{x}/{y}.jpeg",
         "best": true,
         "category": "photo",
         "start_date": "2021",
         "end_date": "2024",
-        "min_zoom": 2,
-        "max_zoom": 21,
+        "min_zoom": 0,
+        "max_zoom": 19,
         "country_code": "FR",
         "attribution": {
             "text": "BD Ortho IGN",
