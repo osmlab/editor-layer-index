@@ -18,9 +18,9 @@ Or into iD as the XYZ tile URL such as
 
 ## Adding a service as-is
 
-The NSW Geocoded Addressing Theme is added as is with the url
+Some services we can add using the provided styling and layer selection, in that case we can use the URL
 
-    https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Geocoded_Addressing_Theme/MapServer/export?layers=&imageSR={wkid}%bboxSR={wkid}&bbox={bbox}&format=png&size={width},{height}&transparent=true&f=image
+    https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Transportation/RoadsAndTracks/MapServer/export?imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image
 
 This returns back EPSG:3857 tiles given a tile bbox including all layers from the service and using the default style.
 
