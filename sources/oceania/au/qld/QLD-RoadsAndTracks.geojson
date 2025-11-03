@@ -1,0 +1,137 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "QLD_RoadsAndTracks",
+        "attribution": {
+            "url": "https://www.data.qld.gov.au/dataset/queensland-roads-and-tracks",
+            "text": "© State of Queensland (Department of Resources) 2024",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:QLD_DNRMMRRD_Att_1_-_OSMF_Waiver.pdf",
+        "privacy_policy_url": "https://www.qld.gov.au/legal/privacy",
+        "name": "QLD Roads and Tracks",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
+        ],
+        "url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Transportation/RoadsAndTracks/MapServer/export?imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image",
+        "overlay": true,
+        "max_zoom": 24,
+        "country_code": "AU",
+        "type": "wms",
+        "icon": "https://www.qld.gov.au/favicon.ico",
+        "category": "other"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    137.98690658569,
+                    -10.04728810400
+                ],
+                [
+                    137.99789360046,
+                    -25.99940078512
+                ],
+                [
+                    140.99956495285,
+                    -25.99677830554
+                ],
+                [
+                    140.99853446960,
+                    -29.00273506359
+                ],
+                [
+                    148.95950180054,
+                    -29.00333499911
+                ],
+                [
+                    149.40582138062,
+                    -28.69781431173
+                ],
+                [
+                    150.28335433960,
+                    -28.58090274016
+                ],
+                [
+                    150.43853622437,
+                    -28.68817705128
+                ],
+                [
+                    150.98235946655,
+                    -28.74357917823
+                ],
+                [
+                    151.26800399780,
+                    -28.93004385754
+                ],
+                [
+                    151.31881576538,
+                    -29.17254675577
+                ],
+                [
+                    151.38336044312,
+                    -29.17014853390
+                ],
+                [
+                    152.03429901123,
+                    -28.89999031657
+                ],
+                [
+                    152.07000457764,
+                    -28.53144616330
+                ],
+                [
+                    152.52044403076,
+                    -28.29954174730
+                ],
+                [
+                    152.72094451904,
+                    -28.35031421176
+                ],
+                [
+                    153.09173309326,
+                    -28.36964972188
+                ],
+                [
+                    153.56689178467,
+                    -28.18097845872
+                ],
+                [
+                    157.60984130859,
+                    -28.11072937990
+                ],
+                [
+                    153.36911865234,
+                    -20.44758180939
+                ],
+                [
+                    146.46970458984,
+                    -12.31851447489
+                ],
+                [
+                    144.67345642090,
+                    -9.78484583750
+                ],
+                [
+                    143.70116638184,
+                    -9.32982593519
+                ],
+                [
+                    143.05297302246,
+                    -9.16717330997
+                ],
+                [
+                    142.05871032715,
+                    -9.21597698325
+                ],
+                [
+                    137.98690658569,
+                    -10.04728810400
+                ]
+            ]
+        ]
+    }
+}
