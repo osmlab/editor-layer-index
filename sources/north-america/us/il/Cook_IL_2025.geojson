@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Cook_IL_2021",
+        "id": "Cook_IL_2025",
         "attribution": {
             "url": "https://hub-cookcountyil.opendata.arcgis.com/",
             "text": "Cook County GIS",
             "required": true
         },
-        "name": "Cook County Orthoimagery 2021",
+        "name": "Cook County Orthoimagery 2025",
         "icon": "https://www.cookcountyil.gov/sites/g/files/ywwepo161/files/cook_county_logo_0.png",
-        "url": "https://gis.cookcountyil.gov/imagery/rest/services/CookOrtho2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
+        "url": "https://gis.cookcountyil.gov/imagery/rest/services/CookOrtho2025/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
         "max_zoom": 19,
         "license_url": "https://wiki.openstreetmap.org/wiki/Illinois/Cook_Central",
         "permission_osm": "explicit",
@@ -21,10 +21,10 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "start_date": "2021",
-        "end_date": "2021",
-        "description": "4-Band aerial imagery flown in 2021 for Cook County, Illinois at 6 inch pixel resolution",
-        "category": "historicphoto",
+        "start_date": "2025",
+        "end_date": "2025",
+        "description": "4-Band aerial imagery flown in 2025 for Cook County, Illinois at 6 inch pixel resolution",
+        "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://cookcountyil.gov/privacy-policy/"
     },
