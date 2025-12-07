@@ -6,7 +6,7 @@
         "name": "Praha IPR latest orthophoto",
         "description": "Yearly IPR Praha orthophotos, usually taken in summer months when vegetation is fully grown",
         "type": "wms",
-        "url": "https://gs-pub.praha.eu/imgs/services/ort/letecke_snimkovani/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gs-pub.praha.eu/imgs/services/ort/letecke_snimkovani/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=letecke_snimkovani&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "CZ",
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Cs:%C4%8Cesko/freemap#Mapov%C3%A9_podklady_IPR_Praha",
