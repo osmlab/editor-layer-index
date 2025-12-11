@@ -23,7 +23,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for info on how to contribute new sources
 
 ## Using this index
 
-If you are using iD or Potlatch 2 you are already using this index!
+If you are using iD or Potlatch 2 you are already using this index! iD only updates imagery layers upon release, so recently added or modified layers may not yet appear in iD, [this may be improved in the future](https://github.com/openstreetmap/iD/issues/9730), but for now to check iD using the latest imagery layers you can view the preview site [https://ideditor.netlify.app](https://ideditor.netlify.app).
 
 For JOSM you can add `https://osmlab.github.io/editor-layer-index/imagery.xml` to the preference key `imagery.layers.sites` in advanced preferences. You probably want to remove the `https://josm.openstreetmap.de/maps` entry or you'll get the same layers listed twice.
 

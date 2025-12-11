@@ -12,7 +12,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'Deploy') && github.repository == 'osmlab/editor-layer-index'"
     steps:
       - name: Checkout
-        uses: actions/checkout@v5 # If you're using actions/checkout@v5 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v6 # If you're using actions/checkout@v6 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
 
@@ -43,7 +43,7 @@ jobs:
           cp i18n/en.yaml deploy/i18n
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.7.4
+        uses: JamesIves/github-pages-deploy-action@v4.7.6
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.

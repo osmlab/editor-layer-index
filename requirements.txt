@@ -6,7 +6,7 @@
 #
 aiodns==3.5.0
     # via aiohttp
-aiofiles==24.1.0
+aiofiles==25.1.0
     # via -r requirements.in
 aiohappyeyeballs==2.6.1
     # via aiohttp
@@ -23,7 +23,7 @@ attrs==23.1.0
     #   referencing
 brotli==1.2.0
     # via aiohttp
-certifi==2025.8.3
+certifi==2025.10.5
     # via
     #   -r requirements.in
     #   pyproj
@@ -62,7 +62,7 @@ numpy==1.22.0
     #   pywavelets
     #   scipy
     #   shapely
-pillow==11.3.0
+pillow==12.0.0
     # via
     #   -r requirements.in
     #   imagehash
@@ -84,7 +84,7 @@ referencing==0.29.1
     # via
     #   jsonschema
     #   jsonschema-specifications
-regex==2025.9.18
+regex==2025.11.3
     # via -r requirements.in
 requests==2.32.5
     # via -r requirements.in
@@ -98,7 +98,7 @@ shapely==2.1.2
     # via -r requirements.in
 typing-extensions==4.14.1
     # via aiosignal
-urllib3==2.5.0
+urllib3==2.6.0
     # via
     #   -r requirements.in
     #   requests
