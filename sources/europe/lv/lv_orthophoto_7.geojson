@@ -1,26 +1,28 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LV_CADASTRAL",
-        "name": "Cadastral map",
+        "id": "LV_ORTOFOTO_C7",
+        "name": "Orthophoto 7th cycle (2019-2021), 1:5000",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Kadastra_karte&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "min_zoom": 9,
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:Orto_7cikls&STYLES=&FORMAT=image/vnd.jpeg-png8&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 7,
         "country_code": "LV",
         "available_projections": [
             "EPSG:3059",
             "EPSG:3857"
         ],
-        "description": "Service created using open data of Cadastral Information System published at https://data.gov.lv/dati/eng/organization/valsts-zemes-dienests.",
+        "description": "Resolution 0.25 meters. Aerial photography was performed in cooperation with the Czech company Georeal.",
         "license_url": "https://www.lvmgeo.lv/en/data",
         "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
-        "overlay": true,
         "attribution": {
-            "text": "JSC Latvia's State Forests open WMS service: cadastral map created using open data from State Land Service",
+            "text": "JSC Latvia's State Forests open WMS service: Latvian Geospatial Information Agency orthophoto map, 2019-2021",
             "url": "https://www.lvmgeo.lv/en/data",
             "required": true
         },
-        "category": "other"
+        "start_date": "2019-01-01",
+        "end_date": "2021-12-31",
+        "category": "historicphoto",
+        "valid-georeference": true
     },
     "geometry": {
         "type": "Polygon",

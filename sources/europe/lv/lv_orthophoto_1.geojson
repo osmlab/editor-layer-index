@@ -1,26 +1,35 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LV_CADASTRAL",
-        "name": "Cadastral map",
-        "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Kadastra_karte&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "min_zoom": 9,
+        "id": "LV_ORTOFOTO_C1",
+        "name": "B&amp;W orthophoto 1st cycle (1994-2001), 1:30000",
+        "type": "wmts",
+        "url": "https://wms.lgia.gov.lv/open/rest/services/OPEN_DATA/Ortofoto1_bw/MapServer/WMTS/1.0.0/WMTSCapabilities.xml",
+        "min_zoom": 7,
         "country_code": "LV",
         "available_projections": [
-            "EPSG:3059",
-            "EPSG:3857"
+            "EPSG:3059"
         ],
-        "description": "Service created using open data of Cadastral Information System published at https://data.gov.lv/dati/eng/organization/valsts-zemes-dienests.",
-        "license_url": "https://www.lvmgeo.lv/en/data",
-        "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
-        "overlay": true,
+        "description": "Made in 1994-1999 in cooperation with the Swedish company Swedesurvey Oy. In 1995, aerial photography of Daugavpils city and district was performed in cooperation with the Danish Ministry of Agriculture, aerial photography works are performed by the company Kampsax-Geoplan, and orthophoto maps are produced by the State Land Service (SLS). Aerial photography was performed with analog cameras to obtain black and white aerial at 1:30 000 scale with a resolution of 1 meter. IKONOS satellite images for 2000-2001 were purchased for the Eastern border of Latvia.",
+        "license_url": "https://www.lgia.gov.lv/sites/lgia/files/document/Creative%20Commons%20Attribution%20CC%20BY_0.pdf",
+        "privacy_policy_url": "https://www.lgia.gov.lv/en/node/1033",
         "attribution": {
-            "text": "JSC Latvia's State Forests open WMS service: cadastral map created using open data from State Land Service",
-            "url": "https://www.lvmgeo.lv/en/data",
+            "text": "Latvian Geospatial Information Agency open WMS Service: orthophoto map, 1994-2001",
+            "url": "https://www.lgia.gov.lv/en/melnbalta-ortofotokarte-1994-1999-g-1-cikls",
             "required": true
         },
-        "category": "other"
+        "start_date": "1994-01-01",
+        "end_date": "2001-12-31",
+        "category": "historicphoto",
+        "valid-georeference": true,
+        "default-layers": [
+            {
+                "layer": {
+                    "name": "OPEN_DATA_Ortofoto1_bw",
+                    "style": "default"
+                }
+            }
+        ]
     },
     "geometry": {
         "type": "Polygon",
