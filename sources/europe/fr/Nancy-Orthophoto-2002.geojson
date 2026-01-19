@@ -6,7 +6,8 @@
         "type": "tms",
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/nancy_2002/{zoom}/{x}/{y}",
         "category": "historicphoto",
-        "date": "2002",
+        "start_date": "2002",
+        "end_date": "2002",
         "country_code": "FR",
         "attribution": {
             "text": "GrandNancy Orthophotographie 2002",
@@ -14,7 +15,7 @@
             "required": true
         },
         "max_zoom": 22,
-        "license_url": "http://opendata.grandnancy.eu/conditions-dutilisation/"
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
     },
     "geometry": {
         "type": "Polygon",
