@@ -1,0 +1,40 @@
+<sld:StyledLayerDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:sld="http://www.opengis.net/sld" version="1.0.0">
+    <sld:NamedLayer>
+        <sld:Name>open-data-platform:property_view</sld:Name>
+        <sld:UserStyle>
+            <sld:FeatureTypeStyle>
+                <sld:Rule>
+                    <sld:Filter>
+                        <PropertyIsEqualTo>
+                            <PropertyName>status</PropertyName>
+                            <Literal>A</Literal>
+                        </PropertyIsEqualTo>
+                    </sld:Filter>
+                    <sld:PolygonSymbolizer>
+                        <Stroke>
+                            <CssParameter name="stroke">#FFFFFF</CssParameter>
+                            <CssParameter name="stroke-width">1</CssParameter>
+                        </Stroke>
+                    </sld:PolygonSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
+                    <sld:Filter>
+                        <PropertyIsEqualTo>
+                            <PropertyName>status</PropertyName>
+                            <Literal>P</Literal>
+                        </PropertyIsEqualTo>
+                    </sld:Filter>
+                    <sld:PolygonSymbolizer>
+                        <Stroke>
+                            <CssParameter name="stroke">#FFFF00</CssParameter>
+                            <CssParameter name="stroke-width">1</CssParameter>
+                        </Stroke>
+                    </sld:PolygonSymbolizer>
+                </sld:Rule>
+            </sld:FeatureTypeStyle>
+        </sld:UserStyle>
+    </sld:NamedLayer>
+</sld:StyledLayerDescriptor>
