@@ -1,14 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "geodata.md.gov-MD_ThreeInchImagery",
+        "id": "mdgeodata.md.gov-MD_ThreeInchImagery",
         "attribution": {
-            "url": "http://imap.maryland.gov",
+            "url": "https://imap.maryland.gov",
             "text": "MD iMAP, DoIT",
             "required": false
         },
         "name": "MD Three Inch Aerial Imagery",
-        "icon": "https://mdgeodata.md.gov/Deprecation/images/imap_mini.png",
+        "icon": "data:image/png;base64,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",
         "url": "https://mdgeodata.md.gov/imagery/rest/services/ThreeInch/MD_ThreeInchImagery/ImageServer/exportImage?f=image&format=jpgpng&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
         "min_zoom": 8,
         "max_zoom": 20,
