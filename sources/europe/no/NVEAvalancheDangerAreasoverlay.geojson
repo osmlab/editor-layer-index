@@ -4,7 +4,7 @@
         "id": "nve-snoskred",
         "name": "NVE Avalanche Danger Areas overlay",
         "type": "wms",
-        "url": "https://kart.nve.no/enterprise/services/SnoskredAktsomhet/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=2,4,5&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kart.nve.no/enterprise/services/SnoskredAktsomhet/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=S3_snoskred_Aktsomhetsomrade,Skog_med_betydning_for_snoskredfare,PotensieltSkredfareOmr&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
