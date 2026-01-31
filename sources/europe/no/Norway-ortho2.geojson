@@ -2,21 +2,22 @@
     "type": "Feature",
     "properties": {
         "best": true,
-        "type": "tms",
-        "name": "Norway Orthophoto (more recent, less zoom)",
         "id": "geovekst-nib2",
-        "country_code": "NO",
+        "name": "Norway Orthophoto (more recent, less zoom)",
+        "category": "photo",
         "description": "Most recent Norwegian orthophotos (max zoom 19), courtesy of Geovekst and Kartverket.",
+        "type": "tms",
+        "icon": "https://www.norgeibilder.no/Images/NIBlogo_kompakt.png",
         "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_nib_web_mercator_wmts_v2?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Nibcache_web_mercator_v2&STYLE=default&FORMAT=image/jpgpng&tileMatrixSet=default028mm&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
-        "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
         "max_zoom": 19,
+        "license_url": "https://community.openstreetmap.org/t/tillatelse-til-a-bruke-norge-i-bilder/82988",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
         "attribution": {
-            "required": true,
             "text": "© Geovekst",
-            "url": "https://www.norgeibilder.no"
+            "url": "https://www.norgeibilder.no",
+            "required": true
         },
-        "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
-        "category": "photo"
+        "country_code": "NO"
     },
     "geometry": {
         "type": "Polygon",

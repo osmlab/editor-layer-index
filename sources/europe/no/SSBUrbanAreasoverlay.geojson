@@ -3,9 +3,19 @@
     "properties": {
         "id": "ssb-tettsteder",
         "name": "SSB Urban Areas overlay",
-        "type": "wms",
-        "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_198&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other",
+        "description": "Human settlements of at least 200 people with less than 200 meters between households",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.ssb.no/_/asset/mimir/favicon/apple-touch-icon.png",
+        "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_198&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 22,
+        "license_url": "https://web.archive.org/web/20240114010219/https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
+        "privacy_policy_url": "https://www.ssb.no/en/omssb/personvern",
+        "attribution": {
+            "text": "© SSB",
+            "url": "https://www.ssb.no/befolkning/folketall/statistikk/tettsteders-befolkning-og-areal"
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:3857",
@@ -24,16 +34,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ],
-        "attribution": {
-            "text": "© SSB",
-            "url": "https://www.ssb.no/beftett"
-        },
-        "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
-        "max_zoom": 22,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
-        "description": "Human settlements of at least 200 people with less than 200 meters between households",
-        "category": "other"
+        ]
     },
     "geometry": {
         "type": "Polygon",

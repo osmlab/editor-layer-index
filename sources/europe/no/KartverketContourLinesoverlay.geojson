@@ -3,9 +3,21 @@
     "properties": {
         "id": "kartverket-hoydekurver",
         "name": "Kartverket Contour Lines overlay",
-        "type": "wms",
-        "url": "https://wms.geonorge.no/skwms1/wms.topo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=hoydepunkt,Dybdepunkt,hoydetall5linje,hoydetall5punkt,N100Hoydekurver,hoydekurver_1m,hoydekurver_5m,N50Hoydekurver,N250Hoydekurver,N500Hoydekurver,N1000Hoydekurver,N2000Hoydekurver,Dybdekontur&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "elevation",
+        "description": "Contours for Norway",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
+        "url": "https://wms.geonorge.no/skwms1/wms.topo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=hoydepunkt,Dybdepunkt,hoydetall5linje,hoydetall5punkt,N100Hoydekurver,hoydekurver_1m,hoydekurver_5m,N50Hoydekurver,N250Hoydekurver,N500Hoydekurver,N1000Hoydekurver,N2000Hoydekurver,Dybdekontur&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 22,
+        "min_zoom": 9,
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://www.kartverket.no/",
+            "required": true
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:3006",
@@ -69,18 +81,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ],
-        "attribution": {
-            "text": "© Kartverket",
-            "url": "https://www.kartverket.no/"
-        },
-        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
-        "max_zoom": 22,
-        "min_zoom": 9,
-        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
-        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
-        "description": "Contours for Norway",
-        "category": "elevation"
+        ]
     },
     "geometry": {
         "type": "Polygon",
