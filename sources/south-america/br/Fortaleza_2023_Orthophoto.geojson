@@ -1,29 +1,30 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Fortaleza_Ortofoto_2016",
-        "description": "Aerial imagery in Fortaleza with 10 cm resolution. Note, this service uses geo-blocking.",
-        "url": "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/IMAGEAMENTO/wms?LAYERS=ortofoto_2016&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "name": "Fortaleza Ortofoto 2023",
         "type": "wms",
-        "country_code": "BR",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Fortaleza.png",
-        "name": "Fortaleza Ortofoto 2016",
+        "category": "photo",
+        "url": "https://geoserver.sefin.fortaleza.ce.gov.br/geoserver/IMAGEAMENTO/wms?LAYERS=ortofoto_2023_v1&STYLES=&FORMAT=image/png&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/File:Autoriza%C3%A7%C3%A3o_IDE_SEFIN_Fortaleza.png",
         "privacy_policy_url": "https://www.sefin.fortaleza.ce.gov.br/Canal/16/Generico/1339/Ler",
-        "end_date": "2017-01-16",
-        "start_date": "2016-12-20",
-        "attribution": {
-            "url": "https://ide.sefin.fortaleza.ce.gov.br/",
-            "text": "Prefeitura Municipal de Fortaleza"
-        },
+        "best": true,
+        "id": "Fortaleza_Ortofoto_2023",
+        "description": "Aerial imagery in Fortaleza with 6 cm resolution. Note, this service uses geo-blocking.",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Fortaleza.png",
+        "country_code": "BR",
+        "end_date": "2023-07",
+        "start_date": "2023-07",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
             "EPSG:4326",
             "EPSG:31984"
         ],
-        "category": "historicphoto",
+        "attribution": {
+            "url": "https://ide.sefin.fortaleza.ce.gov.br/",
+            "text": "Prefeitura Municipal de Fortaleza"
+        },
         "valid-georeference": true
     },
     "geometry": {
