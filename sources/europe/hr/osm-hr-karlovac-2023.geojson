@@ -14,7 +14,12 @@
         "min_zoom": 5,
         "max_zoom": 20,
         "country_code": "HR",
-        "type": "tms"
+        "type": "tms",
+        "attribution": {
+            "required": true,
+            "text": "Sadrži podatke Geografskog informacijskog sustava Grada Karlovca",
+            "url": "https://gis.karlovac.hr/thematic-map/map-portal"
+        }
     },
     "geometry": {
         "type": "Polygon",
