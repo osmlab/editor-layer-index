@@ -4,34 +4,29 @@
         "id": "ssb-tettsteder",
         "name": "SSB Urban Areas overlay",
         "type": "wms",
-        "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_198&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://kart.ssb.no/api/mapserver/v1/wms/tettsteder?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=tettsted_2025&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "overlay": true,
         "country_code": "NO",
         "available_projections": [
+            "EPSG:3575",
             "EPSG:3857",
             "EPSG:4326",
-            "EPSG:25829",
-            "EPSG:25830",
-            "EPSG:25831",
             "EPSG:25832",
             "EPSG:25833",
-            "EPSG:25834",
             "EPSG:25835",
-            "EPSG:25836",
-            "EPSG:32631",
             "EPSG:32632",
             "EPSG:32633",
-            "EPSG:32634",
-            "EPSG:32635",
-            "EPSG:32636"
+            "EPSG:32635"
         ],
         "attribution": {
             "text": "© SSB",
-            "url": "https://www.ssb.no/beftett"
+            "url": "https://www.ssb.no/befolkning/folketall/statistikk/tettsteders-befolkning-og-areal"
         },
-        "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
+        "icon": "https://www.ssb.no/_/asset/mimir/favicon/apple-touch-icon.png",
         "max_zoom": 22,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
+        "min_zoom": 5,
+        "license_url": "https://web.archive.org/web/20240114010219/https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
+        "privacy_policy_url": "https://www.ssb.no/en/omssb/personvern",
         "description": "Human settlements of at least 200 people with less than 200 meters between households",
         "category": "other"
     },

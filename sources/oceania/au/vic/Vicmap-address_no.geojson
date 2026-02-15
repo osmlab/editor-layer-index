@@ -4,7 +4,7 @@
         "id": "Vicmap-address_no",
         "attribution": {
             "url": "https://discover.data.vic.gov.au/dataset/vicmap-address-address-point",
-            "text": "The State of Victoria Department of Energy, Environment and Climate Action 2023",
+            "text": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
@@ -15,7 +15,7 @@
             "EPSG:4326",
             "CRS:84"
         ],
-        "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:address&styles=open-data-platform:address_no",
+        "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:address&sld_body=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%2F3.2%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20StyledLayerDescriptor.xsd%22%20version%3D%221.0.0%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3Eopen-data-platform%3Aaddress%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3CTextSymbolizer%3E%3CLabel%3E%3Cogc%3APropertyName%3Enum_address%3C%2Fogc%3APropertyName%3E%3C%2FLabel%3E%3CFont%3E%3CCssParameter%20name%3D%22font-family%22%3EArial%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-size%22%3E12%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-style%22%3Enormal%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-weight%22%3Ebold%3C%2FCssParameter%3E%3C%2FFont%3E%3CLabelPlacement%3E%3CPointPlacement%3E%3CAnchorPoint%3E%3CAnchorPointX%3E0.5%3C%2FAnchorPointX%3E%3CAnchorPointY%3E0.5%3C%2FAnchorPointY%3E%3C%2FAnchorPoint%3E%3C%2FPointPlacement%3E%3C%2FLabelPlacement%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23FFFFFF%3C%2FCssParameter%3E%3C%2FFill%3E%3CHalo%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23000000%3C%2FCssParameter%3E%3C%2FFill%3E%3C%2FHalo%3E%3C%2FTextSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E",
         "overlay": true,
         "max_zoom": 22,
         "country_code": "AU",

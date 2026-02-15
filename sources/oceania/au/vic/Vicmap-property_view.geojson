@@ -4,7 +4,7 @@
         "id": "Vicmap-property_view",
         "attribution": {
             "url": "https://discover.data.vic.gov.au/dataset/vicmap-property-property-polygon",
-            "text": "The State of Victoria Department of Energy, Environment and Climate Action 2023",
+            "text": "The State of Victoria Department of Energy, Environment and Climate Action 2026",
             "required": true
         },
         "license_url": "https://wiki.openstreetmap.org/wiki/File:Vicmap_CCBYPermission_OSM_Final_Jan2018_Ltr.pdf",
@@ -15,7 +15,7 @@
             "EPSG:4326",
             "CRS:84"
         ],
-        "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:property_view&styles=open-data-platform:property_view_1",
+        "url": "https://opendata.maps.vic.gov.au/geoserver/wms?service=wms&version=1.3.0&request=getmap&format=image%2Fpng&transparent=true&width={width}&height={height}&crs={proj}&bbox={bbox}&layers=open-data-platform:property_view&sld_body=%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%2F3.2%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20StyledLayerDescriptor.xsd%22%20version%3D%221.0.0%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3Eopen-data-platform%3Aproperty_view%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3Csld%3AFilter%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Estatus%3C%2FPropertyName%3E%3CLiteral%3EA%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2Fsld%3AFilter%3E%3Csld%3APolygonSymbolizer%3E%3CStroke%3E%3CCssParameter%20name%3D%22stroke%22%3E%23FFFFFF%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22stroke-width%22%3E1%3C%2FCssParameter%3E%3C%2FStroke%3E%3C%2Fsld%3APolygonSymbolizer%3E%3C%2Fsld%3ARule%3E%3Csld%3ARule%3E%3Csld%3AFilter%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Estatus%3C%2FPropertyName%3E%3CLiteral%3EP%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2Fsld%3AFilter%3E%3Csld%3APolygonSymbolizer%3E%3CStroke%3E%3CCssParameter%20name%3D%22stroke%22%3E%23FFFF00%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22stroke-width%22%3E1%3C%2FCssParameter%3E%3C%2FStroke%3E%3C%2Fsld%3APolygonSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E",
         "overlay": true,
         "max_zoom": 22,
         "country_code": "AU",
