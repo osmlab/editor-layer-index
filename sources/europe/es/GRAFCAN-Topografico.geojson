@@ -1,25 +1,25 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "GRAFCAN-Canary_Islands",
-        "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoUrb?LAYERS=OU&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "attribution": {
-            "text": "GRAFCAN OrtoExpress Urbana",
-            "url": "https://catalogo.idecanarias.es/geonetwork/srv/spa/catalog.search#/metadata/spagrafcan_ORTOURBANAWMS_20160101",
-            "required": true
-        },
+        "id": "GRAFCAN-Topografico",
+        "name": "GRAFCAN Mapa Topográfico Integrado",
         "type": "wms",
+        "url": "https://idecan2.grafcan.es/ServicioWMS/MTI?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=WMS_MTI&SRS={proj}&WIDTH={width}&HEIGHT={height}&STYLES=&BBOX={bbox}",
+        "country_code": "ES",
         "available_projections": [
             "EPSG:3857",
             "EPSG:4326",
             "EPSG:32627",
             "EPSG:32628"
         ],
-        "name": "GRAFCAN OrtoExpress Urbana - Canary Islands",
-        "description": "High resolution imagery covering the Canary Islands, 12.5 or 10 cm/pixel in urban areas, and 20 cm/pixel elsewhere. Older in some urban areas than the lower-resolution \"GRAFCAN OrtoExpress\".",
-        "country_code": "ES",
-        "best": true,
-        "category": "historicphoto"
+        "attribution": {
+            "text": "GRAFCAN Mapa Topográfico Integrado",
+            "url": "https://www.idecanarias.es/listado_servicios/mapa-topografico-integrado",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+        "privacy_policy_url": "https://www.grafcan.es/aviso-legal/",
+        "category": "map"
     },
     "geometry": {
         "type": "MultiPolygon",

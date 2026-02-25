@@ -1,9 +1,8 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "GRAFCAN_Express-Canary_Islands",
-        "name": "GRAFCAN OrtoExpress - Canary Islands",
-        "description": "High resolution imagery covering the Canary Islands, 20 cm/pixel. More recent in some urban areas than the higher-resolution \"GRAFCAN OrtoExpress Urbana\".",
+        "id": "GRAFCAN-Territorial",
+        "name": "GRAFCAN Ortofoto Territorial",
         "type": "wms",
         "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress?LAYERS=ortoexpress&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
@@ -14,10 +13,13 @@
             "EPSG:32628"
         ],
         "attribution": {
-            "text": "GRAFCAN OrtoExpress",
-            "url": "https://catalogo.idecanarias.es/geonetwork/srv/spa/catalog.search#/metadata/spagrafcan_ORTOWMS_20160101",
+            "text": "GRAFCAN Ortofoto Territorial",
+            "url": "https://www.idecanarias.es/listado_servicios/ortofoto-territorial",
             "required": true
         },
+        "description": "La ortofoto de Tenerife es de 16 cm/pixel se ha obtenido con técnicas de Inteligencia Artificial (IA) partiendo de las generadas a 20 cm/pixel. El resto de islas son Ortofotos Territoriales de Alta Resolución a 10 cm/pixel obtenidas de las generadas a 11 cm/pixel, gracias a la aplicación también de técnicas de IA",
+        "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+        "privacy_policy_url": "https://www.grafcan.es/aviso-legal/",
         "category": "photo"
     },
     "geometry": {
