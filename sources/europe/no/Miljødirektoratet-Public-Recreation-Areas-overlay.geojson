@@ -3,14 +3,25 @@
     "properties": {
         "id": "miljodirektoratet-friluftsomrader",
         "name": "Miljødirektoratet Public Recreation Areas overlay",
-        "type": "wms",
-        "url": "https://kart.miljodirektoratet.no/arcgis/services/friluftsliv_statlig_sikra/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=friluftsliv_statlig_sikra&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other",
+        "description": "Public recreation areas with State ownership (\"friluftsområder\").",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.miljodirektoratet.no/assets/logo/new/logo-primary.svg",
+        "url": "https://kart.miljodirektoratet.no/arcgis/services/friluftsliv_statlig_sikra/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=friluftsliv_statlig_sikra&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 22,
+        "license_url": "https://web.archive.org/web/20240519061548/https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
+        "privacy_policy_url": "https://www.environmentagency.no/privacy-statement/",
+        "attribution": {
+            "text": "© Miljødirektoratet",
+            "url": "https://www.miljodirektoratet.no/"
+        },
         "country_code": "NO",
         "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4258",
             "EPSG:4326",
-            "EPSG:4267",
-            "EPSG:4269",
             "EPSG:25831",
             "EPSG:25832",
             "EPSG:25833",
@@ -23,16 +34,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ],
-        "attribution": {
-            "url": "https://kartkatalog.miljodirektoratet.no/Dataset/Details/30",
-            "text": "© Miljødirektoratet"
-        },
-        "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
-        "max_zoom": 22,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
-        "description": "Public recreation areas with State ownership (\"friluftsområder\").",
-        "category": "other"
+        ]
     },
     "geometry": {
         "type": "Polygon",

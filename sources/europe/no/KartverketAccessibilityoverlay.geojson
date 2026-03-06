@@ -3,9 +3,21 @@
     "properties": {
         "id": "kartverket-tilgjengelighet",
         "name": "Kartverket Accessibility overlay",
-        "type": "wms_endpoint",
-        "url": "https://wms.geonorge.no/skwms1/wms.tilgjengelighet3?request=GetCapabilities&service=WMS",
+        "category": "other",
+        "description": "Accessibility for the visually impaired, wheelchairs and electrical wheelchairs.",
         "overlay": true,
+        "type": "wms_endpoint",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
+        "url": "https://wms.geonorge.no/skwms1/wms.tilgjengelighet3?request=GetCapabilities&service=WMS",
+        "max_zoom": 20,
+        "min_zoom": 7,
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://www.kartverket.no/",
+            "required": true
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:3034",
@@ -28,18 +40,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ],
-        "attribution": {
-            "text": "© Kartverket",
-            "url": "https://www.kartverket.no/"
-        },
-        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
-        "max_zoom": 20,
-        "min_zoom": 7,
-        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
-        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
-        "description": "Accessibility for the visually impaired, wheelchairs and electrical wheelchairs.",
-        "category": "other"
+        ]
     },
     "geometry": {
         "type": "Polygon",

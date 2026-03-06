@@ -1,20 +1,11 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "geodata.md.gov-MD_ThreeInchImagery",
         "attribution": {
-            "url": "http://imap.maryland.gov",
+            "required": false,
             "text": "MD iMAP, DoIT",
-            "required": false
+            "url": "https://imap.maryland.gov"
         },
-        "name": "MD Three Inch Aerial Imagery",
-        "icon": "https://mdgeodata.md.gov/Deprecation/images/imap_mini.png",
-        "url": "https://mdgeodata.md.gov/imagery/rest/services/ThreeInch/MD_ThreeInchImagery/ImageServer/exportImage?f=image&format=jpgpng&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
-        "min_zoom": 8,
-        "max_zoom": 20,
-        "license_url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0094/?ys=2015rs",
-        "country_code": "US",
-        "type": "wms",
         "available_projections": [
             "CRS:84",
             "EPSG:2248",
@@ -25,14 +16,22 @@
             "EPSG:6488",
             "EPSG:26985"
         ],
-        "start_date": "2017",
-        "end_date": "2024",
-        "description": "Three Inch resolution aerial imagery for the State of Maryland. The imagery for this service is composed of imagery flown in 2017 (Westminster), 2020 (Gaithersburg, Rockville), 2023 (Anne Arundel, Baltimore County, Baltimore City), and 2024 (Eastern Shore).",
         "category": "photo",
-        "privacy_policy_url": "https://www.maryland.gov/privacy-and-security-policy"
+        "country_code": "US",
+        "description": "Three Inch resolution aerial imagery for the State of Maryland. The imagery for this service is composed of imagery flown in 2017 (Westminster), 2020 (Gaithersburg, Rockville), 2023 (Anne Arundel, Baltimore County, Baltimore City), and 2024 (Eastern Shore).",
+        "end_date": "2024",
+        "icon": "https://commons.wikimedia.org/wiki/File:MD_Flag_Round_Icon.png",
+        "id": "mdgeodata.md.gov-MD_ThreeInchImagery",
+        "license_url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0094/?ys=2015rs",
+        "max_zoom": 20,
+        "min_zoom": 8,
+        "name": "MD Three Inch Aerial Imagery",
+        "privacy_policy_url": "https://www.maryland.gov/privacy-and-security-policy",
+        "start_date": "2017",
+        "type": "wms",
+        "url": "https://mdgeodata.md.gov/imagery/rest/services/ThreeInch/MD_ThreeInchImagery/ImageServer/exportImage?f=image&format=jpgpng&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}"
     },
     "geometry": {
-        "type": "MultiPolygon",
         "coordinates": [
             [
                 [
@@ -11982,6 +11981,7 @@
                     ]
                 ]
             ]
-        ]
+        ],
+        "type": "MultiPolygon"
     }
 }

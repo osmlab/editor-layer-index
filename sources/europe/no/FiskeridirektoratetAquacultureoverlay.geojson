@@ -3,11 +3,25 @@
     "properties": {
         "id": "fiskeridir-akvakultur",
         "name": "Fiskeridirektoratet Aquaculture overlay",
-        "type": "wms",
-        "url": "https://gis.fiskeridir.no/server/services/fiskeridirWMS_akva/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=flate_ihht_akvakulturregisteret,akvakultur_lokaliteter&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other",
+        "description": "Aquaculture/marine farms (licensed sites, may not yet have any installations)",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.fiskeridir.no/_/asset/no.seeds.fiskeridir:0000019be524d150/images/icons/favicon-96x96.png",
+        "url": "https://gis.fiskeridir.no/server/services/fiskeridirWMS_akva/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=flate_ihht_akvakulturregisteret,akvakultur_lokaliteter&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 22,
+        "min_zoom": 3,
+        "license_url": "https://web.archive.org/web/20240114010218/https://lists.nuug.no/pipermail/kart/2018-January/006347.html",
+        "privacy_policy_url": "https://www.fiskeridir.no/om-oss/personvern",
+        "attribution": {
+            "text": "© Fiskeridirektoratet",
+            "url": "https://www.fiskeridir.no/"
+        },
         "country_code": "NO",
         "available_projections": [
+            "CRS:84",
+            "EPSG:3575",
+            "EPSG:4258",
             "EPSG:3857",
             "EPSG:4326",
             "EPSG:25829",
@@ -23,19 +37,9 @@
             "EPSG:32633",
             "EPSG:32634",
             "EPSG:32635",
-            "EPSG:32636"
-        ],
-        "attribution": {
-            "text": "© Fiskeridirektoratet",
-            "url": "https://www.fiskeridir.no/"
-        },
-        "privacy_policy_url": "https://www.fiskeridir.no/Om-oss/Personvern/",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png",
-        "max_zoom": 22,
-        "min_zoom": 3,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006347.html",
-        "description": "Aquaculture/marine farms (licensed sites, may not yet have any installations)",
-        "category": "other"
+            "EPSG:32636",
+            "EPSG:54004"
+        ]
     },
     "geometry": {
         "type": "Polygon",

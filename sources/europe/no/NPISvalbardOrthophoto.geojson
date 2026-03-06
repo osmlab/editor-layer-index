@@ -1,33 +1,48 @@
 {
-  "type": "Feature",
-  "properties": {
-    "best": true,
-    "id": "NPI-Svalbard-ortofoto",
-    "name": "NPI Svalbard Orthophoto",
-    "type": "tms",
-    "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Ortofoto_Svalbard_WMTS_3857/MapServer/tile/{zoom}/{y}/{x}",
-    "country_code": "NO",
-    "attribution": {
-      "url": "https://geodata.npolar.no/",
-      "text": "© Norwegian Polar Institute"
+    "type": "Feature",
+    "properties": {
+        "best": true,
+        "id": "NPI-Svalbard-ortofoto",
+        "name": "NPI Svalbard Orthophoto",
+        "category": "photo",
+        "description": "Orthophoto for Svalbard/Spitsbergen from the Norwegian Polar Institute",
+        "type": "tms",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/8/85/Emblem_of_the_Norwegian_Polar_Institute.svg",
+        "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Ortofoto_Svalbard_WMTS_3857/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 17,
+        "license_url": "https://web.archive.org/web/20240114010212/https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
+        "privacy_policy_url": "https://npolar.no/en/privacy-policy/",
+        "attribution": {
+            "text": "© Norwegian Polar Institute",
+            "url": "https://geodata.npolar.no/"
+        },
+        "country_code": "NO"
     },
-    "icon": "https://www.npolar.no/wp-content/uploads/2022/05/NP-logo-skjerm.png",
-    "max_zoom": 17,
-    "license_url": "https://web.archive.org/web/20240114010212/https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
-    "privacy_policy_url": "https://www.npolar.no/en/privacy-policy/",
-    "description": "Orthophoto for Svalbard/Spitsbergen from the Norwegian Polar Institute",
-    "category": "photo"
-  },
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [9, 74],
-        [34, 74],
-        [34, 81],
-        [9, 81],
-        [9, 74]
-      ]
-    ]
-  }
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    9,
+                    74
+                ],
+                [
+                    34,
+                    74
+                ],
+                [
+                    34,
+                    81
+                ],
+                [
+                    9,
+                    81
+                ],
+                [
+                    9,
+                    74
+                ]
+            ]
+        ]
+    }
 }
