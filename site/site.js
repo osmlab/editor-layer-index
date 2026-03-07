@@ -137,13 +137,14 @@ d3.json("imagery.geojson", function(error, imagery) {
         .text(function(d) {
             return (d.properties['country_code'] || 'world') + ' / ' + d.properties.name + (d.properties.best ? '*' : '');
         })
-        .attr('href', '#')
+        .attr('href', d => `#${d.properties.name}`)
         .attr('title', function(d) {
             if (d.properties.best)
                 return 'this is the best known imagery source in its region';
         })
-        .on('click', function(d, i) {
-            d3.event.preventDefault();
+        .on('click', enableImagery);
+
+    function enableImagery(d) {
 
             if (d.geometry === null) {
                 map.fitWorld({animate: true});
@@ -164,8 +165,8 @@ d3.json("imagery.geojson", function(error, imagery) {
                 }
             });
 
-            imagery_links.classed('active', function(d2, i2) {
-                return i2 == i;
+            imagery_links.classed('active', function(d2) {
+                return d2 == d;
             });
 
             testLayer.removeFrom(map);
@@ -211,7 +212,16 @@ d3.json("imagery.geojson", function(error, imagery) {
                         ''
                 }).addTo(map);
             }
-        });
+    }
+
+    // if the url contains #my_layer_name, select that layer by default
+    const nameFromUrlHash = decodeURIComponent(location.hash.slice(1));
+    const imageryFromUrlHash = nameFromUrlHash && imagery.features
+        .find(feature => feature.properties.name === nameFromUrlHash);
+
+    if (imageryFromUrlHash) {
+        enableImagery(imageryFromUrlHash);
+    }
 
     imagery_links.append('span')
         .classed('type', true)

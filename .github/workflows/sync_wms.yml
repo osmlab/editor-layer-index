@@ -11,10 +11,10 @@ jobs:
     if: github.repository == 'osmlab/editor-layer-index'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.10"
 
@@ -32,7 +32,7 @@ jobs:
           python scripts/check.py $(find sources -type f -name '*.geojson')
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7.0.8
+        uses: peter-evans/create-pull-request@v8.1.0
         with:
           commit-message: Sync WMS sources [skip travis]
           delete-branch: true

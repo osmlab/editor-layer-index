@@ -3,9 +3,21 @@
     "properties": {
         "id": "kartverket-luftfartshindre",
         "name": "Kartverket Aviation Obstructions overlay",
-        "type": "wms",
-        "url": "https://wms.geonorge.no/skwms1/wms.nrl5?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=nrlflate,nrllinje,nrlluftspenn,nrlmast,nrlpunkt&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other",
+        "description": "Vertical obstructions to aircrafts, above 15m in rural areas and 30m in urban areas (e.g. masts, towers, high buildings, power lines)",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
+        "url": "https://wms.geonorge.no/skwms1/wms.nrl5?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=nrlflate,nrllinje,nrlluftspenn,nrlmast,nrlpunkt&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 20,
+        "min_zoom": 10,
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://www.kartverket.no/",
+            "required": true
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:3006",
@@ -52,18 +64,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32661"
-        ],
-        "attribution": {
-            "text": "© Kartverket",
-            "url": "https://kartverket.no/"
-        },
-        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
-        "max_zoom": 20,
-        "min_zoom": 11,
-        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
-        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
-        "description": "Vertical obstructions to aircrafts, above 15m in rural areas and 30m in urban areas (e.g. masts, towers, high buildings, power lines)",
-        "category": "other"
+        ]
     },
     "geometry": {
         "type": "Polygon",

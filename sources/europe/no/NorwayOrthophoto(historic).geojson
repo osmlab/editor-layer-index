@@ -3,23 +3,24 @@
     "properties": {
         "id": "geovekst-nib-historic",
         "name": "Norway Orthophoto (historic)",
+        "category": "historicphoto",
+        "description": "Historic Norwegian orthophotos and maps, courtesy of Geovekst and Norkart.",
         "type": "wms_endpoint",
+        "icon": "https://www.norgeibilder.no/Images/NIBlogo_kompakt.png",
         "url": "https://waapi.webatlas.no/wms-orto-hist?request=GetCapabilities&service=WMS",
-        "country_code": "NO",
+        "max_zoom": 21,
+        "license_url": "https://community.openstreetmap.org/t/tillatelse-til-a-bruke-norge-i-bilder/82988",
+        "privacy_policy_url": "https://www.norkart.no/personvernerklaering/",
         "attribution": {
             "text": "© Geovekst",
-            "url": "https://www.norgeibilder.no/"
+            "url": "https://www.norgeibilder.no",
+            "required": true
         },
-        "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
-        "max_zoom": 21,
-        "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
-        "description": "Historic Norwegian orthophotos and maps, courtesy of Geovekst and Norkart.",
+        "country_code": "NO",
         "custom-http-headers": {
             "header-name": "X-WAAPI-TOKEN",
             "header-value": "b8e36d51-119a-423b-b156-d744d54123d5"
-        },
-        "category": "historicphoto",
-        "privacy_policy_url": "https://www.norkart.no/personvernerklaering/"
+        }
     },
     "geometry": {
         "type": "Polygon",

@@ -3,9 +3,20 @@
     "properties": {
         "id": "riksantikvaren-kulturminner",
         "name": "Riksantikvaren Heritage Sites overlay",
-        "type": "wms",
-        "url": "https://kart.ra.no/arcgis/services/Distribusjon/Kulturminner20180301/MapServer/WmsServer?LAYERS=Enkeltminner,Enkeltminneikoner&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "other",
+        "description": "Archeological and architectural monuments/sites and cultural environments protected by law (''enkeltminner'') from the Norwegian Directorate for Cultural Heritage",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://riksantikvaren.no/content/uploads/2024/04/RA_logo_sort-1.svg",
+        "url": "https://kart.ra.no/arcgis/services/Distribusjon/Kulturminner20180301/MapServer/WmsServer?LAYERS=Enkeltminner,Enkeltminneikoner&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "max_zoom": 22,
+        "min_zoom": 15,
+        "license_url": "https://web.archive.org/web/20240229175328/https://lists.nuug.no/pipermail/kart/2018-January/006348.html",
+        "privacy_policy_url": "https://riksantikvaren.no/personvern-og-informasjonskapsler/",
+        "attribution": {
+            "text": "© Riksantikvaren",
+            "url": "https://riksantikvaren.no/databaser-digitale-tjenester-og-registre/"
+        },
         "country_code": "NO",
         "available_projections": [
             "CRS:84",
@@ -61,18 +72,7 @@
             "EPSG:5128",
             "EPSG:5129",
             "EPSG:5130"
-        ],
-        "attribution": {
-            "text": "© Riksantikvaren",
-            "url": "https://www.riksantikvaren.no/Veiledning/Data-og-tjenester/Karttjenester"
-        },
-        "icon": "https://www.riksantikvaren.no/extension/riksantikvaren/design/internetsite/images/logo_na.png",
-        "max_zoom": 22,
-        "min_zoom": 15,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006348.html",
-        "description": "Archeological and architectural monuments/sites and cultural environments protected by law (''enkeltminner'') from the Norwegian Directorate for Cultural Heritage",
-        "category": "other",
-        "privacy_policy_url": "https://www.riksantikvaren.no/om-riksantikvaren/personvernerklaering/"
+        ]
     },
     "geometry": {
         "type": "MultiPolygon",

@@ -8,18 +8,14 @@
             "required": true
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
-        "privacy_policy_url": "https://www.actmapi.act.gov.au/privacy",
+        "privacy_policy_url": "https://osmfoundation.org/wiki/Privacy_Policy",
         "name": "ACTmapi Imagery Mar 2025",
-        "url": "https://data4.actmapi.act.gov.au/arcgis/rest/services/ACT_IMAGERY_MGA2020/2025_03_urban_75mm/ImageServer/exportImage?f=image&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&format=jpgpng",
-        "available_projections": [
-            "EPSG:3857"
-        ],
-        "best": true,
+        "url": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202503/{zoom}/{x}/{y}.jpeg",
         "start_date": "2025-03",
         "end_date": "2025-03",
         "max_zoom": 22,
         "country_code": "AU",
-        "type": "wms",
+        "type": "tms",
         "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
         "category": "photo",
         "min_zoom": 10

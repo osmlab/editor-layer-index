@@ -3,27 +3,28 @@
     "properties": {
         "id": "kystverket-navigasjon",
         "name": "Kystverket Navigational Aid overlay",
-        "type": "wms",
-        "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=13,12,10,8,6,5,4,3&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "other",
+        "description": "Beacons, buoys, lights and fairways maintained by the Norwegian Coastal Administration",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.kystverket.no/UI/favicon/safari-pinned-tab.svg",
+        "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=13,12,10,8,6,5,4,3&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 19,
+        "min_zoom": 12,
+        "license_url": "https://web.archive.org/web/20210606205810/https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
+        "privacy_policy_url": "https://www.kystverket.no/en/about-us/privacy_statement/",
+        "attribution": {
+            "text": "© Kystverket",
+            "url": "https://www.kystverket.no/"
+        },
         "country_code": "NO",
         "available_projections": [
+            "CRS:84",
             "EPSG:4326",
             "EPSG:3857",
             "EPSG:25833",
             "EPSG:32633"
-        ],
-        "attribution": {
-            "text": "© Kystverket",
-            "url": "https://kystverket.no/Maritim-infrastruktur/Fyr-og-merker-/"
-        },
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg/143px-Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg.png",
-        "max_zoom": 19,
-        "min_zoom": 12,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
-        "privacy_policy_url": "https://www.kystverket.no/en/About-Kystverket/privacy-statement/",
-        "description": "Beacons, buoys, lights and fairways maintained by the Norwegian Coastal Administration",
-        "category": "other"
+        ]
     },
     "geometry": {
         "type": "Polygon",
@@ -86,27 +87,31 @@
                     78.6278417
                 ],
                 [
-                    34.9886117,
-                    82.3401041
+                    34.27725585938,
+                    80.41572207826
                 ],
                 [
-                    5.8558682,
-                    82.3486251
+                    19.0813548116,
+                    80.21514861171
                 ],
                 [
-                    -3.6035595,
-                    79.1299845
+                    8.53105400227,
+                    79.59600572681
+                ],
+                [
+                    -0.10101029627,
+                    78.60395123561
                 ],
                 [
                     -5.1196508,
                     74.3962594
                 ],
                 [
-                    -12.4365454,
+                    -10,
                     72.5874119
                 ],
                 [
-                    -13.7329211,
+                    -10,
                     69.7637608
                 ],
                 [
