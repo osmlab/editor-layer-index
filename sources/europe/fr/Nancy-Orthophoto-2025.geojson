@@ -1,0 +1,35 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "GrandNancy_Orthophotographie_2025",
+        "name": "Nancy - Orthophoto - 2025",
+        "type": "wms",
+        "url": "https://www.datagrandest.fr/geoserver/grand-nancy/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=GrandNancy_2024-MAJ_2025-RVB_5cm_L93_cog&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo",
+        "start_date": "2025",
+        "end_date": "2025",
+        "country_code": "FR",
+        "best": true,
+        "attribution": {
+            "text": "GrandNancy Orthophotographie 2025",
+            "url": "https://www.datagrandest.fr/datahub/dataset/1751355133512-1",
+            "required": true
+        },
+        "max_zoom": 24,
+        "privacy_policy_url": "https://www.datagrandest.fr/site/donnees-a-caractere-personnel/",
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "available_projections": ["EPSG:2154", "EPSG:3857", "EPSG:3942", "EPSG:3943", "EPSG:3944", "EPSG:3945", "EPSG:3946", "EPSG:3947", "EPSG:3948", "EPSG:3949", "EPSG:3950", "EPSG:4171", "EPSG:4258", "EPSG:4326", "EPSG:23030", "EPSG:23031", "EPSG:23032", "EPSG:27561", "EPSG:27562", "EPSG:27563", "EPSG:27564", "EPSG:27571", "EPSG:27572", "EPSG:27573", "EPSG:27574", "EPSG:32630", "EPSG:32631", "EPSG:32632", "CRS:84"]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [6.06775, 48.74894],
+                [6.05919, 48.60289],
+                [6.29633, 48.59655],
+                [6.30555, 48.74259],
+                [6.06775, 48.74894]
+            ]
+        ]
+    }
+}

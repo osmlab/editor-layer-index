@@ -5,7 +5,7 @@
         "name": "Nancy - Orthophoto - 2016",
         "type": "tms",
         "url": "https://wms.openstreetmap.fr/tms/1.0.0/nancy_2016/{zoom}/{x}/{y}",
-        "category": "photo",
+        "category": "historicphoto",
         "start_date": "2016",
         "end_date": "2016",
         "country_code": "FR",
@@ -15,7 +15,8 @@
             "required": true
         },
         "max_zoom": 22,
-        "license_url": "http://opendata.grandnancy.eu/conditions-dutilisation/"
+        "privacy_policy_url": "https://openstreetmap.fr/privacy",
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
     },
     "geometry": {
         "type": "Polygon",

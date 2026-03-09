@@ -9,7 +9,7 @@
         },
         "name": "DC From Above Orthophoto 2025",
         "icon": "https://octo.dc.gov/sites/default/files/styles/callout_interior_graphic/public/dc/sites/octo/agency_content/images/OCTO-logo_Lead.png",
-        "url": "https://imagery.dcgis.dc.gov/dcgis/services/Ortho/Ortho_2025/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&layers=0&styles=&format=image/jpeg&crs={proj}&width={width}&height={height}&bbox={bbox}",
+        "url": "https://imagery.dcgis.dc.gov/dcgis/services/Ortho/Ortho_2025/ImageServer/WMSServer?request=getmap&version=1.3.0&service=wms&format=image/jpeg&layers=Ortho_2025&styles=&crs={proj}&width={width}&height={height}&bbox={bbox}",
         "max_zoom": 21,
         "license_url": "https://wiki.openstreetmap.org/wiki/Washington_DC/DC_From_Above",
         "country_code": "US",
