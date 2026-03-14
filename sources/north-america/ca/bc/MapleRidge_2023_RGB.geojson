@@ -1,0 +1,124 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "Maple-Ridge-RGB-2023",
+    "attribution": {
+      "url": "https://www.mapleridge.ca/terms-use#OpenGovernmentLicenceMapleRidge",
+      "text": "Contains information licensed under the Open Government Licence – Maple Ridge",
+      "required": true
+    },
+    "name": "City of Maple Ridge Orthoimagery (2023)",
+    "url": "https://geoservices.mapleridge.ca/image/rest/services/Orthoimagery/2023_7_5cm/ImageServer/exportImage?f=image&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&format=jpgpng",
+    "max_zoom": 24,
+    "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
+    "permission_osm": "implicit",
+    "country_code": "CA",
+    "best": true,
+    "start_date": 2023,
+    "end_date": 2023,
+    "type": "wms",
+    "available_projections": [
+      "EPSG:3857",
+      "EPSG:4326"
+    ],
+    "description": "Aerial imagery acquired by the City of Maple Ridge in Spring 2023",
+    "category": "photo",
+    "valid-georeference": true,
+    "privacy_policy_url": "https://www.mapleridge.ca/terms-use"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -122.64794407988816,
+          49.202591334144074
+        ],
+        [
+          -122.63865446846927,
+          49.20619664622018
+        ],
+        [
+          -122.62012325830901,
+          49.210263814187726
+        ],
+        [
+          -122.60347418908682,
+          49.208750020867626
+        ],
+        [
+          -122.59311326206793,
+          49.201035561494734
+        ],
+        [
+          -122.58521493628665,
+          49.187202315566935
+        ],
+        [
+          -122.51880257972772,
+          49.166111417810754
+        ],
+        [
+          -122.46697874917099,
+          49.170216164644785
+        ],
+        [
+          -122.446978793639,
+          49.17059724681724
+        ],
+        [
+          -122.43281878827875,
+          49.16849769867301
+        ],
+        [
+          -122.41355474235314,
+          49.163536809724405
+        ],
+        [
+          -122.41359062462766,
+          49.24344782535633
+        ],
+        [
+          -122.47933958675097,
+          49.2482061698548
+        ],
+        [
+          -122.47965667828947,
+          49.27266420498154
+        ],
+        [
+          -122.51708005666615,
+          49.272724966572866
+        ],
+        [
+          -122.5488583330423,
+          49.25651917834071
+        ],
+        [
+          -122.62304081258158,
+          49.28683454144897
+        ],
+        [
+          -122.67819555611854,
+          49.2266402908202
+        ],
+        [
+          -122.67757586992391,
+          49.19961720871237
+        ],
+        [
+          -122.66368248682801,
+          49.19774325762447
+        ],
+        [
+          -122.65400397748644,
+          49.1999903138657
+        ],
+        [
+          -122.64794407988816,
+          49.202591334144074
+        ]
+      ]
+    ]
+  }
+}
