@@ -17,17 +17,46 @@
         "max_zoom": 23,
         "privacy_policy_url": "https://www.datagrandest.fr/site/donnees-a-caractere-personnel/",
         "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
-        "available_projections": ["EPSG:2154", "EPSG:3857"]
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3948",
+            "EPSG:3949",
+            "EPSG:4171",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:23032",
+            "EPSG:27561",
+            "EPSG:27571",
+            "EPSG:27572",
+            "EPSG:32632"
+        ]
     },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
             [
-                [6.07042, 48.74878],
-                [6.0619, 48.60353],
-                [6.29619, 48.59727],
-                [6.30536, 48.7425],
-                [6.07042, 48.74878]
+                [
+                    6.07042,
+                    48.74878
+                ],
+                [
+                    6.0619,
+                    48.60353
+                ],
+                [
+                    6.29619,
+                    48.59727
+                ],
+                [
+                    6.30536,
+                    48.7425
+                ],
+                [
+                    6.07042,
+                    48.74878
+                ]
             ]
         ]
     }

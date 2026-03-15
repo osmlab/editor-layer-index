@@ -17,17 +17,39 @@
         "max_zoom": 23,
         "privacy_policy_url": "https://openstreetmap.fr/privacy",
         "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
-        "available_projections": ["EPSG:2154", "EPSG:2975", "EPSG:3116", "EPSG:3163", "EPSG:3857", "EPSG:3942", "EPSG:3943", "EPSG:3944", "EPSG:3945", "EPSG:3946", "EPSG:3947", "EPSG:3948", "EPSG:3949", "EPSG:3950", "EPSG:4326", "EPSG:5490", "EPSG:27561", "EPSG:27562", "EPSG:27563", "EPSG:27564", "EPSG:32618", "EPSG:32619", "EPSG:32620", "EPSG:32621", "EPSG:32628", "EPSG:32629", "EPSG:32630", "EPSG:32636", "EPSG:32644", "EPSG:32645", "EPSG:32651", "EPSG:32652", "EPSG:32735", "EPSG:32759"]
+        "available_projections": [
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3948",
+            "EPSG:3949",
+            "EPSG:4326",
+            "EPSG:27561"
+        ]
     },
     "geometry": {
         "type": "Polygon",
         "coordinates": [
             [
-                [6.07042, 48.74878],
-                [6.0619, 48.60353],
-                [6.29619, 48.59727],
-                [6.30536, 48.7425],
-                [6.07042, 48.74878]
+                [
+                    6.07042,
+                    48.74878
+                ],
+                [
+                    6.0619,
+                    48.60353
+                ],
+                [
+                    6.29619,
+                    48.59727
+                ],
+                [
+                    6.30536,
+                    48.7425
+                ],
+                [
+                    6.07042,
+                    48.74878
+                ]
             ]
         ]
     }
