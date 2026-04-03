@@ -1,21 +1,22 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Philadelphia_Ortho_2024_1in",
+        "id": "Philadelphia_Ortho_2025_3in",
         "attribution": {
             "url": "https://www.opendataphilly.org/dataset/aerial-photography",
             "text": "City of Philadelphia",
             "required": false
         },
-        "name": "Philadelphia Orthoimagery 2024 (1in)",
-        "url": "https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2024_1in/MapServer/tile/{zoom}/{y}/{x}",
+        "name": "Philadelphia Orthoimagery 2025 (3in)",
+        "url": "https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2025_3in/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 22,
         "license_url": "https://opendataphilly.org/organizations/city-of-philadelphia/",
+        "best": true,
         "country_code": "US",
         "type": "tms",
-        "start_date": "2024",
-        "end_date": "2024",
-        "description": "Digital orthophotography with a ground resolution of 1-inch per pixel, georeferenced to the Pennsylvania State Plane Coordinate System, and delivered as mosaicked raster images for the city of Philadelphia",
+        "start_date": "2025",
+        "end_date": "2025",
+        "description": "Digital orthophotography with a ground resolution of 3-inch per pixel, georeferenced to the Pennsylvania State Plane Coordinate System, and delivered as mosaicked raster images for the city of Philadelphia",
         "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.esri.com/en-us/privacy/overview"
