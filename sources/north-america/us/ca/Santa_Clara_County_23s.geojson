@@ -3,13 +3,13 @@
     "properties": {
         "id": "Santa_Clara_County_23s",
         "attribution": {
-            "url": "https://gis.sccgov.org/home",
+            "url": "https://gis.santaclaracounty.gov/home",
             "text": "County of Santa Clara",
             "required": false
         },
         "name": "Santa Clara County Orthoimagery (Spring 2023)",
         "icon": "https://files.santaclaracounty.gov/2023-07/county-seal-black_0.svg",
-        "url": "https://mapimages.sccgov.org/arcgis/rest/services/imagery/OrthoImagery2023_LimitedCities/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "url": "https://maps.santaclaracounty.gov/image/rest/services/Imagery/OrthoImagery2023_LimitedCities/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
