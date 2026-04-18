@@ -9,7 +9,7 @@
             "required": false
         },
         "name": "Oregon DOGAMI Lidar",
-        "url": "https://gis.dogami.oregon.gov/arcgis/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC_HS/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gis.dogami.oregon.gov/arcgis/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC_HS/ImageServer/WMSServer?LAYERS=DIGITAL_TERRAIN_MODEL_MOSAIC_HS&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "max_zoom": 21,
         "min_zoom": 6,
         "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
