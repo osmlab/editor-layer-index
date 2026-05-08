@@ -1,0 +1,60 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "orthophoto_vichy_2021",
+        "name": "Vichy orthophoto 2021 (3 cm)",
+        "type": "wms",
+        "url": "https://tiles.craig.fr/ortho/service?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=vichy_2021&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "category": "photo",
+        "description": "Orthophotographie à 3 cm de Vichy - 2021",
+        "best": true,
+        "start_date": "2021-08-11",
+        "end_date": "2021-08-11",
+        "country_code": "FR",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3946",
+            "EPSG:3945",
+            "EPSG:4258",
+            "EPSG:4326"
+        ],
+        "min_zoom": 10,
+        "max_zoom": 23,
+        "attribution": {
+            "url": "https://ids.craig.fr/geocat/srv/fre/catalog.search#/metadata/0aef1b54-3c5e-4baa-913c-c7426dde09aa",
+            "text": "CRAIG - Feder Auvergne-Rhône-Alpes - 2022",
+            "required": true
+        },
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "icon": null
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    3.401366,
+                    46.111187
+                ],
+                [
+                    3.455743,
+                    46.110982
+                ],
+                [
+                    3.456125,
+                    46.156906
+                ],
+                [
+                    3.401702,
+                    46.157111
+                ],
+                [
+                    3.401366,
+                    46.111187
+                ]
+            ]
+        ]
+    }
+}
