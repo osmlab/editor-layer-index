@@ -9,10 +9,15 @@
         "available_projections": [
             "EPSG:2391",
             "EPSG:2392",
+            "EPSG:2393",
             "EPSG:3067",
-            "EPSG:3128",
             "EPSG:3129",
             "EPSG:3130",
+            "EPSG:3131",
+            "EPSG:3132",
+            "EPSG:3133",
+            "EPSG:3134",
+            "EPSG:3135",
             "EPSG:3857",
             "EPSG:3877",
             "EPSG:4326"
@@ -29,7 +34,7 @@
         "end_date": "2018-07-14",
         "name": "City of Turku ortophoto - 2018 True ortho",
         "type": "wms",
-        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva 2018 True ortho&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?LAYERS=Ilmakuva+2018+True+ortho&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/png&WIDTH={width}&HEIGHT={height}&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "category": "photo"
     },
     "geometry": {
