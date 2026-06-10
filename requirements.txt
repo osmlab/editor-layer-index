@@ -10,7 +10,7 @@ aiofiles==25.1.0
     # via -r requirements.in
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp[speedups]==3.13.5
+aiohttp[speedups]==3.14.0
     # via -r requirements.in
 aiosignal==1.4.0
     # via aiohttp
@@ -99,7 +99,9 @@ scipy==1.10.0
 shapely==2.1.2
     # via -r requirements.in
 typing-extensions==4.14.1
-    # via aiosignal
+    # via
+    #   aiohttp
+    #   aiosignal
 urllib3==2.7.0
     # via
     #   -r requirements.in
