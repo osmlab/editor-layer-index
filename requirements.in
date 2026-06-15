@@ -1,7 +1,7 @@
 # Libeli
 pyproj==3.7.1
 shapely==2.1.2
-regex==2026.4.4
+regex==2026.5.9
 validators==0.35.0
 
 # Common
@@ -15,15 +15,15 @@ certifi>=2026.5.20
 
 # Strict check
 mercantile==1.2.1
-requests==2.33.1
-urllib3==2.6.3
+requests==2.34.2
+urllib3==2.7.0
 validators==0.35.0
 #jsonschema
 #shapely
 
 # WMS sync
 aiofiles==25.1.0
-aiohttp[speedups]==3.13.5
+aiohttp[speedups]==3.14.0
 imagehash==4.3.2
 python-magic==0.4.27
 mercantile==1.2.1

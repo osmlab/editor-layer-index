@@ -1,0 +1,46 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "orthophoto_lyon_plus_recente",
+        "name": "Lyon Orthophoto plus récente",
+        "type": "wms",
+        "url": "https://data.grandlyon.com/geoserver/grandlyon/ows?layers=ortho_latest&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&transparent=true&STYLES=&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&crs={proj}&BBOX={bbox}",
+        "best": true,
+        "start_date": "2023-07-01",
+        "end_date": "2024-09-30",
+        "country_code": "FR",
+        "max_zoom": 22,
+        "min_zoom": 10,
+        "description": "Orthophotographie la plus récente de la Métropole de Lyon",
+        "attribution": {
+            "url": "https://data.grandlyon.com/portail/fr/jeux-de-donnees/orthophotographie-la-plus-recente-de-la-metropole-de-lyon/info",
+            "text": "CRAIG - Métropole du Grand Lyon 2023",
+            "required": true
+        },
+        "available_projections": [
+            "EPSG:2154",
+            "EPSG:3857",
+            "EPSG:3946",
+            "EPSG:4171",
+            "EPSG:4258",
+            "EPSG:4326",
+            "EPSG:27562",
+            "EPSG:27572"
+        ],
+        "license_url": "https://data.grandlyon.com/portail/fr/assets/licences/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "privacy_policy_url": "https://data.grandlyon.com/portail/en/donnees-personnelles",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [4.6928, 45.9393],
+                [4.6928, 45.5571],
+                [5.062, 45.5571],
+                [5.062, 45.9393],
+                [4.6928, 45.9393]
+            ]
+        ]
+    }
+}

@@ -10,7 +10,7 @@ aiofiles==25.1.0
     # via -r requirements.in
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp[speedups]==3.13.5
+aiohttp[speedups]==3.14.0
     # via -r requirements.in
 aiosignal==1.4.0
     # via aiohttp
@@ -86,9 +86,9 @@ referencing==0.29.1
     # via
     #   jsonschema
     #   jsonschema-specifications
-regex==2026.4.4
+regex==2026.5.9
     # via -r requirements.in
-requests==2.33.1
+requests==2.34.2
     # via -r requirements.in
 rpds-py==0.30.0
     # via
@@ -99,8 +99,10 @@ scipy==1.10.0
 shapely==2.1.2
     # via -r requirements.in
 typing-extensions==4.14.1
-    # via aiosignal
-urllib3==2.6.3
+    # via
+    #   aiohttp
+    #   aiosignal
+urllib3==2.7.0
     # via
     #   -r requirements.in
     #   requests

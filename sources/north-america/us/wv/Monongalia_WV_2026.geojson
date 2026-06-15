@@ -1,17 +1,17 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Monongalia_WV_2023",
+        "id": "Monongalia_WV_2026",
         "attribution": {
             "url": "https://mmagic-monco.hub.arcgis.com/",
             "text": "Monongalia Morgantown Area Geospatial Information Consortium",
             "required": false
         },
-        "name": "Monongalia County 2023 Aerial Imagery",
+        "name": "Monongalia County 2026 Aerial Imagery",
         "icon": "https://www.arcgis.com/sharing/rest/content/items/10723cfc30b9420f8a9a88a4fcb74e2b/resources/rsz_2county_only_no_background.png",
         "url": "https://gis.morgantownwv.gov/image/services/Imagery/Monongalia_County_2026_Aerial_Imagery/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Monongalia_County_2026_Aerial_Imagery:None&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "license_url": "https://gis.morgantownwv.gov/portal/home/item.html?id=e6a94894347742eea621a34a6db65263",
+        "license_url": "https://gis.morgantownwv.gov/portal/home/item.html?id=42c57728fc30477088734bf4797b7d34",
         "permission_osm": "explicit",
         "country_code": "US",
         "type": "wms",
@@ -21,11 +21,12 @@
             "EPSG:4326",
             "EPSG:26853"
         ],
-        "start_date": "2023-03",
-        "end_date": "2023-03",
-        "description": "Spring 2023 Aerial Imagery for Monongalia County of the State of West Virginia",
-        "category": "historicphoto",
+        "start_date": "2026",
+        "end_date": "2026",
+        "description": "Aerial imagery collected by the Thrasher Group on behalf of the Monongalia Morgantown Area Geospatial Information Consortium (MMAGIC) late winter/early spring 2026.",
+        "category": "photo",
         "privacy_policy_url": "https://morgantownwv.gov/privacy",
+        "best": true,
         "valid-georeference": true
     },
     "geometry": {
