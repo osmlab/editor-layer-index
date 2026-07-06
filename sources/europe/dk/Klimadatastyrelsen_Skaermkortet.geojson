@@ -661,8 +661,8 @@
     "properties": {
         "attribution": {
             "required": true,
-            "text": "Styrelsen for Dataforsyning og Infrastruktur",
-            "url": "https://sdfi.dk/Media/638052180760639799/Vilk%C3%A5r%20for%20brug%20af%20frie%20geografiske%20data,%20opdateret%20november%202022.pdf"
+            "text": "(CC BY 4.0) Klimadatastyrelsen",
+            "url": "https://www.klimadatastyrelsen.dk/om-klimadatastyrelsen/vilkaar-og-priser"
         },
         "available_projections": [
             "EPSG:4326",
@@ -680,13 +680,13 @@
         ],
         "country_code": "DK",
         "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png",
-        "id": "Geodatastyrelsen_Skaermkort",
+        "id": "Klimadatastyrelsen_Skaermkortet",
         "max_zoom": 19,
-        "name": "SDFI Screenmap",
+        "name": "KDS Screenmap",
         "i18n": true,
         "type": "wms",
-        "url": "https://services.datafordeler.dk/DKskaermkort/topo_skaermkort/1.0.0/Wms?username=OPFFZDPOAS&password=tRmWsq8p9LW2-pf&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=dtk_skaermkort&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "license_url": "https://datafordeler.dk/vejledning/brugervilkaar/",
+        "url": "https://wms.datafordeler.dk/DKskaermkort/topo_skaermkort/1.0.0/wms?apikey=svfaooasa5I6m0aFhcM52cZJVdVIjHDJuZgTECwjmuKY2XYaxP2l9xaERfuJCQMeT9xxf88uyTmx8w5kEbdPa1b7GooiIaNB7&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=dtk_skaermkort&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://datafordeler.dk/vejledning/brugervilkaar/kds-geografiske-data/",
         "privacy_policy_url": "https://datafordeler.dk/vejledning/om-datafordeleren/privatlivspolitik/",
         "category": "map"
     },
