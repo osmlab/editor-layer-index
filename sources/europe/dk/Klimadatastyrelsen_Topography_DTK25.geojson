@@ -662,7 +662,7 @@
         "attribution": {
             "required": true,
             "text": "(CC BY 4.0) Klimadatastyrelsen",
-            "url": "https://dataforsyningen.dk/data/956"
+            "url": "https://datafordeler.dk/dataoversigt/danmarks-topografiske-kortvaerk-dtk/dtk25-danmarks-topografiske-kortvaerk-125000-wms/"
         },
         "available_projections": [
             "EPSG:4326",
@@ -685,9 +685,9 @@
         "name": "KDS Topography Map (DTK25)",
         "i18n": true,
         "type": "wms",
-        "url": "https://api.dataforsyningen.dk/dtk_25_DAF?service=WMS&request=GetMap&token=52065b2ec5fda5a46a50b451f3f24473&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&Layers=dtk25&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "license_url": "https://dataforsyningen.dk/Vilkaar",
-        "privacy_policy_url": "https://dataforsyningen.dk/Privatlivspolitik",
+        "url": "https://wms.datafordeler.dk/DKtopokort/dtk_25/1.0.0/WMS?LAYERS=dtk_25&STYLES=&apikey=svfaooasa5I6m0aFhcM52cZJVdVIjHDJuZgTECwjmuKY2XYaxP2l9xaERfuJCQMeT9xxf88uyTmx8w5kEbdPa1b7GooiIaNB7&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "license_url": "https://datafordeler.dk/vejledning/brugervilkaar/kds-geografiske-data/",
+        "privacy_policy_url": "https://datafordeler.dk/vejledning/om-datafordeleren/privatlivspolitik/",
         "category": "map"
     },
     "type": "Feature"
