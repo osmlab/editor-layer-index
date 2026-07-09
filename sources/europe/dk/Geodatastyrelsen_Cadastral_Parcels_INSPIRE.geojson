@@ -683,6 +683,7 @@
         "id": "Geodatastyrelsen_Cadastral_Parcels_INSPIRE",
         "max_zoom": 19,
         "name": "GST Cadastral Parcels Map INSPIRE",
+        "description": "Geodatastyrelsen's Cadastral Parcels map (Matriklen - INSPIRE)",
         "i18n": true,
         "type": "wms",
         "url": "https://api.dataforsyningen.dk/wms/cp_inspire?LAYERS=CP.CadastralParcel&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
