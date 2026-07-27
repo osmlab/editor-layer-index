@@ -1,24 +1,25 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "ACT202505",
+        "id": "ACT202603",
         "attribution": {
             "url": "https://www.actmapi.act.gov.au/home",
-            "text": "Aerial Imagery from ACTMapi ©ACT Government and MetroMap",
+            "text": "Aerial Imagery from ACTmapi © ACT Government and Aerometrex",
             "required": true
         },
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/oceania/au/act/ACTmapi-Imagery.PDF",
         "privacy_policy_url": "https://osmfoundation.org/wiki/Privacy_Policy",
-        "name": "ACTmapi Imagery May 2025",
-        "url": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202505/{zoom}/{x}/{y}.jpeg",
-        "start_date": "2025-05",
-        "end_date": "2025-05",
+        "name": "ACTmapi Imagery Mar 2026",
+        "url": "https://act-imagery.openstreetmap.org/layer/act_aerial_imagery_202603/{zoom}/{x}/{y}.jpeg",
+        "start_date": "2026-03",
+        "end_date": "2026-03",
         "max_zoom": 22,
         "country_code": "AU",
         "type": "tms",
         "icon": "https://www.actmapi.act.gov.au/__data/assets/file/0009/1174446/favicon.ico",
         "category": "photo",
-        "min_zoom": 10
+        "min_zoom": 10,
+        "best": true
     },
     "geometry": {
         "type": "Polygon",
