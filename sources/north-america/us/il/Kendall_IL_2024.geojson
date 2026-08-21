@@ -12,15 +12,12 @@
         "url": "https://tiles.kendallcountyil.gov/2024/{z}/{x}/{y}.jpg",
         "max_zoom": 19,
         "country_code": "US",
-        "type": "wms",
-        "available_projections": [
-            "EPSG:3857"
-        ],
+        "type": "tms",
         "start_date": "2024",
         "end_date": "2024",
         "description": "2024 Aerial imagery, flown in the spring of that year",
         "category": "photo",
-        "valid-georeference": true,
+        "valid-georeference": true
     },
     "geometry": {
         "type": "Polygon",
