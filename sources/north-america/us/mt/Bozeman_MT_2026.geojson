@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Bozeman_MT_2025",
+        "id": "Bozeman_MT_2026",
         "attribution": {
             "url": "https://public-bozeman.opendata.arcgis.com/",
             "text": "City of Bozeman GIS Department",
             "required": false
         },
-        "name": "City of Bozeman Aerial Photography (2025)",
+        "name": "City of Bozeman Aerial Photography (2026)",
         "icon": "https://www.bozeman.net/Project/Contents/Main/_gfx/cmn/logo.svg",
-        "url": "https://gisweb.bozeman.net/image/services/COB_20250503_WebMercator/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://gisweb.bozeman.net/image/services/COB_20260408_WebMercator/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
         "license_url": "https://www.bozeman.net/departments/information-technology/disclaimer",
         "country_code": "US",
@@ -19,11 +19,12 @@
             "EPSG:3857",
             "EPSG:4326"
         ],
-        "start_date": "2025-05-03",
-        "end_date": "2025-05-03",
-        "description": "2025 aerial photography for City of Bozeman in the State of Montana",
-        "category": "historicphoto",
+        "start_date": "2026-04-08",
+        "end_date": "2026-04-08",
+        "description": "2026 aerial photography for City of Bozeman in the State of Montana",
+        "category": "photo",
         "privacy_policy_url": "https://www.bozeman.net/departments/information-technology/privacy-statement",
+        "best": true,
         "valid-georeference": true
     },
     "geometry": {
