@@ -1,0 +1,57 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Los_Alamos_2025",
+        "attribution": {
+            "url": "https://www.losalamosnm.us/Services/Property-and-Taxes/GIS-and-Maps/Geographic-Information-System-Services",
+            "text": "Los Alamos County GIS Services",
+            "required": false
+        },
+        "name": "Los Alamos County Orthoimagery (2025)",
+        "icon": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6435726/Templates/Images/logo.png",
+        "url": "https://gis.losalamosnm.us/securegis/rest/services/imagery/Orthoimagery_pictometry_1in_2025/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
+        "max_zoom": 20,
+        "license_url": "https://wiki.openstreetmap.org/wiki/New_Mexico/Los_Alamos_County_Orthoimagery",
+        "permission_osm": "explicit",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857"
+        ],
+        "start_date": "2025-08",
+        "end_date": "2025-08",
+        "description": "1-inch pixel resolution orthoimagery captured in 2025 for Los Alamos County of the state of New Mexico",
+        "category": "photo",
+        "valid-georeference": true,
+        "best": true,
+        "privacy_policy_url": "https://losalamosnm.us/cms/one.aspx?pageId=6505271"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -106.4228515,
+                    35.9794629
+                ],
+                [
+                    -106.0931524503844,
+                    35.9794629
+                ],
+                [
+                    -106.0931524503844,
+                    35.747393210593245
+                ],
+                [
+                    -106.4228515,
+                    35.747393210593245
+                ],
+                [
+                    -106.4228515,
+                    35.9794629
+                ]
+            ]
+        ]
+    }
+}

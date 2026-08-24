@@ -1,17 +1,17 @@
 {
     "type": "Feature",
     "properties": {
-        "license_url": "https://data.tnris.org/collection/?c=f84442b8-ac2a-4708-b5c0-9d15515f4483",
+        "license_url": "https://data.geographic.texas.gov/collection/?c=f84442b8-ac2a-4708-b5c0-9d15515f4483",
         "id": "caparea_2019_wms",
         "type": "wms",
         "name": "StratMap CapArea Imagery (2019)",
         "icon": "https://cdn.tnris.org/images/tnris_logo.svg",
-        "url": "https://imagery.geographic.texas.gov/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer?LAYERS=StratMap19_NCCIR_CapArea&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://imagery.geographic.texas.gov/server/services/StratMap/StratMap19_NCCIR_CapArea/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2019",
         "end_date": "2019",
         "country_code": "US",
         "attribution": {
-            "url": "https://data.tnris.org/collection/?c=f84442b8-ac2a-4708-b5c0-9d15515f4483",
+            "url": "https://data.geographic.texas.gov/collection/?c=f84442b8-ac2a-4708-b5c0-9d15515f4483",
             "text": "Strategic Mapping Program (StratMap). CapArea Imagery, 2019-01-29",
             "required": false
         },
@@ -21,7 +21,7 @@
             "EPSG:4326"
         ],
         "category": "historicphoto",
-        "privacy_policy_url": "https://tnris.org/site-policies/#privacy-and-security-policy",
+        "privacy_policy_url": "https://geographic.texas.gov/site-policies#privacy-and-security-policy",
         "min_zoom": 2
     },
     "geometry": {

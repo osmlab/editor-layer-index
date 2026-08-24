@@ -1,17 +1,18 @@
 {
     "type": "Feature",
     "properties": {
-        "license_url": "https://data.tnris.org/collection/38f1b2e7-6fc7-4357-80a4-1ee33d7abaaf",
+        "license_url": "https://data.geographic.texas.gov/collection/?c=38f1b2e7-6fc7-4357-80a4-1ee33d7abaaf",
         "id": "smith_county_2019_wms",
+        "icon": "https://www.smith-county.com/ImageRepository/Document?documentID=89",
         "type": "wms",
         "name": "TX: Smith County Imagery 2019",
-        "url": "https://imagery.geographic.texas.gov/server/services/Smith_County/SmithCo_2020_NCCIR_6in/ImageServer/WMSServer?LAYERS=SmithCo_2020_NCCIR_6in&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://imagery.geographic.texas.gov/server/services/Smith_County/SmithCo_2020_NCCIR_6in/ImageServer/WMSServer?LAYERS=0&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "start_date": "2019",
         "end_date": "2019",
         "country_code": "US",
         "best": true,
         "attribution": {
-            "url": "https://data.tnris.org/collection/38f1b2e7-6fc7-4357-80a4-1ee33d7abaaf",
+            "url": "https://data.geographic.texas.gov/collection/?c=38f1b2e7-6fc7-4357-80a4-1ee33d7abaaf",
             "text": "Smith County (Smith). Smith County Imagery, 2019-12-11",
             "required": false
         },
@@ -21,7 +22,7 @@
             "EPSG:4326"
         ],
         "category": "photo",
-        "privacy_policy_url": "https://tnris.org/site-policies/#privacy-and-security-policy",
+        "privacy_policy_url": "https://geographic.texas.gov/site-policies#privacy-and-security-policy",
         "min_zoom": 3
     },
     "geometry": {
