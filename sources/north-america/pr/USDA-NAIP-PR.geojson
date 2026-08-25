@@ -7,9 +7,12 @@
             "text": "U.S. Department of Agriculture",
             "required": false
         },
-        "name": "National Agriculture Imagery Program (PR/USVI)",
-        "type": "tms",
-        "url": "https://gis.apfo.usda.gov/arcgis/rest/services/NonCONUS/PR/ImageServer/tile/{zoom}/{y}/{x}",
+        "name": "National Agriculture Imagery Program (PR)",
+        "type": "wms",
+        "url": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2021_PuertoRico/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
+        "available_projections": [
+            "EPSG:3857"
+        ],
         "start_date": "2021",
         "end_date": "2023",
         "max_zoom": 19,
@@ -27,32 +30,32 @@
         "coordinates": [
             [
                 [
-                    -64.38690940838258,
-                    17.59969693169515
+                    -65.8686778,
+                    17.7335262
                 ],
                 [
-                    -64.63899556512364,
-                    18.362855458380274
+                    -65.3919467,
+                    18.5624064
                 ],
                 [
-                    -64.86255303711461,
-                    18.39567679855855
+                    -67.3482557,
+                    18.6408316
                 ],
                 [
-                    -64.98334069099755,
-                    18.648073669757864
+                    -67.3274821,
+                    17.7817066
                 ],
                 [
-                    -67.97369786466294,
-                    18.61988614333039
+                    -66.5236174,
+                    17.7928393
                 ],
                 [
-                    -67.97369786466294,
-                    17.596283266693405
+                    -66.4618767,
+                    17.941445
                 ],
                 [
-                    -64.38690940838258,
-                    17.59969693169515
+                    -65.8686778,
+                    17.7335262
                 ]
             ]
         ]

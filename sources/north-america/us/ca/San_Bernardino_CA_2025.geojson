@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "San_Bernardino_CA_2023",
+        "id": "San_Bernardino_CA_2025",
         "attribution": {
             "url": "https://open.sbcounty.gov/",
             "text": "San Bernardino County",
             "required": false
         },
-        "name": "San Bernardino County Orthoimagery (2023)",
+        "name": "San Bernardino County Orthoimagery (2025)",
         "icon": "https://main.sbcounty.gov/wp-content/uploads/sites/80/OpenData/SBC-pw-logo.png",
-        "url": "https://maps.sbcounty.gov/img/rest/services/y2023_IS/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "url": "https://maps.sbcounty.gov/img/rest/services/y2025_COG/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
@@ -18,9 +18,9 @@
             "CRS:84",
             "EPSG:3857"
         ],
-        "start_date": "2023",
-        "end_date": "2023",
-        "description": "2023 3-inch resolution imagery for San Bernardino County in the State of California",
+        "start_date": "2025",
+        "end_date": "2025",
+        "description": "2025 3-inch resolution imagery for San Bernardino County in the State of California",
         "category": "historicphoto",
         "privacy_policy_url": "https://main.sbcounty.gov/policy/"
     },

@@ -9,16 +9,11 @@
         },
         "name": "City of Stockton Orthoimagery (2023)",
         "icon": "https://cms3.revize.com/revize/stockton/_assets_/images/logo.png",
-        "url": "https://gisportal.stocktonca.gov/arcgis/services/Aerials/Aerials_2023/ImageServer/WMSServer?LAYERS=0&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "url": "https://gisportal.stocktonca.gov/arcgis2/rest/services/BaseMaps/Aerials_2023/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
-        "type": "wms",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:4326",
-            "EPSG:3857"
-        ],
+        "type": "tms",
         "start_date": "2023",
         "end_date": "2023",
         "description": "2023 3-inch resolution imagery for Stockton in the State of California",

@@ -1,28 +1,28 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "USDA_Palau_2022",
+        "id": "NRCS_American_Samoa_2022",
         "attribution": {
-            "url": "https://datagateway.nrcs.usda.gov/",
+            "url": "https://www.nrcs.usda.gov/",
             "text": "U.S. Department of Agriculture",
             "required": false
         },
-        "name": "USDA Palau Imagery (2022)",
+        "name": "NRCS American Samoa Imagery (2022)",
         "type": "wms",
-        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/rest/services/ortho_imagery/palau_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
-        "start_date": "2019-03-06",
-        "end_date": "2022-06-18",
+        "url": "https://apps.geo.fpac.usda.gov/nrcs-imagery/rest/services/ortho_imagery/american_samoa_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "start_date": "2018-04-07",
+        "end_date": "2022-06-10",
         "max_zoom": 20,
         "min_zoom": 12,
         "license_url": "https://www.usda.gov/policies-and-links/",
-        "country_code": "PW",
+        "country_code": "AS",
         "available_projections": [
             "CRS:84",
             "EPSG:4326",
             "EPSG:3857"
         ],
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
-        "category": "photo",
+        "category": "historicphoto",
         "privacy_policy_url": "https://www.usda.gov/privacy-policy",
         "valid-georeference": true
     },
@@ -31,24 +31,24 @@
         "coordinates": [
             [
                 [
-                    130.1638068601765,
-                    3.134514351724011
+                    -171.01724134405018,
+                    -14.734243505717942
                 ],
                 [
-                    132.50035869076507,
-                    2.305112123054847
+                    -167.94045959468005,
+                    -14.771590987059534
                 ],
                 [
-                    135.35828985545194,
-                    8.43509824667162
+                    -167.8632182118507,
+                    -10.805330809160186
                 ],
                 [
-                    134.43863464113969,
-                    8.456586790104325
+                    -171.33908043917253,
+                    -10.855907794031241
                 ],
                 [
-                    130.1638068601765,
-                    3.134514351724011
+                    -171.01724134405018,
+                    -14.734243505717942
                 ]
             ]
         ]

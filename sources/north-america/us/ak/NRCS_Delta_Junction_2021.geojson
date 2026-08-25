@@ -1,17 +1,17 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "USDA_Delta_Junction_2021",
+        "id": "NRCS_Delta_Junction_2021",
         "attribution": {
-            "url": "https://datagateway.nrcs.usda.gov/",
+            "url": "https://www.nrcs.usda.gov/",
             "text": "U.S. Department of Agriculture",
             "required": false
         },
-        "name": "USDA Delta Junction Orthoimagery (2021)",
+        "name": "NRCS Delta Junction Orthoimagery (2021)",
         "type": "wms",
-        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/alaska_delta_junction_2021/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=alaska_delta_junction_2021:NaturalColor_4Band_Vivid_NoStretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "start_date": "2021",
-        "end_date": "2021",
+        "url": "https://apps.geo.fpac.usda.gov/nrcs-imagery/rest/services/ortho_imagery/alaska_delta_junction_2021_15cm/ImageServer/exportImage?f=image&image=jpg&imageSR={wkid}&bbox={bbox}&bboxSR={wkid}&size={width},{height}",
+        "start_date": "2021-06-06",
+        "end_date": "2021-08-01",
         "max_zoom": 20,
         "min_zoom": 12,
         "license_url": "https://www.usda.gov/policies-and-links/",

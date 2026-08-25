@@ -1,15 +1,15 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "USDA_CNMI_2022",
+        "id": "NRCS_CNMI_2022",
         "attribution": {
-            "url": "https://datagateway.nrcs.usda.gov/",
+            "url": "https://www.nrcs.usda.gov/",
             "text": "U.S. Department of Agriculture",
             "required": false
         },
-        "name": "USDA Northern Mariana Islands Imagery (2022)",
+        "name": "NRCS Northern Mariana Islands Imagery (2022)",
         "type": "wms",
-        "url": "https://nrcsgeoservices.sc.egov.usda.gov/arcgis/services/ortho_imagery/cnmi_vivid_2022_30cm/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=cnmi_vivid_2022_30cm:Natural Color No Stretch&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://apps.geo.fpac.usda.gov/nrcs-imagery/rest/services/ortho_imagery/cnmi_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "start_date": "2012-03-12",
         "end_date": "2022-06-03",
         "max_zoom": 20,
