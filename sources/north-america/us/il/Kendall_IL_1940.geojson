@@ -1,23 +1,23 @@
 {
 	"type": "Feature",
 	"properties": {
-		"id": "Kendall_IL_2024",
+		"id": "Kendall_IL_1940",
 		"attribution": {
 			"url": "https://geodata.kendallcountyil.gov/",
 			"text": "Kendall County GIS",
 			"required": true
 		},
-		"name": "Kendall County 2024 Aerial Imagery",
+		"name": "Kendall County 1940 Zoning Map",
 		"icon": "https://discourse.kendallcountyil.gov/uploads/default/optimized/1X/212467d6d2e5387df962b45890a757609740e7d8_2_300x300.png",
-		"url": "https://tiles.kendallcountyil.gov/2024/{zoom}/{x}/{y}.jpg",
+		"url": "https://tiles.kendallcountyil.gov/1941/{zoom}/{x}/{y}.jpg",
 		"max_zoom": 19,
-		"license_url": "https://geodata.kendallcountyil.gov/catalog/raster/2024-aerial.html",
+		"license_url": "https://geodata.kendallcountyil.gov/catalog/raster/1940-zoning.html",
 		"country_code": "US",
 		"type": "tms",
-		"start_date": "2024",
-		"end_date": "2024",
-		"description": "2024 Aerial imagery, flown in the spring of that year",
-		"category": "historicphoto",
+		"start_date": "1940",
+		"end_date": "1940",
+		"description": "This basemap comes from scanned maps dating back to 1940, when Kendall County designated zoning areas for the County’s unincorporated areas. Some later hand-annotations are present in the map. The maps were scanned by Planning, Building, and Zoning, and later georeferenced by Kendall County GIS",
+		"category": "historicmap",
 		"valid-georeference": true,
 		"privacy_policy_url": false
 	},
