@@ -1,0 +1,49 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-6.61926, 54.01322],
+                [-6.44142, 54.04629],
+                [-6.30134, 54.05657],
+                [-6.24229, 54.10491],
+                [-6.33087, 54.30371],
+                [-6.33567, 54.41094],
+                [-6.28761, 54.43631],
+                [-6.23714, 54.48281],
+                [-6.3022, 54.52398],
+                [-6.5839, 54.52806],
+                [-6.64398, 54.50973],
+                [-6.7353, 54.43991],
+                [-6.81186, 54.42233],
+                [-6.89907, 54.33155],
+                [-6.89872, 54.27746],
+                [-6.8177, 54.1982],
+                [-6.75384, 54.16967],
+                [-6.69651, 54.13469],
+                [-6.68071, 54.06524],
+                [-6.61926, 54.01322]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_armagh",
+        "name": "OS 2nd Ed. 6-inch. Armagh, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/armagh_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

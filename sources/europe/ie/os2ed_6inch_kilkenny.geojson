@@ -1,0 +1,46 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-7.52838, 52.4309],
+                [-7.39311, 52.32024],
+                [-7.2393, 52.23159],
+                [-6.97769, 52.24883],
+                [-6.91452, 52.3798],
+                [-6.89117, 52.48069],
+                [-6.89392, 52.58387],
+                [-7.00035, 52.74212],
+                [-7.03331, 52.82808],
+                [-7.09442, 52.88323],
+                [-7.18849, 52.90849],
+                [-7.43843, 52.87328],
+                [-7.64785, 52.83306],
+                [-7.70622, 52.79197],
+                [-7.63961, 52.66598],
+                [-7.5167, 52.59471],
+                [-7.52838, 52.4309]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_kilkenny",
+        "name": "OS 2nd Ed. 6-inch. Kilkenny, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/kilkenny_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}
