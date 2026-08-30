@@ -99,6 +99,11 @@ for filename in arguments.path:
 
         ## jsonschema validate
         validator.validate(source, schema)
+
+        if "properties" not in source:
+            logger.exception(f"{filename} missing properties")
+            raise ValidationError(f"{filename} missing properties")
+
         sourceid = source["properties"]["id"]
         if sourceid in seen_ids:
             raise ValidationError("Id %s used multiple times" % sourceid)
