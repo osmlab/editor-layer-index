@@ -14,9 +14,9 @@ imagery sources are directly compatible with tracing on OpenStreetMap and do not
 require any additional permission.  Attribution of such a source is
 not required, but is encouraged, to appear in the .geojson source file.
 
-- :question: [Creative Commons Attribution (CC BY 2.0, CC BY 3.0, CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) imagery sources are not compatible with tracing on
-OpenStreetMap without obtaining a waiver or premmission for the publishing organization
-by using the [OSMF's Creative Commons waiver](#where-can-i-find-an-imagery-license-waiver).
+- :question: [Creative Commons with condition (CC BY, CC BY-NC, CC BY-SA)](https://creativecommons.org/share-your-work/licensing-types-examples/) imagery sources are compatible with tracing on
+OpenStreetMap on the condition of obtaining a waiver or permission from the publishing organization
+by using either the [CC BY waiver or aerial imagery tracing waiver for Creative Commons](#where-can-i-find-an-imagery-license-waiver).
 
 - :question: For any other imagery sources - open an issue and we will look into it!
 There may be language in the imagery metadata or elsewhere on the owning organizations's
@@ -28,6 +28,21 @@ can also request the owning organization to grant permission using the
 ## Where can I find an imagery license waiver?
 
 Visit the [OpenStreetMap Foundation's Waiver and Permission Templates](https://wiki.osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates) choose one of the waiver templates.<br/>
+
+- CC BY 4.0 licensed imagery may use either
+  - [waiver template for CC BY 4.0](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Cover_letter_and_waiver_template_for_CC_BY_4.0), or
+  - [aerial imagery waiver - general waiver](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_an_OSM_waiver_generally:)
+  - [aerial imagery waiver - CC BY/CC BY-NC/CC BY-SA](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_a_tracing_waiver_as_to_imagery_already.2Fto_be_released_under_CC_BY.2FCC_BY-NC.2FCC_BY-SA:)
+- CC BY 3.0/2.0 licensed imagery may use either
+  - [waiver template for CC BY 3.0/2.0](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Cover_letter_and_waiver_template_for_CC_BY_2.0-3.0)
+  - [aerial imagery waiver - general waiver](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_an_OSM_waiver_generally:)
+  - [aerial imagery waiver - CC BY/CC BY-NC/CC BY-SA](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_a_tracing_waiver_as_to_imagery_already.2Fto_be_released_under_CC_BY.2FCC_BY-NC.2FCC_BY-SA:)
+- [CC BY](https://creativecommons.org/licenses/by/4.0/)/[CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)/[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) licensed imagery may use either
+  - [waiver template for CC BY 4.0](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Cover_letter_and_waiver_template_for_CC_BY_4.0), or
+  - [aerial imagery waiver - general waiver](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_an_OSM_waiver_generally:)
+  - [aerial imagery waiver - CC BY/CC BY-NC/CC BY-SA](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_a_tracing_waiver_as_to_imagery_already.2Fto_be_released_under_CC_BY.2FCC_BY-NC.2FCC_BY-SA:)
+- Copyrighted imagery or imagery under any other license map use
+  - [aerial imagery waiver - general waiver](https://osmfoundation.org/wiki/Licence/Waiver_and_Permission_Templates/Template_text_for_aerial_imagery_waivers#For_an_OSM_waiver_generally:)
 
 Completed imagery waivers should be stored in this repository in the same location
 as the corresponding .geojson source files.  Please save the completed waiver as
