@@ -93,6 +93,21 @@ Sources should be classified into one of the following categories of different t
 
 An imagery source can have an icon by setting the `icon` property to a URL of an image. This image should be sized such that it can be displayed also at a small scale, e.g. in the list of imagery layers next to the name.
 
+### Imagery Catalogs
+
+Some providers publish whole catalogs of imagery layers (from tens to thousands), adding each of these indivdually as sources is not viable, so instead we can add each catalog in the `catalogs` directory.
+
+For example, we have a source for the OpenAerialMap mosaic, but we don't add each of the individual imagery layers as a source, instead we just add the catalog.
+
+#### Support Catalog Types
+
+##### OpenAerialMap `OAM_META`
+
+https://api.openaerialmap.org/meta provides an API to list all the individual OpenAerialMap imagery layers.
+
+##### STAC `STAC`
+
+For example LINZ NZ Imagery Catalog is available at https://nz-imagery.s3-ap-southeast-2.amazonaws.com/catalog.json and via the [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/nz-imagery.s3-ap-southeast-2.amazonaws.com/catalog.json)
 
 ### Submitting your modifications
 
