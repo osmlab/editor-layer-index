@@ -8,14 +8,19 @@
 			"required": true
 		},
 		"name": "Delta Orthoimagery (2010)",
-		"url": "https://maps.delta.ca/orthophotos/rest/services/Orthophotography/2010/ImageServer/exportImage?bbox={bbox}&bboxSR=3857&imageSR=3857&size={width},{height}&format=jpgpng&f=image",
+		"url": "https://maps.delta.ca/orthophotos/rest/services/Orthophotography/2010/ImageServer/exportImage?f=image&format=jpgpng&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
 		"max_zoom": 20,
 		"license_url": "https://www.delta.ca/Open-Government-Licence",
 		"permission_osm": "implicit",
 		"country_code": "CA",
+		"available_projections": [
+			"CRS:84",
+			"EPSG:4326",
+			"EPSG:3857"
+		],
 		"start_date": "2010",
 		"end_date": "2010",
-		"type": "tms",
+		"type": "wms",
 		"description": "Historic orthoimagery of Delta from 2010",
 		"category": "historicphoto",
 		"valid-georeference": true,
