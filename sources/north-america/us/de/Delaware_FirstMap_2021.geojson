@@ -9,16 +9,12 @@
         },
         "name": "Delaware FirstMap 2021",
         "icon": "https://firstmap.delaware.gov/contentFolder/images/FirstmapLogo.jpg",
-        "url": "https://imagery.firstmap.delaware.gov/imagery/rest/services/DE_Imagery/DE_Imagery_2021/ImageServer/exportImage?f=image&format=jpg&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}",
+        "url": "https://imagery.firstmap.delaware.gov/imagery/rest/services/DE_Imagery/DE_Imagery_2021/ImageServer/tile/{zoom}/{y}/{x}",
         "min_zoom": 4,
         "max_zoom": 19,
         "license_url": "https://firstmap.delaware.gov/pdfs/public/DEImageryMetadata.pdf",
         "country_code": "US",
-        "type": "wms",
-        "available_projections": [
-            "CRS:84",
-            "EPSG:3857"
-        ],
+        "type": "tms",
         "start_date": "2021-06-29",
         "end_date": "2021-10-19",
         "description": "4-band natural color orthoimagery covering the entire State of Delaware in 2021",

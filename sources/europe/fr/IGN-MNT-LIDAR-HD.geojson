@@ -2,18 +2,18 @@
     "type": "Feature",
     "properties": {
         "id": "fr.ign.mntlidarhd",
-        "name": "IGN MNT LIDAR HD",
-        "description": "Modèle numérique de terrain issu de la campagne LIDAR HD de l'IGN.",
+        "name": "MNT LiDAR HD IGN",
+        "description": "Modèle numérique de terrain issu de la campagne LiDAR HD de l'IGN.",
         "type": "tms",
         "url": "https://data.geopf.fr/tms/1.0.0/IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW/{zoom}/{x}/{y}.png",
         "category": "elevation",
         "start_date": "2021",
         "end_date": "2025",
-        "min_zoom": 3,
+        "min_zoom": 0,
         "max_zoom": 18,
         "country_code": "FR",
         "attribution": {
-            "text": "IGN MNT LIDAR HD",
+            "text": "MNT LiDAR HD IGN",
             "url": "https://geoservices.ign.fr/lidarhd",
             "required": true
         },

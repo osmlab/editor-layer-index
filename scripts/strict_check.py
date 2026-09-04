@@ -941,11 +941,12 @@ for filename in arguments.path:
             if "url" in source["properties"]["attribution"]:
                 url = source["properties"]["attribution"]["url"]
 
-                if not test_url(url, headers):
+                reachable, status_code = test_url(url, headers)
+                if not reachable:
                     messages.append(
                         Message(
                             level=MessageLevel.ERROR,
-                            message=f"{filename}: could not retrieve attribution url {url}.",
+                            message=f"{filename}: could not retrieve attribution url {url}: HTTP code: {status_code}",
                         )
                     )
 
@@ -983,11 +984,12 @@ for filename in arguments.path:
 
             if isinstance(source["properties"]["privacy_policy_url"], str):
                 # Check if privacy url exists
-                if not test_url(source["properties"]["privacy_policy_url"], headers):
+                reachable, status_code = test_url(source["properties"]["privacy_policy_url"], headers)
+                if not reachable:
                     messages.append(
                         Message(
                             level=MessageLevel.ERROR,
-                            message=f"{filename}: could not retrieve privacy policy url {source['properties']['privacy_policy_url']}.",
+                            message=f"{filename}: could not retrieve privacy policy url {source['properties']['privacy_policy_url']}: HTTP code: {status_code}",
                         )
                     )
             elif not isinstance(source["properties"]["privacy_policy_url"], str) and not (

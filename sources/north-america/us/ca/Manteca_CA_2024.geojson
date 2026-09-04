@@ -8,8 +8,8 @@
             "required": false
         },
         "name": "City of Manteca Orthoimagery (2024)",
-        "icon": "https://www.manteca.gov/home/showpublishedimage/906/637945998633470000",
-        "url": "https://gisweb.ci.manteca.ca.us/server/rest/services/Basemaps/2024/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "icon": "https://www.manteca.gov/ImageRepository/Document?documentID=106",
+        "url": "https://mantecagisweb.ci.manteca.ca.us/server/rest/services/Basemaps/2024/MapServer/export?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/California#Publicly_Available_Data",
         "country_code": "US",
@@ -21,7 +21,7 @@
         "start_date": "2024-10",
         "end_date": "2024-10",
         "description": "October 2024 3-inch resolution imagery for Manteca in the State of California",
-        "category": "photo",
+        "category": "historicphoto",
         "privacy_policy_url": false
     },
     "geometry": {

@@ -8,8 +8,11 @@
             "required": false
         },
         "name": "National Agriculture Imagery Program (HI)",
-        "type": "tms",
-        "url": "https://gis.apfo.usda.gov/arcgis/rest/services/NonCONUS/HI/ImageServer/tile/{zoom}/{y}/{x}",
+        "type": "wms",
+        "url": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2021_Hawaii/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
+        "available_projections": [
+            "EPSG:3857"
+        ],
         "start_date": "2021",
         "end_date": "2023",
         "max_zoom": 18,
@@ -19,7 +22,7 @@
         "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
         "description": "The most recent year of 60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for Hawaii.",
         "category": "photo",
-        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "privacy_policy_url": "https://kb.geoplatform.gov/gp-info/data-and-privacy-policies.html",
         "valid-georeference": true
     },
     "geometry": {

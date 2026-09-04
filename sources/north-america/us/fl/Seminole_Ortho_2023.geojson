@@ -8,7 +8,7 @@
             "required": false
         },
         "name": "Seminole County Orthoimagery (2023)",
-        "url": "https://seminolearcgis.seminolecountyfl.gov:6443/arcgis/rest/services/Aerials2023/MapServer/WMTS/tile/1.0.0/Aerials2023/default/GoogleMapsCompatible/{zoom}/{y}/{x}",
+        "url": "https://utility.arcgis.com/usrsvcs/servers/21b825bd71554beeac06ffd4a8475038/rest/services/Aerials2023/MapServer/tile/{zoom}/{y}/{x}",
         "max_zoom": 23,
         "license_url": "https://wiki.openstreetmap.org/wiki/Florida#Publicly_Available_Data",
         "country_code": "US",

@@ -8,10 +8,15 @@
             "required": false
         },
         "name": "National Agriculture Imagery Program",
-        "type": "tms",
-        "url": "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{zoom}/{y}/{x}",
-        "start_date": "2021",
-        "end_date": "2023",
+        "type": "wms",
+        "url": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "CRS:84"
+        ],
+        "start_date": "2024",
+        "end_date": "2025",
         "max_zoom": 18,
         "min_zoom": 3,
         "license_url": "https://www.usda.gov/policies-and-links/",

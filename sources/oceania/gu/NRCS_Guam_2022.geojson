@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "NRCS_Guam_2022",
+        "attribution": {
+            "url": "https://www.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "NRCS Guam Imagery (2022)",
+        "type": "wms",
+        "url": "https://apps.geo.fpac.usda.gov/nrcs-imagery/rest/services/guam_vivid_2022_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "start_date": "2020-09-19",
+        "end_date": "2022-07-19",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "GU",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "historicphoto",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    144.7917960323581,
+                    13.109039173492937
+                ],
+                [
+                    145.16311788835557,
+                    13.606917193761905
+                ],
+                [
+                    144.80265810181848,
+                    13.847654534343988
+                ],
+                [
+                    144.43254314242773,
+                    13.372197118943856
+                ],
+                [
+                    144.7917960323581,
+                    13.109039173492937
+                ]
+            ]
+        ]
+    }
+}

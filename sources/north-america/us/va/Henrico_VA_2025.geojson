@@ -1,12 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "url": "https://portal.henrico.gov/mapping/rest/services/Imagery/AerialPhotosAll/MapServer/export?bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&dpi=96&format=jpg&transparent=true&layers=show:102&f=image",
+    "url": "https://portal.henrico.gov/mapping/rest/services/Imagery/AerialPhotosAll/MapServer/export?bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&dpi=96&format=jpg&transparent=true&layers=show:2025&f=image",
     "name": "Henrico County Aerial Imagery (2025)",
     "type": "wms",
     "id": "Henrico_VA_2025",
     "category": "photo",
-    "best": true,
     "start_date": "2025",
     "end_date": "2025",
     "min_zoom": 1,

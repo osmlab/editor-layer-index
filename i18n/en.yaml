@@ -136,6 +136,11 @@ en:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)
       description: Post-processed Sentinel Satellite imagery.
       name: eox.at 2024 cloudless
+    EOXAT2025CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2025)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2025 cloudless
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
@@ -161,27 +166,31 @@ en:
         text: Lechner Tudásközpont
       description: Goverment-based leaf-off orthophotos with 20 cm/pixel resolution for 6 districts. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
       name: FÖMI orthophoto 2015 leaf-off 20cm (webp)
+    FOMI_2016:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for central Hungary. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2016 (WEBP)
+    FOMI_2016_leafoff_20cm:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-off orthophotos with 20 cm/pixel resolution for several districts. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2016 leaf-off 20cm (webp)
     Frankfurt-am-Main-2019:
       attribution:
         text: Stadtvermessungsamt Frankfurt am Main
       description: Aerial imagery of Frankfurt am Main, photographed on 16 April 2019
       name: Frankfurt am Main Luftbild 2019
-    Geodatastyrelsen_Cadastral_Parcels_INSPIRE_View:
+    GeoDanmark_Orthophoto_Spring_Septima:
       attribution:
-        text: Geodatastyrelsen og Styrelsen for Dataforsyning og Infrastruktur
-      name: SDFI Cadastral Parcels INSPIRE View
-    Geodatastyrelsen_DTK_Kort25:
+        text: (CC BY 4.0) GeoDanmark
+      description: GeoDanmark's orthophotos from most recent spring capture, typically released in fall of capture year (Septima provided TMS cache of official WMS service, see https://osmtools.septima.dk/)
+      name: GeoDK Aerial Imagery
+    Geodatastyrelsen_Cadastral_Parcels_INSPIRE:
       attribution:
-        text: Styrelsen for Dataforsyning og Infrastruktur
-      name: SDFI DTK Map25
-    Geodatastyrelsen_Denmark:
-      attribution:
-        text: Styrelsen for Dataforsyning og Infrastruktur
-      name: SDFI Aerial Imagery
-    Geodatastyrelsen_Skaermkort:
-      attribution:
-        text: Styrelsen for Dataforsyning og Infrastruktur
-      name: SDFI Screenmap
+        text: (CC BY 4.0) Geodatastyrelsen
+      description: Geodatastyrelsen's Cadastral Parcels map (Matriklen - INSPIRE)
+      name: GST Cadastral Parcels Map INSPIRE
     Geoportal2-PL-City-boundaries_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -328,6 +337,26 @@ en:
       attribution:
         text: Urząd Miasta Gliwice
       name: 'Gliwice: Buildings'
+    Klimadatastyrelsen_Screen_Map:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's map for generic screen use (Skærmkortet)
+      name: KDS Screen Map
+    Klimadatastyrelsen_Surface_Shadow_40cm:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's surface shadow map from the height model of Denmark 0.4 m grid (DHM Overflade skyggekort)
+      name: KDS Surface Shadow Map (40 cm)
+    Klimadatastyrelsen_Terrain_Shadow_40cm:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's terrain shadow map from the height model of Denmark 0.4 m grid (DHM Terræn skyggekort)
+      name: KDS Terrain Shadow Map (40 cm)
+    Klimadatastyrelsen_Topography_DTK25:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's topographical map in scale 1:25.000 (DTK25 or Kort25)
+      name: KDS Topography Map (DTK25)
     LSA-ALKIS-CP:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
@@ -336,7 +365,7 @@ en:
     LSA-ALKIS_BU:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
-      description: Shape of buildings in saxony-anhalt
+      description: Shape of buildings in Saxony-Anhalt
       name: © GeoBasis-DE/LVermGeo LSA, ALKIS Building Outlines
     LSA-ATKIS-HYN:
       attribution:
@@ -419,6 +448,10 @@ en:
       attribution:
         text: Informação geográfica cedida pela Direção-Geral do Território
       name: Orthophotos of the northern portion of mainland Portugal - 25 cm - 2021 (DGT)
+    ORTOS_DGT_2025_RGB:
+      attribution:
+        text: Informação geográfica cedida pela Direção-Geral do Território
+      name: Orthophotos of mainland Portugal - 25 cm - 2025 (DGT)
     OSIP:
       attribution:
         text: Ohio Statewide Imagery Program
@@ -480,14 +513,6 @@ en:
         text: © Riksantikvarieämbetet, CC0
       description: Ruins of cultural-historical interest
       name: Riksantikvarieämbetet - Ruins
-    SDFE_Overflade_Skyggekort_40cm:
-      attribution:
-        text: Styrelsen for Dataforsyning og Infrastruktur
-      name: SDFI Surface Shadow Map (40 cm)
-    SDFE_Terraen_Skyggekort_40cm:
-      attribution:
-        text: Styrelsen for Dataforsyning og Infrastruktur
-      name: SDFI Terrain Shadow Map (40 cm)
     SPW_ORTHO_LAST:
       name: SPW(allonie) most recent aerial imagery
     SPW_PICC:
@@ -526,10 +551,22 @@ en:
     US_Forest_Service_roads_overlay:
       description: 'Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars'
       name: U.S. Forest Roads Overlay
+    UrbISDTM:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS Digital Terrain Model
+    UrbISHillshade:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS Hillshade
     UrbISOrtho:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: CIRB/CIBG most recent aerial imagery
+    UrbISOrtho2004:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2004
     UrbISOrtho2016:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -550,6 +587,46 @@ en:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2020
+    UrbISOrtho2021EO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2021 (RGB east-west)
+    UrbISOrtho2021NS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2021 (RGB north-south)
+    UrbISOrtho2022EO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2022 (RGB east-west)
+    UrbISOrtho2022NS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2022 (RGB north-south)
+    UrbISOrtho2023:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2023 (RGB)
+    UrbISOrtho2024EO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (RGB east-west)
+    UrbISOrtho2024NIREO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (NIR east-west)
+    UrbISOrtho2024NIRNS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (NIR north-south)
+    UrbISOrtho2024NS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (RGB north-south)
+    UrbISRelief:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS Relief
     UrbisAdmFR:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB

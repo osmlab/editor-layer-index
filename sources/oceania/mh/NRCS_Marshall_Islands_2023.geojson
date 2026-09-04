@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "NRCS_Marshall_Islands_2023",
+        "attribution": {
+            "url": "https://datagateway.nrcs.usda.gov/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "NRCS Marshall Islands Imagery (2023)",
+        "type": "wms",
+        "url": "https://apps.geo.fpac.usda.gov/nrcs-imagery/rest/services/ortho_imagery/marshall_islands_vivid_2023_30cm/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}",
+        "start_date": "2018-04-11",
+        "end_date": "2023-08-08",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "MH",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:4326",
+            "EPSG:3857"
+        ],
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "category": "historicphoto",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    168.6983433007506,
+                    4.336607017637928
+                ],
+                [
+                    172.58617209478174,
+                    5.806368042469353
+                ],
+                [
+                    169.36556144362055,
+                    15.454101704619514
+                ],
+                [
+                    159.42144489123066,
+                    10.542344580796188
+                ],
+                [
+                    168.6983433007506,
+                    4.336607017637928
+                ]
+            ]
+        ]
+    }
+}

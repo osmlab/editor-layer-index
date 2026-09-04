@@ -1,0 +1,53 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Langley_City_2025",
+        "attribution": {
+            "url": "https://www.langleycity.ca/open-data-license",
+            "text": "Contains information licensed under the Open Government Licence - City of Langley",
+            "required": true
+        },
+        "name": "City of Langley Aerial Imagery (2025)",
+        "url": "https://maps.langleycity.ca/server/rest/services/Maps/Imagery2025/MapServer?bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&format=jpeg&f=image",
+        "license_url": "https://www.langleycity.ca/open-data-license",
+        "permission_osm": "implicit",
+        "country_code": "CA",
+        "start_date": "2025",
+        "end_date": "2025",
+        "type": "wms",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "description": "Aerial imagery of the City of Langley from 2025",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.langleycity.ca/privacy-policy"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -122.6984379,
+                    49.1304438
+                ],
+                [
+                    -122.6167081,
+                    49.1304438
+                ],
+                [
+                    -122.6167081,
+                    49.0627293
+                ],
+                [
+                    -122.6984379,
+                    49.0627293
+                ],
+                [
+                    -122.6984379,
+                    49.1304438
+                ]
+            ]
+        ]
+    }
+}
