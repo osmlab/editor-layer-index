@@ -1,0 +1,81 @@
+{
+	"type": "Feature",
+	"properties": {
+		"id": "City_of_Parksville_2025",
+		"attribution": {
+			"url": "https://city-parksville.maps.arcgis.com/sharing/rest/content/items/b360ee0115dd41519fc482dc9dfe8a86/data",
+			"text": "Contains information licensed under the Open Government Licence - City of Parksville",
+			"required": true
+		},
+		"name": "City of Parksville Orthoimagery (2025)",
+		"url": "https://tiles.arcgis.com/tiles/6Ys1qjTn2qXd9VRQ/arcgis/rest/services/2025OrthoDetailedOnline/MapServer/tile/{zoom}/{y}/{x}",
+		"max_zoom": 22,
+		"min_zoom": 10,
+		"license_url": "https://city-parksville.maps.arcgis.com/sharing/rest/content/items/b360ee0115dd41519fc482dc9dfe8a86/data",
+		"permission_osm": "implicit",
+		"country_code": "CA",
+		"start_date": "2025",
+		"end_date": "2025",
+		"type": "tms",
+		"description": "Orthoimagery for the City of Parksville from 2025",
+		"category": "photo",
+		"valid-georeference": true,
+		"privacy_policy_url": "https://www.parksville.ca/cms.asp?wpID=369",
+		"best": true
+	},
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			[
+				[
+					-124.3814442,
+					49.3571113
+				],
+				[
+					-124.388814,
+					49.3404487
+				],
+				[
+					-124.4165593,
+					49.3172811
+				],
+				[
+					-124.2383828,
+					49.2890131
+				],
+				[
+					-124.2383828,
+					49.3130419
+				],
+				[
+					-124.2635269,
+					49.3294313
+				],
+				[
+					-124.2921392,
+					49.3367765
+				],
+				[
+					-124.3086129,
+					49.331409
+				],
+				[
+					-124.3190174,
+					49.3302789
+				],
+				[
+					-124.3454621,
+					49.351746
+				],
+				[
+					-124.3615023,
+					49.3588055
+				],
+				[
+					-124.3814442,
+					49.3571113
+				]
+			]
+		]
+	}
+}
