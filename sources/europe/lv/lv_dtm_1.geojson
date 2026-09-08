@@ -1,27 +1,29 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LV_CADASTRAL",
-        "name": "Cadastral map",
+        "id": "LV_TERRAIN_LIDAR_LGIA",
+        "name": "LVM GEO digital terrain model (2013–2019)",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Kadastra_karte&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "min_zoom": 9,
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:ZemeLKS&STYLES=&FORMAT=image/vnd.jpeg-png8&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 7,
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
             "EPSG:3059",
             "EPSG:3857"
         ],
-        "description": "Service created using open data of Cadastral Information System published at https://data.gov.lv/dati/eng/organization/valsts-zemes-dienests.",
+        "description": "Service created using open data published at https://www.lgia.gov.lv/en/Digit%C4%81lais%20virsmas%20modelis. The data were obtained by aerial laser scanning method. 1st cycle LiDAR point cloud with resolution of 1 m has been used for the development of this service and for better visualization relief shading has been used. The total density of points obtained shall be not less than 4 p/m² and the mean density of points characterizing the surface shall be not less than 1.5 p/m².",
         "license_url": "https://www.lvmgeo.lv/en/data",
         "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
-        "overlay": true,
         "attribution": {
-            "text": "JSC Latvia's State Forests open WMS service: cadastral map created using open data from State Land Service",
+            "text": "JSC Latvia's State Forests open WMS service: digital terrain model created using basic data of the digital surface model from Latvian Geospatial Information Agency, 2013–2019",
             "url": "https://www.lvmgeo.lv/en/data",
             "required": true
         },
-        "category": "other"
+        "start_date": "2013-01-01",
+        "end_date": "2019-12-31",
+        "category": "elevation",
+        "valid-georeference": true
     },
     "geometry": {
         "type": "Polygon",

@@ -1,23 +1,23 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LV_CADASTRAL",
-        "name": "Cadastral map",
+        "id": "LV_ADDRESSES",
+        "name": "Addresses, streets and roads",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Kadastra_karte&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "min_zoom": 9,
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Adreses_celu_tikls&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 10,
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
             "EPSG:3059",
             "EPSG:3857"
         ],
-        "description": "Service created using open data of Cadastral Information System published at https://data.gov.lv/dati/eng/organization/valsts-zemes-dienests.",
+        "description": "Service created using open data of State Address Register published at https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati.",
         "license_url": "https://www.lvmgeo.lv/en/data",
         "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
         "overlay": true,
         "attribution": {
-            "text": "JSC Latvia's State Forests open WMS service: cadastral map created using open data from State Land Service",
+            "text": "JSC Latvia's State Forests open WMS service: addresses, streets and roads from State Land Service",
             "url": "https://www.lvmgeo.lv/en/data",
             "required": true
         },

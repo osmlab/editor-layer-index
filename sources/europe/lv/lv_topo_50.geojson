@@ -1,27 +1,28 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "LV_CADASTRAL",
-        "name": "Cadastral map",
+        "id": "LV_TOPO50_LGIA",
+        "name": "LGIA topographic map (2nd edition, 2007-2013), 1:50000",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Kadastra_karte&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
-        "min_zoom": 9,
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:Topo50&STYLES=&FORMAT=image/png&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 7,
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
             "EPSG:3059",
             "EPSG:3857"
         ],
-        "description": "Service created using open data of Cadastral Information System published at https://data.gov.lv/dati/eng/organization/valsts-zemes-dienests.",
+        "description": "Service created using open data published at https://www.lgia.gov.lv/en/topographic-map-scale-150-000-2nd-edition-0. Specification: https://s3.storage.pub.lvdc.gov.lv/lgia-opendata/citi/1_50000_v2/TOPO50%202%20izdevums%20specifikacija.zip",
         "license_url": "https://www.lvmgeo.lv/en/data",
         "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
-        "overlay": true,
         "attribution": {
-            "text": "JSC Latvia's State Forests open WMS service: cadastral map created using open data from State Land Service",
+            "text": "JSC Latvia's State Forests open WMS service: Latvian Geospatial Information Agency topographic map at 1:50000 scale, 2nd edition",
             "url": "https://www.lvmgeo.lv/en/data",
             "required": true
         },
-        "category": "other"
+        "start_date": "2007-01-01",
+        "end_date": "2013-12-31",
+        "category": "historicmap"
     },
     "geometry": {
         "type": "Polygon",
