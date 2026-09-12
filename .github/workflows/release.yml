@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  schedule:
+    - cron: '0 7 * * 2'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      checks: read
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check that the CI is passing
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const checks = await github.rest.checks.listForRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: '${{github.event.repository.default_branch}}',
+            });
+
+            const isSuccessful = checks.data.check_runs
+              .filter((run) => run.name !== process.env.GITHUB_JOB)
+              .every((run) => run.conclusion === 'success');
+
+            if (!isSuccessful) {
+              core.error('Not creating a release because the CI is failing.');
+              process.exit(1);
+            }
+
+      - name: Update git tag
+        uses: EndBug/latest-tag@latest
+        with:
+          ref: latest
