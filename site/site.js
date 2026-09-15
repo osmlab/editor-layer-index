@@ -34,17 +34,14 @@ function josmURL(d) {
 }
 
 function idURL(d, e) {
-    let position = '';
+    const hashParams = new URLSearchParams();
     if (e && e.latlng) {
         const pt = e.latlng;
         const zoom = map.getZoom();
-        position = `#map=${zoom}/${pt.lat.toFixed(5)}/${pt.lng.toFixed(5)}`
-    } 
-    var params = {
-        editor: 'id',
-        background: 'custom:' + d.properties.url
-    };
-    return 'https://www.openstreetmap.org/edit?' + position + (new URLSearchParams(params)).toString();
+        hashParams.set('map', `${zoom}/${pt.lat.toFixed(5)}/${pt.lng.toFixed(5)}`);
+    }
+    hashParams.set('background', 'custom:' + d.properties.url);
+    return 'https://www.openstreetmap.org/edit?editor=id#' + hashParams.toString();
 }
 
 function uniqueArray(list) {
