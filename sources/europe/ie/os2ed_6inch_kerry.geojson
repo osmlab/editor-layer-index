@@ -1,0 +1,45 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-10.47889, 51.81414],
+                [-10.27908, 51.70832],
+                [-9.76203, 51.66404],
+                [-9.19006, 51.86632],
+                [-9.05616, 51.99165],
+                [-9.14337, 52.29925],
+                [-9.25666, 52.61264],
+                [-9.70161, 52.60389],
+                [-9.8616, 52.50244],
+                [-9.99, 52.43551],
+                [-10.46379, 52.23411],
+                [-10.64094, 52.13139],
+                [-10.67459, 52.09259],
+                [-10.64437, 52.02335],
+                [-10.56953, 51.99715],
+                [-10.47889, 51.81414]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_kerry",
+        "name": "OS 2nd Ed. 6-inch. Kerry, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/kerry_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}
