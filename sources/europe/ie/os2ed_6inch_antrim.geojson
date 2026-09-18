@@ -1,0 +1,50 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-6.5142, 54.68297],
+                [-6.39369, 54.66927],
+                [-6.4191, 54.56271],
+                [-6.40914, 54.49737],
+                [-6.17843, 54.45967],
+                [-6.04248, 54.49358],
+                [-5.87013, 54.55813],
+                [-5.86052, 54.6508],
+                [-5.61264, 54.77496],
+                [-5.73967, 54.90386],
+                [-5.93193, 55.01622],
+                [-5.96832, 55.16123],
+                [-6.08024, 55.23803],
+                [-6.14753, 55.32095],
+                [-6.33773, 55.3186],
+                [-6.42631, 55.26934],
+                [-6.68724, 55.22668],
+                [-6.65084, 54.99771],
+                [-6.61995, 54.95909],
+                [-6.52999, 54.91649],
+                [-6.5142, 54.68297]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_antrim",
+        "name": "OS 2nd Ed. 6-inch. Antrim, Ireland (1880-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/antrim_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

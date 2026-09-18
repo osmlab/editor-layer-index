@@ -1,0 +1,46 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-6.33018, 54.0884],
+                [-6.16058, 54.011],
+                [-6.0411, 54.00253],
+                [-5.80764, 54.12745],
+                [-5.57075, 54.23474],
+                [-5.38398, 54.32374],
+                [-5.34484, 54.49438],
+                [-5.42312, 54.68932],
+                [-5.76713, 54.70638],
+                [-5.93536, 54.63531],
+                [-6.09329, 54.54698],
+                [-6.21894, 54.53424],
+                [-6.3549, 54.51591],
+                [-6.44348, 54.43511],
+                [-6.41189, 54.32013],
+                [-6.41189, 54.14756],
+                [-6.33018, 54.0884]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os1ed_6inch_down",
+        "name": "OS 1st Ed. 6-inch. Down, Ireland (1840s-1880s) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/down/{zoom}/{x}/{y}.png",
+        "start_date": "1840",
+        "end_date": "1880",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

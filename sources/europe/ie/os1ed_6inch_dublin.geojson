@@ -1,0 +1,46 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-6.51695, 53.19863],
+                [-6.33602, 53.17148],
+                [-6.15577, 53.18629],
+                [-6.07956, 53.19534],
+                [-6.03767, 53.26481],
+                [-6.02531, 53.35466],
+                [-6.02325, 53.41568],
+                [-5.97724, 53.50071],
+                [-6.05278, 53.55174],
+                [-6.07818, 53.61614],
+                [-6.19766, 53.65848],
+                [-6.47712, 53.57498],
+                [-6.42219, 53.49908],
+                [-6.40983, 53.46108],
+                [-6.52793, 53.37432],
+                [-6.55918, 53.2761],
+                [-6.51695, 53.19863]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os1ed_6inch_dublin",
+        "name": "OS 1st Ed. 6-inch. Dublin, Ireland (1840s-1880s) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/dublin/{zoom}/{x}/{y}.png",
+        "start_date": "1840",
+        "end_date": "1880",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}
