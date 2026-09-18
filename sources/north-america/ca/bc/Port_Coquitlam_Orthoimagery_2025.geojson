@@ -1,14 +1,14 @@
 {
     "type": "Feature",
     "properties": {
-        "id": "Port_Coquitlam_2025",
+        "id": "Port_Coquitlam_Orthoimagery_2025",
         "attribution": {
             "url": "https://data-poco.hub.arcgis.com/pages/terms",
             "text": "Contains information licensed under the Open Government Licence - Port Coquitlam",
             "required": true
         },
         "name": "City of Port Coquitlam Orthoimagery and Cadastral Boundaries (2025)",
-        "url": "https://maps.portcoquitlam.ca/server/rest/services/Basemap_Ortho2025_Legal/MapServer/export?f=image&format=jpgpng&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
+        "url": "https://maps.portcoquitlam.ca/server/rest/services/Basemap_Ortho2025_Legal/MapServer/export?f=image&format=jpgpng&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&layers=show:20",
         "max_zoom": 21,
         "min_zoom": 10,
         "license_url": "https://data-poco.hub.arcgis.com/pages/terms",
@@ -21,7 +21,7 @@
             "EPSG:3857",
             "EPSG:26910"
         ],
-        "description": "Orthoimagery and cadastral boundaries for the City of Port Coquitlam from 2025",
+        "description": "Orthoimagery for the City of Port Coquitlam from 2025",
         "category": "photo",
         "valid-georeference": true,
         "privacy_policy_url": "https://www.portcoquitlam.ca/privacy-policy",
