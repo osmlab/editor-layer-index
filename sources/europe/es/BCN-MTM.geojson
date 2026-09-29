@@ -1,0 +1,51 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "BCN-MTM",
+        "attribution": {
+            "text": "Ajuntament de Barcelona",
+            "required": true
+        },
+        "name": "Mapa base topogràfic de la ciutat de Barcelona",
+        "url": "https://geo.bcn.cat/mapproxy/service?LAYERS=MTM&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "country_code": "ES",
+        "type": "wms",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:25830",
+            "EPSG:25831"
+        ],
+        "best": false,
+        "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+        "privacy_policy_url": "https://geo.bcn.cat/legal/avis-legal.html",
+        "category": "other"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    1.8,
+                    41
+                ],
+                [
+                    1.8,
+                    41.65
+                ],
+                [
+                    2.45,
+                    41.65
+                ],
+                [
+                    2.45,
+                    41
+                ],
+                [
+                    1.8,
+                    41
+                ]
+            ]
+        ]
+    }
+}
