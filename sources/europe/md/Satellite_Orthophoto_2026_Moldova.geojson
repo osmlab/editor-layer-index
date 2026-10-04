@@ -5,7 +5,7 @@
         "id": "Geodata-Gov-2026_Ortofoto_Moldova_Satellite",
         "name": "Moldova Satellite Orthophoto (2025-2026)",
         "type": "wms",
-        "url": "https://maps2.ingeocad.md/geoserver/orthophoto/wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthophoto:sat_ortho_2026&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://maps2.ingeocad.md/geoserver/orthophoto/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&STYLES&LAYERS=orthophoto:sat_ortho_2026&exceptions=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "MD",
         "available_projections": [
             "CRS:84",
