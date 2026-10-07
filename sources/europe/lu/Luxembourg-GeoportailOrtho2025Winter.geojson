@@ -6,6 +6,7 @@
             "text": "Administration du Cadastre et de la Topographie",
             "required": false
         },
+		"category": "photo",
         "name": "Ortho 2025 winter geoportail.lu",
         "end_date": "2025-02-19",
         "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2025_winter/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
@@ -16,7 +17,8 @@
         "country_code": "LU",
         "type": "tms",
         "id": "lu.geoportail.opendata.ortho2025winter",
-        "icon": "https://www.geoportail.lu/static/img/lion.png"
+        "icon": "https://www.geoportail.lu/static/img/lion.png",
+		"privacy_policy_url": false
     },
     "geometry": {
         "type": "Polygon",
