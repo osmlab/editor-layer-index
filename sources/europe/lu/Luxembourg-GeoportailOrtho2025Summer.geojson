@@ -6,17 +6,19 @@
             "text": "Administration du Cadastre et de la Topographie",
             "required": false
         },
-        "name": "Ortho 2021 geoportail.lu",
-        "end_date": "2021-09-23",
-        "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2021/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
+		"category": "photo",
+        "name": "Ortho 2025 summer geoportail.lu",
+        "end_date": "2025-05-13",
+        "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/ortho_2025/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.jpeg",
         "max_zoom": 20,
         "min_zoom": 5,
-        "start_date": "2021-09-03",
+        "start_date": "2025-05-10",
         "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
         "country_code": "LU",
         "type": "tms",
-        "id": "lu.geoportail.opendata.ortho2021",
-        "icon": "https://www.geoportail.lu/static/img/lion.png"
+        "id": "lu.geoportail.opendata.ortho2025",
+        "icon": "https://www.geoportail.lu/static/img/lion.png",
+		"privacy_policy_url": false
     },
     "geometry": {
         "type": "Polygon",
