@@ -139,3 +139,11 @@ use the following commands:
 
 For convenience you can also run these commands as `make txpush` or `make txpull`.
 
+
+### Releases
+
+Releases are manually created by a maintainer. To create a release, a maintainer needs to:
+
+1. Confirm that the main branch is in a valid state and that the CI is passing.
+1. Update the version number in [package.json](./package.json), and push this change to the main branch (`gh-pages`)
+1. Go to [this GitHub page](https://github.com/osmlab/editor-layer-index/actions/workflows/publish.yml), and then click <kbd>Run workflow</kbd>.

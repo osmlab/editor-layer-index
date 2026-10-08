@@ -1,8 +1,8 @@
 {
   "name": "@openstreetmap/editor-layer-index",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "available imagery for osm editors",
-  "main": "index.js",
+  "main": "imagery.geojson",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,16 @@
     "type": "git",
     "url": "git://github.com/osmlab/editor-layer-index.git"
   },
+  "homepage": "https://osmlab.github.io/editor-layer-index",
   "keywords": [
     "openstreetmap",
     "editor",
     "imagery"
+  ],
+  "files": [
+    "imagery.geojson",
+    "imagery.xml",
+    "schema.json"
   ],
   "author": "Ian Dees",
   "license": "BSD"
