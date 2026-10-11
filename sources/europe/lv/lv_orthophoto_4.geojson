@@ -1,0 +1,179 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LV_ORTOFOTO_C4",
+        "name": "Orthophoto 4th cycle (2010-2011), 1:5000",
+        "type": "wms",
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=public:Orto_4cikls&STYLES=&FORMAT=image/vnd.jpeg-png8&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 7,
+        "country_code": "LV",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3059",
+            "EPSG:3857"
+        ],
+        "description": "Service created using open data published at https://www.lgia.gov.lv/en/krasaina-ortofotokarte-2010-2011g-4-cikls. Resolution 0.5 meters. Aerial photography was performed in cooperation with the Polish company MGGPAero.",
+        "license_url": "https://www.lvmgeo.lv/en/data",
+        "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
+        "attribution": {
+            "text": "JSC Latvia's State Forests open WMS service: Latvian Geospatial Information Agency orthophoto map, 2010-2011",
+            "url": "https://www.lvmgeo.lv/en/data",
+            "required": true
+        },
+        "start_date": "2010-01-01",
+        "end_date": "2011-12-31",
+        "category": "historicphoto",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    27.66415,
+                    55.75354
+                ],
+                [
+                    27.68475,
+                    55.93319
+                ],
+                [
+                    28.26703,
+                    56.1908
+                ],
+                [
+                    28.23682,
+                    56.49827
+                ],
+                [
+                    27.82757,
+                    56.94886
+                ],
+                [
+                    27.90997,
+                    57.37037
+                ],
+                [
+                    27.58313,
+                    57.56387
+                ],
+                [
+                    26.93219,
+                    57.63598
+                ],
+                [
+                    26.5202,
+                    57.58596
+                ],
+                [
+                    26.0368,
+                    57.87192
+                ],
+                [
+                    25.1991,
+                    58.10487
+                ],
+                [
+                    24.31744,
+                    57.90258
+                ],
+                [
+                    24.31744,
+                    57.19669
+                ],
+                [
+                    23.93567,
+                    56.9788
+                ],
+                [
+                    23.55115,
+                    56.98479
+                ],
+                [
+                    23.23804,
+                    57.10283
+                ],
+                [
+                    23.14465,
+                    57.37333
+                ],
+                [
+                    22.60632,
+                    57.60215
+                ],
+                [
+                    22.60083,
+                    57.76953
+                ],
+                [
+                    21.66699,
+                    57.56681
+                ],
+                [
+                    21.40057,
+                    57.29625
+                ],
+                [
+                    21.38409,
+                    57.0177
+                ],
+                [
+                    21.04626,
+                    56.80026
+                ],
+                [
+                    20.99133,
+                    56.36615
+                ],
+                [
+                    21.0545,
+                    56.0392
+                ],
+                [
+                    21.28796,
+                    56.05608
+                ],
+                [
+                    21.29895,
+                    56.1908
+                ],
+                [
+                    22.11743,
+                    56.41936
+                ],
+                [
+                    24.44379,
+                    56.24425
+                ],
+                [
+                    24.81183,
+                    56.3996
+                ],
+                [
+                    25.15515,
+                    56.1694
+                ],
+                [
+                    25.58087,
+                    56.12962
+                ],
+                [
+                    26.53668,
+                    55.66146
+                ],
+                [
+                    26.91296,
+                    55.66766
+                ],
+                [
+                    27.0805,
+                    55.80991
+                ],
+                [
+                    27.66415,
+                    55.75354
+                ]
+            ]
+        ]
+    }
+}

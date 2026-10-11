@@ -2,26 +2,25 @@
     "type": "Feature",
     "properties": {
         "id": "LV_CADASTRAL",
-        "name": "Cadastral map, Latvia",
+        "name": "Cadastral map",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=publicwfs:Kadastra_karte&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?LAYERS=publicwfs:Kadastra_karte&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "min_zoom": 9,
         "country_code": "LV",
         "available_projections": [
             "CRS:84",
             "EPSG:3059",
-            "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:3857"
         ],
-        "description": "This cadastral map is provided as open data by Latvian State Land Service (VZD, Valsts zemes dienests). See here: https://data.gov.lv/dati/eng/dataset?organization=valsts-zemes-dienests). WMS service is freely provided by LVM (Latvian State Forestry, https://lvmgeo.lv/en/data).",
-        "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/vzd.gov.lv_explicit_permission",
+        "description": "Service created using open data of Cadastral Information System published at https://data.gov.lv/dati/eng/organization/valsts-zemes-dienests.",
+        "license_url": "https://www.lvmgeo.lv/en/data",
         "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
-        "best": false,
         "overlay": true,
         "attribution": {
-            "text": "Data: VZD (Valsts zemes dienests); WMS service: LVM (Latvijas valsts meži)"
+            "text": "JSC Latvia's State Forests open WMS service: cadastral map created using open data from State Land Service",
+            "url": "https://www.lvmgeo.lv/en/data",
+            "required": true
         },
-        "start_date": "2022-01-11",
-        "end_date": "2022-01-11",
         "category": "other"
     },
     "geometry": {
@@ -29,148 +28,148 @@
         "coordinates": [
             [
                 [
-                    27.6641527,
-                    55.7535368
+                    27.66415,
+                    55.75354
                 ],
                 [
-                    27.6847521,
-                    55.9331897
+                    27.68475,
+                    55.93319
                 ],
                 [
-                    28.2670275,
-                    56.1908005
+                    28.26703,
+                    56.1908
                 ],
                 [
-                    28.2368151,
-                    56.4982726
+                    28.23682,
+                    56.49827
                 ],
                 [
-                    27.8275743,
-                    56.9488566
+                    27.82757,
+                    56.94886
                 ],
                 [
-                    27.9099718,
-                    57.370372
+                    27.90997,
+                    57.37037
                 ],
                 [
-                    27.5831285,
-                    57.5638671
+                    27.58313,
+                    57.56387
                 ],
                 [
-                    26.9321886,
-                    57.6359802
+                    26.93219,
+                    57.63598
                 ],
                 [
-                    26.5202013,
-                    57.5859578
+                    26.5202,
+                    57.58596
                 ],
                 [
-                    26.0368029,
-                    57.8719176
+                    26.0368,
+                    57.87192
                 ],
                 [
-                    25.1990953,
-                    58.1048668
+                    25.1991,
+                    58.10487
                 ],
                 [
-                    24.3174425,
-                    57.9025786
+                    24.31744,
+                    57.90258
                 ],
                 [
-                    24.3174425,
-                    57.1966884
+                    24.31744,
+                    57.19669
                 ],
                 [
-                    23.9356676,
-                    56.9788036
+                    23.93567,
+                    56.9788
                 ],
                 [
-                    23.5511461,
-                    56.9847901
+                    23.55115,
+                    56.98479
                 ],
                 [
-                    23.2380358,
-                    57.1028266
+                    23.23804,
+                    57.10283
                 ],
                 [
-                    23.144652,
-                    57.3733338
+                    23.14465,
+                    57.37333
                 ],
                 [
-                    22.6063219,
-                    57.602149
+                    22.60632,
+                    57.60215
                 ],
                 [
-                    22.6008287,
-                    57.7695253
+                    22.60083,
+                    57.76953
                 ],
                 [
-                    21.6669908,
-                    57.5668133
+                    21.66699,
+                    57.56681
                 ],
                 [
-                    21.4005724,
-                    57.2962485
+                    21.40057,
+                    57.29625
                 ],
                 [
-                    21.3840929,
-                    57.0176987
+                    21.38409,
+                    57.0177
                 ],
                 [
-                    21.0462633,
-                    56.8002643
+                    21.04626,
+                    56.80026
                 ],
                 [
-                    20.9913317,
-                    56.3661503
+                    20.99133,
+                    56.36615
                 ],
                 [
-                    21.054503,
-                    56.0392025
+                    21.0545,
+                    56.0392
                 ],
                 [
-                    21.2879625,
-                    56.0560762
+                    21.28796,
+                    56.05608
                 ],
                 [
-                    21.2989488,
-                    56.1908005
+                    21.29895,
+                    56.1908
                 ],
                 [
-                    22.1174303,
-                    56.4193582
+                    22.11743,
+                    56.41936
                 ],
                 [
-                    24.4437853,
-                    56.244253
+                    24.44379,
+                    56.24425
                 ],
                 [
-                    24.8118273,
-                    56.3996039
+                    24.81183,
+                    56.3996
                 ],
                 [
                     25.15515,
-                    56.1693987
+                    56.1694
                 ],
                 [
-                    25.5808702,
-                    56.1296207
+                    25.58087,
+                    56.12962
                 ],
                 [
-                    26.5366808,
-                    55.6614622
+                    26.53668,
+                    55.66146
                 ],
                 [
-                    26.9129625,
-                    55.6676589
+                    26.91296,
+                    55.66766
                 ],
                 [
-                    27.080504,
-                    55.8099123
+                    27.0805,
+                    55.80991
                 ],
                 [
-                    27.6641527,
-                    55.7535368
+                    27.66415,
+                    55.75354
                 ]
             ]
         ]
