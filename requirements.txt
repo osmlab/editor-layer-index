@@ -10,7 +10,7 @@ aiofiles==25.1.0
     # via -r requirements.in
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp[speedups]==3.14.3
+aiohttp[speedups]==3.14.5
     # via -r requirements.in
 aiosignal==1.4.0
     # via aiohttp
@@ -108,5 +108,5 @@ urllib3==2.8.0
     #   requests
 validators==0.35.0
     # via -r requirements.in
-yarl==1.18.3
+yarl==1.25.1
     # via aiohttp
