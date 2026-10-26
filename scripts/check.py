@@ -29,6 +29,8 @@ from jsonschema import Draft4Validator, RefResolver, ValidationError
 from shapely.geometry import shape
 from shapely.validation import explain_validity
 
+from libeli.geometry import validate_polygon_coordinates
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -174,6 +176,11 @@ for filename in arguments.path:
                 raise ValidationError("{} should have a Polygon or MultiPolygon geometry".format(filename))
             if not "country_code" in source["properties"]:
                 raise ValidationError("{} should have a country or be global".format(filename))
+
+            try:
+                validate_polygon_coordinates(source["geometry"])
+            except ValueError as e:
+                raise ValidationError(f"{filename} geometry is not valid: {e}") from e
 
             geom = shape(source["geometry"])
              # Check validity of geometries
