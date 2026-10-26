@@ -1,7 +1,9 @@
-ALL = imagery.geojson imagery.json imagery.xml i18n/en.yaml
+ALL = imagery.geojson imagery.json imagery.xml imagery.id.json i18n/en.yaml
+.DELETE_ON_ERROR:
 SOURCES := $(shell find sources -type f -name '*.geojson')
 SOURCES_QUOTED := $(shell find sources -type f -name '*.geojson' -exec echo "\"{}"\" \; | LC_ALL="C" sort)
 PYTHON = python
+NODE = node
 TX := $(shell which tx)
 TXVERSION := $(shell tx --version | cut -c1-1)
 
@@ -21,6 +23,13 @@ imagery.json: scripts/convert_geojson_to_legacyjson.py $(SOURCES)
 
 imagery.geojson: scripts/concat_geojson.py $(SOURCES)
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@
+
+imagery.id.json: scripts/convert_id.mjs scripts/id/convert.mjs scripts/id/update_imagery.js scripts/id/manual_imagery.json imagery.geojson
+	@$(NODE) $< --format-version 1 imagery.geojson > $@
+
+.PHONY: test-id
+test-id: imagery.id.json
+	@$(NODE) --test scripts/tests/test_id_imagery.mjs
 
 i18n/en.yaml: scripts/extract_i18n.py $(SOURCES)
 	@$(PYTHON) $< $(SOURCES_QUOTED) > $@

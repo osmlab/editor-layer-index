@@ -19,13 +19,28 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
       - name: Install Python dependencies
         run: |
-          python -m pip install -U pip wheel
+          python -m pip install -U pip wheel PyYAML
           python -m pip install -r requirements.txt
+          python -m pip install -r requirements-dev.txt
 
       - name: Basic check
-        run: find sources -name \*.geojson | xargs python scripts/check.py
+        run: make check
+
+      - name: Test libeli
+        run: cd scripts && python -m pytest tests
+
+      - name: Build all formats from source
+        run: make clean all
+
+      - name: Test tagged iD output and client canaries
+        run: make test-id
 
       - name: Get file changes
         id: get_file_changes

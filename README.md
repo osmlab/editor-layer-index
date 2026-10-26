@@ -31,6 +31,12 @@ For QGIS, [use the layer index converter script](https://github.com/andrewharvey
 
 For any other usage, use https://osmlab.github.io/editor-layer-index/imagery.geojson.
 
+The build also produces `imagery.id.json`, a compact array in iD's imagery format,
+including its pinned filtering policy and manual overrides. CI tests it before
+including it in the generated files published to this branch. See the
+[iD output profile](scripts/id/README.md) for build commands and compatibility
+limits.
+
 ## Layer Overview
 
 An interactive list of all layers (with a live map preview for most of them) is available at

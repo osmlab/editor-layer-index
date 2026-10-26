@@ -29,6 +29,8 @@ from jsonschema import Draft4Validator, RefResolver, ValidationError
 from shapely.geometry import shape
 from shapely.validation import explain_validity
 
+from libeli.geometry import validate_polygon_coordinates
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -166,7 +168,7 @@ for filename in arguments.path:
             raise ValidationError(f"{filename}: Double {{{{ or }}}} in URL: {source['properties']['url']}")
 
         # If we're not global we must have a geometry.
-        # The geometry itself is validated by jsonschema
+        # Validate raw coordinates before Shapely checks topology below.
         if "world" not in filename:
             if not "type" in source["geometry"]:
                 raise ValidationError("{} should have a valid geometry or be global".format(filename))
@@ -175,24 +177,18 @@ for filename in arguments.path:
             if not "country_code" in source["properties"]:
                 raise ValidationError("{} should have a country or be global".format(filename))
 
+            # Check the original rings first: Shapely automatically closes rings
+            # and may otherwise hide malformed source coordinates from PR checks.
+            try:
+                validate_polygon_coordinates(source["geometry"])
+            except ValueError as e:
+                raise ValidationError(f"{filename} geometry is not valid: {e}") from e
+
             geom = shape(source["geometry"])
-             # Check validity of geometries
+            # Check validity of geometries
             if not geom.is_valid:
                 raise ValidationError(f"{filename} geometry is not valid: {explain_validity(geom)}")
 
-            min_lon, min_lat, max_lon, max_lat = geom.bounds
-            within_bounds = True
-            for lon in [min_lon, max_lon]:
-                if lon < -180.0 or lon > 180.0:
-                    within_bounds = False
-            for lat in [min_lat, max_lat]:
-                if lat < -90.0 or lat > 90.0:
-                    within_bounds = False
-            if not within_bounds:
-                raise ValidationError(
-                    "{} contains invalid coordinates.: Geometry extent: {}"
-                    "".format(filename, ",".join(map(str, [min_lon, min_lat, max_lon, max_lat])))
-                )
         else:
             if "geometry" not in source:
                 raise ValidationError("{} should have null geometry".format(filename))
