@@ -22,7 +22,7 @@
     },
     "properties": {
         "attribution": {
-            "required": true,
+            "required": false,
             "text": "Glucksman Map Library, Trinity College Dublin",
             "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin"
         },
@@ -34,7 +34,8 @@
         "type": "tms",
         "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
         "category": "historicmap",
-        "privacy_policy_url": "https://mapwarper.net/privacy"
+        "privacy_policy_url": "https://mapwarper.net/privacy",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin"
     },
     "type": "Feature"
 }
