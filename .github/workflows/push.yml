@@ -5,29 +5,46 @@ on:
     branches:
       - gh-pages
 
+# Serialize generated-output commits from deployment jobs.
+concurrency:
+  group: publish-index
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: Deploy
     runs-on: [ubuntu-24.04]
     if: "!contains(github.event.head_commit.message, 'Deploy') && github.repository == 'osmlab/editor-layer-index'"
+    permissions:
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v7 # If you're using actions/checkout@v7 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v7
         with:
-          persist-credentials: false
+          ref: ${{ github.sha }}
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
           python-version: "3.10"
 
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
       - name: Install Python dependencies
         run: |
           python -m pip install -U pip wheel PyYAML
           python -m pip install -r requirements.txt
+          python -m pip install -r requirements-dev.txt
 
       - name: Basic check
-        run: find sources -name \*.geojson | xargs python scripts/check.py
+        run: make check
+
+      - name: Test libeli
+        run: cd scripts && python -m pytest tests
 
       - name: Delete old imagery files
         run: make clean
@@ -35,17 +52,18 @@ jobs:
       - name: Generate imagery files
         run: make all
 
-      - name: Select files to deploy
-        run: |
-          mkdir deploy
-          mkdir deploy/i18n
-          cp imagery.* deploy
-          cp i18n/en.yaml deploy/i18n
+      - name: Test tagged iD output and client canaries
+        run: make test-id
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.9.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: deploy # The folder the action should deploy.
-          CLEAN: false # Automatically remove deleted files from the deploy branch
+      - name: Configure Git author for generated commits
+        # GitHub Actions bot identity from the official checkout example:
+        # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
+        # The numeric prefix is the bot's GitHub account ID.
+        run: |
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Publish if the tested revision is still current
+        env:
+          TESTED_REVISION: ${{ github.sha }}
+        run: python scripts/publish.py "$TESTED_REVISION"
