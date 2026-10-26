@@ -6,10 +6,13 @@ usage: strict_check.py [-h] path [path ...]
 Checks new ELI sources for validity and common errors
 
 """
+import html
 import io
 import json
+import math
 import os
 import re
+import xml.etree.ElementTree as ET
 from argparse import ArgumentParser
 from dataclasses import dataclass
 from enum import Enum
@@ -23,6 +26,8 @@ import urllib3
 import validators
 from jsonschema import Draft4Validator, RefResolver, ValidationError
 from libeli import eliutils, tmshelper, wmshelper, wmtshelper
+from libeli.geometry import interior_test_point
+from PIL import Image, UnidentifiedImageError
 from requests.models import Response
 from shapely.geometry import Point, Polygon, box
 from shapely.geometry.geo import mapping, shape
@@ -41,6 +46,18 @@ class MessageLevel(Enum):
 class Message:
     level: MessageLevel
     message: str
+
+
+def log_messages(filename: str, messages: List[Message]) -> None:
+    """Keep every diagnostic attributable to its source file."""
+    for level, log in [
+        (MessageLevel.INFO, logger.info),
+        (MessageLevel.WARNING, logger.warning),
+        (MessageLevel.ERROR, logger.error),
+    ]:
+        for msg in messages:
+            if msg.level == level:
+                log(msg.message if msg.message.startswith(filename) else f"{filename}: {msg.message}")
 
 
 # Disable InsecureRequestWarning: Unverified HTTPS request is being made to host warnings
@@ -173,8 +190,11 @@ def test_url(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool, 
         if r.status_code == 200:
             return True, r.status_code
         return False, r.status_code
+    except requests.RequestException as e:
+        reason = str(e).replace(url, "[request URL]")
+        logger.warning(f"Could not retrieve URL ({type(e).__name__}): {reason}; URL: {url}")
     except Exception as e:
-        logger.exception(f"Could not retrieve url: {url}: {e}")
+        logger.exception(f"Unexpected error retrieving URL {url}: {e}")
     return False, -1
 
 
@@ -203,6 +223,172 @@ def test_image(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool
     except Exception as e:
         logger.exception(f"Could not retrieve url: {url}: {e}")
     return False, -1, None
+
+
+def describe_response(response: Response) -> str:
+    """Summarize HTTP status and bounded server diagnostics without dumping binary data."""
+    content_type = response.headers.get("Content-Type", "unknown Content-Type")
+    status = f"HTTP {response.status_code} {response.reason or ''}".strip()
+    description = f"{status}; {content_type}; {len(response.content)} bytes"
+    # XML/JSON errors are sometimes returned as HTTP 200 or with an image MIME type.
+    body = response.content[:65536]
+    details = []
+    try:
+        root = ET.fromstring(body)
+        for element in root.iter():
+            tag = element.tag.rsplit("}", 1)[-1]
+            if tag in {"ServiceException", "Exception"}:
+                code = element.get("code") or element.get("exceptionCode")
+                locator = element.get("locator")
+                text = " ".join(element.itertext()).strip()
+                details.append(" ".join(filter(None, [code, f"({locator})" if locator else None, text])))
+    except ET.ParseError:
+        pass
+    if not details:
+        try:
+            error = json.loads(body).get("error")
+            if isinstance(error, dict):
+                details.append(" ".join(str(error[key]) for key in ["code", "message", "details"] if error.get(key)))
+            elif error:
+                details.append(str(error))
+        except (ValueError, AttributeError):
+            pass
+    if not details and (
+        "text" in content_type or "xml" in content_type or "json" in content_type or body.lstrip().startswith(b"<")
+    ):
+        text = body.decode(response.encoding or "utf-8", errors="replace")
+        text = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", text, flags=re.I | re.S)
+        details.append(html.unescape(re.sub(r"<[^>]*>", " ", text)))
+    if details:
+        detail = " ".join("; ".join(details).split())
+        if len(detail) > 500:
+            detail = detail[:500] + "…"
+        if detail:
+            description += f"; server response: {detail}"
+    if response.url and response.history:
+        description += f"; redirected to: {response.url}"
+    return description
+
+
+def check_wms_images(
+    source: Dict[str, Any], messages: List[Message], wms: Optional[wmshelper.WMSCapabilities]
+) -> None:
+    """Request every configured CRS, including those absent from capabilities.
+
+    Preserve the source's URL parameters: this tests what editors will request,
+    including styles, dimensions, authentication and vendor-specific options.
+    """
+    properties = source["properties"]
+    projections = sorted(set(properties.get("available_projections", [])))
+    if not projections:
+        return
+    url = wmshelper.WMSURL(properties["url"])
+    geometry = shape(source["geometry"]) if source["geometry"] is not None else None
+    if geometry is None and wms is not None:
+        boxes = [
+            wms.layers[name].bbox.geom()
+            for name in url.layers()
+            if name in wms.layers and wms.layers[name].bbox is not None
+        ]
+        if boxes:
+            geometry = boxes[0]
+            for other in boxes[1:]:
+                geometry = geometry.intersection(other)
+    if geometry is None:
+        point = Point(6.1, 49.6)
+        messages.append(Message(MessageLevel.INFO, "No coverage bounds; testing WMS at fallback point 6.1,49.6"))
+    else:
+        try:
+            point = interior_test_point(geometry)
+        except ValueError as exc:
+            messages.append(Message(MessageLevel.ERROR, f"Cannot select WMS test point: {exc}"))
+            return
+
+    zoom = min(max(14, properties.get("min_zoom", 0)), properties.get("max_zoom", 22))
+    tile_bounds = mercantile.bounds(mercantile.tile(point.x, point.y, zoom))
+    half_width = (tile_bounds.east - tile_bounds.west) / 2
+    half_height = (tile_bounds.north - tile_bounds.south) / 2
+    if geometry is not None:
+        # Keep the whole sample inside coverage, including narrow polygons and holes.
+        clearance = point.distance(geometry.boundary) / 2
+        half_width = min(half_width, clearance)
+        half_height = min(half_height, clearance)
+    bounds = eliutils.BoundingBox(
+        west=point.x - half_width,
+        east=point.x + half_width,
+        south=point.y - half_height,
+        north=point.y + half_height,
+    )
+    source_headers = get_http_headers(source)
+    for crs in projections:
+        query_url = properties["url"]
+        location = f"{point.x:.6f},{point.y:.6f}"
+        advertised = wms is not None and all(
+            name in wms.layers and crs.upper() in wms.layers[name].crs for name in url.layers()
+        )
+        advertisement = "advertised" if advertised else "not advertised by all requested layers"
+        if wms is None:
+            advertisement = "capabilities unavailable"
+        stage = "building projected bounding box"
+        response = None
+        try:
+            bbox = wmshelper.get_bbox(crs, bounds, url.wms_version())
+            coordinates = [float(value) for value in bbox.split(",")]
+            if not all(math.isfinite(value) for value in coordinates) or not (
+                coordinates[0] < coordinates[2] and coordinates[1] < coordinates[3]
+            ):
+                raise ValueError(f"Invalid projected bounding box: {bbox}")
+            for placeholder, value in [
+                ("{proj}", crs),
+                ("{wkid}", crs.split(":")[-1]),
+                ("{bbox}", bbox),
+                ("{width}", "256"),
+                ("{height}", "256"),
+            ]:
+                query_url = query_url.replace(placeholder, value)
+            stage = "requesting image"
+            response = requests.get(query_url, headers=source_headers, verify=False, timeout=30)
+            if response.status_code != 200:
+                raise ValueError("Server did not return HTTP 200")
+            stage = "decoding image"
+            with Image.open(io.BytesIO(response.content)) as image:
+                image.load()
+                if image.size != (256, 256):
+                    raise ValueError(f"Expected 256x256 image, got {image.size}")
+                rgba = image.convert("RGBA")
+                empty = rgba.getchannel("A").getbbox() is None
+                uniform = all(low == high for low, high in rgba.getextrema())
+            if empty or uniform:
+                messages.append(
+                    Message(
+                        MessageLevel.WARNING,
+                        f"CRS '{crs}' ({advertisement}) returned a {'transparent' if empty else 'uniform'} image "
+                        f"at {location}; imagery could not be confirmed: {query_url}",
+                    )
+                )
+            else:
+                messages.append(
+                    Message(
+                        MessageLevel.INFO,
+                        f"CRS '{crs}' ({advertisement}) returned a decoded 256x256 image at {location}",
+                    )
+                )
+        except Exception as exc:
+            # Pillow's unidentified-image error includes an unhelpful BytesIO address.
+            reason = "Response is not a decodable image" if isinstance(exc, UnidentifiedImageError) else str(exc)
+            if isinstance(exc, requests.RequestException):
+                # Requests may already include the URL; print the reproducible URL once below.
+                reason = reason.replace(query_url, "[request URL]")
+            details = f"{type(exc).__name__}: {reason}"
+            if response is not None:
+                details += f"; {describe_response(response)}"
+            messages.append(
+                Message(
+                    MessageLevel.ERROR,
+                    f"CRS '{crs}' ({advertisement}) GetMap failed while {stage} at {location}: "
+                    f"{details}; URL: {query_url}",
+                )
+            )
 
 
 def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
@@ -318,18 +504,28 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
             wms_version_str = wms_version
 
         wms_getcapabilities_url = None
+        response = None
         try:
             wms_getcapabilities_url = wms_url.get_capabilities_url(wms_version=wms_version)
-            _, xml = get_text_encoded(wms_getcapabilities_url, headers=source_headers)
-            if xml is not None:
-                wms = wmshelper.WMSCapabilities(xml)
+            response, xml = get_text_encoded(wms_getcapabilities_url, headers=source_headers)
+            if xml is None:
+                exceptions.append(
+                    f"GetCapabilities (WMS {wms_version_str}) failed: {describe_response(response)}; "
+                    f"URL: {wms_getcapabilities_url}"
+                )
+                continue
+            wms = wmshelper.WMSCapabilities(xml)
             break
         except Exception as e:
-            exceptions.append(f"WMS {wms_version_str}: Error: {e} {wms_getcapabilities_url}")
+            details = f"{type(e).__name__}: {e}"
+            if response is not None:
+                details += f"; {describe_response(response)}"
+            exceptions.append(
+                f"GetCapabilities (WMS {wms_version_str}) failed: {details}; URL: {wms_getcapabilities_url}"
+            )
             continue
 
-    # Check if it was possible to parse the WMS GetCapability response
-    # If not, there is nothing left to check
+    # Capabilities failure does not prevent probing configured projections.
     if wms is None:
         for msg in exceptions:
             messages.append(
@@ -338,6 +534,7 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
                     message=msg,
                 )
             )
+        check_wms_images(source, messages, wms)
         return
 
     # Log access constraints and fees metadata
@@ -444,23 +641,7 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
             for layer_name in layers:
                 if layer_name in wms.layers:
 
-                    # Check for CRS in available_projections that are not advertised by the WMS server
-                    not_supported_crs: Set[str] = set()
                     available_projections: List[str] = source["properties"]["available_projections"]
-
-                    for crs in available_projections:
-                        if crs.upper() not in wms.layers[layer_name].crs:
-                            not_supported_crs.add(crs)
-
-                    if len(not_supported_crs) > 0:
-                        supported_crs_str = ",".join(wms.layers[layer_name].crs)
-                        not_supported_crs_str = ",".join(not_supported_crs)
-                        messages.append(
-                            Message(
-                                level=MessageLevel.WARNING,
-                                message=f"Layer '{layer_name}': CRS '{not_supported_crs_str}' not in: {supported_crs_str}. Some server support CRS which are not advertised.",
-                            )
-                        )
 
                     # Check for CRS supported by the WMS server but not in available_projections
                     supported_but_not_included: Set[str] = set()
@@ -476,6 +657,8 @@ def check_wms(source: Dict[str, Any], messages: List[Message]) -> None:
                                 message=f"Layer '{layer_name}': CRS '{supported_but_not_included_str}' not included in available_projections but supported by server.",
                             )
                         )
+
+    check_wms_images(source, messages, wms)
 
     # Check if server supports a newer WMS version as in url
     if wms_args["version"] < wms.version:
@@ -738,7 +921,7 @@ def check_tms(source: Dict[str, Any], messages: List[Message]) -> None:
 
         # Test zoom levels by accessing tiles for a point within the geometry
         if geom is not None:
-            centroid: Point = geom.representative_point()  # type: ignore
+            centroid: Point = interior_test_point(geom)
         else:
             centroid = Point(6.1, 49.6)
         centroid_x: float = centroid.x  # type: ignore
@@ -1086,12 +1269,7 @@ for filename in arguments.path:
                 )
             )
 
-        for msg in [msg for msg in messages if msg.level == MessageLevel.INFO]:
-            logger.info(msg.message)
-        for msg in [msg for msg in messages if msg.level == MessageLevel.WARNING]:
-            logger.warning(msg.message)
-        for msg in [msg for msg in messages if msg.level == MessageLevel.ERROR]:
-            logger.error(msg.message)
+        log_messages(filename, messages)
 
         if len([msg for msg in messages if msg.level == MessageLevel.ERROR]) > 0:
             raise ValidationError("Errors occurred, see logs above.")
@@ -1099,7 +1277,8 @@ for filename in arguments.path:
     except ValidationError as e:
         borkenbuild = True
     except Exception as e:
-        logger.exception(f"Failed: {e}")
+        borkenbuild = True
+        logger.exception(f"{filename}: Unexpected checker failure: {e}")
 if spacesave > 0:
     logger.warning(f"Disembedding all icons would save {round(spacesave / 1024.0, 2)} KB")
 if borkenbuild:
