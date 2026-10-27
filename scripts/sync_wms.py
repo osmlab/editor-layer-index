@@ -32,6 +32,7 @@ import mercantile
 from aiohttp import ClientSession
 from imagehash import ImageHash
 from libeli import eliutils, wmshelper
+from libeli.geometry import interior_test_point
 from PIL import Image
 from pyproj.crs.crs import CRS
 from shapely.geometry import MultiPolygon, Point, Polygon, box
@@ -500,7 +501,7 @@ async def process_source(filename: str, session: ClientSession):
             pt: Point = Point(7.44, 46.56)
         else:
             geom = shape(source["geometry"])
-            pt: Point = geom.representative_point()  # type: ignore
+            pt: Point = interior_test_point(geom)
 
         test_zoom_level = ZOOM_LEVEL
         if "min_zoom" in source["properties"]:

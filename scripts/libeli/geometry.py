@@ -2,6 +2,25 @@
 
 import math
 
+from shapely.geometry import MultiPolygon, Point, Polygon
+from shapely.ops import polylabel
+
+
+def interior_test_point(geometry: Polygon | MultiPolygon) -> Point:
+    """Approximate the pole of inaccessibility in lon/lat coordinates.
+
+    Use the largest component of a MultiPolygon and respect interior holes.
+    The relative tolerance limits work even for large or detailed coverages.
+    This selects an interior sample, not a geodesic distance measurement.
+    """
+    if geometry.is_empty or not geometry.is_valid:
+        raise ValueError("Test point requires a nonempty, valid coverage polygon")
+    polygon = max(geometry.geoms, key=lambda part: part.area) if isinstance(geometry, MultiPolygon) else geometry
+    west, south, east, north = polygon.bounds
+    point = polylabel(polygon, tolerance=max(east - west, north - south) / 1000)
+    # Very thin polygons can be narrower than the approximation tolerance.
+    return point if polygon.contains(point) else polygon.representative_point()
+
 
 def validate_polygon_coordinates(geometry):
     """Check every exterior/interior ring uses two-dimensional coordinates."""
