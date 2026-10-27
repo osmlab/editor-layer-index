@@ -1,0 +1,4 @@
+[flake8]
+# Match the existing Ruff formatter width rather than Flake8's 79-column default.
+max-line-length = 100
+extend-exclude = .venv,build,dist,.git,.mypy_cache,.pytest_cache,.ruff_cache

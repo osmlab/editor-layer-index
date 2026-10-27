@@ -2,40 +2,40 @@ name: ELI WMS sync
 
 on:
   schedule:
-    #- cron: "0 0 * * *" # daily
-    - cron: '0 0 * * 0' # weekly
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: wms-sync
+  cancel-in-progress: false
 
 jobs:
   wms_sync:
-    name: WMS_sync_cron
     if: github.repository == 'osmlab/editor-layer-index'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v7
-
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - uses: actions/checkout@v7.0.1
         with:
-          python-version: "3.10"
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install -U pip wheel
-          python -m pip install -r requirements.txt
-
-      - name: Run WMS sync
-        run: |
-          python scripts/sync_wms.py sources
-
-      - name: Test
-        run: |
-          python scripts/check.py $(find sources -type f -name '*.geojson')
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v8.1.1
+          ref: gh-pages
+          persist-credentials: true
+      - uses: astral-sh/setup-uv@v10.3.2
         with:
-          commit-message: Sync WMS sources [skip travis]
+          enable-cache: true
+          python-version: '3.14'
+      - run: sudo apt-get update && sudo apt-get install -y libmagic1
+      - run: uv sync --locked --no-dev
+      - run: uv run --locked --no-dev eli sync-wms
+      - run: uv run --locked --no-dev eli check
+      - uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          base: gh-pages
+          branch: bot/wms-sync
+          add-paths: sources/**
+          commit-message: Sync WMS sources
           delete-branch: true
-          draft: false
           title: WMS Sync Bot
-          body: Update url and available_projections of WMS sources using scripts/sync_wms.py. Sources are tested with scripts/check.py before PR is created. Delete .github/workflows/sync_wms.yml to stop.
+          body: Update WMS URLs and projections using `uv run eli sync-wms`; validate all sources with `uv run eli check`.

@@ -4,3 +4,14 @@ npm-debug.log
 package-lock.json
 
 *.pyc
+
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+min_zoom_results/
