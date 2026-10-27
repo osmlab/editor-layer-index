@@ -6,6 +6,10 @@
         "type": "wms",
         "name": "Catastro Spain",
         "country_code": "ES",
+        "attribution": {
+          "text": "Dirección General del Catastro"
+        },
+        "description": "Cartografía Catastral de la Dirección General del Catastro",
         "available_projections": [
             "EPSG:4230",
             "EPSG:4326",
@@ -23,7 +27,9 @@
             "EPSG:25831",
             "EPSG:3857"
         ],
-        "category": "other"
+        "license_url": "https://www.catastro.hacienda.gob.es/webinspire/documentos/Licencia.pdf",
+        "privacy_policy_url": "https://www.catastro.hacienda.gob.es/es-ES/avisolegal.html",
+        "category": "map"
     },
     "geometry": {
         "type": "MultiPolygon",

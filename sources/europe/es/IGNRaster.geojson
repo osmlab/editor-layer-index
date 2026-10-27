@@ -10,6 +10,7 @@
         "url": "http://www.ign.es/wms-inspire/mapa-raster?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=mtn_rasterizado&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "ES",
         "type": "wms",
+        "description": "Cartografía raster del IGN a distintas escalas. Se publica el Atlas Nacional de España a escala 1:11.000.000 hasta una resolución de 952 m/píxel. El Mapa de España a escala 1:3.000.000 hasta una resolución de 224m/píxel. El Mapa de España a escala 1:1.250.000 hasta una resolución de 112 m/píxel. El Mapa de España a escala 1:500.000 hasta una resolución de 60,20 m/píxel. El Mapa Provincial a escala 1:200.000 hasta una resolución de 14,28 m/píxel. El Mapa Topográfico Nacional a escala 1:50.000 hasta una resolución de 5,04 m/píxel. El Mapa Topográfico Nacional a escala 1:25.000 a partir de una resolución de 5,04 m/pixel y el Mapa Topográfico Nacional Alta Resolución a partir de una resolución de 1.4 m/pixel. Se considera un tamaño estándar de píxel de 0,28 mm. Servicio WMS 1.3.0 conforme a ISO 19128:2005. Capa de fondo elaborada a partir de GEBCO Compilation Group (2021) GEBCO 2021 Grid",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",

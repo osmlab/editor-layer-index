@@ -10,6 +10,7 @@
         "url": "https://icearagon.aragon.es/AragonFoto?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image/png&STYLES=&TRANSPARENT=true&LAYERS=orto_reciente,spot,landsat,modis&WIDTH={width}&HEIGHT={height}&CRS={proj}&BBOX={bbox}",
         "country_code": "ES",
         "type": "wms",
+        "description": "Servicio de imágenes de IDEARAGON: Ortofoto reciente, SPOT, LANDSAT, MODIS",
         "available_projections": [
             "EPSG:3857",
             "EPSG:4326",
@@ -18,7 +19,7 @@
         ],
         "best": false,
         "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
-        "privacy_policy_url": "https://idearagon-test.aragon.es/portal/politica-privacidad.jsp",
+        "privacy_policy_url": "https://idearagon.aragon.es/politica-privacidad.jsp",
         "category": "photo"
     },
       "geometry": {
