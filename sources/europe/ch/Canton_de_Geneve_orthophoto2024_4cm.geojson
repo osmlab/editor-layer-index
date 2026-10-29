@@ -8,8 +8,9 @@
        "id" : "Geneve-orthophoto-2024",
        "url" : "https://raster.sitg.ge.ch/arcgis/rest/services/ORTHOPHOTOS_2024_EPSG3857/MapServer/tile/{zoom}/{y}/{x}",
        "attribution" : {
-          "required" : true,
-          "text" : "Système d'information du territoire à Genève (SITG)"
+           "required": true,
+           "text": "Système d'information du territoire à Genève (SITG)",
+           "url": "https://sitg.ge.ch/donnees/image-aerienne-ortho-2024-03"
        },
        "type" : "tms",
        "best" : true,

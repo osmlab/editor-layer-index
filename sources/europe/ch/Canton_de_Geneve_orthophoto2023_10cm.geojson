@@ -8,12 +8,13 @@
        "id" : "Geneve-orthophoto-2023",
        "url" : "https://raster.sitg.ge.ch/arcgis/rest/services/ORTHOPHOTOS_2023_EPSG3857/MapServer/tile/{zoom}/{y}/{x}",
        "attribution" : {
-          "required" : true,
-          "text" : "Système d'information du territoire à Genève (SITG)"
+           "required": true,
+           "text": "Système d'information du territoire à Genève (SITG)",
+           "url": "https://sitg.ge.ch/donnees/image-aerienne-ortho-2023-06"
        },
        "type" : "tms",
        "best" : false,
-       "category" : "photo",
+       "category" : "historicphoto",
        "name" : "Canton de Génève, Orthophoto 2023 (10cm) (SITG)",
        "country_code" : "CH",
        "min_zoom" : 2
