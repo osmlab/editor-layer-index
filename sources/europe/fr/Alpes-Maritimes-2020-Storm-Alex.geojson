@@ -1,17 +1,18 @@
 {
     "type": "Feature",
     "properties": {
+        "available_projections": ["EPSG:3857"],
         "id": "fr.dpt.06.2020.storm.alex",
         "name": "Alpes-Maritimes 2020 (Storm Alex)",
-        "type": "tms",
+        "type": "wms",
         "default": false,
-        "url": "http://proxy-ign.openstreetmap.fr/alex/{zoom}/{x}/{y}.jpg",
+        "url": "https://data.geopf.fr/wms-r?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=ORTHOIMAGERY.ORTHOPHOTOS.URGENCE.ALEX&STYLES=normal&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "category": "historicphoto",
         "start_date": "2020-10",
         "end_date": "2020-10",
         "attribution": {
             "text": "IGN - Ortho express octobre 2020",
-            "url": "https://alex.ign.fr/telecharger",
+            "url": "https://www.ign.fr/institut/nos-domaines-dintervention/prevention-des-risques/tempete-alex-un-avion-de-lign-photographie-les-zones-sinistrees",
             "required": true
         },
         "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
