@@ -12,8 +12,7 @@
         "name": "NSW Land Zoning",
         "available_projections": [
             "EPSG:3857",
-            "EPSG:4326",
-            "CRS:84"
+            "EPSG:4326"
         ],
         "url": "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/EPI_Primary_Planning_Layers/MapServer/export?layers=show:2&bbox={bbox}&f=image&bboxSR={wkid}&imageSR={wkid}&size={width}%2C{height}&format=png32",
         "overlay": true,
