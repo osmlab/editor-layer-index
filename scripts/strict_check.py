@@ -864,7 +864,7 @@ for filename in arguments.path:
         logger.info(f"Type: {source['properties']['type']}")
 
         # Check geometry
-        if "geometry" in source:
+        if source.get("geometry") is not None:
             geom = shape(source["geometry"])  # type: ignore
 
             # Check if geometry is a valid (e.g. no intersection etc.)
@@ -1027,14 +1027,14 @@ for filename in arguments.path:
         # If we're not global we must have a geometry.
         # The geometry itself is validated by jsonschema
         if "world" not in filename:
-            if "type" not in source["geometry"]:
+            if source.get("geometry") is None or "type" not in source["geometry"]:
                 messages.append(
                     Message(
                         level=MessageLevel.ERROR,
                         message=f"{filename} should have a valid geometry or be global",
                     )
                 )
-            if source["geometry"]["type"] not in {"Polygon", "MultiPolygon"}:
+            elif source["geometry"]["type"] not in {"Polygon", "MultiPolygon"}:
                 messages.append(
                     Message(
                         level=MessageLevel.ERROR,
