@@ -173,6 +173,8 @@ def test_url(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool, 
         if r.status_code == 200:
             return True, r.status_code
         return False, r.status_code
+    except requests.exceptions.RequestException as e:
+        logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
     except Exception as e:
         logger.exception(f"Could not retrieve url: {url}: {e}")
     return False, -1
@@ -200,6 +202,8 @@ def test_image(url: str, headers: Optional[Dict[str, str]] = None) -> Tuple[bool
         filetype: str = magic.from_buffer(r.content, mime=True)  # type: ignore
         # TODO there might be other relevant image mime types
         return filetype in {"image/png", "image/jpeg", "image/webp"}, r.status_code, filetype
+    except requests.exceptions.RequestException as e:
+        logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
     except Exception as e:
         logger.exception(f"Could not retrieve url: {url}: {e}")
     return False, -1, None
