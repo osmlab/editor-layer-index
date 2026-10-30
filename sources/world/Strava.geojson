@@ -1,0 +1,20 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "strava",
+        "name": "Strava Heatmap",
+        "description": "Strava cycling and running heatmap.",
+        "i18n": true,
+        "attribution": {
+            "url": "http://labs.strava.com/heatmap/",
+            "text": "© Strava",
+            "required": true
+        },
+        "overlay": true,
+        "url": "http://heatmap-external-{switch:a,b,c}.strava.com/tiles/all/blue/{zoom}/{x}/{y}.png?px=256",
+        "max_zoom": 12,
+        "type": "tms",
+        "icon": "https://d3nn82uaxijpm6.cloudfront.net/assets/website/mobile/icon-app-81cc8ba60200bed099176eb699e218ab.png"
+    },
+    "geometry": null
+}
