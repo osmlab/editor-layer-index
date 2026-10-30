@@ -4,7 +4,8 @@
         "id": "IGEAR-ortofoto",
         "attribution": {
             "text": "Instituto Geográfico de Aragón - Gobierno de Aragón",
-            "required": true
+            "required": true,
+            "url": "https://idearagon.aragon.es/portal/"
         },
         "name": "IGEAR - Ortofoto reciente",
         "url": "https://icearagon.aragon.es/AragonFoto?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image/png&STYLES=&TRANSPARENT=true&LAYERS=orto_reciente,spot,landsat,modis&WIDTH={width}&HEIGHT={height}&CRS={proj}&BBOX={bbox}",
@@ -19,7 +20,7 @@
         ],
         "best": false,
         "license_url": "https://idearagon.aragon.es/portal/wms.jsp",
-        "privacy_policy_url": "https://idearagon.aragon.es/politica-privacidad.jsp",
+        "privacy_policy_url": "https://idearagon.aragon.es/portal/politica-privacidad.jsp",
         "category": "photo"
     },
       "geometry": {

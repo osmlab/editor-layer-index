@@ -12,8 +12,7 @@
         "name": "QLD Roads and Tracks",
         "available_projections": [
             "EPSG:3857",
-            "EPSG:4326",
-            "CRS:84"
+            "EPSG:4326"
         ],
         "url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Transportation/RoadsAndTracks/MapServer/export?imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image",
         "overlay": true,

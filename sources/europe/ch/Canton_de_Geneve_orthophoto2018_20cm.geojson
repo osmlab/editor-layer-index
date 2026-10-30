@@ -9,7 +9,8 @@
         "url": "https://raster.sitg.ge.ch/arcgis/rest/services/ORTHOPHOTOS_2018_EPSG3857/MapServer/tile/{zoom}/{y}/{x}",
         "attribution": {
             "text": "Système d'information du territoire à Genève (SITG)",
-            "required": true
+            "required": true,
+            "url": "https://sitg.ge.ch/donnees/image-aerienne-ortho-2018-07"
         },
         "type": "tms",
         "best": false,
@@ -25,10 +26,6 @@
                 [
                     5.6703,
                     46.2143
-                ],
-                [
-                    5.6805,
-                    46.0223
                 ],
                 [
                     5.6805,

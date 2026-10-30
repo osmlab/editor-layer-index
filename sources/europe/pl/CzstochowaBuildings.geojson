@@ -8,7 +8,6 @@
         "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?LAYERS=ieg_budynek&STYLES=&FORMAT=image/png&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "PL",
         "available_projections": [
-            "CRS:84",
             "EPSG:2174",
             "EPSG:2175",
             "EPSG:2177",
@@ -17,8 +16,7 @@
             "EPSG:3330",
             "EPSG:3334",
             "EPSG:4326",
-            "EPSG:32634",
-            "EPSG:900913"
+            "EPSG:32634"
         ],
         "attribution": {
             "text": "Urząd Miasta Częstochowy"

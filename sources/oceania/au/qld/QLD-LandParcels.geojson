@@ -12,8 +12,7 @@
         "name": "QLD Land Parcels",
         "available_projections": [
             "EPSG:3857",
-            "EPSG:4326",
-            "CRS:84"
+            "EPSG:4326"
         ],
         "url": "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/PlanningCadastre/LandParcelPropertyFramework/MapServer/export?layers=show%3A4&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&format=png32&size={width},{height}&transparent=true&f=image&dynamicLayers=%5B%7B%22id%22%3A4%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A4%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22uniqueValue%22%2C%22field1%22%3A%22COVER_TYP%22%2C%22field2%22%3A%22PARCEL_TYP%22%2C%22fieldDelimiter%22%3A%22%2C%22%2C%22uniqueValueInfos%22%3A%5B%7B%22value%22%3A%22Base%2CLot%20Type%20Parcel%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B0%2C0%2C0%2C0%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%2C%7B%22value%22%3A%22Easement%2CEasement%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B255%2C255%2C115%2C127%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%2C%7B%22value%22%3A%22Strata%2CLot%20Type%20Parcel%22%2C%22symbol%22%3A%7B%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%2C%22color%22%3A%5B255%2C127%2C127%2C127%5D%2C%22outline%22%3A%7B%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSolid%22%2C%22color%22%3A%5B255%2C255%2C255%2C255%5D%2C%22width%22%3A1%7D%7D%7D%5D%7D%7D%7D%5D",
         "overlay": true,

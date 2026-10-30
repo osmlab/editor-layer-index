@@ -227,6 +227,8 @@
         ]
     },
     "properties": {
+        "privacy_policy_url": "https://www.nls.uk/privacy",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#National_Library_of_Scotland",
         "attribution": {
             "required": true,
             "text": "National Library of Scotland Historic Maps",
@@ -242,7 +244,7 @@
         "start_date": "1941",
         "type": "tms",
         "url": "https://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png",
-        "category": "map"
+        "category": "historicmap"
     },
     "type": "Feature"
 }
