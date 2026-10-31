@@ -2,7 +2,7 @@
     "type": "Feature",
     "properties": {
         "attribution": {
-            "text": "Geographisches Informationssystem des Kantons Zürich (GIS-ZH), Terrainschummerung",
+            "text": "Geographisches Informationssystem des Kantons Zürich (GIS-ZH), Digitales Höhenmodell",
             "required": false
         },
         "available_projections": [
@@ -19,11 +19,11 @@
         "min_zoom": 9,
         "id": "OGDLidarZH-DTM-2017",
         "name": "Kanton Zurich, Terrainschummerung 2017",
-        "license_url": "https://opendata.swiss/de/dataset/wms-digitales-hohenmodell-ogd1",
-        "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
+        "license_url": "https://geo.zh.ch/terms-of-use",
+        "privacy_policy_url": "https://geo.zh.ch/privacy",
         "type": "wms",
         "category": "elevation",
-        "url": "https://wms.zh.ch/LidarZHWMS?LAYERS=dtm2017_relief&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
+        "url": "https://wms.zh.ch/Lidar2017ZH?LAYERS=dtm2017_relief&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap"
     },
     "geometry": {
         "type": "Polygon",
