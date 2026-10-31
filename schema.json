@@ -94,8 +94,16 @@
                         "no"
                     ]
                 },
+                "license": {
+                    "description": "A SPDX short identifier for the imagery license. Use COMMERCIAL for sources not under an open license. Use USGOV-PD for US Government works in the public domain.",
+                    "type": "string"
+                },
                 "license_url": {
-                    "description": "A URL for the license or permissions for the imagery",
+                    "description": "A URL for the publishers licensing or terms of use information of the imagery",
+                    "type": "string"
+                },
+                "permission_url": {
+                    "description": "A URL for the waiver document or explicit permission given to OSM to derive features",
                     "type": "string"
                 },
                 "privacy_policy_url": {
