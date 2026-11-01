@@ -8,6 +8,7 @@ from shapely.geometry import shape
 from shapely.validation import explain_validity
 
 from eli.common import canonical_request_url, get_logger, load_json, schema_validator
+from eli.consistency import baseline_allows, best_overlaps, metadata_errors
 from eli.libeli.geometry import validate_polygon_coordinates
 from eli.projections import unused_projections
 
@@ -17,11 +18,18 @@ from eli.projections import unused_projections
 def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
     logger = get_logger(max(verbosity, 1))
     validator = schema_validator(root)
+    baseline_path = root / "validation-baseline.json"
+    baseline = load_json(baseline_path) if baseline_path.exists() else {}
+    if baseline and (
+        baseline.get("version") != 1 or not isinstance(baseline.get("failures"), dict)
+    ):
+        raise ValueError("Invalid validation-baseline.json")
     seen_ids: set[str] = set()
     seen_urls: dict[tuple[str, tuple[tuple[str, str], ...]], str] = {}
     failed = False
     spacesave = 0
     tested_sources_count = 0
+    valid_sources = []
     for path in paths:
         filename = str(path.relative_to(root)) if path.is_relative_to(root) else str(path)
 
@@ -42,6 +50,14 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
 
             # jsonschema validate
             validator.validate(source)
+
+            for diagnostic in metadata_errors(source, path, root):
+                message = f"{source['properties']['id']}: {diagnostic}"
+                if baseline_allows(baseline, message, [source]):
+                    logger.warning("Existing contradiction: %s", message)
+                else:
+                    logger.error("%s: %s", filename, message)
+                    failed = True
 
             if "properties" not in source:
                 logger.exception("%s missing properties", filename)
@@ -198,9 +214,19 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
                         f"{filename} should have null geometry but it is {source['geometry']}"
                     )
             tested_sources_count += 1
+            valid_sources.append(source)
         except ValidationError as e:
             failed = True
             logger.exception("Error in %s : %s", filename, e)
+    by_id = {s["properties"]["id"]: s for s in valid_sources}
+    for first, second, area, fraction in best_overlaps(valid_sources):
+        message = f"Significant best overlap: {first} / {second}"
+        details = f"{message}: {area:.2f} km², {fraction:.1%} of smaller footprint"
+        if baseline_allows(baseline, message, [by_id[first], by_id[second]]):
+            logger.warning("Existing contradiction: %s", details)
+        else:
+            logger.error("%s", details)
+            failed = True
     if spacesave > 0:
         logger.warning("Disembedding all icons would save %s KB", round(spacesave / 1024.0, 2))
 

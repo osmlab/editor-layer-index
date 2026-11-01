@@ -3,6 +3,7 @@
 import json
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+from decimal import Decimal
 from typing import Any
 
 import yaml
@@ -138,7 +139,9 @@ def xml_bytes(sources: list[JSON]) -> bytes:
 
             def coord_str(coord: float) -> str:
                 rounded = f"{coord:.6f}"
-                return rounded if float(rounded) == coord else str(coord)
+                # XSD decimal forbids exponent notation; expand the shortest
+                # round-trippable float spelling without rounding its value.
+                return rounded if float(rounded) == coord else format(Decimal(str(coord)), "f")
 
             geom = shape(geometry)
             bounds = ET.SubElement(entry, "bounds")

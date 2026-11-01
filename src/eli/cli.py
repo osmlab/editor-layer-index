@@ -73,6 +73,8 @@ def parser() -> argparse.ArgumentParser:
     )
     check.add_argument("--head", default="HEAD", help="Head ref for --changed-from")
     check.add_argument("-v", "--verbose", action="count", default=0)
+    schema = commands.add_parser("validate-josm", help="Validate XML against JOSM's current schema")
+    schema.add_argument("--build-dir", default="build")
     for name, help_text in (
         ("build", "Generate all four public outputs"),
         ("site", "Assemble the complete public site"),
@@ -147,6 +149,19 @@ def _run_publish_git(args: argparse.Namespace, root: Path) -> int:
     from eli.publish import publish
 
     publish(root, resolve_path(root, args.build_dir), args.expected_head)
+    return 0
+
+
+def _run_validate_josm(args: argparse.Namespace, root: Path) -> int:
+    from eli.artifacts import validate_josm_schema
+    from eli.common import request_get
+
+    response = request_get("https://josm.openstreetmap.de/maps-1.0")
+    response.raise_for_status()
+    validate_josm_schema(
+        (resolve_path(root, args.build_dir) / "imagery.xml").read_bytes(), response.content
+    )
+    print("imagery.xml passes JOSM's current schema")
     return 0
 
 
@@ -318,6 +333,7 @@ def execute(args: argparse.Namespace, root: Path) -> int:
     handlers = {
         "publish-git": _run_publish_git,
         "check": _run_check,
+        "validate-josm": _run_validate_josm,
         "build": _run_build,
         "site": _run_build,
         "translations": _run_translations,

@@ -32,6 +32,7 @@ Normal offline PR checks always select the full corpus.
 | `eli check [paths…]` | Offline schema, ID, URL-template, and geometry checks |
 | `eli check --strict [paths…]` | Offline checks followed by strict live-server checks |
 | `eli check --strict --changed-from BASE --head HEAD` | Check surviving sources changed since the Git merge base |
+| `eli validate-josm --build-dir build` | Fetch JOSM's published XSD and validate the generated XML |
 | `eli build --output-dir build` | Generate `imagery.geojson`, `imagery.json`, `imagery.xml`, and `i18n/en.yaml` |
 | `eli site --output-dir build/site` | Build outputs and assemble the complete public website |
 | `eli site --build-dir build --output-dir build/site` | Assemble using an existing build without regenerating it |
@@ -88,6 +89,41 @@ Unit tests use stored capabilities documents and mocked HTTP responses. Live
 strict checks remain a separate required PR job on changed sources. Git paths
 are read with NUL delimiters; deleted files are excluded and renamed destinations
 are checked. A PR with no changed source files skips live checks successfully.
+
+### Internal consistency and overlapping recommendations
+
+Offline validation rejects impossible calendar dates, definitely reversed date
+ranges (including partial dates), reversed zoom limits, missing categories,
+country/directory mismatches, malformed WMS query structure, conflicting query
+values, and selectable CRS lists contradicted by fixed request CRS parameters.
+`ZZ`/`XN` remain valid multinational/unknown country conventions; the explicit
+Puerto Rico directory exception permits the existing `US` convention. Some
+single-layer WMS implementations legitimately omit `LAYERS`; ArcGIS export
+format parameters may use server defaults. Neither is rejected merely for omission.
+
+Every pair of regional `best` footprints is compared across the full selection,
+including different categories and service types. An overlap is significant if
+it covers at least **10% of the smaller footprint and 1 km²**. A spatial index
+limits candidate pairs; WGS84 geodesic area avoids comparing square degrees.
+Shared borders, tiny slivers, and sources without regional geometry are excluded.
+The normal full-corpus CI check compares all recommendations, not just changed files.
+
+`validation-baseline.json` records unresolved catalogue findings present when
+these checks were introduced, without changing any sources in the tooling PR.
+Known findings remain visible warnings. Exceptions match the exact diagnostic
+and SHA-256 fingerprints of the complete parsed source(s). New findings and
+changes to still-broken sources fail CI. Do not regenerate this file to make a
+failure pass: fix the underlying source and remove its obsolete baseline entries.
+A source revision that resolves the finding passes without needing an exception.
+Tests exercise the actual before/after dates, duplicate geometry, directory,
+TMS projections, missing category, and Itu URL from PR #3093.
+
+All builds validate XML against a packaged, pinned JOSM XSD without network
+access, followed by required-category and source/geometry reconciliation checks.
+The upstream schema's repeating choice does not enforce category presence by
+itself. PR CI and the weekly audit also fetch `https://josm.openstreetmap.de/maps-1.0`
+using the common request timeout and validate against the current schema. Network
+or schema errors fail that separate step; offline builds remain reproducible.
 
 ## Publishing and rollout
 

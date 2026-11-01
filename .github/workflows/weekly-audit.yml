@@ -24,6 +24,8 @@ jobs:
           python-version: '3.14'
       - run: sudo apt-get update && sudo apt-get install -y libmagic1
       - run: uv sync --locked --no-dev
+      - run: uv run --locked --no-dev eli build --output-dir build
+      - run: uv run --locked --no-dev eli validate-josm --build-dir build
       - name: Check entire catalogue
         shell: bash
         run: |

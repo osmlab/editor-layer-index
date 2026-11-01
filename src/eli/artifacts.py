@@ -2,10 +2,13 @@
 
 import json
 import xml.etree.ElementTree as ET
+from functools import cache
+from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
 import yaml
+from lxml import etree
 from shapely.geometry import shape
 from shapely.validation import explain_validity
 
@@ -14,6 +17,25 @@ from eli.libeli.geometry import validate_polygon_coordinates
 
 OUTPUTS = ("imagery.geojson", "imagery.json", "imagery.xml", "i18n/en.yaml")
 XML_NAMESPACE = "{http://josm.openstreetmap.de/maps-1.0}"
+
+
+@cache
+def josm_schema() -> etree.XMLSchema:
+    """Load the pinned upstream schema without network access or entity resolution."""
+    parser = etree.XMLParser(resolve_entities=False, no_network=True)
+    return etree.XMLSchema(
+        etree.fromstring(files("eli").joinpath("data/maps.xsd").read_bytes(), parser)
+    )
+
+
+def validate_josm_schema(xml: bytes, schema: bytes) -> None:
+    """Validate using supplied schema bytes, disabling DTD and network resolution."""
+    parser = etree.XMLParser(resolve_entities=False, no_network=True)
+    try:
+        validator = etree.XMLSchema(etree.fromstring(schema, parser))
+        validator.assertValid(etree.fromstring(xml, parser))
+    except (etree.XMLSyntaxError, etree.XMLSchemaParseError, etree.DocumentInvalid) as error:
+        raise ValueError(f"imagery.xml: JOSM schema: {error}") from error
 
 
 def validate_geometry(geometry: JSON | None) -> None:
@@ -128,6 +150,11 @@ def _xml_geometry(entry: ET.Element, geometry: JSON | None) -> None:
 
 def _xml(data: bytes, features: list[JSON]) -> None:
     try:
+        document = etree.fromstring(data, etree.XMLParser(resolve_entities=False, no_network=True))
+        josm_schema().assertValid(document)
+    except (etree.XMLSyntaxError, etree.DocumentInvalid) as error:
+        raise ValueError(f"imagery.xml: JOSM schema: {error}") from error
+    try:
         root = ET.fromstring(data)
     except ET.ParseError as error:
         raise ValueError(f"imagery.xml: {error}") from error
@@ -142,6 +169,13 @@ def _xml(data: bytes, features: list[JSON]) -> None:
     for entry, feature in zip(entries, features, strict=True):
         if entry.tag != f"{XML_NAMESPACE}entry":
             raise ValueError("imagery.xml: unexpected element")
+        # Upstream XSD uses a repeating choice, which cannot enforce required
+        # children or uniqueness. Check the category contract explicitly too.
+        categories = entry.findall(f"{XML_NAMESPACE}category")
+        if len(categories) != 1 or categories[0].text != feature["properties"].get(
+            "category", "photo"
+        ):
+            raise ValueError("imagery.xml: missing, duplicate or incorrect category")
         _check_properties(
             {key: entry.findtext(f"{XML_NAMESPACE}{key}") for key in ("id", "name", "type", "url")},
             feature["properties"],

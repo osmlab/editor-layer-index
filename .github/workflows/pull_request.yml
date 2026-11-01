@@ -34,6 +34,7 @@ jobs:
       - run: uv run --locked pytest --cov=eli --cov-report=term-missing
       - run: uv run --locked eli check
       - run: uv run --locked eli build --output-dir build
+      - run: uv run --locked eli validate-josm --build-dir build
       - run: uv run --locked eli site --build-dir build --output-dir build/site
 
   strict:

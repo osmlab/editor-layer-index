@@ -27,6 +27,8 @@ dependencies = [
   "pillow==13.0.0",
   "PyYAML>=6.0.3",
   "matplotlib>=3.11.2",
+  "lxml>=6.0,<7",
+  "pycountry>=24.6",
 ]
 
 [project.scripts]
@@ -47,6 +49,7 @@ dev = [
   "pyrefly",
   "pylint",
   "flake8>=7.4.1",
+  "types-lxml>=2026.2.16",
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -108,7 +111,7 @@ max-line-length = 100
 
 [tool.pylint.main]
 # pyproj.database.get_codes is a documented C-extension API used by the CRS registry.
-extension-pkg-allow-list = ["pyproj"]
+extension-pkg-allow-list = ["pyproj", "lxml.etree"]
 
 [tool.pylint.basic]
 # JSON is the public type-alias acronym used throughout the package.

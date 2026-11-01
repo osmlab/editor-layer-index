@@ -1,0 +1,156 @@
+{
+  "provenance": "https://github.com/osmlab/editor-layer-index/pull/3093; ArcGIS example from #2603",
+  "dates": [
+    {
+      "id": "orthophoto_lyon_2012",
+      "path": "sources/europe/fr/Lyon-Orthophoto-2012-03-10cm.geojson",
+      "before": {
+        "start_date": "2012-04",
+        "end_date": "2012-03"
+      },
+      "after": {
+        "start_date": "2012-03",
+        "end_date": "2012-04"
+      }
+    },
+    {
+      "id": "orthophoto_lyon_2022",
+      "path": "sources/europe/fr/Lyon-Orthophoto-2022.geojson",
+      "before": {
+        "start_date": "2022-03-31",
+        "end_date": "2022-02-15"
+      },
+      "after": {
+        "start_date": "2022-02-15",
+        "end_date": "2022-03-31"
+      }
+    },
+    {
+      "id": "Dourados_Ortofotos",
+      "path": "sources/south-america/br/Dourados.geojson",
+      "before": {
+        "start_date": "2020",
+        "end_date": "2018"
+      },
+      "after": {
+        "start_date": "2018-11",
+        "end_date": "2018-12"
+      }
+    }
+  ],
+  "country": {
+    "filename": "osmim-imagicode-S2A_R093_N41_20150828T092005.geojson"
+  },
+  "itu": {
+    "before": "https://urbigis.com/geoproxy/4ac1cd2049d8857b21d9ff38339f7c1SERVICE=WMS&REQUEST=GETMAP&FORMAT=image/png8&VERSION=1.3.0&LAYERS=6139ca97-1bc9-4952-a441-b68957ab222c&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "after": "https://urbigis.com/geoproxy/4ac1cd2049d8857b21d9ff38339f7c1?SERVICE=WMS&REQUEST=GETMAP&STYLES=&FORMAT=image/png8&VERSION=1.3.0&LAYERS=6139ca97-1bc9-4952-a441-b68957ab222c&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}"
+  },
+  "arcgis": {
+    "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery_Dates/MapServer/export?f=image&format=png&transparent=true&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&layers=show:0&foo={proj}"
+  },
+  "tms": [
+    {
+      "path": "sources/south-america/ar/GCBA-ortofotos-2017.geojson",
+      "projections": [
+        "EPSG:3857"
+      ]
+    },
+    {
+      "path": "sources/south-america/ar/GCBA-ortofotos-2021.geojson",
+      "projections": [
+        "EPSG:3857"
+      ]
+    }
+  ],
+  "missing_categories": [
+    {
+      "path": "sources/europe/pl/dOrthophotomap2015(aerialimage).geojson",
+      "category": "historicphoto"
+    }
+  ],
+  "duplicate_geometry": {
+    "path": "sources/europe/ch/KantonZug2019wms.geojson",
+    "before": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            8.493873,
+            47.115287
+          ],
+          [
+            8.518386,
+            47.085318
+          ],
+          [
+            8.518619,
+            47.085072
+          ],
+          [
+            8.518619,
+            47.085072
+          ],
+          [
+            8.573994,
+            47.07633
+          ],
+          [
+            8.586553,
+            47.079537
+          ],
+          [
+            8.555821,
+            47.129004
+          ],
+          [
+            8.512098,
+            47.133727
+          ],
+          [
+            8.493873,
+            47.115287
+          ]
+        ]
+      ]
+    },
+    "after": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            8.493873,
+            47.115287
+          ],
+          [
+            8.518386,
+            47.085318
+          ],
+          [
+            8.518619,
+            47.085072
+          ],
+          [
+            8.573994,
+            47.07633
+          ],
+          [
+            8.586553,
+            47.079537
+          ],
+          [
+            8.555821,
+            47.129004
+          ],
+          [
+            8.512098,
+            47.133727
+          ],
+          [
+            8.493873,
+            47.115287
+          ]
+        ]
+      ]
+    }
+  }
+}
