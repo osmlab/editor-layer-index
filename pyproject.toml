@@ -1,5 +1,118 @@
-[tool.black]
-line-length = 119
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
 
-[tool.isort]
-profile = "black"
+[project]
+name = "eli-tools"
+version = "0.1.0"
+description = "Build, validate, and maintain the OpenStreetMap Editor Layer Index"
+requires-python = ">=3.14"
+license = "Unlicense"
+license-files = ["src/eli/LICENSE"]
+dependencies = [
+  "pyproj>=3.8.0,<4",
+  "shapely==2.2.0",
+  "regex==2026.9.29",
+  "validators==0.36.0",
+  "colorlog==6.12.0",
+  "jsonschema==4.26.0",
+  "certifi>=2026.10.23",
+  "mercantile==1.2.1",
+  "requests==2.34.2",
+  "urllib3==2.8.0",
+  "aiofiles==25.1.0",
+  "aiohttp[speedups]==3.14.5",
+  "imagehash==4.3.2",
+  "python-magic==0.4.27",
+  "pillow==13.0.0",
+  "PyYAML>=6.0.3",
+  "matplotlib>=3.11.2",
+  "lxml>=6.0,<7",
+  "pycountry>=24.6",
+]
+
+[project.scripts]
+eli = "eli.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest==9.1.1",
+  "pytest-cov==7.1.0",
+  "ruff",
+  "mypy",
+  "types-requests",
+  "types-PyYAML",
+  "types-aiofiles",
+  "types-jsonschema",
+  "types-shapely",
+  "types-regex",
+  "pyrefly",
+  "pylint",
+  "flake8>=7.4.1",
+  "types-lxml>=2026.2.16",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/eli"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src/eli",
+  "/pyproject.toml",
+  "/README.md",
+  "/DEVELOPMENT.md",
+  "/LINTING.md",
+  "/DEPENDENCY-AUDIT.md",
+  "/.flake8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "S113"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+files = ["src/eli", "tests"]
+
+# Mercantile does not distribute typing information or a published stub package.
+[[tool.mypy.overrides]]
+module = ["mercantile.*"]
+ignore_missing_imports = true
+
+[tool.pyright]
+include = ["src/eli", "tests"]
+extraPaths = ["src"]
+pythonVersion = "3.14"
+typeCheckingMode = "standard"
+venvPath = "."
+venv = ".venv"
+
+[tool.pyrefly]
+project-includes = ["src/eli", "tests"]
+search-path = ["src"]
+python-version = "3.14"
+python-interpreter-path = ".venv/bin/python"
+
+[tool.pylint.messages_control]
+disable = [
+  "C0116", # missing-function-docstring
+  "C0415", # import-outside-toplevel
+]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.main]
+# pyproj.database.get_codes is a documented C-extension API used by the CRS registry.
+extension-pkg-allow-list = ["pyproj", "lxml.etree"]
+
+[tool.pylint.basic]
+# JSON is the public type-alias acronym used throughout the package.
+good-names = ["JSON"]

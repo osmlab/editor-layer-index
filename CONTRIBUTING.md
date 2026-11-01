@@ -100,7 +100,7 @@ Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) t
 
 After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test it in the iD editor you can try adding the URL as a "Custom" background.
 
-We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
+CI validates source changes and generates the combined files automatically. Contributors should commit source changes, not generated imagery files. For optional local checks, run `uv sync --locked` followed by `uv run eli check`. See [DEVELOPMENT.md](DEVELOPMENT.md) for the tooling and maintenance commands.
 
 ### Translations
 
@@ -137,5 +137,5 @@ use the following commands:
 * `tx push -s`  - upload latest source `/i18n/en.yaml` file to Transifex
 * `tx pull -a`  - download latest translation files to `/i18n/<lang>.yaml`
 
-For convenience you can also run these commands as `make txpush` or `make txpull`.
+Use `uv run eli translations push` to regenerate and upload English source strings, or `uv run eli translations pull` to download translations. The Transifex CLI remains an external dependency.
 

@@ -1,3 +1,6 @@
 *.geojson linguist-detectable
 
 site/libs/** linguist-vendored
+
+# Preserve the original translation export's intentional final blank line.
+tests/data/exports/en.yaml whitespace=-blank-at-eof
