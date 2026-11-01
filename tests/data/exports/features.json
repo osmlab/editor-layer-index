@@ -1,0 +1,157 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "example",
+      "name": "Ünicode imagery",
+      "type": "tms",
+      "url": "https://example.org/{zoom}/{x}/{y}",
+      "category": "photo",
+      "country_code": "DE",
+      "min_zoom": 0,
+      "max_zoom": 30,
+      "default": false,
+      "best": true,
+      "overlay": true,
+      "i18n": true,
+      "description": "déjà vu",
+      "start_date": "2020",
+      "end_date": "2021",
+      "privacy_policy_url": false,
+      "attribution": {
+        "text": "© Test",
+        "url": "https://example.org",
+        "required": true
+      },
+      "available_projections": [
+        "EPSG:3857"
+      ]
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            0.123456789,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            0.123456789,
+            0
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.75,
+            0.5
+          ],
+          [
+            0.75,
+            0.75
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "multiple",
+      "name": "Multiple",
+      "type": "wms",
+      "url": "https://example.org/{zoom}/{x}/{y}",
+      "category": "photo",
+      "country_code": "DE",
+      "min_zoom": 0,
+      "max_zoom": 30,
+      "default": false,
+      "best": true,
+      "overlay": true,
+      "i18n": true,
+      "description": "déjà vu",
+      "start_date": "2020",
+      "end_date": "2021",
+      "privacy_policy_url": false,
+      "attribution": {
+        "text": "© Test",
+        "url": "https://example.org",
+        "required": true
+      },
+      "available_projections": [
+        "EPSG:3857"
+      ]
+    },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "world",
+      "name": "World",
+      "type": "bing",
+      "url": "https://example.org",
+      "category": "photo"
+    },
+    "geometry": null
+  }
+]

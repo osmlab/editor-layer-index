@@ -14,7 +14,7 @@ The goal of this project is to maintain a canonical representation of the layers
 
 Both imagery and other raster data that is useful for mapping are within scope of the project.
 
-This list is purely targeted at OpenStreetMap and does not include layers only useful for other projects such as [Open Historical Map](http://www.openhistoricalmap.org/) if the layers are not also useful for OpenStreetMap. With the way this list is structured it is easy to combine it with additional layer sources simply by copying the additional sources into their own directory and running `make`.
+This list is purely targeted at OpenStreetMap and does not include layers only useful for other projects such as [Open Historical Map](http://www.openhistoricalmap.org/) if the layers are not also useful for OpenStreetMap. With the way this list is structured it is easy to combine it with additional layer sources simply by copying the additional sources into their own directory and running `uv run eli build`.
 
 Some sources in this list are usable in OpenStreetMap because permission was specifically given to use them with OpenStreetMap and this permission does not extend to other projects.  See [FAQ.md](FAQ.md#what-imagery-licenses-are-compatible-with-this-index) for information about which imagery licenses are compatible with this index.
 

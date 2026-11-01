@@ -2,41 +2,59 @@ name: Check PR
 
 on:
   pull_request:
-    branches:
-      - gh-pages
+    branches: [gh-pages]
+
+permissions:
+  contents: read
 
 jobs:
-  check:
-    name: Check PR
-    runs-on: [ubuntu-24.04]
-    if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]')"
+  offline:
+    name: Offline checks (Python ${{ matrix.python }})
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python: ['3.14', '3.15']
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
-
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - uses: actions/checkout@v7.0.1
         with:
-          python-version: "3.10"
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install -U pip wheel
-          python -m pip install -r requirements.txt
-
-      - name: Basic check
-        run: find sources -name \*.geojson | xargs python scripts/check.py
-
-      - name: Get file changes
-        id: get_file_changes
-        uses: trilom/file-changes-action@v1.2.4
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v10.3.2
         with:
-          output: '" "'
+          enable-cache: true
+          python-version: ${{ matrix.python }}
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y libmagic1
+      - run: uv sync --locked
+      - run: uv run --locked ruff check .
+      - run: uv run --locked ruff format --check .
+      - run: uv run --locked flake8 src tests
+      - run: uv run --locked pylint src/eli tests
+      - run: uv run --locked pyrefly check
+      - run: uv run --locked mypy
+      - run: uv run --locked pytest --cov=eli --cov-report=term-missing
+      - run: uv run --locked eli check
+      - run: uv run --locked eli build --output-dir build
+      - run: uv run --locked eli site --build-dir build --output-dir build/site
 
-      - name: Echo file changes
-        run: |
-          echo "Changed files: ${{ steps.get_file_changes.outputs.files }}"
-
-      - name: Strict check
-        run: |
-          python scripts/strict_check.py "${{ steps.get_file_changes.outputs.files }}"
+  strict:
+    name: Strict changed-source checks
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: astral-sh/setup-uv@v10.3.2
+        with:
+          enable-cache: true
+          python-version: '3.14'
+      - run: sudo apt-get update && sudo apt-get install -y libmagic1
+      - run: uv sync --locked --no-dev
+      - name: Check sources changed by this PR
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: >-
+          uv run --locked --no-dev eli check --strict
+          --changed-from "$BASE_SHA" --head "$HEAD_SHA"
