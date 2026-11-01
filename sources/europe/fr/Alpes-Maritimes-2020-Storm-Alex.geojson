@@ -1,7 +1,11 @@
 {
     "type": "Feature",
     "properties": {
-        "available_projections": ["EPSG:3857"],
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
         "id": "fr.dpt.06.2020.storm.alex",
         "name": "Alpes-Maritimes 2020 (Storm Alex)",
         "type": "wms",
