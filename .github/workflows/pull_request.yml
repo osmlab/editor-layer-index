@@ -58,3 +58,10 @@ jobs:
         run: >-
           uv run --locked --no-dev eli check --strict
           --changed-from "$BASE_SHA" --head "$HEAD_SHA"
+          --known-failures known-failures.json --report changed-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: changed-source-audit
+          path: changed-audit.json
+          if-no-files-found: ignore

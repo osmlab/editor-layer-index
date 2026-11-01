@@ -14,6 +14,7 @@ from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
 from eli.common import get_logger, request_get, schema_validator
+from eli.image_validation import image_payload
 from eli.libeli import eliutils
 
 
@@ -31,6 +32,9 @@ class Message:
 
     level: MessageLevel
     message: str
+    code: str = ""
+    url: str = ""
+    status: int | None = None
 
 
 class ValidationContext:
@@ -176,7 +180,12 @@ class ValidationContext:
             if not r.status_code == 200:
                 return (False, r.status_code, None)
             filetype: str = magic.from_buffer(r.content, mime=True)
-            return (filetype in {"image/png", "image/jpeg", "image/webp"}, r.status_code, filetype)
+            valid, _ = image_payload(r.content)
+            return (
+                valid and filetype in {"image/png", "image/jpeg", "image/webp"},
+                r.status_code,
+                filetype,
+            )
         except (requests.RequestException, magic.MagicException) as e:
             self.logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
         return (False, -1, None)

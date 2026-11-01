@@ -91,6 +91,7 @@ def test_unknown_or_unbounded_layer_does_not_invent_coverage_failure(
     )
     monkeypatch.setattr(wmshelper, "WMSCapabilities", Mock(return_value=caps))
     monkeypatch.setattr(StrictChecker, "get_text_encoded", Mock(return_value=(Mock(), "xml")))
+    monkeypatch.setattr(StrictChecker, "check_rendering", Mock())
     messages: list[Message] = []
     StrictChecker(data_root).check_wms(feature, messages)
     assert not any("outside" in m.message for m in messages)

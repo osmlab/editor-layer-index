@@ -7,7 +7,7 @@ from jsonschema import ValidationError
 from shapely.geometry import shape
 from shapely.validation import explain_validity
 
-from eli.common import get_logger, load_json, schema_validator
+from eli.common import canonical_request_url, get_logger, load_json, schema_validator
 from eli.libeli.geometry import validate_polygon_coordinates
 from eli.projections import unused_projections
 
@@ -18,6 +18,7 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
     logger = get_logger(max(verbosity, 1))
     validator = schema_validator(root)
     seen_ids: set[str] = set()
+    seen_urls: dict[tuple[str, tuple[tuple[str, str], ...]], str] = {}
     failed = False
     spacesave = 0
     tested_sources_count = 0
@@ -50,6 +51,19 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
             if sourceid in seen_ids:
                 raise ValidationError(f"Id {sourceid} used multiple times")
             seen_ids.add(sourceid)
+
+            request_url = canonical_request_url(source["properties"]["url"])
+            if request_url in seen_urls:
+                logger.warning("%s duplicates imagery URL of %s", filename, seen_urls[request_url])
+            seen_urls[request_url] = filename
+            if (
+                source["properties"]["type"] not in {"wms", "wmts"}
+                and "available_projections" in source["properties"]
+            ):
+                logger.warning(
+                    "%s: available_projections only makes sense for selected WMS/WMTS layers",
+                    filename,
+                )
 
             # {z} instead of {zoom}
             if "{z}" in source["properties"]["url"]:

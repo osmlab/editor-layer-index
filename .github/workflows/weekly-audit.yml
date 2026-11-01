@@ -1,0 +1,38 @@
+name: Weekly full imagery audit
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: weekly-imagery-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: github.repository == 'osmlab/editor-layer-index'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: gh-pages
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v10.3.2
+        with:
+          enable-cache: true
+          python-version: '3.14'
+      - run: sudo apt-get update && sudo apt-get install -y libmagic1
+      - run: uv sync --locked --no-dev
+      - name: Check entire catalogue
+        shell: bash
+        run: |
+          set -o pipefail
+          timeout --signal=INT --kill-after=30s 320m uv run --locked --no-dev eli check --strict --known-failures known-failures.json --report audit.json 2>&1 | tee audit.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: imagery-audit
+          path: |
+            audit.json
+            audit.log

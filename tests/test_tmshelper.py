@@ -22,7 +22,7 @@ def test_bounding_box(tilemapresource: tmshelper.TileMapResource) -> None:
     """Test if bounding box is parsed"""
     assert tilemapresource.tile_map is not None
     assert tilemapresource.tile_map.bbox84 == BoundingBox(
-        west=-180.0, east=180.0, south=-180.0, north=90.0
+        west=-180.0, east=180.0, south=-90.0, north=90.0
     )
 
 

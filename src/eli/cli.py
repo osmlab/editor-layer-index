@@ -65,6 +65,8 @@ def parser() -> argparse.ArgumentParser:
         "check", help="Validate sources; strict mode also contacts imagery servers"
     )
     check.add_argument("paths", nargs="*", help="GeoJSON files or directories (default: sources)")
+    check.add_argument("--known-failures", help="Exact, expiring HTTP failures to report as known")
+    check.add_argument("--report", help="Write strict diagnostics as JSON")
     check.add_argument("--strict", action="store_true", help="Also run live strict checks")
     check.add_argument(
         "--changed-from", help="Check only sources changed since the merge base with this Git ref"
@@ -164,12 +166,20 @@ def _run_check(args: argparse.Namespace, root: Path) -> int:
             return 0
     else:
         paths = discover(args.paths, root)
+    if (args.known_failures or args.report) and not args.strict:
+        raise ValueError("--known-failures and --report require --strict")
     status = run(paths, root, args.verbose)
-    if status or not args.strict:
+    if (status and not args.report) or not args.strict:
         return status
+    from eli.known_failures import KnownFailures
     from eli.strict import StrictChecker
 
-    return StrictChecker(root, max(2, args.verbose)).run(paths, root)
+    checker = StrictChecker(root, max(2, args.verbose))
+    checker.known_failures = KnownFailures(
+        resolve_path(root, args.known_failures) if args.known_failures else None
+    )
+    checker.report_path = resolve_path(root, args.report) if args.report else None
+    return int(bool(checker.run(paths, root) or status))
 
 
 def _run_build(args: argparse.Namespace, root: Path) -> int:

@@ -154,9 +154,14 @@ class TileMapResource:
                 bbox = BoundingBox(
                     west=float(find_attr(boundingbox_element, "minx")),
                     east=float(find_attr(boundingbox_element, "maxx")),
-                    south=float(find_attr(boundingbox_element, "minx")),
+                    south=float(find_attr(boundingbox_element, "miny")),
                     north=float(find_attr(boundingbox_element, "maxy")),
                 )
+
+                if crs in {"EPSG:3785", "EPSG:3857"} and (
+                    -180 <= bbox.west < bbox.east <= 180 and -90 <= bbox.south < bbox.north <= 90
+                ):
+                    raise ValueError("Suspicious TMS bbox: degree-sized bounds declared as metres")
 
                 # Calc bounding box in EPSG:4326
                 if crs == "EPSG:4326":
@@ -165,9 +170,10 @@ class TileMapResource:
                     crs_from = CRS.from_string(crs)
                     crs_to = CRS.from_string("EPSG:4326")
                     transformer = get_transformer(crs_from, crs_to)
-                    tl = transformer.transform(bbox.west, bbox.north)
-                    br = transformer.transform(bbox.east, bbox.south)
-                    bbox84 = BoundingBox(west=tl[0], east=br[0], south=br[1], north=tl[1])
+                    west, south, east, north = transformer.transform_bounds(
+                        bbox.west, bbox.south, bbox.east, bbox.north
+                    )
+                    bbox84 = BoundingBox(west=west, east=east, south=south, north=north)
 
             tilesets = [
                 parse_tileset(tileset_element)

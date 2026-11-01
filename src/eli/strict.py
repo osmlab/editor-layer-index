@@ -17,11 +17,12 @@ from shapely.validation import explain_validity, make_valid
 
 from eli.common import load_json
 from eli.libeli import eliutils, tmshelper, wmshelper, wmtshelper
+from eli.live_probes import LiveProbes
 from eli.projections import unused_projections
-from eli.strict_context import Message, MessageLevel, ValidationContext
+from eli.strict_context import Message, MessageLevel
 
 
-class StrictChecker(ValidationContext):
+class StrictChecker(LiveProbes):
     """Check source metadata and imagery services for one invocation."""
 
     # Protocol alternatives must accumulate independent WMS diagnostics instead of returning early.
@@ -114,6 +115,7 @@ class StrictChecker(ValidationContext):
             )
             return
         if is_esri:
+            self.check_rendering(source, messages)
             return
         if "styles" not in wms_args:
             messages.append(
@@ -135,10 +137,12 @@ class StrictChecker(ValidationContext):
             wms_getcapabilities_url = None
             try:
                 wms_getcapabilities_url = wms_url.get_capabilities_url(wms_version=wms_version)
-                _, xml = self.get_text_encoded(wms_getcapabilities_url, headers=source_headers)
+                response, xml = self.get_text_encoded(
+                    wms_getcapabilities_url, headers=source_headers
+                )
                 if xml is None:
                     exceptions.append(
-                        f"WMS: no capabilities document from {wms_getcapabilities_url}"
+                        f"WMS: HTTP code: {response.status_code} from {wms_getcapabilities_url}"
                     )
                     break
                 wms = wmshelper.WMSCapabilities(xml)
@@ -169,8 +173,9 @@ class StrictChecker(ValidationContext):
             geom = None
         else:
             geom = shape(source["geometry"])
-        # Protocol alternatives must accumulate independent WMS diagnostics instead of returning
-        # early.
+            # Protocol alternatives must accumulate independent WMS diagnostics instead of returning
+            # early.
+
         # pylint: disable-next=R1702
         if "layers" in wms_args:
             layers = wms_args["layers"].split(",")
@@ -333,16 +338,10 @@ class StrictChecker(ValidationContext):
                     )
                 )
 
-    def check_wms_endpoint(self, source: dict[str, Any], messages: list[Message]) -> None:
-        """Check WMS Endpoint source
+        self.check_rendering(source, messages)
 
-        Parameters
-        ----------
-        source : Dict[str, Any]
-            The source
-        messages : List[Message]
-            The list to add messages to
-        """
+    def check_wms_endpoint(self, source: dict[str, Any], messages: list[Message]) -> None:
+        """Check a capabilities catalogue without pretending it is a selected layer."""
         url = source["properties"]["url"]
         wms_url = wmshelper.WMSURL(url)
         try:
@@ -362,10 +361,12 @@ class StrictChecker(ValidationContext):
             wms_getcapabilities_url = None
             try:
                 wms_getcapabilities_url = wms_url.get_capabilities_url(wms_version=wms_version)
-                _, xml = self.get_text_encoded(wms_getcapabilities_url, headers=source_headers)
+                response, xml = self.get_text_encoded(
+                    wms_getcapabilities_url, headers=source_headers
+                )
                 if xml is None:
                     exceptions.append(
-                        f"WMS: no capabilities document from {wms_getcapabilities_url}"
+                        f"WMS: HTTP code: {response.status_code} from {wms_getcapabilities_url}"
                     )
                     break
                 wms = wmshelper.WMSCapabilities(xml)
@@ -387,15 +388,7 @@ class StrictChecker(ValidationContext):
                 messages.append(Message(level=MessageLevel.ERROR, message=msg))
 
     def check_wmts(self, source: dict[str, Any], messages: list[Message]) -> None:
-        """Check WMTS source
-
-        Parameters
-        ----------
-        source : Dict[str, Any]
-            The source
-        messages : List[Message]
-            The list to add messages to
-        """
+        """Validate a WMTS capabilities document and its tile schemes."""
         url = source["properties"]["url"]
         source_headers = self.get_http_headers(source)
         try:
@@ -454,15 +447,7 @@ class StrictChecker(ValidationContext):
     # TMS metadata and tile probes accumulate independent diagnostics for one source.
     # pylint: disable-next=R0912,R0914,R0915
     def check_tms(self, source: dict[str, Any], messages: list[Message]) -> None:
-        """Check TMS source
-
-        Parameters
-        ----------
-        source : Dict[str, Any]
-            The source
-        messages : List[Message]
-            The list to add messages to
-        """
+        """Check tile metadata and image coverage at each zoom."""
         # TMS metadata and tile probes accumulate independent diagnostics for one source.
         # pylint: disable-next=R1702
         try:
@@ -583,7 +568,9 @@ class StrictChecker(ValidationContext):
                         ValueError,
                         KeyError,
                     ) as e:
-                        print(f"Error fetching TMS: {e}: {url}")
+                        messages.append(
+                            Message(MessageLevel.WARNING, f"TMS metadata check failed: {e}: {url}")
+                        )
             if geom is not None:
                 centroid: Point = geom.representative_point()
             else:
@@ -615,7 +602,17 @@ class StrictChecker(ValidationContext):
                 if url_is_good:
                     zoom_success.append(zoom)
                 else:
-                    zoom_failures.append((zoom, query_url, http_code, mime))
+                    recovered = self.recover_tile(source, zoom, parameters)
+                    if recovered:
+                        zoom_success.append(zoom)
+                        messages.append(
+                            Message(
+                                MessageLevel.WARNING,
+                                f"Zoom {zoom} has partial coverage; first sample failed",
+                            )
+                        )
+                    else:
+                        zoom_failures.append((zoom, query_url, http_code, mime))
 
             for zoom in range(min_zoom, max_zoom + 1):
                 test_zoom(zoom)
@@ -684,8 +681,10 @@ class StrictChecker(ValidationContext):
     # pylint: disable-next=R0912,R0914,R0915
     def run(self, paths: list[Path], root: Path) -> int:
         failed = False
+        report: list[dict[str, Any]] = []
         spacesave = 0
-        for path in paths:
+        self.write_report(report, complete=False)
+        for source_index, path in enumerate(paths):
             self.filename = str(path.relative_to(root)) if path.is_relative_to(root) else str(path)
             if self.filename.lower()[-8:] != ".geojson":
                 self.logger.debug("%s is not a geojson file, skip", self.filename)
@@ -704,6 +703,16 @@ class StrictChecker(ValidationContext):
                         Message(
                             level=MessageLevel.ERROR,
                             message=f"{self.filename} JSON validation error: {e}",
+                        )
+                    )
+                if (
+                    source["properties"]["type"] not in {"wms", "wmts"}
+                    and "available_projections" in source["properties"]
+                ):
+                    messages.append(
+                        Message(
+                            MessageLevel.ERROR,
+                            "available_projections is only valid for selected WMS/WMTS layers",
                         )
                     )
                 self.logger.info("Type: %s", source["properties"]["type"])
@@ -810,29 +819,7 @@ class StrictChecker(ValidationContext):
                                     ),
                                 )
                             )
-                if "icon" in source["properties"] and source["properties"]["icon"].startswith(
-                    "http"
-                ):
-                    url = source["properties"]["icon"]
-                    try:
-                        r = self.get_response(url, headers=self.headers, verify=False)
-                        if not r.status_code == 200:
-                            messages.append(
-                                Message(
-                                    level=MessageLevel.ERROR,
-                                    message=(
-                                        f"{self.filename}: icon url {url}"
-                                        f" is not reachable: HTTP code: {r.status_code}"
-                                    ),
-                                )
-                            )
-                    except requests.RequestException as e:
-                        messages.append(
-                            Message(
-                                level=MessageLevel.ERROR,
-                                message=f"{self.filename}: icon url {url} is not reachable: {e}",
-                            )
-                        )
+                self.check_icon(source, messages)
                 if "privacy_policy_url" not in source["properties"]:
                     messages.append(
                         Message(
@@ -969,6 +956,9 @@ class StrictChecker(ValidationContext):
                             ),
                         )
                     )
+                report.extend(self.classify_diagnostics(messages))
+                if source_index % 20 == 0:
+                    self.write_report(report, complete=False)
                 for msg in [msg for msg in messages if msg.level == MessageLevel.INFO]:
                     self.logger.info(msg.message)
                 for msg in [msg for msg in messages if msg.level == MessageLevel.WARNING]:
@@ -986,10 +976,20 @@ class StrictChecker(ValidationContext):
             except Exception as e:
                 failed = True
                 self.logger.exception("Failed: %s", e)
+                report.append(
+                    {
+                        "source": self.filename,
+                        "level": "ERROR",
+                        "message": str(e),
+                        "known_failure": None,
+                        "code": "checker-exception",
+                    }
+                )
         if spacesave > 0:
             self.logger.warning(
                 "Disembedding all icons would save %s KB", round(spacesave / 1024.0, 2)
             )
+        self.write_report(report)
         if failed:
             return 1
         return 0

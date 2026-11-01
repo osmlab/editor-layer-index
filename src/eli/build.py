@@ -19,6 +19,8 @@ def export_source(path: Path, original: JSON) -> JSON:
         validate_geometry(rounded["geometry"])
     except ValueError:
         rounded["geometry"] = original["geometry"]
+    if rounded["properties"]["type"] not in {"wms", "wmts"}:
+        rounded["properties"].pop("available_projections", None)
     return rounded
 
 

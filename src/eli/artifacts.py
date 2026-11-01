@@ -64,6 +64,8 @@ def _geojson(root: Path, data: bytes, sources: list[JSON]) -> list[JSON]:
                 f"imagery.geojson: changed geometry for source {source['properties']['id']}"
             )
         rounded["geometry"] = feature["geometry"]
+        if rounded["properties"]["type"] not in {"wms", "wmts"}:
+            rounded["properties"].pop("available_projections", None)
         if feature != rounded:
             raise ValueError(
                 f"imagery.geojson: changed feature for source {source['properties']['id']}"

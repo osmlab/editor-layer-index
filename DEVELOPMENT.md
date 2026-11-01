@@ -164,3 +164,60 @@ remain failures; caching and quieter logging do not turn 403s into successes.
 Ruff's S113 rule guards explicit request timeouts, alongside the existing format,
 lint, type, test, and offline-source checks in CI. Deterministic regression tests
 cover the provider failures above without contacting external services.
+
+### Full live audit and known failures
+
+A weekly audit runs on Mondays at 06:17 UTC; it can also be dispatched manually.
+It checks the whole catalogue and uploads `audit.log` and `audit.json`, including
+on failure. Reports checkpoint during the scan; `complete: false` identifies an
+interrupted scan. A 320-minute process limit leaves time to upload the partial
+report before the job deadline. Changed-source PR checks upload `changed-audit.json`. To reproduce:
+
+```sh
+uv run eli check --strict --known-failures known-failures.json --report audit.json
+```
+
+`known-failures.json` is a JSON array. Each record requires an **exact URL**,
+an HTTP error `status`, a nonempty `reason`, an ISO `expires` date, and an
+`environment` (`github-actions` or `any`). For example:
+
+```json
+{
+  "url": "https://provider.example/privacy.pdf",
+  "status": 403,
+  "reason": "Provider bot protection rejects GitHub Actions; verified outside CI",
+  "expires": "2027-02-01",
+  "environment": "github-actions"
+}
+```
+
+No host wildcards, template URLs, success statuses, blanket source exemptions,
+or indefinite exceptions are accepted. Exceptions are opt-in, expire, and only
+match that exact URL and status. A 404 still fails if the known failure is 403.
+The original error and the reason remain in the report, and unused exceptions
+are listed for review. An unused rule may mean recovery, changed URLs, or an
+untested path; inspect it before removing it. The initial IBGE entries document
+repeated 403s in GitHub Actions, with bot blocking as a suspected explanation.
+
+Actual rendering probes check every configured CRS of a selected WMS layer or
+ArcGIS export service, plus **EPSG:4326 and EPSG:3857 even if unadvertised**.
+A configured CRS must return decodable imagery. An unsupported, unconfigured
+CRS is informational; a working but omitted common CRS is a recommendation.
+Samples use up to three interior locations. All-uniform samples warn rather
+than fail, because overlays, sea, and snow can legitimately be uniform. Probing
+cannot prove that imagery depicts the right year or has appropriate permission.
+WMS/WMTS catalogues remain capabilities checks rather than arbitrary selections
+of every layer. Mercator probes skip locations outside its latitude range.
+
+Raster icons and imagery are decoded, and SVG icons must parse as SVG; HTTP 200
+HTML, JSON, XML errors, and truncated images are rejected. Failed TMS samples
+are retried at other interior locations to distinguish partial coverage from
+an unavailable zoom. Suspicious TMS degree-sized bounds labelled as projected
+metres are reported as metadata warnings, not silently reinterpreted.
+
+Only selected `wms` and `wmts` layers carry `available_projections` in generated
+outputs. Offline lint warns about legacy occurrences on other types; strict
+checks reject them. Source files are never silently rewritten. Duplicate request
+URLs warn even if query parameters appear in a different order; layer order and
+style values remain significant. HTTP reachability alone still cannot establish
+that a licence or privacy policy applies to the dataset: those need review.

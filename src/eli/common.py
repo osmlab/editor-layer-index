@@ -4,6 +4,7 @@ import json
 import logging
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlsplit
 
 import colorlog
 import requests
@@ -89,3 +90,12 @@ SOURCE_METADATA_FIELDS = (
     "attribution",
     "icon",
 )
+
+
+def canonical_request_url(url: str) -> tuple[str, tuple[tuple[str, str], ...]]:
+    """Compare query order without changing layer/style values or actual requests."""
+    parts = urlsplit(url)
+    return (
+        parts._replace(query="", fragment="").geturl(),
+        tuple(sorted(parse_qsl(parts.query, keep_blank_values=True))),
+    )
