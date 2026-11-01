@@ -6,7 +6,9 @@ import xml.etree.ElementTree as ET
 from PIL import Image, UnidentifiedImageError
 
 
-def image_payload(data: bytes, *, allow_svg: bool = False) -> tuple[bool, bool]:
+def image_payload(
+    data: bytes, *, allow_svg: bool = False, expected_size: tuple[int, int] | None = None
+) -> tuple[bool, bool]:
     """Return (decodable, blank); uniform imagery is suspicious, not necessarily wrong."""
     if allow_svg:
         try:
@@ -17,9 +19,13 @@ def image_payload(data: bytes, *, allow_svg: bool = False) -> tuple[bool, bool]:
             pass
     try:
         with Image.open(io.BytesIO(data)) as image:
+            if expected_size is not None and image.size != expected_size:
+                return False, False
             if image.width * image.height > 16_777_216:
                 return False, False
             image.load()
-            return True, len(image.convert("RGBA").getcolors(2) or []) == 1
+            rgba = image.convert("RGBA")
+            transparent = rgba.getchannel("A").getbbox() is None
+            return True, transparent or len(rgba.getcolors(2) or []) == 1
     except UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError:
         return False, False

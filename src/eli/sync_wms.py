@@ -28,6 +28,7 @@ from shapely.geometry.base import BaseGeometry
 from shapely.geometry.geo import shape
 
 from eli.libeli import eliutils, wmshelper
+from eli.libeli.geometry import interior_test_point
 from eli.projections import unused_projections
 
 ZOOM_LEVEL = 14
@@ -478,7 +479,7 @@ class WMSSync:
                 pt: Point = Point(7.44, 46.56)
             else:
                 geom = shape(source["geometry"])
-                pt = geom.representative_point()
+                pt = interior_test_point(geom)
             test_zoom_level = ZOOM_LEVEL
             if "min_zoom" in source["properties"]:
                 test_zoom_level = max(source["properties"]["min_zoom"], test_zoom_level)

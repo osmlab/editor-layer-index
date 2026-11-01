@@ -28,7 +28,7 @@ WMS_URL = (
 
 
 def png() -> bytes:
-    image = Image.new("RGB", (4, 4), "white")
+    image = Image.new("RGB", (256, 256), "white")
     image.putpixel((0, 0), (0, 0, 0))
     output = io.BytesIO()
     image.save(output, "PNG")

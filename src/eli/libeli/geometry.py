@@ -2,7 +2,33 @@
 
 import math
 
+from shapely.geometry import MultiPolygon, Point, Polygon
+from shapely.geometry.base import BaseGeometry
+from shapely.ops import polylabel
+
 from eli.common import JSON
+
+
+def interior_test_point(geometry: BaseGeometry) -> Point:
+    """Approximate the pole of inaccessibility, respecting holes and islands.
+
+    Distances here are only for choosing a safe sample in lon/lat coordinates;
+    they are not geodesic measurements. A relative tolerance bounds the work.
+    """
+    if (
+        not isinstance(geometry, (Polygon, MultiPolygon))
+        or geometry.is_empty
+        or not geometry.is_valid
+    ):
+        raise ValueError("Test point requires a nonempty, valid coverage polygon")
+    polygon = (
+        max(geometry.geoms, key=lambda part: part.area)
+        if isinstance(geometry, MultiPolygon)
+        else geometry
+    )
+    west, south, east, north = polygon.bounds
+    point = polylabel(polygon, tolerance=max(east - west, north - south) / 1000)
+    return point if polygon.contains(point) else polygon.representative_point()
 
 
 def validate_polygon_coordinates(geometry: JSON, *, check_winding: bool = False) -> None:

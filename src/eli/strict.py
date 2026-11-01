@@ -17,8 +17,10 @@ from shapely.validation import explain_validity, make_valid
 
 from eli.common import load_json
 from eli.libeli import eliutils, tmshelper, wmshelper, wmtshelper
+from eli.libeli.geometry import interior_test_point
 from eli.live_probes import LiveProbes
 from eli.projections import unused_projections
+from eli.response_diagnostics import capabilities_failure
 from eli.strict_context import Message, MessageLevel
 
 
@@ -127,7 +129,7 @@ class StrictChecker(LiveProbes):
                     ),
                 )
             )
-        exceptions: list[str] = []
+        exceptions: list[Message] = []
         wms = None
         for wms_version in [None, "1.3.0", "1.1.1", "1.1.0", "1.0.0"]:
             if wms_version is None:
@@ -135,6 +137,7 @@ class StrictChecker(LiveProbes):
             else:
                 wms_version_str = wms_version
             wms_getcapabilities_url = None
+            response = None
             try:
                 wms_getcapabilities_url = wms_url.get_capabilities_url(wms_version=wms_version)
                 response, xml = self.get_text_encoded(
@@ -142,13 +145,17 @@ class StrictChecker(LiveProbes):
                 )
                 if xml is None:
                     exceptions.append(
-                        f"WMS: HTTP code: {response.status_code} from {wms_getcapabilities_url}"
+                        capabilities_failure(wms_version_str, wms_getcapabilities_url, response)
                     )
-                    break
+                    if response.status_code in {401, 403, 429}:
+                        break
+                    continue
                 wms = wmshelper.WMSCapabilities(xml)
                 break
             except (requests.ConnectionError, requests.Timeout) as e:
-                exceptions.append(f"WMS: {type(e).__name__}: {e} {wms_getcapabilities_url}")
+                exceptions.append(
+                    capabilities_failure(wms_version_str, wms_getcapabilities_url, error=e)
+                )
                 break
             except (
                 requests.RequestException,
@@ -157,11 +164,13 @@ class StrictChecker(LiveProbes):
                 ValueError,
                 KeyError,
             ) as e:
-                exceptions.append(f"WMS {wms_version_str}: Error: {e} {wms_getcapabilities_url}")
+                exceptions.append(
+                    capabilities_failure(wms_version_str, wms_getcapabilities_url, response, e)
+                )
                 continue
         if wms is None:
-            for msg in exceptions:
-                messages.append(Message(level=MessageLevel.ERROR, message=msg))
+            messages.extend(exceptions)
+            self.check_rendering(source, messages)
             return
         for access_constraint in wms.access_constraints:
             messages.append(
@@ -261,26 +270,9 @@ class StrictChecker(LiveProbes):
                 )
                 for layer_name in layers:
                     if layer_name in wms.layers:
-                        not_supported_crs: set[str] = set()
                         available_projections: list[str] = source["properties"][
                             "available_projections"
                         ]
-                        for crs in available_projections:
-                            if crs.upper() not in wms.layers[layer_name].crs:
-                                not_supported_crs.add(crs)
-                        if len(not_supported_crs) > 0:
-                            supported_crs_str = ",".join(wms.layers[layer_name].crs)
-                            not_supported_crs_str = ",".join(not_supported_crs)
-                            messages.append(
-                                Message(
-                                    level=MessageLevel.WARNING,
-                                    message=(
-                                        f"Layer '{layer_name}': CRS '{not_supported_crs_str}"
-                                        f"' not in: {supported_crs_str}"
-                                        ". Some server support CRS which are not advertised."
-                                    ),
-                                )
-                            )
                         supported_but_not_included: set[str] = set()
                         for crs in crs_should_included_if_available:
                             if (
@@ -338,7 +330,7 @@ class StrictChecker(LiveProbes):
                     )
                 )
 
-        self.check_rendering(source, messages)
+        self.check_rendering(source, messages, wms)
 
     def check_wms_endpoint(self, source: dict[str, Any], messages: list[Message]) -> None:
         """Check a capabilities catalogue without pretending it is a selected layer."""
@@ -572,7 +564,7 @@ class StrictChecker(LiveProbes):
                             Message(MessageLevel.WARNING, f"TMS metadata check failed: {e}: {url}")
                         )
             if geom is not None:
-                centroid: Point = geom.representative_point()
+                centroid: Point = interior_test_point(geom)
             else:
                 centroid = Point(6.1, 49.6)
             centroid_x: float = centroid.x
@@ -959,12 +951,7 @@ class StrictChecker(LiveProbes):
                 report.extend(self.classify_diagnostics(messages))
                 if source_index % 20 == 0:
                     self.write_report(report, complete=False)
-                for msg in [msg for msg in messages if msg.level == MessageLevel.INFO]:
-                    self.logger.info(msg.message)
-                for msg in [msg for msg in messages if msg.level == MessageLevel.WARNING]:
-                    self.logger.warning(msg.message)
-                for msg in [msg for msg in messages if msg.level == MessageLevel.ERROR]:
-                    self.logger.error(msg.message)
+                self.log_messages(messages)
                 if len([msg for msg in messages if msg.level == MessageLevel.ERROR]) > 0:
                     raise ValidationError("Errors occurred, see logs above.")
                 self.logger.info("Finished processing %s", self.filename)
@@ -975,7 +962,7 @@ class StrictChecker(LiveProbes):
             # pylint: disable-next=broad-exception-caught
             except Exception as e:
                 failed = True
-                self.logger.exception("Failed: %s", e)
+                self.logger.exception("%s: Unexpected checker failure: %s", self.filename, e)
                 report.append(
                     {
                         "source": self.filename,

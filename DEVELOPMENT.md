@@ -50,8 +50,9 @@ Normal offline PR checks always select the full corpus.
 Prefix these commands with `uv run`. `eli --help` and subcommand help describe
 arguments. Transifex commands require an independently installed modern `tx`
 client and its normal credentials configuration. Live checks retain the existing
-imagery-server TLS compatibility policy; synchronous requests have a 30-second
-timeout. WMS sync keeps its asynchronous processing and per-host limits.
+imagery-server TLS compatibility policy; synchronous requests have 5-second
+connect and 20-second read timeouts. WMS sync keeps its asynchronous processing
+and per-host limits.
 
 Builds do not edit sources. Every export renders successfully before previous
 outputs are replaced; failed replacements restore previous files. Set
@@ -251,6 +252,19 @@ than fail, because overlays, sea, and snow can legitimately be uniform. Probing
 cannot prove that imagery depicts the right year or has appropriate permission.
 WMS/WMTS catalogues remain capabilities checks rather than arbitrary selections
 of every layer. Mercator probes skip locations outside its latitude range.
+
+The sampling and diagnostics from PR #3089 are integrated into these commands.
+Samples approximate the pole of inaccessibility in the largest polygon
+component, respecting holes; their rectangles shrink to stay inside coverage
+and use a zoom within the source's limits. TMS checks and WMS sync reuse the
+same interior-point helper. Sources without geometry use intersected requested
+layer bounds when available. Image probes still run when capabilities fail.
+Every WMS image must decode at the requested 256×256 dimensions. A fully
+transparent image remains inconclusive even when its hidden RGB values vary.
+Provider errors include bounded XML/JSON/HTML explanations, HTTP status, MIME
+type, and the request URL. Every logged diagnostic identifies its source once.
+Version negotiation can recover from HTTP/protocol errors; transport failures
+and HTTP 401/403/429 do not trigger redundant capability-version requests.
 
 Raster icons and imagery are decoded, and SVG icons must parse as SVG; HTTP 200
 HTML, JSON, XML errors, and truncated images are rejected. Failed TMS samples

@@ -67,6 +67,18 @@ class ValidationContext:
         self._responses[key] = response
         return response
 
+    def log_messages(self, messages: list[Message]) -> None:
+        """Attribute every provider diagnostic to its source exactly once."""
+        for level, log in (
+            (MessageLevel.INFO, self.logger.info),
+            (MessageLevel.WARNING, self.logger.warning),
+            (MessageLevel.ERROR, self.logger.error),
+        ):
+            for diagnostic in messages:
+                if diagnostic.level == level:
+                    text = diagnostic.message
+                    log(text if text.startswith(self.filename) else f"{self.filename}: {text}")
+
     def get_http_headers(self, source: Any) -> dict[str, str]:
         """Extract http headers from source"""
         custom_headers: dict[str, str] = {}
@@ -155,7 +167,13 @@ class ValidationContext:
                 return (True, r.status_code)
             return (False, r.status_code)
         except requests.RequestException as e:
-            self.logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
+            self.logger.error(
+                "%s: Could not retrieve url: %s: %s: %s",
+                self.filename,
+                url,
+                type(e).__name__,
+                str(e).replace(url, "[request URL]"),
+            )
         return (False, -1)
 
     def test_image(
@@ -187,5 +205,11 @@ class ValidationContext:
                 filetype,
             )
         except (requests.RequestException, magic.MagicException) as e:
-            self.logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
+            self.logger.error(
+                "%s: Could not retrieve url: %s: %s: %s",
+                self.filename,
+                url,
+                type(e).__name__,
+                str(e).replace(url, "[request URL]"),
+            )
         return (False, -1, None)

@@ -7,11 +7,31 @@ import sys
 from pathlib import Path
 
 import pytest
+from shapely.geometry import MultiPolygon, Point, Polygon, box
 
 from eli.common import JSON
-from eli.libeli.geometry import validate_polygon_coordinates
+from eli.libeli.geometry import interior_test_point, validate_polygon_coordinates
 
 RING = [[0, 0], [1, 0], [1, 1], [0, 0]]
+
+
+def test_pole_of_inaccessibility() -> None:
+    assert interior_test_point(box(0, 0, 10, 10)).distance(Point(5, 5)) < 0.01
+    large = box(20, 20, 30, 30)
+    assert large.contains(interior_test_point(MultiPolygon([box(0, 0, 1, 1), large])))
+
+
+def test_interior_point_respects_holes_and_concavity() -> None:
+    polygon = Polygon(box(0, 0, 10, 10).exterior.coords, holes=[box(3, 3, 7, 7).exterior.coords])
+    assert polygon.contains(interior_test_point(polygon))
+    concave = Polygon([(0, 0), (8, 0), (8, 1), (1, 1), (1, 8), (0, 8), (0, 0)])
+    assert concave.contains(interior_test_point(concave))
+
+
+@pytest.mark.parametrize("polygon", [Polygon(), Polygon([(0, 0), (1, 1), (0, 1), (1, 0), (0, 0)])])
+def test_invalid_test_geometry(polygon: Polygon) -> None:
+    with pytest.raises(ValueError):
+        interior_test_point(polygon)
 
 
 @pytest.mark.parametrize(

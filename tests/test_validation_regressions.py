@@ -73,6 +73,7 @@ def test_transport_failure_does_not_retry_versions(
     feature["properties"].update(url=WMS_URL, type="wms", available_projections=["EPSG:4326"])
     fetch = Mock(side_effect=error)
     monkeypatch.setattr(StrictChecker, "get_text_encoded", fetch)
+    monkeypatch.setattr(StrictChecker, "check_rendering", Mock())
     messages: list[Message] = []
     getattr(StrictChecker(data_root), method)(feature, messages)
     assert fetch.call_count == 1
