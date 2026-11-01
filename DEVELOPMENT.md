@@ -110,20 +110,27 @@ The normal full-corpus CI check compares all recommendations, not just changed f
 
 `validation-baseline.json` records unresolved catalogue findings present when
 these checks were introduced, without changing any sources in the tooling PR.
+See [VALIDATION-FINDINGS.md](VALIDATION-FINDINGS.md) for the initial findings,
+including source links and overlap measurements.
 Known findings remain visible warnings. Exceptions match the exact diagnostic
 and SHA-256 fingerprints of the complete parsed source(s). New findings and
 changes to still-broken sources fail CI. Do not regenerate this file to make a
 failure pass: fix the underlying source and remove its obsolete baseline entries.
-A source revision that resolves the finding passes without needing an exception.
+A source revision that resolves a finding must remove its obsolete baseline
+entry in the same change: stale entries are errors. Full-corpus checks also
+reject entries for deleted sources. A partial check only assesses entries whose
+complete set of source IDs was checked; it does not mistake unselected sources
+for resolved or deleted findings.
 Tests exercise the actual before/after dates, duplicate geometry, directory,
 TMS projections, missing category, and Itu URL from PR #3093.
 
-All builds validate XML against a packaged, pinned JOSM XSD without network
-access, followed by required-category and source/geometry reconciliation checks.
+All builds check required categories and reconcile XML metadata and geometry
+against the sources. PR CI and the weekly audit additionally fetch
+`https://josm.openstreetmap.de/maps-1.0` using the common request timeout and
+validate against JOSM's current XSD. No upstream schema is bundled. Network or
+schema errors fail that separate step; offline builds remain reproducible.
 The upstream schema's repeating choice does not enforce category presence by
-itself. PR CI and the weekly audit also fetch `https://josm.openstreetmap.de/maps-1.0`
-using the common request timeout and validate against the current schema. Network
-or schema errors fail that separate step; offline builds remain reproducible.
+itself, so the independent category check remains necessary.
 
 ## Publishing and rollout
 

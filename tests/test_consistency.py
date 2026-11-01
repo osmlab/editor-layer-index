@@ -15,6 +15,15 @@ from eli.libeli.geometry import validate_polygon_coordinates
 
 HISTORY = json.loads((Path(__file__).parent / "data/regressions/3093.json").read_text())
 
+# A deliberately small test schema exercises the validator and HTTP plumbing.
+# CI checks the real generated corpus against the XSD fetched from JOSM.
+TEST_SCHEMA = b"""<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://josm.openstreetmap.de/maps-1.0" elementFormDefault="qualified">
+    <xs:element name="imagery"><xs:complexType><xs:sequence>
+      <xs:element name="zoom" minOccurs="0" type="xs:decimal"/>
+    </xs:sequence></xs:complexType></xs:element>
+</xs:schema>"""
+
 
 @pytest.mark.parametrize("case", HISTORY["dates"], ids=lambda case: case["id"])
 def test_historical_reversed_dates(
@@ -168,7 +177,53 @@ def test_existing_best_overlap_cannot_be_enlarged(
     assert run([source, other], data_root) == 1
     second["properties"]["best"] = False
     other.write_text(json.dumps(second))
+    assert run([source, other], data_root) == 1
+    (data_root / "validation-baseline.json").write_text('{"version":1,"failures":{}}')
     assert run([source, other], data_root) == 0
+
+
+def test_stale_metadata_baseline_requires_cleanup(
+    data_root: Path, source: Path, feature: JSON, caplog: pytest.LogCaptureFixture
+) -> None:
+    feature["properties"].update(start_date="2025", end_date="2024")
+    message = "test-layer: start_date is after end_date"
+    baseline = {"version": 1, "failures": {message: {"test-layer": source_fingerprint(feature)}}}
+    (data_root / "validation-baseline.json").write_text(json.dumps(baseline))
+    source.write_text(json.dumps(feature))
+    assert run([source], data_root) == 0
+    feature["properties"]["end_date"] = "2025"
+    source.write_text(json.dumps(feature))
+    assert run([source], data_root) == 1
+    assert "Stale validation baseline entry" in caplog.text
+    (data_root / "validation-baseline.json").unlink()
+    assert run([source], data_root) == 0
+
+
+def test_partial_selection_does_not_retire_unchecked_entries(
+    data_root: Path, source: Path, feature: JSON, caplog: pytest.LogCaptureFixture
+) -> None:
+    unrelated = copy.deepcopy(feature)
+    unrelated["properties"]["id"] = "unrelated"
+    other = source.with_name("unrelated.geojson")
+    other.write_text(json.dumps(unrelated))
+    baseline = {
+        "version": 1,
+        "failures": {
+            "unrelated: Missing category": {"unrelated": source_fingerprint(unrelated)},
+            "Significant best overlap: test-layer / unrelated": {
+                s["properties"]["id"]: source_fingerprint(s) for s in (feature, unrelated)
+            },
+        },
+    }
+    (data_root / "validation-baseline.json").write_text(json.dumps(baseline))
+    assert run([source], data_root) == 0
+    assert "Stale validation baseline entry" not in caplog.text
+    # Once the whole corpus is assessed, both resolved entries must be removed.
+    assert run([source, other], data_root) == 1
+    other.unlink()
+    caplog.clear()
+    assert run([source], data_root) == 1
+    assert "Stale validation baseline entry" in caplog.text
 
 
 def test_baseline_only_accepts_unchanged_sources(feature: JSON) -> None:
@@ -221,9 +276,17 @@ def test_published_schema_cli(
     build = data_root / "build"
     build.mkdir()
     (build / "imagery.xml").write_text('<imagery xmlns="http://josm.openstreetmap.de/maps-1.0"/>')
-    schema = (Path(__file__).parents[1] / "src/eli/data/maps.xsd").read_bytes()
-    fetch = Mock(return_value=Mock(content=schema))
+    fetch = Mock(return_value=Mock(content=TEST_SCHEMA))
     monkeypatch.setattr("eli.common.request_get", fetch)
     assert main(["--root", str(data_root), "validate-josm"]) == 0
     fetch.assert_called_once_with("https://josm.openstreetmap.de/maps-1.0")
     assert "passes JOSM" in capsys.readouterr().out
+
+
+@pytest.mark.parametrize("child", ["<unknown/>", "<zoom>1e-07</zoom>"])
+def test_downloaded_schema_rejects_invalid_xml(child: str) -> None:
+    from eli.artifacts import validate_josm_schema
+
+    xml = f'<imagery xmlns="http://josm.openstreetmap.de/maps-1.0">{child}</imagery>'.encode()
+    with pytest.raises(ValueError, match="JOSM schema"):
+        validate_josm_schema(xml, TEST_SCHEMA)

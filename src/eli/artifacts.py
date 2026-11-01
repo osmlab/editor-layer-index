@@ -2,8 +2,6 @@
 
 import json
 import xml.etree.ElementTree as ET
-from functools import cache
-from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
@@ -17,15 +15,6 @@ from eli.libeli.geometry import validate_polygon_coordinates
 
 OUTPUTS = ("imagery.geojson", "imagery.json", "imagery.xml", "i18n/en.yaml")
 XML_NAMESPACE = "{http://josm.openstreetmap.de/maps-1.0}"
-
-
-@cache
-def josm_schema() -> etree.XMLSchema:
-    """Load the pinned upstream schema without network access or entity resolution."""
-    parser = etree.XMLParser(resolve_entities=False, no_network=True)
-    return etree.XMLSchema(
-        etree.fromstring(files("eli").joinpath("data/maps.xsd").read_bytes(), parser)
-    )
 
 
 def validate_josm_schema(xml: bytes, schema: bytes) -> None:
@@ -149,11 +138,6 @@ def _xml_geometry(entry: ET.Element, geometry: JSON | None) -> None:
 
 
 def _xml(data: bytes, features: list[JSON]) -> None:
-    try:
-        document = etree.fromstring(data, etree.XMLParser(resolve_entities=False, no_network=True))
-        josm_schema().assertValid(document)
-    except (etree.XMLSyntaxError, etree.DocumentInvalid) as error:
-        raise ValueError(f"imagery.xml: JOSM schema: {error}") from error
     try:
         root = ET.fromstring(data)
     except ET.ParseError as error:

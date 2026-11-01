@@ -7,7 +7,7 @@ from jsonschema import ValidationError
 from shapely.geometry import shape
 from shapely.validation import explain_validity
 
-from eli.common import canonical_request_url, get_logger, load_json, schema_validator
+from eli.common import canonical_request_url, discover, get_logger, load_json, schema_validator
 from eli.consistency import baseline_allows, best_overlaps, metadata_errors
 from eli.libeli.geometry import validate_polygon_coordinates
 from eli.projections import unused_projections
@@ -30,6 +30,7 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
     spacesave = 0
     tested_sources_count = 0
     valid_sources = []
+    observed_findings: set[str] = set()
     for path in paths:
         filename = str(path.relative_to(root)) if path.is_relative_to(root) else str(path)
 
@@ -53,6 +54,7 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
 
             for diagnostic in metadata_errors(source, path, root):
                 message = f"{source['properties']['id']}: {diagnostic}"
+                observed_findings.add(message)
                 if baseline_allows(baseline, message, [source]):
                     logger.warning("Existing contradiction: %s", message)
                 else:
@@ -221,11 +223,22 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
     by_id = {s["properties"]["id"]: s for s in valid_sources}
     for first, second, area, fraction in best_overlaps(valid_sources):
         message = f"Significant best overlap: {first} / {second}"
+        observed_findings.add(message)
         details = f"{message}: {area:.2f} km², {fraction:.1%} of smaller footprint"
         if baseline_allows(baseline, message, [by_id[first], by_id[second]]):
             logger.warning("Existing contradiction: %s", details)
         else:
             logger.error("%s", details)
+            failed = True
+    # Only retire exceptions whose complete context was actually assessed.
+    # A complete valid corpus can also identify exceptions for deleted sources;
+    # a changed-source selection cannot make that claim about absent inputs.
+    selected = {path for path in paths if path.suffix.lower() == ".geojson"}
+    complete = tested_sources_count == len(selected) and selected == set(discover([], root))
+    for message, fingerprints in baseline.get("failures", {}).items():
+        assessed = complete or set(fingerprints).issubset(by_id)
+        if assessed and message not in observed_findings:
+            logger.error("Stale validation baseline entry; remove it: %s", message)
             failed = True
     if spacesave > 0:
         logger.warning("Disembedding all icons would save %s KB", round(spacesave / 1024.0, 2))

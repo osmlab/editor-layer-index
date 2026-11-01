@@ -18,30 +18,16 @@ from eli.common import JSON, discover, load_json
 ROOT = Path(__file__).resolve().parents[1]
 
 
-@pytest.mark.parametrize(
-    "mutation", ["category", "unknown-element", "invalid-zoom", "invalid-country"]
-)
-def test_josm_output_rejects_schema_regressions(feature: JSON, mutation: str) -> None:
+def test_josm_output_rejects_missing_category(feature: JSON) -> None:
     from eli.artifacts import _xml
     from eli.exporters import xml_bytes
 
     namespace = "{http://josm.openstreetmap.de/maps-1.0}"
     root = ET.fromstring(xml_bytes([feature]))
     entry = root[0]
-    if mutation == "category":
-        category = entry.find(namespace + "category")
-        assert category is not None
-        entry.remove(category)
-    elif mutation == "unknown-element":
-        ET.SubElement(entry, namespace + "unsupported-element")
-    elif mutation == "invalid-zoom":
-        zoom = entry.find(namespace + "max-zoom")
-        assert zoom is not None
-        zoom.text = "999"
-    else:
-        country = entry.find(namespace + "country-code")
-        assert country is not None
-        country.text = "ZZ"
+    category = entry.find(namespace + "category")
+    assert category is not None
+    entry.remove(category)
     with pytest.raises(ValueError, match="imagery.xml"):
         _xml(ET.tostring(root), [feature])
 
