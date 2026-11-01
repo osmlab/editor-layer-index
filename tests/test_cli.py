@@ -79,7 +79,7 @@ def test_request_timeout_and_tls_policy(monkeypatch: pytest.MonkeyPatch) -> None
     get = Mock()
     monkeypatch.setattr(requests, "get", get)
     request_get("https://example.org", verify=False)
-    get.assert_called_once_with("https://example.org", timeout=30, verify=False)
+    get.assert_called_once_with("https://example.org", timeout=(5, 20), verify=False)
 
 
 def test_context_state_is_not_shared() -> None:

@@ -105,3 +105,16 @@ def test_source_check_rejects_invalid_ring(
     )
     assert result.returncode == 1
     assert message in result.stderr
+
+
+@pytest.mark.parametrize("ring", [RING[::-1], [RING[0], *RING]])
+def test_winding_and_duplicate_vertices_are_offline_errors(ring: list[list[int]]) -> None:
+    with pytest.raises(ValueError, match="orientation|duplicate"):
+        validate_polygon_coordinates({"type": "Polygon", "coordinates": [ring]}, check_winding=True)
+
+
+def test_hole_winding_is_checked() -> None:
+    with pytest.raises(ValueError, match="orientation"):
+        validate_polygon_coordinates(
+            {"type": "Polygon", "coordinates": [RING, RING]}, check_winding=True
+        )

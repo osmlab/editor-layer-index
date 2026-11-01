@@ -28,6 +28,7 @@ from shapely.geometry.base import BaseGeometry
 from shapely.geometry.geo import shape
 
 from eli.libeli import eliutils, wmshelper
+from eli.projections import unused_projections
 
 ZOOM_LEVEL = 14
 IMAGE_SIZE = 256
@@ -450,6 +451,7 @@ class WMSSync:
             else:
                 messages.append("No valid projections for layer.")
             return None
+        new_projections -= unused_projections(new_projections, new_url)
         return (new_url, new_projections)
 
     # Conservative projection updates share the original source and image-comparison baseline.
@@ -709,6 +711,7 @@ class WMSSync:
                         msgs,
                     )
             new_projections = eliutils.clean_projections(new_projections)
+            new_projections -= unused_projections(new_projections, new_url)
             url_has_changed = not self.compare_urls(source["properties"]["url"], new_url)
             projections_have_changed = not self.compare_projs(
                 source["properties"]["available_projections"], new_projections

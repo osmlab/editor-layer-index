@@ -12,7 +12,7 @@ from eli.libeli.eliutils import BoundingBox, clean_projections, search_encoding
     [
         # Filter EPSG:3857 alias
         (["EPSG:900913", "EPSG:3857"], None, ["EPSG:3857"]),
-        (["EPSG:900913"], None, ["EPSG:900913"]),
+        (["EPSG:900913"], None, []),
         (["EPSG:900913", "EPSG:3857", "EPSG:102100", "EPSG:3785"], None, ["EPSG:3857"]),
         (
             ["EPSG:2177", "EPSG:2180", "EPSG:3857", "EPSG:4326", "EPSG:900913"],

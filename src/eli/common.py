@@ -58,6 +58,7 @@ def schema_validator(root: Path) -> Draft4Validator:
 
 
 def get_logger(verbosity: int = 0) -> logging.Logger:
+    logging.getLogger("charset_normalizer").setLevel(logging.WARNING)
     logger = logging.getLogger("eli")
     logger.setLevel(max(4 - verbosity, 0) * 10)
     if not logger.handlers:
@@ -70,7 +71,7 @@ def get_logger(verbosity: int = 0) -> logging.Logger:
 
 def request_get(url: str, **kwargs: Any) -> requests.Response:
     """Retain each caller's TLS policy while bounding every synchronous request."""
-    timeout = kwargs.pop("timeout", 30)
+    timeout = kwargs.pop("timeout", (5, 20))
     return requests.get(url, timeout=timeout, **kwargs)
 
 

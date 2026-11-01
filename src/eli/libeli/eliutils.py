@@ -16,6 +16,8 @@ from shapely.geometry.multipolygon import MultiPolygon
 from shapely.geometry.polygon import orient
 from shapely.ops import unary_union
 
+from eli.projections import useful_projections
+
 
 @dataclass
 class BoundingBox:
@@ -121,7 +123,7 @@ def clean_projections(
         )
         filtered_codes -= set(alias_codes[1:])
 
-    return filtered_codes
+    return useful_projections(filtered_codes)
 
 
 transformers: dict[tuple[CRS, CRS], Transformer] = {}

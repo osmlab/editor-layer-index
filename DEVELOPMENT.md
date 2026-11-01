@@ -135,3 +135,32 @@ of the extension's optional Pyrefly integration.
 
 Formatting, supported lint exceptions, and the verification commands are documented in
 [LINTING.md](LINTING.md). All Python linters and the formatter use a 100-character line width.
+
+### Catalogue lint and live-check policy
+
+`uv run eli check` rejects unclosed rings, consecutive duplicate vertices,
+incorrect RFC 7946 winding (including holes), duplicate projection codes, local
+null geometry, and string placeholders such as `privacy_policy_url: "none"`.
+Use the JSON boolean `false` for a researched absence of a privacy policy.
+Geometry fixes must preserve coverage; source lint never repairs geometry silently.
+
+Projection usefulness warnings follow JOSM's `SyncEditorLayerIndex.setupProj`
+obsolete-code list. ELI also omits CRS:84 when EPSG:4326 or EPSG:3857 is listed;
+a sole CRS:84 remains useful for WMS 1.3. These recommendations are warnings for
+legacy catalogue entries, not automatic CRS substitutions. WMS sync uses the same
+policy and never invents replacement server support. In particular, advertised
+projections and working projections need not be identical.
+
+Strict checks cache responses and transport failures for the duration of one
+run. Identical URLs and request options (including headers) share one request;
+a new invocation starts fresh. Each source still receives its own diagnostics.
+Requests default to a five-second connection timeout and a twenty-second read
+inactivity timeout, not a total wall-clock deadline. Connection failures stop
+WMS version negotiation; parse/protocol failures may still try other versions.
+Coverage is checked only when every selected layer has geographic bounds, so an
+unknown layer does not produce a misleading “100% outside” error. HTTP failures
+remain failures; caching and quieter logging do not turn 403s into successes.
+
+Ruff's S113 rule guards explicit request timeouts, alongside the existing format,
+lint, type, test, and offline-source checks in CI. Deterministic regression tests
+cover the provider failures above without contacting external services.

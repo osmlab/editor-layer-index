@@ -1,5 +1,6 @@
 """Typed diagnostic records and transport state shared by strict protocol checks."""
 
+import json
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -37,6 +38,7 @@ class ValidationContext:
 
     def __init__(self, root: Path, verbosity: int = 2) -> None:
         self.filename = ""
+        self._responses: dict[tuple[str, str], Response | requests.RequestException] = {}
         self.logger = get_logger(verbosity)
         self.validator = schema_validator(root)
         self.headers = {
@@ -47,7 +49,19 @@ class ValidationContext:
 
     def get_response(self, url: str, **kwargs: Any) -> Response:
         """Send one bounded HTTP request; expose a single transport seam for tests."""
-        return request_get(url, **kwargs)
+        key = (url, json.dumps(kwargs, sort_keys=True))
+        cached = self._responses.get(key)
+        if isinstance(cached, requests.RequestException):
+            raise cached
+        if cached is not None:
+            return cached
+        try:
+            response = request_get(url, **kwargs)
+        except requests.RequestException as error:
+            self._responses[key] = error
+            raise
+        self._responses[key] = response
+        return response
 
     def get_http_headers(self, source: Any) -> dict[str, str]:
         """Extract http headers from source"""
@@ -137,7 +151,7 @@ class ValidationContext:
                 return (True, r.status_code)
             return (False, r.status_code)
         except requests.RequestException as e:
-            self.logger.exception("Could not retrieve url: %s: %s", url, e)
+            self.logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
         return (False, -1)
 
     def test_image(
@@ -164,5 +178,5 @@ class ValidationContext:
             filetype: str = magic.from_buffer(r.content, mime=True)
             return (filetype in {"image/png", "image/jpeg", "image/webp"}, r.status_code, filetype)
         except (requests.RequestException, magic.MagicException) as e:
-            self.logger.exception("Could not retrieve url: %s: %s", url, e)
+            self.logger.error("Could not retrieve url: %s: %s: %s", url, type(e).__name__, e)
         return (False, -1, None)

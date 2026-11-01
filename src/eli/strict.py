@@ -17,6 +17,7 @@ from shapely.validation import explain_validity, make_valid
 
 from eli.common import load_json
 from eli.libeli import eliutils, tmshelper, wmshelper, wmtshelper
+from eli.projections import unused_projections
 from eli.strict_context import Message, MessageLevel, ValidationContext
 
 
@@ -135,8 +136,15 @@ class StrictChecker(ValidationContext):
             try:
                 wms_getcapabilities_url = wms_url.get_capabilities_url(wms_version=wms_version)
                 _, xml = self.get_text_encoded(wms_getcapabilities_url, headers=source_headers)
-                if xml is not None:
-                    wms = wmshelper.WMSCapabilities(xml)
+                if xml is None:
+                    exceptions.append(
+                        f"WMS: no capabilities document from {wms_getcapabilities_url}"
+                    )
+                    break
+                wms = wmshelper.WMSCapabilities(xml)
+                break
+            except (requests.ConnectionError, requests.Timeout) as e:
+                exceptions.append(f"WMS: {type(e).__name__}: {e} {wms_getcapabilities_url}")
                 break
             except (
                 requests.RequestException,
@@ -180,14 +188,16 @@ class StrictChecker(ValidationContext):
                         ),
                     )
                 )
-            if geom is not None and geom.is_valid:
+            if not not_found_layers and geom is not None and geom.is_valid:
                 bboxs: list[eliutils.BoundingBox] = []
                 for layer_name in layers:
                     if layer_name in wms.layers:
                         layer_bbox = wms.layers[layer_name].bbox
                         if layer_bbox is not None:
                             bboxs.append(layer_bbox)
-                max_area_outside = self.max_area_outside_bbox(geom, bboxs)
+                max_area_outside = (
+                    self.max_area_outside_bbox(geom, bboxs) if len(bboxs) == len(layers) else 0.0
+                )
                 if max_area_outside > 5.0:
                     messages.append(
                         Message(
@@ -241,6 +251,9 @@ class StrictChecker(ValidationContext):
                 )
             else:
                 crs_should_included_if_available = {"EPSG:4326", "EPSG:3857", "CRS:84"}
+                crs_should_included_if_available -= unused_projections(
+                    source["properties"].get("available_projections", []) + ["CRS:84"], url
+                )
                 for layer_name in layers:
                     if layer_name in wms.layers:
                         not_supported_crs: set[str] = set()
@@ -350,8 +363,15 @@ class StrictChecker(ValidationContext):
             try:
                 wms_getcapabilities_url = wms_url.get_capabilities_url(wms_version=wms_version)
                 _, xml = self.get_text_encoded(wms_getcapabilities_url, headers=source_headers)
-                if xml is not None:
-                    wms = wmshelper.WMSCapabilities(xml)
+                if xml is None:
+                    exceptions.append(
+                        f"WMS: no capabilities document from {wms_getcapabilities_url}"
+                    )
+                    break
+                wms = wmshelper.WMSCapabilities(xml)
+                break
+            except (requests.ConnectionError, requests.Timeout) as e:
+                exceptions.append(f"WMS: {type(e).__name__}: {e} {wms_getcapabilities_url}")
                 break
             except (
                 requests.RequestException,
@@ -514,7 +534,7 @@ class StrictChecker(ValidationContext):
                             tilemap_minzoom, tilemap_maxzoom = (
                                 tilemap_resource.get_min_max_zoom_level()
                             )
-                            if min_zoom == tilemap_minzoom:
+                            if min_zoom != tilemap_minzoom:
                                 messages.append(
                                     Message(
                                         level=MessageLevel.WARNING,

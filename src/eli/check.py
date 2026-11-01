@@ -9,12 +9,13 @@ from shapely.validation import explain_validity
 
 from eli.common import get_logger, load_json, schema_validator
 from eli.libeli.geometry import validate_polygon_coordinates
+from eli.projections import unused_projections
 
 
 # Independent schema, URL, and geometry checks accumulate diagnostics in one source pass.
 # pylint: disable-next=R0912,R0914,R0915
 def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
-    logger = get_logger(verbosity)
+    logger = get_logger(max(verbosity, 1))
     validator = schema_validator(root)
     seen_ids: set[str] = set()
     failed = False
@@ -53,6 +54,20 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
             # {z} instead of {zoom}
             if "{z}" in source["properties"]["url"]:
                 raise ValidationError("{z} found instead of {zoom} in tile url")
+
+            projections = source["properties"].get("available_projections", [])
+            if len(projections) != len(set(projections)):
+                raise ValidationError("available_projections contains duplicate codes")
+            unused = unused_projections(projections, source["properties"]["url"])
+            if unused:
+                logger.warning(
+                    "%s: projections not useful: %s", filename, ", ".join(sorted(unused))
+                )
+            policy = source["properties"].get("privacy_policy_url")
+            if policy is True or (
+                isinstance(policy, str) and policy.strip().lower() in {"none", "false", "null", ""}
+            ):
+                raise ValidationError("privacy_policy_url must be a URL or the boolean false")
 
             # Check for license url. Too many missing to mark as required in schema.
             if "license_url" not in source["properties"]:
@@ -127,7 +142,7 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
             # If we're not global we must have a geometry.
             # The geometry itself is validated by jsonschema
             if "world" not in filename:
-                if "type" not in source["geometry"]:
+                if not isinstance(source.get("geometry"), dict) or "type" not in source["geometry"]:
                     raise ValidationError(f"{filename} should have a valid geometry or be global")
                 if source["geometry"]["type"] not in {"Polygon", "MultiPolygon"}:
                     raise ValidationError(
@@ -137,7 +152,7 @@ def run(paths: list[Path], root: Path, verbosity: int = 0) -> int:
                     raise ValidationError(f"{filename} should have a country or be global")
 
                 try:
-                    validate_polygon_coordinates(source["geometry"])
+                    validate_polygon_coordinates(source["geometry"], check_winding=True)
                 except ValueError as e:
                     raise ValidationError(f"{filename} geometry is not valid: {e}") from e
 

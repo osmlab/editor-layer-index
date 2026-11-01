@@ -205,7 +205,9 @@ def test_broken_exporter_keeps_previous_build(
     monkeypatch.setattr(
         "eli.build.export_source", Mock(return_value=load_json(source, rounded=True))
     )
-    with pytest.raises(ValueError, match="Invalid exported geometry"):
+    with pytest.raises(
+        ValueError, match="Invalid exported geometry|consecutive duplicate positions"
+    ):
         build(data_root, generated)
     assert before == {name: (generated / name).read_bytes() for name in OUTPUTS}
 
@@ -246,6 +248,8 @@ def test_invalid_original_geometry_is_not_repaired(
 ) -> None:
     feature["geometry"]["coordinates"] = [[[0, 0], [1, 1], [0, 1], [1, 0], [0, 0]]]
     source.write_text(json.dumps(feature))
-    with pytest.raises(ValueError, match="Invalid exported geometry"):
+    with pytest.raises(
+        ValueError, match="Invalid exported geometry|consecutive duplicate positions"
+    ):
         build(data_root, data_root / "build")
     assert not (data_root / "build").exists()
