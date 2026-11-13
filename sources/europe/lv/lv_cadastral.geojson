@@ -4,12 +4,13 @@
         "id": "LV_CADASTRAL",
         "name": "Cadastral map, Latvia",
         "type": "wms",
-        "url": "https://lvmgeoserver.lvm.lv/geoserver/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=publicwfs:Kadastra_karte&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "url": "https://geoserver.lvmgeo.lv/wmsvector62531a9bfcfa4015856924e94076a179?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=Kadastra_karte&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "country_code": "LV",
         "available_projections": [
+            "CRS:84",
             "EPSG:3059",
             "EPSG:3857",
-            "EPSG:4326"
+            "EPSG:10306"
         ],
         "description": "This cadastral map is provided as open data by Latvian State Land Service (VZD, Valsts zemes dienests). See here: https://data.gov.lv/dati/eng/dataset?organization=valsts-zemes-dienests). WMS service is freely provided by LVM (Latvian State Forestry, https://lvmgeo.lv/en/data).",
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/vzd.gov.lv_explicit_permission",
