@@ -1,0 +1,57 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Nov 2022 Wentworth Flood 03122022 15cm RGBN P3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-12-03",
+        "end_date": "2022-12-03",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Nov_2022_Wentworth_Flood_03122022_15cm_RGBN_P3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    141.71552933963312,
+                    -33.98908750965644
+                ],
+                [
+                    141.71843332130146,
+                    -34.18726087663223
+                ],
+                [
+                    142.21501418662632,
+                    -34.208397592198054
+                ],
+                [
+                    142.2562507263193,
+                    -34.15794893935547
+                ],
+                [
+                    142.19468631494624,
+                    -34.02904808656047
+                ],
+                [
+                    141.71552933963312,
+                    -33.98908750965644
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

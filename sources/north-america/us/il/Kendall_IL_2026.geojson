@@ -1,0 +1,55 @@
+{
+	"type": "Feature",
+	"properties": {
+		"id": "Kendall_IL_2026",
+		"attribution": {
+			"url": "https://geodata.kendallcountyil.gov/",
+			"text": "Kendall County GIS",
+			"required": true
+		},
+		"name": "Kendall County 2026 Aerial Imagery",
+		"icon": "https://discourse.kendallcountyil.gov/uploads/default/optimized/1X/212467d6d2e5387df962b45890a757609740e7d8_2_300x300.png",
+		"url": "https://tiles.kendallcountyil.gov/2026/{zoom}/{x}/{y}.jpg",
+		"max_zoom": 19,
+		"license_url": "https://geodata.kendallcountyil.gov/catalog/raster/2026-aerial.html",
+		"country_code": "US",
+		"type": "tms",
+		"start_date": "2026",
+		"end_date": "2026",
+		"description": "2026 Aerial imagery, flown in the spring of that year",
+		"category": "photo",
+		"valid-georeference": true,
+		"privacy_policy_url": false
+	},
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			[
+				[
+					-88.6072476,
+					41.7234519
+				],
+				[
+					-88.5994759,
+					41.4547821
+				],
+				[
+					-88.248026,
+					41.4593122
+				],
+				[
+					-88.2506165,
+					41.5886109
+				],
+				[
+					-88.2540706,
+					41.7273188
+				],
+				[
+					-88.6072476,
+					41.7234519
+				]
+			]
+		]
+	}
+}

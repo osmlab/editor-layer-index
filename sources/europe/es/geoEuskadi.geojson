@@ -4,12 +4,14 @@
         "id": "geoEuskadi-ORTO",
         "attribution": {
             "text": "Eusko Jaurlaritza / Gobierno Vasco. geoEuskadi",
-            "required": true
+            "required": true,
+            "url": "https://www.geo.euskadi.eus/normativa-sobre-informacion-geografica/webgeo00-content/eu/"
         },
         "name": "geoEuskadiren Ortoargazkiak",
         "url": "https://www.geo.euskadi.eus/WMS_ORTOARGAZKIAK?LAYERS=ORTO_EGUNERATUENA_MAS_ACTUALIZADA&STYLES=&CRS={proj}&BBOX={bbox}&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
         "country_code": "ES",
         "type": "wms",
+        "description": "geoEuskadiren ortoargazkiak bistaratzeko WMS Zerbitzua / Servicio de visualización WMS de Ortofotografías de geoEuskadi",
         "available_projections": [
             "CRS:84",
             "EPSG:3857",
@@ -17,7 +19,7 @@
             "EPSG:25830"
         ],
         "best": true,
-        "license_url": "https://wiki.openstreetmap.org/w/index.php?title=ES:Fuentes_de_datos_potenciales_de_Espa%C3%B1a/Servidores_WMS",
+        "license_url": "https://www.euskadi.eus/geografikoak/euskal-autonomia-erkidegoko-ortoirudiak-bistaratzeko-zerbitzua/web01-a2garrai/eu/",
         "privacy_policy_url": "https://www.geo.euskadi.eus/normativa-sobre-informacion-geografica/webgeo00-content/eu/",
         "category": "photo"
     },

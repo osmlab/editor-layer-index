@@ -4,7 +4,7 @@
         "name": "EUFAR Balaton orthophotos",
         "i18n": true,
         "type": "tms",
-        "url": "http://e.tile.openstreetmap.hu/balaton/0/{zoom}/{x}/{y}.jpg",
+        "url": "https://orto1.tile.openstreetmap.hu/balaton_0/{zoom}/{x}/{y}.jpg",
         "min_zoom": 12,
         "max_zoom": 19,
         "permission_osm": "explicit",
@@ -17,8 +17,9 @@
         "start_date": "2010-08-01",
         "end_date": "2010-08-31",
         "overlay": false,
+        "privacy_policy_url": false,
         "attribution": {
-            "url": "http://www.bli.okologia.mta.hu/",
+            "url": "https://www.blki.hun-ren.hu/en",
             "text": "EUFAR Balaton ortofotó 2010",
             "required": true
         },

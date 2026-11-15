@@ -25,10 +25,11 @@ Supported TMS tokens:
 - `{switch:a,b,c}` for DNS server multiplexing
 - `{apikey}` for an app specific apikey
 
-Example: `https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png`
+Example: `https://tile.openstreetmap.org/{zoom}/{x}/{y}.png`
 
 Supported WMS tokens:
 - `{proj}` - requested projection (e.g. EPSG:3857)
+- `{wkid}` - same as proj, but without the prefix (e.g. 3857)
 - `{width}`, `{height}` - requested image dimensions (e.g. 256, 512)
 - `{bbox}` - requested bounding box
 
@@ -97,7 +98,7 @@ An imagery source can have an icon by setting the `icon` property to a URL of an
 
 Follow [this workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962) to create and submit a change to the editor layer index. Whenever branches are mentioned, replace `master` with `gh-pages`.
 
-After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test as it would appear in the iD editor you can try at https://rapideditor.github.io/imagery-index/index.html.
+After you've made a modification, and submit a pull request including those json files. Tests will be run automatically, though if you'd like to manually test it in the iD editor you can try adding the URL as a "Custom" background.
 
 We previously required contributors to run local checks with `make check`, and run `make` to rebuild the combined files. This is now handled automatically for every pull request, and should not be done anymore.
 

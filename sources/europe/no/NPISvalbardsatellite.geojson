@@ -3,21 +3,22 @@
     "properties": {
         "id": "npi-svalbard-landsat",
         "name": "NPI Svalbard satellite",
+        "category": "photo",
+        "description": "Satellite imagery for Svalbard from the Norwegian Polar Institute/USGS Landsat",
         "type": "wmts",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/8/85/Emblem_of_the_Norwegian_Polar_Institute.svg",
         "url": "https://geodata.npolar.no/arcgis/rest/services/Basisdata/NP_Satellitt_Svalbard_WMTS_25833/MapServer/WMTS/",
+        "max_zoom": 13,
+        "license_url": "https://web.archive.org/web/20240523100200/https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
+        "privacy_policy_url": "https://npolar.no/en/privacy-policy/",
+        "attribution": {
+            "text": "© Norwegian Polar Institute / USGS Landsat",
+            "url": "https://geodata.npolar.no/"
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:25833"
-        ],
-        "attribution": {
-            "url": "https://geodata.npolar.no/",
-            "text": "© Norwegian Polar Institute / USGS Landsat"
-        },
-        "icon": "https://www.npolar.no/npcms/export/sites/np/images/logos/NPI-logo-eng.png",
-        "max_zoom": 13,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2018-February/006371.html",
-        "description": "Satellite imagery for Svalbard from the Norwegian Polar Institute/USGS Landsat",
-        "category": "photo"
+        ]
     },
     "geometry": {
         "type": "MultiPolygon",

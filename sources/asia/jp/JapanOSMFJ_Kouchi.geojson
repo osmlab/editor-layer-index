@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "properties": {
+    "id": "osmfj-kouchi-2020",
+    "attribution": {
+      "text": "OSMFJ_Ortho",
+      "required": true
+    },
+    "name": "Kouchi city Imagery 2020",
+    "url": "https://tiles.osmf.jp/kouchi-shi/{zoom}/{x}/{y}.png",
+    "min_zoom": 10,
+    "max_zoom": 18,
+    "license_url": "https://wiki.openstreetmap.org/wiki/OSMFJ/ortho-tiles",
+    "country_code": "JP",
+    "type": "tms",
+    "start_date": "2020-04-23",
+    "end_date": "2021-03-31",
+    "permission_osm": "explicit",
+    "description": "Kokyo Sokuryo Orthoimagery from Kouchi-shi, 2020",
+    "category": "photo",
+    "valid-georeference": true,
+    "privacy_policy_url": false
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          133.39096104143,
+          33.68554591566
+        ],
+        [
+          133.39004679876,
+          33.45641231511
+        ],
+        [
+          133.6314000273,
+          33.45574288993
+        ],
+        [
+          133.63231426996,
+          33.68487826483
+        ],
+
+        [
+          133.39096104143,
+          33.68554591566
+        ]
+      ]
+    ]
+  }
+}

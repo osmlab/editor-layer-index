@@ -1,0 +1,63 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "USDA-NAIP-PR",
+        "attribution": {
+            "url": "https://naip-usdaonline.hub.arcgis.com/",
+            "text": "U.S. Department of Agriculture",
+            "required": false
+        },
+        "name": "National Agriculture Imagery Program (PR)",
+        "type": "wms",
+        "url": "https://imagery.geoplatform.gov/iipp/rest/services/NAIP/NAIP2021_PuertoRico/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "start_date": "2021",
+        "end_date": "2023",
+        "max_zoom": 19,
+        "min_zoom": 8,
+        "license_url": "https://www.usda.gov/policies-and-links/",
+        "country_code": "US",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+        "description": "The most recent year of 60cm 4-band DOQQs from the National Agriculture Imagery Program (NAIP) for Puerto Rico and the United States Virgin Islands.",
+        "category": "photo",
+        "privacy_policy_url": "https://www.usda.gov/privacy-policy",
+        "valid-georeference": true
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -65.8686778,
+                    17.7335262
+                ],
+                [
+                    -65.3919467,
+                    18.5624064
+                ],
+                [
+                    -67.3482557,
+                    18.6408316
+                ],
+                [
+                    -67.3274821,
+                    17.7817066
+                ],
+                [
+                    -66.5236174,
+                    17.7928393
+                ],
+                [
+                    -66.4618767,
+                    17.941445
+                ],
+                [
+                    -65.8686778,
+                    17.7335262
+                ]
+            ]
+        ]
+    }
+}

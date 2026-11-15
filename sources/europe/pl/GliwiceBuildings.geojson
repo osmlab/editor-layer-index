@@ -9,22 +9,20 @@
         "country_code": "PL",
         "overlay": true,
         "available_projections": [
-            "CRS:84",
             "EPSG:2175",
             "EPSG:2177",
             "EPSG:2180",
-            "EPSG:4326",
-            "EPSG:900913"
+            "EPSG:4326"
         ],
         "attribution": {
             "text": "Urząd Miasta Gliwice",
-            "html": "http://msip-mapa.um.gliwice.pl/",
+            "url": "https://msip.gliwice.eu/",
             "required": true
         },
         "category": "other",
         "transparent": true,
-        "privacy_policy_url": "http://msip-mapa.um.gliwice.pl/rodo",
-        "license_url": "http://msip-mapa.um.gliwice.pl/portal-planistyczny-otwarte-dane"
+        "privacy_policy_url": "https://gliwice.eu/polityka-prywatnosci",
+        "license_url": "https://msip.gliwice.eu/portal-planistyczny-otwarte-dane"
     },
     "geometry": {
         "type": "Polygon",

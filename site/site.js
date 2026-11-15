@@ -3,7 +3,7 @@ var map = L.map('map', {
         maxZoom: 25
     }).fitWorld();
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
 }).addTo(map);
 
@@ -34,19 +34,36 @@ function josmURL(d) {
 }
 
 function idURL(d, e) {
-    let position = '';
+    const hashParams = new URLSearchParams();
     if (e && e.latlng) {
         const pt = e.latlng;
         const zoom = map.getZoom();
-        position = `#map=${zoom}/${pt.lat.toFixed(5)}/${pt.lng.toFixed(5)}`
-    } 
-    var params = {
-        editor: 'id',
-        background: 'custom:' + d.properties.url
-    };
-    return 'https://www.openstreetmap.org/edit?' + (new URLSearchParams(params)).toString() + position;
+        hashParams.set('map', `${zoom}/${pt.lat.toFixed(5)}/${pt.lng.toFixed(5)}`);
+    }
+    hashParams.set('background', 'custom:' + d.properties.url);
+    return 'https://www.openstreetmap.org/edit?editor=id#' + hashParams.toString();
 }
 
+function uniqueArray(list) {
+    return list.reduce(function(accu, current) {
+        if (accu.at(-1) != current) {
+            accu.push(current);
+        }
+        return accu;
+    }, []);
+}
+
+function getStyle(feature) {
+    const filter_by = document.getElementById('country').value;
+    const cc = feature.properties.country_code;
+    return {
+        weight: 1,
+        color: feature.properties.best ? 'gold' : 'gray',
+        opacity: (filter_by == '' || filter_by == cc) ? 1 : 0,
+        fillOpacity: (filter_by == '' || filter_by == cc) ? 0.1 : 0,
+        fillRule: 'nonzero'
+    }
+}
 
 d3.json("imagery.geojson", function(error, imagery) {
     imagery.features = imagery.features.sort(function(a,b) {
@@ -60,15 +77,17 @@ d3.json("imagery.geojson", function(error, imagery) {
         return -1;
     })
 
+    const countryFilter = document.getElementById('country');
+    const countryList = uniqueArray(imagery.features.map( (f) => f.properties.country_code ));
+    for (var cc of countryList) {
+        var opt = document.createElement("option");
+        opt.textContent = cc;
+        opt.value = cc;
+        countryFilter.appendChild(opt);
+    }
+
     var imageryLayer = L.geoJson(imagery, {
-        style: function(feature) {
-            return {
-                weight: 1,
-                color: feature.properties.best ? 'gold' : 'gray',
-                fillOpacity: 0.1,
-                fillRule: 'nonzero'
-            }
-        }
+        style: getStyle
     })
     .on('click', function(e) {
         var matches = leafletPip.pointInLayer(e.latlng, imageryLayer, false);
@@ -77,13 +96,27 @@ d3.json("imagery.geojson", function(error, imagery) {
             '<h3>Available layers at this location:</h3>'+
             matches.map(function(match) {
                 return match.feature.properties.name +
-                    ` [<a href="${idURL(match.feature, e)}" title="Add to iD">iD</a>] ` +
-                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM">JOSM</a>]`;
+                    ` [<a href="${idURL(match.feature, e)}" title="Open in iD" target="_blank">iD</a>] ` +
+                    ` [<a href="${josmURL(match.feature)}" title="Add to JOSM" target="_blank">JOSM</a>]`;
             }).join('<br>'),
             e.latlng
         );
     })
     .addTo(map)
+
+    countryFilter.addEventListener('change', function(event) {
+        if (countryFilter.value == '') {
+            document.querySelectorAll("#wrap [data-cc]").forEach(
+                (el) => el.style.display = 'block'
+            );
+        } else {
+            const cc = countryFilter.value;
+            document.querySelectorAll("#wrap [data-cc]").forEach(
+                (el) => el.style.display = (el.dataset.cc == cc ? 'block' : 'none')
+            );
+        }
+        imageryLayer.setStyle(getStyle); // to refresh the rendering
+    });
 
     testLayer = L.geoJson(/* dummy */).addTo(map)
 
@@ -92,6 +125,7 @@ d3.json("imagery.geojson", function(error, imagery) {
         .data(imagery.features)
         .enter()
         .append('div')
+        .attr('data-cc', (d) => d.properties['country_code'] || 'world' )
         .classed('best', function(d) {
             return d.properties.best === true;
         });
@@ -100,13 +134,14 @@ d3.json("imagery.geojson", function(error, imagery) {
         .text(function(d) {
             return (d.properties['country_code'] || 'world') + ' / ' + d.properties.name + (d.properties.best ? '*' : '');
         })
-        .attr('href', '#')
+        .attr('href', d => `#${d.properties.name}`)
         .attr('title', function(d) {
             if (d.properties.best)
                 return 'this is the best known imagery source in its region';
         })
-        .on('click', function(d, i) {
-            d3.event.preventDefault();
+        .on('click', enableImagery);
+
+    function enableImagery(d) {
 
             if (d.geometry === null) {
                 map.fitWorld({animate: true});
@@ -127,8 +162,8 @@ d3.json("imagery.geojson", function(error, imagery) {
                 }
             });
 
-            imagery_links.classed('active', function(d2, i2) {
-                return i2 == i;
+            imagery_links.classed('active', function(d2) {
+                return d2 == d;
             });
 
             testLayer.removeFrom(map);
@@ -174,7 +209,16 @@ d3.json("imagery.geojson", function(error, imagery) {
                         ''
                 }).addTo(map);
             }
-        });
+    }
+
+    // if the url contains #my_layer_name, select that layer by default
+    const nameFromUrlHash = decodeURIComponent(location.hash.slice(1));
+    const imageryFromUrlHash = nameFromUrlHash && imagery.features
+        .find(feature => feature.properties.name === nameFromUrlHash);
+
+    if (imageryFromUrlHash) {
+        enableImagery(imageryFromUrlHash);
+    }
 
     imagery_links.append('span')
         .classed('type', true)

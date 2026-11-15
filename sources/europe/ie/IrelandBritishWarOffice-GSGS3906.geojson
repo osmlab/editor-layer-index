@@ -187,6 +187,8 @@
         "type": "Polygon"
     },
     "properties": {
+        "privacy_policy_url": "https://mapwarper.net/privacy",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin",
         "attribution": {
             "required": true,
             "text": "Glucksman Map Library, Trinity College Dublin",
@@ -199,7 +201,7 @@
         "name": "Ireland British War Office 1:25k GSGS 3906",
         "type": "tms",
         "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
-        "category": "map"
+        "category": "historicmap"
     },
     "type": "Feature"
 }

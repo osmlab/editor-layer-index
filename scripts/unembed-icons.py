@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 import colorlog
 from base64 import b64decode
 
-parser = ArgumentParser(description="Checks ELI sourcen for validity and common errors")
+parser = ArgumentParser(description="Checks ELI sources for validity and common errors")
 parser.add_argument("path", nargs="+", help="Path of files to check.")
 parser.add_argument(
     "-v",

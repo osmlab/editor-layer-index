@@ -94,13 +94,53 @@ en:
     Dourados_Ortofotos:
       attribution:
         text: Prefeitura Municipal de Dourados - GeoDourados
-      description: Dourados (2018) and several districts (2020) high-res aerial imagery.
+      description: Dourados city high-resolution aerial imagery from November–December 2018 (10 cm).
       name: Dourados Ortofotos
+    EOXAT2017CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2017 cloudless
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)
       description: Post-processed Sentinel Satellite imagery.
       name: eox.at 2018 cloudless
+    EOXAT2019CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2019)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2019 cloudless
+    EOXAT2020CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2020)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2020 cloudless
+    EOXAT2021CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2021)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2021 cloudless
+    EOXAT2022CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2022)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2022 cloudless
+    EOXAT2023CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2023)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2023 cloudless
+    EOXAT2024CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2024 cloudless
+    EOXAT2025CLOUDLESS:
+      attribution:
+        text: Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2025)
+      description: Post-processed Sentinel Satellite imagery.
+      name: eox.at 2025 cloudless
     EsriWorldImagery:
       attribution:
         text: Terms & Feedback
@@ -111,11 +151,46 @@ en:
         text: Terms & Feedback
       description: Esri archive imagery that may be clearer and more accurate than the default layer.
       name: Esri World Imagery (Clarity) Beta
+    FOMI_2011_2014:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for the entire country. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2011–2014 (WEBP)
+    FOMI_2015:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for the entire country. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2015 (WEBP)
+    FOMI_2015_leafoff_20cm:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-off orthophotos with 20 cm/pixel resolution for 6 districts. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2015 leaf-off 20cm (webp)
+    FOMI_2016:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-covered orthophotos with 40 cm/pixel resolution for central Hungary. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2016 (WEBP)
+    FOMI_2016_leafoff_20cm:
+      attribution:
+        text: Lechner Tudásközpont
+      description: Goverment-based leaf-off orthophotos with 20 cm/pixel resolution for several districts. This layer should be used as an alignment base in lack of a more accurate reference. WEBP format images, JOSM needs a webp plugin for them.
+      name: FÖMI orthophoto 2016 leaf-off 20cm (webp)
     Frankfurt-am-Main-2019:
       attribution:
         text: Stadtvermessungsamt Frankfurt am Main
       description: Aerial imagery of Frankfurt am Main, photographed on 16 April 2019
       name: Frankfurt am Main Luftbild 2019
+    GeoDanmark_Orthophoto_Spring_Septima:
+      attribution:
+        text: (CC BY 4.0) GeoDanmark
+      description: GeoDanmark's orthophotos from most recent spring capture, typically released in fall of capture year (Septima provided TMS cache of official WMS service, see https://osmtools.septima.dk/)
+      name: GeoDK Aerial Imagery
+    Geodatastyrelsen_Cadastral_Parcels_INSPIRE:
+      attribution:
+        text: (CC BY 4.0) Geodatastyrelsen
+      description: Geodatastyrelsen's Cadastral Parcels map (Matriklen - INSPIRE)
+      name: GST Cadastral Parcels Map INSPIRE
     Geoportal2-PL-City-boundaries_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -262,11 +337,41 @@ en:
       attribution:
         text: Urząd Miasta Gliwice
       name: 'Gliwice: Buildings'
-    LSA-ATKIS_BU:
+    Klimadatastyrelsen_Screen_Map:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's map for generic screen use (Skærmkortet)
+      name: KDS Screen Map
+    Klimadatastyrelsen_Surface_Shadow_40cm:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's surface shadow map from the height model of Denmark 0.4 m grid (DHM Overflade skyggekort)
+      name: KDS Surface Shadow Map (40 cm)
+    Klimadatastyrelsen_Terrain_Shadow_40cm:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's terrain shadow map from the height model of Denmark 0.4 m grid (DHM Terræn skyggekort)
+      name: KDS Terrain Shadow Map (40 cm)
+    Klimadatastyrelsen_Topography_DTK25:
+      attribution:
+        text: (CC BY 4.0) Klimadatastyrelsen
+      description: Klimadatastyrelsen's topographical map in scale 1:25.000 (DTK25 or Kort25)
+      name: KDS Topography Map (DTK25)
+    LSA-ALKIS-CP:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
-      description: Shape of buildings in saxony-anhalt
-      name: © GeoBasis-DE/LVermGeo LSA, ATKIS_BU
+      description: Vectorial recording of parcels from the official real estate cadastre.
+      name: © GeoBasis-DE/LVermGeo LSA, ALKIS Cadastre parcels
+    LSA-ALKIS_BU:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Shape of buildings in Saxony-Anhalt
+      name: © GeoBasis-DE/LVermGeo LSA, ALKIS Building Outlines
+    LSA-ATKIS-HYN:
+      attribution:
+        text: © GeoBasis-DE/LVermGeo LSA
+      description: Recording of water networks (may differ in accuracy from reality, always consider in connection with orthophoto)
+      name: © GeoBasis-DE/LVermGeo LSA, ATKIS Hydro Network
     LSA-DOP20:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
@@ -276,7 +381,7 @@ en:
       attribution:
         text: © GeoBasis-DE/LVermGeo LSA
       description: 'Vector recording of administrative boundaries. The boundaries of the federal state, district, municipality and parts of the municipality are given. '
-      name: © GeoBasis-DE/LVermGeo LSA, DVG
+      name: © GeoBasis-DE/LVermGeo LSA, Digital administrative boundaries
     LocalAuthorities_RightsOfWay:
       attribution:
         text: Contains public sector information licensed under the Open Government Licence v3.0.
@@ -322,21 +427,36 @@ en:
         text: © Naturvårdsverket, CC0
       description: Daily updated trails in or around nature reserves as recorded by Swedish Environmental Protection Agency
       name: Environmental Protection Agency - Trails
+    ODOT_TIMS_Road_Inventory:
+      attribution:
+        text: Ohio Department of Transportation
+      description: Ohio Department of Transportation (ODOT) - Transportation Information Mapping System (TIMS) Road Inventory published June 2024.
+      name: ODOT Road Inventory
+    ORTOS_DGRF_2004_06:
+      attribution:
+        text: Informação geográfica cedida pela Direção-Geral do Território
+      name: Orthophotos of mainland Portugal - 50 cm - 2004-2006 (DGT)
+    ORTOS_DGT_2014_15:
+      attribution:
+        text: Informação geográfica cedida pela Direção-Geral do Território
+      name: Orthophotos of the coastal areas of mainland Portugal - 10 cm - 2014-2015 (DGT)
+    ORTOS_DGT_2018_WMS:
+      attribution:
+        text: Informação geográfica cedida pela Direção-Geral do Território
+      name: Orthophotos of mainland Portugal - 25 cm - 2018 (DGT)
+    ORTOS_DGT_2021_RGB:
+      attribution:
+        text: Informação geográfica cedida pela Direção-Geral do Território
+      name: Orthophotos of the northern portion of mainland Portugal - 25 cm - 2021 (DGT)
+    ORTOS_DGT_2025_RGB:
+      attribution:
+        text: Informação geográfica cedida pela Direção-Geral do Território
+      name: Orthophotos of mainland Portugal - 25 cm - 2025 (DGT)
     OSIP:
       attribution:
         text: Ohio Statewide Imagery Program
-      description: Ohio Statewide Imagery Program III most current orthoimagery of every county at resolutions from 1 foot to 3 inches from 2017 through 2020.
+      description: Ohio Statewide Imagery Program III most current orthoimagery of every county at resolutions from 6 inches to 1 inch from 2017 through 2024.
       name: Ohio Statewide Imagery Program
-    OSIP_1ft:
-      attribution:
-        text: Ohio Statewide Imagery Program
-      description: Ohio Statewide Imagery Program II orthoimagery of all 88 counties at 1-foot resolution from 2011 through 2014.
-      name: Ohio Statewide Imagery Program 1-Foot
-    OSIP_6in:
-      attribution:
-        text: Ohio Statewide Imagery Program
-      description: Ohio Statewide Imagery Program III orthoimagery of 40 counties captured at 6-inch resolution in 2017 and 2018, plus OSIP I and OSIP II imagery in 16 more counties from 2010 through 2014.
-      name: Ohio Statewide Imagery Program 6-Inch
     OSMUK-Cadastral-Parcels:
       attribution:
         text: Contains public sector information licensed under the Open Government Licence v3.0.
@@ -405,9 +525,6 @@ en:
       attribution:
         text: Urząd Miasta Siemianowice Śląskie
       name: 'Siemianowice Śląskie: Buildings'
-    US-TIGER-Roads-2017:
-      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
-      name: TIGER Roads 2017
     US-TIGER-Roads-2018:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2018
@@ -423,6 +540,9 @@ en:
     US-TIGER-Roads-2022:
       description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
       name: TIGER Roads 2022
+    US-TIGER-Roads-2023:
+      description: Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap
+      name: TIGER Roads 2023
     USDA-NAIP:
       attribution:
         text: U.S. Department of Agriculture
@@ -431,10 +551,22 @@ en:
     US_Forest_Service_roads_overlay:
       description: 'Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars'
       name: U.S. Forest Roads Overlay
+    UrbISDTM:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS Digital Terrain Model
+    UrbISHillshade:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS Hillshade
     UrbISOrtho:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: CIRB/CIBG most recent aerial imagery
+    UrbISOrtho2004:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2004
     UrbISOrtho2016:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -455,6 +587,46 @@ en:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
       name: UrbIS-Ortho 2020
+    UrbISOrtho2021EO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2021 (RGB east-west)
+    UrbISOrtho2021NS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2021 (RGB north-south)
+    UrbISOrtho2022EO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2022 (RGB east-west)
+    UrbISOrtho2022NS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2022 (RGB north-south)
+    UrbISOrtho2023:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2023 (RGB)
+    UrbISOrtho2024EO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (RGB east-west)
+    UrbISOrtho2024NIREO:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (NIR east-west)
+    UrbISOrtho2024NIRNS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (NIR north-south)
+    UrbISOrtho2024NS:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS-Ortho 2024 (RGB north-south)
+    UrbISRelief:
+      attribution:
+        text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
+      name: UrbIS Relief
     UrbisAdmFR:
       attribution:
         text: Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB
@@ -506,6 +678,11 @@ en:
         text: basemap.at
       description: Annotation overlay provided by basemap.at.
       name: basemap.at Overlay
+    bg-maf-orthophoto-latest:
+      attribution:
+        text: Ministry of Agriculture and Food
+      description: Latest orthorectified aerial imagery provided by the Ministry of Agriculture and Food of Bulgaria.
+      name: Bulgaria MAF Orthophoto
     cyclosm:
       attribution:
         text: 'Rendering: CyclOSM (hosted by OpenStreetMap France) © Map data OpenStreetMap contributors'
@@ -520,6 +697,11 @@ en:
         text: EUFAR Balaton ortofotó 2010
       description: 1940 geo-tagged photography from Balaton Limnological Institute.
       name: EUFAR Balaton orthophotos
+    geoscribble-latest:
+      attribution:
+        text: GeoScribble contributors
+      description: Geometric survey notes from Every Door editor, aged three weeks at most
+      name: GeoScribble latest notes
     gothenburg-citymap:
       attribution:
         text: © Gothenburg municipality, CC0
@@ -595,11 +777,6 @@ en:
         text: © Kartverket
       description: INSPIRE buildings for Norway.
       name: Kartverket Buildings overlay
-    kelkkareitit:
-      attribution:
-        text: © Kelkkareitit.fi
-      description: Kelkkareitit.fi snowmobile trails from OSM (Nordic coverage)
-      name: Nordic snowmobile overlay
     lancucki-buildings:
       attribution:
         text: Powiat łańcucki
@@ -673,6 +850,16 @@ en:
       attribution:
         text: © OpenStreetMap contributors, CC-BY-SA
       name: OpenStreetMap (German Style)
+    osmse-ekonomiska:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Scan of "Economic maps" ca. 1950–1978
+      name: Lantmäteriet Economic Map 1950–1978
+    osmse-generalstab:
+      attribution:
+        text: © Lantmäteriet, CC0
+      description: Scan of "Generalstabskartan" ca. 1859–1979
+      name: Lantmäteriet Generalstabskartan 1859–1979
     poznan-ortofotomapa2014:
       attribution:
         text: Zarząd Geodezji i Katastru Miejskiego GEOPOZ

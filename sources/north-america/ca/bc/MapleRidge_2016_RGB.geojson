@@ -1,0 +1,67 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Maple-Ridge-RGB-2016",
+        "attribution": {
+            "url": "https://www.mapleridge.ca/terms-use#OpenGovernmentLicenceMapleRidge",
+            "text": "Contains information licensed under the Open Government Licence – Maple Ridge",
+            "required": true
+        },
+        "name": "City of Maple Ridge Orthoimagery (2016)",
+        "url": "https://geoservices.mapleridge.ca/image/rest/services/Orthoimagery/2016_8cm/ImageServer/exportImage?f=image&bbox={bbox}&bboxSR={wkid}&imageSR={wkid}&size={width},{height}&format=jpgpng",
+        "max_zoom": 24,
+        "license_url": "https://osmfoundation.org/wiki/OGL_Canada_and_local_variants",
+        "permission_osm": "implicit",
+        "country_code": "CA",
+        "start_date": "2016",
+        "end_date": "2016",
+        "type": "wms",
+        "available_projections": [
+            "EPSG:3857",
+            "EPSG:4326"
+        ],
+        "description": "Aerial imagery acquired by the City of Maple Ridge in 2016",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.mapleridge.ca/terms-use"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -122.40265654546003,
+                    49.15511449972402
+                ],
+                [
+                    -122.40293259264621,
+                    49.359223023724894
+                ],
+                [
+                    -122.65698474483321,
+                    49.35749539494594
+                ],
+                [
+                    -122.78689638210375,
+                    49.22385458102434
+                ],
+                [
+                    -122.71382453840138,
+                    49.183444896717674
+                ],
+                [
+                    -122.60248959213604,
+                    49.18323647970729
+                ],
+                [
+                    -122.57155288243067,
+                    49.16302086684544
+                ],
+                [
+                    -122.40265654546003,
+                    49.15511449972402
+                ]
+            ]
+        ]
+    }
+}

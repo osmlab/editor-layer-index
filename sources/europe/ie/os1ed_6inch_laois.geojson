@@ -1,0 +1,51 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-7.66708, 52.76248],
+                [-7.40306, 52.78346],
+                [-7.34642, 52.80733],
+                [-7.31277, 52.85255],
+                [-7.2472, 52.84571],
+                [-7.18437, 52.88364],
+                [-7.13733, 52.82767],
+                [-7.06695, 52.78533],
+                [-6.9358, 52.7982],
+                [-6.88224, 52.83513],
+                [-6.95983, 52.9869],
+                [-7.0515, 52.98958],
+                [-7.03056, 53.06928],
+                [-7.03743, 53.17436],
+                [-7.19226, 53.18485],
+                [-7.29835, 53.14245],
+                [-7.31071, 53.18424],
+                [-7.38555, 53.22947],
+                [-7.65403, 53.18341],
+                [-7.74467, 52.96974],
+                [-7.74673, 52.84799],
+                [-7.66708, 52.76248]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os1ed_6inch_laois",
+        "name": "OS 1st Ed. 6-inch. Laois (née Queen's County), Ireland (1840s-1880s) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/queens/{zoom}/{x}/{y}.png",
+        "start_date": "1840",
+        "end_date": "1880",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

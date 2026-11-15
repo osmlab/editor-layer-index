@@ -1,0 +1,61 @@
+[
+    {
+        "id": 4,
+        "source": {
+            "type": "mapLayer",
+            "mapLayerId": 4
+        },
+        "drawingInfo": {
+            "renderer": {
+                "type": "uniqueValue",
+                "field1": "COVER_TYP",
+                "field2": "PARCEL_TYP",
+                "fieldDelimiter": ",",
+                "uniqueValueInfos": [
+                    {
+                        "value": "Base,Lot Type Parcel",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "style": "esriSFSSolid",
+                            "color": [0,0,0,0],
+                            "outline": {
+                                "type": "esriSLS",
+                                "style": "esriSLSolid",
+                                "color": [255, 255, 255, 255],
+                                "width": 1
+                            }
+                        }
+                    },
+                    {
+                        "value": "Easement,Easement",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "style": "esriSFSSolid",
+                            "color": [255, 255, 115, 127],
+                            "outline": {
+                                "type": "esriSLS",
+                                "style": "esriSLSolid",
+                                "color": [255, 255, 255, 255],
+                                "width": 1
+                            }
+                        }
+                    },
+                    {
+                        "value": "Strata,Lot Type Parcel",
+                        "symbol": {
+                            "type": "esriSFS",
+                            "style": "esriSFSSolid",
+                            "color": [255, 127, 127, 127],
+                            "outline": {
+                                "type": "esriSLS",
+                                "style": "esriSLSolid",
+                                "color": [255, 255, 255, 255],
+                                "width": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

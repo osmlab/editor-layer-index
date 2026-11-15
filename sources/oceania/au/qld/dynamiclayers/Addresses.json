@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "source": {
+            "type": "mapLayer",
+            "mapLayerId": 0
+        },
+        "drawingInfo": {
+            "renderer": {
+                "type": "simple",
+                "symbol": {
+                    "type": "esriSMS",
+                    "style": "esriSMSCircle",
+                    "color": [50,147,77,255],
+                    "size": 4,
+                    "outline": {
+                        "color": [0,0,0,255],
+                        "width": 1.5,
+                        "type": "esriSLS",
+                        "style": "esriSLSSolid",
+                        "marker": null
+                    }
+                }
+            },
+            "showLabels": true,
+            "labelingInfo": [
+                {
+                    "labelExpression": "[street_number]",
+                    "useCodedValues": false,
+                    "maxScale": 0,
+                    "minScale": 0,
+                    "where": null,
+                    "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+                    "symbol": {
+                        "type": "esriTS",
+                        "horizontalAlignment": "left",
+                        "color": [255,255,255,255],
+                        "haloColor": [0,0,0,255],
+                        "haloSize": 1,
+                        "font": {
+                            "size": 12,
+                            "style": "normal",
+                            "variant": "normal",
+                            "decoration": "normal",
+                            "weight": "bold",
+                            "family": "Arial"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]

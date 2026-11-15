@@ -1,0 +1,88 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://www.spatial.nsw.gov.au/copyright",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "NSW DCS SS HAPE Imagery 1955",
+        "url": "https://portal.spatial.nsw.gov.au/tileservices/Hosted/HistoricalImagery1955/MapServer/tile/{zoom}/{y}/{x}",
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "1955",
+        "end_date": "1955",
+        "country_code": "AU",
+        "type": "tms",
+        "id": "NSW_DCS_SS_HAPE_Imagery_1955",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        150.59670603824043,
+                        -33.989902233752254
+                    ],
+                    [
+                        150.76152592283415,
+                        -33.989902233752254
+                    ],
+                    [
+                        150.76152592283154,
+                        -33.7404427545299
+                    ],
+                    [
+                        150.61243884540613,
+                        -33.73981950104541
+                    ],
+                    [
+                        150.59670603824043,
+                        -33.989902233752254
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        150.99037877880843,
+                        -34.193257106954775
+                    ],
+                    [
+                        151.08156543464742,
+                        -34.188424318625465
+                    ],
+                    [
+                        151.28276790619,
+                        -33.98607150553
+                    ],
+                    [
+                        151.3497158432,
+                        -33.62005116946
+                    ],
+                    [
+                        151.24500240326,
+                        -33.61747808228
+                    ],
+                    [
+                        151.243972435,
+                        -33.74889297652
+                    ],
+                    [
+                        150.99986995697,
+                        -33.74575279168
+                    ],
+                    [
+                        150.99037877880843,
+                        -34.193257106954775
+                    ]
+                ]
+            ]
+        ]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Historical Forbes 2012-03",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Historical/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:0",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Historical_Forbes_flood_2012_03_20cm_bgrn",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto",
+        "start_date": "2012-03",
+        "end_date": "2012-03"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    147.9758130353075,
+                    -33.33440266298471
+                ],
+                [
+                    147.97901908844972,
+                    -33.35106812932681
+                ],
+                [
+                    147.9622763664869,
+                    -33.351365697954016
+                ],
+                [
+                    147.96263259461267,
+                    -33.43137470633666
+                ],
+                [
+                    148.04314015128728,
+                    -33.43048281872598
+                ],
+                [
+                    148.04349637941556,
+                    -33.445643661543066
+                ],
+                [
+                    148.106904985999,
+                    -33.446535393327494
+                ],
+                [
+                    148.10512384536497,
+                    -33.46080185503446
+                ],
+                [
+                    148.22339158348746,
+                    -33.46020746599168
+                ],
+                [
+                    148.22196667097927,
+                    -33.36505275519668
+                ],
+                [
+                    148.20807377403037,
+                    -33.365647795812386
+                ],
+                [
+                    148.20771754590453,
+                    -33.351365697954016
+                ],
+                [
+                    148.16283280191794,
+                    -33.353151088357215
+                ],
+                [
+                    148.16247657379222,
+                    -33.33529553667412
+                ],
+                [
+                    147.9758130353075,
+                    -33.33440266298471
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

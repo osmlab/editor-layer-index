@@ -1,0 +1,41 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-8.01864, 54.31012],
+                [-7.86895, 54.20302],
+                [-7.54898, 54.1041],
+                [-7.24479, 54.09404],
+                [-7.11227, 54.2237],
+                [-7.16789, 54.37536],
+                [-7.36152, 54.46725],
+                [-7.50915, 54.57883],
+                [-7.7021, 54.63531],
+                [-8.04542, 54.55734],
+                [-8.2164, 54.46446],
+                [-8.01864, 54.31012]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_fermanagh",
+        "name": "OS 2nd Ed. 6-inch. Fermanagh, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/fermanagh_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

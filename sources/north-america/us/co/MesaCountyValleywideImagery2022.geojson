@@ -6,14 +6,13 @@
         "id": "MCGIS-County-Valleywide-Imagery-2022",
         "type": "wms",
         "name": "Mesa County GIS Valleywide 2022",
-        "url": "https://mcgis.mesacounty.us/imagery/rest/services/Mosaic_Datasets/Airphoto_2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}&foo={proj}",
+        "url": "https://mcgis.mesacounty.us/imagery/rest/services/Mosaic_Datasets/Airphoto_2022/ImageServer/exportImage?f=image&format=jpg&bbox={bbox}&imageSR={wkid}&bboxSR={wkid}&size={width},{height}",
         "max_zoom": 20,
         "permission_osm": "implicit",
         "country_code": "US",
         "start_date": "2022",
         "end_date": "2022",
         "available_projections": [
-            "CRS:84",
             "EPSG:3742",
             "EPSG:3857",
             "EPSG:4326"

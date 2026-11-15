@@ -1,0 +1,122 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "rennes_ortho_2020_tms",
+        "name": "Rennes orthophotographie 2020 (20 cm)",
+        "type": "tms",
+        "default": false,
+        "url": "https://public.sig.rennesmetropole.fr/geowebcache/service/tms/1.0.0/raster:ortho2020@EPSG:3857@jpeg/{zoom}/{x}/{-y}.jpg",
+        "category": "historicphoto",
+        "start_date": "2020-08-07",
+        "end_date": "2020-09-14",
+        "attribution": {
+            "text": "Ortho Express 2020 - IGNF",
+            "url": "https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/329859b4-84cd-497e-af48-4bd35c8ea209",
+            "required": true
+        },
+        "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
+        "country_code": "FR",
+        "max_zoom": 20,
+        "min_zoom": 12,
+        "privacy_policy_url": "https://metropole.rennes.fr/protection-des-donnees-personnelles"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -1.9689309753,
+                    48.0726067077
+                ],
+                [
+                    -1.9663392967,
+                    48.0456799232
+                ],
+                [
+                    -1.7547754692,
+                    47.9374854183
+                ],
+                [
+                    -1.7272350771,
+                    47.92961348
+                ],
+                [
+                    -1.7138768738,
+                    47.930163857
+                ],
+                [
+                    -1.6738005667,
+                    47.9318056541
+                ],
+                [
+                    -1.6604412346,
+                    47.9323498085
+                ],
+                [
+                    -1.5551373004,
+                    47.954604529
+                ],
+                [
+                    -1.5299767417,
+                    47.9736214266
+                ],
+                [
+                    -1.5173895301,
+                    47.9831277842
+                ],
+                [
+                    -1.493762676,
+                    48.0200944518
+                ],
+                [
+                    -1.4598108703,
+                    48.0934932124
+                ],
+                [
+                    -1.4636952473,
+                    48.1383887074
+                ],
+                [
+                    -1.4644729339,
+                    48.1473677392
+                ],
+                [
+                    -1.4668076187,
+                    48.1743046962
+                ],
+                [
+                    -1.5529026549,
+                    48.2340000073
+                ],
+                [
+                    -1.6225132395,
+                    48.2582595548
+                ],
+                [
+                    -1.8149098541,
+                    48.2954427499
+                ],
+                [
+                    -1.8973282181,
+                    48.3099978901
+                ],
+                [
+                    -1.9107830686,
+                    48.3094261927
+                ],
+                [
+                    -1.9511458195,
+                    48.3077017021
+                ],
+                [
+                    -1.9637320901,
+                    48.2981486194
+                ],
+                [
+                    -1.9689309753,
+                    48.0726067077
+                ]
+            ]
+        ]
+    }
+}

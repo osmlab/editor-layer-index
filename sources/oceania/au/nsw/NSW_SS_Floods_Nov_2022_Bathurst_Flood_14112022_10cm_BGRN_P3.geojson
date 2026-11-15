@@ -1,0 +1,77 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Nov 2022 Bathurst Flood 14112022 10cm BGRN P3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:11",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-11-14",
+        "end_date": "2022-11-14",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Nov_2022_Bathurst_Flood_14112022_10cm_BGRN_P3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    149.50480391307252,
+                    -33.383441822287026
+                ],
+                [
+                    149.5069910302313,
+                    -33.39756470572662
+                ],
+                [
+                    149.55604358500972,
+                    -33.39132802206094
+                ],
+                [
+                    149.57444057389324,
+                    -33.41970131787417
+                ],
+                [
+                    149.57033211118238,
+                    -33.42177958327043
+                ],
+                [
+                    149.61091827639262,
+                    -33.484519365553496
+                ],
+                [
+                    149.63631604587044,
+                    -33.475485086416676
+                ],
+                [
+                    149.581661041948,
+                    -33.38862493072432
+                ],
+                [
+                    149.586765495617,
+                    -33.387689360484075
+                ],
+                [
+                    149.58321224782674,
+                    -33.37533164439608
+                ],
+                [
+                    149.50480391307252,
+                    -33.383441822287026
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

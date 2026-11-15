@@ -3,9 +3,21 @@
     "properties": {
         "id": "kartverket-abas",
         "name": "Kartverket Administrative Boundaries overlay",
-        "type": "wms",
-        "url": "https://wms.geonorge.no/skwms1/wms.adm_enheter2?LAYERS=fylker_gjel,kommuner_gjel&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "category": "other",
+        "description": "Official administrative boundaries at the national, county and municipality levels",
         "overlay": true,
+        "type": "wms",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
+        "url": "https://wms.geonorge.no/skwms1/wms.adm_enheter2?LAYERS=fylker_gjel,kommuner_gjel&STYLES=&FORMAT=image/png&TRANSPARENT=TRUE&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "max_zoom": 22,
+        "min_zoom": 1,
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/About-The-Norwegian-Mapping-Authority/privacy-policy/",
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://www.kartverket.no/",
+            "required": true
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:3034",
@@ -31,18 +43,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ],
-        "attribution": {
-            "text": "© Kartverket",
-            "url": "https://www.kartverket.no/kunnskap/Norges-grenser/"
-        },
-        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
-        "min_zoom": 1,
-        "max_zoom": 22,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
-        "privacy_policy_url": "https://www.kartverket.no/en/About-The-Norwegian-Mapping-Authority/privacy-policy/",
-        "description": "Official administrative boundaries at the national, county and municipality levels",
-        "category": "other"
+        ]
     },
     "geometry": {
         "type": "Polygon",

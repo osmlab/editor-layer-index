@@ -1,0 +1,133 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Curitiba_Ortofoto_2019",
+        "url": "https://geocuritiba.ippuc.org.br/server/rest/services/Hosted/Ortofotos2019/MapServer/tile/{zoom}/{y}/{x}",
+        "type": "tms",
+        "country_code": "BR",
+        "name": "Curitiba Ortofoto 2019",
+        "permission_osm": "explicit",
+        "license_url": "https://wiki.openstreetmap.org/w/index.php?title=File:Autorizacao_IPPUC.pdf",
+        "privacy_policy_url": "https://www.curitiba.pr.gov.br/conteudo/lei-geral-de-protecao-de-dados-lgpd/3272",
+        "best": true,
+        "end_date": "2019",
+        "start_date": "2019",
+        "attribution": {
+            "url": "https://geocuritiba.ippuc.org.br",
+            "text": "Instituto de Pesquisa e Planejamento Urbano de Curitiba"
+        },
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "category": "photo",
+        "valid-georeference": true
+    },
+    "geometry":
+        {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -49.4,
+                -25.43
+              ],
+              [
+                -49.39,
+                -25.49
+              ],
+              [
+                -49.38,
+                -25.5
+              ],
+              [
+                -49.38,
+                -25.52
+              ],
+              [
+                -49.36,
+                -25.59
+              ],
+              [
+                -49.38,
+                -25.63
+              ],
+              [
+                -49.37,
+                -25.65
+              ],
+              [
+                -49.36,
+                -25.65
+              ],
+              [
+                -49.3,
+                -25.63
+              ],
+              [
+                -49.26,
+                -25.62
+              ],
+              [
+                -49.23,
+                -25.59
+              ],
+              [
+                -49.21,
+                -25.57
+              ],
+              [
+                -49.19,
+                -25.52
+              ],
+              [
+                -49.19,
+                -25.43
+              ],
+              [
+                -49.19,
+                -25.38
+              ],
+              [
+                -49.22,
+                -25.34
+              ],
+              [
+                -49.27,
+                -25.34
+              ],
+              [
+                -49.29,
+                -25.34
+              ],
+              [
+                -49.3,
+                -25.37
+              ],
+              [
+                -49.31,
+                -25.37
+              ],
+              [
+                -49.33,
+                -25.35
+              ],
+              [
+                -49.35,
+                -25.34
+              ],
+              [
+                -49.36,
+                -25.37
+              ],
+              [
+                -49.38,
+                -25.39
+              ],
+              [
+                -49.4,
+                -25.43
+              ]
+            ]
+          ]
+    }
+}

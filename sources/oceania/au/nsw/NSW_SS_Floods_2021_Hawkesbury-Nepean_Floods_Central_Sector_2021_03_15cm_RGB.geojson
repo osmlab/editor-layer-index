@@ -1,0 +1,69 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods 2021 Hawkesbury-Nepean Floods Central Sector 2021 03 15cm RGB",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:6",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2021-03",
+        "end_date": "2021-03",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_2021_Hawkesbury-Nepean_Floods_Central_Sector_2021_03_15cm_RGB",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    150.76171794780885,
+                    -33.471761948677184
+                ],
+                [
+                    150.76071782544523,
+                    -33.531615059226525
+                ],
+                [
+                    150.73809383876244,
+                    -33.53197773685378
+                ],
+                [
+                    150.7346132254384,
+                    -33.71167816052855
+                ],
+                [
+                    150.7698544354634,
+                    -33.70986853503927
+                ],
+                [
+                    150.76898428212905,
+                    -33.660269963365046
+                ],
+                [
+                    150.85077869551816,
+                    -33.659907824799525
+                ],
+                [
+                    150.85308404786997,
+                    -33.47103608712365
+                ],
+                [
+                    150.76171794780885,
+                    -33.471761948677184
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

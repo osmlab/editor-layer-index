@@ -3,14 +3,14 @@
     "properties": {
         "id": "VBMPImagery_Most_Recent",
         "name": "VBMP Most Recent Imagery",
-        "start_date": "2019",
-        "end_date": "2022",
-        "url": "https://gismaps.vdem.virginia.gov/arcgis/rest/services/VBMP_Imagery/MostRecentImagery_WGS/MapServer/WMTS/tile/1.0.0/VBMP_Imagery_MostRecentImagery_WGS/default/default028mm/{zoom}/{y}/{x}.jpg",
+        "start_date": "2021",
+        "end_date": "2023",
+        "url": "https://vginmaps.vdem.virginia.gov/arcgis/rest/services/VBMP_Imagery/MostRecentImagery_WGS/MapServer/tile/{zoom}/{y}/{x}",
         "min_zoom": 2,
         "max_zoom": 20,
         "country_code": "US",
         "attribution": {
-            "url": "https://vgin.maps.arcgis.com/home/item.html?id=36386a7e7dae4032a33cb0b83a1711f1",
+            "url": "https://vgin.vdem.virginia.gov/",
             "text": "Virginia Geographic Information Network, Commonwealth of Virginia",
             "required": true
         },

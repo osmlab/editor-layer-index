@@ -1,27 +1,8 @@
 he:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: צילומי האוויר העדכניים ביותר של AIV Flanders
-    AGIV10cm:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Flanders‏ 2013-‎2015 צילום אווירי 10 ס״מ
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, הצללה ממגוון כיוונים 0.25 מטר
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap מידע פלמי
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, גורם מבט אווירי 0.25 מטר
     Bing:
       description: צילומי אוויר ולוויין.
+      name: Bing מפות אוויר
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 נטול עננים - https://s2maps.eu מבית שירותי EOX IT GmbH (מכיל נתונים ערוכים מתוך Copernicus Sentinel 2017 & 2018)
@@ -37,6 +18,8 @@ he:
       description: תמונות ארכיון מ־Esri שעשויות להיות ברורות ומדויקות יותר משכבת בררת המחדל.
       name: ESRI תצלומי אוויר (Clarity Beta)
     MAPNIK:
+      attribution:
+        text: מתנדבי ‎© OpenStreetMap,‏ ODbL 1.0
       description: שכבת בררת המחדל של OpenStreetMap.
       name: OpenStreetMap (רגיל)
     Mapbox:
@@ -153,11 +136,6 @@ he:
         text: EUFAR Balaton ortofotó 2010
       description: צילומית עם תיאוג גאו-מרחבי מ1940 ע״י Balaton Limnological Institute.
       name: EUFAR Balaton אורטפוטו
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 דרך aginfo.cgk.affrc.go.jp. טוב למעקב אבל קצת ישן.
-      name: יפן GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © עיריית גותנבורג, CC0
@@ -275,6 +253,7 @@ he:
     stockholm-orto:
       attribution:
         text: מחוז שטוקהולם CC0
+      description: צילומי אורתופוטו מעיריית שטוקהולם 2018, רישיון CC0
       name: אורתופוטו שטוקהולם
     susono_shizuoka_jp_orthophoto:
       attribution:

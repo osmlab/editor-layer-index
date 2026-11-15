@@ -29,6 +29,8 @@ from jsonschema import Draft4Validator, RefResolver, ValidationError
 from shapely.geometry import shape
 from shapely.validation import explain_validity
 
+from libeli.geometry import validate_polygon_coordinates
+
 
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
@@ -82,6 +84,9 @@ for filename in arguments.path:
         logger.debug("{} does not exist, skip".format(filename))
         continue
 
+    if ":" in filename:
+        raise ValidationError(f"Filename contains invalid \":\" character: {filename}")
+
     try:
         ## dict_raise_on_duplicates raises error on duplicate keys in geojson
         source = json.load(io.open(filename, encoding="utf-8"), object_pairs_hook=dict_raise_on_duplicates)
@@ -96,6 +101,11 @@ for filename in arguments.path:
 
         ## jsonschema validate
         validator.validate(source, schema)
+
+        if "properties" not in source:
+            logger.exception(f"{filename} missing properties")
+            raise ValidationError(f"{filename} missing properties")
+
         sourceid = source["properties"]["id"]
         if sourceid in seen_ids:
             raise ValidationError("Id %s used multiple times" % sourceid)
@@ -153,7 +163,8 @@ for filename in arguments.path:
             ):
                 logger.warning(f"WMTS source supports EPSG:3857, could this be tms? {filename}")
 
-        missingparams = [x for x in params if x not in source["properties"]["url"].replace("{-y}", "{y}")]
+        source_url_excl_synonyms = source["properties"]["url"].replace("{-y}", "{y}").replace("{wkid}", "{proj}")
+        missingparams = [x for x in params if x not in source_url_excl_synonyms]
         if missingparams:
             raise ValidationError("Missing parameter in {}: {}".format(filename, missingparams))
 
@@ -170,6 +181,11 @@ for filename in arguments.path:
                 raise ValidationError("{} should have a Polygon or MultiPolygon geometry".format(filename))
             if not "country_code" in source["properties"]:
                 raise ValidationError("{} should have a country or be global".format(filename))
+
+            try:
+                validate_polygon_coordinates(source["geometry"])
+            except ValueError as e:
+                raise ValidationError(f"{filename} geometry is not valid: {e}") from e
 
             geom = shape(source["geometry"])
              # Check validity of geometries

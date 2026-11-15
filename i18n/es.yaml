@@ -1,33 +1,5 @@
 es:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Imágenes aéreas más recientes del AIV Flanders
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 imágenes aéreas 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AGIVwerkbestand:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Imágenes aéreas preliminares de AIV Flanders
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Modelo de altura digital AIV Flanders II, sombreado multidireccional 0.25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Modelo de altura digital AIV Flanders II, factor Skyview 0.25 m
-    AIV_Wegenregister:
-      attribution:
-        text: © Agencia de Información de Flandes
-      name: AIV Wegenregister
     Bedzin-PL-aerial_image:
       attribution:
         text: Poviat Starosty en Będzin
@@ -91,6 +63,34 @@ es:
       attribution:
         text: Ayuntamiento de Częstochowa
       name: 'Częstochowa: Edificios'
+    DV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, sombreado multidireccional 0,25 m
+    DV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, factor Skyview 0,25 m
+    DV_GRB:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen GRB
+    DV_OrthoPhoto:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Imágenes aéreas más recientes de Digitaal Vlaanderen
+    DV_OrthoPhoto_20132015_10cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Imágenes aéreas Digitaal Vlaanderen 2013-2015 10 cm
+    DV_OrthoPhoto_Preliminary:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Imágenes aéreas preliminares de Digitaal Vlaanderen
+    DV_Wegenregister:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen Wegenregister
     Dourados_Ortofotos:
       attribution:
         text: Prefectura Municipal de Dourados - GeoDourados
@@ -99,8 +99,23 @@ es:
     EOXAT2018CLOUDLESS:
       attribution:
         text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene los datos de Copernicus Sentinel modificados 2017 y 2018)
-      description: Imágenes satelitales post-procesadas de Sentinel
+      description: Imágenes satelitales posprocesadas de Sentinel
       name: eox.at 2018 sin nubes
+    EOXAT2019CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene datos modificados de Copernicus Sentinel 2019)
+      description: Imágenes post-procesadas del satélite Sentinel.
+      name: eox.at 2019 sin nubes
+    EOXAT2020CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene datos modificados de Copernicus Sentinel 2020)
+      description: Imágenes post-procesadas del satélite Sentinel.
+      name: eox.at 2020 sin nubes
+    EOXAT2021CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sin nubes - https://s2maps.eu por EOX IT Services GmbH (Contiene datos modificados de Copernicus Sentinel 2021)
+      description: Imágenes post-procesadas del satélite Sentinel.
+      name: eox.at 2021 sin nubes
     EsriWorldImagery:
       attribution:
         text: Términos y comentarios
@@ -116,84 +131,100 @@ es:
         text: Oficina de agrimensura de la ciudad de Fráncfort del Meno
       description: Imágenes aéreas de Fráncfort del Meno, fotografiadas el 16 de abril de 2019
       name: Foto aérea de Fráncfort del Meno 2019
+    Geodatastyrelsen_Cadastral_Parcels_INSPIRE_View:
+      attribution:
+        text: Geodatastyrelsen og Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI Parcelas Catastrales Vista INSPIRE
+    Geodatastyrelsen_DTK_Kort25:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: SDFI DTK Map25
+    Geodatastyrelsen_Denmark:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: Imágenes aéreas SDFI
+    Geodatastyrelsen_Skaermkort:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: Mapa de pantalla SDFI
     Geoportal2-PL-City-boundaries_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio WMS que publica unidades de división territorial polacas, incluidas las unidades administrativas
       name: 'Geoportal 2: Límites de la ciudad WMS'
     Geoportal2-PL-HighResolution-aerial_archival_image_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Ortofoto con una resolución de 10 cm o más. Los datos se ordenan por resolución y luego por actualidad, por ejemplo, una hoja de 2012 con una resolución de 8 cm enviará una hoja de 2019 con una resolución de 10 cm.
       name: 'Geoportal 2: Ortofotomapa de alta resolución (imágenes de archivo) (WMS)'
     Geoportal2-PL-HighResolution-aerial_image_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Ortofoto con una resolución de 10 cm o más. Los datos se ordenan por resolución y luego por actualidad, por ejemplo, una hoja de 2012 con una resolución de 8 cm enviará una hoja de 2019 con una resolución de 10 cm.
       name: 'Geoportal 2: Ortofotomapa de alta resolución (imagen aérea) (WMS)'
     Geoportal2-PL-Streets_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio de visualización de WMS Integración de la numeración nacional de direcciones que permite la descarga de imágenes cartográficas creadas a partir de los datos espaciales del Registro Nacional de Fronteras en el ámbito de los registros de calles y direcciones.
       name: Geoportal 2 Nombres de calles
     Geoportal2-PL-addres_points_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio de visualización de WMS Integración de la numeración nacional de direcciones que permite la descarga de imágenes cartográficas creadas a partir de los datos espaciales del Registro Nacional de Fronteras en el ámbito de los registros de calles y direcciones.
       name: 'Geoportal 2: Puntos de dirección'
     Geoportal2-PL-aerial_archival_image_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio de navegación (Web Map Service, WMS) que permite navegar por ortofotos de archivo de la zona de Polonia. Los datos proporcionados a través de este servicio son un ortofotomapa realizado a partir de fotografías aéreas. El servicio ofrece soporte para la interfaz WMS 1.3.0.
       name: 'Geoportal 2: Ortofotomapa (imágenes de archivo) (WMS)'
     Geoportal2-PL-aerial_image_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Un servicio de visualización (Web Map Service,WMS) que permite ver ortofotomapas de la zona de Polonia. Los datos que se ponen a disposición mediante este servicio son ortofotomapas creados a partir de fotografías aéreas. El servicio es compatible con la interfaz WMS 1.3.0.
       name: 'Geoportal 2: Ortofotomapa (imágenes aéreas más recientes) (WMS)'
     Geoportal2-PL-aerial_image_WMTS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Un servicio de visualización (Web Map Tile Service, WMTS) que permite ver ortofotomapas de la zona de Polonia. Los datos que se ponen a disposición mediante este servicio son ortofotomapas creados a partir de fotografías aéreas.
       name: 'Geoportal 2: Ortofotomapa (últimas imágenes aéreas) (WMTS)'
     Geoportal2-PL-boundaries-of-communes_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio WMS que publica unidades de división territorial polacas, incluidas las unidades administrativas
       name: 'Geoportal 2: Fronteras de comunas WMS'
     Geoportal2-PL-boundaries-of-counties_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio WMS que publica unidades de división territorial polacas, incluidas las unidades administrativas
       name: 'Geoportal 2: Fronteras de condados WMS'
     Geoportal2-PL-boundaries-of-provinces_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio WMS que publica unidades de división territorial polacas, incluidas las unidades administrativas
       name: 'Geoportal 2: Fronteras de provincias WMS'
     Geoportal2-PL-buildings_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio de integración del Registro de la Propiedad Nacional es un servicio agregado para la presentación de los datos del registro de la propiedad que provienen directamente de las unidades a nivel de condado. El servicio incluye sólo los datos de aquellas unidades que disponen de servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado Integración Nacional del Registro de la Propiedad.
       name: 'Geoportal 2: Registros de edificios WMS'
     Geoportal2-PL-gas-pipe_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio nacional de integración del refuerzo del terreno es un servicio colectivo para la presentación de los datos del refuerzo del terreno procedentes directamente de las unidades de nivel de distrito. El servicio contiene sólo datos de aquellas unidades que tienen un servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: gasoductos WMS'
     Geoportal2-PL-heat-pipe_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio nacional de integración del refuerzo del terreno es un servicio colectivo para la presentación de los datos del refuerzo del terreno procedentes directamente de las unidades de nivel de distrito. El servicio contiene sólo datos de aquellas unidades que tienen un servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: tubos de calor WMS'
     Geoportal2-PL-plot_boundaries_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio de integración del Registro de la Propiedad Nacional es un servicio agregado para la presentación de los datos del registro de la propiedad que provienen directamente de las unidades a nivel de condado. El servicio incluye sólo los datos de aquellas unidades que disponen de servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado Integración Nacional del Registro de la Propiedad.
       name: 'Geoportal 2: Límites de la parcela'
     Geoportal2-PL-power-cord_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio nacional de integración del refuerzo del terreno es un servicio colectivo para la presentación de los datos del refuerzo del terreno procedentes directamente de las unidades de nivel de distrito. El servicio contiene sólo datos de aquellas unidades que tienen un servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: cable de alimentación WMS'
     Geoportal2-PL-prng:
@@ -202,27 +233,32 @@ es:
       name: 'Geoportal 2: PRNG (nombres geográficos)'
     Geoportal2-PL-sewer-pipe_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio nacional de integración del refuerzo del terreno es un servicio colectivo para la presentación de los datos del refuerzo del terreno procedentes directamente de las unidades de nivel de distrito. El servicio contiene sólo datos de aquellas unidades que tienen un servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: tuberías de alcantarillado WMS'
+    Geoportal2-PL-shaded_relief_WMS:
+      attribution:
+        text: Dirección General de Geodesia y Cartografía
+      description: Servicio de visualización (Web Map Service, WMS) para ver el sombreado DMT en una cuadrícula de 1m x 1m. El servicio ofrece soporte para la interfaz WMS 1.3.0.
+      name: 'Geoportal 2: Relieve sombreado (WMS)'
     Geoportal2-PL-squares-and-housing-estates_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio de visualización de WMS Integración de la numeración nacional de direcciones que permite la descarga de imágenes cartográficas creadas a partir de los datos espaciales del Registro Nacional de Fronteras en el ámbito de los registros de calles y direcciones.
       name: 'Geoportal 2: Plazas y urbanizaciones'
     Geoportal2-PL-state-borders_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: Servicio WMS que publica unidades de división territorial polacas, incluidas las unidades administrativas
       name: 'Geoportal 2: Fronteras estatales WMS'
     Geoportal2-PL-telecommunications-cable_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio nacional de integración del refuerzo del terreno es un servicio colectivo para la presentación de los datos del refuerzo del terreno procedentes directamente de las unidades de nivel de distrito. El servicio contiene sólo datos de aquellas unidades que tienen un servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: cables de telecomunicaciones WMS'
     Geoportal2-PL-water-pipe_WMS:
       attribution:
-        text: Oficina Principal de Geodesia y Cartografía
+        text: Dirección General de Geodesia y Cartografía
       description: El servicio nacional de integración del refuerzo del terreno es un servicio colectivo para la presentación de los datos del refuerzo del terreno procedentes directamente de las unidades de nivel de distrito. El servicio contiene sólo datos de aquellas unidades que tienen un servicio WMS con los parámetros adecuados y que han decidido incluir su servicio WMS en el servicio agregado KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: tuberías de agua WMS'
     Gliwice-2003:
@@ -307,16 +343,26 @@ es:
         text: Términos y comentarios
       description: Conjunto de teselas rasterizadas proporcionadas por Mapbox que incluye un mapa base global de imágenes aéreas y de satélite de alta resolución
       name: Mapbox Satellite
-    OSIPIII_6in:
+    Naturvardsverket-protected:
       attribution:
-        text: Programa de imágenes de todo el estado de Ohio
-      description: Ortofotos del Programa III de imágenes de todo el estado de Ohio de 41 condados capturadas con una resolución de 6 pulgadas en 2019 y 2020.
-      name: Programa de imágenes de todo el estado de Ohio III de 6 pulgadas
+        text: © Naturvårdsverket, CC0
+      description: Parques nacionales, reservas naturales y otras zonas y objetos protegidos de Suecia
+      name: Agencia de Protección del Medio Ambiente - Zonas protegidas
+    Naturvardsverket-trails:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Senderos actualizados diariamente en las reservas naturales o sus alrededores, según los registros de la Agencia Sueca de Protección del Medio Ambiente
+      name: Agencia de Protección del Medio Ambiente - Senderos
+    OSIP:
+      attribution:
+        text: Programa estatal de imágenes de Ohio
+      description: Programa de Imágenes Estatales de Ohio III ortoimágenes más actuales de cada condado con resoluciones desde 1 pie hasta 3 pulgadas desde 2017 hasta 2020.
+      name: Programa estatal de imágenes de Ohio
     OSIP_1ft:
       attribution:
         text: Programa de imágenes de todo el estado de Ohio
       description: Ortofotos del Programa II de imágenes de todo el estado de Ohio de los 88 condados con una resolución de 1 pie desde 2011 hasta 2014.
-      name: Programa de imágenes de todo el estado de Ohio II 1 pie
+      name: Programa de Imágenes Estatales de Ohio 1-Pie
     OSIP_6in:
       attribution:
         text: Programa de imágenes de todo el estado de Ohio
@@ -329,35 +375,63 @@ es:
       name: Parcelas catastrales OSMUK
     OSM_Inspector-Addresses:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Direcciones'
     OSM_Inspector-Geometry:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Geometría'
     OSM_Inspector-Highways:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Carreteras'
     OSM_Inspector-Multipolygon:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Área'
     OSM_Inspector-Places:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Lugares'
     OSM_Inspector-Routing:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Enrutamiento'
     OSM_Inspector-Tagging:
       attribution:
-        text: © Geofabrik GmbH, contribuidores OpenStreetMap, CC-BY-SA
+        text: © Geofabrik GmbH, Colaboradores de OpenStreetMap, CC-BY-SA
       name: 'Inspector OSM: Etiquetado'
     OpenAerialMapMosaic:
       description: Todas las imágenes de OpenAerialMap en una capa de mosaico, por Kontur.io
       name: Mosaico de OpenAerialMap, por Kontur.io
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Restos y monumentos antiguos e históricos
+      name: Riksantikvarieämbetet - Yacimientos arqueológicos y monumentos
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Edificios patrimoniales e iglesias
+      name: Riksantikvarieämbetet - Edificios patrimoniales
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Zonas protegidas para edificios del patrimonio y lugares del patrimonio religioso
+      name: Riksantikvarieämbetet - Zonas de patrimonio protegido
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Ruinas de interés histórico-cultural
+      name: Riksantikvarieämbetet - Ruinas
+    SDFE_Overflade_Skyggekort_40cm:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: Mapa de sombras de superficie SDFI (40 cm)
+    SDFE_Terraen_Skyggekort_40cm:
+      attribution:
+        text: Styrelsen for Dataforsyning og Infrastruktur
+      name: Mapa de sombras del terreno SDFI (40 cm)
     SPW_ORTHO_LAST:
       name: Imágenes aéreas más recientes de SPW(allonie)
     SPW_PICC:
@@ -385,10 +459,13 @@ es:
     US-TIGER-Roads-2021:
       description: Amarillo = Datos de mapas de dominio público del censo de EE.UU. Rojo = Datos no encontrados en OpenStreetMap
       name: TIGER Carreteras 2021
+    US-TIGER-Roads-2022:
+      description: Amarillo = Datos del mapa de dominio público del censo de EE.UU. Rojo = Datos no encontrados en OpenStreetMap
+      name: TIGER Carreteras 2022
     USDA-NAIP:
       attribution:
         text: Departamento de Agricultura de EE.UU.
-      description: El año más reciente de DOQQ de 4 bandas de 60 cm del Programa Nacional de Imágenes Agrícolas (NAIP) para cada estado en los Estados Unidos contiguos.
+      description: El año más reciente de DOQQs de 4 bandas de 30/60 cm del Programa Nacional de Imágenes Agrícolas (NAIP) para cada estado de los Estados Unidos contiguos.
       name: Programa Nacional de Imágenes de Agricultura
     US_Forest_Service_roads_overlay:
       description: 'Carretera: marco verde = sin clasificar. marco marrón = pista. Superficie: grava = relleno marrón claro, asfalto = negro, pavimentado = gris, tierra = blanco, hormigón = azul, hierba/pasto = verde. Estacional = barras blancas'
@@ -431,23 +508,23 @@ es:
       name: UrbisAdm NL
     Waymarked_Trails-Cycling:
       attribution:
-        text: © waymarkedtrails.org, colaboradores de OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Colaboradores de OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Ciclismo'
     Waymarked_Trails-Hiking:
       attribution:
-        text: © waymarkedtrails.org, colaboradores de OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Colaboradores de OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Senderismo'
     Waymarked_Trails-MTB:
       attribution:
-        text: © waymarkedtrails.org, colaboradores de OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Colaboradores de OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: BTT'
     Waymarked_Trails-Skating:
       attribution:
-        text: © waymarkedtrails.org, colaboradores de OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Colaboradores de OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Patinaje'
     Waymarked_Trails-Winter_Sports:
       attribution:
-        text: © waymarkedtrails.org, colaboradores de OpenStreetMap, CC by-SA 3.0
+        text: © waymarkedtrails.org, Colaboradores de OpenStreetMap, CC by-SA 3.0
       name: 'Waymarked Trails: Deportes de invierno'
     Zabrze-2011:
       attribution:
@@ -482,11 +559,6 @@ es:
         text: Ortofotos de EUFAR Balaton 2010
       description: Fotografía geo-etiquetada de 1940 del Instituto Limnológico Balaton.
       name: Ortofotos de EUFAR Balaton
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 a través de aginfo.cgk.affrc.go.jp. Bueno para rastrear, pero un poco más antiguo.
-      name: Japón GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Municipio de Gotemburgo, CC0
@@ -512,6 +584,16 @@ es:
         text: © Municipio de Gotemburgo, CC0
       description: Ortofoto del municipio de Gotemburgo
       name: Ortofoto de Gotemburgo 2019
+    gothenburg-ortho_2021:
+      attribution:
+        text: © Municipio de Gotemburgo, CC0
+      description: Ortofoto del municipio de Gotemburgo
+      name: Ortofoto de Gotemburgo 2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © Municipio de Gotemburgo, CC0
+      description: Ortofoto del municipio de Gotemburgo
+      name: Última ortofoto de Gotemburgo
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japón
@@ -604,7 +686,7 @@ es:
       name: Capa de orientación
     openpt_map:
       attribution:
-        text: © contribuidores OpenStreetMap, CC-BY-SA
+        text: © Colaboradores de OpenStreetMap, CC-BY-SA
       name: OpenPT Map (capa)
     openrailwaymap:
       attribution:
@@ -623,12 +705,12 @@ es:
       name: OpenRailwayMap Señalización
     osm-gps:
       attribution:
-        text: © contribuidores OpenStreetMap
+        text: © Colaboradores de OpenStreetMap
       description: Trazas GPS públicas subidas en OpenStreetMap.
       name: Trazas GPS de OpenStreetMap
     osm-mapnik-german_style:
       attribution:
-        text: © contribuidores OpenStreetMap, CC-BY-SA
+        text: © Colaboradores de OpenStreetMap, CC-BY-SA
       name: OpenStreetMap (estilo alemán)
     poznan-ortofotomapa2014:
       attribution:
@@ -652,8 +734,13 @@ es:
       name: 'Przemyśl: Edificios'
     qa_no_address:
       attribution:
-        text: Simon Poole, datos © contribuidores OpenStreetMap
+        text: Simon Poole, Datos © Colaboradores de OpenStreetMap
       name: CC sin direcciones
+    route500:
+      attribution:
+        text: Teselas © cquest@Openstreetmap France, datos © IGN, LO/OL
+      description: Rutas de la red clasificada (autopistas, nacionales, departamentales)
+      name: Ruta 500
     rzeszowski-aerial:
       attribution:
         text: Rzeszów poviat
@@ -662,10 +749,35 @@ es:
       attribution:
         text: Rzeszów poviat
       name: 'Rzeszów poviat: Edificios'
+    scb-industrial:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Zonas delimitadas geográficamente que se caracterizan por un uso del suelo industrial y a gran escala
+      name: SCB - Zonas industriales
+    scb-settlements:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Zonas contiguas de edificios con 50-199 habitantes y no más de 150 metros entre viviendas
+      name: SCB - Pequeños asentamientos
+    scb-urban:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Asentamientos humanos de al menos 200 personas con menos de 500 metros entre viviendas
+      name: SCB - Zonas urbanas
+    scb-vacation:
+      attribution:
+        text: © Statistiska Centralbyrån, CC0
+      description: Zonas contiguas formadas principalmente por viviendas vacacionales; un conjunto de al menos 50 viviendas vacacionales, cuya distancia entre ellas no supere los 150 metros
+      name: SCB - Zonas de viviendas vacacionales
     skobbler:
       attribution:
-        text: '© teselas: skobbler, datos del mapa: contribuidores OpenStreetMap'
+        text: '© Teselas: skobbler, Datos del mapa: Colaboradores de OpenStreetMap'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © Skolverket
+      description: Escuelas suecas.
+      name: Skolverket - Escuelas
     skoterleder:
       attribution:
         text: © Skoterleder.org
@@ -693,13 +805,18 @@ es:
         text: Ortofoto de la ciudad de Susono
       description: Fotos aéreas publicadas por Susono City como datos abiertos.
       name: Ortofoto de la ciudad de Susono
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: Red sueca de transporte de electricidad.
+      name: SVK - Red eléctrica
     tf-cycle:
       attribution:
-        text: Mapas © Thunderforest, datos © contribuidores OpenStreetMap
+        text: Mapas © Thunderforest, Datos © Colaboradores de OpenStreetMap
       name: Thunderforest OpenCycleMap
     tf-landscape:
       attribution:
-        text: Mapas © Thunderforest, datos © contribuidores OpenStreetMap
+        text: Mapas © Thunderforest, Datos © Colaboradores de OpenStreetMap
       name: Thunderforest Landscape
     tf-outdoors:
       attribution:

@@ -1,33 +1,5 @@
 fr:
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Images aériennes les plus récentes de l'agence AIV Flanders
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: Images aériennes 10cm  2013-2015 de l'agence AIV Flanders
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flandres GRB
-    AGIVwerkbestand:
-      attribution:
-        text: © Agence d'Informations de Flandre
-      name: Images satellite préliminaires AIV Flandre
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m
-    AIV_Wegenregister:
-      attribution:
-        text: © Agence flamande d'informations
-      name: AIV Wegenregister
     Bedzin-PL-aerial_image:
       attribution:
         text: Bureau de district à Będzin
@@ -91,6 +63,34 @@ fr:
       attribution:
         text: Bâtiments de Częstochowa
       name: 'Bâtiments de Częstochowa'
+    DV_DHMV_II_HILL_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, multidirectional hillshade 0,25 m
+    DV_DHMV_II_SVF_25cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen DHV II, Skyview factor 0,25 m
+    DV_GRB:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen GRB
+    DV_OrthoPhoto:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Images aériennes les plus récentes de l'agence Digitaal Vlaanderen
+    DV_OrthoPhoto_20132015_10cm:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Images aériennes 10cm  2013-2015 de l'agence Digitaal Vlaanderen
+    DV_OrthoPhoto_Preliminary:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Images satellite préliminaires Digitaal Vlaanderen
+    DV_Wegenregister:
+      attribution:
+        text: © Digitaal Vlaanderen
+      name: Digitaal Vlaanderen Wegenregister
     Dourados_Ortofotos:
       attribution:
         text: Mairie de Dourados - GeoDourados
@@ -101,6 +101,21 @@ fr:
         text: Sentinel-2 sans nuages — https://s2maps.eu par EOX IT Services GmbH (contient des données Copernicus Sentinel modifiées de 2017 et de 2018)
       description: Imagerie satellite Sentinel retravaillée
       name: eox.at 2018 sans nuages
+    EOXAT2019CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sans nuages — https://s2maps.eu par EOX IT Services GmbH (contient des données Copernicus Sentinel modifiées de 2019)
+      description: Imagerie satellite Sentinel retravaillée
+      name: eox.at 2019 sans nuages
+    EOXAT2020CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sans nuages — https://s2maps.eu par EOX IT Services GmbH (contient des données Copernicus Sentinel modifiées de 2020)
+      description: Imagerie satellite Sentinel retravaillée
+      name: eox.at 2020 sans nuages
+    EOXAT2021CLOUDLESS:
+      attribution:
+        text: Sentinel-2 sans nuages — https://s2maps.eu par EOX IT Services GmbH (contient des données Copernicus Sentinel modifiées de 2021)
+      description: Imagerie satellite Sentinel retravaillée
+      name: eox.at 2020 sans nuages
     EsriWorldImagery:
       attribution:
         text: Termes & commentaires
@@ -116,6 +131,10 @@ fr:
         text: Bureau d'arpentage de la ville de Francfort-sur-le-Main
       description: Images satellite de Francfort-sur-le-Main prises le 16 avril 2019
       name: Images satellite 2019 de Francfort-sur-le-Main
+    Geodatastyrelsen_DTK_Kort25:
+      name: SDFI DTK Map25
+    Geodatastyrelsen_Denmark:
+      name: Images aériennes SDFI
     Geoportal2-PL-City-boundaries_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
@@ -144,6 +163,7 @@ fr:
     Geoportal2-PL-aerial_archival_image_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie ortofotomap archiwalnych dla obszaru Polski. Dane udostępniane za pomocą tej usługi stanowią ortofotomapę wykonaną ze zdjęć lotniczych. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
       name: 'Geoportal 2: Orthophotomap (photos d''archive) WMS'
     Geoportal2-PL-aerial_image_WMS:
       attribution:
@@ -158,14 +178,17 @@ fr:
     Geoportal2-PL-boundaries-of-communes_WMS:
       attribution:
         text: Bureau Principal de Géodésie et de Cartographie de Pologne
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
       name: 'Geoportal 2: frontières de communes WMS'
     Geoportal2-PL-boundaries-of-counties_WMS:
       attribution:
         text: Bureau Principal de Géodésie et de Cartographie de Pologne
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
       name: 'Geoportal 2: frontières de contés WMS'
     Geoportal2-PL-boundaries-of-provinces_WMS:
       attribution:
         text: Bureau Principal de Géodésie et de Cartographie de Pologne
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
       name: 'Geoportal 2: frontières de provinces WMS'
     Geoportal2-PL-buildings_WMS:
       attribution:
@@ -201,13 +224,20 @@ fr:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa Krajowa Integracja Uzbrojenia Terenu jest usługą zbiorczą prezentacji danych uzbrojenia terenu pochodzących bezpośrednio z jednostek szczebla powiatowego. Usługa zawiera jedynie dane tych jednostek, które dysponują usługą WMS o odpowiednich parametrach i zdecydowały się włączyć swoją usługę WMS do usługi zbiorczej KrajowaIntegracjaUzbrojeniaTerenu.
       name: 'Geoportal 2: canalisations d''égout WMS'
+    Geoportal2-PL-shaded_relief_WMS:
+      attribution:
+        text: Główny Urząd Geodezji i Kartografii
+      description: Usługa przeglądania (Web Map Service,WMS) umożliwiająca przeglądanie cieniowania NMT w siatce 1m x 1m. Usługa oferuje wsparcie dla interfejsu WMS 1.3.0.
+      name: 'Geoportal 2 : relief ombragé (WMS)'
     Geoportal2-PL-squares-and-housing-estates_WMS:
       attribution:
         text: Główny Urząd Geodezji i Kartografii
       description: Usługa przeglądania WMS Krajowa Integracja Numeracji Adresowej umożliwiająca pobieranie obrazów mapowych utworzonych na podstawie danych przestrzennych z Państwowego Rejestru Granic w zakresie ewidencji ulic i adresów.
+      name: 'Geoportal 2 : parcs et lotissements'
     Geoportal2-PL-state-borders_WMS:
       attribution:
         text: Bureau Principal de Géodésie et de Cartographie de Pologne
+      description: Usługa WMS publikująca jednostki podziału terytorialnego Polski w tym jednostki administracyjne
       name: 'Geoportal 2: frontières d''états WMS'
     Geoportal2-PL-telecommunications-cable_WMS:
       attribution:
@@ -299,17 +329,27 @@ fr:
     Mapbox:
       attribution:
         text: Termes et commentaires
+      description: Mapbox fournit des ensembles de tuiles matricielles qui incluent une cartographie globale à haute résolution d'imagerie aérienne et satellite
       name: 'Images satellite Mapbox '
-    OSIPIII_6in:
+    Naturvardsverket-protected:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Parcs naturels suédois, réserves naturelles et autres zones protégées et objets
+      name: Agence de Protection de l'Environnement - Zones Protégées
+    Naturvardsverket-trails:
+      attribution:
+        text: © Naturvårdsverket, CC0
+      description: Pistes mises à jour quotidiennement, dans ou autour de réserves naturelles, telles qu'enregistrées par l'Agence de Protection de l'Environnement suédoise
+      name: Agence de Protection de l'Environnement - Pistes
+    OSIP:
       attribution:
         text: Programme d'imagerie de l'Ohio
-      description: Orthophotos du programme III d'imagerie de 41 comtés de l'Ohio capturées à une résolution de 6 pouces en 2019 et 2020.
-      name: Orthophotos du programme III d'imagerie de l'Ohio, résolution 6 pouces
+      name: Programme d'imagerie de l'Ohio
     OSIP_1ft:
       attribution:
         text: Programme d'imagerie de l'Ohio
       description: Orthophotos du programme II d'imagerie de 88 comtés de l'Ohio capturées à une résolution de 30 cm de 2011 à 2014.
-      name: Orthophotos du programme II d'imagerie de l'Ohio, résolution 30 cm
+      name: Orthophotos du programme d'imagerie de l'Ohio, résolution 30 cm
     OSIP_6in:
       attribution:
         text: Programme d'imagerie de l'Ohio
@@ -351,6 +391,26 @@ fr:
     OpenAerialMapMosaic:
       description: Toutes les images OpenAerialMap dans une mosaïque, par Kontur.io
       name: Mosaïque OpenAerialMap, par Kontur.io
+    Riksantikvariambetet-archaeological:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Ruines et monuments anciens et historiques
+      name: Riksantikvarieämbetet - Sites archéologiques et monuments
+    Riksantikvariambetet-heritage:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Bâtiments historiques et églises
+      name: Riksantikvarieämbetet - Bâtiments historiques
+    Riksantikvariambetet-protected:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Zones protégées pour les bâtiments historiques et édifices religieux
+      name: Riksantikvarieämbetet - Zones historiques protégées
+    Riksantikvariambetet-ruins:
+      attribution:
+        text: © Riksantikvarieämbetet, CC0
+      description: Ruines d'intérêt historique et culturel
+      name: Riksantikvarieämbetet - Ruines
     SPW_ORTHO_LAST:
       name: Imagerie aérienne SPW(allonie) la plus récente
     SPW_PICC:
@@ -378,10 +438,13 @@ fr:
     US-TIGER-Roads-2021:
       description: Jaune = données cartographiques du domaine public provenant du recensement américain. Rouge = données introuvables dans OpenStreetMap
       name: Routes TIGER 2021
+    US-TIGER-Roads-2022:
+      description: Jaune = données cartographiques du domaine public provenant du recensement américain. Rouge = données introuvables dans OpenStreetMap
+      name: Routes TIGER 2022
     USDA-NAIP:
       attribution:
         text: Département de l'Agriculture des États-Unis
-      description: L'imagerie la plus récente au format Digital Orthophoto Quarter Quadrangle (bandes de 60 cm de large) du Programme National d'Imagerie Agricole (NAIP en anglais) sur l'ensemble des États-Unis.
+      description: Orthophotos 4 bandes 30/60 cm les plus récentes du Programme d'Imagerie de l'Agriculture Fédérale (NAIP en anglais) des États-Unis.
       name: Programme d'imagerie national pour l'agriculture
     US_Forest_Service_roads_overlay:
       description: 'Voies : en vert route non classifiée, en marron piste. Surface : les graviers sont représentés par un remplissage marron, l''asphalte par du noir, les pavés par du gris, la terre par du blanc, le béton par du bleu, l''herbe par du vert. Les voies saisonnières ont des barres blanches.'
@@ -475,11 +538,6 @@ fr:
         text: Orthophotos EUFAR Balaton 2010
       description: Photographies géo-référencées de 1940 de Balaton Limnological Institute.
       name: Orthophotos EUFAR Balaton
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      description: GSI Kiban 2500 via aginfo.cgk.affrc.go.jp. Bonnes données pour tracer des routes, mais un peu vieilles.
-      name: GSI KIBAN 2500 japonais
     gothenburg-citymap:
       attribution:
         text: © Municipalité de Göteborg, CC0
@@ -505,6 +563,16 @@ fr:
         text: © Municipalité de Göteborg, CC0
       description: Orthophotos de la municipalité de Göteborg
       name: Orthophotos 2019 de Göteborg
+    gothenburg-ortho_2021:
+      attribution:
+        text: © Municipalité de Göteborg, CC0
+      description: Orthophoto pour la municipalité de Göteborg
+      name: Orthophoto de Göteborg 2021
+    gothenburg-ortho_latest:
+      attribution:
+        text: © Municipalité de Göteborg, CC0
+      description: Orthophoto pour la municipalité de Göteborg
+      name: Orthophoto de Göteborg (dernière version)
     gsi.go.jp_airphoto:
       attribution:
         text: GSI Japon
@@ -647,6 +715,10 @@ fr:
       attribution:
         text: Simon Poole, données © contributeurs OpenStreetMap
       name: Pas d'adresse QA
+    route500:
+      attribution:
+        text: Tuiles © cquest@Openstreetmap France, données © IGN, LO/OL
+      name: Route 500
     rzeszowski-aerial:
       attribution:
         text: District de Rzeszów
@@ -655,10 +727,35 @@ fr:
       attribution:
         text: District de Rzeszów
       name: 'District de Rzeszów : Bâtiments'
+    scb-industrial:
+      attribution:
+        text: © Bureau central des statistiques, CC0
+      description: Zones géographiquement délimitées caractérisées par une utilisation industrielle des terres de grande ampleur
+      name: SCB - Zones industrielles
+    scb-settlements:
+      attribution:
+        text: © Bureau central des statistiques, CC0
+      description: Zones contiguës de bâtiments de 50 à 199 habitants et pas plus de 150 mètres entre les maisons
+      name: SCB - Mini zones urbaines
+    scb-urban:
+      attribution:
+        text: © Bureau central des statistiques, CC0
+      description: Zones urbaines d'au moins 200 personnes avec moins de 500 mètres entre les habitations
+      name: SCB - Zones urbaines
+    scb-vacation:
+      attribution:
+        text: © Bureau central des statistiques, CC0
+      description: Zones contiguës composées principalement de résidences secondaires ; une collection d'au moins 50 habitations, la distance entre elles ne dépasse pas 150 mètres
+      name: SCB - Zones de résidences secondaires
     skobbler:
       attribution:
         text: '© Tuile: données skobbler Map : contributeurs OpenStreetMap'
       name: skobbler
+    skolverket-schools:
+      attribution:
+        text: © Skolverket
+      description: Écoles suédoises.
+      name: Skolverket - Écoles
     skoterleder:
       attribution:
         text: © Skoterleder.org
@@ -686,6 +783,11 @@ fr:
         text: Orthophotos de la ville de Susono
       description: Les photos aériennes ont été publiées en données ouvertes par la Ville de Susono.
       name: Orthophotos de la ville de Susono
+    svk-electricity-network:
+      attribution:
+        text: © Svenska kraftnät
+      description: Réseau suédois de transport d'électricité.
+      name: SVK - Réseau électrique
     tf-cycle:
       attribution:
         text: Maps © Thunderforest, data © contributeurs OpenStreetMap

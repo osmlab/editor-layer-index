@@ -1,0 +1,55 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-8.11203, 53.91607],
+                [-7.89779, 53.79457],
+                [-7.74673, 53.81363],
+                [-7.67189, 53.89747],
+                [-7.5531, 53.95488],
+                [-7.58056, 54.05254],
+                [-7.80166, 54.14957],
+                [-7.97882, 54.22471],
+                [-7.91496, 54.28247],
+                [-7.94998, 54.35536],
+                [-8.03752, 54.39356],
+                [-8.12576, 54.44849],
+                [-8.17829, 54.47603],
+                [-8.28472, 54.487],
+                [-8.35029, 54.48161],
+                [-8.42342, 54.46366],
+                [-8.44333, 54.42692],
+                [-8.43063, 54.39556],
+                [-8.4169, 54.33515],
+                [-8.35407, 54.2219],
+                [-8.35304, 54.19499],
+                [-8.27304, 54.12946],
+                [-8.19648, 54.11749],
+                [-8.13468, 54.07047],
+                [-8.13503, 53.95771],
+                [-8.11203, 53.91607]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os1ed_6inch_leitrim",
+        "name": "OS 1st Ed. 6-inch. Leitrim, Ireland (1840s-1880s) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/leitrim/{zoom}/{x}/{y}.png",
+        "start_date": "1840",
+        "end_date": "1880",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

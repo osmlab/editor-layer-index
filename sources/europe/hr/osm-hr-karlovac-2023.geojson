@@ -1,0 +1,91 @@
+{
+    "type": "Feature",
+    "properties": {
+        "category": "photo",
+        "id": "osm-hr-karlovac-2023",
+        "name": "osm-hr: Karlovac 2023 Aerial imagery",
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
+        "start_date": "2023-11",
+        "end_date": "2023-11",
+        "url": "https://tms.osm-hr.org/karlovac-2023/{zoom}/{x}/{-y}.png",
+        "permission_osm": "explicit",
+        "license_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2017_07_67_1577.html",
+        "privacy_policy_url": "https://tms.osm-hr.org/privacy.htm",
+        "min_zoom": 5,
+        "max_zoom": 20,
+        "country_code": "HR",
+        "type": "tms",
+        "attribution": {
+            "required": true,
+            "text": "Sadrži podatke Geografskog informacijskog sustava Grada Karlovca",
+            "url": "https://gis.karlovac.hr/thematic-map/map-portal"
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    15.5266,
+                    45.5288
+                ],
+                [
+                    15.5233,
+                    45.5106
+                ],
+                [
+                    15.5149,
+                    45.5098
+                ],
+                [
+                    15.5141,
+                    45.5046
+                ],
+                [
+                    15.5325,
+                    45.4755
+                ],
+                [
+                    15.5229,
+                    45.4616
+                ],
+                [
+                    15.5287,
+                    45.4526
+                ],
+                [
+                    15.5646,
+                    45.4538
+                ],
+                [
+                    15.5774,
+                    45.5027
+                ],
+                [
+                    15.5794,
+                    45.5228
+                ],
+                [
+                    15.5578,
+                    45.5272
+                ],
+                [
+                    15.5504,
+                    45.5367
+                ],
+                [
+                    15.5426,
+                    45.5376
+                ],
+                [
+                    15.5379,
+                    45.5364
+                ],
+                [
+                    15.5266,
+                    45.5288
+                ]
+            ]
+        ]
+    }
+}

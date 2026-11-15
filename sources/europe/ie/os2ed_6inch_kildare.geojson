@@ -1,0 +1,42 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-7.12394, 52.99],
+                [-6.96327, 52.8567],
+                [-6.86508, 52.83845],
+                [-6.70852, 52.87742],
+                [-6.7147, 53.01148],
+                [-6.54304, 53.11217],
+                [-6.43867, 53.2192],
+                [-6.427, 53.40422],
+                [-6.93992, 53.45903],
+                [-7.10403, 53.41486],
+                [-7.11982, 53.3481],
+                [-7.1878, 53.18938],
+                [-7.12394, 52.99]
+            ]
+        ]
+    },
+    "properties": {
+        "id": "os2ed_6inch_kildare",
+        "name": "OS 2nd Ed. 6-inch. Kildare, Ireland (1888-1915) (NLS)",
+        "type": "tms",
+        "url": "https://geo.nls.uk/maps/os/sixinchireland/kildare_2nd/{zoom}/{x}/{y}.png",
+        "start_date": "1888",
+        "end_date": "1915",
+        "country_code": "IE",
+        "attribution": {
+            "text": "National Library of Scotland Historic Maps",
+            "url": "https://maps.nls.uk/",
+            "required": true
+        },
+        "max_zoom": 17,
+        "min_zoom": 6,
+        "license_url": "https://maps.nls.uk/copyright.html",
+        "category": "historicmap",
+        "privacy_policy_url": "https://www.nls.uk/privacy/"
+    }
+}

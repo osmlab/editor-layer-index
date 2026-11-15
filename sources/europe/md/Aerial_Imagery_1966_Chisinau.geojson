@@ -1,0 +1,56 @@
+{
+    "type": "Feature",
+    "properties": {
+        "description": "American aerial imagery, done on 21.09.1966, covers the entire territory of City of Chisinau",
+        "id": "American-1966_Aerial",
+        "name": "American Aerial Imagery (1966)",
+        "type": "tms",
+        "url": "https://chronica.md/api/tiles/1966/data/v3/{zoom}/{x}/{y}.png",
+        "country_code": "MD",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "icon": "https://chronica.md/static/favicons/favicon-16x16.png",
+        "permission_osm": "explicit",
+        "end_date": "1966",
+        "category": "historicphoto",
+        "license_url": "https://i.imgur.com/ZTsZIuG.png",
+        "privacy_policy_url": "https://i.imgur.com/ZTsZIuG.png",
+        "attribution": {
+            "url": "https://i.imgur.com/ZTsZIuG.png",
+            "text": "© Simpals SRL, U.S. Geological Survey",
+            "required": true
+        }
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    28.92486690402,
+                    47.07800597573
+                ],
+                [
+                    28.83348937511,
+                    47.08648800525
+                ],
+                [
+                    28.76549541682,
+                    47.09249433648
+                ],
+                [
+                    28.73742877901,
+                    46.95616128783
+                ],
+                [
+                    28.89653204799,
+                    46.94168532543
+                ],
+                [
+                    28.92486690402,
+                    47.07800597573
+                ]
+            ]
+        ]
+    }
+}

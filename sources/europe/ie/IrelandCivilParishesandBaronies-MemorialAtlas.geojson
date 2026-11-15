@@ -487,10 +487,12 @@
         "type": "Polygon"
     },
     "properties": {
+        "privacy_policy_url": "https://mapwarper.net/privacy",
+        "license_url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#James_Hardiman_Library,_NUI_Galway",
         "attribution": {
             "required": true,
             "text": "James Hardiman Library, NUIG",
-            "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/"
+            "url": "https://library.universityofgalway.ie/research/resources/digitalprojects/"
         },
         "country_code": "IE",
         "description": "Memorial Atlas of Ireland (1901) L.J. Richards",
@@ -503,7 +505,7 @@
         "start_date": "1901",
         "type": "tms",
         "url": "https://mapwarper.net/layers/tile/295/{zoom}/{x}/{y}.png",
-        "category": "map"
+        "category": "historicmap"
     },
     "type": "Feature"
 }

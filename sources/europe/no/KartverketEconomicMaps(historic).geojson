@@ -3,8 +3,20 @@
     "properties": {
         "id": "kartverket-ok-1st",
         "name": "Kartverket Economic Maps (historic)",
+        "category": "historicmap",
+        "description": "1st edition of historic Economic maps for Norway 1960-90s (`Økonomisk kartverk´). Available from zoom 16. Please correct local imagery offset.",
         "type": "wms",
+        "icon": "https://www.kartverket.no/public/favicons/favicon-32x32.png",
         "url": "https://wms.geonorge.no/skwms1/wms.n5raster2?LAYERS=n5raster_foerstegang_metadata,n5raster_foerstegang&STYLES=&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "max_zoom": 20,
+        "min_zoom": 11,
+        "license_url": "https://community.openstreetmap.org/t/fornyet-tillatelse-fra-kartverket/92410",
+        "privacy_policy_url": "https://www.kartverket.no/en/about-kartverket/data-protection-policy",
+        "attribution": {
+            "text": "© Kartverket",
+            "url": "https://www.kartverket.no/om-kartverket/historie/historisk-arkiv",
+            "required": true
+        },
         "country_code": "NO",
         "available_projections": [
             "EPSG:3007",
@@ -42,17 +54,7 @@
             "EPSG:32634",
             "EPSG:32635",
             "EPSG:32636"
-        ],
-        "attribution": {
-            "text": "© Kartverket",
-            "url": "https://www.kartverket.no/kunnskap/historie/kartverkets-historiske-arkiv/"
-        },
-        "icon": "https://kartverket.no/dist/favicons/publicsite/favicon-32x32.png",
-        "max_zoom": 20,
-        "min_zoom": 11,
-        "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
-        "description": "1st edition of historic Economic maps for Norway 1960-90s (`Økonomisk kartverk´). Available from zoom 16. Please correct local imagery offset.",
-        "category": "historicmap"
+        ]
     },
     "geometry": {
         "type": "Polygon",

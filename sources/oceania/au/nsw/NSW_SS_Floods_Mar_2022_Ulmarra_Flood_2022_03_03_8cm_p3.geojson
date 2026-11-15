@@ -1,0 +1,53 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Mar 2022 Ulmarra Flood 2022 03 03 8cm p3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Mar_2022/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:3",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2022-03-03",
+        "end_date": "2022-03-03",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Mar_2022_Ulmarra_Flood_2022_03_03_8cm_p3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    152.97650074009186,
+                    -29.620462959678378
+                ],
+                [
+                    152.9761499315041,
+                    -29.67066813846408
+                ],
+                [
+                    153.05426331021948,
+                    -29.671887385922737
+                ],
+                [
+                    153.0536786292414,
+                    -29.620259648965728
+                ],
+                [
+                    152.97650074009186,
+                    -29.620462959678378
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}

@@ -1,25 +1,5 @@
 "no":
   imagery:
-    AGIV:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders nyligste ortofoto
-    AGIV10cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders 2013-2015 ortofoto 10cm
-    AGIVFlandersGRB:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Flanders GRB
-    AIV_DHMV_II_HILL_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, flersidede terrengskygger 0,25 m
-    AIV_DHMV_II_SVF_25cm:
-      attribution:
-        text: © agentschap Informatie Vlaanderen
-      name: AIV Digitaal Hoogtemodel Vlaanderen II, Skyview faktor 0,25 m
     Bing:
       description: Flyfoto og satellitt-ortofoto.
     EOXAT2018CLOUDLESS:
@@ -37,6 +17,8 @@
       description: Esri arkivbilder som kan være klarere og mer nøyaktige enn det forhåndsvalgte laget.
       name: Esri World ortofoto (skarphet) beta
     MAPNIK:
+      attribution:
+        text: © OpenStreetMap-bidragsytere, ODbL 1.0
       description: Standard OpenStreerMap-laget.
       name: OpenStreetMap (standard)
     Mapbox:
@@ -153,14 +135,10 @@
         text: EUFAR Balaton ortofotó 2010
       description: 1940 georefererte bilder fra Balaton Limnological Institute.
       name: EUFAR Balaton ortofoto
-    finds.jp_KBN_2500:
-      attribution:
-        text: GSI KIBAN 2500
-      name: Japan GSI KIBAN 2500
     gothenburg-citymap:
       attribution:
         text: © Gothenburg kommune, CC0
-      description: Bykartet er et oversiktskart som beskriver Gothenburg. Den inneholder generell informasjon om areal, kommunikasjon, hydrografi, bygninger, adressenummer og gatenavn, administrative grenser og andre beskrivelser av omgivelsene.
+      description: Bykartet er et oversiktskart som beskriver Gøteborg. Den inneholder generell informasjon om areal, kommunikasjon, hydrografi, bygninger, adressenummer og gatenavn, administrative grenser og andre beskrivelser av omgivelsene.
       name: Gothenburg Bykart
     gothenburg-ortho:
       attribution:
@@ -196,6 +174,9 @@
         text: © Kalmar Kommune
       description: Ortofoto for byområder i Kalmar kommune 2018
       name: Kalmar Urban Orthophoto 2018
+    kartverket-bygninger:
+      attribution:
+        text: © Kartverket
     kelkkareitit:
       attribution:
         text: © Kelkkareitit.fi
@@ -225,11 +206,17 @@
       attribution:
         text: Vilkår og tilbakemeldinger
       description: Viser viktige funksjoner som hjelper deg å orientere deg.
-      name: Lokalisator Overlegg
+      name: Lokalisator overlegg
     openpt_map:
       attribution:
         text: © OpenStreetMap bidragsytere, CC-BY-SA
       name: OpenPT-kart (overlegg)
+    openrailwaymap:
+      name: OpenRailwayMap
+    openrailwaymap-maxspeeds:
+      name: OpenRailwayMap fartsgrenser
+    openrailwaymap-signalling:
+      name: OpenRailwayMap signaler
     osm-gps:
       attribution:
         text: © OpenStreetMap bidragsytere
@@ -276,17 +263,17 @@
       attribution:
         text: © Trafikverket, CC0
       description: Svensk jernbanenett, inkludert sidelinjer
-      name: Trafikkverket jernbanenett
+      name: Trafikverket jernbanenett
     trafikverket-baninfo-option:
       attribution:
         text: © Trafikverket, CC0
       description: Svensk jernbane nettverk med flere valg for lartlag
-      name: Trafikverket Alternativer for Jernbanenettverk
+      name: Trafikverket alternativer for jernbanenett
     trafikverket-vagnat:
       attribution:
         text: © Trafikverket, CC0
       description: Svensk NVDB veinett
-      name: Trafikverket Veinett
+      name: Trafikverket veinett
     trafikverket-vagnat-extra:
       attribution:
         text: © Trafikverket, CC0

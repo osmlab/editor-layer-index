@@ -1,0 +1,89 @@
+{
+    "type": "Feature",
+    "properties": {
+        "attribution": {
+            "url": "https://www.spatial.nsw.gov.au/",
+            "text": "© State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW). For current information go to spatial.nsw.gov.au.",
+            "required": true
+        },
+        "license_url": "https://wiki.openstreetmap.org/wiki/File:SpatialServices_NSW_OSM_Waiver_completed.pdf",
+        "privacy_policy_url": "https://www.spatial.nsw.gov.au/privacy",
+        "name": "DCS NSW Floods Nov 2021 mirrool creek flood 2021 11 16cm p3",
+        "url": "https://portal.spatial.nsw.gov.au/server/rest/services/Floods_Nov_2021/MapServer/export?f=image&format=png&transparent=true&imageSR={wkid}&bboxSR={wkid}&bbox={bbox}&size={width},{height}&layers=show:2",
+        "available_projections": [
+            "EPSG:3857"
+        ],
+        "max_zoom": 21,
+        "min_zoom": 1,
+        "start_date": "2021-11",
+        "end_date": "2021-11",
+        "country_code": "AU",
+        "type": "wms",
+        "id": "DCS_NSW_Floods_Nov_2021_mirrool_creek_flood_2021_11_16cm_p3",
+        "icon": "https://portal.spatial.nsw.gov.au/portal//sharing/rest/content/items/10ee1f6276e746efa7f3e364ed51d67f/resources/NSWGov_Logo_RGB_Primary_FullColour_sml3-01.png",
+        "category": "historicphoto"
+    },
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    146.23156108564763,
+                    -34.24713844386352
+                ],
+                [
+                    146.23730317070408,
+                    -34.30814314475826
+                ],
+                [
+                    146.34968397815646,
+                    -34.31017587222458
+                ],
+                [
+                    146.459603892014,
+                    -34.36774936152458
+                ],
+                [
+                    146.64088972009353,
+                    -34.36030090125066
+                ],
+                [
+                    146.67862342186595,
+                    -34.43407913580679
+                ],
+                [
+                    146.86072954781048,
+                    -34.4354322571064
+                ],
+                [
+                    146.9501420150538,
+                    -34.37384306378876
+                ],
+                [
+                    146.95096231291876,
+                    -34.346079274998836
+                ],
+                [
+                    146.73850516597872,
+                    -34.342692817898524
+                ],
+                [
+                    146.72045861295743,
+                    -34.314241179521126
+                ],
+                [
+                    146.57608618878544,
+                    -34.314241179521126
+                ],
+                [
+                    146.40136274362357,
+                    -34.251206801085395
+                ],
+                [
+                    146.23156108564763,
+                    -34.24713844386352
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    }
+}
