@@ -1,0 +1,153 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Maine_Skowhegan_2022",
+        "attribution": {
+            "url": "https://www.maine.gov/geolib/programs/ortho/index.html",
+            "text": "Maine Orthoimagery Program",
+            "required": false
+        },
+        "name": "Maine Orthoimagery Program: Skowhegan (2022)",
+        "icon": "https://www.maine.gov/geolib/images/GeoPortal_GlobewBlue.jpg",
+        "url": "https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoMunicipalSkowhegan2022/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthoMunicipalSkowhegan2022&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 21,
+        "license_url": "https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoMunicipalSkowhegan2022/ImageServer/info/iteminfo",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:6348"
+        ],
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "High-resolution aerial imagery for Skowhegan, Maine, municipal capture of year 2022",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.maine.gov/portal/policies/privacy.html"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -69.72698,
+                    44.81602
+                ],
+                [
+                    -69.72711,
+                    44.78878
+                ],
+                [
+                    -69.76503,
+                    44.78865
+                ],
+                [
+                    -69.76453,
+                    44.76831
+                ],
+                [
+                    -69.75511,
+                    44.76819
+                ],
+                [
+                    -69.75486,
+                    44.73466
+                ],
+                [
+                    -69.74481,
+                    44.73428
+                ],
+                [
+                    -69.74494,
+                    44.70101
+                ],
+                [
+                    -69.73502,
+                    44.70089
+                ],
+                [
+                    -69.73502,
+                    44.68054
+                ],
+                [
+                    -69.71644,
+                    44.6808
+                ],
+                [
+                    -69.71631,
+                    44.68758
+                ],
+                [
+                    -69.6686,
+                    44.68758
+                ],
+                [
+                    -69.6686,
+                    44.69511
+                ],
+                [
+                    -69.62139,
+                    44.69524
+                ],
+                [
+                    -69.62151,
+                    44.70189
+                ],
+                [
+                    -69.60268,
+                    44.70176
+                ],
+                [
+                    -69.60255,
+                    44.70854
+                ],
+                [
+                    -69.5743,
+                    44.7088
+                ],
+                [
+                    -69.57481,
+                    44.74219
+                ],
+                [
+                    -69.58422,
+                    44.74245
+                ],
+                [
+                    -69.58485,
+                    44.81025
+                ],
+                [
+                    -69.59452,
+                    44.81025
+                ],
+                [
+                    -69.59439,
+                    44.83021
+                ],
+                [
+                    -69.61335,
+                    44.82971
+                ],
+                [
+                    -69.6136,
+                    44.82331
+                ],
+                [
+                    -69.67023,
+                    44.82293
+                ],
+                [
+                    -69.67036,
+                    44.81615
+                ],
+                [
+                    -69.72698,
+                    44.81602
+                ]
+            ]
+        ]
+    }
+}
