@@ -1,0 +1,153 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "LV_ORTOFOTO_C8",
+        "name": "Orthophoto 8th cycle (2022–2024), Latvia",
+        "type": "wms",
+        "url": "https://geoserver.lvmgeo.lv/wms62531a9bfcfa4015856924e94076a178?LAYERS=Orto_8cikls&STYLES=&FORMAT=image/vnd.jpeg-png8&TRANSPARENT=true&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+        "country_code": "LV",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3059",
+            "EPSG:3857",
+            "EPSG:10306"
+        ],
+        "attribution": {
+            "text": "Orthophoto: LĢIA (Latvian Geospatial Information Agency). WMS service is provided by LVM (Latvian State Forestry)."
+        },
+        "license_url": "https://www.lgia.gov.lv/en/8-cikla-2022-2024-gads-ortofotokartes",
+        "privacy_policy_url": "https://www.lvm.lv/privatuma-politika",
+        "best": true,
+        "description": "This service includes a color orthophoto map for the entire territory of Latvia with a resolution of 0.2 meters, obtained from aerial photography data for the years 2022-2024. The orthophoto map is linked to the LKS-92 TM coordinate system. Aerial photography was performed in cooperation with the Polish company Opegiek. WMS service is freely provided by LVM (Latvian State Forestry, https://lvmgeo.lv/en/data).",
+        "start_date": "2022-01-01",
+        "end_date": "2024-12-31",
+        "category": "photo"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                  27.6160875,
+                  55.7767146
+                ],
+                [
+                  27.6847521,
+                  55.9331897
+                ],
+                [
+                  28.2656542,
+                  56.2205903
+                ],
+                [
+                  28.1475511,
+                  56.5739973
+                ],
+                [
+                  27.765776,
+                  57.002743
+                ],
+                [
+                  27.8680864,
+                  57.2968049
+                ],
+                [
+                  27.5560060,
+                  57.5375249
+                ],
+                [
+                  26.9321886,
+                  57.6359802
+                ],
+                [
+                  26.5202013,
+                  57.5859578
+                ],
+                [
+                  26.0368029,
+                  57.8719176
+                ],
+                [
+                  25.1990953,
+                  58.1048668
+                ],
+                [
+                  23.2790592,
+                  57.7714993
+                ],
+                [
+                  22.6008287,
+                  57.7695253
+                ],
+                [
+                  21.6669908,
+                  57.5668133
+                ],
+                [
+                  21.4005724,
+                  57.2962485
+                ],
+                [
+                  21.3840929,
+                  57.0176987
+                ],
+                [
+                  21.0462633,
+                  56.8002643
+                ],
+                [
+                  20.9913317,
+                  56.3661503
+                ],
+                [
+                  21.054503,
+                  56.0392025
+                ],
+                [
+                  21.2879625,
+                  56.0560762
+                ],
+                [
+                  21.2989488,
+                  56.1908005
+                ],
+                [
+                  22.1174303,
+                  56.4193582
+                ],
+                [
+                  24.4437853,
+                  56.244253
+                ],
+                [
+                  24.8118273,
+                  56.3996039
+                ],
+                [
+                  25.15515,
+                  56.1693987
+                ],
+                [
+                  25.5808702,
+                  56.1296207
+                ],
+                [
+                  26.4652696,
+                  55.6730801
+                ],
+                [
+                  26.9129625,
+                  55.6676589
+                ],
+                [
+                  26.9486680,
+                  55.7890706
+                ],
+                [
+                  27.6160875,
+                  55.7767146
+                ]
+            ]
+        ]
+    }
+}
