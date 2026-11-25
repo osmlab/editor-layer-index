@@ -1,0 +1,113 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": "Maine_Rangeley_2022",
+        "attribution": {
+            "url": "https://storymaps.arcgis.com/stories/e9ed89b235dd41b6add0ee32b6e722e7",
+            "text": "Maine Orthoimagery Program",
+            "required": false
+        },
+        "name": "Maine Orthoimagery Program: Rangeley (2022)",
+        "icon": "https://www.maine.gov/geolib/images/GeoPortal_GlobewBlue.jpg",
+        "url": "https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoMunicipalRangeley2022/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=orthoMunicipalRangeley2022&STYLES=&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+        "max_zoom": 21,
+        "license_url": "https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoMunicipalRangeley2022/ImageServer/info/iteminfo",
+        "country_code": "US",
+        "type": "wms",
+        "available_projections": [
+            "CRS:84",
+            "EPSG:3857",
+            "EPSG:4326",
+            "EPSG:6348"
+        ],
+        "start_date": "2022",
+        "end_date": "2022",
+        "description": "High-resolution aerial imagery for Rangeley, Maine, municipal capture of year 2022",
+        "category": "photo",
+        "valid-georeference": true,
+        "privacy_policy_url": "https://www.maine.gov/portal/policies/privacy.html"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -70.82456,
+                    45.01957
+                ],
+                [
+                    -70.82288,
+                    44.96564
+                ],
+                [
+                    -70.81349,
+                    44.96575
+                ],
+                [
+                    -70.81181,
+                    44.91848
+                ],
+                [
+                    -70.74528,
+                    44.91951
+                ],
+                [
+                    -70.74532,
+                    44.92614
+                ],
+                [
+                    -70.67886,
+                    44.92702
+                ],
+                [
+                    -70.67875,
+                    44.93422
+                ],
+                [
+                    -70.62189,
+                    44.93455
+                ],
+                [
+                    -70.62309,
+                    44.96183
+                ],
+                [
+                    -70.63204,
+                    44.96194
+                ],
+                [
+                    -70.63411,
+                    45.0092
+                ],
+                [
+                    -70.64306,
+                    45.00909
+                ],
+                [
+                    -70.64404,
+                    45.03583
+                ],
+                [
+                    -70.67242,
+                    45.03528
+                ],
+                [
+                    -70.67231,
+                    45.02852
+                ],
+                [
+                    -70.7677,
+                    45.0271
+                ],
+                [
+                    -70.76726,
+                    45.02033
+                ],
+                [
+                    -70.82456,
+                    45.01957
+                ]
+            ]
+        ]
+    }
+}
