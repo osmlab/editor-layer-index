@@ -13,6 +13,10 @@ To improve readability, the keys of the GeoJSON document should be ordered consi
 
 We further recommend to add the licence related properties.
 
+- `license` A [SPDX short identifier](https://spdx.org/licenses/) for the imagery license. Use `COMMERCIAL` for sources not under an open license. Use `USGOV-PD` for US Government works in the public domain.
+- `license_url` A URL for the publishers licensing or terms of use information of the imagery.
+- `permission_url` A URL for the waiver document or explicit permission given to OSM to derive features.
+
 See [schema.json](schema.json) for the full list of available properties.
 
 ##### Source URL
